@@ -22,12 +22,22 @@ copyright: "<a href=https://github.com/Synthetixio/synthetix/blob/master/LICENSE
 nav:
   - System Overview:
       - Home: index.md
-      - Addresses: addresses.md
       - Synopsis: synopsis.md
+      - Addresses: addresses.md
+      - Upgrades: upgrades.md
+      - Versioning: versioning.md
+      - Releases: releases.md
       - Tokens: tokens.md
+      - Historical Data: historical.md
       - Incentives: incentives.md
       - Governance: governance.md
+      - Libraries: libraries/index.md
       - Smart Contracts: contracts/index.md
+  - Libraries:
+      - Home: libraries/index.md
+      - Synthetix: libraries/synthetix.md
+      - SynthetixJs: libraries/synthetix-js.md
+      - Synthetix Data: libraries/synthetix-data.md
   - Smart Contracts:
       - Architecture: contracts/index.md
       - Tokens:

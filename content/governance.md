@@ -16,9 +16,6 @@ SCCPs are similar to SIPs, but concern modifications to system configuration val
 
 SCCPs live in the same repository and website as SIPs do, but have a [slightly different specification](https://github.com/Synthetixio/SIPs/blob/master/SCCP/sccp-1.md).
 
-!!! bug
-    SIPs (and SCCPs) can be rejected, but the rejected status is not provided in the status enumeration in SIP-1 or SCCP-1.
-
 ## Community Governance Calls
 
 Community governance calls are a venue for the Synthetix team to consult with the community. These calls occur on a semi-regular basis and typically have a pre-set agenda of issues to be discussed and resolved. This complements Discord as a central component of the team's commitment to transparency and community engagement on the path to full decentralisation. Upcoming community governance calls are announced on the [Synthetix blog](https://blog.synthetix.io/); [here](https://blog.synthetix.io/summary-community-governance/) are the minutes from the first governance call.
@@ -26,6 +23,3 @@ Community governance calls are a venue for the Synthetix team to consult with th
 ## Development Bounties
 
 The code that runs Synthetix is mostly [MIT licenced](https://github.com/Synthetixio/synthetix/blob/master/LICENSE) and open source, and in principle anyone can contribute. To encourage this, the Synthetix foundation has offered bounties for development and bug reports by parties outside of the core engineering team. Development bounties are managed on [Gitcoin](https://gitcoin.co/profile/Synthetixio) and discussion takes place in corresponding [GitHub issues](https://github.com/Synthetixio/synthetix/issues). Bug bounties are described in [this blog post](https://blog.synthetix.io/synthetix-bug-bounties/).
-
-!!! bug
-    The main Synthetix licence is dated 2018. This should be updated.

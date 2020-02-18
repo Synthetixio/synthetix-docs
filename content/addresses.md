@@ -1,16 +1,20 @@
----
-id: deployed-contracts
-title: Synthetix Contracts
----
+Here is the list of all contracts within the current Synthetix system.
 
-### Table of Contents
-- [MAINNET Contracts](#mainnet-contracts)
-- [ROPSTEN Contracts](#ropsten-contracts)
-- [RINKEBY Contracts](#rinkeby-contracts)
-- [KOVAN Contracts](#kovan-contracts)
+**Version**: 2.19.3-alpha
 
+**Docs Built**: Tue Feb 18 2020 18:30:49 GMT+0700 (Western Indonesia Time)
 
+!!! info "Naming Conventions"
+	Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol` - then the convention is to suffix the name of the differing feature to the end - be in the proxy target e.g. ProxyFeePool or ProxySynthetix or the synth's currencyKey eg: `sETH`, `iCEX`, etc
 
+!!! tip "Handy Contract Links"
+	All of the below contracts can be accessed by our contract linker utility. Simply suffix the contract name to the end of https://contracts.synthetix.io to get a link that will always redirect to the latest version of the contract on Etherscan.
+
+	For example, try https://contracts.synthetix.io/Synthetix to get linked to the latest Synthetix underlying.
+
+	For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/ArbRewarder
+
+ 
 ## MAINNET Contracts
 <table><tr><th>Name</th><th>Source</th><th>ABI</th><th>Address</th></tr>
               <tr>
