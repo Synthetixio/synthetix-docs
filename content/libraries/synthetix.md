@@ -2,42 +2,12 @@
 
 The addresses, ABIs and list of deployed synths of Synthetix contracts are persisted as an npm module, alongside every deploy.
 
-## Quick Start
-
-```javascript
-// With Ethers
-import ethers from "ethers"; // es modules
-import synthetix from "synthetix";
-
-const provider = ethers.getDefaultProvider();
-
-const network = "mainnet";
-const { abi } = synthetix.getSource({
-  network,
-  contract: "Synthetix"
-});
-const { address } = synthetix.getTarget({
-  network,
-  contract: "ProxySynthetix"
-});
-
-// see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
-const Synthetix = new ethers.Contract(address, abi, provider);
-
-(async () => {
-  const totalIssuedSynths = await Synthetix.totalIssuedSynths(
-    synthetix.toBytes32("sUSD")
-  );
-  console.log(ethers.utils.formatEther(totalIssuedSynths));
-})();
-```
-
 ## Interface
 
 - `toBytes32(string: input):string`
-- `getTarget({ network: string, contract?: string })`
-- `getSource({ network: string, contract?: string })`
-- `getSynths({ network: string })`
+- `getTarget({ network: string, contract?: string }):object|object[]`
+- `getSource({ network: string, contract?: string }):object|object[]`
+- `getSynths({ network: string }):object[]`
 
 ### As an npm module
 
