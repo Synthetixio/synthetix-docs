@@ -1,7 +1,6 @@
 # This netlify.toml file is for the documentation site living under /docs
 
 [build]
-  base = "docs"
   publish = "site"
   command = "mkdocs build"
 
