@@ -22,6 +22,7 @@ copyright: "<a href=https://github.com/Synthetixio/synthetix/blob/master/LICENSE
 nav:
   - System Overview:
       - Home: index.md
+      - Addresses: addresses.md
       - Synopsis: synopsis.md
       - Tokens: tokens.md
       - Incentives: incentives.md

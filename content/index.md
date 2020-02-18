@@ -15,7 +15,7 @@ Welcome to the Synthetix system documentation. These pages contain a description
 ## Developer Resources
 
 - **Code:** Open source repositories are available @synthetixio; the main Synthetix repo is @synthetixio/synthetix.
-- **Smart Contracts**: The latest list of deployed addresses and ABIs can be found at https://developer.synthetix.io/api/docs/deployed-contracts.html
+- **Smart Contracts**: The latest list of deployed addresses and ABIs can be found via [addresses](addresses)
 - **Smart Contract API:** Descriptions of all Synthetix smart contracts, their APIs, and a listing of deployed instances can be found [here](contracts).
 - **Smart Contract Linker:** For the latest addresses of all Synthetix contracts, https://contracts.synthetix.io will provide easy redirection. For example, to find the latest underlying `Synthetix` contract, you can use https://contracts.synthetix.io/Synthetix.
 - **SynthetixJs:** To connect and interact with the deployed Synthetix contracts in mainnet or any of the supported testnets, SynthetixJs is a JavaScript library which provides a simple interface to communicate with Synthetix contracts. Under the hood this library uses [ethers.js](https://github.com/ethers-io/ethers.js). The source is available @synthetixio/synthetix-js or just `npm i synthetix-js`.
