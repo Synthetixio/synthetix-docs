@@ -1,0 +1,19 @@
+{
+  "name": "synthetix-docs",
+  "version": "1.0.0",
+  "description": "Synthetix docs builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Synthetixio/synthetix-docs.git"
+  },
+  "author": "Synthetix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Synthetixio/synthetix-docs/issues"
+  },
+  "homepage": "https://github.com/Synthetixio/synthetix-docs#readme"
+}
