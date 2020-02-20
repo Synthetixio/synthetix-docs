@@ -5,6 +5,8 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
+console.log('Building library pages');
+
 (async () => {
   const readmes = await Promise.all(
     ['synthetix', 'synthetix-data', 'synthetix-js'].map(repo =>

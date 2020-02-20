@@ -15,6 +15,8 @@ const snxPackageJSON = path.join(
 const snxVersion = JSON.parse(fs.readFileSync(snxPackageJSON)).version;
 const snxDate = fs.statSync(snxPackageJSON).mtime;
 
+console.log('Building addresses.md');
+
 // This function generates the latest addresses for all environments
 const generateAddresses = () => {
   const outputPath = path.join(__dirname, '..', 'content', 'addresses.md');

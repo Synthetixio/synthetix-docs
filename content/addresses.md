@@ -2,7 +2,7 @@ Here is the list of all contracts within the current Synthetix system.
 
 **Version**: 2.19.3-alpha
 
-**Docs Built**: Tue Feb 18 2020 18:30:49 GMT+0700 (Western Indonesia Time)
+**Docs Built**: Tue Feb 18 2020 15:30:49 GMT+0400 (Gulf Standard Time)
 
 !!! info "Naming Conventions"
 	Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol` - then the convention is to suffix the name of the differing feature to the end - be in the proxy target e.g. ProxyFeePool or ProxySynthetix or the synth's currencyKey eg: `sETH`, `iCEX`, etc
