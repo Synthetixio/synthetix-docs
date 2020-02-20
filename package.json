@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "~0.19.2",
     "moment": "~2.24.0",
-    "synthetix": "~2.19.3-alpha"
+    "synthetix": "~2.19.6"
   },
   "devDependencies": {
     "eslint": "~6.8.0",

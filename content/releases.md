@@ -1,6 +1,51 @@
 !!! info "Notice"
 		Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Sirius (v2.10.5)
+
+**Published**: Feb 20, 2020
+
+**Codebase**: [v2.10.5](https://github.com/Synthetixio/synthetix/tree/v2.10.5)
+
+> https://blog.synthetix.io/release-scheduled-thursday-september-26/
+
+- [SIP 16](http://sips.synthetix.io/sips/sip-16): Synthetix upgrades currently take longer than needed as the owner account makes up to 60 calls to configure the system. Most of these calls are setSynthetix and setFeePool on all of the Synths. We propose to point the Synths to the Synthetix Proxy and FeePool Proxy. This would reduce the amount of time the system is offline. Making upgrades a lot faster, cheaper (gas) and minimize the impact on users with reduced downtime.
+- [SIP 17](http://sips.synthetix.io/sips/sip-16): This update will upgrade the currencyKeys from Bytes4 to Bytes32. This will enable Synthetix to create new Synths with symbols longer than 4 characters. e.g. sATOM, sDEFI, which is not currently possible with currencyKeys type defined as Bytes4.
+- [SIP 18](http://sips.synthetix.io/sips/sip-16): This will recover the $2.9k sUSD that is currently unclaimable by minters in the SNX fee address. This sUSD is from the period in which there was a transfer fee for sending sUSD.
+- [SIP 19](http://sips.synthetix.io/sips/sip-16): The Synthetix contracts still have transfer fees written into them, from before we disabled transfer fees in February 2018. Removing that code will optimise reclaim bytecode size required for new features.
+
+-----
+
+# Canopus (v2.11.2)
+
+**Published**: Feb 20, 2020
+
+**Codebase**: [v2.11.2](https://github.com/Synthetixio/synthetix/tree/v2.11.2)
+
+> https://blog.synthetix.io/the-canopus-release/
+
+- [SIP-8](http://sips.synthetix.io/sips/sip-8): This SIP formalises the sETH liquidity provider reward trial at the protocol level, diverting a portion of the SNX weekly inflation into a pool to incentivise liquidity providers of the sETH/ETH pair in Uniswap. The trial has been successful, but in order for this mechanism to work long term it must be formalised into the protocol.
+- [SIP-12](http://sips.synthetix.io/sips/sip-12): This SIP proposes to prevent front running of the price oracle by introducing max gas price for transactions on Synthetix exchanges. Front running occurs when a user or bot reads an incoming oracle update from the mempool and transmits an exchange with higher GWEI, taking advantage of a known price movement. Front running can jeopardise the debts of SNX stakers by enabling better odds at making profitable trades, and several accounts have used front running methods already. This first phase of SIP-12 will determine a max GWEI setting based on the current Ethereum congestion (somewhere between 'standard' and 'fast'), and traders will not be able to push a trade with more GWEI than that. Synthetix.Exchange will not allow traders to use a 'fast' GWEI setting, but if someone attempts a trade using the contacts directly, if they use a higher GWEI then the transaction will fail.
+
+-----
+
+# Rigil (v2.12.2)
+
+**Published**: Feb 20, 2020
+
+**Codebase**: [v2.12.2](https://github.com/Synthetixio/synthetix/tree/v2.12.2)
+
+> https://blog.synthetix.io/the-rigil-release/
+
+- [SIP-21](https://sips.synthetix.io/sips/sip-21): This will double the exchange fee when changing between an s-Synth and an i-Synth, or vice versa, e.g. sTRX <> iBTC; or iTRX <> sBTC. The only Synth excluded is sUSD.
+There is already a leveraged benefit on the inverse Synths and currently being able to trade short <> long in a volatile market is a continuous advantage to front runners. The normal exchange fee rate is 30 bips (0.3%). However, it is currently 50 bips, which would make the swing trade 100 bips. When it is restored to 30 bips it would then only be 60 bips on a swing trade.
+- [SIP-25](https://sips.synthetix.io/sips/sip-25): This SIP will decouple the gas limiter from the oracle. Currently, any invocation of the setGasPriceLimit() function has to be mined before a price update can be mined on-chain. This creates an unnecessary delay in serving timely oracle updates. This proposal is to change this access to setting the gasPriceLimit to a separate address, controlled by a setter only callable by the owner.
+- [SIP-26](https://sips.synthetix.io/sips/sip-26): This is a bug fix that would reduce the gas estimation of trading SNX via Uniswap down from 900K to 100K.
+- [SCCP-5](https://sips.synthetix.io/sccp/sccp-5): This change will divert 5% of the weekly SNX inflation into the arb pool — an increase from 2%. This is intended to provide a tighter sETH peg.
+- [SCCP-6](https://sips.synthetix.io/sccp/sccp-6): This SCCP will reduce the C-Ratio buffer to 1% from 10%. The buffer was originally implemented as a protection mechanism for slashing of fees, as fee slashing is no longer implemented there is no need for such a high buffer, as it only needs to protect from minor price fluctuations. The previous 10% buffer meant a C-Ratio of ~682% was required to claim fees, while the new 1% buffer means a C-Ratio of ~742.6% is required.
+
+-----
+
 # Achernar (v2.19.6)
 
 **Published**: Feb 20, 2020
