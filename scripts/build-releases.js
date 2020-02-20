@@ -14,9 +14,8 @@ console.log('Building releases page');
     'https://api.github.com/repos/Synthetixio/synthetix/releases'
   );
 
-  // console.log(JSON.stringify(response.data, null, '\t'));
-
   const content = data
+    .sort((a, b) => (a.created_at < b.created_at ? 1 : -1))
     .map(({ name, tag_name, body, published_at }) => {
       const published = new Date(published_at);
       return `# ${name} (${tag_name})\n\n**Published**: ${moment(
