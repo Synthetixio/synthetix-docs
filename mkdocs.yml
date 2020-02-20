@@ -35,9 +35,9 @@ nav:
       - Smart Contracts: contracts/index.md
   - Libraries:
       - Home: libraries/index.md
-      - Synthetix: libraries/synthetix.md
-      - SynthetixJs: libraries/synthetix-js.md
-      - Synthetix Data: libraries/synthetix-data.md
+      - synthetix: libraries/synthetix.md
+      - synthetix-js: libraries/synthetix-js.md
+      - synthetix-data: libraries/synthetix-data.md
   - Smart Contracts:
       - Architecture: contracts/index.md
       - Tokens:
@@ -61,6 +61,7 @@ nav:
           - SynthetixEscrow: contracts/SynthetixEscrow.md
       - Helpers:
           - Exchanger: contracts/Exchanger.md
+          - ExchangeState: contracts/ExchangeState.md
           - Issuer: contracts/Issuer.md
       - Infrastructure:
           - AddressResolver: contracts/AddressResolver.md

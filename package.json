@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Synthetixio/synthetix-docs#readme",
   "dependencies": {
+    "axios": "~0.19.2",
     "synthetix": "~2.19.3-alpha"
   },
   "devDependencies": {

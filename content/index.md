@@ -2,6 +2,12 @@
 
 # System Documentation
 
+[![Build Status](https://travis-ci.org/Synthetixio/synthetix.svg?branch=master)](https://travis-ci.org/Synthetixio/synthetix)
+[![CircleCI](https://circleci.com/gh/Synthetixio/synthetix.svg?style=svg)](https://circleci.com/gh/Synthetixio/synthetix)
+[![npm version](https://badge.fury.io/js/synthetix.svg)](https://badge.fury.io/js/synthetix)
+[![Discord](https://img.shields.io/discord/413890591840272394.svg?color=768AD4&label=discord&logo=https%3A%2F%2Fdiscordapp.com%2Fassets%2F8c9701b98ad4372b58f13fd9f65f966e.svg)](https://discordapp.com/channels/413890591840272394/)
+[![Twitter Follow](https://img.shields.io/twitter/follow/synthetix_io.svg?label=synthetix_io&style=social)](https://twitter.com/synthetix_io)
+
 ## Introduction
 
 Welcome to the Synthetix system documentation. These pages contain a description of how Synthetix operates; provided are high-level discussions of the system mechanics, as well as thorough technical specifications of the smart contract architecture and API. We hope this assists users and developers to understand the system, and to build on top of it.
@@ -15,11 +21,9 @@ Welcome to the Synthetix system documentation. These pages contain a description
 ## Developer Resources
 
 - **Code:** Open source repositories are available @synthetixio; the main Synthetix repo is @synthetixio/synthetix.
-- **Smart Contracts**: The latest list of deployed addresses and ABIs can be found via [addresses](addresses)
+- **Smart Contracts:** The latest list of deployed addresses and ABIs can be found via [addresses](addresses)
 - **Smart Contract API:** Descriptions of all Synthetix smart contracts, their APIs, and a listing of deployed instances can be found [here](contracts).
-- **Smart Contract Linker:** For the latest addresses of all Synthetix contracts, https://contracts.synthetix.io will provide easy redirection. For example, to find the latest underlying `Synthetix` contract, you can use https://contracts.synthetix.io/Synthetix.
-- **SynthetixJs:** To connect and interact with the deployed Synthetix contracts in mainnet or any of the supported testnets, SynthetixJs is a JavaScript library which provides a simple interface to communicate with Synthetix contracts. Under the hood this library uses [ethers.js](https://github.com/ethers-io/ethers.js). The source is available @synthetixio/synthetix-js or just `npm i synthetix-js`.
-- **Historical API:** The system can also be queried or subscribed on via a number of JavaScript services managed via @synthetixio/synthetix-data. These are in turn are supplied by a number of [GraohQL endpoints via The Graph subgraphs such as this one](https://thegraph.com/explorer/subgraph/synthetixio-team/synthetix); the source code of all Synthetix subgraphs is hosted at @synthetixio/synthetix-subgraph.
+- **Libraries:** For various methods to connect to Synthetix to read the current state from, transact onto or query for historical data, look at our [libraries section](libraries/index.md).
 
 ## dApps
 

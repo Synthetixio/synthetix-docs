@@ -4,7 +4,7 @@
 
 To interact with Synthetix in your dApps and scripts, you have a few options:
 
-1.  Use our [sythetix-js](synthetix-js.md) library, which is updated each synthetix release with the same version number. It uses `ethers.js` under the hood.
+1.  Use our [synthetix-js](synthetix-js.md) library, which is updated each synthetix release with the same version number. It uses `ethers.js` under the hood.
 
 2.  Write a custom JS script using our [synthetix npm module](synthetix.md) to help load the ABIs and addresses as need be.
 
