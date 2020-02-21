@@ -1,29 +1,34 @@
 {
-  "name": "synthetix-docs",
-  "version": "2.19.8",
-  "description": "Synthetix docs builder",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node scripts/build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Synthetixio/synthetix-docs.git"
-  },
-  "author": "Synthetix",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Synthetixio/synthetix-docs/issues"
-  },
-  "homepage": "https://github.com/Synthetixio/synthetix-docs#readme",
-  "dependencies": {
-    "axios": "~0.19.2",
-    "moment": "~2.24.0",
-    "synthetix": "2.19.8"
-  },
-  "devDependencies": {
-    "eslint": "~6.8.0",
-    "eslint-plugin-import": "~2.20.1"
-  }
+	"name": "synthetix-docs",
+	"version": "2.19.8",
+	"description": "Synthetix docs builder",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "node scripts/build",
+		"lint": "eslint .",
+		"format": "prettier --write '**/*.js'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Synthetixio/synthetix-docs.git"
+	},
+	"author": "Synthetix",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Synthetixio/synthetix-docs/issues"
+	},
+	"homepage": "https://github.com/Synthetixio/synthetix-docs#readme",
+	"dependencies": {
+		"axios": "~0.19.2",
+		"moment": "~2.24.0",
+		"synthetix": "2.19.8"
+	},
+	"devDependencies": {
+		"eslint": "~6.8.0",
+		"eslint-config-prettier": "~6.10.0",
+		"eslint-plugin-import": "~2.20.1",
+		"eslint-plugin-prettier": "~3.1.2",
+		"prettier": "~1.19.1"
+	}
 }
