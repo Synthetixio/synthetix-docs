@@ -1,6 +1,18 @@
 !!! info "Notice"
 		Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Patch release: Inverse pricing part 2 (v2.19.8)
+
+**Published**: Feb 21, 2020
+
+**Codebase**: [v2.19.8](https://github.com/Synthetixio/synthetix/tree/v2.19.8)
+
+> Update iBNB and iXTZ inverse pricing to new levels:
+
+https://github.com/Synthetixio/synthetix/commit/7787a9c6df944720c7ab3fdf653975c369a9863c
+
+-----
+
 # Patch release: Inverse pricing (v2.19.7)
 
 **Published**: Feb 21, 2020

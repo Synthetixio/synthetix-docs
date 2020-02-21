@@ -2,7 +2,7 @@ Here is the list of all contracts within the current Synthetix system.
 
 **Version**: 2.19.8
 
-**Docs Built**: Fri Feb 21 2020 08:50:21 GMT+0000 (Coordinated Universal Time)
+**Docs Built**: Feb 21, 2020
 
 !!! info "Naming Conventions"
 	Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol` - then the convention is to suffix the name of the differing feature to the end - be in the proxy target e.g. ProxyFeePool or ProxySynthetix or the synth's currencyKey eg: `sETH`, `iCEX`, etc
@@ -14,7 +14,7 @@ Here is the list of all contracts within the current Synthetix system.
 
 	For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/ArbRewarder
 
- 
+
 ## MAINNET Contracts
 <table><tr><th>Name</th><th>Source</th><th>ABI</th><th>Address</th></tr>
               <tr>
