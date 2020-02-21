@@ -1,0 +1,41 @@
+env_defaults:
+  working_directory: null
+  docker: &ref_0
+    - image: circleci/node:10.16
+version: 2
+jobs:
+  build:
+    working_directory: null
+    docker: *ref_0
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - 'v1.0-dependencies-{{ checksum "package.json" }}'
+            - v1.0-dependencies-
+      - run: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: 'v1.0-dependencies-{{ checksum "package.json" }}'
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+  test:
+    working_directory: null
+    docker: *ref_0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: npm run lint
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+      - test:
+          requires:
+            - build
