@@ -1,6 +1,18 @@
 !!! info "Notice"
 		Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Patch release: Inverse pricing (v2.19.7)
+
+**Published**: Feb 21, 2020
+
+**Codebase**: [v2.19.7](https://github.com/Synthetixio/synthetix/tree/v2.19.7)
+
+> Update iCEX and iLINK inverse pricing to new levels:
+
+https://github.com/Synthetixio/synthetix/commit/279ada88857a96d9eb4232cbf771a3deb621e2d4
+
+-----
+
 # Achernar (v2.19.6)
 
 **Published**: Feb 20, 2020
