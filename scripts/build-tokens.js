@@ -82,12 +82,12 @@ const content = `
 # Tokens
 
 ${tokens
-	.sort((a, b) => (a.name > b.name ? 1 : -1))
-	.map(
-		({ name, symbol, address, decimals, description }) =>
-			`## ${name} (${symbol})\n\n**Address:** [${address}](https://etherscan.io/address/${address})\n\n**Decimals:** ${decimals}\n\n> ${description}\n\n`,
-	)
-	.join('\n')}
+		.sort((a, b) => (a.name > b.name ? 1 : -1))
+		.map(
+			({ name, symbol, address, decimals, description }) =>
+				`## ${name} (${symbol})\n\n**Address:** [${address}](https://etherscan.io/address/${address})\n\n**Decimals:** ${decimals}\n\n> ${description}\n\n`,
+		)
+		.join('\n')}
 
 `;
 fs.writeFileSync(path.join(__dirname, '..', 'content', 'tokens.md'), content);

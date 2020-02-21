@@ -23,7 +23,7 @@ const generateAddresses = () => {
 	headerContent +=
 		'!!! info "Naming Conventions"\n\tWithin the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.' +
 		'If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol`' +
-		" - then the convention is to suffix the name of the differing feature to the end - be in the proxy target e.g. ProxyFeePool or ProxySynthetix or the synth's currencyKey eg: `sETH`, `iCEX`, etc";
+		' - then the convention is to suffix the name of the differing feature to the end - be in the proxy target e.g. ProxyFeePool or ProxySynthetix or the synth\'s currencyKey eg: `sETH`, `iCEX`, etc';
 
 	headerContent +=
 		'\n\n!!! tip "Handy Contract Links"\n\tAll of the below contracts can be accessed by our contract linker utility. Simply suffix the contract name to the end of' +
@@ -48,8 +48,8 @@ const generateAddresses = () => {
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/${source}.sol">${source}.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/${network.toLowerCase()}/${source}.json">${source}.json</a></td>
                 <td><a target="_blank" href="https://${
-									network !== 'mainnet' ? network + '.' : ''
-								}etherscan.io/address/${address}">${address}</a>
+				network !== 'mainnet' ? network + '.' : ''
+				}etherscan.io/address/${address}">${address}</a>
                 </td>
               </tr>`;
 					})

@@ -11,7 +11,8 @@ module.exports = {
 	},
 	rules: {
 		'no-console': 'off',
-		indent: ['error', 2],
+		indent: ['error', 'tab'],
+		'prettier/prettier': 'off',
 		'import/no-unresolved': ['error', { commonjs: true }],
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['error', 'single'],
