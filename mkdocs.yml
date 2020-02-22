@@ -89,18 +89,16 @@ nav:
 # These social links will be rendered as icons in the footer, as long as the type corresponds to FontAwesome glyph.
 extra:
   social:
-    - type: 'github'
+    - icon: 'brands/github'
       link: 'https://github.com/synthetixio'
-    - type: 'twitter'
+    - icon: 'brands/twitter'
       link: 'https://twitter.com/synthetix_io'
-    - type: 'linkedin'
-      link: 'https://www.linkedin.com/company/synthetix/'
-    - type: 'medium'
+    - icon: 'brands/discord'
+      link: 'https://discordapp.com/channels/413890591840272394/'
+    - icon: 'brands/reddit'
+      link: 'https://www.reddit.com/r/synthetix_io/'
+    - icon: 'brands/medium'
       link: 'https://blog.synthetix.io'
-    - type: 'telegram'
-      link: 'https://t.me/havven_news'
-    - type: 'facebook'
-      link: 'https://www.facebook.com/synthetix.io/'
 
 # This set of documentation uses the MkDocs Material theme by squidfunk: https://github.com/squidfunk/mkdocs-material
 theme:
@@ -113,6 +111,7 @@ theme:
   favicon: 'img/favicon.ico'
   feature:
     tabs: true
+    instant: false
 
 # Extension settings.
 # In addition to the standard extensions, this also requires the PyMdown Extensions by facelessuser: https://github.com/facelessuser/pymdown-extensions
