@@ -12,10 +12,12 @@ console.log('Building releases page');
 (async () => {
 	const { data } = await axios.get('https://api.github.com/repos/Synthetixio/synthetix/releases');
 
+	// console.log(JSON.stringify(data, null, '\t'));
+
 	const content = data
 		.sort((a, b) => (a.created_at < b.created_at ? 1 : -1))
-		.map(({ name, tag_name, body, published_at }) => {
-			const published = new Date(published_at);
+		.map(({ name, tag_name, body, created_at }) => {
+			const published = new Date(created_at);
 			return `# ${name} (${tag_name})\n\n**Published**: ${moment(published).format(
 				'MMM D, YYYY',
 			)}\n\n**Codebase**: [${tag_name}](https://github.com/Synthetixio/synthetix/tree/${tag_name})\n\n${
