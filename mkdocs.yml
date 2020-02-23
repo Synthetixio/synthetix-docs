@@ -23,16 +23,22 @@ nav:
   - System Overview:
       - Home: index.md
       - Synopsis: synopsis.md
-      - Addresses: addresses.md
       - Upgrades: upgrades.md
       - Versioning: versioning.md
-      - Releases: releases.md
-      - Tokens: tokens.md
       - Historical Data: historical.md
       - Incentives: incentives.md
       - Governance: governance.md
+      - Addresses: addresses.md
+      - Releases: releases.md
+      - Tokens: tokens.md
       - Libraries: libraries/index.md
       - Smart Contracts: contracts/index.md
+  - Addresses:
+      - Deployed Addresses: addresses.md
+  - Releases:
+      - Home: releases.md
+  - Tokens:
+      - Home: tokens.md
   - Libraries:
       - Home: libraries/index.md
       - synthetix: libraries/synthetix.md
@@ -57,7 +63,6 @@ nav:
           - RewardEscrow: contracts/RewardEscrow.md
           - RewardsDistribution: contracts/RewardsDistribution.md
           - SupplySchedule: contracts/SupplySchedule.md
-          - SynthetixAirdropper: contracts/SynthetixAirdropper.md
           - SynthetixEscrow: contracts/SynthetixEscrow.md
       - Helpers:
           - Exchanger: contracts/Exchanger.md
@@ -84,7 +89,6 @@ nav:
           - SafeMath: contracts/SafeMath.md
           - SelfDestructible: contracts/SelfDestructible.md
           - State: contracts/State.md
-      - Deployments: contracts/deployments.md
 
 # These social links will be rendered as icons in the footer, as long as the type corresponds to FontAwesome glyph.
 extra:

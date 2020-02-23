@@ -113,14 +113,13 @@ The inflationary supply complex is concerned with controlling the flow of new SN
 
 **Constituent Contracts**
 
-| Contract                                        | Description                                                                                                                                                      |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`SupplySchedule`](SupplySchedule.md)           | Determines the rate that inflationary SNX tokens are released.                                                                                                   |
-| [`RewardEscrow`](RewardEscrow.md)               | Receives inflationary SNX rewards to be distributed after a year escrow.                                                                                         |
-| [`RewardsDistribution`](RewardsDistribution.md) | Apportions designated quantities of inflationary rewards to the [`RewardEscrow`](RewardEscrow.md) and [`SynthetixAirdropper`](SynthetixAirdropper.md) contracts. |
-| [`SynthetixAirdropper`](SynthetixAirdropper.md) | Distributes tokens from the inflationary supply to individual residents of the the UniSwap ETH/sETH liquidity pool.                                              |
-| [`SynthetixEscrow`](SynthetixEscrow.md)         | Holds the escrowed balances of SNX from the original token sale.                                                                                                 |
-| [`EscrowChecker`](EscrowChecker.md)             | Augments the [`SynthetixEscrow`](SynthetixEscrow.md) contract with a function for dApps to conveniently query it.                                                |
+| Contract                                        | Description                                                                                                       |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| [`SupplySchedule`](SupplySchedule.md)           | Determines the rate that inflationary SNX tokens are released.                                                    |
+| [`RewardEscrow`](RewardEscrow.md)               | Receives inflationary SNX rewards to be distributed after a year escrow.                                          |
+| [`RewardsDistribution`](RewardsDistribution.md) | Apportions designated quantities of inflationary rewards to the [`RewardEscrow`](RewardEscrow.md) contract.       |
+| [`SynthetixEscrow`](SynthetixEscrow.md)         | Holds the escrowed balances of SNX from the original token sale.                                                  |
+| [`EscrowChecker`](EscrowChecker.md)             | Augments the [`SynthetixEscrow`](SynthetixEscrow.md) contract with a function for dApps to conveniently query it. |
 
 ---
 

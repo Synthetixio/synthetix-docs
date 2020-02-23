@@ -14,7 +14,7 @@ Here is the list of all contracts within the current Synthetix system.
 
 	For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/ArbRewarder
 
- 
+
 ## MAINNET Contracts
 <table><tr><th>Name</th><th>Source</th><th>ABI</th><th>Address</th></tr>
               <tr>
@@ -2859,13 +2859,6 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Synthetix.json">Synthetix.json</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x7339019DC0C6d6B14bD66E662dbA66F3068Dea7a">0x7339019DC0C6d6B14bD66E662dbA66F3068Dea7a</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthetixAirdropper</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixAirdropper.sol">SynthetixAirdropper.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/SynthetixAirdropper.json">SynthetixAirdropper.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0da4be37F811a2Ce3138Bdaca65b6B23Eb85f0a4">0x0da4be37F811a2Ce3138Bdaca65b6B23Eb85f0a4</a>
                 </td>
               </tr>
               <tr>
