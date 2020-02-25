@@ -4,7 +4,9 @@ Here you will find descriptions of the smart contract interfaces of every smart 
 
 Developers wishing to understand Synthetix code and the tradeoffs within it will be well-advised to read these documents alongside the Solidity itself.
 
-The addresses of currently-deployed contract instances are available in the [Deployments](deployments.md) section.
+The addresses of currently-deployed contract instances are available in the [Addresses](../addresses.md) section.
+
+The deployment of contracts is managed by the [Deployer](deployer.md) section.
 
 !!! info "Version"
 

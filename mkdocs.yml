@@ -46,6 +46,7 @@ nav:
       - synthetix-data: libraries/synthetix-data.md
   - Smart Contracts:
       - Architecture: contracts/index.md
+      - Deployer: contracts/deployer.md
       - Tokens:
           - ExternStateToken: contracts/ExternStateToken.md
           - PurgeableSynth: contracts/PurgeableSynth.md

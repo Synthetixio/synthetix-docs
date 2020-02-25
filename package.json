@@ -22,6 +22,7 @@
 	"dependencies": {
 		"axios": "~0.19.2",
 		"moment": "~2.24.0",
+		"numbro": "2.1.2",
 		"synthetix": "2.19.8"
 	},
 	"devDependencies": {

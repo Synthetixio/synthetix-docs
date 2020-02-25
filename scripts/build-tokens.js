@@ -2,7 +2,7 @@
 
 const path = require('path');
 const fs = require('fs');
-
+const numbro = require('numbro');
 const snx = require('synthetix');
 
 const network = 'mainnet';
@@ -70,13 +70,59 @@ const tokens = [
 		.filter(({ category }) => category !== 'internal')
 		.map(synth => ({
 			symbol: synth.name,
+			asset: synth.asset,
 			name: synth.desc,
 			address: targets[`Proxy${synth.name}`].address,
+			index: synth.index,
+			inverted: synth.inverted,
 			decimals: 18,
 			description: desc(synth),
 		}))
 		.sort((a, b) => (a.symbol > b.symbol ? 1 : -1)),
 );
+
+const format = num =>
+	numbro(num).format({
+		optionalMantissa: true,
+		mantissa: 5,
+		thousandSeparated: true,
+	});
+
+const getLinkToAsset = ({ name, asset }) =>
+	(
+		name
+			.split(' ')
+			.slice(1)
+			.join('-') +
+		'-s' +
+		asset
+	).toLowerCase();
+
+const addInverseParameters = ({ inverted, asset, name }) => {
+	if (!inverted) return '';
+
+	return (
+		`**Inverse of**: [s${asset}](#${getLinkToAsset({ name, asset })})\n\n` +
+		'| Entry Point | Upper Limit | Lower Limit |\n' +
+		'| - | - | - |\n' +
+		`| $${format(inverted.entryPoint)} | $${format(inverted.upperLimit)} | $${format(inverted.lowerLimit)}|\n\n`
+	);
+};
+
+const addIndexParameters = ({ index, inverted, asset, name }) => {
+	if (!index) return '';
+	const header = `**Index of**: [s${asset}](#${getLinkToAsset({ name, asset })})\n\n`;
+	if (inverted) {
+		// don't show index parameters here if also inverted, the link to the long asset will suffice
+		return header;
+	}
+	return (
+		header +
+		'| Token | Symbol | Units |\n| - | - | - |\n' +
+		index.map(({ name, symbol, units }) => `| ${name} | ${symbol} | ${format(units)} |\n`).join('') +
+		'\n'
+	);
+};
 
 const content = `
 # Tokens
@@ -84,8 +130,17 @@ const content = `
 ${tokens
 		.sort((a, b) => (a.name > b.name ? 1 : -1))
 		.map(
-			({ name, symbol, address, decimals, description }) =>
-				`## ${name} (${symbol})\n\n**Address:** [${address}](https://etherscan.io/address/${address})\n\n**Decimals:** ${decimals}\n\n> ${description}\n\n`,
+			({ name, asset, symbol, address, decimals, description, index, inverted }) =>
+				`## ${name} (${symbol})\n\n` +
+			// Note: Manual addition of SIP-34 check of MKR
+			(asset === 'MKR'
+				? '!!! warning "Suspended"\n\t\tMKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)\n\n'
+				: '') +
+			`**Address:** [${address}](https://etherscan.io/address/${address})\n\n` +
+			`**Decimals:** ${decimals}\n\n` +
+			addInverseParameters({ name, asset, inverted }) +
+			addIndexParameters({ name, asset, index, inverted }) +
+			`>${description}`,
 		)
 		.join('\n')}
 
