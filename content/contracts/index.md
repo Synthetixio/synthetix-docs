@@ -6,7 +6,7 @@ Developers wishing to understand Synthetix code and the tradeoffs within it will
 
 The addresses of currently-deployed contract instances are available in the [Addresses](../addresses.md) section.
 
-The deployment of contracts is managed by the [Deployer](deployer.md) section.
+The deployment of contracts is managed by the [Publisher](publisher.md) section.
 
 !!! info "Version"
 

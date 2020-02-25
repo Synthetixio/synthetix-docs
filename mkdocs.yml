@@ -2,7 +2,7 @@
 site_name: 'Synthetix System Documentation'
 site_description: 'Decentralised Synthetic Assets'
 site_author: 'Synthetix Team'
-site_url: ''
+site_url: '/'
 
 # Links to the core Synthetix smart contract repository.
 repo_name: 'synthetixio/synthetix'
@@ -46,7 +46,7 @@ nav:
       - synthetix-data: libraries/synthetix-data.md
   - Smart Contracts:
       - Architecture: contracts/index.md
-      - Deployer: contracts/deployer.md
+      - Publisher: contracts/publisher.md
       - Tokens:
           - ExternStateToken: contracts/ExternStateToken.md
           - PurgeableSynth: contracts/PurgeableSynth.md
