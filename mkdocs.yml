@@ -90,6 +90,7 @@ nav:
           - SafeMath: contracts/SafeMath.md
           - SelfDestructible: contracts/SelfDestructible.md
           - State: contracts/State.md
+      - Audit History: contracts/audits.md
 
 # These social links will be rendered as icons in the footer, as long as the type corresponds to FontAwesome glyph.
 extra:
