@@ -1,53 +1,47 @@
 # Incentives
 
-??? todo "Work In Progress"
-    Here is an overview of the incentives and token flow in the Synthetix system. Those who benefit are charged, and those who provide benefit are rewarded.
+Here is an overview of the incentives and token flow in the Synthetix system. It is built around incentives; users who benefit from a service pay other users who enable that service. This section will explain each category of rewards as well as each acting party within the system. 
 
-    ## Sources of Value
+    ## Sources of Value 
 
-    ### Exchange Fees
+    ### Exchange Fees 
 
-    ??? todo "Work in Progress"
-        See the API notes for the [`Synthetix.exchange`](../contracts/Synthetix#exchange) function.
+    Exchange fees are generated whenever a user exchanges one synthetic asset (Synth) for another through [Synthetix.Exchange](https://synthetix.exchange). Fees are typically between 10-100 bps (0.1%-1%), though usually 30 bps, and when generated are sent to the fee pool, where it is available to be claimed proportionally by SNX stakers each week. 
 
-    ### Inflationary Supply
+    ### SNX Staking Rewards
 
-    ??? todo "Work in Progress"
-        See the API notes for the [`SupplySchedule`](../contracts/SupplySchedule) contract.
+    SNX staking rewards are generated through the inflationary monetary policy implemented in March 2018. At the same time as they claim their exchange fees stakers can claim their staking rewards, which are escrowed for a year. The SNX staking rewards enabled by the inflationary supply are set to decrease gradually until September 2023, where it will become a 2.5% annual terminal inflation rate. 
+
+    ### Liquidity Rewards
+
+    5% of the aforementioned inflationary SNX supply is distributed to people providing sETH/ETH liquidity on Uniswap. This is to ensure there is a clear way for traders to enter the system and start trading for the first time (if they hold ETH). 
 
     ## Value Recipients
 
-    ### Stakers
+    ### SNX Stakers
 
-    ??? todo "Work in Progress"
+    SNX stakers stake their SNX and receive two kinds of rewards: exchange fees and SNX staking rewards. But by staking, they also take on the risk of 'debt.' When someone stakes their SNX, to then immediately unstake it they need to burn as much sUSD as they just minted — this sUSD figure is their debt, and all SNX stakers' debt is pooled together (with each staker holding a proportion of it). But this pooled debt is also where profits and losses from people trading on Synthetix.Exchange is represented, so a staker's debt can change over time depending on traders' overall profits and losses. This is the risk they assume when staking their SNX. 
 
-        A short overview already exists here: https://www.synthetix.io/stakingrewards
+    ### ETH stakers
 
-        It will also be useful to examine the [`Synthetix`](../contracts/Synthetix#exchange) and [`FeePool`](../contracts/FeePool) contract notes.
+    It is also possible to mint Synths by staking ETH. However, ETH stakers' debt is denominated in ETH rather than sUSD. It does not get added to the system's pooled debt, and thus does not fluctuate depending on traders' outcomes. However, there is a 5% APR to stake ETH, as well as a small minting fee. 
+
+    ### Traders
+
+    Traders on Synthetix.Exchange can take advantage of the system enabled by SNX stakers, namely trading a wide variety of assets with infinite liquidity and no slippage. They do not need to stake or even hold SNX. 
 
     ### Liquidity Providers
 
-    ??? todo "Work in Progress"
-        For now it will be most instructive to to examine the [`RewardEscrow`](../contracts/RewardEscrow) and [`RewardsDistribution`](../contracts/RewardsDistribution) contract notes.
-
-        Liquidity providers are incentivised to provide depth to the [sETH/ETH UniSwap Liquidity Pool](https://etherscan.io/address/0xe9cf7887b93150d4f2da7dfc6d502b216438f244/#tokentxns). It is important that the prices of [sETH](https://etherscan.io/address/0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb) and ETH are close, so that the UniSwap pool can act as a low-friction on/off-ramp for [synthetix.exchange](https://etherscan.io/address/0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb).  This pool is assigned 5% of the inflationary supply, currently $72,000$ SNX per week.
-
-        Further notes on the blog [here](https://blog.synthetix.io/uniswap-seth-pool-incentives/), [here](https://blog.synthetix.io/snx-arbitrage-pool/), and [here](https://sips.synthetix.io/sips/sip-8).
-
-        !!! bug
-            Find the script used for computing distributions mentioned in SIP-8.
-            This script needs to be included in the SIP itself.
+    Liquidity providers are providing depth to the [sETH/ETH Uniswap liquidity pool](https://etherscan.io/address/0xe9cf7887b93150d4f2da7dfc6d502b216438f244/#tokentxns). The deeper this pool, the less slippage traders pay when entering or exiting the system. Liquidity providers do not need to stake or hold SNX, only ETH and sETH. To receive rewards they must [stake their Uniswap LP tokens](https://blog.synthetix.io/new-uniswap-seth-lp-reward-system/) into a purpose-built smart contract. 
 
     ### Arbitrageurs
 
-    ??? todo "Work in Progress"
-        For now, examine the [ArbRewarder](../contracts/ArbRewarder) contract notes.
+    The primary opportunity for arbitrage in Synthetix is taking advantage of underpriced assets on the secondary market. If sETH or sUSD are ever trading below the price of ETH or USD respectively, then stakers can profit by purchasing them cheaply and using them within the Synthetix system, where their values do not take the market rate into consideration.  
 
     ## Additional Crypto-economic Discussions
 
     | Subject                                                                                                                     | Date        |
     | --------------------------------------------------------------------------------------------------------------------------- | ----------- |
-    | [Addressing Claims of Deleted Balances](https://blog.synthetix.io/addressing-claims-of-deleted-balances/)                   | 16 Sep 2019 |
     | [Cross-Chain Infrastructure Revisited](https://blog.synthetix.io/cross-chain-infrastructure-revisited/)                     | 27 Aug 2019 |
     | [SNX Arbitrage Pool](https://blog.synthetix.io/snx-arbitrage-pool/)                                                         | 22 Jul 2019 |
     | [Uniswap sETH Pool Liquidity Incentives](https://blog.synthetix.io/uniswap-seth-pool-incentives/)                           | 12 Jul 2019 |
