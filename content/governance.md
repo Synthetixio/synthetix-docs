@@ -4,7 +4,7 @@ Ownership of tokens within the Synthetix ecosystem is determined by a public net
 
 ## Synthetix Improvement Proposals (SIPs)
 
-The SIP format describes protocol standards and proposed updates. They provide a central forum for the submission, discussion, and acceptance of rigorous definitions of various components of the core Synthetix system, and documentation of the rationale behind design decisions. SIPs are enumerated at their [official site](https://sips.synthetix.io/). The SIP format is based on EIPs (Ethereum Improvement Proposals). 
+The SIP format describes protocol standards and proposed updates. They provide a central forum for the submission, discussion, and acceptance of rigorous definitions of various components of the core Synthetix system, and documentation of the rationale behind design decisions. SIPs are enumerated at their [official site](https://sips.synthetix.io/). The SIP format is based on EIPs (Ethereum Improvement Proposals).
 
 Historically, SIPs have been used to modify the fee/reward structure, allow the liquidation of unused synths, introduce new synths, and implement various exchange rate front-running protections. They are an appropriate mechanism for a broad range of fundamental alterations to the Synthetix platform and as such require an organised process for community consultation and iteration.
 
@@ -16,8 +16,9 @@ SCCPs are similar to SIPs, but concern modifications to system configuration val
 
 SCCPs live in the same repository and website as SIPs do, but have a [slightly different specification](https://github.com/Synthetixio/SIPs/blob/master/SCCP/sccp-1.md).
 
-## Synthetix GrantsDAO ## 
-The Synthetix GrantsDAO was set up to fund community grant proposals for such purposes as infrastructure and promotional resources. It consists of 3 community members and 2 team members. Open grants can be [viewed](https://snxgrants.io/) by the public, and new grant proposals can be [submitted](https://github.com/Synthetixio/snx-grants-dao/blob/master/proposals/proposal-template.md). 
+## Synthetix GrantsDAO
+
+The Synthetix GrantsDAO was set up to fund community grant proposals for such purposes as infrastructure and promotional resources. It consists of 3 community members and 2 team members. Open grants can be [viewed](https://snxgrants.io/) by the public, and new grant proposals can be [submitted](https://github.com/Synthetixio/snx-grants-dao/blob/master/proposals/proposal-template.md).
 
 ## Community Governance Calls
 

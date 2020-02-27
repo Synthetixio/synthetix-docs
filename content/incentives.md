@@ -1,66 +1,43 @@
 # Incentives
 
-Here is an overview of the incentives and token flow in the Synthetix system. It is built around incentives; users who benefit from a service pay other users who enable that service. This section will explain each category of rewards as well as each acting party within the system. 
+Here is an overview of the incentives and token flow in the Synthetix system. It is built around incentives; users who benefit from a service pay other users who enable that service. This section will explain each category of rewards as well as each acting party within the system.
 
-    ## Sources of Value 
+## Sources of Value
 
-    ### Exchange Fees 
+### Exchange Fees
 
-    Exchange fees are generated whenever a user exchanges one synthetic asset (Synth) for another through [Synthetix.Exchange](https://synthetix.exchange). Fees are typically between 10-100 bps (0.1%-1%), though usually 30 bps, and when generated are sent to the fee pool, where it is available to be claimed proportionally by SNX stakers each week. 
+Exchange fees are generated whenever a user exchanges one synthetic asset (Synth) for another through [Synthetix.Exchange](https://synthetix.exchange). Fees are typically between 10-100 bps (0.1%-1%), though usually 30 bps, and when generated are sent to the fee pool, where it is available to be claimed proportionally by SNX stakers each week.
 
-    ### SNX Staking Rewards
+### SNX Staking Rewards
 
-    SNX staking rewards are generated through the inflationary monetary policy implemented in March 2018. At the same time as they claim their exchange fees stakers can claim their staking rewards, which are escrowed for a year. The SNX staking rewards enabled by the inflationary supply are set to decrease gradually until September 2023, where it will become a 2.5% annual terminal inflation rate. 
+SNX staking rewards are generated through the inflationary monetary policy implemented in March 2018. At the same time as they claim their exchange fees stakers can claim their staking rewards, which are escrowed for a year. The SNX staking rewards enabled by the inflationary supply are set to decrease gradually until September 2023, where it will become a 2.5% annual terminal inflation rate.
 
-    ### Liquidity Rewards
+### Liquidity Rewards
 
-    5% of the aforementioned inflationary SNX supply is distributed to people providing sETH/ETH liquidity on Uniswap. This is to ensure there is a clear way for traders to enter the system and start trading for the first time (if they hold ETH). 
+5% of the aforementioned inflationary SNX supply is distributed to people providing sETH/ETH liquidity on Uniswap. This is to ensure there is a clear way for traders to enter the system and start trading for the first time (if they hold ETH).
 
-    ## Value Recipients
+## Value Recipients
 
-    ### SNX Stakers
+### SNX Stakers
 
-    SNX stakers stake their SNX and receive two kinds of rewards: exchange fees and SNX staking rewards. But by staking, they also take on the risk of 'debt.' When someone stakes their SNX, to then immediately unstake it they need to burn as much sUSD as they just minted — this sUSD figure is their debt, and all SNX stakers' debt is pooled together (with each staker holding a proportion of it). But this pooled debt is also where profits and losses from people trading on Synthetix.Exchange is represented, so a staker's debt can change over time depending on traders' overall profits and losses. This is the risk they assume when staking their SNX. 
+SNX stakers stake their SNX and receive two kinds of rewards: exchange fees and SNX staking rewards. But by staking, they also take on the risk of 'debt.' When someone stakes their SNX, to then immediately unstake it they need to burn as much sUSD as they just minted — this sUSD figure is their debt, and all SNX stakers' debt is pooled together (with each staker holding a proportion of it). But this pooled debt is also where profits and losses from people trading on Synthetix.Exchange is represented, so a staker's debt can change over time depending on traders' overall profits and losses. This is the risk they assume when staking their SNX.
 
-    ### ETH stakers
+### ETH stakers
 
-    It is also possible to mint Synths by staking ETH. However, ETH stakers' debt is denominated in ETH rather than sUSD. It does not get added to the system's pooled debt, and thus does not fluctuate depending on traders' outcomes. However, there is a 5% APR to stake ETH, as well as a small minting fee. 
+It is also possible to mint Synths by staking ETH. However, ETH stakers' debt is denominated in ETH rather than sUSD. It does not get added to the system's pooled debt, and thus does not fluctuate depending on traders' outcomes. However, there is a 5% APR to stake ETH, as well as a small minting fee.
 
-    ### Traders
+### Traders
 
-    Traders on Synthetix.Exchange can take advantage of the system enabled by SNX stakers, namely trading a wide variety of assets with infinite liquidity and no slippage. They do not need to stake or even hold SNX. 
+Traders on Synthetix.Exchange can take advantage of the system enabled by SNX stakers, namely trading a wide variety of assets with infinite liquidity and no slippage. They do not need to stake or even hold SNX.
 
-    ### Liquidity Providers
+### Liquidity Providers
 
-    Liquidity providers are providing depth to the [sETH/ETH Uniswap liquidity pool](https://etherscan.io/address/0xe9cf7887b93150d4f2da7dfc6d502b216438f244/#tokentxns). The deeper this pool, the less slippage traders pay when entering or exiting the system. Liquidity providers do not need to stake or hold SNX, only ETH and sETH. To receive rewards they must [stake their Uniswap LP tokens](https://blog.synthetix.io/new-uniswap-seth-lp-reward-system/) into a purpose-built smart contract. 
+Liquidity providers are providing depth to the [sETH/ETH Uniswap liquidity pool](https://etherscan.io/address/0xe9cf7887b93150d4f2da7dfc6d502b216438f244/#tokentxns). The deeper this pool, the less slippage traders pay when entering or exiting the system. Liquidity providers do not need to stake or hold SNX, only ETH and sETH. To receive rewards they must [stake their Uniswap LP tokens](https://blog.synthetix.io/new-uniswap-seth-lp-reward-system/) into a purpose-built smart contract.
 
-    ### Arbitrageurs
+### Arbitrageurs
 
-    The primary opportunity for arbitrage in Synthetix is taking advantage of underpriced assets on the secondary market. If sETH or sUSD are ever trading below the price of ETH or USD respectively, then stakers can profit by purchasing them cheaply and using them within the Synthetix system, where their values do not take the market rate into consideration.  
+The primary opportunity for arbitrage in Synthetix is taking advantage of underpriced assets on the secondary market. If sETH or sUSD are ever trading below the price of ETH or USD respectively, then stakers can profit by purchasing them cheaply and using them within the Synthetix system, where their values do not take the market rate into consideration.
 
-    ## Additional Crypto-economic Discussions
+## Additional Crypto-economic Discussions
 
-    | Subject                                                                                                                     | Date        |
-    | --------------------------------------------------------------------------------------------------------------------------- | ----------- |
-    | [Cross-Chain Infrastructure Revisited](https://blog.synthetix.io/cross-chain-infrastructure-revisited/)                     | 27 Aug 2019 |
-    | [SNX Arbitrage Pool](https://blog.synthetix.io/snx-arbitrage-pool/)                                                         | 22 Jul 2019 |
-    | [Uniswap sETH Pool Liquidity Incentives](https://blog.synthetix.io/uniswap-seth-pool-incentives/)                           | 12 Jul 2019 |
-    | [Response to The Block's analysis](https://blog.synthetix.io/response-to-the-block-analysis/)                               | 14 Jun 2019 |
-    | [Synthetix Monetary Policy Changes](https://blog.synthetix.io/synthetix-monetary-policy-changes/)                           | 15 Feb 2019 |
-    | [Synthetix Overview](https://blog.synthetix.io/synthetix-overview/)                                                         | 6 Dec 2018  |
-    | [Devcon IV: A Welcome Dose of Humanity](https://blog.synthetix.io/devcon-iv-a-welcome-dose-of-humanity/)                    | 7 Nov 2018  |
-    | [How to minimise risk with stablecoins](https://blog.synthetix.io/untitled/)                                                | 1 Nov 2018  |
-    | [Cryptoasset Collateral Concerns](https://blog.synthetix.io/cryptoasset-collateral-concerns/)                               | 19 Oct 2018 |
-    | [Introduction to Havven's Multicurrency System](https://blog.synthetix.io/introduction-to-havvens-multicurrency-system/)    | 18 Sep 2018 |
-    | [Tether is a crypto abomination](https://blog.synthetix.io/tether-is-a-crypto-abomination/)                                 | 7 Aug 2018  |
-    | [Cross-chain infrastructure](https://blog.synthetix.io/cross-chain-infrastructure/)                                         | 2 Aug 2018  |
-    | [Defining Decentralisation](https://blog.synthetix.io/defining-decentralisation/)                                           | 27 Jun 2018 |
-    | [Simultaneous Invention](https://blog.synthetix.io/simultaneous-invention/)                                                 | 22 Apr 2018 |
-    | [Fee Aversion](https://blog.synthetix.io/fee-aversion/)                                                                     | 11 Mar 2018 |
-    | [MakerDAO and the Dai](https://blog.synthetix.io/makerdao-and-the-dai/)                                                     | 19 Jan 2018 |
-    | [Basecoin: An Algorithmic Central Bank](https://blog.synthetix.io/basecoin-an-algorithmic-central-bank/)                    | 5 Jan 2018  |
-    | [A Decentralised Cryptocurrency Payment Gateway](https://blog.synthetix.io/a-decentralised-cryptocurrency-payment-gateway/) | 2 Jan 2018  |
-    | [Catalan Independence and the Blockchain](https://blog.havven.io/catalan-independence-and-the-blockchain-6bc77fab851c)      | 10 Dec 2017 |
-    | [Protocol Funding & Tokenomics](https://blog.havven.io/protocol-funding-tokenomics-55a9b266c8ed)                            | 8 Dec 2017  |
-    | [We Need a Decentralised Stablecoin](https://blog.havven.io/we-need-a-decentralised-stablecoin-b3e13346c74f)                | 25 Sep 2017 |
-    | [Havven Overview](https://blog.havven.io/havven-overview-2d4bb98a3be9)                                                      | 7 Sep 2017  |
+For more information and discussions on incentives, please see the lateset entries in our blog: [blog.synthetix.io](https://blog.synthetix.io).

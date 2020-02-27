@@ -23,11 +23,10 @@ nav:
   - System Overview:
       - Home: index.md
       - Synopsis: synopsis.md
-      - Upgrades: upgrades.md
-      - Versioning: versioning.md
-      - Historical Data: historical.md
       - Incentives: incentives.md
       - Governance: governance.md
+      - Historical Data: historical.md
+      - Upgrades: upgrades.md
       - Addresses: addresses.md
       - Releases: releases.md
       - Tokens: tokens.md
@@ -41,6 +40,7 @@ nav:
       - Home: tokens.md
   - Libraries:
       - Home: libraries/index.md
+      - Versioning: libraries/versioning.md
       - synthetix: libraries/synthetix.md
       - synthetix-js: libraries/synthetix-js.md
       - synthetix-data: libraries/synthetix-data.md
