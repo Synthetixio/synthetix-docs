@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: 2.20.0-beta
+**Version**: 2.20.0-release-candidate
 
 **Docs Built**: Feb 28, 2020
 
@@ -931,10 +931,17 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>IssuanceEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/IssuanceEternalStorage.sol">IssuanceEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/IssuanceEternalStorage.json">IssuanceEternalStorage.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xa2bAd2D49d2Af6a09277Fe838022C544b0Fe0678">0xa2bAd2D49d2Af6a09277Fe838022C544b0Fe0678</a>
+                </td>
+              </tr>
+              <tr>
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x55a0569370D53734caBb9b48Bb9CE49a628d6A21">0x55a0569370D53734caBb9b48Bb9CE49a628d6A21</a>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x0647b2C7a2a818276154b0fC79557F512B165bc1">0x0647b2C7a2a818276154b0fC79557F512B165bc1</a>
                 </td>
               </tr>
               <tr>
@@ -1214,7 +1221,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x139b154F1EfeDd24E7591d770d64c35C57593dfb">0x139b154F1EfeDd24E7591d770d64c35C57593dfb</a>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xdbD3C42E3Fc52fD1cae25e9efb1af8dfdacA1B13">0xdbD3C42E3Fc52fD1cae25e9efb1af8dfdacA1B13</a>
                 </td>
               </tr>
               <tr>
