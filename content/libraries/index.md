@@ -1,6 +1,16 @@
 # Libraries
 
-### Call on-chain state and transact onto it
+!!! Tip "Who this guide is for"
+
+    This is a guide for script writers, dApp developers, analytics platforms and those looking to build software that can interact with Sythetix
+
+### Fetch deployment information
+
+If you're looking to get the addresses and ABIs of any Synthetix contract, or maybe the list of synths and their parameters, the best way is to use our [`synthetix` `npm` module](synthetix.md#usage-and-requirements) (written for nodejs). Instead of looking it up online, the module contains all the details available to fetch locally (we manage this during our deployment processes).
+
+If you'd rather than functionality in the browser, you'll need to use our [`synthetix-js` JavaScript library on `npm`](synthetix-js.md).
+
+### Read and write state
 
 To interact with Synthetix in your dApps and scripts, you have a few options:
 
@@ -40,7 +50,7 @@ To interact with Synthetix in your dApps and scripts, you have a few options:
 
 3.  Write code to connect to the contracts generically using the addresses and ABIs from the [addresses](../addresses.md) section, downloading the ABIs either directly or via Etherscan's ABI.
 
-### Query on-chain historical data
+### Lookup on-chain historical data
 
 To query data historically, a few options are available:
 

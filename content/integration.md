@@ -46,7 +46,7 @@ As of this moment, the following contracts are behind proxies:
 
 In our Archernar release, we introduced a new feature called the `AddressResolver` contract ([contracts.synthetix.io/AddressResolver](https://contracts.synthetix.io/AddressResolver)).
 
-In short, the `AddressResolver` allows any referencing contract to have access to a number of key contract - in particular the underlying `Synthetix`, `FeePool`, `SynthsUSD` and `SynthsETH` contracts. There are plans in the near future to add our proxies as well
+In short, the `AddressResolver` allows any referencing contract to have access to a number of key contract - in particular the underlying `Synthetix`, `FeePool`, `SynthsUSD` and `SynthsETH` contracts. There are plans in the near future to add our proxies as well.
 
 !!! danger "Be Advised"
 
