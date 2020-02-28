@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: 2.20.0-alpha
+**Version**: 2.20.0-alpha-1
 
 **Docs Built**: Feb 28, 2020
 
@@ -2529,7 +2529,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>EtherCollateral</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EtherCollateral.sol">EtherCollateral.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/EtherCollateral.json">EtherCollateral.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x575D1238a011D19704f73C57eD3242fe92b5eE9a">0x575D1238a011D19704f73C57eD3242fe92b5eE9a</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC15bF975d40A2e077373a29AaD52bfC27c1BF8E5">0xC15bF975d40A2e077373a29AaD52bfC27c1BF8E5</a>
                 </td>
               </tr>
               <tr>
@@ -2585,7 +2585,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xF799DE69AB4e3Fd91EBC004b0C3055919a76970D">0xF799DE69AB4e3Fd91EBC004b0C3055919a76970D</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x876C10C2e94f03e707EDF632cB95C5b2b108e97d">0x876C10C2e94f03e707EDF632cB95C5b2b108e97d</a>
                 </td>
               </tr>
               <tr>
