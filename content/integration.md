@@ -1,4 +1,12 @@
-# Upgrades
+# Integration Guide
+
+!!! Tip "Who this guide is for"
+
+    This is a guide for smart contract developers looking into integrate one or more of Synthetix's contracts into their own contracts. Please read the below thoroughly and ask for help in the `#dev-portal` channel of our [Discord](https://discordapp.com/channels/413890591840272394/).
+
+    If instead you're looking to integrate Synthetix into your dApps and scripts, please see our [libraries section](libraries/index.md).
+
+## Proxies
 
 Synthetix makes extensive use of the proxy pattern. This allows users and integrated systems to refer to immutable proxy addresses while the underlying functionality is passed through to the target or _underlying_ contracts which can be updated by an `owner` function. This allows for fast iteration of the Synthetix ecosystem at the cost of trust in the protocol.
 
@@ -32,3 +40,14 @@ As of this moment, the following contracts are behind proxies:
     That said however, both are functioning side by side while we transition over.
 
     One note of caution: the events from the underlying contracts - `Synthetix` and `Synth` are still emitted on the currently deprecated proxy contracts. Indeed, SynthetixJs still use the deprecated proxies for this reason (see [Synthetix.js](https://github.com/Synthetixio/synthetix-js/blob/master/src/contracts/mainnet/Synthetix.js#L12)). Once we migrate to the new proxies, the events will be emitted on the integration proxies and the deprecated ones will be removed entirely.
+
+
+## Address Resolver
+
+In our Archernar release, we introduced a new feature called the `AddressResolver` contract ([contracts.synthetix.io/AddressResolver](https://contracts.synthetix.io/AddressResolver)).
+
+In short, the `AddressResolver` allows any referencing contract to have access to a number of key contract - in particular the underlying `Synthetix`, `FeePool`, `SynthsUSD` and `SynthsETH` contracts. There are plans in the near future to add our proxies as well
+
+!!! danger "Be Advised"
+
+    Third party developers may well want to integrate this `AddressResolver` into their smart contracts if they want to look up the latest contracts on-chain, and they are most welcome to. That being said, be careful - the Synthetix protocol may opt to change the ABIs of the underlying contracts which could break interoperability for contracts that are not re-deployed. The safest third party use are the ERC20 functions within `Synthetix` and all the `Synth` contracts.

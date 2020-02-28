@@ -26,18 +26,19 @@ nav:
       - Incentives: incentives.md
       - Governance: governance.md
       - Historical Data: historical.md
-      - Upgrades: upgrades.md
-      - Addresses: addresses.md
-      - Releases: releases.md
-      - Tokens: tokens.md
-      - Libraries: libraries/index.md
-      - Smart Contracts: contracts/index.md
+      # - Addresses: addresses.md
+      # - Releases: releases.md
+      # - Tokens: tokens.md
+      # - Libraries: libraries/index.md
+      # - Smart Contracts: contracts/index.md
   - Addresses:
-      - Deployed Addresses: addresses.md
+      - '': addresses.md
   - Releases:
-      - Home: releases.md
+      - '': releases.md
   - Tokens:
-      - Home: tokens.md
+      - '': tokens.md
+  - Integration:
+      - '': integration.md
   - Libraries:
       - Home: libraries/index.md
       - Versioning: libraries/versioning.md
