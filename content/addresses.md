@@ -1,8 +1,8 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: 2.19.8
+**Version**: 2.20.0-alpha
 
-**Docs Built**: Feb 21, 2020
+**Docs Built**: Feb 28, 2020
 
 !!! info "Naming Conventions"
 	Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol` - then the convention is to suffix the name of the differing feature to the end - be in the proxy target e.g. ProxyFeePool or ProxySynthetix or the synth's currencyKey eg: `sETH`, `iCEX`, etc
@@ -1149,8 +1149,8 @@ Here is the list of all contracts within the current Synthetix system.
               </tr>
               <tr>
                 <td>ProxysUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Proxy.json">Proxy.json</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xDDEfe42790f2dEC7b0C37D4399884eFceA5361b1">0xDDEfe42790f2dEC7b0C37D4399884eFceA5361b1</a>
                 </td>
               </tr>
@@ -1971,8 +1971,8 @@ Here is the list of all contracts within the current Synthetix system.
               </tr>
               <tr>
                 <td>ProxysUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/Proxy.json">Proxy.json</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xe109da5361299eD96D91146B8Cc12F682D21964e">0xe109da5361299eD96D91146B8Cc12F682D21964e</a>
                 </td>
               </tr>
@@ -2575,10 +2575,17 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>IssuanceEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/IssuanceEternalStorage.sol">IssuanceEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/IssuanceEternalStorage.json">IssuanceEternalStorage.json</a></td>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xe66000ee63050461Fe930E6F5A3456A735dC86A1">0xe66000ee63050461Fe930E6F5A3456A735dC86A1</a>
+                </td>
+              </tr>
+              <tr>
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xfA9B377D1999E110F7FD87A1a21297Da2E4C83b8">0xfA9B377D1999E110F7FD87A1a21297Da2E4C83b8</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xF799DE69AB4e3Fd91EBC004b0C3055919a76970D">0xF799DE69AB4e3Fd91EBC004b0C3055919a76970D</a>
                 </td>
               </tr>
               <tr>
@@ -2793,8 +2800,8 @@ Here is the list of all contracts within the current Synthetix system.
               </tr>
               <tr>
                 <td>ProxysUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Proxy.json">Proxy.json</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51">0x57Ab1ec28D129707052df4dF418D58a2D46d5f51</a>
                 </td>
               </tr>
@@ -2858,14 +2865,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x7339019DC0C6d6B14bD66E662dbA66F3068Dea7a">0x7339019DC0C6d6B14bD66E662dbA66F3068Dea7a</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthetixAirdropper</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixAirdropper.sol">SynthetixAirdropper.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/SynthetixAirdropper.json">SynthetixAirdropper.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0da4be37F811a2Ce3138Bdaca65b6B23Eb85f0a4">0x0da4be37F811a2Ce3138Bdaca65b6B23Eb85f0a4</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xacc97436adEcf2CB62e051B5464Aa54508B90d41">0xacc97436adEcf2CB62e051B5464Aa54508B90d41</a>
                 </td>
               </tr>
               <tr>
