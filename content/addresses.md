@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: 2.20.0-release-candidate
+**Version**: 2.20.0
 
 **Docs Built**: Feb 28, 2020
 
@@ -109,10 +109,17 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>IssuanceEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/IssuanceEternalStorage.sol">IssuanceEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/IssuanceEternalStorage.json">IssuanceEternalStorage.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x631E93A0fb06B5eC6d52c0A2D89a3f9672d6Ba64">0x631E93A0fb06B5eC6d52c0A2D89a3f9672d6Ba64</a>
+                </td>
+              </tr>
+              <tr>
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x23Bf838AF72Ee8F43870A73947d8F4Edb63adAe3">0x23Bf838AF72Ee8F43870A73947d8F4Edb63adAe3</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x357b58E0b1Be9d8A944380048fa1080c57c7A362">0x357b58E0b1Be9d8A944380048fa1080c57c7A362</a>
                 </td>
               </tr>
               <tr>
@@ -392,7 +399,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x153C3148A0a285A6f9F6d1996E1348832249bF7e">0x153C3148A0a285A6f9F6d1996E1348832249bF7e</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x8454190C164e52664Af2c9C24ab58c4e14D6bbE4">0x8454190C164e52664Af2c9C24ab58c4e14D6bbE4</a>
                 </td>
               </tr>
               <tr>
