@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: 2.20.0-alpha-1
+**Version**: 2.20.0-beta
 
 **Docs Built**: Feb 28, 2020
 
@@ -1753,10 +1753,17 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>IssuanceEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/IssuanceEternalStorage.sol">IssuanceEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/IssuanceEternalStorage.json">IssuanceEternalStorage.json</a></td>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xBdd0ad1b3000199Fc1De07963fb0B13B5548B6B7">0xBdd0ad1b3000199Fc1De07963fb0B13B5548B6B7</a>
+                </td>
+              </tr>
+              <tr>
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xE3DDD1f8d7B91b994C12B4b2aA28443eaB9091f1">0xE3DDD1f8d7B91b994C12B4b2aA28443eaB9091f1</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x4f61aE75d7583AeCC94fA31b649D36EfA45ee9b6">0x4f61aE75d7583AeCC94fA31b649D36EfA45ee9b6</a>
                 </td>
               </tr>
               <tr>
@@ -2036,7 +2043,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x89E76929cfce276b8c16813aA027f655B50466e0">0x89E76929cfce276b8c16813aA027f655B50466e0</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x6FA340aEbcE7880460a67b831428c867114b0A79">0x6FA340aEbcE7880460a67b831428c867114b0A79</a>
                 </td>
               </tr>
               <tr>
