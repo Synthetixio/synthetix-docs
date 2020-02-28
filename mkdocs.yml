@@ -48,6 +48,7 @@ nav:
   - Smart Contracts:
       - Architecture: contracts/index.md
       - Publisher: contracts/publisher.md
+      - Testing: contracts/testing.md
       - Tokens:
           - ExternStateToken: contracts/ExternStateToken.md
           - PurgeableSynth: contracts/PurgeableSynth.md
