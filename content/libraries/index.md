@@ -56,30 +56,30 @@ To query data historically, a few options are available:
 
 1.  Use our [synthetix-data](synthetix-data.md) library, which abstracts away the various subgraphs Synthetix uses, exposing query and subscription endpoints for a variety of use-case.
 
-2.  Query our subgraphs directly via our various subgraphs which are listed [here](../historical.md).
+2.  Query our subgraphs directly via our various subgraphs which are listed [here](../historical-data.md).
 
 3.  Query using the `{ blockTag: <Number> }` option to get state at a previous block (note the call will fail if the contract was not deployed at the block). Note: usage of this feature of `ethers` and `web3` requires a provider that is a full archive node. [Infura](https://infura.io) and [QuikNode](https://quicknode.io) both provide access to archive nodes for monthly costs. This is supported in [SynthetixJs](synthetix-js.md) via the underlying `.contract` property in every contract target.
 
     ??? example "E.g. fetch `Synthetix.totalIssuedSynths()` from a block in the past"
 
         ```javascript
-        import ethers from "ethers";
-        import synthetix from "synthetix";
+        import ethers from 'ethers';
+        import synthetix from 'synthetix';
 
         // assuming INFURA_PROJECT_ID is from a paid, archive node
         const provider = ethers.providers.InfuraProvider(
-          "homestead",
-          process.env.INFURA_PROJECT_ID
+          'homestead',
+          'Some Infura PROJECT_ID from an archive node'
         );
 
-        const network = "mainnet";
+        const network = 'mainnet';
         const { abi } = synthetix.getSource({
           network,
-          contract: "Synthetix"
+          contract: 'Synthetix'
         });
         const { address } = synthetix.getTarget({
           network,
-          contract: "ProxySynthetix"
+          contract: 'ProxySynthetix'
         });
 
         // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
@@ -87,7 +87,7 @@ To query data historically, a few options are available:
 
         (async () => {
           const totalIssuedSynths = await Synthetix.totalIssuedSynths(
-            synthetix.toBytes32("sUSD"),
+            synthetix.toBytes32('sUSD'),
             {
               blockTag: 9000000
             }
@@ -101,21 +101,23 @@ To query data historically, a few options are available:
     ??? example "E.g. Get all `FeePool.FeesClaimed` events"
 
         ```javascript
-        import synthetix from "synthetix";
+        import synthetix from 'synthetix';
         const provider = ethers.getDefaultProvider();
 
-        const network = "mainnet";
+        const network = 'mainnet';
         const { abi } = synthetix.getSource({
           network,
-          contract: "FeePool"
+          contract: 'FeePool'
         });
         const { address } = synthetix.getTarget({
           network,
-          contract: "ProxyFeePool"
+          // Note: for contracts with proxies, events are always emitted on the Proxy,
+          // so we need to use this address here
+          contract: 'ProxyFeePool'
         });
 
         const { signature } = abi.find(
-          ({ type, name }) => type === "event" && name === "FeesClaimed"
+          ({ type, name }) => type === 'event' && name === 'FeesClaimed'
         );
 
         (async () => {
@@ -126,6 +128,6 @@ To query data historically, a few options are available:
             toBlock: 9015000
           });
           // show last three if any
-          console.log(JSON.stringify(feesClaimedEvents.slice(0, 3), null, "\t"));
+          console.log(JSON.stringify(feesClaimedEvents.slice(0, 3), null, '\t'));
         })();
         ```

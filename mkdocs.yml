@@ -25,7 +25,7 @@ nav:
       - Synopsis: synopsis.md
       - Incentives: incentives.md
       - Governance: governance.md
-      - Historical Data: historical.md
+      - Historical Data: historical-data.md
       # - Addresses: addresses.md
       # - Releases: releases.md
       # - Tokens: tokens.md
