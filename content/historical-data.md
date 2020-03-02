@@ -9,6 +9,7 @@ There are a number a ways to access Synthetix's historical data.
 - Query Synthetix event log history and calls using The Graph subgraphs
 - Fetch state at some block in the past using an Archive Node
 - Query event logs directly via the EVM
+- Use a third party service like Google BigQuery or DuneAnalytics
 
 ### Subgraphs
 
@@ -99,3 +100,11 @@ Query using the `{ blockTag: <Number> }` option to get state at a previous block
       console.log(ethers.utils.formatEther(totalIssuedSynths));
     })();
     ```
+
+### Third Party Services
+
+There are a number of third parties services that provide queryable datasources for generic smart contract usage:
+
+- [Altheio](https://aleth.io/)
+- [Dune Analytics](https://www.duneanalytics.com)
+- [Google BigQuery](https://medium.com/google-cloud/live-ethereum-and-bitcoin-data-in-google-bigquery-and-pub-sub-765b71cd57b5)
