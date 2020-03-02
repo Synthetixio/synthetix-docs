@@ -4,10 +4,7 @@
 
 The Synthetix ecosystem relies on automated testing as much as possible to enable a high-frequency of updates while maintaining security and reliability.
 
-??? todo "CircleCI"
-
-    Insert image of synthetix tests workflow in CircleCI
-
+<img src="/img/misc/testing.png" width="450px" />
 
 ## Truffle Integration Tests
 
@@ -24,7 +21,7 @@ Our custom publisher scripts do all the heavy lifting in deployment. As such, we
 
 ## Deployment Live Tests
 
-Every time we deploy updates to Synthetix, we mutate our `deployment.json` files under `publish/deploys`. This means that all contract addresses, ABI and synths can be loaded without needing any internet connection at all.  In order to ensure that our JSON files match the deployed reality on-chain, we run the tests under `test/deployments` to verify, in particular, that our ABIs match those on-chain.
+Every time we deploy updates to Synthetix, we mutate our `deployment.json` files under `publish/deploys`. This means that all contract addresses, ABI and synths can be loaded without needing any internet connection at all. In order to ensure that our JSON files match the deployed reality on-chain, we run the tests under `test/deployments` to verify, in particular, that our ABIs match those on-chain.
 
 ## Testnet E2E Tests
 

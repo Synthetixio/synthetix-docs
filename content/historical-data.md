@@ -63,7 +63,7 @@ Instead of using the subgraphs provided, you could directly query the EVM via mo
 
 You can also use an Ethereum node with full historical state (an archive node) to read the blockchain state at some block in the past.
 
-Query using the `{ blockTag: <Number> }` option to get state at a previous block (note the call will fail if the contract was not deployed at the block). Note: usage of this feature of `ethers` and `web3` requires a provider that is a full archive node. [Infura](https://infura.io) and [QuikNode](https://quicknode.io) both provide access to archive nodes for monthly costs. This is supported in [SynthetixJs](synthetix-js.md) via the underlying `.contract` property in every contract target.
+Query using the `{ blockTag: <Number> }` option to get state at a previous block (note the call will fail if the contract was not deployed at the block). Note: usage of this feature of `ethers` and `web3` requires a provider that is a full archive node. [Infura](https://infura.io) and [QuikNode](https://quicknode.io) both provide access to archive nodes for monthly costs. This is supported in [SynthetixJs](libraries/synthetix-js.md) via the underlying `.contract` property in every contract target.
 
 !!! example "E.g. fetch `Synthetix.totalIssuedSynths()` from a block in the past"
 
