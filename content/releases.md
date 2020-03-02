@@ -1,27 +1,17 @@
-!!! info "Notice"
+!!! tip "Notice"
 		Imported from https://github.com/Synthetixio/synthetix/releases
 
-# Patch release: Inverse pricing part 2 (v2.19.8)
+# Betelgeuse (v2.20.0)
 
-**Published**: Feb 21, 2020
+**Published**: Feb 28, 2020
 
-**Codebase**: [v2.19.8](https://github.com/Synthetixio/synthetix/tree/v2.19.8)
+**Codebase**: [v2.20.0](https://github.com/Synthetixio/synthetix/tree/v2.20.0)
 
-> Update iBNB and iXTZ inverse pricing to new levels:
+> https://blog.synthetix.io/the-betelgeuse-release/
 
-https://github.com/Synthetixio/synthetix/commit/7787a9c6df944720c7ab3fdf653975c369a9863c
-
------
-
-# Patch release: Inverse pricing (v2.19.7)
-
-**Published**: Feb 21, 2020
-
-**Codebase**: [v2.19.7](https://github.com/Synthetixio/synthetix/tree/v2.19.7)
-
-> Update iCEX and iLINK inverse pricing to new levels:
-
-https://github.com/Synthetixio/synthetix/commit/279ada88857a96d9eb4232cbf771a3deb621e2d4
+- [SIP-40](https://sips.synthetix.io/sips/sip-40): Frontminting prevention ([read IOSIRO's audit report here](https://iosiro.com/audits/synthetix-pr-435-smart-contract-audit))
+- [SIP-41](https://sips.synthetix.io/sips/sip-41): ProtocolDAO phase zero
+- [SIP-42](https://sips.synthetix.io/sips/sip-41): Gas optimisations
 
 -----
 
@@ -39,6 +29,7 @@ https://github.com/Synthetixio/synthetix/commit/279ada88857a96d9eb4232cbf771a3de
 - [SIP-37](https://sips.synthetix.io/sips/sip-37): Fee reclamations and rebates — This SIP implements anti-frontrunning measures, ensuring that traders cannot profit from Oracle latency.
 - [SIP-38](https://sips.synthetix.io/sips/sip-38): Charge fees during purge — This SIP adds a trading fee to when a Synth holder gets purged out of a Synth, to prevent users from camping out in these Synths without paying their fair share of fees.
 Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. V2 will move to production from beta as part of the Achernar release.
+- [SIP-43](https://sips.synthetix.io/sips/sip-43): Adding an `AddressResolver` contract for better inter-contract communication within Synthetix
 - [SCCP-11](https://sips.synthetix.io/sips/sccp-11): Reduce trading fee to 0.3% — As part of the fee reclamation release, we’ll be reducing the trading fee back down to 30bps.
 - [SCCP-12](https://sips.synthetix.io/sips/sccp-12): Reactivate previously deactivated Synths — s/iXTZ, s/iBNB, and s/iLTC were all previously deactivated as they were being targeted by frontrunners, but we're reinstating them in the Achernar release.
 - [SCCP-13](https://sips.synthetix.io/sips/sccp-13): Reinstate fee claim buffer to 750% from 500% — The requirement to claim fees was reduced from 750% to 500% to allow stakers to not get hit by the temporary fee increase.
@@ -51,7 +42,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 **Codebase**: [v2.17.6](https://github.com/Synthetixio/synthetix/tree/v2.17.6)
 
-> The Procyon release: https://blog.synthetix.io/the-procyon-release/
+> https://blog.synthetix.io/the-procyon-release/
 
 - [SIP-30](https://sips.synthetix.io/sips/sip-30)
 - [SIP-32](https://sips.synthetix.io/sips/sip-32)
@@ -65,7 +56,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 **Codebase**: [v2.16.4](https://github.com/Synthetixio/synthetix/tree/v2.16.4)
 
-> The Capella release: https://blog.synthetix.io/the-capella-release/ 
+> https://blog.synthetix.io/the-capella-release/ 
 
 - [SIP-23](https://sips.synthetix.io/sips/sip-23)
 - [SIP-24](https://sips.synthetix.io/sips/sip-24)
@@ -75,7 +66,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 # DappMaintenance contract (v2.15.0)
 
-**Published**: Dec 9, 2019
+**Published**: Dec 8, 2019
 
 **Codebase**: [v2.15.0](https://github.com/Synthetixio/synthetix/tree/v2.15.0)
 
@@ -85,7 +76,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 # Vega (v2.14.0)
 
-**Published**: Nov 27, 2019
+**Published**: Nov 26, 2019
 
 **Codebase**: [v2.14.0](https://github.com/Synthetixio/synthetix/tree/v2.14.0)
 
@@ -97,7 +88,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 # Arcturus (v2.13.1)
 
-**Published**: Nov 21, 2019
+**Published**: Nov 20, 2019
 
 **Codebase**: [v2.13.1](https://github.com/Synthetixio/synthetix/tree/v2.13.1)
 
@@ -107,7 +98,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 # Rigil (v2.12.2)
 
-**Published**: Nov 8, 2019
+**Published**: Nov 7, 2019
 
 **Codebase**: [v2.12.2](https://github.com/Synthetixio/synthetix/tree/v2.12.2)
 
@@ -124,7 +115,7 @@ There is already a leveraged benefit on the inverse Synths and currently being a
 
 # Canopus (v2.11.2)
 
-**Published**: Oct 4, 2019
+**Published**: Oct 3, 2019
 
 **Codebase**: [v2.11.2](https://github.com/Synthetixio/synthetix/tree/v2.11.2)
 
@@ -176,7 +167,7 @@ There is already a leveraged benefit on the inverse Synths and currently being a
 
 # Synthetix crypto-backed synthetic asset platform (v2.0.0)
 
-**Published**: Dec 18, 2018
+**Published**: Dec 17, 2018
 
 **Codebase**: [v2.0.0](https://github.com/Synthetixio/synthetix/tree/v2.0.0)
 
