@@ -25,20 +25,14 @@ nav:
       - Synopsis: synopsis.md
       - Incentives: incentives.md
       - Governance: governance.md
-      - Historical Data: historical-data.md
-      # - Addresses: addresses.md
-      # - Releases: releases.md
-      # - Tokens: tokens.md
-      # - Libraries: libraries/index.md
-      # - Smart Contracts: contracts/index.md
   - Addresses:
       - '': addresses.md
   - Releases:
       - '': releases.md
   - Tokens:
       - '': tokens.md
-  - Integration:
-      - '': integration.md
+  - Historical Data:
+      - '': historical-data.md
   - Libraries:
       - Home: libraries/index.md
       - Versioning: libraries/versioning.md
@@ -47,6 +41,7 @@ nav:
       - synthetix-data: libraries/synthetix-data.md
   - Smart Contracts:
       - Architecture: contracts/index.md
+      - Integration Guide: contracts/integration.md
       - Publisher: contracts/publisher.md
       - Testing: contracts/testing.md
       - Tokens:
