@@ -36,6 +36,7 @@ nav:
   - Libraries:
       - Home: libraries/index.md
       - Versioning: libraries/versioning.md
+      - Examples: libraries/examples.md
       - synthetix: libraries/synthetix.md
       - synthetix-js: libraries/synthetix-js.md
       - synthetix-data: libraries/synthetix-data.md
