@@ -15,7 +15,9 @@ There are a number a ways to access Synthetix's historical data.
 
 Synthetix currently has four separate subgraphs on The Graph. A subgraph is an entity-based datasource that is populated by Graph indexers - these replay all transactions since the genesis block and use custom mapping code to create entities when events are emitted and functions are invoked.
 
-Each of these subgraphs can be queried using GraphQL - follow the links below to query in the data explorer UIs provided. Alternatively, you can use our [synthetix-data](libraries/synthetix-data.md) `npm` module to query historical or subscribe to these events in real time.
+We've written a custom JavaScript library to abstract away the complexity of dealing with these subgraphs. It's called [synthetix-data](libraries/synthetix-data.md), and it's an `npm` module to query historical or subscribe to these events in real time.
+
+Alternatively, Each of these subgraphs can be queried using GraphQL - follow the links below to query the subgraphs using GrapHQL in the data explorer UIs provided.
 
 <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix"><img class="rounded-image" src="/img/misc/subgraph.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-exchanges"><img class="rounded-image" src="/img/misc/subgraph-exchanges.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-rates"><img class="rounded-image" src="/img/misc/subgraph-rates.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-depot"><img class="rounded-image"  src="/img/misc/subgraph-depot.png" /></a>
 
