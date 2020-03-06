@@ -76,6 +76,7 @@ const tokens = [
 			index: synth.index,
 			inverted: synth.inverted,
 			decimals: 18,
+			aggregator: synth.aggregator,
 			description: desc(synth),
 		}))
 		.sort((a, b) => (a.symbol > b.symbol ? 1 : -1)),
@@ -124,13 +125,30 @@ const addIndexParameters = ({ index, inverted, asset, name }) => {
 	);
 };
 
+const addOracleParameters = ({ asset, aggregator }) => {
+	const snxOracle = '0xac1ed4fabbd5204e02950d68b6fc8c446ac95362';
+	if (!aggregator)
+		return (
+			`**Price Feed**: Synthetix (centralized)\n\n- Oracle: [${snxOracle}](https://etherscan.io/address/${snxOracle})` +
+			'\n- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)\n\n'
+		);
+	return (
+		`**Price Feed**: Chainlink (decentralized)\n\n- Oracles: [Network overview](https://landing-feeds.surge.sh/${asset.toLowerCase()}-usd)` +
+		`\n- Contract: [Aggregator](https://etherscan.io/address/${aggregator})\n\n`
+	);
+};
+
 const content = `
 # Tokens
+
+!!! Tip "Decentralizing the remaining price feeds"
+		We're in the process of migrating all price feeds to Chainlink's decentralized network.
+		This change is coming with [SIP-36](https://sips.synthetix.io/sips/sip-36).
 
 ${tokens
 		.sort((a, b) => (a.name > b.name ? 1 : -1))
 		.map(
-			({ name, asset, symbol, address, decimals, description, index, inverted }) =>
+			({ name, asset, symbol, address, decimals, description, index, inverted, aggregator }) =>
 				`## ${name} (${symbol})\n\n` +
 			// Note: Manual addition of SIP-34 check of MKR
 			(asset === 'MKR'
@@ -138,11 +156,12 @@ ${tokens
 				: '') +
 			`**Address:** [${address}](https://etherscan.io/address/${address})\n\n` +
 			`**Decimals:** ${decimals}\n\n` +
+			addOracleParameters({ name, asset, aggregator }) +
 			addInverseParameters({ name, asset, inverted }) +
 			addIndexParameters({ name, asset, index, inverted }) +
 			`>${description}`,
 		)
-		.join('\n')}
+		.join('\n\n')}
 
 `;
 fs.writeFileSync(path.join(__dirname, '..', 'content', 'tokens.md'), content);

@@ -32,7 +32,7 @@ The below all return a Promise that resolves with the requested results.
 The below all return an [Observable](https://github.com/tc39/proposal-observable) that when subscribed to with an object.
 
 1. `exchanges.observe()` Get an observable to `subscribe` to that will `next` the latest exchanges in real time (replays the most recent exchange immediately).
-1. `rates.observe()` Get an observable to `subscribe` to that will `next` the latest rates in real time (replays the most recent exchange immediately).
+1. `rate.observe()` Get an observable to `subscribe` to that will `next` the latest rates in real time (replays the most recent exchange immediately).
 
 ## Use this as a node or webpack dependency
 
