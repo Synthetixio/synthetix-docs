@@ -13,7 +13,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network](https://landing-feeds.surge.sh/aud-usd)
+- Oracles: [Network overview](https://landing-feeds.surge.sh/aud-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0x05Cf62c4bA0ccEA3Da680f9A8744Ac51116D6231)
 
 >Tracks the price of Australian Dollars (AUD) through price feeds supplied by an oracle.
@@ -128,7 +128,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network](https://landing-feeds.surge.sh/eur-usd)
+- Oracles: [Network overview](https://landing-feeds.surge.sh/eur-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0x25Fa978ea1a7dc9bDc33a2959B9053EaE57169B5)
 
 >Tracks the price of Euros (EUR) through price feeds supplied by an oracle.
@@ -141,7 +141,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network](https://landing-feeds.surge.sh/xau-usd)
+- Oracles: [Network overview](https://landing-feeds.surge.sh/xau-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0xafcE0c7b7fE3425aDb3871eAe5c0EC6d93E01935)
 
 >Tracks the price of Gold Ounce (XAU) through price feeds supplied by an oracle.
@@ -370,7 +370,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network](https://landing-feeds.surge.sh/jpy-usd)
+- Oracles: [Network overview](https://landing-feeds.surge.sh/jpy-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0xe1407BfAa6B5965BAd1C9f38316A3b655A09d8A6)
 
 >Tracks the price of Japanese Yen (JPY) through price feeds supplied by an oracle.
@@ -412,7 +412,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network](https://landing-feeds.surge.sh/gbp-usd)
+- Oracles: [Network overview](https://landing-feeds.surge.sh/gbp-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0x151445852B0cfDf6A4CC81440F2AF99176e8AD08)
 
 >Tracks the price of Pound Sterling (GBP) through price feeds supplied by an oracle.
@@ -438,7 +438,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network](https://landing-feeds.surge.sh/xag-usd)
+- Oracles: [Network overview](https://landing-feeds.surge.sh/xag-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0x8946A183BFaFA95BEcf57c5e08fE5B7654d2807B)
 
 >Tracks the price of Silver Ounce (XAG) through price feeds supplied by an oracle.
@@ -451,7 +451,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network](https://landing-feeds.surge.sh/chf-usd)
+- Oracles: [Network overview](https://landing-feeds.surge.sh/chf-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0x02D5c618DBC591544b19d0bf13543c0728A3c4Ec)
 
 >Tracks the price of Swiss Franc (CHF) through price feeds supplied by an oracle.
