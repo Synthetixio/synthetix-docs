@@ -41,9 +41,15 @@ As of this moment, the following contracts are behind proxies:
 
     One note of caution: the events from the underlying contracts - `Synthetix` and `Synth` are still emitted on the currently deprecated proxy contracts. Indeed, SynthetixJs still use the deprecated proxies for this reason (see [Synthetix.js](https://github.com/Synthetixio/synthetix-js/blob/master/src/contracts/mainnet/Synthetix.js#L12)). Once we migrate to the new proxies, the events will be emitted on the integration proxies and the deprecated ones will be removed entirely.
 
+## Fee Reclamation and Atomicity of Exchanges
+
+In our Achernar release, we introduced Fee Reclamation ([SIP-37](https://sips.synthetix.io/sips/sip-37)). The major implication here is that if you invoke `exchange(src, amount, dest)` in your smart contracts, you cannot atomically invoke `dest.transfer()` or `exchange(dest, ..., ...)` - both will fail until a waiting period expires.
+
+You can use [`Exchanger.maxSecsLeftInWaitingPeriod()`](/contracts/exchanger/#maxsecsleftinwaitingperiod) to check how many seconds are left in the waiting period for that `dest` synth. Once it's `0`, exchanges of the `dest` synth will automatically settle any rebates or reclaims. However after the waiting period expires, `dest.transfer()` will fail regardless if there are any exchanges awaiting settlement. To circumvent this, integrators are encouraged to use [`transferAndSettle`](/contracts/synth/#transferandsettle) or [`transferFromAndSettle`](/contracts/synth/#transferfromandsettle). Alternatively, [`Exchanger.settle()`](/contracts/exchanger#settle) can be invoked directly prior to a `transfer` or `transferFrom`.
+
 ## Address Resolver
 
-In our Archernar release, we introduced a new feature called the `AddressResolver` contract ([contracts.synthetix.io/AddressResolver](https://contracts.synthetix.io/AddressResolver)).
+In our Achernar release, we introduced a new feature called the `AddressResolver` contract ([contracts.synthetix.io/AddressResolver](https://contracts.synthetix.io/AddressResolver)).
 
 In short, the `AddressResolver` allows any referencing contract to have access to a number of key contract - in particular the underlying `Synthetix`, `FeePool`, `SynthsUSD` and `SynthsETH` contracts. There are plans in the near future to add our proxies as well.
 

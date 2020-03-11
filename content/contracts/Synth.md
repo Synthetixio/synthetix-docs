@@ -162,6 +162,28 @@ This is a pair of ERC20 transfer function.
 
 Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_transfer_byproxy).
 
+!!! Warning "Warning"
+
+    Due to [SIP-37 Fee Reclamation](https://sips.synthetix.io/sips/sip-37), this will always fail if there are any exchanges awaiting settlement for this synth. To prevent failues, please use [`transferAndSettle()`](#transferandsettle) below or invoke [`Exchanger.settle()`](/contracts/exchanger/#settle) prior to `transfer()`.
+
+??? example "Details"
+
+    **Signatures**
+
+    * `transfer(address to, uint value) public returns (bool)`
+
+    **Modifiers**
+
+    * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
+
+---
+
+### `transferAndSettle`
+
+Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transfer` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the sender.
+
+Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_transfer_byproxy).
+
 ??? example "Details"
 
     **Signatures**
@@ -180,18 +202,41 @@ This is a ERC20 transferFrom function.
 
 Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken#_transferfrom_byproxy).
 
+!!! Warning "Warning"
+
+    Due to [SIP-37 Fee Reclamation](https://sips.synthetix.io/sips/sip-37), this will always fail if there are any exchanges awaiting settlement for this synth. To prevent failues, please use [`transferFromAndSettle()`](#transferfromandsettle) below or invoke [`Exchanger.settle()`](/contracts/exchanger/#settle) prior to `transferFrom()`.
+
 ??? example "Details"
 
     **Signatures**
 
     * `transferFrom(address from, address to, uint value) public returns (bool)`
-    * `transfer(address from, address to, uint value) public returns (bool)`
 
     **Modifiers**
 
     * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
 
 ---
+
+### `transferFromAndSettle`
+
+Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transferFrom` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the `from` address.
+
+Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken#_transferfrom_byproxy).
+
+!!! Warning "Warning"
+
+    Due to [SIP-37 Fee Reclamation](https://sips.synthetix.io/sips/sip-37), this will always fail if there are any exchanges awaiting settlement for this synth. To prevent failues, please use [`transferFromAndSettle()`](#transferfromandsettle) below or invoke [`Exchanger.settle()`](/contracts/exchanger/#settle) prior to `transferFrom()`.
+
+??? example "Details"
+
+    **Signatures**
+
+    * `transferFrom(address from, address to, uint value) public returns (bool)`
+
+    **Modifiers**
+
+    * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
 
 ---
 
