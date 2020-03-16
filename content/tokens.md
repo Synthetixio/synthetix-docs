@@ -161,9 +161,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $22.25800 | $33.38700 | $11.12900|
+| $10.19000 | $15.28500 | $5.09500|
 
->Inversely tracks the price of Binance Coin (BNB) through price feeds supplied by an oracle. The entry point is $22.258 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $33.387 (i.e. when Binance Coin's value reaches $11.129) or its lower limit of $11.129 (i.e. when Binance Coin’s value reaches $33.387). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBNB with different limits.
+>Inversely tracks the price of Binance Coin (BNB) through price feeds supplied by an oracle. The entry point is $10.19 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $15.285 (i.e. when Binance Coin's value reaches $5.095) or its lower limit of $5.095 (i.e. when Binance Coin’s value reaches $15.285). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBNB with different limits.
 
 ## Inverted Bitcoin (iBTC)
 
@@ -180,9 +180,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $10,600 | $15,900 | $5,300|
+| $5,275 | $7,912.50000 | $2,637.50000|
 
->Inversely tracks the price of Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is $10600 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $15900 (i.e. when Bitcoin's value reaches $5300) or its lower limit of $5300 (i.e. when Bitcoin’s value reaches $15900). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
+>Inversely tracks the price of Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is $5275 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $7912.5 (i.e. when Bitcoin's value reaches $2637.5) or its lower limit of $2637.5 (i.e. when Bitcoin’s value reaches $7912.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
 
 ## Inverted Centralised Exchange Index (iCEX)
 
@@ -199,11 +199,11 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $935 | $1,402.50000 | $467.50000|
+| $563.20000 | $844.80000 | $281.60000|
 
 **Index of**: [sCEX](#centralised-exchange-index-scex)
 
->Inversely tracks the price of Centralised Exchange Index (CEX) through price feeds supplied by an oracle. The entry point is $935 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $1402.5 (i.e. when Centralised Exchange Index's value reaches $467.5) or its lower limit of $467.5 (i.e. when Centralised Exchange Index’s value reaches $1402.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iCEX with different limits.
+>Inversely tracks the price of Centralised Exchange Index (CEX) through price feeds supplied by an oracle. The entry point is $563.2 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $844.8 (i.e. when Centralised Exchange Index's value reaches $281.6) or its lower limit of $281.6 (i.e. when Centralised Exchange Index’s value reaches $844.8). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iCEX with different limits.
 
 ## Inverted Chainlink (iLINK)
 
@@ -220,9 +220,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $4.27296 | $6.40944 | $2.13648|
+| $2.02000 | $3.03000 | $1.01000|
 
->Inversely tracks the price of Chainlink (LINK) through price feeds supplied by an oracle. The entry point is $4.27296 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $6.40944 (i.e. when Chainlink's value reaches $2.13648) or its lower limit of $2.13648 (i.e. when Chainlink’s value reaches $6.40944). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
+>Inversely tracks the price of Chainlink (LINK) through price feeds supplied by an oracle. The entry point is $2.02 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $3.03 (i.e. when Chainlink's value reaches $1.01) or its lower limit of $1.01 (i.e. when Chainlink’s value reaches $3.03). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
 
 ## Inverted DeFi Index (iDEFI)
 
@@ -260,9 +260,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $220 | $330 | $110|
+| $122.43000 | $183.64500 | $61.21500|
 
->Inversely tracks the price of Ether (ETH) through price feeds supplied by an oracle. The entry point is $220 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $330 (i.e. when Ether's value reaches $110) or its lower limit of $110 (i.e. when Ether’s value reaches $330). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETH with different limits.
+>Inversely tracks the price of Ether (ETH) through price feeds supplied by an oracle. The entry point is $122.43 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $183.645 (i.e. when Ether's value reaches $61.215) or its lower limit of $61.215 (i.e. when Ether’s value reaches $183.645). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETH with different limits.
 
 ## Inverted Litecoin (iLTC)
 
@@ -279,9 +279,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $58.73000 | $88.09500 | $29.36500|
+| $35.66000 | $53.49000 | $17.83000|
 
->Inversely tracks the price of Litecoin (LTC) through price feeds supplied by an oracle. The entry point is $58.73 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $88.095 (i.e. when Litecoin's value reaches $29.365) or its lower limit of $29.365 (i.e. when Litecoin’s value reaches $88.095). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLTC with different limits.
+>Inversely tracks the price of Litecoin (LTC) through price feeds supplied by an oracle. The entry point is $35.66 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $53.49 (i.e. when Litecoin's value reaches $17.83) or its lower limit of $17.83 (i.e. when Litecoin’s value reaches $53.49). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLTC with different limits.
 
 ## Inverted Maker (iMKR)
 
@@ -320,9 +320,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $0.26050 | $0.39080 | $0.13030|
+| $0.15000 | $0.22500 | $0.07500|
 
->Inversely tracks the price of Ripple (XRP) through price feeds supplied by an oracle. The entry point is $0.2605 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $0.3908 (i.e. when Ripple's value reaches $0.1302) or its lower limit of $0.1303 (i.e. when Ripple’s value reaches $0.3907). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXRP with different limits.
+>Inversely tracks the price of Ripple (XRP) through price feeds supplied by an oracle. The entry point is $0.15 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $0.225 (i.e. when Ripple's value reaches $0.075) or its lower limit of $0.075 (i.e. when Ripple’s value reaches $0.225). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXRP with different limits.
 
 ## Inverted TRON (iTRX)
 
@@ -339,9 +339,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $0.01869 | $0.02803 | $0.00934|
+| $0.01017 | $0.01525 | $0.00508|
 
->Inversely tracks the price of TRON (TRX) through price feeds supplied by an oracle. The entry point is $0.0186888 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $0.0280332 (i.e. when TRON's value reaches $0.0093444) or its lower limit of $0.0093444 (i.e. when TRON’s value reaches $0.0280332). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iTRX with different limits.
+>Inversely tracks the price of TRON (TRX) through price feeds supplied by an oracle. The entry point is $0.0101651 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $0.0152476 (i.e. when TRON's value reaches $0.0050826) or its lower limit of $0.0050825 (i.e. when TRON’s value reaches $0.0152477). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iTRX with different limits.
 
 ## Inverted Tezos (iXTZ)
 
@@ -358,9 +358,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | - | - | - |
-| $3.65100 | $5.47650 | $1.82550|
+| $1.49000 | $2.23500 | $0.74500|
 
->Inversely tracks the price of Tezos (XTZ) through price feeds supplied by an oracle. The entry point is $3.651 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $5.4765 (i.e. when Tezos's value reaches $1.8255) or its lower limit of $1.8255 (i.e. when Tezos’s value reaches $5.4765). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXTZ with different limits.
+>Inversely tracks the price of Tezos (XTZ) through price feeds supplied by an oracle. The entry point is $1.49 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $2.235 (i.e. when Tezos's value reaches $0.745) or its lower limit of $0.745 (i.e. when Tezos’s value reaches $2.235). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXTZ with different limits.
 
 ## Japanese Yen (sJPY)
 
