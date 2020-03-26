@@ -15,7 +15,7 @@ Welcome to the Synthetix system documentation. These pages contain a description
 
 ## Resources
 
-- **Litepaper:** The [Synthetix Litepaper](https://www.synthetix.io/uploads/synthetix_litepaper.pdf) has a detailed overview of how the Synthetix protocol functions.
+- **Litepaper:** The [Synthetix Litepaper](./litepaper.md) has a detailed overview of how the Synthetix protocol functions.
 - **Community Page:** The online community has built an [excellent site](https://synthetix.community/docs/resources) with a large backlog of resources, explanations, and links that is perfect for any newcomers.
 - **Official Blog:** Stay up-to-date with all official news from the team at the [Synthetix blog](https://blog.synthetix.io).
 - **SIPs (Synthetix Improvement Proposals):** The Synthetix ecosystem is managed by a core team, with suggestions and improvements from the community in the form of Synthetix Improvement Proposals (SIPs) and Synthetix Configuration Change Proposal (SCCPs). Past and present SIPs and SCCPs are hosted on https://sips.synthetix.io. To suggest a new SIPs, create an issue on the [SIPs repo](https://github.com/synthetixio/SIPs/issues).
