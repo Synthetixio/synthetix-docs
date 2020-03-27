@@ -8,7 +8,8 @@ Synthetix is a decentralised synthetic asset issuance protocol built on Ethereum
 
 ## SNX as collateral
 
-How SNX backs Synths
+**How SNX backs Synths**
+
 All Synths are backed by SNX tokens. Synths are minted when SNX holders stake their SNX as collateral using Mintr, a decentralised application for interacting with the Synthetix contracts. Synths are currently backed by a 800% collateralisation ratio, although this may be raised or lowered in the future through community governance mechanisms. SNX stakers incur debt when they mint Synths, and to exit the system (i.e. unlock their SNX) they must pay back this debt by burning Synths.
 
 Synthetix is also currently trialling Ether as an alternative form of collateral. This means traders can borrow Synths against their ETH and begin trading immediately, rather than needing to sell their ETH. Staking ETH requires a collateralisation ratio of 150% and creates a debt denominated in ETH, so ETH stakers mint sETH rather than sUSD and do not participate in the ‘pooled debt’ aspect of the system. In this model, ETH stakers do not receive fees or rewards as they take no risk for the debt pool.
