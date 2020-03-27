@@ -79,6 +79,7 @@ nav:
           - PurgeableSynth: contracts/PurgeableSynth.md
           - RewardEscrow: contracts/RewardEscrow.md
           - RewardsDistribution: contracts/RewardsDistribution.md
+          - RewardsDistributionRecipient: contracts/RewardsDistributionRecipient.md
           - SelfDestructible: contracts/SelfDestructible.md
           - State: contracts/State.md
           - SupplySchedule: contracts/SupplySchedule.md

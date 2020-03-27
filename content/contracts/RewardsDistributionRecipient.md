@@ -1,6 +1,6 @@
-# ExchangeState
+# RewardsDistributionRecipient
 
-**Source:** [ExchangeState.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeState.sol)
+**Source:** [RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardsDistributionRecipient.sol)
 
 !!! todo "Work in Progress"
 

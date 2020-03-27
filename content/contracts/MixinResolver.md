@@ -10,17 +10,15 @@ A utility that gives the inheritor access to the [`AddressResolver`](AddressReso
 
 ### Inheritance Graph
 
-
-<centered-image>
+<!--centered-image>
     ![[name] inheritance graph](../img/graphs/MixinResolver.svg)
-</centered-image>
+</centered-image-->
 
 ---
 
 ## Variables
 
 ---
-
 
 ### `resolver`
 
