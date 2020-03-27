@@ -23,6 +23,7 @@
 		"axios": "~0.19.2",
 		"moment": "~2.24.0",
 		"numbro": "2.1.2",
+		"solidity-parser-antlr": "0.4.11",
 		"synthetix": "2.21.1-alpha"
 	},
 	"devDependencies": {
