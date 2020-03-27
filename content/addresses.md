@@ -1,11 +1,11 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: 2.21.1-alpha
+**Version**: [v2.21.1-alpha](https://github.com/Synthetixio/synthetix/tree/v2.21.1-alpha)
 
 **Docs Built**: Mar 27, 2020
 
 !!! info "Naming Conventions"
-	Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol` - then the convention is to suffix the name of the differing feature to the end - be it the proxy target e.g. `FeePool` for `ProxyFeePool` or the synth's currencyKey eg: `sETH` for `SynthsETH`
+	Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol` - then the convention is to suffix the name of the differing feature to the end - be it the proxy target e.g. `FeePool` for `ProxyFeePool` or the synth currencyKey eg: `sETH` for `SynthsETH`
 
 !!! tip "Handy Contract Links"
 	All of the below contracts can be accessed by our [contract linker](https://github.com/Synthetixio/contract-linker) utility. Simply suffix the contract name to the end of https://contracts.synthetix.io to get a link that will always redirect to the latest version of the contract on Etherscan.
