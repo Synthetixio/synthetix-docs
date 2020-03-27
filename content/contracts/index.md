@@ -137,7 +137,7 @@ The inflationary supply complex is concerned with controlling the flow of new SN
 
 The on-chain manifestation of the oracle is the [`ExchangeRates`](ExchangeRates.md) contract, whose stored prices it frequently updates. The primary user of these prices is the [`Synthetix`](Synthetix.md) contract, which needs them to calculate debt allocations when issuing and burning synths, and to determine the correct quantity of synths when performing an exchange of one flavour for another.
 
-It is also used by some other contracts, such as the [`ArbRewarder`](ArbRewarder.md) and [`PurgeableSynth`](PurgeableSynth.md) contracts.
+It is also used by some other contracts, such as the [`Depot`](Depot.md) and [`PurgeableSynth`](PurgeableSynth.md) contracts.
 
 **Constituent Contracts**
 
@@ -161,16 +161,6 @@ It is also used by some other contracts, such as the [`ArbRewarder`](ArbRewarder
 The [`Depot`](Depot.md) is a vendor contract that allows users to exchange their ETH for sUSD or SNX, or their sUSD for SNX. It also allows users to deposit Synths to be sold in exchange for ETH.
 
 The depot has its own dedicated oracle, and all exchanges are performed at the current market prices, assuming sUSD is priced at one dollar.
-
----
-
-### Uniswap Arbitrage Contract
-
-!!! example "Responsibilities"
-
-    - TODO (also flesh out the description here)
-
-The [ArbRewarder](ArbRewarder.md) automates the process of arbitraging the ETH/sETH price on UniSwap through Synthetix conversion functions.
 
 ---
 

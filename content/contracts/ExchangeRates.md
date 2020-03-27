@@ -36,7 +36,6 @@ This does not turn off any functionality in the exchange rate contract, but is u
     - [`Aggregators`](#aggregators): These are a collection of decentralized pricing networks that collect and aggregate results from a network of oracles.
     - [`PurgeableSynth`](PurgeableSynth.md): exchange rates are used to determine if the total token value is below the purge threshold.
     - [`Synthetix`](Synthetix.md): the value of tokens is used to in order to facilitate exchange between them, and to ensure exchanges cannot occur while price updates and being made or if a particular exchange rate is stale.
-    - [`ArbRewarder`](ArbRewarder.md): The ArbRewarder must know the current SNX/ETH price so that arbitrage is accurate.
 
 ---
 

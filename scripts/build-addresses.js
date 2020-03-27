@@ -27,7 +27,7 @@ const generateAddresses = () => {
 	headerContent +=
 		'\n\n!!! tip "Handy Contract Links"\n\tAll of the below contracts can be accessed by our [contract linker](https://github.com/Synthetixio/contract-linker) utility. Simply suffix the contract name to the end of' +
 		' https://contracts.synthetix.io to get a link that will always redirect to the latest version of the contract on Etherscan.\n\n\tFor example, try https://contracts.synthetix.io/Synthetix to get linked to the latest Synthetix underlying.' +
-		'\n\n\tFor testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/ArbRewarder';
+		'\n\n\tFor testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/Synthetix';
 
 	const contractContent = ['mainnet', 'ropsten', 'rinkeby', 'kovan']
 		.map(network => {

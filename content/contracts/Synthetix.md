@@ -24,7 +24,7 @@
 
 ??? example "Details"
 
-    - [`Depot`](Depot.md): The depot trades SNX and therefore knows the Synthetix address. \* [`ArbRewarder`](ArbRewarder.md): The ArbRewarder knows the Synthetix address because it exchanges SNX.
+    - [`Depot`](Depot.md): The depot trades SNX and therefore knows the Synthetix address.
     - [`Exchanger`](Exchanger.md) The helper contract that performs the heavy lifting for `exchange()` and `settle()`.
     - [`ExchangeRates`](ExchangeRates.md): The Synthetix contract fetches prices from the exchange rates contract to facilitate synth exchange and to determine the value of various quantities of synths.
     - [`FeePool`](FeePool.md): The Synthetix contract remits exchange fees as sUSD to the fee pool, and also uses it to keep track of historical issuance records for each issuer.

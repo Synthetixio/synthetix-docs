@@ -47,49 +47,47 @@ nav:
       - Integration Guide: contracts/integration.md
       - Publisher: contracts/publisher.md
       - Testing: contracts/testing.md
-      - Tokens:
-          - ExternStateToken: contracts/ExternStateToken.md
-          - PurgeableSynth: contracts/PurgeableSynth.md
-          - Synth: contracts/Synth.md
-          - Synthetix: contracts/Synthetix.md
-          - SynthetixState: contracts/SynthetixState.md
-          - TokenState: contracts/TokenState.md
-      - Fee Pool:
+      - Libraries:
+          - Math: contracts/Math.md
+          - SafeDecimalMath: contracts/SafeDecimalMath.md
+          - SafeMath: contracts/SafeMath.md
+      - Contracts:
+          - AddressResolver: contracts/AddressResolver.md
           - DelegateApprovals: contracts/DelegateApprovals.md
+          - Depot: contracts/Depot.md
+          - EscrowChecker: contracts/EscrowChecker.md
+          - EternalStorage: contracts/EternalStorage.md
+          - EtherCollateral: contracts/EtherCollateral.md
+          - Exchanger: contracts/Exchanger.md
+          - ExchangeRates: contracts/ExchangeRates.md
+          - ExchangeState: contracts/ExchangeState.md
+          - ExternStateToken: contracts/ExternStateToken.md
           - FeePool: contracts/FeePool.md
           - FeePoolEternalStorage: contracts/FeePoolEternalStorage.md
           - FeePoolState: contracts/FeePoolState.md
-      - Inflationary Supply:
-          - EscrowChecker: contracts/EscrowChecker.md
-          - RewardEscrow: contracts/RewardEscrow.md
-          - RewardsDistribution: contracts/RewardsDistribution.md
-          - SupplySchedule: contracts/SupplySchedule.md
-          - SynthetixEscrow: contracts/SynthetixEscrow.md
-      - Helpers:
-          - Exchanger: contracts/Exchanger.md
-          - ExchangeState: contracts/ExchangeState.md
+          - IssuanceEternalStorage: contracts/IssuanceEternalStorage.md
           - Issuer: contracts/Issuer.md
-      - Infrastructure:
-          - AddressResolver: contracts/AddressResolver.md
-          - ArbRewarder: contracts/ArbRewarder.md
-          - Depot: contracts/Depot.md
-          - ExchangeRates: contracts/ExchangeRates.md
-      - Proxy:
+          - LimitedSetup: contracts/LimitedSetup.md
+          - Migrations: contracts/Migrations.md
+          - MixinResolver: contracts/MixinResolver.md
+          - MultiCollateralSynth: contracts/MultiCollateralSynth.md
+          - Owned: contracts/Owned.md
+          - Pausable: contracts/Pausable.md
           - Proxy: contracts/Proxy.md
           - Proxyable: contracts/Proxyable.md
           - ProxyERC20: contracts/ProxyERC20.md
-      - Utilities:
-          - EternalStorage: contracts/EternalStorage.md
-          - LimitedSetup: contracts/LimitedSetup.md
-          - Math: contracts/Math.md
-          - Migrations: contracts/Migrations.md
-          - MixinResolver: contracts/MixinResolver.md
-          - Owned: contracts/Owned.md
-          - Pausable: contracts/Pausable.md
-          - SafeDecimalMath: contracts/SafeDecimalMath.md
-          - SafeMath: contracts/SafeMath.md
+          - PurgeableSynth: contracts/PurgeableSynth.md
+          - RewardEscrow: contracts/RewardEscrow.md
+          - RewardsDistribution: contracts/RewardsDistribution.md
           - SelfDestructible: contracts/SelfDestructible.md
           - State: contracts/State.md
+          - SupplySchedule: contracts/SupplySchedule.md
+          - Synth: contracts/Synth.md
+          - Synthetix: contracts/Synthetix.md
+          - SynthetixEscrow: contracts/SynthetixEscrow.md
+          - SynthetixState: contracts/SynthetixState.md
+          - System: contracts/SystemStatus.md
+          - TokenState: contracts/TokenState.md
       - Audit History: contracts/audits.md
 
 # These social links will be rendered as icons in the footer, as long as the type corresponds to FontAwesome glyph.
