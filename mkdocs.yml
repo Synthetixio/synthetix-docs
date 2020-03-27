@@ -86,7 +86,7 @@ nav:
           - Synthetix: contracts/Synthetix.md
           - SynthetixEscrow: contracts/SynthetixEscrow.md
           - SynthetixState: contracts/SynthetixState.md
-          - System: contracts/SystemStatus.md
+          - SystemStatus: contracts/SystemStatus.md
           - TokenState: contracts/TokenState.md
       - Audit History: contracts/audits.md
 
