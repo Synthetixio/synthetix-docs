@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.21.4-alpha](https://github.com/Synthetixio/synthetix/tree/v2.21.4-alpha)
+**Version**: [v2.21.5-alpha](https://github.com/Synthetixio/synthetix/tree/v2.21.5-alpha)
 
 **Docs Built**: Mar 30, 2020
 
@@ -2501,7 +2501,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>DelegateApprovals</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/DelegateApprovals.json">DelegateApprovals.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8B9b2c79466A6543e6748275c6d58aD63c802013">0x8B9b2c79466A6543e6748275c6d58aD63c802013</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0E32712f3D49F5cf241D6dC085b0A7952F3f9DfB">0x0E32712f3D49F5cf241D6dC085b0A7952F3f9DfB</a>
                 </td>
               </tr>
               <tr>
@@ -2557,7 +2557,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>FeePool</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/FeePool.json">FeePool.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xfDC368787518de6183416fC8B68fe98840C77fdC">0xfDC368787518de6183416fC8B68fe98840C77fdC</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x19e736e02b5A2d268Eae7F9deD04bCEcCa17b153">0x19e736e02b5A2d268Eae7F9deD04bCEcCa17b153</a>
                 </td>
               </tr>
               <tr>
