@@ -85,21 +85,19 @@ List of the active [`Synths`](Synth.md). Used to compute the total value of issu
 
 ---
 
-### `exchangeEnabled`
-
-Allows the contract owner to disable synth exchanges, for example during system upgrades.
-
-**Type:** `bool public`
-
----
-
 ### `synths`
 
-A mapping from currency keys (three letter descriptors) to [`Synth`](Synth.md) token contract addresses.
+A mapping from currency keys (`bytes32`) to [`Synth`](Synth.md) token contract addresses.
 
 **Type:** `mapping(bytes32 => Synth) public`
 
 ---
+
+### `synthsByAddress`
+
+A reverse mapping from a synth's address to its `bytes32` currency key
+
+**Type:** `mapping(address => bytes32) public`
 
 ## Constructor
 
@@ -360,6 +358,22 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ---
 
+### `burnSynthsToTarget`
+
+[Burns](Synth.md#burn) enough sUSD to get the user's [collaterisation ratio](#collateralisationratio) back to the target [issuance ratio](SynthetixState.md#issuanceratio).
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynthsToTarget() external`
+
+    **Modifiers**
+
+    * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
+
+---
+
 ### `exchange`
 
 Exchanges one synth flavour for an equivalent value of another at current [exchange rates](ExchangeRates.md) and transfers the converted quantity to a destination address. An [exchange fee](FeePool.md#exchangefeerate) is charged on the way.
@@ -573,22 +587,6 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
 ---
 
-### `setExchangeEnabled`
-
-Allows the owner to [disable synth exchanges](#exchangeenabled).
-
-??? example "Details"
-
-    **Signature**
-
-    `setExchangeEnabled(bool _exchangeEnabled) external`
-
-    **Modifiers**
-
-    * [`Proxyable.optionalProxy_onlyOwner`](Proxyable.md#optionalproxy_onlyowner)
-
----
-
 ## Internal & Restricted Functions
 
 ---
@@ -613,42 +611,6 @@ This is only used by [`PurgeableSynth.purge`](#PurgeableSynth.md#purge) in order
     * The message sender must be a synth ([`_onlySynth`](#_onlysynth)).
     * The source and destination currencies must be distinct.
     * The exchanged quantity must be nonzero.
-
----
-
-### `_internalExchange`
-
-Implements synth exchanges for [`exchange`](#exchange) and [`synthInitiatedExchange`](#synthinitiatedexchange).
-
-Conversion is performed by burning the specified quantity of the source currency from the `from` address, and issuing an [equivalent value](#effectivevalue) of the destination currency into the destination address, minus a [fee](FeePool.md#amountreceivedfromexchange) if `chargeFee` is true. This fee is issued into the [fee address](FeePool.md#feeaddress) in sUSD, and the fee pool is [notified](FeePool.md#feepaid).
-
-This function can be [disabled](#setexchangeenabled) by the owner.
-
-??? example "Details"
-
-    **Signature**
-
-    `_internalExchange(address from, bytes32 sourceCurrencyKey, uint sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress, bool chargeFee) internal returns (bool)`
-
-    **Preconditions**
-
-    * [`exchangeEnabled`](#exchangeenabled) must be true.
-    * The destination address must not be the zero address.
-    * The destination address must not be the Synthetix contract itself.
-    * The destination address must not be the Synthetix proxy.
-    * The `from` address must have at least `sourceAmount` of the source currency.
-
----
-
-### `_internalLiquidation`
-
-This simply burns a quantity of the given synth from the specified account. This always returns true if the transaction was not reverted.
-
-??? example "Details"
-
-    **Signature**
-
-    `_internalLiquidation(address from, bytes32 sourceCurrencyKey, uint sourceAmount) internal returns (bool)`
 
 ---
 
