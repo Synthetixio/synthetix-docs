@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.21.7-beta](https://github.com/Synthetixio/synthetix/tree/v2.21.7-beta)
+**Version**: [v2.21.7-release-candidate](https://github.com/Synthetixio/synthetix/tree/v2.21.7-release-candidate)
 
 **Docs Built**: Apr 2, 2020
 
@@ -994,6 +994,20 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>ProxyiADA</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x3e575de0C160896cAE498e3a64aB3313A21073ef">0x3e575de0C160896cAE498e3a64aB3313A21073ef</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyiBCH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x621E48861A3f18ed531d95692CC919006a0ce353">0x621E48861A3f18ed531d95692CC919006a0ce353</a>
+                </td>
+              </tr>
+              <tr>
                 <td>ProxyiBNB</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
@@ -1015,10 +1029,31 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>ProxyiDASH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xA9EaBdef4e0CB5090FF6988AB734038517F0B962">0xA9EaBdef4e0CB5090FF6988AB734038517F0B962</a>
+                </td>
+              </tr>
+              <tr>
                 <td>ProxyiDEFI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x5F3fDF19d9358803275E4A8F32CEC96B79d868a9">0x5F3fDF19d9358803275E4A8F32CEC96B79d868a9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyiEOS</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xF83D3d413454d75972a061Ae5e8F725A8000F549">0xF83D3d413454d75972a061Ae5e8F725A8000F549</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyiETC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xF3C82a1881F5c83B95A4a1B3B96D15775eD94563">0xF3C82a1881F5c83B95A4a1B3B96D15775eD94563</a>
                 </td>
               </tr>
               <tr>
@@ -1057,6 +1092,13 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>ProxyiXMR</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xBc50CE04E64EB3cB5b22EcF3ceFa420E2fc245FC">0xBc50CE04E64EB3cB5b22EcF3ceFa420E2fc245FC</a>
+                </td>
+              </tr>
+              <tr>
                 <td>ProxyiXRP</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
@@ -1071,10 +1113,24 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>ProxysADA</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x44d2402Ed7BcA41Fc32970Fc443Be6eb397CAcAD">0x44d2402Ed7BcA41Fc32970Fc443Be6eb397CAcAD</a>
+                </td>
+              </tr>
+              <tr>
                 <td>ProxysAUD</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x4BdDFda0E086983CD1fB400a62063aDDEBF2111B">0x4BdDFda0E086983CD1fB400a62063aDDEBF2111B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysBCH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x412673a136A71BB17aE8c3A59f11141f6De61370">0x412673a136A71BB17aE8c3A59f11141f6De61370</a>
                 </td>
               </tr>
               <tr>
@@ -1106,10 +1162,31 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>ProxysDASH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xdDB882a06EbC7Dc4Abb93AD4bBbA83644A33dD88">0xdDB882a06EbC7Dc4Abb93AD4bBbA83644A33dD88</a>
+                </td>
+              </tr>
+              <tr>
                 <td>ProxysDEFI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xfc107409aA984e300D5f10530Eef41221FC65B15">0xfc107409aA984e300D5f10530Eef41221FC65B15</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysEOS</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x22C8694a6F68F29b4Df50E94f848ee435FCFba9f">0x22C8694a6F68F29b4Df50E94f848ee435FCFba9f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysETC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x847fA121D289DF87532178B8e600804733386096">0x847fA121D289DF87532178B8e600804733386096</a>
                 </td>
               </tr>
               <tr>
@@ -1124,6 +1201,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x2a27a3113368836b2BE598a4BB9a0d4D7A734305">0x2a27a3113368836b2BE598a4BB9a0d4D7A734305</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysFTSE</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x147E9Bbb3AB147C6e3237a2959Ac22aC436FCeC0">0x147E9Bbb3AB147C6e3237a2959Ac22aC436FCeC0</a>
                 </td>
               </tr>
               <tr>
@@ -1162,6 +1246,13 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>ProxysNIKKEI</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xa757Ff9F478df93127316E00D9eaeEe6cBb51f85">0xa757Ff9F478df93127316E00D9eaeEe6cBb51f85</a>
+                </td>
+              </tr>
+              <tr>
                 <td>ProxysTRX</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
@@ -1187,6 +1278,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x7aBc1EA6816424E474Ad6efCE5B9153C9B7952b0">0x7aBc1EA6816424E474Ad6efCE5B9153C9B7952b0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysXMR</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x70287F4abde5AE17A7EF9453761d693B7e4D5539">0x70287F4abde5AE17A7EF9453761d693B7e4D5539</a>
                 </td>
               </tr>
               <tr>
@@ -1253,6 +1351,20 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>SynthiADA</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xC657fe8e0345e55B9A3Edc651fFC05f16F633157">0xC657fe8e0345e55B9A3Edc651fFC05f16F633157</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthiBCH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x0D1C3e374c0c77a6405B4b3Dc1F5CCcAF9661b89">0x0D1C3e374c0c77a6405B4b3Dc1F5CCcAF9661b89</a>
+                </td>
+              </tr>
+              <tr>
                 <td>SynthiBNB</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
@@ -1274,10 +1386,31 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>SynthiDASH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x17b3550da6a0F5E8Dd6d1cae5F8B7b47E7CDf152">0x17b3550da6a0F5E8Dd6d1cae5F8B7b47E7CDf152</a>
+                </td>
+              </tr>
+              <tr>
                 <td>SynthiDEFI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xCeE58E84a9FD22e2e2e44D34b94E494Ff108be3f">0xCeE58E84a9FD22e2e2e44D34b94E494Ff108be3f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthiEOS</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x0b63748E6E4f0eb7d76dF6f4B7d15F751d72237C">0x0b63748E6E4f0eb7d76dF6f4B7d15F751d72237C</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthiETC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xaF4b5b068FB9528c69B3998Bd59Ca8275BAE9561">0xaF4b5b068FB9528c69B3998Bd59Ca8275BAE9561</a>
                 </td>
               </tr>
               <tr>
@@ -1316,6 +1449,13 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>SynthiXMR</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x1ed91Ebcf66E84908746278DB63eA376c62b1F11">0x1ed91Ebcf66E84908746278DB63eA376c62b1F11</a>
+                </td>
+              </tr>
+              <tr>
                 <td>SynthiXRP</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
@@ -1330,10 +1470,24 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>SynthsADA</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x2Ac193C213294BB00ebAd239B936891A7b5E8B86">0x2Ac193C213294BB00ebAd239B936891A7b5E8B86</a>
+                </td>
+              </tr>
+              <tr>
                 <td>SynthsAUD</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x297F800bb44CB2E2101aA2d2A6Ca6a18Dbd881C0">0x297F800bb44CB2E2101aA2d2A6Ca6a18Dbd881C0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsBCH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x483Ee887110920336f0a628E2659Aa9929cf2257">0x483Ee887110920336f0a628E2659Aa9929cf2257</a>
                 </td>
               </tr>
               <tr>
@@ -1365,10 +1519,31 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>SynthsDASH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x3Cc79dA9bF8f7e320Ae4927063b4275B83B815a2">0x3Cc79dA9bF8f7e320Ae4927063b4275B83B815a2</a>
+                </td>
+              </tr>
+              <tr>
                 <td>SynthsDEFI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/PurgeableSynth.json">PurgeableSynth.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x321cD2b3597c1a27ecE3c7BA1B0F0B492f86Ac39">0x321cD2b3597c1a27ecE3c7BA1B0F0B492f86Ac39</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsEOS</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x5033D14F95d372CC2eEeD522bFfDEF4Fa00C774a">0x5033D14F95d372CC2eEeD522bFfDEF4Fa00C774a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsETC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x460e56Cf6d4EdcC5Bb47043Ca7F54f50A5416106">0x460e56Cf6d4EdcC5Bb47043Ca7F54f50A5416106</a>
                 </td>
               </tr>
               <tr>
@@ -1383,6 +1558,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x6fa55B1108ed4D66385AbCdD1F94A4dBd4C3B83E">0x6fa55B1108ed4D66385AbCdD1F94A4dBd4C3B83E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsFTSE</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xD0C85fa41E5800cEefc00b1185A2076DC02817B2">0xD0C85fa41E5800cEefc00b1185A2076DC02817B2</a>
                 </td>
               </tr>
               <tr>
@@ -1421,6 +1603,13 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>SynthsNIKKEI</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xB8266b75262B5F6995fe3E0e894ab2e56EbB4428">0xB8266b75262B5F6995fe3E0e894ab2e56EbB4428</a>
+                </td>
+              </tr>
+              <tr>
                 <td>SynthsTRX</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
@@ -1446,6 +1635,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xeDd45d68204083939633224DF440Ce6792a5Cf7b">0xeDd45d68204083939633224DF440Ce6792a5Cf7b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsXMR</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Synth.json">Synth.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xf11CF84aa509De91DaCf44cF47c607d91CB6DCA4">0xf11CF84aa509De91DaCf44cF47c607d91CB6DCA4</a>
                 </td>
               </tr>
               <tr>
@@ -1477,6 +1673,20 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>TokenStateiADA</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x4a74730eC054b92E4793416535C4693ba237536A">0x4a74730eC054b92E4793416535C4693ba237536A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStateiBCH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x9EF4dEF0EFB369545b91C44D8dE75c1A71AC160b">0x9EF4dEF0EFB369545b91C44D8dE75c1A71AC160b</a>
+                </td>
+              </tr>
+              <tr>
                 <td>TokenStateiBNB</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
@@ -1498,10 +1708,31 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>TokenStateiDASH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xAD04f53800d1ecDA28f96AD083144A599114B0c9">0xAD04f53800d1ecDA28f96AD083144A599114B0c9</a>
+                </td>
+              </tr>
+              <tr>
                 <td>TokenStateiDEFI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xA53B24D534732fCFF3d0a1D195441A3e064D6330">0xA53B24D534732fCFF3d0a1D195441A3e064D6330</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStateiEOS</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x2FAC91b0a6f4171121e11910Bd6feab73a7C8EF6">0x2FAC91b0a6f4171121e11910Bd6feab73a7C8EF6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStateiETC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x24F9F51096e25A778d17ba7E843acaD9265Ec0A4">0x24F9F51096e25A778d17ba7E843acaD9265Ec0A4</a>
                 </td>
               </tr>
               <tr>
@@ -1540,6 +1771,13 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>TokenStateiXMR</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xb60D40f7a27b4576cfA9fEec5cDD1F02929c8b68">0xb60D40f7a27b4576cfA9fEec5cDD1F02929c8b68</a>
+                </td>
+              </tr>
+              <tr>
                 <td>TokenStateiXRP</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
@@ -1554,10 +1792,24 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>TokenStatesADA</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xf5d085F6F522dC19E66f224eE0d59aAFea6bc17D">0xf5d085F6F522dC19E66f224eE0d59aAFea6bc17D</a>
+                </td>
+              </tr>
+              <tr>
                 <td>TokenStatesAUD</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xF43B4931749139AB1e7a85d50df5762481d80bEC">0xF43B4931749139AB1e7a85d50df5762481d80bEC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesBCH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x92636FE52f6dBE6Fd5986b096ed41CA7A0AAcB70">0x92636FE52f6dBE6Fd5986b096ed41CA7A0AAcB70</a>
                 </td>
               </tr>
               <tr>
@@ -1589,10 +1841,31 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>TokenStatesDASH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x0A1E5cD9405f10F29Fcc739A338bCb18245001ac">0x0A1E5cD9405f10F29Fcc739A338bCb18245001ac</a>
+                </td>
+              </tr>
+              <tr>
                 <td>TokenStatesDEFI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x3347575f35De7bD8900012AE68Fb3f9189C4D6b0">0x3347575f35De7bD8900012AE68Fb3f9189C4D6b0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesEOS</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x5b610472587de95506118186B2F4d70b664760B1">0x5b610472587de95506118186B2F4d70b664760B1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesETC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x57004C35b6d775921D69C4372d62fc2269DB1088">0x57004C35b6d775921D69C4372d62fc2269DB1088</a>
                 </td>
               </tr>
               <tr>
@@ -1607,6 +1880,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xc4E4c442653fDC78A71401684fd6cF9d67B3B643">0xc4E4c442653fDC78A71401684fd6cF9d67B3B643</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesFTSE</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xC3ACe9e3c54c80fC634ab3BC26988eb4fE2Ca183">0xC3ACe9e3c54c80fC634ab3BC26988eb4fE2Ca183</a>
                 </td>
               </tr>
               <tr>
@@ -1645,6 +1925,13 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>TokenStatesNIKKEI</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xE06bF53daF878972031E92ecEF8F6DAAD9a1c627">0xE06bF53daF878972031E92ecEF8F6DAAD9a1c627</a>
+                </td>
+              </tr>
+              <tr>
                 <td>TokenStatesTRX</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
@@ -1670,6 +1957,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xBF73978808516Bbcb96D3b479617CaF89484Bc59">0xBF73978808516Bbcb96D3b479617CaF89484Bc59</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesXMR</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/TokenState.json">TokenState.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x852A0b903F87DcA73b8350F838dED96738CE5bcf">0x852A0b903F87DcA73b8350F838dED96738CE5bcf</a>
                 </td>
               </tr>
               <tr>
