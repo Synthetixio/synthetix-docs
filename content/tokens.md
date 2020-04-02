@@ -44,6 +44,32 @@
 
 >Tracks the price of Bitcoin (BTC) through price feeds supplied by an oracle.
 
+## Bitcoin Cash (sBCH)
+
+**Address:** [0x36a2422a863D5B950882190Ff5433E513413343a](https://etherscan.io/address/0x36a2422a863D5B950882190Ff5433E513413343a)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+>Tracks the price of Bitcoin Cash (BCH) through price feeds supplied by an oracle.
+
+## Cardano (sADA)
+
+**Address:** [0xe36E2D3c7c34281FA3bC737950a68571736880A1](https://etherscan.io/address/0xe36E2D3c7c34281FA3bC737950a68571736880A1)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+>Tracks the price of Cardano (ADA) through price feeds supplied by an oracle.
+
 ## Centralised Exchange Index (sCEX)
 
 **Address:** [0xeABACD844A196D7Faf3CE596edeBF9900341B420](https://etherscan.io/address/0xeABACD844A196D7Faf3CE596edeBF9900341B420)
@@ -80,6 +106,19 @@
 
 >Tracks the price of Chainlink (LINK) through price feeds supplied by an oracle.
 
+## Dash (sDASH)
+
+**Address:** [0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6](https://etherscan.io/address/0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+>Tracks the price of Dash (DASH) through price feeds supplied by an oracle.
+
 ## DeFi Index (sDEFI)
 
 **Address:** [0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B](https://etherscan.io/address/0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B)
@@ -107,6 +146,19 @@
 
 >Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 92.583 of LINK (Chainlink), 0.432 of MKR (Maker), 502.718 of ZRX (0x), 107.686 of SNX (Synthetix), 1222.393 of REN (Ren Protocol), 2164.709 of LRC (Loopring), 357.085 of KNC (Kyber Network), 119.197 of BNT (Bancor), 6.495 of MLN (Melon Protocol).
 
+## EOS (sEOS)
+
+**Address:** [0x88C8Cf3A212c0369698D13FE98Fcb76620389841](https://etherscan.io/address/0x88C8Cf3A212c0369698D13FE98Fcb76620389841)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+>Tracks the price of EOS (EOS) through price feeds supplied by an oracle.
+
 ## Ether (sETH)
 
 **Address:** [0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb](https://etherscan.io/address/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb)
@@ -120,6 +172,19 @@
 
 >Tracks the price of Ether (ETH) through price feeds supplied by an oracle.
 
+## Ethereum Classic (sETC)
+
+**Address:** [0x22602469d704BfFb0936c7A7cfcD18f7aA269375](https://etherscan.io/address/0x22602469d704BfFb0936c7A7cfcD18f7aA269375)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+>Tracks the price of Ethereum Classic (ETC) through price feeds supplied by an oracle.
+
 ## Euros (sEUR)
 
 **Address:** [0xD71eCFF9342A5Ced620049e616c5035F1dB98620](https://etherscan.io/address/0xD71eCFF9342A5Ced620049e616c5035F1dB98620)
@@ -132,6 +197,19 @@
 - Contract: [Aggregator](https://etherscan.io/address/0x25Fa978ea1a7dc9bDc33a2959B9053EaE57169B5)
 
 >Tracks the price of Euros (EUR) through price feeds supplied by an oracle.
+
+## FTSE 100 Index (sFTSE)
+
+**Address:** [0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC](https://etherscan.io/address/0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC)
+
+**Decimals:** 18
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://landing-feeds.surge.sh/ftse100-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x16924ae9C2ac6cdbC9D6bB16FAfCD38BeD560936)
+
+>Tracks the price of FTSE 100 Index (FTSE100) through price feeds supplied by an oracle.
 
 ## Gold Ounce (sXAU)
 
@@ -184,6 +262,44 @@
 
 >Inversely tracks the price of Inverse Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is $5275 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $7912.5 (i.e. when Inverse Bitcoin's value reaches $2637.5) or its lower limit of $2637.5 (i.e. when Inverse Bitcoin’s value reaches $7912.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
 
+## Inverse Bitcoin Cash (iBCH)
+
+**Address:** [0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89](https://etherscan.io/address/0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+**Inverse of**: [sBCH](#bitcoin-cash-sbch)
+
+| Entry Point | Upper Limit | Lower Limit |
+| - | - | - |
+| $218.33000 | $327.49500 | $109.16500|
+
+>Inversely tracks the price of Inverse Bitcoin Cash (BCH) through price feeds supplied by an oracle. The entry point is $218.33 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $327.495 (i.e. when Inverse Bitcoin Cash's value reaches $109.165) or its lower limit of $109.165 (i.e. when Inverse Bitcoin Cash’s value reaches $327.495). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBCH with different limits.
+
+## Inverse Cardano (iADA)
+
+**Address:** [0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83](https://etherscan.io/address/0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+**Inverse of**: [sADA](#cardano-sada)
+
+| Entry Point | Upper Limit | Lower Limit |
+| - | - | - |
+| $0.03100 | $0.04600 | $0.01500|
+
+>Inversely tracks the price of Inverse Cardano (ADA) through price feeds supplied by an oracle. The entry point is $0.031 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $0.046 (i.e. when Inverse Cardano's value reaches $0.016) or its lower limit of $0.015 (i.e. when Inverse Cardano’s value reaches $0.047). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iADA with different limits.
+
 ## Inverse Centralised Exchange Index (iCEX)
 
 **Address:** [0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d](https://etherscan.io/address/0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d)
@@ -224,6 +340,25 @@
 
 >Inversely tracks the price of Inverse Chainlink (LINK) through price feeds supplied by an oracle. The entry point is $2.02 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $3.03 (i.e. when Inverse Chainlink's value reaches $1.01) or its lower limit of $1.01 (i.e. when Inverse Chainlink’s value reaches $3.03). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
 
+## Inverse Dash (iDASH)
+
+**Address:** [0xCB98f42221b2C251A4E74A1609722eE09f0cc08E](https://etherscan.io/address/0xCB98f42221b2C251A4E74A1609722eE09f0cc08E)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+**Inverse of**: [sDASH](#dash-sdash)
+
+| Entry Point | Upper Limit | Lower Limit |
+| - | - | - |
+| $64.44000 | $96.66000 | $32.22000|
+
+>Inversely tracks the price of Inverse Dash (DASH) through price feeds supplied by an oracle. The entry point is $64.44 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $96.66 (i.e. when Inverse Dash's value reaches $32.22) or its lower limit of $32.22 (i.e. when Inverse Dash’s value reaches $96.66). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDASH with different limits.
+
 ## Inverse DeFi Index (iDEFI)
 
 **Address:** [0x14d10003807AC60d07BB0ba82cAeaC8d2087c157](https://etherscan.io/address/0x14d10003807AC60d07BB0ba82cAeaC8d2087c157)
@@ -245,6 +380,25 @@
 
 >Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is $1000 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $1500 (i.e. when Inverse DeFi Index's value reaches $500) or its lower limit of $500 (i.e. when Inverse DeFi Index’s value reaches $1500). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
 
+## Inverse EOS (iEOS)
+
+**Address:** [0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4](https://etherscan.io/address/0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+**Inverse of**: [sEOS](#eos-seos)
+
+| Entry Point | Upper Limit | Lower Limit |
+| - | - | - |
+| $2.22000 | $3.33000 | $1.11000|
+
+>Inversely tracks the price of Inverse EOS (EOS) through price feeds supplied by an oracle. The entry point is $2.22 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $3.33 (i.e. when Inverse EOS's value reaches $1.11) or its lower limit of $1.11 (i.e. when Inverse EOS’s value reaches $3.33). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iEOS with different limits.
+
 ## Inverse Ether (iETH)
 
 **Address:** [0xA9859874e1743A32409f75bB11549892138BBA1E](https://etherscan.io/address/0xA9859874e1743A32409f75bB11549892138BBA1E)
@@ -263,6 +417,25 @@
 | $122.43000 | $183.64500 | $61.21500|
 
 >Inversely tracks the price of Inverse Ether (ETH) through price feeds supplied by an oracle. The entry point is $122.43 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $183.645 (i.e. when Inverse Ether's value reaches $61.215) or its lower limit of $61.215 (i.e. when Inverse Ether’s value reaches $183.645). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETH with different limits.
+
+## Inverse Ethereum Classic (iETC)
+
+**Address:** [0xd50c1746D835d2770dDA3703B69187bFfeB14126](https://etherscan.io/address/0xd50c1746D835d2770dDA3703B69187bFfeB14126)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+**Inverse of**: [sETC](#ethereum-classic-setc)
+
+| Entry Point | Upper Limit | Lower Limit |
+| - | - | - |
+| $4.88000 | $7.32000 | $2.44000|
+
+>Inversely tracks the price of Inverse Ethereum Classic (ETC) through price feeds supplied by an oracle. The entry point is $4.88 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $7.32 (i.e. when Inverse Ethereum Classic's value reaches $2.44) or its lower limit of $2.44 (i.e. when Inverse Ethereum Classic’s value reaches $7.32). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETC with different limits.
 
 ## Inverse Litecoin (iLTC)
 
@@ -304,6 +477,25 @@
 | $550 | $825 | $275|
 
 >Inversely tracks the price of Inverse Maker (MKR) through price feeds supplied by an oracle. The entry point is $550 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $825 (i.e. when Inverse Maker's value reaches $275) or its lower limit of $275 (i.e. when Inverse Maker’s value reaches $825). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iMKR with different limits.
+
+## Inverse Monero (iXMR)
+
+**Address:** [0x4AdF728E2Df4945082cDD6053869f51278fae196](https://etherscan.io/address/0x4AdF728E2Df4945082cDD6053869f51278fae196)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+**Inverse of**: [sXMR](#monero-sxmr)
+
+| Entry Point | Upper Limit | Lower Limit |
+| - | - | - |
+| $47.24000 | $70.86000 | $23.62000|
+
+>Inversely tracks the price of Inverse Monero (XMR) through price feeds supplied by an oracle. The entry point is $47.24 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $70.86 (i.e. when Inverse Monero's value reaches $23.62) or its lower limit of $23.62 (i.e. when Inverse Monero’s value reaches $70.86). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXMR with different limits.
 
 ## Inverse Ripple (iXRP)
 
@@ -403,6 +595,32 @@
 - Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
 
 >Tracks the price of Maker (MKR) through price feeds supplied by an oracle.
+
+## Monero (sXMR)
+
+**Address:** [0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A](https://etherscan.io/address/0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A)
+
+**Decimals:** 18
+
+**Price Feed**: Synthetix (centralized)
+
+- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
+- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+
+>Tracks the price of Monero (XMR) through price feeds supplied by an oracle.
+
+## Nikkei 225 Index (sNIKKEI)
+
+**Address:** [0x757de3ac6B830a931eF178C6634c5C551773155c](https://etherscan.io/address/0x757de3ac6B830a931eF178C6634c5C551773155c)
+
+**Decimals:** 18
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://landing-feeds.surge.sh/nikkei225-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x3f6E09A4EC3811765F5b2ad15c0279910dbb2c04)
+
+>Tracks the price of Nikkei 225 Index (NIKKEI225) through price feeds supplied by an oracle.
 
 ## Pound Sterling (sGBP)
 
