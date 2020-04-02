@@ -88,7 +88,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 # DappMaintenance contract (v2.15.0)
 
-**Published**: Dec 8, 2019
+**Published**: Dec 9, 2019
 
 **Codebase**: [v2.15.0](https://github.com/Synthetixio/synthetix/tree/v2.15.0)
 
@@ -98,7 +98,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 # Vega (v2.14.0)
 
-**Published**: Nov 26, 2019
+**Published**: Nov 27, 2019
 
 **Codebase**: [v2.14.0](https://github.com/Synthetixio/synthetix/tree/v2.14.0)
 
@@ -110,7 +110,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 # Arcturus (v2.13.1)
 
-**Published**: Nov 20, 2019
+**Published**: Nov 21, 2019
 
 **Codebase**: [v2.13.1](https://github.com/Synthetixio/synthetix/tree/v2.13.1)
 
@@ -120,7 +120,7 @@ Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. 
 
 # Rigil (v2.12.2)
 
-**Published**: Nov 7, 2019
+**Published**: Nov 8, 2019
 
 **Codebase**: [v2.12.2](https://github.com/Synthetixio/synthetix/tree/v2.12.2)
 
@@ -137,7 +137,7 @@ There is already a leveraged benefit on the inverse Synths and currently being a
 
 # Canopus (v2.11.2)
 
-**Published**: Oct 3, 2019
+**Published**: Oct 4, 2019
 
 **Codebase**: [v2.11.2](https://github.com/Synthetixio/synthetix/tree/v2.11.2)
 
@@ -189,7 +189,7 @@ There is already a leveraged benefit on the inverse Synths and currently being a
 
 # Synthetix crypto-backed synthetic asset platform (v2.0.0)
 
-**Published**: Dec 17, 2018
+**Published**: Dec 18, 2018
 
 **Codebase**: [v2.0.0](https://github.com/Synthetixio/synthetix/tree/v2.0.0)
 
