@@ -456,28 +456,6 @@
 
 >Inversely tracks the price of Inverse Litecoin (LTC) through price feeds supplied by an oracle. The entry point is $35.66 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $53.49 (i.e. when Inverse Litecoin's value reaches $17.83) or its lower limit of $17.83 (i.e. when Inverse Litecoin’s value reaches $53.49). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLTC with different limits.
 
-## Inverse Maker (iMKR)
-
-!!! warning "Suspended"
-		MKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)
-
-**Address:** [0x0794D09be5395f69534ff8151D72613077148b29](https://etherscan.io/address/0x0794D09be5395f69534ff8151D72613077148b29)
-
-**Decimals:** 18
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-**Inverse of**: [sMKR](#maker-smkr)
-
-| Entry Point | Upper Limit | Lower Limit |
-| - | - | - |
-| $550 | $825 | $275|
-
->Inversely tracks the price of Inverse Maker (MKR) through price feeds supplied by an oracle. The entry point is $550 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of $825 (i.e. when Inverse Maker's value reaches $275) or its lower limit of $275 (i.e. when Inverse Maker’s value reaches $825). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iMKR with different limits.
-
 ## Inverse Monero (iXMR)
 
 **Address:** [0x4AdF728E2Df4945082cDD6053869f51278fae196](https://etherscan.io/address/0x4AdF728E2Df4945082cDD6053869f51278fae196)
@@ -579,22 +557,6 @@
 - Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
 
 >Tracks the price of Litecoin (LTC) through price feeds supplied by an oracle.
-
-## Maker (sMKR)
-
-!!! warning "Suspended"
-		MKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)
-
-**Address:** [0x4140919DE11fCe58E654cC6038017Af97f810De1](https://etherscan.io/address/0x4140919DE11fCe58E654cC6038017Af97f810De1)
-
-**Decimals:** 18
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xac1ed4fabbd5204e02950d68b6fc8c446ac95362](https://etherscan.io/address/0xac1ed4fabbd5204e02950d68b6fc8c446ac95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
->Tracks the price of Maker (MKR) through price feeds supplied by an oracle.
 
 ## Monero (sXMR)
 
