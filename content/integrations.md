@@ -8,16 +8,23 @@ Here is a list of Synthetix Integrations on and offchain. For projects wishing t
 - **Curve:**
 Curve description here
 
-<table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Source</th><th>Audit</th><th>Disclousures</th><th>Security Contact</th></tr>
+<table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Source</th><th>Audits</th><th>Disclousures</th><th>Security Contact</th></tr>
               <tr>
                 <td>Curve</td>
                 <td><a target="_blank" href="https://www.curve.fi/">curve.fi</a></td>
-                <td><a target="_blank" href="https://iearn.finance/pool">DApp</a></td>
-                <td><a target="_blank" href="https://blog.synthetix.io/susd-liquidity-trial-with-curve-iearn/">susd Liquidity Trial with Curve</a></td>
-                <td><a target="_blank" href="https://github.com/curvefi/curve-contract/blob/pool_susd/vyper/stableswap.vy">stableswap.vy</a></td>
-                <td><a target="_blank" href="https://www.curve.fi/Audit Report Link">Audit Report</a>
+                <td><a target="_blank" href="https://beta.curve.fi/">beta.curve.fi</a></td>
+                <td><a target="_blank" href="https://blog.synthetix.io/susd-liquidity-trial-with-curve-iearn/">sUSD Liquidity with Curve</a></td>
+                <td>                                             
+                    <a target="_blank" href="https://github.com/curvefi/curve-contract/blob/pool_susd_plain/vyper/stableswap.vy">Curve sUSD Pool Contract</a>
+                    <a target="_blank" href="https://github.com/Synthetixio/Unipool/compare/53df522...Synthetixio:curvepool">Curve LP SNX Rewards Contract</a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://www.curve.fi/audits/01-ToB.pdf">Curve Audit Report</a>
+                    <a target="_blank" href="https://github.com/sigp/public-audits/blob/master/synthetix/unipool/review.pdf">SNX Curve Rewards Audit Report</a>
                 <td><a target="_blank" href="https://blog.curve.fi/vulnerability-disclosure/">Disclosures</a>
-                <td><a target="_blank" href="mailto:security@curve.fi">security@curve.fi</a>
+                <td>
+                    <a target="_blank" href="mailto:security@curve.fi">security@curve.fi</a>
+                    <a target="_blank" href="mailto:security@synthetix.io">security@synthetix.io</a>
                 </td>
               </tr>
              </tr></table>
