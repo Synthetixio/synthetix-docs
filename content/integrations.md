@@ -11,8 +11,8 @@ Curve description here
 <table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Source</th><th>Audit</th><th>Disclousures</th><th>Security Contact</th></tr>
               <tr>
                 <td>Curve</td>
-                <td><a target="_blank" href="https://www.curve.fi/"></a>curve.fi</td>
-                <td><a target="_blank" href="https://iearn.finance/pool">DApp</a>
+                <td><a target="_blank" href="https://www.curve.fi/">curve.fi</a></td>
+                <td><a target="_blank" href="https://iearn.finance/pool">DApp</a></td>
                 <td><a target="_blank" href="https://blog.synthetix.io/susd-liquidity-trial-with-curve-iearn/">susd Liquidity Trial with Curve</a></td>
                 <td><a target="_blank" href="https://github.com/curvefi/curve-contract/blob/pool_susd/vyper/stableswap.vy">stableswap.vy</a></td>
                 <td><a target="_blank" href="https://www.curve.fi/Audit Report Link">Audit Report</a>
