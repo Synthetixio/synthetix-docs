@@ -33,6 +33,8 @@ nav:
       - '': releases.md
   - Tokens:
       - '': tokens.md
+  - Integrations:
+      - '': integrations.md
   - Historical Data:
       - '': historical-data.md
   - Libraries:
