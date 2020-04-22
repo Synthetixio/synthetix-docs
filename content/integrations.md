@@ -7,7 +7,7 @@ Here is a list of Synthetix Integrations both on and offchain. For projects wish
 - **KyberSwap:** Liquidity is further deepened by the integration of SNX and sUSD with [KyberSwap](https://kyberswap.com/swap/eth-snx), which is built on the [Kyber Network Protocol](https://kyber.network/). An example use case is described [here](https://blog.synthetix.io/snx-liquidity-has-been-added-to-kyberswap/).
 - **Curve:**
 Curve is an exchange liquidity pool on Ethereum (like [Uniswap](https://uniswap.exchange/swap)) designed for (1) extremely efficient stablecoin trading (2) low risk, supplemental fee income for liquidity providers, without an opportunity cost.
-Curve allows users (and smart contracts like [1inch](https://1inch.exchange/), [Paraswap](https://paraswap.io/), Totle and [Dex.ag](http://dex.ag)) to trade between DAI and USDC with a bespoke low slippage, low fee algorithm designed specifically for stablecoins and earn fees. Behind the scenes, the liquidity pool is also supplied to the Compound protocol or [iearn.finance](https://iearn.finance/) where it generates even more income for liquidity providers.
+Curve allows users (and smart contracts like [1inch](https://1inch.exchange/), [Paraswap](https://paraswap.io/), Totle and [Dex.ag](http://dex.ag)) to trade between DAI and USDC with a bespoke low slippage, low fee algorithm designed specifically for stablecoins and earn fees. 
 
 <table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Contract</th><th>Source</th><th>Audits</th><th>Disclosures</th><th>Security Contact</th></tr>
               <tr>
