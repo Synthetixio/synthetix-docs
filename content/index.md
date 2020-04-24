@@ -35,7 +35,7 @@ Welcome to the Synthetix system documentation. These pages contain a description
 
 ## Integrations
 
-See the [Integrations](/integrations.md) section
+See the [Integrations](/integrations) section
 
 ## Get In Touch
 
