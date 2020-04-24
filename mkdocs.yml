@@ -33,8 +33,9 @@ nav:
       - '': releases.md
   - Tokens:
       - '': tokens.md
-  - Integrations:
-      - '': integrations.md
+  - Integration:
+      - Integrations: integrations.md
+      - Integration Guide: integration-guide.md
   - Historical Data:
       - '': historical-data.md
   - Libraries:
@@ -45,8 +46,7 @@ nav:
       - synthetix-js: libraries/synthetix-js.md
       - synthetix-data: libraries/synthetix-data.md
   - Smart Contracts:
-      - Architecture: contracts/index.md
-      - Integration Guide: contracts/integration.md
+      - Architecture: contracts/index.md      
       - Publisher: contracts/publisher.md
       - Testing: contracts/testing.md
       - Libraries:
