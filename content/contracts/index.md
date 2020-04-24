@@ -32,12 +32,12 @@ Each of the elements in this graph may be a complex composed of several contract
 
 !!! example "Responsibilities"
 
-    _ Implements the SNX token.
-    _ Tracks operational synths.
-    _ Issues and burns synths.
-    _ Exchanges between synth flavours.
-    _ Mints the inflationary supply.
-    _ Maintains the system debt ledger.
+    - Implements the SNX token.
+    - Tracks operational synths.
+    - Issues and burns synths.
+    - Exchanges between synth flavours.
+    - Mints the inflationary supply.
+    - Maintains the system debt ledger.
 
 Synthetix contract communicates with [synths](#synths) to manage their supply, as well as the [fee pool](#fee-pool) to remit fees when synth exchanges occur. In order to properly convert between synths, and to understand value of debt induced by minting tokens, the Synthetix contract retrieves current token prices from the [oracle](#oracle). This contract also communicates with the [inflationary supply](#inflationary-supply) complex to mint the correct quantity when expanding the supply of SNX, and to distribute the new tokens appropriately.
 
@@ -56,8 +56,8 @@ Along with the debt ledger, which is a time series history of the overall value 
 
 !!! example "Responsibilities"
 
-    _ Implements all synth tokens.
-    _ Liquidates frozen inverse synths.
+    - Implements all synth tokens.
+    - Liquidates frozen inverse synths.
 
 Many instances of the Synth token contract are deployed, one for each flavour of synth, including inverse synths. Since they run the same logic, synths are largely interchangeable, being distinguished only by their names and prices.
 
@@ -78,12 +78,12 @@ Purgeable Synths also retrieve prices from the [oracle](#oracle) at the time of 
 
 !!! example "Responsibilities"
 
-    _ Computes fee entitlements based on the current exchange fee rate and incentive structure, to incentivise users to keep the system operating correctly.
-    _ Defines the boundaries of recent fee periods, tracking the fees and rewards to be distributed in each one.
-    _ Allows anyone to roll over to the next fee period once the current one has closed.
-    _ Accumulates synth exchange fees, holding them as a pool of sUSD.
-    _ Directs the [`RewardEscrow`](RewardEscrow.md) to escrow inflationary SNX rewards for eligible issuers.
-    _ Stores and manages the details of the last several mint/burn events for each account, in order to compute the quantity of fees and rewards they are owed for the past several fee periods. \* Allows issuers (or their delegated hot wallets) to claim any fees and rewards owed to them.
+    - Computes fee entitlements based on the current exchange fee rate and incentive structure, to incentivise users to keep the system operating correctly.
+    - Defines the boundaries of recent fee periods, tracking the fees and rewards to be distributed in each one.
+    - Allows anyone to roll over to the next fee period once the current one has closed.
+    - Accumulates synth exchange fees, holding them as a pool of sUSD.
+    - Directs the [`RewardEscrow`](RewardEscrow.md) to escrow inflationary SNX rewards for eligible issuers.
+    - Stores and manages the details of the last several mint/burn events for each account, in order to compute the quantity of fees and rewards they are owed for the past several fee periods. \* Allows issuers (or their delegated hot wallets) to claim any fees and rewards owed to them.
 
 Since the collection of exchange fees on synths is mediated through the [`Synthetix.exchange`](Synthetix.md#exchange) function, the fee pool interacts closely with both the [`Synthetix`](Synthetix.md) and [`Synth`](Synth.md) contracts.
 
@@ -106,10 +106,10 @@ As the fee pool is responsible for computing the quantity of both exchange fees 
 
 !!! example "Responsibilities"
 
-    _ Defines the schedule according to which SNX tokens are generated from the inflationary supply.
-    _ Tracks for each year how many inflationary tokens have been minted so far, and how many remain.
-    _ Distributes inflationary rewards to different recipients in the proportions specified by the protocol; that is for staking versus providing Uniswap liquidity.
-    _ Holds the minted inflationary rewards in escrow for a year after they are claimed. \* Holds and distributes the escrowed tokens from the original token sale.
+    - Defines the schedule according to which SNX tokens are generated from the inflationary supply.
+    - Tracks for each year how many inflationary tokens have been minted so far, and how many remain.
+    - Distributes inflationary rewards to different recipients in the proportions specified by the protocol; that is for staking versus providing Uniswap liquidity.
+    - Holds the minted inflationary rewards in escrow for a year after they are claimed. \* Holds and distributes the escrowed tokens from the original token sale.
 
 The inflationary supply complex is concerned with controlling the flow of new SNX tokens being injected into the market. In this capacity it communicates with the [`Synthetix`](Synthetix.md) contract. The actual fraction of the weekly SNX rewards that a particular account is entitled to claim is computed by the [fee pool](#fee-pool), which is able to direct the [`RewardEscrow`](RewardEscrow.md) and [`RewardsDistribution`](RewardsDistribution.md) contracts as to how they should distribute the new tokens.
 
@@ -129,11 +129,10 @@ The inflationary supply complex is concerned with controlling the flow of new SN
 
 !!! example "Responsibilities"
 
-    _ Updates, stores, and distributes up-to-date token prices relevant to the system.
-    _ Computes the prices of inverse synths.
-    _ Disables exchange functionality if prices are not fresh.
-    _ Detects and mitigates attempted front-running, for example by locking exchanges while prices are being updated, or activating the exchange [protection circuit](Synthetix.md#protectioncircuit).
-    _ Provides functionality to perform exchange rate conversions between synth flavours.
+    - Updates, stores, and distributes up-to-date token prices relevant to the system.
+    - Computes the prices of inverse synths.
+    - Disables exchange functionality if prices are not fresh.
+    - Provides functionality to perform exchange rate conversions between synth flavours.
 
 The on-chain manifestation of the oracle is the [`ExchangeRates`](ExchangeRates.md) contract, whose stored prices it frequently updates. The primary user of these prices is the [`Synthetix`](Synthetix.md) contract, which needs them to calculate debt allocations when issuing and burning synths, and to determine the correct quantity of synths when performing an exchange of one flavour for another.
 
@@ -172,7 +171,7 @@ The depot has its own dedicated oracle, and all exchanges are performed at the c
 
 !!! example "Responsibilities"
 
-    _ Tracks the latest instances of all contracts required in the Synthetix system, allowing them to be queried by a `bytes32` name
+    - Tracks the latest instances of all contracts required in the Synthetix system, allowing them to be queried by a `bytes32` name
 
 Each contract which inherits (or mixes in when considering multiple inheritance) [`MixinResolver`](MixinResolver.md) will have access to the `AddressResolver` contract, and can lookup at transaction time where it's sibling contracts are located.
 
@@ -180,8 +179,8 @@ Each contract which inherits (or mixes in when considering multiple inheritance)
 
 !!! example "Responsibilities"
 
-    _ Provides static addresses for contracts where the underlying logic can be upgraded.
-    _ Provides the interface that allows contracts to operate beneath a proxy.
+    - Provides static addresses for contracts where the underlying logic can be upgraded.
+    - Provides the interface that allows contracts to operate beneath a proxy.
 
 Each contract which uses a [proxy](Proxy.md) must inherit from [`Proxyable`](Proxyable.md). Function calls are forwarded from the proxy to the proxyable base, while return data and event information travels the other way. Ultimately most contracts should communicate with one another by proxy. See [SIP-16](https://sips.synthetix.io/sips/sip-16) for more discussion.
 
