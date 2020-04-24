@@ -26,7 +26,10 @@ nav:
       - Incentives: incentives.md
       - Governance: governance.md
   - Litepaper:
-      - '': litepaper.md
+      - Home: litepaper/index.md
+      - Korean: litepaper/korean.md
+      - Russian: litepaper/russian.md
+      - Chinese: litepaper/chinese.md
   - Addresses:
       - '': addresses.md
   - Releases:
