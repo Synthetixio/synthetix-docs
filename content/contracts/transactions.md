@@ -43,7 +43,6 @@ On a successful transaction, the following events occur:
 
 - [`ProxySynthetix.issueSynths(1e18)`](https://etherscan.io/tx/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30))
 - [`ProxySynthetix.issueMaxSynths()`](https://etherscan.io/tx/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571))
--
 
 
 ## Burning sUSD
