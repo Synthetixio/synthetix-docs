@@ -1,7 +1,18 @@
 # Transactions
 
-This is a list of the most common user-facing transactions possible in the Synthetix ecosystem, and the events they emit on success.
+!!! Tip "Decode transactions with eth-reveal"
 
+    Our team have written a utility to better decode any transaction in Ethereum, which handles proxies where possible - it works on mainnet and all major testnets and fetches:
+    - the decoded input method and params (the transaction `data`)
+    - any revert reasons or out of gas (OOG) errors
+    - the output and decoded logs (via the transaction receipt)
+
+    It's available in nodejs and as a CLI tool via `npm`: https://github.com/justinjmoses/eth-reveal
+
+    And you can use it live via https://codepen.io/justinjmoses/pen/vwexLj (append `?txn=0x123456...` to the URL using the transaction hash to auto-load)
+
+
+This is a list of the most common user-facing transactions possible in the Synthetix ecosystem, and the events they emit on success.
 
 ## Minting (aka Issuing) sUSD
 
@@ -30,8 +41,9 @@ On a successful transaction, the following events occur:
 
 **Examples**:
 
-- [`ProxySynthetix.issueSynths(1e18)`](https://etherscan.io/tx/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30)
-- [`ProxySynthetix.issueMaxSynths()`](https://etherscan.io/tx/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571)
+- [`ProxySynthetix.issueSynths(1e18)`](https://etherscan.io/tx/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30))
+- [`ProxySynthetix.issueMaxSynths()`](https://etherscan.io/tx/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571))
+-
 
 
 ## Burning sUSD
@@ -61,8 +73,8 @@ On a successful transaction, the following events occur:
 
 **Examples**:
 
-- [`ProxySynthetix.burnSynths(3e18)`](https://etherscan.io/tx/0xc781ddb16ca1e3fed5cf2acb1749e26a1b125057b6f9bfd23235c71381749843)
-- [`ProxySynthetix.burnSynthsToTargetOnBehalf(0x3bf10de)`](https://etherscan.io/tx/0x53eb0cc3509726b02ba53fe869583d964b6ccdc48099c6fbab62d46b4774a01f)
+- [`ProxySynthetix.burnSynths(3e18)`](https://etherscan.io/tx/0xc781ddb16ca1e3fed5cf2acb1749e26a1b125057b6f9bfd23235c71381749843) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0xc781ddb16ca1e3fed5cf2acb1749e26a1b125057b6f9bfd23235c71381749843))
+- [`ProxySynthetix.burnSynthsToTargetOnBehalf(0x3bf10de)`](https://etherscan.io/tx/0x53eb0cc3509726b02ba53fe869583d964b6ccdc48099c6fbab62d46b4774a01f) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x53eb0cc3509726b02ba53fe869583d964b6ccdc48099c6fbab62d46b4774a01f))
 
 
 ## Claiming Fees
@@ -93,8 +105,8 @@ On a successful transaction, the following events occur:
 
 **Examples**:
 
-- [`ProxyFeePool.claimFees()`](https://etherscan.io/tx/0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec)
-- [`ProxyFeePool.claimOnBehalf(0xa16de11)`](https://etherscan.io/tx/0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8)
+- [`ProxyFeePool.claimFees()`](https://etherscan.io/tx/0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec))
+- [`ProxyFeePool.claimOnBehalf(0xa16de11)`](https://etherscan.io/tx/0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8))
 
 
 ## Exchange of synths
@@ -145,6 +157,6 @@ For every exchange, the following events then occur:
 
 **Examples:**
 
-- [`ProxySynthetix.exchange(sETH, 100e18, iETH)`](https://etherscan.io/tx/0xe85969d5c65e68968f4a55721ffa30b4da564f74f73af6a0ed1470cbd3935877)
-- [`ProxySynthetix.exchange(iETH, 0.22e18, sUSD)`](https://etherscan.io/tx/0x2e0b807336fcd7aed23adfac923eb19a6fdfc73eae41335a229681c10e615c56) (with an `ExchangeReclaim`)
-- [`ProxySynthetix.exchange(sETH, 5e18, sUSD)`](https://etherscan.io/tx/0x0d7ac5ca424b3a7dcd0a641e1ed614158426d6229445a079dd0f21b8b0876919) (with an `ExchangeRebate`)
+- [`ProxySynthetix.exchange(sETH, 100e18, iETH)`](https://etherscan.io/tx/0xe85969d5c65e68968f4a55721ffa30b4da564f74f73af6a0ed1470cbd3935877)  ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0xe85969d5c65e68968f4a55721ffa30b4da564f74f73af6a0ed1470cbd3935877))
+- [`ProxySynthetix.exchange(iETH, 0.22e18, sUSD)`](https://etherscan.io/tx/0x2e0b807336fcd7aed23adfac923eb19a6fdfc73eae41335a229681c10e615c56) (with an `ExchangeReclaim`)  ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x2e0b807336fcd7aed23adfac923eb19a6fdfc73eae41335a229681c10e615c56))
+- [`ProxySynthetix.exchange(sETH, 5e18, sUSD)`](https://etherscan.io/tx/0x0d7ac5ca424b3a7dcd0a641e1ed614158426d6229445a079dd0f21b8b0876919) (with an `ExchangeRebate`)  ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x0d7ac5ca424b3a7dcd0a641e1ed614158426d6229445a079dd0f21b8b0876919))
