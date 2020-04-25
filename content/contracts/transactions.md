@@ -117,19 +117,21 @@ On a successful transaction, the following events occur:
 
 On a successful transaction, the following events occur:
 
-!!! tip "Fee Reclamation"
+!!! tip "Fee Reclamation (SIP-37)"
 
-    If fees are owing on the `src` synth:
+    If fees are owing on the `src` synth, these events come first:
 
     1. [`Transfer`](../ExternStateToken#transfer) from `account` to `0x0` for `feesOwing` emitted on `Proxy<synth>` for the `src` synth.
     2. [`Burned`](../Synth/#burned) `feesOwing` from `account` emitted on `Proxy<synth>` for the `src` synth.
-    3. [`ExchangeReclaim`](../Synthetix#exchangereclaim) from `account` for `feesOwing` on `src` synth.
+    3. [`ExchangeReclaim`](../Synthetix#exchangereclaim) from `account` for `feesOwing` on `src` synth emitted on `ProxySynthetix`.
 
-    Else if fees are owed on the `src` synth:
+    Else if fees are owed on the `src` synth, then these events come first:
 
     1. [`Transfer`](../ExternStateToken#transfer) from `0x0` to `account` for `feesOwed` emitted on `Proxy<synth>` for the `src` synth.
     2. [`Issued`](../Synth/#issued) `feesOwed` to `account` emitted on `Proxy<synth>` for the `src` synth.
-    3. [`ExchangeRebate`](../Synthetix#exchangerebate) from `account` for `feesOwed` on `src` synth.
+    3. [`ExchangeRebate`](../Synthetix#exchangerebate) from `account` for `feesOwed` on `src` synth emitted on `ProxySynthetix`
+
+    > Read [SIP-37](https://sips.synthetix.io/sips/sip-37) for more information on Fee Reclamation & Rebates.
 
 For every exchange, the following events then occur:
 
