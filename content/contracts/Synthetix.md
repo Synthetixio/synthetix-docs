@@ -787,3 +787,38 @@ This event is emitted from the Synthetix [proxy](Proxy.md#_emit) with the `emitS
 **Signature:** `SynthExchange(address indexed account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`
 
 ---
+
+### `ExchangeReclaim`
+
+!!! tip "Fee Reclaims"
+
+    See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
+
+Records that an `amount` of the synth denoted by `currencyKey` has been reclaimed (i.e. burned) from the `account` to the system.
+
+The amount is the total net amount from all unsettled exchanges into the given synth - if the user owes anything after settling all exchanges, then this is the `amount` reclaimed.
+
+This event is emitted from the Synthetix [proxy](Proxy.md#_emit) with the `emitExchangeReclaim` function.
+
+**Signature:** `ExchangeReclaim(address indexed account, bytes32 currencyKey, uint amount)`
+
+---
+
+### `ExchangeRebate`
+
+!!! tip "Fee Rebates"
+
+    See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
+
+
+Records that an `amount` of the synth denoted by `currencyKey` has been rebated (i.e. issued) by the system to the `account`.
+
+The amount is the total net amount from all unsettled exchanges into the given synth - if the user is owed anything after settling all exchanges, then this is the `amount` rebated.
+
+This event is emitted from the Synthetix [proxy](Proxy.md#_emit) with the `emitExchangeRebate` function.
+
+**Signature:** `ExchangeRebate(address indexed account, bytes32 currencyKey, uint amount)`
+
+
+
+---

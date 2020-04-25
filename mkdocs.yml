@@ -49,7 +49,8 @@ nav:
       - synthetix-js: libraries/synthetix-js.md
       - synthetix-data: libraries/synthetix-data.md
   - Smart Contracts:
-      - Architecture: contracts/index.md      
+      - Architecture: contracts/index.md
+      - Transactions: contracts/transactions.md
       - Publisher: contracts/publisher.md
       - Testing: contracts/testing.md
       - Libraries:

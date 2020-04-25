@@ -1,0 +1,148 @@
+# Transactions
+
+This is a list of the most common user-facing transactions possible in the Synthetix ecosystem, and the events they emit on success.
+
+
+## Minting (aka Issuing) sUSD
+
+??? info "How is this triggered in Mintr?"
+
+    <img src="/img/misc/events-mint.png" width=200 />
+
+**Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
+
+**Target (underlying) contract:** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
+
+**Methods:**
+
+- `issueSynths(uint256 amount)`
+- `issueSynthsOnBehalf(address user, uint256)`
+- `issueMaxSynths()`
+- `issueMaxSynthsOnBehalf(address user)`
+
+**Events Emitted:**
+
+On a successful transaction, the following events occur:
+
+1. [`Transfer`](../ExternStateToken/#transfer) from `0x0` to `account` for `amount` emitted on `ProxysUSD`
+2. [`Issued`](../Synth/#issued) `amount` to `account` emitted on `ProxysUSD`
+3. [`IssuanceDebtRatioEntry`](../FeePool/#issuancedebtratioentry) emitted on `ProxyFeePool`
+
+**Examples**:
+
+- [`ProxySynthetix.issueSynths(1e18)`](https://etherscan.io/tx/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30)
+- [`ProxySynthetix.issueMaxSynths()`](https://etherscan.io/tx/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571)
+
+
+## Burning sUSD
+
+??? info "How is this triggered in Mintr?"
+
+    <img src="/img/misc/events-burn.png" width=200 />
+
+**Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
+
+**Target (underlying) contract:** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
+
+**Methods:**
+
+- `burnSynths(uint256 amount)`
+- `burnSynthsOnBehalf(address user, uint256 amount)`
+- `burnSynthsToTarget()`
+- `burnSynthsToTargetOnBehalf(address user)`
+
+**Events Emitted:**
+
+On a successful transaction, the following events occur:
+
+1. [`Transfer`](../ExternStateToken/#transfer) from `account` to `0x0` for `amount` emitted on `ProxysUSD`
+2. [`Burned`](../Synth/#burned) `amount` from `account` emitted on `ProxysUSD`
+3. [`IssuanceDebtRatioEntry`](../FeePool/#issuancedebtratioentry) emitted on `ProxyFeePool`
+
+**Examples**:
+
+- [`ProxySynthetix.burnSynths(3e18)`](https://etherscan.io/tx/0xc781ddb16ca1e3fed5cf2acb1749e26a1b125057b6f9bfd23235c71381749843)
+- [`ProxySynthetix.burnSynthsToTargetOnBehalf(0x3bf10de)`](https://etherscan.io/tx/0x53eb0cc3509726b02ba53fe869583d964b6ccdc48099c6fbab62d46b4774a01f)
+
+
+## Claiming Fees
+
+??? info "How is this triggered in Mintr?"
+
+    <img src="/img/misc/events-claim.png" width=200 />
+
+**Called contract:** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
+
+**Target (underlying) contract:** [`FeePool`](https://contracts.synthetix.io/FeePool)
+
+**Methods:**
+
+- `claimFees()`
+- `claimOnBehalf(address user)`
+
+**Events Emitted:**
+
+On a successful transaction, the following events occur:
+
+1. [`Transfer`](../ExternStateToken#transfer) from [`FEE_ADDRESS`](../FeePool/#fee_address) to `0x0` for `amount` emitted on `ProxysUSD`
+2. [`Burned`](../Synth/#burned) `amount` from [`FEE_ADDRESS`](../FeePool/#fee_address) emitted on `ProxysUSD`
+3. [`Transfer`](../ExternStateToken/#transfer) from `0x0` to `account` for `amount` emitted on `ProxysUSD`
+4. [`Issued`](../Synth/#issued) `amount` to `account` emitted on `ProxysUSD`
+5. [`VestingEntryCreated`](../RewardEscrow#vestingentrycreated) emitted on `RewardEscrow`
+6. [`FeesClaimed`](../FeePool#feesclaimed) emitted on `ProxyFeePool`
+
+**Examples**:
+
+- [`ProxyFeePool.claimFees()`](https://etherscan.io/tx/0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec)
+- [`ProxyFeePool.claimOnBehalf(0xa16de11)`](https://etherscan.io/tx/0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8)
+
+
+## Exchange of synths
+
+??? info "How is this triggered in Mintr and Synthetix.Exchange?"
+
+    <img src="/img/misc/events-trade.png" width=200 />
+    <img src="/img/misc/events-exchange.png" height=220 style="margin-left: 20px" />
+
+**Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
+
+**Target (underlying) contract:** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
+
+**Methods:**
+
+- `exchange(bytes32 src, uint256 fromAmount, bytes32 dest)`
+- `exchangeOnBehalf(address user, bytes32 src, uint256 fromAmount, bytes32 dest)`
+
+**Events Emitted:**
+
+On a successful transaction, the following events occur:
+
+!!! tip "Fee Reclamation"
+
+    If fees are owing on the `src` synth:
+
+    1. [`Transfer`](../ExternStateToken#transfer) from `account` to `0x0` for `feesOwing` emitted on `Proxy<synth>` for the `src` synth.
+    2. [`Burned`](../Synth/#burned) `feesOwing` from `account` emitted on `Proxy<synth>` for the `src` synth.
+    3. [`ExchangeReclaim`](../Synthetix#exchangereclaim) from `account` for `feesOwing` on `src` synth.
+
+    Else if fees are owed on the `src` synth:
+
+    1. [`Transfer`](../ExternStateToken#transfer) from `0x0` to `account` for `feesOwed` emitted on `Proxy<synth>` for the `src` synth.
+    2. [`Issued`](../Synth/#issued) `feesOwed` to `account` emitted on `Proxy<synth>` for the `src` synth.
+    3. [`ExchangeRebate`](../Synthetix#exchangerebate) from `account` for `feesOwed` on `src` synth.
+
+For every exchange, the following events then occur:
+
+3. [`Transfer`](../ExternStateToken/#transfer) from `account` to `0x0` for `fromAmount` emitted on `Proxy<synth>` for the `src` synth.
+4. [`Burned`](../Synth/#burned) `fromAmount` from `account` emitted on `Proxy<synth>` for the `src` synth.
+5. [`Transfer`](../ExternStateToken/#transfer) from `0x0` to `account` for `toAmount - fee` emitted on on `Proxy<synth>` for the `dest` synth.
+6. [`Issued`](../Synth/#issued) `toAmount - fee` to `account` emitted on `Proxy<synth>` for the `dest` synth.
+7. [`Transfer`](../ExternStateToken/#transfer) from `0x0` to [`FEE_ADDRESS`](../FeePool/#fee_address) for `fee` emitted on `ProxysUSD`
+8. [`Issued`](../Synth/#issued) `amount` to [`FEE_ADDRESS`](../FeePool/#fee_address) emitted on `ProxysUSD`
+9.  [`SynthExchange`](../Synthetix/#synthexchange) for `account` emitted on `ProxySynthetix`
+
+**Examples:**
+
+- [`ProxySynthetix.exchange(sETH, 100e18, iETH)`](https://etherscan.io/tx/0xe85969d5c65e68968f4a55721ffa30b4da564f74f73af6a0ed1470cbd3935877)
+- [`ProxySynthetix.exchange(iETH, 0.22e18, sUSD)`](https://etherscan.io/tx/0x2e0b807336fcd7aed23adfac923eb19a6fdfc73eae41335a229681c10e615c56) (with an `ExchangeReclaim`)
+- [`ProxySynthetix.exchange(sETH, 5e18, sUSD)`](https://etherscan.io/tx/0x0d7ac5ca424b3a7dcd0a641e1ed614158426d6229445a079dd0f21b8b0876919) (with an `ExchangeRebate`)
