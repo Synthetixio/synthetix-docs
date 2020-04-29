@@ -15,20 +15,21 @@ The below all return a Promise that resolves with the requested results.
 
 1. `depot.userActions({ user })` Get all depot deposit (`sUSD`) actions for the given user - `deposit`, `withdrawl`, `unaccepted`, `removed`.
 2. `depot.clearedDeposits({ fromAddress, toAddress })` Get all cleared synth deposits (payments of `ETH` for `sUSD`) either from a given `fromAddress` or (and as well as) to a given `toAddress`
-3. `exchanges.total()` Get the total exchange volume, total fees and total number of unique exchange addresses.
-4. `exchanges.rebates({ minTimestamp = 1 day ago })` Get the last `N` exchange rebates since the given `minTimestamp` in seconds. Ordered in reverse chronological order.
-5. `exchanges.reclaims({ minTimestamp = 1 day ago })` Get the last `N` exchange reclaims since the given `minTimestamp` in seconds. Ordered in reverse chronological order.
-6. `exchanges.since({ minTimestamp = 1 day ago })` Get the last `N` exchanges since the given `minTimestamp` (in seconds, so one hour ago is `3600`). These are ordered in reverse chronological order.
-7. `rate.updates` Get all rate updates for synths in reverse chronological order
-8. `synths.issuers` Get all wallets that have invoked `Issue` on `sUSD` (other synths to come)
-9. `synths.transfers` Get synth transfers in reverse chronological order
-10. `snx.holders` Get the list of wallets that have ever sent or received `SNX`.
-11. `snx.rewards` Get the list of reward escrow holders and their latest balance at vesting entry add or vest.
-12. `snx.total` Get the total count of unique `issuers` and `snxHolders`
-13. `snx.transfers` Get SNX transfers in reverse chronological order
-14. `snx.issued` Get the `Issued` events in reverse chronological order.
-15. `snx.burned` Get the `Burned` events in reverse chronological order.
-16. `snx.feesClaimed` Get the `FeesClaimed` events in reverse chronological order, showing fees in sUSD and rewards in SNX.
+3. `depot.exchanges({ from })` Get all depot exchanges (buying sUSD with ETH) for a given `from` address.
+4. `exchanges.total()` Get the total exchange volume, total fees and total number of unique exchange addresses.
+5. `exchanges.rebates({ minTimestamp = 1 day ago })` Get the last `N` exchange rebates since the given `minTimestamp` in seconds. Ordered in reverse chronological order.
+6. `exchanges.reclaims({ minTimestamp = 1 day ago })` Get the last `N` exchange reclaims since the given `minTimestamp` in seconds. Ordered in reverse chronological order.
+7. `exchanges.since({ minTimestamp = 1 day ago })` Get the last `N` exchanges since the given `minTimestamp` (in seconds, so one hour ago is `3600`). These are ordered in reverse chronological order.
+8. `rate.updates` Get all rate updates for synths in reverse chronological order
+9. `synths.issuers` Get all wallets that have invoked `Issue` on `sUSD` (other synths to come)
+10. `synths.transfers` Get synth transfers in reverse chronological order
+11. `snx.holders` Get the list of wallets that have ever sent or received `SNX`.
+12. `snx.rewards` Get the list of reward escrow holders and their latest balance at vesting entry add or vest.
+13. `snx.total` Get the total count of unique `issuers` and `snxHolders`
+14. `snx.transfers` Get SNX transfers in reverse chronological order
+15. `snx.issued` Get the `Issued` events in reverse chronological order.
+16. `snx.burned` Get the `Burned` events in reverse chronological order.
+17. `snx.feesClaimed` Get the `FeesClaimed` events in reverse chronological order, showing fees in sUSD and rewards in SNX.
 
 ## Supported subscriptions
 

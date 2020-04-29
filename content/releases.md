@@ -33,7 +33,7 @@
 
 - [SIP-40](https://sips.synthetix.io/sips/sip-40): Frontminting prevention ([read IOSIRO's audit report here](https://iosiro.com/audits/synthetix-pr-435-smart-contract-audit))
 - [SIP-41](https://sips.synthetix.io/sips/sip-41): ProtocolDAO phase zero
-- [SIP-42](https://sips.synthetix.io/sips/sip-41): Gas optimisations
+- [SIP-42](https://sips.synthetix.io/sips/sip-42): Gas optimisations
 
 -----
 
