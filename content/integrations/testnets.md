@@ -1,4 +1,4 @@
-# Working with testnets
+# Working with Testnets
 
 !!! Tip "Getting help with testnets"
 
