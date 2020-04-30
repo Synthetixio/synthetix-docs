@@ -36,9 +36,10 @@ nav:
       - '': releases.md
   - Tokens:
       - '': tokens.md
-  - Integration:
-      - Integrations: integrations.md
-      - Integration Guide: integration-guide.md
+  - Integrations:
+      - Home: integrations/index.md
+      - Integration Guide: integrations/guide.md
+      - Working with Testnets: integrations/testnets.md
   - Historical Data:
       - '': historical-data.md
   - Libraries:
@@ -53,7 +54,6 @@ nav:
       - Automated Testing: contracts/testing.md
       - Publisher: contracts/publisher.md
       - Transaction Guide: contracts/transactions.md
-      - Testnets: contracts/testnets.md
       - Libraries:
           - Math: contracts/Math.md
           - SafeDecimalMath: contracts/SafeDecimalMath.md

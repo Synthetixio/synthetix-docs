@@ -56,20 +56,3 @@ In short, the `AddressResolver` allows any referencing contract to have access t
 !!! danger "Be Advised"
 
     Third party developers may well want to integrate this `AddressResolver` into their smart contracts if they want to look up the latest contracts on-chain, and they are most welcome to. That being said, be careful - the Synthetix protocol may opt to change the ABIs of the underlying contracts which could break interoperability for contracts that are not re-deployed. The safest third party use are the ERC20 functions within `Synthetix` and all the `Synth` contracts.
-
-## SNX Faucet and sUSD Faucet for TESTNETS
-
-You can aquire TESTNET SNX and sUSD from any of the Depot contracts for the TESTNET ETH
-
-- https://contracts.synthetix.io/kovan/Depot
-- https://contracts.synthetix.io/rinkeby/Depot
-- https://contracts.synthetix.io/ropsten/Depot
-
-On the [Depot](/contracts/Depot) contract call [`exchangeEtherForSNX`](/contracts/depot/#exchangeetherforsnx) or [`exchangeEtherForSynths`](/contracts/depot/#exchangeetherforsynths) sending your TESTNET ETH and you will recieve the current exchange rate value of ERC20 tokens in return.
-
-
-- [Get Kovan ETH](https://lmgtfy.com/?q=Kovan+eth+faucet)
-- [Get Rinkeby ETH](https://lmgtfy.com/?q=Rinkeby+eth+faucet)
-- [Get Ropsten ETH](https://lmgtfy.com/?q=Ropsten+eth+faucet)
-
-Once you have the ETH and SNX you can use Synthetix [Dapps](/#dapps) which also support these 3 TESTNETS
