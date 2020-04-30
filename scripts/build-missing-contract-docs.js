@@ -13,7 +13,7 @@ const doesContractExist = ({ source }) => fs.existsSync(getPathFromSource({ sour
 
 (async () => {
 	for (const [source] of Object.entries(sources)) {
-		if (doesContractExist({ source })) {
+		if (doesContractExist({ source }) || source === 'ArbRewarder') {
 			continue;
 		}
 

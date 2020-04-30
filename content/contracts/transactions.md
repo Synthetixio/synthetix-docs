@@ -11,7 +11,6 @@
 
     And you can use it live via https://codepen.io/justinjmoses/pen/vwexLj (append `?txn=0x123456...` to the URL using the transaction hash to auto-load)
 
-
 This is a list of the most common user-facing transactions possible in the Synthetix ecosystem, and the events they emit on success.
 
 ## Minting (aka Issuing) sUSD
@@ -41,9 +40,8 @@ On a successful transaction, the following events occur:
 
 **Examples**:
 
-- [`ProxySynthetix.issueSynths(1e18)`](https://etherscan.io/tx/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30))
-- [`ProxySynthetix.issueMaxSynths()`](https://etherscan.io/tx/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571))
-
+- `ProxySynthetix.issueSynths(1e18)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
+- `ProxySynthetix.issueMaxSynths()` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
 ## Burning sUSD
 
@@ -72,9 +70,9 @@ On a successful transaction, the following events occur:
 
 **Examples**:
 
-- [`ProxySynthetix.burnSynths(3e18)`](https://etherscan.io/tx/0xc781ddb16ca1e3fed5cf2acb1749e26a1b125057b6f9bfd23235c71381749843) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0xc781ddb16ca1e3fed5cf2acb1749e26a1b125057b6f9bfd23235c71381749843))
-- [`ProxySynthetix.burnSynthsToTargetOnBehalf(0x3bf10de)`](https://etherscan.io/tx/0x53eb0cc3509726b02ba53fe869583d964b6ccdc48099c6fbab62d46b4774a01f) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x53eb0cc3509726b02ba53fe869583d964b6ccdc48099c6fbab62d46b4774a01f))
+- `ProxySynthetix.burnSynths(3e18)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0xc781ddb16ca1e3fed5cf2acb1749e26a1b125057b6f9bfd23235c71381749843/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xc781ddb16ca1e3fed5cf2acb1749e26a1b125057b6f9bfd23235c71381749843#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
+- `ProxySynthetix.burnSynthsToTargetOnBehalf(0x3bf10de)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x53eb0cc3509726b02ba53fe869583d964b6ccdc48099c6fbab62d46b4774a01f/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x53eb0cc3509726b02ba53fe869583d964b6ccdc48099c6fbab62d46b4774a01f#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
 ## Claiming Fees
 
@@ -104,9 +102,9 @@ On a successful transaction, the following events occur:
 
 **Examples**:
 
-- [`ProxyFeePool.claimFees()`](https://etherscan.io/tx/0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec))
-- [`ProxyFeePool.claimOnBehalf(0xa16de11)`](https://etherscan.io/tx/0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8) ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8))
+- `ProxyFeePool.claimFees()` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
+- `ProxyFeePool.claimOnBehalf(0xa16de11)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
 ## Exchange of synths
 
@@ -152,10 +150,10 @@ For every exchange, the following events then occur:
 6. [`Issued`](../Synth/#issued) `toAmount - fee` to `account` emitted on `Proxy<synth>` for the `dest` synth.
 7. [`Transfer`](../ExternStateToken/#transfer) from `0x0` to [`FEE_ADDRESS`](../FeePool/#fee_address) for `fee` emitted on `ProxysUSD`
 8. [`Issued`](../Synth/#issued) `amount` to [`FEE_ADDRESS`](../FeePool/#fee_address) emitted on `ProxysUSD`
-9.  [`SynthExchange`](../Synthetix/#synthexchange) for `account` emitted on `ProxySynthetix`
+9. [`SynthExchange`](../Synthetix/#synthexchange) for `account` emitted on `ProxySynthetix`
 
 **Examples:**
 
-- [`ProxySynthetix.exchange(sETH, 100e18, iETH)`](https://etherscan.io/tx/0xe85969d5c65e68968f4a55721ffa30b4da564f74f73af6a0ed1470cbd3935877)  ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0xe85969d5c65e68968f4a55721ffa30b4da564f74f73af6a0ed1470cbd3935877))
-- [`ProxySynthetix.exchange(iETH, 0.22e18, sUSD)`](https://etherscan.io/tx/0x2e0b807336fcd7aed23adfac923eb19a6fdfc73eae41335a229681c10e615c56) (with an `ExchangeReclaim`)  ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x2e0b807336fcd7aed23adfac923eb19a6fdfc73eae41335a229681c10e615c56))
-- [`ProxySynthetix.exchange(sETH, 5e18, sUSD)`](https://etherscan.io/tx/0x0d7ac5ca424b3a7dcd0a641e1ed614158426d6229445a079dd0f21b8b0876919) (with an `ExchangeRebate`)  ([decoded](https://codepen.io/justinjmoses/pen/vwexLj?txn=0x0d7ac5ca424b3a7dcd0a641e1ed614158426d6229445a079dd0f21b8b0876919))
+- `ProxySynthetix.exchange(sETH, 100e18, iETH)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0xe85969d5c65e68968f4a55721ffa30b4da564f74f73af6a0ed1470cbd3935877/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xe85969d5c65e68968f4a55721ffa30b4da564f74f73af6a0ed1470cbd3935877#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
+- `ProxySynthetix.exchange(iETH, 0.22e18, sUSD)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x2e0b807336fcd7aed23adfac923eb19a6fdfc73eae41335a229681c10e615c56/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x2e0b807336fcd7aed23adfac923eb19a6fdfc73eae41335a229681c10e615c56#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
+- `ProxySynthetix.exchange(sETH, 5e18, sUSD)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x0d7ac5ca424b3a7dcd0a641e1ed614158426d6229445a079dd0f21b8b0876919/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x0d7ac5ca424b3a7dcd0a641e1ed614158426d6229445a079dd0f21b8b0876919#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
