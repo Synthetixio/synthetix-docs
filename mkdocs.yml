@@ -50,9 +50,10 @@ nav:
       - synthetix-data: libraries/synthetix-data.md
   - Smart Contracts:
       - Architecture: contracts/index.md
-      - Transactions: contracts/transactions.md
+      - Automated Testing: contracts/testing.md
       - Publisher: contracts/publisher.md
-      - Testing: contracts/testing.md
+      - Transaction Guide: contracts/transactions.md
+      - Testnets: contracts/testnets.md
       - Libraries:
           - Math: contracts/Math.md
           - SafeDecimalMath: contracts/SafeDecimalMath.md
