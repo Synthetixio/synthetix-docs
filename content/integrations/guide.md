@@ -51,7 +51,6 @@ As of this moment, the following contracts are behind proxies:
 
     <span class="wtb-ew-v1" style="width: 560px; display:inline-block"><script src="https://www.worldtimebuddy.com/event_widget.js?h=100&md=5/10/2020&mt=23.00&ml=0.50&sts=0&sln=0&wt=ew-ltc"></script><i><a target="_blank" href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</i><noscript><a href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
 
-
     On `May 10, 2020 11pm UTC` (7PM May 10 ET, 9AM May 11 AEST), we will switch the `proxy` and `integrationProxy` properties of `Synthetix` and our `SynthsUSD` contracts. We will then update our dApps and integrations (including `synthetix-js`) to use the addresses of the new proxies for all calls and transactions. **All events emitted will now be on the new ERC20 proxies.** However, the deprecated proxies will continue to work until Phase 3.
 
 3.  **Phase 3**
