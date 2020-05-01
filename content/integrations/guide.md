@@ -17,20 +17,22 @@ Synthetix makes extensive use of the proxy pattern. This allows users and integr
 As of this moment, the following contracts are behind proxies:
 
 - `FeePool` is behind `ProxyFeePool`
-- `Synthetix` is behind both `ProxySynthetix` (deprecated, see notice below) and `ProxyERC20`
-- `SynthsUSD` is behind both `ProxysUSD` (deprecated) and `ProxyERC20sUSD`
-- All remaining synths are also behind a Proxy, all of which are the newer ProxyERC20 pattern. e.g. `ProxysETH`, `ProxyiBTC`, etc.
+- `Synthetix` is behind both `ProxyERC20` and `ProxySynthetix` (deprecated, see notice below).
+- `SynthsUSD` is behind both `ProxyERC20sUSD` and `ProxysUSD` (deprecated)
+- All remaining synths are also behind a Proxy, all of which are the newer `ProxyERC20` pattern. e.g. `ProxysETH`, `ProxyiBTC`, etc.
 
-!!! Warning "Deprecation Notice"
+## Proxy Deprecation
+
+??? Info "Why are we deprecating proxies?"
 
     The current proxies have been marked deprecated:
 
     - [Synthetix](https://contracts.synthetix.io/ProxySynthetix) (aka `ProxySynthetix` at `0xC011A72400E58ecD99Ee497CF89E3775d4bd732F`) and
     - [sUSD](https://contracts.synthetix.io/ProxysUSD) (aka `ProxysUSD` at `0x57Ab1E02fEE23774580C119740129eAC7081e9D3`)
 
-    The current proxies use the CALL pattern and set `messageSender` on the target for any request (see [here](https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol#L118)). This mutation inside functions that are marked `view` - such as `balanceOf`, break ERC20 interface conventions, and thus fail.
+    The Synthetix proxies use the `CALL` pattern and set `messageSender` on the target for any request (see [here](https://github.com/Synthetixio/synthetix/blob/v2.21.6/contracts/Proxy.sol#L75)). This mutation inside functions that are marked `view` - such as `balanceOf`, break ERC20 interface conventions, and thus fail.
 
-    In their stead we have new *integration* proxies in place, used by both Uniswap and Kyber. The new integration proxies are fully ERC20 compliant and explictly call through to the target for all ERC20 functions (see [ProxyERC20.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol)).
+    In their stead we have new _integration_ proxies in place, used by both Uniswap and Kyber. The new integration proxies are fully ERC20 compliant and explictly call through to the target for all ERC20 functions (see [ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.6/contracts/ProxyERC20.sol)).
 
     If you are planning any integration with Synthetix, it is recommended that you use the newer proxies:
 
@@ -39,7 +41,54 @@ As of this moment, the following contracts are behind proxies:
 
     That said however, both are functioning side by side while we transition over.
 
-    One note of caution: the events from the underlying contracts - `Synthetix` and `Synth` are still emitted on the currently deprecated proxy contracts. Indeed, SynthetixJs still use the deprecated proxies for this reason (see [Synthetix.js](https://github.com/Synthetixio/synthetix-js/blob/master/src/contracts/mainnet/Synthetix.js#L12)). Once we migrate to the new proxies, the events will be emitted on the integration proxies and the deprecated ones will be removed entirely.
+    One note of caution: the events from the underlying contracts - `Synthetix` and `Synth` are still emitted on the currently deprecated proxy contracts. Indeed, SynthetixJs still use the deprecated proxies for this reason (see [Synthetix.js](https://github.com/Synthetixio/synthetix-js/blob/v2.21.6/src/contracts/mainnet/Synthetix.js#L12)). Once we migrate to the new proxies, the events will be emitted on the integration proxies and the deprecated ones will be removed entirely.
+
+1. **Phase 1 (Current)**: Prior to May 10, 2020, both proxies for `Synthetix` and `SynthsUSD` will function. Our dApps and integrations will call and transact using the deprecated proxies, and all events emitted will be on the deprecated proxy.
+2. **Phase 2**: On `May 10, 2020 11pm UTC` (7PM May 10 ET, 9AM May 11 AEST), we will switch the `proxy` and `integrationProxy` properties of `Synthetix` and our `SynthsUSD` contracts. We will then update our dApps and integrations (including `synthetix-js`) to use the addresses of the new proxies for all calls and transactions. **All events emitted will now be on the new ERC20 proxies.** However, the deprecated proxies will continue to work until Phase 3.
+3. **Phase 3**: On `May 30, 2020 11pm ETC` (7PM May 30 ET, 9AM June 1 AEST), we will set the `integrationProxy` property from `Synthetix` and `SynthsUSD` to `0x0`, meaning that no more incoming transactions on `0xC011A72400E58ecD99Ee497CF89E3775d4bd732F` (`ProxySynthetix`) or `0x57Ab1E02fEE23774580C119740129eAC7081e9D3` (`ProxysUSD`) will work. These will fail as the target contracts they use will no longer accept incoming requests from them. We will update our `ProxySynthetix` and `ProxysUSD` labels to point to the new ERC20 proxies (in our docs and in our contract-linker utility).
+4. **Phase 4**: We will remove the `ProxyERC20` and `ProxyERC20sUSD` names altogether.
+
+> We notified the community in late April via [this blog post](https://blog.synthetix.io/proxy-contract-cutover-on-may-10/).
+
+### Example Scenarios:
+
+#### Exchanging via Synthetix
+
+Let's say you want to exchange `100` `sUSD` for `sETH`:
+
+1.  **Phase 1 (prior to May 10, 2020):**
+
+    - You can invoke `exchange(sUSD, 100e18, sETH)` on either `ProxySynthetix` (`0xC011a72`) or `ProxyERC20` (`0xC011a73`).
+    - On success, `SynthExchange` will be emitted on `ProxySynthetix` (`0xC011a72`) regardless of which proxy you used to transact.
+
+2.  **Phase 2 (between May 10 - May 30, 2020):**
+
+    - You can still invoke `exchange(sUSD, 100e18, sETH)` on either `ProxySynthetix` (`0xC011a72`) or `ProxyERC20` (`0xC011a73`), _however you are strongly recommended to migrate to using `ProxyERC20`_.
+    - On success, `SynthExchange` will be emitted on `ProxyERC20` (`0xC011a73`) regardless of which proxy you used to transact.
+
+3.  **Phase 3 (From May 30, 2020):**
+
+    - You can only invoke `exchange(sUSD, 100e18, sETH)` on `ProxyERC20` (`0xC011a73`), _the old proxy address will fail_.
+    - On success, `SynthExchange` will be emitted on `ProxyERC20` (`0xC011a73`).
+
+#### Transferring sUSD
+
+Or say you want to transfer `5` `sUSD` to `user`
+
+1.  **Phase 1 (prior to May 10, 2020):**
+
+    - You can invoke `transfer(user, 5e18)` on either `ProxysUSD` (`0x57Ab1E0`) or `ProxyERC20sUSD` (`0x57Ab1ec`).
+    - On success, `Transfer` will be emitted on `ProxysUSD` (`0x57Ab1E0`) regardless of which proxy you used to transact.
+
+2.  **Phase 2 (between May 10 - May 30, 2020):**
+
+    - You can still invoke `transfer(user, 5e18)` on either `ProxysUSD` (`0x57Ab1E0`) or `ProxyERC20sUSD` (`0x57Ab1ec`), _however you are strongly recommended to migrate to using `ProxyERC20sUSD`_.
+    - On success, `Transfer` will be emitted on `ProxysUSD` (`0x57Ab1E0`) regardless of which proxy you used to transact.
+
+3.  **Phase 3 (From May 30, 2020):**
+
+    - You can only invoke `transfer(user, 5e18)` on `ProxyERC20sUSD` (`0x57Ab1ec`), _the old proxy will fail_.
+    - On success, `Transfer` will be emitted on `ProxyERC20sUSD` (`0x57Ab1ec`).
 
 ## Fee Reclamation and Atomicity of Exchanges
 
