@@ -28,4 +28,4 @@ To get testnet `ETH`, search for your friendly testnet faucet.
 
 <img src="/img/misc/kovan-depot.gif" />
 
-> For example on Kovan, navigate to https://contracts.synthetix.io/kovan/Depot#writeContract and execute `exchangeEtherForSNX()` as per the
+> For example on Kovan, navigate to https://contracts.synthetix.io/kovan/Depot#writeContract and execute `exchangeEtherForSNX()` with some amount of testnet ETH.
