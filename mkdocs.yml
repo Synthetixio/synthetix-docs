@@ -40,6 +40,7 @@ nav:
       - Home: integrations/index.md
       - Integration Guide: integrations/guide.md
       - Working with Testnets: integrations/testnets.md
+      - ENS Support: integrations/ens.md
   - Historical Data:
       - '': historical-data.md
   - Libraries:
