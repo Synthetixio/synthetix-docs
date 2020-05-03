@@ -8,27 +8,69 @@ In Mintr, this is how they perform the task:
 
 Via the contracts, the process is as follows:
 
+## API
+
+### Contract
+
+!!! warning "Use the Proxies"
+
+    Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
+
+    1. the underlying is subject to change (and does most releases); and
+    2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
+
+    For best results, always interact with the proxy using the ABI of the underlying.
+
 **Destination contract (address):** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
 
 **Underlying contract (ABI):** [`FeePool`](https://contracts.synthetix.io/FeePool)
 
-**Methods:**
+### Methods
 
 - `claimFees()`
 - `claimOnBehalf(address user)`
 
-**Events Emitted:**
+### Events Emitted
 
 On a successful transaction, the following events occur:
 
-1. [`Transfer`](../ExternStateToken#transfer) from [`FEE_ADDRESS`](../FeePool/#fee_address) to `0x0` for `amount` emitted on `ProxysUSD`
-2. [`Burned`](../Synth/#burned) `amount` from [`FEE_ADDRESS`](../FeePool/#fee_address) emitted on `ProxysUSD`
-3. [`Transfer`](../ExternStateToken/#transfer) from `0x0` to `account` for `amount` emitted on `ProxysUSD`
-4. [`Issued`](../Synth/#issued) `amount` to `account` emitted on `ProxysUSD`
-5. [`VestingEntryCreated`](../RewardEscrow#vestingentrycreated) emitted on `RewardEscrow`
-6. [`FeesClaimed`](../FeePool#feesclaimed) emitted on `ProxyFeePool`
+1.  [`Transfer`](../../ExternStateToken#transfer) the `amount` of `sUSD` fees from the fee address to `0x0` emitted on `ProxysUSD`
 
-**Example Transactions on Mainnet**:
+    | `address`                                        | `address` | `uint`             |
+    | ------------------------------------------------ | --------- | ------------------ |
+    | from [`FEE_ADDRESS`](../../FeePool/#fee_address) | to `0x0`  | `amount` of `sUSD` |
+
+2.  [`Burned`](../../Synth/#burned) the `amount` of `sUSD` fees emitted on `ProxysUSD`
+
+    | `uint`   | `address`                                        |
+    | -------- | ------------------------------------------------ |
+    | `amount` | from [`FEE_ADDRESS`](../../FeePool/#fee_address) |
+
+3.  [`Transfer`](../../ExternStateToken/#transfer) the `amount` of `sUSD` fees from `0x0` to the user emitted on `ProxysUSD`
+
+    | `address` | `address`                                     | `uint`             |
+    | --------- | --------------------------------------------- | ------------------ |
+    | `0x0`     | to `msg.sender` or `user` for `claimOnBehalf` | `amount` of `sUSD` |
+
+4.  [`Issued`](../../Synth/#issued) the `amount` of `sUSD` fees on `ProxysUSD`
+
+    | `uint`   | `address`                                     |
+    | -------- | --------------------------------------------- |
+    | `amount` | to `msg.sender` or `user` for `claimOnBehalf` |
+
+5.  [`VestingEntryCreated`](../../RewardEscrow#vestingentrycreated) for `amount` of `SNX` inflationary rewards emitted on `RewardEscrow`
+
+    | `address`                                  | `uint` | `uint`                    |
+    | ------------------------------------------ | ------ | ------------------------- |
+    | `msg.sender` or `user` for `claimOnBehalf` | `now`  | `amount` of `SNX` rewards |
+
+6.  [`FeesClaimed`](../../FeePool#feesclaimed) amount of `sUSDAmount` of fees and amount of `snxRewards` emitted on `ProxyFeePool`
+
+    | `address`                                  | `uint`       | `uint`       |
+    | ------------------------------------------ | ------------ | ------------ |
+    | `msg.sender` or `user` for `claimOnBehalf` | `sUSDAmount` | `snxRewards` |
+
+### Examples from Mainnet
 
 - `ProxyFeePool.claimFees()` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xa49256e412c7ede6c81eeeaa6c111a5ffc051fe8dd103123cc75e6bb96761fec#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
@@ -38,14 +80,14 @@ On a successful transaction, the following events occur:
 
 ### Code Snippets
 
-#### Claiming in JavaScript
+#### Claiming in JavaScript (on ropsten)
 
 ```javascript
 const { SynthetixJs } = require('synthetix-js');
 const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
 // parameters: default provider, default networkId, private key as a string
-const networkId = 3; // ropsten
+const networkId = 3; // ropsten, (use 1 for mainnet)
 const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
 const snxjs = new SynthetixJs({ signer, networkId });
 

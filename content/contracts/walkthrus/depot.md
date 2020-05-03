@@ -9,30 +9,30 @@ The Depot is a place to deposit any access `sUSD` for others to purchase it with
 
 > Note: this action has no corresponding controls in the Synthetix dApps
 
-Via the contracts, the process is as follows:
+## API
 
-**Destination contract (address):** [`Depot`](https://contracts.synthetix.io/Depot)
+### Contract
 
-**Underlying contract (ABI):** [`Depot`](https://contracts.synthetix.io/Depot)
+**Destination contract (address & ABI):** [`Depot`](https://contracts.synthetix.io/Depot)
 
-**Methods:**
+### Methods
 
 - `exchangeEtherForSynths()`
 - (sending `ETH` to the contract)
 
-**Events Emitted:**
+### Events Emitted
 
 On a successful transaction, the following events occur:
 
-For each deposit paid through, emits the following two events:
+For each deposit paid through, the following two events are emitted:
 
-1.  [`ClearedDeposit`](../../Depot#cleareddeposit)
+1.  [`ClearedDeposit`](../../Depot#cleareddeposit) emitted on `Depot`
 
     | `address`    | `address`                          | `uint`                                            | `uint`                                             | `uint`                                                |
     | ------------ | ---------------------------------- | ------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------- |
     | `msg.sender` | the current depositor in the queue | the amount of `ETH` the `toAddress` has been paid | the amont of `sUSD` the `msg.sender` will received | the `depositIndex` that was accessed in this exchange |
 
-2.  [`Transfer`](../../ExternStateToken#transfer) from `Depot` to `msg.sender` the `toAmount` of `sUSD`
+2.  [`Transfer`](../../ExternStateToken#transfer) emitted on `ProxysUSD`
 
     | `address`        | `address`           | `uint`                |
     | ---------------- | ------------------- | --------------------- |
@@ -40,13 +40,13 @@ For each deposit paid through, emits the following two events:
 
 Following all deposits paid though, emits the following event:
 
-3.  [`Exchange`](../../Depot#exchange)
+3.  [`Exchange`](../../Depot#exchange) emitted on `Depot`
 
     | `string` | `uint`                                     | `string` | `uint`                                   |
     | -------- | ------------------------------------------ | -------- | ---------------------------------------- |
     | `ETH`    | `fromAmount` of `ETH` sent by `msg.sender` | `sUSD`   | `toAmount` of `sUSD` the sender was sent |
 
-**Example Transactions on Mainnet**:
+### Example Transactions on Mainnet
 
 - `Depot.exchangeEtherForSynths()` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x37b921d27fe21f9a97f3c059b54fb81ba8c0297b14d2577a84d8237121c59ff9/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x37b921d27fe21f9a97f3c059b54fb81ba8c0297b14d2577a84d8237121c59ff9#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a> (with a single deposit accessed)
 - sending ETH to `Depot` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0xf92bbafd873463d2880d5e6beab2bc46a10d6f6ceea417e235a3ef7828766c79/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xf92bbafd873463d2880d5e6beab2bc46a10d6f6ceea417e235a3ef7828766c79#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a> (with two deposits accessed)
@@ -62,7 +62,7 @@ const { SynthetixJs } = require('synthetix-js');
 const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
 // parameters: default provider, default networkId, private key as a string
-const networkId = 3; // ropsten
+const networkId = 3; // ropsten, (use 1 for mainnet)
 const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
 const snxjs = new SynthetixJs({ signer, networkId });
 
