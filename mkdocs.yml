@@ -60,10 +60,11 @@ nav:
           - SafeDecimalMath: contracts/SafeDecimalMath.md
           - SafeMath: contracts/SafeMath.md
       - Walkthrus:
-          - Claiming: contracts/walkthrus/claiming.md
-          - Depot: contracts/walkthrus/depot.md
-          - Staking: contracts/walkthrus/staking.md
-          - Trading: contracts/walkthrus/trading.md
+          - Claiming Rewards: contracts/walkthrus/claiming.md
+          - Exchange ETH for sUSD: contracts/walkthrus/depot.md
+          - Staking SNX: contracts/walkthrus/staking.md
+          - Trading Synths: contracts/walkthrus/trading.md
+          - Unstaking SNX: contracts/walkthrus/unstaking.md
       - Contracts:
           - AddressResolver: contracts/AddressResolver.md
           - DelegateApprovals: contracts/DelegateApprovals.md

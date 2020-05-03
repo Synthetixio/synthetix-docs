@@ -5,7 +5,7 @@
     The Depot also supports exchanging `SNX` for `ETH` via any `SNX` the contract holds, however it will send all proceeds to the contract's `fundsWalet`, so
     it's only used on testnets to allow developers to purchase testnet `SNX` (see [testnets](../../integrations/testnets.md))
 
-The Depot is a place to deposit any access `sUSD` for others to purchase it with `ETH`. On [testnets](../../integrations/testnets.md) it also allows you to exchange testnet `ETH` for `SNX`.
+The Depot is a place to deposit any excess `sUSD` for others to purchase it with `ETH`. On [testnets](../../integrations/testnets.md) it also allows you to exchange testnet `ETH` for `SNX`.
 
 > Note: this action has no corresponding controls in the Synthetix dApps
 
