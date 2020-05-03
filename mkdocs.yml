@@ -59,6 +59,11 @@ nav:
           - Math: contracts/Math.md
           - SafeDecimalMath: contracts/SafeDecimalMath.md
           - SafeMath: contracts/SafeMath.md
+      - Walkthrus:
+          - Claiming: contracts/walkthrus/claiming.md
+          - Depot: contracts/walkthrus/depot.md
+          - Staking: contracts/walkthrus/staking.md
+          - Trading: contracts/walkthrus/trading.md
       - Contracts:
           - AddressResolver: contracts/AddressResolver.md
           - DelegateApprovals: contracts/DelegateApprovals.md
