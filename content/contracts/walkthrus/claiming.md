@@ -135,7 +135,8 @@ contract MyContract {
     IAddressResolver public synthetixResolver;
 
     // Add a setter here as the synthetix resolver may change in the future
-    // Note: work is underway
+    // Note: work is underway to create a permanent address resolver so this setter
+    // will no longer be required
     function setSynthetixResolver(IAddressResolver resolver) external onlyOwner {
         synthetixResolver = resolver;
     }
