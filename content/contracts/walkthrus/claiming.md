@@ -34,41 +34,29 @@ Via the contracts, the process is as follows:
 
 On a successful transaction, the following events occur:
 
-1.  [`Transfer`](../../ExternStateToken#transfer) the `amount` of `sUSD` fees from the fee address to `0x0` emitted on `ProxysUSD`
+| name         | emitted on  | `address from`                              | `address to` | `uint value`       |
+| ------------ | ----------- | ------------------------------------------- | ------------ | ------------------ |
+| **Transfer** | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | to `0x0`     | `amount` of `sUSD` |
 
-    | `address`                                        | `address` | `uint`             |
-    | ------------------------------------------------ | --------- | ------------------ |
-    | from [`FEE_ADDRESS`](../../FeePool/#fee_address) | to `0x0`  | `amount` of `sUSD` |
+| name       | emitted on  | `address account`                           | `uint value` |
+| ---------- | ----------- | ------------------------------------------- | ------------ |
+| **Burned** | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `amount`     |
 
-2.  [`Burned`](../../Synth/#burned) the `amount` of `sUSD` fees emitted on `ProxysUSD`
+| name         | emitted on  | `address from` | `address to`             | `uint value`       |
+| ------------ | ----------- | -------------- | ------------------------ | ------------------ |
+| **Transfer** | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-    | `uint`   | `address`                                        |
-    | -------- | ------------------------------------------------ |
-    | `amount` | from [`FEE_ADDRESS`](../../FeePool/#fee_address) |
+| name       | emitted on  | `address account`        | `uint value`       |
+| ---------- | ----------- | ------------------------ | ------------------ |
+| **Issued** | `ProxysUSD` | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-3.  [`Transfer`](../../ExternStateToken/#transfer) the `amount` of `sUSD` fees from `0x0` to the user emitted on `ProxysUSD`
+| name                    | emitted on     | `address beneficiary`         | `uint time` | `uint value`              |
+| ----------------------- | -------------- | ----------------------------- | ----------- | ------------------------- |
+| **VestingEntryCreated** | `RewardEscrow` | `msg.sender`<br />(or `user`) | `now`       | `amount` of `SNX` rewards |
 
-    | `address` | `address`                                     | `uint`             |
-    | --------- | --------------------------------------------- | ------------------ |
-    | `0x0`     | to `msg.sender` or `user` for `claimOnBehalf` | `amount` of `sUSD` |
-
-4.  [`Issued`](../../Synth/#issued) the `amount` of `sUSD` fees on `ProxysUSD`
-
-    | `uint`   | `address`                                     |
-    | -------- | --------------------------------------------- |
-    | `amount` | to `msg.sender` or `user` for `claimOnBehalf` |
-
-5.  [`VestingEntryCreated`](../../RewardEscrow#vestingentrycreated) for `amount` of `SNX` inflationary rewards emitted on `RewardEscrow`
-
-    | `address`                                  | `uint` | `uint`                    |
-    | ------------------------------------------ | ------ | ------------------------- |
-    | `msg.sender` or `user` for `claimOnBehalf` | `now`  | `amount` of `SNX` rewards |
-
-6.  [`FeesClaimed`](../../FeePool#feesclaimed) amount of `sUSDAmount` of fees and amount of `snxRewards` emitted on `ProxyFeePool`
-
-    | `address`                                  | `uint`       | `uint`       |
-    | ------------------------------------------ | ------------ | ------------ |
-    | `msg.sender` or `user` for `claimOnBehalf` | `sUSDAmount` | `snxRewards` |
+| name            | emitted on     | `address account`        | `uint sUSDAmount` | `uint snxRewards` |
+| --------------- | -------------- | ------------------------ | ----------------- | ----------------- |
+| **FeesClaimed** | `ProxyFeePool` | `msg.sender` (or `user`) | `sUSDAmount`      | `snxRewards`      |
 
 ### Examples from Mainnet
 
@@ -168,10 +156,12 @@ interface IAddressResolver {
 // import "synthetix/contracts/interfaces/IFeePool.sol";
 interface IFeePool {
     function claimFees() external returns (bool);
+
+    // For this "on behalf" method to succeed, the claimingForAddress must have already invoked
+    // DelegateApprovals.approveClaimOnBehalf(address(MyContract))
     function claimOnBehalf(address claimingForAddress) external returns (bool);
 }
 
-// This contract should be treated like an abstract contract
 contract MyContract {
 
     IAddressResolver public synthetixResolver;
@@ -186,11 +176,9 @@ contract MyContract {
     function synthetixClaim() external {
       IFeePool feePool = synthetixResolver.getAddress("FeePool");
       require(feePool != address(0), "FeePool is missing from Synthetix resolver");
-      // Now claim as this contract
-      feePool.claimFees();
 
-      // Note: the above will claim for msg.sender = address(MyContract). If instead you wish
-      // to claim on behalf of a user, have them invoke
+      // Claim as msg.sender = address(MyContractd)
+      feePool.claimFees();
     }
 
     function synthetixClaimOnBehalf(address user) external {
