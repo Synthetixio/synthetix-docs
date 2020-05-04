@@ -34,29 +34,29 @@ Via the contracts, the process is as follows:
 
 On a successful transaction, the following events occur:
 
-| name         | emitted on  | `address from`                              | `address to` | `uint value`       |
-| ------------ | ----------- | ------------------------------------------- | ------------ | ------------------ |
-| **Transfer** | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | to `0x0`     | `amount` of `sUSD` |
+| name                                          | emitted on  | `address from`                              | `address to` | `uint value`       |
+| --------------------------------------------- | ----------- | ------------------------------------------- | ------------ | ------------------ |
+| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | to `0x0`     | `amount` of `sUSD` |
 
-| name       | emitted on  | `address account`                           | `uint value` |
-| ---------- | ----------- | ------------------------------------------- | ------------ |
-| **Burned** | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `amount`     |
+| name                           | emitted on  | `address account`                           | `uint value` |
+| ------------------------------ | ----------- | ------------------------------------------- | ------------ |
+| [`Burned`](../../Synth#burned) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `amount`     |
 
-| name         | emitted on  | `address from` | `address to`             | `uint value`       |
-| ------------ | ----------- | -------------- | ------------------------ | ------------------ |
-| **Transfer** | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
+| name                                          | emitted on  | `address from` | `address to`             | `uint value`       |
+| --------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
+| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-| name       | emitted on  | `address account`        | `uint value`       |
-| ---------- | ----------- | ------------------------ | ------------------ |
-| **Issued** | `ProxysUSD` | `msg.sender` (or `user`) | `amount` of `sUSD` |
+| name                           | emitted on  | `address account`        | `uint value`       |
+| ------------------------------ | ----------- | ------------------------ | ------------------ |
+| [`Issued`](../../Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-| name                    | emitted on     | `address beneficiary`         | `uint time` | `uint value`              |
-| ----------------------- | -------------- | ----------------------------- | ----------- | ------------------------- |
-| **VestingEntryCreated** | `RewardEscrow` | `msg.sender`<br />(or `user`) | `now`       | `amount` of `SNX` rewards |
+| name                                                            | emitted on     | `address beneficiary`         | `uint time` | `uint value`              |
+| --------------------------------------------------------------- | -------------- | ----------------------------- | ----------- | ------------------------- |
+| [`VestingEntryCreated`](../../RewardEscrow#vestingentrycreated) | `RewardEscrow` | `msg.sender`<br />(or `user`) | `now`       | `amount` of `SNX` rewards |
 
-| name            | emitted on     | `address account`        | `uint sUSDAmount` | `uint snxRewards` |
-| --------------- | -------------- | ------------------------ | ----------------- | ----------------- |
-| **FeesClaimed** | `ProxyFeePool` | `msg.sender` (or `user`) | `sUSDAmount`      | `snxRewards`      |
+| name                                       | emitted on     | `address account`        | `uint sUSDAmount` | `uint snxRewards` |
+| ------------------------------------------ | -------------- | ------------------------ | ----------------- | ----------------- |
+| [`FeesClaimed`](../../FeePool#feesclaimed) | `ProxyFeePool` | `msg.sender` (or `user`) | `sUSDAmount`      | `snxRewards`      |
 
 ### Examples from Mainnet
 
@@ -161,6 +161,7 @@ interface IFeePool {
     // DelegateApprovals.approveClaimOnBehalf(address(MyContract))
     function claimOnBehalf(address claimingForAddress) external returns (bool);
 }
+
 
 contract MyContract {
 

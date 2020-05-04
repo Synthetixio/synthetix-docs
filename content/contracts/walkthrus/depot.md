@@ -139,6 +139,7 @@ interface IDepot {
   function exchangeEtherForSynths() external payable returns (uint);
 }
 
+
 contract MyContract {
 
     IAddressResolver public synthetixResolver;

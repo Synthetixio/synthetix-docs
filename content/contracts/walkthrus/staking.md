@@ -38,23 +38,17 @@ To issue `sUSD` in Mintr, this is how they perform the task:
 
 On a successful transaction, the following events occur:
 
-1.  [`Transfer`](../../ExternStateToken#transfer) from `0x0` to `msg.sender` (or `user`) for `amount` emitted on `ProxysUSD`
+| name                                          | emitted on  | `address from` | `address to`             | `uint value`       |
+| --------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
+| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-    | `address`  | `address`                   | `uint`             |
-    | ---------- | --------------------------- | ------------------ |
-    | from `0x0` | to `msg.sender` (or `user`) | `amount` of `sUSD` |
+| name                           | emitted on  | `address account`        | `uint value` |
+| ------------------------------ | ----------- | ------------------------ | ------------ |
+| [`Issued`](../../Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
 
-2.  [`Issued`](../../Synth/#issued) the `amount` of `sUSD` emitted on `ProxysUSD`
-
-    | `uint`   | `address`                                     |
-    | -------- | --------------------------------------------- |
-    | `amount` | to `msg.sender` or `user` for `issueOnBehalf` |
-
-3.  [`IssuanceDebtRatioEntry`](../../FeePool#issuancedebtratioentry) emitted on `RewardEscrow`
-
-    | `address`                                  | `uint`      | `uint`           | `uint`                       |
-    | ------------------------------------------ | ----------- | ---------------- | ---------------------------- |
-    | `msg.sender` or `user` for `issueOnBehalf` | `debtRatio` | `debtEntryIndex` | `feePeriodStartingDebtIndex` |
+| name                                                             | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
+| ---------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
+| [`IssuanceDebtRatioEntry`](../../FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
 
 ### Examples from Mainnet
 
@@ -163,7 +157,7 @@ interface ISynthetix {
       );
 }
 
-// This contract should be treated like an abstract contract
+
 contract MyContract {
 
     IAddressResolver public synthetixResolver;
