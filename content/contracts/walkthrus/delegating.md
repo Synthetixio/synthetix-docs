@@ -65,7 +65,7 @@ On a successful transaction, the following events occur:
 
 ---
 
-### Code Snippets
+## Code Snippets
 
 #### Claiming in JavaScript (on ropsten)
 
