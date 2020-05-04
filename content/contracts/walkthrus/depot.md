@@ -17,7 +17,7 @@ The Depot is a place to deposit any excess `sUSD` for others to purchase it with
 
 ### Methods
 
-- `exchangeEtherForSynths()`
+- [`exchangeEtherForSynths()`](../../Depot#exchangeetherforsynths)
 - (sending `ETH` to the contract)
 
 ### Events Emitted
@@ -26,25 +26,19 @@ On a successful transaction, the following events occur:
 
 For each deposit paid through, the following two events are emitted:
 
-1.  [`ClearedDeposit`](../../Depot#cleareddeposit) emitted on `Depot`
+| name                                           | emitted on | `address fromAddress` | `address toAddress`                | `uint fromETHAmount`                              | `uint toAmount`                                    | `uint depositIndex`                                   |
+| ---------------------------------------------- | ---------- | --------------------- | ---------------------------------- | ------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------- |
+| [`ClearedDeposit`](../../Depot#cleareddeposit) | `Depot`    | `msg.sender`          | the current depositor in the queue | the amount of `ETH` the `toAddress` has been paid | the amont of `sUSD` the `msg.sender` will received | the `depositIndex` that was accessed in this exchange |
 
-    | `address`    | `address`                          | `uint`                                            | `uint`                                             | `uint`                                                |
-    | ------------ | ---------------------------------- | ------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------- |
-    | `msg.sender` | the current depositor in the queue | the amount of `ETH` the `toAddress` has been paid | the amont of `sUSD` the `msg.sender` will received | the `depositIndex` that was accessed in this exchange |
-
-2.  [`Transfer`](../../ExternStateToken#transfer) emitted on `ProxysUSD`
-
-    | `address`        | `address`           | `uint`                |
-    | ---------------- | ------------------- | --------------------- |
-    | from the `Depot` | to the `msg.sender` | an `amount` of `sUSD` |
+| name                                          | emitted on  | `address from` | `address to` | `uint value`          |
+| --------------------------------------------- | ----------- | -------------- | ------------ | --------------------- |
+| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `Depot`        | `msg.sender` | an `amount` of `sUSD` |
 
 Following all deposits paid though, emits the following event:
 
-3.  [`Exchange`](../../Depot#exchange) emitted on `Depot`
-
-    | `string` | `uint`                                     | `string` | `uint`                                   |
-    | -------- | ------------------------------------------ | -------- | ---------------------------------------- |
-    | `ETH`    | `fromAmount` of `ETH` sent by `msg.sender` | `sUSD`   | `toAmount` of `sUSD` the sender was sent |
+| name                               | emitted on | `string fromCurrency` | `uint fromAmount`                          | `string toCurrency` | `uint toAmount`                          |
+| ---------------------------------- | ---------- | --------------------- | ------------------------------------------ | ------------------- | ---------------------------------------- |
+| [`Exchange`](../../Depot#exchange) | `Depot`    | `ETH`                 | `fromAmount` of `ETH` sent by `msg.sender` | `sUSD`              | `toAmount` of `sUSD` the sender was sent |
 
 ### Example Transactions on Mainnet
 
@@ -145,7 +139,6 @@ interface IDepot {
   function exchangeEtherForSynths() external payable returns (uint);
 }
 
-// This contract should be treated like an abstract contract
 contract MyContract {
 
     IAddressResolver public synthetixResolver;
