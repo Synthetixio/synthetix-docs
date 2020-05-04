@@ -210,6 +210,7 @@ interface ISynthetix {
     ) external returns (uint amountReceived);
 }
 
+
 contract MyContract {
 
     IAddressResolver public synthetixResolver;

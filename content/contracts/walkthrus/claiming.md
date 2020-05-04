@@ -27,8 +27,8 @@ Via the contracts, the process is as follows:
 
 ### Methods
 
-- `claimFees()`
-- `claimOnBehalf(address user)`
+- [`claimFees()`](../../FeePool#claimfees)
+- [`claimOnBehalf(address user)`](../../FeePool#claimonbehalf)
 
 ### Events Emitted
 

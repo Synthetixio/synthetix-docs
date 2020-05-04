@@ -36,23 +36,17 @@ To burn `sUSD` in Mintr, this is how they perform the task:
 
 On a successful transaction, the following events occur:
 
-1.  [`Transfer`](../../ExternStateToken#transfer) from `msg.sender` (or `user`) to `0x0` for `amount` emitted on `ProxysUSD`
+| name                                          | emitted on  | `address from`           | `address to` | `uint value`       |
+| --------------------------------------------- | ----------- | ------------------------ | ------------ | ------------------ |
+| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` (or `user`) | `0x0`        | `amount` of `sUSD` |
 
-    | `address`                     | `address` | `uint`             |
-    | ----------------------------- | --------- | ------------------ |
-    | from `msg.sender` (or `user`) | to `0x0`  | `amount` of `sUSD` |
+| name                           | emitted on  | `address account`        | `uint value` |
+| ------------------------------ | ----------- | ------------------------ | ------------ |
+| [`Burned`](../../Synth#burned) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
 
-2.  [`Burned`](../../Synth/#burned) the `amount` of `sUSD` emitted on `ProxysUSD`
-
-    | `uint`   | `address`                                      |
-    | -------- | ---------------------------------------------- |
-    | `amount` | from `msg.sender` or `user` for `burnOnBehalf` |
-
-3.  [`IssuanceDebtRatioEntry`](../../FeePool#issuancedebtratioentry) emitted on `RewardEscrow`
-
-    | `address`                                 | `uint`      | `uint`           | `uint`                       |
-    | ----------------------------------------- | ----------- | ---------------- | ---------------------------- |
-    | `msg.sender` or `user` for `burnOnBehalf` | `debtRatio` | `debtEntryIndex` | `feePeriodStartingDebtIndex` |
+| name                                                             | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
+| ---------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
+| [`IssuanceDebtRatioEntry`](../../FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
 
 ### Examples from Mainnet
 
