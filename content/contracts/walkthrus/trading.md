@@ -36,67 +36,37 @@ Via the contracts, the process is as follows:
 
 On a successful transaction, the following events occur:
 
-#### If fees owing on `src` (fee reclamation)
+**If any fees are owing or owed, these events will come first. See [trade settlement](../settlement/#events-emitted) for information.**
 
-| name         | emitted on   | `address from`           | `address to` | `uint value` |
-| ------------ | ------------ | ------------------------ | ------------ | ------------ |
-| **Transfer** | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `feesOwing`  |
+Following any reclaims or rebates, the following events then occur:
 
-| name       | emitted on   | `address account`        | `uint value` |
-| ---------- | ------------ | ------------------------ | ------------ |
-| **Burned** | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwing`  |
+| name                                          | emitted on   | `address from`           | `address to` | `uint value` |
+| --------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
+| [`Transfer`](../../ExternStateToken#transfer) | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `fromAmount` |
 
-| name                | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
-| ------------------- | ---------------- | ----------------------------- | --------------------- | ------------ |
-| **ExchangeReclaim** | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwing`  |
+| name                           | emitted on   | `address account`        | `uint value` |
+| ------------------------------ | ------------ | ------------------------ | ------------ |
+| [`Burned`](../../Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `fromAmount` |
 
-#### Else if fees owed on `src` (fee rebate)
+| name                                          | emitted on    | `address from` | `address to`             | `uint value`     |
+| --------------------------------------------- | ------------- | -------------- | ------------------------ | ---------------- |
+| [`Transfer`](../../ExternStateToken#transfer) | `Proxy<dest>` | `0x0`          | `msg.sender` (or `user`) | `toAmount - fee` |
 
-| name         | emitted on   | `address from` | `address to`             | `uint value` |
-| ------------ | ------------ | -------------- | ------------------------ | ------------ |
-| **Transfer** | `Proxy<src>` | `0x0`          | `msg.sender` (or `user`) | `feesOwed`   |
+| name                           | emitted on    | `address account`        | `uint value`     |
+| ------------------------------ | ------------- | ------------------------ | ---------------- |
+| [`Issued`](../../Synth#issued) | `Proxy<dest>` | `msg.sender` (or `user`) | `toAmount - fee` |
 
-| name       | emitted on   | `address account`        | `uint value` |
-| ---------- | ------------ | ------------------------ | ------------ |
-| **Issued** | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwed`   |
+| name                                          | emitted on  | `address from` | `address to`                                | `uint value` |
+| --------------------------------------------- | ----------- | -------------- | ------------------------------------------- | ------------ |
+| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
 
-| name               | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
-| ------------------ | ---------------- | ----------------------------- | --------------------- | ------------ |
-| **ExchangeRebate** | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwed`   |
+| name                           | emitted on  | `address account`                           | `uint value` |
+| ------------------------------ | ----------- | ------------------------------------------- | ------------ |
+| [`Issued`](../../Synth#issued) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
 
-> Read [SIP-37](https://sips.synthetix.io/sips/sip-37) for more information on Fee Reclamation & Rebates.
-
-#### Regardless
-
-For every exchange, the following events then occur:
-
-| name         | emitted on   | `address from`           | `address to` | `uint value` |
-| ------------ | ------------ | ------------------------ | ------------ | ------------ |
-| **Transfer** | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `fromAmount` |
-
-| name       | emitted on   | `address account`        | `uint value` |
-| ---------- | ------------ | ------------------------ | ------------ |
-| **Burned** | `Proxy<src>` | `msg.sender` (or `user`) | `fromAmount` |
-
-| name         | emitted on    | `address from` | `address to`             | `uint value`     |
-| ------------ | ------------- | -------------- | ------------------------ | ---------------- |
-| **Transfer** | `Proxy<dest>` | `0x0`          | `msg.sender` (or `user`) | `toAmount - fee` |
-
-| name       | emitted on    | `address account`        | `uint value`     |
-| ---------- | ------------- | ------------------------ | ---------------- |
-| **Issued** | `Proxy<dest>` | `msg.sender` (or `user`) | `toAmount - fee` |
-
-| name         | emitted on  | `address from` | `address to`                                | `uint value` |
-| ------------ | ----------- | -------------- | ------------------------------------------- | ------------ |
-| **Transfer** | `ProxysUSD` | `0x0`          | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
-
-| name       | emitted on  | `address account`                           | `uint value` |
-| ---------- | ----------- | ------------------------------------------- | ------------ |
-| **Issued** | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
-
-| name              | emitted on       | `address account`             | `bytes32 src` | `uint fromAmount` | `bytes32 dest` | `uint toAmount`  | `address toAddress`           |
-| ----------------- | ---------------- | ----------------------------- | ------------- | ----------------- | -------------- | ---------------- | ----------------------------- |
-| **SynthExchange** | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`      | `dest`         | `toAmount - fee` | `msg.sender`<br />(or `user`) |
+| name                                             | emitted on       | `address account`             | `bytes32 src` | `uint fromAmount` | `bytes32 dest` | `uint toAmount`  | `address toAddress`           |
+| ------------------------------------------------ | ---------------- | ----------------------------- | ------------- | ----------------- | -------------- | ---------------- | ----------------------------- |
+| [`SynthExchange`](../../Synthetix#synthexchange) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`      | `dest`         | `toAmount - fee` | `msg.sender`<br />(or `user`) |
 
 ### Examples from Mainnet
 
@@ -181,7 +151,7 @@ const { toUtf8Bytes32, parseEther } = snxjs.utils;
     })();
     ```
 
-#### Issuing in Solidity
+#### Exchanging in Solidity
 
 ```solidity
 pragma solidity 0.5.16;
@@ -208,6 +178,9 @@ interface ISynthetix {
         uint sourceAmount,
         bytes32 destinationCurrencyKey
     ) external returns (uint amountReceived);
+
+    // view
+    function isWaitingPeriod(bytes32 currencyKey) external view returns (bool);
 }
 
 
@@ -222,21 +195,39 @@ contract MyContract {
         synthetixResolver = resolver;
     }
 
-    function synthetixExchnage() external {
+    function synthetixExchange(bytes32 src, uint amount, bytes32 dest) external {)
       ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
       require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
 
+      // This check is what synthetix.exchange() will perform, added here for explicitness
+      require(!synthetix.isWaitingPeriod(src), "Cannot exchange during the waiting period");
+
       // Exchange for msg.sender = address(MyContract)
-      synthetix.exchange("sUSD", 1e15, "iETH");
+      synthetix.exchange(src, amount, dest);
+
+      // Note: due to Fee Reclamation in SIP-37, the following actions will fail if attempted in the
+      // same block (the waiting period for the "to" synth must first expire)
+        // synthetixResolver.getAddress(dest).transfer(address(0), 1e12)
+        // synthetix.exchange(dest, 1e12, "sBTC");
+        // synthetix.settle(dest);
     }
 
-    function synthetixExchangeOnBehalf(address user) external {
+    function synthetixExchangeOnBehalf(address user, bytes32 src, uint amount, bytes32 dest) external {
         ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
         require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
 
+        // This check is what synthetix.exchange() will perform, added here for explicitness
+        require(!synthetix.isWaitingPeriod(src), "Cannot exchange during the waiting period");
+
         // Note: this will fail if `DelegateApprovals.approveExchangeOnBehalf(address(MyContract))` has
         // not yet been invoked by the user
-        synthetix.exchangeOnBehalf(user, "sUSD", 1e15, "iETH");
+        synthetix.exchangeOnBehalf(user, src, amount, dest);
+
+        // Note: due to Fee Reclamation in SIP-37, the following actions will fail if attempted in the
+        // same block (the waiting period for dest must first expire)
+          // synthetixResolver.getAddress(dest).transferFrom(user, address(0), 1e12)
+          // synthetix.exchangeOnBehalf(user, dest, 1e12, "sBTC");
+          // synthetixResolver.getAddress("Exchanger").settle(user, dest)
     }
 }
 ```

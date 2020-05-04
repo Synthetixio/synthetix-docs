@@ -64,7 +64,8 @@ nav:
           - Delegating: contracts/walkthrus/delegating.md
           - Swap ETH for sUSD: contracts/walkthrus/depot.md
           - Staking SNX: contracts/walkthrus/staking.md
-          - Trading Synths: contracts/walkthrus/trading.md
+          - Trading: contracts/walkthrus/trading.md
+          - Trading Settlement: contracts/walkthrus/settlement.md
           - Unstaking SNX: contracts/walkthrus/unstaking.md
       - Contracts:
           - AddressResolver: contracts/AddressResolver.md
