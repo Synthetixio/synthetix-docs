@@ -13,11 +13,11 @@
 
 This is a list of the most common user-facing transactions possible in the Synthetix ecosystem, and the events they emit on success.
 
-## Minting (aka Issuing) sUSD
+## Staking (Minting/Issuing) sUSD
 
-??? info "How is this triggered in Mintr?"
+!!! tip "More info"
 
-    <img src="/img/misc/events-mint.png" width=200 />
+    Check out our [staking walkthru](walkthrus/staking.md) for more information
 
 **Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
 
@@ -43,11 +43,11 @@ On a successful transaction, the following events occur:
 - `ProxySynthetix.issueSynths(1e18)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x5df667fa499772621745a3af169fed477f78e11434fed227588de928a5793f30#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 - `ProxySynthetix.issueMaxSynths()` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x40672a3965d1028891011c672118d99de21b709189b00c60e09c3561d604e571#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
-## Burning sUSD
+## Unstaking (Burning) sUSD
 
-??? info "How is this triggered in Mintr?"
+!!! tip "More info"
 
-    <img src="/img/misc/events-burn.png" width=200 />
+    Check out our [unstaking walkthru](walkthrus/unstaking.md) for more information
 
 **Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
 
@@ -76,9 +76,9 @@ On a successful transaction, the following events occur:
 
 ## Claiming Fees
 
-??? info "How is this triggered in Mintr?"
+!!! tip "More info"
 
-    <img src="/img/misc/events-claim.png" width=200 />
+    Check out our [claiming walkthru](walkthrus/claiming.md) for more information
 
 **Called contract:** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
 
@@ -106,12 +106,11 @@ On a successful transaction, the following events occur:
 
 - `ProxyFeePool.claimOnBehalf(0xa16de11)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x2ba1bcd89c2c6178660afa6fa25674d7573cd58eb63f03416b40c053671879e8#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
-## Exchange of synths
+## Trading (Exchanging) synths
 
-??? info "How is this triggered in Mintr and Synthetix.Exchange?"
+!!! tip "More info"
 
-    <img src="/img/misc/events-trade.png" width=200 />
-    <img src="/img/misc/events-exchange.png" height=220 style="margin-left: 20px" />
+    Check out our [trading walkthru](walkthrus/trading.md) for more information
 
 **Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
 

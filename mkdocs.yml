@@ -59,6 +59,14 @@ nav:
           - Math: contracts/Math.md
           - SafeDecimalMath: contracts/SafeDecimalMath.md
           - SafeMath: contracts/SafeMath.md
+      - Walkthrus:
+          - Claiming Rewards: contracts/walkthrus/claiming.md
+          - Delegating: contracts/walkthrus/delegating.md
+          - Swap ETH for sUSD: contracts/walkthrus/depot.md
+          - Staking SNX: contracts/walkthrus/staking.md
+          - Trading: contracts/walkthrus/trading.md
+          - Trading Settlement: contracts/walkthrus/settlement.md
+          - Unstaking SNX: contracts/walkthrus/unstaking.md
       - Contracts:
           - AddressResolver: contracts/AddressResolver.md
           - DelegateApprovals: contracts/DelegateApprovals.md

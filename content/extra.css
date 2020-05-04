@@ -18,6 +18,10 @@ article {
 	font-weight: 900;
 }
 
+.md-typeset code {
+	word-break: normal;
+}
+
 .md-typeset details.example {
 	border-left-color: rgb(66, 51, 125);
 }
