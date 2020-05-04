@@ -29,8 +29,8 @@ Via the contracts, the process is as follows:
 
 ### Methods
 
-- `exchange(bytes32 src, uint256 fromAmount, bytes32 dest)`
-- `exchangeOnBehalf(address user, bytes32 src, uint256 fromAmount, bytes32 dest)`
+- [`exchange(bytes32 src, uint256 fromAmount, bytes32 dest)`](../../Synthetix#exchange)
+- [`exchangeOnBehalf(address user, bytes32 src, uint256 fromAmount, bytes32 dest)`](../../Synthetix#exchangeonbehalf)
 
 ### Events Emitted
 

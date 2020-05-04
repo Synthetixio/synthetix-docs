@@ -29,10 +29,10 @@ To issue `sUSD` in Mintr, this is how they perform the task:
 
 ### Methods
 
-- `issueSynths(uint256 amount)`
-- `issueSynthsOnBehalf(address user, uint256)`
-- `issueMaxSynths()`
-- `issueMaxSynthsOnBehalf(address user)`
+- [`issueSynths(uint256 amount)`](../../Synthetix#issuesynths)
+- [`issueSynthsOnBehalf(address user, uint256)`](../../Synthetix#issuesynthsonbehalf)
+- [`issueMaxSynths()`](../../Synthetix#issuemaxsynths)
+- [`issueMaxSynthsOnBehalf(address user)`](../../Synthetix#issuemaxsynthsonbehalf)
 
 ### Events Emitted
 

@@ -27,10 +27,10 @@ To burn `sUSD` in Mintr, this is how they perform the task:
 
 ### Methods
 
-- `burnSynths(uint256 amount)`
-- `burnSynthsOnBehalf(address user, uint256 amount)`
-- `burnSynthsToTarget()`
-- `burnSynthsToTargetOnBehalf(address user)`
+- [`burnSynths(uint256 amount)`](../../Synthetix#burnsynths)
+- [`burnSynthsOnBehalf(address user, uint256 amount)`](../../Synthetix#burnsynthsonbehalf)
+- [`burnSynthsToTarget()`](../../Synthetix#burnsynthstotarget)
+- [`burnSynthsToTargetOnBehalf(address user)`](../../Synthetix#burnsynthstotargetonbehalf)
 
 ### Events Emitted
 
@@ -159,7 +159,7 @@ interface ISynthetix {
     function debtBalanceOf(address issuer, bytes32 currencyKey) external view returns (uint);
 }
 
-// This contract should be treated like an abstract contract
+
 contract MyContract {
 
     IAddressResolver public synthetixResolver;

@@ -1,5 +1,9 @@
 # DelegateApprovals
 
+!!! Warning "Needs Update"
+
+    This contract documentation is out of date and requires updating
+
 ## Description
 
 This contract is used by the [`FeePool`](FeePool.md) to enable users to permit other addresses to withdraw fees for them. In Synthetix this was intended to allow mobile wallets to claim fees for a cold storage wallet.
@@ -29,18 +33,6 @@ In principle it is generic, as the approver just marks a number of delegates as 
 ??? example "Details"
 
     * [`FeePool`](FeePool.md): This contract allows the fee pool to delegate fee withdrawal approvals.
-
----
-
-## Variables
-
----
-
-### `approval`
-
-Stores who has approved whom to perform actions. The double mapping allows each authoriser to have multiple delegates. A given delegate is authorised by an authoriser when `approval[authoriser][delegate]` is true.
-
-**Type:** `mapping(address => mapping(address => bool)) public`
 
 ---
 
@@ -110,9 +102,9 @@ Revokes the approval of a delegate to act on behalf of a given authoriser.
 
 ### `Approval`
 
-The delegate was approved to act on the authoriser's behalf.
+The delegate was approved to act on the authoriser's behalf for the given action.
 
-**Signature:** `Approval(address indexed authoriser, address delegate)`
+**Signature:** `Approval(address indexed authoriser, address delegate, bytes32 action)`
 
 ---
 
@@ -120,6 +112,14 @@ The delegate was approved to act on the authoriser's behalf.
 
 The delegate was disapproved to act on the authoriser's behalf.
 
-**Signature:** `WithdrawApproval(address indexed authoriser, address delegate)`
+**Signature:** `WithdrawApproval(address indexed authoriser, address delegate, bytes32 action)`
+
+---
+
+### `EternalStorageUpdated`
+
+The address of the eternal storage contract has changed.
+
+**Signature:** `EternalStorageUpdated(address newEternalStorage)`
 
 ---
