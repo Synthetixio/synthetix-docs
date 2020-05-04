@@ -183,7 +183,7 @@ const { toUtf8Bytes32, parseEther } = snxjs.utils;
     })();
     ```
 
-#### Exchanging in Solidity
+#### Settlement in Solidity
 
 ```solidity
 pragma solidity 0.5.16;
