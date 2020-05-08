@@ -1,8 +1,8 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.21.12](https://github.com/Synthetixio/synthetix/tree/v2.21.12)
+**Version**: [v2.21.13](https://github.com/Synthetixio/synthetix/tree/v2.21.13)
 
-**Docs Built**: Apr 29, 2020
+**Docs Built**: May 8, 2020
 
 !!! info "Naming Conventions"
 	Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol` - then the convention is to suffix the name of the differing feature to the end - be it the proxy target e.g. `FeePool` for `ProxyFeePool` or the synth currencyKey eg: `sETH` for `SynthsETH`
@@ -22,13 +22,6 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/AddressResolver.json">AddressResolver.json</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xFbB6526ed92DA8915d4843a86166020d0B7bAAd0">0xFbB6526ed92DA8915d4843a86166020d0B7bAAd0</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ArbRewarder</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ArbRewarder.sol">ArbRewarder.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/ArbRewarder.json">ArbRewarder.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xA6B5E74466eDc95D0b6e65c5CBFcA0a676d893a4">0xA6B5E74466eDc95D0b6e65c5CBFcA0a676d893a4</a>
                 </td>
               </tr>
               <tr>
@@ -449,6 +442,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd">0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ReadProxyAddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/ReadProxy.json">ReadProxy.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x4E3b31eB0E5CB73641EE1E65E7dCEFe520bA3ef2">0x4E3b31eB0E5CB73641EE1E65E7dCEFe520bA3ef2</a>
                 </td>
               </tr>
               <tr>
@@ -1113,13 +1113,6 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ArbRewarder</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ArbRewarder.sol">ArbRewarder.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ArbRewarder.json">ArbRewarder.json</a></td>
-                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x290EBc249C558A306f17922988ef43955b955e73">0x290EBc249C558A306f17922988ef43955b955e73</a>
-                </td>
-              </tr>
-              <tr>
                 <td>DelegateApprovals</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/DelegateApprovals.json">DelegateApprovals.json</a></td>
@@ -1537,6 +1530,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x2E4D9524dA9Af751E776d361dd2b9bE9b6086b30">0x2E4D9524dA9Af751E776d361dd2b9bE9b6086b30</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ReadProxyAddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ReadProxy.json">ReadProxy.json</a></td>
+                <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x4da3B8fb742BC69531Ec7AdBAa06effDEd1A22BA">0x4da3B8fb742BC69531Ec7AdBAa06effDEd1A22BA</a>
                 </td>
               </tr>
               <tr>
@@ -2201,13 +2201,6 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ArbRewarder</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ArbRewarder.sol">ArbRewarder.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/ArbRewarder.json">ArbRewarder.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xe0Ee4900a91624b81402F54271c62813d4318AA8">0xe0Ee4900a91624b81402F54271c62813d4318AA8</a>
-                </td>
-              </tr>
-              <tr>
                 <td>DelegateApprovals</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/DelegateApprovals.json">DelegateApprovals.json</a></td>
@@ -2611,6 +2604,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xaD85C5B4273b73AE1514cC0569a6A783B3cB30aD">0xaD85C5B4273b73AE1514cC0569a6A783B3cB30aD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ReadProxyAddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/ReadProxy.json">ReadProxy.json</a></td>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x6c145745565a6A12D8b734e30C7af2cF7e94F6D9">0x6c145745565a6A12D8b734e30C7af2cF7e94F6D9</a>
                 </td>
               </tr>
               <tr>
@@ -3247,13 +3247,6 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ArbRewarder</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ArbRewarder.sol">ArbRewarder.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ArbRewarder.json">ArbRewarder.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x46a6123DD50eF2F82AC15E2954D7790F2edCeDc9">0x46a6123DD50eF2F82AC15E2954D7790F2edCeDc9</a>
-                </td>
-              </tr>
-              <tr>
                 <td>DelegateApprovals</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/DelegateApprovals.json">DelegateApprovals.json</a></td>
@@ -3657,6 +3650,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xd39bBa8F8049674152B5439A631eEd691436b92a">0xd39bBa8F8049674152B5439A631eEd691436b92a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ReadProxyAddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ReadProxy.json">ReadProxy.json</a></td>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x242a3DF52c375bEe81b1c668741D7c63aF68FDD2">0x242a3DF52c375bEe81b1c668741D7c63aF68FDD2</a>
                 </td>
               </tr>
               <tr>
