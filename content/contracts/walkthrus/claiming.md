@@ -148,30 +148,18 @@ const snxjs = new SynthetixJs({ signer, networkId });
 ```solidity
 pragma solidity 0.5.16;
 
-// import "synthetix/contracts/interfaces/IAddressResolver.sol";
-interface IAddressResolver {
-  function getAddress(bytes32 name) external view returns (address);
-}
-
-// import "synthetix/contracts/interfaces/IFeePool.sol";
-interface IFeePool {
-    function claimFees() external returns (bool);
-
-    // For this "on behalf" method to succeed, the claimingForAddress must have already invoked
-    // DelegateApprovals.approveClaimOnBehalf(address(MyContract))
-    function claimOnBehalf(address claimingForAddress) external returns (bool);
-}
-
+import "synthetix/contracts/interfaces/IAddressResolver.sol";
+import "synthetix/contracts/interfaces/IFeePool.sol";
 
 contract MyContract {
 
+    // This should be instantiated with our ReadProxyAddressResolver
+    // it's a ReadProxy that won't change, so safe to code it here without a setter
+    // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
     IAddressResolver public synthetixResolver;
 
-    // Add a setter here as the synthetix resolver may change in the future
-    // Note: work is underway to create a permanent address resolver so this setter
-    // will no longer be required
-    function setSynthetixResolver(IAddressResolver resolver) external onlyOwner {
-        synthetixResolver = resolver;
+    constructor(IAddressResolver _snxResolver) public {
+        synthetixResolver = _snxResolver;
     }
 
     function synthetixClaim() external {

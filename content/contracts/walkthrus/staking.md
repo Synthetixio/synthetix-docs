@@ -133,40 +133,19 @@ const snxjs = new SynthetixJs({ signer, networkId });
 ```solidity
 pragma solidity 0.5.16;
 
-// import "synthetix/contracts/interfaces/IAddressResolver.sol";
-interface IAddressResolver {
-    function getAddress(bytes32 name) external view returns (address);
-}
-
-// import "synthetix/contracts/interfaces/ISynthetix.sol";
-interface ISynthetix {
-
-    function issueMaxSynths() external;
-    function issueSynths(uint amount) external;
-
-    // These "on behalf" methods require that the issueForAddress has already invoked
-    // DelegateApprovals.approveIssueOnBehalf(address(MyContract))
-    function issueSynthsOnBehalf(address issueForAddress, uint amount) external;
-    function issueMaxSynthsOnBehalf(address issueForAddress) external;
-
-    function remainingIssuableSynths(address issuer) external view
-      returns (
-          uint maxIssuable,
-          uint alreadyIssued,
-          uint totalSystemDebt
-      );
-}
+import "synthetix/contracts/interfaces/IAddressResolver.sol";
+import "synthetix/contracts/interfaces/ISynthetix.sol";
 
 
 contract MyContract {
 
+    // This should be instantiated with our ReadProxyAddressResolver
+    // it's a ReadProxy that won't change, so safe to code it here without a setter
+    // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
     IAddressResolver public synthetixResolver;
 
-    // Add a setter here as the synthetix resolver may change in the future
-    // Note: work is underway to create a permanent address resolver so this setter
-    // will no longer be required
-    function setSynthetixResolver(IAddressResolver resolver) external onlyOwner {
-        synthetixResolver = resolver;
+    constructor(IAddressResolver _snxResolver) public {
+        synthetixResolver = _snxResolver;
     }
 
     function synthetixIssue() external {

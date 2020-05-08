@@ -188,45 +188,20 @@ const { toUtf8Bytes32, parseEther } = snxjs.utils;
 ```solidity
 pragma solidity 0.5.16;
 
-// import "synthetix/contracts/interfaces/IAddressResolver.sol";
-interface IAddressResolver {
-    function getAddress(bytes32 name) external view returns (address);
-}
-
-// import "synthetix/contracts/interfaces/ISynthetix.sol";
-interface ISynthetix {
-    function settle(bytes32 currencyKey) external
-      returns (
-          uint reclaimed,
-          uint refunded,
-          uint numEntriesSettled
-      );
-
-    function isWaitingPeriod(bytes32 currencyKey) external view returns (bool);
-}
-
-// import "synthetix/contracts/interfaces/IExchanger.sol";
-interface Exchanger {
-    function settle(address from, bytes32 currencyKey) external
-      returns (
-          uint reclaimed,
-          uint refunded,
-          uint numEntriesSettled
-      );
-
-    function maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey) external view returns (uint);
-}
+import "synthetix/contracts/interfaces/IAddressResolver.sol";
+import "synthetix/contracts/interfaces/ISynthetix.sol";
+import "synthetix/contracts/interfaces/IExchanger.sol";
 
 
 contract MyContract {
 
+    // This should be instantiated with our ReadProxyAddressResolver
+    // it's a ReadProxy that won't change, so safe to code it here without a setter
+    // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
     IAddressResolver public synthetixResolver;
 
-    // Add a setter here as the synthetix resolver may change in the future
-    // Note: work is underway to create a permanent address resolver so this setter
-    // will no longer be required
-    function setSynthetixResolver(IAddressResolver resolver) external onlyOwner {
-        synthetixResolver = resolver;
+    constructor(IAddressResolver _snxResolver) public {
+        synthetixResolver = _snxResolver;
     }
 
     function synthetixSettle(bytes32 synthKey) external {)
@@ -253,7 +228,8 @@ contract MyContract {
     }
 
     function synthetixTransferAndSettle(bytes32 synthKey, address to, uint value) extenrnal {
-        ISynth synth = synthetixResolver.getAddress(synthKey);
+        // Note ⚠️: IAddressResolver.getSynth will not work until the Altair release (v2.22) of Synthetix
+        ISynth synth = synthetixResolver.getSynth(synthKey);
         require(synth != address(0), "Synth is missing from Synthetix");
 
         synth.transferAndSettle(to, value);
@@ -261,7 +237,8 @@ contract MyContract {
 
 
     function synthetixTransferFromAndSettle(bytes32 synthKey, address from, address to, uint value) extenrnal {
-        ISynth synth = synthetixResolver.getAddress(synthKey);
+        // Note ⚠️: IAddressResolver.getSynth will not work until the Altair release (v2.22) of Synthetix
+        ISynth synth = synthetixResolver.getSynth(synthKey);
         require(synth != address(0), "Synth is missing from Synthetix");
 
         // Note: only works if user has invoked ERC20.approve(address(MyContract)) on the given synth

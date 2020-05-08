@@ -156,43 +156,19 @@ const { toUtf8Bytes32, parseEther } = snxjs.utils;
 ```solidity
 pragma solidity 0.5.16;
 
-// import "synthetix/contracts/interfaces/IAddressResolver.sol";
-interface IAddressResolver {
-    function getAddress(bytes32 name) external view returns (address);
-}
-
-// import "synthetix/contracts/interfaces/ISynthetix.sol";
-interface ISynthetix {
-
-    function exchange(
-        bytes32 sourceCurrencyKey,
-        uint sourceAmount,
-        bytes32 destinationCurrencyKey
-    ) external returns (uint amountReceived);
-
-    // For this "on behalf" method to succeed, the exchangeForAddress must have already invoked
-    // DelegateApprovals.approveExchangeOnBehalf(address(MyContract))
-    function exchangeOnBehalf(
-        address exchangeForAddress,
-        bytes32 sourceCurrencyKey,
-        uint sourceAmount,
-        bytes32 destinationCurrencyKey
-    ) external returns (uint amountReceived);
-
-    // view
-    function isWaitingPeriod(bytes32 currencyKey) external view returns (bool);
-}
+import "synthetix/contracts/interfaces/IAddressResolver.sol";
+import "synthetix/contracts/interfaces/ISynthetix.sol";
 
 
 contract MyContract {
 
+    // This should be instantiated with our ReadProxyAddressResolver
+    // it's a ReadProxy that won't change, so safe to code it here without a setter
+    // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
     IAddressResolver public synthetixResolver;
 
-    // Add a setter here as the synthetix resolver may change in the future
-    // Note: work is underway to create a permanent address resolver so this setter
-    // will no longer be required
-    function setSynthetixResolver(IAddressResolver resolver) external onlyOwner {
-        synthetixResolver = resolver;
+    constructor(IAddressResolver _snxResolver) public {
+        synthetixResolver = _snxResolver;
     }
 
     function synthetixExchange(bytes32 src, uint amount, bytes32 dest) external {)
@@ -207,7 +183,7 @@ contract MyContract {
 
       // Note: due to Fee Reclamation in SIP-37, the following actions will fail if attempted in the
       // same block (the waiting period for the "to" synth must first expire)
-        // synthetixResolver.getAddress(dest).transfer(address(0), 1e12)
+        // synthetixResolver.getSynth(dest).transfer(address(0), 1e12)
         // synthetix.exchange(dest, 1e12, "sBTC");
         // synthetix.settle(dest);
     }
@@ -225,7 +201,7 @@ contract MyContract {
 
         // Note: due to Fee Reclamation in SIP-37, the following actions will fail if attempted in the
         // same block (the waiting period for dest must first expire)
-          // synthetixResolver.getAddress(dest).transferFrom(user, address(0), 1e12)
+          // synthetixResolver.getSynth(dest).transferFrom(user, address(0), 1e12)
           // synthetix.exchangeOnBehalf(user, dest, 1e12, "sBTC");
           // synthetixResolver.getAddress("Exchanger").settle(user, dest)
     }
