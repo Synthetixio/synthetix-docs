@@ -10,7 +10,7 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 
 !!! SNX exchange functionality has been deprecated on MAINNET and is now used as a SNX faucet on the testnets only.
 
-**Source:** [Depot.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/Depot.sol)
+**Source:** [contracts/Depot.sol](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol)
 
 ## Architecture
 
@@ -22,6 +22,7 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
     ![Depot inheritance graph](../img/graphs/Depot.svg)
 </centered-image>
 
+
 ---
 
 ### Related Contracts
@@ -30,6 +31,7 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 - [Synth](Synth.md)
 - [ExchangeRates](ExchangeRates.md)
 - [AddressResolver](AddressResolver.md)
+
 
 ---
 
@@ -44,14 +46,13 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 
 ---
 
-### `SynthDeposit`
+### SynthDepositEntry
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L30)</sub>
 
-Stores an individual Synth deposit on sale.
-
-| Field  | Type      | Description                     |
-| ------ | --------- | ------------------------------- |
-| user   | `address` | The depositor.                  |
-| amount | `uint`    | The quantity of sUSD deposited. |
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| user | address payable | The depositor |
+| amount | uint256 | The quantity of sUSD deposited |
 
 ---
 
@@ -59,81 +60,133 @@ Stores an individual Synth deposit on sale.
 
 ---
 
-### `synthetix`
+### `SNX`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L19)</sub>
 
-The address of the main [`Synthetix`](Synthetix.md) contract; the depot contains SNX.
+**Type:** `bytes32`
 
-**Type:** `Synthetix public`
+**Visibility:** `internal`
 
 ---
 
-### `synth`
+### `ETH`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L20)</sub>
 
-The address of the sUSD [`Synth`](Synth.md), which are the synth held in the depot.
+**Type:** `bytes32`
 
-**Type:** `Synth public`
+**Visibility:** `internal`
 
 ---
 
 ### `fundsWallet`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L27)</sub>
 
 The address where ether and synths raised by selling SNX are sent.
 
 It is also where ether is sent if the proceeds of a sale of synths could not be transferred because the recipient is a non-payable contract.
 
-**Type:** `address public`
+**Type:** `address payable`
+
+**Visibility:** `public`
 
 ---
 
 ### `deposits`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L48)</sub>
 
-Users can deposit sUSD to be sold on the depot. This variable holds the queue of open deposits, which are sold in the order they were deposited.
+**Type:** `mapping(uint256 => struct Depot.SynthDepositEntry)`
 
-This queue is stored as an "array" within a mapping: the keys are array indices. Deposits are stored by a contiguous block of keys between [`depositStartIndex`](#depositstartindex) (inclusive) and [`depositEndIndex`](#depositendindex) (exclusive).
-
-A mapping is used instead of an array in order to avoid having to copy entries around when deposits are deleted, which saves on gas. When a deposit is made it is added to the end of the list, and when a deposit is filled, it is removed from the start of the list. Thus over time the list of deposits slides down the set of array indexes, but the address space of the mapping is large enough that it will never be filled.
-
-**Type:** `mapping(uint => synthDeposit) public`
+**Visibility:** `public`
 
 ---
 
 ### `depositStartIndex`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L50)</sub>
 
-The index of the next deposit to be processed in the [`deposits`](#deposits) queue.
+**Type:** `uint256`
 
-**Type:** `uint public`
+**Visibility:** `public`
 
 ---
 
 ### `depositEndIndex`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L52)</sub>
 
-The index one past the last deposit in the [`deposits`](#deposits) queue.
+**Type:** `uint256`
 
-**Type:** `uint public`
+**Visibility:** `public`
 
 ---
 
 ### `totalSellableDeposits`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L57)</sub>
 
-The total quantity of sUSD currently in the [`deposits`](#deposits) queue to be purchased.
+**Type:** `uint256`
 
-**Type:** `uint public` ([18 decimals](SafeDecimalMath.md))
+**Visibility:** `public`
 
 ---
 
 ### `minimumDepositAmount`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L60)</sub>
 
-The minimum sUSD quantity required for a deposit to be added to the queue. Initialised to 50.0.
+**Type:** `uint256`
 
-**Type:** `uint public` ([18 decimals](SafeDecimalMath.md))
+**Visibility:** `public`
+
+---
+
+### `maxEthPurchase`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L63)</sub>
+
+**Type:** `uint256`
+
+**Visibility:** `public`
 
 ---
 
 ### `smallDeposits`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L68)</sub>
 
-Deposits of less than [`minimumDepositAmount`](#minimumdepositamount) sUSD are not placed on the [`deposits`](#deposits) queue. Instead, they are kept here so that the depositor can withdraw them.
+**Type:** `mapping(address => uint256)`
 
-**Type:** `mapping(address => uint) public` ([18 decimals](SafeDecimalMath.md))
+**Visibility:** `public`
+
+---
+
+### `CONTRACT_SYNTHSUSD`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L72)</sub>
+
+**Type:** `bytes32`
+
+**Visibility:** `private`
+
+---
+
+### `CONTRACT_EXRATES`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L73)</sub>
+
+**Type:** `bytes32`
+
+**Visibility:** `private`
+
+---
+
+### `CONTRACT_SYNTHETIX`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L74)</sub>
+
+**Type:** `bytes32`
+
+**Visibility:** `private`
+
+---
+
+### `addressesToCache`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L76)</sub>
+
+**Type:** `bytes32[24]`
+
+**Visibility:** `private`
 
 ---
 
@@ -142,195 +195,367 @@ Deposits of less than [`minimumDepositAmount`](#minimumdepositamount) sUSD are n
 ---
 
 ### `constructor`
-
-Initialises the various addresses this contract knows, along with the inherited [`SelfDestructible`](SelfDestructible.md) and [`Pausable`](Pausable.md) instances.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L80)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(address _owner, address _fundsWallet, address _resolver) public`
+    `(address _owner, address payable _fundsWallet, address _resolver) public`
 
-    **Superconstructors**
+    **Modifiers**
 
-    * [`SelfDestructible(_owner)`](SelfDestructible.md)
-    * [`Pausable(_owner)`](Pausable.md)
+    * [Owned](#owned)
+
+    * [SelfDestructible](#selfdestructible)
+
+    * [Pausable](#pausable)
+
+    * [MixinResolver](#mixinresolver)
+
+---
+
+### `setMaxEthPurchase`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L90)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setMaxEthPurchase(uint256 _maxEthPurchase) external`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [MaxEthPurchaseUpdated](#maxethpurchaseupdated)
 
 ---
 
 ### `setFundsWallet`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L99)</sub>
 
-Allows the owner to set the [`fundsWallet`](#fundswallet) address.
+@notice Set the funds wallet where ETH raised is held
+@param _fundsWallet The new address to forward ETH and Synths to
 
 ??? example "Details"
 
     **Signature**
 
-    `setFundsWallet(address _fundsWallet) external`
+    `setFundsWallet(address payable _fundsWallet) external`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    * [onlyOwner](#onlyowner)
 
     **Emits**
 
-    * [`FundsWalletUpdated(_fundsWallet)`](#fundswalletupdated)
+    * [FundsWalletUpdated](#fundswalletupdated)
 
 ---
-
 
 ### `setMinimumDepositAmount`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L108)</sub>
 
-Allows the owner to set the [minimum deposit amount](#minimumdepositamount).
+@notice Set the minimum deposit amount required to depoist sUSD into the FIFO queue
+@param _amount The new new minimum number of sUSD required to deposit
 
 ??? example "Details"
 
     **Signature**
 
-    `setMinimumDepositAmount(uint _amount)`
+    `setMinimumDepositAmount(uint256 _amount) external`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-    **Preconditions**
-
-    * `_amount` must be greater than `UNIT`.
+    * [onlyOwner](#onlyowner)
 
     **Emits**
 
-    * [`MinimumDepositAmountUpdated(minimumDepositAmount)`](#minimumdepositamountupdated)
+    * [MinimumDepositAmountUpdated](#minimumdepositamountupdated)
 
 ---
 
-### `() (fallback function)`
+### `fallback`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L120)</sub>
 
-This simply calls [`exchangeEtherForSynths`](#exchangeetherforsynths.) so that if ether is sent to the contract, it is automatically exchanged for synths.
+@notice Fallback function (exchanges ETH to sUSD)
 
 ??? example "Details"
 
     **Signature**
 
-    `() external payable`
+    `() external`
 
 ---
 
 ### `exchangeEtherForSynths`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L128)</sub>
 
-Sells sUSD to callers who send ether. The synths are sold from the [`deposits`](#deposits) queue in the order they were deposited.
+@notice Exchange ETH to sUSD.
 
-Purchased quantity: msg.value \* usdToEthPrice
+??? example "Details"
 
-Each deposit is sold in turn until the full
-This function if invoked with a
+    **Signature**
 
-Requires that the contract is not paused, and that the prices are not stale.
+    `exchangeEtherForSynths() public`
 
-Returns the number of sUSD exchanged. Converts any ether sent to the contract to a quantity of synths at current prices. Fulfils this quantity by iterating through the deposit queue until the entire quantity is found. If a given deposit is insufficient to cover the entire requested amount, it is exhausted and removed from the queue. For each deposit found, the proper quantity of ether is sent to the depositor. If the quantity could not be sent because the target is a non-payable contract, then it is remitted to `fundsWallet`. Then send the Synths to the recipient. If the whole quantity could not be fulfilled, then the remaining ether is refunded to the purchaser.
+    **Modifiers**
 
-- `exchangeEtherForSynths() returns (uint)`:
+    * [nonReentrant](#nonreentrant)
+
+    * [rateNotStale](#ratenotstale)
+
+    * [notPaused](#notpaused)
 
 ---
 
 ### `exchangeEtherForSynthsAtRate`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L255)</sub>
 
-- `exchangeEtherForSynthsAtRate(uint guaranteedRate) returns (uint)`: Allows the caller to specify the current price, and then calls to `exchangeEtherForSynths`. Reverts if the current price does not match the price provided as an argument. This is intended as a protection against front-running by the contract owner, or otherwise a case where a price update is in flight at the invocation time.
+@notice Exchange ETH to sUSD while insisting on a particular rate. This allows a user to
+        exchange while protecting against frontrunning by the contract owner on the exchange rate.
+@param guaranteedRate The exchange rate (ether price) which must be honored or the call will revert.
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeEtherForSynthsAtRate(uint256 guaranteedRate) public`
+
+    **Modifiers**
+
+    * [rateNotStale](#ratenotstale)
+
+    * [notPaused](#notpaused)
 
 ---
 
 ### `exchangeEtherForSNX`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L272)</sub>
 
-- `exchangeEtherForSNX() returns (uint)`: Requires that the contract is not paused, and that the prices are not stale. Converts the received ether to a quantity of SNX with `synthetixReceivedForEther`. Sends the ether to `fundsWallet`, sends the converted quantity of SNX to the message sender from the contract's own reserves. Returns the SNX quantity sent. If the contract has insufficient SNX, then the transfer will fail and the transaction will revert.
+@notice Exchange ETH to SNX.
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeEtherForSNX() public`
+
+    **Modifiers**
+
+    * [rateNotStale](#ratenotstale)
+
+    * [rateNotStale](#ratenotstale)
+
+    * [notPaused](#notpaused)
+
+    **Emits**
+
+    * [Exchange](#exchange)
 
 ---
 
 ### `exchangeEtherForSNXAtRate`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L302)</sub>
 
-- `exchangeEtherForSNXAtRate(uint guaranteedEtherRate, uint guaranteedSynthetixRate) returns (uint)`: As `exchangeEtherForSynthsAtRate` is to `exchangeEtherForSynths`, this is to `exchangeEtherForSNX`.
+@notice Exchange ETH to SNX while insisting on a particular set of rates. This allows a user to
+        exchange while protecting against frontrunning by the contract owner on the exchange rates.
+@param guaranteedEtherRate The ether exchange rate which must be honored or the call will revert.
+@param guaranteedSynthetixRate The synthetix exchange rate which must be honored or the call will revert.
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeEtherForSNXAtRate(uint256 guaranteedEtherRate, uint256 guaranteedSynthetixRate) public`
+
+    **Modifiers**
+
+    * [rateNotStale](#ratenotstale)
+
+    * [rateNotStale](#ratenotstale)
+
+    * [notPaused](#notpaused)
 
 ---
 
 ### `exchangeSynthsForSNX`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L325)</sub>
 
-- `exchangeSynthsForSNX(uint synthAmount) returns (uint)`: Identical to `exchangeEtherForSNX`, but perform the price conversion with `synthetixReceivedForSynths`. The amount of synths to send is provided as a function argument, and then transferred to `fundsWallet` with `transferFrom`, so this function requires the caller to have approved the depot contract to make such a withdrawal. Note that this assumes that sUSD is worth exactly one dollar.
+@notice Exchange sUSD for SNX
+@param synthAmount The amount of synths the user wishes to exchange.
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeSynthsForSNX(uint256 synthAmount) public`
+
+    **Modifiers**
+
+    * [rateNotStale](#ratenotstale)
+
+    * [notPaused](#notpaused)
+
+    **Emits**
+
+    * [Exchange](#exchange)
 
 ---
 
 ### `exchangeSynthsForSNXAtRate`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L355)</sub>
 
-- `exchangeSynthsForSNXAtRate(uint synthAmount, uint guaranteedRate) returns (uint)`: As per `exchangeEtherForSNXAtRate`.
+@notice Exchange sUSD for SNX while insisting on a particular rate. This allows a user to
+        exchange while protecting against frontrunning by the contract owner on the exchange rate.
+@param synthAmount The amount of synths the user wishes to exchange.
+@param guaranteedRate A rate (synthetix price) the caller wishes to insist upon.
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate) public`
+
+    **Modifiers**
+
+    * [rateNotStale](#ratenotstale)
+
+    * [notPaused](#notpaused)
 
 ---
 
 ### `withdrawSynthetix`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L372)</sub>
 
-- `withdrawSynthetix(uint amount)`: Only callable by the contract owner. Allows the owner to transfer SNX out of the Depot to themselves.
+@notice Allows the owner to withdraw SNX from this contract if needed.
+@param amount The amount of SNX to attempt to withdraw (in 18 decimal places).
+
+??? example "Details"
+
+    **Signature**
+
+    `withdrawSynthetix(uint256 amount) external`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
 
 ---
 
 ### `withdrawMyDepositedSynths`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L388)</sub>
 
-- `withdrawMyDepositedSynths()`: Withdraws all Synths deposited by the message sender. Iterates through the entire deposit queue; if for a given entry the message sender is the depositor, delete that deposit and and add the deposited quantity of tokens to the pile to be remitted. Then transfer this quantity back to the message sender, along with any tokens in `smallDeposits`.
+@notice Allows a user to withdraw all of their previously deposited synths from this contract if needed.
+        Developer note: We could keep an index of address to deposits to make this operation more efficient
+        but then all the other operations on the queue become less efficient. It's expected that this
+        function will be very rarely used, so placing the inefficiency here is intentional. The usual
+        use case does not involve a withdrawal.
+
+??? example "Details"
+
+    **Signature**
+
+    `withdrawMyDepositedSynths() external`
+
+    **Emits**
+
+    * [SynthWithdrawal](#synthwithdrawal)
 
 ---
 
 ### `depositSynths`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L425)</sub>
 
-- `depositSynths(uint amount)`: Just an alias to `synth.transferFrom(msg.sender, this, amount)`. This requires the sender to have approved the deposit.
+@notice depositSynths: Allows users to deposit synths via the approve / transferFrom workflow
+@param amount The amount of sUSD you wish to deposit (must have been approved first)
 
----
+??? example "Details"
 
-### `tokenFallback`
+    **Signature**
 
-- `tokenFallback(address from, uint amount, bytes data) returns (bool)`: Only callable by the `synth` contract. Handles the actual deposit flow whenever synths are sent to this contract. If the transferred quantity is smaller than the minimum deposit amount, add it to the sender's small deposit balance. Otherwise, "append" the deposit to the deposit queue/mapping and update total sellable deposit quantity.
+    `depositSynths(uint256 amount) external`
 
 ---
 
 ### `synthetixReceivedForSynths`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L457)</sub>
 
-Computes the quantity of SNX received in exchange for a given quantity of sUSD at current prices, assuming sUSD are worth \$1. This is equivalent to:
-
-$$
-Q_\text{SNX} = Q_\text{sUSD} \times \frac{1}{\pi_\text{SNX}}
-$$
+@notice Calculate how many SNX you will receive if you transfer
+        an amount of synths.
+@param amount The amount of synths (in 18 decimal places) you want to ask about
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetixReceivedForSynths(uint amount) public view returns (uint)`
+    `synthetixReceivedForSynths(uint256 amount) public`
 
 ---
 
 ### `synthetixReceivedForEther`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L467)</sub>
 
-Computes the quantity of SNX received in exchange for a given quantity of Ether at current prices. This is equivalent to:
-
-$$
-Q_\text{SNX} = Q_\text{ETH} \times \frac{\pi_\text{ETH}}{\pi_\text{SNX}}
-$$
+@notice Calculate how many SNX you will receive if you transfer
+        an amount of ether.
+@param amount The amount of ether (in wei) you want to ask about
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetixReceivedForEther(uint amount) public view returns (uint)`
+    `synthetixReceivedForEther(uint256 amount) public`
 
 ---
 
 ### `synthsReceivedForEther`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L480)</sub>
 
-Computes the quantity of sUSD received in exchange for a given quantity of ETH at current prices. This is equivalent to:
-
-$$
-Q_\text{sUSD} = Q_\text{ETH} \times \pi_\text{SNX}
-$$
+@notice Calculate how many synths you will receive if you transfer
+        an amount of ether.
+@param amount The amount of ether (in wei) you want to ask about
 
 ??? example "Details"
 
     **Signature**
 
-    `synthsReceivedForEther(uint amount) public view returns (uint)`
+    `synthsReceivedForEther(uint256 amount) public`
+
+---
+
+### `synthsUSD`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L487)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthsUSD() internal`
+
+---
+
+### `synthetix`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L491)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthetix() internal`
+
+---
+
+### `exchangeRates`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L495)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeRates() internal`
 
 ---
 
@@ -338,10 +563,8 @@ $$
 
 ---
 
-### `onlySynth`
-
-Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
-
+### `rateNotStale`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L501)</sub>
 
 ---
 
@@ -349,68 +572,73 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 
 ---
 
+### `MaxEthPurchaseUpdated`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L508)</sub>
+
+- `(uint256 amount)`
+
+---
+
 ### `FundsWalletUpdated`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L509)</sub>
 
-- `FundsWalletUpdated(address newFundsWallet)`
-
----
-
-### `SynthUpdated`
-
-- `SynthUpdated(Synth newSynthContract)`
-
----
-
-### `SynthetixUpdated`
-
-- `SynthetixUpdated(Synthetix newSynthetixContract)`
+- `(address newFundsWallet)`
 
 ---
 
 ### `Exchange`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L510)</sub>
 
-- `Exchange(string fromCurrency, uint fromAmount, string toCurrency, uint toAmount)`
+- `(string fromCurrency, uint256 fromAmount, string toCurrency, uint256 toAmount)`
 
 ---
 
 ### `SynthWithdrawal`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L511)</sub>
 
-- `SynthWithdrawal(address user, uint amount)`
+- `(address user, uint256 amount)`
 
 ---
 
 ### `SynthDeposit`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L512)</sub>
 
-- `SynthDeposit(address indexed user, uint amount, uint indexed depositIndex)`
+- `(address user, uint256 amount, uint256 depositIndex)`
 
 ---
 
 ### `SynthDepositRemoved`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L513)</sub>
 
-- `SynthDepositRemoved(address indexed user, uint amount, uint indexed depositIndex)`
+- `(address user, uint256 amount, uint256 depositIndex)`
 
 ---
 
 ### `SynthDepositNotAccepted`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L514)</sub>
 
-- `SynthDepositNotAccepted(address user, uint amount, uint minimum)`
+- `(address user, uint256 amount, uint256 minimum)`
 
 ---
 
-### `SynthDepositAmountUpdated`
+### `MinimumDepositAmountUpdated`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L515)</sub>
 
-- `MinimumDepositAmountUpdated(uint amount)`
+- `(uint256 amount)`
 
 ---
 
 ### `NonPayableContract`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L516)</sub>
 
-- `NonPayableContract(address indexed receiver, uint amount)`
+- `(address receiver, uint256 amount)`
 
 ---
 
 ### `ClearedDeposit`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L517)</sub>
 
-- `ClearedDeposit(address indexed fromAddress, address indexed toAddress, uint fromETHAmount, uint toAmount, uint indexed depositIndex)`
+- `(address fromAddress, address toAddress, uint256 fromETHAmount, uint256 toAmount, uint256 depositIndex)`
 
 ---
+
