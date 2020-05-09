@@ -144,13 +144,15 @@ markdown_extensions:
   - pymdownx.arithmatex # Math rendering.
   - pymdownx.tasklist: # Allows nested and better checkboxes.
       custom_checkbox: True # Without this setting, checkboxes look rubbish in the material theme.
-  - pymdownx.highlight # Code syntax highlighting.
+  - pymdownx.highlight: # Code syntax highlighting.
+      linenums: True
   - pymdownx.extra: # Better fenced code blocks, emphasis, footnotes, lists, tables, abbreviations, and raw HTML.
       pymdownx.betterem:
         smart_enable: 'all' # Smarter line breaks when emphasising lines.
   - pymdownx.details # Collapsible admonition-style blocks containing further information.
   - pymdownx.escapeall # Backslashes escape everything.
   - pymdownx.caret # Superscripts and insert text.
+  - pymdownx.superfences
   - pymdownx.tabbed # tabs
   - pymdownx.tilde # Strikethrough and underlines.
   - pymdownx.magiclink: # Better links and github references.

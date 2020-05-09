@@ -49,10 +49,10 @@ Following all deposits paid though, emits the following event:
 
 ### Code Snippets
 
-!!! example "Exchanging"
+!!! example "Exchanging ETH for sUSD"
 
     === "SynthetixJs"
-        ```javascript
+        ```javascript hl_lines="12 13 14"
         const { SynthetixJs } = require('synthetix-js');
         const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
@@ -85,7 +85,7 @@ Following all deposits paid though, emits the following event:
         ```
 
     === "Vanilla JavaScript"
-        ```javascript
+        ```javascript hl_lines="24 25 26"
         const synthetix = require('synthetix'); // nodejs
         const ethers = require('ethers'); // nodejs
         // or using ES modules:
@@ -125,7 +125,7 @@ Following all deposits paid though, emits the following event:
         ```
 
     === "Solidity"
-        ```solidity
+        ```solidity hl_lines="24 27"
         pragma solidity 0.5.16;
 
         import "synthetix/contracts/interfaces/IAddressResolver.sol";

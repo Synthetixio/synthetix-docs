@@ -113,7 +113,7 @@ There are a number of different ways to settle synths explicitly:
 !!! example "Settlement"
 
     === "SynthetixJs"
-        ```javascript
+        ```javascript hl_lines="14"
         const { SynthetixJs } = require('synthetix-js');
         const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
@@ -146,7 +146,7 @@ There are a number of different ways to settle synths explicitly:
         ```
 
     === "Vanilla JavaScript"
-        ```javascript
+        ```javascript hl_lines="23"
         const synthetix = require('synthetix'); // nodejs
         const ethers = require('ethers'); // nodejs
         // or using ES modules:
@@ -184,7 +184,7 @@ There are a number of different ways to settle synths explicitly:
         ```
 
     === "Solidity"
-        ```solidity
+        ```solidity hl_lines="27 39 47 57"
         pragma solidity 0.5.16;
 
         import "synthetix/contracts/interfaces/IAddressResolver.sol";
@@ -222,7 +222,7 @@ There are a number of different ways to settle synths explicitly:
                 // This check is what exchanger.settle() will perform, added here for explicitness
                 require(exchanger.maxSecsLeftInWaitingPeriod(user, synthKey) == 0, "Cannot settle during the waiting period");
 
-                // This function is public - any user or contract can call it
+                // This function has no msg.sender restriction - any address can call it (they'll just have to pay the gas on behalf of the user)
                 exchanger.settle(user, synthKey)
             }
 

@@ -71,7 +71,7 @@ On a successful transaction, the following events occur:
 !!! example "Claiming"
 
     === "SynthetixJs"
-        ```javascript
+        ```javascript hl_lines="12"
         const { SynthetixJs } = require('synthetix-js');
         const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
@@ -102,7 +102,7 @@ On a successful transaction, the following events occur:
         ```
 
     === "Vanilla JavaScript"
-        ```javascript
+        ```javascript hl_lines="28"
         const synthetix = require('synthetix'); // nodejs
         const ethers = require('ethers'); // nodejs
         // or using ES modules:
@@ -144,7 +144,7 @@ On a successful transaction, the following events occur:
         ```
 
     === "Solidity"
-        ```solidity
+        ```solidity hl_lines="22 31"
         pragma solidity 0.5.16;
 
         import "synthetix/contracts/interfaces/IAddressResolver.sol";

@@ -70,7 +70,7 @@ On a successful transaction, the following events occur:
 !!! example "Delegating"
 
     === "SynthetixJs"
-        ```javascript
+        ```javascript hl_lines="14"
         const { SynthetixJs } = require('synthetix-js');
         const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
@@ -103,7 +103,7 @@ On a successful transaction, the following events occur:
         ```
 
     === "Vanilla JavaScript"
-        ```javascript
+        ```javascript hl_lines="24"
         const synthetix = require('synthetix'); // nodejs
         const ethers = require('ethers'); // nodejs
         // or using ES modules:

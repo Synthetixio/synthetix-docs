@@ -61,7 +61,7 @@ On a successful transaction, the following events occur:
 !!! example "Unstaking (burning)"
 
     === "SynthetixJs"
-        ```javascript
+        ```javascript hl_lines="15"
         const { SynthetixJs } = require('synthetix-js');
         const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
@@ -95,7 +95,7 @@ On a successful transaction, the following events occur:
         ```
 
     === "Vanilla JavaScript"
-        ```javascript
+        ```javascript hl_lines="25"
         const synthetix = require('synthetix'); // nodejs
         const ethers = require('ethers'); // nodejs
         // or using ES modules:
@@ -135,7 +135,7 @@ On a successful transaction, the following events occur:
         ```
 
     === "Solidity"
-        ```solidity
+        ```solidity hl_lines="25 36"
         pragma solidity 0.5.16;
 
         import "synthetix/contracts/interfaces/IAddressResolver.sol";
@@ -171,7 +171,7 @@ On a successful transaction, the following events occur:
 
                 // Note: this will fail if `DelegateApprovals.approveBurnOnBehalf(address(MyContract))` has
                 // not yet been invoked by the `user`
-                synthetix.burnSynths(user, debt);
+                synthetix.burnSynthsOnBehalf(user, debt);
             }
         }
         ```
