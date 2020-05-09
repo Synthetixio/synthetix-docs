@@ -78,132 +78,131 @@ Following any reclaims or rebates, the following events then occur:
 
 ### Code Snippets
 
-#### Exchanging in JavaScript (on ropsten)
+!!! example "Exchanging (Trading)"
 
-```javascript
-const { SynthetixJs } = require('synthetix-js');
-const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+    === "SynthetixJs"
+        ```javascript
+        const { SynthetixJs } = require('synthetix-js');
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
-// parameters: default provider, default networkId, private key as a string
-const networkId = 3; // ropsten, (use 1 for mainnet)
-const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
-const snxjs = new SynthetixJs({ signer, networkId });
+        // parameters: default provider, default networkId, private key as a string
+        const networkId = 3; // ropsten, (use 1 for mainnet)
+        const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
+        const snxjs = new SynthetixJs({ signer, networkId });
 
-const { toUtf8Bytes32, parseEther } = snxjs.utils;
+        const { toUtf8Bytes32, parseEther } = snxjs.utils;
 
-(async () => {
-	try {
-		// send transaction
-		const txn = await snxjs.Synthetix.exchange(toUtf8Bytes32('sUSD'), parseEther('0.001'), toUtf8Bytes32('iETH'));
+        (async () => {
+          try {
+            // send transaction
+            const txn = await snxjs.Synthetix.exchange(toUtf8Bytes32('sUSD'), parseEther('0.001'), toUtf8Bytes32('iETH'));
 
-		console.log('hash is mining', txn.hash);
+            console.log('hash is mining', txn.hash);
 
-		// wait for mining
-		await txn.wait();
+            // wait for mining
+            await txn.wait();
 
-		// fetch logs of transaction
-		const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
+            // fetch logs of transaction
+            const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
 
-		// show them
-		console.log(JSON.stringify(logs, null, '\t'));
-	} catch (err) {
-		console.log('Error', err);
-	}
-})();
-```
+            // show them
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-??? Info "In JavaScript without SynthetixJs"
+    === "Vanilla JavaScript"
+        ```javascript
+        const synthetix = require('synthetix'); // nodejs
+        const ethers = require('ethers'); // nodejs
+        // or using ES modules:
+        // import synthetix from 'synthetix';
+        // import ethers from 'ethers';
 
-    ```javascript
-    const synthetix = require('synthetix'); // nodejs
-    const ethers = require('ethers'); // nodejs
-    // or using ES modules:
-    // import synthetix from 'synthetix';
-    // import ethers from 'ethers';
+        const network = 'ropsten';
+        const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
 
-    const network = 'ropsten';
-    const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
+        const { address } = synthetix.getTarget({ network, contract: 'ProxyERC20' });
+        const { abi } = synthetix.getSource({ network, contract: 'Synthetix' });
 
-    const { address } = synthetix.getTarget({ network, contract: 'ProxyERC20' });
-    const { abi } = synthetix.getSource({ network, contract: 'Synthetix' });
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+        const signer = new ethers.Wallet(privateKey).connect(provider);
 
-    const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
-    const signer = new ethers.Wallet(privateKey).connect(provider);
+        // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
+        const Synthetix = new ethers.Contract(address, abi, signer);
+        const { toBytes32 } = synthetix;
 
-    // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
-    const Synthetix = new ethers.Contract(address, abi, signer);
-    const { toBytes32 } = synthetix;
+        (async () => {
+          try {
+            // send transaction
+            const txn = await Synthetix.exchange(toBytes32('sUSD'), ethers.utils.parseEther('0.001'), toBytes32('iETH'));
 
-    (async () => {
-      try {
-        // send transaction
-        const txn = await Synthetix.exchange(toBytes32('sUSD'), ethers.utils.parseEther('0.001'), toBytes32('iETH'));
+            // wait for mining
+            await txn.wait();
+            // fetch logs of transaction
+            const { logs } = await provider.getTransactionReceipt(txn.hash);
+            // display
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-        // wait for mining
-        await txn.wait();
-        // fetch logs of transaction
-        const { logs } = await provider.getTransactionReceipt(txn.hash);
-        // display
-        console.log(JSON.stringify(logs, null, '\t'));
-      } catch (err) {
-        console.log('Error', err);
-      }
-    })();
-    ```
+    === "Solidity"
+        ```solidity
+        pragma solidity 0.5.16;
 
-#### Exchanging in Solidity
-
-```solidity
-pragma solidity 0.5.16;
-
-import "synthetix/contracts/interfaces/IAddressResolver.sol";
-import "synthetix/contracts/interfaces/ISynthetix.sol";
+        import "synthetix/contracts/interfaces/IAddressResolver.sol";
+        import "synthetix/contracts/interfaces/ISynthetix.sol";
 
 
-contract MyContract {
+        contract MyContract {
 
-    // This should be instantiated with our ReadProxyAddressResolver
-    // it's a ReadProxy that won't change, so safe to code it here without a setter
-    // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
-    IAddressResolver public synthetixResolver;
+            // This should be instantiated with our ReadProxyAddressResolver
+            // it's a ReadProxy that won't change, so safe to code it here without a setter
+            // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
+            IAddressResolver public synthetixResolver;
 
-    constructor(IAddressResolver _snxResolver) public {
-        synthetixResolver = _snxResolver;
-    }
+            constructor(IAddressResolver _snxResolver) public {
+                synthetixResolver = _snxResolver;
+            }
 
-    function synthetixExchange(bytes32 src, uint amount, bytes32 dest) external {)
-      ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
-      require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
+            function synthetixExchange(bytes32 src, uint amount, bytes32 dest) external {)
+              ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
+              require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
 
-      // This check is what synthetix.exchange() will perform, added here for explicitness
-      require(!synthetix.isWaitingPeriod(src), "Cannot exchange during the waiting period");
+              // This check is what synthetix.exchange() will perform, added here for explicitness
+              require(!synthetix.isWaitingPeriod(src), "Cannot exchange during the waiting period");
 
-      // Exchange for msg.sender = address(MyContract)
-      synthetix.exchange(src, amount, dest);
+              // Exchange for msg.sender = address(MyContract)
+              synthetix.exchange(src, amount, dest);
 
-      // Note: due to Fee Reclamation in SIP-37, the following actions will fail if attempted in the
-      // same block (the waiting period for the "to" synth must first expire)
-        // synthetixResolver.getSynth(dest).transfer(address(0), 1e12)
-        // synthetix.exchange(dest, 1e12, "sBTC");
-        // synthetix.settle(dest);
-    }
+              // Note: due to Fee Reclamation in SIP-37, the following actions will fail if attempted in the
+              // same block (the waiting period for the "to" synth must first expire)
+                // synthetixResolver.getSynth(dest).transfer(address(0), 1e12)
+                // synthetix.exchange(dest, 1e12, "sBTC");
+                // synthetix.settle(dest);
+            }
 
-    function synthetixExchangeOnBehalf(address user, bytes32 src, uint amount, bytes32 dest) external {
-        ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
-        require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
+            function synthetixExchangeOnBehalf(address user, bytes32 src, uint amount, bytes32 dest) external {
+                ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
+                require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
 
-        // This check is what synthetix.exchange() will perform, added here for explicitness
-        require(!synthetix.isWaitingPeriod(src), "Cannot exchange during the waiting period");
+                // This check is what synthetix.exchange() will perform, added here for explicitness
+                require(!synthetix.isWaitingPeriod(src), "Cannot exchange during the waiting period");
 
-        // Note: this will fail if `DelegateApprovals.approveExchangeOnBehalf(address(MyContract))` has
-        // not yet been invoked by the user
-        synthetix.exchangeOnBehalf(user, src, amount, dest);
+                // Note: this will fail if `DelegateApprovals.approveExchangeOnBehalf(address(MyContract))` has
+                // not yet been invoked by the user
+                synthetix.exchangeOnBehalf(user, src, amount, dest);
 
-        // Note: due to Fee Reclamation in SIP-37, the following actions will fail if attempted in the
-        // same block (the waiting period for dest must first expire)
-          // synthetixResolver.getSynth(dest).transferFrom(user, address(0), 1e12)
-          // synthetix.exchangeOnBehalf(user, dest, 1e12, "sBTC");
-          // synthetixResolver.getAddress("Exchanger").settle(user, dest)
-    }
-}
-```
+                // Note: due to Fee Reclamation in SIP-37, the following actions will fail if attempted in the
+                // same block (the waiting period for dest must first expire)
+                  // synthetixResolver.getSynth(dest).transferFrom(user, address(0), 1e12)
+                  // synthetix.exchangeOnBehalf(user, dest, 1e12, "sBTC");
+                  // synthetixResolver.getAddress("Exchanger").settle(user, dest)
+            }
+        }
+        ```

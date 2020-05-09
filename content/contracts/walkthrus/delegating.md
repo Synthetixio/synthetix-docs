@@ -67,81 +67,81 @@ On a successful transaction, the following events occur:
 
 ## Code Snippets
 
-#### Claiming in JavaScript (on ropsten)
+!!! example "Delegating"
 
-```javascript
-const { SynthetixJs } = require('synthetix-js');
-const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+    === "SynthetixJs"
+        ```javascript
+        const { SynthetixJs } = require('synthetix-js');
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
-// parameters: default provider, default networkId, private key as a string
-const networkId = 3; // ropsten, (use 1 for mainnet)
-const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
-const snxjs = new SynthetixJs({ signer, networkId });
+        // parameters: default provider, default networkId, private key as a string
+        const networkId = 3; // ropsten, (use 1 for mainnet)
+        const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
+        const snxjs = new SynthetixJs({ signer, networkId });
 
-(async () => {
-	try {
-		const contractAddress = '0x0000000000000000000000000000000000000000';
+        (async () => {
+          try {
+            const contractAddress = '0x0000000000000000000000000000000000000000';
 
-		// send transaction
-		const txn = await snxjs.DelegateApprovals.approveAllDelegatePowers(contractAddress);
+            // send transaction
+            const txn = await snxjs.DelegateApprovals.approveAllDelegatePowers(contractAddress);
 
-		console.log('hash is mining', txn.hash);
+            console.log('hash is mining', txn.hash);
 
-		// wait for mining
-		await txn.wait();
+            // wait for mining
+            await txn.wait();
 
-		// fetch logs of transaction
-		const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
+            // fetch logs of transaction
+            const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
 
-		// show them
-		console.log(JSON.stringify(logs, null, '\t'));
-	} catch (err) {
-		console.log('Error', err);
-	}
-})();
-```
+            // show them
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-??? Info "In JavaScript without SynthetixJs"
+    === "Vanilla JavaScript"
+        ```javascript
+        const synthetix = require('synthetix'); // nodejs
+        const ethers = require('ethers'); // nodejs
+        // or using ES modules:
+        // import synthetix from 'synthetix';
+        // import ethers from 'ethers';
 
-    ```javascript
-    const synthetix = require('synthetix'); // nodejs
-    const ethers = require('ethers'); // nodejs
-    // or using ES modules:
-    // import synthetix from 'synthetix';
-    // import ethers from 'ethers';
+        const network = 'ropsten';
+        const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
 
-    const network = 'ropsten';
-    const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
+        const { abi } = synthetix.getSource({ network, contract: 'DelegateApprovals' });
+        const { address } = synthetix.getTarget({ network, contract: 'DelegateApprovals' });
 
-    const { abi } = synthetix.getSource({ network, contract: 'DelegateApprovals' });
-    const { address } = synthetix.getTarget({ network, contract: 'DelegateApprovals' });
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+        const signer = new ethers.Wallet(privateKey).connect(provider);
 
-    const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
-    const signer = new ethers.Wallet(privateKey).connect(provider);
+        // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
+        const DelegateApprovals = new ethers.Contract(address, abi, signer);
 
-    // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
-    const DelegateApprovals = new ethers.Contract(address, abi, signer);
+        (async () => {
+          try {
+            const contractAddress = '0x0000000000000000000000000000000000000000';
 
-    (async () => {
-      try {
-        const contractAddress = '0x0000000000000000000000000000000000000000';
+            // send transaction
+            const txn = await DelegateApprovals.approveAllDelegatePowers();
+            // wait for mining
+            await txn.wait();
+            // fetch logs of transaction
+            const { logs } = await provider.getTransactionReceipt(txn.hash);
+            // display
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-        // send transaction
-        const txn = await DelegateApprovals.approveAllDelegatePowers();
-        // wait for mining
-        await txn.wait();
-        // fetch logs of transaction
-        const { logs } = await provider.getTransactionReceipt(txn.hash);
-        // display
-        console.log(JSON.stringify(logs, null, '\t'));
-      } catch (err) {
-        console.log('Error', err);
-      }
-    })();
-    ```
+    === "Solidity"
 
-#### Delegation in Solidity
+        !!! warning "No delegation in Solidity directly"
 
-!!! warning "No delegation in Solidity directly"
-
-    Note: due to how calling works in Solidity, users must invoke these delegation functions themselves directly with the address of your contracts - the calling of these functions cannot be delegated themselves inside of Solidity. This is similar to how `ERC20` approvals work (users must approve a contract to be able to transfer their tokens).
+            Note: due to how calling works in Solidity, users must invoke these delegation functions themselves directly with the address of your contracts - the calling of these functions cannot be delegated themselves inside of Solidity. This is similar to how `ERC20` approvals work (users must approve a contract to be able to transfer their tokens).

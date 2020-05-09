@@ -49,112 +49,111 @@ Following all deposits paid though, emits the following event:
 
 ### Code Snippets
 
-#### Exchanging in JavaScript (ropsten)
+!!! example "Exchanging"
 
-```javascript
-const { SynthetixJs } = require('synthetix-js');
-const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+    === "SynthetixJs"
+        ```javascript
+        const { SynthetixJs } = require('synthetix-js');
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
-// parameters: default provider, default networkId, private key as a string
-const networkId = 3; // ropsten, (use 1 for mainnet)
-const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
-const snxjs = new SynthetixJs({ signer, networkId });
+        // parameters: default provider, default networkId, private key as a string
+        const networkId = 3; // ropsten, (use 1 for mainnet)
+        const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
+        const snxjs = new SynthetixJs({ signer, networkId });
 
-(async () => {
-	try {
-		// send transaction
-		const txn = await snxjs.Depot.exchangeEtherForSynths({
-			value: snxjs.utils.parseEther('0.01'), // Send 0.01 ETH
-		});
+        (async () => {
+          try {
+            // send transaction
+            const txn = await snxjs.Depot.exchangeEtherForSynths({
+              value: snxjs.utils.parseEther('0.01'), // Send 0.01 ETH
+            });
 
-		console.log('hash is mining', txn.hash);
+            console.log('hash is mining', txn.hash);
 
-		// wait for mining
-		await txn.wait();
+            // wait for mining
+            await txn.wait();
 
-		// fetch logs of transaction
-		const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
+            // fetch logs of transaction
+            const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
 
-		// show them
-		console.log(JSON.stringify(logs, null, '\t'));
-	} catch (err) {
-		console.log('Error', err);
-	}
-})();
-```
+            // show them
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-??? Info "In JavaScript without SynthetixJs (ropsten)"
+    === "Vanilla JavaScript"
+        ```javascript
+        const synthetix = require('synthetix'); // nodejs
+        const ethers = require('ethers'); // nodejs
+        // or using ES modules:
+        // import synthetix from 'synthetix';
+        // import ethers from 'ethers';
 
-    ```javascript
-    const synthetix = require('synthetix'); // nodejs
-    const ethers = require('ethers'); // nodejs
-    // or using ES modules:
-    // import synthetix from 'synthetix';
-    // import ethers from 'ethers';
+        const network = 'ropsten';
+        const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
 
-    const network = 'ropsten';
-    const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
+        const contract = 'Depot';
 
-    const contract = 'Depot';
+        const { abi } = synthetix.getSource({ network, contract });
+        const { address } = synthetix.getTarget({ network, contract });
 
-    const { abi } = synthetix.getSource({ network, contract });
-    const { address } = synthetix.getTarget({ network, contract });
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+        const signer = new ethers.Wallet(privateKey).connect(provider);
 
-    const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
-    const signer = new ethers.Wallet(privateKey).connect(provider);
+        // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
+        const Depot = new ethers.Contract(address, abi, signer);
 
-    // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
-    const Depot = new ethers.Contract(address, abi, signer);
+        (async () => {
+          try {
+            // send transaction
+            const txn = await Depot.exchangeEtherForSynths({
+              value: ethers.utils.parseEther('0.01')
+            });
+            // wait for mining
+            await txn.wait();
+            // fetch logs of transaction
+            const { logs } = await provider.getTransactionReceipt(txn.hash);
+            // display
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-    (async () => {
-      try {
-        // send transaction
-        const txn = await Depot.exchangeEtherForSynths({
-          value: ethers.utils.parseEther('0.01')
-        });
-        // wait for mining
-        await txn.wait();
-        // fetch logs of transaction
-        const { logs } = await provider.getTransactionReceipt(txn.hash);
-        // display
-        console.log(JSON.stringify(logs, null, '\t'));
-      } catch (err) {
-        console.log('Error', err);
-      }
-    })();
-    ```
+    === "Solidity"
+        ```solidity
+        pragma solidity 0.5.16;
 
-#### Exchanging in Solidity
+        import "synthetix/contracts/interfaces/IAddressResolver.sol";
+        import "synthetix/contracts/interfaces/IDepot.sol";
 
-```solidity
-pragma solidity 0.5.16;
+        contract MyContract {
 
-import "synthetix/contracts/interfaces/IAddressResolver.sol";
-import "synthetix/contracts/interfaces/IDepot.sol";
+          // This should be instantiated with our ReadProxyAddressResolver
+          // it's a ReadProxy that won't change, so safe to code it here without a setter
+          // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
+          IAddressResolver public synthetixResolver;
 
-contract MyContract {
+          constructor(IAddressResolver _snxResolver) public {
+              synthetixResolver = _snxResolver;
+          }
 
-    // This should be instantiated with our ReadProxyAddressResolver
-    // it's a ReadProxy that won't change, so safe to code it here without a setter
-    // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
-    IAddressResolver public synthetixResolver;
+          function synthetixExchangeETHForSynths() external {
+            IDepot depot = synthetixResolver.getAddress("Depot");
+            require(depot != address(0), "Depot is missing from Synthetix resolver");
 
-    constructor(IAddressResolver _snxResolver) public {
-        synthetixResolver = _snxResolver;
-    }
+            uint etherAmount = 1e15; // 0.001 ETH
 
-    function synthetixExchangeETHForSynths() external {
-      IDepot depot = synthetixResolver.getAddress("Depot");
-      require(depot != address(0), "Depot is missing from Synthetix resolver");
+            // Either
+            depot.exchangeEtherForSynths.value(etherAmount)();
 
-      uint etherAmount = 1e15; // 0.001 ETH
+            // or simply
+            depot.transfer(etherAmount);
+          }
 
-      // Either
-      depot.exchangeEtherForSynths.value(etherAmount)();
-
-      // or simply
-      depot.transfer(etherAmount);
-    }
-
-}
-```
+        }
+        ```

@@ -60,9 +60,10 @@ nav:
           - SafeDecimalMath: contracts/SafeDecimalMath.md
           - SafeMath: contracts/SafeMath.md
       - Walkthrus:
+          - Overview: contracts/walkthrus/index.md
           - Claiming Rewards: contracts/walkthrus/claiming.md
           - Delegating: contracts/walkthrus/delegating.md
-          - Swap ETH for sUSD: contracts/walkthrus/depot.md
+          - 'Depot: ETH/sUSD': contracts/walkthrus/depot.md
           - Staking SNX: contracts/walkthrus/staking.md
           - Trading: contracts/walkthrus/trading.md
           - Trading Settlement: contracts/walkthrus/settlement.md
@@ -150,6 +151,7 @@ markdown_extensions:
   - pymdownx.details # Collapsible admonition-style blocks containing further information.
   - pymdownx.escapeall # Backslashes escape everything.
   - pymdownx.caret # Superscripts and insert text.
+  - pymdownx.tabbed # tabs
   - pymdownx.tilde # Strikethrough and underlines.
   - pymdownx.magiclink: # Better links and github references.
       provider: 'github'
