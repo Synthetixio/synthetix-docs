@@ -53,11 +53,11 @@ As of this moment, the following contracts are behind proxies:
 
     One note of caution: the events from the underlying contracts - `Synthetix` and `Synth` are still emitted on the currently deprecated proxy contracts. Indeed, SynthetixJs still use the deprecated proxies for this reason (see [Synthetix.js](https://github.com/Synthetixio/synthetix-js/blob/v2.21.6/src/contracts/mainnet/Synthetix.js#L12)). Once we migrate to the new proxies, the events will be emitted on the integration proxies and the deprecated ones will be removed entirely.
 
-1.  **Phase 1 (Current)**
+1.  **Phase 1**
 
     Prior to May 10, 2020, both proxies for `Synthetix` and `SynthsUSD` will function. Our dApps and integrations will call and transact using the deprecated proxies, and all events emitted will be on the deprecated proxy.
 
-2.  **Phase 2**
+2.  **Phase 2 (Current)**
 
     <span class="wtb-ew-v1" style="width: 560px; display:inline-block"><script src="https://www.worldtimebuddy.com/event_widget.js?h=100&md=5/10/2020&mt=23.00&ml=0.50&sts=0&sln=0&wt=ew-ltc"></script><i><a target="_blank" href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</i><noscript><a href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
 
