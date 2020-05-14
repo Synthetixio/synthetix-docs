@@ -58,138 +58,120 @@ On a successful transaction, the following events occur:
 
 ### Code Snippets
 
-#### Burning in JavaScript (on ropsten)
+!!! example "Unstaking (burning)"
 
-```javascript
-const { SynthetixJs } = require('synthetix-js');
-const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+    === "SynthetixJs"
+        ```javascript hl_lines="15"
+        const { SynthetixJs } = require('synthetix-js');
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
-// parameters: default provider, default networkId, private key as a string
-const networkId = 3; // ropsten, (use 1 for mainnet)
-const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
-const snxjs = new SynthetixJs({ signer, networkId });
+        // parameters: default provider, default networkId, private key as a string
+        const networkId = 3; // ropsten, (use 1 for mainnet)
+        const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
+        const snxjs = new SynthetixJs({ signer, networkId });
 
-(async () => {
-	try {
-		// get debt owing
-		const debt = await snxjs.Synthetix.debtBalanceOf(signer.address, snxjs.utils.toUtf8Bytes32('sUSD'));
+        (async () => {
+            try {
+                // get debt owing
+                const debt = await snxjs.Synthetix.debtBalanceOf(signer.address, snxjs.utils.toUtf8Bytes32('sUSD'));
 
-		// burn all debt owing
-		const txn = await snxjs.Synthetix.burnSynths(debt);
+                // burn all debt owing
+                const txn = await snxjs.Synthetix.burnSynths(debt);
 
-		console.log('hash is mining', txn.hash);
+                console.log('hash is mining', txn.hash);
 
-		// wait for mining
-		await txn.wait();
+                // wait for mining
+                await txn.wait();
 
-		// fetch logs of transaction
-		const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
+                // fetch logs of transaction
+                const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
 
-		// show them
-		console.log(JSON.stringify(logs, null, '\t'));
-	} catch (err) {
-		console.log('Error', err);
-	}
-})();
-```
+                // show them
+                console.log(JSON.stringify(logs, null, '\t'));
+            } catch (err) {
+                console.log('Error', err);
+            }
+        })();
+        ```
 
-??? Info "In JavaScript without SynthetixJs"
+    === "Vanilla JavaScript"
+        ```javascript hl_lines="25"
+        const synthetix = require('synthetix'); // nodejs
+        const ethers = require('ethers'); // nodejs
+        // or using ES modules:
+        // import synthetix from 'synthetix';
+        // import ethers from 'ethers';
 
-    ```javascript
-    const synthetix = require('synthetix'); // nodejs
-    const ethers = require('ethers'); // nodejs
-    // or using ES modules:
-    // import synthetix from 'synthetix';
-    // import ethers from 'ethers';
+        const network = 'ropsten';
+        const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
 
-    const network = 'ropsten';
-    const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
+        const { address } = synthetix.getTarget({ network, contract: 'ProxyERC20' });
+        const { abi } = synthetix.getSource({ network, contract: 'Synthetix' });
 
-    const { address } = synthetix.getTarget({ network, contract: 'ProxyERC20' });
-    const { abi } = synthetix.getSource({ network, contract: 'Synthetix' });
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+        const signer = new ethers.Wallet(privateKey).connect(provider);
 
-    const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
-    const signer = new ethers.Wallet(privateKey).connect(provider);
+        // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
+        const Synthetix = new ethers.Contract(address, abi, signer);
 
-    // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
-    const Synthetix = new ethers.Contract(address, abi, signer);
+        (async () => {
+        try {
 
-    (async () => {
-      try {
+            const debt = await Synthetix.debtBalanceOf(signer.address, synthetix.toBytes32('sUSD'));
 
-        const debt = await Synthetix.debtBalanceOf(signer.address, synthetix.toBytes32('sUSD'));
+            // burn all debt owing
+            const txn = await Synthetix.burnSynths(debt);
 
-    	// burn all debt owing
-    	const txn = await Synthetix.burnSynths(debt);
+            // wait for mining
+            await txn.wait();
+            // fetch logs of transaction
+            const { logs } = await provider.getTransactionReceipt(txn.hash);
+            // display
+            console.log(JSON.stringify(logs, null, '\t'));
+        } catch (err) {
+            console.log('Error', err);
+        }
+        })();
+        ```
 
-        // wait for mining
-        await txn.wait();
-        // fetch logs of transaction
-        const { logs } = await provider.getTransactionReceipt(txn.hash);
-        // display
-        console.log(JSON.stringify(logs, null, '\t'));
-      } catch (err) {
-        console.log('Error', err);
-      }
-    })();
-    ```
+    === "Solidity"
+        ```solidity hl_lines="25 36"
+        pragma solidity 0.5.16;
 
-#### Burning in Solidity
-
-```solidity
-pragma solidity 0.5.16;
-
-// import "synthetix/contracts/interfaces/IAddressResolver.sol";
-interface IAddressResolver {
-    function getAddress(bytes32 name) external view returns (address);
-}
-
-// import "synthetix/contracts/interfaces/ISynthetix.sol";
-interface ISynthetix {
-
-    function burnSynths(uint amount) external;
-    function burnSynthsToTarget() external;
-
-    // These "on behalf" methods require that the burnForAddress has already invoked
-    // DelegateApprovals.approveBurnOnBehalf(address(MyContract))
-    function burnSynthsOnBehalf(address burnForAddress, uint amount) external;
-    function burnSynthsToTargetOnBehalf(address burnForAddress) external;
-
-    // Views
-    function debtBalanceOf(address issuer, bytes32 currencyKey) external view returns (uint);
-}
+        import "synthetix/contracts/interfaces/IAddressResolver.sol";
+        import "synthetix/contracts/interfaces/ISynthetix.sol";
 
 
-contract MyContract {
+        contract MyContract {
 
-    IAddressResolver public synthetixResolver;
+            // This should be instantiated with our ReadProxyAddressResolver
+            // it's a ReadProxy that won't change, so safe to code it here without a setter
+            // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
+            IAddressResolver public synthetixResolver;
 
-    // Add a setter here as the synthetix resolver may change in the future
-    // Note: work is underway to create a permanent address resolver so this setter
-    // will no longer be required
-    function setSynthetixResolver(IAddressResolver resolver) external onlyOwner {
-        synthetixResolver = resolver;
-    }
+            constructor(IAddressResolver _snxResolver) public {
+                synthetixResolver = _snxResolver;
+            }
 
-    function synthetixBurn() external {
-      ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
-      require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
+            function synthetixBurn() external {
+                ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
+                require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
 
-      uint debt = synthetix.debtBalanceOf(msg.sender, "sUSD");
+                uint debt = synthetix.debtBalanceOf(msg.sender, "sUSD");
 
-      // Burn for msg.sender = address(MyContract)
-      synthetix.burnSynths(debt);
-    }
+                // Burn for msg.sender = address(MyContract)
+                synthetix.burnSynths(debt);
+            }
 
-    function synthetixBurnOnBehalf(address user) external {
-        ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
-        require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
+            function synthetixBurnOnBehalf(address user) external {
+                ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
+                require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
 
-        uint debt = synthetix.debtBalanceOf(user, "sUSD");
+                uint debt = synthetix.debtBalanceOf(user, "sUSD");
 
-        // Note: this will fail if `DelegateApprovals.approveBurnOnBehalf(address(MyContract))` has
-        // not yet been invoked by the `user`
-        synthetix.burnSynths(user, debt);
-    }
-}
-```
+                // Note: this will fail if `DelegateApprovals.approveBurnOnBehalf(address(MyContract))` has
+                // not yet been invoked by the `user`
+                synthetix.burnSynthsOnBehalf(user, debt);
+            }
+        }
+        ```

@@ -68,127 +68,114 @@ On a successful transaction, the following events occur:
 
 ### Code Snippets
 
-#### Claiming in JavaScript (on ropsten)
+!!! example "Claiming"
 
-```javascript
-const { SynthetixJs } = require('synthetix-js');
-const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+    === "SynthetixJs"
+        ```javascript hl_lines="12"
+        const { SynthetixJs } = require('synthetix-js');
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
-// parameters: default provider, default networkId, private key as a string
-const networkId = 3; // ropsten, (use 1 for mainnet)
-const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
-const snxjs = new SynthetixJs({ signer, networkId });
+        // parameters: default provider, default networkId, private key as a string
+        const networkId = 3; // ropsten, (use 1 for mainnet)
+        const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
+        const snxjs = new SynthetixJs({ signer, networkId });
 
-(async () => {
-	try {
-		// send transaction
-		const txn = await snxjs.FeePool.claimFees();
+        (async () => {
+          try {
+            // send transaction
+            const txn = await snxjs.FeePool.claimFees();
 
-		console.log('hash is mining', txn.hash);
+            console.log('hash is mining', txn.hash);
 
-		// wait for mining
-		await txn.wait();
+            // wait for mining
+            await txn.wait();
 
-		// fetch logs of transaction
-		const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
+            // fetch logs of transaction
+            const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
 
-		// show them
-		console.log(JSON.stringify(logs, null, '\t'));
-	} catch (err) {
-		console.log('Error', err);
-	}
-})();
-```
+            // show them
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-??? Info "In JavaScript without SynthetixJs"
+    === "Vanilla JavaScript"
+        ```javascript hl_lines="28"
+        const synthetix = require('synthetix'); // nodejs
+        const ethers = require('ethers'); // nodejs
+        // or using ES modules:
+        // import synthetix from 'synthetix';
+        // import ethers from 'ethers';
 
-    ```javascript
-    const synthetix = require('synthetix'); // nodejs
-    const ethers = require('ethers'); // nodejs
-    // or using ES modules:
-    // import synthetix from 'synthetix';
-    // import ethers from 'ethers';
+        const network = 'ropsten';
+        const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
 
-    const network = 'ropsten';
-    const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
+        const { abi } = synthetix.getSource({
+          network,
+          contract: 'FeePool',
+        });
+        const { address } = synthetix.getTarget({
+          network,
+          contract: 'ProxyFeePool',
+        });
 
-    const { abi } = synthetix.getSource({
-      network,
-      contract: 'FeePool',
-    });
-    const { address } = synthetix.getTarget({
-      network,
-      contract: 'ProxyFeePool',
-    });
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+        const signer = new ethers.Wallet(privateKey).connect(provider);
 
-    const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
-    const signer = new ethers.Wallet(privateKey).connect(provider);
+        // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
+        const FeePool = new ethers.Contract(address, abi, signer);
 
-    // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
-    const FeePool = new ethers.Contract(address, abi, signer);
+        (async () => {
+          try {
+            // send transaction
+            const txn = await FeePool.claimFees();
+            // wait for mining
+            await txn.wait();
+            // fetch logs of transaction
+            const { logs } = await provider.getTransactionReceipt(txn.hash);
+            // display
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-    (async () => {
-      try {
-        // send transaction
-        const txn = await FeePool.claimFees();
-        // wait for mining
-        await txn.wait();
-        // fetch logs of transaction
-        const { logs } = await provider.getTransactionReceipt(txn.hash);
-        // display
-        console.log(JSON.stringify(logs, null, '\t'));
-      } catch (err) {
-        console.log('Error', err);
-      }
-    })();
-    ```
+    === "Solidity"
+        ```solidity hl_lines="22 31"
+        pragma solidity 0.5.16;
 
-#### Claiming in Solidity
+        import "synthetix/contracts/interfaces/IAddressResolver.sol";
+        import "synthetix/contracts/interfaces/IFeePool.sol";
 
-```solidity
-pragma solidity 0.5.16;
+        contract MyContract {
 
-// import "synthetix/contracts/interfaces/IAddressResolver.sol";
-interface IAddressResolver {
-  function getAddress(bytes32 name) external view returns (address);
-}
+            // This should be instantiated with our ReadProxyAddressResolver
+            // it's a ReadProxy that won't change, so safe to code it here without a setter
+            // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
+            IAddressResolver public synthetixResolver;
 
-// import "synthetix/contracts/interfaces/IFeePool.sol";
-interface IFeePool {
-    function claimFees() external returns (bool);
+            constructor(IAddressResolver _snxResolver) public {
+                synthetixResolver = _snxResolver;
+            }
 
-    // For this "on behalf" method to succeed, the claimingForAddress must have already invoked
-    // DelegateApprovals.approveClaimOnBehalf(address(MyContract))
-    function claimOnBehalf(address claimingForAddress) external returns (bool);
-}
+            function synthetixClaim() external {
+              IFeePool feePool = synthetixResolver.getAddress("FeePool");
+              require(feePool != address(0), "FeePool is missing from Synthetix resolver");
 
+              // Claim as msg.sender = address(MyContractd)
+              feePool.claimFees();
+            }
 
-contract MyContract {
+            function synthetixClaimOnBehalf(address user) external {
+                IFeePool feePool = synthetixResolver.getAddress("FeePool");
+                require(feePool != address(0), "FeePool is missing from Synthetix resolver");
 
-    IAddressResolver public synthetixResolver;
-
-    // Add a setter here as the synthetix resolver may change in the future
-    // Note: work is underway to create a permanent address resolver so this setter
-    // will no longer be required
-    function setSynthetixResolver(IAddressResolver resolver) external onlyOwner {
-        synthetixResolver = resolver;
-    }
-
-    function synthetixClaim() external {
-      IFeePool feePool = synthetixResolver.getAddress("FeePool");
-      require(feePool != address(0), "FeePool is missing from Synthetix resolver");
-
-      // Claim as msg.sender = address(MyContractd)
-      feePool.claimFees();
-    }
-
-    function synthetixClaimOnBehalf(address user) external {
-        IFeePool feePool = synthetixResolver.getAddress("FeePool");
-        require(feePool != address(0), "FeePool is missing from Synthetix resolver");
-
-        // Note: this will fail if `DelegateApprovals.approveClaimOnBehalf(address(MyContract))` has
-        // not yet been invoked by the `user`
-        feePool.claimOnBehalf(user);
-    }
-}
-```
+                // Note: this will fail if `DelegateApprovals.approveClaimOnBehalf(address(MyContract))` has
+                // not yet been invoked by the `user`
+                feePool.claimOnBehalf(user);
+            }
+        }
+        ```

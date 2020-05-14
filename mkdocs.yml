@@ -60,9 +60,10 @@ nav:
           - SafeDecimalMath: contracts/SafeDecimalMath.md
           - SafeMath: contracts/SafeMath.md
       - Walkthrus:
+          - Overview: contracts/walkthrus/index.md
           - Claiming Rewards: contracts/walkthrus/claiming.md
           - Delegating: contracts/walkthrus/delegating.md
-          - Swap ETH for sUSD: contracts/walkthrus/depot.md
+          - 'Depot: ETH/sUSD': contracts/walkthrus/depot.md
           - Staking SNX: contracts/walkthrus/staking.md
           - Trading: contracts/walkthrus/trading.md
           - Trading Settlement: contracts/walkthrus/settlement.md
@@ -143,13 +144,16 @@ markdown_extensions:
   - pymdownx.arithmatex # Math rendering.
   - pymdownx.tasklist: # Allows nested and better checkboxes.
       custom_checkbox: True # Without this setting, checkboxes look rubbish in the material theme.
-  - pymdownx.highlight # Code syntax highlighting.
+  - pymdownx.highlight: # Code syntax highlighting.
+      linenums: True
   - pymdownx.extra: # Better fenced code blocks, emphasis, footnotes, lists, tables, abbreviations, and raw HTML.
       pymdownx.betterem:
         smart_enable: 'all' # Smarter line breaks when emphasising lines.
   - pymdownx.details # Collapsible admonition-style blocks containing further information.
   - pymdownx.escapeall # Backslashes escape everything.
   - pymdownx.caret # Superscripts and insert text.
+  - pymdownx.superfences
+  - pymdownx.tabbed # tabs
   - pymdownx.tilde # Strikethrough and underlines.
   - pymdownx.magiclink: # Better links and github references.
       provider: 'github'

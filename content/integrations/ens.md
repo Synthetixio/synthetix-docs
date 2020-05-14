@@ -4,13 +4,14 @@ The following subdomains are setup via https://app.ens.domains/name/snx.eth/subd
 
 ### Core Contracts
 
-| Link                                                                                                                                    | ENS Address                                                     | Contract Name    |
-| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------- |
-| <a target=_blank href="https://etherscan.io/address/snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>        | [snx.eth](https://app.ens.domains/name/snx.eth)                 | `ProxyERC20`     |
-| <a target=_blank href="https://etherscan.io/address/susd.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>   | [susd.snx.eth](https://app.ens.domains/name/susd.snx.eth)       | `ProxyERC20sUSD` |
-| <a target=_blank href="https://etherscan.io/address/seth.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>   | [seth.snx.eth](https://app.ens.domains/name/seth.snx.eth)       | `ProxysETH`      |
-| <a target=_blank href="https://etherscan.io/address/feepool.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24/></a> | [feepool.snx.eth](https://app.ens.domains/name/feepool.snx.eth) | `ProxyFeePool`   |
-| <a target=_blank href="https://etherscan.io/address/depot.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>  | [depot.snx.eth](https://app.ens.domains/name/depot.snx.eth)     | `Depot`          |
+| Link                                                                                                                                      | ENS Address                                                       | Contract Name              |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | -------------------------- |
+| <a target=_blank href="https://etherscan.io/address/snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>          | [snx.eth](https://app.ens.domains/name/snx.eth)                   | `ProxyERC20`               |
+| <a target=_blank href="https://etherscan.io/address/susd.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>     | [susd.snx.eth](https://app.ens.domains/name/susd.snx.eth)         | `ProxyERC20sUSD`           |
+| <a target=_blank href="https://etherscan.io/address/seth.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>     | [seth.snx.eth](https://app.ens.domains/name/seth.snx.eth)         | `ProxysETH`                |
+| <a target=_blank href="https://etherscan.io/address/feepool.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24/></a>   | [feepool.snx.eth](https://app.ens.domains/name/feepool.snx.eth)   | `ProxyFeePool`             |
+| <a target=_blank href="https://etherscan.io/address/depot.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>    | [depot.snx.eth](https://app.ens.domains/name/depot.snx.eth)       | `Depot`                    |
+| <a target=_blank href="https://etherscan.io/address/resolver.snx.eth"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a> | [resolver.snx.eth](https://app.ens.domains/name/resolver.snx.eth) | `ReadProxyAddressResolver` |
 
 ### Third Party Contracts
 

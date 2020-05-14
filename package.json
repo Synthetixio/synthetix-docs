@@ -1,6 +1,6 @@
 {
 	"name": "synthetix-docs",
-	"version": "2.21.12",
+	"version": "2.21.13",
 	"description": "Synthetix docs builder",
 	"main": "index.js",
 	"scripts": {
@@ -23,7 +23,7 @@
 		"axios": "~0.19.2",
 		"moment": "~2.24.0",
 		"numbro": "2.1.2",
-		"synthetix": "2.21.12"
+		"synthetix": "2.21.13"
 	},
 	"devDependencies": {
 		"eslint": "~6.8.0",

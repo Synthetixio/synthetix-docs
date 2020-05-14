@@ -6,6 +6,16 @@
 
     If instead you're looking to integrate Synthetix into your dApps and scripts, please see our [libraries section](/libraries/).
 
+## Address Resolver
+
+In our Achernar release, we introduced a new feature called the `AddressResolver` contract.
+
+In short, the `AddressResolver` allows any referencing contract to have access to a number of key contract - in particular the underlying `Synthetix`, `FeePool`, `SynthsUSD` and `SynthsETH` contracts. There are plans in the near future to add our proxies as well.
+
+The `ReadProxyAddressResolver` is our readable `AddressResolver` behind a proxy that won't change, so it's safe to use in your code (it only allows calls that do not mutate state). We have one for each testnet and mainnet up on the [addresses](../addresses.md) page.
+
+For guides on how to use the `AddressResolver` in Solidity, see our [walkthrus](/contracts/walkthrus/trading/#exchanging-in-solidity).
+
 ## Proxies
 
 Synthetix makes extensive use of the proxy pattern. This allows users and integrated systems to refer to immutable proxy addresses while the underlying functionality is passed through to the target or _underlying_ contracts which can be updated by an `owner` function. This allows for fast iteration of the Synthetix ecosystem at the cost of trust in the protocol.
@@ -43,11 +53,11 @@ As of this moment, the following contracts are behind proxies:
 
     One note of caution: the events from the underlying contracts - `Synthetix` and `Synth` are still emitted on the currently deprecated proxy contracts. Indeed, SynthetixJs still use the deprecated proxies for this reason (see [Synthetix.js](https://github.com/Synthetixio/synthetix-js/blob/v2.21.6/src/contracts/mainnet/Synthetix.js#L12)). Once we migrate to the new proxies, the events will be emitted on the integration proxies and the deprecated ones will be removed entirely.
 
-1.  **Phase 1 (Current)**
+1.  **Phase 1**
 
     Prior to May 10, 2020, both proxies for `Synthetix` and `SynthsUSD` will function. Our dApps and integrations will call and transact using the deprecated proxies, and all events emitted will be on the deprecated proxy.
 
-2.  **Phase 2**
+2.  **Phase 2 (Current)**
 
     <span class="wtb-ew-v1" style="width: 560px; display:inline-block"><script src="https://www.worldtimebuddy.com/event_widget.js?h=100&md=5/10/2020&mt=23.00&ml=0.50&sts=0&sln=0&wt=ew-ltc"></script><i><a target="_blank" href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</i><noscript><a href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
 
@@ -106,13 +116,3 @@ Or say you want to transfer `5` `sUSD` to `user`
 In our Achernar release, we introduced Fee Reclamation ([SIP-37](https://sips.synthetix.io/sips/sip-37)). The major implication here is that if you invoke `exchange(src, amount, dest)` in your smart contracts, you cannot atomically invoke `dest.transfer()` or `exchange(dest, ..., ...)` - both will fail until a waiting period expires.
 
 You can use [`Exchanger.maxSecsLeftInWaitingPeriod()`](/contracts/exchanger/#maxsecsleftinwaitingperiod) to check how many seconds are left in the waiting period for that `dest` synth. Once it's `0`, exchanges of the `dest` synth will automatically settle any rebates or reclaims. However after the waiting period expires, `dest.transfer()` will fail regardless if there are any exchanges awaiting settlement. To circumvent this, integrators are encouraged to use [`transferAndSettle`](/contracts/synth/#transferandsettle) or [`transferFromAndSettle`](/contracts/synth/#transferfromandsettle). Alternatively, [`Exchanger.settle()`](/contracts/exchanger#settle) can be invoked directly prior to a `transfer` or `transferFrom`.
-
-## Address Resolver
-
-In our Achernar release, we introduced a new feature called the `AddressResolver` contract ([contracts.synthetix.io/AddressResolver](https://contracts.synthetix.io/AddressResolver)).
-
-In short, the `AddressResolver` allows any referencing contract to have access to a number of key contract - in particular the underlying `Synthetix`, `FeePool`, `SynthsUSD` and `SynthsETH` contracts. There are plans in the near future to add our proxies as well.
-
-!!! danger "Be Advised"
-
-    Third party developers may well want to integrate this `AddressResolver` into their smart contracts if they want to look up the latest contracts on-chain, and they are most welcome to. That being said, be careful - the Synthetix protocol may opt to change the ABIs of the underlying contracts which could break interoperability for contracts that are not re-deployed. The safest third party use are the ERC20 functions within `Synthetix` and all the `Synth` contracts.

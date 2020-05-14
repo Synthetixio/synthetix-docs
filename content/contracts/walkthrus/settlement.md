@@ -110,162 +110,138 @@ There are a number of different ways to settle synths explicitly:
 
 ### Code Snippets
 
-#### Settlement in JavaScript (on ropsten)
+!!! example "Settlement"
 
-```javascript
-const { SynthetixJs } = require('synthetix-js');
-const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+    === "SynthetixJs"
+        ```javascript hl_lines="14"
+        const { SynthetixJs } = require('synthetix-js');
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
-// parameters: default provider, default networkId, private key as a string
-const networkId = 3; // ropsten, (use 1 for mainnet)
-const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
-const snxjs = new SynthetixJs({ signer, networkId });
+        // parameters: default provider, default networkId, private key as a string
+        const networkId = 3; // ropsten, (use 1 for mainnet)
+        const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
+        const snxjs = new SynthetixJs({ signer, networkId });
 
-const { toUtf8Bytes32, parseEther } = snxjs.utils;
+        const { toUtf8Bytes32, parseEther } = snxjs.utils;
 
-(async () => {
-	try {
-		// send transaction
-		const txn = await snxjs.Synthetix.settle(toUtf8Bytes32('iETH'));
+        (async () => {
+          try {
+            // send transaction
+            const txn = await snxjs.Synthetix.settle(toUtf8Bytes32('iETH'));
 
-		console.log('hash is mining', txn.hash);
+            console.log('hash is mining', txn.hash);
 
-		// wait for mining
-		await txn.wait();
+            // wait for mining
+            await txn.wait();
 
-		// fetch logs of transaction
-		const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
+            // fetch logs of transaction
+            const { logs } = await signer.provider.getTransactionReceipt(txn.hash);
 
-		// show them
-		console.log(JSON.stringify(logs, null, '\t'));
-	} catch (err) {
-		console.log('Error', err);
-	}
-})();
-```
+            // show them
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-??? Info "In JavaScript without SynthetixJs"
+    === "Vanilla JavaScript"
+        ```javascript hl_lines="23"
+        const synthetix = require('synthetix'); // nodejs
+        const ethers = require('ethers'); // nodejs
+        // or using ES modules:
+        // import synthetix from 'synthetix';
+        // import ethers from 'ethers';
 
-    ```javascript
-    const synthetix = require('synthetix'); // nodejs
-    const ethers = require('ethers'); // nodejs
-    // or using ES modules:
-    // import synthetix from 'synthetix';
-    // import ethers from 'ethers';
+        const network = 'ropsten';
+        const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
 
-    const network = 'ropsten';
-    const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
+        const { address } = synthetix.getTarget({ network, contract: 'ProxyERC20' });
+        const { abi } = synthetix.getSource({ network, contract: 'Synthetix' });
 
-    const { address } = synthetix.getTarget({ network, contract: 'ProxyERC20' });
-    const { abi } = synthetix.getSource({ network, contract: 'Synthetix' });
+        const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
+        const signer = new ethers.Wallet(privateKey).connect(provider);
 
-    const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
-    const signer = new ethers.Wallet(privateKey).connect(provider);
+        // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
+        const Synthetix = new ethers.Contract(address, abi, signer);
+        const { toBytes32 } = synthetix;
 
-    // see https://docs.ethers.io/ethers.js/html/api-contract.html#connecting-to-existing-contracts
-    const Synthetix = new ethers.Contract(address, abi, signer);
-    const { toBytes32 } = synthetix;
+        (async () => {
+          try {
+            // send transaction
+            const txn = await Synthetix.settle(toBytes32('iETH'));
 
-    (async () => {
-      try {
-        // send transaction
-        const txn = await Synthetix.settle(toBytes32('iETH'));
+            // wait for mining
+            await txn.wait();
+            // fetch logs of transaction
+            const { logs } = await provider.getTransactionReceipt(txn.hash);
+            // display
+            console.log(JSON.stringify(logs, null, '\t'));
+          } catch (err) {
+            console.log('Error', err);
+          }
+        })();
+        ```
 
-        // wait for mining
-        await txn.wait();
-        // fetch logs of transaction
-        const { logs } = await provider.getTransactionReceipt(txn.hash);
-        // display
-        console.log(JSON.stringify(logs, null, '\t'));
-      } catch (err) {
-        console.log('Error', err);
-      }
-    })();
-    ```
+    === "Solidity"
+        ```solidity hl_lines="27 39 47 57"
+        pragma solidity 0.5.16;
 
-#### Settlement in Solidity
-
-```solidity
-pragma solidity 0.5.16;
-
-// import "synthetix/contracts/interfaces/IAddressResolver.sol";
-interface IAddressResolver {
-    function getAddress(bytes32 name) external view returns (address);
-}
-
-// import "synthetix/contracts/interfaces/ISynthetix.sol";
-interface ISynthetix {
-    function settle(bytes32 currencyKey) external
-      returns (
-          uint reclaimed,
-          uint refunded,
-          uint numEntriesSettled
-      );
-
-    function isWaitingPeriod(bytes32 currencyKey) external view returns (bool);
-}
-
-// import "synthetix/contracts/interfaces/IExchanger.sol";
-interface Exchanger {
-    function settle(address from, bytes32 currencyKey) external
-      returns (
-          uint reclaimed,
-          uint refunded,
-          uint numEntriesSettled
-      );
-
-    function maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey) external view returns (uint);
-}
+        import "synthetix/contracts/interfaces/IAddressResolver.sol";
+        import "synthetix/contracts/interfaces/ISynthetix.sol";
+        import "synthetix/contracts/interfaces/IExchanger.sol";
 
 
-contract MyContract {
+        contract MyContract {
 
-    IAddressResolver public synthetixResolver;
+            // This should be instantiated with our ReadProxyAddressResolver
+            // it's a ReadProxy that won't change, so safe to code it here without a setter
+            // see https://docs.synthetix.io/addresses for addresses in mainnet and testnets
+            IAddressResolver public synthetixResolver;
 
-    // Add a setter here as the synthetix resolver may change in the future
-    // Note: work is underway to create a permanent address resolver so this setter
-    // will no longer be required
-    function setSynthetixResolver(IAddressResolver resolver) external onlyOwner {
-        synthetixResolver = resolver;
-    }
+            constructor(IAddressResolver _snxResolver) public {
+                synthetixResolver = _snxResolver;
+            }
 
-    function synthetixSettle(bytes32 synthKey) external {)
-      ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
-      require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
+            function synthetixSettle(bytes32 synthKey) external {)
+              ISynthetix synthetix = synthetixResolver.getAddress("Synthetix");
+              require(synthetix != address(0), "Synthetix is missing from Synthetix resolver");
 
-      // This check is what synthetix.exchange() will perform, added here for explicitness
-      require(!synthetix.isWaitingPeriod(synthKey), "Cannot settle during the waiting period");
+              // This check is what synthetix.exchange() will perform, added here for explicitness
+              require(!synthetix.isWaitingPeriod(synthKey), "Cannot settle during the waiting period");
 
-      // Settle for msg.sender = address(MyContract)
-      synthetix.settle(synthKey);
+              // Settle for msg.sender = address(MyContract)
+              synthetix.settle(synthKey);
 
-    }
+            }
 
-    function synthetixSettleOnBehalf(address user, bytes32 synthKey) external {
-        IExchanger exchanger = synthetixResolver.getAddress("Exchanger");
-        require(exchanger != address(0), "Exchanger is missing from Synthetix resolver");
+            function synthetixSettleOnBehalf(address user, bytes32 synthKey) external {
+                IExchanger exchanger = synthetixResolver.getAddress("Exchanger");
+                require(exchanger != address(0), "Exchanger is missing from Synthetix resolver");
 
-        // This check is what exchanger.settle() will perform, added here for explicitness
-        require(exchanger.maxSecsLeftInWaitingPeriod(user, synthKey) == 0, "Cannot settle during the waiting period");
+                // This check is what exchanger.settle() will perform, added here for explicitness
+                require(exchanger.maxSecsLeftInWaitingPeriod(user, synthKey) == 0, "Cannot settle during the waiting period");
 
-        // This function is public - any user or contract can call it
-        exchanger.settle(user, synthKey)
-    }
+                // This function has no msg.sender restriction - any address can call it (they'll just have to pay the gas on behalf of the user)
+                exchanger.settle(user, synthKey)
+            }
 
-    function synthetixTransferAndSettle(bytes32 synthKey, address to, uint value) extenrnal {
-        ISynth synth = synthetixResolver.getAddress(synthKey);
-        require(synth != address(0), "Synth is missing from Synthetix");
+            function synthetixTransferAndSettle(bytes32 synthKey, address to, uint value) extenrnal {
+                // Note ⚠️: IAddressResolver.getSynth will not work until the Altair release (v2.22) of Synthetix
+                ISynth synth = synthetixResolver.getSynth(synthKey);
+                require(synth != address(0), "Synth is missing from Synthetix");
 
-        synth.transferAndSettle(to, value);
-    }
+                synth.transferAndSettle(to, value);
+            }
 
 
-    function synthetixTransferFromAndSettle(bytes32 synthKey, address from, address to, uint value) extenrnal {
-        ISynth synth = synthetixResolver.getAddress(synthKey);
-        require(synth != address(0), "Synth is missing from Synthetix");
+            function synthetixTransferFromAndSettle(bytes32 synthKey, address from, address to, uint value) extenrnal {
+                // Note ⚠️: IAddressResolver.getSynth will not work until the Altair release (v2.22) of Synthetix
+                ISynth synth = synthetixResolver.getSynth(synthKey);
+                require(synth != address(0), "Synth is missing from Synthetix");
 
-        // Note: only works if user has invoked ERC20.approve(address(MyContract)) on the given synth
-        synth.transferFromAndSettle(from, to, value);
-    }
-}
-```
+                // Note: only works if user has invoked ERC20.approve(address(MyContract)) on the given synth
+                synth.transferFromAndSettle(from, to, value);
+            }
+        }
+        ```
