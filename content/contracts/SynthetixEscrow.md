@@ -1,341 +1,280 @@
 # SynthetixEscrow
 
-## Description
-
-This contract holds the SNX which were escrowed at the time of the original token sale, releasing them according to a defined schedule.
-
-The contract was subject to an eight week setup period during which the vesting schedules were set up.
-
-This contract is augmented by the [`EscrowChecker`](EscrowChecker.md) contract, which is able to return vesting schedules as an array rather than one at a time.
-
-**Source:** [SynthetixEscrow.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixEscrow.sol)
+**Source:** [contracts/SynthetixEscrow.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol)
 
 ## Architecture
 
----
-
 ### Inheritance Graph
 
-<centered-image>
-    ![SynthetixEscrow inheritance graph](../img/graphs/SynthetixEscrow.svg)
-</centered-image>
+```mermaid
+graph TD
+    SynthetixEscrow[SynthetixEscrow] --> Owned[Owned]
+    SynthetixEscrow[SynthetixEscrow] --> LimitedSetup[LimitedSetup]
+    SynthetixEscrow[SynthetixEscrow] --> IHasBalance[IHasBalance]
+```
 
 ---
 
-### Libraries
-
-- [`SafeMath`](SafeMath.md) for `uint`
-
----
+## Structs
 
 ## Variables
 
 ---
 
 ### `synthetix`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L21)</sub>
 
-The address of the main [`Synthetix`](Synthetix.md) contract.
-
-**Type:** `Synthetix public`
+**Type:** `contract ISynthetix`
 
 ---
 
 ### `vestingSchedules`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L25)</sub>
 
-Stores the vesting schedule for each for each account. Each schedule is a list of `(vesting timestamp, quantity)` pairs in ascending time order.
-
-**Type:** `mapping(address => uint[2][]) public`
+**Type:** `mapping(address => uint256[2][])`
 
 ---
 
 ### `totalVestedAccountBalance`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L28)</sub>
 
-The quantity of remaining tokens for a given account; it saves the recomputation involved in summing over [`vestingSchedules`](#vestingschedules) entries.
-
-**Type:** `mapping(address => uint) public`
+**Type:** `mapping(address => uint256)`
 
 ---
 
 ### `totalVestedBalance`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L31)</sub>
 
-The total remaining vested balance in this contract.
-
-**Type:** `uint public`
+**Type:** `uint256`
 
 ---
 
 ### `TIME_INDEX`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L33)</sub>
 
-The vesting timestamp is the first entry in vesting schedule entry pairs.
-
-**Type:** `uint constant`
-
-**Value:** `0`
+**Type:** `uint256`
 
 ---
 
 ### `QUANTITY_INDEX`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L34)</sub>
 
-The vesting quantity is the second entry in vesting schedule entry pairs.
-
-**Type:** `uint constant`.
-
-**Value:** `1`
+**Type:** `uint256`
 
 ---
 
 ### `MAX_VESTING_ENTRIES`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L37)</sub>
 
-This constant limits vesting schedules to be shorter than twenty entries long so that iteration is bounded.
-
-**Type:** `uint constant`.
-
-**Value:** `20`
-
----
+**Type:** `uint256`
 
 ## Functions
 
 ---
 
 ### `constructor`
-
-Initialises the [`Synthetix`](Synthetix.md) contract address, and the inherited [`Owned`](Owned.md) instance.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L41)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(address _owner, Synthetix _synthetix) public`
+    `(address _owner, contract ISynthetix _synthetix) public`
 
-    **Superconstructors**
+    **Modifiers**
 
-    * [`Owned(_owner)`](Owned.md#constructor)
+    * [Owned](#owned)
 
 ---
 
 ### `setSynthetix`
-
-Sets the address of the [`Synthetix`](Synthetix.md) contract, so that escrowed SNX can be transferred to accounts claiming them.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L47)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setSynthetix(Synthetix _synthetix) external`
+    `setSynthetix(contract ISynthetix _synthetix) external`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyOwner)
+    * [onlyOwner](#onlyowner)
 
     **Emits**
 
-    * [`SynthetixUpdated(_synthetix)`](#synthetixupdated)
+    * [SynthetixUpdated](#synthetixupdated)
 
 ---
 
 ### `balanceOf`
-
-An alias to [`totalVestedAccountBalance[account]`](#totalvestedaccountbalance) for ERC20 integration.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L57)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `balanceOf(address account) public view returns (uint)`
+    `balanceOf(address account) public`
 
 ---
 
 ### `numVestingEntries`
-
-The number of entries in an account's vesting schedule, including those already claimed.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L64)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `numVestingEntries(account) public view returns (uint)`.
+    `numVestingEntries(address account) public`
 
 ---
 
 ### `getVestingScheduleEntry`
-
-Returns a particular schedule entry for an account, which is a pair of uints: `(vesting timestamp, SNX quantity)`.
-
-This is here because the public function generated for [`vestingSchedules`](#vestingschedules) awkwardly requires the index into the pair as its third argument.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L72)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getVestingScheduleEntry(address account, uint index) public view returns (uint[2])`
+    `getVestingScheduleEntry(address account, uint256 index) public`
 
 ---
 
 ### `getVestingTime`
-
-Returns the time at which a given schedule entry will vest.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L79)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getVestingTime(address account, uint index) public view returns (uint)`
+    `getVestingTime(address account, uint256 index) public`
 
 ---
 
 ### `getVestingQuantity`
-
-Returns the quantity of SNX a given schedule entry will yield.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L86)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getVestingQuantity(address account, uint index) public view returns (uint)`
+    `getVestingQuantity(address account, uint256 index) public`
 
 ---
 
 ### `getNextVestingIndex`
-
-Returns the index of the next vesting entry that will vest for a given account. Returns one past the end if there are none remaining.
-
-The function iterates until it finds the first nonzero vesting entry timestamp, so the gas cost increases slightly as more entries vest.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L93)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getNextVestingIndex(address account) public view returns (uint)`
+    `getNextVestingIndex(address account) public`
 
 ---
 
 ### `getNextVestingEntry`
-
-Returns the next vesting entry in the same manner as [`getNextVestingIndex`](#getnextvestingindex). Returns `[0,0]` if there is no next vesting entry.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L106)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getNextVestingEntry(address account) public view returns (uint[2])`
+    `getNextVestingEntry(address account) public`
 
 ---
 
 ### `getNextVestingTime`
-
-Returns the timestamp of the next vesting entry. Returns `0` if there is no such entry.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L117)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getNextVestingTime(address account) public view returns (uint)`
+    `getNextVestingTime(address account) external`
 
 ---
 
 ### `getNextVestingQuantity`
-
-Returns the SNX quantity of the next vesting entry. Returns `0` if there is no such entry.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L124)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getNextVestingQuantity(address account) public view returns (uint)`
+    `getNextVestingQuantity(address account) external`
 
 ---
 
 ### `withdrawSynthetix`
-
-Transfers a quantity of SNX back to the Synthetix contract.
-
-This was callable by the owner during the setup period in case too much SNX was deposited into the escrow contract.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L134)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `withdrawSynthetix(uint quantity) external`
+    `withdrawSynthetix(uint256 quantity) external`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-    * [`LimitedSetup.onlyDuringSetup`](LimitedSetup.md#onlyduringsetup)
+    * [onlyOwner](#onlyowner)
+
+    * [onlyDuringSetup](#onlyduringsetup)
 
 ---
 
 ### `purgeAccount`
-
-In case a vesting schedule was incorrectly set up, this function deletes all vesting information associated with a given account and updates relevant totals. `purgeAccount` was only callable by the owner, during the setup period.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L141)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `purgeAccount(address account)`
+    `purgeAccount(address account) external`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-    * [`LimitedSetup.onlyDuringSetup`](LimitedSetup.md#onlyduringsetup)
+    * [onlyOwner](#onlyowner)
+
+    * [onlyDuringSetup](#onlyduringsetup)
 
 ---
 
 ### `appendVestingEntry`
-
-Allows new entry to be added to the given account's vesting schedule by the owner during the setup period.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L160)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `appendVestingEntry(address account, uint time, uint quantity) public`
+    `appendVestingEntry(address account, uint256 time, uint256 quantity) public`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-    * [`LimitedSetup.onlyDuringSetup`](LimitedSetup.md#onlyduringsetup)
+    * [onlyOwner](#onlyowner)
 
-    **Preconditions**
-
-    * `time` must be in the future.
-    * `quantity` must be nonzero.
-    * The balance of SNX in the escrow contract must be sufficient to supply the new vesting entry.
-    * The given account's existing schedule length must be less than [`MAX_VESTING_ENTRIES`](#max_vesting_entries).
-    * `time` must be after the last vesting entry's timestamp, if such an entry exists.
+    * [onlyDuringSetup](#onlyduringsetup)
 
 ---
 
 ### `addVestingSchedule`
-
-During the setup period, allows the contract owner to add an entire vesting schedule to the given account by calling [`appendVestingEntry`](#appendvestingentry) in a loop. If a schedule already exists, the new one is concatenated to the old one.
-
-!!! caution
-
-    Beware that no checking is done that the lengths of the `times` and `quantities` input arrays are equal. If `times` is shorter than `quantities`, the extra quantities are ignored; if it is longer, the transaction reverts since past-the-end quantities will be 0 (but don't rely on this).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L202)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `addVestingSchedule(address account, uint[] times, uint[] quantities) external`
+    `addVestingSchedule(address account, uint256[] times, uint256[] quantities) external`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-    * [`LimitedSetup.onlyDuringSetup`](LimitedSetup.md#onlyduringsetup)
+    * [onlyOwner](#onlyowner)
 
-    **Preconditions**
-
-    * `times` must be a strictly increasing sequence.
-    * Each entry in `quantities` must be nonzero.
+    * [onlyDuringSetup](#onlyduringsetup)
 
 ---
 
 ### `vest`
-
-Finds all vesting schedule entries that have come due for the caller and transfers the total quantity of tokens to them. Vested entries are overwritten with `[0,0]`.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L215)</sub>
 
 ??? example "Details"
 
@@ -343,30 +282,25 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 
     `vest() external`
 
-    **Emits**
-
-    [`Vested(msg.sender, now, total)`](#vested)
-
-    Where `total` is the sum of the quantities of this user's schedule entries with timestamps no later than the current time. That is, if multiple vesting entries were claimed, only one `Vested` event is emitted. No event is emitted if `total` is $0$.
-
 ---
+
+## Modifiers
 
 ## Events
 
 ---
 
 ### `SynthetixUpdated`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L243)</sub>
 
-Records that the SNX contract address was altered.
-
-**Signature:** `SynthetixUpdated(address newSynthetix)`
+- `(address newSynthetix)`
 
 ---
 
 ### `Vested`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L245)</sub>
 
-Records that an account vested a quantity of tokens.
-
-**Signature:** `Vested(address indexed beneficiary, uint time, uint value)`
+- `(address beneficiary, uint256 time, uint256 value)`
 
 ---
+

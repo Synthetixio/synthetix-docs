@@ -1,91 +1,89 @@
 # TokenState
 
-## Description
-
-An external state contract to hold ERC20 balances and allowances. This operates as an adjunct to [`ExternStateToken`](ExternStateToken.md), so that important token information can persist while the token contract itself can be switched out to upgrade its functionality.
-
-**Source:** [TokenState.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol)
+**Source:** [contracts/TokenState.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol)
 
 ## Architecture
 
----
-
 ### Inheritance Graph
 
-<centered-image>
-    ![TokenState inheritance graph](../img/graphs/TokenState.svg)
-</centered-image>
+```mermaid
+graph TD
+    TokenState[TokenState] --> State[State]
+    State[State] --> Owned[Owned]
+```
 
 ---
+
+## Structs
 
 ## Variables
 
 ---
 
 ### `balanceOf`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L11)</sub>
 
-ERC20 balances, note that as a public variable, this synthesises an accessor which is itself ERC20 compliant, so balances can be queried by dApps directly from the state contract.
-
-**Type:** `mapping(address => uint) public`
+**Type:** `mapping(address => uint256)`
 
 ---
 
 ### `allowance`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L12)</sub>
 
-ERC20 allowances. Also generates an ERC20 accessor in the same way as the `balanceOf` member.
-
-**Type:** `mapping(address => mapping(address => uint)) public`
-
----
+**Type:** `mapping(address => mapping(address => uint256))`
 
 ## Functions
 
 ---
 
 ### `constructor`
-
-Initialises the inherited [`State`](State.md) instance.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L14)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(address _owner, address _associatedContract) public`
+    `(address _owner, address _associatedContract) public`
 
-    **Superconstructors**
+    **Modifiers**
 
-    * [`State(_owner, _associatedContract)`](State.md#constructor)
+    * [Owned](#owned)
+
+    * [State](#state)
 
 ---
 
 ### `setAllowance`
-
-Sets the token allowance granted to the `spender` by the `tokenOwner`.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L26)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setAllowance(address tokenOwner, address spender, uint value) external`
+    `setAllowance(address tokenOwner, address spender, uint256 value) external`
 
     **Modifiers**
 
-    * [`State.onlyAssociatedContract`](State.md#onlyassociatedcontract)
+    * [onlyAssociatedContract](#onlyassociatedcontract)
 
 ---
 
 ### `setBalanceOf`
-
-Sets the balance of the specified account.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L40)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setBalanceOf(address account, uint value)`
+    `setBalanceOf(address account, uint256 value) external`
 
     **Modifiers**
 
-    * [`State.onlyAssociatedContract`](State.md#onlyassociatedcontract)
+    * [onlyAssociatedContract](#onlyassociatedcontract)
 
 ---
+
+## Modifiers
+
+## Events
+

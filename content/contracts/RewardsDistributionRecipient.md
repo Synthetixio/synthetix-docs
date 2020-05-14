@@ -1,60 +1,56 @@
 # RewardsDistributionRecipient
 
-**Source:** [RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardsDistributionRecipient.sol)
-
-!!! todo "Work in Progress"
-
-    This needs filling in
-
-## Description
-
-... todo.
-
----
+**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol)
 
 ## Architecture
 
-... todo.
-
-<!--centered-image>
-    ![Architecture Graph](../img/graphs/todo-architecture.svg)
-</centered-image-->
-
 ### Inheritance Graph
 
-<!--centered-image>
-    ![Inheritance graph](../img/graphs/todo.svg)
-</centered-image-->
-
-### Related Contracts
-
-- ?
+```mermaid
+graph TD
+    RewardsDistributionRecipient[RewardsDistributionRecipient] --> Owned[Owned]
+```
 
 ---
 
-## Constants
-
----
+## Structs
 
 ## Variables
 
-.. (need to pull these from the functions below)
+---
+
+### `rewardsDistribution`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L9)</sub>
+
+**Type:** `address`
+
+## Functions
 
 ---
 
-## Views
+### `notifyRewardAmount`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `notifyRewardAmount(uint256 reward) external`
 
 ---
 
-## Public Mutative Functions
+### `setRewardsDistribution`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L18)</sub>
 
----
+??? example "Details"
 
-## Owner Mutative Functions
+    **Signature**
 
----
+    `setRewardsDistribution(address _rewardsDistribution) external`
 
-## Internal & Restricted Mutative Functions
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
 
 ---
 
@@ -62,6 +58,10 @@
 
 ---
 
+### `onlyRewardsDistribution`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L13)</sub>
+
+---
+
 ## Events
 
---

@@ -1,49 +1,85 @@
 # MixinResolver
 
-## Description
+**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol)
 
-A utility that gives the inheritor access to the [`AddressResolver`](AddressResolver.md)
-
-**Source:** [.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/MixinResolver.sol)
-
----
+## Architecture
 
 ### Inheritance Graph
 
-<!--centered-image>
-    ![[name] inheritance graph](../img/graphs/MixinResolver.svg)
-</centered-image-->
+```mermaid
+graph TD
+    MixinResolver[MixinResolver] --> Owned[Owned]
+```
 
 ---
+
+## Structs
 
 ## Variables
 
 ---
 
 ### `resolver`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L12)</sub>
 
-The `AddressResolver` instance
-
-**Type:** `AddressResolver public`
-
----
-
-## Owner Functions
+**Type:** `contract AddressResolver`
 
 ---
 
-### `setResolver`
+### `resolverAddressesRequired`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L16)</sub>
 
-Set the address resolver
+**Type:** `bytes32[]`
+
+---
+
+### `MAX_ADDRESSES_FROM_RESOLVER`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L18)</sub>
+
+**Type:** `uint256`
+
+## Functions
+
+---
+
+### `setResolverAndSyncCache`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L38)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setResolver(AddressResolver _resolver) public`
+    `setResolverAndSyncCache(contract AddressResolver _resolver) external`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    * [onlyOwner](#onlyowner)
 
 ---
+
+### `isResolverCached`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L58)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isResolverCached(contract AddressResolver _resolver) external`
+
+---
+
+### `getResolverAddressesRequired`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L76)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getResolverAddressesRequired() external`
+
+---
+
+## Modifiers
+
+## Events
+

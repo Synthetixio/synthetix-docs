@@ -1,62 +1,84 @@
-
 # MultiCollateralSynth
 
-**Source:** [MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/MultiCollateralSynth.sol)
-
-!!! todo "Work in Progress"
-
-    This needs filling in
-
-## Description
-
-... todo.
-
----
+**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol)
 
 ## Architecture
 
-... todo.
-
-<!--centered-image>
-    ![Architecture Graph](../img/graphs/todo-architecture.svg)
-</centered-image-->
-
-
 ### Inheritance Graph
 
-<!--centered-image>
-    ![Inheritance graph](../img/graphs/todo.svg)
-</centered-image-->
-
-### Related Contracts
-
-- ?
+```mermaid
+graph TD
+    MultiCollateralSynth[MultiCollateralSynth] --> Synth[Synth]
+    Synth[Synth] --> IERC20[IERC20]
+    Synth[Synth] --> ExternStateToken[ExternStateToken]
+    Synth[Synth] --> MixinResolver[MixinResolver]
+    Synth[Synth] --> ISynth[ISynth]
+    ExternStateToken[ExternStateToken] --> SelfDestructible[SelfDestructible]
+    ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
+    SelfDestructible[SelfDestructible] --> Owned[Owned]
+    Proxyable[Proxyable] --> Owned[Owned]
+    MixinResolver[MixinResolver] --> Owned[Owned]
+```
 
 ---
 
-## Constants
-
----
+## Structs
 
 ## Variables
 
-.. (need to pull these from the functions below)
+---
+
+### `multiCollateralKey`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L9)</sub>
+
+**Type:** `bytes32`
+
+## Functions
 
 ---
 
-## Views
+### `constructor`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L13)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver, bytes32 _multiCollateralKey) public`
+
+    **Modifiers**
+
+    * [Synth](#synth)
 
 ---
 
-## Public Mutative Functions
+### `issue`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L42)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issue(address account, uint256 amount) external`
+
+    **Modifiers**
+
+    * [onlyInternalContracts](#onlyinternalcontracts)
 
 ---
 
-## Owner Mutative Functions
+### `burn`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L51)</sub>
 
----
+??? example "Details"
 
-## Internal & Restricted Mutative Functions
+    **Signature**
+
+    `burn(address account, uint256 amount) external`
+
+    **Modifiers**
+
+    * [onlyInternalContracts](#onlyinternalcontracts)
 
 ---
 
@@ -64,7 +86,10 @@
 
 ---
 
-## Events
+### `onlyInternalContracts`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
 
---
+---
+
+## Events
 

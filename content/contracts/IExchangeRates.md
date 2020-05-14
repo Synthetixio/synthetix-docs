@@ -1,0 +1,203 @@
+# IExchangeRates
+
+**Source:** [contracts/interfaces/IExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol)
+
+## Structs
+
+## Variables
+
+## Functions
+
+---
+
+### `aggregators`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L6)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `aggregators(bytes32 currencyKey) external`
+
+---
+
+### `anyRateIsStale`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L8)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `anyRateIsStale(bytes32[] currencyKeys) external`
+
+---
+
+### `currentRoundForRate`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L10)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `currentRoundForRate(bytes32 currencyKey) external`
+
+---
+
+### `effectiveValue`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L12)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) external`
+
+---
+
+### `effectiveValueAtRound`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L18)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest) external`
+
+---
+
+### `getCurrentRoundId`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L26)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getCurrentRoundId(bytes32 currencyKey) external`
+
+---
+
+### `getLastRoundIdBeforeElapsedSecs`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L28)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff) external`
+
+---
+
+### `inversePricing`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L35)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `inversePricing(bytes32 currencyKey) external`
+
+---
+
+### `lastRateUpdateTimes`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L45)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `lastRateUpdateTimes(bytes32 currencyKey) external`
+
+---
+
+### `oracle`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L47)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `oracle() external`
+
+---
+
+### `rateAndTimestampAtRound`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L49)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId) external`
+
+---
+
+### `rateForCurrency`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L51)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rateForCurrency(bytes32 currencyKey) external`
+
+---
+
+### `rateIsFrozen`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L53)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rateIsFrozen(bytes32 currencyKey) external`
+
+---
+
+### `rateIsStale`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L55)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rateIsStale(bytes32 currencyKey) external`
+
+---
+
+### `ratesAndStaleForCurrencies`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L57)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `ratesAndStaleForCurrencies(bytes32[] currencyKeys) external`
+
+---
+
+### `ratesForCurrencies`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L59)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `ratesForCurrencies(bytes32[] currencyKeys) external`
+
+---
+
+### `rateStalePeriod`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L61)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rateStalePeriod() external`
+
+---
+
+## Modifiers
+
+## Events
+

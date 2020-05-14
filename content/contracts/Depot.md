@@ -10,18 +10,23 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 
 !!! SNX exchange functionality has been deprecated on MAINNET and is now used as a SNX faucet on the testnets only.
 
-**Source:** [contracts/Depot.sol](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol)
+**Source:** [contracts/Depot.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol)
 
 ## Architecture
 
----
-
 ### Inheritance Graph
 
-<centered-image>
-    ![Depot inheritance graph](../img/graphs/Depot.svg)
-</centered-image>
-
+```mermaid
+graph TD
+    Depot[Depot] --> SelfDestructible[SelfDestructible]
+    Depot[Depot] --> Pausable[Pausable]
+    Depot[Depot] --> ReentrancyGuard[ReentrancyGuard]
+    Depot[Depot] --> MixinResolver[MixinResolver]
+    Depot[Depot] --> IDepot[IDepot]
+    SelfDestructible[SelfDestructible] --> Owned[Owned]
+    Pausable[Pausable] --> Owned[Owned]
+    MixinResolver[MixinResolver] --> Owned[Owned]
+```
 
 ---
 
@@ -47,7 +52,7 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 ---
 
 ### SynthDepositEntry
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L35)</sub>
 
 | Field | Type | Description |
 | ------ | ------ | ------ |
@@ -61,25 +66,21 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 ---
 
 ### `SNX`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L24)</sub>
 
 **Type:** `bytes32`
-
-**Visibility:** `internal`
 
 ---
 
 ### `ETH`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L25)</sub>
 
 **Type:** `bytes32`
-
-**Visibility:** `internal`
 
 ---
 
 ### `fundsWallet`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L32)</sub>
 
 The address where ether and synths raised by selling SNX are sent.
 
@@ -87,106 +88,54 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
 **Type:** `address payable`
 
-**Visibility:** `public`
-
 ---
 
 ### `deposits`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L53)</sub>
 
 **Type:** `mapping(uint256 => struct Depot.SynthDepositEntry)`
-
-**Visibility:** `public`
 
 ---
 
 ### `depositStartIndex`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L55)</sub>
 
 **Type:** `uint256`
-
-**Visibility:** `public`
 
 ---
 
 ### `depositEndIndex`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L57)</sub>
 
 **Type:** `uint256`
-
-**Visibility:** `public`
 
 ---
 
 ### `totalSellableDeposits`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L62)</sub>
 
 **Type:** `uint256`
-
-**Visibility:** `public`
 
 ---
 
 ### `minimumDepositAmount`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L65)</sub>
 
 **Type:** `uint256`
-
-**Visibility:** `public`
 
 ---
 
 ### `maxEthPurchase`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L68)</sub>
 
 **Type:** `uint256`
-
-**Visibility:** `public`
 
 ---
 
 ### `smallDeposits`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L73)</sub>
 
 **Type:** `mapping(address => uint256)`
-
-**Visibility:** `public`
-
----
-
-### `CONTRACT_SYNTHSUSD`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L72)</sub>
-
-**Type:** `bytes32`
-
-**Visibility:** `private`
-
----
-
-### `CONTRACT_EXRATES`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L73)</sub>
-
-**Type:** `bytes32`
-
-**Visibility:** `private`
-
----
-
-### `CONTRACT_SYNTHETIX`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L74)</sub>
-
-**Type:** `bytes32`
-
-**Visibility:** `private`
-
----
-
-### `addressesToCache`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L76)</sub>
-
-**Type:** `bytes32[24]`
-
-**Visibility:** `private`
 
 ---
 
@@ -195,7 +144,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `constructor`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -216,7 +165,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `setMaxEthPurchase`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -235,10 +184,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `setFundsWallet`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L99)</sub>
-
-@notice Set the funds wallet where ETH raised is held
-@param _fundsWallet The new address to forward ETH and Synths to
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -257,10 +203,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `setMinimumDepositAmount`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L108)</sub>
-
-@notice Set the minimum deposit amount required to depoist sUSD into the FIFO queue
-@param _amount The new new minimum number of sUSD required to deposit
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -279,9 +222,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `fallback`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L120)</sub>
-
-@notice Fallback function (exchanges ETH to sUSD)
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -289,18 +230,24 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
     `() external`
 
+    **Modifiers**
+
+    * [nonReentrant](#nonreentrant)
+
+    * [rateNotStale](#ratenotstale)
+
+    * [notPaused](#notpaused)
+
 ---
 
 ### `exchangeEtherForSynths`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L128)</sub>
-
-@notice Exchange ETH to sUSD.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L133)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeEtherForSynths() public`
+    `exchangeEtherForSynths() external`
 
     **Modifiers**
 
@@ -313,17 +260,13 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `exchangeEtherForSynthsAtRate`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L255)</sub>
-
-@notice Exchange ETH to sUSD while insisting on a particular rate. This allows a user to
-        exchange while protecting against frontrunning by the contract owner on the exchange rate.
-@param guaranteedRate The exchange rate (ether price) which must be honored or the call will revert.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L264)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeEtherForSynthsAtRate(uint256 guaranteedRate) public`
+    `exchangeEtherForSynthsAtRate(uint256 guaranteedRate) external`
 
     **Modifiers**
 
@@ -334,15 +277,13 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `exchangeEtherForSNX`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L272)</sub>
-
-@notice Exchange ETH to SNX.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L296)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeEtherForSNX() public`
+    `exchangeEtherForSNX() external`
 
     **Modifiers**
 
@@ -352,25 +293,16 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
     * [notPaused](#notpaused)
 
-    **Emits**
-
-    * [Exchange](#exchange)
-
 ---
 
 ### `exchangeEtherForSNXAtRate`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L302)</sub>
-
-@notice Exchange ETH to SNX while insisting on a particular set of rates. This allows a user to
-        exchange while protecting against frontrunning by the contract owner on the exchange rates.
-@param guaranteedEtherRate The ether exchange rate which must be honored or the call will revert.
-@param guaranteedSynthetixRate The synthetix exchange rate which must be honored or the call will revert.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L315)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeEtherForSNXAtRate(uint256 guaranteedEtherRate, uint256 guaranteedSynthetixRate) public`
+    `exchangeEtherForSNXAtRate(uint256 guaranteedEtherRate, uint256 guaranteedSynthetixRate) external`
 
     **Modifiers**
 
@@ -383,16 +315,13 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `exchangeSynthsForSNX`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L325)</sub>
-
-@notice Exchange sUSD for SNX
-@param synthAmount The amount of synths the user wishes to exchange.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L355)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeSynthsForSNX(uint256 synthAmount) public`
+    `exchangeSynthsForSNX(uint256 synthAmount) external`
 
     **Modifiers**
 
@@ -400,25 +329,16 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
     * [notPaused](#notpaused)
 
-    **Emits**
-
-    * [Exchange](#exchange)
-
 ---
 
 ### `exchangeSynthsForSNXAtRate`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L355)</sub>
-
-@notice Exchange sUSD for SNX while insisting on a particular rate. This allows a user to
-        exchange while protecting against frontrunning by the contract owner on the exchange rate.
-@param synthAmount The amount of synths the user wishes to exchange.
-@param guaranteedRate A rate (synthetix price) the caller wishes to insist upon.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L372)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate) public`
+    `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate) external`
 
     **Modifiers**
 
@@ -429,10 +349,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `withdrawSynthetix`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L372)</sub>
-
-@notice Allows the owner to withdraw SNX from this contract if needed.
-@param amount The amount of SNX to attempt to withdraw (in 18 decimal places).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L389)</sub>
 
 ??? example "Details"
 
@@ -447,13 +364,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `withdrawMyDepositedSynths`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L388)</sub>
-
-@notice Allows a user to withdraw all of their previously deposited synths from this contract if needed.
-        Developer note: We could keep an index of address to deposits to make this operation more efficient
-        but then all the other operations on the queue become less efficient. It's expected that this
-        function will be very rarely used, so placing the inefficiency here is intentional. The usual
-        use case does not involve a withdrawal.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L405)</sub>
 
 ??? example "Details"
 
@@ -468,10 +379,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `depositSynths`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L425)</sub>
-
-@notice depositSynths: Allows users to deposit synths via the approve / transferFrom workflow
-@param amount The amount of sUSD you wish to deposit (must have been approved first)
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L442)</sub>
 
 ??? example "Details"
 
@@ -482,11 +390,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `synthetixReceivedForSynths`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L457)</sub>
-
-@notice Calculate how many SNX you will receive if you transfer
-        an amount of synths.
-@param amount The amount of synths (in 18 decimal places) you want to ask about
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L474)</sub>
 
 ??? example "Details"
 
@@ -497,11 +401,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `synthetixReceivedForEther`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L467)</sub>
-
-@notice Calculate how many SNX you will receive if you transfer
-        an amount of ether.
-@param amount The amount of ether (in wei) you want to ask about
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L484)</sub>
 
 ??? example "Details"
 
@@ -512,11 +412,7 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `synthsReceivedForEther`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L480)</sub>
-
-@notice Calculate how many synths you will receive if you transfer
-        an amount of ether.
-@param amount The amount of ether (in wei) you want to ask about
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L497)</sub>
 
 ??? example "Details"
 
@@ -526,45 +422,12 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
 ---
 
-### `synthsUSD`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L487)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthsUSD() internal`
-
----
-
-### `synthetix`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L491)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthetix() internal`
-
----
-
-### `exchangeRates`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L495)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeRates() internal`
-
----
-
 ## Modifiers
 
 ---
 
 ### `rateNotStale`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L501)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L518)</sub>
 
 ---
 
@@ -573,70 +436,70 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ---
 
 ### `MaxEthPurchaseUpdated`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L508)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L525)</sub>
 
 - `(uint256 amount)`
 
 ---
 
 ### `FundsWalletUpdated`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L509)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L526)</sub>
 
 - `(address newFundsWallet)`
 
 ---
 
 ### `Exchange`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L510)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L527)</sub>
 
 - `(string fromCurrency, uint256 fromAmount, string toCurrency, uint256 toAmount)`
 
 ---
 
 ### `SynthWithdrawal`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L511)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L528)</sub>
 
 - `(address user, uint256 amount)`
 
 ---
 
 ### `SynthDeposit`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L512)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L529)</sub>
 
 - `(address user, uint256 amount, uint256 depositIndex)`
 
 ---
 
 ### `SynthDepositRemoved`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L513)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L530)</sub>
 
 - `(address user, uint256 amount, uint256 depositIndex)`
 
 ---
 
 ### `SynthDepositNotAccepted`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L514)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L531)</sub>
 
 - `(address user, uint256 amount, uint256 minimum)`
 
 ---
 
 ### `MinimumDepositAmountUpdated`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L515)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L532)</sub>
 
 - `(uint256 amount)`
 
 ---
 
 ### `NonPayableContract`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L516)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L533)</sub>
 
 - `(address receiver, uint256 amount)`
 
 ---
 
 ### `ClearedDeposit`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/gas-reports-for-buidler/contracts/Depot.sol#L517)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L534)</sub>
 
 - `(address fromAddress, address toAddress, uint256 fromETHAmount, uint256 toAmount, uint256 depositIndex)`
 

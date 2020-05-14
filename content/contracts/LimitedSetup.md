@@ -1,48 +1,19 @@
 # LimitedSetup
 
-## Description
+**Source:** [contracts/LimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol)
 
-This contract allows certain functions within inheriting contracts to only operate during a specific limited setup period. After this period elapses, any functions with the [`onlyDuringSetup`](#onlyduringsetup) modifier no longer operate.
-
-**Source:** [LimitedSetup.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/LimitedSetup.sol)
-
-## Architecture
-
----
-
-### Inheritance Graph
-
-<centered-image>
-    ![LimitedSetup inheritance graph](../img/graphs/LimitedSetup.svg)
-</centered-image>
-
----
+## Structs
 
 ## Variables
 
 ---
 
 ### `setupExpiryTime`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L6)</sub>
 
-The timestamp at which functions which have the [`onlyDuringSetup`](#onlyduringsetup) modifier will cease operating. This is determined by the `setupDuration` parameter passed into the contract [constructor](#constructor).
-
-**Type:** `uint`
-
----
+**Type:** `uint256`
 
 ## Functions
-
----
-
-### `constructor`
-
-Sets [`setupExpiryTime`](#setupexpirytime) to the current timestamp plus `setupDuration` seconds.
-
-??? example "Details"
-
-    **Signature**
-
-    `constructor(uint setupDuration) public`
 
 ---
 
@@ -51,7 +22,9 @@ Sets [`setupExpiryTime`](#setupexpirytime) to the current timestamp plus `setupD
 ---
 
 ### `onlyDuringSetup`
-
-Reverts the transaction if the current timestamp is not before [`setupExpiryTime`](#setupexpirytime).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L16)</sub>
 
 ---
+
+## Events
+

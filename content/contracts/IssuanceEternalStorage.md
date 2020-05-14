@@ -1,70 +1,44 @@
-
 # IssuanceEternalStorage
 
-**Source:** [IssuanceEternalStorage.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/IssuanceEternalStorage.sol)
-
-!!! todo "Work in Progress"
-
-    This needs filling in
-
-## Description
-
-... todo.
-
----
+**Source:** [contracts/IssuanceEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/IssuanceEternalStorage.sol)
 
 ## Architecture
 
-... todo.
-
-<!--centered-image>
-    ![Architecture Graph](../img/graphs/todo-architecture.svg)
-</centered-image-->
-
-
 ### Inheritance Graph
 
-<!--centered-image>
-    ![Inheritance graph](../img/graphs/todo.svg)
-</centered-image-->
-
-### Related Contracts
-
-- ?
-
----
-
-## Constants
+```mermaid
+graph TD
+    IssuanceEternalStorage[IssuanceEternalStorage] --> EternalStorage[EternalStorage]
+    EternalStorage[EternalStorage] --> State[State]
+    State[State] --> Owned[Owned]
+```
 
 ---
+
+## Structs
 
 ## Variables
 
-.. (need to pull these from the functions below)
+## Functions
 
 ---
 
-## Views
+### `constructor`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/IssuanceEternalStorage.sol#L11)</sub>
 
----
+??? example "Details"
 
-## Public Mutative Functions
+    **Signature**
 
----
+    `(address _owner, address _issuer) public`
 
-## Owner Mutative Functions
+    **Modifiers**
 
----
-
-## Internal & Restricted Mutative Functions
+    * [EternalStorage](#eternalstorage)
 
 ---
 
 ## Modifiers
 
----
-
 ## Events
-
---
 

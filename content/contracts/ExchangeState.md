@@ -1,67 +1,158 @@
 # ExchangeState
 
-**Source:** [ExchangeState.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeState.sol)
-
-!!! todo "Work in Progress"
-
-    This needs filling in
-
-## Description
-
-... todo.
-
----
+**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol)
 
 ## Architecture
 
-... todo.
-
-<!--centered-image>
-    ![Architecture Graph](../img/graphs/todo-architecture.svg)
-</centered-image-->
-
 ### Inheritance Graph
 
-<!--centered-image>
-    ![Inheritance graph](../img/graphs/todo.svg)
-</centered-image-->
-
-### Related Contracts
-
-- ?
+```mermaid
+graph TD
+    ExchangeState[ExchangeState] --> State[State]
+    ExchangeState[ExchangeState] --> IExchangeState[IExchangeState]
+    State[State] --> Owned[Owned]
+```
 
 ---
 
-## Constants
+## Structs
+
+---
+
+### ExchangeEntry
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L11)</sub>
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| src | bytes32 | TBA |
+| amount | uint256 | TBA |
+| dest | bytes32 | TBA |
+| amountReceived | uint256 | TBA |
+| exchangeFeeRate | uint256 | TBA |
+| timestamp | uint256 | TBA |
+| roundIdForSrc | uint256 | TBA |
+| roundIdForDest | uint256 | TBA |
 
 ---
 
 ## Variables
 
-.. (need to pull these from the functions below)
+---
+
+### `exchanges`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L22)</sub>
+
+**Type:** `mapping(address => mapping(bytes32 => struct ExchangeState.ExchangeEntry[]))`
 
 ---
 
-## Views
+### `maxEntriesInQueue`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L24)</sub>
+
+**Type:** `uint256`
 
 ---
 
-## Public Mutative Functions
+## Functions
 
 ---
 
-## Owner Mutative Functions
+### `constructor`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L26)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `(address _owner, address _associatedContract) public`
+
+    **Modifiers**
+
+    * [Owned](#owned)
+
+    * [State](#state)
 
 ---
 
-## Internal & Restricted Mutative Functions
+### `setMaxEntriesInQueue`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L30)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setMaxEntriesInQueue(uint256 _maxEntriesInQueue) external`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+---
+
+### `appendExchangeEntry`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L36)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `appendExchangeEntry(address account, bytes32 src, uint256 amount, bytes32 dest, uint256 amountReceived, uint256 exchangeFeeRate, uint256 timestamp, uint256 roundIdForSrc, uint256 roundIdForDest) external`
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+---
+
+### `removeEntries`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L63)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `removeEntries(address account, bytes32 currencyKey) external`
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+---
+
+### `getLengthOfEntries`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L69)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getLengthOfEntries(address account, bytes32 currencyKey) external`
+
+---
+
+### `getEntryAt`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L73)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getEntryAt(address account, bytes32 currencyKey, uint256 index) external`
+
+---
+
+### `getMaxTimestamp`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L104)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getMaxTimestamp(address account, bytes32 currencyKey) external`
 
 ---
 
 ## Modifiers
 
----
-
 ## Events
 
---
