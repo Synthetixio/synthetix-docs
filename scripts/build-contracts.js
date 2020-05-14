@@ -79,7 +79,7 @@ const getInheritanceGraph = (source, name) => {
 		})
 		.reduce((acc, x) => Array.prototype.concat(acc, x), []);
 
-	// Recursively get each contract
+	// Recursively get each contract's inheritance
 	return {
 		[name]: directInheritsWithSource
 			.map(x => getInheritanceGraph(x.source, x.name))
@@ -117,7 +117,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	// Description
 	if (curExtraDocs.description) {
 		content += '## Description\n\n';
-		content += curExtraDocs.description;
+		content += `${curExtraDocs.description}\n\n`;
 	}
 
 	// Source
@@ -137,7 +137,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 		content += `${'```'}\n\n`;
 	}
 
-	if (Array.isArray(curExtraDocs.architecture)) {
+	if (Array.isArray(curExtraDocs.architecture) && curExtraDocs.architecture.length > 0) {
 		curExtraDocs.architecture.map(x => {
 			content += '---\n\n';
 			content += `### ${x.name}\n\n`;
@@ -164,7 +164,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	}
 
 	// Structs
-	if (Array.isArray(curAstDocs.structs)) {
+	if (Array.isArray(curAstDocs.structs) && curAstDocs.structs.length > 0) {
 		content += '## Structs\n\n';
 
 		curAstDocs.structs.map(x => {
@@ -193,7 +193,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	}
 
 	// Variables
-	if (Array.isArray(curAstDocs.variables)) {
+	if (Array.isArray(curAstDocs.variables) && curAstDocs.variables.length > 0) {
 		content += '## Variables\n\n';
 
 		curAstDocs.variables
@@ -216,7 +216,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	}
 
 	// Functions
-	if (Array.isArray(curAstDocs.functions)) {
+	if (Array.isArray(curAstDocs.functions) && curAstDocs.functions.filter(x => x.visibility !== 'internal').length > 0) {
 		content += '## Functions\n\n';
 
 		curAstDocs.functions
@@ -257,7 +257,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	}
 
 	// Modifiers
-	if (Array.isArray(curAstDocs.modifiers)) {
+	if (Array.isArray(curAstDocs.modifiers) && curAstDocs.modifiers.length > 0) {
 		content += '## Modifiers\n\n';
 
 		curAstDocs.modifiers.map(x => {
@@ -276,7 +276,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	}
 
 	// Events
-	if (Array.isArray(curAstDocs.events)) {
+	if (Array.isArray(curAstDocs.events) && curAstDocs.events.length > 0) {
 		content += '## Events\n\n';
 
 		curAstDocs.events.map(x => {

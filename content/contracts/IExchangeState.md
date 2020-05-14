@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeState.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -64,8 +60,4 @@
     `removeEntries(address account, bytes32 currencyKey) external`
 
 ---
-
-## Modifiers
-
-## Events
 

@@ -21,8 +21,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---

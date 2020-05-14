@@ -2,8 +2,6 @@
 
 **Source:** [contracts/test-helpers/MockMutator.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockMutator.sol)
 
-## Structs
-
 ## Variables
 
 ---
@@ -38,8 +36,4 @@
     `update() external`
 
 ---
-
-## Modifiers
-
-## Events
 

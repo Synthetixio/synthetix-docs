@@ -2,8 +2,6 @@
 
 **Source:** [contracts/test-helpers/MockEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol)
 
-## Structs
-
 ## Variables
 
 ---
@@ -49,8 +47,4 @@
     `closeLoan(uint256 amount) external`
 
 ---
-
-## Modifiers
-
-## Events
 

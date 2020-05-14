@@ -22,8 +22,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -90,6 +88,4 @@ graph TD
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
 
 ---
-
-## Events
 

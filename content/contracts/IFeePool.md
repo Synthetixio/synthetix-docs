@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -152,8 +148,4 @@
     `setRewardsToDistribute(uint256 amount) external`
 
 ---
-
-## Modifiers
-
-## Events
 

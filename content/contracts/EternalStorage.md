@@ -14,8 +14,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -374,8 +372,4 @@ graph TD
     * [onlyAssociatedContract](#onlyassociatedcontract)
 
 ---
-
-## Modifiers
-
-## Events
 

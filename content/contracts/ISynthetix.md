@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/ISynthetix.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -295,8 +291,4 @@
     `settle(bytes32 currencyKey) external`
 
 ---
-
-## Modifiers
-
-## Events
 

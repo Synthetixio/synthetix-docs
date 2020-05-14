@@ -2,8 +2,6 @@
 
 **Source:** [contracts/Owned.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol)
 
-## Structs
-
 ## Variables
 
 ---

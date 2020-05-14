@@ -15,8 +15,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -155,6 +153,4 @@ graph TD
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L445)</sub>
 
 ---
-
-## Events
 

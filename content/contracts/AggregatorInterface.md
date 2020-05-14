@@ -61,7 +61,3 @@
 
 ---
 
-## Modifiers
-
-## Events
-

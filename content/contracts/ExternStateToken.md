@@ -16,8 +16,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -150,8 +148,6 @@ graph TD
     * [optionalProxy](#optionalproxy)
 
 ---
-
-## Modifiers
 
 ## Events
 

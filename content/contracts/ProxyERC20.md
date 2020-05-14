@@ -15,10 +15,6 @@ graph TD
 
 ---
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -136,8 +132,4 @@ graph TD
     `transferFrom(address from, address to, uint256 value) public`
 
 ---
-
-## Modifiers
-
-## Events
 

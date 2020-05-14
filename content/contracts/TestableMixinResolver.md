@@ -14,8 +14,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ## Functions
@@ -38,8 +36,4 @@ graph TD
     * [MixinResolver](#mixinresolver)
 
 ---
-
-## Modifiers
-
-## Events
 

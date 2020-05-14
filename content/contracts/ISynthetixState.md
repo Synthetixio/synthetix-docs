@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/ISynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -130,8 +126,4 @@
     `clearIssuanceData(address account) external`
 
 ---
-
-## Modifiers
-
-## Events
 

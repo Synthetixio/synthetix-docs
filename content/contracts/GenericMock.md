@@ -2,8 +2,6 @@
 
 **Source:** [contracts/test-helpers/GenericMock.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/GenericMock.sol)
 
-## Structs
-
 ## Variables
 
 ---
@@ -38,8 +36,4 @@
     `mockReturns(bytes4 key, bytes value) external`
 
 ---
-
-## Modifiers
-
-## Events
 

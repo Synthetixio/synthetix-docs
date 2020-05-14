@@ -2,8 +2,6 @@
 
 **Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol)
 
-## Structs
-
 ## Variables
 
 ---
@@ -81,8 +79,4 @@
     `_divideDecimalRound(uint256 x, uint256 y, uint256 precisionUnit) private`
 
 ---
-
-## Modifiers
-
-## Events
 

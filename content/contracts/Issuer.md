@@ -15,8 +15,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---

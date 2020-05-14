@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -119,8 +115,4 @@
     `burnSynthsToTargetOnBehalf(address burnForAddress, address from) external`
 
 ---
-
-## Modifiers
-
-## Events
 

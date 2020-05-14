@@ -241,8 +241,6 @@ graph TD
 
 ---
 
-## Modifiers
-
 ## Events
 
 ---

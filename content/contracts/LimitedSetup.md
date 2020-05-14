@@ -2,8 +2,6 @@
 
 **Source:** [contracts/LimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol)
 
-## Structs
-
 ## Variables
 
 ---
@@ -13,10 +11,6 @@
 
 **Type:** `uint256`
 
-## Functions
-
----
-
 ## Modifiers
 
 ---
@@ -25,6 +19,4 @@
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L16)</sub>
 
 ---
-
-## Events
 

@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -75,8 +71,4 @@
     `issue(address account, uint256 amount) external`
 
 ---
-
-## Modifiers
-
-## Events
 

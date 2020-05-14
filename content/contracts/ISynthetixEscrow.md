@@ -2,8 +2,6 @@
 
 **Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol)
 
-## Structs
-
 ## Functions
 
 ---
@@ -29,8 +27,4 @@
     `getVestingScheduleEntry(address account, uint256 index) external`
 
 ---
-
-## Modifiers
-
-## Events
 

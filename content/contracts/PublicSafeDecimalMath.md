@@ -2,10 +2,6 @@
 
 **Source:** [contracts/test-helpers/PublicSafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -119,8 +115,4 @@
     `preciseDecimalToDecimal(uint256 i) public`
 
 ---
-
-## Modifiers
-
-## Events
 

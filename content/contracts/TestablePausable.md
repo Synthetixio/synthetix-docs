@@ -14,8 +14,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -60,8 +58,4 @@ graph TD
     * [notPaused](#notpaused)
 
 ---
-
-## Modifiers
-
-## Events
 

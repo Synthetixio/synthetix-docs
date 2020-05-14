@@ -2,8 +2,6 @@
 
 **Source:** [contracts/test-helpers/MockExchanger.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol)
 
-## Structs
-
 ## Variables
 
 ---
@@ -104,8 +102,4 @@
     `setMaxSecsLeft(uint256 _maxSecsLeft) external`
 
 ---
-
-## Modifiers
-
-## Events
 

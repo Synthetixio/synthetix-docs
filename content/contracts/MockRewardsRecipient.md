@@ -14,8 +14,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -62,8 +60,6 @@ graph TD
     * [RewardAdded](#rewardadded)
 
 ---
-
-## Modifiers
 
 ## Events
 

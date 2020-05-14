@@ -2,8 +2,6 @@
 
 **Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol)
 
-## Structs
-
 ## Functions
 
 ---
@@ -40,6 +38,4 @@
     `emitExchangeRebate(address account, bytes32 currencyKey, uint256 amount) external`
 
 ---
-
-## Events
 

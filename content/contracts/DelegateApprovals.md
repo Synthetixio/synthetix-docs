@@ -14,8 +14,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -262,8 +260,6 @@ graph TD
     * [EternalStorageUpdated](#eternalstorageupdated)
 
 ---
-
-## Modifiers
 
 ## Events
 

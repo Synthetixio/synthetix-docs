@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -53,8 +49,4 @@
     `vest() external`
 
 ---
-
-## Modifiers
-
-## Events
 

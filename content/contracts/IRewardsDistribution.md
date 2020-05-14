@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardsDistribution.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -20,8 +16,4 @@
     `distributeRewards(uint256 amount) external`
 
 ---
-
-## Modifiers
-
-## Events
 

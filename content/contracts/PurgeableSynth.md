@@ -22,8 +22,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -66,8 +64,6 @@ graph TD
     * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
 
 ---
-
-## Modifiers
 
 ## Events
 

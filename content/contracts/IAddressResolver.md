@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IAddressResolver.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -42,8 +38,4 @@
     `requireAndGetAddress(bytes32 name, string reason) external`
 
 ---
-
-## Modifiers
-
-## Events
 

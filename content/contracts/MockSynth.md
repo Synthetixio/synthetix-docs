@@ -17,8 +17,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -128,8 +126,6 @@ graph TD
     * [Burned](#burned)
 
 ---
-
-## Modifiers
 
 ## Events
 

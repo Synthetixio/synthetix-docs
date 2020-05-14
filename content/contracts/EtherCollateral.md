@@ -557,8 +557,6 @@ graph TD
 
 ---
 
-## Modifiers
-
 ## Events
 
 ---

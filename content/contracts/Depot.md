@@ -10,6 +10,8 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 
 !!! SNX exchange functionality has been deprecated on MAINNET and is now used as a SNX faucet on the testnets only.
 
+
+
 **Source:** [contracts/Depot.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol)
 
 ## Architecture

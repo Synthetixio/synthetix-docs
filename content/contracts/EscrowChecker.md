@@ -2,8 +2,6 @@
 
 **Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol)
 
-## Structs
-
 ## Variables
 
 ---
@@ -38,8 +36,4 @@
     `checkAccountSchedule(address account) public`
 
 ---
-
-## Modifiers
-
-## Events
 

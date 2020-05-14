@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IEtherCollateral.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -75,8 +71,4 @@
     `liquidateUnclosedLoan(address _loanCreatorsAddress, uint256 _loanID) external`
 
 ---
-
-## Modifiers
-
-## Events
 

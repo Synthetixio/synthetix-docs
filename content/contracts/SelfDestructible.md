@@ -13,8 +13,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -124,8 +122,6 @@ graph TD
     * [SelfDestructed](#selfdestructed)
 
 ---
-
-## Modifiers
 
 ## Events
 

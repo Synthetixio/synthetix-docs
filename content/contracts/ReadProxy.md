@@ -13,8 +13,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -72,8 +70,6 @@ graph TD
     `() external`
 
 ---
-
-## Modifiers
 
 ## Events
 

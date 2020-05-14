@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -196,8 +192,4 @@
     `rateStalePeriod() external`
 
 ---
-
-## Modifiers
-
-## Events
 

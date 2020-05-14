@@ -15,8 +15,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -283,8 +281,6 @@ graph TD
     `vest() external`
 
 ---
-
-## Modifiers
 
 ## Events
 

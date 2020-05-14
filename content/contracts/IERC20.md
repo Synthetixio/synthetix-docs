@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IERC20.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -108,8 +104,6 @@
     `transferFrom(address from, address to, uint256 value) external`
 
 ---
-
-## Modifiers
 
 ## Events
 

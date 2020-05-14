@@ -17,8 +17,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -91,8 +89,6 @@ graph TD
     * [Received](#received)
 
 ---
-
-## Modifiers
 
 ## Events
 

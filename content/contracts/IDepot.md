@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IDepot.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDepot.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -152,8 +148,4 @@
     `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate) external`
 
 ---
-
-## Modifiers
-
-## Events
 

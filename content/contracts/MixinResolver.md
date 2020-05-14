@@ -13,8 +13,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -78,8 +76,4 @@ graph TD
     `getResolverAddressesRequired() external`
 
 ---
-
-## Modifiers
-
-## Events
 

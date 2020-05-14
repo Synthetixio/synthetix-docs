@@ -2,10 +2,6 @@
 
 **Source:** [contracts/test-helpers/PublicMath.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicMath.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -20,8 +16,4 @@
     `powerDecimal(uint256 x, uint256 y) public`
 
 ---
-
-## Modifiers
-
-## Events
 

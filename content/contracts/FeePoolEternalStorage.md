@@ -16,8 +16,6 @@ graph TD
 
 ---
 
-## Structs
-
 ## Variables
 
 ---
@@ -64,8 +62,4 @@ graph TD
     * [onlyDuringSetup](#onlyduringsetup)
 
 ---
-
-## Modifiers
-
-## Events
 

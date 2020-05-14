@@ -2,8 +2,6 @@
 
 **Source:** [contracts/test-helpers/UsingReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol)
 
-## Structs
-
 ## Variables
 
 ---
@@ -38,8 +36,4 @@
     `run(bytes32 currencyKey) external`
 
 ---
-
-## Modifiers
-
-## Events
 

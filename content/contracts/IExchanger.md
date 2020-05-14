@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -86,8 +82,4 @@
     `settle(address from, bytes32 currencyKey) external`
 
 ---
-
-## Modifiers
-
-## Events
 

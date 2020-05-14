@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -64,8 +60,4 @@
     `requireSynthsActive(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) external`
 
 ---
-
-## Modifiers
-
-## Events
 

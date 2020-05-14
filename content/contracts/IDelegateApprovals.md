@@ -2,10 +2,6 @@
 
 **Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol)
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -163,8 +159,4 @@
     `removeExchangeOnBehalf(address delegate) external`
 
 ---
-
-## Modifiers
-
-## Events
 

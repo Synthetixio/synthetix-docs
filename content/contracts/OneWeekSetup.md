@@ -13,10 +13,6 @@ graph TD
 
 ---
 
-## Structs
-
-## Variables
-
 ## Functions
 
 ---
@@ -46,8 +42,4 @@ graph TD
     `publicSetupExpiryTime() public`
 
 ---
-
-## Modifiers
-
-## Events
 
