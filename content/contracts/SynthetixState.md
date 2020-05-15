@@ -198,6 +198,10 @@ graph TD
 
     `setIssuanceRatio(uint256 _issuanceRatio) external`
 
+    **Requires**
+
+    * [require(..., New issuance ratio cannot exceed MAX_ISSUANCE_RATIO)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L120)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)

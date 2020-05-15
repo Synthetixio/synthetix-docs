@@ -208,6 +208,10 @@ graph TD
 
     `setMinterReward(uint256 amount) external`
 
+    **Requires**
+
+    * [require(..., Reward cannot exceed max minter reward)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L187)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -226,6 +230,10 @@ graph TD
     **Signature**
 
     `setSynthetixProxy(contract ISynthetix _synthetixProxy) external`
+
+    **Requires**
+
+    * [require(..., Address cannot be 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L200)
 
     **Modifiers**
 

@@ -198,6 +198,12 @@ graph TD
 
     `setCollateralizationRatio(uint256 ratio) external`
 
+    **Requires**
+
+    * [require(..., Too high)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L117)
+
+    * [require(..., Too low)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L118)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -216,6 +222,12 @@ graph TD
     **Signature**
 
     `setInterestRate(uint256 _interestRate) external`
+
+    **Requires**
+
+    * [require(..., Interest rate cannot be less that the SECONDS_IN_A_YEAR)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L124)
+
+    * [require(..., Interest cannot be more than 100% APR)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L125)
 
     **Modifiers**
 
@@ -293,6 +305,10 @@ graph TD
 
     `setAccountLoanLimit(uint256 _loanLimit) external`
 
+    **Requires**
+
+    * [require(..., Owner cannot set higher than HARD_CAP)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L148)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -311,6 +327,10 @@ graph TD
     **Signature**
 
     `setLoanLiquidationOpen(bool _loanLiquidationOpen) external`
+
+    **Requires**
+
+    * [require(..., Before liquidation deadline)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L154)
 
     **Modifiers**
 
@@ -441,6 +461,16 @@ graph TD
 
     `openLoan() external`
 
+    **Requires**
+
+    * [require(..., Not enough ETH to create this loan. Please see the minLoanSize)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L290)
+
+    * [require(..., Loans are now being liquidated)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L293)
+
+    * [require(..., Each account is limted to 50 loans)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L296)
+
+    * [require(..., Loan Amount exceeds the supply cap.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L302)
+
     **Modifiers**
 
     * [notPaused](#notpaused)
@@ -477,6 +507,10 @@ graph TD
 
     `liquidateUnclosedLoan(address _loanCreatorsAddress, uint256 _loanID) external`
 
+    **Requires**
+
+    * [require(..., Liquidation is not open)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L336)
+
     **Modifiers**
 
     * [nonReentrant](#nonreentrant)
@@ -495,6 +529,16 @@ graph TD
     **Signature**
 
     `_closeLoan(address account, uint256 loanID) private`
+
+    **Requires**
+
+    * [require(..., Loan does not exist)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L351)
+
+    * [require(..., Loan already closed)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L352)
+
+    * [require(..., You do not have the required Synth balance to close this loan.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L353)
+
+    * [require(..., The sUSD Depot does not have enough sUSD to buy for fees)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L373)
 
     **Emits**
 

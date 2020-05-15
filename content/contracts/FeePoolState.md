@@ -101,6 +101,10 @@ graph TD
 
     `getAccountsDebtEntry(address account, uint256 index) public`
 
+    **Requires**
+
+    * [require(..., index exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L62)
+
 ---
 
 ### `applicableIssuanceData`
@@ -148,6 +152,10 @@ graph TD
     **Signature**
 
     `importIssuerData(address[] accounts, uint256[] ratios, uint256 periodToInsert, uint256 feePeriodCloseIndex) external`
+
+    **Requires**
+
+    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L143)
 
     **Modifiers**
 

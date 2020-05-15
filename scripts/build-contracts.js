@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const json2md = require('json2md');
 
 console.log('Building contracts');
 
@@ -117,7 +118,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	// Description
 	if (curExtraDocs.description) {
 		content += '## Description\n\n';
-		content += `${curExtraDocs.description}\n\n`;
+		content += `${json2md(curExtraDocs.description)}\n\n`;
 	}
 
 	// Source
@@ -130,7 +131,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 
 	if (graphHasInheritance) {
 		content += '## Architecture\n\n';
-		content += `### Inheritance Graph\n\n`;
+		content += '### Inheritance Graph\n\n';
 		content += `${'```'}mermaid\n`;
 		content += 'graph TD\n';
 		content += graphMd;
@@ -140,26 +141,26 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	if (Array.isArray(curExtraDocs.architecture) && curExtraDocs.architecture.length > 0) {
 		curExtraDocs.architecture.map(x => {
 			content += '---\n\n';
-			content += `### ${x.name}\n\n`;
-			content += `${x.value}\n\n`;
+			content += `${json2md(x.name)}\n\n`;
+			content += `${json2md(x.value)}\n\n`;
 		});
 	}
 
-	if (graphHasInheritance) {
+	if (graphHasInheritance || (Array.isArray(curExtraDocs.architecture) && curExtraDocs.architecture.length > 0)) {
 		content += '---\n\n';
 	}
 
 	// Related
 	if (curExtraDocs.related) {
 		content += '### Related Contracts\n\n';
-		content += `${curExtraDocs.related}\n\n`;
+		content += `${json2md(curExtraDocs.related)}\n\n`;
 		content += '---\n\n';
 	}
 
 	// Libraries
 	if (curExtraDocs.libraries) {
 		content += '### Libraries\n\n';
-		content += `${curExtraDocs.libraries}\n\n`;
+		content += `${json2md(curExtraDocs.libraries)}\n\n`;
 		content += '---\n\n';
 	}
 
@@ -176,7 +177,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 			x.members.map(y => {
 				let description;
 				try {
-					description = curExtraDocs.structs[x.name][y.name];
+					description = json2md(curExtraDocs.structs[x.name][y.name]);
 				} catch (e) {
 					description = 'TBA';
 				}
@@ -204,7 +205,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 				content += `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
 
 				if (e2(curExtraDocs, 'variables', x.name, false)) {
-					content += `${curExtraDocs.variables[x.name]}\n\n`;
+					content += `${json2md(curExtraDocs.variables[x.name])}\n\n`;
 				}
 
 				content += `**Type:** \`${x.type}\`\n\n`;
@@ -234,15 +235,23 @@ const generateContractMarkdown = (contractSource, contractName) => {
 				content += '    **Signature**\n\n';
 				content += `    \`${x.signature}\`\n\n`;
 
+				// Requires
+				if (x.requires.length > 0) {
+					content += '    **Requires**\n\n';
+				}
+				x.requires.map(y => {
+					content += `    * [${y.name}](${baseUrl}${contractSource}#L${y.lineNumber})\n\n`;
+				});
+
+				// Modifiers in function
 				if (x.modifiers.length > 0) {
 					content += '    **Modifiers**\n\n';
 				}
-
-				// Header links need to be lowercased for some reason....
 				x.modifiers.map(y => {
 					content += `    * [${y}](#${y.toLowerCase()})\n\n`;
 				});
 
+				// Events in functions
 				if (x.events.length > 0) {
 					content += '    **Emits**\n\n';
 				}

@@ -64,6 +64,12 @@ graph TD
 
     `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver) public`
 
+    **Requires**
+
+    * [require(..., _proxy cannot be 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L61)
+
+    * [require(..., _owner cannot be 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L62)
+
     **Modifiers**
 
     * [ExternStateToken](#externstatetoken)

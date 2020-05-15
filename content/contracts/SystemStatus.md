@@ -140,6 +140,10 @@ graph TD
 
     `requireSystemActive() external`
 
+    **Requires**
+
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L48)
+
 ---
 
 ### `requireIssuanceActive`
@@ -150,6 +154,12 @@ graph TD
     **Signature**
 
     `requireIssuanceActive() external`
+
+    **Requires**
+
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L53)
+
+    * [require(..., Issuance is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L54)
 
 ---
 
@@ -162,6 +172,12 @@ graph TD
 
     `requireExchangeActive() external`
 
+    **Requires**
+
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L59)
+
+    * [require(..., Exchange is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L60)
+
 ---
 
 ### `requireSynthActive`
@@ -173,6 +189,12 @@ graph TD
 
     `requireSynthActive(bytes32 currencyKey) external`
 
+    **Requires**
+
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L65)
+
+    * [require(..., Synth is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L66)
+
 ---
 
 ### `requireSynthsActive`
@@ -183,6 +205,12 @@ graph TD
     **Signature**
 
     `requireSynthsActive(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) external`
+
+    **Requires**
+
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L71)
+
+    * [require(..., One or more synths are suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L73)
 
 ---
 
@@ -232,6 +260,10 @@ graph TD
 
     `suspendSystem(uint256 reason) external`
 
+    **Requires**
+
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L108)
+
     **Emits**
 
     * [SystemSuspended](#systemsuspended)
@@ -246,6 +278,10 @@ graph TD
     **Signature**
 
     `resumeSystem() external`
+
+    **Requires**
+
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L115)
 
     **Emits**
 
@@ -262,6 +298,10 @@ graph TD
 
     `suspendIssuance(uint256 reason) external`
 
+    **Requires**
+
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L122)
+
     **Emits**
 
     * [IssuanceSuspended](#issuancesuspended)
@@ -276,6 +316,10 @@ graph TD
     **Signature**
 
     `resumeIssuance() external`
+
+    **Requires**
+
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L129)
 
     **Emits**
 
@@ -292,6 +336,10 @@ graph TD
 
     `suspendExchange(uint256 reason) external`
 
+    **Requires**
+
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L136)
+
     **Emits**
 
     * [ExchangeSuspended](#exchangesuspended)
@@ -306,6 +354,10 @@ graph TD
     **Signature**
 
     `resumeExchange() external`
+
+    **Requires**
+
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L143)
 
     **Emits**
 
@@ -322,6 +374,10 @@ graph TD
 
     `suspendSynth(bytes32 currencyKey, uint256 reason) external`
 
+    **Requires**
+
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L150)
+
     **Emits**
 
     * [SynthSuspended](#synthsuspended)
@@ -336,6 +392,10 @@ graph TD
     **Signature**
 
     `resumeSynth(bytes32 currencyKey) external`
+
+    **Requires**
+
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L157)
 
     **Emits**
 

@@ -107,6 +107,10 @@ graph TD
 
     `(address _owner, address _oracle, bytes32[] _currencyKeys, uint256[] _newRates) public`
 
+    **Requires**
+
+    * [require(..., Currency key length and rate length must match.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L65)
+
     **Modifiers**
 
     * [Owned](#owned)
@@ -177,6 +181,10 @@ graph TD
 
     `deleteRate(bytes32 currencyKey) external`
 
+    **Requires**
+
+    * [require(..., Rate is zero)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L110)
+
     **Modifiers**
 
     * [onlyOracle](#onlyoracle)
@@ -195,6 +203,18 @@ graph TD
     **Signature**
 
     `setInversePricing(bytes32 currencyKey, uint256 entryPoint, uint256 upperLimit, uint256 lowerLimit, bool freeze, bool freezeAtUpperLimit) external`
+
+    **Requires**
+
+    * [require(..., entryPoint must be above 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L143)
+
+    * [require(..., lowerLimit must be above 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L144)
+
+    * [require(..., upperLimit must be above the entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L145)
+
+    * [require(..., upperLimit must be less than double entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L146)
+
+    * [require(..., lowerLimit must be below the entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L147)
 
     **Modifiers**
 
@@ -215,6 +235,10 @@ graph TD
 
     `removeInversePricing(bytes32 currencyKey) external`
 
+    **Requires**
+
+    * [require(..., No inverted price exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L175)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -229,6 +253,10 @@ graph TD
     **Signature**
 
     `addAggregator(bytes32 currencyKey, address aggregatorAddress) external`
+
+    **Requires**
+
+    * [require(..., Given Aggregator is invalid)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L196)
 
     **Modifiers**
 
@@ -248,6 +276,10 @@ graph TD
     **Signature**
 
     `removeAggregator(bytes32 currencyKey) external`
+
+    **Requires**
+
+    * [require(..., No aggregator exists for key)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L210)
 
     **Modifiers**
 

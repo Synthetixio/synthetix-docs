@@ -35,5 +35,9 @@
 
     `run(bytes32 currencyKey) external`
 
+    **Requires**
+
+    * [require(..., Missing ExchangeRates)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol#L16)
+
 ---
 

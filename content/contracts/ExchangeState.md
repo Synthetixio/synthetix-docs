@@ -98,6 +98,10 @@ graph TD
 
     `appendExchangeEntry(address account, bytes32 src, uint256 amount, bytes32 dest, uint256 amountReceived, uint256 exchangeFeeRate, uint256 timestamp, uint256 roundIdForSrc, uint256 roundIdForDest) external`
 
+    **Requires**
+
+    * [require(..., Max queue length reached)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L47)
+
     **Modifiers**
 
     * [onlyAssociatedContract](#onlyassociatedcontract)

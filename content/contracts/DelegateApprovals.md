@@ -251,6 +251,10 @@ graph TD
 
     `setEternalStorage(contract EternalStorage _eternalStorage) external`
 
+    **Requires**
+
+    * [require(..., Can't set eternalStorage to address(0))](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L154)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)

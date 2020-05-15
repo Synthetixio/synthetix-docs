@@ -7,7 +7,7 @@ module.exports = {
 	extends: 'eslint:recommended',
 	plugins: ['import'],
 	parserOptions: {
-		ecmaVersion: 2017,
+		ecmaVersion: 9,
 	},
 	rules: {
 		'no-console': 'off',

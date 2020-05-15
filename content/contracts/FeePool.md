@@ -112,6 +112,10 @@ graph TD
 
     `(address payable _proxy, address _owner, uint256 _exchangeFeeRate, address _resolver) public`
 
+    **Requires**
+
+    * [require(..., Exchange fee rate max exceeded)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L124)
+
     **Modifiers**
 
     * [Owned](#owned)
@@ -161,6 +165,10 @@ graph TD
 
     `setExchangeFeeRate(uint256 _exchangeFeeRate) external`
 
+    **Requires**
+
+    * [require(..., rate < MAX_EXCHANGE_FEE_RATE)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L238)
+
     **Modifiers**
 
     * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
@@ -176,6 +184,12 @@ graph TD
 
     `setFeePeriodDuration(uint256 _feePeriodDuration) external`
 
+    **Requires**
+
+    * [require(..., value < MIN_FEE_PERIOD_DURATION)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L246)
+
+    * [require(..., value > MAX_FEE_PERIOD_DURATION)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L247)
+
     **Modifiers**
 
     * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
@@ -190,6 +204,12 @@ graph TD
     **Signature**
 
     `setTargetThreshold(uint256 _percent) external`
+
+    **Requires**
+
+    * [require(..., Threshold should be positive)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L255)
+
+    * [require(..., Threshold too high)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L256)
 
     **Modifiers**
 
@@ -221,6 +241,10 @@ graph TD
 
     `setRewardsToDistribute(uint256 amount) external`
 
+    **Requires**
+
+    * [require(..., Caller is not rewardsAuthority)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L274)
+
 ---
 
 ### `closeCurrentFeePeriod`
@@ -231,6 +255,10 @@ graph TD
     **Signature**
 
     `closeCurrentFeePeriod() external`
+
+    **Requires**
+
+    * [require(..., Too early to close fee period)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L283)
 
 ---
 
@@ -258,6 +286,10 @@ graph TD
 
     `claimOnBehalf(address claimingForAddress) external`
 
+    **Requires**
+
+    * [require(..., Not approved to claim on behalf)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L334)
+
     **Modifiers**
 
     * [optionalProxy](#optionalproxy)
@@ -272,6 +304,10 @@ graph TD
     **Signature**
 
     `importFeePeriod(uint256 feePeriodIndex, uint256 feePeriodId, uint256 startingDebtIndex, uint256 startTime, uint256 feesToDistribute, uint256 feesClaimed, uint256 rewardsToDistribute, uint256 rewardsClaimed) public`
+
+    **Requires**
+
+    * [require(..., Cannot import bad data)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L396)
 
     **Modifiers**
 
@@ -381,6 +417,12 @@ graph TD
     **Signature**
 
     `effectiveDebtRatioForPeriod(address account, uint256 period) external`
+
+    **Requires**
+
+    * [require(..., Current period is not closed yet)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L759)
+
+    * [require(..., Exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L760)
 
 ---
 

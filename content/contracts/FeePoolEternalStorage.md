@@ -55,6 +55,10 @@ graph TD
 
     `importFeeWithdrawalData(address[] accounts, uint256[] feePeriodIDs) external`
 
+    **Requires**
+
+    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolEternalStorage.sol#L19)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)

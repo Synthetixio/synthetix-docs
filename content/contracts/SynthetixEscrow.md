@@ -246,6 +246,16 @@ graph TD
 
     `appendVestingEntry(address account, uint256 time, uint256 quantity) public`
 
+    **Requires**
+
+    * [require(..., Time must be in the future)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L166)
+
+    * [require(..., Quantity cannot be zero)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L167)
+
+    * [require(..., Must be enough balance in the contract to provide for the vesting entry)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L171)
+
+    * [require(..., Vesting schedule is too long)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L178)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)

@@ -90,6 +90,10 @@ graph TD
 
     `setMinimumStakeTime(uint256 _seconds) external`
 
+    **Requires**
+
+    * [require(..., stake time exceed maximum 1 week)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L96)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -109,6 +113,12 @@ graph TD
 
     `issueSynthsOnBehalf(address issueForAddress, address from, uint256 amount) external`
 
+    **Requires**
+
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L112)
+
+    * [require(..., Amount too large)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L115)
+
     **Modifiers**
 
     * [onlySynthetix](#onlysynthetix)
@@ -124,6 +134,10 @@ graph TD
 
     `issueMaxSynthsOnBehalf(address issueForAddress, address from) external`
 
+    **Requires**
+
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L120)
+
     **Modifiers**
 
     * [onlySynthetix](#onlysynthetix)
@@ -138,6 +152,10 @@ graph TD
     **Signature**
 
     `issueSynths(address from, uint256 amount) external`
+
+    **Requires**
+
+    * [require(..., Amount too large)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L129)
 
     **Modifiers**
 
@@ -169,6 +187,10 @@ graph TD
 
     `burnSynthsOnBehalf(address burnForAddress, address from, uint256 amount) external`
 
+    **Requires**
+
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L166)
+
     **Modifiers**
 
     * [onlySynthetix](#onlysynthetix)
@@ -198,6 +220,10 @@ graph TD
     **Signature**
 
     `burnSynthsToTargetOnBehalf(address burnForAddress, address from) external`
+
+    **Requires**
+
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L196)
 
     **Modifiers**
 

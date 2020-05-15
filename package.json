@@ -21,6 +21,7 @@
 	"homepage": "https://github.com/Synthetixio/synthetix-docs#readme",
 	"dependencies": {
 		"axios": "~0.19.2",
+		"json2md": "^1.7.0",
 		"moment": "~2.24.0",
 		"numbro": "2.1.2",
 		"synthetix": "2.21.13"

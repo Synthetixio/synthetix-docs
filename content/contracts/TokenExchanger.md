@@ -143,6 +143,12 @@ graph TD
 
     `doTokenSpend(address fromAccount, address toAccount, uint256 amount) public`
 
+    **Requires**
+
+    * [require(..., fromAccount does not have the required balance to spend)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L50)
+
+    * [require(..., I TokenExchanger, do not have approval to spend this guys tokens)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L53)
+
     **Modifiers**
 
     * [synthetixProxyIsSet](#synthetixproxyisset)

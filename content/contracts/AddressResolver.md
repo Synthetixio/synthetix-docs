@@ -2,7 +2,9 @@
 
 ## Description
 
+
 This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C (and updating ever release), contract A can refer to an AddressResolver and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contarct. Thus this ensures that contract A always has the latest B and C contracts.
+
 
 **Source:** [contracts/AddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol)
 
@@ -55,6 +57,10 @@ graph TD
 
     `importAddresses(bytes32[] names, address[] destinations) external`
 
+    **Requires**
+
+    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L19)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -81,6 +87,10 @@ graph TD
 
     `requireAndGetAddress(bytes32 name, string reason) external`
 
+    **Requires**
+
+    * [require(..., calldata)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L34)
+
 ---
 
 ### `getSynth`
@@ -91,6 +101,10 @@ graph TD
     **Signature**
 
     `getSynth(bytes32 key) external`
+
+    **Requires**
+
+    * [require(..., Cannot find Synthetix address)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L40)
 
 ---
 

@@ -31,6 +31,10 @@
 
     `(address _owner) public`
 
+    **Requires**
+
+    * [require(..., Owner address cannot be 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L10)
+
     **Emits**
 
     * [OwnerChanged](#ownerchanged)
@@ -64,6 +68,10 @@
     **Signature**
 
     `acceptOwnership() external`
+
+    **Requires**
+
+    * [require(..., You must be nominated before you can accept ownership)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L21)
 
     **Emits**
 

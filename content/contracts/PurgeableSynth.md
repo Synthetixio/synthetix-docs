@@ -59,6 +59,10 @@ graph TD
 
     `purge(address[] addresses) external`
 
+    **Requires**
+
+    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L55)
+
     **Modifiers**
 
     * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)

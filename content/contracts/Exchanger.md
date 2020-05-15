@@ -128,6 +128,10 @@ graph TD
 
     `exchangeOnBehalf(address exchangeForAddress, address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) external`
 
+    **Requires**
+
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L212)
+
     **Modifiers**
 
     * [onlySynthetixorSynth](#onlysynthetixorsynth)

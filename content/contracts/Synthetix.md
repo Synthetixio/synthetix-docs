@@ -178,6 +178,12 @@ graph TD
 
     `addSynth(contract ISynth synth) external`
 
+    **Requires**
+
+    * [require(..., Synth already exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L195)
+
+    * [require(..., Synth address already exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L196)
+
     **Modifiers**
 
     * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
@@ -192,6 +198,14 @@ graph TD
     **Signature**
 
     `removeSynth(bytes32 currencyKey) external`
+
+    **Requires**
+
+    * [require(..., Synth does not exist)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L208)
+
+    * [require(..., Synth supply exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L209)
+
+    * [require(..., Cannot remove synth)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L210)
 
     **Modifiers**
 
@@ -208,6 +222,10 @@ graph TD
 
     `transfer(address to, uint256 value) public`
 
+    **Requires**
+
+    * [require(..., Cannot transfer staked or escrowed SNX)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L248)
+
     **Modifiers**
 
     * [optionalProxy](#optionalproxy)
@@ -222,6 +240,10 @@ graph TD
     **Signature**
 
     `transferFrom(address from, address to, uint256 value) public`
+
+    **Requires**
+
+    * [require(..., Cannot transfer staked or escrowed SNX)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L267)
 
     **Modifiers**
 
@@ -483,6 +505,12 @@ graph TD
     **Signature**
 
     `mint() external`
+
+    **Requires**
+
+    * [require(..., RewardsDistribution not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L546)
+
+    * [require(..., No supply is mintable)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L554)
 
 ---
 

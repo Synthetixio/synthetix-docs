@@ -155,6 +155,12 @@ graph TD
 
     `addRewardDistribution(address destination, uint256 amount) external`
 
+    **Requires**
+
+    * [require(..., Cant add a zero address)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L104)
+
+    * [require(..., Cant add a zero amount)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L105)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -174,6 +180,10 @@ graph TD
 
     `removeRewardDistribution(uint256 index) external`
 
+    **Requires**
+
+    * [require(..., index out of bounds)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L120)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -189,6 +199,10 @@ graph TD
 
     `editRewardDistribution(uint256 index, address destination, uint256 amount) external`
 
+    **Requires**
+
+    * [require(..., index out of bounds)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L145)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -203,6 +217,20 @@ graph TD
     **Signature**
 
     `distributeRewards(uint256 amount) external`
+
+    **Requires**
+
+    * [require(..., Caller is not authorised)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L154)
+
+    * [require(..., RewardEscrow is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L155)
+
+    * [require(..., SynthetixProxy is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L156)
+
+    * [require(..., FeePoolProxy is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L157)
+
+    * [require(..., Nothing to distribute)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L158)
+
+    * [require(..., RewardsDistribution contract does not have enough tokens to distribute)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L159)
 
     **Emits**
 

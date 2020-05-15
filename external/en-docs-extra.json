@@ -1,23 +1,59 @@
 {
 	"contracts/AddressResolver.sol": {
 		"AddressResolver": {
-			"description": "This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C (and updating ever release), contract A can refer to an AddressResolver and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contarct. Thus this ensures that contract A always has the latest B and C contracts."
+			"description": {
+				"p": "This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C (and updating ever release), contract A can refer to an AddressResolver and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contarct. Thus this ensures that contract A always has the latest B and C contracts."
+			}
 		}
 	},
 	"contracts/Depot.sol": {
 		"Depot": {
-			"architecture": [],
-			"description": "Allows anyone with sUSD to deposit their sUSD and users to exchange ETH for sUSD.\r\n\r\nsUSD Deposits are put into a FIFO queue which will the depositor will recieve ETH at the ETH rate at the time of the exchange.\r\n\r\nThroughout, the contract assumes that sUSD is always worth exactly US\\$1. So: a) this will only work with `sUSD`. b) there's a profit opportunity if the `sUSD` is off its peg.\r\n\r\n!!! SNX exchange functionality has been deprecated on MAINNET and is now used as a SNX faucet on the testnets only.\r\n\r\n",
-			"related": "- [Synthetix](Synthetix.md)\r\n- [Synth](Synth.md)\r\n- [ExchangeRates](ExchangeRates.md)\r\n- [AddressResolver](AddressResolver.md)\r\n",
-			"libraries": "- [`SafeMath`](SafeMath.md) for `uint`\r\n- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`",
+			"architecture": [
+				{
+					"name": { "h3": "Some Title" },
+					"value": { "p": "Some description" }
+				}
+			],
+			"description": [
+				{ "p": "Allows anyone with sUSD to deposit their sUSD and users to exchange ETH for sUSD." },
+				{
+					"p": "sUSD Deposits are put into a FIFO queue which will the depositor will recieve ETH at the ETH rate at the time of the exchange."
+				},
+				{
+					"p": "Throughout, the contract assumes that sUSD is always worth exactly US\\$1. So: a) this will only work with `sUSD`. b) there's a profit opportunity if the `sUSD` is off its peg."
+				},
+				{
+					"p": "!!! SNX exchange functionality has been deprecated on MAINNET and is now used as a SNX faucet on the testnets only."
+				}
+			],
+			"related": {
+				"ul": [
+					{ "link": { "title": "`SafeMath`", "source": "SafeMath.md" } },
+					{ "link": { "title": "`ExchangeRates`", "source": "ExchangeRates.md" } },
+					{ "link": { "title": "`AddressResolver`", "source": "AddressResolver.md" } }
+				]
+			},
+			"libraries": {
+				"ul": [
+					{ "link": { "title": "`SafeMath`", "source": "SafeMath.md" } },
+					{ "link": { "title": "`SafeDecimalMath`", "source": "SafeDecimalMath.md" } }
+				]
+			},
 			"structs": {
 				"SynthDepositEntry": {
-					"user": "The depositor",
-					"amount": "The quantity of sUSD deposited"
+					"user": { "p": "The depositor" },
+					"amount": { "p": "The quantity of sUSD deposited" }
 				}
 			},
 			"variables": {
-				"fundsWallet": "The address where ether and synths raised by selling SNX are sent.\r\n\r\nIt is also where ether is sent if the proceeds of a sale of synths could not be transferred because the recipient is a non-payable contract."
+				"fundsWallet": [
+					{
+						"p": "The address where ether and synths raised by selling SNX are sent."
+					},
+					{
+						"p": "It is also where ether is sent if the proceeds of a sale of synths could not be transferred because the recipient is a non-payable contract."
+					}
+				]
 			}
 		}
 	}

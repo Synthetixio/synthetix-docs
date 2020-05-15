@@ -2,14 +2,17 @@
 
 ## Description
 
+
 Allows anyone with sUSD to deposit their sUSD and users to exchange ETH for sUSD.
+
 
 sUSD Deposits are put into a FIFO queue which will the depositor will recieve ETH at the ETH rate at the time of the exchange.
 
+
 Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a) this will only work with `sUSD`. b) there's a profit opportunity if the `sUSD` is off its peg.
 
-!!! SNX exchange functionality has been deprecated on MAINNET and is now used as a SNX faucet on the testnets only.
 
+!!! SNX exchange functionality has been deprecated on MAINNET and is now used as a SNX faucet on the testnets only.
 
 
 **Source:** [contracts/Depot.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol)
@@ -32,20 +35,36 @@ graph TD
 
 ---
 
+### Some Title
+
+
+
+Some description
+
+
+---
+
 ### Related Contracts
 
-- [Synthetix](Synthetix.md)
-- [Synth](Synth.md)
-- [ExchangeRates](ExchangeRates.md)
-- [AddressResolver](AddressResolver.md)
+
+ - [`SafeMath`](SafeMath.md)
+    
+ - [`ExchangeRates`](ExchangeRates.md)
+    
+ - [`AddressResolver`](AddressResolver.md)
+    
 
 
 ---
 
 ### Libraries
 
-- [`SafeMath`](SafeMath.md) for `uint`
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
+
+ - [`SafeMath`](SafeMath.md)
+    
+ - [`SafeDecimalMath`](SafeDecimalMath.md)
+    
+
 
 ---
 
@@ -58,8 +77,12 @@ graph TD
 
 | Field | Type | Description |
 | ------ | ------ | ------ |
-| user | address payable | The depositor |
-| amount | uint256 | The quantity of sUSD deposited |
+| user | address payable | 
+The depositor
+ |
+| amount | uint256 | 
+The quantity of sUSD deposited
+ |
 
 ---
 
@@ -84,9 +107,12 @@ graph TD
 ### `fundsWallet`
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L32)</sub>
 
+
 The address where ether and synths raised by selling SNX are sent.
 
+
 It is also where ether is sent if the proceeds of a sale of synths could not be transferred because the recipient is a non-payable contract.
+
 
 **Type:** `address payable`
 
@@ -213,6 +239,10 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
     `setMinimumDepositAmount(uint256 _amount) external`
 
+    **Requires**
+
+    * [require(..., Minimum deposit amount must be greater than UNIT)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L115)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -270,6 +300,10 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
     `exchangeEtherForSynthsAtRate(uint256 guaranteedRate) external`
 
+    **Requires**
+
+    * [require(..., Guaranteed rate would not be received)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L273)
+
     **Modifiers**
 
     * [rateNotStale](#ratenotstale)
@@ -305,6 +339,12 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
     **Signature**
 
     `exchangeEtherForSNXAtRate(uint256 guaranteedEtherRate, uint256 guaranteedSynthetixRate) external`
+
+    **Requires**
+
+    * [require(..., Guaranteed ether rate would not be received)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L325)
+
+    * [require(..., Guaranteed synthetix rate would not be received)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L326)
 
     **Modifiers**
 
@@ -342,6 +382,10 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
     `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate) external`
 
+    **Requires**
+
+    * [require(..., Guaranteed rate would not be received)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L380)
+
     **Modifiers**
 
     * [rateNotStale](#ratenotstale)
@@ -373,6 +417,10 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
     **Signature**
 
     `withdrawMyDepositedSynths() external`
+
+    **Requires**
+
+    * [require(..., You have no deposits to withdraw.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L430)
 
     **Emits**
 

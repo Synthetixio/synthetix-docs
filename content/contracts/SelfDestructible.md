@@ -56,6 +56,10 @@ graph TD
 
     `setSelfDestructBeneficiary(address payable _beneficiary) external`
 
+    **Requires**
+
+    * [require(..., Beneficiary must not be zero)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L29)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -112,6 +116,12 @@ graph TD
     **Signature**
 
     `selfDestruct() external`
+
+    **Requires**
+
+    * [require(..., Self Destruct not yet initiated)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L61)
+
+    * [require(..., Self destruct delay not met)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L62)
 
     **Modifiers**
 
