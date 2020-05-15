@@ -9,10 +9,8 @@
 ```mermaid
 graph TD
     PurgeableSynth[PurgeableSynth] --> Synth[Synth]
-    Synth[Synth] --> IERC20[IERC20]
     Synth[Synth] --> ExternStateToken[ExternStateToken]
     Synth[Synth] --> MixinResolver[MixinResolver]
-    Synth[Synth] --> ISynth[ISynth]
     ExternStateToken[ExternStateToken] --> SelfDestructible[SelfDestructible]
     ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
     SelfDestructible[SelfDestructible] --> Owned[Owned]

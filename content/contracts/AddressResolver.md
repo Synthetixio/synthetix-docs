@@ -15,7 +15,6 @@ This contract is a type of Service Locator pattern that allows for easier intera
 ```mermaid
 graph TD
     AddressResolver[AddressResolver] --> Owned[Owned]
-    AddressResolver[AddressResolver] --> IAddressResolver[IAddressResolver]
 ```
 
 ---

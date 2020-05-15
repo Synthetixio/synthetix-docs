@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     DelegateApprovals[DelegateApprovals] --> Owned[Owned]
-    DelegateApprovals[DelegateApprovals] --> IDelegateApprovals[IDelegateApprovals]
 ```
 
 ---

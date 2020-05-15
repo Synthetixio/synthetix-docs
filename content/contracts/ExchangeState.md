@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     ExchangeState[ExchangeState] --> State[State]
-    ExchangeState[ExchangeState] --> IExchangeState[IExchangeState]
     State[State] --> Owned[Owned]
 ```
 

@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     ExchangeRates[ExchangeRates] --> SelfDestructible[SelfDestructible]
-    ExchangeRates[ExchangeRates] --> IExchangeRates[IExchangeRates]
     SelfDestructible[SelfDestructible] --> Owned[Owned]
 ```
 

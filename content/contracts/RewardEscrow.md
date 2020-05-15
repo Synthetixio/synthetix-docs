@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     RewardEscrow[RewardEscrow] --> Owned[Owned]
-    RewardEscrow[RewardEscrow] --> IRewardEscrow[IRewardEscrow]
 ```
 
 ---

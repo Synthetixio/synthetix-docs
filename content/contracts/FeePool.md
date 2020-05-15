@@ -12,7 +12,6 @@ graph TD
     FeePool[FeePool] --> SelfDestructible[SelfDestructible]
     FeePool[FeePool] --> LimitedSetup[LimitedSetup]
     FeePool[FeePool] --> MixinResolver[MixinResolver]
-    FeePool[FeePool] --> IFeePool[IFeePool]
     Proxyable[Proxyable] --> Owned[Owned]
     SelfDestructible[SelfDestructible] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]

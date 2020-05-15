@@ -10,7 +10,6 @@
 graph TD
     SynthetixState[SynthetixState] --> State[State]
     SynthetixState[SynthetixState] --> LimitedSetup[LimitedSetup]
-    SynthetixState[SynthetixState] --> ISynthetixState[ISynthetixState]
     State[State] --> Owned[Owned]
 ```
 

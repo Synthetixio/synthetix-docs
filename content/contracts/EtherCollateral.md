@@ -11,7 +11,6 @@ graph TD
     EtherCollateral[EtherCollateral] --> Pausable[Pausable]
     EtherCollateral[EtherCollateral] --> ReentrancyGuard[ReentrancyGuard]
     EtherCollateral[EtherCollateral] --> MixinResolver[MixinResolver]
-    EtherCollateral[EtherCollateral] --> IEtherCollateral[IEtherCollateral]
     Pausable[Pausable] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
 ```

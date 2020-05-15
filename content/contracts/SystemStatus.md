@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     SystemStatus[SystemStatus] --> Owned[Owned]
-    SystemStatus[SystemStatus] --> ISystemStatus[ISystemStatus]
 ```
 
 ---

@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const json2md = require('json2md');
 
-console.log('Building contracts');
+console.log('Building docs obtained from AST parsing');
 
 const astDocs = require('../external/ast-docs.json');
 const docsExtra = require('../external/en-docs-extra.json');
@@ -34,9 +34,9 @@ const e3 = (source, k1, k2, k3, d = {}) => {
 // Function to generate the inheritance graph
 // Basically, for a contract, we keep going through each of their inheritance
 // and purge away the parent contracts from the current inheritance
-const getInheritanceGraph = (source, name) => {
-	const { contracts, imports } = astDocs[source];
-	const { inherits } = contracts[name];
+const getInheritanceGraph = (source, name, contractKind) => {
+	const { imports } = astDocs[source];
+	const { inherits } = astDocs[source][contractKind][name];
 
 	// If we're not inheriting from any contract
 	// this is the final destination
@@ -83,7 +83,7 @@ const getInheritanceGraph = (source, name) => {
 	// Recursively get each contract's inheritance
 	return {
 		[name]: directInheritsWithSource
-			.map(x => getInheritanceGraph(x.source, x.name))
+			.map(x => getInheritanceGraph(x.source, x.name, contractKind))
 			.reduce((acc, x) => {
 				return { ...acc, ...x };
 			}, {}),
@@ -105,10 +105,10 @@ const formatInheritanceGraphToMermaidMd = graph => {
 	return content;
 };
 
-const generateContractMarkdown = (contractSource, contractName) => {
+const generateContractMarkdown = (contractSource, contractName, contractKind) => {
 	// Extract out relevant information
 	const curExtraDocs = e2(docsExtra, contractSource, contractName);
-	const curAstDocs = e3(astDocs, contractSource, 'contracts', contractName);
+	const curAstDocs = e3(astDocs, contractSource, contractKind, contractName);
 
 	// Start building out the markdown file
 	const title = contractName;
@@ -125,7 +125,7 @@ const generateContractMarkdown = (contractSource, contractName) => {
 	content += `**Source:** [${contractSource}](${baseUrl}${contractSource})\n\n`;
 
 	// Architecture
-	const graph = getInheritanceGraph(contractSource, contractName);
+	const graph = getInheritanceGraph(contractSource, contractName, contractKind);
 	const graphMd = formatInheritanceGraphToMermaidMd(graph);
 	const graphHasInheritance = Object.keys(graph[Object.keys(graph)[0]]).length > 0;
 
@@ -300,14 +300,27 @@ const generateContractMarkdown = (contractSource, contractName) => {
 		}
 	}
 
-	const outputPath = path.join(__dirname, '..', 'content', 'contracts', `${contractName}.md`);
+	const outputDir = path.join(__dirname, '..', 'content', contractKind);
+	if (!fs.existsSync(outputDir)) {
+		fs.mkdirSync(outputDir);
+	}
+
+	const outputPath = path.join(outputDir, `${contractName}.md`);
 	fs.writeFileSync(outputPath, content);
 };
 
-(async () => {
+(() => {
 	Object.keys(astDocs).map(contractSource => {
 		Object.keys(astDocs[contractSource].contracts).map(contractName => {
-			generateContractMarkdown(contractSource, contractName);
+			generateContractMarkdown(contractSource, contractName, 'contracts');
+		});
+
+		// Object.keys(astDocs[contractSource].libraries).map(contractName => {
+		// 	generateContractMarkdown(contractSource, contractName, 'libraries');
+		// });
+
+		Object.keys(astDocs[contractSource].interfaces).map(contractName => {
+			generateContractMarkdown(contractSource, contractName, 'interfaces');
 		});
 	});
 })();

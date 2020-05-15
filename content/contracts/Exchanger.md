@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     Exchanger[Exchanger] --> MixinResolver[MixinResolver]
-    Exchanger[Exchanger] --> IExchanger[IExchanger]
     MixinResolver[MixinResolver] --> Owned[Owned]
 ```
 

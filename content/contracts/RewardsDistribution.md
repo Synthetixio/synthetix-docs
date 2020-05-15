@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     RewardsDistribution[RewardsDistribution] --> Owned[Owned]
-    RewardsDistribution[RewardsDistribution] --> IRewardsDistribution[IRewardsDistribution]
 ```
 
 ---

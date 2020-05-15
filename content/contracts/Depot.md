@@ -27,7 +27,6 @@ graph TD
     Depot[Depot] --> Pausable[Pausable]
     Depot[Depot] --> ReentrancyGuard[ReentrancyGuard]
     Depot[Depot] --> MixinResolver[MixinResolver]
-    Depot[Depot] --> IDepot[IDepot]
     SelfDestructible[SelfDestructible] --> Owned[Owned]
     Pausable[Pausable] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
@@ -47,10 +46,6 @@ Some description
 ### Related Contracts
 
 
- - [`SafeMath`](SafeMath.md)
-    
- - [`ExchangeRates`](ExchangeRates.md)
-    
  - [`AddressResolver`](AddressResolver.md)
     
 
@@ -61,8 +56,6 @@ Some description
 
 
  - [`SafeMath`](SafeMath.md)
-    
- - [`SafeDecimalMath`](SafeDecimalMath.md)
     
 
 

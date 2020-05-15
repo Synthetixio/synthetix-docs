@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     ProxyERC20[ProxyERC20] --> Proxy[Proxy]
-    ProxyERC20[ProxyERC20] --> IERC20[IERC20]
     Proxy[Proxy] --> Owned[Owned]
 ```
 

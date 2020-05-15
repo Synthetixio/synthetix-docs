@@ -9,7 +9,6 @@
 ```mermaid
 graph TD
     Issuer[Issuer] --> MixinResolver[MixinResolver]
-    Issuer[Issuer] --> IIssuer[IIssuer]
     MixinResolver[MixinResolver] --> Owned[Owned]
 ```
 

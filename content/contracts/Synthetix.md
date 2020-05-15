@@ -8,10 +8,8 @@
 
 ```mermaid
 graph TD
-    Synthetix[Synthetix] --> IERC20[IERC20]
     Synthetix[Synthetix] --> ExternStateToken[ExternStateToken]
     Synthetix[Synthetix] --> MixinResolver[MixinResolver]
-    Synthetix[Synthetix] --> ISynthetix[ISynthetix]
     ExternStateToken[ExternStateToken] --> SelfDestructible[SelfDestructible]
     ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
     SelfDestructible[SelfDestructible] --> Owned[Owned]

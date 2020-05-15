@@ -10,7 +10,6 @@
 graph TD
     SynthetixEscrow[SynthetixEscrow] --> Owned[Owned]
     SynthetixEscrow[SynthetixEscrow] --> LimitedSetup[LimitedSetup]
-    SynthetixEscrow[SynthetixEscrow] --> IHasBalance[IHasBalance]
 ```
 
 ---

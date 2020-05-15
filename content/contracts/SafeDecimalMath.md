@@ -1,82 +1,70 @@
+
 # SafeDecimalMath
 
-**Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol)
+**Source:** [SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/SafeDecimalMath.sol)
+
+!!! todo "Work in Progress"
+
+    This needs filling in
+
+## Description
+
+... todo.
+
+---
+
+## Architecture
+
+... todo.
+
+<!--centered-image>
+    ![Architecture Graph](../img/graphs/todo-architecture.svg)
+</centered-image-->
+
+
+### Inheritance Graph
+
+<!--centered-image>
+    ![Inheritance graph](../img/graphs/todo.svg)
+</centered-image-->
+
+### Related Contracts
+
+- ?
+
+---
+
+## Constants
+
+---
 
 ## Variables
 
----
-
-### `decimals`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L12)</sub>
-
-**Type:** `uint8`
+.. (need to pull these from the functions below)
 
 ---
 
-### `highPrecisionDecimals`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L13)</sub>
-
-**Type:** `uint8`
+## Views
 
 ---
 
-### `UNIT`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L16)</sub>
-
-**Type:** `uint256`
+## Public Mutative Functions
 
 ---
 
-### `PRECISE_UNIT`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L19)</sub>
-
-**Type:** `uint256`
-
-## Functions
+## Owner Mutative Functions
 
 ---
 
-### `unit`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L25)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `unit() external`
+## Internal & Restricted Mutative Functions
 
 ---
 
-### `preciseUnit`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L32)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `preciseUnit() external`
+## Modifiers
 
 ---
 
-### `_multiplyDecimalRound`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L62)</sub>
+## Events
 
-??? example "Details"
-
-    **Signature**
-
-    `_multiplyDecimalRound(uint256 x, uint256 y, uint256 precisionUnit) private`
-
----
-
-### `_divideDecimalRound`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L131)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_divideDecimalRound(uint256 x, uint256 y, uint256 precisionUnit) private`
-
----
+--
 

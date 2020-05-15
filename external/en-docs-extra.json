@@ -28,15 +28,12 @@
 			],
 			"related": {
 				"ul": [
-					{ "link": { "title": "`SafeMath`", "source": "SafeMath.md" } },
-					{ "link": { "title": "`ExchangeRates`", "source": "ExchangeRates.md" } },
 					{ "link": { "title": "`AddressResolver`", "source": "AddressResolver.md" } }
 				]
 			},
 			"libraries": {
 				"ul": [
-					{ "link": { "title": "`SafeMath`", "source": "SafeMath.md" } },
-					{ "link": { "title": "`SafeDecimalMath`", "source": "SafeDecimalMath.md" } }
+					{ "link": { "title": "`SafeMath`", "source": "SafeMath.md" } }
 				]
 			},
 			"structs": {

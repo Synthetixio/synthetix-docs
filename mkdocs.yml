@@ -75,37 +75,79 @@ nav:
           - EscrowChecker: contracts/EscrowChecker.md
           - EternalStorage: contracts/EternalStorage.md
           - EtherCollateral: contracts/EtherCollateral.md
-          - Exchanger: contracts/Exchanger.md
           - ExchangeRates: contracts/ExchangeRates.md
+          - Exchanger: contracts/Exchanger.md
           - ExchangeState: contracts/ExchangeState.md
           - ExternStateToken: contracts/ExternStateToken.md
-          - FeePool: contracts/FeePool.md
           - FeePoolEternalStorage: contracts/FeePoolEternalStorage.md
+          - FeePool: contracts/FeePool.md
           - FeePoolState: contracts/FeePoolState.md
+          - GenericMock: contracts/GenericMock.md
           - IssuanceEternalStorage: contracts/IssuanceEternalStorage.md
           - Issuer: contracts/Issuer.md
           - LimitedSetup: contracts/LimitedSetup.md
+          - Math: contracts/Math.md
           - Migrations: contracts/Migrations.md
           - MixinResolver: contracts/MixinResolver.md
+          - MockAggregator: contracts/MockAggregator.md
+          - MockEtherCollateral: contracts/MockEtherCollateral.md
+          - MockExchanger: contracts/MockExchanger.md
+          - MockMutator: contracts/MockMutator.md
+          - MockRewardsRecipient: contracts/MockRewardsRecipient.md
+          - MockSynth: contracts/MockSynth.md
           - MultiCollateralSynth: contracts/MultiCollateralSynth.md
+          - OneWeekSetup: contracts/OneWeekSetup.md
           - Owned: contracts/Owned.md
           - Pausable: contracts/Pausable.md
-          - Proxy: contracts/Proxy.md
           - Proxyable: contracts/Proxyable.md
           - ProxyERC20: contracts/ProxyERC20.md
+          - Proxy: contracts/Proxy.md
+          - PublicEST: contracts/PublicEST.md
+          - PublicMath: contracts/PublicMath.md
+          - PublicSafeDecimalMath: contracts/PublicSafeDecimalMath.md
           - PurgeableSynth: contracts/PurgeableSynth.md
+          - ReadProxy: contracts/ReadProxy.md
+          - ReentrancyGuard: contracts/ReentrancyGuard.md
           - RewardEscrow: contracts/RewardEscrow.md
           - RewardsDistribution: contracts/RewardsDistribution.md
           - RewardsDistributionRecipient: contracts/RewardsDistributionRecipient.md
+          - SafeDecimalMath: contracts/SafeDecimalMath.md
           - SelfDestructible: contracts/SelfDestructible.md
           - State: contracts/State.md
           - SupplySchedule: contracts/SupplySchedule.md
-          - Synth: contracts/Synth.md
-          - Synthetix: contracts/Synthetix.md
           - SynthetixEscrow: contracts/SynthetixEscrow.md
+          - Synthetix: contracts/Synthetix.md
           - SynthetixState: contracts/SynthetixState.md
+          - Synth: contracts/Synth.md
           - SystemStatus: contracts/SystemStatus.md
+          - TestableMixinResolver: contracts/TestableMixinResolver.md
+          - TestablePausable: contracts/TestablePausable.md
+          - TestableSelfDestructible: contracts/TestableSelfDestructible.md
+          - TestableState: contracts/TestableState.md
+          - TokenExchanger: contracts/TokenExchanger.md
           - TokenState: contracts/TokenState.md
+          - UsingReadProxy: contracts/UsingReadProxy.md
+      - Interfaces:
+          - AggregatorInterface: interfaces/AggregatorInterface.md
+          - IAddressResolver: interfaces/IAddressResolver.md
+          - IDelegateApprovals: interfaces/IDelegateApprovals.md
+          - IDepot: interfaces/IDepot.md
+          - IERC20: interfaces/IERC20.md
+          - IEtherCollateral: interfaces/IEtherCollateral.md
+          - IExchangeRates: interfaces/IExchangeRates.md
+          - IExchanger: interfaces/IExchanger.md
+          - IExchangeState: interfaces/IExchangeState.md
+          - IFeePool: interfaces/IFeePool.md
+          - IHasBalance: interfaces/IHasBalance.md
+          - IIssuer: interfaces/IIssuer.md
+          - IRewardEscrow: interfaces/IRewardEscrow.md
+          - IRewardsDistribution: interfaces/IRewardsDistribution.md
+          - ISynthetixEscrow: interfaces/ISynthetixEscrow.md
+          - ISynthetixInternal: interfaces/ISynthetixInternal.md
+          - ISynthetix: interfaces/ISynthetix.md
+          - ISynthetixState: interfaces/ISynthetixState.md
+          - ISynth: interfaces/ISynth.md
+          - ISystemStatus: interfaces/ISystemStatus.md
       - Audit History: contracts/audits.md
 
 # These social links will be rendered as icons in the footer, as long as the type corresponds to FontAwesome glyph.
