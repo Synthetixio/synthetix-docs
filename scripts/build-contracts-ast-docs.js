@@ -177,7 +177,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			x.members.map(y => {
 				let description;
 				try {
-					description = json2md(curExtraDocs.structs[x.name][y.name]);
+					description = json2md(curExtraDocs.structs[x.name][y.name])
+						.split('\n')
+						.join('');
 				} catch (e) {
 					description = 'TBA';
 				}

@@ -70,12 +70,8 @@ Some description
 
 | Field | Type | Description |
 | ------ | ------ | ------ |
-| user | address payable | 
-The depositor
- |
-| amount | uint256 | 
-The quantity of sUSD deposited
- |
+| user | address payable | The depositor |
+| amount | uint256 | The quantity of sUSD deposited |
 
 ---
 
