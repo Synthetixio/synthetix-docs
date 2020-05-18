@@ -14,14 +14,6 @@ const getContractSourceLink = (contractName, name, lineNumber) => {
 };
 
 // Ad-hoc functions to extract out values from dictionary
-const e2 = (source, k1, k2, d = {}) => {
-	try {
-		return source[k1][k2] || d;
-	} catch (e) {
-		return d;
-	}
-};
-
 const e3 = (source, k1, k2, k3, d = {}) => {
 	try {
 		return source[k1][k2][k3] || d;
