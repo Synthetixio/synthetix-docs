@@ -2,12 +2,11 @@
 
 const fs = require('fs');
 const path = require('path');
-const json2md = require('json2md');
+const md2json = require('md-2-json');
 
-console.log('Building docs obtained from AST parsing');
+console.log('Building docs...');
 
 const astDocs = require('../external/ast-docs.json');
-const docsExtra = require('../external/en-docs-extra.json');
 
 const baseUrl = 'https://github.com/Synthetixio/synthetix/tree/develop/';
 const getContractSourceLink = (contractName, name, lineNumber) => {
@@ -17,7 +16,7 @@ const getContractSourceLink = (contractName, name, lineNumber) => {
 // Ad-hoc functions to extract out values from dictionary
 const e2 = (source, k1, k2, d = {}) => {
 	try {
-		return source[k1][k2];
+		return source[k1][k2] || d;
 	} catch (e) {
 		return d;
 	}
@@ -25,7 +24,7 @@ const e2 = (source, k1, k2, d = {}) => {
 
 const e3 = (source, k1, k2, k3, d = {}) => {
 	try {
-		return source[k1][k2][k3];
+		return source[k1][k2][k3] || d;
 	} catch (e) {
 		return d;
 	}
@@ -106,209 +105,293 @@ const formatInheritanceGraphToMermaidMd = graph => {
 };
 
 const generateContractMarkdown = (contractSource, contractName, contractKind) => {
-	// Extract out relevant information
-	const curExtraDocs = e2(docsExtra, contractSource, contractName);
-	const curAstDocs = e3(astDocs, contractSource, contractKind, contractName);
-
-	// Start building out the markdown file
-	const title = contractName;
-
-	let content = `# ${title}\n\n`;
-
-	// Description
-	if (curExtraDocs.description) {
-		content += '## Description\n\n';
-		content += `${json2md(curExtraDocs.description)}\n\n`;
-	}
-
-	// Source
-	content += `**Source:** [${contractSource}](${baseUrl}${contractSource})\n\n`;
-
-	// Architecture
-	const graph = getInheritanceGraph(contractSource, contractName, contractKind);
-	const graphMd = formatInheritanceGraphToMermaidMd(graph);
-	const graphHasInheritance = Object.keys(graph[Object.keys(graph)[0]]).length > 0;
-
-	if (graphHasInheritance) {
-		content += '## Architecture\n\n';
-		content += '### Inheritance Graph\n\n';
-		content += `${'```'}mermaid\n`;
-		content += 'graph TD\n';
-		content += graphMd;
-		content += `${'```'}\n\n`;
-	}
-
-	if (Array.isArray(curExtraDocs.architecture) && curExtraDocs.architecture.length > 0) {
-		curExtraDocs.architecture.map(x => {
-			content += '---\n\n';
-			content += `${json2md(x.name)}\n\n`;
-			content += `${json2md(x.value)}\n\n`;
-		});
-	}
-
-	if (graphHasInheritance || (Array.isArray(curExtraDocs.architecture) && curExtraDocs.architecture.length > 0)) {
-		content += '---\n\n';
-	}
-
-	// Related
-	if (curExtraDocs.related) {
-		content += '### Related Contracts\n\n';
-		content += `${json2md(curExtraDocs.related)}\n\n`;
-		content += '---\n\n';
-	}
-
-	// Libraries
-	if (curExtraDocs.libraries) {
-		content += '### Libraries\n\n';
-		content += `${json2md(curExtraDocs.libraries)}\n\n`;
-		content += '---\n\n';
-	}
-
-	// Structs
-	if (Array.isArray(curAstDocs.structs) && curAstDocs.structs.length > 0) {
-		content += '## Structs\n\n';
-
-		curAstDocs.structs.map(x => {
-			content += '---\n\n';
-			content += `### ${x.name}\n`;
-			content += `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
-			content += '| Field | Type | Description |\r\n| ------ | ------ | ------ |\n';
-
-			x.members.map(y => {
-				let description;
-				try {
-					description = json2md(curExtraDocs.structs[x.name][y.name])
-						.split('\n')
-						.join('');
-				} catch (e) {
-					description = 'TBA';
-				}
-
-				content += `| ${y.name} | ${y.type} | ${description} |\n`;
-			});
-
-			content += '\n';
-		});
-
-		if (curAstDocs.structs.length > 0) {
-			content += '---\n\n';
-		}
-	}
-
-	// Variables
-	if (Array.isArray(curAstDocs.variables) && curAstDocs.variables.length > 0) {
-		content += '## Variables\n\n';
-
-		curAstDocs.variables
-			.filter(x => x.visibility !== 'private')
-			.map(x => {
-				content += '---\n\n';
-				content += `### \`${x.name}\`\n`;
-				content += `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
-
-				if (e2(curExtraDocs, 'variables', x.name, false)) {
-					content += `${json2md(curExtraDocs.variables[x.name])}\n\n`;
-				}
-
-				content += `**Type:** \`${x.type}\`\n\n`;
-			});
-
-		if (curAstDocs.structs.length > 0) {
-			content += '---\n\n';
-		}
-	}
-
-	// Functions
-	if (Array.isArray(curAstDocs.functions) && curAstDocs.functions.filter(x => x.visibility !== 'internal').length > 0) {
-		content += '## Functions\n\n';
-
-		curAstDocs.functions
-			.filter(x => x.visibility !== 'internal')
-			.map(x => {
-				content += '---\n\n';
-				content += `### \`${x.name}\`\n`;
-				content += `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
-
-				if (x.documentation) {
-					content += `${x.documentation}\n\n`;
-				}
-
-				content += '??? example "Details"\n\n';
-				content += '    **Signature**\n\n';
-				content += `    \`${x.signature}\`\n\n`;
-
-				// Requires
-				if (x.requires.length > 0) {
-					content += '    **Requires**\n\n';
-				}
-				x.requires.map(y => {
-					content += `    * [${y.name}](${baseUrl}${contractSource}#L${y.lineNumber})\n\n`;
-				});
-
-				// Modifiers in function
-				if (x.modifiers.length > 0) {
-					content += '    **Modifiers**\n\n';
-				}
-				x.modifiers.map(y => {
-					content += `    * [${y}](#${y.toLowerCase()})\n\n`;
-				});
-
-				// Events in functions
-				if (x.events.length > 0) {
-					content += '    **Emits**\n\n';
-				}
-				x.events.map(y => {
-					content += `    * [${y}](#${y.toLowerCase()})\n\n`;
-				});
-			});
-
-		if (curAstDocs.functions.length > 0) {
-			content += '---\n\n';
-		}
-	}
-
-	// Modifiers
-	if (Array.isArray(curAstDocs.modifiers) && curAstDocs.modifiers.length > 0) {
-		content += '## Modifiers\n\n';
-
-		curAstDocs.modifiers.map(x => {
-			content += '---\n\n';
-			content += `### \`${x.name}\`\n`;
-			content += `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
-
-			if (x.documentation) {
-				content += `${x.documentation}\n\n`;
-			}
-		});
-
-		if (curAstDocs.modifiers.length > 0) {
-			content += '---\n\n';
-		}
-	}
-
-	// Events
-	if (Array.isArray(curAstDocs.events) && curAstDocs.events.length > 0) {
-		content += '## Events\n\n';
-
-		curAstDocs.events.map(x => {
-			content += '---\n\n';
-			content += `### \`${x.name}\`\n`;
-			content += `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
-			content += `- \`${x.parameters}\`\n\n`;
-		});
-
-		if (curAstDocs.events.length > 0) {
-			content += '---\n\n';
-		}
-	}
-
+	// Output folder for markdown files
 	const outputDir = path.join(__dirname, '..', 'content', contractKind);
 	if (!fs.existsSync(outputDir)) {
 		fs.mkdirSync(outputDir);
 	}
+	const outputFilePath = path.join(outputDir, `${contractName}.md`);
 
-	const outputPath = path.join(outputDir, `${contractName}.md`);
-	fs.writeFileSync(outputPath, content);
+	// Existing documentation will either be empty,
+	// or read from a file.
+	// contentJsonMd is markdown in JSON format
+	let contentJsonMd = {
+		Description: {},
+		Architecture: {},
+		Structs: {},
+		Variables: {},
+		Functions: {},
+		Modifiers: {},
+		Events: {},
+	};
+	if (fs.existsSync(outputFilePath)) {
+		const rawMd = fs.readFileSync(outputFilePath);
+		const curMdJson = md2json.parse(rawMd.toString());
+		const mdJsonKeys = Object.keys(curMdJson);
+
+		if (mdJsonKeys.length > 1) {
+			console.log(`WARNING: ${contractName} has multiple H1 headers`);
+		}
+
+		if (mdJsonKeys.length > 0) {
+			contentJsonMd = curMdJson[mdJsonKeys[0]];
+		}
+	}
+	const curAstDocs = e3(astDocs, contractSource, contractKind, contractName);
+
+	// ******************************************** Description ******************************************** //
+	// Include Source into existing description
+	if (contentJsonMd.Description === undefined) {
+		contentJsonMd.Description = {};
+	}
+	const sourceMd = `\n**Source:** [${contractSource}](${baseUrl}${contractSource})\n\n`;
+	contentJsonMd.Description.raw = (contentJsonMd.Description.raw || '').split('**Source:**')[0] + sourceMd;
+
+	// ******************************************** Architecture ******************************************** //
+	const graph = getInheritanceGraph(contractSource, contractName, contractKind);
+	const graphMd = formatInheritanceGraphToMermaidMd(graph);
+	const graphHasInheritance = Object.keys(graph[Object.keys(graph)[0]]).length > 0;
+
+	// Architecture's inheritance graph
+	if (contentJsonMd.Architecture === undefined) {
+		contentJsonMd.Architecture = {};
+	}
+
+	if (graphHasInheritance) {
+		let mermaidGraphMdContent = '';
+		mermaidGraphMdContent += `${'```'}mermaid\n`;
+		mermaidGraphMdContent += 'graph TD\n';
+		mermaidGraphMdContent += graphMd;
+		mermaidGraphMdContent += `${'```'}\n\n`;
+
+		if (contentJsonMd.Architecture['Inheritance Graph'] === undefined) {
+			contentJsonMd.Architecture['Inheritance Graph'] = {};
+		}
+
+		contentJsonMd.Architecture['Inheritance Graph'].raw = mermaidGraphMdContent;
+	}
+
+	if (Object.keys(contentJsonMd.Architecture).length === 0) {
+		delete contentJsonMd.Architecture;
+	}
+
+	// ******************************************** Structs ******************************************** //
+	if (contentJsonMd.Structs === undefined) {
+		contentJsonMd.Structs = {};
+	}
+
+	if (Array.isArray(curAstDocs.structs) && curAstDocs.structs.length > 0) {
+		// Only include structs that are in the source code
+		const curValidStructs = curAstDocs.structs.map(x => `\`${x.name}\``);
+		const invalidStructs = Object.keys(contentJsonMd.Structs).filter(x => !curValidStructs.includes(x));
+		invalidStructs.map(x => {
+			delete contentJsonMd.Structs[x];
+		});
+
+		// Inject in struct tables and source
+		curAstDocs.structs.map(x => {
+			// Source
+			const structMdSourceContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
+
+			// Table
+			let structTableMdContent = '| Field | Type |\r\n| ------ | ------ |\n';
+			x.members.map(y => {
+				structTableMdContent += `| ${y.name} | ${y.type} |\n`;
+			});
+			structTableMdContent += '\n\n';
+
+			// So many if/else ... If only we could make this into a monad....
+			if (contentJsonMd.Structs[`\`${x.name}\``] === undefined) {
+				contentJsonMd.Structs[`\`${x.name}\``] = {};
+			}
+
+			// Remove existing <sub>Source</sub> (as we'll insert a new one)
+			const curCleanedMd = (contentJsonMd.Structs[`\`${x.name}\``].raw || '')
+				.split('\n')
+				.filter(x => !x.includes('<sub>'))
+				.join('\n');
+
+			// Overwrite new content obtained from AST while injecting
+			// in existing rich docs (e.g. description)
+			contentJsonMd.Structs[`\`${x.name}\``].raw =
+				structMdSourceContent + curCleanedMd.split('| Field')[0] + structTableMdContent;
+		});
+	} else {
+		delete contentJsonMd.Structs;
+	}
+
+	// ******************************************** Variables ******************************************** //
+	if (contentJsonMd.Variables === undefined) {
+		contentJsonMd.Variables = {};
+	}
+
+	if (Array.isArray(curAstDocs.variables) && curAstDocs.variables.length > 0) {
+		// Only include variables that are in the source code
+		const curValidVariables = curAstDocs.variables.map(x => `\`${x.name}\``);
+		const invalidVariables = Object.keys(contentJsonMd.Variables).filter(x => !curValidVariables.includes(x));
+		invalidVariables.map(x => {
+			delete contentJsonMd.Variables[x];
+		});
+
+		curAstDocs.variables
+			.filter(x => x.visibility !== 'private')
+			.map(x => {
+				const variableSourceMdContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
+				const variableMdContent = `**Type:** \`${x.type}\`\n\n`;
+
+				// So many if/else ... If only we could make this into a monad....
+				if (contentJsonMd.Variables[`\`${x.name}\``] === undefined) {
+					contentJsonMd.Variables[`\`${x.name}\``] = {};
+				}
+
+				// Remove existing <sub>Source</sub> (as we'll insert a new one)
+				const curCleanedMd = (contentJsonMd.Variables[`\`${x.name}\``].raw || '')
+					.split('\n')
+					.filter(x => !x.includes('<sub>'))
+					.filter(x => !x.includes('**Type:**'))
+					.join('\n');
+
+				// Overwrite new content obtained from AST while injecting
+				// in existing rich docs (e.g. description)
+				contentJsonMd.Variables[`\`${x.name}\``].raw =
+					variableSourceMdContent + curCleanedMd.split('| Field')[0] + variableMdContent;
+			});
+	} else {
+		delete contentJsonMd.Variables;
+	}
+
+	// ******************************************** Functions ******************************************** //
+	if (contentJsonMd.Functions === undefined) {
+		contentJsonMd.Functions = {};
+	}
+
+	if (Array.isArray(curAstDocs.functions) && curAstDocs.functions.filter(x => x.visibility !== 'internal').length > 0) {
+		// Only include functions that are in the source code
+		const curValidFunctions = curAstDocs.functions.map(x => `\`${x.name}\``);
+		const invalidFunctions = Object.keys(contentJsonMd.Functions).filter(x => !curValidFunctions.includes(x));
+		invalidFunctions.map(x => {
+			delete contentJsonMd.Functions[x];
+		});
+
+		curAstDocs.functions
+			.filter(x => x.visibility !== 'internal')
+			.map(x => {
+				const functionSourceMdContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
+
+				let functionDetailMdContent = '??? example "Details"\n\n';
+				functionDetailMdContent += '    **Signature**\n\n';
+				functionDetailMdContent += `    \`${x.signature}\`\n\n`;
+
+				// Requires
+				if (x.requires.length > 0) {
+					functionDetailMdContent += '    **Requires**\n\n';
+				}
+				x.requires.map(y => {
+					functionDetailMdContent += `    * [${y.name}](${baseUrl}${contractSource}#L${y.lineNumber})\n\n`;
+				});
+
+				// Modifiers in function
+				if (x.modifiers.length > 0) {
+					functionDetailMdContent += '    **Modifiers**\n\n';
+				}
+				x.modifiers.map(y => {
+					functionDetailMdContent += `    * [${y}](#${y.toLowerCase()})\n\n`;
+				});
+
+				// Events in functions
+				if (x.events.length > 0) {
+					functionDetailMdContent += '    **Emits**\n\n';
+				}
+				x.events.map(y => {
+					functionDetailMdContent += `    * [${y}](#${y.toLowerCase()})\n\n`;
+				});
+
+				// So many if/else ... If only we could make this into a monad....
+				if (contentJsonMd.Functions[`\`${x.name}\``] === undefined) {
+					contentJsonMd.Functions[`\`${x.name}\``] = {};
+				}
+
+				// Remove existing <sub>Source</sub> (as we'll insert a new one)
+				const curCleanedMd = (contentJsonMd.Functions[`\`${x.name}\``].raw || '')
+					.split('\n')
+					.filter(x => !x.includes('<sub>'))
+					.join('\n');
+
+				// Overwrite new content obtained from AST while injecting
+				// in existing rich docs (e.g. description)
+				contentJsonMd.Functions[`\`${x.name}\``].raw =
+					functionSourceMdContent + curCleanedMd.split('??? example')[0] + functionDetailMdContent;
+			});
+	} else {
+		delete contentJsonMd.Functions;
+	}
+
+	// ******************************************** Modifiers ******************************************** //
+	if (contentJsonMd.Modifiers === undefined) {
+		contentJsonMd.Modifiers = {};
+	}
+
+	if (Array.isArray(curAstDocs.modifiers) && curAstDocs.modifiers.length > 0) {
+		curAstDocs.modifiers.map(x => {
+			const modifierSourceMd = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
+
+			// So many if/else ... If only we could make this into a monad....
+			if (contentJsonMd.Modifiers[`\`${x.name}\``] === undefined) {
+				contentJsonMd.Modifiers[`\`${x.name}\``] = {};
+			}
+
+			// Remove existing <sub>Source</sub> (as we'll insert a new one)
+			const curCleanedMd = (contentJsonMd.Modifiers[`\`${x.name}\``].raw || '')
+				.split('\n')
+				.filter(x => !x.includes('<sub>'))
+				.join('\n');
+
+			// Overwrite new content obtained from AST while injecting
+			// in existing rich docs (e.g. description)
+			contentJsonMd.Modifiers[`\`${x.name}\``].raw = modifierSourceMd + curCleanedMd;
+		});
+	} else {
+		delete contentJsonMd.Modifiers;
+	}
+
+	// ******************************************** Events ******************************************** //
+	if (contentJsonMd.Events === undefined) {
+		contentJsonMd.Events = {};
+	}
+
+	if (Array.isArray(curAstDocs.events) && curAstDocs.events.length > 0) {
+		curAstDocs.events.map(x => {
+			const eventSourceMd = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
+			const eventParamMd = `- \`${x.parameters}\`\n\n`;
+
+			// So many if/else ... If only we could make this into a monad....
+			if (contentJsonMd.Events[`\`${x.name}\``] === undefined) {
+				contentJsonMd.Events[`\`${x.name}\``] = {};
+			}
+
+			// Remove existing <sub>Source</sub> (as we'll insert a new one)
+			const curCleanedMd = (contentJsonMd.Events[`\`${x.name}\``].raw || '')
+				.split('\n')
+				.filter(x => !x.includes('<sub>'))
+				.join('\n');
+
+			// Overwrite new content obtained from AST while injecting
+			// in existing rich docs (e.g. description)
+			contentJsonMd.Events[`\`${x.name}\``].raw = eventSourceMd + curCleanedMd.split('- ')[0] + eventParamMd;
+		});
+	} else {
+		delete contentJsonMd.Events;
+	}
+
+	// ******************************************** Write to file ******************************************** //
+	// Convert to raw and write to file
+	// also injects line between each ###
+	const rawMdContent = md2json
+		.toMd({ [contractName]: contentJsonMd })
+		.split('###')
+		.join('\n---\n###');
+
+	fs.writeFileSync(outputFilePath, rawMdContent);
 };
 
 (() => {

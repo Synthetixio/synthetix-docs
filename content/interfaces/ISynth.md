@@ -1,13 +1,19 @@
 # ISynth
 
+## Description
+
+
 **Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol)
 
 ## Functions
 
----
 
+---
 ### `currencyKey`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L6)</sub>
+
+
 
 ??? example "Details"
 
@@ -15,10 +21,13 @@
 
     `currencyKey() external`
 
----
 
+---
 ### `transferableSynths`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L8)</sub>
+
+
 
 ??? example "Details"
 
@@ -26,10 +35,13 @@
 
     `transferableSynths(address account) external`
 
----
 
+---
 ### `transferAndSettle`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L11)</sub>
+
+
 
 ??? example "Details"
 
@@ -37,10 +49,13 @@
 
     `transferAndSettle(address to, uint256 value) external`
 
----
 
+---
 ### `transferFromAndSettle`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L13)</sub>
+
+
 
 ??? example "Details"
 
@@ -48,10 +63,13 @@
 
     `transferFromAndSettle(address from, address to, uint256 value) external`
 
----
 
+---
 ### `burn`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L20)</sub>
+
+
 
 ??? example "Details"
 
@@ -59,16 +77,17 @@
 
     `burn(address account, uint256 amount) external`
 
----
 
+---
 ### `issue`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L22)</sub>
+
+
 
 ??? example "Details"
 
     **Signature**
 
     `issue(address account, uint256 amount) external`
-
----
 

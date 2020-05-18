@@ -1,9 +1,20 @@
 # PurgeableSynth
 
+## Description
+
+This is a [Synth](Synth.md) where all the holders can be force-[exchanged](Synthetix.md#exchange) back to `sUSD` at current rates so that the contract can be removed from the system or otherwise repurposed. In order to be liquidated, a Synth must either be frozen (if it is an inverse synth) or have its total outstanding supply worth less than $100\,000$ USD. Hence it is mainly useful for eliminating Synths which are unused or at the end of their useful life. The value of the token is read from the system's central [ExchangeRates](ExchangeRates.md) contract.
+
+
+Purgeable synths were introduced by [SIP-3](https://github.com/Synthetixio/SIPs/blob/master/SIPS/sip-3.md) in response to increasing gas costs associated with minting, and to allow faster reconfiguration of inverse synths.
+
+
+
 **Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol)
 
 ## Architecture
 
+
+---
 ### Inheritance Graph
 
 ```mermaid
@@ -18,38 +29,50 @@ graph TD
     MixinResolver[MixinResolver] --> Owned[Owned]
 ```
 
+
 ---
+### Related Contracts
+
+- [`ExchangeRates`](ExchangeRates.md)
+
+
+---
+### Libraries
+
+- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
 
 ## Variables
 
----
 
+---
 ### `maxSupplyToPurgeInUSD`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L18)</sub>
+
+
+
+Purging this Synth is disallowed unless the value of its supply is less than this. Initialised to $100\,000$.
+
+
+
 
 **Type:** `uint256`
 
 ## Functions
 
----
-
-### `constructor`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L24)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address payable _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver) public`
-
-    **Modifiers**
-
-    * [Synth](#synth)
 
 ---
-
 ### `purge`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L49)</sub>
+
+
+
+Allows the owner to liquidate all holders of this token back to `sUSD` if the total value of this Synth is worth less than [`maxSupplyToPurgeInUSD`](#maxsupplytopurgeinusd) US dollars at current prices, or if the token is an inverse synth whose price is frozen.
+
+
+If this is successfully invoked, balances in the provided list of addresses will be deleted, and an equivalent value of sUSD credited to their account.
+
 
 ??? example "Details"
 
@@ -65,16 +88,42 @@ graph TD
 
     * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
 
+
 ---
+### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L24)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address payable _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver) public`
+
+    **Modifiers**
+
+    * [Synth](#synth)
 
 ## Events
 
----
 
+---
 ### `Purged`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L73)</sub>
 
-- `(address account, uint256 value)`
 
----
+
+Records that a balance of this currency was liquidated back to `sUSD` for a particular account.
+
+
+This event is emitted from the Synth's [proxy](Proxy.md#_emit) with the `emitPurged` function.
+
+
+**Signature:** `Purged(address indexed account, uint value)`
+
+
+- `(address account, uint256 value)`
 

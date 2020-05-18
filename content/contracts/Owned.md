@@ -1,29 +1,69 @@
 # Owned
 
+## Description
+
+Allows inheriting contracts to have an owner and provides the [`onlyOwner`](#onlyowner) modifier, which restricts function access to that owner.
+The owner can be changed by a nomination process, where the nominated owner must accept ownership before it is switched.
+
+
+
 **Source:** [contracts/Owned.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol)
+
+## Architecture
+
+
+---
+### Inheritance Graph
+
+<centered-image>
+    ![Owned inheritance graph](../img/graphs/Owned.svg)
+</centered-image>
+
 
 ## Variables
 
----
 
+---
 ### `owner`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L6)</sub>
+
+
+
+The contract owner.
+
+
+
 
 **Type:** `address`
 
----
 
+---
 ### `nominatedOwner`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L7)</sub>
+
+
+
+The currently-nominated owner.
+
+
+
 
 **Type:** `address`
 
 ## Functions
 
----
 
+---
 ### `constructor`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L9)</sub>
+
+
+
+Initialises the owner of this contract.
+
 
 ??? example "Details"
 
@@ -39,10 +79,16 @@
 
     * [OwnerChanged](#ownerchanged)
 
----
 
+---
 ### `nominateNewOwner`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L15)</sub>
+
+
+
+Nominates a new owner of this contract, who may then call [`acceptOwnership`](#acceptownership) to become the owner.
+
 
 ??? example "Details"
 
@@ -58,10 +104,17 @@
 
     * [OwnerNominated](#ownernominated)
 
----
 
+---
 ### `acceptOwnership`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L20)</sub>
+
+
+
+If called by [`nominatedOwner`](#nominatedowner), ownership is transferred to that address.
+The nominated owner is reset to the zero address.
+
 
 ??? example "Details"
 
@@ -77,32 +130,50 @@
 
     * [OwnerChanged](#ownerchanged)
 
----
-
 ## Modifiers
 
----
 
+---
 ### `onlyOwner`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L27)</sub>
 
----
+
+
+Reverts the transaction if `msg.sender` is not the [`owner`](#owner).
+
 
 ## Events
 
----
 
+---
 ### `OwnerNominated`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L32)</sub>
+
+
+
+`newOwner` has been set as the [`nominatedOwner`](#nominatedowner).
+
+
+**Signature:** `OwnerNominated(address newOwner)`
+
 
 - `(address newOwner)`
 
----
 
+---
 ### `OwnerChanged`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L33)</sub>
 
-- `(address oldOwner, address newOwner)`
 
----
+
+Ownership has been handed over from `oldOwner` to `newOwner`, which is the new value of [`owner`](#owner).
+
+
+**Signature:** `OwnerChanged(address oldOwner, address newOwner)`
+
+
+- `(address oldOwner, address newOwner)`
 

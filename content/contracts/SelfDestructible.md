@@ -1,9 +1,17 @@
 # SelfDestructible
 
+## Description
+
+SelfDestructible allows an inheriting contract to be destroyed by its owner, who must [announce an intention to destroy it](#initiateselfdestruct), and then wait for a four week cooling-off period before it can be [destroyed](#selfdestruct). Any ether remaining in the contract at this time is forwarded to [a nominated beneficiary](#selfdestructbeneficiary).
+
+
+
 **Source:** [contracts/SelfDestructible.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol)
 
 ## Architecture
 
+
+---
 ### Inheritance Graph
 
 ```mermaid
@@ -11,44 +19,111 @@ graph TD
     SelfDestructible[SelfDestructible] --> Owned[Owned]
 ```
 
----
-
 ## Variables
 
----
-
-### `SELFDESTRUCT_DELAY`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L9)</sub>
-
-**Type:** `uint256`
 
 ---
-
 ### `initiationTime`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L11)</sub>
 
+
+
+The timestamp at which the self destruction was begun.
+
+
+
+
 **Type:** `uint256`
 
----
 
+---
 ### `selfDestructInitiated`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L12)</sub>
+
+
+
+True iff the contract is currently undergoing self destruction.
+
+
+
 
 **Type:** `bool`
 
----
 
+---
 ### `selfDestructBeneficiary`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L14)</sub>
+
+
+
+The address where any lingering eth in this contract will be sent.
+
+
+
 
 **Type:** `address`
 
-## Functions
 
 ---
+### `SELFDESTRUCT_DELAY`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L9)</sub>
+
+
+
+The duration (four weeks) that must be waited between self destruct initiation and actual destruction. That is the contract can only be destroyed after the timestamp `initiationTime + SELFDESTRUCT_DELAY`.
+
+
+**Value:** `4 weeks`
+
+
+
+
+**Type:** `uint256`
+
+## Functions
+
+
+---
+### `constructor`
+
+Initialises the inherited [`Owned`](Owned.md) instance and nominates that owner as the initial [self destruct beneficiary](#selfdestructbeneficiary).
+
+
+??? example "Details"
+
+
+```
+**Signature**
+
+`constructor(address _owner) public`
+
+**Superconstructors**
+
+* [`Owned(_owner)`](Owned.md#constructor)
+
+**Preconditions**
+
+* The provided owner must not be the zero address.
+
+**Emits**
+
+* [`SelfDestructBeneficiaryUpdated(_owner)`](#selfdestructbeneficiaryupdated)
+```
+
+
+---
 ### `setSelfDestructBeneficiary`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L28)</sub>
+
+
+
+Changes the [self destruct beneficiary](#selfdestructbeneficiary).
+
 
 ??? example "Details"
 
@@ -68,10 +143,16 @@ graph TD
 
     * [SelfDestructBeneficiaryUpdated](#selfdestructbeneficiaryupdated)
 
----
 
+---
 ### `initiateSelfDestruct`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L39)</sub>
+
+
+
+Begins the self destruct countdown, updating [`initiationTime`](#initiationtime) and [`selfDestructInitiated`](#selfdestructinitiated). Only once the delay has elapsed can the contract be destroyed.
+
 
 ??? example "Details"
 
@@ -87,10 +168,16 @@ graph TD
 
     * [SelfDestructInitiated](#selfdestructinitiated)
 
----
 
+---
 ### `terminateSelfDestruct`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L49)</sub>
+
+
+
+Resets the timer and disables self destruction.
+
 
 ??? example "Details"
 
@@ -106,10 +193,16 @@ graph TD
 
     * [SelfDestructTerminated](#selfdestructterminated)
 
----
 
+---
 ### `selfDestruct`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L60)</sub>
+
+
+
+If self destruction is active and the timer has elapsed, destroy this contract and forward its ether to [`selfDestructBeneficiary`](#selfdestructbeneficiary).
+
 
 ??? example "Details"
 
@@ -131,37 +224,69 @@ graph TD
 
     * [SelfDestructed](#selfdestructed)
 
----
-
 ## Events
 
----
 
+---
 ### `SelfDestructTerminated`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L67)</sub>
+
+
+
+Self destruction was terminated by the contract owner.
+
+
+**Signature:** `SelfDestructTerminated()`
+
 
 - `()`
 
----
 
+---
 ### `SelfDestructed`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L68)</sub>
+
+
+
+The contract was destroyed, forwarding the ether on to the [beneficiary](#selfdestructbeneficiary).
+
+
+**Signature:** `SelfDestructed(address beneficiary)`
+
 
 - `(address beneficiary)`
 
----
 
+---
 ### `SelfDestructInitiated`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L69)</sub>
+
+
+
+Self destruction was initiated with the indicated delay time.
+
+
+**Signature:** `SelfDestructInitiated(uint selfDestructDelay)`
+
 
 - `(uint256 selfDestructDelay)`
 
----
 
+---
 ### `SelfDestructBeneficiaryUpdated`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L70)</sub>
 
-- `(address newBeneficiary)`
 
----
+
+The self destruct beneficiary was changed to the indicated new address.
+
+
+**Signature:** `SelfDestructBeneficiaryUpdated(address newBeneficiary)`
+
+
+- `(address newBeneficiary)`
 

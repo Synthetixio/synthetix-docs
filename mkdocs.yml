@@ -112,6 +112,7 @@ nav:
           - RewardsDistribution: contracts/RewardsDistribution.md
           - RewardsDistributionRecipient: contracts/RewardsDistributionRecipient.md
           - SafeDecimalMath: contracts/SafeDecimalMath.md
+          - SafeMath: contracts/SafeMath.md
           - SelfDestructible: contracts/SelfDestructible.md
           - State: contracts/State.md
           - SupplySchedule: contracts/SupplySchedule.md

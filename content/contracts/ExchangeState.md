@@ -1,9 +1,36 @@
 # ExchangeState
 
+**Source:** [ExchangeState.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeState.sol)
+
+
+!!! todo "Work in Progress"
+
+
+```
+This needs filling in
+```
+
+## Description
+
+... todo.
+
+
+
 **Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol)
 
 ## Architecture
 
+... todo.
+
+
+<!--centered-image>
+    ![Architecture Graph](../img/graphs/todo-architecture.svg)
+</centered-image-->
+
+
+
+
+---
 ### Inheritance Graph
 
 ```mermaid
@@ -12,52 +39,79 @@ graph TD
     State[State] --> Owned[Owned]
 ```
 
----
-
-## Structs
 
 ---
+### Related Contracts
 
-### ExchangeEntry
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L11)</sub>
+- ?
 
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| src | bytes32 | TBA |
-| amount | uint256 | TBA |
-| dest | bytes32 | TBA |
-| amountReceived | uint256 | TBA |
-| exchangeFeeRate | uint256 | TBA |
-| timestamp | uint256 | TBA |
-| roundIdForSrc | uint256 | TBA |
-| roundIdForDest | uint256 | TBA |
-
----
+## Constants
 
 ## Variables
 
----
 
+---
 ### `exchanges`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L22)</sub>
+
+
+
+
 
 **Type:** `mapping(address => mapping(bytes32 => struct ExchangeState.ExchangeEntry[]))`
 
----
 
+---
 ### `maxEntriesInQueue`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L24)</sub>
+
+
+
+
 
 **Type:** `uint256`
 
+## Views
+
+## Public Mutative Functions
+
+## Owner Mutative Functions
+
+## Internal & Restricted Mutative Functions
+
+## Structs
+
+
 ---
+### `ExchangeEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L11)</sub>
+
+
+
+| Field | Type |
+| ------ | ------ |
+| src | bytes32 |
+| amount | uint256 |
+| dest | bytes32 |
+| amountReceived | uint256 |
+| exchangeFeeRate | uint256 |
+| timestamp | uint256 |
+| roundIdForSrc | uint256 |
+| roundIdForDest | uint256 |
+
 
 ## Functions
 
----
 
+---
 ### `constructor`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L26)</sub>
+
+
 
 ??? example "Details"
 
@@ -71,10 +125,13 @@ graph TD
 
     * [State](#state)
 
----
 
+---
 ### `setMaxEntriesInQueue`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L30)</sub>
+
+
 
 ??? example "Details"
 
@@ -86,10 +143,13 @@ graph TD
 
     * [onlyOwner](#onlyowner)
 
----
 
+---
 ### `appendExchangeEntry`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L36)</sub>
+
+
 
 ??? example "Details"
 
@@ -105,10 +165,13 @@ graph TD
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
 
----
 
+---
 ### `removeEntries`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L63)</sub>
+
+
 
 ??? example "Details"
 
@@ -120,10 +183,13 @@ graph TD
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
 
----
 
+---
 ### `getLengthOfEntries`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L69)</sub>
+
+
 
 ??? example "Details"
 
@@ -131,10 +197,13 @@ graph TD
 
     `getLengthOfEntries(address account, bytes32 currencyKey) external`
 
----
 
+---
 ### `getEntryAt`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L73)</sub>
+
+
 
 ??? example "Details"
 
@@ -142,16 +211,17 @@ graph TD
 
     `getEntryAt(address account, bytes32 currencyKey, uint256 index) external`
 
----
 
+---
 ### `getMaxTimestamp`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L104)</sub>
+
+
 
 ??? example "Details"
 
     **Signature**
 
     `getMaxTimestamp(address account, bytes32 currencyKey) external`
-
----
 

@@ -1,9 +1,14 @@
 # MockSynth
 
+## Description
+
+
 **Source:** [contracts/test-helpers/MockSynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol)
 
 ## Architecture
 
+
+---
 ### Inheritance Graph
 
 ```mermaid
@@ -15,23 +20,29 @@ graph TD
     Proxyable[Proxyable] --> Owned[Owned]
 ```
 
----
-
 ## Variables
 
----
 
+---
 ### `currencyKey`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L11)</sub>
+
+
+
+
 
 **Type:** `bytes32`
 
 ## Functions
 
----
 
+---
 ### `constructor`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L13)</sub>
+
+
 
 ??? example "Details"
 
@@ -43,10 +54,13 @@ graph TD
 
     * [ExternStateToken](#externstatetoken)
 
----
 
+---
 ### `setSystemStatus`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L26)</sub>
+
+
 
 ??? example "Details"
 
@@ -54,10 +68,13 @@ graph TD
 
     `setSystemStatus(contract ISystemStatus _status) external`
 
----
 
+---
 ### `setTotalSupply`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L31)</sub>
+
+
 
 ??? example "Details"
 
@@ -65,10 +82,13 @@ graph TD
 
     `setTotalSupply(uint256 _totalSupply) external`
 
----
 
+---
 ### `transfer`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L35)</sub>
+
+
 
 ??? example "Details"
 
@@ -80,10 +100,13 @@ graph TD
 
     * [optionalProxy](#optionalproxy)
 
----
 
+---
 ### `transferFrom`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L41)</sub>
+
+
 
 ??? example "Details"
 
@@ -95,10 +118,13 @@ graph TD
 
     * [optionalProxy](#optionalproxy)
 
----
 
+---
 ### `issue`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L56)</sub>
+
+
 
 ??? example "Details"
 
@@ -110,10 +136,13 @@ graph TD
 
     * [Issued](#issued)
 
----
 
+---
 ### `burn`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L62)</sub>
+
+
 
 ??? example "Details"
 
@@ -125,23 +154,25 @@ graph TD
 
     * [Burned](#burned)
 
----
-
 ## Events
 
----
 
+---
 ### `Issued`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L51)</sub>
 
+
+
 - `(address account, uint256 value)`
 
----
 
+---
 ### `Burned`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L53)</sub>
 
-- `(address account, uint256 value)`
 
----
+
+- `(address account, uint256 value)`
 

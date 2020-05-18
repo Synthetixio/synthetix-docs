@@ -1,9 +1,14 @@
 # PublicEST
 
+## Description
+
+
 **Source:** [contracts/test-helpers/PublicEST.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol)
 
 ## Architecture
 
+
+---
 ### Inheritance Graph
 
 ```mermaid
@@ -15,23 +20,29 @@ graph TD
     Proxyable[Proxyable] --> Owned[Owned]
 ```
 
----
-
 ## Variables
 
----
 
+---
 ### `DECIMALS`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol#L7)</sub>
+
+
+
+
 
 **Type:** `uint8`
 
 ## Functions
 
----
 
+---
 ### `constructor`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol#L9)</sub>
+
+
 
 ??? example "Details"
 
@@ -43,10 +54,13 @@ graph TD
 
     * [ExternStateToken](#externstatetoken)
 
----
 
+---
 ### `transfer`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol#L18)</sub>
+
+
 
 ??? example "Details"
 
@@ -58,10 +72,13 @@ graph TD
 
     * [optionalProxy](#optionalproxy)
 
----
 
+---
 ### `transferFrom`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol#L22)</sub>
+
+
 
 ??? example "Details"
 
@@ -73,10 +90,13 @@ graph TD
 
     * [optionalProxy](#optionalproxy)
 
----
 
+---
 ### `somethingToBeProxied`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol#L33)</sub>
+
+
 
 ??? example "Details"
 
@@ -88,16 +108,15 @@ graph TD
 
     * [Received](#received)
 
----
-
 ## Events
 
----
 
+---
 ### `Received`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol#L31)</sub>
 
-- `(address sender, uint256 inputA, bytes32 inputB)`
 
----
+
+- `(address sender, uint256 inputA, bytes32 inputB)`
 

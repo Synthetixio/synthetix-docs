@@ -1,9 +1,14 @@
 # TestableMixinResolver
 
+## Description
+
+
 **Source:** [contracts/test-helpers/TestableMixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TestableMixinResolver.sol)
 
 ## Architecture
 
+
+---
 ### Inheritance Graph
 
 ```mermaid
@@ -12,16 +17,17 @@ graph TD
     MixinResolver[MixinResolver] --> Owned[Owned]
 ```
 
----
-
 ## Variables
 
 ## Functions
 
----
 
+---
 ### `constructor`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TestableMixinResolver.sol#L14)</sub>
+
+
 
 ??? example "Details"
 
@@ -34,6 +40,4 @@ graph TD
     * [Owned](#owned)
 
     * [MixinResolver](#mixinresolver)
-
----
 

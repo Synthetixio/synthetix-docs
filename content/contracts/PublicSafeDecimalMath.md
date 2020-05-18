@@ -1,13 +1,19 @@
 # PublicSafeDecimalMath
 
+## Description
+
+
 **Source:** [contracts/test-helpers/PublicSafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol)
 
 ## Functions
 
----
 
+---
 ### `unit`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L12)</sub>
+
+
 
 ??? example "Details"
 
@@ -15,10 +21,13 @@
 
     `unit() public`
 
----
 
+---
 ### `preciseUnit`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L16)</sub>
+
+
 
 ??? example "Details"
 
@@ -26,10 +35,13 @@
 
     `preciseUnit() public`
 
----
 
+---
 ### `multiplyDecimal`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L20)</sub>
+
+
 
 ??? example "Details"
 
@@ -37,10 +49,13 @@
 
     `multiplyDecimal(uint256 x, uint256 y) public`
 
----
 
+---
 ### `multiplyDecimalRound`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L24)</sub>
+
+
 
 ??? example "Details"
 
@@ -48,10 +63,13 @@
 
     `multiplyDecimalRound(uint256 x, uint256 y) public`
 
----
 
+---
 ### `multiplyDecimalRoundPrecise`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L28)</sub>
+
+
 
 ??? example "Details"
 
@@ -59,10 +77,13 @@
 
     `multiplyDecimalRoundPrecise(uint256 x, uint256 y) public`
 
----
 
+---
 ### `divideDecimal`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L32)</sub>
+
+
 
 ??? example "Details"
 
@@ -70,10 +91,13 @@
 
     `divideDecimal(uint256 x, uint256 y) public`
 
----
 
+---
 ### `divideDecimalRound`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L36)</sub>
+
+
 
 ??? example "Details"
 
@@ -81,10 +105,13 @@
 
     `divideDecimalRound(uint256 x, uint256 y) public`
 
----
 
+---
 ### `divideDecimalRoundPrecise`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L40)</sub>
+
+
 
 ??? example "Details"
 
@@ -92,10 +119,13 @@
 
     `divideDecimalRoundPrecise(uint256 x, uint256 y) public`
 
----
 
+---
 ### `decimalToPreciseDecimal`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L44)</sub>
+
+
 
 ??? example "Details"
 
@@ -103,16 +133,17 @@
 
     `decimalToPreciseDecimal(uint256 i) public`
 
----
 
+---
 ### `preciseDecimalToDecimal`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicSafeDecimalMath.sol#L48)</sub>
+
+
 
 ??? example "Details"
 
     **Signature**
 
     `preciseDecimalToDecimal(uint256 i) public`
-
----
 

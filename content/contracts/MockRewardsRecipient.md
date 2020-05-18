@@ -1,9 +1,14 @@
 # MockRewardsRecipient
 
+## Description
+
+
 **Source:** [contracts/test-helpers/MockRewardsRecipient.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol)
 
 ## Architecture
 
+
+---
 ### Inheritance Graph
 
 ```mermaid
@@ -12,23 +17,29 @@ graph TD
     RewardsDistributionRecipient[RewardsDistributionRecipient] --> Owned[Owned]
 ```
 
----
-
 ## Variables
 
----
 
+---
 ### `rewardsAvailable`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L8)</sub>
+
+
+
+
 
 **Type:** `uint256`
 
 ## Functions
 
----
 
+---
 ### `constructor`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L10)</sub>
+
+
 
 ??? example "Details"
 
@@ -40,10 +51,13 @@ graph TD
 
     * [Owned](#owned)
 
----
 
+---
 ### `notifyRewardAmount`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L12)</sub>
+
+
 
 ??? example "Details"
 
@@ -59,16 +73,15 @@ graph TD
 
     * [RewardAdded](#rewardadded)
 
----
-
 ## Events
 
----
 
+---
 ### `RewardAdded`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L17)</sub>
 
-- `(uint256 amount)`
 
----
+
+- `(uint256 amount)`
 

@@ -1,9 +1,36 @@
 # MultiCollateralSynth
 
+**Source:** [MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/MultiCollateralSynth.sol)
+
+
+!!! todo "Work in Progress"
+
+
+```
+This needs filling in
+```
+
+## Description
+
+... todo.
+
+
+
 **Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol)
 
 ## Architecture
 
+... todo.
+
+
+<!--centered-image>
+    ![Architecture Graph](../img/graphs/todo-architecture.svg)
+</centered-image-->
+
+
+
+
+---
 ### Inheritance Graph
 
 ```mermaid
@@ -18,23 +45,55 @@ graph TD
     MixinResolver[MixinResolver] --> Owned[Owned]
 ```
 
+
 ---
+### Related Contracts
+
+- ?
+
+## Constants
 
 ## Variables
 
----
 
+---
 ### `multiCollateralKey`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L9)</sub>
+
+
+
+
 
 **Type:** `bytes32`
 
-## Functions
+## Views
+
+## Public Mutative Functions
+
+## Owner Mutative Functions
+
+## Internal & Restricted Mutative Functions
+
+## Modifiers
+
 
 ---
+### `onlyInternalContracts`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
+
+
+
+## Functions
+
+
+---
 ### `constructor`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L13)</sub>
+
+
 
 ??? example "Details"
 
@@ -46,10 +105,13 @@ graph TD
 
     * [Synth](#synth)
 
----
 
+---
 ### `issue`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L42)</sub>
+
+
 
 ??? example "Details"
 
@@ -61,10 +123,13 @@ graph TD
 
     * [onlyInternalContracts](#onlyinternalcontracts)
 
----
 
+---
 ### `burn`
+
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L51)</sub>
+
+
 
 ??? example "Details"
 
@@ -75,15 +140,4 @@ graph TD
     **Modifiers**
 
     * [onlyInternalContracts](#onlyinternalcontracts)
-
----
-
-## Modifiers
-
----
-
-### `onlyInternalContracts`
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
-
----
 
