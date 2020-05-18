@@ -7,11 +7,11 @@ module.exports = {
 	extends: 'eslint:recommended',
 	plugins: ['import'],
 	parserOptions: {
-		ecmaVersion: 2017,
+		ecmaVersion: 9,
 	},
 	rules: {
 		'no-console': 'off',
-		indent: ['error', 'tab'],
+		indent: ['error', 'tab', { ignoredNodes: ['TemplateLiteral > *'] }],
 		'prettier/prettier': 'off',
 		'import/no-unresolved': ['error', { commonjs: true }],
 		'linebreak-style': ['error', 'unix'],
