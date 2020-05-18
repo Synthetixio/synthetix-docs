@@ -638,7 +638,7 @@
 
 ## Synthetix (SNX)
 
-**Address:** [0xC011A72400E58ecD99Ee497CF89E3775d4bd732F](https://etherscan.io/address/0xC011A72400E58ecD99Ee497CF89E3775d4bd732F)
+**Address:** [0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F](https://etherscan.io/address/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F)
 
 **Decimals:** 18
 
@@ -677,7 +677,7 @@
 
 ## US Dollars (sUSD)
 
-**Address:** [0x57Ab1E02fEE23774580C119740129eAC7081e9D3](https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3)
+**Address:** [0x57Ab1ec28D129707052df4dF418D58a2D46d5f51](https://etherscan.io/address/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51)
 
 **Decimals:** 18
 
