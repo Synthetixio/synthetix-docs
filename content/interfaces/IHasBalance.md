@@ -5,6 +5,8 @@
 
 **Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IHasBalance.sol)
 
+## Constants
+
 ## Functions
 
 
@@ -19,5 +21,11 @@
 
     **Signature**
 
-    `balanceOf(address account) external`
+    `balanceOf(address account)`
+
+    **State Mutability**
+
+    `view`
+
+## Variables
 

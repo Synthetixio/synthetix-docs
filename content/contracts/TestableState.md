@@ -17,7 +17,9 @@ graph TD
     State[State] --> Owned[Owned]
 ```
 
-## Functions
+## Constants
+
+## Function (Constructor)
 
 
 ---
@@ -31,13 +33,19 @@ graph TD
 
     **Signature**
 
-    `(address _owner, address _associatedContract) public`
+    `(address _owner, address _associatedContract)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [Owned](#owned)
 
     * [State](#state)
+
+## Functions
 
 
 ---
@@ -51,9 +59,15 @@ graph TD
 
     **Signature**
 
-    `testModifier() external`
+    `testModifier()`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
+
+## Variables
 

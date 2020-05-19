@@ -19,6 +19,162 @@ graph TD
     AddressResolver[AddressResolver] --> Owned[Owned]
 ```
 
+## Constructor
+
+The constructor simply sets this contract as `Owned`.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `constructor(address _owner) public`
+    
+    **Superconstructors**
+    
+    * [`Owned(_owner)`](Owned.md#constructor)
+
+## Function (Constructor)
+
+
+---
+### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L14)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `(address _owner)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [Owned](#owned)
+
+## Functions
+
+
+---
+### `getAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L28)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `getAddress(bytes32 name)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `getSynth`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L38)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `getSynth(bytes32 key)`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., Cannot find Synthetix address)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L40)
+
+
+---
+### `requireAndGetAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L32)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `requireAndGetAddress(bytes32 name, string reason)`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., calldata)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L34)
+
+## Functions (onlyOwner)
+
+
+---
+### `importAddresses`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L18)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `importAddresses(bytes32[] names, address[] destinations)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L19)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+## Owner Functions
+
+
+---
+### `importAddresses`
+
+Import one or more addresses into the system for the given keys. Note: this function will overrwite any previous entries with the same key names, allowing for inline updates.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `importAddresses(bytes32[] names, address[] destinations) public`
+    
+    **Modifiers**
+    
+    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    
+    **Preconditions**
+    
+    * The length of `names` must match the length of `destinations`
+
 ## Variables
 
 
@@ -36,24 +192,6 @@ The mapping of contract name to address
 
 **Type:** `mapping(bytes32 => address)`
 
-## Constructor
-
-The constructor simply sets this contract as `Owned`.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`constructor(address _owner) public`
-
-**Superconstructors**
-
-* [`Owned(_owner)`](Owned.md#constructor)
-```
-
 ## Views
 
 
@@ -66,127 +204,7 @@ Returns a single address by it's `bytes32` key.
 ??? example "Details"
 
 
-```
-**Signature**
-
-`getAddress(bytes32 name) public view returns (address)`
-```
-
-## Owner Functions
-
-
----
-### `importAddresses`
-
-Import one or more addresses into the system for the given keys. Note: this function will overrwite any previous entries with the same key names, allowing for inline updates.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`importAddresses(bytes32[] names, address[] destinations) public`
-
-**Modifiers**
-
-* [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-**Preconditions**
-
-* The length of `names` must match the length of `destinations`
-```
-
-## Functions
-
-
----
-### `constructor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L14)</sub>
-
-
-
-??? example "Details"
-
     **Signature**
-
-    `(address _owner) public`
-
-    **Modifiers**
-
-    * [Owned](#owned)
-
-
----
-### `importAddresses`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L18)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `importAddresses(bytes32[] names, address[] destinations) external`
-
-    **Requires**
-
-    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L19)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-
----
-### `getAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L28)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `getAddress(bytes32 name) external`
-
-
----
-### `requireAndGetAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L32)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `requireAndGetAddress(bytes32 name, string reason) external`
-
-    **Requires**
-
-    * [require(..., calldata)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L34)
-
-
----
-### `getSynth`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L38)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `getSynth(bytes32 key) external`
-
-    **Requires**
-
-    * [require(..., Cannot find Synthetix address)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L40)
+    
+    `getAddress(bytes32 name) public view returns (address)`
 

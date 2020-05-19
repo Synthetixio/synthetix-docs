@@ -5,6 +5,8 @@
 
 **Source:** [contracts/interfaces/IExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol)
 
+## Constants
+
 ## Functions
 
 
@@ -19,7 +21,11 @@
 
     **Signature**
 
-    `aggregators(bytes32 currencyKey) external`
+    `aggregators(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -33,7 +39,11 @@
 
     **Signature**
 
-    `anyRateIsStale(bytes32[] currencyKeys) external`
+    `anyRateIsStale(bytes32[] currencyKeys)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -47,7 +57,11 @@
 
     **Signature**
 
-    `currentRoundForRate(bytes32 currencyKey) external`
+    `currentRoundForRate(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -61,7 +75,11 @@
 
     **Signature**
 
-    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) external`
+    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -75,7 +93,11 @@
 
     **Signature**
 
-    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest) external`
+    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -89,7 +111,11 @@
 
     **Signature**
 
-    `getCurrentRoundId(bytes32 currencyKey) external`
+    `getCurrentRoundId(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -103,7 +129,11 @@
 
     **Signature**
 
-    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff) external`
+    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -117,7 +147,11 @@
 
     **Signature**
 
-    `inversePricing(bytes32 currencyKey) external`
+    `inversePricing(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -131,7 +165,11 @@
 
     **Signature**
 
-    `lastRateUpdateTimes(bytes32 currencyKey) external`
+    `lastRateUpdateTimes(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -145,7 +183,11 @@
 
     **Signature**
 
-    `oracle() external`
+    `oracle()`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -159,7 +201,11 @@
 
     **Signature**
 
-    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId) external`
+    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -173,7 +219,11 @@
 
     **Signature**
 
-    `rateForCurrency(bytes32 currencyKey) external`
+    `rateForCurrency(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -187,7 +237,11 @@
 
     **Signature**
 
-    `rateIsFrozen(bytes32 currencyKey) external`
+    `rateIsFrozen(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -201,7 +255,11 @@
 
     **Signature**
 
-    `rateIsStale(bytes32 currencyKey) external`
+    `rateIsStale(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -215,7 +273,11 @@
 
     **Signature**
 
-    `ratesAndStaleForCurrencies(bytes32[] currencyKeys) external`
+    `ratesAndStaleForCurrencies(bytes32[] currencyKeys)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -229,7 +291,11 @@
 
     **Signature**
 
-    `ratesForCurrencies(bytes32[] currencyKeys) external`
+    `ratesForCurrencies(bytes32[] currencyKeys)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -243,5 +309,11 @@
 
     **Signature**
 
-    `rateStalePeriod() external`
+    `rateStalePeriod()`
+
+    **State Mutability**
+
+    `view`
+
+## Variables
 

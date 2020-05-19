@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const md2json = require('md-2-json');
+const md2json = require('./md-2-json');
 
 console.log('Building docs...');
 
@@ -111,8 +111,8 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		Description: {},
 		Architecture: {},
 		Structs: {},
+		Constants: {},
 		Variables: {},
-		Functions: {},
 		Modifiers: {},
 		Events: {},
 	};
@@ -182,16 +182,6 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 		// Inject in struct tables and source
 		curAstDocs.structs.map(x => {
-			// Source
-			const structMdSourceContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
-
-			// Table
-			let structTableMdContent = '| Field | Type |\r\n| ------ | ------ |\n';
-			x.members.map(y => {
-				structTableMdContent += `| ${y.name} | ${y.type} |\n`;
-			});
-			structTableMdContent += '\n\n';
-
 			// So many if/else ... If only we could make this into a monad....
 			if (contentJsonMd.Structs[`\`${x.name}\``] === undefined) {
 				contentJsonMd.Structs[`\`${x.name}\``] = {};
@@ -202,6 +192,41 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 				.split('\n')
 				.filter(x => !x.includes('<sub>'))
 				.join('\n');
+
+			// Source
+			const structMdSourceContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
+
+			// Ad-hoc function to extract out existing description
+			const getExistingDescription = name => {
+				try {
+					const existingRow = curCleanedMd
+						.split('| Field')[1]
+						.split('\n')
+						.filter(x => x.includes('|'))
+						.filter(x => {
+							return (
+								x
+									.split('|')[1]
+									.split(' ')
+									.join('') === name
+							);
+						})[0];
+
+					return existingRow
+						.split('|')
+						.slice(-2)[0]
+						.trim();
+				} catch (e) {
+					return 'TBA';
+				}
+			};
+
+			// Table
+			let structTableMdContent = '| Field | Type | Description |\r\n| ------ | ------ | ------ |\n';
+			x.members.map(y => {
+				structTableMdContent += `| ${y.name} | ${y.type} | ${getExistingDescription(y.name)} |\n`;
+			});
+			structTableMdContent += '\n\n';
 
 			// Overwrite new content obtained from AST while injecting
 			// in existing rich docs (e.g. description)
@@ -218,61 +243,83 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	}
 
 	if (Array.isArray(curAstDocs.variables) && curAstDocs.variables.length > 0) {
-		// Only include variables that are in the source code
-		const curValidVariables = curAstDocs.variables.map(x => `\`${x.name}\``);
-		const invalidVariables = Object.keys(contentJsonMd.Variables).filter(x => !curValidVariables.includes(x));
-		invalidVariables.map(x => {
-			delete contentJsonMd.Variables[x];
-		});
+		const genHeadingsFromVariables = (varHeadingName, vars) => {
+			if (vars.length === 0) {
+				delete contentJsonMd[varHeadingName];
+				return;
+			}
 
-		curAstDocs.variables
-			.filter(x => x.visibility !== 'private')
-			.map(x => {
-				const variableSourceMdContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
-				const variableMdContent = `**Type:** \`${x.type}\`\n\n`;
+			if (contentJsonMd[varHeadingName] === undefined) {
+				contentJsonMd[varHeadingName] = {};
+			}
 
-				// So many if/else ... If only we could make this into a monad....
-				if (contentJsonMd.Variables[`\`${x.name}\``] === undefined) {
-					contentJsonMd.Variables[`\`${x.name}\``] = {};
+			// Only include variables that are in the source code
+			const curValidVariables = vars.map(x => `\`${x.name}\``);
+			const invalidVariables = Object.keys(contentJsonMd[varHeadingName]).filter(x => !curValidVariables.includes(x));
+			invalidVariables.map(x => {
+				delete contentJsonMd[varHeadingName][x];
+			});
+
+			vars.map(x => {
+				if (contentJsonMd[varHeadingName][`\`${x.name}\``] === undefined) {
+					contentJsonMd[varHeadingName][`\`${x.name}\``] = {};
 				}
 
 				// Remove existing <sub>Source</sub> (as we'll insert a new one)
-				const curCleanedMd = (contentJsonMd.Variables[`\`${x.name}\``].raw || '')
+				const curCleanedMd = (contentJsonMd[varHeadingName][`\`${x.name}\``].raw || '')
 					.split('\n')
 					.filter(x => !x.includes('<sub>'))
 					.filter(x => !x.includes('**Type:**'))
 					.join('\n');
 
+				const variableSourceMdContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
+				const variableMdContent = `**Type:** \`${x.type}\`\n\n`;
+
 				// Overwrite new content obtained from AST while injecting
 				// in existing rich docs (e.g. description)
-				contentJsonMd.Variables[`\`${x.name}\``].raw =
+				contentJsonMd[varHeadingName][`\`${x.name}\``].raw =
 					variableSourceMdContent + curCleanedMd.split('| Field')[0] + variableMdContent;
 			});
-	} else {
-		delete contentJsonMd.Variables;
+		};
+
+		const constantVars = curAstDocs.variables.filter(x => x.constant);
+		const otherVars = curAstDocs.variables.filter(x => !x.constant);
+
+		genHeadingsFromVariables('Constants', constantVars);
+		genHeadingsFromVariables('Variables', otherVars);
 	}
 
 	// ******************************************** Functions ******************************************** //
-	if (contentJsonMd.Functions === undefined) {
-		contentJsonMd.Functions = {};
-	}
+	if (Array.isArray(curAstDocs.functions) && curAstDocs.functions.length > 0) {
+		// Ad-hoc function to create headings from functions
+		// e.g. View, Restrictive Functions (Owner), Restrictive Functions (Oracle), etc
+		const genHeadingsFromFunctions = (funcHeadingName, funcs) => {
+			if (funcs.length === 0) {
+				delete contentJsonMd[funcHeadingName];
+				return;
+			}
 
-	if (Array.isArray(curAstDocs.functions) && curAstDocs.functions.filter(x => x.visibility !== 'internal').length > 0) {
-		// Only include functions that are in the source code
-		const curValidFunctions = curAstDocs.functions.map(x => `\`${x.name}\``);
-		const invalidFunctions = Object.keys(contentJsonMd.Functions).filter(x => !curValidFunctions.includes(x));
-		invalidFunctions.map(x => {
-			delete contentJsonMd.Functions[x];
-		});
+			// So many if/else ... If only we could make this into a monad....
+			if (contentJsonMd[funcHeadingName] === undefined) {
+				contentJsonMd[funcHeadingName] = {};
+			}
 
-		curAstDocs.functions
-			.filter(x => x.visibility !== 'internal')
-			.map(x => {
+			// Only include functions that are in the source code
+			const curValidFunctions = funcs.map(x => `\`${x.name}\``);
+			const invalidFunctions = Object.keys(contentJsonMd[funcHeadingName]).filter(x => !curValidFunctions.includes(x));
+			invalidFunctions.map(x => {
+				delete contentJsonMd[funcHeadingName][x];
+			});
+
+			funcs.map(x => {
 				const functionSourceMdContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
 
 				let functionDetailMdContent = '??? example "Details"\n\n';
 				functionDetailMdContent += '    **Signature**\n\n';
 				functionDetailMdContent += `    \`${x.signature}\`\n\n`;
+
+				functionDetailMdContent += '    **State Mutability**\n\n';
+				functionDetailMdContent += `    \`${x.stateMutability}\`\n\n`;
 
 				// Requires
 				if (x.requires.length > 0) {
@@ -298,24 +345,66 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 					functionDetailMdContent += `    * [${y}](#${y.toLowerCase()})\n\n`;
 				});
 
-				// So many if/else ... If only we could make this into a monad....
-				if (contentJsonMd.Functions[`\`${x.name}\``] === undefined) {
-					contentJsonMd.Functions[`\`${x.name}\``] = {};
+				if (contentJsonMd[funcHeadingName][`\`${x.name}\``] === undefined) {
+					contentJsonMd[funcHeadingName][`\`${x.name}\``] = {};
 				}
 
 				// Remove existing <sub>Source</sub> (as we'll insert a new one)
-				const curCleanedMd = (contentJsonMd.Functions[`\`${x.name}\``].raw || '')
+				const curCleanedMd = (contentJsonMd[funcHeadingName][`\`${x.name}\``].raw || '')
 					.split('\n')
 					.filter(x => !x.includes('<sub>'))
 					.join('\n');
 
 				// Overwrite new content obtained from AST while injecting
 				// in existing rich docs (e.g. description)
-				contentJsonMd.Functions[`\`${x.name}\``].raw =
+				contentJsonMd[funcHeadingName][`\`${x.name}\``].raw =
 					functionSourceMdContent + curCleanedMd.split('??? example')[0] + functionDetailMdContent;
 			});
-	} else {
-		delete contentJsonMd.Functions;
+		};
+
+		// Filter out functions
+		const constructorFunc = curAstDocs.functions.filter(x => x.name === 'constructor');
+		const fallbackFunc = curAstDocs.functions
+			.filter(x => x.name === 'fallback')
+			.map(x => {
+				x.name = '() (fallback function)';
+				return x;
+			});
+		const viewFuncs = curAstDocs.functions.filter(x => x.visibility === 'view');
+		const internalFuncs = curAstDocs.functions.filter(x => x.visibility === 'internal');
+		const onlyOwnerFuncs = curAstDocs.functions.filter(x => x.modifiers.includes('onlyOwner'));
+		const onlyOracleFuncs = curAstDocs.functions.filter(x => x.modifiers.includes('onlyOracle'));
+
+		// Already declared functions will be ignored
+		const alreadyDeclaredFunctions = [
+			constructorFunc,
+			fallbackFunc,
+			viewFuncs,
+			internalFuncs,
+			onlyOwnerFuncs,
+			onlyOracleFuncs,
+		]
+			.reduce((acc, x) => Array.prototype.concat(acc, x), [])
+			.map(x => x.name);
+
+		// Misc functions
+		const leftoverFunctions = curAstDocs.functions.filter(x => !alreadyDeclaredFunctions.includes(x.name));
+
+		// Delete existing headings
+		const headingsAndFunctions = [
+			['Function (Constructor)', constructorFunc],
+			['Function (Fallback)', fallbackFunc],
+			['Functions (View)', viewFuncs],
+			['Functions (Internal)', internalFuncs],
+			['Functions (onlyOwner)', onlyOwnerFuncs],
+			['Functions (onlyOracle)', onlyOracleFuncs],
+			['Functions', leftoverFunctions],
+		];
+
+		// Generate function heading
+		headingsAndFunctions.map(([h, f]) => {
+			genHeadingsFromFunctions(h, f);
+		});
 	}
 
 	// ******************************************** Modifiers ******************************************** //
@@ -375,11 +464,60 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		delete contentJsonMd.Events;
 	}
 
+	// ******************************************** Sort ******************************************** //
+	// Sort each sub heading
+	// Unfortunately Object sorting is depending on the order
+	// they're inserted in. And because we're reading from existing state
+	// we can't just inject
+	const sortableH2s = ['Constants', 'Events', 'Modifiers', 'Structs', 'Views', 'Variables'];
+	const functionH2s = 'Function';
+	Object.keys(contentJsonMd)
+		.filter(h2 => sortableH2s.includes(h2) || h2.includes(functionH2s))
+		.map(h2 => {
+			let temp = {};
+
+			Object.keys(contentJsonMd[h2])
+				.sort((a, b) => {
+					const aL = a.toLowerCase();
+					const bL = b.toLowerCase();
+
+					return aL === bL ? 0 : aL > bL ? 1 : -1;
+				})
+				.map(h3 => {
+					temp = { ...temp, ...{ [h3]: contentJsonMd[h2][h3] } };
+				});
+
+			contentJsonMd[h2] = temp;
+		});
+
+	// Sorted contentJson
+	let contentJsonMdSorted = {};
+
+	// Make sure structure like Description, Architecture, etc stays in the same spot
+	Object.keys(contentJsonMd)
+		.filter(h2 => !(sortableH2s.includes(h2) || h2.includes(functionH2s)))
+		.map(h2 => {
+			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
+		});
+
+	// Only for the functions that we're modifying do we want to sort it
+	Object.keys(contentJsonMd)
+		.filter(h2 => sortableH2s.includes(h2) || h2.includes(functionH2s))
+		.sort((a, b) => {
+			const aL = a.toLowerCase();
+			const bL = b.toLowerCase();
+
+			return aL === bL ? 0 : aL > bL ? 1 : -1;
+		})
+		.map(h2 => {
+			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
+		});
+
 	// ******************************************** Write to file ******************************************** //
 	// Convert to raw and write to file
 	// also injects line between each ###
 	const rawMdContent = md2json
-		.toMd({ [contractName]: contentJsonMd })
+		.toMd({ [contractName]: contentJsonMdSorted })
 		.split('###')
 		.join('\n---\n###');
 

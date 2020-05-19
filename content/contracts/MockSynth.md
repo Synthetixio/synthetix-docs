@@ -20,21 +20,29 @@ graph TD
     Proxyable[Proxyable] --> Owned[Owned]
 ```
 
-## Variables
+## Events
 
 
 ---
-### `currencyKey`
+### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L11)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L53)</sub>
 
 
 
-**Type:** `bytes32`
+- `(address account, uint256 value)`
 
-## Functions
+
+---
+### `Issued`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L51)</sub>
+
+
+
+- `(address account, uint256 value)`
+
+## Function (Constructor)
 
 
 ---
@@ -48,11 +56,61 @@ graph TD
 
     **Signature**
 
-    `(address payable _proxy, contract TokenState _tokenState, string _name, string _symbol, uint256 _totalSupply, address _owner, bytes32 _currencyKey) public`
+    `(address payable _proxy, contract TokenState _tokenState, string _name, string _symbol, uint256 _totalSupply, address _owner, bytes32 _currencyKey)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [ExternStateToken](#externstatetoken)
+
+## Functions
+
+
+---
+### `burn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L62)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `burn(address account, uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Emits**
+
+    * [Burned](#burned)
+
+
+---
+### `issue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L56)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `issue(address account, uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Emits**
+
+    * [Issued](#issued)
 
 
 ---
@@ -66,7 +124,11 @@ graph TD
 
     **Signature**
 
-    `setSystemStatus(contract ISystemStatus _status) external`
+    `setSystemStatus(contract ISystemStatus _status)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -80,7 +142,11 @@ graph TD
 
     **Signature**
 
-    `setTotalSupply(uint256 _totalSupply) external`
+    `setTotalSupply(uint256 _totalSupply)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -94,7 +160,11 @@ graph TD
 
     **Signature**
 
-    `transfer(address to, uint256 value) external`
+    `transfer(address to, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
@@ -112,67 +182,39 @@ graph TD
 
     **Signature**
 
-    `transferFrom(address from, address to, uint256 value) external`
+    `transferFrom(address from, address to, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [optionalProxy](#optionalproxy)
 
-
----
-### `issue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L56)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `issue(address account, uint256 amount) external`
-
-    **Emits**
-
-    * [Issued](#issued)
+## Variables
 
 
 ---
-### `burn`
+### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L11)</sub>
 
 
 
-??? example "Details"
 
-    **Signature**
 
-    `burn(address account, uint256 amount) external`
-
-    **Emits**
-
-    * [Burned](#burned)
-
-## Events
+**Type:** `bytes32`
 
 
 ---
-### `Issued`
+### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L51)</sub>
-
-
-
-- `(address account, uint256 value)`
-
-
----
-### `Burned`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L10)</sub>
 
 
 
-- `(address account, uint256 value)`
+
+
+**Type:** `contract ISystemStatus`
 

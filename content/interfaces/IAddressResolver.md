@@ -5,6 +5,8 @@
 
 **Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IAddressResolver.sol)
 
+## Constants
+
 ## Functions
 
 
@@ -19,7 +21,11 @@
 
     **Signature**
 
-    `getAddress(bytes32 name) external`
+    `getAddress(bytes32 name)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -33,7 +39,11 @@
 
     **Signature**
 
-    `getSynth(bytes32 key) external`
+    `getSynth(bytes32 key)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -47,5 +57,11 @@
 
     **Signature**
 
-    `requireAndGetAddress(bytes32 name, string reason) external`
+    `requireAndGetAddress(bytes32 name, string reason)`
+
+    **State Mutability**
+
+    `view`
+
+## Variables
 

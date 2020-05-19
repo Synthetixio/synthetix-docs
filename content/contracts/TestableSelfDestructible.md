@@ -17,7 +17,9 @@ graph TD
     SelfDestructible[SelfDestructible] --> Owned[Owned]
 ```
 
-## Functions
+## Constants
+
+## Function (Constructor)
 
 
 ---
@@ -31,11 +33,17 @@ graph TD
 
     **Signature**
 
-    `(address _owner) public`
+    `(address _owner)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [Owned](#owned)
 
     * [SelfDestructible](#selfdestructible)
+
+## Variables
 

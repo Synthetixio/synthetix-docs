@@ -5,6 +5,8 @@
 
 **Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardsDistribution.sol)
 
+## Constants
+
 ## Functions
 
 
@@ -19,5 +21,11 @@
 
     **Signature**
 
-    `distributeRewards(uint256 amount) external`
+    `distributeRewards(uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+## Variables
 

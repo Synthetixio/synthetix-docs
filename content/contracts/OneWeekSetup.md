@@ -16,25 +16,9 @@ graph TD
     OneWeekSetup[OneWeekSetup] --> LimitedSetup[LimitedSetup]
 ```
 
+## Constants
+
 ## Functions
-
-
----
-### `testFunc`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/OneWeekSetup.sol#L7)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `testFunc() public`
-
-    **Modifiers**
-
-    * [onlyDuringSetup](#onlyduringsetup)
 
 
 ---
@@ -48,5 +32,33 @@ graph TD
 
     **Signature**
 
-    `publicSetupExpiryTime() public`
+    `publicSetupExpiryTime()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `testFunc`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/OneWeekSetup.sol#L7)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `testFunc()`
+
+    **State Mutability**
+
+    `view`
+
+    **Modifiers**
+
+    * [onlyDuringSetup](#onlyduringsetup)
+
+## Variables
 

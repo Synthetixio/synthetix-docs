@@ -7,7 +7,7 @@
 
 ## Australian Dollars (sAUD)
 
-**Address:** [0xF48e200EAF9906362BB1442fca31e0835773b8B4](https://etherscan.io/address/0xF48e200EAF9906362BB1442fca31e0835773b8B4)
+**Address:** [0xF48e200EAF9906362BB1442fca31e0835773b8B4](https://etherscan.io/token/0xF48e200EAF9906362BB1442fca31e0835773b8B4)
 
 **Decimals:** 18
 
@@ -20,7 +20,7 @@
 
 ## Binance Coin (sBNB)
 
-**Address:** [0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848](https://etherscan.io/address/0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848)
+**Address:** [0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848](https://etherscan.io/token/0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848)
 
 **Decimals:** 18
 
@@ -33,7 +33,7 @@
 
 ## Bitcoin (sBTC)
 
-**Address:** [0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6](https://etherscan.io/address/0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6)
+**Address:** [0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6](https://etherscan.io/token/0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6)
 
 **Decimals:** 18
 
@@ -46,7 +46,7 @@
 
 ## Bitcoin Cash (sBCH)
 
-**Address:** [0x36a2422a863D5B950882190Ff5433E513413343a](https://etherscan.io/address/0x36a2422a863D5B950882190Ff5433E513413343a)
+**Address:** [0x36a2422a863D5B950882190Ff5433E513413343a](https://etherscan.io/token/0x36a2422a863D5B950882190Ff5433E513413343a)
 
 **Decimals:** 18
 
@@ -59,7 +59,7 @@
 
 ## Cardano (sADA)
 
-**Address:** [0xe36E2D3c7c34281FA3bC737950a68571736880A1](https://etherscan.io/address/0xe36E2D3c7c34281FA3bC737950a68571736880A1)
+**Address:** [0xe36E2D3c7c34281FA3bC737950a68571736880A1](https://etherscan.io/token/0xe36E2D3c7c34281FA3bC737950a68571736880A1)
 
 **Decimals:** 18
 
@@ -72,7 +72,7 @@
 
 ## Centralised Exchange Index (sCEX)
 
-**Address:** [0xeABACD844A196D7Faf3CE596edeBF9900341B420](https://etherscan.io/address/0xeABACD844A196D7Faf3CE596edeBF9900341B420)
+**Address:** [0xeABACD844A196D7Faf3CE596edeBF9900341B420](https://etherscan.io/token/0xeABACD844A196D7Faf3CE596edeBF9900341B420)
 
 **Decimals:** 18
 
@@ -95,7 +95,7 @@
 
 ## Chainlink (sLINK)
 
-**Address:** [0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6](https://etherscan.io/address/0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6)
+**Address:** [0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6](https://etherscan.io/token/0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6)
 
 **Decimals:** 18
 
@@ -108,7 +108,7 @@
 
 ## Dash (sDASH)
 
-**Address:** [0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6](https://etherscan.io/address/0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6)
+**Address:** [0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6](https://etherscan.io/token/0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6)
 
 **Decimals:** 18
 
@@ -121,7 +121,7 @@
 
 ## DeFi Index (sDEFI)
 
-**Address:** [0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B](https://etherscan.io/address/0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B)
+**Address:** [0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B](https://etherscan.io/token/0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B)
 
 **Decimals:** 18
 
@@ -148,7 +148,7 @@
 
 ## EOS (sEOS)
 
-**Address:** [0x88C8Cf3A212c0369698D13FE98Fcb76620389841](https://etherscan.io/address/0x88C8Cf3A212c0369698D13FE98Fcb76620389841)
+**Address:** [0x88C8Cf3A212c0369698D13FE98Fcb76620389841](https://etherscan.io/token/0x88C8Cf3A212c0369698D13FE98Fcb76620389841)
 
 **Decimals:** 18
 
@@ -161,7 +161,7 @@
 
 ## Ether (sETH)
 
-**Address:** [0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb](https://etherscan.io/address/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb)
+**Address:** [0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb](https://etherscan.io/token/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb)
 
 **Decimals:** 18
 
@@ -174,7 +174,7 @@
 
 ## Ethereum Classic (sETC)
 
-**Address:** [0x22602469d704BfFb0936c7A7cfcD18f7aA269375](https://etherscan.io/address/0x22602469d704BfFb0936c7A7cfcD18f7aA269375)
+**Address:** [0x22602469d704BfFb0936c7A7cfcD18f7aA269375](https://etherscan.io/token/0x22602469d704BfFb0936c7A7cfcD18f7aA269375)
 
 **Decimals:** 18
 
@@ -187,7 +187,7 @@
 
 ## Euros (sEUR)
 
-**Address:** [0xD71eCFF9342A5Ced620049e616c5035F1dB98620](https://etherscan.io/address/0xD71eCFF9342A5Ced620049e616c5035F1dB98620)
+**Address:** [0xD71eCFF9342A5Ced620049e616c5035F1dB98620](https://etherscan.io/token/0xD71eCFF9342A5Ced620049e616c5035F1dB98620)
 
 **Decimals:** 18
 
@@ -200,7 +200,7 @@
 
 ## FTSE 100 Index (sFTSE)
 
-**Address:** [0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC](https://etherscan.io/address/0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC)
+**Address:** [0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC](https://etherscan.io/token/0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC)
 
 **Decimals:** 18
 
@@ -213,7 +213,7 @@
 
 ## Gold Ounce (sXAU)
 
-**Address:** [0x261EfCdD24CeA98652B9700800a13DfBca4103fF](https://etherscan.io/address/0x261EfCdD24CeA98652B9700800a13DfBca4103fF)
+**Address:** [0x261EfCdD24CeA98652B9700800a13DfBca4103fF](https://etherscan.io/token/0x261EfCdD24CeA98652B9700800a13DfBca4103fF)
 
 **Decimals:** 18
 
@@ -226,7 +226,7 @@
 
 ## Inverse Binance Coin (iBNB)
 
-**Address:** [0xAFD870F32CE54EfdBF677466B612bf8ad164454B](https://etherscan.io/address/0xAFD870F32CE54EfdBF677466B612bf8ad164454B)
+**Address:** [0xAFD870F32CE54EfdBF677466B612bf8ad164454B](https://etherscan.io/token/0xAFD870F32CE54EfdBF677466B612bf8ad164454B)
 
 **Decimals:** 18
 
@@ -245,7 +245,7 @@
 
 ## Inverse Bitcoin (iBTC)
 
-**Address:** [0xD6014EA05BDe904448B743833dDF07c3C7837481](https://etherscan.io/address/0xD6014EA05BDe904448B743833dDF07c3C7837481)
+**Address:** [0xD6014EA05BDe904448B743833dDF07c3C7837481](https://etherscan.io/token/0xD6014EA05BDe904448B743833dDF07c3C7837481)
 
 **Decimals:** 18
 
@@ -264,7 +264,7 @@
 
 ## Inverse Bitcoin Cash (iBCH)
 
-**Address:** [0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89](https://etherscan.io/address/0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89)
+**Address:** [0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89](https://etherscan.io/token/0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89)
 
 **Decimals:** 18
 
@@ -283,7 +283,7 @@
 
 ## Inverse Cardano (iADA)
 
-**Address:** [0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83](https://etherscan.io/address/0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83)
+**Address:** [0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83](https://etherscan.io/token/0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83)
 
 **Decimals:** 18
 
@@ -302,7 +302,7 @@
 
 ## Inverse Centralised Exchange Index (iCEX)
 
-**Address:** [0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d](https://etherscan.io/address/0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d)
+**Address:** [0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d](https://etherscan.io/token/0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d)
 
 **Decimals:** 18
 
@@ -323,7 +323,7 @@
 
 ## Inverse Chainlink (iLINK)
 
-**Address:** [0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01](https://etherscan.io/address/0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01)
+**Address:** [0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01](https://etherscan.io/token/0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01)
 
 **Decimals:** 18
 
@@ -342,7 +342,7 @@
 
 ## Inverse Dash (iDASH)
 
-**Address:** [0xCB98f42221b2C251A4E74A1609722eE09f0cc08E](https://etherscan.io/address/0xCB98f42221b2C251A4E74A1609722eE09f0cc08E)
+**Address:** [0xCB98f42221b2C251A4E74A1609722eE09f0cc08E](https://etherscan.io/token/0xCB98f42221b2C251A4E74A1609722eE09f0cc08E)
 
 **Decimals:** 18
 
@@ -361,7 +361,7 @@
 
 ## Inverse DeFi Index (iDEFI)
 
-**Address:** [0x14d10003807AC60d07BB0ba82cAeaC8d2087c157](https://etherscan.io/address/0x14d10003807AC60d07BB0ba82cAeaC8d2087c157)
+**Address:** [0x14d10003807AC60d07BB0ba82cAeaC8d2087c157](https://etherscan.io/token/0x14d10003807AC60d07BB0ba82cAeaC8d2087c157)
 
 **Decimals:** 18
 
@@ -382,7 +382,7 @@
 
 ## Inverse EOS (iEOS)
 
-**Address:** [0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4](https://etherscan.io/address/0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4)
+**Address:** [0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4](https://etherscan.io/token/0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4)
 
 **Decimals:** 18
 
@@ -401,7 +401,7 @@
 
 ## Inverse Ether (iETH)
 
-**Address:** [0xA9859874e1743A32409f75bB11549892138BBA1E](https://etherscan.io/address/0xA9859874e1743A32409f75bB11549892138BBA1E)
+**Address:** [0xA9859874e1743A32409f75bB11549892138BBA1E](https://etherscan.io/token/0xA9859874e1743A32409f75bB11549892138BBA1E)
 
 **Decimals:** 18
 
@@ -420,7 +420,7 @@
 
 ## Inverse Ethereum Classic (iETC)
 
-**Address:** [0xd50c1746D835d2770dDA3703B69187bFfeB14126](https://etherscan.io/address/0xd50c1746D835d2770dDA3703B69187bFfeB14126)
+**Address:** [0xd50c1746D835d2770dDA3703B69187bFfeB14126](https://etherscan.io/token/0xd50c1746D835d2770dDA3703B69187bFfeB14126)
 
 **Decimals:** 18
 
@@ -439,7 +439,7 @@
 
 ## Inverse Litecoin (iLTC)
 
-**Address:** [0x79da1431150C9b82D2E5dfc1C68B33216846851e](https://etherscan.io/address/0x79da1431150C9b82D2E5dfc1C68B33216846851e)
+**Address:** [0x79da1431150C9b82D2E5dfc1C68B33216846851e](https://etherscan.io/token/0x79da1431150C9b82D2E5dfc1C68B33216846851e)
 
 **Decimals:** 18
 
@@ -458,7 +458,7 @@
 
 ## Inverse Monero (iXMR)
 
-**Address:** [0x4AdF728E2Df4945082cDD6053869f51278fae196](https://etherscan.io/address/0x4AdF728E2Df4945082cDD6053869f51278fae196)
+**Address:** [0x4AdF728E2Df4945082cDD6053869f51278fae196](https://etherscan.io/token/0x4AdF728E2Df4945082cDD6053869f51278fae196)
 
 **Decimals:** 18
 
@@ -477,7 +477,7 @@
 
 ## Inverse Ripple (iXRP)
 
-**Address:** [0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6](https://etherscan.io/address/0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6)
+**Address:** [0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6](https://etherscan.io/token/0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6)
 
 **Decimals:** 18
 
@@ -496,7 +496,7 @@
 
 ## Inverse TRON (iTRX)
 
-**Address:** [0xC5807183a9661A533CB08CbC297594a0B864dc12](https://etherscan.io/address/0xC5807183a9661A533CB08CbC297594a0B864dc12)
+**Address:** [0xC5807183a9661A533CB08CbC297594a0B864dc12](https://etherscan.io/token/0xC5807183a9661A533CB08CbC297594a0B864dc12)
 
 **Decimals:** 18
 
@@ -515,7 +515,7 @@
 
 ## Inverse Tezos (iXTZ)
 
-**Address:** [0x8deef89058090ac5655A99EEB451a4f9183D1678](https://etherscan.io/address/0x8deef89058090ac5655A99EEB451a4f9183D1678)
+**Address:** [0x8deef89058090ac5655A99EEB451a4f9183D1678](https://etherscan.io/token/0x8deef89058090ac5655A99EEB451a4f9183D1678)
 
 **Decimals:** 18
 
@@ -534,7 +534,7 @@
 
 ## Japanese Yen (sJPY)
 
-**Address:** [0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d](https://etherscan.io/address/0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d)
+**Address:** [0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d](https://etherscan.io/token/0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d)
 
 **Decimals:** 18
 
@@ -547,7 +547,7 @@
 
 ## Litecoin (sLTC)
 
-**Address:** [0xC14103C2141E842e228FBaC594579e798616ce7A](https://etherscan.io/address/0xC14103C2141E842e228FBaC594579e798616ce7A)
+**Address:** [0xC14103C2141E842e228FBaC594579e798616ce7A](https://etherscan.io/token/0xC14103C2141E842e228FBaC594579e798616ce7A)
 
 **Decimals:** 18
 
@@ -560,7 +560,7 @@
 
 ## Monero (sXMR)
 
-**Address:** [0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A](https://etherscan.io/address/0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A)
+**Address:** [0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A](https://etherscan.io/token/0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A)
 
 **Decimals:** 18
 
@@ -573,7 +573,7 @@
 
 ## Nikkei 225 Index (sNIKKEI)
 
-**Address:** [0x757de3ac6B830a931eF178C6634c5C551773155c](https://etherscan.io/address/0x757de3ac6B830a931eF178C6634c5C551773155c)
+**Address:** [0x757de3ac6B830a931eF178C6634c5C551773155c](https://etherscan.io/token/0x757de3ac6B830a931eF178C6634c5C551773155c)
 
 **Decimals:** 18
 
@@ -586,7 +586,7 @@
 
 ## Pound Sterling (sGBP)
 
-**Address:** [0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F](https://etherscan.io/address/0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F)
+**Address:** [0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F](https://etherscan.io/token/0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F)
 
 **Decimals:** 18
 
@@ -599,7 +599,7 @@
 
 ## Ripple (sXRP)
 
-**Address:** [0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c](https://etherscan.io/address/0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c)
+**Address:** [0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c](https://etherscan.io/token/0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c)
 
 **Decimals:** 18
 
@@ -612,7 +612,7 @@
 
 ## Silver Ounce (sXAG)
 
-**Address:** [0x6A22e5e94388464181578Aa7A6B869e00fE27846](https://etherscan.io/address/0x6A22e5e94388464181578Aa7A6B869e00fE27846)
+**Address:** [0x6A22e5e94388464181578Aa7A6B869e00fE27846](https://etherscan.io/token/0x6A22e5e94388464181578Aa7A6B869e00fE27846)
 
 **Decimals:** 18
 
@@ -625,7 +625,7 @@
 
 ## Swiss Franc (sCHF)
 
-**Address:** [0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d](https://etherscan.io/address/0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d)
+**Address:** [0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d](https://etherscan.io/token/0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d)
 
 **Decimals:** 18
 
@@ -638,7 +638,7 @@
 
 ## Synthetix (SNX)
 
-**Address:** [0xC011A72400E58ecD99Ee497CF89E3775d4bd732F](https://etherscan.io/address/0xC011A72400E58ecD99Ee497CF89E3775d4bd732F)
+**Address:** [0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F](https://etherscan.io/token/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F)
 
 **Decimals:** 18
 
@@ -651,7 +651,7 @@
 
 ## TRON (sTRX)
 
-**Address:** [0xf2E08356588EC5cd9E437552Da87C0076b4970B0](https://etherscan.io/address/0xf2E08356588EC5cd9E437552Da87C0076b4970B0)
+**Address:** [0xf2E08356588EC5cd9E437552Da87C0076b4970B0](https://etherscan.io/token/0xf2E08356588EC5cd9E437552Da87C0076b4970B0)
 
 **Decimals:** 18
 
@@ -664,7 +664,7 @@
 
 ## Tezos (sXTZ)
 
-**Address:** [0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd](https://etherscan.io/address/0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd)
+**Address:** [0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd](https://etherscan.io/token/0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd)
 
 **Decimals:** 18
 
@@ -677,7 +677,7 @@
 
 ## US Dollars (sUSD)
 
-**Address:** [0x57Ab1E02fEE23774580C119740129eAC7081e9D3](https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3)
+**Address:** [0x57Ab1ec28D129707052df4dF418D58a2D46d5f51](https://etherscan.io/token/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51)
 
 **Decimals:** 18
 

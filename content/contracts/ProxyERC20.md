@@ -24,7 +24,12 @@ graph TD
     Proxy[Proxy] --> Owned[Owned]
 ```
 
-## Functions
+## Description
+
+
+**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol)
+
+## Function (Constructor)
 
 
 ---
@@ -38,81 +43,17 @@ graph TD
 
     **Signature**
 
-    `(address _owner) public`
+    `(address _owner)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [Proxy](#proxy)
 
-
----
-### `name`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L14)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `name() public`
-
-
----
-### `symbol`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L19)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `symbol() public`
-
-
----
-### `decimals`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L24)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `decimals() public`
-
-
----
-### `totalSupply`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L34)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `totalSupply() public`
-
-
----
-### `balanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L44)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `balanceOf(address account) public`
+## Functions
 
 
 ---
@@ -126,21 +67,11 @@ graph TD
 
     **Signature**
 
-    `allowance(address owner, address spender) public`
+    `allowance(address owner, address spender)`
 
+    **State Mutability**
 
----
-### `transfer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L65)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `transfer(address to, uint256 value) public`
+    `view`
 
 
 ---
@@ -154,7 +85,119 @@ graph TD
 
     **Signature**
 
-    `approve(address spender, uint256 value) public`
+    `approve(address spender, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `balanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L44)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `balanceOf(address account)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `decimals`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L24)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `decimals()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `name`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L14)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `name()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `symbol`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L19)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `symbol()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `totalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L34)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `totalSupply()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `transfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L65)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `transfer(address to, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -168,10 +211,11 @@ graph TD
 
     **Signature**
 
-    `transferFrom(address from, address to, uint256 value) public`
+    `transferFrom(address from, address to, uint256 value)`
 
-## Description
+    **State Mutability**
 
+    `nonpayable`
 
-**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol)
+## Variables
 

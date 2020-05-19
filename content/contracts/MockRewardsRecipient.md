@@ -17,21 +17,19 @@ graph TD
     RewardsDistributionRecipient[RewardsDistributionRecipient] --> Owned[Owned]
 ```
 
-## Variables
+## Events
 
 
 ---
-### `rewardsAvailable`
+### `RewardAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L8)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L17)</sub>
 
 
 
-**Type:** `uint256`
+- `(uint256 amount)`
 
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -45,11 +43,17 @@ graph TD
 
     **Signature**
 
-    `(address _owner) public`
+    `(address _owner)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [Owned](#owned)
+
+## Functions
 
 
 ---
@@ -63,7 +67,11 @@ graph TD
 
     **Signature**
 
-    `notifyRewardAmount(uint256 reward) external`
+    `notifyRewardAmount(uint256 reward)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
@@ -73,15 +81,17 @@ graph TD
 
     * [RewardAdded](#rewardadded)
 
-## Events
+## Variables
 
 
 ---
-### `RewardAdded`
+### `rewardsAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L8)</sub>
 
 
 
-- `(uint256 amount)`
+
+
+**Type:** `uint256`
 

@@ -5,77 +5,31 @@
 
 **Source:** [contracts/interfaces/IERC20.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol)
 
+## Constants
+
+## Events
+
+
+---
+### `Approval`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L33)</sub>
+
+
+
+- `(address owner, address spender, uint256 value)`
+
+
+---
+### `Transfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L31)</sub>
+
+
+
+- `(address from, address to, uint256 value)`
+
 ## Functions
-
-
----
-### `name`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L6)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `name() external`
-
-
----
-### `symbol`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L8)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `symbol() external`
-
-
----
-### `decimals`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L10)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `decimals() external`
-
-
----
-### `totalSupply`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L13)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `totalSupply() external`
-
-
----
-### `balanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L15)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `balanceOf(address owner) external`
 
 
 ---
@@ -89,21 +43,11 @@
 
     **Signature**
 
-    `allowance(address owner, address spender) external`
+    `allowance(address owner, address spender)`
 
+    **State Mutability**
 
----
-### `transfer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L20)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `transfer(address to, uint256 value) external`
+    `view`
 
 
 ---
@@ -117,7 +61,119 @@
 
     **Signature**
 
-    `approve(address spender, uint256 value) external`
+    `approve(address spender, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `balanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L15)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `balanceOf(address owner)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `decimals`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L10)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `decimals()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `name`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L6)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `name()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `symbol`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L8)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `symbol()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `totalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L13)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `totalSupply()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `transfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L20)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `transfer(address to, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -131,27 +187,11 @@
 
     **Signature**
 
-    `transferFrom(address from, address to, uint256 value) external`
+    `transferFrom(address from, address to, uint256 value)`
 
-## Events
+    **State Mutability**
 
+    `nonpayable`
 
----
-### `Transfer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L31)</sub>
-
-
-
-- `(address from, address to, uint256 value)`
-
-
----
-### `Approval`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L33)</sub>
-
-
-
-- `(address owner, address spender, uint256 value)`
+## Variables
 

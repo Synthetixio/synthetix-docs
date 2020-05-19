@@ -41,70 +41,31 @@ graph TD
 
 - [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
 
-## Variables
+## Constants
 
 
 ---
-### `maxSupplyToPurgeInUSD`
+### `CONTRACT_EXRATES`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L18)</sub>
-
-
-
-Purging this Synth is disallowed unless the value of its supply is less than this. Initialised to $100\,000$.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L20)</sub>
 
 
 
 
-**Type:** `uint256`
 
-## Functions
+**Type:** `bytes32`
 
 
 ---
-### `purge`
+### `PURGED_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L49)</sub>
-
-
-
-Allows the owner to liquidate all holders of this token back to `sUSD` if the total value of this Synth is worth less than [`maxSupplyToPurgeInUSD`](#maxsupplytopurgeinusd) US dollars at current prices, or if the token is an inverse synth whose price is frozen.
-
-
-If this is successfully invoked, balances in the provided list of addresses will be deleted, and an equivalent value of sUSD credited to their account.
-
-
-??? example "Details"
-
-    **Signature**
-
-    `purge(address[] addresses) external`
-
-    **Requires**
-
-    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L55)
-
-    **Modifiers**
-
-    * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
-
-
----
-### `constructor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L74)</sub>
 
 
 
-??? example "Details"
 
-    **Signature**
 
-    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address payable _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver) public`
-
-    **Modifiers**
-
-    * [Synth](#synth)
+**Type:** `bytes32`
 
 ## Events
 
@@ -126,4 +87,117 @@ This event is emitted from the Synth's [proxy](Proxy.md#_emit) with the `emitPur
 
 
 - `(address account, uint256 value)`
+
+## Function (Constructor)
+
+
+---
+### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L24)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address payable _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [Synth](#synth)
+
+## Functions
+
+
+---
+### `purge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L49)</sub>
+
+
+
+Allows the owner to liquidate all holders of this token back to `sUSD` if the total value of this Synth is worth less than [`maxSupplyToPurgeInUSD`](#maxsupplytopurgeinusd) US dollars at current prices, or if the token is an inverse synth whose price is frozen.
+
+
+If this is successfully invoked, balances in the provided list of addresses will be deleted, and an equivalent value of sUSD credited to their account.
+
+
+??? example "Details"
+
+    **Signature**
+
+    `purge(address[] addresses)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L55)
+
+    **Modifiers**
+
+    * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
+
+## Functions (Internal)
+
+
+---
+### `emitPurged`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L76)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `emitPurged(address account, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `exchangeRates`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L39)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeRates()`
+
+    **State Mutability**
+
+    `view`
+
+## Variables
+
+
+---
+### `maxSupplyToPurgeInUSD`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L18)</sub>
+
+
+
+Purging this Synth is disallowed unless the value of its supply is less than this. Initialised to $100\,000$.
+
+
+
+
+**Type:** `uint256`
 

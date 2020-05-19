@@ -5,6 +5,8 @@
 
 **Source:** [contracts/test-helpers/PublicMath.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicMath.sol)
 
+## Constants
+
 ## Functions
 
 
@@ -19,5 +21,11 @@
 
     **Signature**
 
-    `powerDecimal(uint256 x, uint256 y) public`
+    `powerDecimal(uint256 x, uint256 y)`
+
+    **State Mutability**
+
+    `pure`
+
+## Variables
 

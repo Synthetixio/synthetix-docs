@@ -41,12 +41,10 @@ graph TD
 ??? example "Details"
 
 
-```
-- [`oracle`](#oracle): This address is not actually a contract, but it is the source of prices for this contract.
-- [`Aggregators`](#aggregators): These are a collection of decentralized pricing networks that collect and aggregate results from a network of oracles.
-- [`PurgeableSynth`](PurgeableSynth.md): exchange rates are used to determine if the total token value is below the purge threshold.
-- [`Synthetix`](Synthetix.md): the value of tokens is used to in order to facilitate exchange between them, and to ensure exchanges cannot occur while price updates and being made or if a particular exchange rate is stale.
-```
+    - [`oracle`](#oracle): This address is not actually a contract, but it is the source of prices for this contract.
+    - [`Aggregators`](#aggregators): These are a collection of decentralized pricing networks that collect and aggregate results from a network of oracles.
+    - [`PurgeableSynth`](PurgeableSynth.md): exchange rates are used to determine if the total token value is below the purge threshold.
+    - [`Synthetix`](Synthetix.md): the value of tokens is used to in order to facilitate exchange between them, and to ensure exchanges cannot occur while price updates and being made or if a particular exchange rate is stale.
 
 
 ---
@@ -61,161 +59,6 @@ graph TD
 
 - [`AggregatorInterface`](https://github.com/smartcontractkit/chainlink/blob/5ab3cd2777590701007cc02941cb94179e79f3ba/evm/contracts/interfaces/AggregatorInterface.sol) - Each of these interfaces correspond to a decentralized pricing network facilitated by Chainlink that collect and aggregatate results from a network of oracles. See [Aggregator.sol](https://github.com/smartcontractkit/chainlink/blob/5ab3cd2777590701007cc02941cb94179e79f3ba/evm/contracts/Aggregator.sol) for the implementation.s
 
-## Structs
-
-
----
-### `InversePricing`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L45)</sub>
-
-
-
-Holds necessary information for computing the price of [inverse Synths](../tokens.md#inverse-synths).
-
-
-| Field | Type |
-| ------ | ------ |
-| entryPoint | uint256 |
-| upperLimit | uint256 |
-| lowerLimit | uint256 |
-| frozen | bool |
-
-
-
----
-### `RateAndUpdatedTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L21)</sub>
-
-
-
-| Field | Type |
-| ------ | ------ |
-| rate | uint216 |
-| time | uint40 |
-
-
-## Constants
-
-
----
-### `ORACLE_FUTURE_LIMIT`
-
-The maximum time in the future ($10$ minutes) that rates are allowed to be set for.
-
-
-**Type:** `uint constant`
-
-
-**Value:** `10 minutes`
-
-
-## Variables
-
-
----
-### `aggregators`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L33)</sub>
-
-
-
-For each currency with a decentralized aggregated pricing network, return the Aggregation contract address.
-
-
-
-
-**Type:** `mapping(bytes32 => contract AggregatorInterface)`
-
-
----
-### `aggregatorKeys`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L36)</sub>
-
-
-
-A list of the keys of currencies with a decentralized aggregated pricing network.
-
-
-
-
-**Type:** `bytes32[]`
-
-
----
-### `inversePricing`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L51)</sub>
-
-
-
-For each currency with an inverse index, keep the necessary [`InversePricing`](#inversepricing) information to maintain the index.
-
-
-
-
-**Type:** `mapping(bytes32 => struct ExchangeRates.InversePricing)`
-
-
----
-### `invertedKeys`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L52)</sub>
-
-
-
-A list of the keys of currencies with an inverted index.
-
-
-
-
-**Type:** `bytes32[]`
-
-
----
-### `oracle`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L30)</sub>
-
-
-
-The address which is permitted to push rate updates to the contract.
-
-
-
-
-**Type:** `address`
-
-
----
-### `rateStalePeriod`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L42)</sub>
-
-
-
-The duration after which a rate will be considered out of date. Synth exchange and other price-sensitive transactions in the [`Synthetix`](Synthetix.md) contract will not operate if a relevant rate is stale.
-Initialised to $3$ hours.
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `currentRoundForRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L54)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => uint256)`
-
 ## Constructor
 
 Initialises the oracle address and initial currency prices, along with the inherited [`SelfDestructible`](SelfDestructible.md) instance.
@@ -224,508 +67,44 @@ Initialises the oracle address and initial currency prices, along with the inher
 ??? example "Details"
 
 
-```
-**Signature**
+    **Signature**
+    
+    `constructor(address _owner, address _oracle, bytes32[] _currencyKeys, uint[] _newRates) public`
+    
+    **Superconstructors**
+    
+    * [`SelfDestructible(_owner)`](SelfDestructible.md#constructor)
+    
+    **Preconditions**
+    
+    * `_currencyKeys` and `_newRates` must be the same length.
+    * `"sUSD"` must not appear in `_currencyKeys`.
+    * $0$ must not appear in `_newRates`.
 
-`constructor(address _owner, address _oracle, bytes32[] _currencyKeys, uint[] _newRates) public`
-
-**Superconstructors**
-
-* [`SelfDestructible(_owner)`](SelfDestructible.md#constructor)
-
-**Preconditions**
-
-* `_currencyKeys` and `_newRates` must be the same length.
-* `"sUSD"` must not appear in `_currencyKeys`.
-* $0$ must not appear in `_newRates`.
-```
-
-## Views
+## Description
 
 
----
-### `anyRateIsStale`
+**Source:** [contracts/ExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol)
 
-Loop over the given array of currencies and return true if any of them [is stale](#rateisstale). `sUSD`'s rate is never stale. Rates for nonexistent currencies are always stale.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`anyRateIsStale(bytes32[] currencyKeys) external view returns (bool)`
-```
+## Constants
 
 
 ---
-### `effectiveValue`
+### `ORACLE_FUTURE_LIMIT`
 
-Given a quantity of a source currency, returns a quantity of a destination currency that is of equivalent value at current exchange rates, if those rates are fresh.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L39)</sub>
 
 
-The effective value is computed as a simple ratio of the prices of the currencies concerned. That is, to convert a quantity $Q_A$ of currency $A$ to currency $B$ at prices $\pi_A$ and $\pi_B$, the quantity $Q_B$ received is:
 
+The maximum time in the future ($10$ minutes) that rates are allowed to be set for.
 
-$$
-Q_B = Q_A \frac{\pi_A}{\pi_B}
-$$
 
+**Value:** `10 minutes`
 
-This computation is simple because all fractional quantities in the Synthetix system except for the [debt ledger](SynthetixState.md#debtledger) are [18 decimal fixed point numbers](SafeDecimalMath.md).
 
 
-??? example "Details"
 
-
-```
-**Signature**
-
-`effectiveValue(bytes32 sourceCurrencyKey, uint sourceAmount, bytes32 destinationCurrencyKey) public view returns (uint)`
-
-**Modifiers**
-
-* [`rateNotStale(sourceCurrencyKey)`](#ratenotstale)
-* [`rateNotStale(destinationCurrencyKey)`](#ratenotstale))
-
-**Preconditions**
-
-* Neither the source nor destination currency prices may be stale.
-```
-
-
----
-### `lastRateUpdateTimes`
-
-Retrieves the timestamp the given rate was last updated. Accessed by the same keys as [`rates`](#rates) is.
-
-
-??? example "Details"
-
-
-```
-***Signature***
-
-`lastRateUpdateTimes(bytes32 code) public view returns(uint256)`
-```
-
-
----
-### `lastRateUpdateTimesForCurrencies`
-
-Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
-
-
-??? example "Details"
-
-
-```
-***Signature***
-
-`lastRateUpdateTimesForCurrencies(bytes32[] currencyKeys) public view returns(uint[])`
-```
-
-
----
-### `ratesForCurrencies`
-
-Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`ratesForCurrencies(bytes32[] currencyKeys) public view returns (uint[])`
-```
-
-
----
-### `rateForCurrency`
-
-Returns the last recorded rate for the given currency. This is just an alias to the public mapping `rates`, so it could probably be eliminated.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`rateForCurrency(bytes32 currencyKey) public view returns (uint)`
-```
-
-
----
-### `rateIsFrozen`
-
-Returns true if the inverse price for the given currency is frozen. This is simply an alias to [`inversePricing[currencyKey].frozen`](#inversepricing). Currencies without an inverse price will naturally return false.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`rateIsFrozen(bytes32 currencyKey) external view returns (bool)`
-```
-
-
----
-### `rateIsStale`
-
-The rate for a given currency is stale if its last update occurred more than [`rateStalePeriod`](#ratestaleperiod) seconds ago.
-
-
-`sUSD` is a special case; since its rate is fixed at $1.0$, it is never stale. The rates of nonexistent currencies are always stale.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`rateIsStale(bytes32 currencyKey) public view returns (bool)`
-```
-
-
----
-### `rates`
-
-Retrieves the exchange rate (`sUSD` per unit) for a given currency key (`sUSD`, `SNX`, et cetera). These prices are stored as [18 decimal place fixed point numbers](SafeDecimalMath.md).
-
-
-??? example "Details"
-
-
-```
-***Signature***
-
-`rates(bytes32 code) public view returns(uint256)`
-```
-
-## Restricted Functions (Oracle)
-
-
----
-### `deleteRate`
-
-Deletes a currency's price and its update time from the ExchangeRates contract.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`deleteRate(bytes32 currencyKey) external`
-
-**Modifiers**
-
-* [`onlyOracle`](#onlyoracle)
-
-**Preconditions**
-
-* The specified currency must not already have been deleted.
-
-**Emits**
-
-* [`RateDeleted(currencyKey)`](#ratedeleted)
-```
-
-
----
-### `updateRates`
-
-Allows the oracle to update exchange rates in the contract. Otherwise this is just an alias to [`internalUpdateRates`](#internalupdaterates).
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`updateRates(bytes32[] currencyKeys, uint[] newRates, uint timeSent) external returns (bool)`
-
-**Modifiers**
-
-* [`onlyOracle`](#onlyoracle)
-```
-
-## Restricted Functions (Owner)
-
-
----
-### `removeInversePricing`
-
-Allows the owner to remove an inverse index for a particular currency.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`removeInversePricing(bytes32 currencyKey) external`
-
-**Modifiers**
-
-* [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-**Emits**
-
-* [`InversePriceConfigured(currencyKey, 0, 0, 0)`](#inversepriceconfigured)
-```
-
-
----
-### `setInversePricing`
-
-Allows the owner to set up an inverse index for a particular currency. See [`rateOrInverted`](#rateorinverted) for computation details. New inverse indexes begin unfrozen.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`setInversePricing(bytes32 currencyKey, uint entryPoint, uint upperLimit, uint lowerLimit, bool freeze, bool freezeAtUpperLimit) external`
-
-**Modifiers**
-
-* [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-**Preconditions**
-
-* `entryPoint` must be greater than zero.
-* `lowerLimit` must be greater than zero.
-* `entryPoint` must be less than `upperLimit`.
-* `upperLimit` must be less than twice `entryPoint`.
-* `lowerLimit` must be less than `entryPoint`.
-
-!!! info
-    Together these entail that $0 \lt \text{lowerLimit} \lt \text{entryPoint} \lt \text{upperLimit} \lt 2 \times \text{entryPoint}$.
-
-    Observe that the first precondition here is redundant, as two of the others imply it.
-
-**Emits**
-
-* [`InversePriceConfigured(currencyKey, entryPoint, upperLimit, lowerLimit)`](#inversepriceconfigured)
-```
-
-
----
-### `setOracle`
-
-Allows the owner to set the address which is permitted to send prices to this contract.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`setOracle(address _oracle) external`
-
-**Modifiers**
-
-* [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-**Emits**
-
-* [`OracleUpdated(_oracle)`](#oracleupdated)
-```
-
-
----
-### `setRateStalePeriod`
-
-Allows the owner to set the time after which rates will be considered stale.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`setRateStalePeriod(uint _time) external`
-
-**Modifiers**
-
-* [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-**Emits**
-
-* [`RateStalePeriodUpdated(_time)`](#ratestaleperiodupdated)
-```
-
-## Internal Functions
-
-
----
-### `getRateAndUpdatedTime`
-
-Helper function gets a `RateAndUpdatedTime` struct for the given currency key.
-
-
-??? example "Details"
-
-
-```
-***Signature***
-
-`getRateAndUpdatedTime(bytes32 code) internal returns (RateAndUpdatedTime)`
-```
-
-
----
-### `internalUpdateRates`
-
-Record the set of provided rates and the timestamp, handling any inverse indexes with [`rateOrInverted`](#rateorinverted). At this stage inverse indexes which escaped their bounds are frozen. Any rate with a more recent update time is skipped.
-
-
-Finally, the [price update lock](#priceupdatelock) is reset, reenabling Synth exchange functionality.
-
-
-The `timeSent` argument is useful for maintaining the exact age of the data points even as transactions can take a variable amount of time to confirm. Without this, earlier updates could possibly overwrite later ones.
-
-
-Returns true if no exception was thrown.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`internalUpdateRates(bytes32[] currencyKeys, uint[] newRates, uint timeSent) internal returns (bool)`
-
-**Preconditions**
-
-* `currencyKeys` and `newRates` must be the same length.
-* `timeSent` must be less than [`ORACLE_FUTURE_LIMIT`](#oracle_future_limit) seconds in the future.
-* `"sUSD"` must not appear in `currencyKeys`.
-* $0$ must not appear in `newRates`.
-
-**Emits**
-
-* [`InversePriceFrozen(currencyKey)`](#inversepricefrozen) if `currencyKey`'s price has gone out of range.
-* [`RatesUpdated(currencyKeys, newRates)`](#ratesupdated)
-```
-
-
----
-### `rateOrInverted`
-
-Returns the current price for a specified currency key.
-
-
-If a currency is not an inverted index, then just return the rate that was passed in.
-If the currency is an inverted index, return the inverted rate. If the inverted price reaches one of its limits, freeze its rate at the limit it breached. Future calls to a frozen inverted index will return the last recorded rate. That is, frozen rates can no longer be updated.
-
-
-An inverted rate moves exactly inverse to the underlying price; if the underlying price moves up a dollar, the inverted price moves down a dollar.
-The price $\bar{p}$ of an [inverse index](#inversepricing) $c$ with base price $p$, entry point $e$, and lower and upper limits $l$ and $u$ respectively, is computed as:
-
-
-$$
-\bar{p} = \text{clamp(}2e - p, \ l, \ u\text{)}
-$$
-
-
-With $0 \lt l \lt e \lt u \lt 2e$ enforced by [`setInversePricing`](#setinversepricing).[^1]
-
-
-[^1]: The [clamp function](https://en.cppreference.com/w/cpp/algorithm/clamp) can be defined thus: `clamp(v, l, u) = min(max(v, l), u)`.
-
-
-So if $p$ moves from $e$ to $e + \delta$, then $\bar{p}$ moves to $e - \delta$, if it would not be frozen.
-$\bar{p}$ is frozen whenever $\bar{p} \in \{l,u\}$; that is, when $2e - l \le p$ or $p \le 2e - u$. This implies that $p$ can never exceed twice its entry point without $\bar{p}$ being frozen, but in principle it could reach almost to zero.
-
-
-??? example "Details"
-
-
-```
-**Signature**
-
-`rateOrInverted(bytes32 currencyKey, uint rate) internal returns (uint)`
-
-**Emits**
-
-* [`InversePriceFrozen(currencyKey)`](#inversepricefrozen) if `currencyKey`'s price has gone out of range.
-```
-
-
----
-### `removeFromArray`
-
-Helper function that removes an `entry` from an existing array in storage. Returns `true` if found and removed, `false` otherwise.
-
-
-??? example "Details"
-
-
-```
-***Signature***
-
-`removeFromArray(bytes32 entry, bytes32[] storage array) internal returns (bool)`
-```
-
-
----
-### `_setRate`
-
-Updates the rate and timestamp for the individual rate using an internal struct.
-
-
-??? example "Details"
-
-
-```
-***Signature***
-
-`_setRate(bytes32 code, uint256 rate, uint256 time) internal`
-```
-
-## Modifiers
-
-
----
-### `onlyOracle`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L564)</sub>
-
-
-
-Reverts the transaction if `msg.sender` is not the [`oracle`](#oracle).
-
-
-
----
-### `rateNotStale`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L559)</sub>
-
-
-
-Reverts the transaction if the given currency's rate is stale.
-
-
-**Signature:** `rateNotStale(bytes32 currencyKey)`
-
+**Type:** `uint256`
 
 ## Events
 
@@ -811,6 +190,26 @@ Records that the anointed oracle was updated.
 
 
 ---
+### `RateDeleted`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L574)</sub>
+
+
+
+- `(bytes32 currencyKey)`
+
+
+---
+### `RatesDeleted`
+
+Records that the price for a particular currency was deleted.
+
+
+**Signature:** `RateDeleted(bytes32 currencyKey)`
+
+
+
+---
 ### `RateStalePeriodUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L572)</sub>
@@ -841,32 +240,7 @@ Records that a set of currency prices were updated.
 
 - `(bytes32[] currencyKeys, uint256[] newRates)`
 
-
----
-### `RatesDeleted`
-
-Records that the price for a particular currency was deleted.
-
-
-**Signature:** `RateDeleted(bytes32 currencyKey)`
-
-
-
----
-### `RateDeleted`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L574)</sub>
-
-
-
-- `(bytes32 currencyKey)`
-
-## Description
-
-
-**Source:** [contracts/ExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol)
-
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -880,7 +254,11 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `(address _owner, address _oracle, bytes32[] _currencyKeys, uint256[] _newRates) public`
+    `(address _owner, address _oracle, bytes32[] _currencyKeys, uint256[] _newRates)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Requires**
 
@@ -892,11 +270,13 @@ Records that the price for a particular currency was deleted.
 
     * [SelfDestructible](#selfdestructible)
 
+## Functions
+
 
 ---
-### `setOracle`
+### `anyRateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L370)</sub>
 
 
 
@@ -904,21 +284,347 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `setOracle(address _oracle) external`
+    `anyRateIsStale(bytes32[] currencyKeys)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `effectiveValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L296)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+
+    **State Mutability**
+
+    `view`
 
     **Modifiers**
 
-    * [onlyOwner](#onlyowner)
+    * [rateNotStale](#ratenotstale)
+
+    * [rateNotStale](#ratenotstale)
+
+
+---
+### `effectiveValueAtRound`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L248)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest)`
+
+    **State Mutability**
+
+    `view`
+
+    **Modifiers**
+
+    * [rateNotStale](#ratenotstale)
+
+    * [rateNotStale](#ratenotstale)
+
+
+---
+### `getCurrentRoundId`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L239)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `getCurrentRoundId(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `getLastRoundIdBeforeElapsedSecs`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L220)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `lastRateUpdateTimes`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L273)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `lastRateUpdateTimes(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `lastRateUpdateTimesForCurrencies`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L280)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `lastRateUpdateTimesForCurrencies(bytes32[] currencyKeys)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `rateAndTimestampAtRound`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L264)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `rateForCurrency`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L314)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `rateForCurrency(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `rateIsFrozen`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L363)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `rateIsFrozen(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `rateIsStale`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L353)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `rateIsStale(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `ratesAndStaleForCurrencies`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L334)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `ratesAndStaleForCurrencies(bytes32[] currencyKeys)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `ratesForCurrencies`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L321)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `ratesForCurrencies(bytes32[] currencyKeys)`
+
+    **State Mutability**
+
+    `view`
+
+## Functions (Internal)
+
+
+---
+### `_setRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L387)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `_setRate(bytes32 currencyKey, uint256 rate, uint256 time)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `getRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L553)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `getRate(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `getRateAndTimestampAtRound`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L543)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `getRateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `getRateAndUpdatedTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L506)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `getRateAndUpdatedTime(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `internalUpdateRates`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L409)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `internalUpdateRates(bytes32[] currencyKeys, uint256[] newRates, uint256 timeSent)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Currency key array length must match rates array length.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L414)
+
+    * [require(..., Time is too far into the future)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L415)
 
     **Emits**
 
-    * [OracleUpdated](#oracleupdated)
+    * [RatesUpdated](#ratesupdated)
 
 
 ---
-### `setRateStalePeriod`
+### `rateOrInverted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L468)</sub>
 
 
 
@@ -926,21 +632,17 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `setRateStalePeriod(uint256 _time) external`
+    `rateOrInverted(bytes32 currencyKey, uint256 rate)`
 
-    **Modifiers**
+    **State Mutability**
 
-    * [onlyOwner](#onlyowner)
-
-    **Emits**
-
-    * [RateStalePeriodUpdated](#ratestaleperiodupdated)
+    `nonpayable`
 
 
 ---
-### `updateRates`
+### `removeFromArray`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L524)</sub>
 
 
 
@@ -948,11 +650,13 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `updateRates(bytes32[] currencyKeys, uint256[] newRates, uint256 timeSent) external`
+    `removeFromArray(bytes32 entry, bytes32[] array)`
 
-    **Modifiers**
+    **State Mutability**
 
-    * [onlyOracle](#onlyoracle)
+    `nonpayable`
+
+## Functions (onlyOracle)
 
 
 ---
@@ -966,7 +670,11 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `deleteRate(bytes32 currencyKey) external`
+    `deleteRate(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Requires**
 
@@ -982,43 +690,9 @@ Records that the price for a particular currency was deleted.
 
 
 ---
-### `setInversePricing`
+### `updateRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L135)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `setInversePricing(bytes32 currencyKey, uint256 entryPoint, uint256 upperLimit, uint256 lowerLimit, bool freeze, bool freezeAtUpperLimit) external`
-
-    **Requires**
-
-    * [require(..., entryPoint must be above 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L143)
-
-    * [require(..., lowerLimit must be above 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L144)
-
-    * [require(..., upperLimit must be above the entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L145)
-
-    * [require(..., upperLimit must be less than double entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L146)
-
-    * [require(..., lowerLimit must be below the entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L147)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-    **Emits**
-
-    * [InversePriceConfigured](#inversepriceconfigured)
-
-
----
-### `removeInversePricing`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L174)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L97)</sub>
 
 
 
@@ -1026,15 +700,17 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `removeInversePricing(bytes32 currencyKey) external`
+    `updateRates(bytes32[] currencyKeys, uint256[] newRates, uint256 timeSent)`
 
-    **Requires**
+    **State Mutability**
 
-    * [require(..., No inverted price exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L175)
+    `nonpayable`
 
     **Modifiers**
 
-    * [onlyOwner](#onlyowner)
+    * [onlyOracle](#onlyoracle)
+
+## Functions (onlyOwner)
 
 
 ---
@@ -1048,7 +724,11 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `addAggregator(bytes32 currencyKey, address aggregatorAddress) external`
+    `addAggregator(bytes32 currencyKey, address aggregatorAddress)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Requires**
 
@@ -1074,7 +754,11 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `removeAggregator(bytes32 currencyKey) external`
+    `removeAggregator(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Requires**
 
@@ -1086,23 +770,9 @@ Records that the price for a particular currency was deleted.
 
 
 ---
-### `getLastRoundIdBeforeElapsedSecs`
+### `removeInversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L220)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff) external`
-
-
----
-### `getCurrentRoundId`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L174)</sub>
 
 
 
@@ -1110,33 +780,25 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `getCurrentRoundId(bytes32 currencyKey) external`
+    `removeInversePricing(bytes32 currencyKey)`
 
+    **State Mutability**
 
----
-### `effectiveValueAtRound`
+    `nonpayable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L248)</sub>
+    **Requires**
 
-
-
-??? example "Details"
-
-    **Signature**
-
-    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest) external`
+    * [require(..., No inverted price exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L175)
 
     **Modifiers**
 
-    * [rateNotStale](#ratenotstale)
-
-    * [rateNotStale](#ratenotstale)
+    * [onlyOwner](#onlyowner)
 
 
 ---
-### `rateAndTimestampAtRound`
+### `setInversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L264)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L135)</sub>
 
 
 
@@ -1144,61 +806,37 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId) external`
+    `setInversePricing(bytes32 currencyKey, uint256 entryPoint, uint256 upperLimit, uint256 lowerLimit, bool freeze, bool freezeAtUpperLimit)`
 
+    **State Mutability**
 
----
-### `lastRateUpdateTimes`
+    `nonpayable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L273)</sub>
+    **Requires**
 
+    * [require(..., entryPoint must be above 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L143)
 
+    * [require(..., lowerLimit must be above 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L144)
 
-??? example "Details"
+    * [require(..., upperLimit must be above the entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L145)
 
-    **Signature**
+    * [require(..., upperLimit must be less than double entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L146)
 
-    `lastRateUpdateTimes(bytes32 currencyKey) public`
-
-
----
-### `lastRateUpdateTimesForCurrencies`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L280)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `lastRateUpdateTimesForCurrencies(bytes32[] currencyKeys) public`
-
-
----
-### `effectiveValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L296)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) public`
+    * [require(..., lowerLimit must be below the entryPoint)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L147)
 
     **Modifiers**
 
-    * [rateNotStale](#ratenotstale)
+    * [onlyOwner](#onlyowner)
 
-    * [rateNotStale](#ratenotstale)
+    **Emits**
+
+    * [InversePriceConfigured](#inversepriceconfigured)
 
 
 ---
-### `rateForCurrency`
+### `setOracle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L77)</sub>
 
 
 
@@ -1206,13 +844,25 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `rateForCurrency(bytes32 currencyKey) external`
+    `setOracle(address _oracle)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [OracleUpdated](#oracleupdated)
 
 
 ---
-### `ratesForCurrencies`
+### `setRateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L321)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L82)</sub>
 
 
 
@@ -1220,61 +870,616 @@ Records that the price for a particular currency was deleted.
 
     **Signature**
 
-    `ratesForCurrencies(bytes32[] currencyKeys) external`
+    `setRateStalePeriod(uint256 _time)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [RateStalePeriodUpdated](#ratestaleperiodupdated)
+
+## Internal Functions
 
 
 ---
-### `ratesAndStaleForCurrencies`
+### `_setRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L334)</sub>
-
+Updates the rate and timestamp for the individual rate using an internal struct.
 
 
 ??? example "Details"
 
-    **Signature**
 
-    `ratesAndStaleForCurrencies(bytes32[] currencyKeys) external`
+    ***Signature***
+    
+    `_setRate(bytes32 code, uint256 rate, uint256 time) internal`
 
 
 ---
-### `rateIsStale`
+### `getRateAndUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L353)</sub>
-
+Helper function gets a `RateAndUpdatedTime` struct for the given currency key.
 
 
 ??? example "Details"
 
-    **Signature**
 
-    `rateIsStale(bytes32 currencyKey) public`
+    ***Signature***
+    
+    `getRateAndUpdatedTime(bytes32 code) internal returns (RateAndUpdatedTime)`
 
 
 ---
-### `rateIsFrozen`
+### `internalUpdateRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L363)</sub>
+Record the set of provided rates and the timestamp, handling any inverse indexes with [`rateOrInverted`](#rateorinverted). At this stage inverse indexes which escaped their bounds are frozen. Any rate with a more recent update time is skipped.
 
+
+Finally, the [price update lock](#priceupdatelock) is reset, reenabling Synth exchange functionality.
+
+
+The `timeSent` argument is useful for maintaining the exact age of the data points even as transactions can take a variable amount of time to confirm. Without this, earlier updates could possibly overwrite later ones.
+
+
+Returns true if no exception was thrown.
 
 
 ??? example "Details"
 
-    **Signature**
 
-    `rateIsFrozen(bytes32 currencyKey) external`
+    **Signature**
+    
+    `internalUpdateRates(bytes32[] currencyKeys, uint[] newRates, uint timeSent) internal returns (bool)`
+    
+    **Preconditions**
+    
+    * `currencyKeys` and `newRates` must be the same length.
+    * `timeSent` must be less than [`ORACLE_FUTURE_LIMIT`](#oracle_future_limit) seconds in the future.
+    * `"sUSD"` must not appear in `currencyKeys`.
+    * $0$ must not appear in `newRates`.
+    
+    **Emits**
+    
+    * [`InversePriceFrozen(currencyKey)`](#inversepricefrozen) if `currencyKey`'s price has gone out of range.
+    * [`RatesUpdated(currencyKeys, newRates)`](#ratesupdated)
+
+
+---
+### `rateOrInverted`
+
+Returns the current price for a specified currency key.
+
+
+If a currency is not an inverted index, then just return the rate that was passed in.
+If the currency is an inverted index, return the inverted rate. If the inverted price reaches one of its limits, freeze its rate at the limit it breached. Future calls to a frozen inverted index will return the last recorded rate. That is, frozen rates can no longer be updated.
+
+
+An inverted rate moves exactly inverse to the underlying price; if the underlying price moves up a dollar, the inverted price moves down a dollar.
+The price $\bar{p}$ of an [inverse index](#inversepricing) $c$ with base price $p$, entry point $e$, and lower and upper limits $l$ and $u$ respectively, is computed as:
+
+
+$$
+\bar{p} = \text{clamp(}2e - p, \ l, \ u\text{)}
+$$
+
+
+With $0 \lt l \lt e \lt u \lt 2e$ enforced by [`setInversePricing`](#setinversepricing).[^1]
+
+
+[^1]: The [clamp function](https://en.cppreference.com/w/cpp/algorithm/clamp) can be defined thus: `clamp(v, l, u) = min(max(v, l), u)`.
+
+
+So if $p$ moves from $e$ to $e + \delta$, then $\bar{p}$ moves to $e - \delta$, if it would not be frozen.
+$\bar{p}$ is frozen whenever $\bar{p} \in \{l,u\}$; that is, when $2e - l \le p$ or $p \le 2e - u$. This implies that $p$ can never exceed twice its entry point without $\bar{p}$ being frozen, but in principle it could reach almost to zero.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `rateOrInverted(bytes32 currencyKey, uint rate) internal returns (uint)`
+    
+    **Emits**
+    
+    * [`InversePriceFrozen(currencyKey)`](#inversepricefrozen) if `currencyKey`'s price has gone out of range.
+
+
+---
+### `removeFromArray`
+
+Helper function that removes an `entry` from an existing array in storage. Returns `true` if found and removed, `false` otherwise.
+
+
+??? example "Details"
+
+
+    ***Signature***
+    
+    `removeFromArray(bytes32 entry, bytes32[] storage array) internal returns (bool)`
+
+## Modifiers
+
+
+---
+### `onlyOracle`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L564)</sub>
+
+
+
+Reverts the transaction if `msg.sender` is not the [`oracle`](#oracle).
+
+
+
+---
+### `rateNotStale`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L559)</sub>
+
+
+
+Reverts the transaction if the given currency's rate is stale.
+
+
+**Signature:** `rateNotStale(bytes32 currencyKey)`
+
+
+## Restricted Functions (Oracle)
+
+
+---
+### `deleteRate`
+
+Deletes a currency's price and its update time from the ExchangeRates contract.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `deleteRate(bytes32 currencyKey) external`
+    
+    **Modifiers**
+    
+    * [`onlyOracle`](#onlyoracle)
+    
+    **Preconditions**
+    
+    * The specified currency must not already have been deleted.
+    
+    **Emits**
+    
+    * [`RateDeleted(currencyKey)`](#ratedeleted)
+
+
+---
+### `updateRates`
+
+Allows the oracle to update exchange rates in the contract. Otherwise this is just an alias to [`internalUpdateRates`](#internalupdaterates).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `updateRates(bytes32[] currencyKeys, uint[] newRates, uint timeSent) external returns (bool)`
+    
+    **Modifiers**
+    
+    * [`onlyOracle`](#onlyoracle)
+
+## Restricted Functions (Owner)
+
+
+---
+### `removeInversePricing`
+
+Allows the owner to remove an inverse index for a particular currency.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `removeInversePricing(bytes32 currencyKey) external`
+    
+    **Modifiers**
+    
+    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    
+    **Emits**
+    
+    * [`InversePriceConfigured(currencyKey, 0, 0, 0)`](#inversepriceconfigured)
+
+
+---
+### `setInversePricing`
+
+Allows the owner to set up an inverse index for a particular currency. See [`rateOrInverted`](#rateorinverted) for computation details. New inverse indexes begin unfrozen.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `setInversePricing(bytes32 currencyKey, uint entryPoint, uint upperLimit, uint lowerLimit, bool freeze, bool freezeAtUpperLimit) external`
+    
+    **Modifiers**
+    
+    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    
+    **Preconditions**
+    
+    * `entryPoint` must be greater than zero.
+    * `lowerLimit` must be greater than zero.
+    * `entryPoint` must be less than `upperLimit`.
+    * `upperLimit` must be less than twice `entryPoint`.
+    * `lowerLimit` must be less than `entryPoint`.
+    
+    !!! info
+        Together these entail that $0 \lt \text{lowerLimit} \lt \text{entryPoint} \lt \text{upperLimit} \lt 2 \times \text{entryPoint}$.
+    
+        Observe that the first precondition here is redundant, as two of the others imply it.
+    
+    **Emits**
+    
+    * [`InversePriceConfigured(currencyKey, entryPoint, upperLimit, lowerLimit)`](#inversepriceconfigured)
+
+
+---
+### `setOracle`
+
+Allows the owner to set the address which is permitted to send prices to this contract.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `setOracle(address _oracle) external`
+    
+    **Modifiers**
+    
+    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    
+    **Emits**
+    
+    * [`OracleUpdated(_oracle)`](#oracleupdated)
+
+
+---
+### `setRateStalePeriod`
+
+Allows the owner to set the time after which rates will be considered stale.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `setRateStalePeriod(uint _time) external`
+    
+    **Modifiers**
+    
+    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    
+    **Emits**
+    
+    * [`RateStalePeriodUpdated(_time)`](#ratestaleperiodupdated)
+
+## Structs
+
+
+---
+### `InversePricing`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L45)</sub>
+
+
+
+Holds necessary information for computing the price of [inverse Synths](../tokens.md#inverse-synths).
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| entryPoint | uint256 | The underlying asset's price at the time the inverse index was set up. Must be strictly greater than $0$. |
+| upperLimit | uint256 | The upper limit of the _inverse_ price. Must lie strictly between entryPoint and twice entryPoint. |
+| lowerLimit | uint256 | The lower limit of the _inverse_ price. Must lie strictly between $0$ and entryPoint. |
+| frozen | bool | True if an inverse Synth has breached one of its limits. |
+
+
+
+---
+### `RateAndUpdatedTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L21)</sub>
+
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| rate | uint216 | TBA |
+| time | uint40 | TBA |
+
+
+## Variables
+
+
+---
+### `_rates`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L27)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => mapping(uint256 => struct ExchangeRates.RateAndUpdatedTime))`
+
+
+---
+### `aggregatorKeys`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L36)</sub>
+
+
+
+A list of the keys of currencies with a decentralized aggregated pricing network.
+
+
+
+
+**Type:** `bytes32[]`
+
+
+---
+### `aggregators`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L33)</sub>
+
+
+
+For each currency with a decentralized aggregated pricing network, return the Aggregation contract address.
+
+
+
+
+**Type:** `mapping(bytes32 => contract AggregatorInterface)`
+
+
+---
+### `currentRoundForRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L54)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => uint256)`
+
+
+---
+### `inversePricing`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L51)</sub>
+
+
+
+For each currency with an inverse index, keep the necessary [`InversePricing`](#inversepricing) information to maintain the index.
+
+
+
+
+**Type:** `mapping(bytes32 => struct ExchangeRates.InversePricing)`
+
+
+---
+### `invertedKeys`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L52)</sub>
+
+
+
+A list of the keys of currencies with an inverted index.
+
+
+
+
+**Type:** `bytes32[]`
+
+
+---
+### `oracle`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L30)</sub>
+
+
+
+The address which is permitted to push rate updates to the contract.
+
+
+
+
+**Type:** `address`
+
+
+---
+### `rateStalePeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L42)</sub>
+
+
+
+The duration after which a rate will be considered out of date. Synth exchange and other price-sensitive transactions in the [`Synthetix`](Synthetix.md) contract will not operate if a relevant rate is stale.
+Initialised to $3$ hours.
+
+
+
+
+**Type:** `uint256`
+
+## Views
 
 
 ---
 ### `anyRateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L370)</sub>
-
+Loop over the given array of currencies and return true if any of them [is stale](#rateisstale). `sUSD`'s rate is never stale. Rates for nonexistent currencies are always stale.
 
 
 ??? example "Details"
 
-    **Signature**
 
-    `anyRateIsStale(bytes32[] currencyKeys) external`
+    **Signature**
+    
+    `anyRateIsStale(bytes32[] currencyKeys) external view returns (bool)`
+
+
+---
+### `effectiveValue`
+
+Given a quantity of a source currency, returns a quantity of a destination currency that is of equivalent value at current exchange rates, if those rates are fresh.
+
+
+The effective value is computed as a simple ratio of the prices of the currencies concerned. That is, to convert a quantity $Q_A$ of currency $A$ to currency $B$ at prices $\pi_A$ and $\pi_B$, the quantity $Q_B$ received is:
+
+
+$$
+Q_B = Q_A \frac{\pi_A}{\pi_B}
+$$
+
+
+This computation is simple because all fractional quantities in the Synthetix system except for the [debt ledger](SynthetixState.md#debtledger) are [18 decimal fixed point numbers](SafeDecimalMath.md).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `effectiveValue(bytes32 sourceCurrencyKey, uint sourceAmount, bytes32 destinationCurrencyKey) public view returns (uint)`
+    
+    **Modifiers**
+    
+    * [`rateNotStale(sourceCurrencyKey)`](#ratenotstale)
+    * [`rateNotStale(destinationCurrencyKey)`](#ratenotstale))
+    
+    **Preconditions**
+    
+    * Neither the source nor destination currency prices may be stale.
+
+
+---
+### `lastRateUpdateTimes`
+
+Retrieves the timestamp the given rate was last updated. Accessed by the same keys as [`rates`](#rates) is.
+
+
+??? example "Details"
+
+
+    ***Signature***
+    
+    `lastRateUpdateTimes(bytes32 code) public view returns(uint256)`
+
+
+---
+### `lastRateUpdateTimesForCurrencies`
+
+Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
+
+
+??? example "Details"
+
+
+    ***Signature***
+    
+    `lastRateUpdateTimesForCurrencies(bytes32[] currencyKeys) public view returns(uint[])`
+
+
+---
+### `rateForCurrency`
+
+Returns the last recorded rate for the given currency. This is just an alias to the public mapping `rates`, so it could probably be eliminated.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `rateForCurrency(bytes32 currencyKey) public view returns (uint)`
+
+
+---
+### `rateIsFrozen`
+
+Returns true if the inverse price for the given currency is frozen. This is simply an alias to [`inversePricing[currencyKey].frozen`](#inversepricing). Currencies without an inverse price will naturally return false.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `rateIsFrozen(bytes32 currencyKey) external view returns (bool)`
+
+
+---
+### `rateIsStale`
+
+The rate for a given currency is stale if its last update occurred more than [`rateStalePeriod`](#ratestaleperiod) seconds ago.
+
+
+`sUSD` is a special case; since its rate is fixed at $1.0$, it is never stale. The rates of nonexistent currencies are always stale.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `rateIsStale(bytes32 currencyKey) public view returns (bool)`
+
+
+---
+### `rates`
+
+Retrieves the exchange rate (`sUSD` per unit) for a given currency key (`sUSD`, `SNX`, et cetera). These prices are stored as [18 decimal place fixed point numbers](SafeDecimalMath.md).
+
+
+??? example "Details"
+
+
+    ***Signature***
+    
+    `rates(bytes32 code) public view returns(uint256)`
+
+
+---
+### `ratesForCurrencies`
+
+Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `ratesForCurrencies(bytes32[] currencyKeys) public view returns (uint[])`
 

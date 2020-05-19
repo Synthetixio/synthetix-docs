@@ -5,21 +5,9 @@
 
 **Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol)
 
+## Constants
+
 ## Functions
-
-
----
-### `numVestingEntries`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L5)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `numVestingEntries(address account) external`
 
 
 ---
@@ -33,5 +21,29 @@
 
     **Signature**
 
-    `getVestingScheduleEntry(address account, uint256 index) external`
+    `getVestingScheduleEntry(address account, uint256 index)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `numVestingEntries`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L5)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `numVestingEntries(address account)`
+
+    **State Mutability**
+
+    `view`
+
+## Variables
 

@@ -6,9 +6,7 @@
 !!! todo "Work in Progress"
 
 
-```
-This needs filling in
-```
+    This needs filling in
 
 ## Description
 
@@ -44,7 +42,65 @@ graph TD
 
 - ?
 
-## Constants
+## Functions
+
+
+---
+### `notifyRewardAmount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L11)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `notifyRewardAmount(uint256 reward)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+## Functions (onlyOwner)
+
+
+---
+### `setRewardsDistribution`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L18)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `setRewardsDistribution(address _rewardsDistribution)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+## Internal & Restricted Mutative Functions
+
+## Modifiers
+
+
+---
+### `onlyRewardsDistribution`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L13)</sub>
+
+
+
+## Owner Mutative Functions
+
+## Public Mutative Functions
 
 ## Variables
 
@@ -61,54 +117,4 @@ graph TD
 **Type:** `address`
 
 ## Views
-
-## Public Mutative Functions
-
-## Owner Mutative Functions
-
-## Internal & Restricted Mutative Functions
-
-## Modifiers
-
-
----
-### `onlyRewardsDistribution`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L13)</sub>
-
-
-
-## Functions
-
-
----
-### `notifyRewardAmount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L11)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `notifyRewardAmount(uint256 reward) external`
-
-
----
-### `setRewardsDistribution`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L18)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `setRewardsDistribution(address _rewardsDistribution) external`
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
 

@@ -5,21 +5,7 @@
 
 **Source:** [contracts/test-helpers/MockEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol)
 
-## Variables
-
-
----
-### `totalIssuedSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol#L10)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -33,21 +19,13 @@
 
     **Signature**
 
-    `() public`
+    `()`
 
+    **State Mutability**
 
----
-### `openLoan`
+    `nonpayable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol#L15)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `openLoan(uint256 amount) external`
+## Functions
 
 
 ---
@@ -61,5 +39,41 @@
 
     **Signature**
 
-    `closeLoan(uint256 amount) external`
+    `closeLoan(uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `openLoan`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol#L15)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `openLoan(uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+## Variables
+
+
+---
+### `totalIssuedSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol#L10)</sub>
+
+
+
+
+
+**Type:** `uint256`
 

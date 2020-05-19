@@ -5,9 +5,7 @@
 !!! info "General Ethereum Proxy Architecture"
 
 
-```
-The typical smart contact Proxy pattern is discussed in depth [here](https://blog.openzeppelin.com/proxy-patterns/) and [here](https://fravoll.github.io/solidity-patterns/proxy_delegate.html). This implementation has its own architecture, however, and is not identical to most other proxy contracts.
-```
+    The typical smart contact Proxy pattern is discussed in depth [here](https://blog.openzeppelin.com/proxy-patterns/) and [here](https://fravoll.github.io/solidity-patterns/proxy_delegate.html). This implementation has its own architecture, however, and is not identical to most other proxy contracts.
 
 The Synthetix proxy sits in front of an underlying target contract. Any calls made to the proxy [are forwarded](#fallback-function) to that target contract, so it appears as if the target was called. This is designed to allow a contract to be upgraded without altering its address.
 In Synthetix, this proxy typically operates in tandem with a [`Proxyable`](Proxyable.md) instance as its target. In this configuration, events are always emitted at the proxy, not at the target, even if the target is called directly.
@@ -75,39 +73,25 @@ graph TD
 
 - [Proxyable](Proxyable.md)
 
-## Variables
+## Events
 
 
 ---
-### `target`
+### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L12)</sub>
-
-
-
-The underlying contract this proxy is standing in front of.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L104)</sub>
 
 
 
-
-**Type:** `contract Proxyable`
-
-
----
-### `useDELEGATECALL`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L13)</sub>
+The proxy's target contract was changed.
 
 
-
-This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The contract is in `DELEGATECALL` mode iff `useDELEGATECALL` is true.
-
+**Signature:** `TargetUpdated(Proxyable newTarget)`
 
 
+- `(contract Proxyable newTarget)`
 
-**Type:** `bool`
-
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -117,64 +101,41 @@ This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The 
 
 
 
-Initialises the inherited [`Owned`](Owned.md) instance.
-
-
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner) public`
+    `(address _owner)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [Owned](#owned)
 
+## Function (Fallback)
+
 
 ---
-### `setTarget`
+### `() (fallback function)`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L62)</sub>
 
-
-
-Sets the address this proxy forwards its calls to.
 
 
 ??? example "Details"
 
     **Signature**
 
-    `setTarget(contract Proxyable _target) external`
+    `()`
 
-    **Modifiers**
+    **State Mutability**
 
-    * [onlyOwner](#onlyowner)
+    `payable`
 
-    **Emits**
-
-    * [TargetUpdated](#targetupdated)
-
-
----
-### `setUseDELEGATECALL`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L22)</sub>
-
-
-
-Selects which call style to use by setting [`useDELEGATECALL`](#usedelegatecall).
-
-
-??? example "Details"
-
-    **Signature**
-
-    `setUseDELEGATECALL(bool value) external`
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
+## Functions
 
 
 ---
@@ -211,27 +172,31 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 !!! caution
 
 
-```
-If this proxy contract were to be rewritten with Solidity v0.5.0 or above, it would be necessary to slightly simplify the calls to `abi.encode` with `abi.encodeWithSignature`.
-
-See [the official Solidity documentation](https://solidity.readthedocs.io/en/v0.5.11/050-breaking-changes.html#semantic-and-syntactic-changes) for more discussion. The exact behaviour of the abi encoding functions is defined [here](https://github.com/ethereum/solidity/blob/7dcc47ed57f5a6ea3761e54da5a4d7bbe055b5a7/libsolidity/codegen/ExpressionCompiler.cpp#L973).
-```
+    If this proxy contract were to be rewritten with Solidity v0.5.0 or above, it would be necessary to slightly simplify the calls to `abi.encode` with `abi.encodeWithSignature`.
+    
+    See [the official Solidity documentation](https://solidity.readthedocs.io/en/v0.5.11/050-breaking-changes.html#semantic-and-syntactic-changes) for more discussion. The exact behaviour of the abi encoding functions is defined [here](https://github.com/ethereum/solidity/blob/7dcc47ed57f5a6ea3761e54da5a4d7bbe055b5a7/libsolidity/codegen/ExpressionCompiler.cpp#L973).
 
 ??? example "Details"
 
     **Signature**
 
-    `_emit(bytes callData, uint256 numTopics, bytes32 topic1, bytes32 topic2, bytes32 topic3, bytes32 topic4) external`
+    `_emit(bytes callData, uint256 numTopics, bytes32 topic1, bytes32 topic2, bytes32 topic3, bytes32 topic4)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [onlyTarget](#onlytarget)
 
+## Functions (onlyOwner)
+
 
 ---
-### `fallback`
+### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L17)</sub>
 
 
 
@@ -239,7 +204,41 @@ See [the official Solidity documentation](https://solidity.readthedocs.io/en/v0.
 
     **Signature**
 
-    `() external`
+    `setTarget(contract Proxyable _target)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [TargetUpdated](#targetupdated)
+
+
+---
+### `setUseDELEGATECALL`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L22)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `setUseDELEGATECALL(bool value)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
 
 ## Modifiers
 
@@ -254,21 +253,35 @@ See [the official Solidity documentation](https://solidity.readthedocs.io/en/v0.
 Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
 
-## Events
+## Variables
 
 
 ---
-### `TargetUpdated`
+### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L104)</sub>
-
-
-
-The proxy's target contract was changed.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L12)</sub>
 
 
-**Signature:** `TargetUpdated(Proxyable newTarget)`
+
+The underlying contract this proxy is standing in front of.
 
 
-- `(contract Proxyable newTarget)`
+
+
+**Type:** `contract Proxyable`
+
+
+---
+### `useDELEGATECALL`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L13)</sub>
+
+
+
+This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The contract is in `DELEGATECALL` mode iff `useDELEGATECALL` is true.
+
+
+
+
+**Type:** `bool`
 

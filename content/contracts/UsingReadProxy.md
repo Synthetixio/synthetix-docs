@@ -5,21 +5,7 @@
 
 **Source:** [contracts/test-helpers/UsingReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol)
 
-## Variables
-
-
----
-### `resolver`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol#L8)</sub>
-
-
-
-
-
-**Type:** `contract IAddressResolver`
-
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -33,7 +19,13 @@
 
     **Signature**
 
-    `(contract IAddressResolver _resolver) public`
+    `(contract IAddressResolver _resolver)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+## Functions
 
 
 ---
@@ -47,9 +39,27 @@
 
     **Signature**
 
-    `run(bytes32 currencyKey) external`
+    `run(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
     **Requires**
 
     * [require(..., Missing ExchangeRates)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol#L16)
+
+## Variables
+
+
+---
+### `resolver`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol#L8)</sub>
+
+
+
+
+
+**Type:** `contract IAddressResolver`
 

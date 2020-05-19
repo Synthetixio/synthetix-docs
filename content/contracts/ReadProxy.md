@@ -6,9 +6,7 @@
 !!! todo "Work in Progress"
 
 
-```
-This needs filling in
-```
+    This needs filling in
 
 ## Description
 
@@ -44,7 +42,95 @@ graph TD
 
 - ?
 
-## Constants
+## Events
+
+
+---
+### `TargetUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L36)</sub>
+
+
+
+- `(address newTarget)`
+
+## Function (Constructor)
+
+
+---
+### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L12)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `(address _owner)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [Owned](#owned)
+
+## Function (Fallback)
+
+
+---
+### `() (fallback function)`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L19)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `()`
+
+    **State Mutability**
+
+    `nonpayable`
+
+## Functions (onlyOwner)
+
+
+---
+### `setTarget`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L14)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `setTarget(address _target)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [TargetUpdated](#targetupdated)
+
+## Internal & Restricted Mutative Functions
+
+## Owner Mutative Functions
+
+## Public Mutative Functions
 
 ## Variables
 
@@ -61,81 +147,4 @@ graph TD
 **Type:** `address`
 
 ## Views
-
-## Public Mutative Functions
-
-## Owner Mutative Functions
-
-## Internal & Restricted Mutative Functions
-
-## Events
-
---
-
-
-
----
-### `TargetUpdated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L36)</sub>
-
-
-
-- `(address newTarget)`
-
-## Functions
-
-
----
-### `constructor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L12)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `(address _owner) public`
-
-    **Modifiers**
-
-    * [Owned](#owned)
-
-
----
-### `setTarget`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L14)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `setTarget(address _target) external`
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-    **Emits**
-
-    * [TargetUpdated](#targetupdated)
-
-
----
-### `fallback`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L19)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `() external`
 

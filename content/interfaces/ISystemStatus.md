@@ -5,35 +5,9 @@
 
 **Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol)
 
+## Constants
+
 ## Functions
-
-
----
-### `requireSystemActive`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L6)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `requireSystemActive() external`
-
-
----
-### `requireIssuanceActive`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L8)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `requireIssuanceActive() external`
 
 
 ---
@@ -47,7 +21,29 @@
 
     **Signature**
 
-    `requireExchangeActive() external`
+    `requireExchangeActive()`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `requireIssuanceActive`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L8)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `requireIssuanceActive()`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -61,7 +57,11 @@
 
     **Signature**
 
-    `requireSynthActive(bytes32 currencyKey) external`
+    `requireSynthActive(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -75,5 +75,29 @@
 
     **Signature**
 
-    `requireSynthsActive(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) external`
+    `requireSynthsActive(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `requireSystemActive`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L6)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `requireSystemActive()`
+
+    **State Mutability**
+
+    `view`
+
+## Variables
 

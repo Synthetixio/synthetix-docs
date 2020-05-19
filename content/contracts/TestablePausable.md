@@ -17,21 +17,7 @@ graph TD
     Pausable[Pausable] --> Owned[Owned]
 ```
 
-## Variables
-
-
----
-### `someValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TestablePausable.sol#L11)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -45,13 +31,19 @@ graph TD
 
     **Signature**
 
-    `(address _owner) public`
+    `(address _owner)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [Owned](#owned)
 
     * [Pausable](#pausable)
+
+## Functions
 
 
 ---
@@ -65,9 +57,27 @@ graph TD
 
     **Signature**
 
-    `setSomeValue(uint256 _value) external`
+    `setSomeValue(uint256 _value)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [notPaused](#notpaused)
+
+## Variables
+
+
+---
+### `someValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TestablePausable.sol#L11)</sub>
+
+
+
+
+
+**Type:** `uint256`
 

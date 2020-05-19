@@ -6,9 +6,7 @@
 !!! todo "Work in Progress"
 
 
-```
-This needs filling in
-```
+    This needs filling in
 
 ## Description
 
@@ -48,15 +46,7 @@ graph TD
 
 ## Constants
 
-## Views
-
-## Public Mutative Functions
-
-## Owner Mutative Functions
-
-## Internal & Restricted Mutative Functions
-
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -70,9 +60,23 @@ graph TD
 
     **Signature**
 
-    `(address _owner, address _issuer) public`
+    `(address _owner, address _issuer)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [EternalStorage](#eternalstorage)
+
+## Internal & Restricted Mutative Functions
+
+## Owner Mutative Functions
+
+## Public Mutative Functions
+
+## Variables
+
+## Views
 

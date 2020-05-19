@@ -5,6 +5,8 @@
 
 **Source:** [contracts/interfaces/ISynthetix.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol)
 
+## Constants
+
 ## Functions
 
 
@@ -19,7 +21,11 @@
 
     **Signature**
 
-    `availableCurrencyKeys() external`
+    `availableCurrencyKeys()`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -33,175 +39,11 @@
 
     **Signature**
 
-    `availableSynthCount() external`
+    `availableSynthCount()`
 
+    **State Mutability**
 
----
-### `collateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L12)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `collateral(address account) external`
-
-
----
-### `collateralisationRatio`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L14)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `collateralisationRatio(address issuer) external`
-
-
----
-### `debtBalanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L16)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `debtBalanceOf(address issuer, bytes32 currencyKey) external`
-
-
----
-### `debtBalanceOfAndTotalDebt`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L18)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `debtBalanceOfAndTotalDebt(address issuer, bytes32 currencyKey) external`
-
-
----
-### `isWaitingPeriod`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L23)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `isWaitingPeriod(bytes32 currencyKey) external`
-
-
----
-### `maxIssuableSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L25)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `maxIssuableSynths(address issuer) external`
-
-
----
-### `remainingIssuableSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L27)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `remainingIssuableSynths(address issuer) external`
-
-
----
-### `synths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L36)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `synths(bytes32 currencyKey) external`
-
-
----
-### `synthsByAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L38)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `synthsByAddress(address synthAddress) external`
-
-
----
-### `totalIssuedSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L40)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `totalIssuedSynths(bytes32 currencyKey) external`
-
-
----
-### `totalIssuedSynthsExcludeEtherCollateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L42)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `totalIssuedSynthsExcludeEtherCollateral(bytes32 currencyKey) external`
-
-
----
-### `transferableSynthetix`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L44)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `transferableSynthetix(address account) external`
+    `view`
 
 
 ---
@@ -215,7 +57,11 @@
 
     **Signature**
 
-    `burnSynths(uint256 amount) external`
+    `burnSynths(uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -229,7 +75,11 @@
 
     **Signature**
 
-    `burnSynthsOnBehalf(address burnForAddress, uint256 amount) external`
+    `burnSynthsOnBehalf(address burnForAddress, uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -243,7 +93,11 @@
 
     **Signature**
 
-    `burnSynthsToTarget() external`
+    `burnSynthsToTarget()`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -257,7 +111,83 @@
 
     **Signature**
 
-    `burnSynthsToTargetOnBehalf(address burnForAddress) external`
+    `burnSynthsToTargetOnBehalf(address burnForAddress)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `collateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L12)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `collateral(address account)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `collateralisationRatio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L14)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `collateralisationRatio(address issuer)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `debtBalanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L16)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `debtBalanceOf(address issuer, bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `debtBalanceOfAndTotalDebt`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L18)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `debtBalanceOfAndTotalDebt(address issuer, bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -271,7 +201,11 @@
 
     **Signature**
 
-    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) external`
+    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -285,7 +219,11 @@
 
     **Signature**
 
-    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) external`
+    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -299,7 +237,11 @@
 
     **Signature**
 
-    `issueMaxSynths() external`
+    `issueMaxSynths()`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -313,7 +255,11 @@
 
     **Signature**
 
-    `issueMaxSynthsOnBehalf(address issueForAddress) external`
+    `issueMaxSynthsOnBehalf(address issueForAddress)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -327,7 +273,11 @@
 
     **Signature**
 
-    `issueSynths(uint256 amount) external`
+    `issueSynths(uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -341,7 +291,47 @@
 
     **Signature**
 
-    `issueSynthsOnBehalf(address issueForAddress, uint256 amount) external`
+    `issueSynthsOnBehalf(address issueForAddress, uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `isWaitingPeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L23)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `isWaitingPeriod(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `maxIssuableSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L25)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `maxIssuableSynths(address issuer)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -355,7 +345,29 @@
 
     **Signature**
 
-    `mint() external`
+    `mint()`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `remainingIssuableSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L27)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `remainingIssuableSynths(address issuer)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -369,5 +381,101 @@
 
     **Signature**
 
-    `settle(bytes32 currencyKey) external`
+    `settle(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `synths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L36)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `synths(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `synthsByAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L38)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `synthsByAddress(address synthAddress)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `totalIssuedSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L40)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `totalIssuedSynths(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `totalIssuedSynthsExcludeEtherCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L42)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `totalIssuedSynthsExcludeEtherCollateral(bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `transferableSynthetix`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L44)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `transferableSynthetix(address account)`
+
+    **State Mutability**
+
+    `view`
+
+## Variables
 

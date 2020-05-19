@@ -6,9 +6,7 @@
 !!! todo "Work in Progress"
 
 
-```
-This needs filling in
-```
+    This needs filling in
 
 ## Description
 
@@ -51,7 +49,111 @@ graph TD
 
 - ?
 
-## Constants
+## Function (Constructor)
+
+
+---
+### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L13)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver, bytes32 _multiCollateralKey)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [Synth](#synth)
+
+## Functions
+
+
+---
+### `burn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L51)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `burn(address account, uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyInternalContracts](#onlyinternalcontracts)
+
+
+---
+### `issue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L42)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `issue(address account, uint256 amount)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyInternalContracts](#onlyinternalcontracts)
+
+## Functions (Internal)
+
+
+---
+### `multiCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L31)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `multiCollateral()`
+
+    **State Mutability**
+
+    `view`
+
+## Internal & Restricted Mutative Functions
+
+## Modifiers
+
+
+---
+### `onlyInternalContracts`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
+
+
+
+## Owner Mutative Functions
+
+## Public Mutative Functions
 
 ## Variables
 
@@ -68,76 +170,4 @@ graph TD
 **Type:** `bytes32`
 
 ## Views
-
-## Public Mutative Functions
-
-## Owner Mutative Functions
-
-## Internal & Restricted Mutative Functions
-
-## Modifiers
-
-
----
-### `onlyInternalContracts`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
-
-
-
-## Functions
-
-
----
-### `constructor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L13)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver, bytes32 _multiCollateralKey) public`
-
-    **Modifiers**
-
-    * [Synth](#synth)
-
-
----
-### `issue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L42)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `issue(address account, uint256 amount) external`
-
-    **Modifiers**
-
-    * [onlyInternalContracts](#onlyinternalcontracts)
-
-
----
-### `burn`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L51)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `burn(address account, uint256 amount) external`
-
-    **Modifiers**
-
-    * [onlyInternalContracts](#onlyinternalcontracts)
 

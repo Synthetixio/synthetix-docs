@@ -5,6 +5,8 @@
 
 **Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol)
 
+## Constants
+
 ## Functions
 
 
@@ -19,49 +21,11 @@
 
     **Signature**
 
-    `calculateAmountAfterSettlement(address from, bytes32 currencyKey, uint256 amount, uint256 refunded) external`
+    `calculateAmountAfterSettlement(address from, bytes32 currencyKey, uint256 amount, uint256 refunded)`
 
+    **State Mutability**
 
----
-### `feeRateForExchange`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L13)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `feeRateForExchange(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) external`
-
-
----
-### `maxSecsLeftInWaitingPeriod`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L15)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey) external`
-
-
----
-### `settlementOwing`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L17)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `settlementOwing(address account, bytes32 currencyKey) external`
+    `view`
 
 
 ---
@@ -75,7 +39,11 @@
 
     **Signature**
 
-    `exchange(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress) external`
+    `exchange(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress)`
+
+    **State Mutability**
+
+    `nonpayable`
 
 
 ---
@@ -89,7 +57,47 @@
 
     **Signature**
 
-    `exchangeOnBehalf(address exchangeForAddress, address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) external`
+    `exchangeOnBehalf(address exchangeForAddress, address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `feeRateForExchange`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L13)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `feeRateForExchange(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+
+---
+### `maxSecsLeftInWaitingPeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L15)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
 
 
 ---
@@ -103,5 +111,29 @@
 
     **Signature**
 
-    `settle(address from, bytes32 currencyKey) external`
+    `settle(address from, bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `nonpayable`
+
+
+---
+### `settlementOwing`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L17)</sub>
+
+
+
+??? example "Details"
+
+    **Signature**
+
+    `settlementOwing(address account, bytes32 currencyKey)`
+
+    **State Mutability**
+
+    `view`
+
+## Variables
 

@@ -20,39 +20,7 @@ graph TD
     State[State] --> Owned[Owned]
 ```
 
-## Variables
-
-
----
-### `balanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L11)</sub>
-
-
-
-ERC20 balances, note that as a public variable, this synthesises an accessor which is itself ERC20 compliant, so balances can be queried by dApps directly from the state contract.
-
-
-
-
-**Type:** `mapping(address => uint256)`
-
-
----
-### `allowance`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L12)</sub>
-
-
-
-ERC20 allowances. Also generates an ERC20 accessor in the same way as the `balanceOf` member.
-
-
-
-
-**Type:** `mapping(address => mapping(address => uint256))`
-
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -62,20 +30,23 @@ ERC20 allowances. Also generates an ERC20 accessor in the same way as the `balan
 
 
 
-Initialises the inherited [`State`](State.md) instance.
-
-
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _associatedContract) public`
+    `(address _owner, address _associatedContract)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [Owned](#owned)
 
     * [State](#state)
+
+## Functions
 
 
 ---
@@ -92,7 +63,11 @@ Sets the token allowance granted to the `spender` by the `tokenOwner`.
 
     **Signature**
 
-    `setAllowance(address tokenOwner, address spender, uint256 value) external`
+    `setAllowance(address tokenOwner, address spender, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
@@ -113,9 +88,45 @@ Sets the balance of the specified account.
 
     **Signature**
 
-    `setBalanceOf(address account, uint256 value) external`
+    `setBalanceOf(address account, uint256 value)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
+
+## Variables
+
+
+---
+### `allowance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L12)</sub>
+
+
+
+ERC20 allowances. Also generates an ERC20 accessor in the same way as the `balanceOf` member.
+
+
+
+
+**Type:** `mapping(address => mapping(address => uint256))`
+
+
+---
+### `balanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L11)</sub>
+
+
+
+ERC20 balances, note that as a public variable, this synthesises an accessor which is itself ERC20 compliant, so balances can be queried by dApps directly from the state contract.
+
+
+
+
+**Type:** `mapping(address => uint256)`
 

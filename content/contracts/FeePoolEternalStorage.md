@@ -25,7 +25,7 @@ graph TD
     State[State] --> Owned[Owned]
 ```
 
-## Variables
+## Constants
 
 
 ---
@@ -35,20 +35,11 @@ graph TD
 
 
 
-This constant is an arbitrary string to be used to access the correct slot in the eternal storage [`uint` map](EternalStorage.md#storage) where an account's last withdrawal time is kept.
-
-
-This is hashed together with the address to obtain the correct key. Its value must be the same as [`FeePool.LAST_FEE_WITHDRAWAL`](FeePool.md#last_fee_withdrawal).
-
-
-**Value:** `"last_fee_withdrawal"`
-
-
 
 
 **Type:** `bytes32`
 
-## Functions
+## Function (Constructor)
 
 
 ---
@@ -58,20 +49,23 @@ This is hashed together with the address to obtain the correct key. Its value mu
 
 
 
-Initialises the inherited [`EternalStorage`](EternalStorage.md) instance, and sets a [limited setup period](LimitedSetup.md) of six weeks.
-
-
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _feePool) public`
+    `(address _owner, address _feePool)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
     * [EternalStorage](#eternalstorage)
 
     * [LimitedSetup](#limitedsetup)
+
+## Functions (onlyOwner)
 
 
 ---
@@ -81,14 +75,15 @@ Initialises the inherited [`EternalStorage`](EternalStorage.md) instance, and se
 
 
 
-This is a helper to import fee withdrawal information from a previous version of the system during the setup period.
-
-
 ??? example "Details"
 
     **Signature**
 
-    `importFeeWithdrawalData(address[] accounts, uint256[] feePeriodIDs) external`
+    `importFeeWithdrawalData(address[] accounts, uint256[] feePeriodIDs)`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Requires**
 
