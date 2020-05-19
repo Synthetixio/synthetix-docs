@@ -11,7 +11,7 @@ module.exports = {
 	},
 	rules: {
 		'no-console': 'off',
-		indent: ['error', 'tab'],
+		indent: ['error', 'tab', { ignoredNodes: ['TemplateLiteral > *'] }],
 		'prettier/prettier': 'off',
 		'import/no-unresolved': ['error', { commonjs: true }],
 		'linebreak-style': ['error', 'unix'],
