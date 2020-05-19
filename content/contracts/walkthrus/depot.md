@@ -42,8 +42,8 @@ Following all deposits paid though, emits the following event:
 
 ### Example Transactions on Mainnet
 
-- `Depot.exchangeEtherForSynths()` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x37b921d27fe21f9a97f3c059b54fb81ba8c0297b14d2577a84d8237121c59ff9/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x37b921d27fe21f9a97f3c059b54fb81ba8c0297b14d2577a84d8237121c59ff9#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a> (with a single deposit accessed)
-- sending ETH to `Depot` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0xf92bbafd873463d2880d5e6beab2bc46a10d6f6ceea417e235a3ef7828766c79/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xf92bbafd873463d2880d5e6beab2bc46a10d6f6ceea417e235a3ef7828766c79#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a> (with two deposits accessed)
+- `Depot.exchangeEtherForSynths()` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0x37b921d27fe21f9a97f3c059b54fb81ba8c0297b14d2577a84d8237121c59ff9/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x37b921d27fe21f9a97f3c059b54fb81ba8c0297b14d2577a84d8237121c59ff9#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a> (with a single deposit accessed)
+- sending ETH to `Depot` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0xf92bbafd873463d2880d5e6beab2bc46a10d6f6ceea417e235a3ef7828766c79/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xf92bbafd873463d2880d5e6beab2bc46a10d6f6ceea417e235a3ef7828766c79#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a> (with two deposits accessed)
 
 ---
 
