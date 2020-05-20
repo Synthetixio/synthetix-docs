@@ -109,6 +109,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L10)</sub>
 
+
+
 - `(int256 current, uint256 roundId, uint256 timestamp)`
 
 
@@ -116,6 +118,8 @@
 ### `NewRound`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L11)</sub>
+
+
 
 - `(uint256 roundId, address startedBy)`
 

@@ -604,13 +604,14 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 				}
 
 				if (sc[j].Libaries) {
-					mkdocsYAML.nav[i]['Smart Contracts'][j].Interfaces = libraries;
+					mkdocsYAML.nav[i]['Smart Contracts'][j].Libraries = libraries;
 				}
 			}
 		}
 	}
 
 	// We don't want !!python to be quoted
+	// Unfortunately a hacky patch :(
 	const newMkDocsYaml = YAML.stringify(mkdocsYAML).replace(`"${pythonSuperFenceFormat}"`, pythonSuperFenceFormat);
 	fs.writeFileSync(mkdocsFileLoc, newMkDocsYaml);
 })();

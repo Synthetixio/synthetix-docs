@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Math.sol#L18)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**

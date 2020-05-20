@@ -237,6 +237,14 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 
 ---
+
+---
+
+---
+
+---
+
+---
 ### `notFeeAddress`
 
 The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
@@ -744,6 +752,14 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
 
 <!-- Eg.
 
+
+---
+
+---
+
+---
+
+---
 
 ---
 
