@@ -19,6 +19,8 @@ graph TD
 
 ## Constants
 
+## Variables
+
 ## Function (Constructor)
 
 
@@ -68,6 +70,4 @@ graph TD
     **Modifiers**
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
-
-## Variables
 

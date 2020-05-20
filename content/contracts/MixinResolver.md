@@ -43,6 +43,47 @@ graph TD
 
 **Type:** `uint256`
 
+## Variables
+
+
+---
+### `addressCache`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L14)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => address)`
+
+
+---
+### `resolver`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L12)</sub>
+
+
+
+The `AddressResolver` instance
+
+
+
+
+**Type:** `contract AddressResolver`
+
+
+---
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L16)</sub>
+
+
+
+
+
+**Type:** `bytes32[]`
+
 ## Function (Constructor)
 
 
@@ -216,45 +257,4 @@ Set the address resolver
     **Modifiers**
     
     * [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-## Variables
-
-
----
-### `addressCache`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L14)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => address)`
-
-
----
-### `resolver`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L12)</sub>
-
-
-
-The `AddressResolver` instance
-
-
-
-
-**Type:** `contract AddressResolver`
-
-
----
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L16)</sub>
-
-
-
-
-
-**Type:** `bytes32[]`
 

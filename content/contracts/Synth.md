@@ -175,70 +175,53 @@ graph TD
 
 **Type:** `bytes32`
 
-## Events
+## Variables
 
 
 ---
-### `Burned`
+### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L272)</sub>
-
-
-
-Records that a quantity of this Synth was [burned](#burn).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L37)</sub>
 
 
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitBurned` function.
 
 
-**Signature:** `Burned(address indexed account, uint value)`
 
-
-- `(address account, uint256 value)`
+**Type:** `bytes32[24]`
 
 
 ---
-### `FeePoolUpdated`
+### `currencyKey`
 
-Records that the [`feePool`](#feepool) address was [updated](#setfeepool).
-
-
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitFeePoolUpdated` function.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L22)</sub>
 
 
-**Signature:** `FeePoolUpdated(address newFeePool)`
+
+The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosystem. The currency key could in principle be distinct from this token's [ERC20 symbol](ExternStateToken.md#symbol).
+
+
+
+
+**Type:** `bytes32`
+
+## Modifiers
+
+
+---
+### `onlyInternalContracts`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L251)</sub>
+
 
 
 
 ---
-### `Issued`
+### `onlySynthetixOrFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L265)</sub>
-
-
-
-Records that a quantity of this Synth was newly [issued](#issue).
+Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix) nor [`feePool`](#feepool).
 
 
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitIssued` function.
-
-
-**Signature:** `Issued(address indexed account, uint value)`
-
-
-- `(address account, uint256 value)`
-
-
----
-### `SynthetixUpdated`
-
-Records that the [`synthetix`](#synthetix) address was [updated](#setsynthetix).
-
-
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitSynthetixUpdated` function.
-
-
-**Signature:** `SynthetixUpdated(address newSynthetix)`
+**Signature:** `notFeeAddress(address account)`
 
 
 ## Function (Constructor)
@@ -722,52 +705,69 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `view`
 
-## Modifiers
+## Events
 
 
 ---
-### `onlyInternalContracts`
+### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L251)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L272)</sub>
 
+
+
+Records that a quantity of this Synth was [burned](#burn).
+
+
+This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitBurned` function.
+
+
+**Signature:** `Burned(address indexed account, uint value)`
+
+
+- `(address account, uint256 value)`
+
+
+---
+### `FeePoolUpdated`
+
+Records that the [`feePool`](#feepool) address was [updated](#setfeepool).
+
+
+This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitFeePoolUpdated` function.
+
+
+**Signature:** `FeePoolUpdated(address newFeePool)`
 
 
 
 ---
-### `onlySynthetixOrFeePool`
+### `Issued`
 
-Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix) nor [`feePool`](#feepool).
-
-
-**Signature:** `notFeeAddress(address account)`
-
-
-## Variables
-
-
----
-### `addressesToCache`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L265)</sub>
 
 
 
+Records that a quantity of this Synth was newly [issued](#issue).
 
 
-**Type:** `bytes32[24]`
+This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitIssued` function.
+
+
+**Signature:** `Issued(address indexed account, uint value)`
+
+
+- `(address account, uint256 value)`
 
 
 ---
-### `currencyKey`
+### `SynthetixUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L22)</sub>
-
-
-
-The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosystem. The currency key could in principle be distinct from this token's [ERC20 symbol](ExternStateToken.md#symbol).
+Records that the [`synthetix`](#synthetix) address was [updated](#setsynthetix).
 
 
+This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitSynthetixUpdated` function.
 
 
-**Type:** `bytes32`
+**Signature:** `SynthetixUpdated(address newSynthetix)`
+
 

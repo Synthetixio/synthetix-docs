@@ -53,6 +53,53 @@ The constructor initialises the various addresses that this contract knows about
 
 
 
+## Views
+
+
+---
+### `feeRateForExchange`
+
+Determine the effective fee rate for the exchange, taking into considering swing trading.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `feeRateForExchange(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) public view returns (uint)`
+
+
+---
+### `maxSecsLeftInWaitingPeriod`
+
+Returns the maximum number of seconds remaining in the waiting period for all exchanges into the given synth (`currencyKey`) by the account.
+
+
+This number must be `0` in order for [`settle()`](#settle) to succeed.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey) public view returns (uint)`
+
+
+---
+### `settlementOwing`
+
+Returns the total amount to be reclaimed or rebated for the given account and synth (`currencyKey`). Note: this function can be called at any time, even while the waiting period has not expired.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `settlementOwing(address account, bytes32 currencyKey) public view returns (uint reclaimAmount, uint rebateAmount)`
+
 ## Constants
 
 
@@ -138,6 +185,64 @@ The constructor initialises the various addresses that this contract knows about
 
 
 **Type:** `bytes32`
+
+## Variables
+
+
+---
+### `addressesToCache`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L64)</sub>
+
+
+
+
+
+**Type:** `bytes32[24]`
+
+
+---
+### `waitingPeriodSecs`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L53)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+## Modifiers
+
+
+---
+### `onlySynthetixorSynth`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L445)</sub>
+
+
+
+<!-- E.g.
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+### `notFeeAddress`
+
+The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
+
+**Signature:** `notFeeAddress(address account)`
+-->
+
+
 
 ## Function (Constructor)
 
@@ -613,34 +718,6 @@ The constructor initialises the various addresses that this contract knows about
 
 ## Internal & Restricted Functions
 
-## Modifiers
-
-
----
-### `onlySynthetixorSynth`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L445)</sub>
-
-
-
-<!-- E.g.
-
----
-
----
-
----
-
----
-### `notFeeAddress`
-
-The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
-
-**Signature:** `notFeeAddress(address account)`
--->
-
-
-
 ## Mutative Functions
 
 
@@ -673,6 +750,10 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
 ---
 
 ---
+
+---
+
+---
 ### `importAddresses`
 
 Import one or more addresses into the system for the given keys. Note: this function will overrwite any previous entries with the same key names, allowing for inline updates.
@@ -697,77 +778,4 @@ Import one or more addresses into the system for the given keys. Note: this func
 -->
 
 
-
-## Variables
-
-
----
-### `addressesToCache`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L64)</sub>
-
-
-
-
-
-**Type:** `bytes32[24]`
-
-
----
-### `waitingPeriodSecs`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L53)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-## Views
-
-
----
-### `feeRateForExchange`
-
-Determine the effective fee rate for the exchange, taking into considering swing trading.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `feeRateForExchange(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) public view returns (uint)`
-
-
----
-### `maxSecsLeftInWaitingPeriod`
-
-Returns the maximum number of seconds remaining in the waiting period for all exchanges into the given synth (`currencyKey`) by the account.
-
-
-This number must be `0` in order for [`settle()`](#settle) to succeed.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey) public view returns (uint)`
-
-
----
-### `settlementOwing`
-
-Returns the total amount to be reclaimed or rebated for the given account and synth (`currencyKey`). Note: this function can be called at any time, even while the waiting period has not expired.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `settlementOwing(address account, bytes32 currencyKey) public view returns (uint reclaimAmount, uint rebateAmount)`
 

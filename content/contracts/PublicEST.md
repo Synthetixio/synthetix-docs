@@ -34,18 +34,6 @@ graph TD
 
 **Type:** `uint8`
 
-## Events
-
-
----
-### `Received`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol#L31)</sub>
-
-
-
-- `(address sender, uint256 inputA, bytes32 inputB)`
-
 ## Function (Constructor)
 
 
@@ -137,4 +125,16 @@ graph TD
     **Modifiers**
 
     * [optionalProxy](#optionalproxy)
+
+## Events
+
+
+---
+### `Received`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/PublicEST.sol#L31)</sub>
+
+
+
+- `(address sender, uint256 inputA, bytes32 inputB)`
 

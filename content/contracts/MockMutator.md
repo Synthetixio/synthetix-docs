@@ -5,6 +5,20 @@
 
 **Source:** [contracts/test-helpers/MockMutator.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockMutator.sol)
 
+## Variables
+
+
+---
+### `count`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockMutator.sol#L5)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
 ## Functions
 
 
@@ -42,18 +56,4 @@
     **State Mutability**
 
     `nonpayable`
-
-## Variables
-
-
----
-### `count`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockMutator.sol#L5)</sub>
-
-
-
-
-
-**Type:** `uint256`
 

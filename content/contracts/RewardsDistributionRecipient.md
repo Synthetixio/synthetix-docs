@@ -42,6 +42,32 @@ graph TD
 
 - ?
 
+## Views
+
+## Variables
+
+
+---
+### `rewardsDistribution`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L9)</sub>
+
+
+
+
+
+**Type:** `address`
+
+## Modifiers
+
+
+---
+### `onlyRewardsDistribution`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L13)</sub>
+
+
+
 ## Functions
 
 
@@ -88,33 +114,7 @@ graph TD
 
 ## Internal & Restricted Mutative Functions
 
-## Modifiers
-
-
----
-### `onlyRewardsDistribution`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L13)</sub>
-
-
-
 ## Owner Mutative Functions
 
 ## Public Mutative Functions
-
-## Variables
-
-
----
-### `rewardsDistribution`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L9)</sub>
-
-
-
-
-
-**Type:** `address`
-
-## Views
 

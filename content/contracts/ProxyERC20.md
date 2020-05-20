@@ -29,6 +29,10 @@ graph TD
 
 **Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol)
 
+## Constants
+
+## Variables
+
 ## Function (Constructor)
 
 
@@ -216,6 +220,4 @@ graph TD
     **State Mutability**
 
     `nonpayable`
-
-## Variables
 

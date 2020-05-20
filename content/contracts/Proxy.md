@@ -73,23 +73,50 @@ graph TD
 
 - [Proxyable](Proxyable.md)
 
-## Events
+## Variables
 
 
 ---
-### `TargetUpdated`
+### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L104)</sub>
-
-
-
-The proxy's target contract was changed.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L12)</sub>
 
 
-**Signature:** `TargetUpdated(Proxyable newTarget)`
+
+The underlying contract this proxy is standing in front of.
 
 
-- `(contract Proxyable newTarget)`
+
+
+**Type:** `contract Proxyable`
+
+
+---
+### `useDELEGATECALL`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L13)</sub>
+
+
+
+This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The contract is in `DELEGATECALL` mode iff `useDELEGATECALL` is true.
+
+
+
+
+**Type:** `bool`
+
+## Modifiers
+
+
+---
+### `onlyTarget`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L99)</sub>
+
+
+
+Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
+
 
 ## Function (Constructor)
 
@@ -240,48 +267,21 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
     * [onlyOwner](#onlyowner)
 
-## Modifiers
+## Events
 
 
 ---
-### `onlyTarget`
+### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L99)</sub>
-
-
-
-Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
-
-
-## Variables
-
-
----
-### `target`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L104)</sub>
 
 
 
-The underlying contract this proxy is standing in front of.
+The proxy's target contract was changed.
 
 
+**Signature:** `TargetUpdated(Proxyable newTarget)`
 
 
-**Type:** `contract Proxyable`
-
-
----
-### `useDELEGATECALL`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L13)</sub>
-
-
-
-This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The contract is in `DELEGATECALL` mode iff `useDELEGATECALL` is true.
-
-
-
-
-**Type:** `bool`
+- `(contract Proxyable newTarget)`
 

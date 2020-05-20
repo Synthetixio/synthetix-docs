@@ -7,6 +7,8 @@
 
 ## Constants
 
+## Variables
+
 ## Functions
 
 
@@ -242,6 +244,4 @@
     **State Mutability**
 
     `nonpayable`
-
-## Variables
 

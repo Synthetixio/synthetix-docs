@@ -40,39 +40,104 @@ graph TD
 - [SafeMath](SafeMath.md) for uint
 - [SafeDecimalMath](SafeDecimalMath.md) for uint
 
-## Events
+## Variables
 
 
 ---
-### `RewardDistributionAdded`
+### `authority`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L207)</sub>
-
-
-
-Records that a new recipient was added to the distributions list, and the index they were added at.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L23)</sub>
 
 
-**Signature:** `RewardDistributionAdded(uint index, address destination, uint amount)`
+
+The address authorised to call [`distributeRewards`](#distributerewards), which is used only by [`Synthetix.mint`](Synthetix.md#mint).
 
 
-- `(uint256 index, address destination, uint256 amount)`
+
+
+**Type:** `address`
 
 
 ---
-### `RewardsDistributed`
+### `distributions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L208)</sub>
-
-
-
-Records that a quantity of the inflationary rewards have been dispersed among the [`distributions`](#distributions) recipients and the pool of stakers.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L52)</sub>
 
 
-**Signature:** `RewardsDistributed(uint amount)`
+
+An array of distribution recipients and the amount of SNX each will receive from the weekly inflationary supply.
 
 
-- `(uint256 amount)`
+
+
+**Type:** `struct RewardsDistribution.DistributionData[]`
+
+
+---
+### `feePoolProxy`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L38)</sub>
+
+
+
+The address of the [`FeePool`](FeePool.md) [`Proxy`](Proxy.md), which has to be informed how many rewards it has left to distribute once distributions have been made.
+
+
+
+
+**Type:** `address`
+
+
+---
+### `rewardEscrow`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L33)</sub>
+
+
+
+The address of the [`RewardEscrow`](RewardEscrow.md), where all remaining tokens are sent once other distributions have been made.
+
+
+
+
+**Type:** `address`
+
+
+---
+### `synthetixProxy`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L28)</sub>
+
+
+
+The address of the Synthetix [`ProxyERC20`](ProxyERC20.md) for transferring SNX to distribution recipients and the [`RewardEscrow`](RewardEscrow.md) contract.
+
+
+
+
+**Type:** `address`
+
+## Structs
+
+
+---
+### `DistributionData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L44)</sub>
+
+
+
+Stores an address and a quantity of the inflationary tokens to send to it.
+
+
+**Fields**
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| destination | address | The address to send a portion of the inflationary supply to. |
+| amount | uint256 | The quantity of tokens to send. |
+
 
 ## Function (Constructor)
 
@@ -345,102 +410,37 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     * [onlyOwner](#onlyowner)
 
-## Structs
+## Events
 
 
 ---
-### `DistributionData`
+### `RewardDistributionAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L44)</sub>
-
-
-
-Stores an address and a quantity of the inflationary tokens to send to it.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L207)</sub>
 
 
-**Fields**
+
+Records that a new recipient was added to the distributions list, and the index they were added at.
 
 
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| destination | address | The address to send a portion of the inflationary supply to. |
-| amount | uint256 | The quantity of tokens to send. |
+**Signature:** `RewardDistributionAdded(uint index, address destination, uint amount)`
 
 
-## Variables
+- `(uint256 index, address destination, uint256 amount)`
 
 
 ---
-### `authority`
+### `RewardsDistributed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L23)</sub>
-
-
-
-The address authorised to call [`distributeRewards`](#distributerewards), which is used only by [`Synthetix.mint`](Synthetix.md#mint).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L208)</sub>
 
 
 
-
-**Type:** `address`
-
-
----
-### `distributions`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L52)</sub>
+Records that a quantity of the inflationary rewards have been dispersed among the [`distributions`](#distributions) recipients and the pool of stakers.
 
 
-
-An array of distribution recipients and the amount of SNX each will receive from the weekly inflationary supply.
-
+**Signature:** `RewardsDistributed(uint amount)`
 
 
-
-**Type:** `struct RewardsDistribution.DistributionData[]`
-
-
----
-### `feePoolProxy`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L38)</sub>
-
-
-
-The address of the [`FeePool`](FeePool.md) [`Proxy`](Proxy.md), which has to be informed how many rewards it has left to distribute once distributions have been made.
-
-
-
-
-**Type:** `address`
-
-
----
-### `rewardEscrow`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L33)</sub>
-
-
-
-The address of the [`RewardEscrow`](RewardEscrow.md), where all remaining tokens are sent once other distributions have been made.
-
-
-
-
-**Type:** `address`
-
-
----
-### `synthetixProxy`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L28)</sub>
-
-
-
-The address of the Synthetix [`ProxyERC20`](ProxyERC20.md) for transferring SNX to distribution recipients and the [`RewardEscrow`](RewardEscrow.md) contract.
-
-
-
-
-**Type:** `address`
+- `(uint256 amount)`
 

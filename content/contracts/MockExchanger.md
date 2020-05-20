@@ -5,6 +5,68 @@
 
 **Source:** [contracts/test-helpers/MockExchanger.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol)
 
+## Variables
+
+
+---
+### `_mockMaxSecsLeft`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L10)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `_mockNumEntries`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L9)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `_mockReclaimAmount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L7)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `_mockRefundAmount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L8)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `synthetix`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L12)</sub>
+
+
+
+
+
+**Type:** `contract ISynthetix`
+
 ## Function (Constructor)
 
 
@@ -152,66 +214,4 @@
     **State Mutability**
 
     `view`
-
-## Variables
-
-
----
-### `_mockMaxSecsLeft`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L10)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `_mockNumEntries`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L9)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `_mockReclaimAmount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L7)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `_mockRefundAmount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L8)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `synthetix`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockExchanger.sol#L12)</sub>
-
-
-
-
-
-**Type:** `contract ISynthetix`
 

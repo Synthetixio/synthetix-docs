@@ -112,125 +112,178 @@ graph TD
 
 **Type:** `bytes32`
 
-## Events
+## Variables
 
 
 ---
-### `ClearedDeposit`
+### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L534)</sub>
-
-
-
-- `(address fromAddress, address toAddress, uint256 fromETHAmount, uint256 toAmount, uint256 depositIndex)`
-
-
----
-### `Exchange`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L527)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L81)</sub>
 
 
 
-- `(string fromCurrency, uint256 fromAmount, string toCurrency, uint256 toAmount)`
+
+
+**Type:** `bytes32[24]`
 
 
 ---
-### `FundsWalletUpdated`
+### `depositEndIndex`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L526)</sub>
-
-
-
-- `(address newFundsWallet)`
-
-
----
-### `MaxEthPurchaseUpdated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L525)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L57)</sub>
 
 
 
-- `(uint256 amount)`
+The index one past the last deposit in the [`deposits`](#deposits) queue.
+
+
+
+
+**Type:** `uint256`
 
 
 ---
-### `MinimumDepositAmountUpdated`
+### `deposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L532)</sub>
-
-
-
-- `(uint256 amount)`
-
-
----
-### `NonPayableContract`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L533)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L53)</sub>
 
 
 
-- `(address receiver, uint256 amount)`
+Users can deposit sUSD to be sold on the depot. This variable holds the queue of open deposits, which are sold in the order they were deposited.
 
 
----
-### `SynthDeposit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L529)</sub>
+This queue is stored as an "array" within a mapping: the keys are array indices. Deposits are stored by a contiguous block of keys between [`depositStartIndex`](#depositstartindex) (inclusive) and [`depositEndIndex`](#depositendindex) (exclusive).
 
 
+A mapping is used instead of an array in order to avoid having to copy entries around when deposits are deleted, which saves on gas. When a deposit is made it is added to the end of the list, and when a deposit is filled, it is removed from the start of the list. Thus over time the list of deposits slides down the set of array indexes, but the address space of the mapping is large enough that it will never be filled.
 
-- `(address user, uint256 amount, uint256 depositIndex)`
+
+
+
+**Type:** `mapping(uint256 => struct Depot.SynthDepositEntry)`
 
 
 ---
-### `SynthDepositAmountUpdated`
+### `depositStartIndex`
 
-- `MinimumDepositAmountUpdated(uint amount)`
-
-
----
-### `SynthDepositNotAccepted`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L531)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L55)</sub>
 
 
 
-- `(address user, uint256 amount, uint256 minimum)`
-
-
----
-### `SynthDepositRemoved`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L530)</sub>
+The index of the next deposit to be processed in the [`deposits`](#deposits) queue.
 
 
 
-- `(address user, uint256 amount, uint256 depositIndex)`
+
+**Type:** `uint256`
 
 
 ---
-### `SynthetixUpdated`
+### `fundsWallet`
 
-- `SynthetixUpdated(Synthetix newSynthetixContract)`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L32)</sub>
+
+
+
+The address where ether and synths raised by selling SNX are sent.
+
+
+It is also where ether is sent if the proceeds of a sale of synths could not be transferred because the recipient is a non-payable contract.
+
+
+
+
+**Type:** `address payable`
 
 
 ---
-### `SynthUpdated`
+### `maxEthPurchase`
 
-- `SynthUpdated(Synth newSynthContract)`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L68)</sub>
+
+
+
+
+
+**Type:** `uint256`
 
 
 ---
-### `SynthWithdrawal`
+### `minimumDepositAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L528)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L65)</sub>
 
 
 
-- `(address user, uint256 amount)`
+The minimum sUSD quantity required for a deposit to be added to the queue. Initialised to 50.0.
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `smallDeposits`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L73)</sub>
+
+
+
+Deposits of less than [`minimumDepositAmount`](#minimumdepositamount) sUSD are not placed on the [`deposits`](#deposits) queue. Instead, they are kept here so that the depositor can withdraw them.
+
+
+
+
+**Type:** `mapping(address => uint256)`
+
+
+---
+### `totalSellableDeposits`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L62)</sub>
+
+
+
+The total quantity of sUSD currently in the [`deposits`](#deposits) queue to be purchased.
+
+
+
+
+**Type:** `uint256`
+
+## Structs
+
+
+---
+### `SynthDepositEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L35)</sub>
+
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| user | address payable | TBA |
+| amount | uint256 | TBA |
+
+
+## Modifiers
+
+
+---
+### `onlySynth`
+
+Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
+
+
+
+---
+### `rateNotStale`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L518)</sub>
+
+
 
 ## Function (Constructor)
 
@@ -838,176 +891,123 @@ $$
 
     * [onlyOwner](#onlyowner)
 
-## Modifiers
+## Events
 
 
 ---
-### `onlySynth`
+### `ClearedDeposit`
 
-Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
-
-
-
----
-### `rateNotStale`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L518)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L534)</sub>
 
 
 
-## Structs
+- `(address fromAddress, address toAddress, uint256 fromETHAmount, uint256 toAmount, uint256 depositIndex)`
 
 
 ---
-### `SynthDepositEntry`
+### `Exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L35)</sub>
-
-
-
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| user | address payable | TBA |
-| amount | uint256 | TBA |
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L527)</sub>
 
 
-## Variables
+
+- `(string fromCurrency, uint256 fromAmount, string toCurrency, uint256 toAmount)`
 
 
 ---
-### `addressesToCache`
+### `FundsWalletUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L81)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L526)</sub>
 
 
 
-**Type:** `bytes32[24]`
+- `(address newFundsWallet)`
 
 
 ---
-### `depositEndIndex`
+### `MaxEthPurchaseUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L57)</sub>
-
-
-
-The index one past the last deposit in the [`deposits`](#deposits) queue.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L525)</sub>
 
 
 
-
-**Type:** `uint256`
+- `(uint256 amount)`
 
 
 ---
-### `deposits`
+### `MinimumDepositAmountUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L53)</sub>
-
-
-
-Users can deposit sUSD to be sold on the depot. This variable holds the queue of open deposits, which are sold in the order they were deposited.
-
-
-This queue is stored as an "array" within a mapping: the keys are array indices. Deposits are stored by a contiguous block of keys between [`depositStartIndex`](#depositstartindex) (inclusive) and [`depositEndIndex`](#depositendindex) (exclusive).
-
-
-A mapping is used instead of an array in order to avoid having to copy entries around when deposits are deleted, which saves on gas. When a deposit is made it is added to the end of the list, and when a deposit is filled, it is removed from the start of the list. Thus over time the list of deposits slides down the set of array indexes, but the address space of the mapping is large enough that it will never be filled.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L532)</sub>
 
 
 
-
-**Type:** `mapping(uint256 => struct Depot.SynthDepositEntry)`
+- `(uint256 amount)`
 
 
 ---
-### `depositStartIndex`
+### `NonPayableContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L55)</sub>
-
-
-
-The index of the next deposit to be processed in the [`deposits`](#deposits) queue.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L533)</sub>
 
 
 
-
-**Type:** `uint256`
+- `(address receiver, uint256 amount)`
 
 
 ---
-### `fundsWallet`
+### `SynthDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L32)</sub>
-
-
-
-The address where ether and synths raised by selling SNX are sent.
-
-
-It is also where ether is sent if the proceeds of a sale of synths could not be transferred because the recipient is a non-payable contract.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L529)</sub>
 
 
 
-
-**Type:** `address payable`
+- `(address user, uint256 amount, uint256 depositIndex)`
 
 
 ---
-### `maxEthPurchase`
+### `SynthDepositAmountUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L68)</sub>
-
-
-
-
-
-**Type:** `uint256`
+- `MinimumDepositAmountUpdated(uint amount)`
 
 
 ---
-### `minimumDepositAmount`
+### `SynthDepositNotAccepted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L65)</sub>
-
-
-
-The minimum sUSD quantity required for a deposit to be added to the queue. Initialised to 50.0.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L531)</sub>
 
 
 
-
-**Type:** `uint256`
+- `(address user, uint256 amount, uint256 minimum)`
 
 
 ---
-### `smallDeposits`
+### `SynthDepositRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L73)</sub>
-
-
-
-Deposits of less than [`minimumDepositAmount`](#minimumdepositamount) sUSD are not placed on the [`deposits`](#deposits) queue. Instead, they are kept here so that the depositor can withdraw them.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L530)</sub>
 
 
 
-
-**Type:** `mapping(address => uint256)`
+- `(address user, uint256 amount, uint256 depositIndex)`
 
 
 ---
-### `totalSellableDeposits`
+### `SynthetixUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L62)</sub>
-
-
-
-The total quantity of sUSD currently in the [`deposits`](#deposits) queue to be purchased.
+- `SynthetixUpdated(Synthetix newSynthetixContract)`
 
 
+---
+### `SynthUpdated`
+
+- `SynthUpdated(Synth newSynthContract)`
 
 
-**Type:** `uint256`
+---
+### `SynthWithdrawal`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L528)</sub>
+
+
+
+- `(address user, uint256 amount)`
 

@@ -469,7 +469,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	// Unfortunately Object sorting is depending on the order
 	// they're inserted in. And because we're reading from existing state
 	// we can't just inject
-	const sortableH2s = ['Constants', 'Events', 'Modifiers', 'Structs', 'Views', 'Variables'];
+	const sortableH2s = ['Constants', 'Variables', 'Structs', 'Modifiers', 'Events'];
 	const functionH2s = 'Function';
 	Object.keys(contentJsonMd)
 		.filter(h2 => sortableH2s.includes(h2) || h2.includes(functionH2s))
@@ -500,9 +500,20 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
 		});
 
-	// Only for the functions that we're modifying do we want to sort it
+	// Otherwise sort everything else according to this order
+	// "Structs", 'Constants", "Variables", "Modifiers", "Functions", "Events"
+	// IF they exist in the heading
+	const existingH2s = Object.keys(contentJsonMd);
+	sortableH2s
+		.filter(x => !x.toLowerCase().includes('events'))
+		.filter(x => existingH2s.includes(x))
+		.map(h2 => {
+			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
+		});
+
+	// Add function headings
 	Object.keys(contentJsonMd)
-		.filter(h2 => sortableH2s.includes(h2) || h2.includes(functionH2s))
+		.filter(h2 => h2.includes(functionH2s))
 		.sort((a, b) => {
 			const aL = a.toLowerCase();
 			const bL = b.toLowerCase();
@@ -512,6 +523,11 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		.map(h2 => {
 			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
 		});
+
+	// Finally events is last
+	if (existingH2s.includes('Events')) {
+		contentJsonMdSorted = { ...contentJsonMdSorted, ...{ Events: contentJsonMd.Events } };
+	}
 
 	// ******************************************** Write to file ******************************************** //
 	// Convert to raw and write to file
@@ -525,11 +541,14 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 };
 
 (() => {
+	// Builds new files into content/contracts and content/interfaces
 	Object.keys(astDocs).map(contractSource => {
 		Object.keys(astDocs[contractSource].contracts).map(contractName => {
 			generateContractMarkdown(contractSource, contractName, 'contracts');
 		});
 
+		// If we wanna build the "libraries used"
+		// However there is a conflicting section there right now
 		// Object.keys(astDocs[contractSource].libraries).map(contractName => {
 		// 	generateContractMarkdown(contractSource, contractName, 'libraries');
 		// });
@@ -538,4 +557,6 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			generateContractMarkdown(contractSource, contractName, 'interfaces');
 		});
 	});
+
+	// Updates mkdocs.yml
 })();

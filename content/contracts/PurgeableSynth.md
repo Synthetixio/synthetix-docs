@@ -67,26 +67,22 @@ graph TD
 
 **Type:** `bytes32`
 
-## Events
+## Variables
 
 
 ---
-### `Purged`
+### `maxSupplyToPurgeInUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L73)</sub>
-
-
-
-Records that a balance of this currency was liquidated back to `sUSD` for a particular account.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L18)</sub>
 
 
-This event is emitted from the Synth's [proxy](Proxy.md#_emit) with the `emitPurged` function.
+
+Purging this Synth is disallowed unless the value of its supply is less than this. Initialised to $100\,000$.
 
 
-**Signature:** `Purged(address indexed account, uint value)`
 
 
-- `(address account, uint256 value)`
+**Type:** `uint256`
 
 ## Function (Constructor)
 
@@ -184,20 +180,24 @@ If this is successfully invoked, balances in the provided list of addresses will
 
     `view`
 
-## Variables
+## Events
 
 
 ---
-### `maxSupplyToPurgeInUSD`
+### `Purged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L18)</sub>
-
-
-
-Purging this Synth is disallowed unless the value of its supply is less than this. Initialised to $100\,000$.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L73)</sub>
 
 
 
+Records that a balance of this currency was liquidated back to `sUSD` for a particular account.
 
-**Type:** `uint256`
+
+This event is emitted from the Synth's [proxy](Proxy.md#_emit) with the `emitPurged` function.
+
+
+**Signature:** `Purged(address indexed account, uint value)`
+
+
+- `(address account, uint256 value)`
 

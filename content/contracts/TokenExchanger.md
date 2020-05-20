@@ -16,47 +16,41 @@ graph TD
     TokenExchanger[TokenExchanger] --> Owned[Owned]
 ```
 
-## Events
+## Variables
 
 
 ---
-### `LogAddress`
+### `integrationProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L69)</sub>
-
-
-
-- `(string name, address value)`
-
-
----
-### `LogBytes`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L13)</sub>
 
 
 
-- `(string name, bytes4 value)`
+
+
+**Type:** `address`
 
 
 ---
-### `LogInt`
+### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L14)</sub>
 
 
 
-- `(string name, uint256 value)`
+
+
+**Type:** `address`
+
+## Modifiers
 
 
 ---
-### `LogString`
+### `synthetixProxyIsSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L62)</sub>
 
 
-
-- `(string name, string value)`
 
 ## Function (Constructor)
 
@@ -242,39 +236,45 @@ graph TD
 
     * [onlyOwner](#onlyowner)
 
-## Modifiers
+## Events
 
 
 ---
-### `synthetixProxyIsSet`
+### `LogAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L62)</sub>
-
-
-
-## Variables
-
-
----
-### `integrationProxy`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L69)</sub>
 
 
 
-
-
-**Type:** `address`
+- `(string name, address value)`
 
 
 ---
-### `synthetix`
+### `LogBytes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L14)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L70)</sub>
 
 
 
-**Type:** `address`
+- `(string name, bytes4 value)`
+
+
+---
+### `LogInt`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L68)</sub>
+
+
+
+- `(string name, uint256 value)`
+
+
+---
+### `LogString`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TokenExchanger.sol#L67)</sub>
+
+
+
+- `(string name, string value)`
 

@@ -7,6 +7,8 @@
 
 ## Constants
 
+## Variables
+
 ## Functions
 
 
@@ -26,6 +28,4 @@
     **State Mutability**
 
     `pure`
-
-## Variables
 

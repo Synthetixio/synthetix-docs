@@ -5,6 +5,20 @@
 
 **Source:** [contracts/test-helpers/UsingReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol)
 
+## Variables
+
+
+---
+### `resolver`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol#L8)</sub>
+
+
+
+
+
+**Type:** `contract IAddressResolver`
+
 ## Function (Constructor)
 
 
@@ -48,18 +62,4 @@
     **Requires**
 
     * [require(..., Missing ExchangeRates)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol#L16)
-
-## Variables
-
-
----
-### `resolver`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/UsingReadProxy.sol#L8)</sub>
-
-
-
-
-
-**Type:** `contract IAddressResolver`
 

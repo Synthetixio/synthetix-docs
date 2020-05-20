@@ -7,27 +7,7 @@
 
 ## Constants
 
-## Events
-
-
----
-### `Approval`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L33)</sub>
-
-
-
-- `(address owner, address spender, uint256 value)`
-
-
----
-### `Transfer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L31)</sub>
-
-
-
-- `(address from, address to, uint256 value)`
+## Variables
 
 ## Functions
 
@@ -193,5 +173,25 @@
 
     `nonpayable`
 
-## Variables
+## Events
+
+
+---
+### `Approval`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L33)</sub>
+
+
+
+- `(address owner, address spender, uint256 value)`
+
+
+---
+### `Transfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IERC20.sol#L31)</sub>
+
+
+
+- `(address from, address to, uint256 value)`
 

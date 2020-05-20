@@ -5,6 +5,20 @@
 
 **Source:** [contracts/test-helpers/GenericMock.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/GenericMock.sol)
 
+## Variables
+
+
+---
+### `mockConfig`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/GenericMock.sol#L7)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes4 => bytes)`
+
 ## Function (Fallback)
 
 
@@ -44,18 +58,4 @@
     **State Mutability**
 
     `nonpayable`
-
-## Variables
-
-
----
-### `mockConfig`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/GenericMock.sol#L7)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes4 => bytes)`
 

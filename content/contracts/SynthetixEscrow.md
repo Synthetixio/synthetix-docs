@@ -70,39 +70,67 @@ graph TD
 
 **Type:** `uint256`
 
-## Events
+## Variables
 
 
 ---
-### `SynthetixUpdated`
+### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L243)</sub>
-
-
-
-Records that the SNX contract address was altered.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L21)</sub>
 
 
-**Signature:** `SynthetixUpdated(address newSynthetix)`
+
+The address of the main [`Synthetix`](Synthetix.md) contract.
 
 
-- `(address newSynthetix)`
+
+
+**Type:** `contract ISynthetix`
 
 
 ---
-### `Vested`
+### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L245)</sub>
-
-
-
-Records that an account vested a quantity of tokens.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L28)</sub>
 
 
-**Signature:** `Vested(address indexed beneficiary, uint time, uint value)`
+
+The quantity of remaining tokens for a given account; it saves the recomputation involved in summing over [`vestingSchedules`](#vestingschedules) entries.
 
 
-- `(address beneficiary, uint256 time, uint256 value)`
+
+
+**Type:** `mapping(address => uint256)`
+
+
+---
+### `totalVestedBalance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L31)</sub>
+
+
+
+The total remaining vested balance in this contract.
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `vestingSchedules`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L25)</sub>
+
+
+
+Stores the vesting schedule for each for each account. Each schedule is a list of `(vesting timestamp, quantity)` pairs in ascending time order.
+
+
+
+
+**Type:** `mapping(address => uint256[2][])`
 
 ## Function (Constructor)
 
@@ -480,65 +508,37 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 
     * [onlyDuringSetup](#onlyduringsetup)
 
-## Variables
+## Events
 
 
 ---
-### `synthetix`
+### `SynthetixUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L21)</sub>
-
-
-
-The address of the main [`Synthetix`](Synthetix.md) contract.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L243)</sub>
 
 
 
-
-**Type:** `contract ISynthetix`
-
-
----
-### `totalVestedAccountBalance`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L28)</sub>
+Records that the SNX contract address was altered.
 
 
-
-The quantity of remaining tokens for a given account; it saves the recomputation involved in summing over [`vestingSchedules`](#vestingschedules) entries.
-
+**Signature:** `SynthetixUpdated(address newSynthetix)`
 
 
-
-**Type:** `mapping(address => uint256)`
+- `(address newSynthetix)`
 
 
 ---
-### `totalVestedBalance`
+### `Vested`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L31)</sub>
-
-
-
-The total remaining vested balance in this contract.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L245)</sub>
 
 
 
-
-**Type:** `uint256`
-
-
----
-### `vestingSchedules`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L25)</sub>
+Records that an account vested a quantity of tokens.
 
 
-
-Stores the vesting schedule for each for each account. Each schedule is a list of `(vesting timestamp, quantity)` pairs in ascending time order.
-
+**Signature:** `Vested(address indexed beneficiary, uint time, uint value)`
 
 
-
-**Type:** `mapping(address => uint256[2][])`
+- `(address beneficiary, uint256 time, uint256 value)`
 

@@ -7,6 +7,8 @@
 
 ## Constants
 
+## Variables
+
 ## Functions
 
 
@@ -134,6 +136,4 @@
     **State Mutability**
 
     `view`
-
-## Variables
 

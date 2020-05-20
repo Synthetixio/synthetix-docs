@@ -61,23 +61,75 @@ graph TD
 
 **Type:** `uint8`
 
-## Events
+## Variables
 
 
 ---
-### `IssuanceDebtRatioEntry`
+### `accountIssuanceLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L160)</sub>
-
-
-
-Record that an entry was updated in the [issuance ledger](#accountissuanceledger) by the [`importIssuerData`](#importissuerdata) function during the setup period.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L33)</sub>
 
 
-**Signature:** `IssuanceDebtRatioEntry(address indexed account, uint debtRatio, uint feePeriodCloseIndex)`
+
+A list of up to 6 [issuance data](#issuancedata) entries for each address, for the most recent changes to their issuance level. The fee periods do not have to be consecutive, but they are ordered from newest to oldest (decreasing debt ledger indexes).
 
 
-- `(address account, uint256 debtRatio, uint256 feePeriodCloseIndex)`
+Note that the entry `accountIssuanceLedger[account][0]` only corresponds to the current fee period if [`appendAccountIssuanceRecord(account, *, *, *)`](#appendaccountissuancerecord) has been called during the current fee period. That is, if the account has issued or burnt synths this period.
+
+
+
+
+**Type:** `mapping(address => struct FeePoolState.IssuanceData[6])`
+
+
+---
+### `feePool`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L24)</sub>
+
+
+
+The address of the main [`FeePool`](FeePool.md) contract.
+
+
+
+
+**Type:** `address`
+
+## Structs
+
+
+---
+### `IssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L27)</sub>
+
+
+
+Holds the issuance state and index of users interacting with the [`FeePool`](FeePool.md) for the last [several fee periods](#fee_period_length).
+
+
+**Fields**
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| debtPercentage | uint256 | The percentage of the total system debt owned by the address associated with this entry at the time of issuance. These are [27-decimal fixed point numbers](SafeDecimalMath.md), closely related to the values in [`SynthetixState.debtLedger`](SynthetixState.md#debtledger). |
+| debtEntryIndex | uint256 | The [debt ledger](SynthetixState.md#debtledger) index when this user issued or destroyed tokens. That is, the length of the ledger at the time of issuance. |
+
+
+## Modifiers
+
+
+---
+### `onlyFeePool`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L154)</sub>
+
+
+
+Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
+
 
 ## Function (Constructor)
 
@@ -268,73 +320,21 @@ Shifts this account's array of issuance ledger entries down one place, overwriti
 
     * [onlyOwner](#onlyowner)
 
-## Modifiers
+## Events
 
 
 ---
-### `onlyFeePool`
+### `IssuanceDebtRatioEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L154)</sub>
-
-
-
-Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
-
-
-## Structs
-
-
----
-### `IssuanceData`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L160)</sub>
 
 
 
-Holds the issuance state and index of users interacting with the [`FeePool`](FeePool.md) for the last [several fee periods](#fee_period_length).
+Record that an entry was updated in the [issuance ledger](#accountissuanceledger) by the [`importIssuerData`](#importissuerdata) function during the setup period.
 
 
-**Fields**
+**Signature:** `IssuanceDebtRatioEntry(address indexed account, uint debtRatio, uint feePeriodCloseIndex)`
 
 
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| debtPercentage | uint256 | The percentage of the total system debt owned by the address associated with this entry at the time of issuance. These are [27-decimal fixed point numbers](SafeDecimalMath.md), closely related to the values in [`SynthetixState.debtLedger`](SynthetixState.md#debtledger). |
-| debtEntryIndex | uint256 | The [debt ledger](SynthetixState.md#debtledger) index when this user issued or destroyed tokens. That is, the length of the ledger at the time of issuance. |
-
-
-## Variables
-
-
----
-### `accountIssuanceLedger`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L33)</sub>
-
-
-
-A list of up to 6 [issuance data](#issuancedata) entries for each address, for the most recent changes to their issuance level. The fee periods do not have to be consecutive, but they are ordered from newest to oldest (decreasing debt ledger indexes).
-
-
-Note that the entry `accountIssuanceLedger[account][0]` only corresponds to the current fee period if [`appendAccountIssuanceRecord(account, *, *, *)`](#appendaccountissuancerecord) has been called during the current fee period. That is, if the account has issued or burnt synths this period.
-
-
-
-
-**Type:** `mapping(address => struct FeePoolState.IssuanceData[6])`
-
-
----
-### `feePool`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L24)</sub>
-
-
-
-The address of the main [`FeePool`](FeePool.md) contract.
-
-
-
-
-**Type:** `address`
+- `(address account, uint256 debtRatio, uint256 feePeriodCloseIndex)`
 

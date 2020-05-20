@@ -25,6 +25,23 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 
 - [SynthetixEscrow](SynthetixEscrow.md)
 
+## Variables
+
+
+---
+### `synthetix_escrow`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L13)</sub>
+
+
+
+The [SNX escrow contract](SynthetixEscrow.md).
+
+
+
+
+**Type:** `contract ISynthetixEscrow`
+
 ## Function (Constructor)
 
 
@@ -70,21 +87,4 @@ Vested entries are not skipped, and appear as a leading sequence of zeroes.
     **State Mutability**
 
     `view`
-
-## Variables
-
-
----
-### `synthetix_escrow`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L13)</sub>
-
-
-
-The [SNX escrow contract](SynthetixEscrow.md).
-
-
-
-
-**Type:** `contract ISynthetixEscrow`
 

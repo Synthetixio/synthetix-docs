@@ -35,6 +35,39 @@ The constructor simply sets this contract as `Owned`.
     
     * [`Owned(_owner)`](Owned.md#constructor)
 
+## Views
+
+
+---
+### `getAddress`
+
+Returns a single address by it's `bytes32` key.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `getAddress(bytes32 name) public view returns (address)`
+
+## Variables
+
+
+---
+### `repository`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L12)</sub>
+
+
+
+The mapping of contract name to address
+
+
+
+
+**Type:** `mapping(bytes32 => address)`
+
 ## Function (Constructor)
 
 
@@ -174,37 +207,4 @@ Import one or more addresses into the system for the given keys. Note: this func
     **Preconditions**
     
     * The length of `names` must match the length of `destinations`
-
-## Variables
-
-
----
-### `repository`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L12)</sub>
-
-
-
-The mapping of contract name to address
-
-
-
-
-**Type:** `mapping(bytes32 => address)`
-
-## Views
-
-
----
-### `getAddress`
-
-Returns a single address by it's `bytes32` key.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `getAddress(bytes32 name) public view returns (address)`
 

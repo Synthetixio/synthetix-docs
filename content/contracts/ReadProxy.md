@@ -42,17 +42,21 @@ graph TD
 
 - ?
 
-## Events
+## Views
+
+## Variables
 
 
 ---
-### `TargetUpdated`
+### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L10)</sub>
 
 
 
-- `(address newTarget)`
+
+
+**Type:** `address`
 
 ## Function (Constructor)
 
@@ -132,19 +136,15 @@ graph TD
 
 ## Public Mutative Functions
 
-## Variables
+## Events
 
 
 ---
-### `target`
+### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L10)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L36)</sub>
 
 
 
-**Type:** `address`
-
-## Views
+- `(address newTarget)`
 

@@ -77,64 +77,82 @@ graph TD
 
 **Type:** `bytes32`
 
-## Events
+## Variables
 
 
 ---
-### `Approval`
+### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L150)</sub>
-
-
-
-Records that an ERC20 approval occurred.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L29)</sub>
 
 
-This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitApproval`.
+
+The ERC20 decimal precision of this token. This is usually set to 18 in Synthetix.
 
 
-**Signature:** `Approval(address indexed owner, address indexed spender, uint value)`
 
 
-- `(address owner, address spender, uint256 value)`
+**Type:** `uint8`
 
 
 ---
-### `TokenStateUpdated`
+### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L161)</sub>
-
-
-
-Records that the [token state address](#tokenstate) was updated.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L26)</sub>
 
 
-This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTokenStateUpdated`.
+
+The ERC20 name of this token.
 
 
-**Signature:** `TokenStateUpdated(address newTokenState)`
 
 
-- `(address newTokenState)`
+**Type:** `string`
 
 
 ---
-### `Transfer`
+### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L139)</sub>
-
-
-
-Records that an ERC20 transfer occurred.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L27)</sub>
 
 
-This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTransfer`.
+
+The ERC20 symbol of this token.
 
 
-**Signature:** `Transfer(address indexed from, address indexed to, uint value)`
 
 
-- `(address from, address to, uint256 value)`
+**Type:** `string`
+
+
+---
+### `tokenState`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L23)</sub>
+
+
+
+The external state contract holding this token's balances and allowances.
+
+
+
+
+**Type:** `contract TokenState`
+
+
+---
+### `totalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L28)</sub>
+
+
+
+The ERC20 total token supply.
+
+
+
+
+**Type:** `uint256`
 
 ## Function (Constructor)
 
@@ -393,80 +411,62 @@ Unhooking the token state will pause the contract by causing all transactions to
 
     `nonpayable`
 
-## Variables
+## Events
 
 
 ---
-### `decimals`
+### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L29)</sub>
-
-
-
-The ERC20 decimal precision of this token. This is usually set to 18 in Synthetix.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L150)</sub>
 
 
 
-
-**Type:** `uint8`
-
-
----
-### `name`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L26)</sub>
+Records that an ERC20 approval occurred.
 
 
-
-The ERC20 name of this token.
-
+This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitApproval`.
 
 
+**Signature:** `Approval(address indexed owner, address indexed spender, uint value)`
 
-**Type:** `string`
+
+- `(address owner, address spender, uint256 value)`
 
 
 ---
-### `symbol`
+### `TokenStateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L27)</sub>
-
-
-
-The ERC20 symbol of this token.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L161)</sub>
 
 
 
-
-**Type:** `string`
-
-
----
-### `tokenState`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L23)</sub>
+Records that the [token state address](#tokenstate) was updated.
 
 
-
-The external state contract holding this token's balances and allowances.
-
+This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTokenStateUpdated`.
 
 
+**Signature:** `TokenStateUpdated(address newTokenState)`
 
-**Type:** `contract TokenState`
+
+- `(address newTokenState)`
 
 
 ---
-### `totalSupply`
+### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L28)</sub>
-
-
-
-The ERC20 total token supply.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L139)</sub>
 
 
 
+Records that an ERC20 transfer occurred.
 
-**Type:** `uint256`
+
+This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTransfer`.
+
+
+**Signature:** `Transfer(address indexed from, address indexed to, uint value)`
+
+
+- `(address from, address to, uint256 value)`
 

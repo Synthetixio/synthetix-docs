@@ -17,17 +17,19 @@ graph TD
     RewardsDistributionRecipient[RewardsDistributionRecipient] --> Owned[Owned]
 ```
 
-## Events
+## Variables
 
 
 ---
-### `RewardAdded`
+### `rewardsAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L8)</sub>
 
 
 
-- `(uint256 amount)`
+
+
+**Type:** `uint256`
 
 ## Function (Constructor)
 
@@ -81,17 +83,15 @@ graph TD
 
     * [RewardAdded](#rewardadded)
 
-## Variables
+## Events
 
 
 ---
-### `rewardsAvailable`
+### `RewardAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L8)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockRewardsRecipient.sol#L17)</sub>
 
 
 
-**Type:** `uint256`
+- `(uint256 amount)`
 

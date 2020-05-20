@@ -43,6 +43,56 @@ graph TD
 
 - ?
 
+## Views
+
+## Variables
+
+
+---
+### `exchanges`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L22)</sub>
+
+
+
+
+
+**Type:** `mapping(address => mapping(bytes32 => struct ExchangeState.ExchangeEntry[]))`
+
+
+---
+### `maxEntriesInQueue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L24)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+## Structs
+
+
+---
+### `ExchangeEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L11)</sub>
+
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| src | bytes32 | TBA |
+| amount | uint256 | TBA |
+| dest | bytes32 | TBA |
+| amountReceived | uint256 | TBA |
+| exchangeFeeRate | uint256 | TBA |
+| timestamp | uint256 | TBA |
+| roundIdForSrc | uint256 | TBA |
+| roundIdForDest | uint256 | TBA |
+
+
 ## Function (Constructor)
 
 
@@ -202,54 +252,4 @@ graph TD
 ## Owner Mutative Functions
 
 ## Public Mutative Functions
-
-## Structs
-
-
----
-### `ExchangeEntry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L11)</sub>
-
-
-
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| src | bytes32 | TBA |
-| amount | uint256 | TBA |
-| dest | bytes32 | TBA |
-| amountReceived | uint256 | TBA |
-| exchangeFeeRate | uint256 | TBA |
-| timestamp | uint256 | TBA |
-| roundIdForSrc | uint256 | TBA |
-| roundIdForDest | uint256 | TBA |
-
-
-## Variables
-
-
----
-### `exchanges`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L22)</sub>
-
-
-
-
-
-**Type:** `mapping(address => mapping(bytes32 => struct ExchangeState.ExchangeEntry[]))`
-
-
----
-### `maxEntriesInQueue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeState.sol#L24)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-## Views
 

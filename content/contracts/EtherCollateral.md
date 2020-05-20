@@ -46,6 +46,8 @@ graph TD
 
 - ?
 
+## Views
+
 ## Constants
 
 
@@ -144,107 +146,207 @@ graph TD
 
 **Type:** `uint256`
 
-## Events
+## Variables
 
 
 ---
-### `AccountLoanLimitUpdated`
+### `accountLoanLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L457)</sub>
-
-
-
-- `(uint256 loanLimit)`
-
-
----
-### `CollateralizationRatioUpdated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L452)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L54)</sub>
 
 
 
-- `(uint256 ratio)`
+
+
+**Type:** `uint256`
 
 
 ---
-### `InterestRateUpdated`
+### `accountOpenLoanCounter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L453)</sub>
-
-
-
-- `(uint256 interestRate)`
-
-
----
-### `IssueFeeRateUpdated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L454)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L93)</sub>
 
 
 
-- `(uint256 issueFeeRate)`
+
+
+**Type:** `mapping(address => uint256)`
 
 
 ---
-### `IssueLimitUpdated`
+### `accountsSynthLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L455)</sub>
-
-
-
-- `(uint256 issueLimit)`
-
-
----
-### `LoanClosed`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L460)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L90)</sub>
 
 
 
-- `(address account, uint256 loanID, uint256 feesPaid)`
+
+
+**Type:** `mapping(address => struct EtherCollateral.SynthLoanStruct[])`
 
 
 ---
-### `LoanCreated`
+### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L459)</sub>
-
-
-
-- `(address account, uint256 loanID, uint256 amount)`
-
-
----
-### `LoanLiquidated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L461)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L102)</sub>
 
 
 
-- `(address account, uint256 loanID, address liquidator)`
+
+
+**Type:** `bytes32[24]`
 
 
 ---
-### `LoanLiquidationOpenUpdated`
+### `collateralizationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L458)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L38)</sub>
 
 
 
-- `(bool loanLiquidationOpen)`
+
+
+**Type:** `uint256`
 
 
 ---
-### `MinLoanSizeUpdated`
+### `interestPerSecond`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L456)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L42)</sub>
 
 
 
-- `(uint256 minLoanSize)`
+
+
+**Type:** `uint256`
+
+
+---
+### `interestRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L41)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `issueFeeRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L45)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `issueLimit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L48)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `liquidationDeadline`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L60)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `loanLiquidationOpen`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L57)</sub>
+
+
+
+
+
+**Type:** `bool`
+
+
+---
+### `minLoanSize`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L51)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `totalIssuedSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L65)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `totalLoansCreated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L68)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `totalOpenLoanCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L71)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+## Structs
+
+
+---
+### `SynthLoanStruct`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L74)</sub>
+
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| account | address | TBA |
+| collateralAmount | uint256 | TBA |
+| loanAmount | uint256 | TBA |
+| timeCreated | uint256 | TBA |
+| loanID | uint256 | TBA |
+| timeClosed | uint256 | TBA |
+
 
 ## Function (Constructor)
 
@@ -952,207 +1054,105 @@ graph TD
 
 ## Public Mutative Functions
 
-## Structs
+## Events
 
 
 ---
-### `SynthLoanStruct`
+### `AccountLoanLimitUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L74)</sub>
-
-
-
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| account | address | TBA |
-| collateralAmount | uint256 | TBA |
-| loanAmount | uint256 | TBA |
-| timeCreated | uint256 | TBA |
-| loanID | uint256 | TBA |
-| timeClosed | uint256 | TBA |
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L457)</sub>
 
 
-## Variables
+
+- `(uint256 loanLimit)`
 
 
 ---
-### `accountLoanLimit`
+### `CollateralizationRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L54)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L452)</sub>
 
 
 
-**Type:** `uint256`
+- `(uint256 ratio)`
 
 
 ---
-### `accountOpenLoanCounter`
+### `InterestRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L93)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L453)</sub>
 
 
 
-**Type:** `mapping(address => uint256)`
+- `(uint256 interestRate)`
 
 
 ---
-### `accountsSynthLoans`
+### `IssueFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L90)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L454)</sub>
 
 
 
-**Type:** `mapping(address => struct EtherCollateral.SynthLoanStruct[])`
+- `(uint256 issueFeeRate)`
 
 
 ---
-### `addressesToCache`
+### `IssueLimitUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L102)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L455)</sub>
 
 
 
-**Type:** `bytes32[24]`
+- `(uint256 issueLimit)`
 
 
 ---
-### `collateralizationRatio`
+### `LoanClosed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L38)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L460)</sub>
 
 
 
-**Type:** `uint256`
+- `(address account, uint256 loanID, uint256 feesPaid)`
 
 
 ---
-### `interestPerSecond`
+### `LoanCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L42)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L459)</sub>
 
 
 
-**Type:** `uint256`
+- `(address account, uint256 loanID, uint256 amount)`
 
 
 ---
-### `interestRate`
+### `LoanLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L41)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L461)</sub>
 
 
 
-**Type:** `uint256`
+- `(address account, uint256 loanID, address liquidator)`
 
 
 ---
-### `issueFeeRate`
+### `LoanLiquidationOpenUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L45)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L458)</sub>
 
 
 
-**Type:** `uint256`
+- `(bool loanLiquidationOpen)`
 
 
 ---
-### `issueLimit`
+### `MinLoanSizeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L48)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L456)</sub>
 
 
 
-**Type:** `uint256`
-
-
----
-### `liquidationDeadline`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L60)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `loanLiquidationOpen`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L57)</sub>
-
-
-
-
-
-**Type:** `bool`
-
-
----
-### `minLoanSize`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L51)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `totalIssuedSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L65)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `totalLoansCreated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L68)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-
----
-### `totalOpenLoanCount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L71)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-## Views
+- `(uint256 minLoanSize)`
 

@@ -103,55 +103,31 @@ graph TD
 
 **Type:** `bytes32`
 
-## Events
+## Variables
 
 
 ---
-### `Approval`
+### `_delegatableFunctions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L160)</sub>
-
-
-
-The delegate was approved to act on the authoriser's behalf for the given action.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L19)</sub>
 
 
-**Signature:** `Approval(address indexed authoriser, address delegate, bytes32 action)`
 
 
-- `(address authoriser, address delegate, bytes32 action)`
+
+**Type:** `bytes32[5]`
 
 
 ---
-### `EternalStorageUpdated`
+### `eternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L162)</sub>
-
-
-
-The address of the eternal storage contract has changed.
-
-
-**Signature:** `EternalStorageUpdated(address newEternalStorage)`
-
-
-- `(address newEternalStorage)`
-
-
----
-### `WithdrawApproval`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L28)</sub>
 
 
 
-The delegate was disapproved to act on the authoriser's behalf.
 
 
-**Signature:** `WithdrawApproval(address indexed authoriser, address delegate, bytes32 action)`
-
-
-- `(address authoriser, address delegate, bytes32 action)`
+**Type:** `contract EternalStorage`
 
 ## Function (Constructor)
 
@@ -563,29 +539,53 @@ The delegate was disapproved to act on the authoriser's behalf.
 
     * [EternalStorageUpdated](#eternalstorageupdated)
 
-## Variables
+## Events
 
 
 ---
-### `_delegatableFunctions`
+### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L19)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L160)</sub>
 
 
 
-**Type:** `bytes32[5]`
+The delegate was approved to act on the authoriser's behalf for the given action.
+
+
+**Signature:** `Approval(address indexed authoriser, address delegate, bytes32 action)`
+
+
+- `(address authoriser, address delegate, bytes32 action)`
 
 
 ---
-### `eternalStorage`
+### `EternalStorageUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L28)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L162)</sub>
 
 
 
-**Type:** `contract EternalStorage`
+The address of the eternal storage contract has changed.
+
+
+**Signature:** `EternalStorageUpdated(address newEternalStorage)`
+
+
+- `(address newEternalStorage)`
+
+
+---
+### `WithdrawApproval`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L161)</sub>
+
+
+
+The delegate was disapproved to act on the authoriser's behalf.
+
+
+**Signature:** `WithdrawApproval(address indexed authoriser, address delegate, bytes32 action)`
+
+
+- `(address authoriser, address delegate, bytes32 action)`
 

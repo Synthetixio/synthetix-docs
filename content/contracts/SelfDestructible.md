@@ -33,71 +33,52 @@ graph TD
 
 **Type:** `uint256`
 
-## Events
+## Variables
 
 
 ---
-### `SelfDestructBeneficiaryUpdated`
+### `initiationTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L70)</sub>
-
-
-
-The self destruct beneficiary was changed to the indicated new address.
-
-
-**Signature:** `SelfDestructBeneficiaryUpdated(address newBeneficiary)`
-
-
-- `(address newBeneficiary)`
-
-
----
-### `SelfDestructed`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L11)</sub>
 
 
 
-The contract was destroyed, forwarding the ether on to the [beneficiary](#selfdestructbeneficiary).
+The timestamp at which the self destruction was begun.
 
 
-**Signature:** `SelfDestructed(address beneficiary)`
 
 
-- `(address beneficiary)`
+**Type:** `uint256`
 
 
 ---
-### `SelfDestructInitiated`
+### `selfDestructBeneficiary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L69)</sub>
-
-
-
-Self destruction was initiated with the indicated delay time.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L14)</sub>
 
 
-**Signature:** `SelfDestructInitiated(uint selfDestructDelay)`
+
+The address where any lingering eth in this contract will be sent.
 
 
-- `(uint256 selfDestructDelay)`
+
+
+**Type:** `address`
 
 
 ---
-### `SelfDestructTerminated`
+### `selfDestructInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L67)</sub>
-
-
-
-Self destruction was terminated by the contract owner.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L12)</sub>
 
 
-**Signature:** `SelfDestructTerminated()`
+
+True iff the contract is currently undergoing self destruction.
 
 
-- `()`
+
+
+**Type:** `bool`
 
 ## Function (Constructor)
 
@@ -271,50 +252,69 @@ Self destruction was terminated by the contract owner.
 
     * [SelfDestructTerminated](#selfdestructterminated)
 
-## Variables
+## Events
 
 
 ---
-### `initiationTime`
+### `SelfDestructBeneficiaryUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L11)</sub>
-
-
-
-The timestamp at which the self destruction was begun.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L70)</sub>
 
 
 
-
-**Type:** `uint256`
-
-
----
-### `selfDestructBeneficiary`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L14)</sub>
+The self destruct beneficiary was changed to the indicated new address.
 
 
-
-The address where any lingering eth in this contract will be sent.
-
+**Signature:** `SelfDestructBeneficiaryUpdated(address newBeneficiary)`
 
 
-
-**Type:** `address`
+- `(address newBeneficiary)`
 
 
 ---
-### `selfDestructInitiated`
+### `SelfDestructed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L12)</sub>
-
-
-
-True iff the contract is currently undergoing self destruction.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L68)</sub>
 
 
 
+The contract was destroyed, forwarding the ether on to the [beneficiary](#selfdestructbeneficiary).
 
-**Type:** `bool`
+
+**Signature:** `SelfDestructed(address beneficiary)`
+
+
+- `(address beneficiary)`
+
+
+---
+### `SelfDestructInitiated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L69)</sub>
+
+
+
+Self destruction was initiated with the indicated delay time.
+
+
+**Signature:** `SelfDestructInitiated(uint selfDestructDelay)`
+
+
+- `(uint256 selfDestructDelay)`
+
+
+---
+### `SelfDestructTerminated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L67)</sub>
+
+
+
+Self destruction was terminated by the contract owner.
+
+
+**Signature:** `SelfDestructTerminated()`
+
+
+- `()`
 

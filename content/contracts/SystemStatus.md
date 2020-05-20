@@ -42,6 +42,8 @@ graph TD
 
 - ?
 
+## Views
+
 ## Constants
 
 
@@ -104,97 +106,97 @@ graph TD
 
 **Type:** `uint248`
 
-## Events
+## Variables
 
 
 ---
-### `AccessControlUpdated`
+### `accessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L213)</sub>
-
-
-
-- `(bytes32 section, address account, bool canSuspend, bool canResume)`
-
-
----
-### `ExchangeResumed`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L15)</sub>
 
 
 
-- `(uint256 reason)`
+
+
+**Type:** `mapping(bytes32 => mapping(address => struct SystemStatus.Status))`
 
 
 ---
-### `ExchangeSuspended`
+### `exchangeSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L207)</sub>
-
-
-
-- `(uint256 reason)`
-
-
----
-### `IssuanceResumed`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L35)</sub>
 
 
 
-- `(uint256 reason)`
+
+
+**Type:** `struct SystemStatus.Suspension`
 
 
 ---
-### `IssuanceSuspended`
+### `issuanceSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L204)</sub>
-
-
-
-- `(uint256 reason)`
-
-
----
-### `SynthResumed`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L33)</sub>
 
 
 
-- `(bytes32 currencyKey, uint256 reason)`
+
+
+**Type:** `struct SystemStatus.Suspension`
 
 
 ---
-### `SynthSuspended`
+### `synthSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L210)</sub>
-
-
-
-- `(bytes32 currencyKey, uint256 reason)`
-
-
----
-### `SystemResumed`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L37)</sub>
 
 
 
-- `(uint256 reason)`
+
+
+**Type:** `mapping(bytes32 => struct SystemStatus.Suspension)`
 
 
 ---
-### `SystemSuspended`
+### `systemSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L31)</sub>
 
 
 
-- `(uint256 reason)`
+
+
+**Type:** `struct SystemStatus.Suspension`
+
+## Structs
+
+
+---
+### `Status`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L10)</sub>
+
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| canSuspend | bool | TBA |
+| canResume | bool | TBA |
+
+
+
+---
+### `Suspension`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L17)</sub>
+
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| suspended | bool | TBA |
+| reason | uint248 | TBA |
+
 
 ## Function (Constructor)
 
@@ -708,97 +710,95 @@ graph TD
 
 ## Public Mutative Functions
 
-## Structs
+## Events
 
 
 ---
-### `Status`
+### `AccessControlUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L213)</sub>
 
 
 
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| canSuspend | bool | TBA |
-| canResume | bool | TBA |
-
+- `(bytes32 section, address account, bool canSuspend, bool canResume)`
 
 
 ---
-### `Suspension`
+### `ExchangeResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L17)</sub>
-
-
-
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| suspended | bool | TBA |
-| reason | uint248 | TBA |
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L208)</sub>
 
 
-## Variables
+
+- `(uint256 reason)`
 
 
 ---
-### `accessControl`
+### `ExchangeSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L15)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L207)</sub>
 
 
 
-**Type:** `mapping(bytes32 => mapping(address => struct SystemStatus.Status))`
+- `(uint256 reason)`
 
 
 ---
-### `exchangeSuspension`
+### `IssuanceResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L35)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L205)</sub>
 
 
 
-**Type:** `struct SystemStatus.Suspension`
+- `(uint256 reason)`
 
 
 ---
-### `issuanceSuspension`
+### `IssuanceSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L33)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L204)</sub>
 
 
 
-**Type:** `struct SystemStatus.Suspension`
+- `(uint256 reason)`
 
 
 ---
-### `synthSuspension`
+### `SynthResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L37)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L211)</sub>
 
 
 
-**Type:** `mapping(bytes32 => struct SystemStatus.Suspension)`
+- `(bytes32 currencyKey, uint256 reason)`
 
 
 ---
-### `systemSuspension`
+### `SynthSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L31)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L210)</sub>
 
 
 
-**Type:** `struct SystemStatus.Suspension`
+- `(bytes32 currencyKey, uint256 reason)`
 
-## Views
+
+---
+### `SystemResumed`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L202)</sub>
+
+
+
+- `(uint256 reason)`
+
+
+---
+### `SystemSuspended`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L201)</sub>
+
+
+
+- `(uint256 reason)`
 

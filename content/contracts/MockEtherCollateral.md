@@ -5,6 +5,20 @@
 
 **Source:** [contracts/test-helpers/MockEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol)
 
+## Variables
+
+
+---
+### `totalIssuedSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol#L10)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
 ## Function (Constructor)
 
 
@@ -62,18 +76,4 @@
     **State Mutability**
 
     `nonpayable`
-
-## Variables
-
-
----
-### `totalIssuedSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockEtherCollateral.sol#L10)</sub>
-
-
-
-
-
-**Type:** `uint256`
 

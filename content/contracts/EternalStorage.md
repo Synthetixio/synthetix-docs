@@ -29,6 +29,92 @@ graph TD
     State[State] --> Owned[Owned]
 ```
 
+## Variables
+
+
+---
+### `AddressStorage`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L22)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => address)`
+
+
+---
+### `BooleanStorage`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L25)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => bool)`
+
+
+---
+### `Bytes32Storage`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L24)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => bytes32)`
+
+
+---
+### `BytesStorage`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L23)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => bytes)`
+
+
+---
+### `IntStorage`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L26)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => int256)`
+
+
+---
+### `StringStorage`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L21)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => string)`
+
+
+---
+### `UIntStorage`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L20)</sub>
+
+
+
+
+
+**Type:** `mapping(bytes32 => uint256)`
+
 ## Function (Constructor)
 
 
@@ -490,90 +576,4 @@ graph TD
     **Modifiers**
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
-
-## Variables
-
-
----
-### `AddressStorage`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L22)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => address)`
-
-
----
-### `BooleanStorage`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L25)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => bool)`
-
-
----
-### `Bytes32Storage`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L24)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => bytes32)`
-
-
----
-### `BytesStorage`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L23)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => bytes)`
-
-
----
-### `IntStorage`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L26)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => int256)`
-
-
----
-### `StringStorage`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L21)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => string)`
-
-
----
-### `UIntStorage`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L20)</sub>
-
-
-
-
-
-**Type:** `mapping(bytes32 => uint256)`
 

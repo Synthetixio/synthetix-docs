@@ -55,6 +55,20 @@ graph TD
 
 **Type:** `bytes32`
 
+## Variables
+
+
+---
+### `addressesToCache`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TestableMixinResolver.sol#L12)</sub>
+
+
+
+
+
+**Type:** `bytes32[24]`
+
 ## Function (Constructor)
 
 
@@ -80,18 +94,4 @@ graph TD
     * [Owned](#owned)
 
     * [MixinResolver](#mixinresolver)
-
-## Variables
-
-
----
-### `addressesToCache`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/TestableMixinResolver.sol#L12)</sub>
-
-
-
-
-
-**Type:** `bytes32[24]`
 

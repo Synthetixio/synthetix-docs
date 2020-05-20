@@ -64,6 +64,250 @@ The constructor initialises the inherited [`ExternStateToken`](ExternStateToken.
     * [`ExternStateToken(_proxy, _tokenState, TOKEN_NAME, TOKEN_SYMBOL, _totalSupply, DECIMALS, _owner)`](ExternStateToken.md#constructor)
     * [`MixinResolver`](MixinResolver.md#constructor)
 
+## Views
+
+
+---
+### `availableCurrencyKeys`
+
+Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSynths`](#availablesynths).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `availableCurrencyKeys() public view returns (bytes32[])`
+
+
+---
+### `availableSynthCount`
+
+Returns the number of synths in the system, that is [`availableSynths.length`](#availablesynths).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `availableSynthCount() public view returns (uint)`
+
+
+---
+### `collateral`
+
+Returns the total SNX owned by the given account, locked and unlocked, escrowed and unescrowed. This is the quantity of SNX synths can be issued against.
+
+
+This is computed as the sum of [`Synthetix.balanceOf(account)`](TokenState.md#balanceof), [`SynthetixEscrow.balanceOf(account)`](SynthetixEscrow.md#balanceof), and [`RewardEscrow.balanceOf(account)`](RewardEscrow.md#balanceof); so an account may issue synths against both its active balance and its unclaimed escrow funds.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `collateral(address account) public view returns (uint)`
+
+
+---
+### `collateralisationRatio`
+
+The ratio between value of synths that an account has issued and the value of the collateral they control. That is, this is just [`debtBalanceOf(issuer, "SNX") /`](#debtbalanceof) [`collateral(issuer)`](#collateral).
+
+
+Ideally, issuers should maintain their collateralisation ratio at a level less than the [global issuance ratio](SynthetixState.md#issuanceratio), and they are incentivised to do this by the [fees they can claim](FeePool.md#claim) if they do so.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `collateralisationRatio(address issuer) public view returns (uint)`
+
+
+---
+### `debtBalanceOf`
+
+Reports the quantity of a given currency required to free up all SNX locked in given account.
+
+
+If $\mathrm{X}$ is the [total value of all issued synths](#totalissuedsynths), and $\check{\omega}$ is fraction of that value currently accounted for by this account's locked SNX, then the result is simply:
+
+
+$$
+\check{\omega} \ \mathrm{X}
+$$
+
+
+In order to account for fluctuations in synth prices and supply, the current ownership fraction is computed as the adjusted value:
+
+
+$$
+\check{\omega} = \omega \frac{\Delta_\text{last}}{\Delta_\text{entry}}
+$$
+
+
+Where $\omega$ is the account's debt ownership fraction at the time it [last issued or burnt](SynthetixState.md#issuancedata) synths, which produced the $\Delta_\text{entry}$ item in the [debt ledger](SynthetixState.md#debtledger). $\Delta_\text{last}$ is the latest value on the ledger. This logic is much the same as that found in [`FeePool._effectiveDebtRatioForPeriod`](FeePool.md#_effectivedebtratioforperiod). The actual value of $\omega$ is set in [`_addToDebtRegister`](#_addtodebtregister) and [`_removeFromDebtRegister`](#_removefromdebtregister).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `debtBalanceOf(address issuer, bytes32 currencyKey) public view returns (uint)`
+
+
+---
+### `effectiveValue`
+
+Reports an equivalent value of a quantity of one synth in terms of another at current exchange rates. This is a simple wrapper for [`ExchangeRates.effectiveValue`](ExchangeRates.md#effectivevalue)
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `effectiveValue(bytes32 sourceCurrencyKey, uint sourceAmount, bytes32 destinationCurrencyKey) public view returns (uint)`
+
+
+---
+### `isWaitingPeriod`
+
+Whether or not the waiting period is ongoing for the given synth. If so, no exchanges into this synth will be allowed, nor will that synth be able to be transferred.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `isWaitingPeriod(bytes32 currencyKey) external view returns (bool)`
+
+
+---
+### `maxIssuableSynths`
+
+The maximum number of a given synth that is issuable against the issuer's collateral. This is simply [`issuanceRatio *`](SynthetixState.md#issuanceratio) [`collateral(issuer)`](#collateral), priced in the requested currency.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `maxIssuableSynths(address issuer, bytes32 currencyKey) public view returns (uint)`
+
+
+---
+### `remainingIssuableSynths`
+
+The remaining sUSD synths this account can issue.
+
+
+If $\text{maxIssuable}$ is [`maxIssuableSynths(issuer)`](#maxissuablesynths) and $\text{debt}$ is [`debtBalanceOf(issuer, currencyKey)`](#debtbalanceof), then the result of this function is $max(0, \text{maxIssuable} - \text{debt})$.
+
+
+If prices fluctuate then the account's issued synth debt may exceed its current maximum issuable synths, in which case it may not issue any more synths until more collateral is added.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `remainingIssuableSynths(address issuer) public view returns (uint)`
+
+
+---
+### `totalIssuedSynths`
+
+Returns the total value of Synths in the system, priced in terms of a given currency.
+
+
+This value is equivalent to:
+
+
+$$
+\frac{1}{\pi_d}\sum_{s \in \text{synths}}{\sigma_s \pi_s}
+$$
+
+
+Where $\sigma_s$ and $\pi_s$ are the total supply and price of synth $s$, and $\pi_d$ is the price of the denominating synth flavour.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `totalIssuedSynths(bytes32 currencyKey) public view returns (uint)`
+    
+    **Modifiers**
+    
+    * [`rateNotStale(currencyKey)`](#ratenotstale)
+    
+    **Preconditions**
+    
+    * No rate for any of the [currently available currencies](#availablesynths) [can be stale](ExchangeRates.md#anyrateisstale).
+
+
+---
+### `transferableSynthetix`
+
+The quantity of SNX this account can transfer given that a portion of it may be locked due to issuance.
+
+
+If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\text{lockedSnx}$ is [`debtBalanceOf(account, "SNX") / SynthetixState.issuanceRatio`](#debtbalanceof), the function returns $max(0, \text{balance} - \text{lockedSnx})$. Escrowed tokens are not taken into account in this computation, so unescrowed tokens are locked immediately.
+
+
+???+ info "A Note on Price Motion"
+
+
+    The value of $\text{lockedSnx}$ depends on the current ($\pi$) and previous ($\pi'$) prices being reported by the oracle, and the issuance ratio ($\rho$).
+    
+    If we consider a situation where the synth supply has not changed in the time period under consideration, then ownership fractions do not change even if prices do. Further assuming that there is only a single synth circulating, debt balances correspond to the same number of synths, although perhaps not the same value.
+    
+    In such a situation, we can think of each user having issued a particular quantity of synths. This quantity depends on the prices of synths and SNX at the time of issuance.
+    
+    $$
+    Q_s = \rho \ \frac{\pi'_c}{\pi'_s} \ Q_c
+    $$
+    
+    Whose value at the present time priced [in terms of SNX](#effectivevalue), which is what [`debtBalanceOf(account, "SNX")`](#debtbalanceof) returns, is:
+    
+    $$
+    {V_s}^{c} = \rho \ \frac{\pi'_c}{\pi'_s} \ \pi_c \ Q_c
+    $$
+    
+    Note that this computation has a factor of $\rho$ in it, and this must be divided out in order to ascertain the quantity of SNX which are presently locked.
+    
+    $$
+    \text{lockedSnx} = \frac{{V_s}^{c}}{\rho} = \frac{\pi'_c}{\pi'_s} \ \pi_c \ Q_c
+    $$
+    
+    Which is to say that the quantity of SNX locked in this situation depends on the price.
+    
+    !!! todo "Extend this to the multicurrency case"
+    
+        Consider a two synth system, one primary synth and a secondary one which represents the price/supply of all other synths. Use the total issued value function to derive the behaviour for multiple currencies, and then examine a single currency as a special case.
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `transferableSynthetix(address account) public view returns (uint)`
+    
+    **Modifiers**
+    
+    * [`rateNotStale("SNX")`](#ratenotstale)
+
 ## Constants
 
 
@@ -288,62 +532,102 @@ A constant used to initialise the ERC20 [`ExternStateToken.symbol`](ExternStateT
 
 **Type:** `string`
 
-## Events
+## Variables
 
 
 ---
-### `ExchangeRebate`
+### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L639)</sub>
-
-
-
-!!! tip "Fee Rebates"
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L51)</sub>
 
 
-    See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
-
-Records that an `amount` of the synth denoted by `currencyKey` has been rebated (i.e. issued) by the system to the `account`.
 
 
-The amount is the total net amount from all unsettled exchanges into the given synth - `(address account, bytes32 currencyKey, uint256 amount)`
+
+**Type:** `bytes32[24]`
 
 
 ---
-### `ExchangeReclaim`
+### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L628)</sub>
-
-
-
-!!! tip "Fee Reclaims"
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L29)</sub>
 
 
-    See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
 
-Records that an `amount` of the synth denoted by `currencyKey` has been reclaimed (i.e. burned) from the `account` to the system.
+List of the active [`Synths`](Synth.md). Used to compute the total value of issued synths.
 
 
-The amount is the total net amount from all unsettled exchanges into the given synth - `(address account, bytes32 currencyKey, uint256 amount)`
+
+
+**Type:** `contract ISynth[]`
 
 
 ---
-### `SynthExchange`
+### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L598)</sub>
-
-
-
-Records that an [exchange](#exchange) between two flavours of synths occurred.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L30)</sub>
 
 
-This event is emitted from the Synthetix [proxy](Proxy.md#_emit) with the `emitSynthExchange` function.
+
+A mapping from currency keys (`bytes32`) to [`Synth`](Synth.md) token contract addresses.
 
 
-**Signature:** `SynthExchange(address indexed account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`
 
 
-- `(address account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`
+**Type:** `mapping(bytes32 => contract ISynth)`
+
+
+---
+### `synthsByAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L31)</sub>
+
+
+
+A reverse mapping from a synth's address to its `bytes32` currency key
+
+
+
+
+**Type:** `mapping(address => bytes32)`
+
+## Modifiers
+
+
+---
+### `notFeeAddress`
+
+The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
+
+
+**Signature:** `notFeeAddress(address account)`
+
+
+
+---
+### `onlyExchanger`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L591)</sub>
+
+
+
+
+---
+### `onlyOracle`
+
+The transaction is reverted if `msg.sender` is not the [exchange rates oracle](ExchangeRates.md#oracle).
+
+
+
+---
+### `rateNotStale`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L586)</sub>
+
+
+
+The transaction is reverted if the given currency's latest exchange rate [is stale](ExchangeRates.md#rateisstale). This will also revert if the currency key is unknown to the exchange rates contract.
+
 
 ## Function (Constructor)
 
@@ -1415,44 +1699,6 @@ This is only used by [`PurgeableSynth.purge`](#PurgeableSynth.md#purge) in order
     * The source and destination currencies must be distinct.
     * The exchanged quantity must be nonzero.
 
-## Modifiers
-
-
----
-### `notFeeAddress`
-
-The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
-
-
-**Signature:** `notFeeAddress(address account)`
-
-
-
----
-### `onlyExchanger`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L591)</sub>
-
-
-
-
----
-### `onlyOracle`
-
-The transaction is reverted if `msg.sender` is not the [exchange rates oracle](ExchangeRates.md#oracle).
-
-
-
----
-### `rateNotStale`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L586)</sub>
-
-
-
-The transaction is reverted if the given currency's latest exchange rate [is stale](ExchangeRates.md#rateisstale). This will also revert if the currency key is unknown to the exchange rates contract.
-
-
 ## Mutative Functions
 
 
@@ -1744,306 +1990,60 @@ A Synth cannot be removed if it has outstanding issued tokens.
     * The synth's total supply must be zero.
     * The sUSD synth cannot be removed.
 
-## Variables
+## Events
 
 
 ---
-### `addressesToCache`
+### `ExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L51)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L639)</sub>
 
 
 
-**Type:** `bytes32[24]`
+!!! tip "Fee Rebates"
 
 
----
-### `availableSynths`
+    See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L29)</sub>
-
+Records that an `amount` of the synth denoted by `currencyKey` has been rebated (i.e. issued) by the system to the `account`.
 
 
-List of the active [`Synths`](Synth.md). Used to compute the total value of issued synths.
-
-
-
-
-**Type:** `contract ISynth[]`
+The amount is the total net amount from all unsettled exchanges into the given synth - `(address account, bytes32 currencyKey, uint256 amount)`
 
 
 ---
-### `synths`
+### `ExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L30)</sub>
-
-
-
-A mapping from currency keys (`bytes32`) to [`Synth`](Synth.md) token contract addresses.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L628)</sub>
 
 
 
-
-**Type:** `mapping(bytes32 => contract ISynth)`
-
-
----
-### `synthsByAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L31)</sub>
+!!! tip "Fee Reclaims"
 
 
+    See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
 
-A reverse mapping from a synth's address to its `bytes32` currency key
+Records that an `amount` of the synth denoted by `currencyKey` has been reclaimed (i.e. burned) from the `account` to the system.
 
 
-
-
-**Type:** `mapping(address => bytes32)`
-
-## Views
+The amount is the total net amount from all unsettled exchanges into the given synth - `(address account, bytes32 currencyKey, uint256 amount)`
 
 
 ---
-### `availableCurrencyKeys`
+### `SynthExchange`
 
-Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSynths`](#availablesynths).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L598)</sub>
 
 
-??? example "Details"
 
+Records that an [exchange](#exchange) between two flavours of synths occurred.
 
-    **Signature**
-    
-    `availableCurrencyKeys() public view returns (bytes32[])`
 
+This event is emitted from the Synthetix [proxy](Proxy.md#_emit) with the `emitSynthExchange` function.
 
----
-### `availableSynthCount`
 
-Returns the number of synths in the system, that is [`availableSynths.length`](#availablesynths).
+**Signature:** `SynthExchange(address indexed account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`
 
 
-??? example "Details"
-
-
-    **Signature**
-    
-    `availableSynthCount() public view returns (uint)`
-
-
----
-### `collateral`
-
-Returns the total SNX owned by the given account, locked and unlocked, escrowed and unescrowed. This is the quantity of SNX synths can be issued against.
-
-
-This is computed as the sum of [`Synthetix.balanceOf(account)`](TokenState.md#balanceof), [`SynthetixEscrow.balanceOf(account)`](SynthetixEscrow.md#balanceof), and [`RewardEscrow.balanceOf(account)`](RewardEscrow.md#balanceof); so an account may issue synths against both its active balance and its unclaimed escrow funds.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `collateral(address account) public view returns (uint)`
-
-
----
-### `collateralisationRatio`
-
-The ratio between value of synths that an account has issued and the value of the collateral they control. That is, this is just [`debtBalanceOf(issuer, "SNX") /`](#debtbalanceof) [`collateral(issuer)`](#collateral).
-
-
-Ideally, issuers should maintain their collateralisation ratio at a level less than the [global issuance ratio](SynthetixState.md#issuanceratio), and they are incentivised to do this by the [fees they can claim](FeePool.md#claim) if they do so.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `collateralisationRatio(address issuer) public view returns (uint)`
-
-
----
-### `debtBalanceOf`
-
-Reports the quantity of a given currency required to free up all SNX locked in given account.
-
-
-If $\mathrm{X}$ is the [total value of all issued synths](#totalissuedsynths), and $\check{\omega}$ is fraction of that value currently accounted for by this account's locked SNX, then the result is simply:
-
-
-$$
-\check{\omega} \ \mathrm{X}
-$$
-
-
-In order to account for fluctuations in synth prices and supply, the current ownership fraction is computed as the adjusted value:
-
-
-$$
-\check{\omega} = \omega \frac{\Delta_\text{last}}{\Delta_\text{entry}}
-$$
-
-
-Where $\omega$ is the account's debt ownership fraction at the time it [last issued or burnt](SynthetixState.md#issuancedata) synths, which produced the $\Delta_\text{entry}$ item in the [debt ledger](SynthetixState.md#debtledger). $\Delta_\text{last}$ is the latest value on the ledger. This logic is much the same as that found in [`FeePool._effectiveDebtRatioForPeriod`](FeePool.md#_effectivedebtratioforperiod). The actual value of $\omega$ is set in [`_addToDebtRegister`](#_addtodebtregister) and [`_removeFromDebtRegister`](#_removefromdebtregister).
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `debtBalanceOf(address issuer, bytes32 currencyKey) public view returns (uint)`
-
-
----
-### `effectiveValue`
-
-Reports an equivalent value of a quantity of one synth in terms of another at current exchange rates. This is a simple wrapper for [`ExchangeRates.effectiveValue`](ExchangeRates.md#effectivevalue)
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `effectiveValue(bytes32 sourceCurrencyKey, uint sourceAmount, bytes32 destinationCurrencyKey) public view returns (uint)`
-
-
----
-### `isWaitingPeriod`
-
-Whether or not the waiting period is ongoing for the given synth. If so, no exchanges into this synth will be allowed, nor will that synth be able to be transferred.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `isWaitingPeriod(bytes32 currencyKey) external view returns (bool)`
-
-
----
-### `maxIssuableSynths`
-
-The maximum number of a given synth that is issuable against the issuer's collateral. This is simply [`issuanceRatio *`](SynthetixState.md#issuanceratio) [`collateral(issuer)`](#collateral), priced in the requested currency.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `maxIssuableSynths(address issuer, bytes32 currencyKey) public view returns (uint)`
-
-
----
-### `remainingIssuableSynths`
-
-The remaining sUSD synths this account can issue.
-
-
-If $\text{maxIssuable}$ is [`maxIssuableSynths(issuer)`](#maxissuablesynths) and $\text{debt}$ is [`debtBalanceOf(issuer, currencyKey)`](#debtbalanceof), then the result of this function is $max(0, \text{maxIssuable} - \text{debt})$.
-
-
-If prices fluctuate then the account's issued synth debt may exceed its current maximum issuable synths, in which case it may not issue any more synths until more collateral is added.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `remainingIssuableSynths(address issuer) public view returns (uint)`
-
-
----
-### `totalIssuedSynths`
-
-Returns the total value of Synths in the system, priced in terms of a given currency.
-
-
-This value is equivalent to:
-
-
-$$
-\frac{1}{\pi_d}\sum_{s \in \text{synths}}{\sigma_s \pi_s}
-$$
-
-
-Where $\sigma_s$ and $\pi_s$ are the total supply and price of synth $s$, and $\pi_d$ is the price of the denominating synth flavour.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `totalIssuedSynths(bytes32 currencyKey) public view returns (uint)`
-    
-    **Modifiers**
-    
-    * [`rateNotStale(currencyKey)`](#ratenotstale)
-    
-    **Preconditions**
-    
-    * No rate for any of the [currently available currencies](#availablesynths) [can be stale](ExchangeRates.md#anyrateisstale).
-
-
----
-### `transferableSynthetix`
-
-The quantity of SNX this account can transfer given that a portion of it may be locked due to issuance.
-
-
-If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\text{lockedSnx}$ is [`debtBalanceOf(account, "SNX") / SynthetixState.issuanceRatio`](#debtbalanceof), the function returns $max(0, \text{balance} - \text{lockedSnx})$. Escrowed tokens are not taken into account in this computation, so unescrowed tokens are locked immediately.
-
-
-???+ info "A Note on Price Motion"
-
-
-    The value of $\text{lockedSnx}$ depends on the current ($\pi$) and previous ($\pi'$) prices being reported by the oracle, and the issuance ratio ($\rho$).
-    
-    If we consider a situation where the synth supply has not changed in the time period under consideration, then ownership fractions do not change even if prices do. Further assuming that there is only a single synth circulating, debt balances correspond to the same number of synths, although perhaps not the same value.
-    
-    In such a situation, we can think of each user having issued a particular quantity of synths. This quantity depends on the prices of synths and SNX at the time of issuance.
-    
-    $$
-    Q_s = \rho \ \frac{\pi'_c}{\pi'_s} \ Q_c
-    $$
-    
-    Whose value at the present time priced [in terms of SNX](#effectivevalue), which is what [`debtBalanceOf(account, "SNX")`](#debtbalanceof) returns, is:
-    
-    $$
-    {V_s}^{c} = \rho \ \frac{\pi'_c}{\pi'_s} \ \pi_c \ Q_c
-    $$
-    
-    Note that this computation has a factor of $\rho$ in it, and this must be divided out in order to ascertain the quantity of SNX which are presently locked.
-    
-    $$
-    \text{lockedSnx} = \frac{{V_s}^{c}}{\rho} = \frac{\pi'_c}{\pi'_s} \ \pi_c \ Q_c
-    $$
-    
-    Which is to say that the quantity of SNX locked in this situation depends on the price.
-    
-    !!! todo "Extend this to the multicurrency case"
-    
-        Consider a two synth system, one primary synth and a secondary one which represents the price/supply of all other synths. Use the total issued value function to derive the behaviour for multiple currencies, and then examine a single currency as a special case.
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `transferableSynthetix(address account) public view returns (uint)`
-    
-    **Modifiers**
-    
-    * [`rateNotStale("SNX")`](#ratenotstale)
+- `(address account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`
 

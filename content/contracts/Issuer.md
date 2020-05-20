@@ -69,6 +69,35 @@ The constructor initialises the various addresses that this contract knows about
 
 
 
+## Views
+
+<!-- E.g.
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+### `availableCurrencyKeys`
+
+Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSynths`](#availablesynths).
+
+??? example "Details"
+
+    **Signature**
+
+    `availableCurrencyKeys() public view returns (bytes32[])`
+
+-->
+
+
+
 ## Constants
 
 
@@ -179,17 +208,63 @@ The constructor initialises the various addresses that this contract knows about
 
 **Type:** `bytes32`
 
-## Events
+## Variables
 
 
 ---
-### `MinimumStakeTimeUpdated`
+### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L366)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L42)</sub>
 
 
 
-- `(uint256 minimumStakeTime)`
+
+
+**Type:** `bytes32[24]`
+
+
+---
+### `minimumStakeTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L31)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+## Modifiers
+
+
+---
+### `onlySynthetix`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L359)</sub>
+
+
+
+<!-- E.g.
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+### `notFeeAddress`
+
+The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
+
+**Signature:** `notFeeAddress(address account)`
+-->
+
+
 
 ## Function (Constructor)
 
@@ -751,38 +826,14 @@ The constructor initialises the various addresses that this contract knows about
 
 ## Internal & Restricted Functions
 
-## Modifiers
-
-
----
-### `onlySynthetix`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L359)</sub>
-
-
-
-<!-- E.g.
-
----
-
----
-
----
-
----
-### `notFeeAddress`
-
-The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
-
-**Signature:** `notFeeAddress(address account)`
--->
-
-
-
 ## Mutative Functions
 
 <!-- E.g.
 
+
+---
+
+---
 
 ---
 
@@ -829,6 +880,10 @@ The new debt position of the caller is recorded with [`_appendAccountIssuanceRec
 ---
 
 ---
+
+---
+
+---
 ### `importAddresses`
 
 Import one or more addresses into the system for the given keys. Note: this function will overrwite any previous entries with the same key names, allowing for inline updates.
@@ -854,54 +909,15 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 
 
-## Variables
+## Events
 
 
 ---
-### `addressesToCache`
+### `MinimumStakeTimeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L42)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L366)</sub>
 
 
 
-**Type:** `bytes32[24]`
-
-
----
-### `minimumStakeTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L31)</sub>
-
-
-
-
-
-**Type:** `uint256`
-
-## Views
-
-<!-- E.g.
-
----
-
----
-
----
-
----
-### `availableCurrencyKeys`
-
-Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSynths`](#availablesynths).
-
-??? example "Details"
-
-    **Signature**
-
-    `availableCurrencyKeys() public view returns (bytes32[])`
-
--->
-
-
+- `(uint256 minimumStakeTime)`
 

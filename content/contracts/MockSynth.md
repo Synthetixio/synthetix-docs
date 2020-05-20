@@ -20,27 +20,31 @@ graph TD
     Proxyable[Proxyable] --> Owned[Owned]
 ```
 
-## Events
+## Variables
 
 
 ---
-### `Burned`
+### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L11)</sub>
 
 
 
-- `(address account, uint256 value)`
+
+
+**Type:** `bytes32`
 
 
 ---
-### `Issued`
+### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L10)</sub>
 
 
 
-- `(address account, uint256 value)`
+
+
+**Type:** `contract ISystemStatus`
 
 ## Function (Constructor)
 
@@ -192,29 +196,25 @@ graph TD
 
     * [optionalProxy](#optionalproxy)
 
-## Variables
+## Events
 
 
 ---
-### `currencyKey`
+### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L11)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L53)</sub>
 
 
 
-**Type:** `bytes32`
+- `(address account, uint256 value)`
 
 
 ---
-### `systemStatus`
+### `Issued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L10)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockSynth.sol#L51)</sub>
 
 
 
-**Type:** `contract ISystemStatus`
+- `(address account, uint256 value)`
 

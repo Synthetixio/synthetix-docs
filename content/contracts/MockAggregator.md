@@ -5,6 +5,48 @@
 
 **Source:** [contracts/test-helpers/MockAggregator.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol)
 
+## Variables
+
+
+---
+### `entries`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L28)</sub>
+
+
+
+
+
+**Type:** `mapping(uint256 => struct MockAggregator.Entry)`
+
+
+---
+### `roundId`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L21)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+## Structs
+
+
+---
+### `Entry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L23)</sub>
+
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| answer | int256 | TBA |
+| timestamp | uint256 | TBA |
+
+
 ## Function (Constructor)
 
 
@@ -134,46 +176,4 @@
     **State Mutability**
 
     `nonpayable`
-
-## Structs
-
-
----
-### `Entry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L23)</sub>
-
-
-
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| answer | int256 | TBA |
-| timestamp | uint256 | TBA |
-
-
-## Variables
-
-
----
-### `entries`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L28)</sub>
-
-
-
-
-
-**Type:** `mapping(uint256 => struct MockAggregator.Entry)`
-
-
----
-### `roundId`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L21)</sub>
-
-
-
-
-
-**Type:** `uint256`
 

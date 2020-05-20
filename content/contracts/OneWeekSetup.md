@@ -18,6 +18,8 @@ graph TD
 
 ## Constants
 
+## Variables
+
 ## Functions
 
 
@@ -59,6 +61,4 @@ graph TD
     **Modifiers**
 
     * [onlyDuringSetup](#onlyduringsetup)
-
-## Variables
 

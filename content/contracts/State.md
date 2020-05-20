@@ -22,23 +22,35 @@ graph TD
     State[State] --> Owned[Owned]
 ```
 
-## Events
+## Variables
 
 
 ---
-### `AssociatedContractUpdated`
+### `associatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L38)</sub>
-
-
-
-The associated contract was updated by the owner. This event reports the new associated contract.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L11)</sub>
 
 
-**Signature:** `AssociatedContractUpdated(address associatedContract)`
+
+The address (presumably a contract) which is permitted to use functions on this contract which have the [`onlyAssociatedContract`](#onlyassociatedcontract) modifier.
 
 
-- `(address associatedContract)`
+
+
+**Type:** `address`
+
+## Modifiers
+
+
+---
+### `onlyAssociatedContract`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L31)</sub>
+
+
+
+Reverts the transaction if the `msg.sender` is not the [associated contract](#associatedcontract). Provided for use by inheriting contracts.
+
 
 ## Function (Constructor)
 
@@ -124,33 +136,21 @@ The associated contract was updated by the owner. This event reports the new ass
 
     * [AssociatedContractUpdated](#associatedcontractupdated)
 
-## Modifiers
+## Events
 
 
 ---
-### `onlyAssociatedContract`
+### `AssociatedContractUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L31)</sub>
-
-
-
-Reverts the transaction if the `msg.sender` is not the [associated contract](#associatedcontract). Provided for use by inheriting contracts.
-
-
-## Variables
-
-
----
-### `associatedContract`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L38)</sub>
 
 
 
-The address (presumably a contract) which is permitted to use functions on this contract which have the [`onlyAssociatedContract`](#onlyassociatedcontract) modifier.
+The associated contract was updated by the owner. This event reports the new associated contract.
 
 
+**Signature:** `AssociatedContractUpdated(address associatedContract)`
 
 
-**Type:** `address`
+- `(address associatedContract)`
 

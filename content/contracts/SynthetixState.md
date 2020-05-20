@@ -62,23 +62,152 @@ graph TD
 
 **Type:** `uint256`
 
-## Events
+## Variables
 
 
 ---
-### `IssuanceRatioUpdated`
+### `debtLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L172)</sub>
-
-
-
-Records that the [issuance ratio](#issuanceratio) was modified.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L39)</sub>
 
 
-**Signature:** `IssuanceRatioUpdated(uint newRatio)`
+
+A list of factors indicating, for each [debt-modifying event](#appenddebtledgervalue), what effect it had on the percentage of debt of all other holders. Later debt ledger entries correspond to more recent issuance events.
 
 
-- `(uint256 newRatio)`
+
+
+**Type:** `uint256[]`
+
+
+---
+### `issuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L33)</sub>
+
+
+
+The most recent issuance data for each address.
+
+
+
+
+**Type:** `mapping(address => struct SynthetixState.IssuanceData)`
+
+
+---
+### `issuanceRatio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L43)</sub>
+
+
+
+The current global issuance ratio, which is the conversion factor between a value of SNX and the value of synths issued against them. As a result this determines the maximum ratio between the total value of Synths and SNX in the system.
+
+
+It is also the target ratio for SNX stakers. As per the logic in [`FeePool.feesClaimable`](FeePool.md#feesclaimable), stakers can only claim any fee rewards if they are within ten percent of the issuance ratio. Therefore altering it will also alter the maximum total supply of Synths, as suppliers of Synths are strongly incentivised to track the issuance ratio closely.
+
+
+If the issuance ratio is $\rho$, then the [maximum value](Synthetix.md#maxissuablesynths) $V_s$ of a synth $s$ [issuable](Synthetix.md#issuesynths) against a value $V_c$ of SNX collateral is just:
+
+
+$$
+V_s = \rho \ V_c
+$$
+
+
+Given that currency is worth its price times its quantity ($V_x = \pi_x \ Q_x$), we have:
+
+
+$$
+\pi_s \ Q_s = \rho \ \pi_c \ Q_c
+$$
+
+
+This implies that the quantity of synths received upon issuance is the quantity of collateral staked, multiplied by the issuance ratio and the ratio between the collateral and synth prices.
+
+
+$$
+Q_s = \rho \ \frac{\pi_c}{\pi_s} \ Q_c
+$$
+
+
+As a result of this calculation, the number of synths that can be issued increases as the SNX price increases, but decreases as the synth price increases. Since neither market prices nor synth supply can be controlled directly, the remaining parameter, the issuance ratio, is an important way of affecting these quantities.
+
+
+???+ info "The Issuance Ratio as a Macro-Economic Lever"
+
+
+    Tweaking the issuance ratio is an effective means of altering the total synth supply, and therefore its price.
+    
+    In cases where Synths are oversupplied, there is downward price pressure and decreased stability. Decreasing the issuance ratio both constrains the total supply of Synths circulating in the system, and transiently increases aggregate demand for Synths as every staker must rebuy a quantity of Synths and burn them.
+    
+    For precisely these reasons the issuance ratio was altered by [SCCP-2](https://sips.synthetix.io/sccp/sccp-2) from its initial value of $\frac{1}{5}$ to $\frac{2}{15}$.
+    
+    The related case of increasing the issuance ratio is similar.
+
+
+
+**Type:** `uint256`
+
+
+---
+### `preferredCurrency`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L49)</sub>
+
+
+
+!!! danger "Disabled"
+
+
+    This feature is currently dormant. It can still operate, but the [`Synthetix`](Synthetix.md) contract does not expose any means for an account's preferred currency to actually be set, so it never operates.
+
+If users nominate a preferred currency, all synths they receive will be converted to this currency. This mapping stores the nominated preferred currency for each account, if any. A null preferred currency means no conversion will be performed.
+
+
+This is used within [`Synth._internalTransfer`](Synth.md#_internaltransfer).
+
+
+!!! caution "Short Currency Keys"
+
+
+    Note that as of [SIP-17](https://sips.synthetix.io/sips/sip-17) currency keys in other contracts are of the `bytes32` type. This means that if this preferred currency component is ever reused, it will only be able to support short-named synths unless new storage is provided.
+
+
+
+**Type:** `mapping(address => bytes4)`
+
+
+---
+### `totalIssuerCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L36)</sub>
+
+
+
+The number of people with outstanding synths.
+
+
+
+
+**Type:** `uint256`
+
+## Structs
+
+
+---
+### `IssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L19)</sub>
+
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| initialDebtOwnership | uint256 | TBA |
+| debtEntryIndex | uint256 | TBA |
+
 
 ## Function (Constructor)
 
@@ -373,150 +502,21 @@ Sets the preferred currency for a particular account. Pass in null to unset this
 
     * [IssuanceRatioUpdated](#issuanceratioupdated)
 
-## Structs
+## Events
 
 
 ---
-### `IssuanceData`
+### `IssuanceRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L172)</sub>
 
 
 
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| initialDebtOwnership | uint256 | TBA |
-| debtEntryIndex | uint256 | TBA |
+Records that the [issuance ratio](#issuanceratio) was modified.
 
 
-## Variables
+**Signature:** `IssuanceRatioUpdated(uint newRatio)`
 
 
----
-### `debtLedger`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L39)</sub>
-
-
-
-A list of factors indicating, for each [debt-modifying event](#appenddebtledgervalue), what effect it had on the percentage of debt of all other holders. Later debt ledger entries correspond to more recent issuance events.
-
-
-
-
-**Type:** `uint256[]`
-
-
----
-### `issuanceData`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L33)</sub>
-
-
-
-The most recent issuance data for each address.
-
-
-
-
-**Type:** `mapping(address => struct SynthetixState.IssuanceData)`
-
-
----
-### `issuanceRatio`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L43)</sub>
-
-
-
-The current global issuance ratio, which is the conversion factor between a value of SNX and the value of synths issued against them. As a result this determines the maximum ratio between the total value of Synths and SNX in the system.
-
-
-It is also the target ratio for SNX stakers. As per the logic in [`FeePool.feesClaimable`](FeePool.md#feesclaimable), stakers can only claim any fee rewards if they are within ten percent of the issuance ratio. Therefore altering it will also alter the maximum total supply of Synths, as suppliers of Synths are strongly incentivised to track the issuance ratio closely.
-
-
-If the issuance ratio is $\rho$, then the [maximum value](Synthetix.md#maxissuablesynths) $V_s$ of a synth $s$ [issuable](Synthetix.md#issuesynths) against a value $V_c$ of SNX collateral is just:
-
-
-$$
-V_s = \rho \ V_c
-$$
-
-
-Given that currency is worth its price times its quantity ($V_x = \pi_x \ Q_x$), we have:
-
-
-$$
-\pi_s \ Q_s = \rho \ \pi_c \ Q_c
-$$
-
-
-This implies that the quantity of synths received upon issuance is the quantity of collateral staked, multiplied by the issuance ratio and the ratio between the collateral and synth prices.
-
-
-$$
-Q_s = \rho \ \frac{\pi_c}{\pi_s} \ Q_c
-$$
-
-
-As a result of this calculation, the number of synths that can be issued increases as the SNX price increases, but decreases as the synth price increases. Since neither market prices nor synth supply can be controlled directly, the remaining parameter, the issuance ratio, is an important way of affecting these quantities.
-
-
-???+ info "The Issuance Ratio as a Macro-Economic Lever"
-
-
-    Tweaking the issuance ratio is an effective means of altering the total synth supply, and therefore its price.
-    
-    In cases where Synths are oversupplied, there is downward price pressure and decreased stability. Decreasing the issuance ratio both constrains the total supply of Synths circulating in the system, and transiently increases aggregate demand for Synths as every staker must rebuy a quantity of Synths and burn them.
-    
-    For precisely these reasons the issuance ratio was altered by [SCCP-2](https://sips.synthetix.io/sccp/sccp-2) from its initial value of $\frac{1}{5}$ to $\frac{2}{15}$.
-    
-    The related case of increasing the issuance ratio is similar.
-
-
-
-**Type:** `uint256`
-
-
----
-### `preferredCurrency`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L49)</sub>
-
-
-
-!!! danger "Disabled"
-
-
-    This feature is currently dormant. It can still operate, but the [`Synthetix`](Synthetix.md) contract does not expose any means for an account's preferred currency to actually be set, so it never operates.
-
-If users nominate a preferred currency, all synths they receive will be converted to this currency. This mapping stores the nominated preferred currency for each account, if any. A null preferred currency means no conversion will be performed.
-
-
-This is used within [`Synth._internalTransfer`](Synth.md#_internaltransfer).
-
-
-!!! caution "Short Currency Keys"
-
-
-    Note that as of [SIP-17](https://sips.synthetix.io/sips/sip-17) currency keys in other contracts are of the `bytes32` type. This means that if this preferred currency component is ever reused, it will only be able to support short-named synths unless new storage is provided.
-
-
-
-**Type:** `mapping(address => bytes4)`
-
-
----
-### `totalIssuerCount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L36)</sub>
-
-
-
-The number of people with outstanding synths.
-
-
-
-
-**Type:** `uint256`
+- `(uint256 newRatio)`
 

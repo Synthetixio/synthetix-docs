@@ -19,6 +19,8 @@ graph TD
 
 ## Constants
 
+## Variables
+
 ## Function (Constructor)
 
 
@@ -44,6 +46,4 @@ graph TD
     * [Owned](#owned)
 
     * [SelfDestructible](#selfdestructible)
-
-## Variables
 

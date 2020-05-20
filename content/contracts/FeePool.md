@@ -77,6 +77,191 @@ This constructor also begins the first fee period, as it initialises the first f
     
     * `_exchangeFeeRate` must be no greater than [`MAX_EXCHANGE_FEE_RATE`](#max_exchange_fee_rate).
 
+## Views
+
+
+---
+### `amountReceivedFromExchange`
+
+Computes the quantity received if a quantity of Synths is exchanged into another flavour. The amount received is the quantity sent minus the [exchange fee](#exchangefeeincurred), as per the logic in [`Synthetix._internalExchange`](Synthetix.md#_internalexchange).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `amountReceivedFromExchange(uint value) external view returns (uint)`
+
+
+---
+### `amountReceivedFromTransfer`
+
+Computes the number of Synths received by the recipient if a certain quantity is sent.
+
+
+As of [SIP-19](https://sips.synthetix.io/sips/sip-19), this is just the identity function, since there are no longer any transfer fees. It is only used by the [`Depot`](Depot.md) contract.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `amountReceivedFromTransfer(uint value) external view returns (uint)`
+
+
+---
+### `effectiveDebtRatioForPeriod`
+
+Given an account and an index into [`recentFeePeriods`](#recentfeeperiods), this function computes the percentage of total debt ownership of the account at the end of that period.
+
+
+This uses [`_effectiveDebtRatioForPeriod`](#_effectiveDebtRatioForPeriod), where the start index and ownership percentage are computed with [`FeePoolState.applicableIssuanceData`](FeePoolState.md#applicableissuancedata), and the end index is one before the beginnging of the next period. Hence this function disallows querying the debt for the current period.
+
+
+In principle a future version could support the current fee period by using the last debt ledger entry as the end index.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `effectiveDebtRatioForPeriod(address account, uint period) external view returns (uint)`
+    
+    **Preconditions**
+    
+    * `period` must not be 0, as the current fee period has not closed.
+    * `period` must not exceed [`FEE_PERIOD_LENGTH`](#fee_period_length).
+
+
+---
+### `exchangeFeeIncurred`
+
+Returns the fee charged on an exchange of a certain quantity of Synths into another flavour. This is simply the input multiplied by [`exchangeFeeRate`](#exchangeFeeRate).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `exchangeFeeIncurred(uint value) public view returns (uint)`
+
+
+---
+### `feesAvailable`
+
+Return the total of fees and rewards available to be withdrawn by this account. The result is reported as a `[fees, rewards]` pair denominated in the requested Synth flavour and SNX, respectively.
+
+
+This is the total of fees accrued in completed periods, so is simply the the sum over an account's [`feesByPeriod`](#feesbyperiod) not including the current period.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `feesAvailable(address account, bytes32 currencyKey) public view returns (uint, uint)`
+
+
+---
+### `feesByPeriod`
+
+Returns an array of [`FEE_PERIOD_LENGTH`](#fee_period_length) `[fees, rewards]` pairs owed to an account for each [recent fee period](#recentfeeperiods) (including the current one). Fees are denominated in sUSD and rewards in SNX.
+
+
+To compute this, for each period from oldest to newest, find the [latest issuance event this account performed before the close of this period](FeePoolState.md#applicableissuancedata), and use it to derive the owed [fees and rewards](#_feesandrewardsfromperiod) for that period.
+
+
+Note that a single issuance event can result in fees accruing for several fee periods, if the issuer does not claim their fees in one or more periods.
+
+
+Periods where the user has already withdrawn since that period closed are skipped, producing `[0,0]` entries.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `feesByPeriod(address account) public view returns (uint[2][FEE_PERIOD_LENGTH] memory results)`
+
+
+---
+### `feesClaimable`
+
+This is a predicate, returning true iff a particular account is permitted to claim any fees it has accrued.
+
+
+A account is able to claim fees if its [collateralisation ratio](Synthetix.md#collateralisationratio) is less than 110% of the [global issuance ratio](SynthetixState.md#issuanceratio).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `feesClaimable(address account) public view returns (bool)`
+
+
+---
+### `getLastFeeWithdrawal`
+
+Returns from [`FeePoolEternalStorage`](FeePoolEternalStorage.md) the id of the fee period during which the given address last withdrew fees.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `getLastFeeWithdrawal(address _claimingAddress) public view returns (uint)`
+
+
+---
+### `getPenaltyThresholdRatio`
+
+Returns the collateralisation level a user can reach before they cannot claim fees. This is simply [`SynthetixState.issuanceRatio *`](SynthetixState.md#issuanceratio) [`(1 + TARGET_THRESHOLD)`](#target_threshold). The result is returned as a [18-decimal fixed point number](SafeDecimalMath.md).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `getPenaltyThresholdRatio() public view returns (uint)`
+
+
+---
+### `totalFeesAvailable`
+
+Computes the total fees available to be withdrawn, valued in terms of `currencyKey`. This simply sums the unclaimed fees over [`recentFeePeriods`](#recentfeeperiods) except those from the current period, because they cannot yet be claimed.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `totalFeesAvailable(bytes32 currencyKey) external view returns (uint)`
+
+
+---
+### `totalRewardsAvailable`
+
+Computes the total SNX rewards available to be withdrawn. This simply sums the unclaimed rewards over [`recentFeePeriods`](#recentfeeperiods) except those from the current period, because they cannot yet be claimed.
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `totalRewardsAvailable() external view returns (uint)`
+
 ## Constants
 
 
@@ -376,93 +561,163 @@ The minimum value of [`feePeriodDuration`](#feeperiodduration).
 
 **Type:** `uint256`
 
-## Events
+## Variables
 
 
 ---
-### `ExchangeFeeUpdated`
+### `_currentFeePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L852)</sub>
-
-
-
-Records that the fee for exchanging between Synths was [updated](#setexchangefee).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L66)</sub>
 
 
-This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitExchangeFeeUpdated` function.
 
 
-**Signature:** `ExchangeFeeUpdated(uint newFeeRate)`
 
-
-- `(uint256 newFeeRate)`
+**Type:** `uint256`
 
 
 ---
-### `FeePeriodClosed`
+### `_recentFeePeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L866)</sub>
-
-
-
-- `(uint256 feePeriodId)`
-
-
----
-### `FeePeriodDurationUpdated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L859)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L65)</sub>
 
 
 
-Records that the duration of a single fee period was [updated](#setfeeperiodduration).
 
 
-This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitFeePeriodDurationUpdated` function.
-
-
-**Signature:** `FeePeriodDurationUpdated(uint newFeePeriodDuration)`
-
-
-- `(uint256 newFeePeriodDuration)`
+**Type:** `struct FeePool.FeePeriod[2]`
 
 
 ---
-### `FeesClaimed`
+### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L873)</sub>
-
-
-
-Records that an account [claimed](#_claimfees) the fees and rewards owed to them.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L93)</sub>
 
 
-This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitFeesClaimed` function.
 
 
-**Signature:** `FeesClaimed(address account, uint sUSDAmount, uint snxRewards)`
 
-
-- `(address account, uint256 sUSDAmount, uint256 snxRewards)`
+**Type:** `bytes32[24]`
 
 
 ---
-### `IssuanceDebtRatioEntry`
+### `exchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L826)</sub>
-
-
-
-Records that a new account issuance record was [appended](#appendaccountissuancerecord) to the account's issuance ledger in [`FeePoolState`](FeePoolState.md#appendaccountissuancerecord).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L36)</sub>
 
 
-This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitIssuanceDebtRatioEntry` function.
+
+The fee fraction charged on a currency exchange, between 0 and 0.1.
 
 
-**Signature:** `IssuanceDebtRatioEntry(address indexed account, uint debtRatio, uint debtEntryIndex, uint feePeriodStartingDebtIndex)`
 
 
-- `(address account, uint256 debtRatio, uint256 debtEntryIndex, uint256 feePeriodStartingDebtIndex)`
+**Type:** `uint256`
+
+
+---
+### `feePeriodDuration`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L72)</sub>
+
+
+
+This is the minimum duration of a single fee period in seconds. In practice they may be slightly longer if [`closeCurrentFeePeriod`](#closecurrentfeeperiod) is not called immediately at the earliest valid moment.
+
+
+Its value is one week, but it may be between [`MIN_FEE_PERIOD_DURATION`](#min_fee_period_duration) and [`MAX_FEE_PERIOD_DURATION`](#max_fee_period_duration) (1 to 60 days).
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `sUSD`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L45)</sub>
+
+
+
+
+
+**Type:** `bytes32`
+
+
+---
+### `targetThreshold`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L78)</sub>
+
+
+
+
+
+**Type:** `uint256`
+
+## Structs
+
+
+---
+### `FeePeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L48)</sub>
+
+
+
+A record for a fee period, when it was opened, and the fees and rewards accrued within it. This information is maintained for the last several fee periods in [`recentFeePeriods`](#recentfeeperiods).
+
+
+| Field | Type | Description |
+| ------ | ------ | ------ |
+| feePeriodId | uint64 | A serial id for fee periods which is incremented for each new fee period. |
+| startingDebtIndex | uint64 | The length of [`SynthetixState.debtLedger`](SynthetixState.md#debtledger) at the time this fee period began. |
+| startTime | uint64 | The current timestamp when this fee period began. |
+| feesToDistribute | uint256 | The total of fees to be distributed in this period, in sUSD. This increases when fees are collected in the current period or when unclaimed fees roll over from the oldest period to the second oldest. See [`feePaid`](#feepaid) and [`closeCurrentPeriod`](#closecurrentperiod). |
+| feesClaimed | uint256 | The number of fees that have already been claimed during this period. |
+| rewardsToDistribute | uint256 | The total of inflationary rewards to be distributed in this period, in SNX. This increases when new rewards are minted by [`Synthetix.mint`](Synthetix.md#mint)/[`rewardsMinted`](#rewardsminted), or when unclaimed rewards roll over from the oldest period to the second oldest ([`closeCurrentPeriod`](#closecurrentperiod)). |
+| rewardsClaimed | uint256 | The quantity of inflationary rewards that have already been claimed during this period. |
+
+
+## Modifiers
+
+
+---
+### `notFeeAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L819)</sub>
+
+
+
+Reverts the transaction if `account` is the [fee address](#fee_address).
+
+
+**Signature:** `notFeeAddress(address account)`
+
+
+
+---
+### `onlyExchangerOrSynth`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L806)</sub>
+
+
+
+
+---
+### `onlyIssuer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L814)</sub>
+
+
+
+
+---
+### `onlySynthetix`
+
+Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) address.
+
 
 ## Function (Constructor)
 
@@ -1646,45 +1901,6 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
     
     `_setLastFeeWithdrawal(address _claimingAddress, uint _feePeriodID) internal`
 
-## Modifiers
-
-
----
-### `notFeeAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L819)</sub>
-
-
-
-Reverts the transaction if `account` is the [fee address](#fee_address).
-
-
-**Signature:** `notFeeAddress(address account)`
-
-
-
----
-### `onlyExchangerOrSynth`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L806)</sub>
-
-
-
-
----
-### `onlyIssuer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L814)</sub>
-
-
-
-
----
-### `onlySynthetix`
-
-Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) address.
-
-
 ## Mutative Functions
 
 
@@ -2059,307 +2275,91 @@ Adds a quantity of SNX to the current fee period's total of rewards to be distri
     
     * Either `msg.sender` or [`messageSender`](Proxyable.md#messagesender) must be the [rewards authority address](#rewardsauthority).
 
-## Structs
+## Events
 
 
 ---
-### `FeePeriod`
+### `ExchangeFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L48)</sub>
-
-
-
-A record for a fee period, when it was opened, and the fees and rewards accrued within it. This information is maintained for the last several fee periods in [`recentFeePeriods`](#recentfeeperiods).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L852)</sub>
 
 
-| Field | Type | Description |
-| ------ | ------ | ------ |
-| feePeriodId | uint64 | A serial id for fee periods which is incremented for each new fee period. |
-| startingDebtIndex | uint64 | The length of [`SynthetixState.debtLedger`](SynthetixState.md#debtledger) at the time this fee period began. |
-| startTime | uint64 | The current timestamp when this fee period began. |
-| feesToDistribute | uint256 | The total of fees to be distributed in this period, in sUSD. This increases when fees are collected in the current period or when unclaimed fees roll over from the oldest period to the second oldest. See [`feePaid`](#feepaid) and [`closeCurrentPeriod`](#closecurrentperiod). |
-| feesClaimed | uint256 | The number of fees that have already been claimed during this period. |
-| rewardsToDistribute | uint256 | The total of inflationary rewards to be distributed in this period, in SNX. This increases when new rewards are minted by [`Synthetix.mint`](Synthetix.md#mint)/[`rewardsMinted`](#rewardsminted), or when unclaimed rewards roll over from the oldest period to the second oldest ([`closeCurrentPeriod`](#closecurrentperiod)). |
-| rewardsClaimed | uint256 | The quantity of inflationary rewards that have already been claimed during this period. |
+
+Records that the fee for exchanging between Synths was [updated](#setexchangefee).
 
 
-## Variables
+This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitExchangeFeeUpdated` function.
+
+
+**Signature:** `ExchangeFeeUpdated(uint newFeeRate)`
+
+
+- `(uint256 newFeeRate)`
 
 
 ---
-### `_currentFeePeriod`
+### `FeePeriodClosed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L66)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L866)</sub>
 
 
 
-**Type:** `uint256`
+- `(uint256 feePeriodId)`
 
 
 ---
-### `_recentFeePeriods`
+### `FeePeriodDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L65)</sub>
-
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L859)</sub>
 
 
 
-**Type:** `struct FeePool.FeePeriod[2]`
+Records that the duration of a single fee period was [updated](#setfeeperiodduration).
 
 
----
-### `addressesToCache`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L93)</sub>
+This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitFeePeriodDurationUpdated` function.
 
 
+**Signature:** `FeePeriodDurationUpdated(uint newFeePeriodDuration)`
 
 
-
-**Type:** `bytes32[24]`
+- `(uint256 newFeePeriodDuration)`
 
 
 ---
-### `exchangeFeeRate`
+### `FeesClaimed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L36)</sub>
-
-
-
-The fee fraction charged on a currency exchange, between 0 and 0.1.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L873)</sub>
 
 
 
-
-**Type:** `uint256`
-
-
----
-### `feePeriodDuration`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L72)</sub>
+Records that an account [claimed](#_claimfees) the fees and rewards owed to them.
 
 
-
-This is the minimum duration of a single fee period in seconds. In practice they may be slightly longer if [`closeCurrentFeePeriod`](#closecurrentfeeperiod) is not called immediately at the earliest valid moment.
-
-
-Its value is one week, but it may be between [`MIN_FEE_PERIOD_DURATION`](#min_fee_period_duration) and [`MAX_FEE_PERIOD_DURATION`](#max_fee_period_duration) (1 to 60 days).
+This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitFeesClaimed` function.
 
 
+**Signature:** `FeesClaimed(address account, uint sUSDAmount, uint snxRewards)`
 
 
-**Type:** `uint256`
+- `(address account, uint256 sUSDAmount, uint256 snxRewards)`
 
 
 ---
-### `sUSD`
+### `IssuanceDebtRatioEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L826)</sub>
 
 
 
+Records that a new account issuance record was [appended](#appendaccountissuancerecord) to the account's issuance ledger in [`FeePoolState`](FeePoolState.md#appendaccountissuancerecord).
 
 
-**Type:** `bytes32`
+This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitIssuanceDebtRatioEntry` function.
 
 
----
-### `targetThreshold`
+**Signature:** `IssuanceDebtRatioEntry(address indexed account, uint debtRatio, uint debtEntryIndex, uint feePeriodStartingDebtIndex)`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L78)</sub>
 
-
-
-
-
-**Type:** `uint256`
-
-## Views
-
-
----
-### `amountReceivedFromExchange`
-
-Computes the quantity received if a quantity of Synths is exchanged into another flavour. The amount received is the quantity sent minus the [exchange fee](#exchangefeeincurred), as per the logic in [`Synthetix._internalExchange`](Synthetix.md#_internalexchange).
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `amountReceivedFromExchange(uint value) external view returns (uint)`
-
-
----
-### `amountReceivedFromTransfer`
-
-Computes the number of Synths received by the recipient if a certain quantity is sent.
-
-
-As of [SIP-19](https://sips.synthetix.io/sips/sip-19), this is just the identity function, since there are no longer any transfer fees. It is only used by the [`Depot`](Depot.md) contract.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `amountReceivedFromTransfer(uint value) external view returns (uint)`
-
-
----
-### `effectiveDebtRatioForPeriod`
-
-Given an account and an index into [`recentFeePeriods`](#recentfeeperiods), this function computes the percentage of total debt ownership of the account at the end of that period.
-
-
-This uses [`_effectiveDebtRatioForPeriod`](#_effectiveDebtRatioForPeriod), where the start index and ownership percentage are computed with [`FeePoolState.applicableIssuanceData`](FeePoolState.md#applicableissuancedata), and the end index is one before the beginnging of the next period. Hence this function disallows querying the debt for the current period.
-
-
-In principle a future version could support the current fee period by using the last debt ledger entry as the end index.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `effectiveDebtRatioForPeriod(address account, uint period) external view returns (uint)`
-    
-    **Preconditions**
-    
-    * `period` must not be 0, as the current fee period has not closed.
-    * `period` must not exceed [`FEE_PERIOD_LENGTH`](#fee_period_length).
-
-
----
-### `exchangeFeeIncurred`
-
-Returns the fee charged on an exchange of a certain quantity of Synths into another flavour. This is simply the input multiplied by [`exchangeFeeRate`](#exchangeFeeRate).
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `exchangeFeeIncurred(uint value) public view returns (uint)`
-
-
----
-### `feesAvailable`
-
-Return the total of fees and rewards available to be withdrawn by this account. The result is reported as a `[fees, rewards]` pair denominated in the requested Synth flavour and SNX, respectively.
-
-
-This is the total of fees accrued in completed periods, so is simply the the sum over an account's [`feesByPeriod`](#feesbyperiod) not including the current period.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `feesAvailable(address account, bytes32 currencyKey) public view returns (uint, uint)`
-
-
----
-### `feesByPeriod`
-
-Returns an array of [`FEE_PERIOD_LENGTH`](#fee_period_length) `[fees, rewards]` pairs owed to an account for each [recent fee period](#recentfeeperiods) (including the current one). Fees are denominated in sUSD and rewards in SNX.
-
-
-To compute this, for each period from oldest to newest, find the [latest issuance event this account performed before the close of this period](FeePoolState.md#applicableissuancedata), and use it to derive the owed [fees and rewards](#_feesandrewardsfromperiod) for that period.
-
-
-Note that a single issuance event can result in fees accruing for several fee periods, if the issuer does not claim their fees in one or more periods.
-
-
-Periods where the user has already withdrawn since that period closed are skipped, producing `[0,0]` entries.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `feesByPeriod(address account) public view returns (uint[2][FEE_PERIOD_LENGTH] memory results)`
-
-
----
-### `feesClaimable`
-
-This is a predicate, returning true iff a particular account is permitted to claim any fees it has accrued.
-
-
-A account is able to claim fees if its [collateralisation ratio](Synthetix.md#collateralisationratio) is less than 110% of the [global issuance ratio](SynthetixState.md#issuanceratio).
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `feesClaimable(address account) public view returns (bool)`
-
-
----
-### `getLastFeeWithdrawal`
-
-Returns from [`FeePoolEternalStorage`](FeePoolEternalStorage.md) the id of the fee period during which the given address last withdrew fees.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `getLastFeeWithdrawal(address _claimingAddress) public view returns (uint)`
-
-
----
-### `getPenaltyThresholdRatio`
-
-Returns the collateralisation level a user can reach before they cannot claim fees. This is simply [`SynthetixState.issuanceRatio *`](SynthetixState.md#issuanceratio) [`(1 + TARGET_THRESHOLD)`](#target_threshold). The result is returned as a [18-decimal fixed point number](SafeDecimalMath.md).
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `getPenaltyThresholdRatio() public view returns (uint)`
-
-
----
-### `totalFeesAvailable`
-
-Computes the total fees available to be withdrawn, valued in terms of `currencyKey`. This simply sums the unclaimed fees over [`recentFeePeriods`](#recentfeeperiods) except those from the current period, because they cannot yet be claimed.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `totalFeesAvailable(bytes32 currencyKey) external view returns (uint)`
-
-
----
-### `totalRewardsAvailable`
-
-Computes the total SNX rewards available to be withdrawn. This simply sums the unclaimed rewards over [`recentFeePeriods`](#recentfeeperiods) except those from the current period, because they cannot yet be claimed.
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `totalRewardsAvailable() external view returns (uint)`
+- `(address account, uint256 debtRatio, uint256 debtEntryIndex, uint256 feePeriodStartingDebtIndex)`
 

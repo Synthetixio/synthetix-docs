@@ -49,6 +49,32 @@ graph TD
 
 - ?
 
+## Views
+
+## Variables
+
+
+---
+### `multiCollateralKey`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L9)</sub>
+
+
+
+
+
+**Type:** `bytes32`
+
+## Modifiers
+
+
+---
+### `onlyInternalContracts`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
+
+
+
 ## Function (Constructor)
 
 
@@ -141,33 +167,7 @@ graph TD
 
 ## Internal & Restricted Mutative Functions
 
-## Modifiers
-
-
----
-### `onlyInternalContracts`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
-
-
-
 ## Owner Mutative Functions
 
 ## Public Mutative Functions
-
-## Variables
-
-
----
-### `multiCollateralKey`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L9)</sub>
-
-
-
-
-
-**Type:** `bytes32`
-
-## Views
 

@@ -27,23 +27,47 @@ True iff the contract is currently paused.
 **Type:** `bool public`
 
 
-## Events
+## Variables
 
 
 ---
-### `PauseChanged`
+### `lastPauseTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L40)</sub>
-
-
-
-The contract has gone from paused to unpaused or vice versa. This event reports the new state.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L9)</sub>
 
 
-**Signature:** `PauseChanged(bool isPaused)`
+
+The UNIX timestamp in seconds at which the contract was last paused.
 
 
-- `(bool isPaused)`
+
+
+**Type:** `uint256`
+
+
+---
+### `paused`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L10)</sub>
+
+
+
+
+
+**Type:** `bool`
+
+## Modifiers
+
+
+---
+### `notPaused`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L42)</sub>
+
+
+
+Reverts the transaction the contract is [`paused`](#paused). Provided for use by inheriting contracts.
+
 
 ## Function (Constructor)
 
@@ -121,45 +145,21 @@ The contract has gone from paused to unpaused or vice versa. This event reports 
 
     * [PauseChanged](#pausechanged)
 
-## Modifiers
+## Events
 
 
 ---
-### `notPaused`
+### `PauseChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L42)</sub>
-
-
-
-Reverts the transaction the contract is [`paused`](#paused). Provided for use by inheriting contracts.
-
-
-## Variables
-
-
----
-### `lastPauseTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L40)</sub>
 
 
 
-The UNIX timestamp in seconds at which the contract was last paused.
+The contract has gone from paused to unpaused or vice versa. This event reports the new state.
 
 
+**Signature:** `PauseChanged(bool isPaused)`
 
 
-**Type:** `uint256`
-
-
----
-### `paused`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L10)</sub>
-
-
-
-
-
-**Type:** `bool`
+- `(bool isPaused)`
 

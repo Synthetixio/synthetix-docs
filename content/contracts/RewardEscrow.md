@@ -76,71 +76,110 @@ graph TD
 
 **Type:** `uint256`
 
-## Events
+## Variables
 
 
 ---
-### `FeePoolUpdated`
+### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L265)</sub>
-
-
-
-Records that the fee pool contract address was altered.
-
-
-**Signature:** `FeePoolUpdated(address newFeePool)`
-
-
-- `(address newFeePool)`
-
-
----
-### `SynthetixUpdated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L263)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L23)</sub>
 
 
 
-Records that the SNX contract address was altered.
+The address of the [`FeePool`](FeePool.md) contract.
 
 
-**Signature:** `SynthetixUpdated(address newSynthetix)`
 
 
-- `(address newSynthetix)`
+**Type:** `contract IFeePool`
 
 
 ---
-### `Vested`
+### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L267)</sub>
-
-
-
-Records that an account vested a quantity of tokens.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L21)</sub>
 
 
-**Signature:** `Vested(address indexed beneficiary, uint time, uint value)`
+
+The address of the main [`Synthetix`](Synthetix.md) contract.
 
 
-- `(address beneficiary, uint256 time, uint256 value)`
+
+
+**Type:** `contract ISynthetix`
 
 
 ---
-### `VestingEntryCreated`
+### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L269)</sub>
-
-
-
-Records that the fee pool created a vesting entry.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L30)</sub>
 
 
-**Signature:** `VestingEntryCreated(address indexed beneficiary, uint time, uint value)`
+
+The quantity of remaining tokens for each account; it saves the recomputation involved in summing over [`vestingSchedules`](#vestingschedules) entries.
 
 
-- `(address beneficiary, uint256 time, uint256 value)`
+
+
+**Type:** `mapping(address => uint256)`
+
+
+---
+### `totalEscrowedBalance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L36)</sub>
+
+
+
+A record of the total remaining vested balance in this contract, which should be equal to the actual SNX balance.
+
+
+
+
+**Type:** `uint256`
+
+
+---
+### `totalVestedAccountBalance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L33)</sub>
+
+
+
+The quantity of tokens that have already been vested for each account.
+
+
+
+
+**Type:** `mapping(address => uint256)`
+
+
+---
+### `vestingSchedules`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L27)</sub>
+
+
+
+Stores the vesting schedule for each for each account. Each schedule is a list of `(vesting timestamp, quantity)` pairs in ascending time order.
+
+
+
+
+**Type:** `mapping(address => uint256[2][])`
+
+## Modifiers
+
+
+---
+### `onlyFeePool`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L254)</sub>
+
+
+
+Reverts the transaction if the `msg.sender` is not the [`FeePool`](FeePool.md).
+
 
 ## Function (Constructor)
 
@@ -534,108 +573,69 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 
     * [SynthetixUpdated](#synthetixupdated)
 
-## Modifiers
+## Events
 
 
 ---
-### `onlyFeePool`
+### `FeePoolUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L254)</sub>
-
-
-
-Reverts the transaction if the `msg.sender` is not the [`FeePool`](FeePool.md).
-
-
-## Variables
-
-
----
-### `feePool`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L265)</sub>
 
 
 
-The address of the [`FeePool`](FeePool.md) contract.
+Records that the fee pool contract address was altered.
 
 
+**Signature:** `FeePoolUpdated(address newFeePool)`
 
 
-**Type:** `contract IFeePool`
+- `(address newFeePool)`
 
 
 ---
-### `synthetix`
+### `SynthetixUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L21)</sub>
-
-
-
-The address of the main [`Synthetix`](Synthetix.md) contract.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L263)</sub>
 
 
 
-
-**Type:** `contract ISynthetix`
-
-
----
-### `totalEscrowedAccountBalance`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L30)</sub>
+Records that the SNX contract address was altered.
 
 
-
-The quantity of remaining tokens for each account; it saves the recomputation involved in summing over [`vestingSchedules`](#vestingschedules) entries.
-
+**Signature:** `SynthetixUpdated(address newSynthetix)`
 
 
-
-**Type:** `mapping(address => uint256)`
+- `(address newSynthetix)`
 
 
 ---
-### `totalEscrowedBalance`
+### `Vested`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L36)</sub>
-
-
-
-A record of the total remaining vested balance in this contract, which should be equal to the actual SNX balance.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L267)</sub>
 
 
 
-
-**Type:** `uint256`
-
-
----
-### `totalVestedAccountBalance`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L33)</sub>
+Records that an account vested a quantity of tokens.
 
 
-
-The quantity of tokens that have already been vested for each account.
-
+**Signature:** `Vested(address indexed beneficiary, uint time, uint value)`
 
 
-
-**Type:** `mapping(address => uint256)`
+- `(address beneficiary, uint256 time, uint256 value)`
 
 
 ---
-### `vestingSchedules`
+### `VestingEntryCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L27)</sub>
-
-
-
-Stores the vesting schedule for each for each account. Each schedule is a list of `(vesting timestamp, quantity)` pairs in ascending time order.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L269)</sub>
 
 
 
+Records that the fee pool created a vesting entry.
 
-**Type:** `mapping(address => uint256[2][])`
+
+**Signature:** `VestingEntryCreated(address indexed beneficiary, uint time, uint value)`
+
+
+- `(address beneficiary, uint256 time, uint256 value)`
 

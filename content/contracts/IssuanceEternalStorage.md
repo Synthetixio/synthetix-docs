@@ -44,7 +44,11 @@ graph TD
 
 - ?
 
+## Views
+
 ## Constants
+
+## Variables
 
 ## Function (Constructor)
 
@@ -75,8 +79,4 @@ graph TD
 ## Owner Mutative Functions
 
 ## Public Mutative Functions
-
-## Variables
-
-## Views
 
