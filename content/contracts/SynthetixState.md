@@ -34,14 +34,9 @@ graph TD
 ---
 ### Related Contracts
 
-- Synthetix as this contract's `State.associatedContract`
-
 
 ---
 ### Libraries
-
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
-- [`SafeMath`](SafeMath.md) for `uint`
 
 ## Description
 

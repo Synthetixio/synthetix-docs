@@ -3,8 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const md2json = require('./md-2-json');
-
-console.log('Building docs...');
+const YAML = require('yaml');
 
 const astDocs = require('../external/ast-docs.json');
 
@@ -542,16 +541,15 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 (() => {
 	// Builds new files into content/contracts and content/interfaces
+	console.log('Building ast-docs...');
 	Object.keys(astDocs).map(contractSource => {
 		Object.keys(astDocs[contractSource].contracts).map(contractName => {
 			generateContractMarkdown(contractSource, contractName, 'contracts');
 		});
 
-		// If we wanna build the "libraries used"
-		// However there is a conflicting section there right now
-		// Object.keys(astDocs[contractSource].libraries).map(contractName => {
-		// 	generateContractMarkdown(contractSource, contractName, 'libraries');
-		// });
+		Object.keys(astDocs[contractSource].libraries).map(contractName => {
+			generateContractMarkdown(contractSource, contractName, 'libraries');
+		});
 
 		Object.keys(astDocs[contractSource].interfaces).map(contractName => {
 			generateContractMarkdown(contractSource, contractName, 'interfaces');
@@ -559,4 +557,60 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	});
 
 	// Updates mkdocs.yml
+	console.log('Updating mkdocs.yml ...');
+	const mkdocsFileLoc = path.join(__dirname, '../mkdocs.yml');
+	const mkdocsYAML = YAML.parse(fs.readFileSync(mkdocsFileLoc, 'utf8'));
+
+	// Get all files in folder and massage them into a yaml format list
+	const getYamlContent = (absDir, relDir) => {
+		const files = fs.readdirSync(absDir).filter(x => x.slice(-3) === '.md');
+
+		return files.map(x => {
+			const title = x.split('.')[0];
+			const relativeFilePath = `${relDir}/${x}`;
+			return {
+				[title]: relativeFilePath,
+			};
+		});
+	};
+	const contracts = getYamlContent(path.join(__dirname, '../content/contracts'), 'contracts');
+	const libraries = getYamlContent(path.join(__dirname, '../content/libraries'), 'libraries');
+	const interfaces = getYamlContent(path.join(__dirname, '../content/interfaces'), 'interfaces');
+
+	// Some bug with YAML parsing...
+	// it doesn't like !!python as a value
+	// So we have to manually specify it here, (no easy custom schema yet...)
+	const pythonSuperFenceFormat = '!!python/name:pymdownx.superfences.fence_div_format';
+	for (let i = 0; i < mkdocsYAML.markdown_extensions.length; i++) {
+		const cur = mkdocsYAML.markdown_extensions[i];
+		if (cur['pymdownx.superfences']) {
+			mkdocsYAML.markdown_extensions[i]['pymdownx.superfences']['custom_fences'][0].format = pythonSuperFenceFormat;
+		}
+	}
+
+	for (let i = 0; i < mkdocsYAML.nav.length; i++) {
+		const cur = mkdocsYAML.nav[i];
+
+		if (cur['Smart Contracts']) {
+			const sc = cur['Smart Contracts'];
+
+			for (let j = 0; j < sc.length; j++) {
+				if (sc[j].Contracts) {
+					mkdocsYAML.nav[i]['Smart Contracts'][j].Contracts = contracts;
+				}
+
+				if (sc[j].Interfaces) {
+					mkdocsYAML.nav[i]['Smart Contracts'][j].Interfaces = interfaces;
+				}
+
+				if (sc[j].Libaries) {
+					mkdocsYAML.nav[i]['Smart Contracts'][j].Interfaces = libraries;
+				}
+			}
+		}
+	}
+
+	// We don't want !!python to be quoted
+	const newMkDocsYaml = YAML.stringify(mkdocsYAML).replace(`"${pythonSuperFenceFormat}"`, pythonSuperFenceFormat);
+	fs.writeFileSync(mkdocsFileLoc, newMkDocsYaml);
 })();

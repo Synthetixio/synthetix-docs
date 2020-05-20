@@ -38,14 +38,9 @@ graph TD
 ---
 ### Related Contracts
 
-- <>[FeePool](FeePool.md)
-
 
 ---
 ### Libraries
-
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
-- [`SafeMath`](SafeMath.md) for `uint`
 
 ## Constants
 

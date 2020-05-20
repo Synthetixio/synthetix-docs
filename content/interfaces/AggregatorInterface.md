@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/test-helpers/MockAggregator.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol)
+**Source:** [@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol)
 
 ## Constants
 
@@ -15,7 +15,7 @@
 ---
 ### `getAnswer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L7)</sub>
 
 
 
@@ -33,7 +33,7 @@
 ---
 ### `getTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L8)</sub>
 
 
 
@@ -51,7 +51,7 @@
 ---
 ### `latestAnswer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L4)</sub>
 
 
 
@@ -69,7 +69,7 @@
 ---
 ### `latestRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L6)</sub>
 
 
 
@@ -87,7 +87,7 @@
 ---
 ### `latestTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/test-helpers/MockAggregator.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L5)</sub>
 
 
 
@@ -100,4 +100,22 @@
     **State Mutability**
 
     `view`
+
+## Events
+
+
+---
+### `AnswerUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L10)</sub>
+
+- `(int256 current, uint256 roundId, uint256 timestamp)`
+
+
+---
+### `NewRound`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L11)</sub>
+
+- `(uint256 roundId, address startedBy)`
 

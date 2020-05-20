@@ -32,12 +32,7 @@ graph TD
 
 ## Related Contracts
 
-- [`TokenState`](TokenState.md)
-
 ## Libraries
-
-- [`SafeMath`](SafeMath.md) for `uint`
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
 
 ## Constants
 

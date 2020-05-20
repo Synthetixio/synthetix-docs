@@ -45,15 +45,9 @@ graph TD
 ---
 ### Related Contracts
 
-- <>[Synthetix](Synthetix.md)
-
 
 ---
 ### Libraries
-
-- [`SafeMath`](SafeMath.md) for `uint`
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
-- [`Math`](Math.md) for `uint`
 
 ## Constants
 

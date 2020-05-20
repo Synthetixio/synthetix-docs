@@ -84,6 +84,8 @@ The constructor initialises the various addresses that this contract knows about
 ---
 
 ---
+
+---
 ### `availableCurrencyKeys`
 
 Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSynths`](#availablesynths).
@@ -245,6 +247,8 @@ Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSy
 
 
 <!-- E.g.
+
+---
 
 ---
 
@@ -842,6 +846,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 
 ---
+
+---
 ### `burnSynths`
 
 [Burns](Synth.md#burn) a quantity of `sUSD` in the calling address, in order to free up its locked SNX supply.
@@ -872,6 +878,8 @@ The new debt position of the caller is recorded with [`_appendAccountIssuanceRec
 
 <!-- Eg.
 
+
+---
 
 ---
 

@@ -24,14 +24,9 @@ graph TD
 ---
 ### Related Contracts
 
-- <>[Synthetix](Synthetix.md)
-- <>[FeePool](FeePool.md)
-
 
 ---
 ### Libraries
-
-- [`SafeMath`](SafeMath.md) for `uint`
 
 ## Description
 

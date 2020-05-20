@@ -29,16 +29,9 @@ graph TD
 ---
 ### Related Contracts
 
-- \>[FeePoolProxy](Proxy.md)
-- \>[RewardEscrow](RewardEscrow.md)
-- \>[SynthetixProxy](Proxy.md)
-
 
 ---
 ### Libraries
-
-- [SafeMath](SafeMath.md) for uint
-- [SafeDecimalMath](SafeDecimalMath.md) for uint
 
 ## Variables
 

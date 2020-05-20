@@ -38,17 +38,9 @@ graph TD
 ---
 ### Related Contracts
 
-- [Synthetix](Synthetix.md)
-- [Synth](Synth.md)
-- [ExchangeRates](ExchangeRates.md)
-- [AddressResolver](AddressResolver.md)
-
 
 ---
 ### Libraries
-
-- [`SafeMath`](SafeMath.md) for `uint`
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
 
 ## Constants
 
@@ -353,8 +345,6 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 
 
 
-- `depositSynths(uint amount)`: Just an alias to `synth.transferFrom(msg.sender, this, amount)`. This requires the sender to have approved the deposit.
-
 ??? example "Details"
 
     **Signature**
@@ -372,8 +362,6 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L296)</sub>
 
 
-
-- `exchangeEtherForSNX() returns (uint)`: Requires that the contract is not paused, and that the prices are not stale. Converts the received ether to a quantity of SNX with `synthetixReceivedForEther`. Sends the ether to `fundsWallet`, sends the converted quantity of SNX to the message sender from the contract's own reserves. Returns the SNX quantity sent. If the contract has insufficient SNX, then the transfer will fail and the transaction will revert.
 
 ??? example "Details"
 
@@ -400,8 +388,6 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L315)</sub>
 
 
-
-- `exchangeEtherForSNXAtRate(uint guaranteedEtherRate, uint guaranteedSynthetixRate) returns (uint)`: As `exchangeEtherForSynthsAtRate` is to `exchangeEtherForSynths`, this is to `exchangeEtherForSNX`.
 
 ??? example "Details"
 
@@ -451,8 +437,6 @@ Requires that the contract is not paused, and that the prices are not stale.
 Returns the number of sUSD exchanged. Converts any ether sent to the contract to a quantity of synths at current prices. Fulfils this quantity by iterating through the deposit queue until the entire quantity is found. If a given deposit is insufficient to cover the entire requested amount, it is exhausted and removed from the queue. For each deposit found, the proper quantity of ether is sent to the depositor. If the quantity could not be sent because the target is a non-payable contract, then it is remitted to `fundsWallet`. Then send the Synths to the recipient. If the whole quantity could not be fulfilled, then the remaining ether is refunded to the purchaser.
 
 
-- `exchangeEtherForSynths() returns (uint)`:
-
 ??? example "Details"
 
     **Signature**
@@ -478,8 +462,6 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L264)</sub>
 
 
-
-- `exchangeEtherForSynthsAtRate(uint guaranteedRate) returns (uint)`: Allows the caller to specify the current price, and then calls to `exchangeEtherForSynths`. Reverts if the current price does not match the price provided as an argument. This is intended as a protection against front-running by the contract owner, or otherwise a case where a price update is in flight at the invocation time.
 
 ??? example "Details"
 
@@ -509,8 +491,6 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
 
 
-- `exchangeSynthsForSNX(uint synthAmount) returns (uint)`: Identical to `exchangeEtherForSNX`, but perform the price conversion with `synthetixReceivedForSynths`. The amount of synths to send is provided as a function argument, and then transferred to `fundsWallet` with `transferFrom`, so this function requires the caller to have approved the depot contract to make such a withdrawal. Note that this assumes that sUSD is worth exactly one dollar.
-
 ??? example "Details"
 
     **Signature**
@@ -534,8 +514,6 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L372)</sub>
 
 
-
-- `exchangeSynthsForSNXAtRate(uint synthAmount, uint guaranteedRate) returns (uint)`: As per `exchangeEtherForSNXAtRate`.
 
 ??? example "Details"
 
@@ -642,8 +620,6 @@ $$
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L405)</sub>
 
 
-
-- `withdrawMyDepositedSynths()`: Withdraws all Synths deposited by the message sender. Iterates through the entire deposit queue; if for a given entry the message sender is the depositor, delete that deposit and and add the deposited quantity of tokens to the pile to be remitted. Then transfer this quantity back to the message sender, along with any tokens in `smallDeposits`.
 
 ??? example "Details"
 
@@ -967,8 +943,6 @@ $$
 ---
 ### `SynthDepositAmountUpdated`
 
-- `MinimumDepositAmountUpdated(uint amount)`
-
 
 ---
 ### `SynthDepositNotAccepted`
@@ -993,13 +967,9 @@ $$
 ---
 ### `SynthetixUpdated`
 
-- `SynthetixUpdated(Synthetix newSynthetixContract)`
-
 
 ---
 ### `SynthUpdated`
-
-- `SynthUpdated(Synth newSynthContract)`
 
 
 ---

@@ -33,13 +33,9 @@ graph TD
 ---
 ### Related Contracts
 
-- [`ExchangeRates`](ExchangeRates.md)
-
 
 ---
 ### Libraries
-
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
 
 ## Constants
 

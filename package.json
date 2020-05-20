@@ -21,9 +21,12 @@
 	"homepage": "https://github.com/Synthetixio/synthetix-docs#readme",
 	"dependencies": {
 		"axios": "~0.19.2",
+		"marked": "^1.1.0",
 		"moment": "~2.24.0",
 		"numbro": "2.1.2",
-		"synthetix": "2.21.13"
+		"synthetix": "2.21.13",
+		"traverse": "^0.6.6",
+		"yaml": "^1.10.0"
 	},
 	"devDependencies": {
 		"eslint": "~6.8.0",

@@ -50,14 +50,9 @@ graph TD
 ---
 ### Libraries
 
-- [`SafeMath`](SafeMath.md) for `uint`
-- [`SafeDecimalMath`](SafeDecimalMathmd) for `uint`
-
 
 ---
 ### External References
-
-- [`AggregatorInterface`](https://github.com/smartcontractkit/chainlink/blob/5ab3cd2777590701007cc02941cb94179e79f3ba/evm/contracts/interfaces/AggregatorInterface.sol) - Each of these interfaces correspond to a decentralized pricing network facilitated by Chainlink that collect and aggregatate results from a network of oracles. See [Aggregator.sol](https://github.com/smartcontractkit/chainlink/blob/5ab3cd2777590701007cc02941cb94179e79f3ba/evm/contracts/Aggregator.sol) for the implementation.s
 
 ## Constructor
 

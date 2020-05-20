@@ -49,9 +49,6 @@ graph TD
 ---
 ### Libraries
 
-- [SafeMath](SafeMath.md) for uint
-- [SafeDecimalMath](SafeDecimalMath.md) for uint
-
 ## Constructor
 
 This initialises the various state contract addresses the fee pool knows about, along with its inherited [`SelfDestructible`](SelfDestructible.md), [`Proxyable`](Proxyable.md), and [`LimitedSetup`](LimitedSetup.md) instances.
@@ -1757,10 +1754,6 @@ See [`Synthetix._addToDebtRegister`](Synthetix.md#_addToDebtRegister) for detail
 
 Computes the fees (in sUSD) and rewards (in SNX) owed at the end of a recent fee period given an entry index and the percentage of total system debt owned.
 
-
-- `period` is an index into the [`recentFeePeriods`](#recentfeeperiods) array, thus 0 corresponds with the current period.
-- `debtEntryIndex` should be an index into the debt ledger which was added before the close of the specified fee period.
-- `ownershipPercentage` should be the percentage of the account's debt ownership at that `debtEntryIndex`. This is a [27-decimal fixed point number](SafeDecimalMath.md).
 
 ??? example "Details"
 

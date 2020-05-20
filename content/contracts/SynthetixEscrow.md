@@ -30,8 +30,6 @@ graph TD
 ---
 ### Libraries
 
-- [`SafeMath`](SafeMath.md) for `uint`
-
 ## Constants
 
 

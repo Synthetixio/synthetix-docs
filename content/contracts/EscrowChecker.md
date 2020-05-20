@@ -20,10 +20,9 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 
 
 
+
 ---
 ### Related Contracts
-
-- [SynthetixEscrow](SynthetixEscrow.md)
 
 ## Variables
 
