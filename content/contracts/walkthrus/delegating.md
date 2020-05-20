@@ -38,8 +38,8 @@ On a successful transaction, the following events occur:
 
 ### Examples from Mainnet
 
-- `DelegateApprovals.approveAllDelegatePowers(0xf70c)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0xb2ab6174ad66e36d1b7809ad511ece7972254bc2b18d6a8f166664c317e80ce6/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xb2ab6174ad66e36d1b7809ad511ece7972254bc2b18d6a8f166664c317e80ce6#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
-- `DelegateApprovals.approveClaimOnBehalf(0xa2979)` <a target=_blank href="https://dashboard.tenderly.dev/tx/main/0x03d059b35adace6a26f67f2e6427b7cdcd7de674afdc63eed700670902b3a90e/logs"><img src="https://tenderly.dev/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x03d059b35adace6a26f67f2e6427b7cdcd7de674afdc63eed700670902b3a90e#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
+- `DelegateApprovals.approveAllDelegatePowers(0xf70c)` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0xb2ab6174ad66e36d1b7809ad511ece7972254bc2b18d6a8f166664c317e80ce6/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xb2ab6174ad66e36d1b7809ad511ece7972254bc2b18d6a8f166664c317e80ce6#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
+- `DelegateApprovals.approveClaimOnBehalf(0xa2979)` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0x03d059b35adace6a26f67f2e6427b7cdcd7de674afdc63eed700670902b3a90e/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x03d059b35adace6a26f67f2e6427b7cdcd7de674afdc63eed700670902b3a90e#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
 ## Withdrawing Approval API
 
