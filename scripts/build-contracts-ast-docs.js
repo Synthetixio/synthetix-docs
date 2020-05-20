@@ -563,7 +563,12 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 	// Get all files in folder and massage them into a yaml format list
 	const getYamlContent = (absDir, relDir) => {
-		const files = fs.readdirSync(absDir).filter(x => x.slice(-3) === '.md');
+		// Only get files which are uppercase by default
+		// and ends in a .md file
+		const files = fs
+			.readdirSync(absDir)
+			.filter(x => x.slice(-3) === '.md')
+			.filter(x => x[0] === x[0].toUpperCase());
 
 		return files.map(x => {
 			const title = x.split('.')[0];
@@ -603,7 +608,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 					mkdocsYAML.nav[i]['Smart Contracts'][j].Interfaces = interfaces;
 				}
 
-				if (sc[j].Libaries) {
+				if (sc[j].Libraries) {
 					mkdocsYAML.nav[i]['Smart Contracts'][j].Libraries = libraries;
 				}
 			}

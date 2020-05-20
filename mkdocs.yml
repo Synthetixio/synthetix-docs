@@ -46,9 +46,9 @@ nav:
       - Publisher: contracts/publisher.md
       - Transaction Guide: contracts/transactions.md
       - Libraries:
-          - Math: contracts/Math.md
-          - SafeDecimalMath: contracts/SafeDecimalMath.md
-          - SafeMath: contracts/SafeMath.md
+          - Math: libraries/Math.md
+          - SafeDecimalMath: libraries/SafeDecimalMath.md
+          - SafeMath: libraries/SafeMath.md
       - Walkthrus:
           - Overview: contracts/walkthrus/index.md
           - Claiming Rewards: contracts/walkthrus/claiming.md
@@ -118,11 +118,6 @@ nav:
           - TokenExchanger: contracts/TokenExchanger.md
           - TokenState: contracts/TokenState.md
           - UsingReadProxy: contracts/UsingReadProxy.md
-          - audits: contracts/audits.md
-          - index: contracts/index.md
-          - publisher: contracts/publisher.md
-          - testing: contracts/testing.md
-          - transactions: contracts/transactions.md
       - Interfaces:
           - AggregatorInterface: interfaces/AggregatorInterface.md
           - IAddressResolver: interfaces/IAddressResolver.md
