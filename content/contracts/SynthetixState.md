@@ -42,6 +42,7 @@ graph TD
 
 
 
+
 ---
 ### Libraries
 
@@ -50,7 +51,7 @@ graph TD
 ## Description
 
 
-**Source:** [contracts/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol)
+**Source:** [contracts/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol)
 
 ## Constants
 
@@ -58,7 +59,7 @@ graph TD
 ---
 ### `MAX_ISSUANCE_RATIO`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L45)</sub>
 
 
 
@@ -72,7 +73,7 @@ graph TD
 ---
 ### `debtLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L39)</sub>
 
 
 
@@ -87,7 +88,7 @@ A list of factors indicating, for each [debt-modifying event](#appenddebtledgerv
 ---
 ### `issuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L33)</sub>
 
 
 
@@ -102,7 +103,7 @@ The most recent issuance data for each address.
 ---
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L43)</sub>
 
 
 
@@ -158,7 +159,7 @@ As a result of this calculation, the number of synths that can be issued increas
 ---
 ### `preferredCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L49)</sub>
 
 
 
@@ -186,7 +187,7 @@ This is used within [`Synth._internalTransfer`](Synth.md#_internaltransfer).
 ---
 ### `totalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L36)</sub>
 
 
 
@@ -203,7 +204,7 @@ The number of people with outstanding synths.
 ---
 ### `IssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L19)</sub>
 
 
 
@@ -219,7 +220,7 @@ The number of people with outstanding synths.
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L51)</sub>
 
 
 
@@ -247,7 +248,7 @@ The number of people with outstanding synths.
 ---
 ### `appendDebtLedgerValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L101)</sub>
 
 
 
@@ -275,7 +276,7 @@ This is used by [`Synthetix._addToDebtRegister`](Synthetix.md#addtodebtregister)
 ---
 ### `clearIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L76)</sub>
 
 
 
@@ -300,7 +301,7 @@ Deletes the issuance data associated with a given account.
 ---
 ### `debtLedgerLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L153)</sub>
 
 
 
@@ -324,7 +325,7 @@ Primarily used in [`FeePool`](FeePool.md) for fee period computations.
 ---
 ### `decrementTotalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L92)</sub>
 
 
 
@@ -349,7 +350,7 @@ Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`
 ---
 ### `hasIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L168)</sub>
 
 
 
@@ -373,7 +374,7 @@ Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to det
 ---
 ### `incrementTotalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L84)</sub>
 
 
 
@@ -398,7 +399,7 @@ Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within 
 ---
 ### `lastDebtLedgerEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L160)</sub>
 
 
 
@@ -422,7 +423,7 @@ Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
 ---
 ### `setCurrentIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L66)</sub>
 
 
 
@@ -448,7 +449,7 @@ The debt ledger itself is not modified.
 ---
 ### `setPreferredCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L111)</sub>
 
 
 
@@ -480,7 +481,7 @@ Sets the preferred currency for a particular account. Pass in null to unset this
 ---
 ### `setIssuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L119)</sub>
 
 
 
@@ -496,7 +497,7 @@ Sets the preferred currency for a particular account. Pass in null to unset this
 
     **Requires**
 
-    * [require(..., New issuance ratio cannot exceed MAX_ISSUANCE_RATIO)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L120)
+    * [require(..., New issuance ratio cannot exceed MAX_ISSUANCE_RATIO)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L120)
 
     **Modifiers**
 
@@ -512,7 +513,7 @@ Sets the preferred currency for a particular account. Pass in null to unset this
 ---
 ### `IssuanceRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SynthetixState.sol#L172)</sub>
 
 
 

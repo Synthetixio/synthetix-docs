@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol)
+**Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISystemStatus.sol)
 
 ## Constants
 
@@ -15,7 +15,7 @@
 ---
 ### `requireExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISystemStatus.sol#L10)</sub>
 
 
 
@@ -33,7 +33,7 @@
 ---
 ### `requireIssuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISystemStatus.sol#L8)</sub>
 
 
 
@@ -51,7 +51,7 @@
 ---
 ### `requireSynthActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISystemStatus.sol#L12)</sub>
 
 
 
@@ -69,7 +69,7 @@
 ---
 ### `requireSynthsActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISystemStatus.sol#L14)</sub>
 
 
 
@@ -87,7 +87,7 @@
 ---
 ### `requireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISystemStatus.sol#L6)</sub>
 
 
 

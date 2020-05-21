@@ -33,6 +33,7 @@ graph TD
 
 
 
+
 ---
 ### Libraries
 
@@ -40,7 +41,7 @@ graph TD
 ## Description
 
 
-**Source:** [contracts/RewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol)
+**Source:** [contracts/RewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol)
 
 ## Constants
 
@@ -48,7 +49,7 @@ graph TD
 ---
 ### `MAX_VESTING_ENTRIES`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L43)</sub>
 
 
 
@@ -60,7 +61,7 @@ graph TD
 ---
 ### `QUANTITY_INDEX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L39)</sub>
 
 
 
@@ -72,7 +73,7 @@ graph TD
 ---
 ### `TIME_INDEX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L38)</sub>
 
 
 
@@ -86,7 +87,7 @@ graph TD
 ---
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L23)</sub>
 
 
 
@@ -101,7 +102,7 @@ The address of the [`FeePool`](FeePool.md) contract.
 ---
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L21)</sub>
 
 
 
@@ -116,7 +117,7 @@ The address of the main [`Synthetix`](Synthetix.md) contract.
 ---
 ### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L30)</sub>
 
 
 
@@ -131,7 +132,7 @@ The quantity of remaining tokens for each account; it saves the recomputation in
 ---
 ### `totalEscrowedBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L36)</sub>
 
 
 
@@ -146,7 +147,7 @@ A record of the total remaining vested balance in this contract, which should be
 ---
 ### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L33)</sub>
 
 
 
@@ -161,7 +162,7 @@ The quantity of tokens that have already been vested for each account.
 ---
 ### `vestingSchedules`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L27)</sub>
 
 
 
@@ -178,7 +179,7 @@ Stores the vesting schedule for each for each account. Each schedule is a list o
 ---
 ### `onlyFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L254)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L254)</sub>
 
 
 
@@ -191,7 +192,7 @@ Reverts the transaction if the `msg.sender` is not the [`FeePool`](FeePool.md).
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L47)</sub>
 
 
 
@@ -215,7 +216,7 @@ Reverts the transaction if the `msg.sender` is not the [`FeePool`](FeePool.md).
 ---
 ### `appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L218)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L218)</sub>
 
 
 
@@ -240,7 +241,7 @@ This function allows the [`FeePool`](FeePool.md) contract to add a new entry to 
 ---
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L80)</sub>
 
 
 
@@ -261,7 +262,7 @@ An alias to [`totalEscrowedAccountBalance[account]`](#totalescrowedaccountbalanc
 ---
 ### `checkAccountSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L161)</sub>
 
 
 
@@ -282,7 +283,7 @@ Returns the full vesting schedule for a given account.
 ---
 ### `getNextVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L133)</sub>
 
 
 
@@ -303,7 +304,7 @@ Returns the next vesting entry in the same manner as [`getNextVestingIndex`](#ge
 ---
 ### `getNextVestingIndex`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L120)</sub>
 
 
 
@@ -327,7 +328,7 @@ The function iterates until it finds the first nonzero vesting entry timestamp, 
 ---
 ### `getNextVestingQuantity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L151)</sub>
 
 
 
@@ -348,7 +349,7 @@ Returns the SNX quantity of the next vesting entry. Returns `0` if there is no s
 ---
 ### `getNextVestingTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L144)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L144)</sub>
 
 
 
@@ -369,7 +370,7 @@ Returns the timestamp of the next vesting entry. Returns `0` if there is no such
 ---
 ### `getVestingQuantity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L113)</sub>
 
 
 
@@ -390,7 +391,7 @@ Returns the quantity of SNX a given schedule entry will yield.
 ---
 ### `getVestingScheduleEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L99)</sub>
 
 
 
@@ -414,7 +415,7 @@ This is here because the public function generated for [`vestingSchedules`](#ves
 ---
 ### `getVestingTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L106)</sub>
 
 
 
@@ -435,7 +436,7 @@ Returns the time at which a given schedule entry will vest.
 ---
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L91)</sub>
 
 
 
@@ -456,7 +457,7 @@ The number of entries in an account's vesting schedule, including those already 
 ---
 ### `vest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L225)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L225)</sub>
 
 
 
@@ -479,7 +480,7 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 ---
 ### `_appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L174)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L174)</sub>
 
 
 
@@ -495,11 +496,11 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 
     **Requires**
 
-    * [require(..., Quantity cannot be zero)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L176)
+    * [require(..., Quantity cannot be zero)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L176)
 
-    * [require(..., Must be enough balance in the contract to provide for the vesting entry)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L180)
+    * [require(..., Must be enough balance in the contract to provide for the vesting entry)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L180)
 
-    * [require(..., Vesting schedule is too long)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L187)
+    * [require(..., Vesting schedule is too long)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L187)
 
     **Emits**
 
@@ -509,7 +510,7 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 ---
 ### `_numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L84)</sub>
 
 
 
@@ -529,7 +530,7 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 ---
 ### `setFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L70)</sub>
 
 
 
@@ -555,7 +556,7 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 ---
 ### `setSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L61)</sub>
 
 
 
@@ -583,7 +584,7 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 ---
 ### `FeePoolUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L265)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L265)</sub>
 
 
 
@@ -599,7 +600,7 @@ Records that the fee pool contract address was altered.
 ---
 ### `SynthetixUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L263)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L263)</sub>
 
 
 
@@ -615,7 +616,7 @@ Records that the SNX contract address was altered.
 ---
 ### `Vested`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L267)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L267)</sub>
 
 
 
@@ -631,7 +632,7 @@ Records that an account vested a quantity of tokens.
 ---
 ### `VestingEntryCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardEscrow.sol#L269)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardEscrow.sol#L269)</sub>
 
 
 

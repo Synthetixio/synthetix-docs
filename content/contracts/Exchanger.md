@@ -11,7 +11,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol)
 
 ## Architecture
 
@@ -32,6 +32,7 @@ graph TD
 <centered-image>
     ![Exchanger architture graph](../img/graphs/Exchanger-architecture.svg)
 </centered-image>
+
 
 
 
@@ -95,7 +96,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `CONTRACT_DELEGATEAPPROVALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L62)</sub>
 
 
 
@@ -107,7 +108,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `CONTRACT_EXCHANGESTATE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L58)</sub>
 
 
 
@@ -119,7 +120,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `CONTRACT_EXRATES`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L59)</sub>
 
 
 
@@ -131,7 +132,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `CONTRACT_FEEPOOL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L61)</sub>
 
 
 
@@ -143,7 +144,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `CONTRACT_SYNTHETIX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L60)</sub>
 
 
 
@@ -155,7 +156,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `CONTRACT_SYSTEMSTATUS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L57)</sub>
 
 
 
@@ -167,7 +168,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L51)</sub>
 
 
 
@@ -181,7 +182,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L64)</sub>
 
 
 
@@ -193,7 +194,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L53)</sub>
 
 
 
@@ -207,11 +208,13 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ---
 ### `onlySynthetixorSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L445)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L445)</sub>
 
 
 
 <!-- E.g.
+
+---
 
 ---
 
@@ -237,7 +240,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L73)</sub>
 
 
 
@@ -263,7 +266,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `calculateAmountAfterSettlement`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L172)</sub>
 
 
 
@@ -281,7 +284,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L195)</sub>
 
 
 
@@ -303,7 +306,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L205)</sub>
 
 
 
@@ -319,7 +322,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L212)
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L212)
 
     **Modifiers**
 
@@ -329,7 +332,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `feeRateForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L108)</sub>
 
 
 
@@ -347,7 +350,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `maxSecsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L103)</sub>
 
 
 
@@ -365,7 +368,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L304)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L304)</sub>
 
 
 
@@ -383,7 +386,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `settlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L118)</sub>
 
 
 
@@ -403,7 +406,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `_exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L222)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L222)</sub>
 
 
 
@@ -419,15 +422,15 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Can't be same synth)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L235)
+    * [require(..., Can't be same synth)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L235)
 
-    * [require(..., Zero amount)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L236)
+    * [require(..., Zero amount)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L236)
 
 
 ---
 ### `_internalSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L336)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L336)</sub>
 
 
 
@@ -443,13 +446,13 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Cannot settle during waiting period)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L344)
+    * [require(..., Cannot settle during waiting period)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L344)
 
 
 ---
 ### `appendExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L406)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L406)</sub>
 
 
 
@@ -467,7 +470,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `calculateExchangeAmountMinusFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L390)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L390)</sub>
 
 
 
@@ -485,7 +488,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `delegateApprovals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L99)</sub>
 
 
 
@@ -503,7 +506,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L87)</sub>
 
 
 
@@ -521,7 +524,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `exchangeState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L83)</sub>
 
 
 
@@ -539,7 +542,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L95)</sub>
 
 
 
@@ -557,7 +560,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `getRoundIdsAtPeriodEnd`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L430)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L430)</sub>
 
 
 
@@ -575,7 +578,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `reclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L362)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L362)</sub>
 
 
 
@@ -593,7 +596,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L372)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L372)</sub>
 
 
 
@@ -611,7 +614,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `remitFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L323)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L323)</sub>
 
 
 
@@ -629,7 +632,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `secsLeftInWaitingPeriodForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L382)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L382)</sub>
 
 
 
@@ -647,7 +650,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L91)</sub>
 
 
 
@@ -665,7 +668,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L79)</sub>
 
 
 
@@ -685,7 +688,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `setWaitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L168)</sub>
 
 
 
@@ -729,6 +732,8 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
 
 <!-- Eg.
 
+
+---
 
 ---
 

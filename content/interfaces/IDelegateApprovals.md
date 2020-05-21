@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol)
+**Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol)
 
 ## Constants
 
@@ -15,7 +15,7 @@
 ---
 ### `approveAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L15)</sub>
 
 
 
@@ -33,7 +33,7 @@
 ---
 ### `approveBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L19)</sub>
 
 
 
@@ -51,7 +51,7 @@
 ---
 ### `approveClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L27)</sub>
 
 
 
@@ -69,7 +69,7 @@
 ---
 ### `approveExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L31)</sub>
 
 
 
@@ -87,7 +87,7 @@
 ---
 ### `approveIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L23)</sub>
 
 
 
@@ -105,7 +105,7 @@
 ---
 ### `canBurnFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L6)</sub>
 
 
 
@@ -123,7 +123,7 @@
 ---
 ### `canClaimFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L10)</sub>
 
 
 
@@ -141,7 +141,7 @@
 ---
 ### `canExchangeFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L12)</sub>
 
 
 
@@ -159,7 +159,7 @@
 ---
 ### `canIssueFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L8)</sub>
 
 
 
@@ -177,7 +177,7 @@
 ---
 ### `removeAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L17)</sub>
 
 
 
@@ -195,7 +195,7 @@
 ---
 ### `removeBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L21)</sub>
 
 
 
@@ -213,7 +213,7 @@
 ---
 ### `removeClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L29)</sub>
 
 
 
@@ -231,7 +231,7 @@
 ---
 ### `removeExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L33)</sub>
 
 
 
@@ -249,7 +249,7 @@
 ---
 ### `removeIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L25)</sub>
 
 
 

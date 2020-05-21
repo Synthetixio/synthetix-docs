@@ -14,7 +14,7 @@
 
 
 
-**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol)
+**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MultiCollateralSynth.sol)
 
 ## Architecture
 
@@ -24,6 +24,7 @@
 <!--centered-image>
     ![Architecture Graph](../img/graphs/todo-architecture.svg)
 </centered-image-->
+
 
 
 
@@ -61,7 +62,7 @@ graph TD
 ---
 ### `multiCollateralKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MultiCollateralSynth.sol#L9)</sub>
 
 
 
@@ -75,7 +76,7 @@ graph TD
 ---
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MultiCollateralSynth.sol#L58)</sub>
 
 
 
@@ -85,7 +86,7 @@ graph TD
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MultiCollateralSynth.sol#L13)</sub>
 
 
 
@@ -109,7 +110,7 @@ graph TD
 ---
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MultiCollateralSynth.sol#L51)</sub>
 
 
 
@@ -131,7 +132,7 @@ graph TD
 ---
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MultiCollateralSynth.sol#L42)</sub>
 
 
 
@@ -155,7 +156,7 @@ graph TD
 ---
 ### `multiCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MultiCollateralSynth.sol#L31)</sub>
 
 
 

@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol)
+**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol)
 
 ## Architecture
 
@@ -313,7 +313,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_ETHERCOLLATERAL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L42)</sub>
 
 
 
@@ -325,7 +325,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_EXCHANGER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L41)</sub>
 
 
 
@@ -337,7 +337,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_EXRATES`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L45)</sub>
 
 
 
@@ -349,7 +349,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_ISSUER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L43)</sub>
 
 
 
@@ -361,7 +361,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_REWARDESCROW`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L47)</sub>
 
 
 
@@ -373,7 +373,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_REWARDSDISTRIBUTION`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L49)</sub>
 
 
 
@@ -385,7 +385,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_SUPPLYSCHEDULE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L46)</sub>
 
 
 
@@ -397,7 +397,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_SYNTHETIXESCROW`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L48)</sub>
 
 
 
@@ -409,7 +409,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_SYNTHETIXSTATE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L44)</sub>
 
 
 
@@ -421,7 +421,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `CONTRACT_SYSTEMSTATUS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L40)</sub>
 
 
 
@@ -433,7 +433,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 ---
 ### `DECIMALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L35)</sub>
 
 
 
@@ -451,7 +451,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.decimals`](ExternStat
 ---
 ### `EXCHANGEREBATE_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L640)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L640)</sub>
 
 
 
@@ -463,7 +463,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.decimals`](ExternStat
 ---
 ### `EXCHANGERECLAIM_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L629)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L629)</sub>
 
 
 
@@ -475,7 +475,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.decimals`](ExternStat
 ---
 ### `sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L36)</sub>
 
 
 
@@ -487,7 +487,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.decimals`](ExternStat
 ---
 ### `SYNTHEXCHANGE_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L606)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L606)</sub>
 
 
 
@@ -499,7 +499,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.decimals`](ExternStat
 ---
 ### `TOKEN_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L33)</sub>
 
 
 
@@ -517,7 +517,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.name`](ExternStateTok
 ---
 ### `TOKEN_SYMBOL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L34)</sub>
 
 
 
@@ -537,7 +537,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.symbol`](ExternStateT
 ---
 ### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L51)</sub>
 
 
 
@@ -549,7 +549,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.symbol`](ExternStateT
 ---
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L29)</sub>
 
 
 
@@ -564,7 +564,7 @@ List of the active [`Synths`](Synth.md). Used to compute the total value of issu
 ---
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L30)</sub>
 
 
 
@@ -579,7 +579,7 @@ A mapping from currency keys (`bytes32`) to [`Synth`](Synth.md) token contract a
 ---
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L31)</sub>
 
 
 
@@ -606,7 +606,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 ### `onlyExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L591)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L591)</sub>
 
 
 
@@ -621,7 +621,7 @@ The transaction is reverted if `msg.sender` is not the [exchange rates oracle](E
 ---
 ### `rateNotStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L586)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L586)</sub>
 
 
 
@@ -634,7 +634,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L66)</sub>
 
 
 
@@ -660,7 +660,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `addSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L192)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L192)</sub>
 
 
 
@@ -676,9 +676,9 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 
     **Requires**
 
-    * [require(..., Synth already exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L195)
+    * [require(..., Synth already exists)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L195)
 
-    * [require(..., Synth address already exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L196)
+    * [require(..., Synth address already exists)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L196)
 
     **Modifiers**
 
@@ -688,7 +688,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L168)</sub>
 
 
 
@@ -706,7 +706,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L178)</sub>
 
 
 
@@ -724,7 +724,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L298)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L298)</sub>
 
 
 
@@ -746,7 +746,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L304)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L304)</sub>
 
 
 
@@ -768,7 +768,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L310)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L310)</sub>
 
 
 
@@ -790,7 +790,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L316)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L316)</sub>
 
 
 
@@ -812,7 +812,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L494)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L494)</sub>
 
 
 
@@ -830,7 +830,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L396)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L396)</sub>
 
 
 
@@ -848,7 +848,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L410)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L410)</sub>
 
 
 
@@ -866,7 +866,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `debtBalanceOfAndTotalDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L430)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L430)</sub>
 
 
 
@@ -884,7 +884,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `emitExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L642)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L642)</sub>
 
 
 
@@ -906,7 +906,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `emitExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L631)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L631)</sub>
 
 
 
@@ -928,7 +928,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `emitSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L610)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L610)</sub>
 
 
 
@@ -950,7 +950,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L322)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L322)</sub>
 
 
 
@@ -972,7 +972,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L334)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L334)</sub>
 
 
 
@@ -994,7 +994,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L286)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L286)</sub>
 
 
 
@@ -1016,7 +1016,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L292)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L292)</sub>
 
 
 
@@ -1038,7 +1038,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L274)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L274)</sub>
 
 
 
@@ -1060,7 +1060,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L280)</sub>
 
 
 
@@ -1082,7 +1082,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `isWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L182)</sub>
 
 
 
@@ -1100,7 +1100,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L372)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L372)</sub>
 
 
 
@@ -1118,7 +1118,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L545)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L545)</sub>
 
 
 
@@ -1134,15 +1134,15 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 
     **Requires**
 
-    * [require(..., RewardsDistribution not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L546)
+    * [require(..., RewardsDistribution not set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L546)
 
-    * [require(..., No supply is mintable)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L554)
+    * [require(..., No supply is mintable)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L554)
 
 
 ---
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L468)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L468)</sub>
 
 
 
@@ -1160,7 +1160,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `removeSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L207)</sub>
 
 
 
@@ -1176,11 +1176,11 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 
     **Requires**
 
-    * [require(..., Synth does not exist)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L208)
+    * [require(..., Synth does not exist)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L208)
 
-    * [require(..., Synth supply exists)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L209)
+    * [require(..., Synth supply exists)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L209)
 
-    * [require(..., Cannot remove synth)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L210)
+    * [require(..., Cannot remove synth)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L210)
 
     **Modifiers**
 
@@ -1190,7 +1190,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L354)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L354)</sub>
 
 
 
@@ -1212,7 +1212,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L156)</sub>
 
 
 
@@ -1230,7 +1230,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `totalIssuedSynthsExcludeEtherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L164)</sub>
 
 
 
@@ -1248,7 +1248,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L244)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L244)</sub>
 
 
 
@@ -1264,7 +1264,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 
     **Requires**
 
-    * [require(..., Cannot transfer staked or escrowed SNX)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L248)
+    * [require(..., Cannot transfer staked or escrowed SNX)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L248)
 
     **Modifiers**
 
@@ -1274,7 +1274,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `transferableSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L514)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L514)</sub>
 
 
 
@@ -1296,7 +1296,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L259)</sub>
 
 
 
@@ -1312,7 +1312,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 
     **Requires**
 
-    * [require(..., Cannot transfer staked or escrowed SNX)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L267)
+    * [require(..., Cannot transfer staked or escrowed SNX)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L267)
 
     **Modifiers**
 
@@ -1324,7 +1324,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `_totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L125)</sub>
 
 
 
@@ -1340,13 +1340,13 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 
     **Requires**
 
-    * [require(..., Rates are stale)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L131)
+    * [require(..., Rates are stale)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L131)
 
 
 ---
 ### `etherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L88)</sub>
 
 
 
@@ -1364,7 +1364,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L84)</sub>
 
 
 
@@ -1382,7 +1382,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L100)</sub>
 
 
 
@@ -1400,7 +1400,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L92)</sub>
 
 
 
@@ -1418,7 +1418,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `rewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L108)</sub>
 
 
 
@@ -1436,7 +1436,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L116)</sub>
 
 
 
@@ -1454,7 +1454,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `supplySchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L104)</sub>
 
 
 
@@ -1472,7 +1472,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `synthetixEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L112)</sub>
 
 
 
@@ -1490,7 +1490,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `synthetixState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L96)</sub>
 
 
 
@@ -1508,7 +1508,7 @@ The transaction is reverted if the given currency's latest exchange rate [is sta
 ---
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L80)</sub>
 
 
 
@@ -1995,7 +1995,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 ---
 ### `ExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L639)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L639)</sub>
 
 
 
@@ -2013,7 +2013,7 @@ The amount is the total net amount from all unsettled exchanges into the given s
 ---
 ### `ExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L628)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L628)</sub>
 
 
 
@@ -2031,7 +2031,7 @@ The amount is the total net amount from all unsettled exchanges into the given s
 ---
 ### `SynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synthetix.sol#L598)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synthetix.sol#L598)</sub>
 
 
 

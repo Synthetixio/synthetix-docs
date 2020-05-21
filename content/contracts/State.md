@@ -9,7 +9,7 @@ This is designed to allow behaviour to be decoupled from storage so that upgrade
 
 
 
-**Source:** [contracts/State.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol)
+**Source:** [contracts/State.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol)
 
 ## Architecture
 
@@ -28,7 +28,7 @@ graph TD
 ---
 ### `associatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol#L11)</sub>
 
 
 
@@ -45,7 +45,7 @@ The address (presumably a contract) which is permitted to use functions on this 
 ---
 ### `onlyAssociatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol#L31)</sub>
 
 
 
@@ -58,7 +58,7 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol#L13)</sub>
 
 
 
@@ -74,7 +74,7 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L15)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol#L15)
 
     **Emits**
 
@@ -86,7 +86,7 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol#L13)</sub>
 
 
 
@@ -102,7 +102,7 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L15)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol#L15)
 
     **Emits**
 
@@ -114,7 +114,7 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 ---
 ### `setAssociatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol#L24)</sub>
 
 
 
@@ -142,7 +142,7 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 ---
 ### `AssociatedContractUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/State.sol#L38)</sub>
 
 
 

@@ -6,7 +6,7 @@ An external state contract to hold ERC20 balances and allowances. This operates 
 
 
 
-**Source:** [contracts/TokenState.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol)
+**Source:** [contracts/TokenState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/TokenState.sol)
 
 ## Architecture
 
@@ -26,7 +26,7 @@ graph TD
 ---
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/TokenState.sol#L12)</sub>
 
 
 
@@ -41,7 +41,7 @@ ERC20 allowances. Also generates an ERC20 accessor in the same way as the `balan
 ---
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/TokenState.sol#L11)</sub>
 
 
 
@@ -58,7 +58,7 @@ ERC20 balances, note that as a public variable, this synthesises an accessor whi
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/TokenState.sol#L14)</sub>
 
 
 
@@ -84,7 +84,7 @@ ERC20 balances, note that as a public variable, this synthesises an accessor whi
 ---
 ### `setAllowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/TokenState.sol#L26)</sub>
 
 
 
@@ -109,7 +109,7 @@ Sets the token allowance granted to the `spender` by the `tokenOwner`.
 ---
 ### `setBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/TokenState.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/TokenState.sol#L40)</sub>
 
 
 

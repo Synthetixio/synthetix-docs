@@ -14,7 +14,7 @@ In principle it is generic, as the approver just marks a number of delegates as 
 
 
 
-**Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol)
+**Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol)
 
 ## Architecture
 
@@ -46,7 +46,7 @@ graph TD
 ---
 ### `APPROVE_ALL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L17)</sub>
 
 
 
@@ -58,7 +58,7 @@ graph TD
 ---
 ### `BURN_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L13)</sub>
 
 
 
@@ -70,7 +70,7 @@ graph TD
 ---
 ### `CLAIM_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L15)</sub>
 
 
 
@@ -82,7 +82,7 @@ graph TD
 ---
 ### `EXCHANGE_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L16)</sub>
 
 
 
@@ -94,7 +94,7 @@ graph TD
 ---
 ### `ISSUE_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L14)</sub>
 
 
 
@@ -108,7 +108,7 @@ graph TD
 ---
 ### `_delegatableFunctions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L19)</sub>
 
 
 
@@ -120,7 +120,7 @@ graph TD
 ---
 ### `eternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L28)</sub>
 
 
 
@@ -134,7 +134,7 @@ graph TD
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L30)</sub>
 
 
 
@@ -158,7 +158,7 @@ graph TD
 ---
 ### `approveAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L84)</sub>
 
 
 
@@ -176,7 +176,7 @@ graph TD
 ---
 ### `approveBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L96)</sub>
 
 
 
@@ -194,7 +194,7 @@ graph TD
 ---
 ### `approveClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L114)</sub>
 
 
 
@@ -212,7 +212,7 @@ graph TD
 ---
 ### `approvedAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L64)</sub>
 
 
 
@@ -230,7 +230,7 @@ graph TD
 ---
 ### `approveExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L123)</sub>
 
 
 
@@ -248,7 +248,7 @@ graph TD
 ---
 ### `approveIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L105)</sub>
 
 
 
@@ -266,7 +266,7 @@ graph TD
 ---
 ### `canBurnFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L48)</sub>
 
 
 
@@ -284,7 +284,7 @@ graph TD
 ---
 ### `canClaimFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L56)</sub>
 
 
 
@@ -302,7 +302,7 @@ graph TD
 ---
 ### `canExchangeFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L60)</sub>
 
 
 
@@ -320,7 +320,7 @@ graph TD
 ---
 ### `canIssueFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L52)</sub>
 
 
 
@@ -338,7 +338,7 @@ graph TD
 ---
 ### `removeAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L89)</sub>
 
 
 
@@ -356,7 +356,7 @@ graph TD
 ---
 ### `removeBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L100)</sub>
 
 
 
@@ -374,7 +374,7 @@ graph TD
 ---
 ### `removeClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L118)</sub>
 
 
 
@@ -392,7 +392,7 @@ graph TD
 ---
 ### `removeExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L127)</sub>
 
 
 
@@ -410,7 +410,7 @@ graph TD
 ---
 ### `removeIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L109)</sub>
 
 
 
@@ -430,7 +430,7 @@ graph TD
 ---
 ### `_checkApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L71)</sub>
 
 
 
@@ -448,7 +448,7 @@ graph TD
 ---
 ### `_getKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L39)</sub>
 
 
 
@@ -466,7 +466,7 @@ graph TD
 ---
 ### `_setApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L131)</sub>
 
 
 
@@ -482,7 +482,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Can't delegate to address(0))](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L136)
+    * [require(..., Can't delegate to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L136)
 
     **Emits**
 
@@ -492,7 +492,7 @@ graph TD
 ---
 ### `_withdrawApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L141)</sub>
 
 
 
@@ -512,7 +512,7 @@ graph TD
 ---
 ### `setEternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L153)</sub>
 
 
 
@@ -528,7 +528,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Can't set eternalStorage to address(0))](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L154)
+    * [require(..., Can't set eternalStorage to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L154)
 
     **Modifiers**
 
@@ -544,7 +544,7 @@ graph TD
 ---
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L160)</sub>
 
 
 
@@ -560,7 +560,7 @@ The delegate was approved to act on the authoriser's behalf for the given action
 ---
 ### `EternalStorageUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L162)</sub>
 
 
 
@@ -576,7 +576,7 @@ The address of the eternal storage contract has changed.
 ---
 ### `WithdrawApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L161)</sub>
 
 
 

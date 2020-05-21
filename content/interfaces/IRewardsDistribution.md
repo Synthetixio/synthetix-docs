@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardsDistribution.sol)
+**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IRewardsDistribution.sol)
 
 ## Constants
 
@@ -15,7 +15,7 @@
 ---
 ### `distributeRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
 
 
 

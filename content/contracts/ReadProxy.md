@@ -14,7 +14,7 @@
 
 
 
-**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol)
+**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol)
 
 ## Architecture
 
@@ -24,6 +24,7 @@
 <!--centered-image>
     ![Architecture Graph](../img/graphs/todo-architecture.svg)
 </centered-image-->
+
 
 
 
@@ -54,7 +55,7 @@ graph TD
 ---
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L10)</sub>
 
 
 
@@ -68,7 +69,7 @@ graph TD
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L12)</sub>
 
 
 
@@ -92,7 +93,7 @@ graph TD
 ---
 ### `() (fallback function)`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L19)</sub>
 
 
 
@@ -112,7 +113,7 @@ graph TD
 ---
 ### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L14)</sub>
 
 
 
@@ -146,7 +147,7 @@ graph TD
 ---
 ### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L36)</sub>
 
 
 

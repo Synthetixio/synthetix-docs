@@ -9,7 +9,7 @@ Purgeable synths were introduced by [SIP-3](https://github.com/Synthetixio/SIPs/
 
 
 
-**Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol)
+**Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol)
 
 ## Architecture
 
@@ -34,6 +34,7 @@ graph TD
 ### Related Contracts
 
 - [`ExchangeRates`](ExchangeRates.md)
+
 
 
 
@@ -71,7 +72,7 @@ graph TD
 ---
 ### `CONTRACT_EXRATES`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L20)</sub>
 
 
 
@@ -83,7 +84,7 @@ graph TD
 ---
 ### `PURGED_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L74)</sub>
 
 
 
@@ -97,7 +98,7 @@ graph TD
 ---
 ### `maxSupplyToPurgeInUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L18)</sub>
 
 
 
@@ -114,7 +115,7 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L24)</sub>
 
 
 
@@ -138,7 +139,7 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 ---
 ### `purge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L49)</sub>
 
 
 
@@ -160,7 +161,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 
     **Requires**
 
-    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L55)
+    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L55)
 
     **Modifiers**
 
@@ -172,7 +173,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 ---
 ### `emitPurged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L76)</sub>
 
 
 
@@ -190,7 +191,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 ---
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L39)</sub>
 
 
 
@@ -210,7 +211,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 ---
 ### `Purged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L73)</sub>
 
 
 

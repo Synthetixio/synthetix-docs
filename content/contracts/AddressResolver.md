@@ -6,7 +6,7 @@ This contract is a type of Service Locator pattern that allows for easier intera
 
 
 
-**Source:** [contracts/AddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol)
+**Source:** [contracts/AddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol)
 
 ## Architecture
 
@@ -57,7 +57,7 @@ Returns a single address by it's `bytes32` key.
 ---
 ### `repository`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L12)</sub>
 
 
 
@@ -74,7 +74,7 @@ The mapping of contract name to address
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L14)</sub>
 
 
 
@@ -98,7 +98,7 @@ The mapping of contract name to address
 ---
 ### `getAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L28)</sub>
 
 
 
@@ -116,7 +116,7 @@ The mapping of contract name to address
 ---
 ### `getSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L38)</sub>
 
 
 
@@ -132,13 +132,13 @@ The mapping of contract name to address
 
     **Requires**
 
-    * [require(..., Cannot find Synthetix address)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L40)
+    * [require(..., Cannot find Synthetix address)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L40)
 
 
 ---
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L32)</sub>
 
 
 
@@ -154,7 +154,7 @@ The mapping of contract name to address
 
     **Requires**
 
-    * [require(..., calldata)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L34)
+    * [require(..., calldata)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L34)
 
 ## Functions (onlyOwner)
 
@@ -162,7 +162,7 @@ The mapping of contract name to address
 ---
 ### `importAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L18)</sub>
 
 
 
@@ -178,7 +178,7 @@ The mapping of contract name to address
 
     **Requires**
 
-    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L19)
+    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/AddressResolver.sol#L19)
 
     **Modifiers**
 

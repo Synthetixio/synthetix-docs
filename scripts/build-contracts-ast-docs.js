@@ -7,8 +7,9 @@ const YAML = require('yaml');
 const snx = require('synthetix');
 
 const astDocs = snx.getAST();
+const { version } = require('./utils');
 
-const baseUrl = 'https://github.com/Synthetixio/synthetix/tree/develop/';
+const baseUrl = `https://github.com/Synthetixio/synthetix/tree/v${version()}`;
 const getContractSourceLink = (contractName, name, lineNumber) => {
 	return `<sub>[${name}](${baseUrl}${contractName}#L${lineNumber})</sub>`;
 };

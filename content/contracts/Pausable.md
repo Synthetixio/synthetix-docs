@@ -6,7 +6,7 @@ Allows an inheriting contract to be paused and resumed, providing a modifier tha
 
 
 
-**Source:** [contracts/Pausable.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol)
+**Source:** [contracts/Pausable.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol)
 
 ## Architecture
 
@@ -33,7 +33,7 @@ True iff the contract is currently paused.
 ---
 ### `lastPauseTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L9)</sub>
 
 
 
@@ -48,7 +48,7 @@ The UNIX timestamp in seconds at which the contract was last paused.
 ---
 ### `paused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L10)</sub>
 
 
 
@@ -62,7 +62,7 @@ The UNIX timestamp in seconds at which the contract was last paused.
 ---
 ### `notPaused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L42)</sub>
 
 
 
@@ -75,7 +75,7 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L12)</sub>
 
 
 
@@ -91,7 +91,7 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L14)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L14)
 
 ## Functions (Internal)
 
@@ -99,7 +99,7 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L12)</sub>
 
 
 
@@ -115,7 +115,7 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L14)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L14)
 
 ## Functions (onlyOwner)
 
@@ -123,7 +123,7 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 ---
 ### `setPaused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L22)</sub>
 
 
 
@@ -151,7 +151,7 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 ---
 ### `PauseChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Pausable.sol#L40)</sub>
 
 
 

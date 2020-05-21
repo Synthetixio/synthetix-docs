@@ -27,7 +27,7 @@ graph TD
 ## Description
 
 
-**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol)
+**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol)
 
 ## Variables
 
@@ -37,7 +37,7 @@ graph TD
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L10)</sub>
 
 
 
@@ -61,7 +61,7 @@ graph TD
 ---
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L55)</sub>
 
 
 
@@ -79,7 +79,7 @@ graph TD
 ---
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L85)</sub>
 
 
 
@@ -97,7 +97,7 @@ graph TD
 ---
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L44)</sub>
 
 
 
@@ -115,7 +115,7 @@ graph TD
 ---
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L24)</sub>
 
 
 
@@ -133,7 +133,7 @@ graph TD
 ---
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L14)</sub>
 
 
 
@@ -151,7 +151,7 @@ graph TD
 ---
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L19)</sub>
 
 
 
@@ -169,7 +169,7 @@ graph TD
 ---
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L34)</sub>
 
 
 
@@ -187,7 +187,7 @@ graph TD
 ---
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L65)</sub>
 
 
 
@@ -205,7 +205,7 @@ graph TD
 ---
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ProxyERC20.sol#L102)</sub>
 
 
 

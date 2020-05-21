@@ -14,7 +14,7 @@ The main [`Synthetix`](Synthetix.md) contract and all [`Synths`](Synth.md) are E
 
 
 
-**Source:** [contracts/ExternStateToken.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol)
+**Source:** [contracts/ExternStateToken.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol)
 
 ## Architecture
 
@@ -72,7 +72,7 @@ graph TD
 ---
 ### `APPROVAL_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L151)</sub>
 
 
 
@@ -84,7 +84,7 @@ graph TD
 ---
 ### `TOKENSTATEUPDATED_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L162)</sub>
 
 
 
@@ -96,7 +96,7 @@ graph TD
 ---
 ### `TRANSFER_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L140)</sub>
 
 
 
@@ -110,7 +110,7 @@ graph TD
 ---
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L29)</sub>
 
 
 
@@ -125,7 +125,7 @@ The ERC20 decimal precision of this token. This is usually set to 18 in Syntheti
 ---
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L26)</sub>
 
 
 
@@ -140,7 +140,7 @@ The ERC20 name of this token.
 ---
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L27)</sub>
 
 
 
@@ -155,7 +155,7 @@ The ERC20 symbol of this token.
 ---
 ### `tokenState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L23)</sub>
 
 
 
@@ -170,7 +170,7 @@ The external state contract holding this token's balances and allowances.
 ---
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L28)</sub>
 
 
 
@@ -187,7 +187,7 @@ The ERC20 total token supply.
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L31)</sub>
 
 
 
@@ -215,7 +215,7 @@ The ERC20 total token supply.
 ---
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L55)</sub>
 
 
 
@@ -237,7 +237,7 @@ This information is retrieved from the [`tokenState`](TokenState.md) contract.
 ---
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L126)</sub>
 
 
 
@@ -262,7 +262,7 @@ ERC20 approve function.
 ---
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L62)</sub>
 
 
 
@@ -284,7 +284,7 @@ This information is retrieved from the [`tokenState`](TokenState.md) contract.
 ---
 ### `setTokenState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L73)</sub>
 
 
 
@@ -312,7 +312,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 ---
 ### `_internalTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L78)</sub>
 
 
 
@@ -328,13 +328,13 @@ Unhooking the token state will pause the contract by causing all transactions to
 
     **Requires**
 
-    * [require(..., Cannot transfer to this address)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L84)
+    * [require(..., Cannot transfer to this address)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L84)
 
 
 ---
 ### `_transferByProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L100)</sub>
 
 
 
@@ -352,7 +352,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 ---
 ### `_transferFromByProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L112)</sub>
 
 
 
@@ -370,7 +370,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 ---
 ### `addressToBytes32`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L135)</sub>
 
 
 
@@ -388,7 +388,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 ---
 ### `emitApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L153)</sub>
 
 
 
@@ -406,7 +406,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 ---
 ### `emitTokenStateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L164)</sub>
 
 
 
@@ -424,7 +424,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 ---
 ### `emitTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L142)</sub>
 
 
 
@@ -444,7 +444,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 ---
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L150)</sub>
 
 
 
@@ -463,7 +463,7 @@ This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitApp
 ---
 ### `TokenStateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L161)</sub>
 
 
 
@@ -482,7 +482,7 @@ This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTok
 ---
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExternStateToken.sol#L139)</sub>
 
 
 

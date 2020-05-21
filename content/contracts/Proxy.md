@@ -53,7 +53,7 @@ Finally, if the target contract needs to transfer ether around, then it will be 
 
 
 
-**Source:** [contracts/Proxy.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol)
+**Source:** [contracts/Proxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol)
 
 ## Architecture
 
@@ -78,7 +78,7 @@ graph TD
 ---
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L12)</sub>
 
 
 
@@ -93,7 +93,7 @@ The underlying contract this proxy is standing in front of.
 ---
 ### `useDELEGATECALL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L13)</sub>
 
 
 
@@ -110,7 +110,7 @@ This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The 
 ---
 ### `onlyTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L99)</sub>
 
 
 
@@ -123,7 +123,7 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L15)</sub>
 
 
 
@@ -147,7 +147,7 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 ---
 ### `() (fallback function)`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L62)</sub>
 
 
 
@@ -167,7 +167,7 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 ---
 ### `_emit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L26)</sub>
 
 
 
@@ -222,7 +222,7 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 ---
 ### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L17)</sub>
 
 
 
@@ -248,7 +248,7 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 ---
 ### `setUseDELEGATECALL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L22)</sub>
 
 
 
@@ -272,7 +272,7 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 ---
 ### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxy.sol#L104)</sub>
 
 
 

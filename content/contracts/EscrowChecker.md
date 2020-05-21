@@ -6,7 +6,7 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 
 
 
-**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol)
+**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/EscrowChecker.sol)
 
 ## Architecture
 
@@ -17,6 +17,7 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 <centered-image>
     ![EscrowChecker inheritance graph](../img/graphs/EscrowChecker.svg)
 </centered-image>
+
 
 
 
@@ -35,7 +36,7 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 ---
 ### `synthetix_escrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/EscrowChecker.sol#L13)</sub>
 
 
 
@@ -52,7 +53,7 @@ The [SNX escrow contract](SynthetixEscrow.md).
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/EscrowChecker.sol#L15)</sub>
 
 
 
@@ -72,7 +73,7 @@ The [SNX escrow contract](SynthetixEscrow.md).
 ---
 ### `checkAccountSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/EscrowChecker.sol#L19)</sub>
 
 
 

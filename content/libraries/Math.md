@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/Math.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Math.sol)
+**Source:** [contracts/Math.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Math.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@
 ---
 ### `powDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Math.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Math.sol#L18)</sub>
 
 
 

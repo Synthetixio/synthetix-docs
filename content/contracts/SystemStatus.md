@@ -14,7 +14,7 @@
 
 
 
-**Source:** [contracts/SystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol)
+**Source:** [contracts/SystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol)
 
 ## Architecture
 
@@ -24,6 +24,7 @@
 <!--centered-image>
     ![Architecture Graph](../img/graphs/todo-architecture.svg)
 </centered-image-->
+
 
 
 
@@ -53,7 +54,7 @@ graph TD
 ---
 ### `SECTION_EXCHANGE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L28)</sub>
 
 
 
@@ -65,7 +66,7 @@ graph TD
 ---
 ### `SECTION_ISSUANCE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L27)</sub>
 
 
 
@@ -77,7 +78,7 @@ graph TD
 ---
 ### `SECTION_SYNTH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L29)</sub>
 
 
 
@@ -89,7 +90,7 @@ graph TD
 ---
 ### `SECTION_SYSTEM`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L26)</sub>
 
 
 
@@ -101,7 +102,7 @@ graph TD
 ---
 ### `SUSPENSION_REASON_UPGRADE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L24)</sub>
 
 
 
@@ -115,7 +116,7 @@ graph TD
 ---
 ### `accessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L15)</sub>
 
 
 
@@ -127,7 +128,7 @@ graph TD
 ---
 ### `exchangeSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L35)</sub>
 
 
 
@@ -139,7 +140,7 @@ graph TD
 ---
 ### `issuanceSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L33)</sub>
 
 
 
@@ -151,7 +152,7 @@ graph TD
 ---
 ### `synthSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L37)</sub>
 
 
 
@@ -163,7 +164,7 @@ graph TD
 ---
 ### `systemSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L31)</sub>
 
 
 
@@ -177,7 +178,7 @@ graph TD
 ---
 ### `Status`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L10)</sub>
 
 
 
@@ -191,7 +192,7 @@ graph TD
 ---
 ### `Suspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L17)</sub>
 
 
 
@@ -207,7 +208,7 @@ graph TD
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L39)</sub>
 
 
 
@@ -231,7 +232,7 @@ graph TD
 ---
 ### `getSynthSuspensions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L83)</sub>
 
 
 
@@ -249,7 +250,7 @@ graph TD
 ---
 ### `isSystemUpgrading`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L79)</sub>
 
 
 
@@ -267,7 +268,7 @@ graph TD
 ---
 ### `requireExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L57)</sub>
 
 
 
@@ -283,15 +284,15 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L59)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L59)
 
-    * [require(..., Exchange is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L60)
+    * [require(..., Exchange is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L60)
 
 
 ---
 ### `requireIssuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L51)</sub>
 
 
 
@@ -307,15 +308,15 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L53)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L53)
 
-    * [require(..., Issuance is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L54)
+    * [require(..., Issuance is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L54)
 
 
 ---
 ### `requireSynthActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L63)</sub>
 
 
 
@@ -331,15 +332,15 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L65)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L65)
 
-    * [require(..., Synth is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L66)
+    * [require(..., Synth is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L66)
 
 
 ---
 ### `requireSynthsActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L69)</sub>
 
 
 
@@ -355,15 +356,15 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L71)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L71)
 
-    * [require(..., One or more synths are suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L73)
+    * [require(..., One or more synths are suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L73)
 
 
 ---
 ### `requireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L47)</sub>
 
 
 
@@ -379,13 +380,13 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L48)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L48)
 
 
 ---
 ### `resumeExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L142)</sub>
 
 
 
@@ -401,7 +402,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L143)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L143)
 
     **Emits**
 
@@ -411,7 +412,7 @@ graph TD
 ---
 ### `resumeIssuance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L128)</sub>
 
 
 
@@ -427,7 +428,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L129)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L129)
 
     **Emits**
 
@@ -437,7 +438,7 @@ graph TD
 ---
 ### `resumeSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L156)</sub>
 
 
 
@@ -453,7 +454,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L157)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L157)
 
     **Emits**
 
@@ -463,7 +464,7 @@ graph TD
 ---
 ### `resumeSystem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L114)</sub>
 
 
 
@@ -479,7 +480,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L115)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L115)
 
     **Emits**
 
@@ -489,7 +490,7 @@ graph TD
 ---
 ### `suspendExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L135)</sub>
 
 
 
@@ -505,7 +506,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L136)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L136)
 
     **Emits**
 
@@ -515,7 +516,7 @@ graph TD
 ---
 ### `suspendIssuance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L121)</sub>
 
 
 
@@ -531,7 +532,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L122)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L122)
 
     **Emits**
 
@@ -541,7 +542,7 @@ graph TD
 ---
 ### `suspendSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L149)</sub>
 
 
 
@@ -557,7 +558,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L150)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L150)
 
     **Emits**
 
@@ -567,7 +568,7 @@ graph TD
 ---
 ### `suspendSystem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L107)</sub>
 
 
 
@@ -583,7 +584,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L108)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L108)
 
     **Emits**
 
@@ -595,7 +596,7 @@ graph TD
 ---
 ### `_internalRequireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L172)</sub>
 
 
 
@@ -611,13 +612,13 @@ graph TD
 
     **Requires**
 
-    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L173)
+    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L173)
 
 
 ---
 ### `_internalUpdateAccessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L181)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L181)</sub>
 
 
 
@@ -633,7 +634,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Invalid section supplied)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L187)
+    * [require(..., Invalid section supplied)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L187)
 
     **Emits**
 
@@ -643,7 +644,7 @@ graph TD
 ---
 ### `_requireAccessToResume`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L168)</sub>
 
 
 
@@ -659,13 +660,13 @@ graph TD
 
     **Requires**
 
-    * [require(..., Restricted to access control list)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L169)
+    * [require(..., Restricted to access control list)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L169)
 
 
 ---
 ### `_requireAccessToSuspend`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L164)</sub>
 
 
 
@@ -681,7 +682,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Restricted to access control list)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L165)
+    * [require(..., Restricted to access control list)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L165)
 
 ## Functions (onlyOwner)
 
@@ -689,7 +690,7 @@ graph TD
 ---
 ### `updateAccessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L98)</sub>
 
 
 
@@ -719,7 +720,7 @@ graph TD
 ---
 ### `AccessControlUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L213)</sub>
 
 
 
@@ -729,7 +730,7 @@ graph TD
 ---
 ### `ExchangeResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L208)</sub>
 
 
 
@@ -739,7 +740,7 @@ graph TD
 ---
 ### `ExchangeSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L207)</sub>
 
 
 
@@ -749,7 +750,7 @@ graph TD
 ---
 ### `IssuanceResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L205)</sub>
 
 
 
@@ -759,7 +760,7 @@ graph TD
 ---
 ### `IssuanceSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L204)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L204)</sub>
 
 
 
@@ -769,7 +770,7 @@ graph TD
 ---
 ### `SynthResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L211)</sub>
 
 
 
@@ -779,7 +780,7 @@ graph TD
 ---
 ### `SynthSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L210)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L210)</sub>
 
 
 
@@ -789,7 +790,7 @@ graph TD
 ---
 ### `SystemResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L202)</sub>
 
 
 
@@ -799,7 +800,7 @@ graph TD
 ---
 ### `SystemSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SystemStatus.sol#L201)</sub>
 
 
 

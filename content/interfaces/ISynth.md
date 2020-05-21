@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol)
+**Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynth.sol)
 
 ## Constants
 
@@ -15,7 +15,7 @@
 ---
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynth.sol#L20)</sub>
 
 
 
@@ -33,7 +33,7 @@
 ---
 ### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynth.sol#L6)</sub>
 
 
 
@@ -51,7 +51,7 @@
 ---
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynth.sol#L22)</sub>
 
 
 
@@ -69,7 +69,7 @@
 ---
 ### `transferableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynth.sol#L8)</sub>
 
 
 
@@ -87,7 +87,7 @@
 ---
 ### `transferAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynth.sol#L11)</sub>
 
 
 
@@ -105,7 +105,7 @@
 ---
 ### `transferFromAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynth.sol#L13)</sub>
 
 
 

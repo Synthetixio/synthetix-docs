@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol)
+**Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IRewardEscrow.sol)
 
 ## Constants
 
@@ -15,7 +15,7 @@
 ---
 ### `appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IRewardEscrow.sol#L11)</sub>
 
 
 
@@ -33,7 +33,7 @@
 ---
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IRewardEscrow.sol#L6)</sub>
 
 
 
@@ -51,7 +51,7 @@
 ---
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IRewardEscrow.sol#L8)</sub>
 
 
 
@@ -69,7 +69,7 @@
 ---
 ### `vest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IRewardEscrow.sol#L13)</sub>
 
 
 

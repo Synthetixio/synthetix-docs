@@ -14,7 +14,7 @@
 
 
 
-**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol)
+**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistributionRecipient.sol)
 
 ## Architecture
 
@@ -24,6 +24,7 @@
 <!--centered-image>
     ![Architecture Graph](../img/graphs/todo-architecture.svg)
 </centered-image-->
+
 
 
 
@@ -53,7 +54,7 @@ graph TD
 ---
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistributionRecipient.sol#L9)</sub>
 
 
 
@@ -67,7 +68,7 @@ graph TD
 ---
 ### `onlyRewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistributionRecipient.sol#L13)</sub>
 
 
 
@@ -77,7 +78,7 @@ graph TD
 ---
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistributionRecipient.sol#L11)</sub>
 
 
 
@@ -97,7 +98,7 @@ graph TD
 ---
 ### `setRewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistributionRecipient.sol#L18)</sub>
 
 
 

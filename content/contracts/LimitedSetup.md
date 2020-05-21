@@ -6,7 +6,7 @@ This contract allows certain functions within inheriting contracts to only opera
 
 
 
-**Source:** [contracts/LimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol)
+**Source:** [contracts/LimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/LimitedSetup.sol)
 
 ## Architecture
 
@@ -24,7 +24,7 @@ This contract allows certain functions within inheriting contracts to only opera
 ---
 ### `setupExpiryTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/LimitedSetup.sol#L6)</sub>
 
 
 
@@ -41,7 +41,7 @@ The timestamp at which functions which have the [`onlyDuringSetup`](#onlydurings
 ---
 ### `onlyDuringSetup`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/LimitedSetup.sol#L16)</sub>
 
 
 
@@ -54,7 +54,7 @@ Reverts the transaction if the current timestamp is not before [`setupExpiryTime
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/LimitedSetup.sol#L12)</sub>
 
 
 
@@ -74,7 +74,7 @@ Reverts the transaction if the current timestamp is not before [`setupExpiryTime
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/LimitedSetup.sol#L12)</sub>
 
 
 
