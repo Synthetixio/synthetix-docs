@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol)
+**Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol)
 
 ## Constants
 
@@ -11,11 +11,10 @@
 
 ## Functions
 
-
 ---
 ### `approveAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L15)</sub>
 
 
 
@@ -29,11 +28,10 @@
 
     `nonpayable`
 
-
 ---
 ### `approveBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L19)</sub>
 
 
 
@@ -47,11 +45,10 @@
 
     `nonpayable`
 
-
 ---
 ### `approveClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L27)</sub>
 
 
 
@@ -65,11 +62,10 @@
 
     `nonpayable`
 
-
 ---
 ### `approveExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L31)</sub>
 
 
 
@@ -83,11 +79,10 @@
 
     `nonpayable`
 
-
 ---
 ### `approveIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L23)</sub>
 
 
 
@@ -101,11 +96,10 @@
 
     `nonpayable`
 
-
 ---
 ### `canBurnFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L6)</sub>
 
 
 
@@ -119,11 +113,10 @@
 
     `view`
 
-
 ---
 ### `canClaimFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L10)</sub>
 
 
 
@@ -137,11 +130,10 @@
 
     `view`
 
-
 ---
 ### `canExchangeFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L12)</sub>
 
 
 
@@ -155,11 +147,10 @@
 
     `view`
 
-
 ---
 ### `canIssueFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L8)</sub>
 
 
 
@@ -173,11 +164,10 @@
 
     `view`
 
-
 ---
 ### `removeAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L17)</sub>
 
 
 
@@ -191,11 +181,10 @@
 
     `nonpayable`
 
-
 ---
 ### `removeBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L21)</sub>
 
 
 
@@ -209,11 +198,10 @@
 
     `nonpayable`
 
-
 ---
 ### `removeClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L29)</sub>
 
 
 
@@ -227,11 +215,10 @@
 
     `nonpayable`
 
-
 ---
 ### `removeExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L33)</sub>
 
 
 
@@ -245,11 +232,10 @@
 
     `nonpayable`
 
-
 ---
 ### `removeIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDelegateApprovals.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDelegateApprovals.sol#L25)</sub>
 
 
 

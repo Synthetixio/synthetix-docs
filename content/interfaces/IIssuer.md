@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol)
+**Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol)
 
 ## Constants
 
@@ -11,11 +11,10 @@
 
 ## Functions
 
-
 ---
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L23)</sub>
 
 
 
@@ -29,11 +28,10 @@
 
     `nonpayable`
 
-
 ---
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L25)</sub>
 
 
 
@@ -47,11 +45,10 @@
 
     `nonpayable`
 
-
 ---
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L31)</sub>
 
 
 
@@ -65,11 +62,10 @@
 
     `nonpayable`
 
-
 ---
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L33)</sub>
 
 
 
@@ -83,11 +79,10 @@
 
     `nonpayable`
 
-
 ---
 ### `canBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L6)</sub>
 
 
 
@@ -101,11 +96,10 @@
 
     `view`
 
-
 ---
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L19)</sub>
 
 
 
@@ -119,11 +113,10 @@
 
     `nonpayable`
 
-
 ---
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L21)</sub>
 
 
 
@@ -137,11 +130,10 @@
 
     `nonpayable`
 
-
 ---
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L11)</sub>
 
 
 
@@ -155,11 +147,10 @@
 
     `nonpayable`
 
-
 ---
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L13)</sub>
 
 
 
@@ -173,11 +164,10 @@
 
     `nonpayable`
 
-
 ---
 ### `lastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IIssuer.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L8)</sub>
 
 
 

@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/IEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IEtherCollateral.sol)
+**Source:** [contracts/interfaces/IEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol)
 
 ## Constants
 
@@ -11,11 +11,10 @@
 
 ## Functions
 
-
 ---
 ### `closeLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IEtherCollateral.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L15)</sub>
 
 
 
@@ -29,11 +28,10 @@
 
     `nonpayable`
 
-
 ---
 ### `liquidateUnclosedLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IEtherCollateral.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L17)</sub>
 
 
 
@@ -47,11 +45,10 @@
 
     `nonpayable`
 
-
 ---
 ### `openLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IEtherCollateral.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L13)</sub>
 
 
 
@@ -65,11 +62,10 @@
 
     `payable`
 
-
 ---
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IEtherCollateral.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L6)</sub>
 
 
 
@@ -83,11 +79,10 @@
 
     `view`
 
-
 ---
 ### `totalLoansCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IEtherCollateral.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L8)</sub>
 
 
 
@@ -101,11 +96,10 @@
 
     `view`
 
-
 ---
 ### `totalOpenLoanCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IEtherCollateral.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L10)</sub>
 
 
 

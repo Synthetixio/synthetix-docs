@@ -9,7 +9,7 @@ const snx = require('synthetix');
 const astDocs = snx.getAST();
 const { version } = require('./utils');
 
-const baseUrl = `https://github.com/Synthetixio/synthetix/tree/v${version()}`;
+const baseUrl = `https://github.com/Synthetixio/synthetix/tree/v${version()}/`;
 const getContractSourceLink = (contractName, name, lineNumber) => {
 	return `<sub>[${name}](${baseUrl}${contractName}#L${lineNumber})</sub>`;
 };
@@ -173,6 +173,10 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		curAstDocs.libraries.map(x => {
 			librariesMd += `- [${x.name}](/libraries/${x.name}) for \`${x.type}\`\n`;
 		});
+
+		if (curAstDocs.libraries.length > 0) {
+			librariesMd += '\n';
+		}
 
 		contentJsonMd.Architecture['Libraries'].raw = librariesMd;
 	}
@@ -547,7 +551,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	// also injects line between each ###
 	const rawMdContent = md2json
 		.toMd({ [contractName]: contentJsonMdSorted })
-		.split('###')
+		.split('\n###')
 		.join('\n---\n###');
 
 	fs.writeFileSync(outputFilePath, rawMdContent);

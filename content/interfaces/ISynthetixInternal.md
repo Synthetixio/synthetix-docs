@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Exchanger.sol)
 
 ## Constants
 
@@ -11,11 +11,10 @@
 
 ## Functions
 
-
 ---
 ### `emitExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Exchanger.sol#L38)</sub>
 
 
 
@@ -29,11 +28,10 @@
 
     `nonpayable`
 
-
 ---
 ### `emitExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Exchanger.sol#L32)</sub>
 
 
 
@@ -47,11 +45,10 @@
 
     `nonpayable`
 
-
 ---
 ### `emitSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Exchanger.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Exchanger.sol#L23)</sub>
 
 
 

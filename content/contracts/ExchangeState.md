@@ -14,7 +14,7 @@
 
 
 
-**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol)
+**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol)
 
 ## Architecture
 
@@ -25,13 +25,6 @@
     ![Architecture Graph](../img/graphs/todo-architecture.svg)
 </centered-image-->
 
-
-
-
-
-
-
-
 ---
 ### Inheritance Graph
 
@@ -40,7 +33,6 @@ graph TD
     ExchangeState[ExchangeState] --> State[State]
     State[State] --> Owned[Owned]
 ```
-
 
 ---
 ### Related Contracts
@@ -51,11 +43,10 @@ graph TD
 
 ## Variables
 
-
 ---
 ### `exchanges`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L22)</sub>
 
 
 
@@ -63,11 +54,10 @@ graph TD
 
 **Type:** `mapping(address => mapping(bytes32 => struct ExchangeState.ExchangeEntry[]))`
 
-
 ---
 ### `maxEntriesInQueue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L24)</sub>
 
 
 
@@ -77,11 +67,10 @@ graph TD
 
 ## Structs
 
-
 ---
 ### `ExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L11)</sub>
 
 
 
@@ -99,11 +88,10 @@ graph TD
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L26)</sub>
 
 
 
@@ -125,11 +113,10 @@ graph TD
 
 ## Functions
 
-
 ---
 ### `appendExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L36)</sub>
 
 
 
@@ -145,17 +132,16 @@ graph TD
 
     **Requires**
 
-    * [require(..., Max queue length reached)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L47)
+    * [require(..., Max queue length reached)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L47)
 
     **Modifiers**
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
 
-
 ---
 ### `getEntryAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L73)</sub>
 
 
 
@@ -169,11 +155,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `getLengthOfEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L69)</sub>
 
 
 
@@ -187,11 +172,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `getMaxTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L104)</sub>
 
 
 
@@ -205,11 +189,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `removeEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L63)</sub>
 
 
 
@@ -229,11 +212,10 @@ graph TD
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `setMaxEntriesInQueue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ExchangeState.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeState.sol#L30)</sub>
 
 
 

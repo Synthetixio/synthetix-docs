@@ -14,10 +14,9 @@ In principle it is generic, as the approver just marks a number of delegates as 
 
 
 
-**Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol)
+**Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol)
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -26,7 +25,6 @@ In principle it is generic, as the approver just marks a number of delegates as 
 graph TD
     DelegateApprovals[DelegateApprovals] --> Owned[Owned]
 ```
-
 
 ---
 ### Related Contracts
@@ -42,47 +40,43 @@ graph TD
 
 ## Constants
 
-
 ---
 ### `APPROVE_ALL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L17)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `BURN_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L13)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CLAIM_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L15)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `EXCHANGE_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L16)</sub>
 
 
 
@@ -90,11 +84,10 @@ graph TD
 
 **Type:** `bytes32`
 
-
 ---
 ### `ISSUE_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L14)</sub>
 
 
 
@@ -104,11 +97,10 @@ graph TD
 
 ## Variables
 
-
 ---
 ### `_delegatableFunctions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L19)</sub>
 
 
 
@@ -116,11 +108,10 @@ graph TD
 
 **Type:** `bytes32[5]`
 
-
 ---
 ### `eternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L28)</sub>
 
 
 
@@ -130,11 +121,10 @@ graph TD
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L30)</sub>
 
 
 
@@ -154,11 +144,10 @@ graph TD
 
 ## Functions
 
-
 ---
 ### `approveAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L84)</sub>
 
 
 
@@ -172,11 +161,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `approveBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L96)</sub>
 
 
 
@@ -190,11 +178,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `approveClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L114)</sub>
 
 
 
@@ -208,11 +195,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `approvedAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L64)</sub>
 
 
 
@@ -226,11 +212,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `approveExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L123)</sub>
 
 
 
@@ -244,11 +229,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `approveIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L105)</sub>
 
 
 
@@ -262,11 +246,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `canBurnFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L48)</sub>
 
 
 
@@ -280,11 +263,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `canClaimFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L56)</sub>
 
 
 
@@ -298,11 +280,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `canExchangeFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L60)</sub>
 
 
 
@@ -316,11 +297,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `canIssueFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L52)</sub>
 
 
 
@@ -334,11 +314,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `removeAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L89)</sub>
 
 
 
@@ -352,11 +331,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `removeBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L100)</sub>
 
 
 
@@ -370,11 +348,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `removeClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L118)</sub>
 
 
 
@@ -388,11 +365,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `removeExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L127)</sub>
 
 
 
@@ -406,11 +382,10 @@ graph TD
 
     `nonpayable`
 
-
 ---
 ### `removeIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L109)</sub>
 
 
 
@@ -426,11 +401,10 @@ graph TD
 
 ## Functions (Internal)
 
-
 ---
 ### `_checkApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L71)</sub>
 
 
 
@@ -444,11 +418,10 @@ graph TD
 
     `view`
 
-
 ---
 ### `_getKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L39)</sub>
 
 
 
@@ -462,11 +435,10 @@ graph TD
 
     `pure`
 
-
 ---
 ### `_setApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L131)</sub>
 
 
 
@@ -482,17 +454,16 @@ graph TD
 
     **Requires**
 
-    * [require(..., Can't delegate to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L136)
+    * [require(..., Can't delegate to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L136)
 
     **Emits**
 
     * [Approval](#approval)
 
-
 ---
 ### `_withdrawApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L141)</sub>
 
 
 
@@ -508,11 +479,10 @@ graph TD
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `setEternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L153)</sub>
 
 
 
@@ -528,7 +498,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Can't set eternalStorage to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L154)
+    * [require(..., Can't set eternalStorage to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L154)
 
     **Modifiers**
 
@@ -540,11 +510,10 @@ graph TD
 
 ## Events
 
-
 ---
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L160)</sub>
 
 
 
@@ -556,11 +525,10 @@ The delegate was approved to act on the authoriser's behalf for the given action
 
 - `(address authoriser, address delegate, bytes32 action)`
 
-
 ---
 ### `EternalStorageUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L162)</sub>
 
 
 
@@ -572,11 +540,10 @@ The address of the eternal storage contract has changed.
 
 - `(address newEternalStorage)`
 
-
 ---
 ### `WithdrawApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/DelegateApprovals.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L161)</sub>
 
 
 

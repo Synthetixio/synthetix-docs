@@ -212,7 +212,7 @@ These contracts mostly are not deployed on their own, but provide functionality 
 | [`Owned`](Owned.md)                       | A contract with a distinct owner who can have special privileges.                                                |
 | [`Pausable`](Pausable.md)                 | A contract whose operations can be paused by its owner.                                                          |
 | [`SafeDecimalMath`](SafeDecimalMath.md)   | A library for performing fixed point arithmetic at two different precision levels.                               |
-| [`SafeMath`](SafeMath.md)                 | OpenZeppelin guarded arithmentic library, used by [`SafeDecimalMath`](SafeDecimalMath.md) and others.            |
+| [`SafeMath`](/libraries/SafeMath)                 | OpenZeppelin guarded arithmentic library, used by [`SafeDecimalMath`](SafeDecimalMath.md) and others.            |
 | [`SelfDestructible`](SelfDestructible.md) | A contract that can be self destructed by its owner after a delay.                                               |
 | [`State`](State.md)                       | An external state contract which can restrict its fields to be modifiable only by a particular contract address. |
 | [`TokenState`](TokenState.md)             | A state contract to be used with [`ExternStateToken`](ExternStateToken.md) to store balances.                    |

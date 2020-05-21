@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol)
+**Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol)
 
 ## Constants
 
@@ -11,11 +11,10 @@
 
 ## Functions
 
-
 ---
 ### `amountReceivedFromExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L6)</sub>
 
 
 
@@ -29,11 +28,10 @@
 
     `view`
 
-
 ---
 ### `appendAccountIssuanceRecord`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L29)</sub>
 
 
 
@@ -47,11 +45,10 @@
 
     `nonpayable`
 
-
 ---
 ### `claimFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L22)</sub>
 
 
 
@@ -65,11 +62,10 @@
 
     `nonpayable`
 
-
 ---
 ### `claimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L24)</sub>
 
 
 
@@ -83,11 +79,10 @@
 
     `nonpayable`
 
-
 ---
 ### `closeCurrentFeePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L26)</sub>
 
 
 
@@ -101,11 +96,10 @@
 
     `nonpayable`
 
-
 ---
 ### `exchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L8)</sub>
 
 
 
@@ -119,11 +113,10 @@
 
     `view`
 
-
 ---
 ### `FEE_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L11)</sub>
 
 
 
@@ -137,11 +130,10 @@
 
     `view`
 
-
 ---
 ### `feesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L13)</sub>
 
 
 
@@ -155,11 +147,10 @@
 
     `view`
 
-
 ---
 ### `isFeesClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L15)</sub>
 
 
 
@@ -173,11 +164,10 @@
 
     `view`
 
-
 ---
 ### `recordFeePaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L35)</sub>
 
 
 
@@ -191,11 +181,10 @@
 
     `nonpayable`
 
-
 ---
 ### `setRewardsToDistribute`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L37)</sub>
 
 
 
@@ -209,11 +198,10 @@
 
     `nonpayable`
 
-
 ---
 ### `totalFeesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L17)</sub>
 
 
 
@@ -227,11 +215,10 @@
 
     `view`
 
-
 ---
 ### `totalRewardsAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IFeePool.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L19)</sub>
 
 
 

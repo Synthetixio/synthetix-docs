@@ -10,10 +10,9 @@ This contract can support two proxies simultaneously. Events can be emitted inde
 
 
 
-**Source:** [contracts/Proxyable.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol)
+**Source:** [contracts/Proxyable.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol)
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -25,11 +24,10 @@ graph TD
 
 ## Variables
 
-
 ---
 ### `integrationProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L16)</sub>
 
 
 
@@ -44,11 +42,10 @@ In the case of the [`Synthetix`](Synthetix.md) contract, this integrationProxy i
 
 **Type:** `contract Proxy`
 
-
 ---
 ### `messageSender`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L21)</sub>
 
 
 
@@ -65,11 +62,10 @@ Functions which do not require `messageSender` need not apply any of the proxy m
 
 **Type:** `address`
 
-
 ---
 ### `proxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L15)</sub>
 
 
 
@@ -82,33 +78,30 @@ The address of the main [proxy](Proxy.md) that this contract operates underneath
 
 ## Modifiers
 
-
 ---
 ### `onlyProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L44)</sub>
 
 
 
 Reverts the transaction if the actual `msg.sender` (not [`messageSender`](#messagesender)) is not the proxy or the integration proxy.
 
 
-
 ---
 ### `optionalProxy_onlyOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L56)</sub>
 
 
 
 This modifier is largely the same as `optionalProxy`, but it disallow callers who are not the contract owner. This modifier exists because [`Owned.onlyOwner`](Owned.md#onlyowner) checks `msg.sender`, and not `messageSender`.
 
 
-
 ---
 ### `optionalProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L49)</sub>
 
 
 
@@ -120,11 +113,10 @@ It operates simply: if the caller is not either the proxy or the integration pro
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L23)</sub>
 
 
 
@@ -140,7 +132,7 @@ It operates simply: if the caller is not either the proxy or the integration pro
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L25)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L25)
 
     **Emits**
 
@@ -148,11 +140,10 @@ It operates simply: if the caller is not either the proxy or the integration pro
 
 ## Functions
 
-
 ---
 ### `setMessageSender`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L40)</sub>
 
 
 
@@ -175,11 +166,10 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 
 ## Functions (Internal)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L23)</sub>
 
 
 
@@ -195,7 +185,7 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L25)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L25)
 
     **Emits**
 
@@ -203,11 +193,10 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `setIntegrationProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L36)</sub>
 
 
 
@@ -225,11 +214,10 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 
     * [onlyOwner](#onlyowner)
 
-
 ---
 ### `setProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L31)</sub>
 
 
 
@@ -253,11 +241,10 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 
 ## Events
 
-
 ---
 ### `ProxyUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Proxyable.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L64)</sub>
 
 
 

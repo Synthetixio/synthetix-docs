@@ -9,10 +9,9 @@ This contract is just wrapper around [EternalStorage](EternalStorage.md) with a 
 
 
 
-**Source:** [contracts/FeePoolEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolEternalStorage.sol)
+**Source:** [contracts/FeePoolEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolEternalStorage.sol)
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -27,11 +26,10 @@ graph TD
 
 ## Constants
 
-
 ---
 ### `LAST_FEE_WITHDRAWAL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolEternalStorage.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolEternalStorage.sol#L10)</sub>
 
 
 
@@ -41,11 +39,10 @@ graph TD
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolEternalStorage.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolEternalStorage.sol#L12)</sub>
 
 
 
@@ -67,11 +64,10 @@ graph TD
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `importFeeWithdrawalData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolEternalStorage.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolEternalStorage.sol#L14)</sub>
 
 
 
@@ -87,7 +83,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolEternalStorage.sol#L19)
+    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolEternalStorage.sol#L19)
 
     **Modifiers**
 

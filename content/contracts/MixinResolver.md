@@ -6,8 +6,7 @@ A utility that gives the inheritor access to the [`AddressResolver`](AddressReso
 
 
 
-**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol)
-
+**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol)
 
 ---
 ### Inheritance Graph
@@ -17,7 +16,6 @@ A utility that gives the inheritor access to the [`AddressResolver`](AddressReso
 </centered-image-->
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -29,11 +27,10 @@ graph TD
 
 ## Constants
 
-
 ---
 ### `MAX_ADDRESSES_FROM_RESOLVER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L18)</sub>
 
 
 
@@ -43,11 +40,10 @@ graph TD
 
 ## Variables
 
-
 ---
 ### `addressCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L14)</sub>
 
 
 
@@ -55,11 +51,10 @@ graph TD
 
 **Type:** `mapping(bytes32 => address)`
 
-
 ---
 ### `resolver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L12)</sub>
 
 
 
@@ -70,11 +65,10 @@ The `AddressResolver` instance
 
 **Type:** `contract AddressResolver`
 
-
 ---
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L16)</sub>
 
 
 
@@ -84,11 +78,10 @@ The `AddressResolver` instance
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L20)</sub>
 
 
 
@@ -104,15 +97,14 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L22)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L22)
 
 ## Functions
-
 
 ---
 ### `getResolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L76)</sub>
 
 
 
@@ -126,11 +118,10 @@ The `AddressResolver` instance
 
     `view`
 
-
 ---
 ### `isResolverCached`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L58)</sub>
 
 
 
@@ -146,11 +137,10 @@ The `AddressResolver` instance
 
 ## Functions (Internal)
 
-
 ---
 ### `appendToAddressCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L87)</sub>
 
 
 
@@ -166,13 +156,12 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., Max resolver cache size met)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L89)
-
+    * [require(..., Max resolver cache size met)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L89)
 
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L20)</sub>
 
 
 
@@ -188,13 +177,12 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L22)
-
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L22)
 
 ---
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L50)</sub>
 
 
 
@@ -210,15 +198,14 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L52)
+    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L52)
 
 ## Functions (onlyOwner)
-
 
 ---
 ### `setResolverAndSyncCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/MixinResolver.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L38)</sub>
 
 
 
@@ -237,7 +224,6 @@ The `AddressResolver` instance
     * [onlyOwner](#onlyowner)
 
 ## Owner Functions
-
 
 ---
 ### `setResolver`

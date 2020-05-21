@@ -3,25 +3,26 @@
 ## Description
 
 
-**Source:** [contracts/Math.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Math.sol)
+**Source:** [contracts/Math.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Math.sol)
 
 ## Architecture
-
 
 ---
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
+
+## Constants
+
 ## Variables
 
 ## Functions (Internal)
 
-
 ---
 ### `powDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Math.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Math.sol#L18)</sub>
 
 
 

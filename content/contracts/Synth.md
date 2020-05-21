@@ -45,7 +45,6 @@ See the [main synth notes](../../synths) for more information about how Synths f
 
 ## Architecture
 
-
 ---
 ### Inheritance Graph
 
@@ -63,75 +62,69 @@ graph TD
 ## Description
 
 
-**Source:** [contracts/Synth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol)
+**Source:** [contracts/Synth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol)
 
 ## Constants
-
 
 ---
 ### `BURNED_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L273)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L273)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_EXCHANGER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L33)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_FEEPOOL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L35)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_ISSUER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L34)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_SYNTHETIX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L32)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_SYSTEMSTATUS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L31)</sub>
 
 
 
@@ -139,11 +132,10 @@ graph TD
 
 **Type:** `bytes32`
 
-
 ---
 ### `DECIMALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L24)</sub>
 
 
 
@@ -151,11 +143,10 @@ graph TD
 
 **Type:** `uint8`
 
-
 ---
 ### `FEE_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L27)</sub>
 
 
 
@@ -163,11 +154,10 @@ graph TD
 
 **Type:** `address`
 
-
 ---
 ### `ISSUED_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L266)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L266)</sub>
 
 
 
@@ -177,11 +167,10 @@ graph TD
 
 ## Variables
 
-
 ---
 ### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L37)</sub>
 
 
 
@@ -189,11 +178,10 @@ graph TD
 
 **Type:** `bytes32[24]`
 
-
 ---
 ### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L22)</sub>
 
 
 
@@ -206,12 +194,10 @@ The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosyst
 
 ## Modifiers
 
-
 ---
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L251)</sub>
-
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L251)</sub>
 
 
 
@@ -226,11 +212,10 @@ Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix)
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L47)</sub>
 
 
 
@@ -246,9 +231,9 @@ Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix)
 
     **Requires**
 
-    * [require(..., _proxy cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L61)
+    * [require(..., _proxy cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L61)
 
-    * [require(..., _owner cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L62)
+    * [require(..., _owner cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L62)
 
     **Modifiers**
 
@@ -258,11 +243,10 @@ Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix)
 
 ## Functions
 
-
 ---
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L165)</sub>
 
 
 
@@ -283,11 +267,10 @@ Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this 
 
     * [onlyInternalContracts](#onlyinternalcontracts)
 
-
 ---
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L159)</sub>
 
 
 
@@ -308,11 +291,10 @@ Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flav
 
     * [onlyInternalContracts](#onlyinternalcontracts)
 
-
 ---
 ### `setTotalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L186)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L186)</sub>
 
 
 
@@ -336,11 +318,10 @@ For example, just such a migration is performed by [this script](https://github.
 
     * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
 
-
 ---
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L69)</sub>
 
 
 
@@ -369,11 +350,10 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     * [optionalProxy](#optionalproxy)
 
-
 ---
 ### `transferableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L217)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L217)</sub>
 
 
 
@@ -387,11 +367,10 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     `view`
 
-
 ---
 ### `transferAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L85)</sub>
 
 
 
@@ -415,11 +394,10 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     * [optionalProxy](#optionalproxy)
 
-
 ---
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L103)</sub>
 
 
 
@@ -448,11 +426,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     * [optionalProxy](#optionalproxy)
 
-
 ---
 ### `transferFromAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L113)</sub>
 
 
 
@@ -483,11 +460,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 ## Functions (Internal)
 
-
 ---
 ### `_ensureCanTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L211)</sub>
 
 
 
@@ -503,15 +479,14 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     **Requires**
 
-    * [require(..., Cannot transfer during waiting period)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L212)
+    * [require(..., Cannot transfer during waiting period)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L212)
 
-    * [require(..., Insufficient balance after any settlement owing)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L213)
-
+    * [require(..., Insufficient balance after any settlement owing)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L213)
 
 ---
 ### `_internalBurn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L176)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L176)</sub>
 
 
 
@@ -525,11 +500,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `nonpayable`
 
-
 ---
 ### `_internalIssue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L169)</sub>
 
 
 
@@ -543,11 +517,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `nonpayable`
 
-
 ---
 ### `_internalTransferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L234)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L234)</sub>
 
 
 
@@ -561,11 +534,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `nonpayable`
 
-
 ---
 ### `_transferToFeeAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L139)</sub>
 
 
 
@@ -579,11 +551,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `nonpayable`
 
-
 ---
 ### `emitBurned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L275)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L275)</sub>
 
 
 
@@ -597,11 +568,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `nonpayable`
 
-
 ---
 ### `emitIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L268)</sub>
 
 
 
@@ -615,11 +585,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `nonpayable`
 
-
 ---
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L203)</sub>
 
 
 
@@ -633,11 +602,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `view`
 
-
 ---
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L199)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L199)</sub>
 
 
 
@@ -651,11 +619,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `view`
 
-
 ---
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L207)</sub>
 
 
 
@@ -669,11 +636,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `view`
 
-
 ---
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L195)</sub>
 
 
 
@@ -687,11 +653,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     `view`
 
-
 ---
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L191)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L191)</sub>
 
 
 
@@ -707,11 +672,10 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 ## Events
 
-
 ---
 ### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L272)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L272)</sub>
 
 
 
@@ -726,7 +690,6 @@ This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitBu
 
 - `(address account, uint256 value)`
 
-
 ---
 ### `FeePoolUpdated`
 
@@ -739,11 +702,10 @@ This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitFe
 **Signature:** `FeePoolUpdated(address newFeePool)`
 
 
-
 ---
 ### `Issued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Synth.sol#L265)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L265)</sub>
 
 
 
@@ -757,7 +719,6 @@ This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitIs
 
 
 - `(address account, uint256 value)`
-
 
 ---
 ### `SynthetixUpdated`

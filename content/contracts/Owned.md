@@ -7,10 +7,9 @@ The owner can be changed by a nomination process, where the nominated owner must
 
 
 
-**Source:** [contracts/Owned.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol)
+**Source:** [contracts/Owned.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol)
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -21,11 +20,10 @@ The owner can be changed by a nomination process, where the nominated owner must
 
 ## Variables
 
-
 ---
 ### `nominatedOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L7)</sub>
 
 
 
@@ -36,11 +34,10 @@ The currently-nominated owner.
 
 **Type:** `address`
 
-
 ---
 ### `owner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L6)</sub>
 
 
 
@@ -53,11 +50,10 @@ The contract owner.
 
 ## Modifiers
 
-
 ---
 ### `onlyOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L27)</sub>
 
 
 
@@ -66,11 +62,10 @@ Reverts the transaction if `msg.sender` is not the [`owner`](#owner).
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L9)</sub>
 
 
 
@@ -86,7 +81,7 @@ Reverts the transaction if `msg.sender` is not the [`owner`](#owner).
 
     **Requires**
 
-    * [require(..., Owner address cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L10)
+    * [require(..., Owner address cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L10)
 
     **Emits**
 
@@ -94,11 +89,10 @@ Reverts the transaction if `msg.sender` is not the [`owner`](#owner).
 
 ## Functions
 
-
 ---
 ### `acceptOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L20)</sub>
 
 
 
@@ -118,7 +112,7 @@ The nominated owner is reset to the zero address.
 
     **Requires**
 
-    * [require(..., You must be nominated before you can accept ownership)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L21)
+    * [require(..., You must be nominated before you can accept ownership)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L21)
 
     **Emits**
 
@@ -126,11 +120,10 @@ The nominated owner is reset to the zero address.
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `nominateNewOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L15)</sub>
 
 
 
@@ -154,11 +147,10 @@ The nominated owner is reset to the zero address.
 
 ## Events
 
-
 ---
 ### `OwnerChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L33)</sub>
 
 
 
@@ -170,11 +162,10 @@ Ownership has been handed over from `oldOwner` to `newOwner`, which is the new v
 
 - `(address oldOwner, address newOwner)`
 
-
 ---
 ### `OwnerNominated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Owned.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Owned.sol#L32)</sub>
 
 
 

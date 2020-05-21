@@ -12,10 +12,9 @@ Incentivising activities other than staking was first trialed with UniSwap, whic
 
 
 
-**Source:** [contracts/RewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol)
+**Source:** [contracts/RewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol)
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -25,7 +24,6 @@ graph TD
     RewardsDistribution[RewardsDistribution] --> Owned[Owned]
 ```
 
-
 ---
 ### Related Contracts
 
@@ -33,139 +31,78 @@ graph TD
 - \>[RewardEscrow](RewardEscrow.md)
 - \>[SynthetixProxy](Proxy.md)
 
-
-
-
-
-
-
-
 ---
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 
+## Variables
+
 ---
 ### `authority`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L23)</sub>
+
 
 
 The address authorised to call [`distributeRewards`](#distributerewards), which is used only by [`Synthetix.mint`](Synthetix.md#mint).
 
 
+
+
 **Type:** `address`
-
-
 
 ---
 ### `distributions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L52)</sub>
+
 
 
 An array of distribution recipients and the amount of SNX each will receive from the weekly inflationary supply.
 
 
+
+
 **Type:** `struct RewardsDistribution.DistributionData[]`
-
-
 
 ---
 ### `feePoolProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L38)</sub>
+
 
 
 The address of the [`FeePool`](FeePool.md) [`Proxy`](Proxy.md), which has to be informed how many rewards it has left to distribute once distributions have been made.
 
 
+
+
 **Type:** `address`
-
-
 
 ---
 ### `rewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L33)</sub>
+
 
 
 The address of the [`RewardEscrow`](RewardEscrow.md), where all remaining tokens are sent once other distributions have been made.
 
 
+
+
 **Type:** `address`
-
-
 
 ---
 ### `synthetixProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L28)</sub>
+
 
 
 The address of the Synthetix [`ProxyERC20`](ProxyERC20.md) for transferring SNX to distribution recipients and the [`RewardEscrow`](RewardEscrow.md) contract.
-
-
-**Type:** `address`
-
-
-## Variables
-
-
----
-### `authority`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L23)</sub>
-
-
-
-
-
-**Type:** `address`
-
-
----
-### `distributions`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L52)</sub>
-
-
-
-
-
-**Type:** `struct RewardsDistribution.DistributionData[]`
-
-
----
-### `feePoolProxy`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L38)</sub>
-
-
-
-
-
-**Type:** `address`
-
-
----
-### `rewardEscrow`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L33)</sub>
-
-
-
-
-
-**Type:** `address`
-
-
----
-### `synthetixProxy`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L28)</sub>
-
 
 
 
@@ -174,11 +111,10 @@ The address of the Synthetix [`ProxyERC20`](ProxyERC20.md) for transferring SNX 
 
 ## Structs
 
-
 ---
 ### `DistributionData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L44)</sub>
 
 
 
@@ -196,11 +132,10 @@ Stores an address and a quantity of the inflationary tokens to send to it.
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L58)</sub>
 
 
 
@@ -220,11 +155,10 @@ Stores an address and a quantity of the inflationary tokens to send to it.
 
 ## Functions
 
-
 ---
 ### `distributeRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L153)</sub>
 
 
 
@@ -254,27 +188,26 @@ This function always returns true if it does not revert.
 
     **Requires**
 
-    * [require(..., Nothing to distribute)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L154)
+    * [require(..., Nothing to distribute)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L154)
 
-    * [require(..., Caller is not authorised)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L155)
+    * [require(..., Caller is not authorised)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L155)
 
-    * [require(..., RewardEscrow is not set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L156)
+    * [require(..., RewardEscrow is not set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L156)
 
-    * [require(..., SynthetixProxy is not set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L157)
+    * [require(..., SynthetixProxy is not set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L157)
 
-    * [require(..., FeePoolProxy is not set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L158)
+    * [require(..., FeePoolProxy is not set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L158)
 
-    * [require(..., RewardsDistribution contract does not have enough tokens to distribute)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L159)
+    * [require(..., RewardsDistribution contract does not have enough tokens to distribute)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L159)
 
     **Emits**
 
     * [RewardsDistributed](#rewardsdistributed)
 
-
 ---
 ### `distributionsLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L201)</sub>
 
 
 
@@ -293,11 +226,10 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `addRewardDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L103)</sub>
 
 
 
@@ -313,9 +245,9 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     **Requires**
 
-    * [require(..., Cant add a zero address)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L104)
+    * [require(..., Cant add a zero address)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L104)
 
-    * [require(..., Cant add a zero amount)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L105)
+    * [require(..., Cant add a zero amount)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L105)
 
     **Modifiers**
 
@@ -325,11 +257,10 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     * [RewardDistributionAdded](#rewarddistributionadded)
 
-
 ---
 ### `editRewardDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L140)</sub>
 
 
 
@@ -345,17 +276,16 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     **Requires**
 
-    * [require(..., index out of bounds)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L145)
+    * [require(..., index out of bounds)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L145)
 
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
 
-
 ---
 ### `removeRewardDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L119)</sub>
 
 
 
@@ -371,17 +301,16 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     **Requires**
 
-    * [require(..., index out of bounds)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L120)
+    * [require(..., index out of bounds)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L120)
 
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
 
-
 ---
 ### `setAuthority`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L89)</sub>
 
 
 
@@ -399,11 +328,10 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     * [onlyOwner](#onlyowner)
 
-
 ---
 ### `setFeePoolProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L81)</sub>
 
 
 
@@ -421,11 +349,10 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     * [onlyOwner](#onlyowner)
 
-
 ---
 ### `setRewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L77)</sub>
 
 
 
@@ -443,11 +370,10 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     * [onlyOwner](#onlyowner)
 
-
 ---
 ### `setSynthetixProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L73)</sub>
 
 
 
@@ -467,11 +393,10 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
 ## Events
 
-
 ---
 ### `RewardDistributionAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L207)</sub>
 
 
 
@@ -483,11 +408,10 @@ Records that a new recipient was added to the distributions list, and the index 
 
 - `(uint256 index, address destination, uint256 amount)`
 
-
 ---
 ### `RewardsDistributed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/RewardsDistribution.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistribution.sol#L208)</sub>
 
 
 

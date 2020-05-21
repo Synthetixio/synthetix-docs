@@ -11,10 +11,9 @@ This contract does all the heavy lifting of issuing and burning `sUSD`. It's use
 
 
 
-**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol)
+**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol)
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -24,7 +23,6 @@ graph TD
     Issuer[Issuer] --> MixinResolver[MixinResolver]
     MixinResolver[MixinResolver] --> Owned[Owned]
 ```
-
 
 ---
 ### Related Contracts
@@ -47,187 +45,119 @@ If any, see:
 </centered-image>
 --->
 
-
-
-
-
-
-
-
 ---
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 
+## Constructor
+
+<!-- E.g.
+The constructor initialises the various addresses that this contract knows about, as well as the inherited [`ExternStateToken`](ExternStateToken.md) instance.
+
+??? example "Details"
+
+    **Signature**
+
+    `constructor(address _proxy, TokenState _tokenState, SynthetixState _synthetixState, address _owner, ExchangeRates _exchangeRates, FeePool _feePool, SupplySchedule _supplySchedule, SynthetixEscrow _rewardEscrow, SynthetixEscrow _escrow, RewardsDistribution _rewardsDistribution, uint _totalSupply) public`
+
+    **Superconstructors**
+
+    * [`ExternStateToken(_proxy, _tokenState, TOKEN_NAME, TOKEN_SYMBOL, _totalSupply, DECIMALS, _owner)`](ExternStateToken.md#constructor)
+
+-->
+
+## Views
+
+<!-- E.g.
 ---
-### `CONTRACT_DELEGATEAPPROVALS`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L39)</sub>
-
-
-**Type:** `bytes32`
-
-
-
 ---
-### `CONTRACT_EXCHANGER`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L36)</sub>
-
-
-**Type:** `bytes32`
-
-
-
 ---
-### `CONTRACT_FEEPOOL`
+### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L38)</sub>
+Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSynths`](#availablesynths).
 
+??? example "Details"
 
-**Type:** `bytes32`
+    **Signature**
 
+    `availableCurrencyKeys() public view returns (bytes32[])`
 
-
----
-### `CONTRACT_ISSUANCEETERNALSTORAGE`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L40)</sub>
-
-
-**Type:** `bytes32`
-
-
-
----
-### `CONTRACT_SYNTHETIX`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L35)</sub>
-
-
-**Type:** `bytes32`
-
-
-
----
-### `CONTRACT_SYNTHETIXSTATE`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L37)</sub>
-
-
-**Type:** `bytes32`
-
-
-
----
-### `LAST_ISSUE_EVENT`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L26)</sub>
-
-
-**Type:** `bytes32`
-
-
-
----
-### `MAX_MINIMUM_STAKING_TIME`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L29)</sub>
-
-
-**Type:** `uint256`
-
-
-
----
-### `sUSD`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L25)</sub>
-
-
-**Type:** `bytes32`
-
+-->
 
 ## Constants
 
-
 ---
 ### `CONTRACT_DELEGATEAPPROVALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L39)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_EXCHANGER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L36)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_FEEPOOL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L38)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_ISSUANCEETERNALSTORAGE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L40)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_SYNTHETIX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L35)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `CONTRACT_SYNTHETIXSTATE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L37)</sub>
 
 
 
 
 
 **Type:** `bytes32`
-
 
 ---
 ### `LAST_ISSUE_EVENT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L26)</sub>
 
 
 
@@ -235,11 +165,10 @@ If any, see:
 
 **Type:** `bytes32`
 
-
 ---
 ### `MAX_MINIMUM_STAKING_TIME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L29)</sub>
 
 
 
@@ -247,11 +176,10 @@ If any, see:
 
 **Type:** `uint256`
 
-
 ---
 ### `sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L25)</sub>
 
 
 
@@ -261,11 +189,10 @@ If any, see:
 
 ## Variables
 
-
 ---
 ### `addressesToCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L42)</sub>
 
 
 
@@ -273,11 +200,10 @@ If any, see:
 
 **Type:** `bytes32[24]`
 
-
 ---
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L31)</sub>
 
 
 
@@ -287,28 +213,16 @@ If any, see:
 
 ## Modifiers
 
-
 ---
 ### `onlySynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L359)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L359)</sub>
 
 
 
 <!-- E.g.
-
 ---
-
 ---
-
----
-
----
-
----
-
----
-
 ---
 ### `notFeeAddress`
 
@@ -319,11 +233,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L51)</sub>
 
 
 
@@ -345,11 +258,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 ## Functions
 
-
 ---
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L170)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L170)</sub>
 
 
 
@@ -367,11 +279,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     * [onlySynthetix](#onlysynthetix)
 
-
 ---
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L161)</sub>
 
 
 
@@ -387,17 +298,16 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L166)
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L166)
 
     **Modifiers**
 
     * [onlySynthetix](#onlysynthetix)
 
-
 ---
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L200)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L200)</sub>
 
 
 
@@ -415,11 +325,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     * [onlySynthetix](#onlysynthetix)
 
-
 ---
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L195)</sub>
 
 
 
@@ -435,17 +344,16 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L196)
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L196)
 
     **Modifiers**
 
     * [onlySynthetix](#onlysynthetix)
 
-
 ---
 ### `canBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L83)</sub>
 
 
 
@@ -459,11 +367,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `view`
 
-
 ---
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L134)</sub>
 
 
 
@@ -481,11 +388,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     * [onlySynthetix](#onlysynthetix)
 
-
 ---
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L119)</sub>
 
 
 
@@ -501,17 +407,16 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L120)
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L120)
 
     **Modifiers**
 
     * [onlySynthetix](#onlysynthetix)
 
-
 ---
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L126)</sub>
 
 
 
@@ -527,17 +432,16 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Amount too large)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L129)
+    * [require(..., Amount too large)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L129)
 
     **Modifiers**
 
     * [onlySynthetix](#onlysynthetix)
 
-
 ---
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L107)</sub>
 
 
 
@@ -553,19 +457,18 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L112)
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L112)
 
-    * [require(..., Amount too large)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L115)
+    * [require(..., Amount too large)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L115)
 
     **Modifiers**
 
     * [onlySynthetix](#onlysynthetix)
 
-
 ---
 ### `lastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L87)</sub>
 
 
 
@@ -581,11 +484,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 ## Functions (Internal)
 
-
 ---
 ### `_addToDebtRegister`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L265)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L265)</sub>
 
 
 
@@ -599,11 +501,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `nonpayable`
 
-
 ---
 ### `_appendAccountIssuanceRecord`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L252)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L252)</sub>
 
 
 
@@ -617,11 +518,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `nonpayable`
 
-
 ---
 ### `_burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L175)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L175)</sub>
 
 
 
@@ -637,15 +537,14 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., Minimum stake time not reached)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L176)
+    * [require(..., Minimum stake time not reached)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L176)
 
-    * [require(..., No debt to forgive)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L184)
-
+    * [require(..., No debt to forgive)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L184)
 
 ---
 ### `_burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L206)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L206)</sub>
 
 
 
@@ -661,13 +560,12 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., No debt to forgive)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L210)
-
+    * [require(..., No debt to forgive)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L210)
 
 ---
 ### `_internalBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L223)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L223)</sub>
 
 
 
@@ -681,11 +579,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `nonpayable`
 
-
 ---
 ### `_internalIssueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L142)</sub>
 
 
 
@@ -699,11 +596,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `nonpayable`
 
-
 ---
 ### `_removeFromDebtRegister`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L313)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L313)</sub>
 
 
 
@@ -717,11 +613,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `nonpayable`
 
-
 ---
 ### `_setLastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L102)</sub>
 
 
 
@@ -735,11 +630,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `nonpayable`
 
-
 ---
 ### `delegateApprovals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L70)</sub>
 
 
 
@@ -753,11 +647,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `view`
 
-
 ---
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L58)</sub>
 
 
 
@@ -771,11 +664,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `view`
 
-
 ---
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L66)</sub>
 
 
 
@@ -789,11 +681,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `view`
 
-
 ---
 ### `issuanceEternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L74)</sub>
 
 
 
@@ -807,11 +698,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `view`
 
-
 ---
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L54)</sub>
 
 
 
@@ -825,11 +715,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     `view`
 
-
 ---
 ### `synthetixState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L62)</sub>
 
 
 
@@ -845,11 +734,10 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `setMinimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L94)</sub>
 
 
 
@@ -865,7 +753,7 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
     **Requires**
 
-    * [require(..., stake time exceed maximum 1 week)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L96)
+    * [require(..., stake time exceed maximum 1 week)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L96)
 
     **Modifiers**
 
@@ -881,19 +769,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <!-- E.g.
 
-
 ---
-
 ---
-
----
-
----
-
----
-
----
-
 ---
 ### `burnSynths`
 
@@ -923,19 +800,8 @@ The new debt position of the caller is recorded with [`_appendAccountIssuanceRec
 
 <!-- Eg.
 
-
 ---
-
 ---
-
----
-
----
-
----
-
----
-
 ---
 ### `importAddresses`
 
@@ -962,11 +828,10 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 ## Events
 
-
 ---
 ### `MinimumStakeTimeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/Issuer.sol#L366)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L366)</sub>
 
 
 

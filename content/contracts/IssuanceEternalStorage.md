@@ -14,7 +14,7 @@
 
 
 
-**Source:** [contracts/IssuanceEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/IssuanceEternalStorage.sol)
+**Source:** [contracts/IssuanceEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/IssuanceEternalStorage.sol)
 
 ## Architecture
 
@@ -26,13 +26,6 @@
 </centered-image-->
 
 
-
-
-
-
-
-
-
 ---
 ### Inheritance Graph
 
@@ -42,7 +35,6 @@ graph TD
     EternalStorage[EternalStorage] --> State[State]
     State[State] --> Owned[Owned]
 ```
-
 
 ---
 ### Related Contracts
@@ -60,11 +52,10 @@ graph TD
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/IssuanceEternalStorage.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/IssuanceEternalStorage.sol#L11)</sub>
 
 
 

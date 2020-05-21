@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/ISynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol)
+**Source:** [contracts/interfaces/ISynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol)
 
 ## Constants
 
@@ -11,11 +11,10 @@
 
 ## Functions
 
-
 ---
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L8)</sub>
 
 
 
@@ -29,11 +28,10 @@
 
     `view`
 
-
 ---
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L10)</sub>
 
 
 
@@ -47,11 +45,10 @@
 
     `view`
 
-
 ---
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L47)</sub>
 
 
 
@@ -65,11 +62,10 @@
 
     `nonpayable`
 
-
 ---
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L49)</sub>
 
 
 
@@ -83,11 +79,10 @@
 
     `nonpayable`
 
-
 ---
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L51)</sub>
 
 
 
@@ -101,11 +96,10 @@
 
     `nonpayable`
 
-
 ---
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L53)</sub>
 
 
 
@@ -119,11 +113,10 @@
 
     `nonpayable`
 
-
 ---
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L12)</sub>
 
 
 
@@ -137,11 +130,10 @@
 
     `view`
 
-
 ---
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L14)</sub>
 
 
 
@@ -155,11 +147,10 @@
 
     `view`
 
-
 ---
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L16)</sub>
 
 
 
@@ -173,11 +164,10 @@
 
     `view`
 
-
 ---
 ### `debtBalanceOfAndTotalDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L18)</sub>
 
 
 
@@ -191,11 +181,10 @@
 
     `view`
 
-
 ---
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L55)</sub>
 
 
 
@@ -209,11 +198,10 @@
 
     `nonpayable`
 
-
 ---
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L61)</sub>
 
 
 
@@ -227,11 +215,10 @@
 
     `nonpayable`
 
-
 ---
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L68)</sub>
 
 
 
@@ -245,11 +232,10 @@
 
     `nonpayable`
 
-
 ---
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L70)</sub>
 
 
 
@@ -263,11 +249,10 @@
 
     `nonpayable`
 
-
 ---
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L72)</sub>
 
 
 
@@ -281,11 +266,10 @@
 
     `nonpayable`
 
-
 ---
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L74)</sub>
 
 
 
@@ -299,11 +283,10 @@
 
     `nonpayable`
 
-
 ---
 ### `isWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L23)</sub>
 
 
 
@@ -317,11 +300,10 @@
 
     `view`
 
-
 ---
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L25)</sub>
 
 
 
@@ -335,11 +317,10 @@
 
     `view`
 
-
 ---
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L76)</sub>
 
 
 
@@ -353,11 +334,10 @@
 
     `nonpayable`
 
-
 ---
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L27)</sub>
 
 
 
@@ -371,11 +351,10 @@
 
     `view`
 
-
 ---
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L78)</sub>
 
 
 
@@ -389,11 +368,10 @@
 
     `nonpayable`
 
-
 ---
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L36)</sub>
 
 
 
@@ -407,11 +385,10 @@
 
     `view`
 
-
 ---
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L38)</sub>
 
 
 
@@ -425,11 +402,10 @@
 
     `view`
 
-
 ---
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L40)</sub>
 
 
 
@@ -443,11 +419,10 @@
 
     `view`
 
-
 ---
 ### `totalIssuedSynthsExcludeEtherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L42)</sub>
 
 
 
@@ -461,11 +436,10 @@
 
     `view`
 
-
 ---
 ### `transferableSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/ISynthetix.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetix.sol#L44)</sub>
 
 
 

@@ -19,10 +19,9 @@ See [`FeePool.feesByPeriod`](FeePool.md#feesbyperiod) and [`FeePool.effectiveDeb
     See also: [Design_Decisions.md](https://github.com/Synthetixio/synthetix/blob/master/Design_Decisions.md#feepoolstate).
 
 
-**Source:** [contracts/FeePoolState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol)
+**Source:** [contracts/FeePoolState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol)
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -34,18 +33,10 @@ graph TD
     SelfDestructible[SelfDestructible] --> Owned[Owned]
 ```
 
-
 ---
 ### Related Contracts
 
 - <>[FeePool](FeePool.md)
-
-
-
-
-
-
-
 
 ---
 ### Libraries
@@ -53,22 +44,12 @@ graph TD
 - [SafeMath](/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 
----
-### `FEE_PERIOD_LENGTH`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L22)</sub>
-
-
-**Type:** `uint8`
-
-
 ## Constants
 
-
 ---
 ### `FEE_PERIOD_LENGTH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L22)</sub>
 
 
 
@@ -78,11 +59,10 @@ graph TD
 
 ## Variables
 
-
 ---
 ### `accountIssuanceLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L33)</sub>
 
 
 
@@ -96,11 +76,10 @@ Note that the entry `accountIssuanceLedger[account][0]` only corresponds to the 
 
 **Type:** `mapping(address => struct FeePoolState.IssuanceData[6])`
 
-
 ---
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L24)</sub>
 
 
 
@@ -113,11 +92,10 @@ The address of the main [`FeePool`](FeePool.md) contract.
 
 ## Structs
 
-
 ---
 ### `IssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L27)</sub>
 
 
 
@@ -135,11 +113,10 @@ Holds the issuance state and index of users interacting with the [`FeePool`](Fee
 
 ## Modifiers
 
-
 ---
 ### `onlyFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L154)</sub>
 
 
 
@@ -148,11 +125,10 @@ Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L35)</sub>
 
 
 
@@ -176,11 +152,10 @@ Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
 
 ## Functions
 
-
 ---
 ### `appendAccountIssuanceRecord`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L98)</sub>
 
 
 
@@ -207,11 +182,10 @@ The `debtRatio` argument is a [27-decimal fixed point number](SafeDecimalMath.md
 
     * [onlyFeePool](#onlyfeepool)
 
-
 ---
 ### `applicableIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L73)</sub>
 
 
 
@@ -234,11 +208,10 @@ The returned values are as per [`getAccountsDebtEntry`](#getaccountsdebtentry), 
 
     `view`
 
-
 ---
 ### `getAccountsDebtEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L57)</sub>
 
 
 
@@ -260,13 +233,12 @@ The first return value is a [27-decimal fixed point number](SafeDecimalMath.md).
 
     **Requires**
 
-    * [require(..., index exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L62)
-
+    * [require(..., index exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L62)
 
 ---
 ### `issuanceDataIndexOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L118)</sub>
 
 
 
@@ -285,11 +257,10 @@ Shifts this account's array of issuance ledger entries down one place, overwriti
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `importIssuerData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L137)</sub>
 
 
 
@@ -305,7 +276,7 @@ Shifts this account's array of issuance ledger entries down one place, overwriti
 
     **Requires**
 
-    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L143)
+    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L143)
 
     **Modifiers**
 
@@ -313,11 +284,10 @@ Shifts this account's array of issuance ledger entries down one place, overwriti
 
     * [onlyDuringSetup](#onlyduringsetup)
 
-
 ---
 ### `setFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L46)</sub>
 
 
 
@@ -337,11 +307,10 @@ Shifts this account's array of issuance ledger entries down one place, overwriti
 
 ## Events
 
-
 ---
 ### `IssuanceDebtRatioEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/FeePoolState.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L160)</sub>
 
 
 

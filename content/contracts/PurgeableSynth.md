@@ -9,10 +9,9 @@ Purgeable synths were introduced by [SIP-3](https://github.com/Synthetixio/SIPs/
 
 
 
-**Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol)
+**Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol)
 
 ## Architecture
-
 
 ---
 ### Inheritance Graph
@@ -29,50 +28,22 @@ graph TD
     MixinResolver[MixinResolver] --> Owned[Owned]
 ```
 
-
 ---
 ### Related Contracts
 
 - [`ExchangeRates`](ExchangeRates.md)
-
-
-
-
-
-
-
 
 ---
 ### Libraries
 
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 
----
-### `CONTRACT_EXRATES`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L20)</sub>
-
-
-**Type:** `bytes32`
-
-
-
----
-### `PURGED_SIG`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L74)</sub>
-
-
-**Type:** `bytes32`
-
-
 ## Constants
 
-
 ---
 ### `CONTRACT_EXRATES`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L20)</sub>
 
 
 
@@ -80,11 +51,10 @@ graph TD
 
 **Type:** `bytes32`
 
-
 ---
 ### `PURGED_SIG`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L74)</sub>
 
 
 
@@ -94,11 +64,10 @@ graph TD
 
 ## Variables
 
-
 ---
 ### `maxSupplyToPurgeInUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L18)</sub>
 
 
 
@@ -111,11 +80,10 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L24)</sub>
 
 
 
@@ -135,11 +103,10 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 
 ## Functions
 
-
 ---
 ### `purge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L49)</sub>
 
 
 
@@ -161,7 +128,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 
     **Requires**
 
-    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L55)
+    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L55)
 
     **Modifiers**
 
@@ -169,11 +136,10 @@ If this is successfully invoked, balances in the provided list of addresses will
 
 ## Functions (Internal)
 
-
 ---
 ### `emitPurged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L76)</sub>
 
 
 
@@ -187,11 +153,10 @@ If this is successfully invoked, balances in the provided list of addresses will
 
     `nonpayable`
 
-
 ---
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L39)</sub>
 
 
 
@@ -207,11 +172,10 @@ If this is successfully invoked, balances in the provided list of addresses will
 
 ## Events
 
-
 ---
 ### `Purged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/PurgeableSynth.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/PurgeableSynth.sol#L73)</sub>
 
 
 

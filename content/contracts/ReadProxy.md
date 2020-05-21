@@ -14,7 +14,7 @@
 
 
 
-**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol)
+**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol)
 
 ## Architecture
 
@@ -26,13 +26,6 @@
 </centered-image-->
 
 
-
-
-
-
-
-
-
 ---
 ### Inheritance Graph
 
@@ -40,7 +33,6 @@
 graph TD
     ReadProxy[ReadProxy] --> Owned[Owned]
 ```
-
 
 ---
 ### Related Contracts
@@ -51,11 +43,10 @@ graph TD
 
 ## Variables
 
-
 ---
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L10)</sub>
 
 
 
@@ -65,11 +56,10 @@ graph TD
 
 ## Function (Constructor)
 
-
 ---
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L12)</sub>
 
 
 
@@ -89,11 +79,10 @@ graph TD
 
 ## Function (Fallback)
 
-
 ---
 ### `() (fallback function)`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L19)</sub>
 
 
 
@@ -109,11 +98,10 @@ graph TD
 
 ## Functions (onlyOwner)
 
-
 ---
 ### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L14)</sub>
 
 
 
@@ -143,11 +131,10 @@ graph TD
 
 ## Events
 
-
 ---
 ### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/ReadProxy.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L36)</sub>
 
 
 

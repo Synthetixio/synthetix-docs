@@ -3,84 +3,32 @@
 ## Description
 
 
-**Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol)
+**Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol)
 
 ## Architecture
-
 
 ---
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
 
----
-### `decimals`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L12)</sub>
-
-
-**Type:** `uint8`
-
-
-
----
-### `highPrecisionDecimals`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L13)</sub>
-
-
-**Type:** `uint8`
-
-
-
----
-### `PRECISE_UNIT`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L19)</sub>
-
-
-**Type:** `uint256`
-
-
-
----
-### `UNIT_TO_HIGH_PRECISION_CONVERSION_FACTOR`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L20)</sub>
-
-
-**Type:** `uint256`
-
-
-
----
-### `UNIT`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L16)</sub>
-
-
-**Type:** `uint256`
-
-
 ## Constants
 
-
 ---
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L12)</sub>
 
 
 
 
 
 **Type:** `uint8`
-
 
 ---
 ### `highPrecisionDecimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L13)</sub>
 
 
 
@@ -88,23 +36,21 @@
 
 **Type:** `uint8`
 
-
 ---
 ### `PRECISE_UNIT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L19)</sub>
 
 
 
 
 
 **Type:** `uint256`
-
 
 ---
 ### `UNIT_TO_HIGH_PRECISION_CONVERSION_FACTOR`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L20)</sub>
 
 
 
@@ -112,11 +58,10 @@
 
 **Type:** `uint256`
 
-
 ---
 ### `UNIT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L16)</sub>
 
 
 
@@ -126,11 +71,10 @@
 
 ## Functions
 
-
 ---
 ### `_divideDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L131)</sub>
 
 
 
@@ -144,11 +88,10 @@
 
     `pure`
 
-
 ---
 ### `_multiplyDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L62)</sub>
 
 
 
@@ -162,11 +105,10 @@
 
     `pure`
 
-
 ---
 ### `preciseUnit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L32)</sub>
 
 
 
@@ -180,11 +122,10 @@
 
     `pure`
 
-
 ---
 ### `unit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L25)</sub>
 
 
 
@@ -200,11 +141,10 @@
 
 ## Functions (Internal)
 
-
 ---
 ### `decimalToPreciseDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L172)</sub>
 
 
 
@@ -218,11 +158,10 @@
 
     `pure`
 
-
 ---
 ### `divideDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L118)</sub>
 
 
 
@@ -236,11 +175,10 @@
 
     `pure`
 
-
 ---
 ### `divideDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L153)</sub>
 
 
 
@@ -254,11 +192,10 @@
 
     `pure`
 
-
 ---
 ### `divideDecimalRoundPrecise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L165)</sub>
 
 
 
@@ -272,11 +209,10 @@
 
     `pure`
 
-
 ---
 ### `multiplyDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L45)</sub>
 
 
 
@@ -290,11 +226,10 @@
 
     `pure`
 
-
 ---
 ### `multiplyDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L105)</sub>
 
 
 
@@ -308,11 +243,10 @@
 
     `pure`
 
-
 ---
 ### `multiplyDecimalRoundPrecise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L89)</sub>
 
 
 
@@ -326,11 +260,10 @@
 
     `pure`
 
-
 ---
 ### `preciseDecimalToDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/SafeDecimalMath.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SafeDecimalMath.sol#L179)</sub>
 
 
 

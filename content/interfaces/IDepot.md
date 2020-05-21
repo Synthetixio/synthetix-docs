@@ -3,7 +3,7 @@
 ## Description
 
 
-**Source:** [contracts/interfaces/IDepot.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol)
+**Source:** [contracts/interfaces/IDepot.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol)
 
 ## Constants
 
@@ -11,11 +11,10 @@
 
 ## Functions
 
-
 ---
 ### `depositSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L17)</sub>
 
 
 
@@ -29,11 +28,10 @@
 
     `nonpayable`
 
-
 ---
 ### `exchangeEtherForSNX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L26)</sub>
 
 
 
@@ -47,11 +45,10 @@
 
     `payable`
 
-
 ---
 ### `exchangeEtherForSNXAtRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L28)</sub>
 
 
 
@@ -65,11 +62,10 @@
 
     `payable`
 
-
 ---
 ### `exchangeEtherForSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L19)</sub>
 
 
 
@@ -83,11 +79,10 @@
 
     `payable`
 
-
 ---
 ### `exchangeEtherForSynthsAtRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L21)</sub>
 
 
 
@@ -101,11 +96,10 @@
 
     `payable`
 
-
 ---
 ### `exchangeSynthsForSNX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L30)</sub>
 
 
 
@@ -119,11 +113,10 @@
 
     `nonpayable`
 
-
 ---
 ### `exchangeSynthsForSNXAtRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L32)</sub>
 
 
 
@@ -137,11 +130,10 @@
 
     `nonpayable`
 
-
 ---
 ### `fundsWallet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L6)</sub>
 
 
 
@@ -155,11 +147,10 @@
 
     `view`
 
-
 ---
 ### `maxEthPurchase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L8)</sub>
 
 
 
@@ -173,11 +164,10 @@
 
     `view`
 
-
 ---
 ### `minimumDepositAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L10)</sub>
 
 
 
@@ -191,11 +181,10 @@
 
     `view`
 
-
 ---
 ### `synthsReceivedForEther`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L12)</sub>
 
 
 
@@ -209,11 +198,10 @@
 
     `view`
 
-
 ---
 ### `totalSellableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L14)</sub>
 
 
 
@@ -227,11 +215,10 @@
 
     `view`
 
-
 ---
 ### `withdrawMyDepositedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15contracts/interfaces/IDepot.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L23)</sub>
 
 
 
