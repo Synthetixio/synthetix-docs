@@ -46,6 +46,8 @@ graph TD
 
 
 
+
+
 ---
 ### Libraries
 
@@ -1024,6 +1026,8 @@ $$
 
 
 
+
+
 ---
 ### `SynthDepositNotAccepted`
 
@@ -1053,10 +1057,14 @@ $$
 
 
 
+
+
 ---
 ### `SynthUpdated`
 
 - `SynthUpdated(Synth newSynthContract)`
+
+
 
 
 

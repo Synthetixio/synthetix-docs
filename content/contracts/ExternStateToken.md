@@ -74,6 +74,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L151)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 
@@ -82,6 +86,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L162)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 
@@ -89,6 +97,10 @@ graph TD
 ### `TRANSFER_SIG`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L140)</sub>
+
+
+
+
 
 **Type:** `bytes32`
 

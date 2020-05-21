@@ -37,6 +37,8 @@ graph TD
 
 
 
+
+
 ---
 ### Libraries
 
@@ -210,6 +212,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 
 <!-- E.g.
+
+---
+
+---
 
 ---
 
@@ -723,6 +729,10 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
 
 <!-- Eg.
 
+
+---
+
+---
 
 ---
 
