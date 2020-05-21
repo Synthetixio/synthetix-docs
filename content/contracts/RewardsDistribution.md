@@ -36,6 +36,7 @@ graph TD
 
 
 
+
 ---
 ### Libraries
 
@@ -250,15 +251,15 @@ This function always returns true if it does not revert.
 
     **Requires**
 
-    * [require(..., Caller is not authorised)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L154)
+    * [require(..., Nothing to distribute)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L154)
 
-    * [require(..., RewardEscrow is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L155)
+    * [require(..., Caller is not authorised)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L155)
 
-    * [require(..., SynthetixProxy is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L156)
+    * [require(..., RewardEscrow is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L156)
 
-    * [require(..., FeePoolProxy is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L157)
+    * [require(..., SynthetixProxy is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L157)
 
-    * [require(..., Nothing to distribute)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L158)
+    * [require(..., FeePoolProxy is not set)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L158)
 
     * [require(..., RewardsDistribution contract does not have enough tokens to distribute)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistribution.sol#L159)
 

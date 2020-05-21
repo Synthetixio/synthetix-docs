@@ -36,8 +36,6 @@ graph TD
 
 - [SafeMath](/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
-## Constants
-
 
 ---
 ### `APPROVAL_SIG`
@@ -45,8 +43,36 @@ graph TD
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L151)</sub>
 
 
+**Type:** `bytes32`
 
 
+
+---
+### `TOKENSTATEUPDATED_SIG`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L162)</sub>
+
+
+**Type:** `bytes32`
+
+
+
+---
+### `TRANSFER_SIG`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L140)</sub>
+
+
+**Type:** `bytes32`
+
+
+## Constants
+
+
+---
+### `APPROVAL_SIG`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L151)</sub>
 
 **Type:** `bytes32`
 
@@ -56,10 +82,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L162)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -67,10 +89,6 @@ graph TD
 ### `TRANSFER_SIG`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExternStateToken.sol#L140)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 

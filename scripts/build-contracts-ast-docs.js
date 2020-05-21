@@ -4,8 +4,9 @@ const fs = require('fs');
 const path = require('path');
 const md2json = require('./md-2-json');
 const YAML = require('yaml');
+const snx = require('synthetix');
 
-const astDocs = require('../external/ast-docs.json');
+const astDocs = snx.getAST();
 
 const baseUrl = 'https://github.com/Synthetixio/synthetix/tree/develop/';
 const getContractSourceLink = (contractName, name, lineNumber) => {

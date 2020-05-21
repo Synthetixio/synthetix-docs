@@ -50,13 +50,12 @@ If any, see:
 
 
 
+
 ---
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
-## Constants
-
 
 ---
 ### `CONTRACT_DELEGATEAPPROVALS`
@@ -64,8 +63,96 @@ If any, see:
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L39)</sub>
 
 
+**Type:** `bytes32`
 
 
+
+---
+### `CONTRACT_EXCHANGER`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L36)</sub>
+
+
+**Type:** `bytes32`
+
+
+
+---
+### `CONTRACT_FEEPOOL`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L38)</sub>
+
+
+**Type:** `bytes32`
+
+
+
+---
+### `CONTRACT_ISSUANCEETERNALSTORAGE`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L40)</sub>
+
+
+**Type:** `bytes32`
+
+
+
+---
+### `CONTRACT_SYNTHETIX`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L35)</sub>
+
+
+**Type:** `bytes32`
+
+
+
+---
+### `CONTRACT_SYNTHETIXSTATE`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L37)</sub>
+
+
+**Type:** `bytes32`
+
+
+
+---
+### `LAST_ISSUE_EVENT`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L26)</sub>
+
+
+**Type:** `bytes32`
+
+
+
+---
+### `MAX_MINIMUM_STAKING_TIME`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L29)</sub>
+
+
+**Type:** `uint256`
+
+
+
+---
+### `sUSD`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L25)</sub>
+
+
+**Type:** `bytes32`
+
+
+## Constants
+
+
+---
+### `CONTRACT_DELEGATEAPPROVALS`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L39)</sub>
 
 **Type:** `bytes32`
 
@@ -75,10 +162,6 @@ If any, see:
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L36)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -86,10 +169,6 @@ If any, see:
 ### `CONTRACT_FEEPOOL`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L38)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -99,10 +178,6 @@ If any, see:
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L40)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -110,10 +185,6 @@ If any, see:
 ### `CONTRACT_SYNTHETIX`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L35)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -123,10 +194,6 @@ If any, see:
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L37)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -134,10 +201,6 @@ If any, see:
 ### `LAST_ISSUE_EVENT`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L26)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -147,10 +210,6 @@ If any, see:
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L29)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 
@@ -158,10 +217,6 @@ If any, see:
 ### `sUSD`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Issuer.sol#L25)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -202,6 +257,8 @@ If any, see:
 
 
 <!-- E.g.
+
+---
 
 ---
 
@@ -785,6 +842,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ---
 
 ---
+
+---
 ### `burnSynths`
 
 [Burns](Synth.md#burn) a quantity of `sUSD` in the calling address, in order to free up its locked SNX supply.
@@ -813,6 +872,8 @@ The new debt position of the caller is recorded with [`_appendAccountIssuanceRec
 
 <!-- Eg.
 
+
+---
 
 ---
 

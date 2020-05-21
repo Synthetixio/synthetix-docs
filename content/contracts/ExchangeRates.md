@@ -413,7 +413,7 @@ Holds necessary information for computing the price of [inverse Synths](../token
 ---
 ### `onlyOracle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L564)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L566)</sub>
 
 
 
@@ -424,7 +424,7 @@ Reverts the transaction if `msg.sender` is not the [`oracle`](#oracle).
 ---
 ### `rateNotStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L559)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L561)</sub>
 
 
 
@@ -470,7 +470,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `anyRateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L370)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L372)</sub>
 
 
 
@@ -488,7 +488,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `effectiveValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L296)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L298)</sub>
 
 
 
@@ -512,7 +512,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `effectiveValueAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L250)</sub>
 
 
 
@@ -536,7 +536,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `getCurrentRoundId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L241)</sub>
 
 
 
@@ -554,7 +554,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `getLastRoundIdBeforeElapsedSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L220)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L222)</sub>
 
 
 
@@ -572,7 +572,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `lastRateUpdateTimes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L273)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L275)</sub>
 
 
 
@@ -590,7 +590,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `lastRateUpdateTimesForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L282)</sub>
 
 
 
@@ -608,7 +608,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `rateAndTimestampAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L264)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L266)</sub>
 
 
 
@@ -626,7 +626,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `rateForCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L316)</sub>
 
 
 
@@ -644,7 +644,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `rateIsFrozen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L363)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L365)</sub>
 
 
 
@@ -662,7 +662,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `rateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L353)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L355)</sub>
 
 
 
@@ -680,7 +680,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `ratesAndStaleForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L334)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L336)</sub>
 
 
 
@@ -698,7 +698,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `ratesForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L321)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L323)</sub>
 
 
 
@@ -718,7 +718,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `_setRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L387)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L389)</sub>
 
 
 
@@ -736,7 +736,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `getRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L553)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L555)</sub>
 
 
 
@@ -754,7 +754,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `getRateAndTimestampAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L543)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L545)</sub>
 
 
 
@@ -772,7 +772,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `getRateAndUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L506)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L508)</sub>
 
 
 
@@ -790,7 +790,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `internalUpdateRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L409)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L411)</sub>
 
 
 
@@ -806,9 +806,9 @@ Reverts the transaction if the given currency's rate is stale.
 
     **Requires**
 
-    * [require(..., Currency key array length must match rates array length.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L414)
+    * [require(..., Currency key array length must match rates array length.)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L416)
 
-    * [require(..., Time is too far into the future)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L415)
+    * [require(..., Time is too far into the future)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L417)
 
     **Emits**
 
@@ -818,7 +818,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `rateOrInverted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L468)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L470)</sub>
 
 
 
@@ -836,7 +836,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `removeFromArray`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L524)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L526)</sub>
 
 
 
@@ -926,7 +926,7 @@ Reverts the transaction if the given currency's rate is stale.
 
     **Requires**
 
-    * [require(..., Given Aggregator is invalid)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L196)
+    * [require(..., Given Aggregator is invalid)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L198)
 
     **Modifiers**
 
@@ -940,7 +940,7 @@ Reverts the transaction if the given currency's rate is stale.
 ---
 ### `removeAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L210)</sub>
 
 
 
@@ -956,7 +956,7 @@ Reverts the transaction if the given currency's rate is stale.
 
     **Requires**
 
-    * [require(..., No aggregator exists for key)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L210)
+    * [require(..., No aggregator exists for key)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L212)
 
     **Modifiers**
 
@@ -1007,8 +1007,6 @@ Reverts the transaction if the given currency's rate is stale.
     `nonpayable`
 
     **Requires**
-
-    * [require(..., entryPoint must be above 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L143)
 
     * [require(..., lowerLimit must be above 0)](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L144)
 
@@ -1353,7 +1351,7 @@ Allows the owner to set the time after which rates will be considered stale.
 ---
 ### `AggregatorAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L577)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L579)</sub>
 
 
 
@@ -1369,7 +1367,7 @@ Records that an Aggregator pricing network was added
 ---
 ### `AggregatorRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L578)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L580)</sub>
 
 
 
@@ -1385,7 +1383,7 @@ Records that an Aggregator pricing network was removed
 ---
 ### `InversePriceConfigured`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L575)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L577)</sub>
 
 
 
@@ -1401,7 +1399,7 @@ Records that an inverse price index was set up or deleted. As there is no distin
 ---
 ### `InversePriceFrozen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L576)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L578)</sub>
 
 
 
@@ -1417,7 +1415,7 @@ Records that an inverse price breached a limit and was frozen.
 ---
 ### `OracleUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L571)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L573)</sub>
 
 
 
@@ -1433,7 +1431,7 @@ Records that the anointed oracle was updated.
 ---
 ### `RateDeleted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L574)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L576)</sub>
 
 
 
@@ -1453,7 +1451,7 @@ Records that the price for a particular currency was deleted.
 ---
 ### `RateStalePeriodUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L572)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L574)</sub>
 
 
 
@@ -1469,7 +1467,7 @@ Records that the stale period was altered.
 ---
 ### `RatesUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L573)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L575)</sub>
 
 
 

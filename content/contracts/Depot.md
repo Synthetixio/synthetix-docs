@@ -27,7 +27,6 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 graph TD
     Depot[Depot] --> SelfDestructible[SelfDestructible]
     Depot[Depot] --> Pausable[Pausable]
-    Depot[Depot] --> ReentrancyGuard[ReentrancyGuard]
     Depot[Depot] --> MixinResolver[MixinResolver]
     SelfDestructible[SelfDestructible] --> Owned[Owned]
     Pausable[Pausable] --> Owned[Owned]
@@ -42,6 +41,7 @@ graph TD
 - [Synth](Synth.md)
 - [ExchangeRates](ExchangeRates.md)
 - [AddressResolver](AddressResolver.md)
+
 
 
 
@@ -1023,6 +1023,7 @@ $$
 
 
 
+
 ---
 ### `SynthDepositNotAccepted`
 
@@ -1051,10 +1052,12 @@ $$
 
 
 
+
 ---
 ### `SynthUpdated`
 
 - `SynthUpdated(Synth newSynthContract)`
+
 
 
 

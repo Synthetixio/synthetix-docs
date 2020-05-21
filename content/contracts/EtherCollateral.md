@@ -29,13 +29,13 @@
 
 
 
+
 ---
 ### Inheritance Graph
 
 ```mermaid
 graph TD
     EtherCollateral[EtherCollateral] --> Pausable[Pausable]
-    EtherCollateral[EtherCollateral] --> ReentrancyGuard[ReentrancyGuard]
     EtherCollateral[EtherCollateral] --> MixinResolver[MixinResolver]
     Pausable[Pausable] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
@@ -46,6 +46,7 @@ graph TD
 ### Related Contracts
 
 - ?
+
 
 
 
@@ -143,6 +144,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L100)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 
@@ -150,6 +155,10 @@ graph TD
 ### `CONTRACT_SYNTHSETH`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L98)</sub>
+
+
+
+
 
 **Type:** `bytes32`
 
@@ -159,6 +168,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L99)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 
@@ -166,6 +179,10 @@ graph TD
 ### `CONTRACT_SYSTEMSTATUS`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L97)</sub>
+
+
+
+
 
 **Type:** `bytes32`
 
@@ -175,6 +192,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L33)</sub>
 
+
+
+
+
 **Type:** `address`
 
 
@@ -182,6 +203,10 @@ graph TD
 ### `ONE_HUNDRED`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L28)</sub>
+
+
+
+
 
 **Type:** `uint256`
 
@@ -191,6 +216,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L27)</sub>
 
+
+
+
+
 **Type:** `uint256`
 
 
@@ -198,6 +227,10 @@ graph TD
 ### `SECONDS_IN_A_YEAR`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EtherCollateral.sol#L30)</sub>
+
+
+
+
 
 **Type:** `uint256`
 
