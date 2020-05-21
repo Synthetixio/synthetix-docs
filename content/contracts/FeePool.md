@@ -665,12 +665,6 @@ Reverts the transaction if `account` is the [fee address](#fee_address).
 
 
 
----
-### `onlySynthetix`
-
-Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) address.
-
-
 ## Function (Constructor)
 
 ---

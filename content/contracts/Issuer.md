@@ -73,7 +73,6 @@ The constructor initialises the various addresses that this contract knows about
 <!-- E.g.
 ---
 ---
----
 ### `availableCurrencyKeys`
 
 Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSynths`](#availablesynths).
@@ -219,17 +218,6 @@ Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSy
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Issuer.sol#L359)</sub>
 
 
-
-<!-- E.g.
----
----
----
-### `notFeeAddress`
-
-The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
-
-**Signature:** `notFeeAddress(address account)`
--->
 
 ## Function (Constructor)
 
@@ -771,7 +759,6 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 ---
 ---
----
 ### `burnSynths`
 
 [Burns](Synth.md#burn) a quantity of `sUSD` in the calling address, in order to free up its locked SNX supply.
@@ -800,7 +787,6 @@ The new debt position of the caller is recorded with [`_appendAccountIssuanceRec
 
 <!-- Eg.
 
----
 ---
 ---
 ### `importAddresses`

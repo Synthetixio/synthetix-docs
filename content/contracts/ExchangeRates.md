@@ -1367,15 +1367,6 @@ Records that the anointed oracle was updated.
 - `(bytes32 currencyKey)`
 
 ---
-### `RatesDeleted`
-
-Records that the price for a particular currency was deleted.
-
-
-**Signature:** `RateDeleted(bytes32 currencyKey)`
-
-
----
 ### `RateStalePeriodUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeRates.sol#L574)</sub>

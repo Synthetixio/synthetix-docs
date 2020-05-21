@@ -431,6 +431,13 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	}
 
 	if (Array.isArray(curAstDocs.modifiers) && curAstDocs.modifiers.length > 0) {
+		// Remove stale modifiers
+		const curValidModifiers = curAstDocs.modifiers.map(x => `\`${x.name}\``);
+		const invalidModifiers = Object.keys(contentJsonMd.Modifiers).filter(x => !curValidModifiers.includes(x));
+		invalidModifiers.map(x => {
+			delete contentJsonMd.Modifiers[x];
+		});
+
 		curAstDocs.modifiers.map(x => {
 			const modifierSourceMd = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
 
@@ -459,6 +466,13 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	}
 
 	if (Array.isArray(curAstDocs.events) && curAstDocs.events.length > 0) {
+		// Remove stale events
+		const curValidEvents = curAstDocs.events.map(x => `\`${x.name}\``);
+		const invalidEvents = Object.keys(contentJsonMd.Events).filter(x => !curValidEvents.includes(x));
+		invalidEvents.map(x => {
+			delete contentJsonMd.Events[x];
+		});
+
 		curAstDocs.events.map(x => {
 			const eventSourceMd = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
 			const eventParamMd = `- \`${x.parameters}\`\n\n`;
@@ -478,6 +492,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			// in existing rich docs (e.g. description)
 			contentJsonMd.Events[`\`${x.name}\``].raw = eventSourceMd + curCleanedMd.split('- ')[0] + eventParamMd;
 		});
+
+		// Remove stale events
+		curAstDocs.events.filter;
 	} else {
 		delete contentJsonMd.Events;
 	}
@@ -551,8 +568,8 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	// also injects line between each ###
 	const rawMdContent = md2json
 		.toMd({ [contractName]: contentJsonMdSorted })
-		.split('\n###')
-		.join('\n---\n###');
+		.split('###')
+		.join('---\n###');
 
 	fs.writeFileSync(outputFilePath, rawMdContent);
 };

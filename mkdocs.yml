@@ -48,7 +48,6 @@ nav:
       - Libraries:
           - Math: libraries/Math.md
           - SafeDecimalMath: libraries/SafeDecimalMath.md
-          - SafeMath: libraries/SafeMath.md
       - Walkthrus:
           - Overview: contracts/walkthrus/index.md
           - Claiming Rewards: contracts/walkthrus/claiming.md
@@ -90,6 +89,7 @@ nav:
           - RewardsDistribution: contracts/RewardsDistribution.md
           - RewardsDistributionRecipient: contracts/RewardsDistributionRecipient.md
           - SafeDecimalMath: contracts/SafeDecimalMath.md
+          - SafeMath: contracts/SafeMath.md
           - SelfDestructible: contracts/SelfDestructible.md
           - State: contracts/State.md
           - SupplySchedule: contracts/SupplySchedule.md

@@ -41,7 +41,7 @@ graph TD
 
 ## Libraries
 
-- [`SafeMath`](/libraries/SafeMath) for `uint`
+- [`SafeMath`](SafeMath.md) for `uint`
 - [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
 
 ## Constants

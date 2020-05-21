@@ -6,7 +6,7 @@ This is a library contract that provides math functions on fractional numbers, p
 
 [^1]: Math currently provides a `power` function for calculating the exponentiation of a decimal number to 18 decimal places.
 
-Math uses OpenZeppelin's [SafeMath](/libraries/SafeMath) library and SafeDecimalMath library for most of its basic arithmetic operations in order to protect from arithmetic overflows and zero divisions.
+Math uses OpenZeppelin's [SafeMath](SafeMath.md) library and SafeDecimalMath library for most of its basic arithmetic operations in order to protect from arithmetic overflows and zero divisions.
 
 **Source:** [Math.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/Math.sol)
 
@@ -16,7 +16,7 @@ Math uses OpenZeppelin's [SafeMath](/libraries/SafeMath) library and SafeDecimal
 
 ### Libraries
 
-- [SafeMath](/libraries/SafeMath) for `uint`
+- [SafeMath](SafeMath.md) for `uint`
 - [SafeDecimalMath](SafeDecimalMath.md) for `uint`
 
 ---

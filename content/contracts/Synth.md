@@ -201,15 +201,6 @@ The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosyst
 
 
 
----
-### `onlySynthetixOrFeePool`
-
-Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix) nor [`feePool`](#feepool).
-
-
-**Signature:** `notFeeAddress(address account)`
-
-
 ## Function (Constructor)
 
 ---
@@ -691,18 +682,6 @@ This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitBu
 - `(address account, uint256 value)`
 
 ---
-### `FeePoolUpdated`
-
-Records that the [`feePool`](#feepool) address was [updated](#setfeepool).
-
-
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitFeePoolUpdated` function.
-
-
-**Signature:** `FeePoolUpdated(address newFeePool)`
-
-
----
 ### `Issued`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L265)</sub>
@@ -719,16 +698,4 @@ This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitIs
 
 
 - `(address account, uint256 value)`
-
----
-### `SynthetixUpdated`
-
-Records that the [`synthetix`](#synthetix) address was [updated](#setsynthetix).
-
-
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitSynthetixUpdated` function.
-
-
-**Signature:** `SynthetixUpdated(address newSynthetix)`
-
 

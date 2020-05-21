@@ -10,7 +10,7 @@ The decimals this library provides can operate at either of two different precis
 
 Several functions are included for converting between precision levels, and operations which round to the nearest increment to remove truncation bias. In SafeDecimalMath, a half-increment rounds up.
 
-SafeDecimalMath uses OpenZeppelin's [SafeMath](/libraries/SafeMath) library for most of its basic arithmetic operations in order to protect from arithmetic overflows and zero divisions.
+SafeDecimalMath uses OpenZeppelin's [SafeMath](SafeMath.md) library for most of its basic arithmetic operations in order to protect from arithmetic overflows and zero divisions.
 
 In Synthetix, the standard precision fixed point numbers are used to deal with most fractional quantities, such as token balances and prices.
 The high-precision numbers are mainly used for dealing with the [debt ledger](SynthetixState.md#debtledger), which [is constructed](Synthetix.md#_addtodebtregister) as an extended product of many fractional numbers very close to $1$. As this is a financially-sensitive component of the system, representational precision matters in order to minimise errors resulting from rounding or truncation.
@@ -33,7 +33,7 @@ Note that this is only valid if $\dot{q}$ is an integer, so nothing is represent
 
 #### Operations
 
-We define the fixed point operations $\dot{+}$, $\dot{-}$, $\dot{\times}$, $\dot{/}$, corresponding to the ordinary arithmetic operations $+$, $-$, $\times$, $/$, where $/$ corresponds to integer division. These are implemented by [`SafeMath`](/libraries/SafeMath) and protect from overflow.
+We define the fixed point operations $\dot{+}$, $\dot{-}$, $\dot{\times}$, $\dot{/}$, corresponding to the ordinary arithmetic operations $+$, $-$, $\times$, $/$, where $/$ corresponds to integer division. These are implemented by [`SafeMath`](SafeMath.md) and protect from overflow.
 
 ---
 
@@ -110,7 +110,7 @@ The representation of a number $q$ at two different fixed point precision levels
 
 ### Libraries
 
-- [SafeMath](/libraries/SafeMath) for `uint`
+- [SafeMath](SafeMath.md) for `uint`
 
 ---
 

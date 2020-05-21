@@ -252,12 +252,6 @@ The total quantity of sUSD currently in the [`deposits`](#deposits) queue to be 
 ## Modifiers
 
 ---
-### `onlySynth`
-
-Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
-
-
----
 ### `rateNotStale`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Depot.sol#L518)</sub>
@@ -913,11 +907,6 @@ $$
 - `(address user, uint256 amount, uint256 depositIndex)`
 
 ---
-### `SynthDepositAmountUpdated`
-
-- `MinimumDepositAmountUpdated(uint amount)`
-
----
 ### `SynthDepositNotAccepted`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Depot.sol#L531)</sub>
@@ -934,16 +923,6 @@ $$
 
 
 - `(address user, uint256 amount, uint256 depositIndex)`
-
----
-### `SynthetixUpdated`
-
-- `SynthetixUpdated(Synthetix newSynthetixContract)`
-
----
-### `SynthUpdated`
-
-- `SynthUpdated(Synth newSynthContract)`
 
 ---
 ### `SynthWithdrawal`

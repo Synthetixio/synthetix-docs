@@ -559,25 +559,10 @@ A reverse mapping from a synth's address to its `bytes32` currency key
 ## Modifiers
 
 ---
-### `notFeeAddress`
-
-The transaction is reverted if the given account is the [fee address](FeePool.md#fee_address).
-
-
-**Signature:** `notFeeAddress(address account)`
-
-
----
 ### `onlyExchanger`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synthetix.sol#L591)</sub>
 
-
-
----
-### `onlyOracle`
-
-The transaction is reverted if `msg.sender` is not the [exchange rates oracle](ExchangeRates.md#oracle).
 
 
 ---
