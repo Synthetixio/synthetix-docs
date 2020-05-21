@@ -31,8 +31,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L16)</sub>
 
-
-
 The address of an additional proxy which can be used to forward contract calls to this contract.
 Generally speaking, events should not be passed to the integrationProxy.
 
@@ -49,8 +47,6 @@ In the case of the [`Synthetix`](Synthetix.md) contract, this integrationProxy i
 ### `messageSender`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L21)</sub>
-
-
 
 The caller of the proxy in the current invocation. This variable is set to the value of `msg.sender` visible to the proxy before every function call by that `Proxy` to this `Proxyable`. Once set, `messageSender` should be used in place of `msg.sender` wherever it is used in contracts inheriting `Proxyable`.
 
@@ -71,8 +67,6 @@ Functions which do not require `messageSender` need not apply any of the proxy m
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L15)</sub>
 
-
-
 The address of the main [proxy](Proxy.md) that this contract operates underneath. It is this address that events should be emitted from using [`Proxy._emit`](Proxy.md#_emit).
 
 
@@ -88,8 +82,6 @@ The address of the main [proxy](Proxy.md) that this contract operates underneath
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L44)</sub>
 
-
-
 Reverts the transaction if the actual `msg.sender` (not [`messageSender`](#messagesender)) is not the proxy or the integration proxy.
 
 
@@ -99,8 +91,6 @@ Reverts the transaction if the actual `msg.sender` (not [`messageSender`](#messa
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L56)</sub>
 
-
-
 This modifier is largely the same as `optionalProxy`, but it disallow callers who are not the contract owner. This modifier exists because [`Owned.onlyOwner`](Owned.md#onlyowner) checks `msg.sender`, and not `messageSender`.
 
 
@@ -109,8 +99,6 @@ This modifier is largely the same as `optionalProxy`, but it disallow callers wh
 ### `optionalProxy`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L49)</sub>
-
-
 
 This modifier allows a function to be called through the proxies, or alternatively to be called directly for a small gas savings.
 
@@ -125,8 +113,6 @@ It operates simply: if the caller is not either the proxy or the integration pro
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L23)</sub>
-
-
 
 ??? example "Details"
 
@@ -154,8 +140,6 @@ It operates simply: if the caller is not either the proxy or the integration pro
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L40)</sub>
 
-
-
 This is used by proxies to set [`messageSender`](#messageSender) before forwarding a function call. This is only callable by the [`proxy`](#proxy) or [`integrationProxy`](#integrationProxy).
 
 
@@ -180,8 +164,6 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L23)</sub>
-
-
 
 ??? example "Details"
 
@@ -209,8 +191,6 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L36)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -230,8 +210,6 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 ### `setProxy`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L31)</sub>
-
-
 
 ??? example "Details"
 
@@ -258,8 +236,6 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 ### `ProxyUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxyable.sol#L64)</sub>
-
-
 
 `proxyAddress` has been set as the new [`proxy`](#proxy).
 

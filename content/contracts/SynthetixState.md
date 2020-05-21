@@ -34,10 +34,14 @@ graph TD
 ---
 ### Related Contracts
 
+- Synthetix as this contract's `State.associatedContract`
+
 
 ---
 ### Libraries
 
+- [SafeMath](/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 ## Description
 
 
@@ -51,10 +55,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L45)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 ## Variables
@@ -64,8 +64,6 @@ graph TD
 ### `debtLedger`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L39)</sub>
-
-
 
 A list of factors indicating, for each [debt-modifying event](#appenddebtledgervalue), what effect it had on the percentage of debt of all other holders. Later debt ledger entries correspond to more recent issuance events.
 
@@ -80,8 +78,6 @@ A list of factors indicating, for each [debt-modifying event](#appenddebtledgerv
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L33)</sub>
 
-
-
 The most recent issuance data for each address.
 
 
@@ -94,8 +90,6 @@ The most recent issuance data for each address.
 ### `issuanceRatio`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L43)</sub>
-
-
 
 The current global issuance ratio, which is the conversion factor between a value of SNX and the value of synths issued against them. As a result this determines the maximum ratio between the total value of Synths and SNX in the system.
 
@@ -151,8 +145,6 @@ As a result of this calculation, the number of synths that can be issued increas
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L49)</sub>
 
-
-
 !!! danger "Disabled"
 
 
@@ -164,12 +156,12 @@ If users nominate a preferred currency, all synths they receive will be converte
 This is used within [`Synth._internalTransfer`](Synth.md#_internaltransfer).
 
 
+
+
 !!! caution "Short Currency Keys"
 
 
     Note that as of [SIP-17](https://sips.synthetix.io/sips/sip-17) currency keys in other contracts are of the `bytes32` type. This means that if this preferred currency component is ever reused, it will only be able to support short-named synths unless new storage is provided.
-
-
 
 **Type:** `mapping(address => bytes4)`
 
@@ -178,8 +170,6 @@ This is used within [`Synth._internalTransfer`](Synth.md#_internaltransfer).
 ### `totalIssuerCount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L36)</sub>
-
-
 
 The number of people with outstanding synths.
 
@@ -196,8 +186,6 @@ The number of people with outstanding synths.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L19)</sub>
 
-
-
 | Field | Type | Description |
 | ------ | ------ | ------ |
 | initialDebtOwnership | uint256 | TBA |
@@ -211,8 +199,6 @@ The number of people with outstanding synths.
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L51)</sub>
-
-
 
 ??? example "Details"
 
@@ -240,8 +226,6 @@ The number of people with outstanding synths.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L101)</sub>
 
-
-
 Pushes a new value to the end of the [`debtLedger`](#debtledger).
 
 
@@ -268,8 +252,6 @@ This is used by [`Synthetix._addToDebtRegister`](Synthetix.md#addtodebtregister)
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L76)</sub>
 
-
-
 Deletes the issuance data associated with a given account.
 
 
@@ -293,8 +275,6 @@ Deletes the issuance data associated with a given account.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L153)</sub>
 
-
-
 Returns the number of entries currently in [`debtLedger`](#debtledger).
 
 
@@ -316,8 +296,6 @@ Primarily used in [`FeePool`](FeePool.md) for fee period computations.
 ### `decrementTotalIssuerCount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L92)</sub>
-
-
 
 Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._removeFromDebtRegister`](Synthetix.md#_removefromdebtregister) whenever an issuer burns enough Synths to pay down their entire outstanding debt.
 
@@ -342,8 +320,6 @@ Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L168)</sub>
 
-
-
 Returns true if a given account has any outstanding issuance debt resulting from Synth minting.
 
 
@@ -365,8 +341,6 @@ Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to det
 ### `incrementTotalIssuerCount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L84)</sub>
-
-
 
 Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) whenever an account with no outstanding issuance debt mints new Synths.
 
@@ -391,8 +365,6 @@ Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L160)</sub>
 
-
-
 Returns the most recent [`debtLedger`](#debtledger) entry.
 
 
@@ -414,8 +386,6 @@ Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
 ### `setCurrentIssuanceData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L66)</sub>
-
-
 
 Allows the [`Synthetix`](Synthetix.md) contract to update the debt ownership entry for this account and sets their debt entry index to the current length of the [`debtLedger`](#debtledger).
 The debt ledger itself is not modified.
@@ -440,8 +410,6 @@ The debt ledger itself is not modified.
 ### `setPreferredCurrency`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L111)</sub>
-
-
 
 !!! danger "Disabled"
 
@@ -473,8 +441,6 @@ Sets the preferred currency for a particular account. Pass in null to unset this
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L119)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -504,8 +470,6 @@ Sets the preferred currency for a particular account. Pass in null to unset this
 ### `IssuanceRatioUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixState.sol#L172)</sub>
-
-
 
 Records that the [issuance ratio](#issuanceratio) was modified.
 

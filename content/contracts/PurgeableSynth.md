@@ -33,10 +33,13 @@ graph TD
 ---
 ### Related Contracts
 
+- [`ExchangeRates`](ExchangeRates.md)
+
 
 ---
 ### Libraries
 
+- [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 ## Constants
 
 
@@ -45,10 +48,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L20)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -56,10 +55,6 @@ graph TD
 ### `PURGED_SIG`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L74)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -70,8 +65,6 @@ graph TD
 ### `maxSupplyToPurgeInUSD`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L18)</sub>
-
-
 
 Purging this Synth is disallowed unless the value of its supply is less than this. Initialised to $100\,000$.
 
@@ -87,8 +80,6 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L24)</sub>
-
-
 
 ??? example "Details"
 
@@ -111,8 +102,6 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 ### `purge`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L49)</sub>
-
-
 
 Allows the owner to liquidate all holders of this token back to `sUSD` if the total value of this Synth is worth less than [`maxSupplyToPurgeInUSD`](#maxsupplytopurgeinusd) US dollars at current prices, or if the token is an inverse synth whose price is frozen.
 
@@ -146,8 +135,6 @@ If this is successfully invoked, balances in the provided list of addresses will
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L76)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -163,8 +150,6 @@ If this is successfully invoked, balances in the provided list of addresses will
 ### `exchangeRates`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L39)</sub>
-
-
 
 ??? example "Details"
 
@@ -183,8 +168,6 @@ If this is successfully invoked, balances in the provided list of addresses will
 ### `Purged`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/PurgeableSynth.sol#L73)</sub>
-
-
 
 Records that a balance of this currency was liquidated back to `sUSD` for a particular account.
 

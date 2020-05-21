@@ -33,10 +33,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolEternalStorage.sol#L10)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 ## Function (Constructor)
@@ -46,8 +42,6 @@ graph TD
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolEternalStorage.sol#L12)</sub>
-
-
 
 ??? example "Details"
 
@@ -72,8 +66,6 @@ graph TD
 ### `importFeeWithdrawalData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolEternalStorage.sol#L14)</sub>
-
-
 
 ??? example "Details"
 

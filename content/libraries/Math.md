@@ -5,6 +5,14 @@
 
 **Source:** [contracts/Math.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Math.sol)
 
+## Architecture
+
+
+---
+### Libraries
+
+- [SafeMath](/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 ## Constants
 
 ## Variables
@@ -16,8 +24,6 @@
 ### `powDecimal`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Math.sol#L18)</sub>
-
-
 
 ??? example "Details"
 

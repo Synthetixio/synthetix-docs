@@ -45,10 +45,15 @@ graph TD
 ---
 ### Related Contracts
 
+- <>[Synthetix](Synthetix.md)
+
 
 ---
 ### Libraries
 
+- [SafeMath](/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
+- [Math](/libraries/Math) for `uint`
 ## Constants
 
 
@@ -56,10 +61,6 @@ graph TD
 ### `DECAY_RATE`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L50)</sub>
-
-
-
-
 
 **Type:** `uint256`
 
@@ -69,10 +70,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L44)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 
@@ -80,10 +77,6 @@ graph TD
 ### `INITIAL_WEEKLY_SUPPLY`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L33)</sub>
-
-
-
-
 
 **Type:** `uint256`
 
@@ -93,10 +86,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L39)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 
@@ -104,10 +93,6 @@ graph TD
 ### `MINT_BUFFER`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L45)</sub>
-
-
-
-
 
 **Type:** `uint256`
 
@@ -117,10 +102,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L42)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 
@@ -128,10 +109,6 @@ graph TD
 ### `SUPPLY_DECAY_END`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L47)</sub>
-
-
-
-
 
 **Type:** `uint8`
 
@@ -141,10 +118,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L46)</sub>
 
-
-
-
-
 **Type:** `uint8`
 
 
@@ -152,10 +125,6 @@ graph TD
 ### `TERMINAL_SUPPLY_RATE_ANNUAL`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L53)</sub>
-
-
-
-
 
 **Type:** `uint256`
 
@@ -166,8 +135,6 @@ graph TD
 ### `lastMintEvent`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L23)</sub>
-
-
 
 The timestamp when new supply was last minted - Is set to the number of weeks since inflation start date plus a minting buffer to allow feePeriod to close first.
 
@@ -182,8 +149,6 @@ The timestamp when new supply was last minted - Is set to the number of weeks si
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L29)</sub>
 
-
-
 Used as the quantity of SNX to reward the caller of [`Synthetix.mint`](Synthetix.md#mint), which incentivises users to continue minting the inflationary supply over time. Initialised to 200 SNX.
 
 
@@ -197,8 +162,6 @@ Used as the quantity of SNX to reward the caller of [`Synthetix.mint`](Synthetix
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L36)</sub>
 
-
-
 The address of the main [`SynthetixProxy`](Proxy.md) contract.
 
 
@@ -211,8 +174,6 @@ The address of the main [`SynthetixProxy`](Proxy.md) contract.
 ### `weekCounter`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L26)</sub>
-
-
 
 Counter to record the number of weeks inflation has been issued and calculate the applicable supply to add based on the current weekCounter.
 
@@ -229,8 +190,6 @@ Counter to record the number of weeks inflation has been issued and calculate th
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L210)</sub>
 
-
-
 Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) address. Synthetix address is found by lookup to the proxy.target().
 
 
@@ -241,8 +200,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L55)</sub>
-
-
 
 ??? example "Details"
 
@@ -266,8 +223,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L150)</sub>
 
-
-
 Returns true if minting from the inflationary supply is permitted at the present time.
 
 
@@ -290,8 +245,6 @@ This means that tokens are only mintable once a week.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L69)</sub>
 
-
-
 Returns the number of tokens currently mintable from the inflationary supply.
 
 
@@ -313,8 +266,6 @@ If [`isMintable`](#ismintable) returns false, this is $0$. Otherwise, it is the 
 ### `recordMintEvent`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L165)</sub>
-
-
 
 This is called within [`Synthetix.mint`](Synthetix.md#mint) to declare that the outstanding inflationary supply of tokens has been minted before they are actually distributed.
 
@@ -352,8 +303,6 @@ The function always returns `true` if the transaction was not reverted.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L127)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -370,8 +319,6 @@ The function always returns `true` if the transaction was not reverted.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L114)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -387,8 +334,6 @@ The function always returns `true` if the transaction was not reverted.
 ### `weeksSinceLastIssuance`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L139)</sub>
-
-
 
 This just returns its argument floor divided by [`MINT_PERIOD_DURATION`](#MINT_PERIOD_DURATION). Since this is only used in `mintableSupply()` it seems as if a variable would have done better than a public function.
 
@@ -410,8 +355,6 @@ This just returns its argument floor divided by [`MINT_PERIOD_DURATION`](#MINT_P
 ### `setMinterReward`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L186)</sub>
-
-
 
 ??? example "Details"
 
@@ -440,8 +383,6 @@ This just returns its argument floor divided by [`MINT_PERIOD_DURATION`](#MINT_P
 ### `setSynthetixProxy`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L199)</sub>
-
-
 
 ??? example "Details"
 
@@ -473,8 +414,6 @@ This just returns its argument floor divided by [`MINT_PERIOD_DURATION`](#MINT_P
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L227)</sub>
 
-
-
 Records that the [minter reward was updated](#setminterreward).
 
 
@@ -489,8 +428,6 @@ Records that the [minter reward was updated](#setminterreward).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L222)</sub>
 
-
-
 Records that a quantity of new tokens was [minted](#updatemintvalues).
 
 
@@ -504,8 +441,6 @@ Records that a quantity of new tokens was [minted](#updatemintvalues).
 ### `SynthetixProxyUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SupplySchedule.sol#L232)</sub>
-
-
 
 - `(address newAddress)`
 

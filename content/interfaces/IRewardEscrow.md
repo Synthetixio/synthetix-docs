@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol#L11)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -34,8 +32,6 @@
 ### `balanceOf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -53,8 +49,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol#L8)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -70,8 +64,6 @@
 ### `vest`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardEscrow.sol#L13)</sub>
-
-
 
 ??? example "Details"
 

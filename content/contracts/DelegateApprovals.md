@@ -35,7 +35,6 @@ graph TD
     ![DelegateApprovals architecture graph](../img/graphs/DelegateApprovals-architecture.svg)
 </centered-image>
 
-
 ??? example "Details"
 
 
@@ -49,10 +48,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L17)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -60,10 +55,6 @@ graph TD
 ### `BURN_FOR_ADDRESS`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L13)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -73,10 +64,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L15)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -85,10 +72,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L16)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -96,10 +79,6 @@ graph TD
 ### `ISSUE_FOR_ADDRESS`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L14)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -111,10 +90,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L19)</sub>
 
-
-
-
-
 **Type:** `bytes32[5]`
 
 
@@ -122,10 +97,6 @@ graph TD
 ### `eternalStorage`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L28)</sub>
-
-
-
-
 
 **Type:** `contract EternalStorage`
 
@@ -136,8 +107,6 @@ graph TD
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L30)</sub>
-
-
 
 ??? example "Details"
 
@@ -161,8 +130,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L84)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -178,8 +145,6 @@ graph TD
 ### `approveBurnOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L96)</sub>
-
-
 
 ??? example "Details"
 
@@ -197,8 +162,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L114)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -214,8 +177,6 @@ graph TD
 ### `approvedAll`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L64)</sub>
-
-
 
 ??? example "Details"
 
@@ -233,8 +194,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L123)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -250,8 +209,6 @@ graph TD
 ### `approveIssueOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L105)</sub>
-
-
 
 ??? example "Details"
 
@@ -269,8 +226,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L48)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -286,8 +241,6 @@ graph TD
 ### `canClaimFor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L56)</sub>
-
-
 
 ??? example "Details"
 
@@ -305,8 +258,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L60)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -322,8 +273,6 @@ graph TD
 ### `canIssueFor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L52)</sub>
-
-
 
 ??? example "Details"
 
@@ -341,8 +290,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L89)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -358,8 +305,6 @@ graph TD
 ### `removeBurnOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L100)</sub>
-
-
 
 ??? example "Details"
 
@@ -377,8 +322,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L118)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -395,8 +338,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L127)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -412,8 +353,6 @@ graph TD
 ### `removeIssueOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L109)</sub>
-
-
 
 ??? example "Details"
 
@@ -433,8 +372,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L71)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -451,8 +388,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L39)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -468,8 +403,6 @@ graph TD
 ### `_setApproval`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L131)</sub>
-
-
 
 ??? example "Details"
 
@@ -495,8 +428,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L141)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -514,8 +445,6 @@ graph TD
 ### `setEternalStorage`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L153)</sub>
-
-
 
 ??? example "Details"
 
@@ -547,8 +476,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L160)</sub>
 
-
-
 The delegate was approved to act on the authoriser's behalf for the given action.
 
 
@@ -563,8 +490,6 @@ The delegate was approved to act on the authoriser's behalf for the given action
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L162)</sub>
 
-
-
 The address of the eternal storage contract has changed.
 
 
@@ -578,8 +503,6 @@ The address of the eternal storage contract has changed.
 ### `WithdrawApproval`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/DelegateApprovals.sol#L161)</sub>
-
-
 
 The delegate was disapproved to act on the authoriser's behalf.
 

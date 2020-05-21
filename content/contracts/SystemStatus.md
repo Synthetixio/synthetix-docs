@@ -26,19 +26,6 @@
 </centered-image-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 ### Inheritance Graph
 
@@ -51,6 +38,8 @@ graph TD
 ---
 ### Related Contracts
 
+- ?
+
 ## Views
 
 ## Constants
@@ -61,10 +50,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L28)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -72,10 +57,6 @@ graph TD
 ### `SECTION_ISSUANCE`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L27)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -85,10 +66,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L29)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -97,10 +74,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L26)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -108,10 +81,6 @@ graph TD
 ### `SUSPENSION_REASON_UPGRADE`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L24)</sub>
-
-
-
-
 
 **Type:** `uint248`
 
@@ -123,10 +92,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L15)</sub>
 
-
-
-
-
 **Type:** `mapping(bytes32 => mapping(address => struct SystemStatus.Status))`
 
 
@@ -134,10 +99,6 @@ graph TD
 ### `exchangeSuspension`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L35)</sub>
-
-
-
-
 
 **Type:** `struct SystemStatus.Suspension`
 
@@ -147,10 +108,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L33)</sub>
 
-
-
-
-
 **Type:** `struct SystemStatus.Suspension`
 
 
@@ -159,10 +116,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L37)</sub>
 
-
-
-
-
 **Type:** `mapping(bytes32 => struct SystemStatus.Suspension)`
 
 
@@ -170,10 +123,6 @@ graph TD
 ### `systemSuspension`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L31)</sub>
-
-
-
-
 
 **Type:** `struct SystemStatus.Suspension`
 
@@ -184,8 +133,6 @@ graph TD
 ### `Status`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L10)</sub>
-
-
 
 | Field | Type | Description |
 | ------ | ------ | ------ |
@@ -198,8 +145,6 @@ graph TD
 ### `Suspension`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L17)</sub>
-
-
 
 | Field | Type | Description |
 | ------ | ------ | ------ |
@@ -214,8 +159,6 @@ graph TD
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L39)</sub>
-
-
 
 ??? example "Details"
 
@@ -239,8 +182,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L83)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -257,8 +198,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L79)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -274,8 +213,6 @@ graph TD
 ### `requireExchangeActive`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L57)</sub>
-
-
 
 ??? example "Details"
 
@@ -299,8 +236,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L51)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -322,8 +257,6 @@ graph TD
 ### `requireSynthActive`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L63)</sub>
-
-
 
 ??? example "Details"
 
@@ -347,8 +280,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L69)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -371,8 +302,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L47)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -392,8 +321,6 @@ graph TD
 ### `resumeExchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L142)</sub>
-
-
 
 ??? example "Details"
 
@@ -419,8 +346,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L128)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -444,8 +369,6 @@ graph TD
 ### `resumeSynth`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L156)</sub>
-
-
 
 ??? example "Details"
 
@@ -471,8 +394,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L114)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -496,8 +417,6 @@ graph TD
 ### `suspendExchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L135)</sub>
-
-
 
 ??? example "Details"
 
@@ -523,8 +442,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L121)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -549,8 +466,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L149)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -574,8 +489,6 @@ graph TD
 ### `suspendSystem`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L107)</sub>
-
-
 
 ??? example "Details"
 
@@ -603,8 +516,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L172)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -624,8 +535,6 @@ graph TD
 ### `_internalUpdateAccessControl`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L181)</sub>
-
-
 
 ??? example "Details"
 
@@ -651,8 +560,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L168)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -672,8 +579,6 @@ graph TD
 ### `_requireAccessToSuspend`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L164)</sub>
-
-
 
 ??? example "Details"
 
@@ -696,8 +601,6 @@ graph TD
 ### `updateAccessControl`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L98)</sub>
-
-
 
 ??? example "Details"
 
@@ -727,8 +630,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L213)</sub>
 
-
-
 - `(bytes32 section, address account, bool canSuspend, bool canResume)`
 
 
@@ -736,8 +637,6 @@ graph TD
 ### `ExchangeResumed`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L208)</sub>
-
-
 
 - `(uint256 reason)`
 
@@ -747,8 +646,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L207)</sub>
 
-
-
 - `(uint256 reason)`
 
 
@@ -756,8 +653,6 @@ graph TD
 ### `IssuanceResumed`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L205)</sub>
-
-
 
 - `(uint256 reason)`
 
@@ -767,8 +662,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L204)</sub>
 
-
-
 - `(uint256 reason)`
 
 
@@ -776,8 +669,6 @@ graph TD
 ### `SynthResumed`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L211)</sub>
-
-
 
 - `(bytes32 currencyKey, uint256 reason)`
 
@@ -787,8 +678,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L210)</sub>
 
-
-
 - `(bytes32 currencyKey, uint256 reason)`
 
 
@@ -796,8 +685,6 @@ graph TD
 ### `SystemResumed`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L202)</sub>
-
-
 
 - `(uint256 reason)`
 
@@ -807,7 +694,7 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SystemStatus.sol#L201)</sub>
 
-
-
 - `(uint256 reason)`
+
+--
 

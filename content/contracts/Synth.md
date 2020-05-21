@@ -73,10 +73,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L273)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -84,10 +80,6 @@ graph TD
 ### `CONTRACT_EXCHANGER`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L33)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -97,10 +89,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L35)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -108,10 +96,6 @@ graph TD
 ### `CONTRACT_ISSUER`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L34)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -121,10 +105,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L32)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -132,10 +112,6 @@ graph TD
 ### `CONTRACT_SYSTEMSTATUS`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L31)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -145,10 +121,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L24)</sub>
 
-
-
-
-
 **Type:** `uint8`
 
 
@@ -157,10 +129,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L27)</sub>
 
-
-
-
-
 **Type:** `address`
 
 
@@ -168,10 +136,6 @@ graph TD
 ### `ISSUED_SIG`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L266)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -183,10 +147,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L37)</sub>
 
-
-
-
-
 **Type:** `bytes32[24]`
 
 
@@ -194,8 +154,6 @@ graph TD
 ### `currencyKey`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L22)</sub>
-
-
 
 The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosystem. The currency key could in principle be distinct from this token's [ERC20 symbol](ExternStateToken.md#symbol).
 
@@ -211,8 +169,6 @@ The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosyst
 ### `onlyInternalContracts`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L251)</sub>
-
-
 
 
 ---
@@ -231,8 +187,6 @@ Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix)
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L47)</sub>
-
-
 
 ??? example "Details"
 
@@ -264,8 +218,6 @@ Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix)
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L165)</sub>
 
-
-
 Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [burnt directly](Synthetix.md#burnSynths). This is also used to burn Synths involved in oracle frontrunning as part of the [protection circuit](Synthetix.md#protectioncircuit). This is also used by the [`FeePool`](FeePool.md) to [burn sUSD when fees are paid out](FeePool.md#_payfees).
 
 
@@ -289,8 +241,6 @@ Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L159)</sub>
 
-
-
 Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [issued directly](Synthetix.md#issuesynths). This is also used by the [`FeePool`](FeePool.md) to [pay fees out](FeePool.md#_payfees).
 
 
@@ -313,8 +263,6 @@ Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flav
 ### `setTotalSupply`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L186)</sub>
-
-
 
 This allows the owner to set the total supply directly for upgrades, where the [`tokenState`](ExternStateToken.md#tokenstate) is retained, but the total supply figure must be migrated.
 
@@ -341,8 +289,6 @@ For example, just such a migration is performed by [this script](https://github.
 ### `transfer`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L69)</sub>
-
-
 
 This is a pair of ERC20 transfer function.
 
@@ -375,8 +321,6 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L217)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -392,8 +336,6 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 ### `transferAndSettle`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L85)</sub>
-
-
 
 Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transfer` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the sender.
 
@@ -420,8 +362,6 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 ### `transferFrom`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L103)</sub>
-
-
 
 This is a ERC20 transferFrom function.
 
@@ -453,8 +393,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 ### `transferFromAndSettle`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L113)</sub>
-
-
 
 Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transferFrom` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the `from` address.
 
@@ -489,8 +427,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L211)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -513,8 +449,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L176)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -530,8 +464,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 ### `_internalIssue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L169)</sub>
-
-
 
 ??? example "Details"
 
@@ -549,8 +481,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L234)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -566,8 +496,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 ### `_transferToFeeAddress`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L139)</sub>
-
-
 
 ??? example "Details"
 
@@ -585,8 +513,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L275)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -602,8 +528,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 ### `emitIssued`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L268)</sub>
-
-
 
 ??? example "Details"
 
@@ -621,8 +545,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L203)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -638,8 +560,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 ### `feePool`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L199)</sub>
-
-
 
 ??? example "Details"
 
@@ -657,8 +577,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L207)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -675,8 +593,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L195)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -692,8 +608,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 ### `systemStatus`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L191)</sub>
-
-
 
 ??? example "Details"
 
@@ -712,8 +626,6 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 ### `Burned`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L272)</sub>
-
-
 
 Records that a quantity of this Synth was [burned](#burn).
 
@@ -744,8 +656,6 @@ This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitFe
 ### `Issued`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Synth.sol#L265)</sub>
-
-
 
 Records that a quantity of this Synth was newly [issued](#issue).
 

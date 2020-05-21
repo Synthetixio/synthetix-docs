@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**

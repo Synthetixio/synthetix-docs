@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L25)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -34,8 +32,6 @@
 ### `clearIssuanceData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L27)</sub>
-
-
 
 ??? example "Details"
 
@@ -53,8 +49,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L6)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -70,8 +64,6 @@
 ### `debtLedgerLength`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L12)</sub>
-
-
 
 ??? example "Details"
 
@@ -89,8 +81,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L21)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -106,8 +96,6 @@
 ### `hasIssued`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L14)</sub>
-
-
 
 ??? example "Details"
 
@@ -125,8 +113,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L19)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -142,8 +128,6 @@
 ### `issuanceData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L10)</sub>
-
-
 
 ??? example "Details"
 
@@ -161,8 +145,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L8)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -179,8 +161,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L16)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -196,8 +176,6 @@
 ### `setCurrentIssuanceData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetixState.sol#L23)</sub>
-
-
 
 ??? example "Details"
 

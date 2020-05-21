@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/math/SafeMath.sol#L26)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -38,8 +36,6 @@
 ### `div`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/math/SafeMath.sol#L83)</sub>
-
-
 
 ??? example "Details"
 
@@ -61,8 +57,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/math/SafeMath.sol#L103)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -83,8 +77,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/math/SafeMath.sol#L58)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -104,8 +96,6 @@
 ### `sub`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/math/SafeMath.sol#L42)</sub>
-
-
 
 ??? example "Details"
 

@@ -98,7 +98,8 @@
                 "inherits": [
                     "Owned",
                     "IAddressResolver"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -198,7 +199,8 @@
                     }
                 ],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -248,7 +250,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -552,7 +555,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -634,7 +638,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -971,7 +976,8 @@
                 "inherits": [
                     "Owned",
                     "IDelegateApprovals"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -1142,7 +1148,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -1486,7 +1493,8 @@
                 "inherits": [
                     "Owned",
                     "State"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -1560,7 +1568,8 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -2102,6 +2111,16 @@
                     "ReentrancyGuard",
                     "MixinResolver",
                     "IDepot"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -2264,7 +2283,8 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -2343,7 +2363,8 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -2385,7 +2406,8 @@
                     }
                 ],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -2518,7 +2540,8 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -2678,7 +2701,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -2865,7 +2889,13 @@
                 ],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    }
+                ]
             }
         }
     },
@@ -2961,7 +2991,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         }
     },
@@ -3086,7 +3117,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -3289,7 +3321,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -3334,7 +3367,8 @@
                 ],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "interfaces": {
@@ -3367,7 +3401,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -4097,6 +4132,16 @@
                     "ReentrancyGuard",
                     "MixinResolver",
                     "IEtherCollateral"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint256"
+                    }
                 ]
             }
         },
@@ -4180,7 +4225,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -4251,7 +4297,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -4410,7 +4457,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -4804,6 +4852,16 @@
                     "Owned",
                     "MixinResolver",
                     "IExchanger"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -4848,7 +4906,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -4941,7 +5000,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -5012,7 +5072,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -5603,6 +5664,16 @@
                     "Owned",
                     "SelfDestructible",
                     "IExchangeRates"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -5686,7 +5757,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -5854,7 +5926,8 @@
                     "Owned",
                     "State",
                     "IExchangeState"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -6098,6 +6171,16 @@
                     "Owned",
                     "SelfDestructible",
                     "Proxyable"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -6225,7 +6308,8 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -6339,7 +6423,8 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -6416,7 +6501,8 @@
                 "inherits": [
                     "Owned",
                     "State"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -7371,6 +7457,16 @@
                     "LimitedSetup",
                     "MixinResolver",
                     "IFeePool"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -7413,7 +7509,8 @@
                     }
                 ],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -7474,7 +7571,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -7611,7 +7709,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -7737,7 +7836,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -7764,7 +7864,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -7937,6 +8038,16 @@
                     "Owned",
                     "SelfDestructible",
                     "LimitedSetup"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -8000,7 +8111,8 @@
                 "inherits": [
                     "EternalStorage",
                     "LimitedSetup"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -8028,7 +8140,8 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": []
             }
         },
         "libraries": {}
@@ -8060,7 +8173,8 @@
                 "structs": [],
                 "inherits": [
                     "EternalStorage"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -8539,6 +8653,16 @@
                     "Owned",
                     "MixinResolver",
                     "IIssuer"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -8570,7 +8694,17 @@
                 "variables": [],
                 "modifiers": [],
                 "structs": [],
-                "inherits": []
+                "inherits": [],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
+                ]
             }
         }
     },
@@ -8653,7 +8787,8 @@
                 "structs": [],
                 "inherits": [
                     "Synth"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -9048,7 +9183,8 @@
                     "ExternStateToken",
                     "MixinResolver",
                     "ISynth"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -9182,7 +9318,8 @@
                 "inherits": [
                     "Proxy",
                     "IERC20"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -9285,6 +9422,12 @@
                 "structs": [],
                 "inherits": [
                     "Synth"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -9358,7 +9501,8 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -9690,6 +9834,12 @@
                 "inherits": [
                     "Owned",
                     "IRewardEscrow"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -9951,6 +10101,16 @@
                 "inherits": [
                     "Owned",
                     "IRewardsDistribution"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -10010,7 +10170,8 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -10273,6 +10434,20 @@
                 "structs": [],
                 "inherits": [
                     "Owned"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "Math",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -11048,7 +11223,8 @@
                     "ExternStateToken",
                     "MixinResolver",
                     "ISynthetix"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},
@@ -11347,6 +11523,12 @@
                     "Owned",
                     "LimitedSetup",
                     "IHasBalance"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -11584,6 +11766,16 @@
                     "State",
                     "LimitedSetup",
                     "ISynthetixState"
+                ],
+                "libraries": [
+                    {
+                        "name": "SafeMath",
+                        "type": "uint"
+                    },
+                    {
+                        "name": "SafeDecimalMath",
+                        "type": "uint"
+                    }
                 ]
             }
         },
@@ -12106,7 +12298,8 @@
                 "inherits": [
                     "Owned",
                     "ISystemStatus"
-                ]
+                ],
+                "libraries": []
             }
         },
         "interfaces": {},

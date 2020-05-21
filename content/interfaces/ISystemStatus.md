@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L10)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -34,8 +32,6 @@
 ### `requireIssuanceActive`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -53,8 +49,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L12)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -71,8 +65,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L14)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -88,8 +80,6 @@
 ### `requireSystemActive`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISystemStatus.sol#L6)</sub>
-
-
 
 ??? example "Details"
 

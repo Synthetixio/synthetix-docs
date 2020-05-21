@@ -59,8 +59,6 @@ Returns a single address by it's `bytes32` key.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L12)</sub>
 
-
-
 The mapping of contract name to address
 
 
@@ -75,8 +73,6 @@ The mapping of contract name to address
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L14)</sub>
-
-
 
 ??? example "Details"
 
@@ -100,8 +96,6 @@ The mapping of contract name to address
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L28)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -117,8 +111,6 @@ The mapping of contract name to address
 ### `getSynth`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L38)</sub>
-
-
 
 ??? example "Details"
 
@@ -139,8 +131,6 @@ The mapping of contract name to address
 ### `requireAndGetAddress`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L32)</sub>
-
-
 
 ??? example "Details"
 
@@ -163,8 +153,6 @@ The mapping of contract name to address
 ### `importAddresses`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/AddressResolver.sol#L18)</sub>
-
-
 
 ??? example "Details"
 

@@ -27,10 +27,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L9)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 ## Variables
@@ -40,8 +36,6 @@ graph TD
 ### `initiationTime`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L11)</sub>
-
-
 
 The timestamp at which the self destruction was begun.
 
@@ -56,8 +50,6 @@ The timestamp at which the self destruction was begun.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L14)</sub>
 
-
-
 The address where any lingering eth in this contract will be sent.
 
 
@@ -70,8 +62,6 @@ The address where any lingering eth in this contract will be sent.
 ### `selfDestructInitiated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L12)</sub>
-
-
 
 True iff the contract is currently undergoing self destruction.
 
@@ -87,8 +77,6 @@ True iff the contract is currently undergoing self destruction.
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L16)</sub>
-
-
 
 ??? example "Details"
 
@@ -116,8 +104,6 @@ True iff the contract is currently undergoing self destruction.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L16)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -144,8 +130,6 @@ True iff the contract is currently undergoing self destruction.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L39)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -169,8 +153,6 @@ True iff the contract is currently undergoing self destruction.
 ### `selfDestruct`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L60)</sub>
-
-
 
 ??? example "Details"
 
@@ -202,8 +184,6 @@ True iff the contract is currently undergoing self destruction.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L28)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -232,8 +212,6 @@ True iff the contract is currently undergoing self destruction.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L49)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -260,8 +238,6 @@ True iff the contract is currently undergoing self destruction.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L70)</sub>
 
-
-
 The self destruct beneficiary was changed to the indicated new address.
 
 
@@ -275,8 +251,6 @@ The self destruct beneficiary was changed to the indicated new address.
 ### `SelfDestructed`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L68)</sub>
-
-
 
 The contract was destroyed, forwarding the ether on to the [beneficiary](#selfdestructbeneficiary).
 
@@ -292,8 +266,6 @@ The contract was destroyed, forwarding the ether on to the [beneficiary](#selfde
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L69)</sub>
 
-
-
 Self destruction was initiated with the indicated delay time.
 
 
@@ -307,8 +279,6 @@ Self destruction was initiated with the indicated delay time.
 ### `SelfDestructTerminated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SelfDestructible.sol#L67)</sub>
-
-
 
 Self destruction was terminated by the contract owner.
 

@@ -162,6 +162,19 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		contentJsonMd.Architecture['Inheritance Graph'].raw = mermaidGraphMdContent;
 	}
 
+	if (curAstDocs.libraries && curAstDocs.libraries.length > 0) {
+		if (contentJsonMd.Architecture['Libraries'] === undefined) {
+			contentJsonMd.Architecture['Libraries'] = {};
+		}
+
+		let librariesMd = '';
+		curAstDocs.libraries.map(x => {
+			librariesMd += `- [${x.name}](/libraries/${x.name}) for \`${x.type}\`\n`;
+		});
+
+		contentJsonMd.Architecture['Libraries'].raw = librariesMd;
+	}
+
 	if (Object.keys(contentJsonMd.Architecture).length === 0) {
 		delete contentJsonMd.Architecture;
 	}
@@ -502,10 +515,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	// Otherwise sort everything else according to this order
 	// "Structs", 'Constants", "Variables", "Modifiers", "Functions", "Events"
 	// IF they exist in the heading
-	const existingH2s = Object.keys(contentJsonMd);
 	sortableH2s
 		.filter(x => !x.toLowerCase().includes('events'))
-		.filter(x => existingH2s.includes(x))
+		.filter(x => Object.keys(contentJsonMd).includes(x))
 		.map(h2 => {
 			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
 		});
@@ -523,8 +535,8 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
 		});
 
-	// Finally events is last
-	if (existingH2s.includes('Events')) {
+	// Insert Events at the end
+	if (Object.keys(contentJsonMd).includes('Events')) {
 		contentJsonMdSorted = { ...contentJsonMdSorted, ...{ Events: contentJsonMd.Events } };
 	}
 

@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L15)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -34,8 +32,6 @@
 ### `approveBurnOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L19)</sub>
-
-
 
 ??? example "Details"
 
@@ -53,8 +49,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L27)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -70,8 +64,6 @@
 ### `approveExchangeOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L31)</sub>
-
-
 
 ??? example "Details"
 
@@ -89,8 +81,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L23)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -106,8 +96,6 @@
 ### `canBurnFor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -125,8 +113,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L10)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -142,8 +128,6 @@
 ### `canExchangeFor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L12)</sub>
-
-
 
 ??? example "Details"
 
@@ -161,8 +145,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L8)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -178,8 +160,6 @@
 ### `removeAllDelegatePowers`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L17)</sub>
-
-
 
 ??? example "Details"
 
@@ -197,8 +177,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L21)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -214,8 +192,6 @@
 ### `removeClaimOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L29)</sub>
-
-
 
 ??? example "Details"
 
@@ -233,8 +209,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L33)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -250,8 +224,6 @@
 ### `removeIssueOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IDelegateApprovals.sol#L25)</sub>
-
-
 
 ??? example "Details"
 

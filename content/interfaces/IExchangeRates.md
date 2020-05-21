@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L6)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -34,8 +32,6 @@
 ### `anyRateIsStale`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -53,8 +49,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L10)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -70,8 +64,6 @@
 ### `effectiveValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L12)</sub>
-
-
 
 ??? example "Details"
 
@@ -89,8 +81,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L18)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -106,8 +96,6 @@
 ### `getCurrentRoundId`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L26)</sub>
-
-
 
 ??? example "Details"
 
@@ -125,8 +113,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L28)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -142,8 +128,6 @@
 ### `inversePricing`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L35)</sub>
-
-
 
 ??? example "Details"
 
@@ -161,8 +145,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L45)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -178,8 +160,6 @@
 ### `oracle`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L47)</sub>
-
-
 
 ??? example "Details"
 
@@ -197,8 +177,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L49)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -214,8 +192,6 @@
 ### `rateForCurrency`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L51)</sub>
-
-
 
 ??? example "Details"
 
@@ -233,8 +209,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L53)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -250,8 +224,6 @@
 ### `rateIsStale`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L55)</sub>
-
-
 
 ??? example "Details"
 
@@ -269,8 +241,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L57)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -287,8 +257,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L59)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -304,8 +272,6 @@
 ### `rateStalePeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeRates.sol#L61)</sub>
-
-
 
 ??? example "Details"
 

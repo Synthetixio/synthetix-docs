@@ -38,10 +38,17 @@ graph TD
 ---
 ### Related Contracts
 
+- [Synthetix](Synthetix.md)
+- [Synth](Synth.md)
+- [ExchangeRates](ExchangeRates.md)
+- [AddressResolver](AddressResolver.md)
+
 
 ---
 ### Libraries
 
+- [SafeMath](/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 ## Constants
 
 
@@ -49,10 +56,6 @@ graph TD
 ### `CONTRACT_EXRATES`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L78)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -62,10 +65,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L79)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -73,10 +72,6 @@ graph TD
 ### `CONTRACT_SYNTHSUSD`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L77)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -86,10 +81,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L25)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -97,10 +88,6 @@ graph TD
 ### `SNX`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L24)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -112,10 +99,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L81)</sub>
 
-
-
-
-
 **Type:** `bytes32[24]`
 
 
@@ -123,8 +106,6 @@ graph TD
 ### `depositEndIndex`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L57)</sub>
-
-
 
 The index one past the last deposit in the [`deposits`](#deposits) queue.
 
@@ -138,8 +119,6 @@ The index one past the last deposit in the [`deposits`](#deposits) queue.
 ### `deposits`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L53)</sub>
-
-
 
 Users can deposit sUSD to be sold on the depot. This variable holds the queue of open deposits, which are sold in the order they were deposited.
 
@@ -160,8 +139,6 @@ A mapping is used instead of an array in order to avoid having to copy entries a
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L55)</sub>
 
-
-
 The index of the next deposit to be processed in the [`deposits`](#deposits) queue.
 
 
@@ -174,8 +151,6 @@ The index of the next deposit to be processed in the [`deposits`](#deposits) que
 ### `fundsWallet`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L32)</sub>
-
-
 
 The address where ether and synths raised by selling SNX are sent.
 
@@ -193,10 +168,6 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L68)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 
@@ -204,8 +175,6 @@ It is also where ether is sent if the proceeds of a sale of synths could not be 
 ### `minimumDepositAmount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L65)</sub>
-
-
 
 The minimum sUSD quantity required for a deposit to be added to the queue. Initialised to 50.0.
 
@@ -220,8 +189,6 @@ The minimum sUSD quantity required for a deposit to be added to the queue. Initi
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L73)</sub>
 
-
-
 Deposits of less than [`minimumDepositAmount`](#minimumdepositamount) sUSD are not placed on the [`deposits`](#deposits) queue. Instead, they are kept here so that the depositor can withdraw them.
 
 
@@ -234,8 +201,6 @@ Deposits of less than [`minimumDepositAmount`](#minimumdepositamount) sUSD are n
 ### `totalSellableDeposits`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L62)</sub>
-
-
 
 The total quantity of sUSD currently in the [`deposits`](#deposits) queue to be purchased.
 
@@ -251,8 +216,6 @@ The total quantity of sUSD currently in the [`deposits`](#deposits) queue to be 
 ### `SynthDepositEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L35)</sub>
-
-
 
 | Field | Type | Description |
 | ------ | ------ | ------ |
@@ -275,8 +238,6 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L518)</sub>
 
-
-
 ## Function (Constructor)
 
 
@@ -284,8 +245,6 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L85)</sub>
-
-
 
 ??? example "Details"
 
@@ -315,8 +274,6 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L125)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -343,7 +300,7 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L442)</sub>
 
-
+- `depositSynths(uint amount)`: Just an alias to `synth.transferFrom(msg.sender, this, amount)`. This requires the sender to have approved the deposit.
 
 ??? example "Details"
 
@@ -361,7 +318,7 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L296)</sub>
 
-
+- `exchangeEtherForSNX() returns (uint)`: Requires that the contract is not paused, and that the prices are not stale. Converts the received ether to a quantity of SNX with `synthetixReceivedForEther`. Sends the ether to `fundsWallet`, sends the converted quantity of SNX to the message sender from the contract's own reserves. Returns the SNX quantity sent. If the contract has insufficient SNX, then the transfer will fail and the transaction will revert.
 
 ??? example "Details"
 
@@ -387,7 +344,7 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L315)</sub>
 
-
+- `exchangeEtherForSNXAtRate(uint guaranteedEtherRate, uint guaranteedSynthetixRate) returns (uint)`: As `exchangeEtherForSynthsAtRate` is to `exchangeEtherForSynths`, this is to `exchangeEtherForSNX`.
 
 ??? example "Details"
 
@@ -419,8 +376,6 @@ Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L133)</sub>
 
-
-
 Sells sUSD to callers who send ether. The synths are sold from the [`deposits`](#deposits) queue in the order they were deposited.
 
 
@@ -436,6 +391,8 @@ Requires that the contract is not paused, and that the prices are not stale.
 
 Returns the number of sUSD exchanged. Converts any ether sent to the contract to a quantity of synths at current prices. Fulfils this quantity by iterating through the deposit queue until the entire quantity is found. If a given deposit is insufficient to cover the entire requested amount, it is exhausted and removed from the queue. For each deposit found, the proper quantity of ether is sent to the depositor. If the quantity could not be sent because the target is a non-payable contract, then it is remitted to `fundsWallet`. Then send the Synths to the recipient. If the whole quantity could not be fulfilled, then the remaining ether is refunded to the purchaser.
 
+
+- `exchangeEtherForSynths() returns (uint)`:
 
 ??? example "Details"
 
@@ -461,7 +418,7 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L264)</sub>
 
-
+- `exchangeEtherForSynthsAtRate(uint guaranteedRate) returns (uint)`: Allows the caller to specify the current price, and then calls to `exchangeEtherForSynths`. Reverts if the current price does not match the price provided as an argument. This is intended as a protection against front-running by the contract owner, or otherwise a case where a price update is in flight at the invocation time.
 
 ??? example "Details"
 
@@ -489,7 +446,7 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L355)</sub>
 
-
+- `exchangeSynthsForSNX(uint synthAmount) returns (uint)`: Identical to `exchangeEtherForSNX`, but perform the price conversion with `synthetixReceivedForSynths`. The amount of synths to send is provided as a function argument, and then transferred to `fundsWallet` with `transferFrom`, so this function requires the caller to have approved the depot contract to make such a withdrawal. Note that this assumes that sUSD is worth exactly one dollar.
 
 ??? example "Details"
 
@@ -513,7 +470,7 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L372)</sub>
 
-
+- `exchangeSynthsForSNXAtRate(uint synthAmount, uint guaranteedRate) returns (uint)`: As per `exchangeEtherForSNXAtRate`.
 
 ??? example "Details"
 
@@ -541,8 +498,6 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L484)</sub>
 
-
-
 Computes the quantity of SNX received in exchange for a given quantity of Ether at current prices. This is equivalent to:
 
 
@@ -566,8 +521,6 @@ $$
 ### `synthetixReceivedForSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L474)</sub>
-
-
 
 Computes the quantity of SNX received in exchange for a given quantity of sUSD at current prices, assuming sUSD are worth \$1. This is equivalent to:
 
@@ -593,8 +546,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L497)</sub>
 
-
-
 Computes the quantity of sUSD received in exchange for a given quantity of ETH at current prices. This is equivalent to:
 
 
@@ -619,7 +570,7 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L405)</sub>
 
-
+- `withdrawMyDepositedSynths()`: Withdraws all Synths deposited by the message sender. Iterates through the entire deposit queue; if for a given entry the message sender is the depositor, delete that deposit and and add the deposited quantity of tokens to the pile to be remitted. Then transfer this quantity back to the message sender, along with any tokens in `smallDeposits`.
 
 ??? example "Details"
 
@@ -647,8 +598,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L278)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -668,8 +617,6 @@ $$
 ### `_exchangeEtherForSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L146)</sub>
-
-
 
 ??? example "Details"
 
@@ -691,8 +638,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L334)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -713,8 +658,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L512)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -731,8 +674,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L508)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -748,8 +689,6 @@ $$
 ### `synthsUSD`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L504)</sub>
-
-
 
 ??? example "Details"
 
@@ -768,8 +707,6 @@ $$
 ### `setFundsWallet`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L104)</sub>
-
-
 
 ??? example "Details"
 
@@ -795,8 +732,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L95)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -820,8 +755,6 @@ $$
 ### `setMinimumDepositAmount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L113)</sub>
-
-
 
 ??? example "Details"
 
@@ -851,8 +784,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L389)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -875,8 +806,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L534)</sub>
 
-
-
 - `(address fromAddress, address toAddress, uint256 fromETHAmount, uint256 toAmount, uint256 depositIndex)`
 
 
@@ -884,8 +813,6 @@ $$
 ### `Exchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L527)</sub>
-
-
 
 - `(string fromCurrency, uint256 fromAmount, string toCurrency, uint256 toAmount)`
 
@@ -895,8 +822,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L526)</sub>
 
-
-
 - `(address newFundsWallet)`
 
 
@@ -904,8 +829,6 @@ $$
 ### `MaxEthPurchaseUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L525)</sub>
-
-
 
 - `(uint256 amount)`
 
@@ -915,8 +838,6 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L532)</sub>
 
-
-
 - `(uint256 amount)`
 
 
@@ -924,8 +845,6 @@ $$
 ### `NonPayableContract`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L533)</sub>
-
-
 
 - `(address receiver, uint256 amount)`
 
@@ -935,21 +854,19 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L529)</sub>
 
-
-
 - `(address user, uint256 amount, uint256 depositIndex)`
 
 
 ---
 ### `SynthDepositAmountUpdated`
 
+- `MinimumDepositAmountUpdated(uint amount)`
+
 
 ---
 ### `SynthDepositNotAccepted`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L531)</sub>
-
-
 
 - `(address user, uint256 amount, uint256 minimum)`
 
@@ -959,25 +876,25 @@ $$
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L530)</sub>
 
-
-
 - `(address user, uint256 amount, uint256 depositIndex)`
 
 
 ---
 ### `SynthetixUpdated`
 
+- `SynthetixUpdated(Synthetix newSynthetixContract)`
+
 
 ---
 ### `SynthUpdated`
+
+- `SynthUpdated(Synth newSynthContract)`
 
 
 ---
 ### `SynthWithdrawal`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Depot.sol#L528)</sub>
-
-
 
 - `(address user, uint256 amount)`
 

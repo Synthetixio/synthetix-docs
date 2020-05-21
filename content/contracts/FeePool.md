@@ -30,7 +30,6 @@ graph TD
     ![FeePool architecture graph](../img/graphs/FeePool-architecture.svg)
 </centered-image>
 
-
 ??? example "Details"
 
 
@@ -49,6 +48,8 @@ graph TD
 ---
 ### Libraries
 
+- [SafeMath](/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
 ## Constructor
 
 This initialises the various state contract addresses the fee pool knows about, along with its inherited [`SelfDestructible`](SelfDestructible.md), [`Proxyable`](Proxyable.md), and [`LimitedSetup`](LimitedSetup.md) instances.
@@ -78,20 +79,6 @@ This constructor also begins the first fee period, as it initialises the first f
 
 
 ---
-### `amountReceivedFromExchange`
-
-Computes the quantity received if a quantity of Synths is exchanged into another flavour. The amount received is the quantity sent minus the [exchange fee](#exchangefeeincurred), as per the logic in [`Synthetix._internalExchange`](Synthetix.md#_internalexchange).
-
-
-??? example "Details"
-
-
-    **Signature**
-    
-    `amountReceivedFromExchange(uint value) external view returns (uint)`
-
-
----
 ### `amountReceivedFromTransfer`
 
 Computes the number of Synths received by the recipient if a certain quantity is sent.
@@ -106,6 +93,20 @@ As of [SIP-19](https://sips.synthetix.io/sips/sip-19), this is just the identity
     **Signature**
     
     `amountReceivedFromTransfer(uint value) external view returns (uint)`
+
+
+---
+### `amountReceivedFromExchange`
+
+Computes the quantity received if a quantity of Synths is exchanged into another flavour. The amount received is the quantity sent minus the [exchange fee](#exchangefeeincurred), as per the logic in [`Synthetix._internalExchange`](Synthetix.md#_internalexchange).
+
+
+??? example "Details"
+
+
+    **Signature**
+    
+    `amountReceivedFromExchange(uint value) external view returns (uint)`
 
 
 ---
@@ -267,10 +268,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L90)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -278,10 +275,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 ### `CONTRACT_EXCHANGER`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L86)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -291,10 +284,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L85)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -302,10 +291,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 ### `CONTRACT_FEEPOOLSTATE`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L84)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -315,10 +300,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L87)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -326,10 +307,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 ### `CONTRACT_REWARDESCROW`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L89)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -339,10 +316,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L91)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -350,10 +323,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 ### `CONTRACT_SYNTHETIX`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L83)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -363,10 +332,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L88)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -374,10 +339,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 ### `CONTRACT_SYSTEMSTATUS`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L82)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -387,10 +348,6 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L853)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -399,14 +356,12 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L42)</sub>
 
-
-
 The address where fees are pooled as sUSD.
 
 
+
+
 **Value:** [`0xfeEFEEfeefEeFeefEEFEEfEeFeefEEFeeFEEFEeF`](https://etherscan.io/address/0xfeEFEEfeefEeFeefEEFEEfEeFeefEEFeeFEEFEeF)
-
-
 
 
 **Type:** `address`
@@ -417,17 +372,15 @@ The address where fees are pooled as sUSD.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L63)</sub>
 
-
-
 This is the number of weekly fee periods that are tracked by the smart contracts, hence the length of the [`recentFeePeriods`](#recentfeeperiods) array.
 
 
 This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/sip-4), but note the inconsistency with the corresponding constant in [`FeePoolState`](FeePoolState.md#fee_period_length), which cannot be altered.
 
 
+
+
 **Value:** `3`
-
-
 
 
 **Type:** `uint8`
@@ -438,10 +391,6 @@ This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/s
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L867)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -449,10 +398,6 @@ This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/s
 ### `FEEPERIODDURATIONUPDATED_SIG`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L860)</sub>
-
-
-
-
 
 **Type:** `bytes32`
 
@@ -462,10 +407,6 @@ This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/s
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L874)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -474,10 +415,6 @@ This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/s
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L832)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -485,8 +422,6 @@ This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/s
 ### `LAST_FEE_WITHDRAWAL`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L108)</sub>
-
-
 
 This string is used as part of a key for accessing account withdrawal timestamps from the [eternal storage contract](#feepooleternalstorage).
 
@@ -497,9 +432,9 @@ This is only used within [`FeePool.getLastFeeWithdrawal`](FeePool.md#getlastfeew
 This must have the same value as [`FeePoolEternalStorage.LAST_FEE_WITHDRAWAL`](FeePoolEternalStorage.md#last_fee_withdrawal).
 
 
+
+
 **Value:** `"last_fee_withdrawal"`
-
-
 
 
 **Type:** `bytes32`
@@ -510,14 +445,12 @@ This must have the same value as [`FeePoolEternalStorage.LAST_FEE_WITHDRAWAL`](F
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L39)</sub>
 
-
-
 [`exchangeFeeRate`](#exchangefeerate) cannot exceed this. Initialised to 10%.
 
 
+
+
 **Value:** 0.1
-
-
 
 
 **Type:** `uint256`
@@ -528,14 +461,12 @@ This must have the same value as [`FeePoolEternalStorage.LAST_FEE_WITHDRAWAL`](F
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L75)</sub>
 
-
-
 The maximum value of [`feePeriodDuration`](#feeperiodduration).
 
 
+
+
 **Value:** `60 days`
-
-
 
 
 **Type:** `uint256`
@@ -546,14 +477,12 @@ The maximum value of [`feePeriodDuration`](#feeperiodduration).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L74)</sub>
 
-
-
 The minimum value of [`feePeriodDuration`](#feeperiodduration).
 
 
+
+
 **Value:** `1 days`
-
-
 
 
 **Type:** `uint256`
@@ -566,10 +495,6 @@ The minimum value of [`feePeriodDuration`](#feeperiodduration).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L66)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 
@@ -577,10 +502,6 @@ The minimum value of [`feePeriodDuration`](#feeperiodduration).
 ### `_recentFeePeriods`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L65)</sub>
-
-
-
-
 
 **Type:** `struct FeePool.FeePeriod[2]`
 
@@ -590,10 +511,6 @@ The minimum value of [`feePeriodDuration`](#feeperiodduration).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L93)</sub>
 
-
-
-
-
 **Type:** `bytes32[24]`
 
 
@@ -601,8 +518,6 @@ The minimum value of [`feePeriodDuration`](#feeperiodduration).
 ### `exchangeFeeRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L36)</sub>
-
-
 
 The fee fraction charged on a currency exchange, between 0 and 0.1.
 
@@ -616,8 +531,6 @@ The fee fraction charged on a currency exchange, between 0 and 0.1.
 ### `feePeriodDuration`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L72)</sub>
-
-
 
 This is the minimum duration of a single fee period in seconds. In practice they may be slightly longer if [`closeCurrentFeePeriod`](#closecurrentfeeperiod) is not called immediately at the earliest valid moment.
 
@@ -635,10 +548,6 @@ Its value is one week, but it may be between [`MIN_FEE_PERIOD_DURATION`](#min_fe
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L45)</sub>
 
-
-
-
-
 **Type:** `bytes32`
 
 
@@ -646,10 +555,6 @@ Its value is one week, but it may be between [`MIN_FEE_PERIOD_DURATION`](#min_fe
 ### `targetThreshold`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L78)</sub>
-
-
-
-
 
 **Type:** `uint256`
 
@@ -660,8 +565,6 @@ Its value is one week, but it may be between [`MIN_FEE_PERIOD_DURATION`](#min_fe
 ### `FeePeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L48)</sub>
-
-
 
 A record for a fee period, when it was opened, and the fees and rewards accrued within it. This information is maintained for the last several fee periods in [`recentFeePeriods`](#recentfeeperiods).
 
@@ -685,8 +588,6 @@ A record for a fee period, when it was opened, and the fees and rewards accrued 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L819)</sub>
 
-
-
 Reverts the transaction if `account` is the [fee address](#fee_address).
 
 
@@ -700,14 +601,10 @@ Reverts the transaction if `account` is the [fee address](#fee_address).
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L806)</sub>
 
 
-
-
 ---
 ### `onlyIssuer`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L814)</sub>
-
-
 
 
 ---
@@ -723,8 +620,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L110)</sub>
-
-
 
 ??? example "Details"
 
@@ -760,8 +655,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L566)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -777,8 +670,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `appendAccountIssuanceRecord`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L218)</sub>
-
-
 
 ??? example "Details"
 
@@ -800,8 +691,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L414)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -822,8 +711,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L323)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -843,8 +730,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `claimOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L333)</sub>
-
-
 
 ??? example "Details"
 
@@ -870,8 +755,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L282)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -891,8 +774,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `effectiveDebtRatioForPeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L758)</sub>
-
-
 
 ??? example "Details"
 
@@ -916,8 +797,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L549)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -933,8 +812,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `feesAvailable`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L604)</sub>
-
-
 
 ??? example "Details"
 
@@ -952,8 +829,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L653)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -969,8 +844,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `getLastFeeWithdrawal`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L780)</sub>
-
-
 
 ??? example "Details"
 
@@ -988,8 +861,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L787)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1005,8 +876,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `importFeePeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L386)</sub>
-
-
 
 ??? example "Details"
 
@@ -1034,8 +903,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L626)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1052,8 +919,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L179)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1069,8 +934,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `recordFeePaid`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L264)</sub>
-
-
 
 ??? example "Details"
 
@@ -1091,8 +954,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `setExchangeFeeRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L237)</sub>
-
-
 
 ??? example "Details"
 
@@ -1117,8 +978,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `setFeePeriodDuration`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L245)</sub>
-
-
 
 ??? example "Details"
 
@@ -1146,8 +1005,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L272)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1167,8 +1024,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `setTargetThreshold`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L254)</sub>
-
-
 
 ??? example "Details"
 
@@ -1196,8 +1051,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L573)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1213,8 +1066,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `totalRewardsAvailable`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L588)</sub>
-
-
 
 ??? example "Details"
 
@@ -1233,8 +1084,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `_claimFees`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L339)</sub>
-
-
 
 ??? example "Details"
 
@@ -1258,8 +1107,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L742)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1276,8 +1123,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L715)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1293,8 +1138,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `_payFees`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L505)</sub>
-
-
 
 ??? example "Details"
 
@@ -1319,8 +1162,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `_payRewards`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L534)</sub>
-
-
 
 ??? example "Details"
 
@@ -1352,8 +1193,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L204)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1369,8 +1208,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `_recordFeePayment`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L426)</sub>
-
-
 
 ??? example "Details"
 
@@ -1388,8 +1225,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L464)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1405,8 +1240,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `_setLastFeeWithdrawal`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L798)</sub>
-
-
 
 ??? example "Details"
 
@@ -1424,8 +1257,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L170)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1441,8 +1272,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `emitExchangeFeeUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L855)</sub>
-
-
 
 ??? example "Details"
 
@@ -1460,8 +1289,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L869)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1477,8 +1304,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `emitFeePeriodDurationUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L862)</sub>
-
-
 
 ??? example "Details"
 
@@ -1496,8 +1321,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L876)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1513,8 +1336,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `emitIssuanceDebtRatioEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L836)</sub>
-
-
 
 ??? example "Details"
 
@@ -1532,8 +1353,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L154)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1549,8 +1368,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `feePoolEternalStorage`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L147)</sub>
-
-
 
 ??? example "Details"
 
@@ -1568,8 +1385,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L143)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1585,8 +1400,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `issuer`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L158)</sub>
-
-
 
 ??? example "Details"
 
@@ -1604,8 +1417,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L166)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1621,8 +1432,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `rewardsDistribution`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L174)</sub>
-
-
 
 ??? example "Details"
 
@@ -1640,8 +1449,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L139)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1658,8 +1465,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L162)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -1675,8 +1480,6 @@ Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) add
 ### `systemStatus`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L135)</sub>
-
-
 
 ??? example "Details"
 
@@ -1754,6 +1557,10 @@ See [`Synthetix._addToDebtRegister`](Synthetix.md#_addToDebtRegister) for detail
 
 Computes the fees (in sUSD) and rewards (in SNX) owed at the end of a recent fee period given an entry index and the percentage of total system debt owned.
 
+
+- `period` is an index into the [`recentFeePeriods`](#recentfeeperiods) array, thus 0 corresponds with the current period.
+- `debtEntryIndex` should be an index into the debt ledger which was added before the close of the specified fee period.
+- `ownershipPercentage` should be the percentage of the account's debt ownership at that `debtEntryIndex`. This is a [27-decimal fixed point number](SafeDecimalMath.md).
 
 ??? example "Details"
 
@@ -2276,8 +2083,6 @@ Adds a quantity of SNX to the current fee period's total of rewards to be distri
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L852)</sub>
 
-
-
 Records that the fee for exchanging between Synths was [updated](#setexchangefee).
 
 
@@ -2295,8 +2100,6 @@ This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitE
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L866)</sub>
 
-
-
 - `(uint256 feePeriodId)`
 
 
@@ -2304,8 +2107,6 @@ This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitE
 ### `FeePeriodDurationUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L859)</sub>
-
-
 
 Records that the duration of a single fee period was [updated](#setfeeperiodduration).
 
@@ -2324,8 +2125,6 @@ This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitF
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L873)</sub>
 
-
-
 Records that an account [claimed](#_claimfees) the fees and rewards owed to them.
 
 
@@ -2342,8 +2141,6 @@ This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitF
 ### `IssuanceDebtRatioEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePool.sol#L826)</sub>
-
-
 
 Records that a new account issuance record was [appended](#appendaccountissuancerecord) to the account's issuance ledger in [`FeePoolState`](FeePoolState.md#appendaccountissuancerecord).
 

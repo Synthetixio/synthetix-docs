@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L20)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -34,8 +32,6 @@
 ### `currencyKey`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -53,8 +49,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L22)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -70,8 +64,6 @@
 ### `transferableSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -89,8 +81,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L11)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -106,8 +96,6 @@
 ### `transferFromAndSettle`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynth.sol#L13)</sub>
-
-
 
 ??? example "Details"
 

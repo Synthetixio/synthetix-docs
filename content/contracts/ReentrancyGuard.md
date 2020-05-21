@@ -13,10 +13,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol#L17)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 ## Modifiers
@@ -27,8 +23,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol#L32)</sub>
 
-
-
 ## Function (Constructor)
 
 
@@ -36,8 +30,6 @@
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol#L19)</sub>
-
-
 
 ??? example "Details"
 
@@ -56,8 +48,6 @@
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol#L19)</sub>
-
-
 
 ??? example "Details"
 

@@ -5,6 +5,13 @@
 
 **Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol)
 
+## Architecture
+
+
+---
+### Libraries
+
+- [SafeMath](/libraries/SafeMath) for `uint`
 ## Constants
 
 
@@ -12,10 +19,6 @@
 ### `decimals`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L12)</sub>
-
-
-
-
 
 **Type:** `uint8`
 
@@ -25,10 +28,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L13)</sub>
 
-
-
-
-
 **Type:** `uint8`
 
 
@@ -36,10 +35,6 @@
 ### `PRECISE_UNIT`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L19)</sub>
-
-
-
-
 
 **Type:** `uint256`
 
@@ -49,10 +44,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L20)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 
@@ -60,10 +51,6 @@
 ### `UNIT`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L16)</sub>
-
-
-
-
 
 **Type:** `uint256`
 
@@ -74,8 +61,6 @@
 ### `_divideDecimalRound`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L131)</sub>
-
-
 
 ??? example "Details"
 
@@ -93,8 +78,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L62)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -111,8 +94,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L32)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -128,8 +109,6 @@
 ### `unit`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L25)</sub>
-
-
 
 ??? example "Details"
 
@@ -149,8 +128,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L172)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -166,8 +143,6 @@
 ### `divideDecimal`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L118)</sub>
-
-
 
 ??? example "Details"
 
@@ -185,8 +160,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L153)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -202,8 +175,6 @@
 ### `divideDecimalRoundPrecise`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L165)</sub>
-
-
 
 ??? example "Details"
 
@@ -221,8 +192,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L45)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -238,8 +207,6 @@
 ### `multiplyDecimalRound`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L105)</sub>
-
-
 
 ??? example "Details"
 
@@ -257,8 +224,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L89)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -274,8 +239,6 @@
 ### `preciseDecimalToDecimal`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SafeDecimalMath.sol#L179)</sub>
-
-
 
 ??? example "Details"
 

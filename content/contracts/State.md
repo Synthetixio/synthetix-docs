@@ -30,8 +30,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L11)</sub>
 
-
-
 The address (presumably a contract) which is permitted to use functions on this contract which have the [`onlyAssociatedContract`](#onlyassociatedcontract) modifier.
 
 
@@ -47,8 +45,6 @@ The address (presumably a contract) which is permitted to use functions on this 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L31)</sub>
 
-
-
 Reverts the transaction if the `msg.sender` is not the [associated contract](#associatedcontract). Provided for use by inheriting contracts.
 
 
@@ -59,8 +55,6 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L13)</sub>
-
-
 
 ??? example "Details"
 
@@ -88,8 +82,6 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L13)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -116,8 +108,6 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L24)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -143,8 +133,6 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 ### `AssociatedContractUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/State.sol#L38)</sub>
-
-
 
 The associated contract was updated by the owner. This event reports the new associated contract.
 

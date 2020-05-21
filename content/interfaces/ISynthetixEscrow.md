@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L7)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -34,8 +32,6 @@
 ### `numVestingEntries`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L5)</sub>
-
-
 
 ??? example "Details"
 

@@ -20,6 +20,9 @@ This proxy provides two different operation modes,[^1] which can be switched bet
 [^1]: Specific descriptions of the behaviour of the `CALL` and `DELEGATECALL` EVM instructions can be found in the [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf).
 
 
+- `DELEGATECALL`: Execution of the target's code occurs in the proxy's context, which preserves the message sender and writes state updates to the storage of the proxy itself. This is the standard proxy style used across most Ethereum projects.
+- `CALL`: Execution occurs in the target's context, so the storage of the proxy is never touched, but function call and event data, as well as the message sender, must be explicitly passed between the proxy and target contracts. This is the style mainly used in Synthetix.
+
 The motivation for the `CALL` style was to allow complete decoupling of the storage structure from the proxy, except what's required for the proxy's own functionality. This means there's no necessity for the proxy to be concerned in advance with the storage architecture of the target contract. We can avoid using elaborate or unstructured storage solutions for state variables, and there are no constraints on the use of (possibly nested) mapping or reference types.
 
 
@@ -34,7 +37,6 @@ This allows the proxy's target contract to be largely disposable. This structure
 <centered-image>
     ![Proxy architecture graph](../img/graphs/Proxy-architecture.svg)
 </centered-image>
-
 
 In this way the main contract defining the logic can be swapped out without replacing the proxy or state contracts. The user only ever communicates with the proxy and need not know any implementation details.
 This architecture also allows [multiple proxies](Proxyable.md#integrationproxy) with differing interfaces to be used simultaneously for a single underlying contract, though events will usually be emitted only from one of them. This feature is currently used by [`ProxyERC20`](ProxyERC20.md), which operates atop the [`Synthetix`](Synthetix.md) contract.
@@ -68,6 +70,8 @@ graph TD
 ---
 ### Related Contracts
 
+- [Proxyable](Proxyable.md)
+
 ## Variables
 
 
@@ -75,8 +79,6 @@ graph TD
 ### `target`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L12)</sub>
-
-
 
 The underlying contract this proxy is standing in front of.
 
@@ -90,8 +92,6 @@ The underlying contract this proxy is standing in front of.
 ### `useDELEGATECALL`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L13)</sub>
-
-
 
 This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The contract is in `DELEGATECALL` mode iff `useDELEGATECALL` is true.
 
@@ -108,8 +108,6 @@ This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L99)</sub>
 
-
-
 Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
 
@@ -120,8 +118,6 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L15)</sub>
-
-
 
 ??? example "Details"
 
@@ -145,8 +141,6 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L62)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -164,8 +158,6 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 ### `_emit`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L26)</sub>
-
-
 
 When operating in the `CALL` style, this function allows the proxy's underlying contract (and only that contract) to emit events from the proxy's address.
 
@@ -220,8 +212,6 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L17)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -246,8 +236,6 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L22)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -270,13 +258,10 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L104)</sub>
 
-
-
 The proxy's target contract was changed.
 
 
 **Signature:** `TargetUpdated(Proxyable newTarget)`
-
 
 - `(contract Proxyable newTarget)`
 

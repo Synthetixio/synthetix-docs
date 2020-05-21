@@ -19,7 +19,6 @@ The owner can be changed by a nomination process, where the nominated owner must
     ![Owned inheritance graph](../img/graphs/Owned.svg)
 </centered-image>
 
-
 ## Variables
 
 
@@ -27,8 +26,6 @@ The owner can be changed by a nomination process, where the nominated owner must
 ### `nominatedOwner`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L7)</sub>
-
-
 
 The currently-nominated owner.
 
@@ -42,8 +39,6 @@ The currently-nominated owner.
 ### `owner`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L6)</sub>
-
-
 
 The contract owner.
 
@@ -60,8 +55,6 @@ The contract owner.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L27)</sub>
 
-
-
 Reverts the transaction if `msg.sender` is not the [`owner`](#owner).
 
 
@@ -72,8 +65,6 @@ Reverts the transaction if `msg.sender` is not the [`owner`](#owner).
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L9)</sub>
-
-
 
 ??? example "Details"
 
@@ -100,8 +91,6 @@ Reverts the transaction if `msg.sender` is not the [`owner`](#owner).
 ### `acceptOwnership`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L20)</sub>
-
-
 
 If called by [`nominatedOwner`](#nominatedowner), ownership is transferred to that address.
 The nominated owner is reset to the zero address.
@@ -133,8 +122,6 @@ The nominated owner is reset to the zero address.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L15)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -161,8 +148,6 @@ The nominated owner is reset to the zero address.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L33)</sub>
 
-
-
 Ownership has been handed over from `oldOwner` to `newOwner`, which is the new value of [`owner`](#owner).
 
 
@@ -176,8 +161,6 @@ Ownership has been handed over from `oldOwner` to `newOwner`, which is the new v
 ### `OwnerNominated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Owned.sol#L32)</sub>
-
-
 
 `newOwner` has been set as the [`nominatedOwner`](#nominatedowner).
 

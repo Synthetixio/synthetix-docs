@@ -30,6 +30,9 @@ var parse = function(mdContent) {
 					currentHeading = currentHeading[item.text];
 				}
 				break;
+			case 'list':
+				var text = item.items.map(x => x.raw).join('\n');
+				currentHeading.raw = currentHeading.raw ? currentHeading.raw + text : text;
 			case 'list_start':
 				isOrdered = item.ordered;
 				orderedDepth = item.start;

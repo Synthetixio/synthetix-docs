@@ -27,18 +27,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 ### Inheritance Graph
 
@@ -53,11 +41,16 @@ graph TD
 ---
 ### Related Contracts
 
+- ?
+
 ## Views
 
 ## Constants
 
 ## Variables
+
+.. (need to pull these from the functions below)
+
 
 ## Function (Constructor)
 
@@ -66,8 +59,6 @@ graph TD
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/IssuanceEternalStorage.sol#L11)</sub>
-
-
 
 ??? example "Details"
 

@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L7)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -34,8 +32,6 @@
 ### `getTimestamp`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -53,8 +49,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L4)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -71,8 +65,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L6)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -88,8 +80,6 @@
 ### `latestTimestamp`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L5)</sub>
-
-
 
 ??? example "Details"
 
@@ -109,8 +99,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L10)</sub>
 
-
-
 - `(int256 current, uint256 roundId, uint256 timestamp)`
 
 
@@ -118,8 +106,6 @@
 ### `NewRound`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/@chainlink/contracts-0.0.3/src/v0.5/dev/AggregatorInterface.sol#L11)</sub>
-
-
 
 - `(uint256 roundId, address startedBy)`
 

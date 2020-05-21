@@ -17,8 +17,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IAddressResolver.sol#L5)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -35,8 +33,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IAddressResolver.sol#L7)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -52,8 +48,6 @@
 ### `requireAndGetAddress`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IAddressResolver.sol#L9)</sub>
-
-
 
 ??? example "Details"
 

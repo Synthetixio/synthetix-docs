@@ -16,8 +16,6 @@ A utility that gives the inheritor access to the [`AddressResolver`](AddressReso
     ![[name] inheritance graph](../img/graphs/MixinResolver.svg)
 </centered-image-->
 
-
-
 ## Architecture
 
 
@@ -37,10 +35,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L18)</sub>
 
-
-
-
-
 **Type:** `uint256`
 
 ## Variables
@@ -51,10 +45,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L14)</sub>
 
-
-
-
-
 **Type:** `mapping(bytes32 => address)`
 
 
@@ -62,8 +52,6 @@ graph TD
 ### `resolver`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L12)</sub>
-
-
 
 The `AddressResolver` instance
 
@@ -78,10 +66,6 @@ The `AddressResolver` instance
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L16)</sub>
 
-
-
-
-
 **Type:** `bytes32[]`
 
 ## Function (Constructor)
@@ -91,8 +75,6 @@ The `AddressResolver` instance
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L20)</sub>
-
-
 
 ??? example "Details"
 
@@ -116,8 +98,6 @@ The `AddressResolver` instance
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L76)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -133,8 +113,6 @@ The `AddressResolver` instance
 ### `isResolverCached`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L58)</sub>
-
-
 
 ??? example "Details"
 
@@ -153,8 +131,6 @@ The `AddressResolver` instance
 ### `appendToAddressCache`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L87)</sub>
-
-
 
 ??? example "Details"
 
@@ -176,8 +152,6 @@ The `AddressResolver` instance
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L20)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -197,8 +171,6 @@ The `AddressResolver` instance
 ### `requireAndGetAddress`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L50)</sub>
-
-
 
 ??? example "Details"
 
@@ -221,8 +193,6 @@ The `AddressResolver` instance
 ### `setResolverAndSyncCache`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MixinResolver.sol#L38)</sub>
-
-
 
 ??? example "Details"
 

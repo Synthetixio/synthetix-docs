@@ -37,10 +37,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L22)</sub>
 
-
-
-
-
 **Type:** `mapping(bytes32 => address)`
 
 
@@ -48,10 +44,6 @@ graph TD
 ### `BooleanStorage`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L25)</sub>
-
-
-
-
 
 **Type:** `mapping(bytes32 => bool)`
 
@@ -61,10 +53,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L24)</sub>
 
-
-
-
-
 **Type:** `mapping(bytes32 => bytes32)`
 
 
@@ -72,10 +60,6 @@ graph TD
 ### `BytesStorage`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L23)</sub>
-
-
-
-
 
 **Type:** `mapping(bytes32 => bytes)`
 
@@ -85,10 +69,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L26)</sub>
 
-
-
-
-
 **Type:** `mapping(bytes32 => int256)`
 
 
@@ -97,10 +77,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L21)</sub>
 
-
-
-
-
 **Type:** `mapping(bytes32 => string)`
 
 
@@ -108,10 +84,6 @@ graph TD
 ### `UIntStorage`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L20)</sub>
-
-
-
-
 
 **Type:** `mapping(bytes32 => uint256)`
 
@@ -122,8 +94,6 @@ graph TD
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L17)</sub>
-
-
 
 ??? example "Details"
 
@@ -149,8 +119,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L63)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -170,8 +138,6 @@ graph TD
 ### `deleteBooleanValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L102)</sub>
-
-
 
 ??? example "Details"
 
@@ -193,8 +159,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L89)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -214,8 +178,6 @@ graph TD
 ### `deleteBytesValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L76)</sub>
-
-
 
 ??? example "Details"
 
@@ -237,8 +199,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L115)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -258,8 +218,6 @@ graph TD
 ### `deleteStringValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L50)</sub>
-
-
 
 ??? example "Details"
 
@@ -281,8 +239,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L37)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -303,8 +259,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L55)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -320,8 +274,6 @@ graph TD
 ### `getBooleanValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L94)</sub>
-
-
 
 ??? example "Details"
 
@@ -339,8 +291,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L81)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -356,8 +306,6 @@ graph TD
 ### `getBytesValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L68)</sub>
-
-
 
 ??? example "Details"
 
@@ -375,8 +323,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L107)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -392,8 +338,6 @@ graph TD
 ### `getStringValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L42)</sub>
-
-
 
 ??? example "Details"
 
@@ -411,8 +355,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L29)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -428,8 +370,6 @@ graph TD
 ### `setAddressValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L59)</sub>
-
-
 
 ??? example "Details"
 
@@ -451,8 +391,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L98)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -472,8 +410,6 @@ graph TD
 ### `setBytes32Value`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L85)</sub>
-
-
 
 ??? example "Details"
 
@@ -495,8 +431,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L72)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -516,8 +450,6 @@ graph TD
 ### `setIntValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L111)</sub>
-
-
 
 ??? example "Details"
 
@@ -539,8 +471,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L46)</sub>
 
-
-
 ??? example "Details"
 
     **Signature**
@@ -560,8 +490,6 @@ graph TD
 ### `setUIntValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EternalStorage.sol#L33)</sub>
-
-
 
 ??? example "Details"
 
