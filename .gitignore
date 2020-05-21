@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 
 node_modules
+
+# Preview files
+*.preview

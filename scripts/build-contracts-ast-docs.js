@@ -569,9 +569,16 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	const rawMdContent = md2json
 		.toMd({ [contractName]: contentJsonMdSorted })
 		.split('###')
-		.join('---\n###');
+		.join('---\n###')
+		.split('\n---\n---')
+		.join('\n---');
 
-	fs.writeFileSync(outputFilePath, rawMdContent);
+	// Do we build in place, or do we build a preview?
+	if (process.env.BUILD_MD_IN_PLACE) {
+		fs.writeFileSync(outputFilePath, rawMdContent);
+	} else {
+		fs.writeFileSync(`${outputFilePath}.preview`, rawMdContent);
+	}
 };
 
 (() => {
