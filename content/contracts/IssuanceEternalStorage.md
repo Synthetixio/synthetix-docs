@@ -27,6 +27,8 @@
 
 
 
+
+
 ---
 ### Inheritance Graph
 
@@ -59,6 +61,8 @@ graph TD
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/IssuanceEternalStorage.sol#L11)</sub>
+
+
 
 ??? example "Details"
 

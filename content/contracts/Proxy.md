@@ -80,6 +80,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L12)</sub>
 
+
+
 The underlying contract this proxy is standing in front of.
 
 
@@ -92,6 +94,8 @@ The underlying contract this proxy is standing in front of.
 ### `useDELEGATECALL`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L13)</sub>
+
+
 
 This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The contract is in `DELEGATECALL` mode iff `useDELEGATECALL` is true.
 
@@ -108,6 +112,8 @@ This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L99)</sub>
 
+
+
 Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
 
@@ -118,6 +124,8 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L15)</sub>
+
+
 
 ??? example "Details"
 
@@ -141,6 +149,8 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L62)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -158,6 +168,8 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 ### `_emit`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L26)</sub>
+
+
 
 When operating in the `CALL` style, this function allows the proxy's underlying contract (and only that contract) to emit events from the proxy's address.
 
@@ -212,6 +224,8 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L17)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -236,6 +250,8 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L22)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -258,10 +274,13 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Proxy.sol#L104)</sub>
 
+
+
 The proxy's target contract was changed.
 
 
 **Signature:** `TargetUpdated(Proxyable newTarget)`
+
 
 - `(contract Proxyable newTarget)`
 

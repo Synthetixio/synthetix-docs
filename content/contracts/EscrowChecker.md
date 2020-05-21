@@ -19,6 +19,8 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 </centered-image>
 
 
+
+
 ---
 ### Related Contracts
 
@@ -31,6 +33,8 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 ### `synthetix_escrow`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L13)</sub>
+
+
 
 The [SNX escrow contract](SynthetixEscrow.md).
 
@@ -46,6 +50,8 @@ The [SNX escrow contract](SynthetixEscrow.md).
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L15)</sub>
+
+
 
 ??? example "Details"
 
@@ -64,6 +70,8 @@ The [SNX escrow contract](SynthetixEscrow.md).
 ### `checkAccountSchedule`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/EscrowChecker.sol#L19)</sub>
+
+
 
 Returns the given address's vesting schedule as up to 16 `uints`, composed of an alternating sequence of up to 8 `(timestamp, quantity)` pairs, as per [`SynthetixEscrow.getVestingScheduleEntry`](SynthetixEscrow.md#getVestingScheduleEntry).
 

@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L6)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -32,6 +34,8 @@
 ### `appendAccountIssuanceRecord`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L29)</sub>
+
+
 
 ??? example "Details"
 
@@ -49,6 +53,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L22)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -64,6 +70,8 @@
 ### `claimOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L24)</sub>
+
+
 
 ??? example "Details"
 
@@ -81,6 +89,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L26)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -96,6 +106,8 @@
 ### `exchangeFeeRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L8)</sub>
+
+
 
 ??? example "Details"
 
@@ -113,6 +125,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L11)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -128,6 +142,8 @@
 ### `feesAvailable`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L13)</sub>
+
+
 
 ??? example "Details"
 
@@ -145,6 +161,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L15)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -160,6 +178,8 @@
 ### `recordFeePaid`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L35)</sub>
+
+
 
 ??? example "Details"
 
@@ -177,6 +197,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L37)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -193,6 +215,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L17)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -208,6 +232,8 @@
 ### `totalRewardsAvailable`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IFeePool.sol#L19)</sub>
+
+
 
 ??? example "Details"
 

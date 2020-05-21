@@ -39,6 +39,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L10)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -61,6 +63,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L55)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -76,6 +80,8 @@ graph TD
 ### `approve`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L85)</sub>
+
+
 
 ??? example "Details"
 
@@ -93,6 +99,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L44)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -108,6 +116,8 @@ graph TD
 ### `decimals`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L24)</sub>
+
+
 
 ??? example "Details"
 
@@ -125,6 +135,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L14)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -140,6 +152,8 @@ graph TD
 ### `symbol`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L19)</sub>
+
+
 
 ??? example "Details"
 
@@ -157,6 +171,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L34)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -173,6 +189,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L65)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -188,6 +206,8 @@ graph TD
 ### `transferFrom`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ProxyERC20.sol#L102)</sub>
+
+
 
 ??? example "Details"
 

@@ -27,6 +27,8 @@
 
 
 
+
+
 ---
 ### Inheritance Graph
 
@@ -58,6 +60,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L9)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 ## Modifiers
@@ -68,6 +74,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L58)</sub>
 
+
+
 ## Function (Constructor)
 
 
@@ -75,6 +83,8 @@ graph TD
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L13)</sub>
+
+
 
 ??? example "Details"
 
@@ -98,6 +108,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L51)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -117,6 +129,8 @@ graph TD
 ### `issue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L42)</sub>
+
+
 
 ??? example "Details"
 
@@ -139,6 +153,8 @@ graph TD
 ### `multiCollateral`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/MultiCollateralSynth.sol#L31)</sub>
+
+
 
 ??? example "Details"
 

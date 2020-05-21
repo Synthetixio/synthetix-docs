@@ -26,6 +26,8 @@
 </centered-image-->
 
 
+
+
 ---
 ### Inheritance Graph
 
@@ -50,6 +52,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L9)</sub>
 
+
+
+
+
 **Type:** `address`
 
 ## Modifiers
@@ -60,6 +66,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L13)</sub>
 
+
+
 ## Functions
 
 
@@ -67,6 +75,8 @@ graph TD
 ### `notifyRewardAmount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L11)</sub>
+
+
 
 ??? example "Details"
 
@@ -85,6 +95,8 @@ graph TD
 ### `setRewardsDistribution`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/RewardsDistributionRecipient.sol#L18)</sub>
+
+
 
 ??? example "Details"
 

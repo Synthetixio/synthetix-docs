@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L38)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -33,6 +35,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L32)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -48,6 +52,8 @@
 ### `emitSynthExchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L23)</sub>
+
+
 
 ??? example "Details"
 

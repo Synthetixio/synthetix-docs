@@ -35,6 +35,8 @@ True iff the contract is currently paused.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L9)</sub>
 
+
+
 The UNIX timestamp in seconds at which the contract was last paused.
 
 
@@ -48,6 +50,10 @@ The UNIX timestamp in seconds at which the contract was last paused.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L10)</sub>
 
+
+
+
+
 **Type:** `bool`
 
 ## Modifiers
@@ -57,6 +63,8 @@ The UNIX timestamp in seconds at which the contract was last paused.
 ### `notPaused`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L42)</sub>
+
+
 
 Reverts the transaction the contract is [`paused`](#paused). Provided for use by inheriting contracts.
 
@@ -68,6 +76,8 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L12)</sub>
+
+
 
 ??? example "Details"
 
@@ -91,6 +101,8 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L12)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -112,6 +124,8 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 ### `setPaused`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L22)</sub>
+
+
 
 ??? example "Details"
 
@@ -138,6 +152,8 @@ Reverts the transaction the contract is [`paused`](#paused). Provided for use by
 ### `PauseChanged`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Pausable.sol#L40)</sub>
+
+
 
 The contract has gone from paused to unpaused or vice versa. This event reports the new state.
 

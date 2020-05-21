@@ -41,11 +41,23 @@ graph TD
 - <>[FeePool](FeePool.md)
 
 
+
+
 ---
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
+
+---
+### `FEE_PERIOD_LENGTH`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L22)</sub>
+
+
+**Type:** `uint8`
+
+
 ## Constants
 
 
@@ -53,6 +65,10 @@ graph TD
 ### `FEE_PERIOD_LENGTH`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L22)</sub>
+
+
+
+
 
 **Type:** `uint8`
 
@@ -63,6 +79,8 @@ graph TD
 ### `accountIssuanceLedger`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L33)</sub>
+
+
 
 A list of up to 6 [issuance data](#issuancedata) entries for each address, for the most recent changes to their issuance level. The fee periods do not have to be consecutive, but they are ordered from newest to oldest (decreasing debt ledger indexes).
 
@@ -80,6 +98,8 @@ Note that the entry `accountIssuanceLedger[account][0]` only corresponds to the 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L24)</sub>
 
+
+
 The address of the main [`FeePool`](FeePool.md) contract.
 
 
@@ -94,6 +114,8 @@ The address of the main [`FeePool`](FeePool.md) contract.
 ### `IssuanceData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L27)</sub>
+
+
 
 Holds the issuance state and index of users interacting with the [`FeePool`](FeePool.md) for the last [several fee periods](#fee_period_length).
 
@@ -115,6 +137,8 @@ Holds the issuance state and index of users interacting with the [`FeePool`](Fee
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L154)</sub>
 
+
+
 Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
 
 
@@ -125,6 +149,8 @@ Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L35)</sub>
+
+
 
 ??? example "Details"
 
@@ -151,6 +177,8 @@ Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
 ### `appendAccountIssuanceRecord`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L98)</sub>
+
+
 
 Allows the [`Synthetix`](Synthetix.md#_appendaccountissuancerecord) contract, through [`FeePool.appendAccountIssuanceRecord`](FeePool.md#appendaccountissuancerecord), to record current fee period issuance information for a given account in the issuance ledger. This is used when synths are issued or burnt.
 
@@ -181,6 +209,8 @@ The `debtRatio` argument is a [27-decimal fixed point number](SafeDecimalMath.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L73)</sub>
 
+
+
 From a given account's issuance data, retrieve the most recent entry which closed before the provided index. If there is no such entry, `(0,0)` is returned.
 
 
@@ -205,6 +235,8 @@ The returned values are as per [`getAccountsDebtEntry`](#getaccountsdebtentry), 
 ### `getAccountsDebtEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L57)</sub>
+
+
 
 Accesses [`accountIssuanceLedger`](#accountissuanceledger).
 
@@ -232,6 +264,8 @@ The first return value is a [27-decimal fixed point number](SafeDecimalMath.md).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L118)</sub>
 
+
+
 Shifts this account's array of issuance ledger entries down one place, overwriting the last entry. This is only used in [`appendAccountIssuanceRecord`](#appendaccountissuancerecord).
 
 
@@ -252,6 +286,8 @@ Shifts this account's array of issuance ledger entries down one place, overwriti
 ### `importIssuerData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L137)</sub>
+
+
 
 ??? example "Details"
 
@@ -279,6 +315,8 @@ Shifts this account's array of issuance ledger entries down one place, overwriti
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L46)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -300,6 +338,8 @@ Shifts this account's array of issuance ledger entries down one place, overwriti
 ### `IssuanceDebtRatioEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/FeePoolState.sol#L160)</sub>
+
+
 
 Record that an entry was updated in the [issuance ledger](#accountissuanceledger) by the [`importIssuerData`](#importissuerdata) function during the setup period.
 

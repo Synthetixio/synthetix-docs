@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L6)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -32,6 +34,8 @@
 ### `exchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L27)</sub>
+
+
 
 ??? example "Details"
 
@@ -49,6 +53,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L35)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -64,6 +70,8 @@
 ### `feeRateForExchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L13)</sub>
+
+
 
 ??? example "Details"
 
@@ -81,6 +89,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L15)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -97,6 +107,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L43)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -112,6 +124,8 @@
 ### `settlementOwing`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchanger.sol#L17)</sub>
+
+
 
 ??? example "Details"
 

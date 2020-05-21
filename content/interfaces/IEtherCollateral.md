@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IEtherCollateral.sol#L15)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -32,6 +34,8 @@
 ### `liquidateUnclosedLoan`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IEtherCollateral.sol#L17)</sub>
+
+
 
 ??? example "Details"
 
@@ -49,6 +53,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IEtherCollateral.sol#L13)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -64,6 +70,8 @@
 ### `totalIssuedSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IEtherCollateral.sol#L6)</sub>
+
+
 
 ??? example "Details"
 
@@ -81,6 +89,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IEtherCollateral.sol#L8)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -96,6 +106,8 @@
 ### `totalOpenLoanCount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IEtherCollateral.sol#L10)</sub>
+
+
 
 ??? example "Details"
 

@@ -243,12 +243,14 @@ Retrieves the exchange rate (`sUSD` per unit) for a given currency key (`sUSD`, 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L39)</sub>
 
+
+
 The maximum time in the future ($10$ minutes) that rates are allowed to be set for.
 
 
-
-
 **Value:** `10 minutes`
+
+
 
 
 **Type:** `uint256`
@@ -261,6 +263,10 @@ The maximum time in the future ($10$ minutes) that rates are allowed to be set f
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L27)</sub>
 
+
+
+
+
 **Type:** `mapping(bytes32 => mapping(uint256 => struct ExchangeRates.RateAndUpdatedTime))`
 
 
@@ -268,6 +274,8 @@ The maximum time in the future ($10$ minutes) that rates are allowed to be set f
 ### `aggregatorKeys`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L36)</sub>
+
+
 
 A list of the keys of currencies with a decentralized aggregated pricing network.
 
@@ -282,6 +290,8 @@ A list of the keys of currencies with a decentralized aggregated pricing network
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L33)</sub>
 
+
+
 For each currency with a decentralized aggregated pricing network, return the Aggregation contract address.
 
 
@@ -295,6 +305,10 @@ For each currency with a decentralized aggregated pricing network, return the Ag
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L54)</sub>
 
+
+
+
+
 **Type:** `mapping(bytes32 => uint256)`
 
 
@@ -302,6 +316,8 @@ For each currency with a decentralized aggregated pricing network, return the Ag
 ### `inversePricing`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L51)</sub>
+
+
 
 For each currency with an inverse index, keep the necessary [`InversePricing`](#inversepricing) information to maintain the index.
 
@@ -316,6 +332,8 @@ For each currency with an inverse index, keep the necessary [`InversePricing`](#
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L52)</sub>
 
+
+
 A list of the keys of currencies with an inverted index.
 
 
@@ -329,6 +347,8 @@ A list of the keys of currencies with an inverted index.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L30)</sub>
 
+
+
 The address which is permitted to push rate updates to the contract.
 
 
@@ -341,6 +361,8 @@ The address which is permitted to push rate updates to the contract.
 ### `rateStalePeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L42)</sub>
+
+
 
 The duration after which a rate will be considered out of date. Synth exchange and other price-sensitive transactions in the [`Synthetix`](Synthetix.md) contract will not operate if a relevant rate is stale.
 Initialised to $3$ hours.
@@ -357,6 +379,8 @@ Initialised to $3$ hours.
 ### `InversePricing`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L45)</sub>
+
+
 
 Holds necessary information for computing the price of [inverse Synths](../tokens.md#inverse-synths).
 
@@ -375,6 +399,8 @@ Holds necessary information for computing the price of [inverse Synths](../token
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L21)</sub>
 
+
+
 | Field | Type | Description |
 | ------ | ------ | ------ |
 | rate | uint216 | TBA |
@@ -389,6 +415,8 @@ Holds necessary information for computing the price of [inverse Synths](../token
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L564)</sub>
 
+
+
 Reverts the transaction if `msg.sender` is not the [`oracle`](#oracle).
 
 
@@ -397,6 +425,8 @@ Reverts the transaction if `msg.sender` is not the [`oracle`](#oracle).
 ### `rateNotStale`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L559)</sub>
+
+
 
 Reverts the transaction if the given currency's rate is stale.
 
@@ -411,6 +441,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L59)</sub>
+
+
 
 ??? example "Details"
 
@@ -440,6 +472,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L370)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -455,6 +489,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `effectiveValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L296)</sub>
+
+
 
 ??? example "Details"
 
@@ -478,6 +514,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L248)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -500,6 +538,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L239)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -515,6 +555,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `getLastRoundIdBeforeElapsedSecs`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L220)</sub>
+
+
 
 ??? example "Details"
 
@@ -532,6 +574,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L273)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -547,6 +591,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `lastRateUpdateTimesForCurrencies`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L280)</sub>
+
+
 
 ??? example "Details"
 
@@ -564,6 +610,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L264)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -579,6 +627,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `rateForCurrency`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L314)</sub>
+
+
 
 ??? example "Details"
 
@@ -596,6 +646,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L363)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -611,6 +663,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `rateIsStale`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L353)</sub>
+
+
 
 ??? example "Details"
 
@@ -628,6 +682,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L334)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -643,6 +699,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `ratesForCurrencies`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L321)</sub>
+
+
 
 ??? example "Details"
 
@@ -662,6 +720,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L387)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -677,6 +737,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `getRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L553)</sub>
+
+
 
 ??? example "Details"
 
@@ -694,6 +756,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L543)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -710,6 +774,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L506)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -725,6 +791,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `internalUpdateRates`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L409)</sub>
+
+
 
 ??? example "Details"
 
@@ -752,6 +820,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L468)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -767,6 +837,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `removeFromArray`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L524)</sub>
+
+
 
 ??? example "Details"
 
@@ -785,6 +857,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `deleteRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L109)</sub>
+
+
 
 ??? example "Details"
 
@@ -814,6 +888,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L97)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -835,6 +911,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `addAggregator`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L194)</sub>
+
+
 
 ??? example "Details"
 
@@ -864,6 +942,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L208)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -888,6 +968,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L174)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -911,6 +993,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `setInversePricing`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L135)</sub>
+
+
 
 ??? example "Details"
 
@@ -948,6 +1032,8 @@ Reverts the transaction if the given currency's rate is stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L77)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -971,6 +1057,8 @@ Reverts the transaction if the given currency's rate is stale.
 ### `setRateStalePeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L82)</sub>
+
+
 
 ??? example "Details"
 
@@ -1267,6 +1355,8 @@ Allows the owner to set the time after which rates will be considered stale.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L577)</sub>
 
+
+
 Records that an Aggregator pricing network was added
 
 
@@ -1280,6 +1370,8 @@ Records that an Aggregator pricing network was added
 ### `AggregatorRemoved`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L578)</sub>
+
+
 
 Records that an Aggregator pricing network was removed
 
@@ -1295,6 +1387,8 @@ Records that an Aggregator pricing network was removed
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L575)</sub>
 
+
+
 Records that an inverse price index was set up or deleted. As there is no distinct event for deletion, this is signaled by providing zero values to all arguments barring `currencyKey`.
 
 
@@ -1308,6 +1402,8 @@ Records that an inverse price index was set up or deleted. As there is no distin
 ### `InversePriceFrozen`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L576)</sub>
+
+
 
 Records that an inverse price breached a limit and was frozen.
 
@@ -1323,6 +1419,8 @@ Records that an inverse price breached a limit and was frozen.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L571)</sub>
 
+
+
 Records that the anointed oracle was updated.
 
 
@@ -1336,6 +1434,8 @@ Records that the anointed oracle was updated.
 ### `RateDeleted`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L574)</sub>
+
+
 
 - `(bytes32 currencyKey)`
 
@@ -1355,6 +1455,8 @@ Records that the price for a particular currency was deleted.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L572)</sub>
 
+
+
 Records that the stale period was altered.
 
 
@@ -1368,6 +1470,8 @@ Records that the stale period was altered.
 ### `RatesUpdated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ExchangeRates.sol#L573)</sub>
+
+
 
 Records that a set of currency prices were updated.
 

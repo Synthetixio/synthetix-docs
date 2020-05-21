@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeState.sol#L29)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -32,6 +34,8 @@
 ### `getEntryAt`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeState.sol#L8)</sub>
+
+
 
 ??? example "Details"
 
@@ -49,6 +53,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeState.sol#L6)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -65,6 +71,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeState.sol#L26)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -80,6 +88,8 @@
 ### `removeEntries`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IExchangeState.sol#L41)</sub>
+
+
 
 ??? example "Details"
 

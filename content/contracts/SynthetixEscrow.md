@@ -31,6 +31,36 @@ graph TD
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
+
+---
+### `MAX_VESTING_ENTRIES`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L37)</sub>
+
+
+**Type:** `uint256`
+
+
+
+---
+### `QUANTITY_INDEX`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L34)</sub>
+
+
+**Type:** `uint256`
+
+
+
+---
+### `TIME_INDEX`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L33)</sub>
+
+
+**Type:** `uint256`
+
+
 ## Constants
 
 
@@ -38,6 +68,10 @@ graph TD
 ### `MAX_VESTING_ENTRIES`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L37)</sub>
+
+
+
+
 
 **Type:** `uint256`
 
@@ -47,6 +81,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L34)</sub>
 
+
+
+
+
 **Type:** `uint256`
 
 
@@ -54,6 +92,10 @@ graph TD
 ### `TIME_INDEX`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L33)</sub>
+
+
+
+
 
 **Type:** `uint256`
 
@@ -64,6 +106,8 @@ graph TD
 ### `synthetix`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L21)</sub>
+
+
 
 The address of the main [`Synthetix`](Synthetix.md) contract.
 
@@ -78,6 +122,8 @@ The address of the main [`Synthetix`](Synthetix.md) contract.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L28)</sub>
 
+
+
 The quantity of remaining tokens for a given account; it saves the recomputation involved in summing over [`vestingSchedules`](#vestingschedules) entries.
 
 
@@ -91,6 +137,8 @@ The quantity of remaining tokens for a given account; it saves the recomputation
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L31)</sub>
 
+
+
 The total remaining vested balance in this contract.
 
 
@@ -103,6 +151,8 @@ The total remaining vested balance in this contract.
 ### `vestingSchedules`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L25)</sub>
+
+
 
 Stores the vesting schedule for each for each account. Each schedule is a list of `(vesting timestamp, quantity)` pairs in ascending time order.
 
@@ -118,6 +168,8 @@ Stores the vesting schedule for each for each account. Each schedule is a list o
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L41)</sub>
+
+
 
 ??? example "Details"
 
@@ -141,6 +193,8 @@ Stores the vesting schedule for each for each account. Each schedule is a list o
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L57)</sub>
 
+
+
 An alias to [`totalVestedAccountBalance[account]`](#totalvestedaccountbalance) for ERC20 integration.
 
 
@@ -160,6 +214,8 @@ An alias to [`totalVestedAccountBalance[account]`](#totalvestedaccountbalance) f
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L106)</sub>
 
+
+
 Returns the next vesting entry in the same manner as [`getNextVestingIndex`](#getnextvestingindex). Returns `[0,0]` if there is no next vesting entry.
 
 
@@ -178,6 +234,8 @@ Returns the next vesting entry in the same manner as [`getNextVestingIndex`](#ge
 ### `getNextVestingIndex`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L93)</sub>
+
+
 
 Returns the index of the next vesting entry that will vest for a given account. Returns one past the end if there are none remaining.
 
@@ -201,6 +259,8 @@ The function iterates until it finds the first nonzero vesting entry timestamp, 
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L124)</sub>
 
+
+
 Returns the SNX quantity of the next vesting entry. Returns `0` if there is no such entry.
 
 
@@ -219,6 +279,8 @@ Returns the SNX quantity of the next vesting entry. Returns `0` if there is no s
 ### `getNextVestingTime`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L117)</sub>
+
+
 
 Returns the timestamp of the next vesting entry. Returns `0` if there is no such entry.
 
@@ -239,6 +301,8 @@ Returns the timestamp of the next vesting entry. Returns `0` if there is no such
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L86)</sub>
 
+
+
 Returns the quantity of SNX a given schedule entry will yield.
 
 
@@ -257,6 +321,8 @@ Returns the quantity of SNX a given schedule entry will yield.
 ### `getVestingScheduleEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L72)</sub>
+
+
 
 Returns a particular schedule entry for an account, which is a pair of uints: `(vesting timestamp, SNX quantity)`.
 
@@ -280,6 +346,8 @@ This is here because the public function generated for [`vestingSchedules`](#ves
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L79)</sub>
 
+
+
 Returns the time at which a given schedule entry will vest.
 
 
@@ -299,6 +367,8 @@ Returns the time at which a given schedule entry will vest.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L64)</sub>
 
+
+
 The number of entries in an account's vesting schedule, including those already claimed.
 
 
@@ -317,6 +387,8 @@ The number of entries in an account's vesting schedule, including those already 
 ### `vest`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L215)</sub>
+
+
 
 Finds all vesting schedule entries that have come due for the caller and transfers the total quantity of tokens to them. Vested entries are overwritten with `[0,0]`.
 
@@ -339,6 +411,8 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L202)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -360,6 +434,8 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 ### `appendVestingEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L160)</sub>
+
+
 
 ??? example "Details"
 
@@ -393,6 +469,8 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L141)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -414,6 +492,8 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 ### `setSynthetix`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L47)</sub>
+
+
 
 ??? example "Details"
 
@@ -439,6 +519,8 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L134)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -463,6 +545,8 @@ Finds all vesting schedule entries that have come due for the caller and transfe
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L243)</sub>
 
+
+
 Records that the SNX contract address was altered.
 
 
@@ -476,6 +560,8 @@ Records that the SNX contract address was altered.
 ### `Vested`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/SynthetixEscrow.sol#L245)</sub>
+
+
 
 Records that an account vested a quantity of tokens.
 

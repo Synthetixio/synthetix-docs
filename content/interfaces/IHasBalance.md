@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IHasBalance.sol#L6)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**

@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L8)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -32,6 +34,8 @@
 ### `availableSynthCount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L10)</sub>
+
+
 
 ??? example "Details"
 
@@ -49,6 +53,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L47)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -64,6 +70,8 @@
 ### `burnSynthsOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L49)</sub>
+
+
 
 ??? example "Details"
 
@@ -81,6 +89,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L51)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -96,6 +106,8 @@
 ### `burnSynthsToTargetOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L53)</sub>
+
+
 
 ??? example "Details"
 
@@ -113,6 +125,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L12)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -128,6 +142,8 @@
 ### `collateralisationRatio`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L14)</sub>
+
+
 
 ??? example "Details"
 
@@ -145,6 +161,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L16)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -160,6 +178,8 @@
 ### `debtBalanceOfAndTotalDebt`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L18)</sub>
+
+
 
 ??? example "Details"
 
@@ -177,6 +197,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L55)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -192,6 +214,8 @@
 ### `exchangeOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L61)</sub>
+
+
 
 ??? example "Details"
 
@@ -209,6 +233,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L68)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -224,6 +250,8 @@
 ### `issueMaxSynthsOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L70)</sub>
+
+
 
 ??? example "Details"
 
@@ -241,6 +269,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L72)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -256,6 +286,8 @@
 ### `issueSynthsOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L74)</sub>
+
+
 
 ??? example "Details"
 
@@ -273,6 +305,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L23)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -288,6 +322,8 @@
 ### `maxIssuableSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L25)</sub>
+
+
 
 ??? example "Details"
 
@@ -305,6 +341,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L76)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -320,6 +358,8 @@
 ### `remainingIssuableSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L27)</sub>
+
+
 
 ??? example "Details"
 
@@ -337,6 +377,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L78)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -352,6 +394,8 @@
 ### `synths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L36)</sub>
+
+
 
 ??? example "Details"
 
@@ -369,6 +413,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L38)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -384,6 +430,8 @@
 ### `totalIssuedSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L40)</sub>
+
+
 
 ??? example "Details"
 
@@ -401,6 +449,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L42)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -416,6 +466,8 @@
 ### `transferableSynthetix`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/ISynthetix.sol#L44)</sub>
+
+
 
 ??? example "Details"
 

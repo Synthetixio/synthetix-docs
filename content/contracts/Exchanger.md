@@ -34,30 +34,13 @@ graph TD
 </centered-image>
 
 
+
+
 ---
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/libraries/SafeDecimalMath) for `uint`
-## Constructor
-
-<!-- E.g.
-The constructor initialises the various addresses that this contract knows about, as well as the inherited [`ExternStateToken`](ExternStateToken.md) instance.
-
-??? example "Details"
-
-    **Signature**
-
-    `constructor(address _proxy, TokenState _tokenState, SynthetixState _synthetixState, address _owner, ExchangeRates _exchangeRates, FeePool _feePool, SupplySchedule _supplySchedule, SynthetixEscrow _rewardEscrow, SynthetixEscrow _escrow, RewardsDistribution _rewardsDistribution, uint _totalSupply) public`
-
-    **Superconstructors**
-
-    * [`ExternStateToken(_proxy, _tokenState, TOKEN_NAME, TOKEN_SYMBOL, _totalSupply, DECIMALS, _owner)`](ExternStateToken.md#constructor)
-
--->
-
-## Views
-
 
 ---
 ### `feeRateForExchange`
@@ -111,6 +94,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L62)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 
@@ -118,6 +105,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ### `CONTRACT_EXCHANGESTATE`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L58)</sub>
+
+
+
+
 
 **Type:** `bytes32`
 
@@ -127,6 +118,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L59)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 
@@ -134,6 +129,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ### `CONTRACT_FEEPOOL`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L61)</sub>
+
+
+
+
 
 **Type:** `bytes32`
 
@@ -143,6 +142,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L60)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 
@@ -151,6 +154,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L57)</sub>
 
+
+
+
+
 **Type:** `bytes32`
 
 
@@ -158,6 +165,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ### `sUSD`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L51)</sub>
+
+
+
+
 
 **Type:** `bytes32`
 
@@ -169,6 +180,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L64)</sub>
 
+
+
+
+
 **Type:** `bytes32[24]`
 
 
@@ -176,6 +191,10 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ### `waitingPeriodSecs`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L53)</sub>
+
+
+
+
 
 **Type:** `uint256`
 
@@ -187,7 +206,13 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L445)</sub>
 
+
+
 <!-- E.g.
+
+---
+
+---
 
 ---
 ### `notFeeAddress`
@@ -204,6 +229,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L73)</sub>
+
+
 
 ??? example "Details"
 
@@ -229,6 +256,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L172)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -244,6 +273,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `exchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L195)</sub>
+
+
 
 ??? example "Details"
 
@@ -264,6 +295,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `exchangeOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L205)</sub>
+
+
 
 ??? example "Details"
 
@@ -289,6 +322,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L108)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -304,6 +339,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `maxSecsLeftInWaitingPeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L103)</sub>
+
+
 
 ??? example "Details"
 
@@ -321,6 +358,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L304)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -336,6 +375,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `settlementOwing`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L118)</sub>
+
+
 
 ??? example "Details"
 
@@ -354,6 +395,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `_exchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L222)</sub>
+
+
 
 ??? example "Details"
 
@@ -377,6 +420,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L336)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -397,6 +442,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L406)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -412,6 +459,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `calculateExchangeAmountMinusFees`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L390)</sub>
+
+
 
 ??? example "Details"
 
@@ -429,6 +478,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L99)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -444,6 +495,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `exchangeRates`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L87)</sub>
+
+
 
 ??? example "Details"
 
@@ -461,6 +514,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L83)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -476,6 +531,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `feePool`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L95)</sub>
+
+
 
 ??? example "Details"
 
@@ -493,6 +550,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L430)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -508,6 +567,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `reclaim`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L362)</sub>
+
+
 
 ??? example "Details"
 
@@ -525,6 +586,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L372)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -540,6 +603,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `remitFee`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L323)</sub>
+
+
 
 ??? example "Details"
 
@@ -557,6 +622,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L382)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -573,6 +640,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L91)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -588,6 +657,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `systemStatus`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L79)</sub>
+
+
 
 ??? example "Details"
 
@@ -606,6 +677,8 @@ The transaction is reverted if the given account is the [fee address](FeePool.md
 ### `setWaitingPeriodSecs`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/Exchanger.sol#L168)</sub>
+
+
 
 ??? example "Details"
 
@@ -647,6 +720,10 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
 
 <!-- Eg.
 
+
+---
+
+---
 
 ---
 ### `importAddresses`

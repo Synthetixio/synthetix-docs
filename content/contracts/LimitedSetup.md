@@ -26,6 +26,8 @@ This contract allows certain functions within inheriting contracts to only opera
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L6)</sub>
 
+
+
 The timestamp at which functions which have the [`onlyDuringSetup`](#onlyduringsetup) modifier will cease operating. This is determined by the `setupDuration` parameter passed into the contract [constructor](#constructor).
 
 
@@ -41,6 +43,8 @@ The timestamp at which functions which have the [`onlyDuringSetup`](#onlydurings
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L16)</sub>
 
+
+
 Reverts the transaction if the current timestamp is not before [`setupExpiryTime`](#setupexpirytime).
 
 
@@ -51,6 +55,8 @@ Reverts the transaction if the current timestamp is not before [`setupExpiryTime
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L12)</sub>
+
+
 
 ??? example "Details"
 
@@ -69,6 +75,8 @@ Reverts the transaction if the current timestamp is not before [`setupExpiryTime
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/LimitedSetup.sol#L12)</sub>
+
+
 
 ??? example "Details"
 

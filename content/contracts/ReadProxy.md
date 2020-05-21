@@ -27,6 +27,8 @@
 
 
 
+
+
 ---
 ### Inheritance Graph
 
@@ -51,6 +53,10 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L10)</sub>
 
+
+
+
+
 **Type:** `address`
 
 ## Function (Constructor)
@@ -60,6 +66,8 @@ graph TD
 ### `constructor`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L12)</sub>
+
+
 
 ??? example "Details"
 
@@ -83,6 +91,8 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L19)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -100,6 +110,8 @@ graph TD
 ### `setTarget`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L14)</sub>
+
+
 
 ??? example "Details"
 
@@ -133,8 +145,7 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/ReadProxy.sol#L36)</sub>
 
+
+
 - `(address newTarget)`
-
---
-
 

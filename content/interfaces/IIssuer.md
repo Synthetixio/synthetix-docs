@@ -17,6 +17,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L23)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -32,6 +34,8 @@
 ### `burnSynthsOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L25)</sub>
+
+
 
 ??? example "Details"
 
@@ -49,6 +53,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L31)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -64,6 +70,8 @@
 ### `burnSynthsToTargetOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L33)</sub>
+
+
 
 ??? example "Details"
 
@@ -81,6 +89,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L6)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -96,6 +106,8 @@
 ### `issueMaxSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L19)</sub>
+
+
 
 ??? example "Details"
 
@@ -113,6 +125,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L21)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -128,6 +142,8 @@
 ### `issueSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L11)</sub>
+
+
 
 ??? example "Details"
 
@@ -145,6 +161,8 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L13)</sub>
 
+
+
 ??? example "Details"
 
     **Signature**
@@ -160,6 +178,8 @@
 ### `lastIssueEvent`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/develop/contracts/interfaces/IIssuer.sol#L8)</sub>
+
+
 
 ??? example "Details"
 
