@@ -574,7 +574,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		.join('\n---');
 
 	// Do we build in place, or do we build a preview?
-	if (process.env.BUILD_MD_IN_PLACE) {
+	if (process.argv.includes('--overwrite')) {
 		fs.writeFileSync(outputFilePath, rawMdContent);
 	} else {
 		fs.writeFileSync(`${outputFilePath}.preview`, rawMdContent);
