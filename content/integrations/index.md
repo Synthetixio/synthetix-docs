@@ -1,6 +1,6 @@
 # Integrations
 
-Here is a list of Synthetix Integrations both on and offchain. For projects wishing to integate with Synthetix please see the technical [Integration guide](/integration-guide/)
+Here is a list of Synthetix Integrations both on and offchain. For projects wishing to integate with Synthetix please see the technical [Integration guide](/integration/guide/)
 
 ## The Graph
 
