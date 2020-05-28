@@ -70,6 +70,9 @@ nav:
           - Unstaking SNX: contracts/walkthrus/unstaking.md
       - Contracts:
           - AddressResolver: contracts/AddressResolver.md
+          - BinaryOption: contracts/BinaryOption.md
+          - BinaryOptionMarket: contracts/BinaryOptionMarket.md
+          - BinaryOptionMarketFactory: contracts/BinaryOptionMarketFactory.md
           - DelegateApprovals: contracts/DelegateApprovals.md
           - Depot: contracts/Depot.md
           - EscrowChecker: contracts/EscrowChecker.md
