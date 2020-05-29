@@ -14,6 +14,13 @@
 
 ---
 
+### Libraries
+
+- [SafeMath](SafeMath.md) for `uint`
+- [SafeDecimalMath](SafeDecimalMath.md) for `uint`
+
+---
+
 ## Constructor
 
 ## Views

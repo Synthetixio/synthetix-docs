@@ -41,9 +41,16 @@ graph TD
 
 ---
 
+### Libraries
+
+- [SafeMath](SafeMath.md) for `uint`
+- [SafeDecimalMath](SafeDecimalMath.md) for `uint`
+
+---
+
 ## Constructor
 
-The constructor initialises the parent market, as well and sets the initial bid on this option for the creator of the parent market.
+The constructor initialises the parent market address and sets the initial bid by the creator of the parent market on this option.
 
 ??? example "Details"
 
@@ -179,6 +186,52 @@ Reverts the transaction if the message sender is not the [market](#market).
 
 ---
 
+### `transfer`
+
+Transfers a quantity of options between accounts.
+Reverts if the balance in the sending account is insufficient, or if the destination address is the zero address.
+
+??? example "Details"
+    **Signature**
+    `function transfer(address _to, uint _value) returns (bool success)`
+    
+    **State Mutability**
+    `public`
+    
+---
+
+### `transferFrom`
+
+Allows an account to transfer a quantity of options on the behalf of another account.
+Reverts if the either the balance or sender approval is insufficient, or if either the destination or 
+sending addresses is the zero address.
+
+??? example "Details"
+    **Signature**
+    `function transferFrom(address _from, address _to, uint _value) returns (bool success)`
+    
+    **State Mutability**
+    `public`
+
+
+---
+
+### `approve`
+
+Allows an account to approve another account to transfer tokens on its behalf.
+Reverts if the designated spender is the zero account.
+
+??? example "Details"
+    **Signature**
+    `function approve(address _spender, uint _value) returns (bool success)`
+    
+    **State Mutability**
+    `public`
+
+## Functions (Restricted)
+
+---
+
 ### `bid`
 
 Allows the parent market to increase the bid for a particular address.
@@ -275,6 +328,8 @@ Allows the market to destroy this option contract.
     **Modifiers**
     
     * [onlyMarket](#onlymarket)
+    
+## Functions (Internal)
 
 ---
 
@@ -284,50 +339,6 @@ Implements the internal behaviour of the [`transfer`](#transfer) and [`transferF
 Reverts if either sender or recipient is the zero account, or if the balance in the sending account is insufficient.
 
     function _internalTransfer(address _from, address _to, uint _value) internal returns (bool success) {
-
----
-
-### `transfer`
-
-Transfers a quantity of options between accounts.
-Reverts if the balance in the sending account is insufficient, or if the destination address is the zero address.
-
-??? example "Details"
-    **Signature**
-    `function transfer(address _to, uint _value) returns (bool success)`
-    
-    **State Mutability**
-    `public`
-    
----
-
-### `transferFrom`
-
-Allows an account to transfer a quantity of options on the behalf of another account.
-Reverts if the either the balance or sender approval is insufficient, or if either the destination or 
-sending addresses is the zero address.
-
-??? example "Details"
-    **Signature**
-    `function transferFrom(address _from, address _to, uint _value) returns (bool success)`
-    
-    **State Mutability**
-    `public`
-
-
----
-
-### `approve`
-
-Allows an account to approve another account to transfer tokens on its behalf.
-Reverts if the designated spender is the zero account.
-
-??? example "Details"
-    **Signature**
-    `function approve(address _spender, uint _value) returns (bool success)`
-    
-    **State Mutability**
-    `public`
 
 ## Events
 
