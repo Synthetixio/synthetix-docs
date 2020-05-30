@@ -114,6 +114,12 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		Structs: {},
 		Constants: {},
 		Variables: {},
+		Constructor: {},
+		Views: {},
+		'Restricted Functions': {},
+		'Internal Functions': {},
+		'External Functions': {},
+		'Fallback Function': {},
 		Modifiers: {},
 		Events: {},
 	};
@@ -185,6 +191,8 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		delete contentJsonMd.Architecture;
 	}
 
+	const sortByName = (a, b) => (a.name > b.name ? 1 : -1);
+
 	// ******************************************** Structs ******************************************** //
 	if (contentJsonMd.Structs === undefined) {
 		contentJsonMd.Structs = {};
@@ -199,7 +207,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		});
 
 		// Inject in struct tables and source
-		curAstDocs.structs.map(x => {
+		curAstDocs.structs.sort(sortByName).map(x => {
 			// So many if/else ... If only we could make this into a monad....
 			if (contentJsonMd.Structs[`\`${x.name}\``] === undefined) {
 				contentJsonMd.Structs[`\`${x.name}\``] = {};
@@ -278,7 +286,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 				delete contentJsonMd[varHeadingName][x];
 			});
 
-			vars.map(x => {
+			vars.sort(sortByName).map(x => {
 				if (contentJsonMd[varHeadingName][`\`${x.name}\``] === undefined) {
 					contentJsonMd[varHeadingName][`\`${x.name}\``] = {};
 				}
@@ -329,7 +337,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 				delete contentJsonMd[funcHeadingName][x];
 			});
 
-			funcs.map(x => {
+			funcs.sort(sortByName).map(x => {
 				const functionSourceMdContent = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
 
 				let functionDetailMdContent = '??? example "Details"\n\n';
@@ -388,20 +396,12 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 				x.name = '() (fallback function)';
 				return x;
 			});
-		const viewFuncs = curAstDocs.functions.filter(x => x.visibility === 'view');
+		const viewFuncs = curAstDocs.functions.filter(x => x.stateMutability === 'view' && x.visibility === 'external');
 		const internalFuncs = curAstDocs.functions.filter(x => x.visibility === 'internal');
-		const onlyOwnerFuncs = curAstDocs.functions.filter(x => x.modifiers.includes('onlyOwner'));
-		const onlyOracleFuncs = curAstDocs.functions.filter(x => x.modifiers.includes('onlyOracle'));
+		const onlyOwnerFuncs = curAstDocs.functions.filter(x => x.modifiers.find(modifier => /^only/.test(modifier)));
 
 		// Already declared functions will be ignored
-		const alreadyDeclaredFunctions = [
-			constructorFunc,
-			fallbackFunc,
-			viewFuncs,
-			internalFuncs,
-			onlyOwnerFuncs,
-			onlyOracleFuncs,
-		]
+		const alreadyDeclaredFunctions = [constructorFunc, fallbackFunc, viewFuncs, internalFuncs, onlyOwnerFuncs]
 			.reduce((acc, x) => Array.prototype.concat(acc, x), [])
 			.map(x => x.name);
 
@@ -410,13 +410,12 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 		// Delete existing headings
 		const headingsAndFunctions = [
-			['Function (Constructor)', constructorFunc],
-			['Function (Fallback)', fallbackFunc],
-			['Functions (View)', viewFuncs],
-			['Functions (Internal)', internalFuncs],
-			['Functions (onlyOwner)', onlyOwnerFuncs],
-			['Functions (onlyOracle)', onlyOracleFuncs],
-			['Functions', leftoverFunctions],
+			['Constructor', constructorFunc],
+			['Views', viewFuncs],
+			['Restricted Functions', onlyOwnerFuncs],
+			['Internal Functions', internalFuncs],
+			['External Functions', leftoverFunctions],
+			['Fallback Function', fallbackFunc],
 		];
 
 		// Generate function heading
@@ -438,7 +437,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			delete contentJsonMd.Modifiers[x];
 		});
 
-		curAstDocs.modifiers.map(x => {
+		curAstDocs.modifiers.sort(sortByName).map(x => {
 			const modifierSourceMd = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
 
 			// So many if/else ... If only we could make this into a monad....
@@ -473,7 +472,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			delete contentJsonMd.Events[x];
 		});
 
-		curAstDocs.events.map(x => {
+		curAstDocs.events.sort(sortByName).map(x => {
 			const eventSourceMd = `${getContractSourceLink(contractSource, 'Source', x.lineNumber)}\n\n`;
 			const eventParamMd = `- \`${x.parameters}\`\n\n`;
 
@@ -499,77 +498,15 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		delete contentJsonMd.Events;
 	}
 
-	// ******************************************** Sort ******************************************** //
-	// Sort each sub heading
-	// Unfortunately Object sorting is depending on the order
-	// they're inserted in. And because we're reading from existing state
-	// we can't just inject
-	const sortableH2s = ['Constants', 'Variables', 'Structs', 'Modifiers', 'Events'];
-	const functionH2s = 'Function';
-	Object.keys(contentJsonMd)
-		.filter(h2 => sortableH2s.includes(h2) || h2.includes(functionH2s))
-		.map(h2 => {
-			let temp = {};
-
-			Object.keys(contentJsonMd[h2])
-				.sort((a, b) => {
-					const aL = a.toLowerCase();
-					const bL = b.toLowerCase();
-
-					return aL === bL ? 0 : aL > bL ? 1 : -1;
-				})
-				.map(h3 => {
-					temp = { ...temp, ...{ [h3]: contentJsonMd[h2][h3] } };
-				});
-
-			contentJsonMd[h2] = temp;
-		});
-
-	// Sorted contentJson
-	let contentJsonMdSorted = {};
-
-	// Make sure structure like Description, Architecture, etc stays in the same spot
-	Object.keys(contentJsonMd)
-		.filter(h2 => !(sortableH2s.includes(h2) || h2.includes(functionH2s)))
-		.map(h2 => {
-			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
-		});
-
-	// Otherwise sort everything else according to this order
-	// "Structs", 'Constants", "Variables", "Modifiers", "Functions", "Events"
-	// IF they exist in the heading
-	sortableH2s
-		.filter(x => !x.toLowerCase().includes('events'))
-		.filter(x => Object.keys(contentJsonMd).includes(x))
-		.map(h2 => {
-			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
-		});
-
-	// Add function headings
-	Object.keys(contentJsonMd)
-		.filter(h2 => h2.includes(functionH2s))
-		.sort((a, b) => {
-			const aL = a.toLowerCase();
-			const bL = b.toLowerCase();
-
-			return aL === bL ? 0 : aL > bL ? 1 : -1;
-		})
-		.map(h2 => {
-			contentJsonMdSorted = { ...contentJsonMdSorted, ...{ [h2]: contentJsonMd[h2] } };
-		});
-
-	// Insert Events at the end
-	if (Object.keys(contentJsonMd).includes('Events')) {
-		contentJsonMdSorted = { ...contentJsonMdSorted, ...{ Events: contentJsonMd.Events } };
-	}
-
 	// ******************************************** Write to file ******************************************** //
 	// Convert to raw and write to file
 	// also injects line between each ###
 	const rawMdContent = md2json
-		.toMd({ [contractName]: contentJsonMdSorted })
+		.toMd({ [contractName]: contentJsonMd })
+		.replace(/\n\n\n\n/g, '\n\n')
+		.replace(/\n\n\n/g, '\n\n')
 		.split('###')
-		.join('---\n###')
+		.join('---\n\n###')
 		.split('\n---\n---')
 		.join('\n---');
 
