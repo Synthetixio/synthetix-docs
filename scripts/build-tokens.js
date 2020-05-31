@@ -112,7 +112,10 @@ const addInverseParameters = ({ inverted, asset, name }) => {
 
 const addIndexParameters = ({ index, inverted, asset, name }) => {
 	if (!index) return '';
-	const header = `**Index of**: [s${asset}](#${getLinkToAsset({ name, asset })})\n\n`;
+	const header = `**Index of**: [s${asset}](#${getLinkToAsset({
+		name,
+		asset,
+	})})\n\n`;
 	if (inverted) {
 		// don't show index parameters here if also inverted, the link to the long asset will suffice
 		return header;
@@ -152,7 +155,7 @@ ${tokens
 			`## ${name} (${symbol})\n\n` +
 			// Note: Manual addition of SIP-34 check of MKR
 			(asset === 'MKR'
-				? '!!! warning "Suspended"\n\t\tMKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)\n\n'
+				? '!!! warning "Suspended"\n\n\t\tMKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)\n\n'
 				: '') +
 			`**Address:** [${address}](https://etherscan.io/token/${address})\n\n` +
 			`**Decimals:** ${decimals}\n\n` +

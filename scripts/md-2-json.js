@@ -19,72 +19,72 @@ function parse(mdContent) {
 		orderedDepth = 1;
 	let output = json.reduce(function(result, item) {
 		switch (item.type) {
-		case 'heading':
-			if (!currentHeading || item.depth == 1) {
-				headings = [];
-				result[item.text] = {};
-				currentHeading = result[item.text];
-				headings.push(item.text);
-			} else {
-				let parentHeading = getParentHeading(headings, item, result);
-				headings = parentHeading.headings;
-				currentHeading = parentHeading.parent;
-				currentHeading[item.text] = {};
-				currentHeading = currentHeading[item.text];
-			}
-			break;
-		case 'list':
-			text = item.items.map(x => x.raw).join('\n');
-			currentHeading.raw = currentHeading.raw ? currentHeading.raw + text : text;
-			break;
-		case 'list_start':
-			isOrdered = item.ordered;
-			orderedDepth = item.start;
-			break;
-		case 'list_end':
-			if (currentHeading.raw) {
-				currentHeading.raw = checkNextLine(currentHeading.raw);
-			}
-			break;
-		case 'text':
-			if (isOrdered) {
-				ordered = orderedDepth + '. ';
-				orderedDepth++;
-			} else {
-				ordered = '- ';
-			}
-			text = ordered + item.text + '\n';
-			currentHeading.raw = currentHeading.raw ? currentHeading.raw + text : text;
-			break;
-		case 'html':
-			if (!currentHeading) {
-				currentHeading = result;
-			}
-			para = checkNextLine(item.text);
-			currentHeading.raw = currentHeading.raw ? currentHeading.raw + para : para;
-			break;
-		case 'table':
-			tableContent = getTableContent(item);
-			currentHeading.raw = currentHeading.raw ? currentHeading.raw + tableContent : tableContent;
-			break;
-		case 'code':
-			codeContent = getCodeContent(item);
-			currentHeading.raw = currentHeading.raw ? currentHeading.raw + codeContent : codeContent;
-			break;
-		case 'space':
-			if (currentHeading) {
-				currentHeading.raw = currentHeading.raw ? currentHeading.raw + '\n' : '\n';
-			}
-			break;
-		case 'paragraph':
-			if (!currentHeading) {
-				currentHeading = result;
-			}
-			para = checkNextLine(item.text);
-			currentHeading.raw = currentHeading.raw ? currentHeading.raw + para : para;
-			break;
-		default:
-			break;
+			case 'heading':
+				if (!currentHeading || item.depth == 1) {
+					headings = [];
+					result[item.text] = {};
+					currentHeading = result[item.text];
+					headings.push(item.text);
+				} else {
+					let parentHeading = getParentHeading(headings, item, result);
+					headings = parentHeading.headings;
+					currentHeading = parentHeading.parent;
+					currentHeading[item.text] = {};
+					currentHeading = currentHeading[item.text];
+				}
+				break;
+			case 'list':
+				text = item.items.map(x => x.raw).join('\n');
+				currentHeading.raw = currentHeading.raw ? currentHeading.raw + text : text;
+				break;
+			case 'list_start':
+				isOrdered = item.ordered;
+				orderedDepth = item.start;
+				break;
+			case 'list_end':
+				if (currentHeading.raw) {
+					currentHeading.raw = checkNextLine(currentHeading.raw);
+				}
+				break;
+			case 'text':
+				if (isOrdered) {
+					ordered = orderedDepth + '. ';
+					orderedDepth++;
+				} else {
+					ordered = '- ';
+				}
+				text = ordered + item.text + '\n';
+				currentHeading.raw = currentHeading.raw ? currentHeading.raw + text : text;
+				break;
+			case 'html':
+				if (!currentHeading) {
+					currentHeading = result;
+				}
+				para = checkNextLine(item.text);
+				currentHeading.raw = currentHeading.raw ? currentHeading.raw + para : para;
+				break;
+			case 'table':
+				tableContent = getTableContent(item);
+				currentHeading.raw = currentHeading.raw ? currentHeading.raw + tableContent : tableContent;
+				break;
+			case 'code':
+				codeContent = getCodeContent(item);
+				currentHeading.raw = currentHeading.raw ? currentHeading.raw + codeContent : codeContent;
+				break;
+			case 'space':
+				if (currentHeading) {
+					currentHeading.raw = currentHeading.raw ? currentHeading.raw + '\n' : '\n';
+				}
+				break;
+			case 'paragraph':
+				if (!currentHeading) {
+					currentHeading = result;
+				}
+				para = checkNextLine(item.text);
+				currentHeading.raw = currentHeading.raw ? currentHeading.raw + para : para;
+				break;
+			default:
+				break;
 		}
 		return result;
 	}, {});
@@ -138,18 +138,18 @@ function getTableContent(item) {
 	}
 	for (let i = 0; i < item.align.length; i++) {
 		switch (item.align[i]) {
-		case 'right':
-			separator += '--:|';
-			break;
-		case 'left':
-			separator += ':--|';
-			break;
-		case 'center':
-			separator += ':-:|';
-			break;
-		default:
-			separator += '---|';
-			break;
+			case 'right':
+				separator += '--:|';
+				break;
+			case 'left':
+				separator += ':--|';
+				break;
+			case 'center':
+				separator += ':-:|';
+				break;
+			default:
+				separator += '---|';
+				break;
 		}
 	}
 	for (let i = 0; i < item.cells.length; i++) {

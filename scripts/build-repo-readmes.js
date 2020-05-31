@@ -21,7 +21,7 @@ console.log('Building library pages');
 	);
 
 	readmes.forEach(([repo, path, content]) =>
-		fs.writeFileSync(path, `!!! info "Notice"\n\t\tImported from ${repo}\n\n${content}`),
+		fs.writeFileSync(path, `!!! info "Notice"\n\n\t\tImported from ${repo}\n\n${content}`),
 	);
 
 	// now do synthetix publish script
@@ -30,7 +30,7 @@ console.log('Building library pages');
 		.then(({ data }) =>
 			fs.writeFileSync(
 				path.join(__dirname, '..', 'content', 'contracts', 'publisher.md'),
-				'!!! info "Notice"\n\t\tThis details the `publish` script in the synthetix repository for building, deploying and verifying contracts.\n\n' +
+				'!!! info "Notice"\n\n\t\tThis details the `publish` script in the synthetix repository for building, deploying and verifying contracts.\n\n' +
 					'\t\tImported from https://github.com/Synthetixio/synthetix/tree/master/publish\n\n' +
 					data,
 			),

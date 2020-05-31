@@ -96,7 +96,8 @@ const formatInheritanceGraphToMermaidMd = graph => {
 \`\`\`mermaid
 graph TD
 ${acc(graph)}
-\`\`\`\n\n`;
+\`\`\`
+`;
 };
 
 const generateContractMarkdown = (contractSource, contractName, contractKind) => {
@@ -152,14 +153,21 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 	// parse new AST docs
 	const curAstDocs = Object.assign(
-		{ variables: [], libraries: [], structs: [], functions: [], modifiers: [], events: [] },
+		{
+			variables: [],
+			libraries: [],
+			structs: [],
+			functions: [],
+			modifiers: [],
+			events: [],
+		},
 		e3(astDocs, contractSource, contractKind, contractName),
 	);
 
 	// ******************************************** Description ******************************************** //
 	// Include Source into existing description
-	const sourceMd = `\n**Source:** [${contractSource}](${baseUrl}${contractSource})\n\n`;
-	contractBody.Description.raw = (existingContent.Description.raw || '').split('**Source:**')[0] + sourceMd;
+	const sourceLink = `\n**Source:** [${contractSource}](${baseUrl}${contractSource})`;
+	contractBody.Description.raw = ((existingContent.Description || {}).raw || '').split('**Source:**')[0] + sourceLink;
 
 	// ******************************************** Architecture ******************************************** //
 	const graph = getInheritanceGraph(contractSource, contractName, contractKind);
@@ -168,7 +176,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 	// Architecture's inheritance graph
 	if (graphHasInheritance) {
-		contractBody.Architecture['Inheritance Graph'].raw = graphMd;
+		contractBody.Architecture['Inheritance Graph'].raw = graphMd + '\n\n';
 	}
 
 	if (curAstDocs.libraries.length) {
@@ -216,7 +224,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	};
 
 	const getContractSourceLink = lineNumber => {
-		return `<sub>[Source](${baseUrl}${contractName}#L${lineNumber})</sub>`;
+		return `<sub>[Source](${baseUrl}${contractSource}#L${lineNumber})</sub>`;
 	};
 
 	const variableCombiner = ({ lineNumber, type, existingEntry = {} }) => {
@@ -229,10 +237,10 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			// Take everything before a potential table
 			.split('| Field')[0];
 
-		const variableSourceMdContent = `${getContractSourceLink(lineNumber)}\n\n`;
-		const variableMdContent = `**Type:** \`${type}\`\n\n`;
+		const sourceLink = getContractSourceLink(lineNumber);
+		const typeDetails = `**Type:** \`${type}\``;
 
-		return variableSourceMdContent + strippedContent + variableMdContent;
+		return [sourceLink, strippedContent, typeDetails].join('\n\n');
 	};
 
 	// Now process entries for each section
