@@ -2,12 +2,12 @@
 
 ## Description
 
-The `BinaryOptionMarketFactory` contract is responsible for creating and destroying
+The `BinaryOptionMarketFactory` contract is responsible for [creating](#createmarket) and [destroying](#destroymarket)
 [`BinaryOptionMarket`](BinaryOptionMarket.md) instances, as well as
-keeping track of the set of currently-active markets and the total value of deposits
+keeping track of the set of [currently-active markets](#markets) and the [total value of deposits](#totaldeposited)
 across those markets.
 
-In addition, many static market parameters such as the current fee levels,
+In addition, various static market parameters such as the current fee levels,
 are maintained in the factory, and these are inherited by new markets when they are
 created.
 
