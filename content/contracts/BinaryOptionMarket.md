@@ -115,7 +115,7 @@ Timestamps of important dates.
 | ------------- | ---------------- | ----------- |
 | `biddingEnd`  | `uint` (seconds) | The unix timestamp at which the bidding phase transitions to the trading phase. |
 | `maturity`    | `uint` (seconds) | The unix timestamp at which the trading phase transitions to the maturity phase. |
-| `destruction` | `uint` (seconds) | The unix timestamp at which the maturity phase transitions to the destruction. |
+| `destruction` | `uint` (seconds) | The unix timestamp at which the maturity phase transitions to the destruction phase. |
 
 ---
 
@@ -235,10 +235,10 @@ Returns true if the market can currently be resolved, which is the case when:
 
 If the market has not resolved, returns the side of the market that would pay out if it was resolved
 at the current price.
-Otherwise, if the market has resolved, the function returns the value that the market resolved to when [`resolve()`][#resolve]
-was called at maturity.
+Otherwise, if the market has resolved, the function returns the value that the market resolved to when
+[`resolve()`](#resolve) was successfully called.
 
-Note that no check is performed that the price was updated within the [maturity window](#times).
+Note that no check is performed that the underlying asset price was updated within the [maturity window](#times).
 
 ??? example "Details"
     **Signature**
@@ -255,7 +255,7 @@ Note that no check is performed that the price was updated within the [maturity 
 Returns the value of sUSD that will be paid to the caller if they successfully
 [destroy](#selfdestruct) this market. If the market is not destructible, this function
 returns 0. Otherwise the destruction reward is the [collected creator fees](#feescollected) plus
-any unexercised options.
+the value of any unexercised options.
 
 Since there is [a creator-exclusive destruction period](BinaryOptionMarketFactory.md#publiclydestructibletime),
 this means that market creators can recover their initial bids here if they were never exercised.
@@ -347,7 +347,7 @@ market has transitioned to the [trading phase](#phase).
 Returns the [total balance of options claimable](BinaryOption.md#totalclaimable)
 from the [current total of bids](BinaryOption.md#totalbids) on each side of the market.
 
-Note that due to rounding, these may not be exactly the quantities which are actually claimed in the end.
+Note that due to rounding, these may not predict exactly the quantities which will actually claimed in the end.
 Like [`claimableBids`](#claimablebids), this function still operates during the [bidding phase](#phase),
 but will not attain its correct value until bidding has ended.
 
@@ -682,7 +682,7 @@ True if the market has been [resolved](#resolve), and false otherwise.
 
 ### `_feeMultiplier`
 
-Equal to `1 - (creatorFee + poolFee)`, which is a denominating factor in [price calculations](#_updateprices).
+Equal to $1 - (\text{creatorFee} + \text{poolFee})$, which is a denominating factor in [price calculations](#_updateprices).
 Storing this saves recomputing it on each bid or refund.
 
 **Type:** `uint private`
@@ -720,15 +720,16 @@ Reverts the transaction if the [factory contract](BinaryOptionMarketFactory.md) 
 ### `bid`
 
 Allows a user to place an sUSD bid on one or the other side of the market.
-To process the bid, the market increments the user's [bid balance](#bidsof) on the appropriate option contract,
-as well as incrementing the total value deposited both [here](#deposited) and in the
-[factory contract](BinaryOptionMarketFactory.md#totaldeposited). The bid quantities having been updated,
-the option prices are [updated](#_updateprices) to reflect the changed odds.
 
-The sUSD quantity is withdrawn from the message sender's wallet by a call to
-[BinaryOption.transferFrom](BinaryOption.md#transferfrom), so the caller must have ensured that
-they have granted the market sufficient [approval](BinaryOption.md#approve) and that they possess a sufficient
-sUSD balance to support the bid.
+To process a bid, the market increments the user's [bid balance](#bidsof) on the appropriate option contract,
+as well as incrementing the total value deposited both [in this market](#deposited) and in the
+[factory contract](BinaryOptionMarketFactory.md#totaldeposited). The deposit quantities having been updated,
+the option prices are [recomputed](#_updateprices) to reflect the changed odds.
+
+The value of the bid is withdrawn from the message sender's sUSD balance by a call to
+`ERC20.transferFrom`, so the caller must have ensured that
+they have granted the market sufficient approval and that they have enough
+sUSD to support the bid.
 
 The transaction reverts if this function is called outside the bidding period.
 
@@ -753,37 +754,41 @@ The transaction reverts if this function is called outside the bidding period.
 
 ### `refund`
 
-    function refund(Side side, uint value) external onlyDuringBidding returns (uint refundMinusFee) {
-        if (value == 0) {
-            return 0;
-        }
+Refunds an existing bid, remitting the refund value minus a percentage determined by the [refund fee rate](#fees) as sUSD.
+The function returns the value refunded as sUSD.
 
-        // Require the market creator to leave sufficient capital in the market.
-        if (msg.sender == creator) {
-            (uint longBid, uint shortBid) = bidsOf(msg.sender);
-            uint creatorCapital = longBid.add(shortBid);
-            require(minimumInitialLiquidity <= creatorCapital.sub(value), "Minimum creator capital requirement violated.");
+The full value of the refund is deducted from the caller's balance, while this value minus the refund fee
+is actually remitted as sUSD. The deposited quantity in [the market](#deposited)
+and in the [factory contract](BinaryOptionMarketFactory.md#totaldeposited) are decremented by the transferred
+value. The deposit quantities having been updated, the option prices are [recomputed](#_updateprices) to reflect the
+changed odds.
 
-            uint thisBid = _chooseSide(side, longBid, shortBid);
-            require(value < thisBid, "Cannot refund entire creator position.");
-        }
+The refund fee, which will eventually be paid out to option-holders, is retained in the pot,
+although not on either side's bid total. As such, refunds effectively discount option
+prices for those remaining in the market.
 
-        // Safe subtraction here and in related contracts will fail if either the
-        // total supply, deposits, or wallet balance are too small to support the refund.
-        uint refundSansFee = value.multiplyDecimalRound(SafeDecimalMath.unit().sub(fees.refundFee));
+If the message sender is the market's [creator](#creator), then a refund transaction will revert
+if it would either violate the [minimum liquidity requirement](#minimuminitialliquidity), or if
+it would refund their entire position on either side of the market.
 
-        _option(side).refund(msg.sender, value);
-        emit Refund(side, msg.sender, refundSansFee, value.sub(refundSansFee));
+The transaction reverts if this function is called outside the bidding period.
 
-        uint _deposited = deposited.sub(refundSansFee);
-        deposited = _deposited;
-        _factory().decrementTotalDeposited(refundSansFee);
-        _sUSD().transfer(msg.sender, refundSansFee);
+??? example "Details"
+    **Signature**
 
-        (uint longTotalBids, uint shortTotalBids) = totalBids();
-        _updatePrices(longTotalBids, shortTotalBids, _deposited);
-        return refundSansFee;
-    }
+    `function refund(Side side, uint value) returns (uint refundMinusFee)`
+ 
+    **State Mutability**
+    
+    `external`
+    
+    **Modifiers**
+    
+    * [`onlyDuringBidding`](#onlyduringbidding)
+   
+    **Emitted Events**  
+    
+    * [`Refund(side, msg.sender, refundSansFee, fee)`](#refund)
 
 ---
 
@@ -903,18 +908,37 @@ The transaction reverts if this function is called outside the bidding period.
 
 ### `_updatePrices`
 
-    function _updatePrices(uint longBids, uint shortBids, uint _deposited) internal {
-        require(longBids != 0 && shortBids != 0, "Bids on each side must be nonzero.");
-        uint optionsPerSide = _deposited.multiplyDecimalRound(_feeMultiplier);
+Updates the current [prices](#prices) from the long and short bid quantities, and the total deposited
+value in the contract.
 
-        // The math library rounds up on an exact half-increment -- the price on one side may be an increment too high,
-        // but this only implies a tiny extra quantity will go to fees.
-        uint longPrice = longBids.divideDecimalRound(optionsPerSide);
-        uint shortPrice = shortBids.divideDecimalRound(optionsPerSide);
+The prices are computed approximately as follows:
 
-        prices = Prices(longPrice, shortPrice);
-        emit PricesUpdated(longPrice, shortPrice);
-    }
+    longPrice  = longBids  / (feeMultiplier * deposited)
+    shortPrice = shortBids / (feeMultiplier * deposited)
+
+Interpreting [`/`](SafeDecimalMath.md#dividedecimalround) and [`*`](SafeDecimalMath.md#multiplydecimalround)
+as [fixed point math operators (with rounding)](SafeDecimalMath.md).
+
+Note that the denominator `feeMultiplier * deposited` is the total value of options awarded to each side of the market,
+and `deposited` is equal to `longBids + shortBids + refundFeesCollected`.
+
+If either the long or short bids are zero, then the transaction is reverted, as 
+this would lead to a zero price, and hence divisions-by-zero when computing claimable option
+quantities. This means that the initial bids cannot both be zero, nor can the entire balance
+on either side of the market be refunded.
+
+??? example "Details"
+    **Signature**
+
+    `function _updatePrices(uint longBids, uint shortBids, uint _deposited)`
+    
+    **State Mutability**
+    
+    `internal`
+    
+    **Emitted Events**  
+    
+    * [`PricesUpdated(longPrice, shortPrice)`](#pricesupdated)
 
 ## Events
 
