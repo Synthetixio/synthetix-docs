@@ -2,6 +2,32 @@
 
 ## Description
 
+TODO
+
+### Market Phases
+
+TODO
+
+### Bidding and Refunding
+
+TODO
+
+### Claiming Options
+
+TODO
+
+### Market Resolution
+
+TODO
+
+### Exercising Options
+
+TODO
+
+### Creating and Destroying Markets
+
+TODO
+
 ## Architecture
 
 ---
@@ -731,7 +757,8 @@ The value of the bid is withdrawn from the message sender's sUSD balance by a ca
 they have granted the market sufficient approval and that they have enough
 sUSD to support the bid.
 
-The transaction reverts if this function is called outside the bidding period.
+The transaction reverts if this function is called outside the bidding period, if the system is suspended,
+or if the factory contract is paused.
 
 ??? example "Details"
     **Signature**
@@ -771,7 +798,8 @@ If the message sender is the market's [creator](#creator), then a refund transac
 if it would either violate the [minimum liquidity requirement](#minimuminitialliquidity), or if
 it would refund their entire position on either side of the market.
 
-The transaction reverts if this function is called outside the bidding period.
+The transaction reverts if this function is called outside the bidding period, if the system is suspended,
+or if the factory contract is paused.
 
 ??? example "Details"
     **Signature**
@@ -794,114 +822,119 @@ The transaction reverts if this function is called outside the bidding period.
 
 ### `resolve`
 
-    function resolve() public onlyAfterMaturity factoryNotPaused {
-        require(!resolved, "The market has already resolved.");
-        _systemStatus().requireSystemActive();
+This function allows anyone to resolve the market, as long as it satisfies the conditions
+of [`canResolve()`](#canresolve).
 
-        // We don't need to perform stale price checks, so long as the price was
-        // last updated after the maturity date.
-        (uint price, uint updatedAt) = oraclePriceAndTimestamp();
-        require(_withinMaturityWindow(updatedAt), "The price was last updated before the maturity window.");
+Market resolution requires fetching the latest price of this market's underlying asset, checking
+that it was last updated within the oracle maturity window, and then computing and saving
+the fees that were collected. After a successful invocation, the variable [`resolved`](#resolved)
+will be true. The final oracle price is saved and can be queried from
+[`oracleDetails.finalPrice`](#oracledetails).
 
-        oracleDetails.finalPrice = price;
-        resolved = true;
+This function reverts the transaction if the system is suspended or the factory contract is paused.
 
-        // Save the fees collected since payouts will be made, meaning
-        // the fee take will no longer be computable from the current deposits.
-        uint _deposited = deposited;
-        feesCollected.pool = _deposited.multiplyDecimalRound(fees.poolFee);
-        feesCollected.creator = _deposited.multiplyDecimalRound(fees.creatorFee);
+??? example "Details"
+    **Signature**
 
-        emit MarketResolved(result(), price, updatedAt);
-    }
+    `function resolve()`
+    
+    **State Mutability**
+    
+    `public`
+    
+    **Modifiers**
+    
+    * [`onlyAfterMaturity`](#onlyaftermaturity)
+    * [`factoryNotPaused`](#factorynotpaused)
+    
+    **Emitted Events**
+    
+    * [`MarketResolved(result(), price, updatedAt)`](#marketresolved)
 
 ---
 
 ### `claimOptions`
 
-    function claimOptions() public onlyAfterBidding factoryNotPaused returns (uint longClaimed, uint shortClaimed) {
-        _systemStatus().requireSystemActive();
+This function claims all options [owing](#claimablebids) to the message sender on both sides of the market.
+The number of options owed is simply the user's [bid balances](#bidsof), divided by the
+[current option prices](#prices). The caller's bid balances are set to zero, while the appropriate number
+of options are credited to their wallet.
 
-        uint longOptions = options.long.claim(msg.sender);
-        uint shortOptions = options.short.claim(msg.sender);
+This function reverts the transaction if the system is suspended or the factory contract is paused.
 
-        if (longOptions != 0 || shortOptions != 0) {
-            emit OptionsClaimed(msg.sender, longOptions, shortOptions);
-        }
+??? example "Details"
+    **Signature**
 
-        return (longOptions, shortOptions);
-    }
+    `function claimOptions() returns (uint longClaimed, uint shortClaimed)`
+    
+    **State Mutability**
+    
+    `public`
+    
+    **Modifiers**
+    
+    * [`onlyAfterBidding`](#onlyafterbidding)
+    * [`factoryNotPaused`](#factorynotpaused)
+   
+    **Emitted Events**
+    
+    * [`OptionsClaimed(msg.sender, longOptions, shortOptions)`](#optionsclaimed)
 
 ---
 
 ### `exerciseOptions`
 
-    function exerciseOptions() external returns (uint) {
-        // The market must be resolved if it has not been.
-        if (!resolved) {
-            resolve();
-        }
+`exerciseOptions` allows a user to claim any sUSD owed to them after their options have matured.
+This function will exercise any options held by the message sender on either side of the market,
+zeroing out their option balances. If the caller holds $n$ options on the winning side of the market,
+they will be transferred $n$ sUSD. Any options held on the losing side of the market will yield no
+payout. Upon exercising options, the quantity of sUSD paid to the called will be deducted from
+the tracked totals [here](#deposited), and in the [factory contract](BinaryOptionMarketFactory.md#totaldeposited).
 
-        // If there are options to be claimed, claim them and proceed.
-        (uint claimableLong, uint claimableShort) = claimableBy(msg.sender);
-        if (claimableLong != 0 || claimableShort != 0) {
-            claimOptions();
-        }
+If the market is unresolved at call time, it will be resolved if it can be. If the caller
+has unclaimed options, they will be claimed before they are exercised.
 
-        // If the account holds no options, do nothing.
-        (uint longBalance, uint shortBalance) = balancesOf(msg.sender);
-        if (longBalance == 0 && shortBalance == 0) {
-            return 0;
-        }
+This function reverts the transaction if the system is suspended or the factory contract is paused.
 
-        // Each option only need to be exercised if the account holds any of it.
-        if (longBalance != 0) {
-            options.long.exercise(msg.sender);
-        }
-        if (shortBalance != 0) {
-            options.short.exercise(msg.sender);
-        }
+??? example "Details"
+    **Signature**
 
-        // Only pay out the side that won.
-        uint payout = _chooseSide(result(), longBalance, shortBalance);
-        emit OptionsExercised(msg.sender, payout);
-        if (payout != 0) {
-            deposited = deposited.sub(payout);
-            _factory().decrementTotalDeposited(payout);
-            _sUSD().transfer(msg.sender, payout);
-        }
-        return payout;
-    }
+    `function exerciseOptions() returns (uint)`
+    
+    **State Mutability**
+    
+    `external`
+    
+    **Emitted Events**
+    
+    * [`OptionsExercised(msg.sender, payout)`](#optionsexercised)
 
 ---
 
 ### `selfDestruct`
 
-    function selfDestruct(address payable beneficiary) external onlyOwner {
-        require(resolved, "Market unresolved.");
-        require(_destructible(), "Market cannot be destroyed yet.");
+This function allows the factory to destroy this market at the end of its life.
+Upon destruction, the [destruction reward](#destructionreward)
+is computed and paid to the beneficiary
+(whoever [initiated destruction in the factory contract](BinaryOptionMarketFactory.md#destroymarket)),
+and any remaining tokens are sent to the [fee pool](FeePool.md#fee_address), and these quantities
+will be deducted from the total tracked in the [factory](BinaryOptionMarketFactory.md#totaldeposited).
+The market will also destroy its child [`BinaryOption`](#options) instances before it destroys itself.
 
-        uint _deposited = deposited;
-        _factory().decrementTotalDeposited(_deposited);
-        // And the self destruction implies the corresponding `deposited = 0;`
+The function will revert if the caller is not the owner, if the market is not [resolved](#resolved), or if
+it is not yet [destructible](#_destructible), if the factory is paused, or the system is suspended.
 
-        // The creator fee, along with any unclaimed funds, will go to the beneficiary.
-        // If the quantity remaining is too small or large due to rounding errors or direct transfers,
-        // this will affect the pool's fee take.
-        ISynth synth = _sUSD();
-        synth.transfer(beneficiary, _destructionReward(_deposited));
-
-        // Transfer the balance rather than the deposit value in case any synths have been sent directly.
-        synth.transfer(_feePool().FEE_ADDRESS(), synth.balanceOf(address(this)));
-
-        // Destroy the option tokens before destroying the market itself.
-        options.long.selfDestruct(beneficiary);
-        options.short.selfDestruct(beneficiary);
-
-        // Good night
-        selfdestruct(beneficiary);
-    }
-
+??? example "Details"
+    **Signature**
+    `function selfDestruct(address payable beneficiary) external onlyOwner`
+    
+    **State Mutability**
+    `external`
+    
+    **Modifiers**
+    
+    * [`onlyOwner`](Owned.md#onlyowner)
+    
 ## Functions (Internal)
 
 ---
@@ -946,35 +979,47 @@ on either side of the market be refunded.
 
 ### `Bid`
 
-    event Bid(Side side, address indexed account, uint value);
+A bid was made.
+
+**Signature:** `Bid(Side side, address indexed account, uint value)`
     
 ---
 
 ### `Refund`
 
-    event Refund(Side side, address indexed account, uint value, uint fee);
+A refund was processed. The `value` argument is the quantity of sUSD actually refunded, without the fee.
+
+**Signature:** `Refund(Side side, address indexed account, uint value, uint fee)`
     
 ---
 
 ### `PricesUpdated`
 
-    event PricesUpdated(uint longPrice, uint shortPrice);
+The option prices were updated.
+
+**Signature:** `PricesUpdated(uint longPrice, uint shortPrice)`
     
 ---
 
 ### `MarketResolved`
 
-    event MarketResolved(Side result, uint oraclePrice, uint oracleTimestamp);
+The market was resolved.
+
+**Signature:** `MarketResolved(Side result, uint oraclePrice, uint oracleTimestamp)`
     
 ---
 
 ### `OptionsClaimed`
 
-    event OptionsClaimed(address indexed account, uint longOptions, uint shortOptions);
+A quantity of options was claimed.
+
+**Signature:** `OptionsClaimed(address indexed account, uint longOptions, uint shortOptions)`
     
 ---
 
 ### `OptionsExercised`
 
-    event OptionsExercised(address indexed account, uint value);
+A quantity of options was exercised.
+
+**Signature:** `OptionsExercised(address indexed account, uint value)`
 
