@@ -4,13 +4,12 @@
 
 A small utility contract that augments the SNX escrow contract to allow extracting a user's schedule as an array rather than as individual entries.
 
-
-
-**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/EscrowChecker.sol)
+**Source:** [EscrowChecker.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/EscrowChecker.sol)
 
 ## Architecture
 
 ---
+
 ### Inheritance Graph
 
 <centered-image>
@@ -18,67 +17,49 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 </centered-image>
 
 ---
+
 ### Related Contracts
 
 - [SynthetixEscrow](SynthetixEscrow.md)
 
+---
+
 ## Variables
 
 ---
+
 ### `synthetix_escrow`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/EscrowChecker.sol#L13)</sub>
-
-
 
 The [SNX escrow contract](SynthetixEscrow.md).
 
-
-
-
-**Type:** `contract ISynthetixEscrow`
-
-## Function (Constructor)
+**Type:** `SynthetixEscrow public`
 
 ---
-### `constructor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/EscrowChecker.sol#L15)</sub>
-
-
-
-??? example "Details"
-
-    **Signature**
-
-    `(contract ISynthetixEscrow _esc)`
-
-    **State Mutability**
-
-    `nonpayable`
 
 ## Functions
 
 ---
-### `checkAccountSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/EscrowChecker.sol#L19)</sub>
+### `constructor`
 
-
-
-Returns the given address's vesting schedule as up to 16 `uints`, composed of an alternating sequence of up to 8 `(timestamp, quantity)` pairs, as per [`SynthetixEscrow.getVestingScheduleEntry`](SynthetixEscrow.md#getVestingScheduleEntry).
-
-
-Vested entries are not skipped, and appear as a leading sequence of zeroes.
-
+Initialises the [synthetix escrow address](#synthetix_escrow).
 
 ??? example "Details"
 
     **Signature**
 
-    `checkAccountSchedule(address account)`
+    `constructor(SynthetixEscrow _esc) public`
 
-    **State Mutability**
+---
 
-    `view`
+### `checkAccountSchedule`
 
+Returns the given address's vesting schedule as up to 16 `uints`, composed of an alternating sequence of up to 8 `(timestamp, quantity)` pairs, as per [`SynthetixEscrow.getVestingScheduleEntry`](SynthetixEscrow.md#getVestingScheduleEntry).
+
+Vested entries are not skipped, and appear as a leading sequence of zeroes.
+
+??? example "Details"
+
+    **Signature**
+
+    `checkAccountSchedule(address account) public view returns (uint[16])`
