@@ -302,7 +302,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			entry.name = '() (fallback function)';
 			return entry;
 		});
-	const viewFuncs = curAstDocs.functions.filter(x => x.stateMutability === 'view' && x.visibility === 'external');
+	const viewFuncs = curAstDocs.functions.filter(
+		x => x.stateMutability === 'view' && (x.visibility === 'external' || x.visibility === 'public'),
+	);
 	const internalFuncs = curAstDocs.functions.filter(x => x.visibility === 'internal');
 	const restrictedFuncs = curAstDocs.functions.filter(x => x.modifiers.find(modifier => /^only/.test(modifier)));
 
