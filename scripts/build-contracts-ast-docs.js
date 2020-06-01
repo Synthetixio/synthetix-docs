@@ -167,7 +167,8 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	// ******************************************** Description ******************************************** //
 	// Include Source into existing description
 	const sourceLink = `\n**Source:** [${contractSource}](${baseUrl}${contractSource})`;
-	contractBody.Description.raw = ((existingContent.Description || {}).raw || '').split('**Source:**')[0] + sourceLink;
+	const existingDesc = ((existingContent.Description || {}).raw || '').split('**Source:**')[0];
+	contractBody.Description.raw = [existingDesc, sourceLink].join('\n\n') + '\n\n';
 
 	// ******************************************** Architecture ******************************************** //
 	const graph = getInheritanceGraph(contractSource, contractName, contractKind);
@@ -185,7 +186,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			'',
 		);
 
-		contractBody.Architecture['Libraries'].raw = librariesMd;
+		contractBody.Architecture['Libraries'].raw = librariesMd + '\n\n';
 	}
 
 	const combineEntries = ({ section, entries, combiner }) => {
@@ -213,11 +214,12 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			const { name } = entry;
 			const escapedKey = `\`${name}\``;
 			memo[escapedKey] = memo[escapedKey] || {};
-			memo[escapedKey].raw = combiner(
-				Object.assign(entry, {
-					existingEntry: existingSectionEntries.find(existingEntry => existingEntry.name === name),
-				}),
-			);
+			memo[escapedKey].raw =
+				combiner(
+					Object.assign(entry, {
+						existingEntry: existingSectionEntries.find(existingEntry => existingEntry.name === name),
+					}),
+				) + '\n\n';
 
 			return memo;
 		}, {});
@@ -294,7 +296,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 			const sourceLink = getContractSourceLink(lineNumber);
 
-			return [sourceLink, existingDesc, table].join('\n\n') + '\n\n';
+			return [sourceLink, existingDesc, table].join('\n\n');
 		},
 	});
 
@@ -362,7 +364,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			.join('\n')
 			.split('??? example')[0];
 
-		return functionSourceMdContent + existingDesc + functionDetailMdContent + '\n\n';
+		return [functionSourceMdContent, existingDesc, functionDetailMdContent].join('\n\n');
 	};
 
 	contractBody.Constructor = combineEntries({
@@ -412,11 +414,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 				.filter(x => !x.includes('<sub>'))
 				.join('\n');
 
-			return (
-				[sourceLink, exisingDesc]
-					.concat(parameters.length > 2 ? ['**Signature**', `\`${name}${parameters}\``] : [])
-					.join('\n\n') + '\n\n'
-			);
+			return [sourceLink, exisingDesc]
+				.concat(parameters.length > 2 ? ['**Signature**', `\`${name}${parameters}\``] : [])
+				.join('\n\n');
 		},
 	});
 
@@ -433,7 +433,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 				.split('- ')[0]
 				.split('**Signature')[0];
 
-			return [sourceLink, exisingDesc, `**Signature**: \`${name}${parameters}\``].join('\n\n') + '\n\n';
+			return [sourceLink, exisingDesc, `**Signature**: \`${name}${parameters}\``].join('\n\n');
 		},
 	});
 
