@@ -244,12 +244,12 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	// Now process entries for each section
 
 	contractBody.Constants = combineEntries({
-		entries: curAstDocs.variables.filter(x => x.constant),
+		entries: curAstDocs.variables.filter(({ constant, visibility }) => constant && visibility === 'public'),
 		combiner: variableCombiner,
 	});
 
 	contractBody.Variables = combineEntries({
-		entries: curAstDocs.variables.filter(x => !x.constant),
+		entries: curAstDocs.variables.filter(({ constant, visibility }) => !constant && visibility === 'public'),
 		combiner: variableCombiner,
 	});
 
@@ -282,7 +282,8 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			// Struct fields table
 			const table = members
 				.reduce(
-					(memo, member) => memo.concat(`| ${member.name} | ${member.type} | ${getExistingDescription(member.name)} |`),
+					(memo, member) =>
+						memo.concat(`| \`${member.name}\` | \`${member.type}\` | ${getExistingDescription(member.name)} |`),
 					['| Field | Type | Description |', '| ------ | ------ | ------  |'],
 				)
 				.join('\n');
@@ -311,7 +312,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		.map(x => x.name);
 
 	// Remaining functions
-	const externalFncs = curAstDocs.functions.filter(x => !alreadyDeclaredFunctions.includes(x.name));
+	const externalFncs = curAstDocs.functions.filter(
+		({ name, visibility }) => !alreadyDeclaredFunctions.includes(name) && visibility !== 'private',
+	);
 
 	const functionCombiner = ({
 		name,
