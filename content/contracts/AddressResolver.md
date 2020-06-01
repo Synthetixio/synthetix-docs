@@ -22,13 +22,11 @@ This contract is a type of Service Locator pattern that allows for easier intera
 
 ---
 
-
 ### `repository`
 
 The mapping of contract name to address
 
 **Type:** `mapping(bytes32 => address) public`
-
 
 ---
 

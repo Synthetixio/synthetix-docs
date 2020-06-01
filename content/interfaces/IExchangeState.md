@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeState.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `appendExchangeEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeState.sol#L29)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `nonpayable`
 
 ---
+
 ### `getEntryAt`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeState.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `view`
 
 ---
+
 ### `getLengthOfEntries`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeState.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `view`
 
 ---
+
 ### `getMaxTimestamp`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeState.sol#L26)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `view`
 
 ---
+
 ### `removeEntries`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeState.sol#L41)</sub>
-
-
 
 ??? example "Details"
 
@@ -95,4 +89,3 @@
     **State Mutability**
 
     `nonpayable`
-

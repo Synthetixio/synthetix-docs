@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynth.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `burn`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynth.sol#L20)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `nonpayable`
 
 ---
+
 ### `currencyKey`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynth.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `view`
 
 ---
+
 ### `issue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynth.sol#L22)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `nonpayable`
 
 ---
+
 ### `transferableSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynth.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `view`
 
 ---
+
 ### `transferAndSettle`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynth.sol#L11)</sub>
-
-
 
 ??? example "Details"
 
@@ -97,11 +91,10 @@
     `nonpayable`
 
 ---
+
 ### `transferFromAndSettle`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynth.sol#L13)</sub>
-
-
 
 ??? example "Details"
 
@@ -112,4 +105,3 @@
     **State Mutability**
 
     `nonpayable`
-

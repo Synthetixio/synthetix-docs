@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `aggregators`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `view`
 
 ---
+
 ### `anyRateIsStale`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `view`
 
 ---
+
 ### `currentRoundForRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L10)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `view`
 
 ---
+
 ### `effectiveValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L12)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `view`
 
 ---
+
 ### `effectiveValueAtRound`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L18)</sub>
-
-
 
 ??? example "Details"
 
@@ -97,11 +91,10 @@
     `view`
 
 ---
+
 ### `getCurrentRoundId`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L26)</sub>
-
-
 
 ??? example "Details"
 
@@ -114,11 +107,10 @@
     `view`
 
 ---
+
 ### `getLastRoundIdBeforeElapsedSecs`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L28)</sub>
-
-
 
 ??? example "Details"
 
@@ -131,11 +123,10 @@
     `view`
 
 ---
+
 ### `inversePricing`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L35)</sub>
-
-
 
 ??? example "Details"
 
@@ -148,11 +139,10 @@
     `view`
 
 ---
+
 ### `lastRateUpdateTimes`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L45)</sub>
-
-
 
 ??? example "Details"
 
@@ -165,11 +155,10 @@
     `view`
 
 ---
+
 ### `oracle`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L47)</sub>
-
-
 
 ??? example "Details"
 
@@ -182,11 +171,10 @@
     `view`
 
 ---
+
 ### `rateAndTimestampAtRound`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L49)</sub>
-
-
 
 ??? example "Details"
 
@@ -199,11 +187,10 @@
     `view`
 
 ---
+
 ### `rateForCurrency`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L51)</sub>
-
-
 
 ??? example "Details"
 
@@ -216,11 +203,10 @@
     `view`
 
 ---
+
 ### `rateIsFrozen`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L53)</sub>
-
-
 
 ??? example "Details"
 
@@ -233,11 +219,10 @@
     `view`
 
 ---
+
 ### `rateIsStale`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L55)</sub>
-
-
 
 ??? example "Details"
 
@@ -250,11 +235,10 @@
     `view`
 
 ---
+
 ### `ratesAndStaleForCurrencies`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L57)</sub>
-
-
 
 ??? example "Details"
 
@@ -267,11 +251,10 @@
     `view`
 
 ---
+
 ### `ratesForCurrencies`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L59)</sub>
-
-
 
 ??? example "Details"
 
@@ -284,11 +267,10 @@
     `view`
 
 ---
+
 ### `rateStalePeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchangeRates.sol#L61)</sub>
-
-
 
 ??? example "Details"
 
@@ -299,4 +281,3 @@
     **State Mutability**
 
     `view`
-

@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IDepot.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `depositSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L17)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `nonpayable`
 
 ---
+
 ### `exchangeEtherForSNX`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L26)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `payable`
 
 ---
+
 ### `exchangeEtherForSNXAtRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L28)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `payable`
 
 ---
+
 ### `exchangeEtherForSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L19)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `payable`
 
 ---
+
 ### `exchangeEtherForSynthsAtRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L21)</sub>
-
-
 
 ??? example "Details"
 
@@ -97,11 +91,10 @@
     `payable`
 
 ---
+
 ### `exchangeSynthsForSNX`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L30)</sub>
-
-
 
 ??? example "Details"
 
@@ -114,11 +107,10 @@
     `nonpayable`
 
 ---
+
 ### `exchangeSynthsForSNXAtRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L32)</sub>
-
-
 
 ??? example "Details"
 
@@ -131,11 +123,10 @@
     `nonpayable`
 
 ---
+
 ### `fundsWallet`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -148,11 +139,10 @@
     `view`
 
 ---
+
 ### `maxEthPurchase`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -165,11 +155,10 @@
     `view`
 
 ---
+
 ### `minimumDepositAmount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L10)</sub>
-
-
 
 ??? example "Details"
 
@@ -182,11 +171,10 @@
     `view`
 
 ---
+
 ### `synthsReceivedForEther`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L12)</sub>
-
-
 
 ??? example "Details"
 
@@ -199,11 +187,10 @@
     `view`
 
 ---
+
 ### `totalSellableDeposits`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L14)</sub>
-
-
 
 ??? example "Details"
 
@@ -216,11 +203,10 @@
     `view`
 
 ---
+
 ### `withdrawMyDepositedSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IDepot.sol#L23)</sub>
-
-
 
 ??? example "Details"
 
@@ -231,4 +217,3 @@
     **State Mutability**
 
     `nonpayable`
-

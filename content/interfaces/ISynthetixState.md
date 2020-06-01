@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/ISynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `appendDebtLedgerValue`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L25)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `nonpayable`
 
 ---
+
 ### `clearIssuanceData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L27)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `nonpayable`
 
 ---
+
 ### `debtLedger`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `view`
 
 ---
+
 ### `debtLedgerLength`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L12)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `view`
 
 ---
+
 ### `decrementTotalIssuerCount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L21)</sub>
-
-
 
 ??? example "Details"
 
@@ -97,11 +91,10 @@
     `nonpayable`
 
 ---
+
 ### `hasIssued`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L14)</sub>
-
-
 
 ??? example "Details"
 
@@ -114,11 +107,10 @@
     `view`
 
 ---
+
 ### `incrementTotalIssuerCount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L19)</sub>
-
-
 
 ??? example "Details"
 
@@ -131,11 +123,10 @@
     `nonpayable`
 
 ---
+
 ### `issuanceData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L10)</sub>
-
-
 
 ??? example "Details"
 
@@ -148,11 +139,10 @@
     `view`
 
 ---
+
 ### `issuanceRatio`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -165,11 +155,10 @@
     `view`
 
 ---
+
 ### `lastDebtLedgerEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L16)</sub>
-
-
 
 ??? example "Details"
 
@@ -182,11 +171,10 @@
     `view`
 
 ---
+
 ### `setCurrentIssuanceData`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/ISynthetixState.sol#L23)</sub>
-
-
 
 ??? example "Details"
 
@@ -197,4 +185,3 @@
     **State Mutability**
 
     `nonpayable`
-

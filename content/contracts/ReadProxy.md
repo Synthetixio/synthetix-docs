@@ -1,4 +1,3 @@
-
 # ReadProxy
 
 **Source:** [ReadProxy.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/ReadProxy.sol)
@@ -20,7 +19,6 @@
 <!--centered-image>
     ![Architecture Graph](../img/graphs/todo-architecture.svg)
 </centered-image-->
-
 
 ### Inheritance Graph
 
@@ -67,4 +65,3 @@
 ## Events
 
 --
-

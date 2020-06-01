@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchanger.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `calculateAmountAfterSettlement`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchanger.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `view`
 
 ---
+
 ### `exchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchanger.sol#L27)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `nonpayable`
 
 ---
+
 ### `exchangeOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchanger.sol#L35)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `nonpayable`
 
 ---
+
 ### `feeRateForExchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchanger.sol#L13)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `view`
 
 ---
+
 ### `maxSecsLeftInWaitingPeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchanger.sol#L15)</sub>
-
-
 
 ??? example "Details"
 
@@ -97,11 +91,10 @@
     `view`
 
 ---
+
 ### `settle`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchanger.sol#L43)</sub>
-
-
 
 ??? example "Details"
 
@@ -114,11 +107,10 @@
     `nonpayable`
 
 ---
+
 ### `settlementOwing`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IExchanger.sol#L17)</sub>
-
-
 
 ??? example "Details"
 
@@ -129,4 +121,3 @@
     **State Mutability**
 
     `view`
-

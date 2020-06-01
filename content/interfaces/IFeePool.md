@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `amountReceivedFromExchange`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `view`
 
 ---
+
 ### `appendAccountIssuanceRecord`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L29)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `nonpayable`
 
 ---
+
 ### `claimFees`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L22)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `nonpayable`
 
 ---
+
 ### `claimOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L24)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `nonpayable`
 
 ---
+
 ### `closeCurrentFeePeriod`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L26)</sub>
-
-
 
 ??? example "Details"
 
@@ -97,11 +91,10 @@
     `nonpayable`
 
 ---
+
 ### `exchangeFeeRate`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -114,11 +107,10 @@
     `view`
 
 ---
+
 ### `FEE_ADDRESS`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L11)</sub>
-
-
 
 ??? example "Details"
 
@@ -131,11 +123,10 @@
     `view`
 
 ---
+
 ### `feesAvailable`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L13)</sub>
-
-
 
 ??? example "Details"
 
@@ -148,11 +139,10 @@
     `view`
 
 ---
+
 ### `isFeesClaimable`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L15)</sub>
-
-
 
 ??? example "Details"
 
@@ -165,11 +155,10 @@
     `view`
 
 ---
+
 ### `recordFeePaid`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L35)</sub>
-
-
 
 ??? example "Details"
 
@@ -182,11 +171,10 @@
     `nonpayable`
 
 ---
+
 ### `setRewardsToDistribute`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L37)</sub>
-
-
 
 ??? example "Details"
 
@@ -199,11 +187,10 @@
     `nonpayable`
 
 ---
+
 ### `totalFeesAvailable`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L17)</sub>
-
-
 
 ??? example "Details"
 
@@ -216,11 +203,10 @@
     `view`
 
 ---
+
 ### `totalRewardsAvailable`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IFeePool.sol#L19)</sub>
-
-
 
 ??? example "Details"
 
@@ -231,4 +217,3 @@
     **State Mutability**
 
     `view`
-

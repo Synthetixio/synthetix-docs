@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `closeLoan`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L15)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `nonpayable`
 
 ---
+
 ### `liquidateUnclosedLoan`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L17)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `nonpayable`
 
 ---
+
 ### `openLoan`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L13)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `payable`
 
 ---
+
 ### `totalIssuedSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `view`
 
 ---
+
 ### `totalLoansCreated`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -97,11 +91,10 @@
     `view`
 
 ---
+
 ### `totalOpenLoanCount`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IEtherCollateral.sol#L10)</sub>
-
-
 
 ??? example "Details"
 
@@ -112,4 +105,3 @@
     **State Mutability**
 
     `view`
-

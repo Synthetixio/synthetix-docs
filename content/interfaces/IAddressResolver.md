@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IAddressResolver.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `getAddress`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IAddressResolver.sol#L5)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `view`
 
 ---
+
 ### `getSynth`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IAddressResolver.sol#L7)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `view`
 
 ---
+
 ### `requireAndGetAddress`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IAddressResolver.sol#L9)</sub>
-
-
 
 ??? example "Details"
 
@@ -61,4 +57,3 @@
     **State Mutability**
 
     `view`
-

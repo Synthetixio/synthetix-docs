@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IRewardEscrow.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `appendVestingEntry`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IRewardEscrow.sol#L11)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `nonpayable`
 
 ---
+
 ### `balanceOf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IRewardEscrow.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `view`
 
 ---
+
 ### `numVestingEntries`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IRewardEscrow.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `view`
 
 ---
+
 ### `vest`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IRewardEscrow.sol#L13)</sub>
-
-
 
 ??? example "Details"
 
@@ -78,4 +73,3 @@
     **State Mutability**
 
     `nonpayable`
-

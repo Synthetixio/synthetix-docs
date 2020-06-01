@@ -178,7 +178,6 @@ Allows the owner to set the [`fundsWallet`](#fundswallet) address.
 
 ---
 
-
 ### `setMinimumDepositAmount`
 
 Allows the owner to set the [minimum deposit amount](#minimumdepositamount).
@@ -341,7 +340,6 @@ $$
 ### `onlySynth`
 
 Reverts the transaction if `msg.sender` is not the [`synth`](#synth) address.
-
 
 ---
 

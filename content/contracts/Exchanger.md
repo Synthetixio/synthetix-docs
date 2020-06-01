@@ -1,10 +1,8 @@
 # Exchanger
 
-
 ??? todo "Work In Progress"
 
     Ongoing...
-
 
 ## Description
 
@@ -48,7 +46,6 @@ A constant used to initialise the ERC20 [`ExternStateToken.name`](ExternStateTok
 -->
 
 ---
-
 
 ## Variables
 
@@ -115,7 +112,6 @@ This number must be `0` in order for [`settle()`](#settle) to succeed.
 
     `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey) public view returns (uint)`
 
-
 ### `settlementOwing`
 
 Returns the total amount to be reclaimed or rebated for the given account and synth (`currencyKey`). Note: this function can be called at any time, even while the waiting period has not expired.
@@ -125,7 +121,6 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
     **Signature**
 
     `settlementOwing(address account, bytes32 currencyKey) public view returns (uint reclaimAmount, uint rebateAmount)`
-
 
 ---
 
@@ -146,7 +141,6 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
     **Preconditions**
 
     * That the [waiting period](#maxsecsleftinwaitingperiod) for this synth is `0`
-
 
 ---
 

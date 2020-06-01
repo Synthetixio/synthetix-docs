@@ -2,12 +2,12 @@
 
 ## Description
 
-
 **Source:** [contracts/Math.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Math.sol)
 
 ## Architecture
 
 ---
+
 ### Libraries
 
 - [SafeMath](/libraries/SafeMath) for `uint`
@@ -20,11 +20,10 @@
 ## Functions (Internal)
 
 ---
+
 ### `powDecimal`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Math.sol#L18)</sub>
-
-
 
 ??? example "Details"
 
@@ -35,4 +34,3 @@
     **State Mutability**
 
     `pure`
-

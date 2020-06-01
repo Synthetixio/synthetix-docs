@@ -34,6 +34,7 @@ Returns the exponentiation of the base (x) integer by the n^th power to precisio
     **Signature**
 
     `function powDecimal(uint x, uint n)
+
 `
 
 ---

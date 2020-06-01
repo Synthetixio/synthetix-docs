@@ -2,7 +2,6 @@
 
 ## Description
 
-
 **Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol)
 
 ## Constants
@@ -12,11 +11,10 @@
 ## Functions
 
 ---
+
 ### `burnSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L23)</sub>
-
-
 
 ??? example "Details"
 
@@ -29,11 +27,10 @@
     `nonpayable`
 
 ---
+
 ### `burnSynthsOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L25)</sub>
-
-
 
 ??? example "Details"
 
@@ -46,11 +43,10 @@
     `nonpayable`
 
 ---
+
 ### `burnSynthsToTarget`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L31)</sub>
-
-
 
 ??? example "Details"
 
@@ -63,11 +59,10 @@
     `nonpayable`
 
 ---
+
 ### `burnSynthsToTargetOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L33)</sub>
-
-
 
 ??? example "Details"
 
@@ -80,11 +75,10 @@
     `nonpayable`
 
 ---
+
 ### `canBurnSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L6)</sub>
-
-
 
 ??? example "Details"
 
@@ -97,11 +91,10 @@
     `view`
 
 ---
+
 ### `issueMaxSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L19)</sub>
-
-
 
 ??? example "Details"
 
@@ -114,11 +107,10 @@
     `nonpayable`
 
 ---
+
 ### `issueMaxSynthsOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L21)</sub>
-
-
 
 ??? example "Details"
 
@@ -131,11 +123,10 @@
     `nonpayable`
 
 ---
+
 ### `issueSynths`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L11)</sub>
-
-
 
 ??? example "Details"
 
@@ -148,11 +139,10 @@
     `nonpayable`
 
 ---
+
 ### `issueSynthsOnBehalf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L13)</sub>
-
-
 
 ??? example "Details"
 
@@ -165,11 +155,10 @@
     `nonpayable`
 
 ---
+
 ### `lastIssueEvent`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IIssuer.sol#L8)</sub>
-
-
 
 ??? example "Details"
 
@@ -180,4 +169,3 @@
     **State Mutability**
 
     `view`
-

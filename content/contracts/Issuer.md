@@ -1,6 +1,5 @@
 # Issuer
 
-
 ??? todo "Work In Progress"
 
     Ongoing...
@@ -62,7 +61,6 @@ A constant used to initialise the ERC20 [`ExternStateToken.name`](ExternStateTok
 -->
 
 ---
-
 
 ## Variables
 

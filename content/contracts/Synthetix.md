@@ -810,7 +810,6 @@ This event is emitted from the Synthetix [proxy](Proxy.md#_emit) with the `emitE
 
     See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
 
-
 Records that an `amount` of the synth denoted by `currencyKey` has been rebated (i.e. issued) by the system to the `account`.
 
 The amount is the total net amount from all unsettled exchanges into the given synth - if the user is owed anything after settling all exchanges, then this is the `amount` rebated.
@@ -818,7 +817,5 @@ The amount is the total net amount from all unsettled exchanges into the given s
 This event is emitted from the Synthetix [proxy](Proxy.md#_emit) with the `emitExchangeRebate` function.
 
 **Signature:** `ExchangeRebate(address indexed account, bytes32 currencyKey, uint amount)`
-
-
 
 ---
