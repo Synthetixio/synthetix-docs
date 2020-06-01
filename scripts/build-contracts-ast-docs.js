@@ -321,9 +321,10 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	const externalFncs = curAstDocs.functions.filter(x => !alreadyDeclaredFunctions.includes(x.name));
 
 	const functionCombiner = ({
+		name,
 		lineNumber,
 		signature,
-		stateMutability,
+		visibility,
 		requires = [],
 		events,
 		modifiers,
@@ -335,8 +336,8 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		functionDetailMdContent += '    **Signature**\n\n';
 		functionDetailMdContent += `    \`${signature}\`\n\n`;
 
-		functionDetailMdContent += '    **State Mutability**\n\n';
-		functionDetailMdContent += `    \`${stateMutability}\`\n\n`;
+		functionDetailMdContent += '    **Visibility**\n\n';
+		functionDetailMdContent += `    \`${visibility}\`\n\n`;
 
 		// Requires
 		functionDetailMdContent += requires.length ? '    **Requires**\n\n' : '';
@@ -345,9 +346,11 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		}
 
 		// Modifiers in function
-		functionDetailMdContent += modifiers.length ? '    **Modifiers**\n\n' : '';
-		for (const modifierEntry of modifiers) {
-			functionDetailMdContent += `    * [${modifierEntry}](#${modifierEntry.toLowerCase()})\n\n`;
+		if (name !== 'constructor') {
+			functionDetailMdContent += modifiers.length ? '    **Modifiers**\n\n' : '';
+			for (const modifierEntry of modifiers) {
+				functionDetailMdContent += `    * [${modifierEntry}](#${modifierEntry.toLowerCase()})\n\n`;
+			}
 		}
 
 		// Events in functions
