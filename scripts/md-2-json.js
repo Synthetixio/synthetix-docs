@@ -17,7 +17,7 @@ function parse(mdContent) {
 		para,
 		ordered,
 		orderedDepth = 1;
-	let output = json.reduce(function(result, item) {
+	let output = json.reduce(function (result, item) {
 		switch (item.type) {
 			case 'heading':
 				if (!currentHeading || item.depth == 1) {
@@ -180,7 +180,7 @@ function checkNextLine(mdText) {
 
 function toMd(jsonObject) {
 	let mdText = '';
-	traverse(jsonObject).reduce(function(acc, value) {
+	traverse(jsonObject).reduce(function (acc, value) {
 		if (this.isLeaf && this.key === 'raw') {
 			mdText += value;
 		} else {

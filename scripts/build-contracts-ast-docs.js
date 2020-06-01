@@ -275,18 +275,10 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 						.split('\n')
 						.filter(x => x.includes('|'))
 						.filter(x => {
-							return (
-								x
-									.split('|')[1]
-									.split(' ')
-									.join('') === name
-							);
+							return x.split('|')[1].split(' ').join('') === name;
 						})[0];
 
-					return existingRow
-						.split('|')
-						.slice(-2)[0]
-						.trim();
+					return existingRow.split('|').slice(-2)[0].trim();
 				} catch (e) {
 					return 'TBA';
 				}
