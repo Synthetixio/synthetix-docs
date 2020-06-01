@@ -44,7 +44,7 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 
 ---
 
-### `SynthDeposit`
+### `SynthDepositEntry`
 
 Stores an individual Synth deposit on sale.
 
