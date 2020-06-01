@@ -1,10 +1,10 @@
 # DelegateApprovals
 
+## Description
+
 !!! Warning "Needs Update"
 
     This contract documentation is out of date and requires updating
-
-## Description
 
 This contract is used by the [`FeePool`](FeePool.md) to enable users to permit other addresses to withdraw fees for them. In Synthetix this was intended to allow mobile wallets to claim fees for a cold storage wallet.
 
