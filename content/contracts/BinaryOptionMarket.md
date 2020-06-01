@@ -229,26 +229,18 @@ Oracle-relevant details used at the resolution of the market.
 The fee rates of this market. Note that the sum `poolFee + creatorFee` must be between 0 and 1 exclusive,
 while `refundFee` must be no greater than 1.
 
-| Field         | Type                                       | Description |
-| ------------- | ------------------------------------------ | ----------- |
-| `poolFee`     | `uint` ([18 decimals](SafeDecimalMath.md)) | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). |
-| `creatorFee`  | `uint` ([18 decimals](SafeDecimalMath.md)) | The portion collected by the market's [creator](#creator) as a fee. |
-| `refundFee`   | `uint` ([18 decimals](SafeDecimalMath.md)) | When a bid is refunded, this portion of its value is retained in the market to be paid out at maturity. This fee is intended to compensate the market for the toxic price signal that the bidder has sent, by increasing the payoff of the remaining bidders, and to discourage excessive price volatility at the end of bidding. |
+`creatorFeesCollected` is a record of the actual fees collected, saved at the market's resolution time. The fees are
+actually remitted upon the destruction of the market.  Since this quantity are computed as a fraction of the sUSD
+deposited in the market when it matures, it must be saved explicitly, since the deposited quantity decreases as options
+are exercised.
 
----
+| Field                  | Type                                       | Description |
+| ---------------------- | ------------------------------------------ | ----------- |
+| `poolFee`              | `uint` ([18 decimals](SafeDecimalMath.md)) | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). |
+| `creatorFee`           | `uint` ([18 decimals](SafeDecimalMath.md)) | The portion collected by the market's [creator](#creator) as a fee. |
+| `refundFee`            | `uint` ([18 decimals](SafeDecimalMath.md)) | When a bid is refunded, this portion of its value is retained in the market to be paid out at maturity. This fee is intended to compensate the market for the toxic price signal that the bidder has sent, by increasing the payoff of the remaining bidders, and to discourage excessive price volatility at the end of bidding. |
+| `creatorFeesCollected` | `uint` ([18 decimals](SafeDecimalMath.md)) | The value of sUSD to be transferred to the market's [creator](#creator) at the market's destruction. |
 
-### `FeesCollected`
-
-A record of the actual fees collected, saved at the market's resolution time.
-The fees are actually remitted upon the destruction of the market. 
-Since these quantities are computed as a fraction of the sUSD deposited in the market when it
-matures, they must be saved explicitly, since the deposited quantity decreases as options are exercised.
-
-| Field   | Type                                       | Description |
-| ------- | ------------------------------------------ | ----------- |
-| pool    | `uint` ([18 decimals](SafeDecimalMath.md)) | The value of sUSD to be transferred to the [fee pool](FeePool.md) at the market's destruction. |
-| creator | `uint` ([18 decimals](SafeDecimalMath.md)) | The value of sUSD to be transferred to the market's [creator](#creator) at the market's destruction. |
-    
 ---
 
 ## Constructor
@@ -730,18 +722,10 @@ The [oracle parameters](#oracledetails) of this market, including the underlying
 
 ### `fees`
 
-The [fee rates](#fees) charged in this market.
+The [fee rates](#fees) charged in this market and the fees collected on behalf of the creator.
 
 **Type:** `Fees public`
     
----
-
-### `feesCollected`
-
-The [quantity of fees](#feescollected) collected on behalf of the creator and fee pool.
-
-**Type:** `FeesCollected public`
-
 ---
 
 ### `deposited`
