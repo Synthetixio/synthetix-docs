@@ -761,7 +761,7 @@ True if the market has been [resolved](#resolve), and false otherwise.
 Equal to $1 - (\text{creatorFee} + \text{poolFee})$, which is a denominating factor in [price calculations](#_updateprices).
 Storing this saves recomputing it on each bid or refund.
 
-**Type:** `uint private`
+**Type:** `uint internal`
 
 ## Modifiers
 

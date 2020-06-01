@@ -278,7 +278,7 @@ or a markets created or destroyed.
 An unordered list of the currently-existing `BinaryOptionMarket` instances.
 It can be queried with the [`markets`](#markets) function.
 
-**Type:** `address[] private`
+**Type:** `address[] internal`
 
 ---
 
@@ -287,7 +287,7 @@ It can be queried with the [`markets`](#markets) function.
 This mapping keeps track of the index in the [`_markets`](#_markets) array belonging
 to a particular market.
 
-**Type:** `mapping(address => uint) private`
+**Type:** `mapping(address => uint) internal`
 
 ---
 
@@ -299,7 +299,7 @@ to another, the receiving factory will only permit markets to be migrated from t
 
 See [`receiveMarkets`](#receivemarkets) and [`migrateMarkets`](#migratemarkets) for further details.
 
-**Type:** `BinaryOptionMarketFactory private`
+**Type:** `BinaryOptionMarketFactory internal`
 
 ## Modifiers
 
