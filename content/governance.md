@@ -22,6 +22,8 @@ The Synthetix grantsDAO was set up to fund community grant proposals for such pu
 
 Grants are intended for individuals or teams who support Synthetix and are willing to contribute to the project in some way. There is a maximum of 50,000 SNX per grant, though most are expected to be much smaller projects than this, and proposals can be submitted [here](https://github.com/Synthetixio/snx-grants-dao/blob/master/proposals/proposal-template.md). The intention behind the grantsDAO is to reward people who already hold SNX and help further the ecosystem in some way. 
 
+It's recommended that before you go to the trouble of submitting a proposal to the grantsDAO, that you either gauge community sentiment around the utility of your proposed addition to the ecosystem, or contact a grantsDAO member to discuss it directly. This can be done through the [Synthetix Discord](https://discord.com/invite/AEdUHzt) in the #grants-dao channel.
+
 ## Community Governance Calls
 
 Community governance calls are a venue for the Synthetix team to consult with the community. These calls occur on a semi-regular basis and typically have a pre-set agenda of issues to be discussed and resolved. This complements Discord as a central component of the team's commitment to transparency and community engagement on the path to full decentralisation. Upcoming community governance calls are announced on the [Synthetix blog](https://blog.synthetix.io/); [here](https://www.youtube.com/channel/UCxsxeKabeNtozsolSM_1nuw) you can view every governance call in full. 
