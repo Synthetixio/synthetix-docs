@@ -356,7 +356,7 @@ funds in the market after the destruction reward has been deducted.
     
     **State Mutability**
     
-    `public view`
+    `external view`
 
 ---
 
