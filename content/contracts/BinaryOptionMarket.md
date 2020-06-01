@@ -2,31 +2,97 @@
 
 ## Description
 
-TODO
+This contract manages a single binary option market, where users can speculate on the outcome of a future event
+by buying options, each of which is an ERC20 token that pays out 1 sUSD if its corresponding outcome occurs.
 
-### Market Phases
+Each binary option market has a specific underlying asset, and a target price for that asset at a specific
+maturity date. If the reported price of the asset is lower than the target price at the maturity date, then
+all the options on the short side of the market pay out 1 sUSD each, while if the price is higher than or equal
+to the target price, then the options on the long side pay out 1 sUSD each.
 
-TODO
+This contract was proposed as part of [SIP-53](https://sips.synthetix.io/sips/sip-53). Further information on the
+mechanism and its motivation can be found in the SIP.
 
-### Bidding and Refunding
+### Market Lifecycle
 
-TODO
+A market goes through four major phases in its life. The phase a market is currently in
+can be queried with the [`phase()`](#phase) function, and the times that it transitions
+between these phases is held in the [`times`](#times) public variable.
 
-### Claiming Options
+#### Market Creation
 
-TODO
+A market can be created by anyone, as long as they can provide enough initial capital to ensure
+the market is liquid. Upon creation markets will be
+[tracked in the factory contract](BinaryOptionMarketFactory.md#_markets)
+until they are eventually destroyed.
 
-### Market Resolution
+Market creators are incentivised to make markets by the collection of [fees](#fees),
+which they share with the fee pool. These fees are released at the end of the market's life;
+it is in the creator's interest, in order to maximise the fees they collect, to set
+market parameters that attract the maximum demand over the lifetime of the market.
 
-TODO
+Binary option markets are created by calls to the [`BinaryOptionMarketFactory.createMarket`](BinaryOptionMarketFactory.md#createmarket)
+function: see the documentation for that function for more details.
 
-### Exercising Options
+#### Bidding
 
-TODO
+During the bidding phase, the total supply of options and option prices are established.
+During this period, users can bid on the long or short side of the market and refund their bids.
+The option prices are determined during this phase according to the computations outlined in the
+[`_updatePrices`](#_updateprices) function; the price on one side of the market is effectively the
+fraction of bids on that side relative to all bids.
 
-### Creating and Destroying Markets
+| Relevant Functions | Description |
+| ------------------ | ----------- |
+| [`bid`](#bid) | Places a bid. |
+| [`refund`](#refund) | Refunds an existing bid, minus a [fee](#fees). |
+| [`bidsOf`](#bidsof) / [`totalBids`](#totalbids) | Queries current bid balances. |
+| [`claimableBy`](#claimableby) / [`totalClaimable`](#claimableby) | Queries the number of options that would be claimable if the market resolved at the current price. |
+| [`prices`](#prices) | The current prices on the market. |
+| [`oracleDetails`](#oracledetails) | The basic parameters of the market, including the underlying asset, target price, and maturity date. |
 
-TODO
+#### Trading
+
+During the trading phase, bids and refunds are disabled and the final option prices are fixed, so options can be claimed and exchanged as ERC20 tokens.
+
+| Relevant Functions | Description |
+| ------------------ | ----------- |
+| [`claimableBy`](#claimableby) / [`totalClaimable`](#claimableby) | Queries the actual number of options a user can claim. |
+| [`claimOptions`](#claimoptions) | Claims the options owed to a user. |
+| [`BinaryOption` ERC20 functions](BinaryOption.md) | Users can freely transfer any claimed options as ERC20 tokens. |
+| [`balancesOf`](#balancesof) / [`totalSupplies`](#totalsupplies) | Returns a user's actual option balances. |
+
+#### Maturity
+
+After the end of the trading period, the market's maturity condition is evaluated and options can be exercised
+according to the result. The maturity condition is ultimately resolved depending on the result of the
+[`oraclePriceAndTimestamp`](#oraclepriceandtimestamp) function.
+
+| Relevant Functions | Description |
+| ------------------ | ----------- |
+| [`canResolve`](#canresolve) | Indicates whether the market can be resolved yet. |
+| [`resolve`](#resolve) | Queries the current price of the underlying asset from the oracle, compares it against the target price, and saves the final result. |
+| [`resolved`](#resolved) | True if the market has been resolved |
+| [`result`](#result) | Reports which side pays out, or which side would pay out if an unresolved market were resolved immediately. |
+| [`exerciseOptions`](#exerciseoptions) | Transfers the payout owed to a user from the options they hold. |
+
+#### Destruction
+
+After a period the market can be destroyed by a call to
+[`BinaryOptionMarketFactory.destroyMarket`](BinaryOptionMarketFactory.md#destroymarket).
+At this time the collected [fees](#fees) are transferred to the fee pool and to whoever called the function.
+The market is then destroyed and removed from the list of active markets on the factory.
+
+For an exclusive period determined by
+[`BinaryOptionMarketFactory.durations.creatorDestructionDuration`](BinaryOptionMarketFactory.md#durations),
+only the [creator](#creator) of a market can destroy it, but after this time elapses, the reward is available for
+anyone to claim in exchange for cleaning up the market.
+
+| Relevant Functions | Description |
+| ------------------ | ----------- |
+| [`destructionReward`](#destructionreward) | The value of sUSD transferred to the market destroyer. |
+| [`BinaryOptionMarketFactory.destroyMarket`](BinaryOptionMarketFactory.md#destroymarket) | Destroys a market and remits the destruction reward to the destroyer. |
+| [`BinaryOptionMarketFactory.publiclyDestructibleTime`](BinaryOptionMarketFactory.md#publiclydestructibletime) | The timestamp after which a given market will be destructible by addresses other than its creator. |
 
 ## Architecture
 
@@ -349,7 +415,7 @@ Returns the [total value of bids](BinaryOption.md#totalbids) on each side of the
 
 ---
 
-### `claimableBids`
+### `claimableBy`
 
 Returns balance of options on each side of the market that [would be claimable](BinaryOption.md#claimableby)
 by the message sender at the [current prices](#prices).
@@ -374,7 +440,7 @@ Returns the [total balance of options claimable](BinaryOption.md#totalclaimable)
 from the [current total of bids](BinaryOption.md#totalbids) on each side of the market.
 
 Note that due to rounding, these may not predict exactly the quantities which will actually claimed in the end.
-Like [`claimableBids`](#claimablebids), this function still operates during the [bidding phase](#phase),
+Like [`claimableBy`](#claimableby), this function still operates during the [bidding phase](#phase),
 but will not attain its correct value until bidding has ended.
 
 ??? example "Details"
@@ -855,7 +921,7 @@ This function reverts the transaction if the system is suspended or the factory 
 
 ### `claimOptions`
 
-This function claims all options [owing](#claimablebids) to the message sender on both sides of the market.
+This function claims all options [owing](#claimableby) to the message sender on both sides of the market.
 The number of options owed is simply the user's [bid balances](#bidsof), divided by the
 [current option prices](#prices). The caller's bid balances are set to zero, while the appropriate number
 of options are credited to their wallet.
