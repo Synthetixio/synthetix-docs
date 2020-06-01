@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const md2json = require('./md-2-json');
 const YAML = require('yaml');
+const { gray } = require('chalk');
 const snx = require('synthetix');
 
 const astDocs = snx.getAST();
@@ -101,7 +102,7 @@ ${acc(graph)}
 };
 
 const generateContractMarkdown = (contractSource, contractName, contractKind) => {
-	console.log('- processing', contractName);
+	console.log(gray('\t- processing', contractName));
 	// Output folder for markdown files
 	const outputDir = path.join(__dirname, '..', 'content', contractKind);
 	if (!fs.existsSync(outputDir)) {
@@ -135,6 +136,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 	// existing content is a clone of the propose
 	let existingContent = Object.assign({}, contractBody); // default is a clone
+	let existingEntries = {};
 
 	// if existing file, then load in structure
 	if (fs.existsSync(outputFilePath)) {
@@ -148,6 +150,15 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 		if (mdJsonKeys.length > 0) {
 			existingContent = curMdJson[mdJsonKeys[0]];
+
+			// now collect all individual entries and push
+			for (const entry of Object.values(existingContent)) {
+				Object.entries(entry)
+					.filter(([key]) => /^`/.test(key))
+					.forEach(([key, value]) => {
+						existingEntries[key.replace(/`/g, '')] = value;
+					});
+			}
 		}
 	}
 
@@ -187,28 +198,13 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		);
 
 		contractBody.Architecture['Libraries'].raw = librariesMd + '\n\n';
+	} else {
+		// remove this explicitly as it's nested
+		delete contractBody.Architecture['Libraries'];
 	}
 
-	const combineEntries = ({ section, entries, combiner }) => {
+	const combineEntries = ({ entries, combiner }) => {
 		const sortByName = (a, b) => (a.name > b.name ? 1 : -1);
-
-		const existingSection = existingContent[section] || {};
-
-		let existingSectionEntries;
-		if (existingSection.raw) {
-			// then it's a single entry like constructor
-			existingSectionEntries = entries.length ? [{ name: entries[0].name, raw: existingSection.raw }] : [];
-		} else {
-			existingSectionEntries = Object.entries(existingSection).map(([name, value]) => ({
-				name: name.replace(/`/g, ''),
-				raw: value.raw || '',
-			}));
-		}
-
-		// TODO - save unused contracts for later use
-		existingSectionEntries
-			.filter(({ name }) => !entries.find(entry => entry.name === name))
-			.forEach(({ name }) => console.log('Removing', name, 'from section', section, 'as not found'));
 
 		return entries.sort(sortByName).reduce((memo, entry) => {
 			const { name } = entry;
@@ -217,7 +213,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			memo[escapedKey].raw =
 				combiner(
 					Object.assign(entry, {
-						existingEntry: existingSectionEntries.find(existingEntry => existingEntry.name === name),
+						existingEntry: existingEntries[name],
 					}),
 				) + '\n\n';
 
@@ -248,19 +244,16 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	// Now process entries for each section
 
 	contractBody.Constants = combineEntries({
-		section: 'Constants',
 		entries: curAstDocs.variables.filter(x => x.constant),
 		combiner: variableCombiner,
 	});
 
 	contractBody.Variables = combineEntries({
-		section: 'Variables',
 		entries: curAstDocs.variables.filter(x => !x.constant),
 		combiner: variableCombiner,
 	});
 
 	contractBody.Structs = combineEntries({
-		section: 'Structs',
 		entries: curAstDocs.structs,
 		combiner({ lineNumber, members, existingEntry = {} }) {
 			const strippedContent = (existingEntry.raw || '')
@@ -371,43 +364,36 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	};
 
 	contractBody.Constructor = combineEntries({
-		section: 'Constructor',
 		entries: constructorFunc,
 		combiner: functionCombiner,
 	});
 
 	contractBody.Views = combineEntries({
-		section: 'Views',
 		entries: viewFuncs,
 		combiner: functionCombiner,
 	});
 
 	contractBody['Restricted Functions'] = combineEntries({
-		section: 'Restricted Functions',
 		entries: restrictedFuncs,
 		combiner: functionCombiner,
 	});
 
 	contractBody['Internal Functions'] = combineEntries({
-		section: 'Internal Functions',
 		entries: internalFuncs,
 		combiner: functionCombiner,
 	});
 
 	contractBody['External Functions'] = combineEntries({
-		section: 'External Functions',
 		entries: externalFncs,
 		combiner: functionCombiner,
 	});
 
 	contractBody['Fallback Function'] = combineEntries({
-		section: 'Fallback Function',
 		entries: fallbackFunc,
 		combiner: functionCombiner,
 	});
 
 	contractBody.Modifiers = combineEntries({
-		section: 'Modifiers',
 		entries: curAstDocs.modifiers,
 		combiner({ name, lineNumber, parameters, existingEntry = {} }) {
 			const sourceLink = getContractSourceLink(lineNumber);
@@ -424,7 +410,6 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	});
 
 	contractBody.Events = combineEntries({
-		section: 'Events',
 		entries: curAstDocs.events,
 		combiner({ lineNumber, name, parameters, existingEntry = {} }) {
 			const sourceLink = getContractSourceLink(lineNumber);
@@ -462,7 +447,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 (() => {
 	// Builds new files into content/contracts and content/interfaces
-	console.log('Building ast-docs...');
+	console.log(gray('Building ast-docs...'));
 	Object.keys(astDocs).map(contractSource => {
 		Object.keys(astDocs[contractSource].contracts).map(contractName => {
 			generateContractMarkdown(contractSource, contractName, 'contracts');
@@ -478,7 +463,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	});
 
 	// Updates mkdocs.yml
-	console.log('Updating mkdocs.yml ...');
+	console.log(gray('Updating mkdocs.yml ...'));
 	const mkdocsFileLoc = path.join(__dirname, '../mkdocs.yml');
 	const mkdocsYAML = YAML.parse(fs.readFileSync(mkdocsFileLoc, 'utf8'));
 
