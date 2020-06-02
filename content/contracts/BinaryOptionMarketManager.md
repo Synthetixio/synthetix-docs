@@ -1,20 +1,20 @@
-# BinaryOptionMarketFactory
+# BinaryOptionMarketManager
 
 ## Description
 
-The `BinaryOptionMarketFactory` contract is responsible for [creating](#createmarket) and [destroying](#destroymarket)
+The `BinaryOptionMarketManager` contract is responsible for [creating](#createmarket) and [destroying](#destroymarket)
 [`BinaryOptionMarket`](BinaryOptionMarket.md) instances, as well as
 keeping track of the set of [currently-active markets](#markets) and the [total value of deposits](#totaldeposited)
 across those markets.
 
 In addition, various static market parameters such as the current fee levels,
-are maintained in the factory, and these are inherited by new markets when they are
+are maintained in the manager, and these are inherited by new markets when they are
 created.
 
-The factory owner can disable the creation of new markets, or pause all binary option
-markets altogether. The factory and its markets will also stop operating if the [system is suspended](SystemStatus.md).
-These facilities are provided to allow upgrades to occur smoothly, for which purpose the factory contract
-also provides functions to migrate its markets to a new factory instance.
+The manager owner can disable the creation of new markets, or pause all binary option
+markets altogether. The manager and its markets will also stop operating if the [system is suspended](SystemStatus.md).
+These facilities are provided to allow upgrades to occur smoothly, for which purpose the manager contract
+also provides functions to migrate its markets to a new manager instance.
 
 ## Architecture
 
@@ -24,10 +24,10 @@ also provides functions to migrate its markets to a new factory instance.
 
 ```mermaid
 graph TD
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> Owned[Owned]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> Pausable[Pausable]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> SelfDestructible[SelfDestructible]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> MixinResolver[MixinResolver]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> Owned[Owned]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> Pausable[Pausable]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> SelfDestructible[SelfDestructible]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> MixinResolver[MixinResolver]
     Pausable[Pausable] --> Owned[Owned]
     SelfDestructible[SelfDestructible] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
@@ -39,18 +39,18 @@ graph TD
 
 ```mermaid
 graph TD
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarket[BinaryOptionMarket]
-    BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionMarketFactory[BinaryOptionMarketFactory]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> SynthsUSD[Synth (sUSD)]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> SystemStatus[SystemStatus]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> AddressResolver[AddressResolver]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarket[BinaryOptionMarket]
+    BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> SynthsUSD[Synth (sUSD)]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> SystemStatus[SystemStatus]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> AddressResolver[AddressResolver]
 ```
 
 ??? example "Details"
 
-    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The factory instantiates new `BinaryOptionMarket` instances, and keeps track of them in the [`_markets`](#_markets) array.
-    - [`Synth (sUSD)`](Synth.md): As all bids and settlements are made in sUSD, the factory must know the sUSD address in order to accept initial bids.
-    - [`SystemStatus`](SystemStatus.md): The factory pauses if the system is suspended on the SystemStatus contract.
+    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The manager instantiates new `BinaryOptionMarket` instances, and keeps track of them in the [`_markets`](#_markets) array.
+    - [`Synth (sUSD)`](Synth.md): As all bids and settlements are made in sUSD, the manager must know the sUSD address in order to accept initial bids.
+    - [`SystemStatus`](SystemStatus.md): The manager pauses if the system is suspended on the SystemStatus contract.
     - [`AddressResolver`](AddressResolver.md): The addresses of SystemStatus and sUSD are retrieved from here.
  
 ---
@@ -231,7 +231,7 @@ The name of the sUSD [`Synth`](Synth.md) in the [`AddressResolver`](AddressResol
 
 This holds the current values that new markets will inherit for their fee rates.
 Once created, a market's fee rates are constant, so that if they are altered on the
-factory contract they do not change in existing markets.
+manager contract they do not change in existing markets.
 
 **Type:** [`BinaryOptionMarket.Fees public`](#binaryoptionmarketfees)
 
@@ -291,15 +291,15 @@ to a particular market.
 
 ---
 
-### `_migratingFactory`
+### `_migratingManager`
 
-When migrating [`BinaryOptionMarket`](BinaryOptionMarket.md) instances from one factory
-to another, the receiving factory will only permit markets to be migrated from the
-`_migratingFactory` address. This is set by the [`setMigratingFactory`](#setmigratingfactory) function.
+When migrating [`BinaryOptionMarket`](BinaryOptionMarket.md) instances from one manager
+to another, the receiving manager will only permit markets to be migrated from the
+`_migratingManager` address. This is set by the [`setMigratingManager`](#setmigratingmanager) function.
 
 See [`receiveMarkets`](#receivemarkets) and [`migrateMarkets`](#migratemarkets) for further details.
 
-**Type:** `BinaryOptionMarketFactory internal`
+**Type:** `BinaryOptionMarketManager internal`
 
 ## Modifiers
 
@@ -330,27 +330,27 @@ The creator (the message sender) must provide the following parameters:
 | `longBid`     | `uint` ([18 decimals](SafeDecimalMath.md)) | The initial sUSD bid of the market creator on the long side of the market. |
 | `shortBid`    | `uint` ([18 decimals](SafeDecimalMath.md)) | The initial sUSD bid of the market creator on the short side of the market. |
 
-Upon creation, the factory transfers `longbid + shortBid` sUSD from the creator to the
-new market, so the creator must have approved the factory to make that transfer using the
+Upon creation, the manager transfers `longbid + shortBid` sUSD from the creator to the
+new market, so the creator must have approved the manager to make that transfer using the
 ERC20 [`approve`](ExternStateToken.md#approve) function. The initial bids will be
 reflected in the [total deposited quantity](#totaldeposited).
 
 The destruction time of the new market will be set to the provided maturity date
 plus `durations.exerciseDuration`, and its fees, oracle maturity window, and
 [resolver](AddressResolver.md) address will be set from the current values
-in the factory. The `BinaryOptionMarket` contract has no setters, so once constructed,
+in the manager. The `BinaryOptionMarket` contract has no setters, so once constructed,
 these values are fixed for the lifetime of the market.
-The resolver cache of the new market is synchronised immediately after construction by the factory.
+The resolver cache of the new market is synchronised immediately after construction by the manager.
 
 The transaction reverts if any of the following conditions is true:
 
-* The factory is [paused](Pausable.md)
+* The manager is [paused](Pausable.md)
 * The [system is suspended](SystemStatus.md)
 * Market creation [has been disabled](#marketcreationenabled)
 * The given maturity date is further than [`durations.maxTimeToMaturity`](#durations) in the future
 * The provided maturity date is not after the provided bidding end date.
 * The sum of `longBid` and `shortBid` is less than [`minimumInitialLiquidity`](#minimuminitialliquidity)
-* The creator has not approved the factory to transfer at least `longBid + shortBid` sUSD on their behalf.
+* The creator has not approved the manager to transfer at least `longBid + shortBid` sUSD on their behalf.
 
 ??? example "Details"
     **Signature**
@@ -381,9 +381,9 @@ and any remaining sUSD will be returned to the fee pool.
 
 The transaction reverts if any of the following is true:
 
-* The factory is [paused](Pausable.md)
+* The manager is [paused](Pausable.md)
 * The [system is suspended](SystemStatus.md)
-* The market to be destroyed is [not known to the factory](#_isknownmarket);
+* The market to be destroyed is [not known to the manager](#_isknownmarket);
 * The market to be destroyed is not yet [destructible](BinaryOptionMarket.md#_destructible).
 * The message sender is not the market creator, or the market is still within the [creator exclusive destruction period](#publiclydestructibletime).
 
@@ -603,7 +603,7 @@ Allows the contract owner to update [`minimumInitialLiquidity`](#minimuminitiall
 Allows markets to increase the tracked total deposit value.
 
 The transaction reverts if the sender is not a [known market](#onlyknownmarkets),
-or if the factory is [paused](Pausable.md), or if the [system is suspended](SystemStatus.md).
+or if the manager is [paused](Pausable.md), or if the [system is suspended](SystemStatus.md).
 
 ??? example "Details"
     **Signature**
@@ -623,7 +623,7 @@ or if the factory is [paused](Pausable.md), or if the [system is suspended](Syst
 Allows markets to decrease the tracked total deposit value.
 
 The transaction reverts if the sender is not a [known market](#onlyknownmarkets),
-or if the factory is [paused](Pausable.md), or if the [system is suspended](SystemStatus.md).
+or if the manager is [paused](Pausable.md), or if the [system is suspended](SystemStatus.md).
 
 ??? example "Details"
     **Signature**
@@ -677,13 +677,13 @@ Allows the owner to toggle whether [market creation is enabled](#marketcreatione
 
 ---
 
-### `setMigratingFactory`
+### `setMigratingManager`
 
-Allows the owner to set the value of [`_migratingFactory`](#_migratingfactory).
+Allows the owner to set the value of [`_migratingManager`](#_migratingmanager).
 
 ??? example "Details"
     **Signature**
-    `setMigratingFactory(BinaryOptionMarketFactory factory)`
+    `setMigratingManager(BinaryOptionMarketManager manager)`
     
     **State Mutability**
     `public`
@@ -695,8 +695,8 @@ Allows the owner to set the value of [`_migratingFactory`](#_migratingfactory).
 
 ### `migrateMarkets`
 
-Allows the contract owner to migrate a set of markets to a new factory instance, for example in case of upgrades.
-This requires first [setting the migrating factory](#setmigratingfactory) in the receiving factory, so that the
+Allows the contract owner to migrate a set of markets to a new manager instance, for example in case of upgrades.
+This requires first [setting the migrating manager](#setmigratingmanager) in the receiving manager, so that the
 [`receiveMarkets`](#receivemarkets) can be called from this function call.
 This will also migrate the total value of deposits in the migrated markets between the factories.
 
@@ -709,7 +709,7 @@ The transaction will revert if any of the markets provided is not known, or is a
 ??? example Details
     **Signature**
     
-    `migrateMarkets(BinaryOptionMarketFactory receivingFactory, BinaryOptionMarket[] calldata marketsToMigrate)`
+    `migrateMarkets(BinaryOptionMarketManager receivingManager, BinaryOptionMarket[] calldata marketsToMigrate)`
     
     **State Mutability**
     
@@ -721,18 +721,18 @@ The transaction will revert if any of the markets provided is not known, or is a
     
     **Emitted Events**
     
-    * [`MarketsMigrated(receivingFactory, marketsToMigrate)`](#marketsmigrated)
+    * [`MarketsMigrated(receivingManager, marketsToMigrate)`](#marketsmigrated)
 
 ---
 
 ### `receiveMarkets`
 
-This is called by a migrating factory once it has prepared its markets to be received to finalise the migration.
-The value of deposits in the migrated markets will be added to the receiving factory's total.
+This is called by a migrating manager once it has prepared its markets to be received to finalise the migration.
+The value of deposits in the migrated markets will be added to the receiving manager's total.
 
-The function reverts if the message sender is not the migrating factory,
-which must previously [have been set](#setmigratingfactory), or if any provided market is already known to
-the factory, or is a duplicate.
+The function reverts if the message sender is not the migrating manager,
+which must previously [have been set](#setmigratingmanager), or if any provided market is already known to
+the manager, or is a duplicate.
 
 ??? example "Details"
     **Signature**
@@ -745,7 +745,7 @@ the factory, or is a duplicate.
    
     **Emitted Events**
     
-    * [`MarketsReceived(_migratingFactory, marketsToReceive)`](#marketsreceived)
+    * [`MarketsReceived(_migratingManager, marketsToReceive)`](#marketsreceived)
 
 ## Functions (Internal)
 
@@ -803,17 +803,17 @@ An exiting market was destroyed, and which address destroyed it.
 
 ### `MarketsMigrated`
  
-A set of markets was migrated to a certain receiving factory.
+A set of markets was migrated to a certain receiving manager.
  
-**Signature:** `MarketsMigrated(BinaryOptionMarketFactory receivingFactory, BinaryOptionMarket[] markets)`
+**Signature:** `MarketsMigrated(BinaryOptionMarketManager receivingManager, BinaryOptionMarket[] markets)`
     
 ---
 
 ### `MarketsReceived`
 
-A set of markets was migrated from a certain migrating factory.
+A set of markets was migrated from a certain migrating manager.
 
-**Signature:** `MarketsReceived(BinaryOptionMarketFactory migratingFactory, BinaryOptionMarket[] markets)`
+**Signature:** `MarketsReceived(BinaryOptionMarketManager migratingManager, BinaryOptionMarket[] markets)`
 
 ---
 

@@ -23,7 +23,7 @@ between these phases is held in the [`times`](#times) public variable.
 
 A market can be created by anyone, as long as they can provide enough initial capital to ensure
 the market is liquid. Upon creation markets will be
-[tracked in the factory contract](BinaryOptionMarketFactory.md#_markets)
+[tracked in the manager contract](BinaryOptionMarketManager.md#_markets)
 until they are eventually destroyed.
 
 Market creators are incentivised to make markets by the collection of [fees](#fees),
@@ -31,7 +31,7 @@ which they share with the fee pool. These fees are released at the end of the ma
 it is in the creator's interest, in order to maximise the fees they collect, to set
 market parameters that attract the maximum demand over the lifetime of the market.
 
-Binary option markets are created by calls to the [`BinaryOptionMarketFactory.createMarket`](BinaryOptionMarketFactory.md#createmarket)
+Binary option markets are created by calls to the [`BinaryOptionMarketManager.createMarket`](BinaryOptionMarketManager.md#createmarket)
 function: see the documentation for that function for more details.
 
 #### Bidding
@@ -79,20 +79,20 @@ according to the result. The maturity condition is ultimately resolved depending
 #### Destruction
 
 After a period the market can be destroyed by a call to
-[`BinaryOptionMarketFactory.destroyMarket`](BinaryOptionMarketFactory.md#destroymarket).
+[`BinaryOptionMarketManager.destroyMarket`](BinaryOptionMarketManager.md#destroymarket).
 At this time the collected [fees](#fees) are transferred to the fee pool and to whoever called the function.
-The market is then destroyed and removed from the list of active markets on the factory.
+The market is then destroyed and removed from the list of active markets on the manager.
 
 For an exclusive period determined by
-[`BinaryOptionMarketFactory.durations.creatorDestructionDuration`](BinaryOptionMarketFactory.md#durations),
+[`BinaryOptionMarketManager.durations.creatorDestructionDuration`](BinaryOptionMarketManager.md#durations),
 only the [creator](#creator) of a market can destroy it, but after this time elapses, the reward is available for
 anyone to claim in exchange for cleaning up the market.
 
 | Relevant Functions | Description |
 | ------------------ | ----------- |
 | [`destructionReward`](#destructionreward) | The value of sUSD transferred to the market destroyer. |
-| [`BinaryOptionMarketFactory.destroyMarket`](BinaryOptionMarketFactory.md#destroymarket) | Destroys a market and remits the destruction reward to the destroyer. |
-| [`BinaryOptionMarketFactory.publiclyDestructibleTime`](BinaryOptionMarketFactory.md#publiclydestructibletime) | The timestamp after which a given market will be destructible by addresses other than its creator. |
+| [`BinaryOptionMarketManager.destroyMarket`](BinaryOptionMarketManager.md#destroymarket) | Destroys a market and remits the destruction reward to the destroyer. |
+| [`BinaryOptionMarketManager.publiclyDestructibleTime`](BinaryOptionMarketManager.md#publiclydestructibletime) | The timestamp after which a given market will be destructible by addresses other than its creator. |
 
 ## Architecture
 
@@ -113,8 +113,8 @@ graph TD
 
 ```mermaid
 graph TD
-    BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionMarketFactory[BinaryOptionMarketFactory]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarket[BinaryOptionMarket]
+    BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarket[BinaryOptionMarket]
     BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionLong[BinaryOptionLong]
     BinaryOptionLong[BinaryOptionLong] --> BinaryOptionMarket[BinaryOptionMarket]
     BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionShort[BinaryOptionLong]
@@ -129,7 +129,7 @@ graph TD
 
     * [`BinaryOptionLong`](BinaryOption.md): The `BinaryOption` instance for long options of this market. Holds relevant bids and balances, and converts between them.
     * [`BinaryOptionShort`](BinaryOption.md): The `BinaryOption` instance for short options of this market.
-    * [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md): The factory that created this market. The factory is queried for the pause status of the system, and to track the total deposited tokens.
+    * [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md): The manager that created this market. The manager is queried for the pause status of the system, and to track the total deposited tokens.
     * [`SystemStatus`](SystemStatus.md): The market ceases to operate if the system is suspended from the `SystemStatus` contract.
     * [`ExchangeRates`](ExchangeRates.md): The final price at maturity of this market is queried from the `ExchangeRates` contract. As such, markets must be based on assets that the exchange rates contract knows. 
     * [`sUSD Synth`](Synth.md): All deposits and settlements are performed in terms of sUSD.
@@ -341,7 +341,7 @@ Returns the value of sUSD that will be paid to the caller if they successfully
 returns 0. Otherwise the destruction reward is the [collected creator fees](#feescollected) plus
 the value of any unexercised options.
 
-Since there is [a creator-exclusive destruction period](BinaryOptionMarketFactory.md#publiclydestructibletime),
+Since there is [a creator-exclusive destruction period](BinaryOptionMarketManager.md#publiclydestructibletime),
 this means that market creators can recover their initial bids here if they were never exercised.
 
 Note that, due to rounding errors, if the [pool fee rate](#fees) is zero, under some circumstances the remaining
@@ -554,15 +554,15 @@ Retrieves the [cached](MixinResolver.md) address of the [`FeePool`](FeePool.md) 
 
 ---
 
-### `_factory`
+### `_manager`
 
-Returns the address of the [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md) which tracks this market.
+Returns the address of the [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md) which tracks this market.
 Note that this address is also this contract's [owner](Owned.md#owner).
 
 ??? example "Details"
     **Signature**
     
-    `function _factory() returns (BinaryOptionMarketFactory)`
+    `function _manager() returns (BinaryOptionMarketManager)`
     
     **State Mutability**
     
@@ -785,9 +785,9 @@ Reverts the transaction if the market [has not matured](#_matured).
 
 ---
 
-### `factoryNotPaused`
+### `managerNotPaused`
 
-Reverts the transaction if the [factory contract](BinaryOptionMarketFactory.md) has [paused](Paused.md#paused) binary option operations.
+Reverts the transaction if the [manager contract](BinaryOptionMarketManager.md) has [paused](Pausable.md#paused) binary option operations.
 
 ## Functions
 
@@ -799,7 +799,7 @@ Allows a user to place an sUSD bid on one or the other side of the market.
 
 To process a bid, the market increments the user's [bid balance](#bidsof) on the appropriate option contract,
 as well as incrementing the total value deposited both [in this market](#deposited) and in the
-[factory contract](BinaryOptionMarketFactory.md#totaldeposited). The deposit quantities having been updated,
+[manager contract](BinaryOptionMarketManager.md#totaldeposited). The deposit quantities having been updated,
 the option prices are [recomputed](#_updateprices) to reflect the changed odds.
 
 The value of the bid is withdrawn from the message sender's sUSD balance by a call to
@@ -808,7 +808,7 @@ they have granted the market sufficient approval and that they have enough
 sUSD to support the bid.
 
 The transaction reverts if this function is called outside the bidding period, if the system is suspended,
-or if the factory contract is paused.
+or if the manager contract is paused.
 
 ??? example "Details"
     **Signature**
@@ -836,7 +836,7 @@ The function returns the value refunded as sUSD.
 
 The full value of the refund is deducted from the caller's balance, while this value minus the refund fee
 is actually remitted as sUSD. The deposited quantity in [the market](#deposited)
-and in the [factory contract](BinaryOptionMarketFactory.md#totaldeposited) are decremented by the transferred
+and in the [manager contract](BinaryOptionMarketManager.md#totaldeposited) are decremented by the transferred
 value. The deposit quantities having been updated, the option prices are [recomputed](#_updateprices) to reflect the
 changed odds.
 
@@ -849,7 +849,7 @@ if it would either violate the [minimum liquidity requirement](#minimuminitialli
 it would refund their entire position on either side of the market.
 
 The transaction reverts if this function is called outside the bidding period, if the system is suspended,
-or if the factory contract is paused.
+or if the manager contract is paused.
 
 ??? example "Details"
     **Signature**
@@ -881,7 +881,7 @@ the fees that were collected. After a successful invocation, the variable [`reso
 will be true. The final oracle price is saved and can be queried from
 [`oracleDetails.finalPrice`](#oracledetails).
 
-This function reverts the transaction if the system is suspended or the factory contract is paused.
+This function reverts the transaction if the system is suspended or the manager contract is paused.
 
 ??? example "Details"
     **Signature**
@@ -895,7 +895,7 @@ This function reverts the transaction if the system is suspended or the factory 
     **Modifiers**
     
     * [`onlyAfterMaturity`](#onlyaftermaturity)
-    * [`factoryNotPaused`](#factorynotpaused)
+    * [`managerNotPaused`](#managernotpaused)
     
     **Emitted Events**
     
@@ -910,7 +910,7 @@ The number of options owed is simply the user's [bid balances](#bidsof), divided
 [current option prices](#prices). The caller's bid balances are set to zero, while the appropriate number
 of options are credited to their wallet.
 
-This function reverts the transaction if the system is suspended or the factory contract is paused.
+This function reverts the transaction if the system is suspended or the manager contract is paused.
 
 ??? example "Details"
     **Signature**
@@ -924,7 +924,7 @@ This function reverts the transaction if the system is suspended or the factory 
     **Modifiers**
     
     * [`onlyAfterBidding`](#onlyafterbidding)
-    * [`factoryNotPaused`](#factorynotpaused)
+    * [`managerNotPaused`](#managernotpaused)
    
     **Emitted Events**
     
@@ -939,12 +939,12 @@ This function will exercise any options held by the message sender on either sid
 zeroing out their option balances. If the caller holds $n$ options on the winning side of the market,
 they will be transferred $n$ sUSD. Any options held on the losing side of the market will yield no
 payout. Upon exercising options, the quantity of sUSD paid to the called will be deducted from
-the tracked totals [here](#deposited), and in the [factory contract](BinaryOptionMarketFactory.md#totaldeposited).
+the tracked totals [here](#deposited), and in the [manager contract](BinaryOptionMarketManager.md#totaldeposited).
 
 If the market is unresolved at call time, it will be resolved if it can be. If the caller
 has unclaimed options, they will be claimed before they are exercised.
 
-This function reverts the transaction if the system is suspended or the factory contract is paused.
+This function reverts the transaction if the system is suspended or the manager contract is paused.
 
 ??? example "Details"
     **Signature**
@@ -963,16 +963,16 @@ This function reverts the transaction if the system is suspended or the factory 
 
 ### `selfDestruct`
 
-This function allows the factory to destroy this market at the end of its life.
+This function allows the manager to destroy this market at the end of its life.
 Upon destruction, the [destruction reward](#destructionreward)
 is computed and paid to the beneficiary
-(whoever [initiated destruction in the factory contract](BinaryOptionMarketFactory.md#destroymarket)),
+(whoever [initiated destruction in the manager contract](BinaryOptionMarketManager.md#destroymarket)),
 and any remaining tokens are sent to the [fee pool](FeePool.md#fee_address), and these quantities
-will be deducted from the total tracked in the [factory](BinaryOptionMarketFactory.md#totaldeposited).
+will be deducted from the total tracked in the [manager](BinaryOptionMarketManager.md#totaldeposited).
 The market will also destroy its child [`BinaryOption`](#options) instances before it destroys itself.
 
 The function will revert if the caller is not the owner, if the market is not [resolved](#resolved), or if
-it is not yet [destructible](#_destructible), if the factory is paused, or the system is suspended.
+it is not yet [destructible](#_destructible), if the manager is paused, or the system is suspended.
 
 ??? example "Details"
     **Signature**

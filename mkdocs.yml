@@ -72,7 +72,7 @@ nav:
           - AddressResolver: contracts/AddressResolver.md
           - BinaryOption: contracts/BinaryOption.md
           - BinaryOptionMarket: contracts/BinaryOptionMarket.md
-          - BinaryOptionMarketFactory: contracts/BinaryOptionMarketFactory.md
+          - BinaryOptionMarketManager: contracts/BinaryOptionMarketManager.md
           - DelegateApprovals: contracts/DelegateApprovals.md
           - Depot: contracts/Depot.md
           - EscrowChecker: contracts/EscrowChecker.md
