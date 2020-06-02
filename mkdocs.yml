@@ -74,8 +74,6 @@ nav:
           - IssuanceEternalStorage: contracts/IssuanceEternalStorage.md
           - Issuer: contracts/Issuer.md
           - LimitedSetup: contracts/LimitedSetup.md
-          - Math: contracts/Math.md
-          - Migrations: contracts/Migrations.md
           - MixinResolver: contracts/MixinResolver.md
           - MultiCollateralSynth: contracts/MultiCollateralSynth.md
           - Owned: contracts/Owned.md
@@ -88,8 +86,6 @@ nav:
           - RewardEscrow: contracts/RewardEscrow.md
           - RewardsDistribution: contracts/RewardsDistribution.md
           - RewardsDistributionRecipient: contracts/RewardsDistributionRecipient.md
-          - SafeDecimalMath: contracts/SafeDecimalMath.md
-          - SafeMath: contracts/SafeMath.md
           - SelfDestructible: contracts/SelfDestructible.md
           - State: contracts/State.md
           - SupplySchedule: contracts/SupplySchedule.md
