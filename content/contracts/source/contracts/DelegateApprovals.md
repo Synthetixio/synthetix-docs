@@ -19,7 +19,7 @@ In principle it is generic, as the approver just marks a number of delegates as 
 ### Inheritance Graph
 
 <centered-image>
-    ![DelegateApprovals inheritance graph](../img/graphs/DelegateApprovals.svg)
+    ![DelegateApprovals inheritance graph](/img/graphs/DelegateApprovals.svg)
 </centered-image>
 
 ---
@@ -27,7 +27,7 @@ In principle it is generic, as the approver just marks a number of delegates as 
 ### Related Contracts
 
 <centered-image>
-    ![DelegateApprovals architecture graph](../img/graphs/DelegateApprovals-architecture.svg)
+    ![DelegateApprovals architecture graph](/img/graphs/DelegateApprovals-architecture.svg)
 </centered-image>
 
 ??? example "Details"

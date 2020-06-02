@@ -17,7 +17,7 @@ This contract is augmented by the [`EscrowChecker`](EscrowChecker.md) contract, 
 ### Inheritance Graph
 
 <centered-image>
-    ![SynthetixEscrow inheritance graph](../img/graphs/SynthetixEscrow.svg)
+    ![SynthetixEscrow inheritance graph](/img/graphs/SynthetixEscrow.svg)
 </centered-image>
 
 ---

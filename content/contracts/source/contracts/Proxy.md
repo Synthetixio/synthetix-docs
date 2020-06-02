@@ -27,7 +27,7 @@ More elaborate data is kept in separate storage contracts that persist across mu
 This allows the proxy's target contract to be largely disposable. This structure looks something like the following:
 
 <centered-image>
-    ![Proxy architecture graph](../img/graphs/Proxy-architecture.svg)
+    ![Proxy architecture graph](/img/graphs/Proxy-architecture.svg)
 </centered-image>
 
 In this way the main contract defining the logic can be swapped out without replacing the proxy or state contracts. The user only ever communicates with the proxy and need not know any implementation details.
@@ -49,7 +49,7 @@ Finally, if the target contract needs to transfer ether around, then it will be 
 ### Inheritance Graph
 
 <centered-image>
-    ![Proxy inheritance graph](../img/graphs/Proxy.svg)
+    ![Proxy inheritance graph](/img/graphs/Proxy.svg)
 </centered-image>
 
 ---

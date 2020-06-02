@@ -16,7 +16,7 @@ This contract can support two proxies simultaneously. Events can be emitted inde
 ### Inheritance Graph
 
 <centered-image>
-    ![Proxyable inheritance graph](../img/graphs/Proxyable.svg)
+    ![Proxyable inheritance graph](/img/graphs/Proxyable.svg)
 </centered-image>
 
 ---

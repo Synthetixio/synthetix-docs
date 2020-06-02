@@ -15,7 +15,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 ### Inheritance Graph
 
 <centered-image>
-    ![ProxyERC20 inheritance graph](../img/graphs/ProxyERC20.svg)
+    ![ProxyERC20 inheritance graph](/img/graphs/ProxyERC20.svg)
 </centered-image>
 
 ---

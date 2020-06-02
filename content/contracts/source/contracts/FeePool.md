@@ -11,7 +11,7 @@
 ### Inheritance Graph
 
 <centered-image>
-    ![FeePool inheritance graph](../img/graphs/FeePool.svg)
+    ![FeePool inheritance graph](/img/graphs/FeePool.svg)
 </centered-image>
 
 ---
@@ -19,7 +19,7 @@
 ### Related Contracts
 
 <centered-image>
-    ![FeePool architecture graph](../img/graphs/FeePool-architecture.svg)
+    ![FeePool architecture graph](/img/graphs/FeePool-architecture.svg)
 </centered-image>
 
 ??? example "Details"

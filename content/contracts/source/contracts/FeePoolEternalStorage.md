@@ -15,7 +15,7 @@ This contract is just wrapper around [EternalStorage](EternalStorage.md) with a 
 ### Inheritance Graph
 
 <centered-image>
-    ![FeePoolEternalStorage inheritance graph](../img/graphs/FeePoolEternalStorage.svg)
+    ![FeePoolEternalStorage inheritance graph](/img/graphs/FeePoolEternalStorage.svg)
 </centered-image>
 
 ---

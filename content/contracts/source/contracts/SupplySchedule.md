@@ -25,7 +25,7 @@ After Week 235 the SNX supply will grow at 2.5% APR based on the total Supply of
 ### Inheritance Graph
 
 <centered-image>
-    ![SupplySchedule inheritance graph](../img/graphs/SupplySchedule.svg)
+    ![SupplySchedule inheritance graph](/img/graphs/SupplySchedule.svg)
 </centered-image>
 
 ---

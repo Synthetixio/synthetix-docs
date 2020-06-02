@@ -23,7 +23,7 @@ See [`FeePool.feesByPeriod`](FeePool.md#feesbyperiod) and [`FeePool.effectiveDeb
 ### Inheritance Graph
 
 <centered-image>
-    ![FeePoolState inheritance graph](../img/graphs/FeePoolState.svg)
+    ![FeePoolState inheritance graph](/img/graphs/FeePoolState.svg)
 </centered-image>
 
 !!! caution "No Relation To The State Contract"

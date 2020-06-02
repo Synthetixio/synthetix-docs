@@ -17,7 +17,7 @@ This contract does all the heavy lifting of issuing and burning `sUSD`. It's use
 ### Inheritance Graph
 
 <centered-image>
-    ![Issuer inheritance graph](../img/graphs/Issuer.svg)
+    ![Issuer inheritance graph](/img/graphs/Issuer.svg)
 </centered-image>
 
 ---
@@ -25,7 +25,7 @@ This contract does all the heavy lifting of issuing and burning `sUSD`. It's use
 ### Related Contracts
 
 <centered-image>
-    ![Synthetix architture graph](../img/graphs/Issuer-architecture.svg)
+    ![Synthetix architture graph](/img/graphs/Issuer-architecture.svg)
 </centered-image>
 
 ??? example "Details"
@@ -39,7 +39,7 @@ This contract does all the heavy lifting of issuing and burning `sUSD`. It's use
 If any, see:
 
 <centered-image>
-    ![Synthetix architture graph](../img/graphs/Synthetix-architecture.svg)
+    ![Synthetix architture graph](/img/graphs/Synthetix-architecture.svg)
 </centered-image>
 --->
 

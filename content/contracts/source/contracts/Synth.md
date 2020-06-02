@@ -46,7 +46,7 @@ See the [main synth notes](../../synths) for more information about how Synths f
 ### Inheritance Graph
 
 <centered-image>
-    ![Synth inheritance graph](../img/graphs/Synth.svg)
+    ![Synth inheritance graph](/img/graphs/Synth.svg)
 </centered-image>
 
 ---

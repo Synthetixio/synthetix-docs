@@ -13,7 +13,7 @@ This contract is a type of Service Locator pattern that allows for easier intera
 ### Inheritance Graph
 
 <centered-image>
-    ![AddressResolver inheritance graph](../img/graphs/AddressResolver.svg)
+    ![AddressResolver inheritance graph](/img/graphs/AddressResolver.svg)
 </centered-image>
 
 ---

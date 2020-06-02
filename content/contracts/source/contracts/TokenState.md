@@ -13,7 +13,7 @@ An external state contract to hold ERC20 balances and allowances. This operates 
 ### Inheritance Graph
 
 <centered-image>
-    ![TokenState inheritance graph](../img/graphs/TokenState.svg)
+    ![TokenState inheritance graph](/img/graphs/TokenState.svg)
 </centered-image>
 
 ---

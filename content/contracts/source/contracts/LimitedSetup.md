@@ -13,7 +13,7 @@ This contract allows certain functions within inheriting contracts to only opera
 ### Inheritance Graph
 
 <centered-image>
-    ![LimitedSetup inheritance graph](../img/graphs/LimitedSetup.svg)
+    ![LimitedSetup inheritance graph](/img/graphs/LimitedSetup.svg)
 </centered-image>
 
 ---

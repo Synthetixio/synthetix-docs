@@ -19,7 +19,7 @@ This does not turn off any functionality in the exchange rate contract, but is u
 ### Inheritance Graph
 
 <centered-image>
-    ![ExchangeRates inheritance graph](../img/graphs/ExchangeRates.svg)
+    ![ExchangeRates inheritance graph](/img/graphs/ExchangeRates.svg)
 </centered-image>
 
 ---
@@ -27,7 +27,7 @@ This does not turn off any functionality in the exchange rate contract, but is u
 ### Related Contracts
 
 <centered-image>
-    ![ExchangeRates architecture graph](../img/graphs/ExchangeRates-architecture.svg)
+    ![ExchangeRates architecture graph](/img/graphs/ExchangeRates-architecture.svg)
 </centered-image>
 
 ??? example "Details"

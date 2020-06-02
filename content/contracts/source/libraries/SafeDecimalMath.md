@@ -89,7 +89,7 @@ The representation of a number $q$ at two different fixed point precision levels
 ### Inheritance Graph
 
 <centered-image>
-    ![SafeDecimalMath inheritance graph](../img/graphs/SafeDecimalMath.svg)
+    ![SafeDecimalMath inheritance graph](/img/graphs/SafeDecimalMath.svg)
 </centered-image>
 
 ---

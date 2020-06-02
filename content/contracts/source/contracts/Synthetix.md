@@ -11,7 +11,7 @@
 ### Inheritance Graph
 
 <centered-image>
-    ![Synthetix inheritance graph](../img/graphs/Synthetix.svg)
+    ![Synthetix inheritance graph](/img/graphs/Synthetix.svg)
 </centered-image>
 
 ---
@@ -19,7 +19,7 @@
 ### Related Contracts
 
 <centered-image>
-    ![Synthetix architture graph](../img/graphs/Synthetix-architecture.svg)
+    ![Synthetix architture graph](/img/graphs/Synthetix-architecture.svg)
 </centered-image>
 
 ??? example "Details"

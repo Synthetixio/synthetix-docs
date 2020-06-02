@@ -19,7 +19,7 @@ Each type of variable has its own mapping, along with getters and setters. As th
 ### Inheritance Graph
 
 <centered-image>
-    ![EternalStorage inheritance graph](../img/graphs/EternalStorage.svg)
+    ![EternalStorage inheritance graph](/img/graphs/EternalStorage.svg)
 </centered-image>
 
 ---

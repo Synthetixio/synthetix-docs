@@ -15,7 +15,7 @@ Purgeable synths were introduced by [SIP-3](https://github.com/Synthetixio/SIPs/
 ### Inheritance Graph
 
 <centered-image>
-    ![PurgeableSynth inheritance graph](../img/graphs/PurgeableSynth.svg)
+    ![PurgeableSynth inheritance graph](/img/graphs/PurgeableSynth.svg)
 </centered-image>
 
 ---

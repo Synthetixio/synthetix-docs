@@ -19,7 +19,7 @@ Throughout, the contract assumes that sUSD is always worth exactly US\$1. So: a)
 ### Inheritance Graph
 
 <centered-image>
-    ![Depot inheritance graph](../img/graphs/Depot.svg)
+    ![Depot inheritance graph](/img/graphs/Depot.svg)
 </centered-image>
 
 ---

@@ -15,7 +15,7 @@ This is designed to allow behaviour to be decoupled from storage so that upgrade
 ### Inheritance Graph
 
 <centered-image>
-    ![State inheritance graph](../img/graphs/State.svg)
+    ![State inheritance graph](/img/graphs/State.svg)
 </centered-image>
 
 ---

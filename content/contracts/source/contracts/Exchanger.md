@@ -17,7 +17,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 ### Inheritance Graph
 
 <centered-image>
-    ![Exchanger inheritance graph](../img/graphs/Exchanger.svg)
+    ![Exchanger inheritance graph](/img/graphs/Exchanger.svg)
 </centered-image>
 
 ---
@@ -25,7 +25,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 ### Related Contracts
 
 <centered-image>
-    ![Exchanger architture graph](../img/graphs/Exchanger-architecture.svg)
+    ![Exchanger architture graph](/img/graphs/Exchanger-architecture.svg)
 </centered-image>
 
 ---

@@ -17,13 +17,13 @@
 ... todo.
 
 <!--centered-image>
-    ![Architecture Graph](../img/graphs/todo-architecture.svg)
+    ![Architecture Graph](/img/graphs/todo-architecture.svg)
 </centered-image-->
 
 ### Inheritance Graph
 
 <!--centered-image>
-    ![Inheritance graph](../img/graphs/todo.svg)
+    ![Inheritance graph](/img/graphs/todo.svg)
 </centered-image-->
 
 ### Related Contracts
