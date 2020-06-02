@@ -10,82 +10,73 @@ For upgradeability, this contract utilises an [external state contract](TokenSta
 
 The main [`Synthetix`](Synthetix.md) contract and all [`Synths`](Synth.md) are ExternStateTokens.
 
-**Source:** [ExternStateToken.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/ExternStateToken.sol)
+**Source:** [contracts/ExternStateToken.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol)
 
 ## Architecture
 
----
+### Libraries
+
+- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
 
 ### Inheritance Graph
 
-<centered-image>
-    ![ExternStateToken inheritance graph](/img/graphs/ExternStateToken.svg)
-</centered-image>
+```mermaid
+graph TD
+    ExternStateToken[ExternStateToken] --> SelfDestructible[SelfDestructible]
+    ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
+    SelfDestructible[SelfDestructible] --> Owned[Owned]
+    Proxyable[Proxyable] --> Owned[Owned]
 
----
-
-## Related Contracts
-
-- [`TokenState`](TokenState.md)
-
----
-
-## Libraries
-
-- [`SafeMath`](SafeMath.md) for `uint`
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
-
----
+```
 
 ## Variables
 
----
-
-### `tokenState`
-
-The external state contract holding this token's balances and allowances.
-
-**Type:** `TokenState public`
-
----
-
-### `name`
-
-The ERC20 name of this token.
-
-**Type:** `string public`
-
----
-
-### `symbol`
-
-The ERC20 symbol of this token.
-
-**Type:** `string public`
-
----
-
-### `totalSupply`
-
-The ERC20 total token supply.
-
-**Type:** `uint public`
-
----
-
 ### `decimals`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L29)</sub>
 
 The ERC20 decimal precision of this token. This is usually set to 18 in Synthetix.
 
-**Type:** `uint8 public`
+**Type:** `uint8`
 
----
+### `name`
 
-## Functions
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L26)</sub>
 
----
+The ERC20 name of this token.
+
+**Type:** `string`
+
+### `symbol`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L27)</sub>
+
+The ERC20 symbol of this token.
+
+**Type:** `string`
+
+### `tokenState`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L23)</sub>
+
+The external state contract holding this token's balances and allowances.
+
+**Type:** `contract TokenState`
+
+### `totalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L28)</sub>
+
+The ERC20 total token supply.
+
+**Type:** `uint256`
+
+## Constructor
 
 ### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L31)</sub>
 
 Initialises this token's ERC20 fields, its proxy, token state, and its inherited [`SelfDestructible`](SelfDestructible.md) and [`Proxyable`](Proxyable.md) instances.
 
@@ -93,16 +84,21 @@ Initialises this token's ERC20 fields, its proxy, token state, and its inherited
 
     **Signature**
 
-    `constructor(address _proxy, TokenState _tokenState, string _name, string _symbol, uint _totalSupply, uint8 _decimals, address _owner) public`
+    `(address payable _proxy, contract TokenState _tokenState, string _name, string _symbol, uint256 _totalSupply, uint8 _decimals, address _owner)`
 
-    **Superconstructors**
+    **Visibility**
 
-    * [`SelfDestructible(_owner)`](SelfDestructible.md)
-    * [`Proxyable(_proxy, _owner)`](Proxyable.md)
+    `public`
 
----
+    **State Mutability**
+
+    `nonpayable`
+
+## Views
 
 ### `allowance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L55)</sub>
 
 Returns the ERC20 allowance of one party to spend on behalf of another.
 This information is retrieved from the [`tokenState`](TokenState.md) contract.
@@ -111,11 +107,19 @@ This information is retrieved from the [`tokenState`](TokenState.md) contract.
 
     **Signature**
 
-    `allowance(address owner, address spender) public view returns (uint)`
+    `allowance(address owner, address spender)`
 
----
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
 
 ### `balanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L62)</sub>
 
 Returns the ERC20 token balance of the given address.
 This information is retrieved from the [`tokenState`](TokenState.md) contract.
@@ -124,11 +128,21 @@ This information is retrieved from the [`tokenState`](TokenState.md) contract.
 
     **Signature**
 
-    `balanceOf(address account) public view returns (uint)`
+    `balanceOf(address account)`
 
----
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+## Restricted Functions
 
 ### `setTokenState`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L73)</sub>
 
 Allows the owner to set the address of the `tokenState`(TokenState.md) contract.
 Unhooking the token state will pause the contract by causing all transactions to revert.
@@ -137,19 +151,25 @@ Unhooking the token state will pause the contract by causing all transactions to
 
     **Signature**
 
-    `setTokenState(TokenState _tokenState) external`
+    `setTokenState(contract TokenState _tokenState)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`optionalProxy_onlyOwner`](Proxyable.md#optionalproxy_onlyowner)
+    * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
 
-    **Emits**
-
-    * [`TokenStateUpdated(_tokenState)`](#tokenstateupdated)
-
----
+## Internal Functions
 
 ### `_internalTransfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L78)</sub>
 
 Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_transfer_byproxy) and [`_transferFrom_byProxy`](#_transferfrom_byproxy).
 
@@ -159,58 +179,133 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **Signature**
 
-    `_internalTransfer(address from, address to, uint value, bytes data) internal returns (bool)`
+    `_internalTransfer(address from, address to, uint256 value)`
 
-    **Preconditions**
+    **Visibility**
 
-    * The recipient cannot be the zero address.
-    * The recipient cannot be the token contract itself.
-    * The recipient cannot be the proxy.
-    * The sender's token balance must not be less than `value`.
+    `internal`
 
-    **Emits**
+    **State Mutability**
 
-    * [`Transfer(from, to, value)`](#transfer)
+    `nonpayable`
 
----
+    **Requires**
 
-### `_transfer_byProxy`
+    * [require(..., Cannot transfer to this address)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L84)
 
-Designed to be used in a transfer function posessing the [`onlyProxy`](Proxyable.md#onlyproxy) modifier in an inheriting contract.
+### `_transferByProxy`
 
-Implemented as [`_internalTransfer(from, to, value)`](#_internaltransfer).
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L100)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_transfer_byProxy(address from, address to, uint value) internal returns (bool)`
+    `_transferByProxy(address from, address to, uint256 value)`
 
-    Other details are as per [`_internalTransfer`](#_internaltransfer)
+    **Visibility**
 
----
+    `internal`
 
-### `_transferFrom_byProxy`
+    **State Mutability**
 
-Designed to be used in a transferFrom function posessing the [`onlyProxy`](Proxyable.md#onlyproxy) modifier in an inheriting contract.
+    `nonpayable`
 
-After allowance has been deducted, Implemented by [`_internalTransfer(from, to, value, data)`](#_internaltransfer).
+### `_transferFromByProxy`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L112)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_transferFrom_byProxy(address sender, address from, address to, uint value, bytes data) internal returns (bool)`
+    `_transferFromByProxy(address sender, address from, address to, uint256 value)`
 
-    **Preconditions**
+    **Visibility**
 
-    * The sender must have an approval greater than `value`.
+    `internal`
 
-    Other details are as per [`_internalTransfer`](#_internaltransfer)
+    **State Mutability**
 
----
+    `nonpayable`
+
+### `addressToBytes32`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L135)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `addressToBytes32(address input)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `pure`
+
+### `emitApproval`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L153)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitApproval(address owner, address spender, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `emitTokenStateUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L164)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitTokenStateUpdated(address newTokenState)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `emitTransfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L142)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitTransfer(address from, address to, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+## External Functions
 
 ### `approve`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L126)</sub>
 
 ERC20 approve function.
 
@@ -218,48 +313,48 @@ ERC20 approve function.
 
     **Signature**
 
-    `approve(address spender, uint value) public returns (bool)`
+    `approve(address spender, uint256 value)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
-
-    **Emits**
-
-    * [`Approval(messageSender, spender, value)`](#approval)
-
----
+    * [optionalProxy](#optionalproxy)
 
 ## Events
 
----
-
-### `Transfer`
-
-Records that an ERC20 transfer occurred.
-
-This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTransfer`.
-
-**Signature:** `Transfer(address indexed from, address indexed to, uint value)`
-
----
-
 ### `Approval`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L150)</sub>
 
 Records that an ERC20 approval occurred.
 
 This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitApproval`.
 
-**Signature:** `Approval(address indexed owner, address indexed spender, uint value)`
-
----
+**Signature**: `Approval(address owner, address spender, uint256 value)`
 
 ### `TokenStateUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L161)</sub>
 
 Records that the [token state address](#tokenstate) was updated.
 
 This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTokenStateUpdated`.
 
-**Signature:** `TokenStateUpdated(address newTokenState)`
+**Signature**: `TokenStateUpdated(address newTokenState)`
 
----
+### `Transfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExternStateToken.sol#L139)</sub>
+
+Records that an ERC20 transfer occurred.
+
+This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTransfer`.
+
+**Signature**: `Transfer(address from, address to, uint256 value)`

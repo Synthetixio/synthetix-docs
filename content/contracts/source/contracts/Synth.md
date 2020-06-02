@@ -39,63 +39,57 @@ See the [main synth notes](../../synths) for more information about how Synths f
 
     That is, the relative profit is simply $(\phi_\kappa - \phi_\tau)$. With no transfer fee, this is $\phi_\kappa$, as expected.
 
-**Source:** [Synth.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol)
+**Source:** [contracts/Synth.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol)
 
 ## Architecture
 
----
-
 ### Inheritance Graph
 
-<centered-image>
-    ![Synth inheritance graph](/img/graphs/Synth.svg)
-</centered-image>
+```mermaid
+graph TD
+    Synth[Synth] --> ExternStateToken[ExternStateToken]
+    Synth[Synth] --> MixinResolver[MixinResolver]
+    ExternStateToken[ExternStateToken] --> SelfDestructible[SelfDestructible]
+    ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
+    SelfDestructible[SelfDestructible] --> Owned[Owned]
+    Proxyable[Proxyable] --> Owned[Owned]
+    MixinResolver[MixinResolver] --> Owned[Owned]
 
----
+```
+
+## Constants
+
+### `DECIMALS`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L24)</sub>
+
+The number of decimal places this token uses. Fixed at $18$.
+
+**Value:** `18`
+
+**Type:** `uint8`
+
+### `FEE_ADDRESS`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L27)</sub>
+
+**Type:** `address`
 
 ## Variables
 
----
-
-### `feePool`
-
-The address of the [`FeePool`](FeePool.md) contract.
-
-**Type:** `FeePool public`
-
----
-
-### `synthetix`
-
-The address of the [`Synthetix`](Synthetix.md) contract.
-
-**Type:** `FeePool public`
-
----
-
 ### `currencyKey`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L22)</sub>
 
 The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosystem. The currency key could in principle be distinct from this token's [ERC20 symbol](ExternStateToken.md#symbol).
 
 **Type:** `bytes32`
 
----
-
-### `DECIMALS`
-
-The number of decimal places this token uses. Fixed at $18$.
-
-**Type:** `uint8 constant`
-
-**Value:** `18`
-
----
-
-## Functions
-
----
+## Constructor
 
 ### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L47)</sub>
 
 Initialises the [`feePool`](#feepool) and [`synthetix`](#synthetix) addresses, this Synth's [`currencyKey`](#currencyKey), and the inherited [`ExternStateToken`](ExternStateToken.md) instance.
 
@@ -105,60 +99,355 @@ The precision in every Synth's fixed point representation is fixed at 18 so they
 
     **Signature**
 
-    `constructor(address _proxy, TokenState _tokenState, Synthetix _synthetix, IFeePool _feePool, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey) public`
+    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver)`
 
-    **Superconstructors**
+    **Visibility**
 
-    * [`ExternStateToken(_proxy, _tokenState, _tokenName, _tokenSymbol, 0, DECIMALS, _owner)`](ExternStateToken.md#constructor)
+    `public`
 
-    **Preconditions**
+    **State Mutability**
 
-    * The provided proxy, synthetix, fee pool, and owner addresses must not be zero.
-    * The provided currency key must not already be [registered on synthetix](Synthetix.md#synths).
+    `nonpayable`
 
----
+    **Requires**
 
-### `setSynthetix`
+    * [require(..., _proxy cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L61)
 
-Allows the owner to set the address of the [`synthetix`](Synthetix.md) contract.
+    * [require(..., _owner cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L62)
 
-??? example "Details"
+## Views
 
-    **Signature**
+### `transferableSynths`
 
-    `setSynthetix(Synthetix _synthetix) external`
-
-    **Modifiers**
-
-    * [`Proxyable.optionalProxy_onlyOwner`](Proxyable.md#optionalproxy_onlyowner)
-
-    **Emits**
-
-    * [`SynthetixUpdated(_synthetix)`](#synthetixupdated)
-
----
-
-### `setFeePool`
-
-Allows the owner to set the address of the [`feePool`](FeePool.md) contract.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L217)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setFeePool(FeePool _feePool) external`
+    `transferableSynths(address account)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
+## Restricted Functions
+
+### `burn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L165)</sub>
+
+Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [burnt directly](Synthetix.md#burnSynths). This is also used to burn Synths involved in oracle frontrunning as part of the [protection circuit](Synthetix.md#protectioncircuit). This is also used by the [`FeePool`](FeePool.md) to [burn sUSD when fees are paid out](FeePool.md#_payfees).
+
+??? example "Details"
+
+    **Signature**
+
+    `burn(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`Proxyable.optionalProxy_onlyOwner`](Proxyable.md#optionalproxy_onlyowner)
+    * [onlyInternalContracts](#onlyinternalcontracts)
 
-    **Emits**
+### `issue`
 
-    * [`FeePoolUpdated(_feePool)`](#feepoolupdated)
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L159)</sub>
 
----
+Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [issued directly](Synthetix.md#issuesynths). This is also used by the [`FeePool`](FeePool.md) to [pay fees out](FeePool.md#_payfees).
+
+??? example "Details"
+
+    **Signature**
+
+    `issue(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyInternalContracts](#onlyinternalcontracts)
+
+### `setTotalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L186)</sub>
+
+This allows the owner to set the total supply directly for upgrades, where the [`tokenState`](ExternStateToken.md#tokenstate) is retained, but the total supply figure must be migrated.
+
+For example, just such a migration is performed by [this script](https://github.com/Synthetixio/synthetix/blob/master/publish/src/commands/replace-synths.js).
+
+??? example "Details"
+
+    **Signature**
+
+    `setTotalSupply(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
+
+## Internal Functions
+
+### `_ensureCanTransfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L211)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_ensureCanTransfer(address from, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., Cannot transfer during waiting period)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L212)
+
+    * [require(..., Insufficient balance after any settlement owing)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L213)
+
+### `_internalBurn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L176)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_internalBurn(address account, uint256 amount)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `_internalIssue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L169)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_internalIssue(address account, uint256 amount)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `_internalTransferFrom`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L234)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_internalTransferFrom(address from, address to, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `_transferToFeeAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L139)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_transferToFeeAddress(address to, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `emitBurned`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L275)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitBurned(address account, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `emitIssued`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L268)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitIssued(address account, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `exchanger`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L203)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchanger()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `feePool`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L199)</sub>
+
+The address of the [`FeePool`](FeePool.md) contract.
+
+**Type:** `FeePool public`
+
+??? example "Details"
+
+    **Signature**
+
+    `feePool()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `issuer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L207)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issuer()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `synthetix`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L195)</sub>
+
+The address of the [`Synthetix`](Synthetix.md) contract.
+
+**Type:** `FeePool public`
+
+??? example "Details"
+
+    **Signature**
+
+    `synthetix()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `systemStatus`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L191)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `systemStatus()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+## External Functions
 
 ### `transfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L69)</sub>
 
 This is a pair of ERC20 transfer function.
 
@@ -170,17 +459,25 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
 ??? example "Details"
 
-    **Signatures**
+    **Signature**
 
-    * `transfer(address to, uint value) public returns (bool)`
+    `transfer(address to, uint256 value)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
-
----
+    * [optionalProxy](#optionalproxy)
 
 ### `transferAndSettle`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L85)</sub>
 
 Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transfer` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the sender.
 
@@ -188,17 +485,25 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
 ??? example "Details"
 
-    **Signatures**
+    **Signature**
 
-    * `transfer(address to, uint value) public returns (bool)`
+    `transferAndSettle(address to, uint256 value)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
-
----
+    * [optionalProxy](#optionalproxy)
 
 ### `transferFrom`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L103)</sub>
 
 This is a ERC20 transferFrom function.
 
@@ -210,17 +515,25 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 ??? example "Details"
 
-    **Signatures**
+    **Signature**
 
-    * `transferFrom(address from, address to, uint value) public returns (bool)`
+    `transferFrom(address from, address to, uint256 value)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
-
----
+    * [optionalProxy](#optionalproxy)
 
 ### `transferFromAndSettle`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L113)</sub>
 
 Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transferFrom` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the `from` address.
 
@@ -232,150 +545,46 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 ??? example "Details"
 
-    **Signatures**
+    **Signature**
 
-    * `transferFrom(address from, address to, uint value) public returns (bool)`
+    `transferFromAndSettle(address from, address to, uint256 value)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`Proxyable.optionalProxy`](Proxyable.md#optionalproxy)
-
----
-
-### `_internalTransfer`
-
-This function implements all of the other ERC20 transfer functions supported by this contract. It is itself simply a wrapper to [`ExternStateToken._internalTransfer`](ExternStateToken.md#_internalTransfer).
-
-!!! danger "Dormant Preferred Currency Conversion"
-
-    If [`SynthetixState.preferredCurrency(to)`](SynthetixState.md#preferredcurrency) is nonzero, this function automatically performs an exchange into the preferred Synth flavour using [`Synthetix.synthInitiatedExchange`](Synthetix.md#synthinitiatedexchange). However, there is currently no way for accounts to set their preferred currency, so this feature has effectively been deactivated.
-
-??? example "Details"
-
-    **Signature**
-
-    `_internalTransfer(address from, address to, uint value) internal returns (bool)`
-
-    **Preconditions and Events**
-
-    As per [`ExternStateToken._internalTransfer`](ExternStateToken.md#_internalTransfer).
-
----
-
-### `issue`
-
-Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [issued directly](Synthetix.md#issuesynths). This is also used by the [`FeePool`](FeePool.md) to [pay fees out](FeePool.md#_payfees).
-
-??? example "Details"
-
-    **Signature**
-
-    `issue(address account, uint amount) external`
-
-    **Modifiers**
-
-    * [`onlySynthetixOrFeePool`](#onlysynthetixorfeepool)
-
-    **Emits**
-
-    * [`Transfer(address(0), account, amount)`](ExternStateToken.md#transfer)
-    * [`Issued(account, amount)`](#issued)
-
----
-
-### `burn`
-
-Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [burnt directly](Synthetix.md#burnSynths). This is also used to burn Synths involved in oracle frontrunning as part of the [protection circuit](Synthetix.md#protectioncircuit). This is also used by the [`FeePool`](FeePool.md) to [burn sUSD when fees are paid out](FeePool.md#_payfees).
-
-??? example "Details"
-
-    **Signature**
-
-    `burn(address account, uint amount) external`
-
-    **Modifiers**
-
-    * [`onlySynthetixOrFeePool`](#onlysynthetixorfeepool)
-
-    **Emits**
-
-    * [`Transfer(account, address(0), amount)`](ExternStateToken.md#transfer)
-    * [`Burned(account, amount)`](#burned)
-
----
-
-### `setTotalSupply`
-
-This allows the owner to set the total supply directly for upgrades, where the [`tokenState`](ExternStateToken.md#tokenstate) is retained, but the total supply figure must be migrated.
-
-For example, just such a migration is performed by [this script](https://github.com/Synthetixio/synthetix/blob/master/publish/src/commands/replace-synths.js).
-
-??? example "Details"
-
-    **Signature**
-
-    `setTotalSupply(uint amount) external`
-
-    **Modifiers**
-
-    * [`Proxyable.optionalProxy_onlyOwner`](Proxyable.md#optionalproxy_onlyowner)
-
----
+    * [optionalProxy](#optionalproxy)
 
 ## Modifiers
 
----
+### `onlyInternalContracts`
 
-### `onlySynthetixOrFeePool`
-
-Reverts the transaction if the `msg.sender` is neither [`synthetix`](#synthetix) nor [`feePool`](#feepool).
-
----
-
-**Signature:** `notFeeAddress(address account)`
-
----
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L251)</sub>
 
 ## Events
 
----
-
-### `SynthetixUpdated`
-
-Records that the [`synthetix`](#synthetix) address was [updated](#setsynthetix).
-
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitSynthetixUpdated` function.
-
-**Signature:** `SynthetixUpdated(address newSynthetix)`
-
----
-
-### `FeePoolUpdated`
-
-Records that the [`feePool`](#feepool) address was [updated](#setfeepool).
-
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitFeePoolUpdated` function.
-
-**Signature:** `FeePoolUpdated(address newFeePool)`
-
----
-
-### `Issued`
-
-Records that a quantity of this Synth was newly [issued](#issue).
-
-This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitIssued` function.
-
-**Signature:** `Issued(address indexed account, uint value)`
-
----
-
 ### `Burned`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L272)</sub>
 
 Records that a quantity of this Synth was [burned](#burn).
 
 This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitBurned` function.
 
-**Signature:** `Burned(address indexed account, uint value)`
+**Signature**: `Burned(address account, uint256 value)`
 
----
+### `Issued`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Synth.sol#L265)</sub>
+
+Records that a quantity of this Synth was newly [issued](#issue).
+
+This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitIssued` function.
+
+**Signature**: `Issued(address account, uint256 value)`

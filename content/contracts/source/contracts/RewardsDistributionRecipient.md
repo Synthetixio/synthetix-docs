@@ -1,59 +1,77 @@
 # RewardsDistributionRecipient
 
-**Source:** [RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardsDistributionRecipient.sol)
-
 ## Description
 
 !!! todo "Work in Progress"
 
     This needs filling in
 
----
+**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistributionRecipient.sol)
 
 ## Architecture
 
-<!--centered-image>
-    ![Architecture Graph](/img/graphs/todo-architecture.svg)
-</centered-image-->
-
 ### Inheritance Graph
 
-<!--centered-image>
-    ![Inheritance graph](/img/graphs/todo.svg)
-</centered-image-->
+```mermaid
+graph TD
+    RewardsDistributionRecipient[RewardsDistributionRecipient] --> Owned[Owned]
 
----
-
-## Constants
-
----
+```
 
 ## Variables
 
-.. (need to pull these from the functions below)
+### `rewardsDistribution`
 
----
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistributionRecipient.sol#L9)</sub>
 
-## Views
+**Type:** `address`
 
----
+## Restricted Functions
 
-## Public Mutative Functions
+### `setRewardsDistribution`
 
----
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistributionRecipient.sol#L18)</sub>
 
-## Owner Mutative Functions
+??? example "Details"
 
----
+    **Signature**
 
-## Internal & Restricted Mutative Functions
+    `setRewardsDistribution(address _rewardsDistribution)`
 
----
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+## External Functions
+
+### `notifyRewardAmount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistributionRecipient.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `notifyRewardAmount(uint256 reward)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
 ## Modifiers
 
----
+### `onlyRewardsDistribution`
 
-## Events
-
---
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/RewardsDistributionRecipient.sol#L13)</sub>

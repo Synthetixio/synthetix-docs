@@ -8,24 +8,20 @@ This is a library contract that provides math functions on fractional numbers, p
 
 Math uses OpenZeppelin's [SafeMath](SafeMath.md) library and SafeDecimalMath library for most of its basic arithmetic operations in order to protect from arithmetic overflows and zero divisions.
 
-**Source:** [Math.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/Math.sol)
+**Source:** [contracts/Math.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Math.sol)
 
 ## Architecture
 
----
-
 ### Libraries
 
-- [SafeMath](SafeMath.md) for `uint`
-- [SafeDecimalMath](SafeDecimalMath.md) for `uint`
+- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
 
----
-
-## Functions
-
----
+## Internal Functions
 
 ### `powDecimal`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Math.sol#L18)</sub>
 
 Returns the exponentiation of the base (x) integer by the n^th power to precision of 18 decimals. Function calculates the result using exponentiation by squaring, handling preciison loss by truncation and removes the order of magnitude introduced with integer arithmetics each time the base is squared.
 
@@ -33,8 +29,12 @@ Returns the exponentiation of the base (x) integer by the n^th power to precisio
 
     **Signature**
 
-    `function powDecimal(uint x, uint n)
+    `powDecimal(uint256 x, uint256 n)`
 
-`
+    **Visibility**
 
----
+    `internal`
+
+    **State Mutability**
+
+    `pure`

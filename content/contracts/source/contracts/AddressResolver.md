@@ -4,55 +4,53 @@
 
 This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C (and updating ever release), contract A can refer to an `AddressResolver` and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contarct. Thus this ensures that contract A always has the latest B and C contracts.
 
-**Source:** [AddressResolver.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/AddressResolver.sol)
+**Source:** [contracts/AddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol)
 
 ## Architecture
 
----
-
 ### Inheritance Graph
 
-<centered-image>
-    ![AddressResolver inheritance graph](/img/graphs/AddressResolver.svg)
-</centered-image>
+```mermaid
+graph TD
+    AddressResolver[AddressResolver] --> Owned[Owned]
 
----
+```
 
 ## Variables
 
----
-
 ### `repository`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L12)</sub>
 
 The mapping of contract name to address
 
-**Type:** `mapping(bytes32 => address) public`
-
----
+**Type:** `mapping(bytes32 => address)`
 
 ## Constructor
 
----
+### `constructor`
 
-The constructor simply sets this contract as `Owned`.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L14)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(address _owner) public`
+    `(address _owner)`
 
-    **Superconstructors**
+    **Visibility**
 
-    * [`Owned(_owner)`](Owned.md#constructor)
+    `public`
 
----
+    **State Mutability**
+
+    `nonpayable`
 
 ## Views
 
----
-
 ### `getAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L28)</sub>
 
 Returns a single address by it's `bytes32` key.
 
@@ -60,15 +58,65 @@ Returns a single address by it's `bytes32` key.
 
     **Signature**
 
-    `getAddress(bytes32 name) public view returns (address)`
+    `getAddress(bytes32 name)`
 
----
+    **Visibility**
 
-## Owner Functions
+    `external`
 
----
+    **State Mutability**
+
+    `view`
+
+### `getSynth`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L38)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getSynth(bytes32 key)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., Cannot find Synthetix address)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L40)
+
+### `requireAndGetAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L32)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `requireAndGetAddress(bytes32 name, string reason)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., calldata)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L34)
+
+## Restricted Functions
 
 ### `importAddresses`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L18)</sub>
 
 Import one or more addresses into the system for the given keys. Note: this function will overrwite any previous entries with the same key names, allowing for inline updates.
 
@@ -76,14 +124,20 @@ Import one or more addresses into the system for the given keys. Note: this func
 
     **Signature**
 
-    `importAddresses(bytes32[] names, address[] destinations) public`
+    `importAddresses(bytes32[] names, address[] destinations)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/AddressResolver.sol#L19)
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-    **Preconditions**
-
-    * The length of `names` must match the length of `destinations`
-
----
+    * [onlyOwner](#onlyowner)

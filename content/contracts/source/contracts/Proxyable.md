@@ -7,44 +7,34 @@ In fact, in order to function properly, every contract operating behind a `CALL`
 
 This contract can support two proxies simultaneously. Events can be emitted independently from each proxy, but it is sensible to restrict event emission to a single proxy in most cases.
 
-**Source:** [Proxyable.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxyable.sol)
+**Source:** [contracts/Proxyable.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol)
 
 ## Architecture
 
----
-
 ### Inheritance Graph
 
-<centered-image>
-    ![Proxyable inheritance graph](/img/graphs/Proxyable.svg)
-</centered-image>
+```mermaid
+graph TD
+    Proxyable[Proxyable] --> Owned[Owned]
 
----
+```
 
 ## Variables
 
----
-
-### `proxy`
-
-The address of the main [proxy](Proxy.md) that this contract operates underneath. It is this address that events should be emitted from using [`Proxy._emit`](Proxy.md#_emit).
-
-**Type:** `Proxy public`
-
----
-
 ### `integrationProxy`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L16)</sub>
 
 The address of an additional proxy which can be used to forward contract calls to this contract.
 Generally speaking, events should not be passed to the integrationProxy.
 
 In the case of the [`Synthetix`](Synthetix.md) contract, this integrationProxy is an instance of the [ERC20 proxy](ProxyERC20.md).
 
-**Type:** `Proxy public`
-
----
+**Type:** `contract Proxy`
 
 ### `messageSender`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L21)</sub>
 
 The caller of the proxy in the current invocation. This variable is set to the value of `msg.sender` visible to the proxy before every function call by that `Proxy` to this `Proxyable`. Once set, `messageSender` should be used in place of `msg.sender` wherever it is used in contracts inheriting `Proxyable`.
 
@@ -54,13 +44,19 @@ Functions which do not require `messageSender` need not apply any of the proxy m
 
 **Type:** `address`
 
----
+### `proxy`
 
-## Functions
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L15)</sub>
 
----
+The address of the main [proxy](Proxy.md) that this contract operates underneath. It is this address that events should be emitted from using [`Proxy._emit`](Proxy.md#_emit).
+
+**Type:** `contract Proxy`
+
+## Constructor
 
 ### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L23)</sub>
 
 Initialises this contract's [proxy](#proxy) and the inherited [`Owned`](Owned.md) instance.
 
@@ -68,39 +64,29 @@ Initialises this contract's [proxy](#proxy) and the inherited [`Owned`](Owned.md
 
     **Signature**
 
-    `constructor(address _proxy, address _owner) public`
+    `(address payable _proxy)`
 
-    **Superconstructors**
+    **Visibility**
 
-    * [`Owned(_owner)`](Owned.md#constructor)
+    `internal`
 
-    **Emits**
+    **State Mutability**
 
-    * [`ProxyUpdated(_proxy)`](#proxyupdated)
+    `nonpayable`
 
----
+    **Requires**
 
-### `setProxy`
-
-Sets this contract's primary proxy. `setProxy` cannot be called through a proxy.
-
-??? example "Details"
-
-    **Signature**
-
-    `setProxy(address _proxy) external`
-
-    **Modifiers**
-
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L25)
 
     **Emits**
 
-    * [`ProxyUpdated(_proxy)`](#proxyupdated)
+    * [ProxyUpdated](#proxyupdated)
 
----
+## Restricted Functions
 
 ### `setIntegrationProxy`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L36)</sub>
 
 Sets this contract's secondary proxy. `setIntegrationProxy` cannot be called through a proxy.
 
@@ -108,15 +94,23 @@ Sets this contract's secondary proxy. `setIntegrationProxy` cannot be called thr
 
     **Signature**
 
-    `setIntegrationProxy(address _IntegrationProxy) external`
+    `setIntegrationProxy(address payable _integrationProxy)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-
----
+    * [onlyOwner](#onlyowner)
 
 ### `setMessageSender`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L40)</sub>
 
 This is used by proxies to set [`messageSender`](#messageSender) before forwarding a function call. This is only callable by the [`proxy`](#proxy) or [`integrationProxy`](#integrationProxy).
 
@@ -124,46 +118,76 @@ This is used by proxies to set [`messageSender`](#messageSender) before forwardi
 
     **Signature**
 
-    `setMessageSender(address sender) external`
+    `setMessageSender(address sender)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`onlyProxy`](#onlyproxy)
+    * [onlyProxy](#onlyproxy)
 
----
+### `setProxy`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L31)</sub>
+
+Sets this contract's primary proxy. `setProxy` cannot be called through a proxy.
+
+??? example "Details"
+
+    **Signature**
+
+    `setProxy(address payable _proxy)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [ProxyUpdated](#proxyupdated)
 
 ## Modifiers
 
----
-
 ### `onlyProxy`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L44)</sub>
 
 Reverts the transaction if the actual `msg.sender` (not [`messageSender`](#messagesender)) is not the proxy or the integration proxy.
 
----
-
 ### `optionalProxy`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L49)</sub>
 
 This modifier allows a function to be called through the proxies, or alternatively to be called directly for a small gas savings.
 
 It operates simply: if the caller is not either the proxy or the integration proxy, then overwrite `messageSender` with `msg.sender`, otherwise use whatever it was set to by the proxy.
 
----
-
 ### `optionalProxy_onlyOwner`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L56)</sub>
 
 This modifier is largely the same as `optionalProxy`, but it disallow callers who are not the contract owner. This modifier exists because [`Owned.onlyOwner`](Owned.md#onlyowner) checks `msg.sender`, and not `messageSender`.
 
----
-
 ## Events
-
----
 
 ### `ProxyUpdated`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxyable.sol#L64)</sub>
+
 `proxyAddress` has been set as the new [`proxy`](#proxy).
 
-**Signature:** `ProxyUpdated(address proxyAddress)`
-
----
+**Signature**: `ProxyUpdated(address proxyAddress)`

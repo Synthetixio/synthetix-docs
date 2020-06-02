@@ -1,67 +1,105 @@
 # ReadProxy
 
-**Source:** [ReadProxy.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/ReadProxy.sol)
-
-!!! todo "Work in Progress"
-
-    This needs filling in
-
 ## Description
 
 ... todo.
 
----
+**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol)
 
 ## Architecture
 
-... todo.
-
-<!--centered-image>
-    ![Architecture Graph](/img/graphs/todo-architecture.svg)
-</centered-image-->
-
 ### Inheritance Graph
 
-<!--centered-image>
-    ![Inheritance graph](/img/graphs/todo.svg)
-</centered-image-->
+```mermaid
+graph TD
+    ReadProxy[ReadProxy] --> Owned[Owned]
+
+```
 
 ### Related Contracts
 
 - ?
 
----
-
-## Constants
-
----
-
 ## Variables
 
-.. (need to pull these from the functions below)
+### `target`
 
----
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L10)</sub>
 
-## Views
+**Type:** `address`
 
----
+## Constructor
 
-## Public Mutative Functions
+### `constructor`
 
----
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L12)</sub>
 
-## Owner Mutative Functions
+??? example "Details"
 
----
+    **Signature**
 
-## Internal & Restricted Mutative Functions
+    `(address _owner)`
 
----
+    **Visibility**
 
-## Modifiers
+    `public`
 
----
+    **State Mutability**
+
+    `nonpayable`
+
+## Restricted Functions
+
+### `setTarget`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L14)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setTarget(address _target)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [TargetUpdated](#targetupdated)
+
+## Fallback Function
+
+### `() (fallback function)`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
 ## Events
 
---
+### `TargetUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L36)</sub>
+
+**Signature**: `TargetUpdated(address newTarget)`

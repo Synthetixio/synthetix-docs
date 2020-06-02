@@ -14,42 +14,34 @@ See [`FeePool.feesByPeriod`](FeePool.md#feesbyperiod) and [`FeePool.effectiveDeb
 
     See also: [Design_Decisions.md](https://github.com/Synthetixio/synthetix/blob/master/Design_Decisions.md#feepoolstate).
 
-**Source:** [FeePoolState.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePoolState.sol)
+**Source:** [contracts/FeePoolState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol)
 
 ## Architecture
 
----
+### Libraries
+
+- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
 
 ### Inheritance Graph
 
-<centered-image>
-    ![FeePoolState inheritance graph](/img/graphs/FeePoolState.svg)
-</centered-image>
+```mermaid
+graph TD
+    FeePoolState[FeePoolState] --> SelfDestructible[SelfDestructible]
+    FeePoolState[FeePoolState] --> LimitedSetup[LimitedSetup]
+    SelfDestructible[SelfDestructible] --> Owned[Owned]
 
-!!! caution "No Relation To The State Contract"
-
-    Although this contract is called `FeePoolState`, be aware that it does not inherit from the [`State`](State.md) contract.
-
----
+```
 
 ### Related Contracts
 
 - <>[FeePool](FeePool.md)
 
----
-
-### Libraries
-
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
-- [`SafeMath`](SafeMath.md) for `uint`
-
----
-
 ## Structs
 
----
-
 ### `IssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L27)</sub>
 
 Holds the issuance state and index of users interacting with the [`FeePool`](FeePool.md) for the last [several fee periods](#fee_period_length).
 
@@ -61,50 +53,48 @@ For more information on these fields and their meaning, see the main [`Synthetix
 
     This induces a slightly awkward structure where the current and historical issuance information is stored over two separate contracts. In a future version this information could potentially be stored in a unified structure for dividends in efficiency and clarity.
 
-| Field          | Type   | Description                                                                                                                                                                                                                                                                    |
-| -------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| debtPercentage | `uint` | The percentage of the total system debt owned by the address associated with this entry at the time of issuance. These are [27-decimal fixed point numbers](SafeDecimalMath.md), closely related to the values in [`SynthetixState.debtLedger`](SynthetixState.md#debtledger). |
-| debtEntryIndex | `uint` | The [debt ledger](SynthetixState.md#debtledger) index when this user issued or destroyed tokens. That is, the length of the ledger at the time of issuance.                                                                                                                    |
+| Field            | Type      | Description                                                                                                                                                                                                                                                                    |
+| ---------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `debtPercentage` | `uint256` | The percentage of the total system debt owned by the address associated with this entry at the time of issuance. These are [27-decimal fixed point numbers](SafeDecimalMath.md), closely related to the values in [`SynthetixState.debtLedger`](SynthetixState.md#debtledger). |
+| `debtEntryIndex` | `uint256` | The [debt ledger](SynthetixState.md#debtledger) index when this user issued or destroyed tokens. That is, the length of the ledger at the time of issuance.                                                                                                                    |
 
----
-
-## Variables
-
----
+## Constants
 
 ### `FEE_PERIOD_LENGTH`
 
-The number of fee periods (6) worth of issuance data to keep. Note the inconsistency with the corresponding constant in [`FeePool`](FeePool.md#fee_period_length), which is set to 3.
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L22)</sub>
 
-**Type:** `uint8 constant public`
+The number of fee periods (6) worth of issuance data to keep. Note the inconsistency with the corresponding constant in [`FeePool`](FeePool.md#fee_period_length), which is set to 3.
 
 **Value:** `6`
 
----
+**Type:** `uint8`
 
-### `feePool`
-
-The address of the main [`FeePool`](FeePool.md) contract.
-
-**Type:** `address public`
-
----
+## Variables
 
 ### `accountIssuanceLedger`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L33)</sub>
 
 A list of up to 6 [issuance data](#issuancedata) entries for each address, for the most recent changes to their issuance level. The fee periods do not have to be consecutive, but they are ordered from newest to oldest (decreasing debt ledger indexes).
 
 Note that the entry `accountIssuanceLedger[account][0]` only corresponds to the current fee period if [`appendAccountIssuanceRecord(account, *, *, *)`](#appendaccountissuancerecord) has been called during the current fee period. That is, if the account has issued or burnt synths this period.
 
-**Type:** `mapping(address => IssuanceData[FEE_PERIOD_LENGTH]) public`
+**Type:** `mapping(address => struct FeePoolState.IssuanceData[6])`
 
----
+### `feePool`
 
-## Functions
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L24)</sub>
 
----
+The address of the main [`FeePool`](FeePool.md) contract.
+
+**Type:** `address`
+
+## Constructor
 
 ### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L35)</sub>
 
 Initialises the fee pool address, as well as the inherited [`SelfDestructible`](SelfDestructible.md) and [`LimitedSetup`](LimitedSetup.md) instances. The setup period is initialised to six weeks.
 
@@ -112,50 +102,21 @@ Initialises the fee pool address, as well as the inherited [`SelfDestructible`](
 
     **Signature**
 
-    `constructor(address _owner, FeePool _feepool) public`
+    `(address _owner, contract IFeePool _feePool)`
 
-    **Superconstructors**
+    **Visibility**
 
-    * [`SelfDestructible(_owner)`](SelfDestructible.md#constructor)
-    * [`LimitedSetup(6 weeks)`](LimitedSetup.md#constructor)
+    `public`
 
----
+    **State Mutability**
 
-### `setFeePool`
+    `nonpayable`
 
-Changes the [fee pool address](#feepool).
-
-??? example "Details"
-
-    **Signature**
-
-    `setFeePool(FeePool _feePool) external`
-
-    **Modifiers**
-
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-
----
-
-### `getAccountsDebtEntry`
-
-Accesses [`accountIssuanceLedger`](#accountissuanceledger).
-
-The first return value is a [27-decimal fixed point number](SafeDecimalMath.md).
-
-??? example "Details"
-
-    **Signature**
-
-    `getAccountsDebtEntry(address account, uint index) public view returns (uint debtPercentage, uint debtEntryIndex)`
-
-    **Preconditions**
-
-    * Transaction reverts if `index` is not less than [`FEE_PERIOD_LENGTH`](#fee_period_length).
-
----
+## Views
 
 ### `applicableIssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L73)</sub>
 
 From a given account's issuance data, retrieve the most recent entry which closed before the provided index. If there is no such entry, `(0,0)` is returned.
 
@@ -167,11 +128,47 @@ The returned values are as per [`getAccountsDebtEntry`](#getaccountsdebtentry), 
 
     **Signature**
 
-    `applicableIssuanceData(address account, uint closingDebtIndex) external view returns (uint, uint)`
+    `applicableIssuanceData(address account, uint256 closingDebtIndex)`
 
----
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `getAccountsDebtEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L57)</sub>
+
+Accesses [`accountIssuanceLedger`](#accountissuanceledger).
+
+The first return value is a [27-decimal fixed point number](SafeDecimalMath.md).
+
+??? example "Details"
+
+    **Signature**
+
+    `getAccountsDebtEntry(address account, uint256 index)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., index exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L62)
+
+## Restricted Functions
 
 ### `appendAccountIssuanceRecord`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L98)</sub>
 
 Allows the [`Synthetix`](Synthetix.md#_appendaccountissuancerecord) contract, through [`FeePool.appendAccountIssuanceRecord`](FeePool.md#appendaccountissuancerecord), to record current fee period issuance information for a given account in the issuance ledger. This is used when synths are issued or burnt.
 
@@ -183,27 +180,23 @@ The `debtRatio` argument is a [27-decimal fixed point number](SafeDecimalMath.md
 
     **Signature**
 
-    `appendAccountIssuanceRecord(address account, uint debtRatio, uint debtEntryIndex, uint currentPeriodStartDebtIndex) external`
+    `appendAccountIssuanceRecord(address account, uint256 debtRatio, uint256 debtEntryIndex, uint256 currentPeriodStartDebtIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`onlyFeePool`](#onlyfeepool)
-
----
-
-### `issuanceDataIndexOrder`
-
-Shifts this account's array of issuance ledger entries down one place, overwriting the last entry. This is only used in [`appendAccountIssuanceRecord`](#appendaccountissuancerecord).
-
-??? example "Details"
-
-    **Signature**
-
-    `issuanceDataIndexOrder(address account) private`
-
----
+    * [onlyFeePool](#onlyfeepool)
 
 ### `importIssuerData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L137)</sub>
 
 This function was used during the initial six week setup period to initialise the issuance ledger from the previous Synthetix version.
 
@@ -211,41 +204,64 @@ This function was used during the initial six week setup period to initialise th
 
     **Signature**
 
-    `importIssuerData(address[] accounts, uint[] ratios, uint periodToInsert, uint feePeriodCloseIndex) external`
+    `importIssuerData(address[] accounts, uint256[] ratios, uint256 periodToInsert, uint256 feePeriodCloseIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L143)
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-    * [`LimitedSetup.onlyDuringSetup`](LimitedSetup.md#onlyduringsetup)
+    * [onlyOwner](#onlyowner)
 
-    **Preconditions**
+    * [onlyDuringSetup](#onlyduringsetup)
 
-    * The transaction reverts if the length of `accounts` and `ratios` differ.
+### `setFeePool`
 
-    **Emits**
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L46)</sub>
 
-    * [IssuanceDebtRatioEntry(accounts[i], ratios[i], feePeriodCloseIndex)](#issuancedebtratioentry) for each `i` up to the length of the input arrays.
+Changes the [fee pool address](#feepool).
 
----
+??? example "Details"
+
+    **Signature**
+
+    `setFeePool(contract IFeePool _feePool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
 
 ## Modifiers
 
----
-
 ### `onlyFeePool`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L154)</sub>
 
 Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
 
----
-
 ## Events
-
----
 
 ### `IssuanceDebtRatioEntry`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePoolState.sol#L160)</sub>
+
 Record that an entry was updated in the [issuance ledger](#accountissuanceledger) by the [`importIssuerData`](#importissuerdata) function during the setup period.
 
-**Signature:** `IssuanceDebtRatioEntry(address indexed account, uint debtRatio, uint feePeriodCloseIndex)`
-
----
+**Signature**: `IssuanceDebtRatioEntry(address account, uint256 debtRatio, uint256 feePeriodCloseIndex)`

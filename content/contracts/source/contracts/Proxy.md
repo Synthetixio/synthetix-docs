@@ -40,51 +40,45 @@ Additionally, events are a bit different; they must be encoded within the underl
 
 Finally, if the target contract needs to transfer ether around, then it will be remitted from the target address rather than the proxy address, though this is a quirk which it would be straightforward to remedy.
 
-**Source:** [Proxy.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol)
+**Source:** [contracts/Proxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol)
 
 ## Architecture
 
----
-
 ### Inheritance Graph
 
-<centered-image>
-    ![Proxy inheritance graph](/img/graphs/Proxy.svg)
-</centered-image>
+```mermaid
+graph TD
+    Proxy[Proxy] --> Owned[Owned]
 
----
+```
 
 ### Related Contracts
 
 - [Proxyable](Proxyable.md)
 
----
-
 ## Variables
-
----
 
 ### `target`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L12)</sub>
+
 The underlying contract this proxy is standing in front of.
 
-**Type:** `Proxyable public`
-
----
+**Type:** `contract Proxyable`
 
 ### `useDELEGATECALL`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L13)</sub>
+
 This toggle controls whether the proxy is in `CALL` or `DELEGATECALL` mode. The contract is in `DELEGATECALL` mode iff `useDELEGATECALL` is true.
 
-**Type:** `bool public`
+**Type:** `bool`
 
----
-
-## Functions
-
----
+## Constructor
 
 ### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L15)</sub>
 
 Initialises the inherited [`Owned`](Owned.md) instance.
 
@@ -92,51 +86,21 @@ Initialises the inherited [`Owned`](Owned.md) instance.
 
     **Signature**
 
-    `constructor(address _owner) public`
+    `(address _owner)`
 
-    **Superconstructors**
+    **Visibility**
 
-    * [`Owned(_owner)`](Owned.md#constructor)
+    `public`
 
----
+    **State Mutability**
 
-### `setTarget`
+    `nonpayable`
 
-Sets the address this proxy forwards its calls to.
-
-??? example "Details"
-
-    **Signature**
-
-    `setTarget(Proxyable _target) external`
-
-    **Modifiers**
-
-    * [`Owned.onlyOwner`](Owned.md#onlyOwner)
-
-    **Emits**
-
-    * [`TargetUpdated(_target)`](#targetupdated)
-
----
-
-### `setUseDELEGATECALL`
-
-Selects which call style to use by setting [`useDELEGATECALL`](#usedelegatecall).
-
-??? example "Details"
-
-    **Signature**
-
-    * `setUseDELEGATECALL(bool value) external`
-
-    **Modifiers**
-
-    * [`Owned.onlyOwner`](Owned.md#onlyOwner)
-
----
+## Restricted Functions
 
 ### `_emit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L26)</sub>
 
 When operating in the `CALL` style, this function allows the proxy's underlying contract (and only that contract) to emit events from the proxy's address.
 
@@ -165,19 +129,77 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
     **Signature**
 
-    `_emit(bytes callData, uint numTopics, bytes32 topic1, bytes32 topic2, bytes32 topic3, bytes32 topic4) external`
+    `_emit(bytes callData, uint256 numTopics, bytes32 topic1, bytes32 topic2, bytes32 topic3, bytes32 topic4)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`onlyTarget`](#onlytarget)
+    * [onlyTarget](#onlytarget)
+
+### `setTarget`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L17)</sub>
+
+Sets the address this proxy forwards its calls to.
+
+??? example "Details"
+
+    **Signature**
+
+    `setTarget(contract Proxyable _target)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
 
     **Emits**
 
-    This function can emit any possible event.
+    * [TargetUpdated](#targetupdated)
 
----
+### `setUseDELEGATECALL`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L22)</sub>
+
+Selects which call style to use by setting [`useDELEGATECALL`](#usedelegatecall).
+
+??? example "Details"
+
+    **Signature**
+
+    `setUseDELEGATECALL(bool value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+## Fallback Function
 
 ### `() (fallback function)`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L62)</sub>
 
 If none of the above functions is hit, then the function call data and gas is forwarded to the [target contract](#target). The result of that invocation is returned to the message sender.
 
@@ -188,26 +210,30 @@ If it is in `CALL` mode, then it first calls [`target.setMessageSender(msg.sende
 
     **Signature**
 
-    `() external payable`
+    `()`
 
----
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `payable`
 
 ## Modifiers
 
----
-
 ### `onlyTarget`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L99)</sub>
 
 Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
----
-
 ## Events
-
----
 
 ### `TargetUpdated`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Proxy.sol#L104)</sub>
+
 The proxy's target contract was changed.
 
-**Signature:** `TargetUpdated(Proxyable newTarget)`
+**Signature**: `TargetUpdated(contract Proxyable newTarget)`

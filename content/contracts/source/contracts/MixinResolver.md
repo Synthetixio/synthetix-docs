@@ -4,46 +4,170 @@
 
 A utility that gives the inheritor access to the [`AddressResolver`](AddressResolver.md)
 
-**Source:** [.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/MixinResolver.sol)
+**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol)
 
----
+## Architecture
 
 ### Inheritance Graph
 
-<!--centered-image>
-    ![[name] inheritance graph](/img/graphs/MixinResolver.svg)
-</centered-image-->
+```mermaid
+graph TD
+    MixinResolver[MixinResolver] --> Owned[Owned]
 
----
+```
+
+## Constants
+
+### `MAX_ADDRESSES_FROM_RESOLVER`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L18)</sub>
+
+**Type:** `uint256`
 
 ## Variables
 
----
-
 ### `resolver`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L12)</sub>
 
 The `AddressResolver` instance
 
-**Type:** `AddressResolver public`
+**Type:** `contract AddressResolver`
 
----
+### `resolverAddressesRequired`
 
-## Owner Functions
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L16)</sub>
 
----
+**Type:** `bytes32[]`
 
-### `setResolver`
+## Constructor
 
-Set the address resolver
+### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L20)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setResolver(AddressResolver _resolver) public`
+    `(address _resolver, bytes32[24] _addressesToCache)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L22)
+
+## Views
+
+### `getResolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L76)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getResolverAddressesRequired()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `isResolverCached`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L58)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isResolverCached(contract AddressResolver _resolver)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+## Restricted Functions
+
+### `setResolverAndSyncCache`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L38)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setResolverAndSyncCache(contract AddressResolver _resolver)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    * [onlyOwner](#onlyowner)
 
----
+## Internal Functions
+
+### `appendToAddressCache`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L87)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `appendToAddressCache(bytes32 name)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Max resolver cache size met)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L89)
+
+### `requireAndGetAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L50)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `requireAndGetAddress(bytes32 name, string reason)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/MixinResolver.sol#L52)

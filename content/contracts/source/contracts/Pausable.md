@@ -4,45 +4,39 @@
 
 Allows an inheriting contract to be paused and resumed, providing a modifier that will allow modified functions to operate only if the contract is not paused.
 
-**Source:** [Pausable.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/Pausable.sol)
+**Source:** [contracts/Pausable.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Pausable.sol)
 
 ## Architecture
 
----
-
 ### Inheritance Graph
 
-<centered-image>
-    ![Pausable inheritance graph](/img/graphs/Pausable.svg)
-</centered-image>
+```mermaid
+graph TD
+    Pausable[Pausable] --> Owned[Owned]
 
----
+```
 
 ## Variables
 
----
-
 ### `lastPauseTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Pausable.sol#L9)</sub>
 
 The UNIX timestamp in seconds at which the contract was last paused.
 
-**Type:** `uint public`
+**Type:** `uint256`
 
----
+### `paused`
 
-## `paused`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Pausable.sol#L10)</sub>
 
-True iff the contract is currently paused.
+**Type:** `bool`
 
-**Type:** `bool public`
-
----
-
-## Functions
-
----
+## Constructor
 
 ### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Pausable.sol#L12)</sub>
 
 The owner this constructor initialises has the exclusive right to pause the contract. The contract begins unpaused.
 
@@ -50,15 +44,25 @@ The owner this constructor initialises has the exclusive right to pause the cont
 
     **Signature**
 
-    `constructor(address _owner) public`
+    `()`
 
-    **Superconstructors**
+    **Visibility**
 
-    * [`Owned(_owner)`](Owned.md#constructor)
+    `internal`
 
----
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Pausable.sol#L14)
+
+## Restricted Functions
 
 ### `setPaused`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Pausable.sol#L22)</sub>
 
 Pauses or unpauses the contract. Sets [`lastPauseTime`](#lastPauseTime) to the current timestamp if the contract is newly paused.
 
@@ -68,34 +72,36 @@ Pauses or unpauses the contract. Sets [`lastPauseTime`](#lastPauseTime) to the c
 
     `setPaused(bool _paused)`
 
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
     **Modifiers**
 
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
+    * [onlyOwner](#onlyowner)
 
     **Emits**
 
-    * [`PauseChanged(paused)`](#pausechanged)
-
----
+    * [PauseChanged](#pausechanged)
 
 ## Modifiers
 
----
-
 ### `notPaused`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Pausable.sol#L42)</sub>
 
 Reverts the transaction the contract is [`paused`](#paused). Provided for use by inheriting contracts.
 
----
-
 ## Events
-
----
 
 ### `PauseChanged`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/Pausable.sol#L40)</sub>
+
 The contract has gone from paused to unpaused or vice versa. This event reports the new state.
 
-**Signature:** `PauseChanged(bool isPaused)`
-
----
+**Signature**: `PauseChanged(bool isPaused)`

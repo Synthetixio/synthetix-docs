@@ -12,88 +12,73 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
     This contract also contains functionality enabling automatic [preferred currency](#preferredcurrency) conversion on Synth transfers, but it is currently disabled.
 
-**Source:** [SynthetixState.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixState.sol)
+**Source:** [contracts/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol)
 
 ## Architecture
 
----
+### Libraries
+
+- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
+- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
 
 ### Inheritance Graph
 
-<centered-image>
-    ![SynthetixState inheritance graph](/img/graphs/SynthetixState.svg)
-</centered-image>
+```mermaid
+graph TD
+    SynthetixState[SynthetixState] --> State[State]
+    SynthetixState[SynthetixState] --> LimitedSetup[LimitedSetup]
+    State[State] --> Owned[Owned]
 
----
+```
 
 ### Related Contracts
 
 - [Issuer](Issuer.md) as this contract's `State.associatedContract`
 
----
-
-### Libraries
-
-- [`SafeDecimalMath`](SafeDecimalMath.md) for `uint`
-- [`SafeMath`](SafeMath.md) for `uint`
-
----
-
 ## Structs
 
----
+### `IssuanceData`
 
-### IssuanceData
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L19)</sub>
 
-Individual wallets have an issuance data object associated with their address.
-This holds the issuance state and preferred currency of users in the Synthetix system, which is used to compute user's exit price and collateralisation ratio.
+| Field                  | Type      | Description |
+| ---------------------- | --------- | ----------- |
+| `initialDebtOwnership` | `uint256` | TBA         |
+| `debtEntryIndex`       | `uint256` | TBA         |
 
-| Field                | Type   | Description                                                                                                                                                      |
-| -------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| initialDebtOwnership | `uint` | The percentage of the total system debt owned by the address associated with this entry at the time of issuance.                                                 |
-| debtEntryIndex       | `uint` | The [debt ledger](SynthetixState.md#debtledger) index when this user last issued or destroyed tokens. That is, the length of the ledger at the time of issuance. |
+## Constants
 
-This struct is replicated in the [`FeePoolState`](FeePoolState.md#issuancedata) contract.
+### `MAX_ISSUANCE_RATIO`
 
----
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L45)</sub>
+
+Constraining the value of [`issuanceRatio`](#issuanceratio) to be less than $1.0$ ensures that Synthetix does not become a fractional reserve system.
+
+**Value:** `UNIT`
+
+**Type:** `uint256`
 
 ## Variables
 
----
-
-### `issuanceData`
-
-The most recent issuance data for each address.
-
-**Type:** `mapping(address => IssuanceData) public`
-
----
-
-### `totalIssuerCount`
-
-The number of people with outstanding synths.
-
-**Type:** `uint public`
-
----
-
 ### `debtLedger`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L39)</sub>
 
 A list of factors indicating, for each [debt-modifying event](#appenddebtledgervalue), what effect it had on the percentage of debt of all other holders. Later debt ledger entries correspond to more recent issuance events.
 
-**Type:** `uint[] public`
+**Type:** `uint256[]`
 
----
+### `issuanceData`
 
-### `importedXDRAmount`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L33)</sub>
 
-The XDR-equivalent debt of `sUSD` imported which was outstanding immediately before the multicurrency transition.
+The most recent issuance data for each address.
 
-**Type:** `uint public`
-
----
+**Type:** `mapping(address => struct SynthetixState.IssuanceData)`
 
 ### `issuanceRatio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L43)</sub>
 
 The current global issuance ratio, which is the conversion factor between a value of SNX and the value of synths issued against them. As a result this determines the maximum ratio between the total value of Synths and SNX in the system.
 
@@ -129,21 +114,11 @@ As a result of this calculation, the number of synths that can be issued increas
 
     The related case of increasing the issuance ratio is similar.
 
-**Type:** `uint public`
-
----
-
-### `MAX_ISSUANCE_RATIO`
-
-Constraining the value of [`issuanceRatio`](#issuanceratio) to be less than $1.0$ ensures that Synthetix does not become a fractional reserve system.
-
-**Type:** `uint constant`
-
-**Value:** `UNIT`
-
----
+**Type:** `uint256`
 
 ### `preferredCurrency`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L49)</sub>
 
 !!! danger "Disabled"
 
@@ -153,19 +128,25 @@ If users nominate a preferred currency, all synths they receive will be converte
 
 This is used within [`Synth._internalTransfer`](Synth.md#_internaltransfer).
 
-**Type:** `mapping(address => bytes4) public`
-
 !!! caution "Short Currency Keys"
 
     Note that as of [SIP-17](https://sips.synthetix.io/sips/sip-17) currency keys in other contracts are of the `bytes32` type. This means that if this preferred currency component is ever reused, it will only be able to support short-named synths unless new storage is provided.
 
----
+**Type:** `mapping(address => bytes4)`
 
-## Functions
+### `totalIssuerCount`
 
----
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L36)</sub>
+
+The number of people with outstanding synths.
+
+**Type:** `uint256`
+
+## Constructor
 
 ### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L51)</sub>
 
 Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.md) instances.
 
@@ -173,81 +154,89 @@ Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.
 
     **Signature**
 
-    `constructor(address _owner, address _associatedContract) public`
+    `(address _owner, address _associatedContract)`
 
-    **Superconstructors**
+    **Visibility**
 
-    * [`State(_owner, _associatedContract)`](State.md#constructor)
-    * [`LimitedSetup(1 weeks)`](LimitedSetup.md#constructor)
+    `public`
 
----
+    **State Mutability**
 
-### `setCurrentIssuanceData`
+    `nonpayable`
 
-Allows the [`Synthetix`](Synthetix.md) contract to update the debt ownership entry for this account and sets their debt entry index to the current length of the [`debtLedger`](#debtledger).
-The debt ledger itself is not modified.
+## Views
 
-??? example "Details"
+### `debtLedgerLength`
 
-    **Signature**
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L153)</sub>
 
-    `setCurrentIssuanceData(address account, uint initialDebtOwnership) external`
+Returns the number of entries currently in [`debtLedger`](#debtledger).
 
-    **Modifiers**
-
-    * [`State.onlyAssociatedContract`](State.md#onlyassociatedcontract)
-
----
-
-### `clearIssuanceData`
-
-Deletes the issuance data associated with a given account.
+Primarily used in [`FeePool`](FeePool.md) for fee period computations.
 
 ??? example "Details"
 
     **Signature**
 
-    `clearIssuanceData(address account) external`
+    `debtLedgerLength()`
 
-    **Modifiers**
+    **Visibility**
 
-    * [`State.onlyAssociatedContract`](State.md#onlyassociatedcontract)
+    `external`
 
----
+    **State Mutability**
 
-### `incrementTotalIssuerCount`
+    `view`
 
-Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) whenever an account with no outstanding issuance debt mints new Synths.
+### `hasIssued`
 
-??? example "Details"
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L168)</sub>
 
-    **Signature**
+Returns true if a given account has any outstanding issuance debt resulting from Synth minting.
 
-    `incrementTotalIssuerCount() external`
-
-    **Modifiers**
-
-    * [`State.onlyAssociatedContract`](State.md#onlyassociatedcontract)
-
----
-
-### `decrementTotalIssuerCount`
-
-Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._removeFromDebtRegister`](Synthetix.md#_removefromdebtregister) whenever an issuer burns enough Synths to pay down their entire outstanding debt.
+Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to determine whether an minting event requires incrementing the total issuer count.
 
 ??? example "Details"
 
     **Signature**
 
-    `decrementTotalIssuerCount() external`
+    `hasIssued(address account)`
 
-    **Modifiers**
+    **Visibility**
 
-    * [`State.onlyAssociatedContract`](State.md#onlyassociatedcontract)
+    `external`
 
----
+    **State Mutability**
+
+    `view`
+
+### `lastDebtLedgerEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L160)</sub>
+
+Returns the most recent [`debtLedger`](#debtledger) entry.
+
+Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
+
+??? example "Details"
+
+    **Signature**
+
+    `lastDebtLedgerEntry()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+## Restricted Functions
 
 ### `appendDebtLedgerValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L101)</sub>
 
 Pushes a new value to the end of the [`debtLedger`](#debtledger).
 
@@ -257,15 +246,152 @@ This is used by [`Synthetix._addToDebtRegister`](Synthetix.md#addtodebtregister)
 
     **Signature**
 
-    `appendDebtLedgerValue(uint value) external`
+    `appendDebtLedgerValue(uint256 value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`State.onlyAssociatedContract`](State.md#onlyassociatedcontract)
+    * [onlyAssociatedContract](#onlyassociatedcontract)
 
----
+### `clearIssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L76)</sub>
+
+Deletes the issuance data associated with a given account.
+
+??? example "Details"
+
+    **Signature**
+
+    `clearIssuanceData(address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `decrementTotalIssuerCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L92)</sub>
+
+Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._removeFromDebtRegister`](Synthetix.md#_removefromdebtregister) whenever an issuer burns enough Synths to pay down their entire outstanding debt.
+
+??? example "Details"
+
+    **Signature**
+
+    `decrementTotalIssuerCount()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `incrementTotalIssuerCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L84)</sub>
+
+Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) whenever an account with no outstanding issuance debt mints new Synths.
+
+??? example "Details"
+
+    **Signature**
+
+    `incrementTotalIssuerCount()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setCurrentIssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L66)</sub>
+
+Allows the [`Synthetix`](Synthetix.md) contract to update the debt ownership entry for this account and sets their debt entry index to the current length of the [`debtLedger`](#debtledger).
+The debt ledger itself is not modified.
+
+??? example "Details"
+
+    **Signature**
+
+    `setCurrentIssuanceData(address account, uint256 initialDebtOwnership)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setIssuanceRatio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L119)</sub>
+
+Allows the owner to set the Synth [issuance ratio](#issuanceratio), but disallows setting it higher than $1.0$, which prevents more than one dollar worth of Synths being issued against each dollar of SNX backing them.
+
+??? example "Details"
+
+    **Signature**
+
+    `setIssuanceRatio(uint256 _issuanceRatio)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., New issuance ratio cannot exceed MAX_ISSUANCE_RATIO)](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L120)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [IssuanceRatioUpdated](#issuanceratioupdated)
 
 ### `setPreferredCurrency`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L111)</sub>
 
 !!! danger "Disabled"
 
@@ -277,130 +403,26 @@ Sets the preferred currency for a particular account. Pass in null to unset this
 
     **Signature**
 
-    `setPreferredCurrency(address account, bytes4 currencyKey) external`
+    `setPreferredCurrency(address account, bytes4 currencyKey)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
 
     **Modifiers**
 
-    * [`State.onlyAssociatedContract`](State.md#onlyassociatedcontract)
-
----
-
-### `setIssuanceRatio`
-
-Allows the owner to set the Synth [issuance ratio](#issuanceratio), but disallows setting it higher than $1.0$, which prevents more than one dollar worth of Synths being issued against each dollar of SNX backing them.
-
-??? example "Details"
-
-    **Signature**
-
-    setIssuanceRatio(uint _issuanceRatio) external`
-
-    **Modifiers**
-
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-
-    **Preconditions**
-
-    * `_issuanceRatio` cannot exceed [`MAX_ISSUANCE_RATIO`](#max_issuance_ratio), which is set to `1.0`.
-
-    **Emits**
-
-    * [`IssuanceRatioUpdated(_issuanceRatio)`](#issuanceratioupdated)
-
----
-
-### `importIssuerData`
-
-!!! danger "Disabled"
-
-    This function only operated during the one week [setup period](LimitedSetup.md).
-
-This function allowed the owner to migrate sUSD issuance data during the launch of multiple Synth flavours. It simply calls [`_addToDebtRegister`](#_addtodebtregister) in a loop.
-
-??? example "Details"
-
-    **Signature**
-
-    `importIssuerData(address[] accounts, uint[] sUSDAmounts) external`
-
-    **Modifiers**
-
-    * [`Owned.onlyOwner`](Owned.md#onlyowner)
-    * [`LimitedSetup.onlyDuringSetup`](LimitedSetup.md#onlyduringsetup)
-
-    **Preconditions**
-
-    * The `XDR` price [must not be stale](ExchangeRates.md#rateisstale).
-
----
-
-### `_addToDebtRegister(address account, uint amount)`
-
-!!! danger "Disabled"
-
-    This function is only called from [`importIssuerData`](#importissuerdata), which only operated during the one week [setup period](LimitedSetup.md).
-
-This utility function allows adds a new entry to the debt register to set up staker debt holdings when migrating from the previous Synthetix version.
-It duplicates the logic of [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) with some minor modifications to keep track of how much [debt has been imported](#importedxdramount).
-
-??? example "Details"
-
-    **Signature**
-
-    `_addToDebtRegister(address account, uint amount) internal`
-
----
-
-### `debtLedgerLength`
-
-Returns the number of entries currently in [`debtLedger`](#debtledger).
-
-Primarily used in [`FeePool`](FeePool.md) for fee period computations.
-
-??? example "Details"
-
-    **Signature**
-
-    `debtLedgerLength() external view returns (uint)`
-
----
-
-### `lastDebtLedgerEntry`
-
-Returns the most recent [`debtLedger`](#debtledger) entry.
-
-Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
-
-??? example "Details"
-
-    **Signature**
-
-    `lastDebtLedgerEntry() external view returns (uint)`
-
----
-
-### `hasIssued`
-
-Returns true if a given account has any outstanding issuance debt resulting from Synth minting.
-
-Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to determine whether an minting event requires incrementing the total issuer count.
-
-??? example "Details"
-
-    **Signature**
-
-    `hasIssued(address account) external view returns (uint)`
-
----
+    * [onlyAssociatedContract](#onlyassociatedcontract)
 
 ## Events
 
----
-
 ### `IssuanceRatioUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/SynthetixState.sol#L172)</sub>
 
 Records that the [issuance ratio](#issuanceratio) was modified.
 
-**Signature:** `IssuanceRatioUpdated(uint newRatio)`
-
----
+**Signature**: `IssuanceRatioUpdated(uint256 newRatio)`
