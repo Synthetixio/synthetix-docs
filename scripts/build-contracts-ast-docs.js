@@ -190,6 +190,8 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	// Architecture's inheritance graph
 	if (graphHasInheritance) {
 		contractBody.Architecture['Inheritance Graph'].raw = graphMd + '\n\n';
+	} else {
+		delete contractBody.Architecture['Inheritance Graph'];
 	}
 
 	if (curAstDocs.libraries.length) {
@@ -458,18 +460,13 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 (() => {
 	// Builds new files into content/contracts and content/interfaces
 	console.log(gray('Building ast-docs...'));
-	Object.keys(astDocs).map(contractSource => {
-		Object.keys(astDocs[contractSource].contracts).map(contractName => {
-			generateContractMarkdown(contractSource, contractName, 'contracts');
-		});
 
-		Object.keys(astDocs[contractSource].libraries).map(contractName => {
-			generateContractMarkdown(contractSource, contractName, 'libraries');
-		});
-
-		Object.keys(astDocs[contractSource].interfaces).map(contractName => {
-			generateContractMarkdown(contractSource, contractName, 'interfaces');
-		});
+	Object.entries(astDocs).forEach(([contractSource, entry]) => {
+		['contracts', 'libraries', 'interfaces'].forEach(contractType =>
+			Object.keys(entry[contractType]).forEach(contractName => {
+				generateContractMarkdown(contractSource, contractName, contractType);
+			}),
+		);
 	});
 
 	// Updates mkdocs.yml
