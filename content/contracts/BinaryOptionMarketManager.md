@@ -16,6 +16,11 @@ markets altogether. The manager and its markets will also stop operating if the 
 These facilities are provided to allow upgrades to occur smoothly, for which purpose the manager contract
 also provides functions to migrate its markets to a new manager instance.
 
+This contract operates in a complex with [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md), which is
+responsible for actually instantiating new [`BinaryOptionMarket`](BinaryOptionMarket.md) instances. Since the factory 
+must contain the entire bytecode of the market contract, we must separate the factory from the manager, as the combined
+contract would otherwise exceed the maximum contract size specified in [EIP 170](https://eips.ethereum.org/EIPS/eip-170).
+
 ## Architecture
 
 ---
@@ -41,14 +46,17 @@ graph TD
 graph TD
     BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarket[BinaryOptionMarket]
     BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> SynthsUSD[Synth (sUSD)]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarketFactory[BinaryOptionMarketFactory]
+    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
     BinaryOptionMarketManager[BinaryOptionMarketManager] --> SystemStatus[SystemStatus]
     BinaryOptionMarketManager[BinaryOptionMarketManager] --> AddressResolver[AddressResolver]
+    BinaryOptionMarketManager[BinaryOptionMarketManager] --> SynthsUSD[SynthsUSD]
 ```
 
 ??? example "Details"
 
-    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The manager instantiates new `BinaryOptionMarket` instances, and keeps track of them in the [`_markets`](#_markets) array.
+    - [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md): The factory is responsible for actually instantiating new `BinaryOptionMarket` instances at the direction of the manager.
+    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The manager directs the factory to construct new `BinaryOptionMarket` instances, and keeps track of them in the [`_markets`](#_markets) array.
     - [`Synth (sUSD)`](Synth.md): As all bids and settlements are made in sUSD, the manager must know the sUSD address in order to accept initial bids.
     - [`SystemStatus`](SystemStatus.md): The manager pauses if the system is suspended on the SystemStatus contract.
     - [`AddressResolver`](AddressResolver.md): The addresses of SystemStatus and sUSD are retrieved from here.
@@ -66,10 +74,19 @@ graph TD
 
 ---
 
-### `BinaryOptionMarket.Fees`
+### `Fees`
 
-Holds the values of the pool, creator, and refund fee rates.
-See the [`BinaryOptionMarket.Fees`](BinaryOptionMarket.md#fees) documentation for further details.
+The global fee rates, which are inherited by new markets.
+Note that the sum `poolFee + creatorFee` must be between 0 and 1 exclusive,
+while `refundFee` must be no greater than 1.
+
+This is similar to the [`BinaryOptionMarket.Fees`](BinaryOptionMarket.md#fees) struct.
+
+| Field                  | Type                                       | Description |
+| ---------------------- | ------------------------------------------ | ----------- |
+| `poolFee`              | `uint` ([18 decimals](SafeDecimalMath.md)) | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). |
+| `creatorFee`           | `uint` ([18 decimals](SafeDecimalMath.md)) | The portion collected by the market's [creator](#creator) as a fee. |
+| `refundFee`            | `uint` ([18 decimals](SafeDecimalMath.md)) | When a bid is refunded, this portion of its value is retained in the market to be paid out at maturity. This fee is intended to compensate the market for the toxic price signal that the bidder has sent, by increasing the payoff of the remaining bidders, and to discourage excessive price volatility at the end of bidding. |
 
 ---
 
@@ -79,12 +96,12 @@ This struct holds the current values of time periods governing the duration of v
 
 | Field                      | Type             | Description |
 | -------------------------- | ---------------- | ----------- |
-| oracleMaturityWindow       | `uint` (seconds) | A market will accept final prices as valid if they were last updated no earlier than this window before the maturity date. |
+| oracleMaturityWindow       | `uint` (seconds) | A market can still be resolved if the last oracle price was updated less than `maturityWindow` seconds before the maturity date. |
 | exerciseDuration           | `uint` (seconds) | Matured binary options can be exercised for this period after the maturity date before they expire and the market can be destroyed. |
 | creatorDestructionDuration | `uint` (seconds) | For this period, the creator of a given market is given the exclusive right to destroy it in exchange for a percentage of the turnover plus the value of any unclaimed options. After this time, anyone may destroy it for the same fee. |
 | maxTimeToMaturity          | `uint` (seconds) | Markets cannot be created with a maturity date further in the future than this. |
 
-Note that unlike the other parameters, varying `creatorDestructionDuration` will affect
+Note that unlike other parameters, varying `creatorDestructionDuration` or `oracleMaturityWindow` will affect
 already-instantiated markets.
 
 ---
@@ -156,7 +173,7 @@ rather than exclusively the market creator.
     
     **State Mutability**
     
-    `public view`
+    `external view`
 
 ## Views (Internal)
 
@@ -201,25 +218,18 @@ Returns true if the provided address exists in the [`_markets`](#_markets) array
     
     `internal view`
 
----
+### `_publiclyDestructibleTime`
 
-## Constants
+The internal implementation of [`publiclyDestructibleTime`](#publiclydestructibletime)
 
----
-
-### `CONTRACT_SYSTEMSTATUS`
-
-The name of the [`SystemStatus`](SystemStatus.md) in the [`AddressResolver`](AddressResolver.md) contract.
-
-**Type:** `bytes32 internal constant`
-
----
-
-### `CONTRACT_SYNTHSUSD`
-
-The name of the sUSD [`Synth`](Synth.md) in the [`AddressResolver`](AddressResolver.md) contract.
-
-**Type:** `bytes32 internal constant`
+??? example "Details"
+    **Signature**
+    
+    `function _publiclyDestructibleTime(address market) returns (uint)`
+    
+    **State Mutability**
+    
+    `internal view`
 
 ---
 
@@ -239,7 +249,7 @@ manager contract they do not change in existing markets.
 
 ### `durations`
 
-This holds the current values that new markets will inherit for several parameters.
+This holds the current values that new markets will inherit for several time-related parameters.
 
 **Type:** [`Durations public`](#durations)
 
@@ -316,29 +326,32 @@ in the [`_markets`](#_markets) array.
 
 ### `createMarket`
 
-Creates a new [`BinaryOptionMarket`](BinaryOptionMarket.md) instance and adds it to
-the [`_markets`](#_markets) array.
+Calls out to [`BinaryOptionMarketFactory.createMarket`](BinaryOptionMarketFactory.md#createmarket) to create a new
+[`BinaryOptionMarket`](BinaryOptionMarket.md) instance and adds its address to the [`_markets`](#_markets) array.
 
 The creator (the message sender) must provide the following parameters:
 
 | Field         | Type                                       | Description |
 | ------------- | ------------------------------------------ | ----------- |
-| `biddingEnd`  | `uint` (seconds)                           | The unix timestamp at which the bidding period of the new market will end.
-| `maturity`    | `uint` (seconds)                           | The unix timestamp of the maturity date of the new market. |
 | `oracleKey`   | `bytes32`                                  | The key of the underlying asset of this market in the [`ExchangeRates`](ExchangeRates.md) contract. |
 | `targetPrice` | `uint` ([18 decimals](SafeDecimalMath.md)) | The target price of the underlying asset at maturity, in the same units as reported by the [ExchangeRates](ExchangeRates.md) contract. |
-| `longBid`     | `uint` ([18 decimals](SafeDecimalMath.md)) | The initial sUSD bid of the market creator on the long side of the market. |
-| `shortBid`    | `uint` ([18 decimals](SafeDecimalMath.md)) | The initial sUSD bid of the market creator on the short side of the market. |
+| `times`       | `uint[2] calldata`                         | The unix timestamps (seconds) of the bidding end date and the maturity date of the new market, in that order. |
+| `bids`        | `uint[2] calldata` ([18 decimals](SafeDecimalMath.md)) | The initial sUSD bids by the market creator on the long and short sides of the market, in that order. |
 
-Upon creation, the manager transfers `longbid + shortBid` sUSD from the creator to the
-new market, so the creator must have approved the manager to make that transfer using the
-ERC20 [`approve`](ExternStateToken.md#approve) function. The initial bids will be
-reflected in the [total deposited quantity](#totaldeposited).
+Upon creation, the manager transfers `bids[0] + bids[1]` sUSD from the creator to the
+new market using an ERC20 `transferFrom` call, so the creator must have given sufficient transfer approval
+to the manager. The initial bids will be reflected in the [total deposited quantity](#totaldeposited),
+and the market creator will be credited `bids[0]` worth of bids on the long option,
+and `bids[1]` worth on the short option. These bids, like any other user's, can be claimed and exercised
+as options, but they cannot be [refunded](#refund) if such a refund would decrease the creator's bid total
+to less than the [minimum liquidity requirement](#minimuminitialliquidity).
 
-The destruction time of the new market will be set to the provided maturity date
-plus `durations.exerciseDuration`, and its fees, oracle maturity window, and
-[resolver](AddressResolver.md) address will be set from the current values
-in the manager. The `BinaryOptionMarket` contract has no setters, so once constructed,
+The destruction time of the new market will be set to the provided maturity date (`times[1]`)
+plus `durations.exerciseDuration`, while the fee rates will be set from the current values
+in the manager. The [resolver](AddressResolver.md) address of the new market is inherited from
+the address known to the [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md) which performs the actual
+instantiation.
+The `BinaryOptionMarket` contract has no setters, so once constructed,
 these values are fixed for the lifetime of the market.
 The resolver cache of the new market is synchronised immediately after construction by the manager.
 
@@ -355,7 +368,7 @@ The transaction reverts if any of the following conditions is true:
 ??? example "Details"
     **Signature**
     
-    `createMarket(uint biddingEnd, uint maturity, bytes32 oracleKey, uint targetPrice, uint longBid, uint shortBid) returns (BinaryOptionMarket)`
+    `createMarket(bytes32 oracleKey, uint targetPrice, uint[2] calldata times, uint[2] calldata bids) returns (BinaryOptionMarket)`
     
     **State Mutability**
     

@@ -72,6 +72,7 @@ nav:
           - AddressResolver: contracts/AddressResolver.md
           - BinaryOption: contracts/BinaryOption.md
           - BinaryOptionMarket: contracts/BinaryOptionMarket.md
+          - BinaryOptionMarketFactory: contracts/BinaryOptionMarketFactory.md
           - BinaryOptionMarketManager: contracts/BinaryOptionMarketManager.md
           - DelegateApprovals: contracts/DelegateApprovals.md
           - Depot: contracts/Depot.md
@@ -173,8 +174,8 @@ markdown_extensions:
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
   - 'js/sectionSeparators.js'
-  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@8.4.8/dist/mermaid.min.js
 
 extra_css:
-  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+  - https://unpkg.com/mermaid@8.4.8/dist/mermaid.css
   - extra.css

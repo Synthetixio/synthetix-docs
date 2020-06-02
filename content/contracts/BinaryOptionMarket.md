@@ -21,8 +21,8 @@ between these phases is held in the [`times`](#times) public variable.
 
 #### Market Creation
 
-A market can be created by anyone, as long as they can provide enough initial capital to ensure
-the market is liquid. Upon creation markets will be
+A market can be created by anyone, as long as they can provide enough initial capital to [ensure
+the market is liquid](#minimuminitialliquidity). Upon creation markets will be
 [tracked in the manager contract](BinaryOptionMarketManager.md#_markets)
 until they are eventually destroyed.
 
@@ -115,13 +115,14 @@ graph TD
 graph TD
     BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
     BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarket[BinaryOptionMarket]
+    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarket[BinaryOptionMarket]
     BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionLong[BinaryOptionLong]
     BinaryOptionLong[BinaryOptionLong] --> BinaryOptionMarket[BinaryOptionMarket]
     BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionShort[BinaryOptionLong]
     BinaryOptionShort[BinaryOptionLong] --> BinaryOptionMarket[BinaryOptionMarket]
     BinaryOptionMarket[BinaryOptionMarket] --> SystemStatus[SystemStatus]
     BinaryOptionMarket[BinaryOptionMarket] --> ExchangeRates[ExchangeRates]
-    BinaryOptionMarket[BinaryOptionMarket] --> Synth[Synth (sUSD)]
+    BinaryOptionMarket[BinaryOptionMarket] --> SynthsUSD[SynthsUSD]
     BinaryOptionMarket[BinaryOptionMarket] --> FeePool[FeePool]
 ```
 
@@ -130,6 +131,7 @@ graph TD
     * [`BinaryOptionLong`](BinaryOption.md): The `BinaryOption` instance for long options of this market. Holds relevant bids and balances, and converts between them.
     * [`BinaryOptionShort`](BinaryOption.md): The `BinaryOption` instance for short options of this market.
     * [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md): The manager that created this market. The manager is queried for the pause status of the system, and to track the total deposited tokens.
+    * [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md): The factory that instantiated this market.
     * [`SystemStatus`](SystemStatus.md): The market ceases to operate if the system is suspended from the `SystemStatus` contract.
     * [`ExchangeRates`](ExchangeRates.md): The final price at maturity of this market is queried from the `ExchangeRates` contract. As such, markets must be based on assets that the exchange rates contract knows. 
     * [`sUSD Synth`](Synth.md): All deposits and settlements are performed in terms of sUSD.
@@ -220,7 +222,6 @@ Oracle-relevant details used at the resolution of the market.
 | `key`            | `bytes32`                                  | The key of the underlying asset of this market, as in the [`ExchangeRates`](ExchangeRates.md) contract. |
 | `targetPrice`    | `uint` ([18 decimals](SafeDecimalMath.md)) | The threshold price of the underlying asset. |
 | `finalPrice`     | `uint` ([18 decimals](SafeDecimalMath.md)) | The actual measured price of the underlying asset at the maturity date. |
-| `maturityWindow` | `uint` (seconds)                           | If the last price update was received from the oracle less than `maturityWindow` seconds before the maturity date, the market can still be resolved. |
 
 ---
     
@@ -246,15 +247,27 @@ are exercised.
 ## Constructor
 
 The constructor sets up all the static values for [fees](#fees), [timestamps](#times), [asset and target price](#oracledetails) among other parameters,
-and checks that all of these settings are within acceptable ranges.
+and checks that all of these settings are within acceptable ranges. The market's owner (the [manager](BinaryOptionMarketManager.md) contract),
+and [creator](#creator) are also set at this time.
 
 In addition, the market's [`BinaryOption`](BinaryOption.md) instances for each side of the market are instantiated,
 and their initial prices are computed from the initial bids.
 
+Note that the market's known [`AddressResolver`](AddressResolver.md) address will be incorrect at first,
+being initially set to the provided owner address, but this will be remedied after the first sync.
+
 ??? example "Details"
     **Signature**
 
-    `constructor(address _resolver, address _creator, uint _longBid, uint _shortBid, uint _minimumInitialLiquidity, uint _biddingEnd, uint _maturity, uint _destruction, bytes32 _oracleKey, uint _targetOraclePrice, uint _oracleMaturityWindow, uint _poolFee, uint _creatorFee, uint _refundFee) public`
+    ```
+    constructor(address _owner, address _creator,
+                uint _minimumInitialLiquidity,
+                bytes32 _oracleKey, uint _targetOraclePrice,
+                uint[3] memory _times, // [biddingEnd, maturity, destruction]
+                uint[2] memory _bids, // [longBid, shortBid]
+                uint[3] memory _fees // [poolFee, creatorFee, refundFee]
+    ) public
+    ```
     
     **Superconstructors**
     
@@ -292,7 +305,7 @@ contract, along with the time it was updated.
     
     **State Mutability**
     
-    `public view`
+    `external view`
 
 ---
 
@@ -330,7 +343,7 @@ Note that no check is performed that the underlying asset price was updated with
     `function result() returns (Side)`
     
     **State Mutability**
-    `public view`
+    `external view`
 
 ---
 
@@ -388,7 +401,7 @@ Returns the current [bids](BinaryOption.md#bidof) on each side of the market of 
     
     **State Mutability**
     
-    `public view`
+    `external view`
 
 ---
 
@@ -403,7 +416,7 @@ Returns the [total value of bids](BinaryOption.md#totalbids) on each side of the
     
     **State Mutability**
     
-    `public view`
+    `external view`
 
 ---
 
@@ -422,7 +435,7 @@ market has transitioned to the [trading phase](#phase).
     
     **State Mutability**
     
-    `public view`
+    `external view`
 
 ---
 
@@ -457,7 +470,7 @@ Returns the [option balances](BinaryOption.md#balanceof) of the message sender o
     
     **State Mutability**
     
-    `public view`
+    `external view`
 
 ---
 
@@ -615,9 +628,25 @@ True if the market can be [self-destructed](#selfdestruct) (if the [destruction 
 
 ---
 
+### `_oraclePriceAndTimestamp`
+
+The internal implementation of [`oraclePriceAndTimestamp`](#oraclepriceandtimestamp).
+See that function's documentation for further information.
+
+??? example "Details"
+    **Signature**
+    
+    `function _oraclePriceAndTimestamp() returns (uint price, updatedAt)`
+    
+    **State Mutability**
+    
+    `internal view`
+
+---
+
 ### `_withinMaturityWindow`
 
-True if a given timestamp is within the [maturity window](#times), false otherwise;
+True if a given timestamp is within the [maturity window](BinaryOptionMarketManager.md#durations), false otherwise;
 a price which was updated at a time for which this function is true is acceptable for resolving the market.
 
 ??? example "Details"
@@ -631,6 +660,21 @@ a price which was updated at a time for which this function is true is acceptabl
 
 ---
 
+### `_result`
+
+The internal implementation of [`result`](#result).
+See that function's documentation for more information.
+
+??? example "Details"
+    **Signature**
+
+    `function _result() returns (Side)`
+    
+    **State Mutability**
+    `internal view`
+
+---
+
 ### `_destructionReward`
 
 See [`destructionReward()`](#destructionreward) for details. This is the internal implementation of that function. 
@@ -639,6 +683,70 @@ See [`destructionReward()`](#destructionreward) for details. This is the interna
     **Signature**
     
     `function _destructionReward(uint _deposited) returns (uint)`
+    
+    **State Mutability**
+    
+    `internal view`
+
+---
+
+### `_bidsOf`
+
+The internal implementation of [`bidsOf`](#bidsof).
+See that function's documentation for more information.
+
+??? example "Details"
+    **Signature**
+
+    `function _bidsOf(address account) returns (uint long, uint short)`
+    
+    **State Mutability**
+    
+    `internal view`
+
+---
+
+### `_totalBids`
+
+The internal implementation of [`totalBids`](#totalbids).
+See that function's documentation for more information.
+
+??? example "Details"
+    **Signature**
+
+    `function _totalBids() returns (uint long, uint short)`
+    
+    **State Mutability**
+    
+    `internal view`
+
+---
+
+### `_claimableBy`
+
+The internal implementation of [`claimableBy`](#claimableby).
+See that function's documentation for more information.
+
+??? example "Details"
+    **Signature**
+
+    `function _claimableBy(adddress account) returns (uint long, uint short)`
+    
+    **State Mutability**
+    
+    `internal view`
+    
+---
+
+### `_balancesOf`
+
+The internal implementation of [`balancesOf`](#balancesof).
+See that function's documentation for more information.
+
+??? example "Details"
+    **Signature**
+
+    `function _balancesOf(adddress account) returns (uint long, uint short)`
     
     **State Mutability**
     
@@ -834,15 +942,15 @@ or if the manager contract is paused.
 Refunds an existing bid, remitting the refund value minus a percentage determined by the [refund fee rate](#fees) as sUSD.
 The function returns the value refunded as sUSD.
 
-The full value of the refund is deducted from the caller's balance, while this value minus the refund fee
+The full value of the refund is deducted from the caller's bids, while this value minus the refund fee
 is actually remitted as sUSD. The deposited quantity in [the market](#deposited)
 and in the [manager contract](BinaryOptionMarketManager.md#totaldeposited) are decremented by the transferred
 value. The deposit quantities having been updated, the option prices are [recomputed](#_updateprices) to reflect the
 changed odds.
 
 The refund fee, which will eventually be paid out to option-holders, is retained in the pot,
-although not on either side's bid total. As such, refunds effectively discount option
-prices for those remaining in the market.
+although not on either side's bid total. As such, refunds discount option
+prices for all those remaining in the market.
 
 If the message sender is the market's [creator](#creator), then a refund transaction will revert
 if it would either violate the [minimum liquidity requirement](#minimuminitialliquidity), or if
@@ -890,7 +998,7 @@ This function reverts the transaction if the system is suspended or the manager 
     
     **State Mutability**
     
-    `public`
+    `external`
     
     **Modifiers**
     
@@ -919,7 +1027,7 @@ This function reverts the transaction if the system is suspended or the manager 
     
     **State Mutability**
     
-    `public`
+    `external`
     
     **Modifiers**
     
@@ -1022,6 +1130,56 @@ on either side of the market be refunded.
     **Emitted Events**  
     
     * [`PricesUpdated(longPrice, shortPrice)`](#pricesupdated)
+
+---
+
+### `_resolve`
+
+This is the internal implementation of [`resolve`](#resolve).
+See that function's documentation for more information.
+
+??? example "Details"
+    **Signature**
+    
+    `function _resolve()`
+    
+    **State Mutability**
+    
+    `internal`
+
+    **Modifiers**
+    
+    * [`onlyAfterMaturity`](#onlyaftermaturity)
+    * [`managerNotPaused`](#managernotpaused)
+    
+    **Emitted Events**
+    
+    * [`MarketResolved(result(), price, updatedAt)`](#marketresolved)
+
+---
+
+### `_claimOptions`
+
+This is the internal implementation of [`claimOptions`](#claimoptions).
+See that function for more information.
+
+??? example "Details"
+    **Signature**
+    
+    `function _claimOptions() returns (uint longClaimed, uint shortClaimed)`
+    
+    **State Mutability**
+    
+    `internal`
+    
+    **Modifiers**
+    
+    * [`onlyAfterBidding`](#onlyafterbidding)
+    * [`managerNotPaused`](#managernotpaused)
+   
+    **Emitted Events**
+    
+    * [`OptionsClaimed(msg.sender, longOptions, shortOptions)`](#optionsclaimed)
 
 ## Events
 
