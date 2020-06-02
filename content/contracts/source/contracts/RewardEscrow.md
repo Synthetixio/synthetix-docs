@@ -20,8 +20,8 @@ The logic of RewardEscrow is derived from the [SynthetixEscrow](SynthetixEscrow.
 
 ### Related Contracts
 
-- <>[Synthetix](Synthetix.md)
-- <>[FeePool](FeePool.md)
+- [Synthetix](Synthetix.md)
+- [FeePool](FeePool.md)
 
 ---
 

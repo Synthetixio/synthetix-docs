@@ -2,19 +2,15 @@
 
 **Source:** [RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardsDistributionRecipient.sol)
 
+## Description
+
 !!! todo "Work in Progress"
 
     This needs filling in
 
-## Description
-
-... todo.
-
 ---
 
 ## Architecture
-
-... todo.
 
 <!--centered-image>
     ![Architecture Graph](/img/graphs/todo-architecture.svg)
@@ -25,10 +21,6 @@
 <!--centered-image>
     ![Inheritance graph](/img/graphs/todo.svg)
 </centered-image-->
-
-### Related Contracts
-
-- ?
 
 ---
 

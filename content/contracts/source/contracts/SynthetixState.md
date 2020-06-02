@@ -1,5 +1,7 @@
 # SynthetixState
 
+## Description
+
 This is a state contract associated with the main [`Synthetix`](Synthetix.md) contract, which is the only address permitted to invoke most of its functionality.
 
 This contract is responsible for recording issuance and debt information for the system and users within it, as well as the global [issuance ratio](#issuanceratio).
@@ -26,7 +28,7 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
 ### Related Contracts
 
-- Synthetix as this contract's `State.associatedContract`
+- [Issuer](Issuer.md) as this contract's `State.associatedContract`
 
 ---
 

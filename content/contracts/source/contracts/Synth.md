@@ -1,11 +1,13 @@
 # Synth
 
+## Description
+
 This contract is the basis of all Synth flavours.
 It exposes sufficient functionality for the [`Synthetix`](Synthetix.md) and [`FeePool`](FeePool.md) contracts to manage its supply. Otherwise Synths are fairly vanilla ERC20 tokens; the [`PurgeableSynth`](PurgeableSynth.md) contract extends this basic functionality to allow the owner to liquidate a Synth if its total value is low enough.
 
 See the [main synth notes](../../synths) for more information about how Synths function in practice.
 
-???+ note "A Note on Conversion Fees"
+??? note "A Historical Note on Conversion Fees"
 
     Since transfer conversion is not operating, the following is recorded only to be kept in mind in case it is ever reactivated. At present there is no way for users to set a preferred currency.
 

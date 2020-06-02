@@ -32,7 +32,7 @@ After Week 235 the SNX supply will grow at 2.5% APR based on the total Supply of
 
 ### Related Contracts
 
-- <>[Synthetix](Synthetix.md)
+- [Synthetix](Synthetix.md)
 
 ---
 

@@ -312,8 +312,10 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			(x.stateMutability === 'view' || x.stateMutability === 'pure') &&
 			(x.visibility === 'external' || x.visibility === 'public'),
 	);
-	const internalFuncs = curAstDocs.functions.filter(x => x.visibility === 'internal');
-	const restrictedFuncs = curAstDocs.functions.filter(x => x.modifiers.find(modifier => /only/.test(modifier)));
+	const internalFuncs = curAstDocs.functions.filter(x => x.visibility === 'internal' && x.name !== 'constructor');
+	const restrictedFuncs = curAstDocs.functions.filter(
+		x => x.modifiers.find(modifier => /only/.test(modifier)) || x.requires.find(req => /requireAccess/.test(req.name)),
+	);
 
 	// Already declared functions will be ignored
 	const alreadyDeclaredFunctions = [constructorFunc, fallbackFunc, viewFuncs, internalFuncs, restrictedFuncs]
