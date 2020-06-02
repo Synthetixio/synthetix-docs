@@ -53,10 +53,10 @@ For more information on these fields and their meaning, see the main [`Synthetix
 
     This induces a slightly awkward structure where the current and historical issuance information is stored over two separate contracts. In a future version this information could potentially be stored in a unified structure for dividends in efficiency and clarity.
 
-| Field            | Type      | Description                                                                                                                                                                                                                                                                    |
-| ---------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `debtPercentage` | `uint256` | The percentage of the total system debt owned by the address associated with this entry at the time of issuance. These are [27-decimal fixed point numbers](SafeDecimalMath.md), closely related to the values in [`SynthetixState.debtLedger`](SynthetixState.md#debtledger). |
-| `debtEntryIndex` | `uint256` | The [debt ledger](SynthetixState.md#debtledger) index when this user issued or destroyed tokens. That is, the length of the ledger at the time of issuance.                                                                                                                    |
+| Field            | Type      | Description                                                                                                                                                                                                                                                                                 |
+| ---------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `debtPercentage` | `uint256` | The percentage of the total system debt owned by the address associated with this entry at the time of issuance. These are [27-decimal fixed point numbers](../libraries/SafeDecimalMath.md), closely related to the values in [`SynthetixState.debtLedger`](SynthetixState.md#debtledger). |
+| `debtEntryIndex` | `uint256` | The [debt ledger](SynthetixState.md#debtledger) index when this user issued or destroyed tokens. That is, the length of the ledger at the time of issuance.                                                                                                                                 |
 
 ## Constants
 
@@ -122,7 +122,7 @@ From a given account's issuance data, retrieve the most recent entry which close
 
 This function is used in [`FeePool.feesByPeriod`](FeePool.md#feesbyperiod) and [`FeePool.effectiveDebtRatioForPeriod`](FeePool.md#effectivedebtratioforperiod) to compute the fees owed to a user for specific past periods.
 
-The returned values are as per [`getAccountsDebtEntry`](#getaccountsdebtentry), hence the first return value is a [27-decimal fixed point number](SafeDecimalMath.md).
+The returned values are as per [`getAccountsDebtEntry`](#getaccountsdebtentry), hence the first return value is a [27-decimal fixed point number](../libraries/SafeDecimalMath.md).
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@ The returned values are as per [`getAccountsDebtEntry`](#getaccountsdebtentry), 
 
 Accesses [`accountIssuanceLedger`](#accountissuanceledger).
 
-The first return value is a [27-decimal fixed point number](SafeDecimalMath.md).
+The first return value is a [27-decimal fixed point number](../libraries/SafeDecimalMath.md).
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@ Allows the [`Synthetix`](Synthetix.md#_appendaccountissuancerecord) contract, th
 
 If the latest entry in this account's issuance ledger was from the current fee period, it is overwritten. Otherwise, the existing entries are shifted down one spot, dropping the last one (using a call to [`issuanceDataIndexOrder`](#issuancedataindexorder)), and a new entry is added at the head of the list.
 
-The `debtRatio` argument is a [27-decimal fixed point number](SafeDecimalMath.md).
+The `debtRatio` argument is a [27-decimal fixed point number](../libraries/SafeDecimalMath.md).
 
 ??? example "Details"
 

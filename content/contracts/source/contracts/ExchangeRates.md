@@ -39,7 +39,7 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeRates.sol#L45)</sub>
 
-Holds necessary information for computing the price of [inverse Synths](../tokens.md#inverse-synths).
+Holds necessary information for computing the price of [inverse Synths](/tokens.md#inverse-synths).
 
 | Field        | Type      | Description                                                                                               |
 | ------------ | --------- | --------------------------------------------------------------------------------------------------------- |
@@ -174,7 +174,7 @@ $$
 Q_B = Q_A \frac{\pi_A}{\pi_B}
 $$
 
-This computation is simple because all fractional quantities in the Synthetix system except for the [debt ledger](SynthetixState.md#debtledger) are [18 decimal fixed point numbers](SafeDecimalMath.md).
+This computation is simple because all fractional quantities in the Synthetix system except for the [debt ledger](SynthetixState.md#debtledger) are [18 decimal fixed point numbers](../libraries/SafeDecimalMath.md).
 
 ??? example "Details"
 

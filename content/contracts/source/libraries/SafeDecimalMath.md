@@ -13,7 +13,7 @@ Several functions are included for converting between precision levels, and oper
 SafeDecimalMath uses OpenZeppelin's [SafeMath](SafeMath.md) library for most of its basic arithmetic operations in order to protect from arithmetic overflows and zero divisions.
 
 In Synthetix, the standard precision fixed point numbers are used to deal with most fractional quantities, such as token balances and prices.
-The high-precision numbers are mainly used for dealing with the [debt ledger](SynthetixState.md#debtledger), which [is constructed](Synthetix.md#_addtodebtregister) as an extended product of many fractional numbers very close to $1$. As this is a financially-sensitive component of the system, representational precision matters in order to minimise errors resulting from rounding or truncation.
+The high-precision numbers are mainly used for dealing with the [debt ledger](../contracts/SynthetixState.md#debtledger), which [is constructed](../contracts/Synthetix.md#_addtodebtregister) as an extended product of many fractional numbers very close to $1$. As this is a financially-sensitive component of the system, representational precision matters in order to minimise errors resulting from rounding or truncation.
 
 **Fixed-Point Mechanics**
 

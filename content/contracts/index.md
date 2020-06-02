@@ -202,18 +202,17 @@ These contracts mostly are not deployed on their own, but provide functionality 
 
 **Contracts**
 
-| Contract                                                   | Description                                                                                                            |
-| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [`EternalStorage`](source/contracts/EternalStorage.md)     | A persistent/unstructured smart contract storage pattern.                                                              |
-| [`ExternStateToken`](source/contracts/ExternStateToken.md) | A partial ERC20 token contact with an external state, which all tokens in Synthetix are built upon.                    |
-| [`LimitedSetup`](source/contracts/LimitedSetup.md)         | A contract which can disable functions a set time after deployment.                                                    |
-| [`MixinResolver`](source/contracts/MixinResolver.md)       | A mixin to give the inheriter access the [`AddressResolver`](source/contracts/AddressResolver.md) instance.            |
-| [`Owned`](source/contracts/Owned.md)                       | A contract with a distinct owner who can have special privileges.                                                      |
-| [`Pausable`](source/contracts/Pausable.md)                 | A contract whose operations can be paused by its owner.                                                                |
-| [`SafeDecimalMath`](source/contracts/SafeDecimalMath.md)   | A library for performing fixed point arithmetic at two different precision levels.                                     |
-| [`SafeMath`](source/contracts/SafeMath.md)                 | OpenZeppelin guarded arithmentic library, used by [`SafeDecimalMath`](source/contracts/SafeDecimalMath.md) and others. |
-| [`SelfDestructible`](source/contracts/SelfDestructible.md) | A contract that can be self destructed by its owner after a delay.                                                     |
-| [`State`](source/contracts/State.md)                       | An external state contract which can restrict its fields to be modifiable only by a particular contract address.       |
-| [`TokenState`](TokenState.md)                              | A state contract to be used with [`ExternStateToken`](ExternStateToken.md) to store balances.                          |
+| Contract                                                   | Description                                                                                                      |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [`EternalStorage`](source/contracts/EternalStorage.md)     | A persistent/unstructured smart contract storage pattern.                                                        |
+| [`ExternStateToken`](source/contracts/ExternStateToken.md) | A partial ERC20 token contact with an external state, which all tokens in Synthetix are built upon.              |
+| [`LimitedSetup`](source/contracts/LimitedSetup.md)         | A contract which can disable functions a set time after deployment.                                              |
+| [`MixinResolver`](source/contracts/MixinResolver.md)       | A mixin to give the inheriter access the [`AddressResolver`](source/contracts/AddressResolver.md) instance.      |
+| [`Owned`](source/contracts/Owned.md)                       | A contract with a distinct owner who can have special privileges.                                                |
+| [`Pausable`](source/contracts/Pausable.md)                 | A contract whose operations can be paused by its owner.                                                          |
+| [`SafeDecimalMath`](source/libraries/SafeDecimalMath.md)   | A library for performing fixed point arithmetic at two different precision levels.                               |
+| [`SelfDestructible`](source/contracts/SelfDestructible.md) | A contract that can be self destructed by its owner after a delay.                                               |
+| [`State`](source/contracts/State.md)                       | An external state contract which can restrict its fields to be modifiable only by a particular contract address. |
+| [`TokenState`](source/contracts/TokenState.md)             | A state contract to be used with [`ExternStateToken`](source/contracts/ExternStateToken.md) to store balances.   |
 
 ---

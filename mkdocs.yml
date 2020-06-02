@@ -116,6 +116,7 @@ nav:
           Libraries:
             - Math: contracts/source/libraries/Math.md
             - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
+            - SafeMath: contracts/source/libraries/SafeMath.md
       - Audit History: contracts/audits.md
 extra:
   social:

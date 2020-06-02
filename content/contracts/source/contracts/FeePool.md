@@ -310,7 +310,7 @@ Returns from [`FeePoolEternalStorage`](FeePoolEternalStorage.md) the id of the f
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/FeePool.sol#L773)</sub>
 
-Returns the collateralisation level a user can reach before they cannot claim fees. This is simply [`SynthetixState.issuanceRatio *`](SynthetixState.md#issuanceratio) [`(1 + TARGET_THRESHOLD)`](#target_threshold). The result is returned as a [18-decimal fixed point number](SafeDecimalMath.md).
+Returns the collateralisation level a user can reach before they cannot claim fees. This is simply [`SynthetixState.issuanceRatio *`](SynthetixState.md#issuanceratio) [`(1 + TARGET_THRESHOLD)`](#target_threshold). The result is returned as a [18-decimal fixed point number](../libraries/SafeDecimalMath.md).
 
 ??? example "Details"
 
@@ -418,7 +418,7 @@ Records that an account issued or burnt synths in the fee pool state.
 
 This function merely emits an event and passes through to [`FeePoolState.appendAccountIssuanceRecord`](FeePoolState.md#appendAccountIssuanceRecord) and is itself only invoked by [`Synthetix._appendAccountIssuanceRecord`](Synthetix.md#_appendaccountissuancerecord).
 
-The `debtRatio` argument is a [27-decimal fixed point number](SafeDecimalMath.md).
+The `debtRatio` argument is a [27-decimal fixed point number](../libraries/SafeDecimalMath.md).
 
 ??? example "Details"
 
@@ -679,7 +679,7 @@ Computes the fees (in sUSD) and rewards (in SNX) owed at the end of a recent fee
 
 - `period` is an index into the [`recentFeePeriods`](#recentfeeperiods) array, thus 0 corresponds with the current period.
 - `debtEntryIndex` should be an index into the debt ledger which was added before the close of the specified fee period.
-- `ownershipPercentage` should be the percentage of the account's debt ownership at that `debtEntryIndex`. This is a [27-decimal fixed point number](SafeDecimalMath.md).
+- `ownershipPercentage` should be the percentage of the account's debt ownership at that `debtEntryIndex`. This is a [27-decimal fixed point number](../libraries/SafeDecimalMath.md).
 
 ??? example "Details"
 
