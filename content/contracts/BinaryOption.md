@@ -72,7 +72,7 @@ Returns the current price of this option from the parent market.
 
 ??? example "Details"
     **Signature**
-    `function price() public view returns (uint)`
+    `function price() external view returns (uint)`
 
 ### `claimableBy`
 
@@ -80,7 +80,7 @@ Returns the quantity of options claimable by an account at the current price.
 
 ??? example "Details"
     **Signature**
-    `function claimableBy(address account) public view returns (uint)`
+    `function claimableBy(address account) external view returns (uint)`
 
 ### `totalClaimable`
 
@@ -88,7 +88,7 @@ Returns the total supply of options claimable by all bidders.
 
 ??? example "Details"
     **Signature**
-    `function totalClaimable() public view returns (uint)`
+    `function totalClaimable() external view returns (uint)`
 
 ### `totalExercisable`
 
@@ -196,7 +196,7 @@ Reverts if the balance in the sending account is insufficient, or if the destina
     `function transfer(address _to, uint _value) returns (bool success)`
     
     **State Mutability**
-    `public`
+    `external`
     
 ---
 
@@ -211,8 +211,7 @@ sending addresses is the zero address.
     `function transferFrom(address _from, address _to, uint _value) returns (bool success)`
     
     **State Mutability**
-    `public`
-
+    `external`
 
 ---
 
@@ -226,7 +225,7 @@ Reverts if the designated spender is the zero account.
     `function approve(address _spender, uint _value) returns (bool success)`
     
     **State Mutability**
-    `public`
+    `external`
 
 ## Functions (Restricted)
 
@@ -333,12 +332,12 @@ Allows the market to destroy this option contract.
 
 ---
 
-### `_internalTransfer
+### `_transfer
 
 Implements the internal behaviour of the [`transfer`](#transfer) and [`transferFrom`](#transferfrom) functions.
 Reverts if either sender or recipient is the zero account, or if the balance in the sending account is insufficient.
 
-    function _internalTransfer(address _from, address _to, uint _value) internal returns (bool success) {
+    function _transfer(address _from, address _to, uint _value) internal returns (bool success) {
 
 ## Events
 
