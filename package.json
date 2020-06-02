@@ -7,7 +7,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "node scripts/build",
 		"lint": "eslint .",
-		"format": "prettier --write '**/*.js' '**/*.md'"
+		"format": "prettier --write '**/*.js' '**/*.md' '*.yml'"
 	},
 	"repository": {
 		"type": "git",

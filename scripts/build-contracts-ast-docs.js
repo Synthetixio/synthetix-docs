@@ -104,7 +104,7 @@ ${acc(graph)}
 const generateContractMarkdown = (contractSource, contractName, contractKind) => {
 	console.log(gray('\t- processing', contractName));
 	// Output folder for markdown files
-	const outputDir = path.join(__dirname, '..', 'content', contractKind);
+	const outputDir = path.join(__dirname, '..', 'content', 'contracts', 'source', contractKind);
 	if (!fs.existsSync(outputDir)) {
 		fs.mkdirSync(outputDir);
 	}
@@ -491,9 +491,18 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			};
 		});
 	};
-	const contracts = getYamlContent(path.join(__dirname, '../content/contracts'), 'contracts');
-	const libraries = getYamlContent(path.join(__dirname, '../content/libraries'), 'libraries');
-	const interfaces = getYamlContent(path.join(__dirname, '../content/interfaces'), 'interfaces');
+	const contracts = getYamlContent(
+		path.join(__dirname, '../content/contracts/source/contracts'),
+		'contracts/source/contracts',
+	);
+	const libraries = getYamlContent(
+		path.join(__dirname, '../content/contracts/source/libraries'),
+		'contracts/source/libraries',
+	);
+	const interfaces = getYamlContent(
+		path.join(__dirname, '../content/contracts/source/interfaces'),
+		'contracts/source/interfaces',
+	);
 
 	// Some bug with YAML parsing...
 	// it doesn't like !!python as a value
@@ -506,27 +515,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		}
 	}
 
-	for (let i = 0; i < mkdocsYAML.nav.length; i++) {
-		const cur = mkdocsYAML.nav[i];
-
-		if (cur['Smart Contracts']) {
-			const sc = cur['Smart Contracts'];
-
-			for (let j = 0; j < sc.length; j++) {
-				if (sc[j].Contracts) {
-					mkdocsYAML.nav[i]['Smart Contracts'][j].Contracts = contracts;
-				}
-
-				if (sc[j].Interfaces) {
-					mkdocsYAML.nav[i]['Smart Contracts'][j].Interfaces = interfaces;
-				}
-
-				if (sc[j].Libraries) {
-					mkdocsYAML.nav[i]['Smart Contracts'][j].Libraries = libraries;
-				}
-			}
-		}
-	}
+	const scEntryInYAML = mkdocsYAML.nav.find(entry => 'Smart Contracts' in entry);
+	const srcEntryInYAML = scEntryInYAML['Smart Contracts'].find(entry => 'Source' in entry);
+	srcEntryInYAML['Source'] = { Contracts: contracts, Interfaces: interfaces, Libraries: libraries };
 
 	// We don't want !!python to be quoted
 	// Unfortunately a hacky patch :(
