@@ -420,7 +420,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			const exisingDesc = (existingEntry.raw || '')
 				.split('\n')
 				.filter(x => !x.includes('<sub>'))
-				.join('\n');
+				.join('\n')
+				.split('- ')[0]
+				.split('**Signature')[0];
 
 			return [sourceLink, exisingDesc]
 				.concat(parameters.length > 2 ? ['**Signature**', `\`${name}${parameters}\``] : [])
