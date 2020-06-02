@@ -116,8 +116,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	const contractBody = {
 		Description: {},
 		Architecture: {
-			'Inheritance Graph': {},
 			Libraries: {},
+			'Inheritance Graph': {},
+			'Related Contracts': {},
 		},
 		Structs: {},
 		Constants: {
@@ -201,6 +202,12 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	} else {
 		// remove this explicitly as it's nested
 		delete contractBody.Architecture['Libraries'];
+	}
+
+	if (existingContent.Architecture && (existingContent.Architecture['Related Contracts'] || {}).raw) {
+		contractBody.Architecture['Related Contracts'].raw = existingContent.Architecture['Related Contracts'].raw;
+	} else {
+		delete contractBody.Architecture['Related Contracts'];
 	}
 
 	const combineEntries = ({ entries, combiner }) => {
