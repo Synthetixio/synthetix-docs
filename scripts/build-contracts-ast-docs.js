@@ -330,6 +330,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		lineNumber,
 		signature,
 		visibility,
+		stateMutability,
 		requires = [],
 		events,
 		modifiers,
@@ -338,11 +339,15 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		const functionSourceMdContent = `${getContractSourceLink(lineNumber)}\n\n`;
 
 		let functionDetailMdContent = '??? example "Details"\n\n';
+
 		functionDetailMdContent += '    **Signature**\n\n';
 		functionDetailMdContent += `    \`${signature}\`\n\n`;
 
 		functionDetailMdContent += '    **Visibility**\n\n';
 		functionDetailMdContent += `    \`${visibility}\`\n\n`;
+
+		functionDetailMdContent += '    **State Mutability**\n\n';
+		functionDetailMdContent += `    \`${stateMutability}\`\n\n`;
 
 		// Requires
 		functionDetailMdContent += requires.length ? '    **Requires**\n\n' : '';
