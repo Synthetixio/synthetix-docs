@@ -115,7 +115,7 @@ parameters can't be set out of range.
 ??? example "Details"
     **Signature**
     
-    `constructor(address _owner, address _resolver, uint _oracleMaturityWindow, uint _exerciseDuration, uint _creatorDestructionDuration, uint _maxTimeToMaturity, uint _minimumInitialLiquidity, uint _poolFee, uint _creatorFee, uint _refundFee) public`
+    `constructor(address _owner, address _resolver, uint _oracleMaturityWindow, uint _exerciseDuration, uint _creatorDestructionDuration, uint _maxTimeToMaturity, uint _capitalRequirement, uint _poolFee, uint _creatorFee, uint _refundFee) public`
     
     **Superconstructors**
     
@@ -255,7 +255,7 @@ This holds the current values that new markets will inherit for several time-rel
 
 ---
 
-### `minimumInitialLiquidity`
+### `capitalRequirement`
 
 New markets require the creator to provide at least this value of sUSD in initial bids.
 
@@ -344,7 +344,7 @@ to the manager. The initial bids will be reflected in the [total deposited quant
 and the market creator will be credited `bids[0]` worth of bids on the long option,
 and `bids[1]` worth on the short option. These bids, like any other user's, can be claimed and exercised
 as options, but they cannot be [refunded](#refund) if such a refund would decrease the creator's bid total
-to less than the [minimum liquidity requirement](#minimuminitialliquidity).
+to less than the [minimum liquidity requirement](#capitalrequirement).
 
 The destruction time of the new market will be set to the provided maturity date (`times[1]`)
 plus `durations.exerciseDuration`, while the fee rates will be set from the current values
@@ -362,7 +362,7 @@ The transaction reverts if any of the following conditions is true:
 * Market creation [has been disabled](#marketcreationenabled)
 * The given maturity date is further than [`durations.maxTimeToMaturity`](#durations) in the future
 * The provided maturity date is not after the provided bidding end date.
-* The sum of `longBid` and `shortBid` is less than [`minimumInitialLiquidity`](#minimuminitialliquidity)
+* The sum of `longBid` and `shortBid` is less than [`capitalRequirement`](#capitalrequirement)
 * The creator has not approved the manager to transfer at least `longBid + shortBid` sUSD on their behalf.
 
 ??? example "Details"
@@ -590,12 +590,12 @@ The transaction reverts if the refund fee is greater than 100%.
 
 ### `setMinimumInitialLiquidity`
 
-Allows the contract owner to update [`minimumInitialLiquidity`](#minimuminitialliquidity).
+Allows the contract owner to update [`capitalRequirement`](#capitalrequirement).
 
 ??? example "Details"
     **Signature**
     
-    `setMinimumInitialLiquidity(uint _minimumInitialLiquidity)`
+    `setMinimumInitialLiquidity(uint _capitalRequirement)`
     
     **State Mutability**
     
@@ -607,7 +607,7 @@ Allows the contract owner to update [`minimumInitialLiquidity`](#minimuminitiall
    
     **Emitted Events**
     
-    * [`MinimumInitialLiquidityUpdated(_minimumInitialLiquidity)`](#minimuminitialliquidityupdated)
+    * [`MinimumInitialLiquidityUpdated(_capitalRequirement)`](#capitalrequirementupdated)
  
 ---
 
@@ -872,7 +872,7 @@ The [maximum time to maturity](#durations) was updated.
 
 ### `MinimumInitialLiquidityUpdated`
     
-The [minimum initial liquidity](#minimuminitialliquidity) was updated.
+The [minimum initial liquidity](#capitalrequirement) was updated.
     
 **Signature:** `MinimumInitialLiquidityUpdated(uint value)`
 

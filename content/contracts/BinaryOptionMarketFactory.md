@@ -104,7 +104,7 @@ See that function's documentation for further details.
 
     ```
     function createMarket(address creator,
-        uint minimumInitialLiquidity,
+        uint capitalRequirement,
         bytes32 oracleKey, uint targetPrice,
         uint[3] calldata times, // [biddingEnd, maturity, destruction]
         uint[2] calldata bids, // [longBid, shortBid]

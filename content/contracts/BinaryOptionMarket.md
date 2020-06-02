@@ -22,7 +22,7 @@ between these phases is held in the [`times`](#times) public variable.
 #### Market Creation
 
 A market can be created by anyone, as long as they can provide enough initial capital to [ensure
-the market is liquid](#minimuminitialliquidity). Upon creation markets will be
+the market is liquid](#capitalrequirement). Upon creation markets will be
 [tracked in the manager contract](BinaryOptionMarketManager.md#_markets)
 until they are eventually destroyed.
 
@@ -261,7 +261,7 @@ being initially set to the provided owner address, but this will be remedied aft
 
     ```
     constructor(address _owner, address _creator,
-                uint _minimumInitialLiquidity,
+                uint _capitalRequirement,
                 bytes32 _oracleKey, uint _targetOraclePrice,
                 uint[3] memory _times, // [biddingEnd, maturity, destruction]
                 uint[2] memory _bids, // [longBid, shortBid]
@@ -846,9 +846,9 @@ case querying the contract's sUSD token balance would throw off several calculat
     
 ---
 
-### `minimumInitialLiquidity`
+### `capitalRequirement`
 
-The minimum liquidity that the market's [creator](#creator) must maintain in the market until the end of
+The minimum capital that the market's [creator](#creator) must maintain in the market until the end of
 bidding. The market's initial bids must be at least this value, and the creator may not submit refunds that
 would reduce their open bids to a value less than this minimum.
 
@@ -953,7 +953,7 @@ although not on either side's bid total. As such, refunds discount option
 prices for all those remaining in the market.
 
 If the message sender is the market's [creator](#creator), then a refund transaction will revert
-if it would either violate the [minimum liquidity requirement](#minimuminitialliquidity), or if
+if it would either violate the [capital requirement](#capitalrequirement), or if
 it would refund their entire position on either side of the market.
 
 The transaction reverts if this function is called outside the bidding period, if the system is suspended,
