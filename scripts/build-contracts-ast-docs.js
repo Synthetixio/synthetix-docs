@@ -269,9 +269,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 					const existingRow = existingTable
 						.split('\n')
 						.filter(x => x.includes('|'))
-						.filter(x => {
-							return x.split('|')[1].split(' ').join('') === name;
-						})[0];
+						.filter(x => x.split('|')[1].replace(/\s|`/g, '') === name)[0];
 
 					return existingRow.split('|').slice(-2)[0].trim();
 				} catch (e) {

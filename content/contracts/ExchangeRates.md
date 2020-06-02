@@ -67,6 +67,15 @@ Holds necessary information for computing the price of [inverse Synths](../token
 | lowerLimit | `uint` ([18 dp](SafeDecimalMath.md)) | The lower limit of the _inverse_ price. Must lie strictly between $0$ and entryPoint.                     |
 | frozen     | `bool`                               | True if an inverse Synth has breached one of its limits.                                                  |
 
+### `RateAndUpdatedTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ExchangeRates.sol#L21)</sub>
+
+| Field | Type      | Description                                                        |
+| ----- | --------- | ------------------------------------------------------------------ |
+| rate  | `uint216` | The rate of the currency (with `18` decimals)                      |
+| time  | `uint40`  | The timestamp (in secs) of the block when the `rate` was persisted |
+
 ---
 
 ## Constants
@@ -137,6 +146,8 @@ Initialised to $3$ hours.
 ---
 
 ## Constructor
+
+### `constructor`
 
 Initialises the oracle address and initial currency prices, along with the inherited [`SelfDestructible`](SelfDestructible.md) instance.
 
