@@ -425,7 +425,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 				.split('**Signature')[0];
 
 			return [sourceLink, exisingDesc]
-				.concat(parameters.length > 2 ? ['**Signature**', `\`${name}${parameters}\``] : [])
+				.concat(parameters.length > 2 ? `**Signature**: \`${name}${parameters}\`` : [])
 				.join('\n\n');
 		},
 	});
