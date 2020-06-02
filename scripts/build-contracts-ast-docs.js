@@ -121,9 +121,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			'Related Contracts': {},
 		},
 		Structs: {},
-		Constants: {
-			// entries: ...
-		},
+		Constants: {},
 		Variables: {},
 		Constructor: {},
 		Views: {},
@@ -196,7 +194,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 
 	if (curAstDocs.libraries.length) {
 		const librariesMd = curAstDocs.libraries.reduce(
-			(memo, { name, type }) => memo + `- [${name}](/libraries/${name}) for \`${type}\`\n`,
+			(memo, { name, type }) => memo + `- [${name}](/contracts/source/libraries/${name}) for \`${type}\`\n`,
 			'',
 		);
 
@@ -310,7 +308,9 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 			return entry;
 		});
 	const viewFuncs = curAstDocs.functions.filter(
-		x => x.stateMutability === 'view' && (x.visibility === 'external' || x.visibility === 'public'),
+		x =>
+			(x.stateMutability === 'view' || x.stateMutability === 'pure') &&
+			(x.visibility === 'external' || x.visibility === 'public'),
 	);
 	const internalFuncs = curAstDocs.functions.filter(x => x.visibility === 'internal');
 	const restrictedFuncs = curAstDocs.functions.filter(x => x.modifiers.find(modifier => /only/.test(modifier)));

@@ -1,10 +1,10 @@
 site_name: Synthetix System Documentation
 site_description: Decentralised Synthetic Assets
 site_author: Synthetix Team
-site_url: ''
+site_url: ""
 repo_name: synthetixio/synthetix
 repo_url: https://github.com/synthetixio/synthetix
-edit_uri: ''
+edit_uri: ""
 docs_dir: content
 copyright: <a
   href=https://github.com/Synthetixio/synthetix/blob/master/LICENSE>Copyright
@@ -21,18 +21,18 @@ nav:
       - Russian: litepaper/russian.md
       - Chinese: litepaper/chinese.md
   - Addresses:
-      - '': addresses.md
+      - "": addresses.md
   - Releases:
-      - '': releases.md
+      - "": releases.md
   - Tokens:
-      - '': tokens.md
+      - "": tokens.md
   - Integrations:
       - Home: integrations/index.md
       - Integration Guide: integrations/guide.md
       - Working with Testnets: integrations/testnets.md
       - ENS Support: integrations/ens.md
   - Historical Data:
-      - '': historical-data.md
+      - "": historical-data.md
   - Libraries:
       - Home: libraries/index.md
       - Versioning: libraries/versioning.md
@@ -49,7 +49,7 @@ nav:
           - Overview: contracts/walkthrus/index.md
           - Claiming Rewards: contracts/walkthrus/claiming.md
           - Delegating: contracts/walkthrus/delegating.md
-          - 'Depot: ETH/sUSD': contracts/walkthrus/depot.md
+          - "Depot: ETH/sUSD": contracts/walkthrus/depot.md
           - Staking SNX: contracts/walkthrus/staking.md
           - Trading: contracts/walkthrus/trading.md
           - Trading Settlement: contracts/walkthrus/settlement.md

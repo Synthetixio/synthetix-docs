@@ -15,9 +15,7 @@ SafeDecimalMath uses OpenZeppelin's [SafeMath](SafeMath.md) library for most of 
 In Synthetix, the standard precision fixed point numbers are used to deal with most fractional quantities, such as token balances and prices.
 The high-precision numbers are mainly used for dealing with the [debt ledger](SynthetixState.md#debtledger), which [is constructed](Synthetix.md#_addtodebtregister) as an extended product of many fractional numbers very close to $1$. As this is a financially-sensitive component of the system, representational precision matters in order to minimise errors resulting from rounding or truncation.
 
-### Fixed-Point Mechanics
-
-#### Representation
+**Fixed-Point Mechanics**
 
 For a precision of $d$ deimal places, this fixed point library chooses a large integer $\dot{u} = 10^d$ to represent the number $1$ (e.g. [`UNIT`](#unit) = $10^{18}$) and all operations at this precision level happen relative to $\dot{u}$. That is, the fixed point representation of a number $q$ is defined to be the integer $\dot{q}$:
 
@@ -31,13 +29,9 @@ For example, at 27 decimal places, $\dot{25}$ is equivalent to $25 \times 10^{27
 
 Note that this is only valid if $\dot{q}$ is an integer, so nothing is representable which has a positive value in the decimal places smaller than $\frac{1}{\dot{u}}$ (i.e. the integer 1).
 
-#### Operations
-
 We define the fixed point operations $\dot{+}$, $\dot{-}$, $\dot{\times}$, $\dot{/}$, corresponding to the ordinary arithmetic operations $+$, $-$, $\times$, $/$, where $/$ corresponds to integer division. These are implemented by [`SafeMath`](SafeMath.md) and protect from overflow.
 
----
-
-##### Additive Operations
+**Additive Operations**
 
 We define our additive fixed point operators to be the same as the standard ones:
 
@@ -56,9 +50,7 @@ This is because:
     \dot{p} \pm \dot{q} \ := \ p \dot{u} \pm q \dot{u} \ = \ (p \pm q) \dot{u} \ =: \ \dot{[p \pm q]}
     $$
 
----
-
-##### Multiplicative Operations
+**Multiplicative Operations**
 
 The multiplicative operations are defined as follows:
 
@@ -80,21 +72,15 @@ Some care has to be taken for multiplication and division. We desire, for exampl
 
 So multiplication produces an extra unwanted unit factor, and division divides one out; the fixed point operations need to account for this. Note that to ensure minimum precision loss, $\dot{u}$ is divided out last in the case of multiplication and multiplied in first in the case of division.
 
-###### Rounding
+**Rounding**
 
 Note that multiplication and division of fixed point numbers may involve some loss of precision in the lowest digit. Such inaccuracy can accumulate over many operations
 
 Synthetix provides versions of $\dot{\times}$ and $\dot{/}$ which perform the operation with one extra internal digit of precision, and then rounds up if the least significant digit is 5 or greater. Consequently, results exactly halfway between two increments are rounded up.
 
----
-
-##### Change of Precision
+**Change of Precision**
 
 The representation of a number $q$ at two different fixed point precision levels $\dot{q} = q \dot{u}$ and $\ddot{q} = q \ddot{u}$ is straightforward if $\dot{u}$ and $\ddot{u}$ divide evenly. If this is the case, and $\ddot{u}$ is the higher precision unit, then $\ddot{q} / \dot{q} = \ddot{u} / \dot{u}$. So converting between the high and low precision only involves multiplying or dividing by a factor of $\ddot{u} / \dot{u}$. Keep in mind that converting from a high precision to a low precision number involves some loss of information, and this operation is performed with rounding.
-
----
-
-**Source:** [SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/blob/master/contracts/SafeDecimalMath.sol)
 
 ## Architecture
 
