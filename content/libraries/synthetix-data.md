@@ -23,13 +23,15 @@ The below all return a Promise that resolves with the requested results.
 8. `rate.updates` Get all rate updates for synths in reverse chronological order
 9. `synths.issuers` Get all wallets that have invoked `Issue` on `sUSD` (other synths to come)
 10. `synths.transfers` Get synth transfers in reverse chronological order
-11. `snx.holders` Get the list of wallets that have ever sent or received `SNX`.
-12. `snx.rewards` Get the list of reward escrow holders and their latest balance at vesting entry add or vest.
-13. `snx.total` Get the total count of unique `issuers` and `snxHolders`
-14. `snx.transfers` Get SNX transfers in reverse chronological order
-15. `snx.issued` Get the `Issued` events in reverse chronological order.
-16. `snx.burned` Get the `Burned` events in reverse chronological order.
-17. `snx.feesClaimed` Get the `FeesClaimed` events in reverse chronological order, showing fees in sUSD and rewards in SNX.
+11. `synths.holders` Get all potential synth holders
+12. `snx.holders` Get the list of wallets that have ever sent or received `SNX`.
+13. `snx.rewards` Get the list of reward escrow holders and their latest balance at vesting entry add or vest.
+14. `snx.total` Get the total count of unique `issuers` and `snxHolders`
+15. `snx.transfers` Get SNX transfers in reverse chronological order
+16. `snx.issued` Get the `Issued` events in reverse chronological order.
+17. `snx.burned` Get the `Burned` events in reverse chronological order.
+18. `snx.feesClaimed` Get the `FeesClaimed` events in reverse chronological order, showing fees in sUSD and rewards in SNX.
+19. `snx.debtSnapshot` Get the historical debt balance for any wallet address.
 
 ## Supported subscriptions
 
