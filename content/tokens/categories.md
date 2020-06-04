@@ -22,17 +22,17 @@ They allow traders to effectively take a short position, and are currently avail
 
 Each iSynth has three important points: an entry point, an upper limit, and a lower limit. Its entry point is the price at which it is entered into the system. 
 
-**An example of how iSynths work**
+### An example of how iSynths work
 
-Let's say iBTC was added into the system when sBTC was at $5000. That would mean iBTC's entry point would be $5000, and its value would inversely track that of sBTC, so if the price of sBTC drops to $4900 then iBTC would be at $5100, and vice versa.  
+Let's say iBTC was added into the system when sBTC was at $5000. That would mean iBTC's entry point would be $5000, and its value would inversely track that of sBTC, so if the price of sBTC drops to $4900 then iBTC would be at $5100, and vice versa. 
 
-Let's also say that iBTC's upper limit is $7500 and lower limit is $2500 (these are programmed when it's added to the system). These represents the points at which this iSynth gets frozen. If sBTC reaches $2500, then iBTC reaches its upper limit of $7500 and is frozen at that value. Any further fluctuations in the value of sBTC will not be reflected in the value of iBTC. The Synthetix core contributors will then endeavour to redeploy the frozen iSynth as soon as possible. This involves 'purging' everyone who holds the frozen iSynth into sUSD, after which a new iBTC is then deployed with a new entry point and new limits.  
+Let's also say that iBTC's upper limit is $7500 and lower limit is $2500 (these are programmed when it's added to the system). These represents the points at which this iSynth gets frozen. If sBTC reaches $2500, then iBTC reaches its upper limit of $7500 and is frozen at that value. Any further fluctuations in the value of sBTC will not be reflected in the value of iBTC. The Synthetix core contributors will then endeavour to redeploy the frozen iSynth as soon as possible. This involves 'purging' everyone who holds the frozen iSynth into sUSD, after which a new iBTC is then deployed with a new entry point and new limits. 
 
-**iSynth leverage**
+### iSynth leverage
 
-The primary reason iSynths need upper and lower limits is because the further an iSynth gets from its entry point, the more effective leverage there is for each movement. 
+The primary reason iSynths need upper and lower limits is because the further an iSynth gets from its entry point, the more effective leverage there is for each movement due to [design](https://docs.synthetix.io/contracts/exchangerates/#rateorinverted). 
 
-**An example of how iSynth leverage works**
+### An example of how iSynth leverage works
 
 As BTC moves away from the entry point iBTC starts to behave more like a leveraged token. If iBTC was at $3750, halfway to its lower limit of $2500, then each $1 of iBTC purchased generates $1.50 of price movement when BTC moves $1. With iBTC at $2500, it would generate $2 of price movement (if it wasn't frozen).  
 
