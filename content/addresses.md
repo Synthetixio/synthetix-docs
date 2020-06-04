@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.22.0-alpha](https://github.com/Synthetixio/synthetix/tree/v2.22.0-alpha)
+**Version**: [v2.22.3-alpha](https://github.com/Synthetixio/synthetix/tree/v2.22.3-alpha)
 
 **Docs Built**: Jun 4, 2020
 
@@ -3275,6 +3275,13 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>EternalStorageLiquidations</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/EternalStorage.json">EternalStorage.json</a></td>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x5D4A4B51A824E2dD1C25aD16023Bf8FF3F648602">0x5D4A4B51A824E2dD1C25aD16023Bf8FF3F648602</a>
+                </td>
+              </tr>
+              <tr>
                 <td>EtherCollateral</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EtherCollateral.sol">EtherCollateral.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/EtherCollateral.json">EtherCollateral.json</a></td>
@@ -3299,14 +3306,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Exchanger.json">Exchanger.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xf890F2FAb2188Dd66da4F2c37836d6674DbBA3cC">0xf890F2FAb2188Dd66da4F2c37836d6674DbBA3cC</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x57d6cfee7ED438AaE74a31a890DF22051EE35d49">0x57d6cfee7ED438AaE74a31a890DF22051EE35d49</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/FeePool.json">FeePool.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xE24A751CCcD1bd5AE441F453d11520c6131b5633">0xE24A751CCcD1bd5AE441F453d11520c6131b5633</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x71Ff93Ba9aD81D97A33eC957b4350D641f489410">0x71Ff93Ba9aD81D97A33eC957b4350D641f489410</a>
                 </td>
               </tr>
               <tr>
@@ -3334,7 +3341,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x23091d1237c9E8487de74C6C725bCD3048FeB8ef">0x23091d1237c9E8487de74C6C725bCD3048FeB8ef</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xf7AC3835769B8c692Abc305450d4fAb0c4c5698a">0xf7AC3835769B8c692Abc305450d4fAb0c4c5698a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Liquidations</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Liquidations.sol">Liquidations.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Liquidations.json">Liquidations.json</a></td>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xBde26A97eb38A74F171085fb4B77d524923EFdDB">0xBde26A97eb38A74F171085fb4B77d524923EFdDB</a>
                 </td>
               </tr>
               <tr>
@@ -3691,7 +3705,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x404469525f6Ab4023Ce829D8F627d424D3986675">0x404469525f6Ab4023Ce829D8F627d424D3986675</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4c7Ce8f2d605B70Abc1485a72891B63940282DD1">0x4c7Ce8f2d605B70Abc1485a72891B63940282DD1</a>
                 </td>
               </tr>
               <tr>
