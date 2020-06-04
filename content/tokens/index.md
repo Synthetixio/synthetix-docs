@@ -12,7 +12,7 @@ SNX is the primary form of collateral backing the synthetic assets available in 
 
 A three-month trial allowing Ether (ETH) to be staked as collateral in the Synthetix system has been completed and further trials will be run to test demand and implementation. The [initial trial](https://blog.synthetix.io/ether-collateral/) allowed ETH holders to borrow sETH against their staked ETH at a 150% Collateralisation Ratio with an APR of 5%. 
 
-## Synths
+## Synthetic assets (Synths)
 
 Synths are synthetic assets, minted against the value of cryptoassets staked as collateral. The values of Synths are provided by external price feeds fed on-chain. 
 
