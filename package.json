@@ -1,6 +1,6 @@
 {
 	"name": "synthetix-docs",
-	"version": "2.22.0-alpha",
+	"version": "2.22.3-alpha",
 	"description": "Synthetix docs builder",
 	"main": "index.js",
 	"scripts": {
