@@ -8,8 +8,9 @@
 
 **Codebase**: [v2.22.4](https://github.com/Synthetixio/synthetix/tree/v2.22.4)
 
-> - [SIP-15](https://sips.synthetix.io/sips/sip-15) SNX liquidation mechanism
+> https://blog.synthetix.io/the-altair-release/
 
+- [SIP-15](https://sips.synthetix.io/sips/sip-15) SNX liquidation mechanism
 - [SIP-56](https://sips.synthetix.io/sips/sip-56) Differential fees
 - [SIP-57](https://sips.synthetix.io/sips/sip-57) Address resolver proxy
 
