@@ -72,6 +72,10 @@ Returns a single address by it's `bytes32` key.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/AddressResolver.sol#L38)</sub>
 
+!!! Warning "Not yet on mainnet"
+
+    This view, while in source, is not yet on mainnet. It is planned in the `v2.23` Acrux release. As a workaround you can use `IAddressResolver.getAddress("Synthetix").synths(key)`
+
 ??? example "Details"
 
     **Signature**
