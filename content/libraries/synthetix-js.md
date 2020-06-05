@@ -1,6 +1,5 @@
 !!! info "Notice"
-
-    Imported from https://github.com/Synthetixio/synthetix-js
+		Imported from https://github.com/Synthetixio/synthetix-js
 
 # SynthetixJs library
 
@@ -27,7 +26,7 @@ Under the hood, SynthetixJs uses [ethers.js](https://github.com/ethers-io/ethers
 ```javascript
 const { SynthetixJs } = require('synthetix-js');
 const snxjs = new SynthetixJs(); //uses default ContractSettings - ethers.js default provider, mainnet
-(async function () {
+(async function() {
   const totalSUSD = await snxjs.sUSD.totalSupply();
   const totalSUSDSupply = snxjs.utils.formatEther(totalSUSD);
   console.log('sUSDTotalSupply', totalSUSDSupply);
@@ -56,7 +55,7 @@ const { SynthetixJs } = require('synthetix-js');
 const signer = new SynthetixJs.signers.PrivateKey(
   null,
   0,
-  '0x0123456789012345678901234567890123456789012345678901234567890123',
+  '0x0123456789012345678901234567890123456789012345678901234567890123'
 );
 const snxjs = new SynthetixJs({ signer });
 

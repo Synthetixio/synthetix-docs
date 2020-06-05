@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Altair (v2.22.4)
+
+**Published**: Jun 4, 2020
+
+**Codebase**: [v2.22.4](https://github.com/Synthetixio/synthetix/tree/v2.22.4)
+
+> - [SIP-15](https://sips.synthetix.io/sips/sip-15) SNX liquidation mechanism
+- [SIP-56](https://sips.synthetix.io/sips/sip-56) Differential fees
+- [SIP-57](https://sips.synthetix.io/sips/sip-57) Address resolver proxy
+
+-----
+
 # Hadar (v2.21.6)
 
 **Published**: Mar 30, 2020
