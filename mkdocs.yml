@@ -72,6 +72,7 @@ nav:
             - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
             - Issuer: contracts/source/contracts/Issuer.md
             - LimitedSetup: contracts/source/contracts/LimitedSetup.md
+            - Liquidations: contracts/source/contracts/Liquidations.md
             - MixinResolver: contracts/source/contracts/MixinResolver.md
             - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
             - Owned: contracts/source/contracts/Owned.md
