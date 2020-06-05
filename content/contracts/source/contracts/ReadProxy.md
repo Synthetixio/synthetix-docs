@@ -2,7 +2,7 @@
 
 ## Description
 
-... todo.
+The ReadProxy is a simple proxy for readonly views. If any mutative function is attempted on the underlying the EVM will revert.
 
 **Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/ReadProxy.sol)
 
@@ -15,10 +15,6 @@ graph TD
     ReadProxy[ReadProxy] --> Owned[Owned]
 
 ```
-
-### Related Contracts
-
-- ?
 
 ## Variables
 

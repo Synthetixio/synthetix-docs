@@ -2,6 +2,10 @@
 
 ## Description
 
+This is the mechanism for distributing SNX rewards from the inflationary supply. When an SNX staker claims fees, the inflationary reward component is escrowed in this contract and an entry is added to an escrow schedule for that staker for them to claim after a year. These vesting schedules can only be appended to by the [FeePool](FeePool.md) contract.
+
+The logic of RewardEscrow is derived from the [SynthetixEscrow](SynthetixEscrow.md) contract.
+
 **Source:** [contracts/RewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/RewardEscrow.sol)
 
 ## Architecture

@@ -2,9 +2,9 @@
 
 ## Description
 
-!!! todo "Work in Progress"
+!!! Info "Documentation Pending"
 
-    This needs filling in
+    This contract documentation is missing some descriptions.
 
 **Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/RewardsDistributionRecipient.sol)
 

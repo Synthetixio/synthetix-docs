@@ -2,9 +2,9 @@
 
 ## Description
 
-!!! todo "Work in Progress"
+!!! Warning "Deprecated"
 
-    This needs filling in
+    This contract is an empty implementation of [`EternalStorage`](EternalStorage.md) and will be removed in an upcoming release.
 
 **Source:** [contracts/IssuanceEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/IssuanceEternalStorage.sol)
 

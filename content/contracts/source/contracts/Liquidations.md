@@ -2,7 +2,9 @@
 
 ## Description
 
-... todo.
+!!! Info "Documentation Pending"
+
+    This contract documentation is missing some descriptions.
 
 **Source:** [contracts/Liquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Liquidations.sol)
 
@@ -21,10 +23,6 @@ graph TD
     MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
-
-### Related Contracts
-
-- ?
 
 ## Structs
 
