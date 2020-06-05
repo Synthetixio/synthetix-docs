@@ -2,6 +2,10 @@
 
 ## Description
 
+!!! Warning "Newer source than mainnet"
+
+    This contract source which generated these docs is newer than the original Havven escrow contract, which is available at: [contracts.synthetix.io/SynthetixEscrow](https://contracts.synthetix.io/SynthetixEscrow)
+
 This contract holds the SNX which were escrowed at the time of the original token sale, releasing them according to a defined schedule.
 
 The contract was subject to an eight week setup period during which the vesting schedules were set up.

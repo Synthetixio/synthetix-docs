@@ -182,25 +182,24 @@ extra_css:
 plugins:
   - redirects:
       redirect_maps:
-        # old contract links (prior to contract folder reorg with AST contract additions)
-        'contracts/AddressResolver.md': 'contracts/source/contracts/AddressResolver.md'
-        'contracts/Depot.md': 'contracts/source/contracts/Depot.md'
-        'contracts/Exchanger.md': 'contracts/source/contracts/Exchanger.md'
-        'contracts/ExchangeRates.md': 'contracts/source/contracts/ExchangeRates.md'
-        'contracts/FeePool.md': 'contracts/source/contracts/FeePool.md'
-        'contracts/FeePoolState.md': 'contracts/source/contracts/FeePoolState.md'
-        'contracts/Issuer.md': 'contracts/source/contracts/Issuer.md'
-        'contracts/Liquidations.md': 'contracts/source/contracts/Liquidations.md'
-        'contracts/MultiCollateralSynth.md': 'contracts/source/contracts/MultiCollateralSynth.md'
-        'contracts/Proxy.md': 'contracts/source/contracts/Proxy.md'
-        'contracts/ProxyERC20.md': 'contracts/source/contracts/ProxyERC20.md'
-        'contracts/PurgeableSynth.md': 'contracts/source/contracts/PurgeableSynth.md'
-        'contracts/ReadProxy.md': 'contracts/source/contracts/ReadProxy.md'
-        'contracts/RewardEscrow.md': 'contracts/source/contracts/RewardEscrow.md'
-        'contracts/SupplySchedule.md': 'contracts/source/contracts/SupplySchedule.md'
-        'contracts/Synth.md': 'contracts/source/contracts/Synth.md'
-        'contracts/Synthetix.md': 'contracts/source/contracts/Synthetix.md'
-        'contracts/SynthetixEscrow.md': 'contracts/source/contracts/SynthetixEscrow.md'
-        'contracts/SynthetixState.md': 'contracts/source/contracts/SynthetixState.md'
-        'contracts/SystemStatus.md': 'contracts/source/contracts/SystemStatus.md'
-        'contracts/TokenState.md': 'contracts/source/contracts/TokenState.md'
+        contracts/AddressResolver.md: contracts/source/contracts/AddressResolver.md
+        contracts/Depot.md: contracts/source/contracts/Depot.md
+        contracts/Exchanger.md: contracts/source/contracts/Exchanger.md
+        contracts/ExchangeRates.md: contracts/source/contracts/ExchangeRates.md
+        contracts/FeePool.md: contracts/source/contracts/FeePool.md
+        contracts/FeePoolState.md: contracts/source/contracts/FeePoolState.md
+        contracts/Issuer.md: contracts/source/contracts/Issuer.md
+        contracts/Liquidations.md: contracts/source/contracts/Liquidations.md
+        contracts/MultiCollateralSynth.md: contracts/source/contracts/MultiCollateralSynth.md
+        contracts/Proxy.md: contracts/source/contracts/Proxy.md
+        contracts/ProxyERC20.md: contracts/source/contracts/ProxyERC20.md
+        contracts/PurgeableSynth.md: contracts/source/contracts/PurgeableSynth.md
+        contracts/ReadProxy.md: contracts/source/contracts/ReadProxy.md
+        contracts/RewardEscrow.md: contracts/source/contracts/RewardEscrow.md
+        contracts/SupplySchedule.md: contracts/source/contracts/SupplySchedule.md
+        contracts/Synth.md: contracts/source/contracts/Synth.md
+        contracts/Synthetix.md: contracts/source/contracts/Synthetix.md
+        contracts/SynthetixEscrow.md: contracts/source/contracts/SynthetixEscrow.md
+        contracts/SynthetixState.md: contracts/source/contracts/SynthetixState.md
+        contracts/SystemStatus.md: contracts/source/contracts/SystemStatus.md
+        contracts/TokenState.md: contracts/source/contracts/TokenState.md
