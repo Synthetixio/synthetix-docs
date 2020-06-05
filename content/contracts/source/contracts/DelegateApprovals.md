@@ -10,7 +10,7 @@ This contract is used by the [`FeePool`](FeePool.md) to enable users to permit o
 
 In principle it is generic, as the approver just marks a number of delegates as authorised to perform some action on their behalf, with no reference to what that action is, or who the delegates are.
 
-**Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol)
+**Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol)
 
 ## Architecture
 
@@ -36,31 +36,31 @@ graph TD
 
 ### `APPROVE_ALL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L17)</sub>
 
 **Type:** `bytes32`
 
 ### `BURN_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L13)</sub>
 
 **Type:** `bytes32`
 
 ### `CLAIM_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L15)</sub>
 
 **Type:** `bytes32`
 
 ### `EXCHANGE_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L16)</sub>
 
 **Type:** `bytes32`
 
 ### `ISSUE_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L14)</sub>
 
 **Type:** `bytes32`
 
@@ -68,7 +68,7 @@ graph TD
 
 ### `eternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L28)</sub>
 
 **Type:** `contract EternalStorage`
 
@@ -76,7 +76,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L30)</sub>
 
 Initialises the inherited [`State`](State.md) instance.
 
@@ -98,7 +98,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `approvedAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `canBurnFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `canClaimFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `canExchangeFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `canIssueFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setEternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Requires**
 
-    * [require(..., Can't set eternalStorage to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L154)
+    * [require(..., Can't set eternalStorage to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L154)
 
     **Modifiers**
 
@@ -222,7 +222,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `_checkApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -240,7 +240,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `_getKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -258,7 +258,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `_setApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L131)</sub>
 
 ??? example "Details"
 
@@ -276,7 +276,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Requires**
 
-    * [require(..., Can't delegate to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L136)
+    * [require(..., Can't delegate to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L136)
 
     **Emits**
 
@@ -284,7 +284,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `_withdrawApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -304,7 +304,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `approveAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -322,7 +322,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `approveBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -340,7 +340,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `approveClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -358,7 +358,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `approveExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -376,7 +376,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `approveIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -394,7 +394,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `removeAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -412,7 +412,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `removeBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -430,7 +430,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `removeClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -448,7 +448,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `removeExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L127)</sub>
 
 ??? example "Details"
 
@@ -466,7 +466,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `removeIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L109)</sub>
 
 ??? example "Details"
 
@@ -486,7 +486,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L160)</sub>
 
 The delegate was approved to act on the authoriser's behalf for the given action.
 
@@ -494,7 +494,7 @@ The delegate was approved to act on the authoriser's behalf for the given action
 
 ### `EternalStorageUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L162)</sub>
 
 The address of the eternal storage contract has changed.
 
@@ -502,7 +502,7 @@ The address of the eternal storage contract has changed.
 
 ### `WithdrawApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/DelegateApprovals.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol#L161)</sub>
 
 The delegate was disapproved to act on the authoriser's behalf.
 

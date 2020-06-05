@@ -106,6 +106,7 @@ nav:
             - IFeePool: contracts/source/interfaces/IFeePool.md
             - IHasBalance: contracts/source/interfaces/IHasBalance.md
             - IIssuer: contracts/source/interfaces/IIssuer.md
+            - ILiquidations: contracts/source/interfaces/ILiquidations.md
             - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
             - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
             - ISynth: contracts/source/interfaces/ISynth.md

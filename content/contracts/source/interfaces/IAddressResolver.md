@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IAddressResolver.sol)
+**Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IAddressResolver.sol)
 
 ## Views
 
 ### `getAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IAddressResolver.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IAddressResolver.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `getSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IAddressResolver.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IAddressResolver.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/interfaces/IAddressResolver.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IAddressResolver.sol#L9)</sub>
 
 ??? example "Details"
 

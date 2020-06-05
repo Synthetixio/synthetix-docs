@@ -4,7 +4,7 @@
 
 ... todo.
 
-**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol)
+**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/ReadProxy.sol)
 
 ## Architecture
 
@@ -24,7 +24,7 @@ graph TD
 
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/ReadProxy.sol#L10)</sub>
 
 **Type:** `address`
 
@@ -32,7 +32,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/ReadProxy.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@ graph TD
 
 ### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/ReadProxy.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@ graph TD
 
 ### `() (fallback function)`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/ReadProxy.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -100,6 +100,6 @@ graph TD
 
 ### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.21.15/contracts/ReadProxy.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/ReadProxy.sol#L36)</sub>
 
 **Signature**: `TargetUpdated(address newTarget)`
