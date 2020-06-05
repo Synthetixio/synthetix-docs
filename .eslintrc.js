@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 	env: {
 		es6: true,
@@ -11,7 +13,7 @@ module.exports = {
 	},
 	rules: {
 		'no-console': 'off',
-		indent: ['error', 'tab', { ignoredNodes: ['TemplateLiteral > *'] }],
+		indent: ['error', 'tab', { ignoredNodes: ['TemplateLiteral > *'], SwitchCase: 1 }],
 		'prettier/prettier': 'off',
 		'import/no-unresolved': ['error', { commonjs: true }],
 		'linebreak-style': ['error', 'unix'],

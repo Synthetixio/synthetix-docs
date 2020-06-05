@@ -13,5 +13,7 @@ Run the following to get all the required dependencies:
 
 ## Commands
 
+- `npm run build` - Builds out markdown files for mkdocs (with a .preview extension)
+- `npm run build --overwrite` - Builds out markdown files for mkdocs in-place
 - `mkdocs serve` - Start the live-reloading docs server.
 - `mkdocs build` - Build the documentation site.

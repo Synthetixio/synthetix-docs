@@ -1,24 +1,14 @@
-# Basic project details.
-site_name: 'Synthetix System Documentation'
-site_description: 'Decentralised Synthetic Assets'
-site_author: 'Synthetix Team'
+site_name: Synthetix System Documentation
+site_description: Decentralised Synthetic Assets
+site_author: Synthetix Team
 site_url: ''
-
-# Links to the core Synthetix smart contract repository.
-repo_name: 'synthetixio/synthetix'
-repo_url: 'https://github.com/synthetixio/synthetix'
-
-# Setting `edit_uri` to an empty string disables the edit button, which points to the wrong page.
-# If at some point this documentation is moved into the core synthetix repository, then this can be
-# removed.
+repo_name: synthetixio/synthetix
+repo_url: https://github.com/synthetixio/synthetix
 edit_uri: ''
-
-docs_dir: 'content'
-
-# This copyright notice will be rendered in the footer.
-copyright: '<a href=https://github.com/Synthetixio/synthetix/blob/master/LICENSE>Copyright &copy Synthetix 2018 - 2020</a>'
-
-# Top level headings become tabs at the top due to `tabs: true` in the theme.
+docs_dir: content
+copyright: <a
+  href=https://github.com/Synthetixio/synthetix/blob/master/LICENSE>Copyright
+  &copy Synthetix 2018 - 2020</a>
 nav:
   - System Overview:
       - Home: index.md
@@ -55,10 +45,6 @@ nav:
       - Automated Testing: contracts/testing.md
       - Publisher: contracts/publisher.md
       - Transaction Guide: contracts/transactions.md
-      - Libraries:
-          - Math: contracts/Math.md
-          - SafeDecimalMath: contracts/SafeDecimalMath.md
-          - SafeMath: contracts/SafeMath.md
       - Walkthrus:
           - Overview: contracts/walkthrus/index.md
           - Claiming Rewards: contracts/walkthrus/claiming.md
@@ -68,103 +54,152 @@ nav:
           - Trading: contracts/walkthrus/trading.md
           - Trading Settlement: contracts/walkthrus/settlement.md
           - Unstaking SNX: contracts/walkthrus/unstaking.md
-      - Contracts:
-          - AddressResolver: contracts/AddressResolver.md
-          - DelegateApprovals: contracts/DelegateApprovals.md
-          - Depot: contracts/Depot.md
-          - EscrowChecker: contracts/EscrowChecker.md
-          - EternalStorage: contracts/EternalStorage.md
-          - EtherCollateral: contracts/EtherCollateral.md
-          - Exchanger: contracts/Exchanger.md
-          - ExchangeRates: contracts/ExchangeRates.md
-          - ExchangeState: contracts/ExchangeState.md
-          - ExternStateToken: contracts/ExternStateToken.md
-          - FeePool: contracts/FeePool.md
-          - FeePoolEternalStorage: contracts/FeePoolEternalStorage.md
-          - FeePoolState: contracts/FeePoolState.md
-          - IssuanceEternalStorage: contracts/IssuanceEternalStorage.md
-          - Issuer: contracts/Issuer.md
-          - LimitedSetup: contracts/LimitedSetup.md
-          - Migrations: contracts/Migrations.md
-          - MixinResolver: contracts/MixinResolver.md
-          - MultiCollateralSynth: contracts/MultiCollateralSynth.md
-          - Owned: contracts/Owned.md
-          - Pausable: contracts/Pausable.md
-          - Proxy: contracts/Proxy.md
-          - Proxyable: contracts/Proxyable.md
-          - ProxyERC20: contracts/ProxyERC20.md
-          - PurgeableSynth: contracts/PurgeableSynth.md
-          - RewardEscrow: contracts/RewardEscrow.md
-          - RewardsDistribution: contracts/RewardsDistribution.md
-          - RewardsDistributionRecipient: contracts/RewardsDistributionRecipient.md
-          - SelfDestructible: contracts/SelfDestructible.md
-          - State: contracts/State.md
-          - SupplySchedule: contracts/SupplySchedule.md
-          - Synth: contracts/Synth.md
-          - Synthetix: contracts/Synthetix.md
-          - SynthetixEscrow: contracts/SynthetixEscrow.md
-          - SynthetixState: contracts/SynthetixState.md
-          - SystemStatus: contracts/SystemStatus.md
-          - TokenState: contracts/TokenState.md
+      - Source:
+          Contracts:
+            - AddressResolver: contracts/source/contracts/AddressResolver.md
+            - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
+            - Depot: contracts/source/contracts/Depot.md
+            - EscrowChecker: contracts/source/contracts/EscrowChecker.md
+            - EternalStorage: contracts/source/contracts/EternalStorage.md
+            - EtherCollateral: contracts/source/contracts/EtherCollateral.md
+            - ExchangeRates: contracts/source/contracts/ExchangeRates.md
+            - ExchangeState: contracts/source/contracts/ExchangeState.md
+            - Exchanger: contracts/source/contracts/Exchanger.md
+            - ExternStateToken: contracts/source/contracts/ExternStateToken.md
+            - FeePool: contracts/source/contracts/FeePool.md
+            - FeePoolEternalStorage: contracts/source/contracts/FeePoolEternalStorage.md
+            - FeePoolState: contracts/source/contracts/FeePoolState.md
+            - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
+            - Issuer: contracts/source/contracts/Issuer.md
+            - LimitedSetup: contracts/source/contracts/LimitedSetup.md
+            - Liquidations: contracts/source/contracts/Liquidations.md
+            - MixinResolver: contracts/source/contracts/MixinResolver.md
+            - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
+            - Owned: contracts/source/contracts/Owned.md
+            - Pausable: contracts/source/contracts/Pausable.md
+            - Proxy: contracts/source/contracts/Proxy.md
+            - ProxyERC20: contracts/source/contracts/ProxyERC20.md
+            - Proxyable: contracts/source/contracts/Proxyable.md
+            - PurgeableSynth: contracts/source/contracts/PurgeableSynth.md
+            - ReadProxy: contracts/source/contracts/ReadProxy.md
+            - RewardEscrow: contracts/source/contracts/RewardEscrow.md
+            - RewardsDistribution: contracts/source/contracts/RewardsDistribution.md
+            - RewardsDistributionRecipient: contracts/source/contracts/RewardsDistributionRecipient.md
+            - SelfDestructible: contracts/source/contracts/SelfDestructible.md
+            - State: contracts/source/contracts/State.md
+            - SupplySchedule: contracts/source/contracts/SupplySchedule.md
+            - Synth: contracts/source/contracts/Synth.md
+            - Synthetix: contracts/source/contracts/Synthetix.md
+            - SynthetixEscrow: contracts/source/contracts/SynthetixEscrow.md
+            - SynthetixState: contracts/source/contracts/SynthetixState.md
+            - SystemStatus: contracts/source/contracts/SystemStatus.md
+            - TokenState: contracts/source/contracts/TokenState.md
+          Interfaces:
+            - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
+            - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
+            - IDepot: contracts/source/interfaces/IDepot.md
+            - IERC20: contracts/source/interfaces/IERC20.md
+            - IEtherCollateral: contracts/source/interfaces/IEtherCollateral.md
+            - IExchangeRates: contracts/source/interfaces/IExchangeRates.md
+            - IExchangeState: contracts/source/interfaces/IExchangeState.md
+            - IExchanger: contracts/source/interfaces/IExchanger.md
+            - IFeePool: contracts/source/interfaces/IFeePool.md
+            - IHasBalance: contracts/source/interfaces/IHasBalance.md
+            - IIssuer: contracts/source/interfaces/IIssuer.md
+            - ILiquidations: contracts/source/interfaces/ILiquidations.md
+            - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
+            - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
+            - ISynth: contracts/source/interfaces/ISynth.md
+            - ISynthetix: contracts/source/interfaces/ISynthetix.md
+            - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
+            - ISynthetixInternal: contracts/source/interfaces/ISynthetixInternal.md
+            - ISynthetixState: contracts/source/interfaces/ISynthetixState.md
+            - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
+          Libraries:
+            - Math: contracts/source/libraries/Math.md
+            - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
+            - SafeMath: contracts/source/libraries/SafeMath.md
       - Audit History: contracts/audits.md
-
-# These social links will be rendered as icons in the footer, as long as the type corresponds to FontAwesome glyph.
 extra:
   social:
-    - icon: 'brands/github'
-      link: 'https://github.com/synthetixio'
-    - icon: 'brands/twitter'
-      link: 'https://twitter.com/synthetix_io'
-    - icon: 'brands/discord'
-      link: 'https://discordapp.com/channels/413890591840272394/'
-    - icon: 'brands/reddit'
-      link: 'https://www.reddit.com/r/synthetix_io/'
-    - icon: 'brands/medium'
-      link: 'https://blog.synthetix.io'
-
-# This set of documentation uses the MkDocs Material theme by squidfunk: https://github.com/squidfunk/mkdocs-material
+    - icon: brands/github
+      link: https://github.com/synthetixio
+    - icon: brands/twitter
+      link: https://twitter.com/synthetix_io
+    - icon: brands/discord
+      link: https://discordapp.com/channels/413890591840272394/
+    - icon: brands/reddit
+      link: https://www.reddit.com/r/synthetix_io/
+    - icon: brands/medium
+      link: https://blog.synthetix.io
 theme:
-  name: 'material'
-  language: 'en'
+  name: material
+  language: en
   palette:
-    primary: 'black'
-    accent: 'indigo'
-  logo: 'img/logos/synthetix_logo.svg'
-  favicon: 'img/favicon.ico'
+    primary: black
+    accent: indigo
+  logo: img/logos/synthetix_logo.svg
+  favicon: img/favicon.ico
   feature:
     tabs: true
     instant: false
-
-# Extension settings.
-# In addition to the standard extensions, this also requires the PyMdown Extensions by facelessuser: https://github.com/facelessuser/pymdown-extensions
 markdown_extensions:
   - toc:
-      permalink: True # Generates permanent links for each page section.
-  - admonition # Small descriptive elements for notes, warnings, etc.
-  - pymdownx.arithmatex # Math rendering.
-  - pymdownx.tasklist: # Allows nested and better checkboxes.
-      custom_checkbox: True # Without this setting, checkboxes look rubbish in the material theme.
-  - pymdownx.highlight: # Code syntax highlighting.
-      linenums: True
-  - pymdownx.extra: # Better fenced code blocks, emphasis, footnotes, lists, tables, abbreviations, and raw HTML.
+      permalink: true
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.extra:
       pymdownx.betterem:
-        smart_enable: 'all' # Smarter line breaks when emphasising lines.
-  - pymdownx.details # Collapsible admonition-style blocks containing further information.
-  - pymdownx.escapeall # Backslashes escape everything.
-  - pymdownx.caret # Superscripts and insert text.
-  - pymdownx.superfences
-  - pymdownx.tabbed # tabs
-  - pymdownx.tilde # Strikethrough and underlines.
-  - pymdownx.magiclink: # Better links and github references.
-      provider: 'github'
+        smart_enable: all
+  - pymdownx.details
+  - pymdownx.escapeall
+  - pymdownx.caret
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.magiclink:
+      provider: github
       repo_url_shortener: true
       repo_url_shorthand: true
       social_url_shorthand: true
-      user: 'synthetixio'
-      repo: 'synthetix'
-
+      user: synthetixio
+      repo: synthetix
 extra_javascript:
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-  - 'js/sectionSeparators.js'
-
-extra_css: [extra.css]
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+  - js/sectionSeparators.js
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+extra_css:
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+  - extra.css
+plugins:
+  - redirects:
+      redirect_maps:
+        contracts/AddressResolver.md: contracts/source/contracts/AddressResolver.md
+        contracts/Depot.md: contracts/source/contracts/Depot.md
+        contracts/Exchanger.md: contracts/source/contracts/Exchanger.md
+        contracts/ExchangeRates.md: contracts/source/contracts/ExchangeRates.md
+        contracts/FeePool.md: contracts/source/contracts/FeePool.md
+        contracts/FeePoolState.md: contracts/source/contracts/FeePoolState.md
+        contracts/Issuer.md: contracts/source/contracts/Issuer.md
+        contracts/Liquidations.md: contracts/source/contracts/Liquidations.md
+        contracts/MultiCollateralSynth.md: contracts/source/contracts/MultiCollateralSynth.md
+        contracts/Proxy.md: contracts/source/contracts/Proxy.md
+        contracts/ProxyERC20.md: contracts/source/contracts/ProxyERC20.md
+        contracts/PurgeableSynth.md: contracts/source/contracts/PurgeableSynth.md
+        contracts/ReadProxy.md: contracts/source/contracts/ReadProxy.md
+        contracts/RewardEscrow.md: contracts/source/contracts/RewardEscrow.md
+        contracts/SupplySchedule.md: contracts/source/contracts/SupplySchedule.md
+        contracts/Synth.md: contracts/source/contracts/Synth.md
+        contracts/Synthetix.md: contracts/source/contracts/Synthetix.md
+        contracts/SynthetixEscrow.md: contracts/source/contracts/SynthetixEscrow.md
+        contracts/SynthetixState.md: contracts/source/contracts/SynthetixState.md
+        contracts/SystemStatus.md: contracts/source/contracts/SystemStatus.md
+        contracts/TokenState.md: contracts/source/contracts/TokenState.md

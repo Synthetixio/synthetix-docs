@@ -1,7 +1,8 @@
 !!! info "Notice"
-		This details the `publish` script in the synthetix repository for building, deploying and verifying contracts.
 
-		Imported from https://github.com/Synthetixio/synthetix/tree/master/publish
+    This details the `publish` script in the synthetix repository for building, deploying and verifying contracts.
+
+    Imported from https://github.com/Synthetixio/synthetix/tree/master/publish
 
 # Publisher
 
