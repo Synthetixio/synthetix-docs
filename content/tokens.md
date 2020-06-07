@@ -7,9 +7,11 @@
 
 ## Australian Dollars (sAUD)
 
-**Address:** [0xF48e200EAF9906362BB1442fca31e0835773b8B4](https://etherscan.io/token/0xF48e200EAF9906362BB1442fca31e0835773b8B4)
+**Contract:** [0xF48e200EAF9906362BB1442fca31e0835773b8B4](https://etherscan.io/token/0xF48e200EAF9906362BB1442fca31e0835773b8B4)
 
 **Decimals:** 18
+
+**Price:** [sAUD on synthetix.exchange](https://synthetix.exchange/#/synths/sAUD)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -20,9 +22,11 @@
 
 ## Binance Coin (sBNB)
 
-**Address:** [0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848](https://etherscan.io/token/0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848)
+**Contract:** [0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848](https://etherscan.io/token/0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848)
 
 **Decimals:** 18
+
+**Price:** [sBNB on synthetix.exchange](https://synthetix.exchange/#/synths/sBNB)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -33,9 +37,11 @@
 
 ## Bitcoin (sBTC)
 
-**Address:** [0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6](https://etherscan.io/token/0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6)
+**Contract:** [0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6](https://etherscan.io/token/0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6)
 
 **Decimals:** 18
+
+**Price:** [sBTC on synthetix.exchange](https://synthetix.exchange/#/synths/sBTC)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -46,9 +52,11 @@
 
 ## Bitcoin Cash (sBCH)
 
-**Address:** [0x36a2422a863D5B950882190Ff5433E513413343a](https://etherscan.io/token/0x36a2422a863D5B950882190Ff5433E513413343a)
+**Contract:** [0x36a2422a863D5B950882190Ff5433E513413343a](https://etherscan.io/token/0x36a2422a863D5B950882190Ff5433E513413343a)
 
 **Decimals:** 18
+
+**Price:** [sBCH on synthetix.exchange](https://synthetix.exchange/#/synths/sBCH)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -59,9 +67,11 @@
 
 ## Cardano (sADA)
 
-**Address:** [0xe36E2D3c7c34281FA3bC737950a68571736880A1](https://etherscan.io/token/0xe36E2D3c7c34281FA3bC737950a68571736880A1)
+**Contract:** [0xe36E2D3c7c34281FA3bC737950a68571736880A1](https://etherscan.io/token/0xe36E2D3c7c34281FA3bC737950a68571736880A1)
 
 **Decimals:** 18
+
+**Price:** [sADA on synthetix.exchange](https://synthetix.exchange/#/synths/sADA)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -72,9 +82,11 @@
 
 ## Centralised Exchange Index (sCEX)
 
-**Address:** [0xeABACD844A196D7Faf3CE596edeBF9900341B420](https://etherscan.io/token/0xeABACD844A196D7Faf3CE596edeBF9900341B420)
+**Contract:** [0xeABACD844A196D7Faf3CE596edeBF9900341B420](https://etherscan.io/token/0xeABACD844A196D7Faf3CE596edeBF9900341B420)
 
 **Decimals:** 18
+
+**Price:** [sCEX on synthetix.exchange](https://synthetix.exchange/#/synths/sCEX)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -95,9 +107,11 @@
 
 ## Chainlink (sLINK)
 
-**Address:** [0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6](https://etherscan.io/token/0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6)
+**Contract:** [0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6](https://etherscan.io/token/0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6)
 
 **Decimals:** 18
+
+**Price:** [sLINK on synthetix.exchange](https://synthetix.exchange/#/synths/sLINK)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -108,9 +122,11 @@
 
 ## Dash (sDASH)
 
-**Address:** [0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6](https://etherscan.io/token/0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6)
+**Contract:** [0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6](https://etherscan.io/token/0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6)
 
 **Decimals:** 18
+
+**Price:** [sDASH on synthetix.exchange](https://synthetix.exchange/#/synths/sDASH)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -121,9 +137,11 @@
 
 ## DeFi Index (sDEFI)
 
-**Address:** [0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B](https://etherscan.io/token/0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B)
+**Contract:** [0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B](https://etherscan.io/token/0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B)
 
 **Decimals:** 18
+
+**Price:** [sDEFI on synthetix.exchange](https://synthetix.exchange/#/synths/sDEFI)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -148,9 +166,11 @@
 
 ## EOS (sEOS)
 
-**Address:** [0x88C8Cf3A212c0369698D13FE98Fcb76620389841](https://etherscan.io/token/0x88C8Cf3A212c0369698D13FE98Fcb76620389841)
+**Contract:** [0x88C8Cf3A212c0369698D13FE98Fcb76620389841](https://etherscan.io/token/0x88C8Cf3A212c0369698D13FE98Fcb76620389841)
 
 **Decimals:** 18
+
+**Price:** [sEOS on synthetix.exchange](https://synthetix.exchange/#/synths/sEOS)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -161,9 +181,11 @@
 
 ## Ether (sETH)
 
-**Address:** [0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb](https://etherscan.io/token/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb)
+**Contract:** [0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb](https://etherscan.io/token/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb)
 
 **Decimals:** 18
+
+**Price:** [sETH on synthetix.exchange](https://synthetix.exchange/#/synths/sETH)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -174,9 +196,11 @@
 
 ## Ethereum Classic (sETC)
 
-**Address:** [0x22602469d704BfFb0936c7A7cfcD18f7aA269375](https://etherscan.io/token/0x22602469d704BfFb0936c7A7cfcD18f7aA269375)
+**Contract:** [0x22602469d704BfFb0936c7A7cfcD18f7aA269375](https://etherscan.io/token/0x22602469d704BfFb0936c7A7cfcD18f7aA269375)
 
 **Decimals:** 18
+
+**Price:** [sETC on synthetix.exchange](https://synthetix.exchange/#/synths/sETC)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -187,9 +211,11 @@
 
 ## Euros (sEUR)
 
-**Address:** [0xD71eCFF9342A5Ced620049e616c5035F1dB98620](https://etherscan.io/token/0xD71eCFF9342A5Ced620049e616c5035F1dB98620)
+**Contract:** [0xD71eCFF9342A5Ced620049e616c5035F1dB98620](https://etherscan.io/token/0xD71eCFF9342A5Ced620049e616c5035F1dB98620)
 
 **Decimals:** 18
+
+**Price:** [sEUR on synthetix.exchange](https://synthetix.exchange/#/synths/sEUR)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -200,9 +226,11 @@
 
 ## FTSE 100 Index (sFTSE)
 
-**Address:** [0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC](https://etherscan.io/token/0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC)
+**Contract:** [0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC](https://etherscan.io/token/0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC)
 
 **Decimals:** 18
+
+**Price:** [sFTSE on synthetix.exchange](https://synthetix.exchange/#/synths/sFTSE)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -213,9 +241,11 @@
 
 ## Gold Ounce (sXAU)
 
-**Address:** [0x261EfCdD24CeA98652B9700800a13DfBca4103fF](https://etherscan.io/token/0x261EfCdD24CeA98652B9700800a13DfBca4103fF)
+**Contract:** [0x261EfCdD24CeA98652B9700800a13DfBca4103fF](https://etherscan.io/token/0x261EfCdD24CeA98652B9700800a13DfBca4103fF)
 
 **Decimals:** 18
+
+**Price:** [sXAU on synthetix.exchange](https://synthetix.exchange/#/synths/sXAU)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -226,9 +256,11 @@
 
 ## Inverse Binance Coin (iBNB)
 
-**Address:** [0xAFD870F32CE54EfdBF677466B612bf8ad164454B](https://etherscan.io/token/0xAFD870F32CE54EfdBF677466B612bf8ad164454B)
+**Contract:** [0xAFD870F32CE54EfdBF677466B612bf8ad164454B](https://etherscan.io/token/0xAFD870F32CE54EfdBF677466B612bf8ad164454B)
 
 **Decimals:** 18
+
+**Price:** [iBNB on synthetix.exchange](https://synthetix.exchange/#/synths/iBNB)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -245,9 +277,11 @@
 
 ## Inverse Bitcoin (iBTC)
 
-**Address:** [0xD6014EA05BDe904448B743833dDF07c3C7837481](https://etherscan.io/token/0xD6014EA05BDe904448B743833dDF07c3C7837481)
+**Contract:** [0xD6014EA05BDe904448B743833dDF07c3C7837481](https://etherscan.io/token/0xD6014EA05BDe904448B743833dDF07c3C7837481)
 
 **Decimals:** 18
+
+**Price:** [iBTC on synthetix.exchange](https://synthetix.exchange/#/synths/iBTC)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -264,9 +298,11 @@
 
 ## Inverse Bitcoin Cash (iBCH)
 
-**Address:** [0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89](https://etherscan.io/token/0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89)
+**Contract:** [0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89](https://etherscan.io/token/0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89)
 
 **Decimals:** 18
+
+**Price:** [iBCH on synthetix.exchange](https://synthetix.exchange/#/synths/iBCH)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -283,9 +319,11 @@
 
 ## Inverse Cardano (iADA)
 
-**Address:** [0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83](https://etherscan.io/token/0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83)
+**Contract:** [0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83](https://etherscan.io/token/0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83)
 
 **Decimals:** 18
+
+**Price:** [iADA on synthetix.exchange](https://synthetix.exchange/#/synths/iADA)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -302,9 +340,11 @@
 
 ## Inverse Centralised Exchange Index (iCEX)
 
-**Address:** [0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d](https://etherscan.io/token/0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d)
+**Contract:** [0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d](https://etherscan.io/token/0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d)
 
 **Decimals:** 18
+
+**Price:** [iCEX on synthetix.exchange](https://synthetix.exchange/#/synths/iCEX)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -323,9 +363,11 @@
 
 ## Inverse Chainlink (iLINK)
 
-**Address:** [0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01](https://etherscan.io/token/0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01)
+**Contract:** [0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01](https://etherscan.io/token/0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01)
 
 **Decimals:** 18
+
+**Price:** [iLINK on synthetix.exchange](https://synthetix.exchange/#/synths/iLINK)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -342,9 +384,11 @@
 
 ## Inverse Dash (iDASH)
 
-**Address:** [0xCB98f42221b2C251A4E74A1609722eE09f0cc08E](https://etherscan.io/token/0xCB98f42221b2C251A4E74A1609722eE09f0cc08E)
+**Contract:** [0xCB98f42221b2C251A4E74A1609722eE09f0cc08E](https://etherscan.io/token/0xCB98f42221b2C251A4E74A1609722eE09f0cc08E)
 
 **Decimals:** 18
+
+**Price:** [iDASH on synthetix.exchange](https://synthetix.exchange/#/synths/iDASH)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -361,9 +405,11 @@
 
 ## Inverse DeFi Index (iDEFI)
 
-**Address:** [0x14d10003807AC60d07BB0ba82cAeaC8d2087c157](https://etherscan.io/token/0x14d10003807AC60d07BB0ba82cAeaC8d2087c157)
+**Contract:** [0x14d10003807AC60d07BB0ba82cAeaC8d2087c157](https://etherscan.io/token/0x14d10003807AC60d07BB0ba82cAeaC8d2087c157)
 
 **Decimals:** 18
+
+**Price:** [iDEFI on synthetix.exchange](https://synthetix.exchange/#/synths/iDEFI)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -382,9 +428,11 @@
 
 ## Inverse EOS (iEOS)
 
-**Address:** [0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4](https://etherscan.io/token/0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4)
+**Contract:** [0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4](https://etherscan.io/token/0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4)
 
 **Decimals:** 18
+
+**Price:** [iEOS on synthetix.exchange](https://synthetix.exchange/#/synths/iEOS)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -401,9 +449,11 @@
 
 ## Inverse Ether (iETH)
 
-**Address:** [0xA9859874e1743A32409f75bB11549892138BBA1E](https://etherscan.io/token/0xA9859874e1743A32409f75bB11549892138BBA1E)
+**Contract:** [0xA9859874e1743A32409f75bB11549892138BBA1E](https://etherscan.io/token/0xA9859874e1743A32409f75bB11549892138BBA1E)
 
 **Decimals:** 18
+
+**Price:** [iETH on synthetix.exchange](https://synthetix.exchange/#/synths/iETH)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -420,9 +470,11 @@
 
 ## Inverse Ethereum Classic (iETC)
 
-**Address:** [0xd50c1746D835d2770dDA3703B69187bFfeB14126](https://etherscan.io/token/0xd50c1746D835d2770dDA3703B69187bFfeB14126)
+**Contract:** [0xd50c1746D835d2770dDA3703B69187bFfeB14126](https://etherscan.io/token/0xd50c1746D835d2770dDA3703B69187bFfeB14126)
 
 **Decimals:** 18
+
+**Price:** [iETC on synthetix.exchange](https://synthetix.exchange/#/synths/iETC)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -439,9 +491,11 @@
 
 ## Inverse Litecoin (iLTC)
 
-**Address:** [0x79da1431150C9b82D2E5dfc1C68B33216846851e](https://etherscan.io/token/0x79da1431150C9b82D2E5dfc1C68B33216846851e)
+**Contract:** [0x79da1431150C9b82D2E5dfc1C68B33216846851e](https://etherscan.io/token/0x79da1431150C9b82D2E5dfc1C68B33216846851e)
 
 **Decimals:** 18
+
+**Price:** [iLTC on synthetix.exchange](https://synthetix.exchange/#/synths/iLTC)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -458,9 +512,11 @@
 
 ## Inverse Monero (iXMR)
 
-**Address:** [0x4AdF728E2Df4945082cDD6053869f51278fae196](https://etherscan.io/token/0x4AdF728E2Df4945082cDD6053869f51278fae196)
+**Contract:** [0x4AdF728E2Df4945082cDD6053869f51278fae196](https://etherscan.io/token/0x4AdF728E2Df4945082cDD6053869f51278fae196)
 
 **Decimals:** 18
+
+**Price:** [iXMR on synthetix.exchange](https://synthetix.exchange/#/synths/iXMR)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -477,9 +533,11 @@
 
 ## Inverse Ripple (iXRP)
 
-**Address:** [0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6](https://etherscan.io/token/0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6)
+**Contract:** [0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6](https://etherscan.io/token/0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6)
 
 **Decimals:** 18
+
+**Price:** [iXRP on synthetix.exchange](https://synthetix.exchange/#/synths/iXRP)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -496,9 +554,11 @@
 
 ## Inverse TRON (iTRX)
 
-**Address:** [0xC5807183a9661A533CB08CbC297594a0B864dc12](https://etherscan.io/token/0xC5807183a9661A533CB08CbC297594a0B864dc12)
+**Contract:** [0xC5807183a9661A533CB08CbC297594a0B864dc12](https://etherscan.io/token/0xC5807183a9661A533CB08CbC297594a0B864dc12)
 
 **Decimals:** 18
+
+**Price:** [iTRX on synthetix.exchange](https://synthetix.exchange/#/synths/iTRX)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -515,9 +575,11 @@
 
 ## Inverse Tezos (iXTZ)
 
-**Address:** [0x8deef89058090ac5655A99EEB451a4f9183D1678](https://etherscan.io/token/0x8deef89058090ac5655A99EEB451a4f9183D1678)
+**Contract:** [0x8deef89058090ac5655A99EEB451a4f9183D1678](https://etherscan.io/token/0x8deef89058090ac5655A99EEB451a4f9183D1678)
 
 **Decimals:** 18
+
+**Price:** [iXTZ on synthetix.exchange](https://synthetix.exchange/#/synths/iXTZ)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -534,9 +596,11 @@
 
 ## Japanese Yen (sJPY)
 
-**Address:** [0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d](https://etherscan.io/token/0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d)
+**Contract:** [0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d](https://etherscan.io/token/0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d)
 
 **Decimals:** 18
+
+**Price:** [sJPY on synthetix.exchange](https://synthetix.exchange/#/synths/sJPY)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -547,9 +611,11 @@
 
 ## Litecoin (sLTC)
 
-**Address:** [0xC14103C2141E842e228FBaC594579e798616ce7A](https://etherscan.io/token/0xC14103C2141E842e228FBaC594579e798616ce7A)
+**Contract:** [0xC14103C2141E842e228FBaC594579e798616ce7A](https://etherscan.io/token/0xC14103C2141E842e228FBaC594579e798616ce7A)
 
 **Decimals:** 18
+
+**Price:** [sLTC on synthetix.exchange](https://synthetix.exchange/#/synths/sLTC)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -560,9 +626,11 @@
 
 ## Monero (sXMR)
 
-**Address:** [0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A](https://etherscan.io/token/0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A)
+**Contract:** [0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A](https://etherscan.io/token/0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A)
 
 **Decimals:** 18
+
+**Price:** [sXMR on synthetix.exchange](https://synthetix.exchange/#/synths/sXMR)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -573,9 +641,11 @@
 
 ## Nikkei 225 Index (sNIKKEI)
 
-**Address:** [0x757de3ac6B830a931eF178C6634c5C551773155c](https://etherscan.io/token/0x757de3ac6B830a931eF178C6634c5C551773155c)
+**Contract:** [0x757de3ac6B830a931eF178C6634c5C551773155c](https://etherscan.io/token/0x757de3ac6B830a931eF178C6634c5C551773155c)
 
 **Decimals:** 18
+
+**Price:** [sNIKKEI on synthetix.exchange](https://synthetix.exchange/#/synths/sNIKKEI)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -586,9 +656,11 @@
 
 ## Pound Sterling (sGBP)
 
-**Address:** [0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F](https://etherscan.io/token/0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F)
+**Contract:** [0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F](https://etherscan.io/token/0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F)
 
 **Decimals:** 18
+
+**Price:** [sGBP on synthetix.exchange](https://synthetix.exchange/#/synths/sGBP)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -599,9 +671,11 @@
 
 ## Ripple (sXRP)
 
-**Address:** [0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c](https://etherscan.io/token/0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c)
+**Contract:** [0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c](https://etherscan.io/token/0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c)
 
 **Decimals:** 18
+
+**Price:** [sXRP on synthetix.exchange](https://synthetix.exchange/#/synths/sXRP)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -612,9 +686,11 @@
 
 ## Silver Ounce (sXAG)
 
-**Address:** [0x6A22e5e94388464181578Aa7A6B869e00fE27846](https://etherscan.io/token/0x6A22e5e94388464181578Aa7A6B869e00fE27846)
+**Contract:** [0x6A22e5e94388464181578Aa7A6B869e00fE27846](https://etherscan.io/token/0x6A22e5e94388464181578Aa7A6B869e00fE27846)
 
 **Decimals:** 18
+
+**Price:** [sXAG on synthetix.exchange](https://synthetix.exchange/#/synths/sXAG)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -625,9 +701,11 @@
 
 ## Swiss Franc (sCHF)
 
-**Address:** [0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d](https://etherscan.io/token/0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d)
+**Contract:** [0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d](https://etherscan.io/token/0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d)
 
 **Decimals:** 18
+
+**Price:** [sCHF on synthetix.exchange](https://synthetix.exchange/#/synths/sCHF)
 
 **Price Feed**: Chainlink (decentralized)
 
@@ -638,9 +716,11 @@
 
 ## Synthetix (SNX)
 
-**Address:** [0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F](https://etherscan.io/token/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F)
+**Contract:** [0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F](https://etherscan.io/token/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F)
 
 **Decimals:** 18
+
+**Price:** [SNX on synthetix.exchange](https://synthetix.exchange/#/synths/SNX)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -651,9 +731,11 @@
 
 ## TRON (sTRX)
 
-**Address:** [0xf2E08356588EC5cd9E437552Da87C0076b4970B0](https://etherscan.io/token/0xf2E08356588EC5cd9E437552Da87C0076b4970B0)
+**Contract:** [0xf2E08356588EC5cd9E437552Da87C0076b4970B0](https://etherscan.io/token/0xf2E08356588EC5cd9E437552Da87C0076b4970B0)
 
 **Decimals:** 18
+
+**Price:** [sTRX on synthetix.exchange](https://synthetix.exchange/#/synths/sTRX)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -664,9 +746,11 @@
 
 ## Tezos (sXTZ)
 
-**Address:** [0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd](https://etherscan.io/token/0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd)
+**Contract:** [0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd](https://etherscan.io/token/0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd)
 
 **Decimals:** 18
+
+**Price:** [sXTZ on synthetix.exchange](https://synthetix.exchange/#/synths/sXTZ)
 
 **Price Feed**: Synthetix (centralized)
 
@@ -677,9 +761,11 @@
 
 ## US Dollars (sUSD)
 
-**Address:** [0x57Ab1ec28D129707052df4dF418D58a2D46d5f51](https://etherscan.io/token/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51)
+**Contract:** [0x57Ab1ec28D129707052df4dF418D58a2D46d5f51](https://etherscan.io/token/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51)
 
 **Decimals:** 18
+
+**Price:** [sUSD on synthetix.exchange](https://synthetix.exchange/#/synths/sUSD)
 
 **Price Feed**: Synthetix (centralized)
 

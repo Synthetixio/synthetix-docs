@@ -150,8 +150,9 @@ ${tokens
 			(asset === 'MKR'
 				? '!!! warning "Suspended"\n\n    MKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)\n\n'
 				: '') +
-			`**Address:** [${address}](https://etherscan.io/token/${address})\n\n` +
+			`**Contract:** [${address}](https://etherscan.io/token/${address})\n\n` +
 			`**Decimals:** ${decimals}\n\n` +
+			`**Price:** [${symbol} on synthetix.exchange](https://synthetix.exchange/#/synths/${symbol})\n\n` +
 			addOracleParameters({ name, asset, aggregator }) +
 			addInverseParameters({ name, asset, inverted }) +
 			addIndexParameters({ name, asset, index, inverted }) +
