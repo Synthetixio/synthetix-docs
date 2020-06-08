@@ -157,8 +157,8 @@ The two sides of the market, each of which represents a particular event occurri
 
 | Value   | Description |
 | ------- | ----------- |
-| `Long`  | The event ath the asset price is higher than or equal to the target price at the maturity date. |
-| `Short` | The event that the asset price is lower than the target price at the maturity date. |
+| `Long`  | The event ath the asset price is higher than or equal to the strike price at the maturity date. |
+| `Short` | The event that the asset price is lower than the strike price at the maturity date. |
 
 ## Structs
 
@@ -202,7 +202,7 @@ Oracle-relevant details used at the resolution of the market.
 | Field         | Type      | Description |
 | ------------- | --------- | ----------- |
 | `key`         | `bytes32` | The key of the underlying asset of this market, as in the [`ExchangeRates`](ExchangeRates.md) contract. |
-| `targetPrice` | `uint256` | The threshold price of the underlying asset. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| `strikePrice` | `uint256` | The threshold price of the underlying asset. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
 | `finalPrice`  | `uint256` | The actual measured price of the underlying asset at the maturity date. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
 
 ### `Prices`
@@ -277,7 +277,7 @@ The [addresses](#options) of this market's `BinaryOption` instances.
 
 ### `oracleDetails`
 
-The [oracle parameters](#oracledetails) of this market, including the underlying asset and target price.
+The [oracle parameters](#oracledetails) of this market, including the underlying asset and strike price.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L60)</sub>
 
@@ -311,7 +311,7 @@ The [unix timestamps](#times) at which this market transitions between [phases](
 
 ### `constructor`
 
-The constructor sets up all the static values for [fees](#fees), [timestamps](#times), [asset and target price](#oracledetails) among other parameters,
+The constructor sets up all the static values for [fees](#fees), [timestamps](#times), [asset and strike price](#oracledetails) among other parameters,
 and checks that all of these settings are within acceptable ranges. The market's owner (the [manager](BinaryOptionMarketManager.md) contract),
 and [creator](#creator) are also set at this time.
 
@@ -330,7 +330,7 @@ Initial timestamps should be provided in the order `[biddingEnd, maturity, destr
 
     **Signature**
 
-    `(address _owner, address _creator, uint256 _capitalRequirement, bytes32 _oracleKey, uint256 _targetOraclePrice, uint256[3] _times, uint256[2] _bids, uint256[3] _fees)`
+    `(address _owner, address _creator, uint256 _capitalRequirement, bytes32 _oracleKey, uint256 _strikePrice, uint256[3] _times, uint256[2] _bids, uint256[3] _fees)`
 
     **Visibility**
 

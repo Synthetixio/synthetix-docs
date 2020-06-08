@@ -839,7 +839,7 @@ The creator (the message sender) must provide the following parameters:
 | Field         | Type                                       | Description |
 | ------------- | ------------------------------------------ | ----------- |
 | `oracleKey`   | `bytes32`                                  | The key of the underlying asset of this market in the [`ExchangeRates`](ExchangeRates.md) contract. |
-| `targetPrice` | `uint` ([18 decimals](/contracts/source/libraries/SafeDecimalMath.md)) | The target price of the underlying asset at maturity, in the same units as reported by the [ExchangeRates](ExchangeRates.md) contract. |
+| `strikePrice` | `uint` ([18 decimals](/contracts/source/libraries/SafeDecimalMath.md)) | The strike price of the underlying asset at maturity, in the same units as reported by the [ExchangeRates](ExchangeRates.md) contract. |
 | `times`       | `uint[2] calldata`                         | The unix timestamps (seconds) of the bidding end date and the maturity date of the new market, in that order. |
 | `bids`        | `uint[2] calldata` ([18 decimals](/contracts/source/libraries/SafeDecimalMath.md)) | The initial sUSD bids by the market creator on the long and short sides of the market, in that order. |
 
@@ -876,7 +876,7 @@ The transaction reverts if any of the following conditions is true:
 
     **Signature**
 
-    `createMarket(bytes32 oracleKey, uint256 targetPrice, uint256[2] times, uint256[2] bids)`
+    `createMarket(bytes32 oracleKey, uint256 strikePrice, uint256[2] times, uint256[2] bids)`
 
     **Visibility**
 
@@ -1014,7 +1014,7 @@ A new market was created, and its initial parameters.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketManager.sol#L378)</sub>
 
-**Signature**: `MarketCreated(address market, address creator, bytes32 oracleKey, uint256 targetPrice, uint256 biddingEndDate, uint256 maturityDate, uint256 destructionDate)`
+**Signature**: `MarketCreated(address market, address creator, bytes32 oracleKey, uint256 strikePrice, uint256 biddingEndDate, uint256 maturityDate, uint256 destructionDate)`
 
 ### `MarketCreationEnabledUpdated`
 

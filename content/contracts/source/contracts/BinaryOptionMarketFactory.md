@@ -113,7 +113,7 @@ Initial timestamps should be provided in the order `[biddingEnd, maturity, destr
 
     **Signature**
 
-    `createMarket(address creator, uint256 capitalRequirement, bytes32 oracleKey, uint256 targetPrice, uint256[3] times, uint256[2] bids, uint256[3] fees)`
+    `createMarket(address creator, uint256 capitalRequirement, bytes32 oracleKey, uint256 strikePrice, uint256[3] times, uint256[2] bids, uint256[3] fees)`
 
     **Visibility**
 
