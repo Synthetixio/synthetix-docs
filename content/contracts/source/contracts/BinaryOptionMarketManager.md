@@ -70,7 +70,7 @@ graph TD
 This struct holds the current values of time periods governing the duration of various `BinaryOptionMarket` phases.
 All durations are in seconds.
 
-Note that unlike other parameters, varying `creatorDestructionDuration` or `oracleMaturityWindow` will affect
+Note that unlike other parameters, varying `creatorDestructionDuration` or `maxOraclePriceAge` will affect
 already-instantiated markets.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketManager.sol#L33)</sub>
@@ -78,7 +78,7 @@ already-instantiated markets.
 
 | Field                        | Type      | Description |
 | ---------------------------- | --------- | ----------- |
-| `oracleMaturityWindow`       | `uint256` | A market can still be resolved if the last oracle price was updated less than `maturityWindow` seconds before the maturity date. |
+| `maxOraclePriceAge`          | `uint256` | A market can still be resolved if the last oracle price was updated less than `maxOraclePriceAge` seconds before the maturity date. |
 | `exerciseDuration`           | `uint256` | Matured binary options can be exercised for this period after the maturity date before they expire and the market can be destroyed. |
 | `creatorDestructionDuration` | `uint256` | For this period, the creator of a given market is given the exclusive right to destroy it in exchange for a percentage of the turnover plus the value of any unclaimed options. After this time, anyone may destroy it for the same fee. |
 | `maxTimeToMaturity`          | `uint256` | Markets cannot be created with a maturity date further in the future than this. |
@@ -185,7 +185,7 @@ parameters can't be set out of range.
 
     **Signature**
 
-    `(address _owner, address _resolver, uint256 _oracleMaturityWindow, uint256 _exerciseDuration, uint256 _creatorDestructionDuration, uint256 _maxTimeToMaturity, uint256 _capitalRequirement, uint256 _poolFee, uint256 _creatorFee, uint256 _refundFee)`
+    `(address _owner, address _resolver, uint256 _maxOraclePriceAge, uint256 _exerciseDuration, uint256 _creatorDestructionDuration, uint256 _maxTimeToMaturity, uint256 _capitalRequirement, uint256 _poolFee, uint256 _creatorFee, uint256 _refundFee)`
 
     **Visibility**
 
@@ -558,9 +558,9 @@ Allows the owner to set the value of [`_migratingManager`](#_migratingmanager).
 
     * [onlyOwner](#onlyowner)
 
-### `setOracleMaturityWindow`
+### `setMaxOraclePriceAge`
 
-Allows the contract owner to update [`durations.oracleMaturityWindow`](#durations).
+Allows the contract owner to update [`durations.maxOraclePriceAge`](#durations).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketManager.sol#L164)</sub>
 
@@ -568,7 +568,7 @@ Allows the contract owner to update [`durations.oracleMaturityWindow`](#duration
 
     **Signature**
 
-    `setOracleMaturityWindow(uint256 _oracleMaturityWindow)`
+    `setMaxOraclePriceAge(uint256 _maxOraclePriceAge)`
 
     **Visibility**
 
@@ -584,7 +584,7 @@ Allows the contract owner to update [`durations.oracleMaturityWindow`](#duration
 
     **Emits**
 
-    * [OracleMaturityWindowUpdated](#oraclematuritywindowupdated)
+    * [MaxOraclePriceAgeUpdated](#MaxOraclePriceAgeUpdated)
 
 ### `setPoolFee`
 
@@ -1056,13 +1056,13 @@ The [maximum time to maturity](#durations) was updated.
 
 **Signature**: `MaxTimeToMaturityUpdated(uint256 duration)`
 
-### `OracleMaturityWindowUpdated`
+### `MaxOraclePriceAgeUpdated`
 
-The [oracle maturity window](#durations) was updated.
+The [oracle max oracle price age](#durations) was updated.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketManager.sol#L383)</sub>
 
-**Signature**: `OracleMaturityWindowUpdated(uint256 duration)`
+**Signature**: `MaxOraclePriceAgeUpdated(uint256 duration)`
 
 ### `PoolFeeUpdated`
 

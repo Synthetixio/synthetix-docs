@@ -406,7 +406,7 @@ Returns true if the market can currently be resolved, which is the case when:
 
 * The market has not already resolved.
 * The [maturity date](#times) is in the past;
-* The [oracle price was last updated](#oraclepriceandtimestamp) within the [maturity window](#times).
+* The [oracle price](#oraclepriceandtimestamp) is [fresh](#_isfreshpriceupdatetime).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L201)</sub>
 
@@ -527,7 +527,7 @@ at the current price.
 Otherwise, if the market has resolved, the function returns the value that the market resolved to when
 [`resolve()`](#resolve) was successfully called.
 
-Note that no check is performed that the underlying asset price was updated within the [maturity window](#times).
+Note that no check is performed that the underlying asset price [is fresh](#_isfreshpriceupdatetime).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L220)</sub>
 
@@ -713,7 +713,7 @@ See [`resolve`](#resolve).
 
     * [require(..., The market has already resolved.)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L396)
 
-    * [require(..., The price was last updated before the maturity window.)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L402)
+    * [require(..., The price is not fresh.)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L402)
 
     **Modifiers**
 
@@ -1172,7 +1172,7 @@ See [`resolve`](#resolve).
 
     * [require(..., The market has already resolved.)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L396)
 
-    * [require(..., The price was last updated before the maturity window.)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L402)
+    * [require(..., The price is not fresh.)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L402)
 
     **Modifiers**
 
@@ -1309,10 +1309,10 @@ on either side of the market be refunded.
 
     * [PricesUpdated](#pricesupdated)
 
-### `_withinMaturityWindow`
+### `_isFreshPriceUpdateTime`
 
-True if a given timestamp is within the [maturity window](BinaryOptionMarketManager.md#durations), false otherwise;
-a price which was updated at a time for which this function is true is acceptable for resolving the market.
+True if a given timestamp is younger than the [maximum oracle price age](BinaryOptionMarketManager.md#durations),
+false otherwise; fresh prices are acceptable for [resolving the market](#resolve).
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L196)</sub>
 
@@ -1320,7 +1320,7 @@ a price which was updated at a time for which this function is true is acceptabl
 
     **Signature**
 
-    `_withinMaturityWindow(uint256 timestamp)`
+    `_isFreshPriceUpdateTime(uint256 timestamp)`
 
     **Visibility**
 
@@ -1403,7 +1403,7 @@ This function allows anyone to resolve the market, as long as it satisfies the c
 of [`canResolve()`](#canresolve).
 
 Market resolution requires fetching the latest price of this market's underlying asset, checking
-that it was last updated within the oracle maturity window, and then computing and saving
+that it was last updated [recently enough](#_isfreshpriceupdatetime), and then computing and saving
 the fees that were collected. After a successful invocation, the variable [`resolved`](#resolved)
 will be true. The final oracle price is saved and can be queried from
 [`oracleDetails.finalPrice`](#oracledetails).
