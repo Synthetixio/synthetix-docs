@@ -15,22 +15,20 @@ Additionally, separating out the construction of markets into
 a factory contract allows the manager and the markets to be upgraded
 independently of one another.
 
-## Architecture
+**Source:** [contracts/BinaryOptionMarketFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol)
 
----
+## Architecture
 
 ### Inheritance Graph
 
 ```mermaid
 graph TD
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> Owned[Owned]
     BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> SelfDestructible[SelfDestructible]
     BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> MixinResolver[MixinResolver]
     SelfDestructible[SelfDestructible] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
-```
 
----
+```
 
 ### Related Contracts
 
@@ -48,26 +46,29 @@ graph TD
     - [`BinaryOptionMarket`](BinaryOptionMarket.md): The factory creates market instances with the provided parameters.
     - [`AddressResolver`](AddressResolver.md): The factory uses the address resolver to retrieve the address of its manager, so if the manager is upgraded, this factory must be synchronised.
 
----
-
 ## Constructor
+
+### `constructor`
 
 The constructor simply initialises the inherited classes.
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L24)</sub>
+
 ??? example "Details"
+
     **Signature**
-    
-    `constructor(address _owner, address _resolver) public`
-    
-    **Superconstructors**
-    
-    * [`Owned`](Owned.md)
-    * [`SelfDestructible`](SelfDestructible.md)
-    * [`MixinResolver`](MixinResolver.md)
 
-## Views (Internal)
+    `(address _owner, address _resolver)`
 
----
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `nonpayable`
+
+## Internal Functions
 
 ### `_manager`
 
@@ -75,19 +76,23 @@ Returns the cached address of the
 [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md) instance
 from the [`AddressResolver`](AddressResolver.md).
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L38)</sub>
 
 ??? example "Details"
-    **Signature**
-    
-    `function _manager() returns (address)`
-    
-    **State Mutability**
-    
-    `internal view`
 
-## Functions
-    
----
+    **Signature**
+
+    `_manager()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+## External Functions
 
 ### `createMarket`
 
@@ -99,22 +104,25 @@ As this is only intended to be called from
 the transaction reverts if the message sender is not the [manager](#_manager).
 See that function's documentation for further details.
 
+Initial timestamps should be provided in the order `[biddingEnd, maturity, destruction]`, initial bids as
+`[longBid, shortBid]`, and fees as `[poolFee, creatorFee, refundFee]`.
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L45)</sub>
+
 ??? example "Details"
+
     **Signature**
 
-    ```
-    function createMarket(address creator,
-        uint capitalRequirement,
-        bytes32 oracleKey, uint targetPrice,
-        uint[3] calldata times, // [biddingEnd, maturity, destruction]
-        uint[2] calldata bids, // [longBid, shortBid]
-        uint[3] calldata fees // [poolFee, creatorFee, refundFee]
-    )
-        external
-        returns (BinaryOptionMarket)
-    ```
-    
-    **State Mutability**
-    
+    `createMarket(address creator, uint256 capitalRequirement, bytes32 oracleKey, uint256 targetPrice, uint256[3] times, uint256[2] bids, uint256[3] fees)`
+
+    **Visibility**
+
     `external`
-    
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Only permitted by the manager.)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L57)

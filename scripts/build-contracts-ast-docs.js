@@ -323,7 +323,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		.map(x => x.name);
 
 	// Remaining functions
-	const externalFncs = curAstDocs.functions.filter(
+	const externalFuncs = curAstDocs.functions.filter(
 		({ name, visibility }) => !alreadyDeclaredFunctions.includes(name) && visibility !== 'private',
 	);
 
@@ -403,7 +403,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 	});
 
 	contractBody['External Functions'] = combineEntries({
-		entries: externalFncs,
+		entries: externalFuncs,
 		combiner: functionCombiner,
 	});
 
