@@ -95,9 +95,9 @@ This is similar to the [`BinaryOptionMarket.Fees`](BinaryOptionMarket.md#fees) s
 
 | Field                  | Type                                       | Description |
 | ---------------------- | ------------------------------------------ | ----------- |
-| `poolFee`              | `uint256` | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
-| `creatorFee`           | `uint256` | The portion collected by the market's [creator](#creator) as a fee. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
-| `refundFee`            | `uint256` | When a bid is refunded, this portion of its value is retained in the market to be paid out at maturity. This fee is intended to compensate the market for the toxic price signal that the bidder has sent, by increasing the payoff of the remaining bidders, and to discourage excessive price volatility at the end of bidding. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
+| `poolFee`              | `uint256` | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| `creatorFee`           | `uint256` | The portion collected by the market's [creator](#creator) as a fee. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| `refundFee`            | `uint256` | When a bid is refunded, this portion of its value is retained in the market to be paid out at maturity. This fee is intended to compensate the market for the toxic price signal that the bidder has sent, by increasing the payoff of the remaining bidders, and to discourage excessive price volatility at the end of bidding. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
 
 ## Variables
 
@@ -839,9 +839,9 @@ The creator (the message sender) must provide the following parameters:
 | Field         | Type                                       | Description |
 | ------------- | ------------------------------------------ | ----------- |
 | `oracleKey`   | `bytes32`                                  | The key of the underlying asset of this market in the [`ExchangeRates`](ExchangeRates.md) contract. |
-| `targetPrice` | `uint` ([18 decimals](SafeDecimalMath.md)) | The target price of the underlying asset at maturity, in the same units as reported by the [ExchangeRates](ExchangeRates.md) contract. |
+| `targetPrice` | `uint` ([18 decimals](/contracts/source/libraries/SafeDecimalMath.md)) | The target price of the underlying asset at maturity, in the same units as reported by the [ExchangeRates](ExchangeRates.md) contract. |
 | `times`       | `uint[2] calldata`                         | The unix timestamps (seconds) of the bidding end date and the maturity date of the new market, in that order. |
-| `bids`        | `uint[2] calldata` ([18 decimals](SafeDecimalMath.md)) | The initial sUSD bids by the market creator on the long and short sides of the market, in that order. |
+| `bids`        | `uint[2] calldata` ([18 decimals](/contracts/source/libraries/SafeDecimalMath.md)) | The initial sUSD bids by the market creator on the long and short sides of the market, in that order. |
 
 Upon creation, the manager transfers `bids[0] + bids[1]` sUSD from the creator to the
 new market using an ERC20 `transferFrom` call, so the creator must have given sufficient transfer approval

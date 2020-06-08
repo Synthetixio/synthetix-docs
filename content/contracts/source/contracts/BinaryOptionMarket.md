@@ -176,10 +176,10 @@ are exercised.
 
 | Field                  | Type      | Description |
 | ---------------------- | --------- | ----------- |
-| `poolFee`              | `uint256` | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
-| `creatorFee`           | `uint256` | The portion collected by the market's [creator](#creator) as a fee. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
-| `refundFee`            | `uint256` | When a bid is refunded, this portion of its value is retained in the market to be paid out at maturity. This fee is intended to compensate the market for the toxic price signal that the bidder has sent, by increasing the payoff of the remaining bidders, and to discourage excessive price volatility at the end of bidding. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
-| `creatorFeesCollected` | `uint256` | The value of sUSD to be transferred to the market's [creator](#creator) at the market's destruction. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
+| `poolFee`              | `uint256` | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| `creatorFee`           | `uint256` | The portion collected by the market's [creator](#creator) as a fee. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| `refundFee`            | `uint256` | When a bid is refunded, this portion of its value is retained in the market to be paid out at maturity. This fee is intended to compensate the market for the toxic price signal that the bidder has sent, by increasing the payoff of the remaining bidders, and to discourage excessive price volatility at the end of bidding. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| `creatorFeesCollected` | `uint256` | The value of sUSD to be transferred to the market's [creator](#creator) at the market's destruction. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
 
 ### `Options`
 
@@ -202,8 +202,8 @@ Oracle-relevant details used at the resolution of the market.
 | Field         | Type      | Description |
 | ------------- | --------- | ----------- |
 | `key`         | `bytes32` | The key of the underlying asset of this market, as in the [`ExchangeRates`](ExchangeRates.md) contract. |
-| `targetPrice` | `uint256` | The threshold price of the underlying asset. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
-| `finalPrice`  | `uint256` | The actual measured price of the underlying asset at the maturity date. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
+| `targetPrice` | `uint256` | The threshold price of the underlying asset. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| `finalPrice`  | `uint256` | The actual measured price of the underlying asset at the maturity date. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
 
 ### `Prices`
 
@@ -213,8 +213,8 @@ The prices of the options on each side of the market.
 
 | Field   | Type      | Description |
 | ------- | --------- | ----------- |
-| `long`  | `uint256` | The current price of long options. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
-| `short` | `uint256` | The current price of short options. This is an [18-decimal](SafeDecimalMath.md) fixed point number. |
+| `long`  | `uint256` | The current price of long options. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| `short` | `uint256` | The current price of short options. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
 
 ### `Times`
 
@@ -1274,8 +1274,8 @@ The prices are computed approximately as follows:
     longPrice  = longBids  / (feeMultiplier * deposited)
     shortPrice = shortBids / (feeMultiplier * deposited)
 
-Interpreting [`/`](SafeDecimalMath.md#dividedecimalround) and [`*`](SafeDecimalMath.md#multiplydecimalround)
-as [fixed point math operators (with rounding)](SafeDecimalMath.md).
+Interpreting [`/`](/contracts/source/libraries/SafeDecimalMath.md#dividedecimalround) and [`*`](/contracts/source/libraries/SafeDecimalMath.md#multiplydecimalround)
+as [fixed point math operators (with rounding)](/contracts/source/libraries/SafeDecimalMath.md).
 
 Note that the denominator `feeMultiplier * deposited` is the total value of options awarded to each side of the market,
 and `deposited` is equal to `longBids + shortBids + refundFeesCollected`.
