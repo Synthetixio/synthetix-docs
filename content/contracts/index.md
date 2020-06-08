@@ -8,10 +8,6 @@ The addresses of currently-deployed contract instances are available in the [Add
 
 The deployment of contracts is managed by the [Publisher](publisher.md) section.
 
-!!! info "Version"
-
-    This documentation is current as of commit TODO.
-
 ## Overview
 
 The Synthetix system is composed of a number of core contract complexes, and several auxiliary contracts that enhance token liquidity and general system functionality. These on-chain entities and how they communicate is reflected in the following high-level diagram.
@@ -152,10 +148,6 @@ It is also used by some other contracts, such as the [`Depot`](source/contracts/
 ---
 
 ### Depot
-
-!!! example "Responsibilities"
-
-    - TODO (also flesh out the description here)
 
 The [`Depot`](source/contracts/Depot.md) is a vendor contract that allows users to exchange their ETH for sUSD or SNX, or their sUSD for SNX. It also allows users to deposit Synths to be sold in exchange for ETH.
 
