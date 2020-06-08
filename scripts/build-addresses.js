@@ -19,15 +19,15 @@ const generateAddresses = () => {
 	).format('MMM D, YYYY')}\n\n`;
 
 	headerContent +=
-		'!!! info "Naming Conventions"\n\tWithin the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.' +
+		'!!! info "Naming Conventions"\n\n    Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.' +
 		'If the same source is used for multiple instances of contracts with different constructor arguments - such as `Synth.sol`, `TokenState.sol` and `ProxyERC20.sol`' +
 		' - then the convention is to suffix the name of the differing feature to the end - be it the proxy target ' +
 		'e.g. `FeePool` for `ProxyFeePool` or the synth currencyKey eg: `sETH` for `SynthsETH`';
 
 	headerContent +=
-		'\n\n!!! tip "Handy Contract Links"\n\tAll of the below contracts can be accessed by our [contract linker](https://github.com/Synthetixio/contract-linker) utility. Simply suffix the contract name to the end of' +
-		' https://contracts.synthetix.io to get a link that will always redirect to the latest version of the contract on Etherscan.\n\n\tFor example, try https://contracts.synthetix.io/Synthetix to get linked to the latest Synthetix underlying.' +
-		'\n\n\tFor testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/Synthetix';
+		'\n\n!!! tip "Handy Contract Links"\n\n    All of the below contracts can be accessed by our [contract linker](https://github.com/Synthetixio/contract-linker) utility. Simply suffix the contract name to the end of' +
+		' https://contracts.synthetix.io to get a link that will always redirect to the latest version of the contract on Etherscan.\n\n    For example, try https://contracts.synthetix.io/Synthetix to get linked to the latest Synthetix underlying.' +
+		'\n\n    For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/Synthetix';
 
 	const contractContent = ['mainnet', 'ropsten', 'rinkeby', 'kovan']
 		.map(network => {

@@ -27,13 +27,13 @@ const desc = synth => {
 		const { entryPoint, upperLimit, lowerLimit } = synth.inverted;
 		return (
 			`Inversely tracks the price of ${underlying}${assetSuffix} through price feeds supplied by an oracle. ` +
-			`The entry point is $${entryPoint} (the approximate market price at time of creation). ` +
-			`This Synth freezes when it reaches its upper limit of $${upperLimit} (i.e. when ${underlying}'s ` +
-			`value reaches $${doRounding(
+			`The entry point is \\$${entryPoint} (the approximate market price at time of creation). ` +
+			`This Synth freezes when it reaches its upper limit of \\$${upperLimit} (i.e. when ${underlying}'s ` +
+			`value reaches \\$${doRounding(
 				entryPoint,
 				upperLimit,
-			)}) or its lower limit of $${lowerLimit} (i.e. when ${underlying}’s value ` +
-			`reaches $${doRounding(
+			)}) or its lower limit of \\$${lowerLimit} (i.e. when ${underlying}’s value ` +
+			`reaches \\$${doRounding(
 				entryPoint,
 				lowerLimit,
 			)}). If it reaches either of its limits and gets frozen, it will no longer be ` +
@@ -89,15 +89,7 @@ const format = num =>
 		thousandSeparated: true,
 	});
 
-const getLinkToAsset = ({ name, asset }) =>
-	(
-		name
-			.split(' ')
-			.slice(1)
-			.join('-') +
-		'-s' +
-		asset
-	).toLowerCase();
+const getLinkToAsset = ({ name, asset }) => (name.split(' ').slice(1).join('-') + '-s' + asset).toLowerCase();
 
 const addInverseParameters = ({ inverted, asset, name }) => {
 	if (!inverted) return '';
@@ -112,7 +104,10 @@ const addInverseParameters = ({ inverted, asset, name }) => {
 
 const addIndexParameters = ({ index, inverted, asset, name }) => {
 	if (!index) return '';
-	const header = `**Index of**: [s${asset}](#${getLinkToAsset({ name, asset })})\n\n`;
+	const header = `**Index of**: [s${asset}](#${getLinkToAsset({
+		name,
+		asset,
+	})})\n\n`;
 	if (inverted) {
 		// don't show index parameters here if also inverted, the link to the long asset will suffice
 		return header;
@@ -126,7 +121,7 @@ const addIndexParameters = ({ index, inverted, asset, name }) => {
 };
 
 const addOracleParameters = ({ asset, aggregator }) => {
-	const snxOracle = '0xac1ed4fabbd5204e02950d68b6fc8c446ac95362';
+	const snxOracle = snx.getUsers({ network, user: 'oracle' }).address;
 	if (!aggregator)
 		return (
 			`**Price Feed**: Synthetix (centralized)\n\n- Oracle: [${snxOracle}](https://etherscan.io/address/${snxOracle})` +
@@ -142,8 +137,9 @@ const content = `
 # Tokens
 
 !!! Tip "Decentralizing the remaining price feeds"
-		We're in the process of migrating all price feeds to Chainlink's decentralized network.
-		This change is coming with [SIP-36](https://sips.synthetix.io/sips/sip-36).
+
+    We're in the process of migrating all price feeds to Chainlink's decentralized network.
+    This change is coming with [SIP-36](https://sips.synthetix.io/sips/sip-36).
 
 ${tokens
 	.sort((a, b) => (a.name > b.name ? 1 : -1))
@@ -152,7 +148,7 @@ ${tokens
 			`## ${name} (${symbol})\n\n` +
 			// Note: Manual addition of SIP-34 check of MKR
 			(asset === 'MKR'
-				? '!!! warning "Suspended"\n\t\tMKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)\n\n'
+				? '!!! warning "Suspended"\n\n    MKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)\n\n'
 				: '') +
 			`**Address:** [${address}](https://etherscan.io/token/${address})\n\n` +
 			`**Decimals:** ${decimals}\n\n` +

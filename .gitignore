@@ -118,7 +118,7 @@ venv.bak/
 .ropeproject
 
 # mkdocs documentation
-/site
+site
 
 # mypy
 .mypy_cache/
@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 
 node_modules
+
+# Preview files
+*.preview

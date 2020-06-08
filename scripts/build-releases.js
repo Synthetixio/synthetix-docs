@@ -28,7 +28,7 @@ console.log('Building releases page');
 	// readmes.forEach(([repo, path, content]) =>
 	fs.writeFileSync(
 		path.join(__dirname, '..', 'content', 'releases.md'),
-		`!!! tip "Notice"\n\t\tImported from https://github.com/Synthetixio/synthetix/releases\n\n${content}`,
+		`!!! tip "Notice"\n\n    Imported from https://github.com/Synthetixio/synthetix/releases\n\n${content}`,
 	);
 	// );
 })();
