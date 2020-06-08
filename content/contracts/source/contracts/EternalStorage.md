@@ -55,7 +55,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `getAddressValue(bytes32 record)`
+    `getAddressValue(bytes32 record) returns (address)`
 
     **Visibility**
 
@@ -73,7 +73,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `getBooleanValue(bytes32 record)`
+    `getBooleanValue(bytes32 record) returns (bool)`
 
     **Visibility**
 
@@ -91,7 +91,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `getBytes32Value(bytes32 record)`
+    `getBytes32Value(bytes32 record) returns (bytes32)`
 
     **Visibility**
 
@@ -109,7 +109,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `getBytesValue(bytes32 record)`
+    `getBytesValue(bytes32 record) returns (bytes)`
 
     **Visibility**
 
@@ -127,7 +127,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `getIntValue(bytes32 record)`
+    `getIntValue(bytes32 record) returns (int256)`
 
     **Visibility**
 
@@ -145,7 +145,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `getStringValue(bytes32 record)`
+    `getStringValue(bytes32 record) returns (string)`
 
     **Visibility**
 
@@ -163,7 +163,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `getUIntValue(bytes32 record)`
+    `getUIntValue(bytes32 record) returns (uint256)`
 
     **Visibility**
 

@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `balanceOf(address account)`
+    `balanceOf(address account) returns (uint256)`
 
     **Visibility**
 

@@ -128,7 +128,7 @@ The returned values are as per [`getAccountsDebtEntry`](#getaccountsdebtentry), 
 
     **Signature**
 
-    `applicableIssuanceData(address account, uint256 closingDebtIndex)`
+    `applicableIssuanceData(address account, uint256 closingDebtIndex) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -150,7 +150,7 @@ The first return value is a [27-decimal fixed point number](../libraries/SafeDec
 
     **Signature**
 
-    `getAccountsDebtEntry(address account, uint256 index)`
+    `getAccountsDebtEntry(address account, uint256 index) returns (uint256, uint256)`
 
     **Visibility**
 

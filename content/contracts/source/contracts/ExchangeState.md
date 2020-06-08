@@ -80,7 +80,7 @@ graph TD
 
     **Signature**
 
-    `getEntryAt(address account, bytes32 currencyKey, uint256 index)`
+    `getEntryAt(address account, bytes32 currencyKey, uint256 index) returns (bytes32, uint256, bytes32, uint256, uint256, uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -98,7 +98,7 @@ graph TD
 
     **Signature**
 
-    `getLengthOfEntries(address account, bytes32 currencyKey)`
+    `getLengthOfEntries(address account, bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -116,7 +116,7 @@ graph TD
 
     **Signature**
 
-    `getMaxTimestamp(address account, bytes32 currencyKey)`
+    `getMaxTimestamp(address account, bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 

@@ -104,7 +104,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `approvedAll(address authoriser, address delegate)`
+    `approvedAll(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -122,7 +122,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `canBurnFor(address authoriser, address delegate)`
+    `canBurnFor(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -140,7 +140,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `canClaimFor(address authoriser, address delegate)`
+    `canClaimFor(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -158,7 +158,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `canExchangeFor(address authoriser, address delegate)`
+    `canExchangeFor(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -176,7 +176,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `canIssueFor(address authoriser, address delegate)`
+    `canIssueFor(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -228,7 +228,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `_checkApproval(bytes32 action, address authoriser, address delegate)`
+    `_checkApproval(bytes32 action, address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -246,7 +246,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `_getKey(bytes32 _action, address _authoriser, address _delegate)`
+    `_getKey(bytes32 _action, address _authoriser, address _delegate) returns (bytes32)`
 
     **Visibility**
 

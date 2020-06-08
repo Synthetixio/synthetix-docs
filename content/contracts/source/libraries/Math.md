@@ -29,7 +29,7 @@ Returns the exponentiation of the base (x) integer by the n^th power to precisio
 
     **Signature**
 
-    `powDecimal(uint256 x, uint256 n)`
+    `powDecimal(uint256 x, uint256 n) returns (uint256)`
 
     **Visibility**
 

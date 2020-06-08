@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `getVestingScheduleEntry(address account, uint256 index)`
+    `getVestingScheduleEntry(address account, uint256 index) returns (uint256[2])`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `numVestingEntries(address account)`
+    `numVestingEntries(address account) returns (uint256)`
 
     **Visibility**
 

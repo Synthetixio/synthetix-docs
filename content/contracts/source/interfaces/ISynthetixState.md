@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `debtLedger(uint256 index)`
+    `debtLedger(uint256 index) returns (uint256)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `debtLedgerLength()`
+    `debtLedgerLength() returns (uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `hasIssued(address account)`
+    `hasIssued(address account) returns (bool)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `issuanceData(address account)`
+    `issuanceData(address account) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@
 
     **Signature**
 
-    `issuanceRatio()`
+    `issuanceRatio() returns (uint256)`
 
     **Visibility**
 
@@ -104,7 +104,7 @@
 
     **Signature**
 
-    `lastDebtLedgerEntry()`
+    `lastDebtLedgerEntry() returns (uint256)`
 
     **Visibility**
 

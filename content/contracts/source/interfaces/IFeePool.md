@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `FEE_ADDRESS()`
+    `FEE_ADDRESS() returns (address)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `feesAvailable(address account)`
+    `feesAvailable(address account) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `getExchangeFeeRateForSynth(bytes32 synthKey)`
+    `getExchangeFeeRateForSynth(bytes32 synthKey) returns (uint256)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `isFeesClaimable(address account)`
+    `isFeesClaimable(address account) returns (bool)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@
 
     **Signature**
 
-    `totalFeesAvailable()`
+    `totalFeesAvailable() returns (uint256)`
 
     **Visibility**
 
@@ -104,7 +104,7 @@
 
     **Signature**
 
-    `totalRewardsAvailable()`
+    `totalRewardsAvailable() returns (uint256)`
 
     **Visibility**
 
@@ -142,7 +142,7 @@
 
     **Signature**
 
-    `claimFees()`
+    `claimFees() returns (bool)`
 
     **Visibility**
 
@@ -160,7 +160,7 @@
 
     **Signature**
 
-    `claimOnBehalf(address claimingForAddress)`
+    `claimOnBehalf(address claimingForAddress) returns (bool)`
 
     **Visibility**
 

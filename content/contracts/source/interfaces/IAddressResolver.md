@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `getAddress(bytes32 name)`
+    `getAddress(bytes32 name) returns (address)`
 
     **Visibility**
 
@@ -36,7 +36,7 @@
 
     **Signature**
 
-    `getSynth(bytes32 key)`
+    `getSynth(bytes32 key) returns (address)`
 
     **Visibility**
 
@@ -54,7 +54,7 @@
 
     **Signature**
 
-    `requireAndGetAddress(bytes32 name, string reason)`
+    `requireAndGetAddress(bytes32 name, string reason) returns (address)`
 
     **Visibility**
 

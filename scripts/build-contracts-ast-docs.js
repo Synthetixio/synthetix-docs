@@ -333,6 +333,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		signature,
 		visibility,
 		stateMutability,
+		returns,
 		requires = [],
 		events,
 		modifiers,
@@ -343,7 +344,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		let functionDetailMdContent = '??? example "Details"\n\n';
 
 		functionDetailMdContent += '    **Signature**\n\n';
-		functionDetailMdContent += `    \`${signature}\`\n\n`;
+		functionDetailMdContent += `    \`${signature}${returns !== '()' ? ` returns ${returns}` : ''}\`\n\n`;
 
 		functionDetailMdContent += '    **Visibility**\n\n';
 		functionDetailMdContent += `    \`${visibility}\`\n\n`;

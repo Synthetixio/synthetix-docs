@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `calculateAmountToFixCollateral(uint256 debtBalance, uint256 collateral)`
+    `calculateAmountToFixCollateral(uint256 debtBalance, uint256 collateral) returns (uint256)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `getLiquidationDeadlineForAccount(address account)`
+    `getLiquidationDeadlineForAccount(address account) returns (uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `isLiquidationDeadlinePassed(address account)`
+    `isLiquidationDeadlinePassed(address account) returns (bool)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `isOpenForLiquidation(address account)`
+    `isOpenForLiquidation(address account) returns (bool)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@
 
     **Signature**
 
-    `liquidationDelay()`
+    `liquidationDelay() returns (uint256)`
 
     **Visibility**
 
@@ -104,7 +104,7 @@
 
     **Signature**
 
-    `liquidationPenalty()`
+    `liquidationPenalty() returns (uint256)`
 
     **Visibility**
 
@@ -122,7 +122,7 @@
 
     **Signature**
 
-    `liquidationRatio()`
+    `liquidationRatio() returns (uint256)`
 
     **Visibility**
 

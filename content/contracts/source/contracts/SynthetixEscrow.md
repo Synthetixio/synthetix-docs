@@ -129,7 +129,7 @@ An alias to [`totalVestedAccountBalance[account]`](#totalvestedaccountbalance) f
 
     **Signature**
 
-    `balanceOf(address account)`
+    `balanceOf(address account) returns (uint256)`
 
     **Visibility**
 
@@ -149,7 +149,7 @@ Returns the next vesting entry in the same manner as [`getNextVestingIndex`](#ge
 
     **Signature**
 
-    `getNextVestingEntry(address account)`
+    `getNextVestingEntry(address account) returns (uint256[2])`
 
     **Visibility**
 
@@ -171,7 +171,7 @@ The function iterates until it finds the first nonzero vesting entry timestamp, 
 
     **Signature**
 
-    `getNextVestingIndex(address account)`
+    `getNextVestingIndex(address account) returns (uint256)`
 
     **Visibility**
 
@@ -191,7 +191,7 @@ Returns the SNX quantity of the next vesting entry. Returns `0` if there is no s
 
     **Signature**
 
-    `getNextVestingQuantity(address account)`
+    `getNextVestingQuantity(address account) returns (uint256)`
 
     **Visibility**
 
@@ -211,7 +211,7 @@ Returns the timestamp of the next vesting entry. Returns `0` if there is no such
 
     **Signature**
 
-    `getNextVestingTime(address account)`
+    `getNextVestingTime(address account) returns (uint256)`
 
     **Visibility**
 
@@ -231,7 +231,7 @@ Returns the quantity of SNX a given schedule entry will yield.
 
     **Signature**
 
-    `getVestingQuantity(address account, uint256 index)`
+    `getVestingQuantity(address account, uint256 index) returns (uint256)`
 
     **Visibility**
 
@@ -253,7 +253,7 @@ This is here because the public function generated for [`vestingSchedules`](#ves
 
     **Signature**
 
-    `getVestingScheduleEntry(address account, uint256 index)`
+    `getVestingScheduleEntry(address account, uint256 index) returns (uint256[2])`
 
     **Visibility**
 
@@ -273,7 +273,7 @@ Returns the time at which a given schedule entry will vest.
 
     **Signature**
 
-    `getVestingTime(address account, uint256 index)`
+    `getVestingTime(address account, uint256 index) returns (uint256)`
 
     **Visibility**
 
@@ -293,7 +293,7 @@ The number of entries in an account's vesting schedule, including those already 
 
     **Signature**
 
-    `numVestingEntries(address account)`
+    `numVestingEntries(address account) returns (uint256)`
 
     **Visibility**
 

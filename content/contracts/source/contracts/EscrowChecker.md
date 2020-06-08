@@ -58,7 +58,7 @@ Vested entries are not skipped, and appear as a leading sequence of zeroes.
 
     **Signature**
 
-    `checkAccountSchedule(address account)`
+    `checkAccountSchedule(address account) returns (uint256[16])`
 
     **Visibility**
 

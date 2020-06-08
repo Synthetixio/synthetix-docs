@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `availableCurrencyKeys()`
+    `availableCurrencyKeys() returns (bytes32[])`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `availableSynthCount()`
+    `availableSynthCount() returns (uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `collateral(address account)`
+    `collateral(address account) returns (uint256)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `collateralisationRatio(address issuer)`
+    `collateralisationRatio(address issuer) returns (uint256)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@
 
     **Signature**
 
-    `debtBalanceOf(address issuer, bytes32 currencyKey)`
+    `debtBalanceOf(address issuer, bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -104,7 +104,7 @@
 
     **Signature**
 
-    `debtBalanceOfAndTotalDebt(address issuer, bytes32 currencyKey)`
+    `debtBalanceOfAndTotalDebt(address issuer, bytes32 currencyKey) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -122,7 +122,7 @@
 
     **Signature**
 
-    `isWaitingPeriod(bytes32 currencyKey)`
+    `isWaitingPeriod(bytes32 currencyKey) returns (bool)`
 
     **Visibility**
 
@@ -140,7 +140,7 @@
 
     **Signature**
 
-    `maxIssuableSynths(address issuer)`
+    `maxIssuableSynths(address issuer) returns (uint256)`
 
     **Visibility**
 
@@ -158,7 +158,7 @@
 
     **Signature**
 
-    `remainingIssuableSynths(address issuer)`
+    `remainingIssuableSynths(address issuer) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -176,7 +176,7 @@
 
     **Signature**
 
-    `synths(bytes32 currencyKey)`
+    `synths(bytes32 currencyKey) returns (contract ISynth)`
 
     **Visibility**
 
@@ -194,7 +194,7 @@
 
     **Signature**
 
-    `synthsByAddress(address synthAddress)`
+    `synthsByAddress(address synthAddress) returns (bytes32)`
 
     **Visibility**
 
@@ -212,7 +212,7 @@
 
     **Signature**
 
-    `totalIssuedSynths(bytes32 currencyKey)`
+    `totalIssuedSynths(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -230,7 +230,7 @@
 
     **Signature**
 
-    `totalIssuedSynthsExcludeEtherCollateral(bytes32 currencyKey)`
+    `totalIssuedSynthsExcludeEtherCollateral(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -248,7 +248,7 @@
 
     **Signature**
 
-    `transferableSynthetix(address account)`
+    `transferableSynthetix(address account) returns (uint256)`
 
     **Visibility**
 
@@ -340,7 +340,7 @@
 
     **Signature**
 
-    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -358,7 +358,7 @@
 
     **Signature**
 
-    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -448,7 +448,7 @@
 
     **Signature**
 
-    `liquidateDelinquentAccount(address account, uint256 susdAmount)`
+    `liquidateDelinquentAccount(address account, uint256 susdAmount) returns (bool)`
 
     **Visibility**
 
@@ -466,7 +466,7 @@
 
     **Signature**
 
-    `mint()`
+    `mint() returns (bool)`
 
     **Visibility**
 
@@ -484,7 +484,7 @@
 
     **Signature**
 
-    `settle(bytes32 currencyKey)`
+    `settle(bytes32 currencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 

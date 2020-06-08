@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `currencyKey()`
+    `currencyKey() returns (bytes32)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `transferableSynths(address account)`
+    `transferableSynths(address account) returns (uint256)`
 
     **Visibility**
 
@@ -88,7 +88,7 @@
 
     **Signature**
 
-    `transferAndSettle(address to, uint256 value)`
+    `transferAndSettle(address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -106,7 +106,7 @@
 
     **Signature**
 
-    `transferFromAndSettle(address from, address to, uint256 value)`
+    `transferFromAndSettle(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 

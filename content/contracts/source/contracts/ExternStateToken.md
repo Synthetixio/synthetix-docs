@@ -107,7 +107,7 @@ This information is retrieved from the [`tokenState`](TokenState.md) contract.
 
     **Signature**
 
-    `allowance(address owner, address spender)`
+    `allowance(address owner, address spender) returns (uint256)`
 
     **Visibility**
 
@@ -128,7 +128,7 @@ This information is retrieved from the [`tokenState`](TokenState.md) contract.
 
     **Signature**
 
-    `balanceOf(address account)`
+    `balanceOf(address account) returns (uint256)`
 
     **Visibility**
 
@@ -179,7 +179,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **Signature**
 
-    `_internalTransfer(address from, address to, uint256 value)`
+    `_internalTransfer(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -201,7 +201,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **Signature**
 
-    `_transferByProxy(address from, address to, uint256 value)`
+    `_transferByProxy(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -219,7 +219,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **Signature**
 
-    `_transferFromByProxy(address sender, address from, address to, uint256 value)`
+    `_transferFromByProxy(address sender, address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -237,7 +237,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **Signature**
 
-    `addressToBytes32(address input)`
+    `addressToBytes32(address input) returns (bytes32)`
 
     **Visibility**
 
@@ -313,7 +313,7 @@ ERC20 approve function.
 
     **Signature**
 
-    `approve(address spender, uint256 value)`
+    `approve(address spender, uint256 value) returns (bool)`
 
     **Visibility**
 

@@ -161,7 +161,7 @@ graph TD
 
     **Signature**
 
-    `accruedInterestOnLoan(uint256 _loanAmount, uint256 _seconds)`
+    `accruedInterestOnLoan(uint256 _loanAmount, uint256 _seconds) returns (uint256)`
 
     **Visibility**
 
@@ -179,7 +179,7 @@ graph TD
 
     **Signature**
 
-    `calculateMintingFee(address _account, uint256 _loanID)`
+    `calculateMintingFee(address _account, uint256 _loanID) returns (uint256)`
 
     **Visibility**
 
@@ -197,7 +197,7 @@ graph TD
 
     **Signature**
 
-    `collateralAmountForLoan(uint256 loanAmount)`
+    `collateralAmountForLoan(uint256 loanAmount) returns (uint256)`
 
     **Visibility**
 
@@ -215,7 +215,7 @@ graph TD
 
     **Signature**
 
-    `currentInterestOnLoan(address _account, uint256 _loanID)`
+    `currentInterestOnLoan(address _account, uint256 _loanID) returns (uint256)`
 
     **Visibility**
 
@@ -233,7 +233,7 @@ graph TD
 
     **Signature**
 
-    `getContractInfo()`
+    `getContractInfo() returns (uint256, uint256, uint256, uint256, uint256, uint256, uint256, uint256, uint256, uint256, uint256, uint256, bool)`
 
     **Visibility**
 
@@ -251,7 +251,7 @@ graph TD
 
     **Signature**
 
-    `getLoan(address _account, uint256 _loanID)`
+    `getLoan(address _account, uint256 _loanID) returns (address, uint256, uint256, uint256, uint256, uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -269,7 +269,7 @@ graph TD
 
     **Signature**
 
-    `issuanceRatio()`
+    `issuanceRatio() returns (uint256)`
 
     **Visibility**
 
@@ -287,7 +287,7 @@ graph TD
 
     **Signature**
 
-    `loanAmountFromCollateral(uint256 collateralAmount)`
+    `loanAmountFromCollateral(uint256 collateralAmount) returns (uint256)`
 
     **Visibility**
 
@@ -305,7 +305,7 @@ graph TD
 
     **Signature**
 
-    `loanLifeSpan(address _account, uint256 _loanID)`
+    `loanLifeSpan(address _account, uint256 _loanID) returns (uint256)`
 
     **Visibility**
 
@@ -323,7 +323,7 @@ graph TD
 
     **Signature**
 
-    `openLoanIDsByAccount(address _account)`
+    `openLoanIDsByAccount(address _account) returns (uint256[])`
 
     **Visibility**
 
@@ -547,7 +547,7 @@ graph TD
 
     **Signature**
 
-    `depot()`
+    `depot() returns (contract IDepot)`
 
     **Visibility**
 
@@ -565,7 +565,7 @@ graph TD
 
     **Signature**
 
-    `synthsETH()`
+    `synthsETH() returns (contract ISynth)`
 
     **Visibility**
 
@@ -583,7 +583,7 @@ graph TD
 
     **Signature**
 
-    `synthsUSD()`
+    `synthsUSD() returns (contract ISynth)`
 
     **Visibility**
 
@@ -601,7 +601,7 @@ graph TD
 
     **Signature**
 
-    `systemStatus()`
+    `systemStatus() returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -673,7 +673,7 @@ graph TD
 
     **Signature**
 
-    `openLoan()`
+    `openLoan() returns (uint256)`
 
     **Visibility**
 

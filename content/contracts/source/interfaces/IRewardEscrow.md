@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `balanceOf(address account)`
+    `balanceOf(address account) returns (uint256)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `numVestingEntries(address account)`
+    `numVestingEntries(address account) returns (uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `totalEscrowedAccountBalance(address account)`
+    `totalEscrowedAccountBalance(address account) returns (uint256)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `totalVestedAccountBalance(address account)`
+    `totalVestedAccountBalance(address account) returns (uint256)`
 
     **Visibility**
 

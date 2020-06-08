@@ -122,7 +122,7 @@ The number of recipients receiving distributions. This is an alias for `distribu
 
     **Signature**
 
-    `distributionsLength()`
+    `distributionsLength() returns (uint256)`
 
     **Visibility**
 
@@ -146,7 +146,7 @@ This function always returns true if it does not revert.
 
     **Signature**
 
-    `addRewardDistribution(address destination, uint256 amount)`
+    `addRewardDistribution(address destination, uint256 amount) returns (bool)`
 
     **Visibility**
 
@@ -182,7 +182,7 @@ This function always returns true if it does not revert.
 
     **Signature**
 
-    `editRewardDistribution(uint256 index, address destination, uint256 amount)`
+    `editRewardDistribution(uint256 index, address destination, uint256 amount) returns (bool)`
 
     **Visibility**
 
@@ -344,7 +344,7 @@ This function always returns true if it does not revert.
 
     **Signature**
 
-    `distributeRewards(uint256 amount)`
+    `distributeRewards(uint256 amount) returns (bool)`
 
     **Visibility**
 

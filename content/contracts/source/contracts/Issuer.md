@@ -93,7 +93,7 @@ If any, see:
 
     **Signature**
 
-    `canBurnSynths(address account)`
+    `canBurnSynths(address account) returns (bool)`
 
     **Visibility**
 
@@ -111,7 +111,7 @@ If any, see:
 
     **Signature**
 
-    `lastIssueEvent(address account)`
+    `lastIssueEvent(address account) returns (uint256)`
 
     **Visibility**
 
@@ -329,7 +329,7 @@ If any, see:
 
     **Signature**
 
-    `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator)`
+    `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -563,7 +563,7 @@ If any, see:
 
     **Signature**
 
-    `delegateApprovals()`
+    `delegateApprovals() returns (contract IDelegateApprovals)`
 
     **Visibility**
 
@@ -581,7 +581,7 @@ If any, see:
 
     **Signature**
 
-    `exchangeRates()`
+    `exchangeRates() returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -599,7 +599,7 @@ If any, see:
 
     **Signature**
 
-    `exchanger()`
+    `exchanger() returns (contract IExchanger)`
 
     **Visibility**
 
@@ -617,7 +617,7 @@ If any, see:
 
     **Signature**
 
-    `feePool()`
+    `feePool() returns (contract IFeePool)`
 
     **Visibility**
 
@@ -635,7 +635,7 @@ If any, see:
 
     **Signature**
 
-    `issuanceEternalStorage()`
+    `issuanceEternalStorage() returns (contract IssuanceEternalStorage)`
 
     **Visibility**
 
@@ -653,7 +653,7 @@ If any, see:
 
     **Signature**
 
-    `liquidations()`
+    `liquidations() returns (contract ILiquidations)`
 
     **Visibility**
 
@@ -671,7 +671,7 @@ If any, see:
 
     **Signature**
 
-    `synthetix()`
+    `synthetix() returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -689,7 +689,7 @@ If any, see:
 
     **Signature**
 
-    `synthetixState()`
+    `synthetixState() returns (contract ISynthetixState)`
 
     **Visibility**
 
