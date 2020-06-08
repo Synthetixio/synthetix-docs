@@ -109,7 +109,7 @@ graph TD
 
     **Signature**
 
-    `multiCollateral()`
+    `multiCollateral() returns (address)`
 
     **Visibility**
 

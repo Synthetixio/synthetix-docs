@@ -144,7 +144,7 @@ Pure alias to [`PRECISE_UNIT`](#precise_unit).
 
     **Signature**
 
-    `preciseUnit()`
+    `preciseUnit() returns (uint256)`
 
     **Visibility**
 
@@ -164,7 +164,7 @@ Pure alias to [`UNIT`](#unit).
 
     **Signature**
 
-    `unit()`
+    `unit() returns (uint256)`
 
     **Visibility**
 
@@ -186,7 +186,7 @@ Converts from standard precision to high precision numbers. This is just multipl
 
     **Signature**
 
-    `decimalToPreciseDecimal(uint256 i)`
+    `decimalToPreciseDecimal(uint256 i) returns (uint256)`
 
     **Visibility**
 
@@ -206,7 +206,7 @@ Returns the quotient of two standard precision fixed point numbers, handling pre
 
     **Signature**
 
-    `divideDecimal(uint256 x, uint256 y)`
+    `divideDecimal(uint256 x, uint256 y) returns (uint256)`
 
     **Visibility**
 
@@ -228,7 +228,7 @@ Equivalent to [`_divideDecimalRound(x, y, UNIT)`](#_dividedecimalround).
 
     **Signature**
 
-    `divideDecimalRound(uint256 x, uint256 y)`
+    `divideDecimalRound(uint256 x, uint256 y) returns (uint256)`
 
     **Visibility**
 
@@ -250,7 +250,7 @@ Equivalent to [`_divideDecimalRound(x, y, PRECISE_UNIT)`](#_dividedecimalround).
 
     **Signature**
 
-    `divideDecimalRoundPrecise(uint256 x, uint256 y)`
+    `divideDecimalRoundPrecise(uint256 x, uint256 y) returns (uint256)`
 
     **Visibility**
 
@@ -270,7 +270,7 @@ Returns the product of two standard precision fixed point numbers, handling prec
 
     **Signature**
 
-    `multiplyDecimal(uint256 x, uint256 y)`
+    `multiplyDecimal(uint256 x, uint256 y) returns (uint256)`
 
     **Visibility**
 
@@ -292,7 +292,7 @@ Equivalent to [`_multiplyDecimalRound(x, y, UNIT)`](#_multiplydecimalround).
 
     **Signature**
 
-    `multiplyDecimalRound(uint256 x, uint256 y)`
+    `multiplyDecimalRound(uint256 x, uint256 y) returns (uint256)`
 
     **Visibility**
 
@@ -314,7 +314,7 @@ Equivalent to [`_multiplyDecimalRound(x, y, PRECISE_UNIT)`](#_multiplydecimalrou
 
     **Signature**
 
-    `multiplyDecimalRoundPrecise(uint256 x, uint256 y)`
+    `multiplyDecimalRoundPrecise(uint256 x, uint256 y) returns (uint256)`
 
     **Visibility**
 
@@ -334,7 +334,7 @@ Converts from high precision to standard precision numbers. This is division by 
 
     **Signature**
 
-    `preciseDecimalToDecimal(uint256 i)`
+    `preciseDecimalToDecimal(uint256 i) returns (uint256)`
 
     **Visibility**
 

@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `calculateAmountAfterSettlement(address from, bytes32 currencyKey, uint256 amount, uint256 refunded)`
+    `calculateAmountAfterSettlement(address from, bytes32 currencyKey, uint256 amount, uint256 refunded) returns (uint256)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `feeRateForExchange(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey)`
+    `feeRateForExchange(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `getAmountsForExchange(uint256 sourceAmount, bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey)`
+    `getAmountsForExchange(uint256 sourceAmount, bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `hasWaitingPeriodOrSettlementOwing(address account, bytes32 currencyKey)`
+    `hasWaitingPeriodOrSettlementOwing(address account, bytes32 currencyKey) returns (bool)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@
 
     **Signature**
 
-    `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey)`
+    `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -104,7 +104,7 @@
 
     **Signature**
 
-    `settlementOwing(address account, bytes32 currencyKey)`
+    `settlementOwing(address account, bytes32 currencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -124,7 +124,7 @@
 
     **Signature**
 
-    `exchange(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress)`
+    `exchange(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress) returns (uint256)`
 
     **Visibility**
 
@@ -142,7 +142,7 @@
 
     **Signature**
 
-    `exchangeOnBehalf(address exchangeForAddress, address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+    `exchangeOnBehalf(address exchangeForAddress, address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -160,7 +160,7 @@
 
     **Signature**
 
-    `settle(address from, bytes32 currencyKey)`
+    `settle(address from, bytes32 currencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 

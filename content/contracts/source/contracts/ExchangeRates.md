@@ -162,7 +162,7 @@ Loop over the given array of currencies and return true if any of them [is stale
 
     **Signature**
 
-    `anyRateIsStale(bytes32[] currencyKeys)`
+    `anyRateIsStale(bytes32[] currencyKeys) returns (bool)`
 
     **Visibility**
 
@@ -190,7 +190,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
     **Signature**
 
-    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -214,7 +214,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
     **Signature**
 
-    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest)`
+    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest) returns (uint256)`
 
     **Visibility**
 
@@ -238,7 +238,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
     **Signature**
 
-    `getCurrentRoundId(bytes32 currencyKey)`
+    `getCurrentRoundId(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -256,7 +256,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
     **Signature**
 
-    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff)`
+    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff) returns (uint256)`
 
     **Visibility**
 
@@ -276,7 +276,7 @@ Retrieves the timestamp the given rate was last updated. Accessed by the same ke
 
     **Signature**
 
-    `lastRateUpdateTimes(bytes32 currencyKey)`
+    `lastRateUpdateTimes(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -296,7 +296,7 @@ Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
 
     **Signature**
 
-    `lastRateUpdateTimesForCurrencies(bytes32[] currencyKeys)`
+    `lastRateUpdateTimesForCurrencies(bytes32[] currencyKeys) returns (uint256[])`
 
     **Visibility**
 
@@ -314,7 +314,7 @@ Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
 
     **Signature**
 
-    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId)`
+    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -334,7 +334,7 @@ Returns the last recorded rate for the given currency. This is just an alias to 
 
     **Signature**
 
-    `rateForCurrency(bytes32 currencyKey)`
+    `rateForCurrency(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -354,7 +354,7 @@ Returns true if the inverse price for the given currency is frozen. This is simp
 
     **Signature**
 
-    `rateIsFrozen(bytes32 currencyKey)`
+    `rateIsFrozen(bytes32 currencyKey) returns (bool)`
 
     **Visibility**
 
@@ -376,7 +376,7 @@ The rate for a given currency is stale if its last update occurred more than [`r
 
     **Signature**
 
-    `rateIsStale(bytes32 currencyKey)`
+    `rateIsStale(bytes32 currencyKey) returns (bool)`
 
     **Visibility**
 
@@ -394,7 +394,7 @@ The rate for a given currency is stale if its last update occurred more than [`r
 
     **Signature**
 
-    `ratesAndStaleForCurrencies(bytes32[] currencyKeys)`
+    `ratesAndStaleForCurrencies(bytes32[] currencyKeys) returns (uint256[], bool)`
 
     **Visibility**
 
@@ -414,7 +414,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
     **Signature**
 
-    `ratesForCurrencies(bytes32[] currencyKeys)`
+    `ratesForCurrencies(bytes32[] currencyKeys) returns (uint256[])`
 
     **Visibility**
 
@@ -646,7 +646,7 @@ Allows the oracle to update exchange rates in the contract. Otherwise this is ju
 
     **Signature**
 
-    `updateRates(bytes32[] currencyKeys, uint256[] newRates, uint256 timeSent)`
+    `updateRates(bytes32[] currencyKeys, uint256[] newRates, uint256 timeSent) returns (bool)`
 
     **Visibility**
 
@@ -690,7 +690,7 @@ Updates the rate and timestamp for the individual rate using an internal struct.
 
     **Signature**
 
-    `getRate(bytes32 currencyKey)`
+    `getRate(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -708,7 +708,7 @@ Updates the rate and timestamp for the individual rate using an internal struct.
 
     **Signature**
 
-    `getRateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId)`
+    `getRateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -728,7 +728,7 @@ Helper function gets a `RateAndUpdatedTime` struct for the given currency key.
 
     **Signature**
 
-    `getRateAndUpdatedTime(bytes32 currencyKey)`
+    `getRateAndUpdatedTime(bytes32 currencyKey) returns (struct ExchangeRates.RateAndUpdatedTime)`
 
     **Visibility**
 
@@ -754,7 +754,7 @@ Returns true if no exception was thrown.
 
     **Signature**
 
-    `internalUpdateRates(bytes32[] currencyKeys, uint256[] newRates, uint256 timeSent)`
+    `internalUpdateRates(bytes32[] currencyKeys, uint256[] newRates, uint256 timeSent) returns (bool)`
 
     **Visibility**
 
@@ -801,7 +801,7 @@ $\bar{p}$ is frozen whenever $\bar{p} \in \{l,u\}$; that is, when $2e - l \le p$
 
     **Signature**
 
-    `rateOrInverted(bytes32 currencyKey, uint256 rate)`
+    `rateOrInverted(bytes32 currencyKey, uint256 rate) returns (uint256)`
 
     **Visibility**
 
@@ -821,7 +821,7 @@ Helper function that removes an `entry` from an existing array in storage. Retur
 
     **Signature**
 
-    `removeFromArray(bytes32 entry, bytes32[] array)`
+    `removeFromArray(bytes32 entry, bytes32[] array) returns (bool)`
 
     **Visibility**
 

@@ -125,7 +125,7 @@ The precision in every Synth's fixed point representation is fixed at 18 so they
 
     **Signature**
 
-    `transferableSynths(address account)`
+    `transferableSynths(address account) returns (uint256)`
 
     **Visibility**
 
@@ -245,7 +245,7 @@ For example, just such a migration is performed by [this script](https://github.
 
     **Signature**
 
-    `_internalBurn(address account, uint256 amount)`
+    `_internalBurn(address account, uint256 amount) returns (bool)`
 
     **Visibility**
 
@@ -281,7 +281,7 @@ For example, just such a migration is performed by [this script](https://github.
 
     **Signature**
 
-    `_internalTransferFrom(address from, address to, uint256 value)`
+    `_internalTransferFrom(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -299,7 +299,7 @@ For example, just such a migration is performed by [this script](https://github.
 
     **Signature**
 
-    `_transferToFeeAddress(address to, uint256 value)`
+    `_transferToFeeAddress(address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -353,7 +353,7 @@ For example, just such a migration is performed by [this script](https://github.
 
     **Signature**
 
-    `exchanger()`
+    `exchanger() returns (contract IExchanger)`
 
     **Visibility**
 
@@ -375,7 +375,7 @@ The address of the [`FeePool`](FeePool.md) contract.
 
     **Signature**
 
-    `feePool()`
+    `feePool() returns (contract IFeePool)`
 
     **Visibility**
 
@@ -393,7 +393,7 @@ The address of the [`FeePool`](FeePool.md) contract.
 
     **Signature**
 
-    `issuer()`
+    `issuer() returns (contract IIssuer)`
 
     **Visibility**
 
@@ -415,7 +415,7 @@ The address of the [`Synthetix`](Synthetix.md) contract.
 
     **Signature**
 
-    `synthetix()`
+    `synthetix() returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -433,7 +433,7 @@ The address of the [`Synthetix`](Synthetix.md) contract.
 
     **Signature**
 
-    `systemStatus()`
+    `systemStatus() returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -461,7 +461,7 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     **Signature**
 
-    `transfer(address to, uint256 value)`
+    `transfer(address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -487,7 +487,7 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     **Signature**
 
-    `transferAndSettle(address to, uint256 value)`
+    `transferAndSettle(address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -517,7 +517,7 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     **Signature**
 
-    `transferFrom(address from, address to, uint256 value)`
+    `transferFrom(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -547,7 +547,7 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     **Signature**
 
-    `transferFromAndSettle(address from, address to, uint256 value)`
+    `transferFromAndSettle(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 

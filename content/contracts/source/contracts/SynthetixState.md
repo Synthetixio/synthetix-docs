@@ -160,7 +160,7 @@ Primarily used in [`FeePool`](FeePool.md) for fee period computations.
 
     **Signature**
 
-    `debtLedgerLength()`
+    `debtLedgerLength() returns (uint256)`
 
     **Visibility**
 
@@ -182,7 +182,7 @@ Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to det
 
     **Signature**
 
-    `hasIssued(address account)`
+    `hasIssued(address account) returns (bool)`
 
     **Visibility**
 
@@ -204,7 +204,7 @@ Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
 
     **Signature**
 
-    `lastDebtLedgerEntry()`
+    `lastDebtLedgerEntry() returns (uint256)`
 
     **Visibility**
 

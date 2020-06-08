@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `canBurnSynths(address account)`
+    `canBurnSynths(address account) returns (bool)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `lastIssueEvent(address account)`
+    `lastIssueEvent(address account) returns (uint256)`
 
     **Visibility**
 
@@ -196,7 +196,7 @@
 
     **Signature**
 
-    `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator)`
+    `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator) returns (uint256, uint256)`
 
     **Visibility**
 

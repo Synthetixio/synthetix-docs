@@ -74,7 +74,7 @@ The `AddressResolver` instance
 
     **Signature**
 
-    `getResolverAddressesRequired()`
+    `getResolverAddressesRequired() returns (bytes32[24])`
 
     **Visibility**
 
@@ -92,7 +92,7 @@ The `AddressResolver` instance
 
     **Signature**
 
-    `isResolverCached(contract AddressResolver _resolver)`
+    `isResolverCached(contract AddressResolver _resolver) returns (bool)`
 
     **Visibility**
 
@@ -158,7 +158,7 @@ The `AddressResolver` instance
 
     **Signature**
 
-    `requireAndGetAddress(bytes32 name, string reason)`
+    `requireAndGetAddress(bytes32 name, string reason) returns (address)`
 
     **Visibility**
 

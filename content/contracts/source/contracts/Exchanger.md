@@ -66,7 +66,7 @@ graph TD
 
     **Signature**
 
-    `calculateAmountAfterSettlement(address from, bytes32 currencyKey, uint256 amount, uint256 refunded)`
+    `calculateAmountAfterSettlement(address from, bytes32 currencyKey, uint256 amount, uint256 refunded) returns (uint256)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
     **Signature**
 
-    `feeRateForExchange(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey)`
+    `feeRateForExchange(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -104,7 +104,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
     **Signature**
 
-    `getAmountsForExchange(uint256 sourceAmount, bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey)`
+    `getAmountsForExchange(uint256 sourceAmount, bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -122,7 +122,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
     **Signature**
 
-    `hasWaitingPeriodOrSettlementOwing(address account, bytes32 currencyKey)`
+    `hasWaitingPeriodOrSettlementOwing(address account, bytes32 currencyKey) returns (bool)`
 
     **Visibility**
 
@@ -144,7 +144,7 @@ This number must be `0` in order for [`settle()`](#settle) to succeed.
 
     **Signature**
 
-    `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey)`
+    `maxSecsLeftInWaitingPeriod(address account, bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -164,7 +164,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `settlementOwing(address account, bytes32 currencyKey)`
+    `settlementOwing(address account, bytes32 currencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -184,7 +184,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `exchange(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress)`
+    `exchange(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress) returns (uint256)`
 
     **Visibility**
 
@@ -206,7 +206,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `exchangeOnBehalf(address exchangeForAddress, address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+    `exchangeOnBehalf(address exchangeForAddress, address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -256,7 +256,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `_exchange(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress)`
+    `_exchange(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress) returns (uint256)`
 
     **Visibility**
 
@@ -280,7 +280,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `_feeRateForExchange(bytes32 , bytes32 destinationCurrencyKey)`
+    `_feeRateForExchange(bytes32 , bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -298,7 +298,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `_getAmountReceivedForExchange(uint256 destinationAmount, uint256 exchangeFeeRate)`
+    `_getAmountReceivedForExchange(uint256 destinationAmount, uint256 exchangeFeeRate) returns (uint256)`
 
     **Visibility**
 
@@ -316,7 +316,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `_getAmountsForExchangeMinusFees(uint256 sourceAmount, bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey)`
+    `_getAmountsForExchangeMinusFees(uint256 sourceAmount, bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -334,7 +334,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `_internalSettle(address from, bytes32 currencyKey)`
+    `_internalSettle(address from, bytes32 currencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -374,7 +374,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `delegateApprovals()`
+    `delegateApprovals() returns (contract IDelegateApprovals)`
 
     **Visibility**
 
@@ -392,7 +392,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `exchangeRates()`
+    `exchangeRates() returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -410,7 +410,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `exchangeState()`
+    `exchangeState() returns (contract IExchangeState)`
 
     **Visibility**
 
@@ -428,7 +428,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `feePool()`
+    `feePool() returns (contract IFeePool)`
 
     **Visibility**
 
@@ -446,7 +446,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `getRoundIdsAtPeriodEnd(address account, bytes32 currencyKey, uint256 index)`
+    `getRoundIdsAtPeriodEnd(address account, bytes32 currencyKey, uint256 index) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -518,7 +518,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `secsLeftInWaitingPeriodForExchange(uint256 timestamp)`
+    `secsLeftInWaitingPeriodForExchange(uint256 timestamp) returns (uint256)`
 
     **Visibility**
 
@@ -536,7 +536,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `synthetix()`
+    `synthetix() returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -554,7 +554,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Signature**
 
-    `systemStatus()`
+    `systemStatus() returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -576,7 +576,7 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
 
     **Signature**
 
-    `settle(address from, bytes32 currencyKey)`
+    `settle(address from, bytes32 currencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 

@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `totalIssuedSynths()`
+    `totalIssuedSynths() returns (uint256)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `totalLoansCreated()`
+    `totalLoansCreated() returns (uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `totalOpenLoanCount()`
+    `totalOpenLoanCount() returns (uint256)`
 
     **Visibility**
 
@@ -106,7 +106,7 @@
 
     **Signature**
 
-    `openLoan()`
+    `openLoan() returns (uint256)`
 
     **Visibility**
 

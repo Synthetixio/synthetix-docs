@@ -129,7 +129,7 @@ graph TD
 
     **Signature**
 
-    `calculateAmountToFixCollateral(uint256 debtBalance, uint256 collateral)`
+    `calculateAmountToFixCollateral(uint256 debtBalance, uint256 collateral) returns (uint256)`
 
     **Visibility**
 
@@ -147,7 +147,7 @@ graph TD
 
     **Signature**
 
-    `getLiquidationDeadlineForAccount(address account)`
+    `getLiquidationDeadlineForAccount(address account) returns (uint256)`
 
     **Visibility**
 
@@ -165,7 +165,7 @@ graph TD
 
     **Signature**
 
-    `isLiquidationDeadlinePassed(address account)`
+    `isLiquidationDeadlinePassed(address account) returns (bool)`
 
     **Visibility**
 
@@ -183,7 +183,7 @@ graph TD
 
     **Signature**
 
-    `isOpenForLiquidation(address account)`
+    `isOpenForLiquidation(address account) returns (bool)`
 
     **Visibility**
 
@@ -201,7 +201,7 @@ graph TD
 
     **Signature**
 
-    `liquidationCollateralRatio()`
+    `liquidationCollateralRatio() returns (uint256)`
 
     **Visibility**
 
@@ -339,7 +339,7 @@ graph TD
 
     **Signature**
 
-    `_deadlinePassed(uint256 deadline)`
+    `_deadlinePassed(uint256 deadline) returns (bool)`
 
     **Visibility**
 
@@ -357,7 +357,7 @@ graph TD
 
     **Signature**
 
-    `_getKey(bytes32 _scope, address _account)`
+    `_getKey(bytes32 _scope, address _account) returns (bytes32)`
 
     **Visibility**
 
@@ -375,7 +375,7 @@ graph TD
 
     **Signature**
 
-    `_getLiquidationEntryForAccount(address account)`
+    `_getLiquidationEntryForAccount(address account) returns (struct Liquidations.LiquidationEntry)`
 
     **Visibility**
 
@@ -433,7 +433,7 @@ graph TD
 
     **Signature**
 
-    `eternalStorageLiquidations()`
+    `eternalStorageLiquidations() returns (contract EternalStorage)`
 
     **Visibility**
 
@@ -451,7 +451,7 @@ graph TD
 
     **Signature**
 
-    `exchangeRates()`
+    `exchangeRates() returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -469,7 +469,7 @@ graph TD
 
     **Signature**
 
-    `issuer()`
+    `issuer() returns (contract IIssuer)`
 
     **Visibility**
 
@@ -487,7 +487,7 @@ graph TD
 
     **Signature**
 
-    `synthetix()`
+    `synthetix() returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -505,7 +505,7 @@ graph TD
 
     **Signature**
 
-    `synthetixState()`
+    `synthetixState() returns (contract ISynthetixState)`
 
     **Visibility**
 
@@ -523,7 +523,7 @@ graph TD
 
     **Signature**
 
-    `systemStatus()`
+    `systemStatus() returns (contract ISystemStatus)`
 
     **Visibility**
 

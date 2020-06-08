@@ -129,7 +129,7 @@ It is necessary to know the current price of this Synth to work out whether it i
 
     **Signature**
 
-    `exchangeRates()`
+    `exchangeRates() returns (contract IExchangeRates)`
 
     **Visibility**
 

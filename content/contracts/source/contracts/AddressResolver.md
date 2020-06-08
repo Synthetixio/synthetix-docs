@@ -58,7 +58,7 @@ Returns a single address by it's `bytes32` key.
 
     **Signature**
 
-    `getAddress(bytes32 name)`
+    `getAddress(bytes32 name) returns (address)`
 
     **Visibility**
 
@@ -80,7 +80,7 @@ Returns a single address by it's `bytes32` key.
 
     **Signature**
 
-    `getSynth(bytes32 key)`
+    `getSynth(bytes32 key) returns (address)`
 
     **Visibility**
 
@@ -102,7 +102,7 @@ Returns a single address by it's `bytes32` key.
 
     **Signature**
 
-    `requireAndGetAddress(bytes32 name, string reason)`
+    `requireAndGetAddress(bytes32 name, string reason) returns (address)`
 
     **Visibility**
 

@@ -130,7 +130,7 @@ graph TD
 
     **Signature**
 
-    `getSynthSuspensions(bytes32[] synths)`
+    `getSynthSuspensions(bytes32[] synths) returns (bool[], uint256[])`
 
     **Visibility**
 
@@ -148,7 +148,7 @@ graph TD
 
     **Signature**
 
-    `isSystemUpgrading()`
+    `isSystemUpgrading() returns (bool)`
 
     **Visibility**
 

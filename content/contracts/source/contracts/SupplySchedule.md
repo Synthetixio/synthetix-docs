@@ -184,7 +184,7 @@ This means that tokens are only mintable once a week.
 
     **Signature**
 
-    `isMintable()`
+    `isMintable() returns (bool)`
 
     **Visibility**
 
@@ -206,7 +206,7 @@ If [`isMintable`](#ismintable) returns false, this is $0$. Otherwise, it is the 
 
     **Signature**
 
-    `mintableSupply()`
+    `mintableSupply() returns (uint256)`
 
     **Visibility**
 
@@ -224,7 +224,7 @@ If [`isMintable`](#ismintable) returns false, this is $0$. Otherwise, it is the 
 
     **Signature**
 
-    `terminalInflationSupply(uint256 totalSupply, uint256 numOfWeeks)`
+    `terminalInflationSupply(uint256 totalSupply, uint256 numOfWeeks) returns (uint256)`
 
     **Visibility**
 
@@ -242,7 +242,7 @@ If [`isMintable`](#ismintable) returns false, this is $0$. Otherwise, it is the 
 
     **Signature**
 
-    `tokenDecaySupplyForWeek(uint256 counter)`
+    `tokenDecaySupplyForWeek(uint256 counter) returns (uint256)`
 
     **Visibility**
 
@@ -262,7 +262,7 @@ This just returns its argument floor divided by [`MINT_PERIOD_DURATION`](#MINT_P
 
     **Signature**
 
-    `weeksSinceLastIssuance()`
+    `weeksSinceLastIssuance() returns (uint256)`
 
     **Visibility**
 
@@ -290,7 +290,7 @@ The function always returns `true` if the transaction was not reverted.
 
     **Signature**
 
-    `recordMintEvent(uint256 supplyMinted)`
+    `recordMintEvent(uint256 supplyMinted) returns (bool)`
 
     **Visibility**
 

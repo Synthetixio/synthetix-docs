@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `fundsWallet()`
+    `fundsWallet() returns (address payable)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `maxEthPurchase()`
+    `maxEthPurchase() returns (uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `minimumDepositAmount()`
+    `minimumDepositAmount() returns (uint256)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `synthsReceivedForEther(uint256 amount)`
+    `synthsReceivedForEther(uint256 amount) returns (uint256)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@
 
     **Signature**
 
-    `totalSellableDeposits()`
+    `totalSellableDeposits() returns (uint256)`
 
     **Visibility**
 
@@ -124,7 +124,7 @@
 
     **Signature**
 
-    `exchangeEtherForSNX()`
+    `exchangeEtherForSNX() returns (uint256)`
 
     **Visibility**
 
@@ -142,7 +142,7 @@
 
     **Signature**
 
-    `exchangeEtherForSNXAtRate(uint256 guaranteedRate, uint256 guaranteedSynthetixRate)`
+    `exchangeEtherForSNXAtRate(uint256 guaranteedRate, uint256 guaranteedSynthetixRate) returns (uint256)`
 
     **Visibility**
 
@@ -160,7 +160,7 @@
 
     **Signature**
 
-    `exchangeEtherForSynths()`
+    `exchangeEtherForSynths() returns (uint256)`
 
     **Visibility**
 
@@ -178,7 +178,7 @@
 
     **Signature**
 
-    `exchangeEtherForSynthsAtRate(uint256 guaranteedRate)`
+    `exchangeEtherForSynthsAtRate(uint256 guaranteedRate) returns (uint256)`
 
     **Visibility**
 
@@ -196,7 +196,7 @@
 
     **Signature**
 
-    `exchangeSynthsForSNX(uint256 synthAmount)`
+    `exchangeSynthsForSNX(uint256 synthAmount) returns (uint256)`
 
     **Visibility**
 
@@ -214,7 +214,7 @@
 
     **Signature**
 
-    `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate)`
+    `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate) returns (uint256)`
 
     **Visibility**
 

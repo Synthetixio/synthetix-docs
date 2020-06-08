@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `allowance(address owner, address spender)`
+    `allowance(address owner, address spender) returns (uint256)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `balanceOf(address owner)`
+    `balanceOf(address owner) returns (uint256)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `decimals()`
+    `decimals() returns (uint8)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `name()`
+    `name() returns (string)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@
 
     **Signature**
 
-    `symbol()`
+    `symbol() returns (string)`
 
     **Visibility**
 
@@ -104,7 +104,7 @@
 
     **Signature**
 
-    `totalSupply()`
+    `totalSupply() returns (uint256)`
 
     **Visibility**
 
@@ -124,7 +124,7 @@
 
     **Signature**
 
-    `approve(address spender, uint256 value)`
+    `approve(address spender, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -142,7 +142,7 @@
 
     **Signature**
 
-    `transfer(address to, uint256 value)`
+    `transfer(address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -160,7 +160,7 @@
 
     **Signature**
 
-    `transferFrom(address from, address to, uint256 value)`
+    `transferFrom(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 

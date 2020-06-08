@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `distributeRewards(uint256 amount)`
+    `distributeRewards(uint256 amount) returns (bool)`
 
     **Visibility**
 

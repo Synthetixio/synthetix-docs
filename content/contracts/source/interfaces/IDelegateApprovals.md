@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `canBurnFor(address authoriser, address delegate)`
+    `canBurnFor(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `canClaimFor(address authoriser, address delegate)`
+    `canClaimFor(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `canExchangeFor(address authoriser, address delegate)`
+    `canExchangeFor(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `canIssueFor(address authoriser, address delegate)`
+    `canIssueFor(address authoriser, address delegate) returns (bool)`
 
     **Visibility**
 

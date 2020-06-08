@@ -14,7 +14,7 @@
 
     **Signature**
 
-    `aggregators(bytes32 currencyKey)`
+    `aggregators(bytes32 currencyKey) returns (address)`
 
     **Visibility**
 
@@ -32,7 +32,7 @@
 
     **Signature**
 
-    `anyRateIsStale(bytes32[] currencyKeys)`
+    `anyRateIsStale(bytes32[] currencyKeys) returns (bool)`
 
     **Visibility**
 
@@ -50,7 +50,7 @@
 
     **Signature**
 
-    `currentRoundForRate(bytes32 currencyKey)`
+    `currentRoundForRate(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -68,7 +68,7 @@
 
     **Signature**
 
-    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+    `effectiveValue(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -86,7 +86,7 @@
 
     **Signature**
 
-    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest)`
+    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest) returns (uint256)`
 
     **Visibility**
 
@@ -104,7 +104,7 @@
 
     **Signature**
 
-    `getCurrentRoundId(bytes32 currencyKey)`
+    `getCurrentRoundId(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -122,7 +122,7 @@
 
     **Signature**
 
-    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff)`
+    `getLastRoundIdBeforeElapsedSecs(bytes32 currencyKey, uint256 startingRoundId, uint256 startingTimestamp, uint256 timediff) returns (uint256)`
 
     **Visibility**
 
@@ -140,7 +140,7 @@
 
     **Signature**
 
-    `inversePricing(bytes32 currencyKey)`
+    `inversePricing(bytes32 currencyKey) returns (uint256, uint256, uint256, bool)`
 
     **Visibility**
 
@@ -158,7 +158,7 @@
 
     **Signature**
 
-    `lastRateUpdateTimes(bytes32 currencyKey)`
+    `lastRateUpdateTimes(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -176,7 +176,7 @@
 
     **Signature**
 
-    `oracle()`
+    `oracle() returns (address)`
 
     **Visibility**
 
@@ -194,7 +194,7 @@
 
     **Signature**
 
-    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId)`
+    `rateAndTimestampAtRound(bytes32 currencyKey, uint256 roundId) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -212,7 +212,7 @@
 
     **Signature**
 
-    `rateForCurrency(bytes32 currencyKey)`
+    `rateForCurrency(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -230,7 +230,7 @@
 
     **Signature**
 
-    `rateIsFrozen(bytes32 currencyKey)`
+    `rateIsFrozen(bytes32 currencyKey) returns (bool)`
 
     **Visibility**
 
@@ -248,7 +248,7 @@
 
     **Signature**
 
-    `rateIsStale(bytes32 currencyKey)`
+    `rateIsStale(bytes32 currencyKey) returns (bool)`
 
     **Visibility**
 
@@ -266,7 +266,7 @@
 
     **Signature**
 
-    `rateStalePeriod()`
+    `rateStalePeriod() returns (uint256)`
 
     **Visibility**
 
@@ -284,7 +284,7 @@
 
     **Signature**
 
-    `ratesAndStaleForCurrencies(bytes32[] currencyKeys)`
+    `ratesAndStaleForCurrencies(bytes32[] currencyKeys) returns (uint256[], bool)`
 
     **Visibility**
 
@@ -302,7 +302,7 @@
 
     **Signature**
 
-    `ratesForCurrencies(bytes32[] currencyKeys)`
+    `ratesForCurrencies(bytes32[] currencyKeys) returns (uint256[])`
 
     **Visibility**
 

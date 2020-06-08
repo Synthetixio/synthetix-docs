@@ -137,7 +137,7 @@ Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSy
 
     **Signature**
 
-    `availableCurrencyKeys()`
+    `availableCurrencyKeys() returns (bytes32[])`
 
     **Visibility**
 
@@ -157,7 +157,7 @@ Returns the number of synths in the system, that is [`availableSynths.length`](#
 
     **Signature**
 
-    `availableSynthCount()`
+    `availableSynthCount() returns (uint256)`
 
     **Visibility**
 
@@ -179,7 +179,7 @@ This is computed as the sum of [`Synthetix.balanceOf(account)`](TokenState.md#ba
 
     **Signature**
 
-    `collateral(address account)`
+    `collateral(address account) returns (uint256)`
 
     **Visibility**
 
@@ -201,7 +201,7 @@ Ideally, issuers should maintain their collateralisation ratio at a level less t
 
     **Signature**
 
-    `collateralisationRatio(address _issuer)`
+    `collateralisationRatio(address _issuer) returns (uint256)`
 
     **Visibility**
 
@@ -235,7 +235,7 @@ Where $\omega$ is the account's debt ownership fraction at the time it [last iss
 
     **Signature**
 
-    `debtBalanceOf(address _issuer, bytes32 currencyKey)`
+    `debtBalanceOf(address _issuer, bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -253,7 +253,7 @@ Where $\omega$ is the account's debt ownership fraction at the time it [last iss
 
     **Signature**
 
-    `debtBalanceOfAndTotalDebt(address _issuer, bytes32 currencyKey)`
+    `debtBalanceOfAndTotalDebt(address _issuer, bytes32 currencyKey) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -273,7 +273,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 
     **Signature**
 
-    `isWaitingPeriod(bytes32 currencyKey)`
+    `isWaitingPeriod(bytes32 currencyKey) returns (bool)`
 
     **Visibility**
 
@@ -293,7 +293,7 @@ The maximum number of a given synth that is issuable against the issuer's collat
 
     **Signature**
 
-    `maxIssuableSynths(address _issuer)`
+    `maxIssuableSynths(address _issuer) returns (uint256)`
 
     **Visibility**
 
@@ -317,7 +317,7 @@ If prices fluctuate then the account's issued synth debt may exceed its current 
 
     **Signature**
 
-    `remainingIssuableSynths(address _issuer)`
+    `remainingIssuableSynths(address _issuer) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -345,7 +345,7 @@ Where $\sigma_s$ and $\pi_s$ are the total supply and price of synth $s$, and $\
 
     **Signature**
 
-    `totalIssuedSynths(bytes32 currencyKey)`
+    `totalIssuedSynths(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -363,7 +363,7 @@ Where $\sigma_s$ and $\pi_s$ are the total supply and price of synth $s$, and $\
 
     **Signature**
 
-    `totalIssuedSynthsExcludeEtherCollateral(bytes32 currencyKey)`
+    `totalIssuedSynthsExcludeEtherCollateral(bytes32 currencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -415,7 +415,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
     **Signature**
 
-    `transferableSynthetix(address account)`
+    `transferableSynthetix(address account) returns (uint256)`
 
     **Visibility**
 
@@ -572,7 +572,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `_totalIssuedSynths(bytes32 currencyKey, bool excludeEtherCollateral)`
+    `_totalIssuedSynths(bytes32 currencyKey, bool excludeEtherCollateral) returns (uint256)`
 
     **Visibility**
 
@@ -612,7 +612,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `etherCollateral()`
+    `etherCollateral() returns (contract IEtherCollateral)`
 
     **Visibility**
 
@@ -630,7 +630,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `exchangeRates()`
+    `exchangeRates() returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -648,7 +648,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `exchanger()`
+    `exchanger() returns (contract IExchanger)`
 
     **Visibility**
 
@@ -666,7 +666,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `issuer()`
+    `issuer() returns (contract IIssuer)`
 
     **Visibility**
 
@@ -684,7 +684,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `rewardEscrow()`
+    `rewardEscrow() returns (contract IRewardEscrow)`
 
     **Visibility**
 
@@ -702,7 +702,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `rewardsDistribution()`
+    `rewardsDistribution() returns (contract IRewardsDistribution)`
 
     **Visibility**
 
@@ -720,7 +720,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `supplySchedule()`
+    `supplySchedule() returns (contract SupplySchedule)`
 
     **Visibility**
 
@@ -738,7 +738,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `synthetixEscrow()`
+    `synthetixEscrow() returns (contract IHasBalance)`
 
     **Visibility**
 
@@ -756,7 +756,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `synthetixState()`
+    `synthetixState() returns (contract ISynthetixState)`
 
     **Visibility**
 
@@ -774,7 +774,7 @@ A Synth cannot be removed if it has outstanding issued tokens.
 
     **Signature**
 
-    `systemStatus()`
+    `systemStatus() returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -896,7 +896,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
     **Signature**
 
-    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -918,7 +918,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
     **Signature**
 
-    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey)`
+    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256)`
 
     **Visibility**
 
@@ -1036,7 +1036,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
     **Signature**
 
-    `liquidateDelinquentAccount(address account, uint256 susdAmount)`
+    `liquidateDelinquentAccount(address account, uint256 susdAmount) returns (bool)`
 
     **Visibility**
 
@@ -1066,7 +1066,7 @@ This function always returns true if the transaction did not revert.
 
     **Signature**
 
-    `mint()`
+    `mint() returns (bool)`
 
     **Visibility**
 
@@ -1094,7 +1094,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
     **Signature**
 
-    `settle(bytes32 currencyKey)`
+    `settle(bytes32 currencyKey) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -1122,7 +1122,7 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     **Signature**
 
-    `transfer(address to, uint256 value)`
+    `transfer(address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -1154,7 +1154,7 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     **Signature**
 
-    `transferFrom(address from, address to, uint256 value)`
+    `transferFrom(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 

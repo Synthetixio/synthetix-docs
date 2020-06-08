@@ -160,7 +160,7 @@ $$
 
     **Signature**
 
-    `synthetixReceivedForEther(uint256 amount)`
+    `synthetixReceivedForEther(uint256 amount) returns (uint256)`
 
     **Visibility**
 
@@ -184,7 +184,7 @@ $$
 
     **Signature**
 
-    `synthetixReceivedForSynths(uint256 amount)`
+    `synthetixReceivedForSynths(uint256 amount) returns (uint256)`
 
     **Visibility**
 
@@ -208,7 +208,7 @@ $$
 
     **Signature**
 
-    `synthsReceivedForEther(uint256 amount)`
+    `synthsReceivedForEther(uint256 amount) returns (uint256)`
 
     **Visibility**
 
@@ -340,7 +340,7 @@ Allows the owner to set the [minimum deposit amount](#minimumdepositamount).
 
     **Signature**
 
-    `_exchangeEtherForSNX()`
+    `_exchangeEtherForSNX() returns (uint256)`
 
     **Visibility**
 
@@ -362,7 +362,7 @@ Allows the owner to set the [minimum deposit amount](#minimumdepositamount).
 
     **Signature**
 
-    `_exchangeEtherForSynths()`
+    `_exchangeEtherForSynths() returns (uint256)`
 
     **Visibility**
 
@@ -384,7 +384,7 @@ Allows the owner to set the [minimum deposit amount](#minimumdepositamount).
 
     **Signature**
 
-    `_exchangeSynthsForSNX(uint256 synthAmount)`
+    `_exchangeSynthsForSNX(uint256 synthAmount) returns (uint256)`
 
     **Visibility**
 
@@ -406,7 +406,7 @@ Allows the owner to set the [minimum deposit amount](#minimumdepositamount).
 
     **Signature**
 
-    `exchangeRates()`
+    `exchangeRates() returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -428,7 +428,7 @@ The address of the main [`Synthetix`](Synthetix.md) contract; the depot contains
 
     **Signature**
 
-    `synthetix()`
+    `synthetix() returns (contract IERC20)`
 
     **Visibility**
 
@@ -446,7 +446,7 @@ The address of the main [`Synthetix`](Synthetix.md) contract; the depot contains
 
     **Signature**
 
-    `synthsUSD()`
+    `synthsUSD() returns (contract IERC20)`
 
     **Visibility**
 
@@ -488,7 +488,7 @@ The address of the main [`Synthetix`](Synthetix.md) contract; the depot contains
 
     **Signature**
 
-    `exchangeEtherForSNX()`
+    `exchangeEtherForSNX() returns (uint256)`
 
     **Visibility**
 
@@ -516,7 +516,7 @@ The address of the main [`Synthetix`](Synthetix.md) contract; the depot contains
 
     **Signature**
 
-    `exchangeEtherForSNXAtRate(uint256 guaranteedEtherRate, uint256 guaranteedSynthetixRate)`
+    `exchangeEtherForSNXAtRate(uint256 guaranteedEtherRate, uint256 guaranteedSynthetixRate) returns (uint256)`
 
     **Visibility**
 
@@ -561,7 +561,7 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
     **Signature**
 
-    `exchangeEtherForSynths()`
+    `exchangeEtherForSynths() returns (uint256)`
 
     **Visibility**
 
@@ -589,7 +589,7 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
     **Signature**
 
-    `exchangeEtherForSynthsAtRate(uint256 guaranteedRate)`
+    `exchangeEtherForSynthsAtRate(uint256 guaranteedRate) returns (uint256)`
 
     **Visibility**
 
@@ -619,7 +619,7 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
     **Signature**
 
-    `exchangeSynthsForSNX(uint256 synthAmount)`
+    `exchangeSynthsForSNX(uint256 synthAmount) returns (uint256)`
 
     **Visibility**
 
@@ -645,7 +645,7 @@ Returns the number of sUSD exchanged. Converts any ether sent to the contract to
 
     **Signature**
 
-    `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate)`
+    `exchangeSynthsForSNXAtRate(uint256 synthAmount, uint256 guaranteedRate) returns (uint256)`
 
     **Visibility**
 

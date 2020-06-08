@@ -170,7 +170,7 @@ In principle a future version could support the current fee period by using the 
 
     **Signature**
 
-    `effectiveDebtRatioForPeriod(address account, uint256 period)`
+    `effectiveDebtRatioForPeriod(address account, uint256 period) returns (uint256)`
 
     **Visibility**
 
@@ -198,7 +198,7 @@ This is the total of fees accrued in completed periods, so is simply the the sum
 
     **Signature**
 
-    `feesAvailable(address account)`
+    `feesAvailable(address account) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -224,7 +224,7 @@ Periods where the user has already withdrawn since that period closed are skippe
 
     **Signature**
 
-    `feesByPeriod(address account)`
+    `feesByPeriod(address account) returns (uint256[2][2])`
 
     **Visibility**
 
@@ -242,7 +242,7 @@ Periods where the user has already withdrawn since that period closed are skippe
 
     **Signature**
 
-    `getExchangeFeeRateForSynth(bytes32 synthKey)`
+    `getExchangeFeeRateForSynth(bytes32 synthKey) returns (uint256)`
 
     **Visibility**
 
@@ -262,7 +262,7 @@ Returns from [`FeePoolEternalStorage`](FeePoolEternalStorage.md) the id of the f
 
     **Signature**
 
-    `getLastFeeWithdrawal(address _claimingAddress)`
+    `getLastFeeWithdrawal(address _claimingAddress) returns (uint256)`
 
     **Visibility**
 
@@ -282,7 +282,7 @@ Returns the collateralisation level a user can reach before they cannot claim fe
 
     **Signature**
 
-    `getPenaltyThresholdRatio()`
+    `getPenaltyThresholdRatio() returns (uint256)`
 
     **Visibility**
 
@@ -300,7 +300,7 @@ Returns the collateralisation level a user can reach before they cannot claim fe
 
     **Signature**
 
-    `isFeesClaimable(address account)`
+    `isFeesClaimable(address account) returns (bool)`
 
     **Visibility**
 
@@ -324,7 +324,7 @@ Stores [fee period information](#feeperiod) for the last three weeks, from newes
 
     **Signature**
 
-    `recentFeePeriods(uint256 index)`
+    `recentFeePeriods(uint256 index) returns (uint64, uint64, uint64, uint256, uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -344,7 +344,7 @@ Computes the total fees available to be withdrawn, valued in terms of `currencyK
 
     **Signature**
 
-    `totalFeesAvailable()`
+    `totalFeesAvailable() returns (uint256)`
 
     **Visibility**
 
@@ -364,7 +364,7 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
     **Signature**
 
-    `totalRewardsAvailable()`
+    `totalRewardsAvailable() returns (uint256)`
 
     **Visibility**
 
@@ -591,7 +591,7 @@ The return value is always true if the transaction was not reverted.
 
     **Signature**
 
-    `_claimFees(address claimingAddress)`
+    `_claimFees(address claimingAddress) returns (bool)`
 
     **Visibility**
 
@@ -625,7 +625,7 @@ See [`Synthetix._addToDebtRegister`](Synthetix.md#_addToDebtRegister) for detail
 
     **Signature**
 
-    `_effectiveDebtRatioForPeriod(uint256 closingDebtIndex, uint256 ownershipPercentage, uint256 debtEntryIndex)`
+    `_effectiveDebtRatioForPeriod(uint256 closingDebtIndex, uint256 ownershipPercentage, uint256 debtEntryIndex) returns (uint256)`
 
     **Visibility**
 
@@ -649,7 +649,7 @@ Computes the fees (in sUSD) and rewards (in SNX) owed at the end of a recent fee
 
     **Signature**
 
-    `_feesAndRewardsFromPeriod(uint256 period, uint256 ownershipPercentage, uint256 debtEntryIndex)`
+    `_feesAndRewardsFromPeriod(uint256 period, uint256 ownershipPercentage, uint256 debtEntryIndex) returns (uint256, uint256)`
 
     **Visibility**
 
@@ -717,7 +717,7 @@ Pays a quantity of rewards to a specified address, escrowing it for one year wit
 
     **Signature**
 
-    `_recentFeePeriodsStorage(uint256 index)`
+    `_recentFeePeriodsStorage(uint256 index) returns (struct FeePool.FeePeriod)`
 
     **Visibility**
 
@@ -765,7 +765,7 @@ In pseudo-code:
 
     **Signature**
 
-    `_recordFeePayment(uint256 sUSDAmount)`
+    `_recordFeePayment(uint256 sUSDAmount) returns (uint256)`
 
     **Visibility**
 
@@ -787,7 +787,7 @@ Its logic is identical to [`_recordFeePayment`](#_recordfeepayment), except that
 
     **Signature**
 
-    `_recordRewardPayment(uint256 snxAmount)`
+    `_recordRewardPayment(uint256 snxAmount) returns (uint256)`
 
     **Visibility**
 
@@ -825,7 +825,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
     **Signature**
 
-    `delegateApprovals()`
+    `delegateApprovals() returns (contract IDelegateApprovals)`
 
     **Visibility**
 
@@ -933,7 +933,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
     **Signature**
 
-    `exchanger()`
+    `exchanger() returns (contract IExchanger)`
 
     **Visibility**
 
@@ -955,7 +955,7 @@ The [`FeePoolEternalStorage`](FeePoolEternalStorage.md) key-value store that hol
 
     **Signature**
 
-    `feePoolEternalStorage()`
+    `feePoolEternalStorage() returns (contract FeePoolEternalStorage)`
 
     **Visibility**
 
@@ -977,7 +977,7 @@ The [`FeePoolState`](FeePoolState.md) contract associated with this fee pool, wh
 
     **Signature**
 
-    `feePoolState()`
+    `feePoolState() returns (contract FeePoolState)`
 
     **Visibility**
 
@@ -995,7 +995,7 @@ The [`FeePoolState`](FeePoolState.md) contract associated with this fee pool, wh
 
     **Signature**
 
-    `issuer()`
+    `issuer() returns (contract IIssuer)`
 
     **Visibility**
 
@@ -1017,7 +1017,7 @@ The [`RewardEscrow`](RewardEscrow.md) instance which holds inflationary rewards.
 
     **Signature**
 
-    `rewardEscrow()`
+    `rewardEscrow() returns (contract IRewardEscrow)`
 
     **Visibility**
 
@@ -1035,7 +1035,7 @@ The [`RewardEscrow`](RewardEscrow.md) instance which holds inflationary rewards.
 
     **Signature**
 
-    `rewardsDistribution()`
+    `rewardsDistribution() returns (contract IRewardsDistribution)`
 
     **Visibility**
 
@@ -1057,7 +1057,7 @@ The main [`Synthetix`](Synthetix.md) contract.
 
     **Signature**
 
-    `synthetix()`
+    `synthetix() returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -1079,7 +1079,7 @@ The associated [`SynthetixState`](SynthetixState.md) contract.
 
     **Signature**
 
-    `synthetixState()`
+    `synthetixState() returns (contract ISynthetixState)`
 
     **Visibility**
 
@@ -1097,7 +1097,7 @@ The associated [`SynthetixState`](SynthetixState.md) contract.
 
     **Signature**
 
-    `systemStatus()`
+    `systemStatus() returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -1121,7 +1121,7 @@ This is equivalent to [`_claimFees(messageSender)`](#_claimfees).
 
     **Signature**
 
-    `claimFees()`
+    `claimFees() returns (bool)`
 
     **Visibility**
 
@@ -1147,7 +1147,7 @@ This function first checks with the [`DelegateApprovals`](DelegateApprovals.md) 
 
     **Signature**
 
-    `claimOnBehalf(address claimingForAddress)`
+    `claimOnBehalf(address claimingForAddress) returns (bool)`
 
     **Visibility**
 

@@ -51,7 +51,7 @@ graph TD
 
     **Signature**
 
-    `allowance(address owner, address spender)`
+    `allowance(address owner, address spender) returns (uint256)`
 
     **Visibility**
 
@@ -69,7 +69,7 @@ graph TD
 
     **Signature**
 
-    `balanceOf(address account)`
+    `balanceOf(address account) returns (uint256)`
 
     **Visibility**
 
@@ -87,7 +87,7 @@ graph TD
 
     **Signature**
 
-    `decimals()`
+    `decimals() returns (uint8)`
 
     **Visibility**
 
@@ -105,7 +105,7 @@ graph TD
 
     **Signature**
 
-    `name()`
+    `name() returns (string)`
 
     **Visibility**
 
@@ -123,7 +123,7 @@ graph TD
 
     **Signature**
 
-    `symbol()`
+    `symbol() returns (string)`
 
     **Visibility**
 
@@ -141,7 +141,7 @@ graph TD
 
     **Signature**
 
-    `totalSupply()`
+    `totalSupply() returns (uint256)`
 
     **Visibility**
 
@@ -161,7 +161,7 @@ graph TD
 
     **Signature**
 
-    `approve(address spender, uint256 value)`
+    `approve(address spender, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -179,7 +179,7 @@ graph TD
 
     **Signature**
 
-    `transfer(address to, uint256 value)`
+    `transfer(address to, uint256 value) returns (bool)`
 
     **Visibility**
 
@@ -197,7 +197,7 @@ graph TD
 
     **Signature**
 
-    `transferFrom(address from, address to, uint256 value)`
+    `transferFrom(address from, address to, uint256 value) returns (bool)`
 
     **Visibility**
 
