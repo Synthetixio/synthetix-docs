@@ -180,6 +180,7 @@ extra_css:
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
   - extra.css
 plugins:
+  - search
   - redirects:
       redirect_maps:
         contracts/AddressResolver.md: contracts/source/contracts/AddressResolver.md
