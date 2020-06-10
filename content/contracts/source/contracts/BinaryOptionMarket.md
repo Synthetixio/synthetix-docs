@@ -375,6 +375,114 @@ Returns the [option balances](BinaryOption.md#balanceof) of the message sender o
 
     `view`
 
+### `bidForPrice`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L288)</sub>
+
+Produces the size of bid or refund necessary on a particular side of the market to move the price on one side
+or the other to a desired level.
+
+For example, to move the long price to $0.8$ by bidding on the long side, one would have to bid
+`bidForPrice(Side.Long, Side.Long, 0.8 * UNIT, false)`. On the other hand, to move the short price
+to $0.6$ by refunding on the long side, one would need to refund `bidForPrice(Side.Long, Side.Short, 0.6 * UNIT, true)`.
+
+If the result would be negative, because the desired operation can only move the price in the opposite direction
+from the target, the function returns 0.
+
+??? info "Formula Derivation"
+    For brevity, the following definitions will be used:
+       
+    $$
+    \begin{equation}
+        \begin{split}
+        \psi &:= 1 - (\text{poolFee} + \text{creatorFee}) \\
+        \xi  &:= 1 - \text{refundFee} \\
+        D    &:= \text{deposited()} \\
+        P_{this}, P_{that} &:= \text{prices()} \\
+        Q_{this}, Q_{that} &:= \text{totalBids()} \\
+        \end{split}
+    \end{equation}
+    $$
+        
+    The variables $\text{this}$ and $\text{that}$ refer to the opposite sides of the market. Since prices
+    are symmetrical between the sides of the market, they can be interpreted in either order.
+
+    If a bid with value $b$ is placed on $\text{this}$ side of the market, the resulting prices are as follows:
+
+    $$
+    \begin{equation}
+        \begin{split}
+        P_{this} & \leftarrow \frac{Q_{this} + b}{\psi (D + b)} \\
+        P_{that} & \leftarrow \frac{Q_{that}}{\psi (D + b)}
+        \end{split}
+    \end{equation}
+    $$
+
+    The case of a refund of value $r$ must take the refund fee into account:
+
+    $$
+    \begin{equation}
+        \begin{split}
+        P_{this} &\leftarrow \frac{Q_{this} - r}{\psi (D - \xi r)} \\
+        P_{that} &\leftarrow \frac{Q_{that}}{\psi (D - \xi r)}
+        \end{split}
+    \end{equation}
+    $$
+
+    So by bidding or refunding on $this$ side of the market, we alter the prices on both sides. Note that bids always
+    increase prices on $this$ side and decrease prices on $that$ side, while refunds always decrease prices on $this$
+    side and increase prices on $that$ side.
+    
+    **Same-Side Price Targeting**
+    
+    By changing our position on $this$ side of the market, we can change $P_{this}$ to a desired level $P^{*}_{this}$.
+    If $P_{this} < P^{*}_{this}$, we must bid a value $b$ to increase the price, while if $P^{*}_{this} < P_{this}$,
+    we must refund a value $r$ to decrease the price, as follows:
+  
+    $$
+    \begin{equation}
+        \begin{split}
+        b &\leftarrow \frac{\psi D P_{this} - Q_{this}}{1 - \psi P_{this} } \\
+        r &\leftarrow \frac{Q_{this} - \psi D P_{this}}{1 - \xi \psi P_{this}}
+        \end{split}
+    \end{equation}
+    $$
+       
+    **Opposite-Side Price Targeting**
+    
+    Similarly, by changing our position on $this$ side, we can also change $P_{that}$ to a desired level $P^{*}_{that}$.
+    The response of the market is the opposite to the same-side case, so if $P_{that} < P^{*}_{that}$, we must refund
+    a value $r$ to increase the price, while if $P^{*}_{that} < P_{that}$, we must bid a value $b$ to decrease the
+    price, as follows:
+    
+    $$
+    \begin{equation}
+        \begin{split}
+        r &\leftarrow \frac{\psi D P_{that} - Q_{that}}{\xi \psi P_{that}} \\
+        b &\leftarrow \frac{Q_{that} - \psi D P_{that}}{\psi P_{that}}
+        \end{split}
+    \end{equation}
+    $$
+    
+    Note that all of these values can be negative if the desired price is in the wrong direction relative to the way
+    it will move given the side of the market we're looking at and whether we're bidding or refunding. Since we
+    cannot perform negative bids or refunds, the function returns 0 instead of throwing an exception or returning
+    negative numbers. 
+
+??? example "Details"
+
+    **Signature**
+
+    `bidForPrice(enum IBinaryOptionMarket.Side bidSide, enum IBinaryOptionMarket.Side priceSide, uint256 price, bool refund)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `bidsOf`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L327)</sub>
@@ -506,6 +614,28 @@ Returns the current [phase](#phase) the market is in.
     **Signature**
 
     `phase()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `pricesAfterBid`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L271)</sub>
+
+Computes the resulting market prices if a given bid or refund is made. If a refund greater than or equal to the total
+bids on that side of the market is requested, the transaction will revert. See [`bidForPrice`](#bidforprice)
+for details of this computation.
+
+??? example "Details"
+
+    **Signature**
+
+    `pricesAfterBid(enum IBinaryOptionMarket.Side side, uint256 value, bool refund)`
 
     **Visibility**
 
@@ -988,6 +1118,45 @@ See [`claimableBy`](#claimableby).
 
     `view`
 
+### `_computePrices`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L252)</sub>
+
+Computes the market prices from the long and short bid totals, and the funds deposited in the contract.
+These prices are computed approximately as follows:
+
+    longPrice  = longBids  / (feeMultiplier * deposited)
+    shortPrice = shortBids / (feeMultiplier * deposited)
+
+Interpreting [`/`](/contracts/source/libraries/SafeDecimalMath.md#dividedecimalround) and [`*`](/contracts/source/libraries/SafeDecimalMath.md#multiplydecimalround)
+as [fixed point math operators (with rounding)](/contracts/source/libraries/SafeDecimalMath.md).
+
+Note that the denominator `_feeMultiplier * deposited` is the total value of options awarded to each side of the market,
+and `deposited` is equal to `longBids + shortBids + refundFeesCollected`.
+
+If either the long or short bids are zero, then the transaction is reverted, as
+this would lead to a zero price, and hence divisions-by-zero when computing claimable option
+quantities. This means that the initial bids cannot both be zero, nor can the entire balance
+on either side of the market be refunded.
+
+??? example "Details"
+
+    **Signature**
+
+    `_computePrices(uint256 longBids, uint256 shortBids, uint256 _deposited)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., Bids must be nonzero)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L253)
+
 ### `_destructible`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L168)</sub>
@@ -1248,6 +1417,26 @@ Retrieves the [cached](MixinResolver.md) address of the sUSD [`Synth`](Synth.md)
 
     `view`
 
+### `_subToZero`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L384)</sub>
+
+Returns the difference of two numbers, or zero if the difference is negative.
+
+??? example "Details"
+
+    **Signature**
+
+    `_subToZero(uint256 a, uint256 b)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `pure`
+
 ### `_systemStatus`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L138)</sub>
@@ -1293,23 +1482,7 @@ See [`totalBids`](#totalbids).
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L392)</sub>
 
 Updates the current [prices](#prices) from the long and short bid quantities, and the total deposited
-value in the contract.
-
-The prices are computed approximately as follows:
-
-    longPrice  = longBids  / (feeMultiplier * deposited)
-    shortPrice = shortBids / (feeMultiplier * deposited)
-
-Interpreting [`/`](/contracts/source/libraries/SafeDecimalMath.md#dividedecimalround) and [`*`](/contracts/source/libraries/SafeDecimalMath.md#multiplydecimalround)
-as [fixed point math operators (with rounding)](/contracts/source/libraries/SafeDecimalMath.md).
-
-Note that the denominator `feeMultiplier * deposited` is the total value of options awarded to each side of the market,
-and `deposited` is equal to `longBids + shortBids + refundFeesCollected`.
-
-If either the long or short bids are zero, then the transaction is reverted, as
-this would lead to a zero price, and hence divisions-by-zero when computing claimable option
-quantities. This means that the initial bids cannot both be zero, nor can the entire balance
-on either side of the market be refunded.
+value in the contract. See [`_computePrices`](#_computeprices) for details.
 
 ??? example "Details"
 
