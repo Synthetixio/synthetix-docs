@@ -2,7 +2,7 @@ Here is the list of all contracts within the current Synthetix system.
 
 **Version**: [v2.22.4](https://github.com/Synthetixio/synthetix/tree/v2.22.4)
 
-**Docs Built**: Jun 5, 2020
+**Docs Built**: Jun 6, 2020
 
 !!! info "Naming Conventions"
 

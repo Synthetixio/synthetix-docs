@@ -32,13 +32,11 @@ graph TD
 
 ### Related Contracts
 
-```mermaid
-graph TD
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarketFactory[BinaryOptionMarketFactory]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarket[BinaryOptionMarket]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> AddressResolver[AddressResolver]
-```
+    graph TD
+        BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
+        BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarketFactory[BinaryOptionMarketFactory]
+        BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarket[BinaryOptionMarket]
+        BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> AddressResolver[AddressResolver]
 
 ??? example "Details"
 
@@ -50,9 +48,9 @@ graph TD
 
 ### `constructor`
 
-The constructor simply initialises the inherited classes.
-
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L24)</sub>
+
+The constructor simply initialises the inherited classes.
 
 ??? example "Details"
 
@@ -72,11 +70,11 @@ The constructor simply initialises the inherited classes.
 
 ### `_manager`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L38)</sub>
+
 Returns the cached address of the
 [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md) instance
 from the [`AddressResolver`](AddressResolver.md).
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -96,6 +94,8 @@ from the [`AddressResolver`](AddressResolver.md).
 
 ### `createMarket`
 
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L45)</sub>
+
 Simply creates a new [`BinaryOptionMarket`](BinaryOptionMarket.md) instance
 with the given parameters.
 
@@ -106,8 +106,6 @@ See that function's documentation for further details.
 
 Initial timestamps should be provided in the order `[biddingEnd, maturity, destruction]`, initial bids as
 `[longBid, shortBid]`, and fees as `[poolFee, creatorFee, refundFee]`.
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarketFactory.sol#L45)</sub>
 
 ??? example "Details"
 

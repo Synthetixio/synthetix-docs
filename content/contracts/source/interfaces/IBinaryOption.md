@@ -26,7 +26,7 @@
 
 ### `claimableBy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IBinaryOption.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IBinaryOption.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -60,24 +60,6 @@
 
     `view`
 
-### `price`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IBinaryOption.sol#L13)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `price()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `totalBids`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IBinaryOption.sol#L11)</sub>
@@ -98,7 +80,7 @@
 
 ### `totalClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IBinaryOption.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IBinaryOption.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -116,7 +98,7 @@
 
 ### `totalExercisable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IBinaryOption.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/interfaces/IBinaryOption.sol#L15)</sub>
 
 ??? example "Details"
 
