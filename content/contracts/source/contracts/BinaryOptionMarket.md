@@ -375,7 +375,7 @@ Returns the [option balances](BinaryOption.md#balanceof) of the message sender o
 
     `view`
 
-### `bidForPrice`
+### `bidOrRefundForPrice`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L288)</sub>
 
@@ -383,8 +383,8 @@ Produces the size of bid or refund necessary on a particular side of the market 
 or the other to a desired level.
 
 For example, to move the long price to $0.8$ by bidding on the long side, one would have to bid
-`bidForPrice(Side.Long, Side.Long, 0.8 * UNIT, false)`. On the other hand, to move the short price
-to $0.6$ by refunding on the long side, one would need to refund `bidForPrice(Side.Long, Side.Short, 0.6 * UNIT, true)`.
+`bidOrRefundForPrice(Side.Long, Side.Long, 0.8 * UNIT, false)`. On the other hand, to move the short price
+to $0.6$ by refunding on the long side, one would need to refund `bidOrRefundForPrice(Side.Long, Side.Short, 0.6 * UNIT, true)`.
 
 If the result would be negative, because the desired operation can only move the price in the opposite direction
 from the target, the function returns 0.
@@ -473,7 +473,7 @@ from the target, the function returns 0.
 
     **Signature**
 
-    `bidForPrice(enum IBinaryOptionMarket.Side bidSide, enum IBinaryOptionMarket.Side priceSide, uint256 price, bool refund)`
+    `bidOrRefundForPrice(enum IBinaryOptionMarket.Side bidSide, enum IBinaryOptionMarket.Side priceSide, uint256 price, bool refund)`
 
     **Visibility**
 
@@ -623,19 +623,19 @@ Returns the current [phase](#phase) the market is in.
 
     `view`
 
-### `pricesAfterBid`
+### `pricesAfterBidOrRefund`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/BinaryOptionMarket.sol#L271)</sub>
 
 Computes the resulting market prices if a given bid or refund is made. If a refund greater than or equal to the total
-bids on that side of the market is requested, the transaction will revert. See [`bidForPrice`](#bidforprice)
+bids on that side of the market is requested, the transaction will revert. See [`bidOrRefundForPrice`](#bidOrRefundForPrice)
 for details of this computation.
 
 ??? example "Details"
 
     **Signature**
 
-    `pricesAfterBid(enum IBinaryOptionMarket.Side side, uint256 value, bool refund)`
+    `pricesAfterBidOrRefund(enum IBinaryOptionMarket.Side side, uint256 value, bool refund)`
 
     **Visibility**
 
