@@ -13,13 +13,13 @@ to the strike price, then the options on the long side pay out 1 sUSD each.
 This contract was proposed as part of [SIP-53](https://sips.synthetix.io/sips/sip-53). Further information on the
 mechanism and its motivation can be found in the SIP.
 
-### Market Lifecycle
+**Market Lifecycle**
 
 A market goes through four major phases in its life. The phase a market is currently in
 can be queried with the [`phase()`](#phase) function, and the time stamps at which it transitions
 between these phases is held in the [`times`](#times) public variable.
 
-#### Market Creation
+**Market Creation**
 
 A market can be created by anyone, as long as they can provide enough initial capital to [ensure
 the market is liquid](#capitalrequirement). Upon creation, markets will be
@@ -34,7 +34,7 @@ market parameters that attract the maximum demand over the lifetime of the marke
 Binary option markets are created by calls to the [`BinaryOptionMarketManager.createMarket`](BinaryOptionMarketManager.md#createmarket)
 function: see the documentation for that function for more details.
 
-#### Bidding
+**Bidding**
 
 During the bidding phase, the total supply of options and option prices are established.
 During this period, users can bid on the long or short side of the market and refund those bids.
@@ -51,7 +51,7 @@ fraction of bids on that side relative to all bids.
 | [`prices`](#prices) | The current prices on the market. |
 | [`oracleDetails`](#oracledetails) | The basic parameters of the market, including the underlying asset, strike price, and maturity date. |
 
-#### Trading
+**Trading**
 
 During the trading phase, bids and refunds are disabled and the final option prices are fixed, so options can be claimed and exchanged as ERC20 tokens.
 
@@ -62,7 +62,7 @@ During the trading phase, bids and refunds are disabled and the final option pri
 | [`balancesOf`](#balancesof) / [`totalSupplies`](#totalsupplies) | Returns a user's actual option balances. |
 | [`BinaryOption` ERC20 functions](BinaryOption.md) | Users can freely transfer any claimed options as ERC20 tokens. |
 
-#### Maturity
+**Maturity**
 
 After the end of the trading period, the market's maturity condition is evaluated and options can be exercised
 according to the result. The maturity condition is ultimately resolved depending on the result of the
@@ -76,7 +76,7 @@ according to the result. The maturity condition is ultimately resolved depending
 | [`result`](#result) | Reports which side pays out, or which side would pay out if an unresolved market were resolved immediately. |
 | [`exerciseOptions`](#exerciseoptions) | Transfers the payout owed to a user from the options they hold. |
 
-#### Destruction
+**Destruction**
 
 After a period the market can be destroyed by a call to
 [`BinaryOptionMarketManager.destroyMarket`](BinaryOptionMarketManager.md#destroymarket).
@@ -141,8 +141,6 @@ graph TD
 ### `Phase`
 
 The phases the market proceeds through.
-
-**Values**
 
 | Value      | Description |
 | ---------- | ----------- |
