@@ -40,7 +40,7 @@ graph TD
 
 ### Related Contracts
 
-- ?
+- [MultiCollateralSynth](MultiCollateralSynth.md)
 
 ## Structs
 
