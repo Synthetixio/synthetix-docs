@@ -10,6 +10,29 @@ Here is a list of Synthetix Integrations both on and offchain. For projects wish
 
 [Uniswap](https://uniswap.io/) is a decentralised exchange for exchanging ETH and ERC20 tokens. Synthetix integrates with it to deepen the Synthetix ecosystem's liquidity, and it acts as an on-ramp/off-ramp for the Synth market. Users who provide liquidity to the [ETH/sETH pool](https://uniswap.exchange/swap/0x42456D7084eacF4083f1140d3229471bbA2949A8) are provided with staking rewards as [part of the Synthetix protocol](https://sips.synthetix.io/sips/sip-8). This is discussed further [here](https://blog.synthetix.io/uniswap-seth-pool-incentives/), [here](https://blog.synthetix.io/snx-arbitrage-pool/), and [here](https://blog.synthetix.io/new-uniswap-seth-lp-reward-system/).
 
+<table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Contract</th><th>Source</th><th>Audits</th><th>Disclosures</th><th>Security Contact</th></tr>
+              <tr>
+                <td>UNI-V2 sXAU/USDC exchange</td>
+                <td><a target="_blank" href="https://uniswap.org">uniswap.org</a></td>
+                <td><a target="_blank" href="https://uniswap.exchange/swap/">uniswap.exchange/swap</a></td>
+                <td>
+                    <a target="_blank" href="https://blog.synthetix.io/uniswap-v2-sxau-trial/">Uniswap v2 sXAU Trial</a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://etherscan.io/address/0x34a0216c5057bc18e5d34d4405284564efd759b2">sXAU/USDC exchange</a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://github.com/Uniswap/uniswap-v2-core">uniswap-v2-core</a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://uniswap.org/audit.html">Uniswap V2 Audit Report</a>
+                <td><a target="_blank" href="https://uniswap.org/bug-bounty/">Bug Bounty</a>
+                <td>
+                    <a target="_blank" href="mailto:contact@uniswap.org">contact@uniswap.org</a>
+                </td>
+              </tr>
+</table>
+
 ## KyberSwap
 
 Liquidity is further deepened by the integration of SNX and sUSD with [KyberSwap](https://kyberswap.com/swap/eth-snx), which is built on the [Kyber Network Protocol](https://kyber.network/). An example use case is described [here](https://blog.synthetix.io/snx-liquidity-has-been-added-to-kyberswap/).
@@ -21,7 +44,7 @@ Curve allows users (and smart contracts like [1inch](https://1inch.exchange/), [
 
 <table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Contract</th><th>Source</th><th>Audits</th><th>Disclosures</th><th>Security Contact</th></tr>
               <tr>
-                <td>Curve Pool</td>
+                <td>Curve sUSD Pool</td>
                 <td><a target="_blank" href="https://www.curve.fi/">curve.fi</a></td>
                 <td><a target="_blank" href="https://beta.curve.fi/">beta.curve.fi</a></td>
                 <td>N/A</td>
