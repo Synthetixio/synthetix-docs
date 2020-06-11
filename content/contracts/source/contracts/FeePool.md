@@ -2,6 +2,15 @@
 
 ## Description
 
+FeePools primary purpose is the distribution of synthetix.exchange fees in sUSD and SNX staking rewards to SNX minters aka stakers via the `claimFees()` function.
+
+[closeCurrentFeePeriod](#closecurrentfeeperiod) is an external public function anyone can call to close the current feeperiod after the `feePeriodDuration has passed. There is no incentive behind this function call as it is incentive enough that SNX Stakers want to be able to claim their fees and rewards. There is also a [Fee Period Closing service](https://etherscan.io/address/0xfee056f4d9d63a63d6cf16707d49ffae7ff3ff01) that synthetix contributors opperate that will automatically call [closeCurrentFeePeriod](#closecurrentfeeperiod) when the fee period duration has passed.
+
+The FeePool currently maintains 2 [feeperiod](##feeperiod) structs where the current open period for accumulating fees and rewards is `recentFeePeriods[0]` and the previos period which has been cloased and now available for SNX Stakers to claim their fees and rewards being `recentFeePeriods[1]`
+
+Since [SIP 56: Differential Fees](https://sips.synthetix.io/sips/sip-56) it now supports the API for storing and reading the Synth Exchange Fee Rates per synth which are defined via SCCP's. The current eschange fee rates implemented in [sccp-24](https://sips.synthetix.io/sccp/sccp-24)
+
+
 **Source:** [contracts/FeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/FeePool.sol)
 
 ## Architecture
