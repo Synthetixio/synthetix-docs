@@ -16,8 +16,6 @@ For example, if Alice locks 150 ETH as collateral, she can borrow 100 sETH. Even
 
 The final few details you should know are that the minting fee and interest rate paid by ETH stakers is also paid to SNX stakers and the minimum position size is 1 ETH. At the end of the three month trial period, all outstanding loans must be paid back. There will be a one week grace period, after which anyone will be able to send sETH to close the position and claim the outstanding ETH.
 
-
-
 **Source:** [contracts/EtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/EtherCollateral.sol)
 
 ## Architecture
@@ -48,14 +46,14 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/EtherCollateral.sol#L74)</sub>
 
-| Field              | Type      | Description                         |
-| ------------------ | --------- | ----------------------------------- |
-| `account`          | `address` | Address of the loan creator         |
-| `collateralAmount` | `uint256` | Amount of ETH locked as collateral  |
-| `loanAmount`       | `uint256` | Amount of sETH issued for the loan  |
-| `timeCreated`      | `uint256` | Timestamp of the loan creation      |
-| `loanID`           | `uint256` | Unique ID number of the loan        |
-| `timeClosed`       | `uint256` | Timestamp of when the loan is closed|
+| Field              | Type      | Description                          |
+| ------------------ | --------- | ------------------------------------ |
+| `account`          | `address` | Address of the loan creator          |
+| `collateralAmount` | `uint256` | Amount of ETH locked as collateral   |
+| `loanAmount`       | `uint256` | Amount of sETH issued for the loan   |
+| `timeCreated`      | `uint256` | Timestamp of the loan creation       |
+| `loanID`           | `uint256` | Unique ID number of the loan         |
+| `timeClosed`       | `uint256` | Timestamp of when the loan is closed |
 
 ## Variables
 

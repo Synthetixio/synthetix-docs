@@ -12,6 +12,26 @@ Here is a list of Synthetix Integrations both on and offchain. For projects wish
 
 <table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Contract</th><th>Source</th><th>Audits</th><th>Disclosures</th><th>Security Contact</th></tr>
               <tr>
+                <td>UNI-V1 sETH/ETH exchange</td>
+                <td><a target="_blank" href="https://uniswap.org">uniswap.org</a></td>
+                <td><a target="_blank" href="https://uniswap.exchange/swap/">uniswap.exchange/swap</a></td>
+                <td>
+                    <a target="_blank" href="https://defirate.com/synthetix-liquidity-incentive-tutorial/">Uniswap LP tutorial</a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://etherscan.io/address/">sETH/ETH exchange contract</a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://github.com/Uniswap/uniswap-v1">uniswap-v1</a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://github.com/ConsenSys/Uniswap-audit-report-2018-12">Uniswap V1 Audit Report</a>
+                <td><a target="_blank" href="https://uniswap.org/bug-bounty/">Bug Bounty</a>
+                <td>
+                    <a target="_blank" href="mailto:contact@uniswap.org">contact@uniswap.org</a>
+                </td>
+              </tr>
+              <tr>
                 <td>UNI-V2 sXAU/USDC exchange</td>
                 <td><a target="_blank" href="https://uniswap.org">uniswap.org</a></td>
                 <td><a target="_blank" href="https://uniswap.exchange/swap/">uniswap.exchange/swap</a></td>

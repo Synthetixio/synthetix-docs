@@ -15,7 +15,7 @@ In Synthetix this was intended to allow mobile or hot wallets such as metamask t
 
 In principle it is generic, as the approver just marks a number of delegates as authorised to perform some action on their behalf, with no reference to what that action is, or who the delegates are.
 
-[User guide to delegation]{https://blog.synthetix.io/a-guide-to-delegation/}
+[User guide to delegation](https://blog.synthetix.io/a-guide-to-delegation/)
 
 **Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol)
 

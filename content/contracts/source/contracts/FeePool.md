@@ -10,7 +10,6 @@ The FeePool currently maintains 2 [feeperiod](##feeperiod) structs where the cur
 
 Since [SIP 56: Differential Fees](https://sips.synthetix.io/sips/sip-56) it now supports the API for storing and reading the Synth Exchange Fee Rates per synth which are defined via SCCP's. The current eschange fee rates implemented in [sccp-24](https://sips.synthetix.io/sccp/sccp-24)
 
-
 **Source:** [contracts/FeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/FeePool.sol)
 
 ## Architecture

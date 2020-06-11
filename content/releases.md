@@ -4,7 +4,7 @@
 
 # Altair (v2.22.4)
 
-**Published**: Jun 4, 2020
+**Published**: Jun 5, 2020
 
 **Codebase**: [v2.22.4](https://github.com/Synthetixio/synthetix/tree/v2.22.4)
 
@@ -18,7 +18,7 @@
 
 # Hadar (v2.21.6)
 
-**Published**: Mar 30, 2020
+**Published**: Mar 31, 2020
 
 **Codebase**: [v2.21.6](https://github.com/Synthetixio/synthetix/tree/v2.21.6)
 
@@ -40,7 +40,7 @@
 
 # Betelgeuse (v2.20.0)
 
-**Published**: Feb 27, 2020
+**Published**: Feb 28, 2020
 
 **Codebase**: [v2.20.0](https://github.com/Synthetixio/synthetix/tree/v2.20.0)
 
@@ -75,7 +75,7 @@
 
 # Procyon (v2.17.6)
 
-**Published**: Dec 17, 2019
+**Published**: Dec 18, 2019
 
 **Codebase**: [v2.17.6](https://github.com/Synthetixio/synthetix/tree/v2.17.6)
 
@@ -89,7 +89,7 @@
 
 # Capella (v2.16.4)
 
-**Published**: Dec 11, 2019
+**Published**: Dec 12, 2019
 
 **Codebase**: [v2.16.4](https://github.com/Synthetixio/synthetix/tree/v2.16.4)
 
@@ -102,7 +102,7 @@
 
 # DappMaintenance contract (v2.15.0)
 
-**Published**: Dec 8, 2019
+**Published**: Dec 9, 2019
 
 **Codebase**: [v2.15.0](https://github.com/Synthetixio/synthetix/tree/v2.15.0)
 
@@ -112,7 +112,7 @@
 
 # Vega (v2.14.0)
 
-**Published**: Nov 26, 2019
+**Published**: Nov 27, 2019
 
 **Codebase**: [v2.14.0](https://github.com/Synthetixio/synthetix/tree/v2.14.0)
 
@@ -124,7 +124,7 @@
 
 # Arcturus (v2.13.1)
 
-**Published**: Nov 20, 2019
+**Published**: Nov 21, 2019
 
 **Codebase**: [v2.13.1](https://github.com/Synthetixio/synthetix/tree/v2.13.1)
 
@@ -134,7 +134,7 @@
 
 # Rigil (v2.12.2)
 
-**Published**: Nov 7, 2019
+**Published**: Nov 8, 2019
 
 **Codebase**: [v2.12.2](https://github.com/Synthetixio/synthetix/tree/v2.12.2)
 
@@ -151,7 +151,7 @@
 
 # Canopus (v2.11.2)
 
-**Published**: Oct 3, 2019
+**Published**: Oct 4, 2019
 
 **Codebase**: [v2.11.2](https://github.com/Synthetixio/synthetix/tree/v2.11.2)
 
@@ -179,7 +179,7 @@
 
 # Synthetix npm module (v2.1.9)
 
-**Published**: Apr 4, 2019
+**Published**: Apr 5, 2019
 
 **Codebase**: [v2.1.9](https://github.com/Synthetixio/synthetix/tree/v2.1.9)
 
@@ -189,7 +189,7 @@
 
 # 10 new Synths and Synthetix upgrade (v2.1.0)
 
-**Published**: Feb 25, 2019
+**Published**: Feb 26, 2019
 
 **Codebase**: [v2.1.0](https://github.com/Synthetixio/synthetix/tree/v2.1.0)
 
@@ -203,7 +203,7 @@
 
 # Synthetix crypto-backed synthetic asset platform (v2.0.0)
 
-**Published**: Dec 17, 2018
+**Published**: Dec 18, 2018
 
 **Codebase**: [v2.0.0](https://github.com/Synthetixio/synthetix/tree/v2.0.0)
 
@@ -213,7 +213,7 @@
 
 # nUSD System A - Maintenance Patch 1 (v1.0.1)
 
-**Published**: Aug 6, 2018
+**Published**: Aug 7, 2018
 
 **Codebase**: [v1.0.1](https://github.com/Synthetixio/synthetix/tree/v1.0.1)
 
@@ -223,7 +223,7 @@
 
 # nUSD System A - Foundation Static Issuance (v1.0.0)
 
-**Published**: Aug 6, 2018
+**Published**: Aug 7, 2018
 
 **Codebase**: [v1.0.0](https://github.com/Synthetixio/synthetix/tree/v1.0.0)
 
@@ -233,7 +233,7 @@
 
 # Ether-Backed USD Nomins (v0.1.0)
 
-**Published**: Aug 6, 2018
+**Published**: Aug 7, 2018
 
 **Codebase**: [v0.1.0](https://github.com/Synthetixio/synthetix/tree/v0.1.0)
 
