@@ -2,9 +2,19 @@
 
 ## Description
 
-!!! Info "Documentation Pending"
+Implemented in [SIP 35: Skinny Ether Collateral](https://sips.synthetix.io/sips/sip-35)
 
-    This contract documentation is missing some descriptions.
+Beyond the fact that many people in the Ethereum community asked for ETH to be introduced as collateral, there are many positive implications for adding it to the system. Firstly, it makes it easier for a newcomer to start trading on Synthetix.Exchange. If they have ETH, they can try it out without selling their ETH for Synths.
+
+Adding Ether as collateral also contributes to the Synth supply, and thus trading fees, while diversifying the collateral. This increases the system’s scalability while also protecting it from potential SNX price shocks, without diluting the value of SNX.
+
+This was an understandable concern from SNX stakers once the community began discussing adding ETH — that it would need to be implemented in a way that didn’t dilute the value of SNX. in this model, ETH stakers don’t receive fees or rewards as they take no risk for the debt pool.
+
+By locking collateral, ETH stakers will create a debt they need to repay if they want to withdraw their ETH and leave the system. This is similar to the debt that SNX stakers create when they lock their SNX as collateral, but the difference is that ETH stakers will not take on risk of debt pool fluctuations. In other words, ETH stakers are not participating in the ‘pooled debt’ aspect of the system — their debt will be denominated in ETH, and will be the same when they leave as when they enter.
+
+For example, if Alice locks 150 ETH as collateral, she can borrow 100 sETH. Even if she uses that sETH to make a series of trades that allow her to increase that 100 sETH to 200 sETH, she only needs to pay back 100 sETH to unstake her 150 ETH. That profit is instead added to the SNX stakers’ pooled debt (see page 2 of the litepaper for more details). Of course, because they do not take on the same risk as SNX stakers, ETH stakers do not receive sUSD trading fees or SNX staking rewards.
+
+The final few details you should know are that the minting fee and interest rate paid by ETH stakers is also paid to SNX stakers and the minimum position size is 1 ETH. At the end of the three month trial period, all outstanding loans must be paid back. There will be a one week grace period, after which anyone will be able to send sETH to close the position and claim the outstanding ETH.
 
 **Source:** [contracts/EtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/EtherCollateral.sol)
 
@@ -28,7 +38,7 @@ graph TD
 
 ### Related Contracts
 
-- ?
+- [MultiCollateralSynth](MultiCollateralSynth.md)
 
 ## Structs
 
@@ -36,14 +46,14 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/EtherCollateral.sol#L74)</sub>
 
-| Field              | Type      | Description |
-| ------------------ | --------- | ----------- |
-| `account`          | `address` | TBA         |
-| `collateralAmount` | `uint256` | TBA         |
-| `loanAmount`       | `uint256` | TBA         |
-| `timeCreated`      | `uint256` | TBA         |
-| `loanID`           | `uint256` | TBA         |
-| `timeClosed`       | `uint256` | TBA         |
+| Field              | Type      | Description                          |
+| ------------------ | --------- | ------------------------------------ |
+| `account`          | `address` | Address of the loan creator          |
+| `collateralAmount` | `uint256` | Amount of ETH locked as collateral   |
+| `loanAmount`       | `uint256` | Amount of sETH issued for the loan   |
+| `timeCreated`      | `uint256` | Timestamp of the loan creation       |
+| `loanID`           | `uint256` | Unique ID number of the loan         |
+| `timeClosed`       | `uint256` | Timestamp of when the loan is closed |
 
 ## Variables
 

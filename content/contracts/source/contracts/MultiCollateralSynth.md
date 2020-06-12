@@ -2,9 +2,12 @@
 
 ## Description
 
-!!! Info "Documentation Pending"
+Implemented in [SIP 35: Skinny Ether Collateral](https://sips.synthetix.io/sips/sip-35)
 
-    This contract documentation is missing some descriptions.
+This contract was required by [EtherCollateral](EtherCollateral.md) to allow it the ability to issue the MultiCollateralSynth in this case sETH.
+
+It could be used where there a multiple Collateral contracts.
+i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contract for issuing sBTC then those synths would need to inherit MultiCollateralSynth and then have their corresponding Collateral Contract set via the constructor argument multiCollateralKey
 
 **Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/MultiCollateralSynth.sol)
 
@@ -24,6 +27,10 @@ graph TD
     MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
+
+### Related Contracts
+
+- [EtherCollateral](EtherCollateral.md)
 
 ## Variables
 

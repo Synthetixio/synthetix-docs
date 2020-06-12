@@ -2,13 +2,20 @@
 
 ## Description
 
-!!! Warning "Needs Update"
+Implemented in [SIP 10: Upgrade Delegate Powers](https://sips.synthetix.io/sips/sip-10) & [SIP 14: Allow delegation of Synthetix Exchange function to another address](https://sips.synthetix.io/sips/sip-14)
 
-    This contract documentation is out of date and requires updating
+This contract is used by [`FeePool`](FeePool.md), [`Synthetix`](Synthetix.md), to enable SNX holders (the delegator) to permit other addresses (the delegate) to perform actions on their befhalf including;
 
-This contract is used by the [`FeePool`](FeePool.md) to enable users to permit other addresses to withdraw fees for them. In Synthetix this was intended to allow mobile wallets to claim fees for a cold storage wallet.
+1. Claim fees & rewards for them,
+2. Burn Synths on behalf or Burn to Target c-ratio on behalf
+3. Issue or IssueMax Synths on behalf
+4. Exchange Synths
+
+In Synthetix this was intended to allow mobile or hot wallets such as metamask to claim fees for a cold storage wallet which can be done via the [delegatr mobile dapp](https://delegatr.synthetix.io/)
 
 In principle it is generic, as the approver just marks a number of delegates as authorised to perform some action on their behalf, with no reference to what that action is, or who the delegates are.
+
+[User guide to delegation](https://blog.synthetix.io/a-guide-to-delegation/)
 
 **Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/DelegateApprovals.sol)
 
@@ -30,7 +37,9 @@ graph TD
 
 ??? example "Details"
 
-    * [`FeePool`](FeePool.md): This contract allows the fee pool to delegate fee withdrawal approvals.
+    * [`FeePool`](FeePool.md): This contract allows the fee pool to delegate fee withdrawals.
+
+    * [`Synthetix`](Synthetix.md): This contract allows Synthetix to delegate issuing Synths, Burning Synths and exchanging Synths.
 
 ## Constants
 
