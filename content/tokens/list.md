@@ -1,4 +1,4 @@
-# Tokens
+# Token List
 
 !!! Tip "Decentralizing the remaining price feeds"
 

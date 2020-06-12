@@ -26,7 +26,7 @@ nav:
       - '': releases.md
   - Tokens:
       - Home: tokens/index.md
-      - Categories: tokens/categories.md
+      - List: tokens/list.md
   - Integrations:
       - Home: integrations/index.md
       - Integration Guide: integrations/guide.md
