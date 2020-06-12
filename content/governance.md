@@ -18,9 +18,9 @@ SCCPs live in the same repository and website as SIPs do, but have a [slightly d
 
 ## Synthetix grantsDAO
 
-The Synthetix grantsDAO was set up to fund community grant proposals for such purposes as infrastructure and promotional resources. The DAO consists of 3 community members and 2 core contributors, and there is an interface available for the public at [snxgrants.io](https://snxgrants.io/). 
+The Synthetix grantsDAO was set up to fund community grant proposals for such purposes as infrastructure and promotional resources. The DAO consists of 3 community members and 2 core contributors, and there is an interface available for the public at [snxgrants.io](https://snxgrants.io/).
 
-Grants are intended for individuals or teams who support Synthetix and are willing to contribute to the project in some way. There is a maximum of `50,000 SNX` per grant, though most are expected to be much smaller projects than this, and proposals can be submitted as a PR on the [snx-grants-dao repo](https://github.com/Synthetixio/snx-grants-dao/blob/master/proposals/proposal-template.md). The intention behind the grantsDAO is to reward people who already hold SNX and help further the ecosystem in some way. 
+Grants are intended for individuals or teams who support Synthetix and are willing to contribute to the project in some way. There is a maximum of `50,000 SNX` per grant, though most are expected to be much smaller projects than this, and proposals can be submitted as a PR on the [snx-grants-dao repo](https://github.com/Synthetixio/snx-grants-dao/blob/master/proposals/proposal-template.md). The intention behind the grantsDAO is to reward people who already hold SNX and help further the ecosystem in some way.
 
 It's recommended that before you go to the trouble of submitting a proposal to the grantsDAO, that you either gauge community sentiment around the utility of your proposed addition to the ecosystem, or contact a grantsDAO member to discuss it directly. This can be done through the [Synthetix Discord](https://discord.com/invite/AEdUHzt) in the #grants-dao channel.
 
