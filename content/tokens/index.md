@@ -20,6 +20,10 @@ Synths are synthetic assets, minted against the value of cryptoassets staked as 
 
 Forex Synths track the price of forex currencies via price feeds supplied by Chainlink's oracle network of distributed node operators.
 
+### Commodity
+
+Commodity Synths track the price of commodities via price feeds supplied by Chainlink's oracle network of distributed node operators.
+
 ### Crypto
 
 Crypto Synths track the price of cryptocurrencies via price feeds currently supplied by a Synthetix oracle. Crypto Synths will soon be transitioned to use Chainlink's oracle network.
