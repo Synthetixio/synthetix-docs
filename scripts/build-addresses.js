@@ -3,9 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 const snx = require('synthetix');
-const moment = require('moment');
 
-const { version, date } = require('./utils');
+const { version } = require('./utils');
 
 console.log('Building addresses.md');
 
@@ -14,9 +13,7 @@ const generateAddresses = () => {
 	const outputPath = path.join(__dirname, '..', 'content', 'addresses.md');
 	const currentVersion = 'v' + version();
 
-	let headerContent = `Here is the list of all contracts within the current Synthetix system.\n\n**Version**: [${currentVersion}](https://github.com/Synthetixio/synthetix/tree/${currentVersion})\n\n**Docs Built**: ${moment(
-		date(),
-	).format('MMM D, YYYY')}\n\n`;
+	let headerContent = `Here is the list of all contracts within the current Synthetix system.\n\n**Version**: [${currentVersion}](https://github.com/Synthetixio/synthetix/tree/${currentVersion})\n\n`;
 
 	headerContent +=
 		'!!! info "Naming Conventions"\n\n    Within the developer ecosystem, the names of Synthetix contracts are referred to by their `source` Solidity file.' +

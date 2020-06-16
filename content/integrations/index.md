@@ -57,7 +57,6 @@ Liquidity is further deepened by the integration of SNX and sUSD with [KyberSwap
               </tr>
 </table>
 
-
 ## Curve
 
 Curve is an exchange liquidity pool on Ethereum (like [Uniswap](https://uniswap.exchange/swap)) designed for (1) extremely efficient stablecoin trading (2) low risk, supplemental fee income for liquidity providers, without an opportunity cost.
@@ -152,6 +151,7 @@ Balancer is based on a particular N-dimensional surface which defines a cost fun
              </tr></table>
 
 ## More Integrations to Document
+
 - DeFi Zap
 - DefiSnap
 - SNX LINK

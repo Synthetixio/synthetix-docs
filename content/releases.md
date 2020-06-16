@@ -179,7 +179,7 @@
 
 # Synthetix npm module (v2.1.9)
 
-**Published**: Apr 5, 2019
+**Published**: Apr 4, 2019
 
 **Codebase**: [v2.1.9](https://github.com/Synthetixio/synthetix/tree/v2.1.9)
 
