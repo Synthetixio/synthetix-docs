@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 	env: {
 		es6: true,
@@ -7,11 +9,11 @@ module.exports = {
 	extends: 'eslint:recommended',
 	plugins: ['import'],
 	parserOptions: {
-		ecmaVersion: 2017,
+		ecmaVersion: 9,
 	},
 	rules: {
 		'no-console': 'off',
-		indent: ['error', 'tab'],
+		indent: ['error', 'tab', { ignoredNodes: ['TemplateLiteral > *'], SwitchCase: 1 }],
 		'prettier/prettier': 'off',
 		'import/no-unresolved': ['error', { commonjs: true }],
 		'linebreak-style': ['error', 'unix'],

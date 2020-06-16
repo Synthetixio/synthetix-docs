@@ -17,9 +17,11 @@ console.log('Building releases page');
 		.filter(({ prerelease }) => !prerelease)
 		.map(({ name, tag_name, body, created_at }) => {
 			const published = new Date(created_at);
-			return `# ${name} (${tag_name})\n\n**Published**: ${moment(published).format(
-				'MMM D, YYYY',
-			)}\n\n**Codebase**: [${tag_name}](https://github.com/Synthetixio/synthetix/tree/${tag_name})\n\n${
+			return `# ${name} (${tag_name})\n\n**Published**: ${moment
+				.utc(published)
+				.format(
+					'MMM D, YYYY',
+				)}\n\n**Codebase**: [${tag_name}](https://github.com/Synthetixio/synthetix/tree/${tag_name})\n\n${
 				body ? '> ' + body : ''
 			}\n\n-----\n`;
 		})
@@ -28,7 +30,7 @@ console.log('Building releases page');
 	// readmes.forEach(([repo, path, content]) =>
 	fs.writeFileSync(
 		path.join(__dirname, '..', 'content', 'releases.md'),
-		`!!! tip "Notice"\n\t\tImported from https://github.com/Synthetixio/synthetix/releases\n\n${content}`,
+		`!!! tip "Notice"\n\n    Imported from https://github.com/Synthetixio/synthetix/releases\n\n${content}`,
 	);
 	// );
 })();

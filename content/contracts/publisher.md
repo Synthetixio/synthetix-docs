@@ -1,7 +1,8 @@
 !!! info "Notice"
-		This details the `publish` script in the synthetix repository for building, deploying and verifying contracts.
 
-		Imported from https://github.com/Synthetixio/synthetix/tree/master/publish
+    This details the `publish` script in the synthetix repository for building, deploying and verifying contracts.
+
+    Imported from https://github.com/Synthetixio/synthetix/tree/master/publish
 
 # Publisher
 
@@ -138,6 +139,20 @@ Will attempt purge the given synth with all token holders it can find. Uses the 
 
 ```bash
 node publish purge-synths # "--help" for options
+```
+
+## 8. Release
+
+Will initiate the synthetix release process, publishing the synthetix `npm` module and updating all dependent projects in GitHub and `npm`.
+
+```bash
+node publish release # "--help" for options
+```
+
+### Example
+
+```bash
+node publish release --version 2.22.0 --branch master --release Altair
 ```
 
 # When adding new synths

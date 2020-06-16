@@ -15,7 +15,7 @@ Welcome to the Synthetix system documentation. These pages contain a description
 
 ## Resources
 
-- **Litepaper:** The [Synthetix Litepaper](https://www.synthetix.io/uploads/synthetix_litepaper.pdf) has a detailed overview of how the Synthetix protocol functions.
+- **Litepaper:** The [Synthetix Litepaper](./litepaper) has a detailed overview of how the Synthetix protocol functions.
 - **Community Page:** The online community has built an [excellent site](https://synthetix.community/docs/resources) with a large backlog of resources, explanations, and links that is perfect for any newcomers.
 - **Official Blog:** Stay up-to-date with all official news from the team at the [Synthetix blog](https://blog.synthetix.io).
 - **SIPs (Synthetix Improvement Proposals):** The Synthetix ecosystem is managed by a core team, with suggestions and improvements from the community in the form of Synthetix Improvement Proposals (SIPs) and Synthetix Configuration Change Proposal (SCCPs). Past and present SIPs and SCCPs are hosted on https://sips.synthetix.io. To suggest a new SIPs, create an issue on the [SIPs repo](https://github.com/synthetixio/SIPs/issues).
@@ -30,14 +30,12 @@ Welcome to the Synthetix system documentation. These pages contain a description
 ## dApps
 
 - **Synthetix.Exchange:** [Synthetix Exchange](https://www.synthetix.io/products/exchange) allows users to trade synths, and to buy sUSD with ether. Synthetix.Exchange has also played host to [trading competitions](https://blog.synthetix.io/synthetix-exchange-trading-competition-v3/) offering SNX prizes to the most successful participants. The source code for Synthetix.Exchange can be found at @synthetixio/synthetix-exchange. A twitter bot that reports statistics for the exchange posts daily at @twitter:SynthXBot.
-- **Mintr:** [Mintr](https://www.synthetix.io/products/mintr) is a dApp for SNX holders to participate in the Synthetix Network. Using Mintr, users can mint and burn Synths, monitor their collateralisation levels, buy and sell sUSD through the [Depot](contracts/Depot.md), claim their staking rewards, and vest any SNX they have accrued from the token sale or by staking.
+- **Mintr:** [Mintr](https://www.synthetix.io/products/mintr) is a dApp for SNX holders to participate in the Synthetix Network. Using Mintr, users can mint and burn Synths, monitor their collateralisation levels, buy and sell sUSD through the [Depot](contracts/source/contracts/Depot.md), claim their staking rewards, and vest any SNX they have accrued from the token sale or by staking. The source code for Mintr can be found at @synthetixio/synthetix-mintr.
 - **Synthetix Dashboard:** Provides an overview of the status of the Synthetix system including price, token supply, exchange volume, fee pool size, open interest, and current collateralisation levels. The dashboard also provides listings of exchanges where [SNX](https://dashboard.synthetix.io/buy-snx) and [sUSD](https://dashboard.synthetix.io/buy-susd) are traded. The dashboard is available at [https://dashboard.synthetix.io](https://dashboard.synthetix.io).
 
 ## Integrations
 
-- **The Graph**: [The Graph](http://thegraph.com/) is a decentralised indexer and GraphQL query engine of blockchain events and function calls. Synthetix has a number of subgraphs tracking a number of events and key metrics within the system historically. For more information on how to query or subscribe to events in real time see [Historical Data](historical-data.md).
-- **UniSwap:** [Uniswap](https://uniswap.io/) is a decentralised exchange for exchanging ETH and ERC20 tokens. Synthetix integrates with it to deepen the Synthetix ecosystem's liquidity, and it acts as an on-ramp/off-ramp for the Synth market. Users who provide liquidity to the [ETH/sETH pool](https://uniswap.exchange/swap/0x42456D7084eacF4083f1140d3229471bbA2949A8) are provided with staking rewards as [part of the Synthetix protocol](https://sips.synthetix.io/sips/sip-8). This is discussed further [here](https://blog.synthetix.io/uniswap-seth-pool-incentives/), [here](https://blog.synthetix.io/snx-arbitrage-pool/), and [here](https://blog.synthetix.io/new-uniswap-seth-lp-reward-system/).
-- **KyberSwap:** Liquidity is further deepened by the integration of SNX and sUSD with [KyberSwap](https://kyberswap.com/swap/eth-snx), which is built on the [Kyber Network Protocol](https://kyber.network/). An example use case is described [here](https://blog.synthetix.io/snx-liquidity-has-been-added-to-kyberswap/).
+See the [Integrations](/integrations) section
 
 ## Get In Touch
 
