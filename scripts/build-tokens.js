@@ -134,7 +134,7 @@ const addOracleParameters = ({ asset, aggregator }) => {
 };
 
 const content = `
-# Tokens
+# Token List
 
 !!! Tip "Decentralizing the remaining price feeds"
 
@@ -161,4 +161,4 @@ ${tokens
 	.join('\n\n')}
 
 `;
-fs.writeFileSync(path.join(__dirname, '..', 'content', 'tokens.md'), content);
+fs.writeFileSync(path.join(__dirname, '..', 'content', 'tokens', 'list.md'), content);
