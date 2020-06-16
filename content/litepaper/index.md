@@ -10,7 +10,7 @@ Synthetix is a decentralised synthetic asset issuance protocol built on Ethereum
 
 **How SNX backs Synths**
 
-All Synths are backed by SNX tokens. Synths are minted when SNX holders stake their SNX as collateral using Mintr, a decentralised application for interacting with the Synthetix contracts. Synths are currently backed by a 800% collateralisation ratio, although this may be raised or lowered in the future through community governance mechanisms. SNX stakers incur debt when they mint Synths, and to exit the system (i.e. unlock their SNX) they must pay back this debt by burning Synths.
+All Synths are backed by SNX tokens. Synths are minted when SNX holders stake their SNX as collateral using Mintr, a decentralised application for interacting with the Synthetix contracts. Synths are currently backed by a 750% collateralisation ratio, although this may be raised or lowered in the future through community governance mechanisms. SNX stakers incur debt when they mint Synths, and to exit the system (i.e. unlock their SNX) they must pay back this debt by burning Synths.
 
 Synthetix is also currently trialling Ether as an alternative form of collateral. This means traders can borrow Synths against their ETH and begin trading immediately, rather than needing to sell their ETH. Staking ETH requires a collateralisation ratio of 150% and creates a debt denominated in ETH, so ETH stakers mint sETH rather than sUSD and do not participate in the ‘pooled debt’ aspect of the system. In this model, ETH stakers do not receive fees or rewards as they take no risk for the debt pool.
 
@@ -20,7 +20,7 @@ SNX holders are incentivised to stake their tokens and mint Synths in several wa
 
 **Minting, burning, and the C-Ratio**
 
-The mechanisms above ensure SNX stakers are incentivised to maintain their Collateralisation Ratio (C-Ratio) at the optimal rate (currently 800%). This ensures Synths are backed by sufficient collateral to absorb large price shocks. If the value of SNX or Synths fluctuate, each staker’s C Ratio will fluctuate. If it falls below 800% (although there is a small buffer allowing for minor fluctuations), they will be unable to claim fees until they restore their ratio. They adjust their ratio by either minting Synths if their ratio is above 800%, or burning Synths if their ratio is below 800%.
+The mechanisms above ensure SNX stakers are incentivised to maintain their Collateralisation Ratio (C-Ratio) at the optimal rate (currently 750%). This ensures Synths are backed by sufficient collateral to absorb large price shocks. If the value of SNX or Synths fluctuate, each staker’s C Ratio will fluctuate. If it falls below 750% (although there is a small buffer allowing for minor fluctuations), they will be unable to claim fees until they restore their ratio. They adjust their ratio by either minting Synths if their ratio is above 750%, or burning Synths if their ratio is below 750%.
 
 **Stakers, debt, and pooled counterparties**
 
@@ -52,7 +52,7 @@ Trading on Synthetix.Exchange provides many advantages over centralised exchange
 
 **How Synths work**
 
-Synths are synthetic assets that track the price of the underlying asset. They allow holders to gain exposure on Ethereum to various asset classes without holding the underlying assets themselves or trusting a custodian. Synths are backed by the Synthetix Network Token (SNX), which is staked as collateral at a ratio of 800%.
+Synths are synthetic assets that track the price of the underlying asset. They allow holders to gain exposure on Ethereum to various asset classes without holding the underlying assets themselves or trusting a custodian. Synths are backed by the Synthetix Network Token (SNX), which is staked as collateral at a ratio of 750%.
 
 **The current Synths**
 
@@ -64,7 +64,7 @@ There are currently five categories of Synths available: fiat currencies, commod
 
 An SNX holder can mint sUSD by locking their SNX as collateral via the Synthetix smart contract. The steps involved when an SNX holder mints are:
 
-- The Synthetix contract checks that the SNX staker can mint Synths against their SNX, which requires their Collateralisation Ratio to be below 800%.
+- The Synthetix contract checks that the SNX staker can mint Synths against their SNX, which requires their Collateralisation Ratio to be below 750%.
 - Their debt is added to the Debt Register. The debt is the amount of the new value minted, and is stored in sUSD
 - With the debt assigned to the staker, the Synthetix contract instructs the sUSD contract to issue the new amount. It adds it to its total supply and assigns the newly minted sUSD to the user’s wallet.
 
