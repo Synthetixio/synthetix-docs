@@ -16,10 +16,10 @@ nav:
       - Incentives: incentives.md
       - Governance: governance.md
   - Litepaper:
-      - '🇦🇺 English ': litepaper/index.md
-      - '🇰🇷 Korean': litepaper/korean.md
-      - '🇷🇺 Russian': litepaper/russian.md
-      - '🇨🇳 Chinese': litepaper/chinese.md
+      - 🇦🇺 English: litepaper/index.md
+      - 🇰🇷 Korean: litepaper/korean.md
+      - 🇷🇺 Russian: litepaper/russian.md
+      - 🇨🇳 Chinese: litepaper/chinese.md
   - Addresses:
       - '': addresses.md
   - Releases:
@@ -157,9 +157,6 @@ markdown_extensions:
       pymdownx.betterem:
         smart_enable: all
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:pymdownx.emoji.twemoji
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.escapeall
   - pymdownx.caret
   - pymdownx.superfences:
