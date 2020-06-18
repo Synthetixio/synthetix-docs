@@ -30,35 +30,66 @@ Instead of using the subgraphs provided, you could directly query the EVM via mo
 !!! example "E.g. Get all `FeePool.FeesClaimed` events"
 
     ```javascript
-    import synthetix from 'synthetix';
-    const provider = ethers.getDefaultProvider();
+    const synthetix = require('synthetix');
+    const ethers = require('ethers');
 
-    const network = 'mainnet';
+    const network = 'kovan';
+
+    const provider = ethers.getDefaultProvider(network);
+
     const { abi } = synthetix.getSource({
       network,
-      contract: 'FeePool'
+      contract: 'Synthetix',
     });
+
     const { address } = synthetix.getTarget({
       network,
       // Note: for contracts with proxies, events are always emitted on the Proxy,
       // so we need to use this address here
-      contract: 'ProxyFeePool'
+      contract: 'ProxyERC20',
     });
 
-    const { signature } = abi.find(
-      ({ type, name }) => type === 'event' && name === 'FeesClaimed'
+    const { inputs, signature } = abi.find(
+      ({ type, name }) => type === 'event' && name === 'SynthExchange'
     );
 
     (async () => {
-      const feesClaimedEvents = await provider.getLogs({
+      const exchanges = await provider.getLogs({
         topics: [signature],
         address,
-        fromBlock: 9000000,
-        toBlock: 9015000
+        fromBlock: 0,
+        toBlock: 1e10,
       });
-      // show last three if any
-      console.log(JSON.stringify(feesClaimedEvents.slice(0, 3), null, '\t'));
-    })();
+
+      for (const exchange of exchanges) {
+        console.log('Found SynthExchange event:');
+        const topics = inputs.filter(({ indexed }) => indexed);
+
+        // remove initial topic which is the event signature
+        // then output all topics
+        exchange.topics.slice(1).forEach((topic, t) => {
+          console.log(
+            '\tTopic',
+            t,
+            topics[t].type,
+            topics[t].name,
+            ethers.utils.defaultAbiCoder.decode([topics[t].type], topic)[0]
+          );
+        });
+
+        const fields = inputs.filter(({ indexed }) => !indexed);
+
+        // now show decoded data
+        const data = ethers.utils.defaultAbiCoder.decode(
+          inputs.filter(({ indexed }) => !indexed).map(({ type }) => type),
+          exchange.data
+        );
+
+        data.forEach((arg, a) => {
+          console.log('\tArgument', a, fields[a].type, fields[a].name, arg.toString());
+        });
+      }
+    }
     ```
 
 ### Using an Archive Node
