@@ -4,7 +4,7 @@
 
 Performs all the heavy lifting internally of `exchange` and `settle` functionality.
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol)
 
 ## Architecture
 
@@ -32,7 +32,7 @@ graph TD
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L54)</sub>
 
 **Type:** `uint256`
 
@@ -40,7 +40,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@ graph TD
 
 ### `calculateAmountAfterSettlement`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L175)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@ graph TD
 
 ### `feeRateForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L382)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L384)</sub>
 
 Determine the effective fee rate for the exchange, taking into considering swing trading.
 
@@ -98,7 +98,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
 ### `getAmountsForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L397)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L399)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
 ### `hasWaitingPeriodOrSettlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
 ### `maxSecsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L110)</sub>
 
 Returns the maximum number of seconds remaining in the waiting period for all exchanges into the given synth (`currencyKey`) by the account.
 
@@ -156,7 +156,7 @@ This number must be `0` in order for [`settle()`](#settle) to succeed.
 
 ### `settlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L114)</sub>
 
 Returns the total amount to be reclaimed or rebated for the given account and synth (`currencyKey`). Note: this function can be called at any time, even while the waiting period has not expired.
 
@@ -178,7 +178,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L191)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L198)</sub>
 
 ??? example "Details"
 
@@ -200,7 +200,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L208)</sub>
 
 ??? example "Details"
 
@@ -218,7 +218,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Requires**
 
-    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L208)
+    * [require(..., Not approved to act on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L215)
 
     **Modifiers**
 
@@ -226,7 +226,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `setWaitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L171)</sub>
 
 ??? example "Details"
 
@@ -250,7 +250,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `_exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L218)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L225)</sub>
 
 ??? example "Details"
 
@@ -268,13 +268,13 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Requires**
 
-    * [require(..., Can't be same synth)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L231)
+    * [require(..., Can't be same synth)](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L238)
 
-    * [require(..., Zero amount)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L232)
+    * [require(..., Zero amount)](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L239)
 
 ### `_feeRateForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L390)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L392)</sub>
 
 ??? example "Details"
 
@@ -292,7 +292,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `_getAmountReceivedForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L436)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L438)</sub>
 
 ??? example "Details"
 
@@ -310,7 +310,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `_getAmountsForExchangeMinusFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L417)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L419)</sub>
 
 ??? example "Details"
 
@@ -328,7 +328,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `_internalSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L328)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L330)</sub>
 
 ??? example "Details"
 
@@ -346,11 +346,11 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Requires**
 
-    * [require(..., Cannot settle during waiting period)](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L336)
+    * [require(..., Cannot settle during waiting period)](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L338)
 
 ### `appendExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L444)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L446)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `delegateApprovals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -386,7 +386,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -404,7 +404,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `exchangeState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -422,7 +422,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -440,7 +440,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `getRoundIdsAtPeriodEnd`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L468)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L470)</sub>
 
 ??? example "Details"
 
@@ -456,9 +456,27 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     `view`
 
+### `issuer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L106)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issuer() returns (contract IIssuer)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
 ### `reclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L354)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L356)</sub>
 
 ??? example "Details"
 
@@ -476,7 +494,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L364)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L366)</sub>
 
 ??? example "Details"
 
@@ -494,13 +512,13 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `remitFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L315)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L317)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `remitFee(contract IExchangeRates _exRates, contract ISynthetix _synthetix, uint256 fee, bytes32 currencyKey)`
+    `remitFee(contract IExchangeRates _exRates, contract IIssuer _issuer, uint256 fee, bytes32 currencyKey)`
 
     **Visibility**
 
@@ -512,7 +530,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `secsLeftInWaitingPeriodForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L374)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L376)</sub>
 
 ??? example "Details"
 
@@ -530,7 +548,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -548,7 +566,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -568,7 +586,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L296)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L304)</sub>
 
 Settle processes all exchanges into the given synth, calculating any `reclaimed` or `refunded` amounts via [`settlementOwing`](#settlementowing) and burning any reclaim and issuing any refund. This function may be called by anyone - the `msg.sender` is irrelevant.
 
@@ -586,8 +604,18 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
 
     `nonpayable`
 
+    **Modifiers**
+
+    * [synthActive](#synthactive)
+
 ## Modifiers
 
 ### `onlySynthetixorSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.22.4/contracts/Exchanger.sol#L483)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L485)</sub>
+
+### `synthActive`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1/contracts/Exchanger.sol#L494)</sub>
+
+**Signature**: `synthActive(bytes32 currencyKey)`
