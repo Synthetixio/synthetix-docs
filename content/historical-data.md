@@ -27,7 +27,7 @@ Alternatively, Each of these subgraphs can be queried using GraphQL - follow the
 
 Instead of using the subgraphs provided, you could directly query the EVM via most free providers (such as Infura or Etherscan).
 
-!!! example "E.g. Get all `FeePool.FeesClaimed` events"
+!!! example "E.g. Get all `Synthetix.SynthExchagne` events"
 
     ```javascript
     const synthetix = require('synthetix');
@@ -58,36 +58,24 @@ Instead of using the subgraphs provided, you could directly query the EVM via mo
         topics: [signature],
         address,
         fromBlock: 0,
-        toBlock: 1e10,
+        toBlock: 1e10, // note the upper bound here may need to be changed in the future
       });
+
+      const iface = new ethers.utils.Interface(abi);
 
       for (const exchange of exchanges) {
         console.log('Found SynthExchange event:');
-        const topics = inputs.filter(({ indexed }) => indexed);
 
-        // remove initial topic which is the event signature
-        // then output all topics
-        exchange.topics.slice(1).forEach((topic, t) => {
-          console.log(
-            '\tTopic',
-            t,
-            topics[t].type,
-            topics[t].name,
-            ethers.utils.defaultAbiCoder.decode([topics[t].type], topic)[0]
-          );
-        });
+        const { values } = iface.parseLog(exchange);
 
-        const fields = inputs.filter(({ indexed }) => !indexed);
-
-        // now show decoded data
-        const data = ethers.utils.defaultAbiCoder.decode(
-          inputs.filter(({ indexed }) => !indexed).map(({ type }) => type),
-          exchange.data
+        console.log(
+          '\t',
+          values.account,
+          ethers.utils.parseBytes32String(values.fromCurrencyKey),
+          ethers.utils.formatEther(values.fromAmount),
+          ethers.utils.parseBytes32String(values.toCurrencyKey),
+          ethers.utils.formatEther(values.toAmount)
         );
-
-        data.forEach((arg, a) => {
-          console.log('\tArgument', a, fields[a].type, fields[a].name, arg.toString());
-        });
       }
     }
     ```
