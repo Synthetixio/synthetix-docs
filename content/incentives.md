@@ -12,9 +12,35 @@ Exchange fees are generated whenever a user exchanges one synthetic asset (Synth
 
 SNX staking rewards are generated through the inflationary monetary policy implemented in March 2018. At the same time as they claim their exchange fees stakers can claim their staking rewards, which are escrowed for a year. The SNX staking rewards enabled by the inflationary supply are set to decrease gradually until September 2023, where it will become a 2.5% annual terminal inflation rate.
 
-### Liquidity Rewards
+## Secondary incentives
+
+In addition to the two primary forms of incentives, Synthetix also runs various incentives to trial different behaviour and/or balance out particular dynamics. These are either paid with a portion of the weekly inflationary SNX, or with SNX from the synthetixDAO treasury. 
+
+### sUSD/DAI-USDC-USDT liquidity on Curve
+
+48,000 SNX per week
+
+### sETH/ETH liquidity on Uniswap
+
+4000 SNX per week
 
 5% of the aforementioned inflationary SNX supply is distributed to people providing sETH/ETH liquidity on Uniswap. This is to ensure there is a clear way for traders to enter the system and start trading for the first time (if they hold ETH).
+
+### iETH holders (trial)
+
+32,000 SNX per week 
+
+### SNX/REN liquidity on Balancer (trial)
+
+8000 SNX per week for ten weeks
+
+### sXAU/USDC liquidity on Uniswap v2 (trial)
+
+8000 SNX per week
+
+### SNX/USDC liquidity on Balancer (trial)
+
+8000 per week? (check)
 
 ## Value Recipients
 
