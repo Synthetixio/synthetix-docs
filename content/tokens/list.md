@@ -334,9 +334,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$0.03100   | \$0.04600   | \$0.01500   |
+| \$0.08000   | \$0.12000   | \$0.04000   |
 
-> Inversely tracks the price of Inverse Cardano (ADA) through price feeds supplied by an oracle. The entry point is \$0.031 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.046 (i.e. when Inverse Cardano's value reaches \$0.016) or its lower limit of \$0.015 (i.e. when Inverse Cardano’s value reaches \$0.047). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iADA with different limits.
+> Inversely tracks the price of Inverse Cardano (ADA) through price feeds supplied by an oracle. The entry point is \$0.08 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.12 (i.e. when Inverse Cardano's value reaches \$0.04) or its lower limit of \$0.04 (i.e. when Inverse Cardano’s value reaches \$0.12). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iADA with different limits.
 
 ## Inverse Centralised Exchange Index (iCEX)
 
@@ -418,13 +418,13 @@
 
 **Inverse of**: [sDEFI](#defi-index-sdefi)
 
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$1,000     | \$1,500     | \$500       |
+| Entry Point | Upper Limit   | Lower Limit |
+| ----------- | ------------- | ----------- |
+| \$1,817     | \$2,725.50000 | \$908.50000 |
 
 **Index of**: [sDEFI](#defi-index-sdefi)
 
-> Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$1000 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$1500 (i.e. when Inverse DeFi Index's value reaches \$500) or its lower limit of \$500 (i.e. when Inverse DeFi Index’s value reaches \$1500). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
+> Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$1817 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$2725.5 (i.e. when Inverse DeFi Index's value reaches \$908.5) or its lower limit of \$908.5 (i.e. when Inverse DeFi Index’s value reaches \$2725.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
 
 ## Inverse EOS (iEOS)
 
@@ -485,9 +485,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$4.88000   | \$7.32000   | \$2.44000   |
+| \$6.16000   | \$9.24000   | \$3.08000   |
 
-> Inversely tracks the price of Inverse Ethereum Classic (ETC) through price feeds supplied by an oracle. The entry point is \$4.88 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$7.32 (i.e. when Inverse Ethereum Classic's value reaches \$2.44) or its lower limit of \$2.44 (i.e. when Inverse Ethereum Classic’s value reaches \$7.32). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETC with different limits.
+> Inversely tracks the price of Inverse Ethereum Classic (ETC) through price feeds supplied by an oracle. The entry point is \$6.16 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$9.24 (i.e. when Inverse Ethereum Classic's value reaches \$3.08) or its lower limit of \$3.08 (i.e. when Inverse Ethereum Classic’s value reaches \$9.24). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETC with different limits.
 
 ## Inverse Litecoin (iLTC)
 
@@ -548,9 +548,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$0.15000   | \$0.22500   | \$0.07500   |
+| \$0.18830   | \$0.28200   | \$0.09400   |
 
-> Inversely tracks the price of Inverse Ripple (XRP) through price feeds supplied by an oracle. The entry point is \$0.15 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.225 (i.e. when Inverse Ripple's value reaches \$0.075) or its lower limit of \$0.075 (i.e. when Inverse Ripple’s value reaches \$0.225). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXRP with different limits.
+> Inversely tracks the price of Inverse Ripple (XRP) through price feeds supplied by an oracle. The entry point is \$0.1883 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.282 (i.e. when Inverse Ripple's value reaches \$0.095) or its lower limit of \$0.094 (i.e. when Inverse Ripple’s value reaches \$0.283). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXRP with different limits.
 
 ## Inverse TRON (iTRX)
 
@@ -569,9 +569,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$0.01017   | \$0.01525   | \$0.00508   |
+| \$0.01590   | \$0.02385   | \$0.00795   |
 
-> Inversely tracks the price of Inverse TRON (TRX) through price feeds supplied by an oracle. The entry point is \$0.0101651 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.0152476 (i.e. when Inverse TRON's value reaches \$0.0050826) or its lower limit of \$0.0050825 (i.e. when Inverse TRON’s value reaches \$0.0152477). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iTRX with different limits.
+> Inversely tracks the price of Inverse TRON (TRX) through price feeds supplied by an oracle. The entry point is \$0.0159 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.02385 (i.e. when Inverse TRON's value reaches \$0.00795) or its lower limit of \$0.00795 (i.e. when Inverse TRON’s value reaches \$0.02385). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iTRX with different limits.
 
 ## Inverse Tezos (iXTZ)
 

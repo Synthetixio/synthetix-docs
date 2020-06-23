@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.23.0-alpha-1](https://github.com/Synthetixio/synthetix/tree/v2.23.0-alpha-1)
+**Version**: [v2.23.1-alpha](https://github.com/Synthetixio/synthetix/tree/v2.23.1-alpha)
 
 !!! info "Naming Conventions"
 
@@ -3292,6 +3292,20 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>BinaryOptionMarketFactory</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketFactory.sol">BinaryOptionMarketFactory.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/BinaryOptionMarketFactory.json">BinaryOptionMarketFactory.json</a></td>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xaf0B36698FB7dC5213d3E962A5de44633CAbe158">0xaf0B36698FB7dC5213d3E962A5de44633CAbe158</a>
+                </td>
+              </tr>
+              <tr>
+                <td>BinaryOptionMarketManager</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketManager.sol">BinaryOptionMarketManager.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/BinaryOptionMarketManager.json">BinaryOptionMarketManager.json</a></td>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9492eac3c8c6F1E768C71Fa2eAf04FB2F42104eC">0x9492eac3c8c6F1E768C71Fa2eAf04FB2F42104eC</a>
+                </td>
+              </tr>
+              <tr>
                 <td>DelegateApprovals</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/DelegateApprovals.json">DelegateApprovals.json</a></td>
@@ -3337,7 +3351,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>ExchangeRates</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ExchangeRates.json">ExchangeRates.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x60F424d2B2fC49c02DC557105F4f0ec591c15692">0x60F424d2B2fC49c02DC557105F4f0ec591c15692</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xD79c83bd0A7B1e6d63a5394305552d73D1f1F6C7">0xD79c83bd0A7B1e6d63a5394305552d73D1f1F6C7</a>
                 </td>
               </tr>
               <tr>
@@ -3351,7 +3365,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Exchanger.json">Exchanger.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0FA8d4004d2CFB684EeB81b6f80919ce8d705D7f">0x0FA8d4004d2CFB684EeB81b6f80919ce8d705D7f</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4B0833796E04DeBb063b30c73656eCFA6D5999fe">0x4B0833796E04DeBb063b30c73656eCFA6D5999fe</a>
                 </td>
               </tr>
               <tr>
@@ -3750,7 +3764,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xabab1FbC0Eaea4a8c0d5e7e50246b8aA0a644533">0xabab1FbC0Eaea4a8c0d5e7e50246b8aA0a644533</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xcBd9a8E4b0d83EF55443f55373F092C23107a7f3">0xcBd9a8E4b0d83EF55443f55373F092C23107a7f3</a>
                 </td>
               </tr>
               <tr>
