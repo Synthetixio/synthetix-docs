@@ -19,37 +19,49 @@ In addition to the two primary forms of incentives, Synthetix also runs various 
 ### sUSD/DAI-USDC-USDT liquidity on Curve
 
 Amount: 48,000 SNX per week
+
 Duration: 03/13/2020 onwards
+
 Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with stablecoins. 
 
 ### sETH/ETH liquidity on Uniswap v1
 
 Amount: 4000 SNX per week
+
 Duration: 07/12/2020 onwards
+
 Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with ETH. 
 
 ### iETH holders (trial)
 
 Amount: 32,000 SNX per week 
+
 Duration: 04/24/2020 - 07/17/2020
+
 Aim: This trial aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH. 
 
 ### SNX/REN liquidity on Balancer (trial)
 
 Amount: 8000 SNX per week 
+
 Duration: 06/19/2020 - 08/28/2020
+
 Aim: This trial is providing the SNX component of a SNX/REN liquidity pool (along with Ren Protocol) to help generate rewards for the sBTC/renBTC/WBTC liquidity providers on Curve.
 
 ### sXAU/USDC liquidity on Uniswap v2 (trial)
 
 Amount: 8000 SNX per week
+
 Duration: 05/30/2020 - 06/27/2020
+
 Aim: This trial aims to test demand for sXAU (synthetic gold). 
 
 ### SNX/USDC liquidity on Balancer (trial)
 
 Amount: 8000 SNX per week
+
 Duration: 06/05/2020 - 07/03/2020
+
 Aim: This trial aims to test Balancer as a means for providing extra SNX liquidity. 
 
 ## Value Recipients
