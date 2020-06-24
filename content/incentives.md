@@ -14,7 +14,7 @@ SNX staking rewards are generated through the inflationary monetary policy imple
 
 ## Secondary incentives
 
-In addition to the two primary forms of incentives, Synthetix also runs various incentives to trial different behaviour and/or balance out particular dynamics. These are either paid with a portion of the weekly inflationary SNX, or with SNX from the synthetixDAO treasury. 
+In addition to the two primary forms of incentives, Synthetix also runs various incentives to create on-ramps, balance out particular dynamics, or trial different behaviour. These are either paid with a portion of the weekly inflationary SNX when implemented at the protocol level, or with SNX from the synthetixDAO treasury if they are just trials. 
 
 ### sUSD/DAI-USDC-USDT liquidity on Curve
 
