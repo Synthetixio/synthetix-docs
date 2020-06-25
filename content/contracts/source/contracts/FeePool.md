@@ -324,7 +324,7 @@ Returns the collateralisation level a user can reach before they cannot claim fe
 
 Stores [fee period information](#feeperiod) for the last three weeks, from newest to olders.
 
-`recentFeePeriods[0]` is always the current fee period, which is modified by ongoing issuance and fee activity. Fees cannot be claimed from the current period, only from the closed period at index `1` which is all the fees and rewards accrued in the previous fee period ( aka week).
+`recentFeePeriods[0]` is always the current fee period, which is modified by ongoing issuance and fee activity. Fees cannot be claimed from the current period, only from the closed period at index `1` which is all the fees and rewards accrued in the previous fee period (week).
 
 **Type:** `FeePeriod[FEE_PERIOD_LENGTH] public`
 
