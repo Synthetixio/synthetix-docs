@@ -88,9 +88,9 @@ The address where fees are pooled as sUSD.
 
 This is the number of weekly fee periods that are tracked by the smart contracts, hence the length of the [`recentFeePeriods`](#recentfeeperiods) array.
 
-This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/sip-4), but note the inconsistency with the corresponding constant in [`FeePoolState`](FeePoolState.md#fee_period_length), which cannot be altered.
+This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/sip-4) and now 2 periods 0 and 1, but note the inconsistency with the corresponding constant in [`FeePoolState`](FeePoolState.md#fee_period_length), which cannot be altered.
 
-**Value:** `3`
+**Value:** `2`
 
 **Type:** `uint8`
 
@@ -324,7 +324,7 @@ Returns the collateralisation level a user can reach before they cannot claim fe
 
 Stores [fee period information](#feeperiod) for the last three weeks, from newest to olders.
 
-`recentFeePeriods[0]` is always the current fee period, which is modified by ongoing issuance and fee activity. Fees cannot be claimed from the current period, only from the closed periods at indexes `1` and `2`.
+`recentFeePeriods[0]` is always the current fee period, which is modified by ongoing issuance and fee activity. Fees cannot be claimed from the current period, only from the closed period at index `1` which is all the fees and rewards accrued in the previous fee period ( aka week).
 
 **Type:** `FeePeriod[FEE_PERIOD_LENGTH] public`
 
