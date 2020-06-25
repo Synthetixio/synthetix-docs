@@ -22,7 +22,7 @@ Amount: `48,000 SNX` per week
 
 Duration: Mar 13, 2020 onwards
 
-Pool: [Curve `sBTC/renBTC/wBTC`](https://pools.fyi/#/returns/0xa5407eae9ba41422680e2e00537571bcc53efbfd)
+Pool: [`Curve sBTC/renBTC/wBTC`](https://pools.fyi/#/returns/0xa5407eae9ba41422680e2e00537571bcc53efbfd)
 
 Staking Contract: [`StakingRewardssUSDCurve`](https://contracts.synthetix.io/StakingRewardssUSDCurve)
 
@@ -54,7 +54,7 @@ Pool: None (`iETH` is staked directly)
 
 Staking Contract: [`StakingRewardsiETH`](https://contracts.synthetix.io/StakingRewardsiETH)
 
-Source: [`iETHRewards (via Unipool)`](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
+Source: [`iETHRewards` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
 
 > Note: the source file above was [modified on L13](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol#L13) before deployment to use the [iETH proxy address](https://contracts.synthetix.io/ProxyiETH)
 
@@ -86,7 +86,7 @@ Pool: [`Uniswap sXAU:USDC V2`](https://pools.fyi/#/returns/0x34a0216c5057bc18e5d
 
 Staking Contract: [`StakingRewardssXAUUniswapV2`](https://contracts.synthetix.io/StakingRewardssXAUUniswapV2)
 
-Source: [`Staking Rewards (via Unipool)`](https://github.com/Synthetixio/synthetix/blob/5bde3ac2c4fa6b81819ae427c89d71024ddd6dcc/contracts/StakingRewards.sol)
+Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synthetix/blob/5bde3ac2c4fa6b81819ae427c89d71024ddd6dcc/contracts/StakingRewards.sol)
 
 > Note: this deployment was based of a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
 
@@ -102,7 +102,7 @@ Pool: [`SNX 90%/USDC 10%`](https://pools.fyi/#/returns/0x815f8ef4863451f4faf34fb
 
 Staking Contract: [`StakingRewardsSNXBalancer`](https://contracts.synthetix.io/StakingRewardsSNXBalancer)
 
-Source: [`Staking Rewards (via Unipool)`](https://github.com/Synthetixio/synthetix/blob/5bde3ac2c4fa6b81819ae427c89d71024ddd6dcc/contracts/StakingRewards.sol)
+Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synthetix/blob/5bde3ac2c4fa6b81819ae427c89d71024ddd6dcc/contracts/StakingRewards.sol)
 
 > Note: this deployment was based of a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
 
