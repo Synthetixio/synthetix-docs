@@ -14,55 +14,99 @@ SNX staking rewards are generated through the inflationary monetary policy imple
 
 ## Secondary incentives
 
-In addition to the two primary forms of incentives, Synthetix also runs various incentives to create on-ramps, balance out particular dynamics, or trial different behaviour. These are either paid with a portion of the weekly inflationary SNX when implemented at the protocol level, or with SNX from the synthetixDAO treasury if they are just trials. 
+In addition to the two primary forms of incentives, Synthetix also runs various incentives to create on-ramps, balance out particular dynamics, or trial different behaviour. These are either paid with a portion of the weekly inflationary SNX when implemented at the protocol level, or with SNX from the synthetixDAO treasury if they are just trials.
 
 ### sUSD/DAI-USDC-USDT liquidity on Curve
 
-Amount: 48,000 SNX per week
+Amount: `48,000 SNX` per week
 
-Duration: 03/13/2020 onwards
+Duration: Mar 13, 2020 onwards
 
-Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with stablecoins. 
+Pool: [Curve `sBTC/renBTC/wBTC`](https://pools.fyi/#/returns/0xa5407eae9ba41422680e2e00537571bcc53efbfd)
+
+Staking Contract: [`StakingRewardssUSDCurve`](https://contracts.synthetix.io/StakingRewardssUSDCurve)
+
+Source: [`Curvepool` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
+
+Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with stablecoins.
 
 ### sETH/ETH liquidity on Uniswap v1
 
-Amount: 4000 SNX per week
+Amount: `4,000 SNX` per week
 
-Duration: 07/12/2020 onwards
+Duration: July 12, 2020 onwards
 
-Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with ETH. 
+Pool: [`Uniswap sETH:ETH V1`](https://pools.fyi/#/returns/0xe9cf7887b93150d4f2da7dfc6d502b216438f244)
+
+Staking Contract: [`StakingRewardssETHUniswapV1`](https://contracts.synthetix.io/StakingRewardssETHUniswapV1)
+
+Source: [`Unipool`](https://github.com/Synthetixio/Unipool/blob/master/contracts/Unipool.sol)
+
+Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with ETH.
 
 ### iETH holders (trial)
 
-Amount: 32,000 SNX per week 
+Amount: `32,000 SNX` per week
 
-Duration: 04/24/2020 - 07/17/2020
+Duration: Apr 24, 2020 - July 17, 2020
 
-Aim: This trial aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH. 
+Pool: None (`iETH` is staked directly)
 
-### SNX/REN liquidity on Balancer (trial)
+Staking Contract: [`StakingRewardsiETH`](https://contracts.synthetix.io/StakingRewardsiETH)
 
-Amount: 8000 SNX per week 
+Source: [`iETHRewards (via Unipool)`](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
 
-Duration: 06/19/2020 - 08/28/2020
+> Note: the source file above was [modified on L13](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol#L13) before deployment to use the [iETH proxy address](https://contracts.synthetix.io/ProxyiETH)
 
-Aim: This trial is providing the SNX component of a SNX/REN liquidity pool (along with Ren Protocol) to help generate rewards for the sBTC/renBTC/WBTC liquidity providers on Curve.
+Aim: This trial aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH.
+
+### sBTC/renBTC-wBTC liquidity on Curve (trial)
+
+Amount: `10,000 SNX` and `25,000 REN` per week, distributed via Balancer `BPT` tokens in [a shared Balancer pool](https://contracts.synthetix.io/BalancerSNXUSDC)
+
+Duration: Jun 19, 2020 - Aug 28, 2020
+
+Pool: [`Curve sBTC/renBTC/wBTC`](https://pools.fyi/#/returns/0x7fc77b5c7614e1533320ea6ddc2eb61fa00a9714)
+
+Staking Contract: [`StakingRewardssBTCCurve`](https://contracts.synthetix.io/StakingRewardssBTCCurve)
+
+Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synthetix/blob/db6265313b6742b1c3483978b1baa00814990d57/contracts/StakingRewards.sol)
+
+> Note: this deployment was based of a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
+
+Aim: This trial is providing the `SNX` component of a `SNX/REN` liquidity pool (along with Ren Protocol) to help generate rewards for the `sBTC/renBTC/WBTC` liquidity providers on Curve.
 
 ### sXAU/USDC liquidity on Uniswap v2 (trial)
 
-Amount: 8000 SNX per week
+Amount: `8,000 SNX` per week
 
-Duration: 05/30/2020 - 06/27/2020
+Duration: May 30, 2020 - Jun 27, 2020
 
-Aim: This trial aims to test demand for sXAU (synthetic gold). 
+Pool: [`Uniswap sXAU:USDC V2`](https://pools.fyi/#/returns/0x34a0216c5057bc18e5d34d4405284564efd759b2)
+
+Staking Contract: [`StakingRewardssXAUUniswapV2`](https://contracts.synthetix.io/StakingRewardssXAUUniswapV2)
+
+Source: [`Staking Rewards (via Unipool)`](https://github.com/Synthetixio/synthetix/blob/5bde3ac2c4fa6b81819ae427c89d71024ddd6dcc/contracts/StakingRewards.sol)
+
+> Note: this deployment was based of a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
+
+Aim: This trial aims to test demand for sXAU (synthetic gold).
 
 ### SNX/USDC liquidity on Balancer (trial)
 
-Amount: 8000 SNX per week
+Amount: `8,000 SNX` per week
 
-Duration: 06/05/2020 - 07/03/2020
+Duration: Jun 5, 2020 - Jul 3, 2020
 
-Aim: This trial aims to test Balancer as a means for providing extra SNX liquidity. 
+Pool: [`SNX 90%/USDC 10%`](https://pools.fyi/#/returns/0x815f8ef4863451f4faf34fbc860034812e7377d9)
+
+Staking Contract: [`StakingRewardsSNXBalancer`](https://contracts.synthetix.io/StakingRewardsSNXBalancer)
+
+Source: [`Staking Rewards (via Unipool)`](https://github.com/Synthetixio/synthetix/blob/5bde3ac2c4fa6b81819ae427c89d71024ddd6dcc/contracts/StakingRewards.sol)
+
+> Note: this deployment was based of a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
+
+Aim: This trial aims to test Balancer as a means for providing extra SNX liquidity.
 
 ## Value Recipients
 
