@@ -34,7 +34,7 @@ Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchan
 
 Amount: `4,000 SNX` per week
 
-Duration: July 12, 2020 onwards
+Duration: Jul 12, 2020 onwards
 
 Pool: [`Uniswap sETH:ETH V1`](https://pools.fyi/#/returns/0xe9cf7887b93150d4f2da7dfc6d502b216438f244)
 
@@ -48,7 +48,7 @@ Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchan
 
 Amount: `32,000 SNX` per week
 
-Duration: Apr 24, 2020 - July 17, 2020
+Duration: Apr 24, 2020 - Jul 17, 2020
 
 Pool: None (`iETH` is staked directly)
 
@@ -72,7 +72,7 @@ Staking Contract: [`StakingRewardssBTCCurve`](https://contracts.synthetix.io/Sta
 
 Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synthetix/blob/db6265313b6742b1c3483978b1baa00814990d57/contracts/StakingRewards.sol)
 
-> Note: this deployment was based of a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
+> Note: this deployment was based off a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
 
 Aim: This trial is providing the `SNX` component of a `SNX/REN` liquidity pool (along with Ren Protocol) to help generate rewards for the `sBTC/renBTC/WBTC` liquidity providers on Curve.
 
