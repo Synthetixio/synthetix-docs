@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/BinaryOptionMarketFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOptionMarketFactory.sol)
+**Source:** [contracts/BinaryOptionMarketFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOptionMarketFactory.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOptionMarketFactory.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOptionMarketFactory.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@ graph TD
 
 ### `_manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOptionMarketFactory.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOptionMarketFactory.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -61,7 +61,7 @@ graph TD
 
 ### `createMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOptionMarketFactory.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOptionMarketFactory.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -79,4 +79,4 @@ graph TD
 
     **Requires**
 
-    * [require(..., Only permitted by the manager.)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOptionMarketFactory.sol#L50)
+    * [require(..., Only permitted by the manager.)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOptionMarketFactory.sol#L50)

@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/BinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol)
+**Source:** [contracts/BinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol)
 
 ## Architecture
 
@@ -15,19 +15,19 @@
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L24)</sub>
 
 **Type:** `uint8`
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L22)</sub>
 
 **Type:** `string`
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L23)</sub>
 
 **Type:** `string`
 
@@ -35,37 +35,37 @@
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L35)</sub>
 
 **Type:** `mapping(address => mapping(address => uint256))`
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L31)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `bidOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L28)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `market`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L26)</sub>
 
 **Type:** `contract BinaryOptionMarket`
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L29)</sub>
 
 **Type:** `uint256`
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L32)</sub>
 
 **Type:** `uint256`
 
@@ -73,7 +73,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@
 
 ### `claimableBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@
 
 ### `totalClaimableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -131,7 +131,7 @@
 
 ### `bid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -153,7 +153,7 @@
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -181,7 +181,7 @@
 
 ### `exercise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L137)</sub>
 
 ??? example "Details"
 
@@ -209,7 +209,7 @@
 
 ### `expire`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -231,7 +231,7 @@
 
 ### `refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -255,7 +255,7 @@
 
 ### `_claimableBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -273,7 +273,7 @@
 
 ### `_requireMinimumBid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -291,11 +291,11 @@
 
     **Requires**
 
-    * [require(..., Balance < $0.01)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L94)
+    * [require(..., Balance < $0.01)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L94)
 
 ### `_totalClaimableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -313,7 +313,7 @@
 
 ### `_transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L162)</sub>
 
 ??? example "Details"
 
@@ -331,9 +331,9 @@
 
     **Requires**
 
-    * [require(..., Invalid address)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L168)
+    * [require(..., Invalid address)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L168)
 
-    * [require(..., Insufficient balance)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L171)
+    * [require(..., Insufficient balance)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L171)
 
     **Emits**
 
@@ -343,7 +343,7 @@
 
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L196)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L196)</sub>
 
 ??? example "Details"
 
@@ -361,7 +361,7 @@
 
     **Requires**
 
-    * [require(..., )](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L197)
+    * [require(..., )](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L197)
 
     **Emits**
 
@@ -369,7 +369,7 @@
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L180)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L180)</sub>
 
 ??? example "Details"
 
@@ -387,7 +387,7 @@
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L184)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L184)</sub>
 
 ??? example "Details"
 
@@ -405,36 +405,36 @@
 
     **Requires**
 
-    * [require(..., Insufficient allowance)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L190)
+    * [require(..., Insufficient allowance)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L190)
 
 ## Modifiers
 
 ### `onlyMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L205)</sub>
 
 ## Events
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L215)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L215)</sub>
 
 **Signature**: `Approval(address owner, address spender, uint256 value)`
 
 ### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L213)</sub>
 
 **Signature**: `Burned(address account, uint256 value)`
 
 ### `Issued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L212)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L212)</sub>
 
 **Signature**: `Issued(address account, uint256 value)`
 
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/BinaryOption.sol#L214)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/BinaryOption.sol#L214)</sub>
 
 **Signature**: `Transfer(address from, address to, uint256 value)`

@@ -4,7 +4,7 @@
 
 A utility that gives the inheritor access to the [`AddressResolver`](AddressResolver.md)
 
-**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol)
+**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol)
 
 ## Architecture
 
@@ -20,7 +20,7 @@ graph TD
 
 ### `MAX_ADDRESSES_FROM_RESOLVER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L18)</sub>
 
 **Type:** `uint256`
 
@@ -28,7 +28,7 @@ graph TD
 
 ### `resolver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L12)</sub>
 
 The `AddressResolver` instance
 
@@ -36,7 +36,7 @@ The `AddressResolver` instance
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L16)</sub>
 
 **Type:** `bytes32[]`
 
@@ -44,7 +44,7 @@ The `AddressResolver` instance
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -62,13 +62,13 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L22)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L22)
 
 ## Views
 
 ### `getResolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -86,7 +86,7 @@ The `AddressResolver` instance
 
 ### `isResolverCached`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -106,7 +106,7 @@ The `AddressResolver` instance
 
 ### `setResolverAndSyncCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -130,7 +130,7 @@ The `AddressResolver` instance
 
 ### `appendToAddressCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -148,11 +148,11 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., Max resolver cache size met)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L89)
+    * [require(..., Max resolver cache size met)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L89)
 
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -170,4 +170,4 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta/contracts/MixinResolver.sol#L52)
+    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.23.3-rc0/contracts/MixinResolver.sol#L52)
