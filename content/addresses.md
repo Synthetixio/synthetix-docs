@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.23.2-alpha](https://github.com/Synthetixio/synthetix/tree/v2.23.2-alpha)
+**Version**: [v2.23.3-beta](https://github.com/Synthetixio/synthetix/tree/v2.23.3-beta)
 
 !!! info "Naming Conventions"
 
@@ -2227,7 +2227,21 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>AddressResolver</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/AddressResolver.json">AddressResolver.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x8C502a6fF7D8E79F97c438eC7Ada2887742090d8">0x8C502a6fF7D8E79F97c438eC7Ada2887742090d8</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x01BF3A96c4b0fA6e36eF23150A4c407f653BE9B9">0x01BF3A96c4b0fA6e36eF23150A4c407f653BE9B9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>BinaryOptionMarketFactory</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketFactory.sol">BinaryOptionMarketFactory.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/BinaryOptionMarketFactory.json">BinaryOptionMarketFactory.json</a></td>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x11cE3807b975cFF979c91CC7e09047F560555D57">0x11cE3807b975cFF979c91CC7e09047F560555D57</a>
+                </td>
+              </tr>
+              <tr>
+                <td>BinaryOptionMarketManager</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketManager.sol">BinaryOptionMarketManager.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/BinaryOptionMarketManager.json">BinaryOptionMarketManager.json</a></td>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x61ecBC30F82DA8A590A0D28eD0891290BD65eBa3">0x61ecBC30F82DA8A590A0D28eD0891290BD65eBa3</a>
                 </td>
               </tr>
               <tr>
@@ -2276,7 +2290,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>ExchangeRates</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/ExchangeRates.json">ExchangeRates.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x9B86bD4Fd5e1D0a30E061834c8D4F93594cd04f3">0x9B86bD4Fd5e1D0a30E061834c8D4F93594cd04f3</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x400C4f98DAa68291254d76F83b2F8116Ea0577B1">0x400C4f98DAa68291254d76F83b2F8116Ea0577B1</a>
                 </td>
               </tr>
               <tr>
@@ -2290,14 +2304,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/Exchanger.json">Exchanger.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x847fA121D289DF87532178B8e600804733386096">0x847fA121D289DF87532178B8e600804733386096</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x4977AeB0a31eb89A20b919C96769Fe76B65A9aE2">0x4977AeB0a31eb89A20b919C96769Fe76B65A9aE2</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/FeePool.json">FeePool.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x6dD02752F9C002Ab34FeD9De18235D675445ECcD">0x6dD02752F9C002Ab34FeD9De18235D675445ECcD</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xc72db00dC2BfD49F4f4b1057EB821f5d3FD16524">0xc72db00dC2BfD49F4f4b1057EB821f5d3FD16524</a>
                 </td>
               </tr>
               <tr>
@@ -2325,7 +2339,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xe215Fce877AEa2a2acb52F40E8Fbf45EA51436dE">0xe215Fce877AEa2a2acb52F40E8Fbf45EA51436dE</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xBF03c37ACa885C92312476cbdBE9bCaEB5b11AA7">0xBF03c37ACa885C92312476cbdBE9bCaEB5b11AA7</a>
                 </td>
               </tr>
               <tr>
@@ -2689,7 +2703,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x40AD836Adf29d5a454c5C9544f031ff9A3ac5157">0x40AD836Adf29d5a454c5C9544f031ff9A3ac5157</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x37bBABE672180899318C3f7f642Ec7dB8C788B4E">0x37bBABE672180899318C3f7f642Ec7dB8C788B4E</a>
                 </td>
               </tr>
               <tr>
