@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.23.1-alpha](https://github.com/Synthetixio/synthetix/tree/v2.23.1-alpha)
+**Version**: [v2.23.2-alpha](https://github.com/Synthetixio/synthetix/tree/v2.23.2-alpha)
 
 !!! info "Naming Conventions"
 
@@ -3295,7 +3295,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>BinaryOptionMarketFactory</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketFactory.sol">BinaryOptionMarketFactory.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/BinaryOptionMarketFactory.json">BinaryOptionMarketFactory.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xaf0B36698FB7dC5213d3E962A5de44633CAbe158">0xaf0B36698FB7dC5213d3E962A5de44633CAbe158</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x14c049BDf3bcf46bc884e26ceBC130560C60D549">0x14c049BDf3bcf46bc884e26ceBC130560C60D549</a>
                 </td>
               </tr>
               <tr>

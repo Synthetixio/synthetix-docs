@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.1-alpha/contracts/interfaces/IRewardsDistribution.sol)
+**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.2-alpha/contracts/interfaces/IRewardsDistribution.sol)
 
 ## External Functions
 
 ### `distributeRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.1-alpha/contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.2-alpha/contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
 
 ??? example "Details"
 
