@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/BinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol)
+**Source:** [contracts/BinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol)
 
 ## Architecture
 
@@ -28,7 +28,7 @@ graph TD
 
 ### `CreatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L43)</sub>
 
 | Field                | Type      | Description |
 | -------------------- | --------- | ----------- |
@@ -37,7 +37,7 @@ graph TD
 
 ### `Durations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L37)</sub>
 
 | Field               | Type      | Description |
 | ------------------- | --------- | ----------- |
@@ -47,7 +47,7 @@ graph TD
 
 ### `Fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L31)</sub>
 
 | Field        | Type      | Description |
 | ------------ | --------- | ----------- |
@@ -59,31 +59,31 @@ graph TD
 
 ### `creatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L52)</sub>
 
 **Type:** `struct BinaryOptionMarketManager.CreatorLimits`
 
 ### `durations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L51)</sub>
 
 **Type:** `struct BinaryOptionMarketManager.Durations`
 
 ### `fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L50)</sub>
 
 **Type:** `struct BinaryOptionMarketManager.Fees`
 
 ### `marketCreationEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L54)</sub>
 
 **Type:** `bool`
 
 ### `totalDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L55)</sub>
 
 **Type:** `uint256`
 
@@ -91,7 +91,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -109,13 +109,13 @@ graph TD
 
     **Requires**
 
-    * [setCreatorCapitalRequirement](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L95)
+    * [setCreatorCapitalRequirement](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L95)
 
 ## Views
 
 ### `activeMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L136)</sub>
 
 ??? example "Details"
 
@@ -133,7 +133,7 @@ graph TD
 
 ### `maturedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L144)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L144)</sub>
 
 ??? example "Details"
 
@@ -151,7 +151,7 @@ graph TD
 
 ### `numActiveMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -169,7 +169,7 @@ graph TD
 
 ### `numMaturedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -189,7 +189,7 @@ graph TD
 
 ### `decrementTotalDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L229)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L229)</sub>
 
 ??? example "Details"
 
@@ -213,7 +213,7 @@ graph TD
 
 ### `incrementTotalDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L224)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L224)</sub>
 
 ??? example "Details"
 
@@ -237,7 +237,7 @@ graph TD
 
 ### `migrateMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L331)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L331)</sub>
 
 ??? example "Details"
 
@@ -263,7 +263,7 @@ graph TD
 
 ### `setCreatorCapitalRequirement`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L211)</sub>
 
 ??? example "Details"
 
@@ -289,7 +289,7 @@ graph TD
 
 ### `setCreatorFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -307,9 +307,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Total fee must be less than 100%.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L199)
+    * [require(..., Total fee must be less than 100%.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L199)
 
-    * [require(..., Total fee must be nonzero.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L200)
+    * [require(..., Total fee must be nonzero.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L200)
 
     **Modifiers**
 
@@ -321,7 +321,7 @@ graph TD
 
 ### `setCreatorSkewLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L216)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L216)</sub>
 
 ??? example "Details"
 
@@ -339,7 +339,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Creator skew limit must be no greater than 1.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L217)
+    * [require(..., Creator skew limit must be no greater than 1.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L217)
 
     **Modifiers**
 
@@ -351,7 +351,7 @@ graph TD
 
 ### `setExpiryDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L179)</sub>
 
 ??? example "Details"
 
@@ -377,7 +377,7 @@ graph TD
 
 ### `setMarketCreationEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L320)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L320)</sub>
 
 ??? example "Details"
 
@@ -399,7 +399,7 @@ graph TD
 
 ### `setMaxOraclePriceAge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L174)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L174)</sub>
 
 ??? example "Details"
 
@@ -425,7 +425,7 @@ graph TD
 
 ### `setMaxTimeToMaturity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L184)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L184)</sub>
 
 ??? example "Details"
 
@@ -451,7 +451,7 @@ graph TD
 
 ### `setMigratingManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L327)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L327)</sub>
 
 ??? example "Details"
 
@@ -473,7 +473,7 @@ graph TD
 
 ### `setPoolFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -491,9 +491,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Total fee must be less than 100%.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L191)
+    * [require(..., Total fee must be less than 100%.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L191)
 
-    * [require(..., Total fee must be nonzero.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L192)
+    * [require(..., Total fee must be nonzero.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L192)
 
     **Modifiers**
 
@@ -505,7 +505,7 @@ graph TD
 
 ### `setRefundFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L205)</sub>
 
 ??? example "Details"
 
@@ -523,7 +523,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Refund fee must be no greater than 100%.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L206)
+    * [require(..., Refund fee must be no greater than 100%.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L206)
 
     **Modifiers**
 
@@ -535,7 +535,7 @@ graph TD
 
 ### `setResolverAndSyncCacheOnMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L311)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L311)</sub>
 
 ??? example "Details"
 
@@ -559,7 +559,7 @@ graph TD
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -577,7 +577,7 @@ graph TD
 
 ### `_factory`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L119)</sub>
 
 ??? example "Details"
 
@@ -595,7 +595,7 @@ graph TD
 
 ### `_isKnownMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L128)</sub>
 
 ??? example "Details"
 
@@ -613,7 +613,7 @@ graph TD
 
 ### `_isValidKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -631,7 +631,7 @@ graph TD
 
 ### `_sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -649,7 +649,7 @@ graph TD
 
 ### `_systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -669,7 +669,7 @@ graph TD
 
 ### `createMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L239)</sub>
 
 ??? example "Details"
 
@@ -687,15 +687,15 @@ graph TD
 
     **Requires**
 
-    * [require(..., Market creation is disabled)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L252)
+    * [require(..., Market creation is disabled)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L252)
 
-    * [require(..., Invalid key)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L253)
+    * [require(..., Invalid key)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L253)
 
-    * [require(..., Maturity too far in the future)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L256)
+    * [require(..., Maturity too far in the future)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L256)
 
-    * [require(..., End of bidding has passed)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L260)
+    * [require(..., End of bidding has passed)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L260)
 
-    * [require(..., Maturity predates end of bidding)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L261)
+    * [require(..., Maturity predates end of bidding)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L261)
 
     **Modifiers**
 
@@ -707,7 +707,7 @@ graph TD
 
 ### `expireMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L294)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L294)</sub>
 
 ??? example "Details"
 
@@ -729,7 +729,7 @@ graph TD
 
 ### `receiveMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L362)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L362)</sub>
 
 ??? example "Details"
 
@@ -747,7 +747,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Only permitted for migrating manager.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L363)
+    * [require(..., Only permitted for migrating manager.)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L363)
 
     **Emits**
 
@@ -755,7 +755,7 @@ graph TD
 
 ### `resolveMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L287)</sub>
 
 ??? example "Details"
 
@@ -773,100 +773,100 @@ graph TD
 
     **Requires**
 
-    * [require(..., Not an active market)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L288)
+    * [require(..., Not an active market)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L288)
 
 ## Modifiers
 
 ### `onlyActiveMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L387)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L387)</sub>
 
 ### `onlyKnownMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L392)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L392)</sub>
 
 ## Events
 
 ### `CreatorCapitalRequirementUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L416)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L416)</sub>
 
 **Signature**: `CreatorCapitalRequirementUpdated(uint256 value)`
 
 ### `CreatorFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L419)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L419)</sub>
 
 **Signature**: `CreatorFeeUpdated(uint256 fee)`
 
 ### `CreatorSkewLimitUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L417)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L417)</sub>
 
 **Signature**: `CreatorSkewLimitUpdated(uint256 value)`
 
 ### `ExerciseDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L413)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L413)</sub>
 
 **Signature**: `ExerciseDurationUpdated(uint256 duration)`
 
 ### `ExpiryDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L414)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L414)</sub>
 
 **Signature**: `ExpiryDurationUpdated(uint256 duration)`
 
 ### `MarketCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L399)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L399)</sub>
 
 **Signature**: `MarketCreated(address market, address creator, bytes32 oracleKey, uint256 strikePrice, uint256 biddingEndDate, uint256 maturityDate, uint256 expiryDate)`
 
 ### `MarketCreationEnabledUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L411)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L411)</sub>
 
 **Signature**: `MarketCreationEnabledUpdated(bool enabled)`
 
 ### `MarketExpired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L408)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L408)</sub>
 
 **Signature**: `MarketExpired(address market)`
 
 ### `MarketsMigrated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L409)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L409)</sub>
 
 **Signature**: `MarketsMigrated(contract BinaryOptionMarketManager receivingManager, contract BinaryOptionMarket[] markets)`
 
 ### `MarketsReceived`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L410)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L410)</sub>
 
 **Signature**: `MarketsReceived(contract BinaryOptionMarketManager migratingManager, contract BinaryOptionMarket[] markets)`
 
 ### `MaxOraclePriceAgeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L412)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L412)</sub>
 
 **Signature**: `MaxOraclePriceAgeUpdated(uint256 duration)`
 
 ### `MaxTimeToMaturityUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L415)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L415)</sub>
 
 **Signature**: `MaxTimeToMaturityUpdated(uint256 duration)`
 
 ### `PoolFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L418)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L418)</sub>
 
 **Signature**: `PoolFeeUpdated(uint256 fee)`
 
 ### `RefundFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-beta/contracts/BinaryOptionMarketManager.sol#L420)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc/contracts/BinaryOptionMarketManager.sol#L420)</sub>
 
 **Signature**: `RefundFeeUpdated(uint256 fee)`
