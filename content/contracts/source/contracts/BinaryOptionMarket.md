@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/BinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol)
+**Source:** [contracts/BinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol)
 
 ## Architecture
 
@@ -24,7 +24,7 @@ graph TD
 
 ### `Options`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L27)</sub>
 
 | Field   | Type                    | Description |
 | ------- | ----------------------- | ----------- |
@@ -33,7 +33,7 @@ graph TD
 
 ### `OracleDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L43)</sub>
 
 | Field         | Type      | Description |
 | ------------- | --------- | ----------- |
@@ -43,7 +43,7 @@ graph TD
 
 ### `Prices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L32)</sub>
 
 | Field   | Type      | Description |
 | ------- | --------- | ----------- |
@@ -52,7 +52,7 @@ graph TD
 
 ### `Times`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L37)</sub>
 
 | Field        | Type      | Description |
 | ------------ | --------- | ----------- |
@@ -64,55 +64,55 @@ graph TD
 
 ### `creator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L61)</sub>
 
 **Type:** `address`
 
 ### `creatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L56)</sub>
 
 **Type:** `struct BinaryOptionMarketManager.CreatorLimits`
 
 ### `deposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L60)</sub>
 
 **Type:** `uint256`
 
 ### `fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L55)</sub>
 
 **Type:** `struct BinaryOptionMarketManager.Fees`
 
 ### `options`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L51)</sub>
 
 **Type:** `struct BinaryOptionMarket.Options`
 
 ### `oracleDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L54)</sub>
 
 **Type:** `struct BinaryOptionMarket.OracleDetails`
 
 ### `prices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L52)</sub>
 
 **Type:** `struct BinaryOptionMarket.Prices`
 
 ### `resolved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L62)</sub>
 
 **Type:** `bool`
 
 ### `times`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L53)</sub>
 
 **Type:** `struct BinaryOptionMarket.Times`
 
@@ -120,7 +120,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -140,7 +140,7 @@ graph TD
 
 ### `balancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L323)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L323)</sub>
 
 ??? example "Details"
 
@@ -158,7 +158,7 @@ graph TD
 
 ### `bidOrRefundForPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L252)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L252)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@ graph TD
 
 ### `bidsOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L295)</sub>
 
 ??? example "Details"
 
@@ -194,7 +194,7 @@ graph TD
 
 ### `canResolve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L184)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L184)</sub>
 
 ??? example "Details"
 
@@ -212,7 +212,7 @@ graph TD
 
 ### `claimableBalancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L311)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L311)</sub>
 
 ??? example "Details"
 
@@ -230,7 +230,7 @@ graph TD
 
 ### `exercisableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L336)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L336)</sub>
 
 ??? example "Details"
 
@@ -248,7 +248,7 @@ graph TD
 
 ### `oraclePriceAndTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L175)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L175)</sub>
 
 ??? example "Details"
 
@@ -266,7 +266,7 @@ graph TD
 
 ### `phase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -284,7 +284,7 @@ graph TD
 
 ### `pricesAfterBidOrRefund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L230)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L230)</sub>
 
 ??? example "Details"
 
@@ -302,7 +302,7 @@ graph TD
 
 ### `requireActiveAndUnpaused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L391)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L391)</sub>
 
 ??? example "Details"
 
@@ -320,11 +320,11 @@ graph TD
 
     **Requires**
 
-    * [_requireManagerNotPaused](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L393)
+    * [_requireManagerNotPaused](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L393)
 
 ### `result`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L200)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L200)</sub>
 
 ??? example "Details"
 
@@ -342,7 +342,7 @@ graph TD
 
 ### `senderPriceAndExercisableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L219)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L219)</sub>
 
 ??? example "Details"
 
@@ -360,7 +360,7 @@ graph TD
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L303)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L303)</sub>
 
 ??? example "Details"
 
@@ -378,7 +378,7 @@ graph TD
 
 ### `totalClaimableSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L315)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L315)</sub>
 
 ??? example "Details"
 
@@ -396,7 +396,7 @@ graph TD
 
 ### `totalSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L327)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L327)</sub>
 
 ??? example "Details"
 
@@ -416,7 +416,7 @@ graph TD
 
 ### `expire`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L539)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L539)</sub>
 
 ??? example "Details"
 
@@ -434,7 +434,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Unexpired options remaining)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L540)
+    * [require(..., Unexpired options remaining)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L540)
 
     **Modifiers**
 
@@ -442,7 +442,7 @@ graph TD
 
 ### `resolve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L455)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L455)</sub>
 
 ??? example "Details"
 
@@ -460,9 +460,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Market already resolved)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L456)
+    * [require(..., Market already resolved)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L456)
 
-    * [require(..., Price is stale)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L461)
+    * [require(..., Price is stale)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L461)
 
     **Modifiers**
 
@@ -482,7 +482,7 @@ graph TD
 
 ### `_balancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L319)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L319)</sub>
 
 ??? example "Details"
 
@@ -500,7 +500,7 @@ graph TD
 
 ### `_biddingEnded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L144)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L144)</sub>
 
 ??? example "Details"
 
@@ -518,7 +518,7 @@ graph TD
 
 ### `_bidsOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L291)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L291)</sub>
 
 ??? example "Details"
 
@@ -536,7 +536,7 @@ graph TD
 
 ### `_checkCreatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L365)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L365)</sub>
 
 ??? example "Details"
 
@@ -554,13 +554,13 @@ graph TD
 
     **Requires**
 
-    * [require(..., Insufficient capital)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L367)
+    * [require(..., Insufficient capital)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L367)
 
-    * [require(..., Bids too skewed)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L369)
+    * [require(..., Bids too skewed)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L369)
 
 ### `_chooseSide`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L342)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L342)</sub>
 
 ??? example "Details"
 
@@ -578,7 +578,7 @@ graph TD
 
 ### `_claimOptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L483)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L483)</sub>
 
 ??? example "Details"
 
@@ -596,7 +596,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Nothing to claim)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L494)
+    * [require(..., Nothing to claim)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L494)
 
     **Modifiers**
 
@@ -612,7 +612,7 @@ graph TD
 
 ### `_claimableBalancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L307)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L307)</sub>
 
 ??? example "Details"
 
@@ -630,7 +630,7 @@ graph TD
 
 ### `_computePrices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L206)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L206)</sub>
 
 ??? example "Details"
 
@@ -648,11 +648,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., Bids must be nonzero)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L211)
+    * [require(..., Bids must be nonzero)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L211)
 
 ### `_decrementDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L381)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L381)</sub>
 
 ??? example "Details"
 
@@ -670,7 +670,7 @@ graph TD
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -688,7 +688,7 @@ graph TD
 
 ### `_exercisableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L331)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L331)</sub>
 
 ??? example "Details"
 
@@ -706,7 +706,7 @@ graph TD
 
 ### `_expired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -724,7 +724,7 @@ graph TD
 
 ### `_feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -742,7 +742,7 @@ graph TD
 
 ### `_incrementDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L375)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L375)</sub>
 
 ??? example "Details"
 
@@ -760,7 +760,7 @@ graph TD
 
 ### `_isFreshPriceUpdateTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L179)</sub>
 
 ??? example "Details"
 
@@ -778,7 +778,7 @@ graph TD
 
 ### `_manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -796,7 +796,7 @@ graph TD
 
 ### `_matured`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -814,7 +814,7 @@ graph TD
 
 ### `_option`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L353)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L353)</sub>
 
 ??? example "Details"
 
@@ -832,7 +832,7 @@ graph TD
 
 ### `_oraclePriceAndTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L171)</sub>
 
 ??? example "Details"
 
@@ -850,7 +850,7 @@ graph TD
 
 ### `_requireManagerNotPaused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L387)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L387)</sub>
 
 ??? example "Details"
 
@@ -868,11 +868,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., This action cannot be performed while the contract is paused)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L388)
+    * [require(..., This action cannot be performed while the contract is paused)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L388)
 
 ### `_result`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -890,7 +890,7 @@ graph TD
 
 ### `_sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -908,7 +908,7 @@ graph TD
 
 ### `_subToZero`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L361)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L361)</sub>
 
 ??? example "Details"
 
@@ -926,7 +926,7 @@ graph TD
 
 ### `_systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -944,7 +944,7 @@ graph TD
 
 ### `_totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L299)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L299)</sub>
 
 ??? example "Details"
 
@@ -962,7 +962,7 @@ graph TD
 
 ### `_updatePrices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L400)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L400)</sub>
 
 ??? example "Details"
 
@@ -986,7 +986,7 @@ graph TD
 
 ### `bid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L410)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L410)</sub>
 
 ??? example "Details"
 
@@ -1012,7 +1012,7 @@ graph TD
 
 ### `claimOptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L499)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L499)</sub>
 
 ??? example "Details"
 
@@ -1030,7 +1030,7 @@ graph TD
 
 ### `exerciseOptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L503)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L503)</sub>
 
 ??? example "Details"
 
@@ -1048,7 +1048,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Nothing to exercise)](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L517)
+    * [require(..., Nothing to exercise)](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L517)
 
     **Emits**
 
@@ -1056,7 +1056,7 @@ graph TD
 
 ### `refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L425)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L425)</sub>
 
 ??? example "Details"
 
@@ -1084,58 +1084,58 @@ graph TD
 
 ### `afterBidding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L569)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L569)</sub>
 
 ### `afterMaturity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L574)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L574)</sub>
 
 ### `duringBidding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L564)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L564)</sub>
 
 ### `managerNotPaused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L584)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L584)</sub>
 
 ### `systemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L579)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L579)</sub>
 
 ## Events
 
 ### `Bid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L591)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L591)</sub>
 
 **Signature**: `Bid(enum IBinaryOptionMarket.Side side, address account, uint256 value)`
 
 ### `MarketResolved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L594)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L594)</sub>
 
 **Signature**: `MarketResolved(enum IBinaryOptionMarket.Side result, uint256 oraclePrice, uint256 oracleTimestamp, uint256 deposited, uint256 poolFees, uint256 creatorFees)`
 
 ### `OptionsClaimed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L602)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L602)</sub>
 
 **Signature**: `OptionsClaimed(address account, uint256 longOptions, uint256 shortOptions)`
 
 ### `OptionsExercised`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L603)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L603)</sub>
 
 **Signature**: `OptionsExercised(address account, uint256 value)`
 
 ### `PricesUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L593)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L593)</sub>
 
 **Signature**: `PricesUpdated(uint256 longPrice, uint256 shortPrice)`
 
 ### `Refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.23.3/contracts/BinaryOptionMarket.sol#L592)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0-alpha/contracts/BinaryOptionMarket.sol#L592)</sub>
 
 **Signature**: `Refund(enum IBinaryOptionMarket.Side side, address account, uint256 value, uint256 fee)`
