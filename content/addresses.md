@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.24.0-rc](https://github.com/Synthetixio/synthetix/tree/v2.24.0-rc)
+**Version**: [v2.24.0](https://github.com/Synthetixio/synthetix/tree/v2.24.0)
 
 !!! info "Naming Conventions"
 
@@ -511,7 +511,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x4E2f13a347584b17F99521497B987f01660b877d">0x4E2f13a347584b17F99521497B987f01660b877d</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x5eF0de4bd373e435341Cd82311dfb13d5E8fdEf5">0x5eF0de4bd373e435341Cd82311dfb13d5E8fdEf5</a>
                 </td>
               </tr>
               <tr>
