@@ -58,6 +58,10 @@ nav:
       - Source:
           Contracts:
             - AddressResolver: contracts/source/contracts/AddressResolver.md
+            - BinaryOption: contracts/source/contracts/BinaryOption.md
+            - BinaryOptionMarket: contracts/source/contracts/BinaryOptionMarket.md
+            - BinaryOptionMarketFactory: contracts/source/contracts/BinaryOptionMarketFactory.md
+            - BinaryOptionMarketManager: contracts/source/contracts/BinaryOptionMarketManager.md
             - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
             - Depot: contracts/source/contracts/Depot.md
             - EscrowChecker: contracts/source/contracts/EscrowChecker.md
@@ -97,6 +101,9 @@ nav:
             - TokenState: contracts/source/contracts/TokenState.md
           Interfaces:
             - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
+            - IBinaryOption: contracts/source/interfaces/IBinaryOption.md
+            - IBinaryOptionMarket: contracts/source/interfaces/IBinaryOptionMarket.md
+            - IBinaryOptionMarketManager: contracts/source/interfaces/IBinaryOptionMarketManager.md
             - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
             - IDepot: contracts/source/interfaces/IDepot.md
             - IERC20: contracts/source/interfaces/IERC20.md
@@ -117,6 +124,7 @@ nav:
             - ISynthetixState: contracts/source/interfaces/ISynthetixState.md
             - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
           Libraries:
+            - AddressListLib: contracts/source/libraries/AddressListLib.md
             - Math: contracts/source/libraries/Math.md
             - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
             - SafeMath: contracts/source/libraries/SafeMath.md

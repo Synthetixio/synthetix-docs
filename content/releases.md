@@ -2,6 +2,31 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Aldebaran (2.24.0)
+
+**Published**: Jul 1, 2020
+
+**Codebase**: [2.24.0](https://github.com/Synthetixio/synthetix/tree/2.24.0)
+
+> - [SIP-66](https://sips.synthetix.io/sips/sip-66) Reduce gas of SNX transfers for non-stakers
+
+- [SCCP-31](https://sips.synthetix.io/sccp/sccp-31) Increase Commodity Fees
+
+---
+
+# Acrux (v2.23.3)
+
+**Published**: Jun 30, 2020
+
+**Codebase**: [v2.23.3](https://github.com/Synthetixio/synthetix/tree/v2.23.3)
+
+> https://blog.synthetix.io/the-acrux-release/
+
+- [SIP-48](https://sips.synthetix.io/sips/sip-48) Allow read views while rates are stale
+- [SIP-53](https://sips.synthetix.io/sips/sip-53) Binary options
+
+---
+
 # Altair (v2.22.4)
 
 **Published**: Jun 5, 2020
