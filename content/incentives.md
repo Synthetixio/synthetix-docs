@@ -66,7 +66,7 @@ Aim: This trial is providing the `SNX` component of a `SNX/REN` liquidity pool (
 
 ### sETH/ETH liquidity on Uniswap v1
 
-Amount: Initially `5%` of the weekly inflationary SNX, then `64,000 SNX` per week, then progressively less. 
+Amount: Initially `5%` of the weekly inflationary SNX, then `64,000 SNX` per week, then progressively less.
 
 Duration: Jul 12, 2019 - Jun 26, 2020
 
@@ -76,7 +76,7 @@ Staking Contract: [`StakingRewardssETHUniswapV1`](https://contracts.synthetix.io
 
 Source: [`Unipool`](https://github.com/Synthetixio/Unipool/blob/master/contracts/Unipool.sol)
 
-Aim: This incentive aimed to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with ETH. sETH was chosen over sUSD because these two assets should always trade at parity, and shifts in the price of ETH against USD do not require arbitrage. 
+Aim: This incentive aimed to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with ETH. sETH was chosen over sUSD because these two assets should always trade at parity, and shifts in the price of ETH against USD do not require arbitrage.
 
 ### sXAU/USDC liquidity on Uniswap v2 (trial)
 
@@ -92,7 +92,7 @@ Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synth
 
 > Note: this deployment was based off a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
 
-Aim: This trial aimed to test demand for sXAU (synthetic gold) and trial Uniswap v2, which was recently released. 
+Aim: This trial aimed to test demand for sXAU (synthetic gold) and trial Uniswap v2, which was recently released.
 
 ### SNX/USDC liquidity on Balancer (trial)
 
@@ -108,7 +108,7 @@ Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synth
 
 > Note: this deployment was based off a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
 
-Aim: This trial aimed to test Balancer as a means for providing extra SNX liquidity, as well as trialling the recently released Balancer protocol. 
+Aim: This trial aimed to test Balancer as a means for providing extra SNX liquidity, as well as trialling the recently released Balancer protocol.
 
 ## Value Recipients
 
