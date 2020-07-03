@@ -48,7 +48,7 @@ Aim: This trial aims to help reduce the impact of sETH holdings on the SNX stake
 
 ### sBTC/renBTC-wBTC liquidity on Curve (trial)
 
-Amount: `10,000 SNX` and `25,000 REN` per week, distributed via Balancer `BPT` tokens in [a shared Balancer pool](https://contracts.synthetix.io/BalancerSNXUSDC)
+Amount: `10,000 SNX` and `25,000 REN` per week, distributed via Balancer `BPT` tokens in [a shared Balancer pool](http://contracts.synthetix.io/BalancerSNXREN)
 
 Duration: Jun 19, 2020 - Aug 28, 2020
 
