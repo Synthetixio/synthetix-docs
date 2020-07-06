@@ -24,8 +24,10 @@ claimed or exercised, the values in this contract are updated by the market.
 
 ### Related Contracts
 
-    graph TD
-        BinaryOption[BinaryOption] --> BinaryOptionMarket[BinaryOptionMarket]
+```mermaid
+graph TD
+    BinaryOption[BinaryOption] --> BinaryOptionMarket[BinaryOptionMarket]
+```
 
 ??? example "Details"
 
