@@ -357,10 +357,11 @@ If the result would be negative, because the desired operation can only move the
 from the target, the function returns 0.
 
 ??? info "Formula Derivation"
-For brevity, the following definitions will be used:
 
-$$
-   \begin{equation}
+    For brevity, the following definitions will be used:
+
+    $$
+    \begin{equation}
        \begin{split}
        \psi &:= 1 - (\text{poolFee} + \text{creatorFee}) \\
        \xi  &:= 1 - \text{refundFee} \\
@@ -368,87 +369,87 @@ $$
        P_{this}, P_{that} &:= \text{prices()} \\
        Q_{this}, Q_{that} &:= \text{totalBids()} \\
        \end{split}
-   \end{equation}
-$$
+    \end{equation}
+    $$
 
-The variables $\text{this}$ and $\text{that}$ refer to the opposite sides of the market. Since prices
-are symmetrical between the sides of the market, they can be interpreted in either order.
+    The variables $\text{this}$ and $\text{that}$ refer to the opposite sides of the market. Since prices
+    are symmetrical between the sides of the market, they can be interpreted in either order.
 
-If a bid with value $b$ is placed on $\text{this}$ side of the market, the resulting prices are as follows:
+    If a bid with value $b$ is placed on $\text{this}$ side of the market, the resulting prices are as follows:
 
-$$
-\begin{equation}
-    \begin{split}
-    P_{this} & \leftarrow \frac{Q_{this} + b}{\psi (D + b)} \\
-    P_{that} & \leftarrow \frac{Q_{that}}{\psi (D + b)}
-    \end{split}
-\end{equation}
-$$
+    $$
+    \begin{equation}
+       \begin{split}
+       P_{this} & \leftarrow \frac{Q_{this} + b}{\psi (D + b)} \\
+       P_{that} & \leftarrow \frac{Q_{that}}{\psi (D + b)}
+       \end{split}
+    \end{equation}
+    $$
 
-The case of a refund of value $r$ must take the refund fee into account:
+    The case of a refund of value $r$ must take the refund fee into account:
 
-$$
-\begin{equation}
-    \begin{split}
-    P_{this} &\leftarrow \frac{Q_{this} - r}{\psi (D - \xi r)} \\
-    P_{that} &\leftarrow \frac{Q_{that}}{\psi (D - \xi r)}
-    \end{split}
-\end{equation}
-$$
+    $$
+    \begin{equation}
+       \begin{split}
+       P_{this} &\leftarrow \frac{Q_{this} - r}{\psi (D - \xi r)} \\
+       P_{that} &\leftarrow \frac{Q_{that}}{\psi (D - \xi r)}
+       \end{split}
+    \end{equation}
+    $$
 
-So by bidding or refunding on $this$ side of the market, we alter the prices on both sides. Note that bids always
-increase prices on $this$ side and decrease prices on $that$ side, while refunds always decrease prices on $this$
-side and increase prices on $that$ side.
+    So by bidding or refunding on $this$ side of the market, we alter the prices on both sides. Note that bids always
+    increase prices on $this$ side and decrease prices on $that$ side, while refunds always decrease prices on $this$
+    side and increase prices on $that$ side.
 
-**Same-Side Price Targeting**
+    **Same-Side Price Targeting**
 
-By changing our position on $this$ side of the market, we can change $P_{this}$ to a desired level $P^{*}_{this}$.
-If $P_{this} < P^{*}_{this}$, we must bid a value $b$ to increase the price, while if $P^{*}_{this} < P_{this}$,
-we must refund a value $r$ to decrease the price, as follows:
+    By changing our position on $this$ side of the market, we can change $P_{this}$ to a desired level $P^{*}_{this}$.
+    If $P_{this} < P^{*}_{this}$, we must bid a value $b$ to increase the price, while if $P^{*}_{this} < P_{this}$,
+    we must refund a value $r$ to decrease the price, as follows:
 
-$$
-\begin{equation}
-    \begin{split}
-    b &\leftarrow \frac{\psi D P_{this} - Q_{this}}{1 - \psi P_{this} } \\
-    r &\leftarrow \frac{Q_{this} - \psi D P_{this}}{1 - \xi \psi P_{this}}
-    \end{split}
-\end{equation}
-$$
+    $$
+    \begin{equation}
+       \begin{split}
+       b &\leftarrow \frac{\psi D P_{this} - Q_{this}}{1 - \psi P_{this} } \\
+       r &\leftarrow \frac{Q_{this} - \psi D P_{this}}{1 - \xi \psi P_{this}}
+       \end{split}
+    \end{equation}
+    $$
 
-**Opposite-Side Price Targeting**
+    **Opposite-Side Price Targeting**
 
-Similarly, by changing our position on $this$ side, we can also change $P_{that}$ to a desired level $P^{*}_{that}$.
-The response of the market is the opposite to the same-side case, so if $P_{that} < P^{*}_{that}$, we must refund
-a value $r$ to increase the price, while if $P^{*}_{that} < P_{that}$, we must bid a value $b$ to decrease the
-price, as follows:
+    Similarly, by changing our position on $this$ side, we can also change $P_{that}$ to a desired level $P^{*}_{that}$.
+    The response of the market is the opposite to the same-side case, so if $P_{that} < P^{*}_{that}$, we must refund
+    a value $r$ to increase the price, while if $P^{*}_{that} < P_{that}$, we must bid a value $b$ to decrease the
+    price, as follows:
 
-$$
-\begin{equation}
-    \begin{split}
-    r &\leftarrow \frac{\psi D P_{that} - Q_{that}}{\xi \psi P_{that}} \\
-    b &\leftarrow \frac{Q_{that} - \psi D P_{that}}{\psi P_{that}}
-    \end{split}
-\end{equation}
-$$
+    $$
+    \begin{equation}
+       \begin{split}
+       r &\leftarrow \frac{\psi D P_{that} - Q_{that}}{\xi \psi P_{that}} \\
+       b &\leftarrow \frac{Q_{that} - \psi D P_{that}}{\psi P_{that}}
+       \end{split}
+    \end{equation}
+    $$
 
-Note that all of these values can be negative if the desired price is in the wrong direction relative to the way
-it will move given the side of the market we're looking at and whether we're bidding or refunding. Since we
-cannot perform negative bids or refunds, the function returns 0 instead of throwing an exception or returning
-negative numbers.
+    Note that all of these values can be negative if the desired price is in the wrong direction relative to the way
+    it will move given the side of the market we're looking at and whether we're bidding or refunding. Since we
+    cannot perform negative bids or refunds, the function returns 0 instead of throwing an exception or returning
+    negative numbers.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`bidOrRefundForPrice(enum IBinaryOptionMarket.Side bidSide, enum IBinaryOptionMarket.Side priceSide, uint256 price, bool refund) returns (uint256)`
+    `bidOrRefundForPrice(enum IBinaryOptionMarket.Side bidSide, enum IBinaryOptionMarket.Side priceSide, uint256 price, bool refund) returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `bidsOf`
 
@@ -458,17 +459,17 @@ Returns the current [bids](BinaryOption.md#bidof) on each side of the market of 
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`bidsOf(address account) returns (uint256, uint256)`
+    `bidsOf(address account) returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `canResolve`
 
@@ -482,17 +483,17 @@ Returns true if the market can currently be resolved, which is the case when:
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`canResolve() returns (bool)`
+    `canResolve() returns (bool)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `claimableBalancesOf`
 
@@ -506,17 +507,17 @@ market has transitioned to the [trading phase](#phase).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`claimableBalancesOf(address account) returns (uint256, uint256)`
+    `claimableBalancesOf(address account) returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `exercisableDeposits`
 
@@ -527,17 +528,17 @@ of options to be awarded to each side of the market.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`exercisableDeposits() returns (uint256)`
+    `exercisableDeposits() returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `oraclePriceAndTimestamp`
 
@@ -548,17 +549,17 @@ contract, along with the time it was updated.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`oraclePriceAndTimestamp() returns (uint256, uint256)`
+    `oraclePriceAndTimestamp() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `phase`
 
@@ -568,17 +569,17 @@ Returns the current [phase](#phase) the market is in.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`phase() returns (enum IBinaryOptionMarket.Phase)`
+    `phase() returns (enum IBinaryOptionMarket.Phase)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `pricesAfterBidOrRefund`
 
@@ -590,17 +591,17 @@ for details of this computation.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`pricesAfterBidOrRefund(enum IBinaryOptionMarket.Side side, uint256 value, bool refund) returns (uint256, uint256)`
+    `pricesAfterBidOrRefund(enum IBinaryOptionMarket.Side side, uint256 value, bool refund) returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `requireActiveAndUnpaused`
 
@@ -611,21 +612,21 @@ Reverts the transaction if the system is suspended, or the manager is paused. Th
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`requireActiveAndUnpaused()`
+    `requireActiveAndUnpaused()`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
-**Requires**
+    **Requires**
 
-- [\_requireManagerNotPaused](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L393)
+    * [_requireManagerNotPaused](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L393)
 
 ### `result`
 
@@ -640,17 +641,17 @@ Note that no check is performed that the underlying asset price [is fresh](#_isf
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`result() returns (enum IBinaryOptionMarket.Side)`
+    `result() returns (enum IBinaryOptionMarket.Side)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `senderPriceAndExercisableDeposits`
 
@@ -663,17 +664,17 @@ if it is called by any other address, the transaction is reverted.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`senderPriceAndExercisableDeposits() returns (uint256, uint256)`
+    `senderPriceAndExercisableDeposits() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `totalBids`
 
@@ -683,17 +684,17 @@ Returns the [total value of bids](BinaryOption.md#totalbids) on each side of the
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`totalBids() returns (uint256, uint256)`
+    `totalBids() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `totalClaimableSupplies`
 
@@ -708,17 +709,17 @@ but will not attain its correct value until bidding has ended.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`totalClaimableSupplies() returns (uint256, uint256)`
+    `totalClaimableSupplies() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `totalSupplies`
 
@@ -728,17 +729,17 @@ Returns the [total supply of options](BinaryOption.md#totalsupply) on each side 
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`totalSupplies() returns (uint256, uint256)`
+    `totalSupplies() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ## Restricted Functions
 
@@ -756,25 +757,25 @@ in-the-money options have been exercised.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`expire(address payable beneficiary)`
+    `expire(address payable beneficiary)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
-**Requires**
+    **Requires**
 
-- [require(..., Unexpired options remaining)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L540)
+    * [require(..., Unexpired options remaining)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L540)
 
-**Modifiers**
+    **Modifiers**
 
-- [onlyOwner](#onlyowner)
+    * [onlyOwner](#onlyowner)
 
 ### `resolve`
 
@@ -793,37 +794,37 @@ This function reverts the transaction if the system is suspended or the manager 
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`resolve()`
+    `resolve()`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
-**Requires**
+    **Requires**
 
-- [require(..., Market already resolved)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L456)
+    * [require(..., Market already resolved)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L456)
 
-- [require(..., Price is stale)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L461)
+    * [require(..., Price is stale)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L461)
 
-**Modifiers**
+    **Modifiers**
 
-- [onlyOwner](#onlyowner)
+    * [onlyOwner](#onlyowner)
 
-- [afterMaturity](#aftermaturity)
+    * [afterMaturity](#aftermaturity)
 
-- [systemActive](#systemactive)
+    * [systemActive](#systemactive)
 
-- [managerNotPaused](#managernotpaused)
+    * [managerNotPaused](#managernotpaused)
 
-**Emits**
+    **Emits**
 
-- [MarketResolved](#marketresolved)
+    * [MarketResolved](#marketresolved)
 
 ## Internal Functions
 
@@ -835,17 +836,17 @@ See [`balancesOf`](#balancesof).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_balancesOf(address account) returns (uint256, uint256)`
+    `_balancesOf(address account) returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_biddingEnded`
 
@@ -855,17 +856,17 @@ True if the current time is after the [bidding end time](#times).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_biddingEnded() returns (bool)`
+    `_biddingEnded() returns (bool)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_bidsOf`
 
@@ -875,17 +876,17 @@ See [`bidsOf`](#bidsof).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_bidsOf(address account) returns (uint256, uint256)`
+    `_bidsOf(address account) returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_checkCreatorLimits`
 
@@ -895,23 +896,23 @@ Reverts if the provided bids would violate the [creator limits](#creatorlimits).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_checkCreatorLimits(uint256 longBid, uint256 shortBid)`
+    `_checkCreatorLimits(uint256 longBid, uint256 shortBid)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
-**Requires**
+    **Requires**
 
-- [require(..., Insufficient capital)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L367)
+    * [require(..., Insufficient capital)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L367)
 
-- [require(..., Bids too skewed)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L369)
+    * [require(..., Bids too skewed)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L369)
 
 ### `_chooseSide`
 
@@ -921,17 +922,17 @@ Selects between a long and a short value depending on its first input.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_chooseSide(enum IBinaryOptionMarket.Side side, uint256 longValue, uint256 shortValue) returns (uint256)`
+    `_chooseSide(enum IBinaryOptionMarket.Side side, uint256 longValue, uint256 shortValue) returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`pure`
+    `pure`
 
 ### `_claimOptions`
 
@@ -941,33 +942,33 @@ See [`claimOptions`](#claimoptions).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_claimOptions() returns (uint256, uint256)`
+    `_claimOptions() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
-**Requires**
+    **Requires**
 
-- [require(..., Nothing to claim)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L494)
+    * [require(..., Nothing to claim)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L494)
 
-**Modifiers**
+    **Modifiers**
 
-- [systemActive](#systemactive)
+    * [systemActive](#systemactive)
 
-- [managerNotPaused](#managernotpaused)
+    * [managerNotPaused](#managernotpaused)
 
-- [afterBidding](#afterbidding)
+    * [afterBidding](#afterbidding)
 
-**Emits**
+    **Emits**
 
-- [OptionsClaimed](#optionsclaimed)
+    * [OptionsClaimed](#optionsclaimed)
 
 ### `_claimableBalancesOf`
 
@@ -977,17 +978,17 @@ See [`claimableBalancesOf`](#claimablebalancesof).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_claimableBalancesOf(address account) returns (uint256, uint256)`
+    `_claimableBalancesOf(address account) returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_computePrices`
 
@@ -996,8 +997,8 @@ See [`claimableBalancesOf`](#claimablebalancesof).
 Computes the market prices from the long and short bid totals, and the funds deposited in the contract.
 These prices are computed approximately as follows:
 
-longPrice = longBids / (feeMultiplier _ deposited)
-shortPrice = shortBids / (feeMultiplier _ deposited)
+   longPrice  = longBids  / (feeMultiplier * deposited)
+   shortPrice = shortBids / (feeMultiplier * deposited)
 
 Interpreting [`/`](/contracts/source/libraries/SafeDecimalMath.md#dividedecimalround) and [`*`](/contracts/source/libraries/SafeDecimalMath.md#multiplydecimalround)
 as [fixed point math operators (with rounding)](/contracts/source/libraries/SafeDecimalMath.md).
@@ -1012,21 +1013,21 @@ on either side of the market be refunded.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_computePrices(uint256 longBids, uint256 shortBids, uint256 _deposited) returns (uint256, uint256)`
+    `_computePrices(uint256 longBids, uint256 shortBids, uint256 _deposited) returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
-**Requires**
+    **Requires**
 
-- [require(..., Bids must be nonzero)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L211)
+    * [require(..., Bids must be nonzero)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L211)
 
 ### `_decrementDeposited`
 
@@ -1036,17 +1037,17 @@ Deducts a value from the tracked deposited quantity, and ensures that it is also
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_decrementDeposited(uint256 value) returns (uint256)`
+    `_decrementDeposited(uint256 value) returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
 ### `_exchangeRates`
 
@@ -1056,17 +1057,17 @@ Returns the [cached](MixinResolver.md) address of the [`ExchangeRates`](Exchange
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_exchangeRates() returns (contract IExchangeRates)`
+    `_exchangeRates() returns (contract IExchangeRates)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_exercisableDeposits`
 
@@ -1076,17 +1077,17 @@ See [`exercisableDeposits`](#exercisabledeposits).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_exercisableDeposits(uint256 _deposited) returns (uint256)`
+    `_exercisableDeposits(uint256 _deposited) returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_expired`
 
@@ -1097,17 +1098,17 @@ more sUSD [`deposited`](#deposited) in the market.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_expired() returns (bool)`
+    `_expired() returns (bool)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_feePool`
 
@@ -1117,17 +1118,17 @@ Retrieves the [cached](MixinResolver.md) address of the [`FeePool`](FeePool.md) 
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_feePool() returns (contract IFeePool)`
+    `_feePool() returns (contract IFeePool)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_incrementDeposited`
 
@@ -1137,17 +1138,17 @@ Adds a value to the tracked deposited quantity, and ensures that it is also adde
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_incrementDeposited(uint256 value) returns (uint256)`
+    `_incrementDeposited(uint256 value) returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
 ### `_isFreshPriceUpdateTime`
 
@@ -1158,17 +1159,17 @@ false otherwise; fresh prices are acceptable for [resolving the market](#resolve
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_isFreshPriceUpdateTime(uint256 timestamp) returns (bool)`
+    `_isFreshPriceUpdateTime(uint256 timestamp) returns (bool)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_manager`
 
@@ -1179,17 +1180,17 @@ Note that this address is also this contract's [owner](Owned.md#owner).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_manager() returns (contract BinaryOptionMarketManager)`
+    `_manager() returns (contract BinaryOptionMarketManager)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_matured`
 
@@ -1199,17 +1200,17 @@ True if the [maturity date](#times) is in the past, and false otherwise.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_matured() returns (bool)`
+    `_matured() returns (bool)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_option`
 
@@ -1219,17 +1220,17 @@ Returns the appropriate [option contract address](#options) for a given side of 
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_option(enum IBinaryOptionMarket.Side side) returns (contract BinaryOption)`
+    `_option(enum IBinaryOptionMarket.Side side) returns (contract BinaryOption)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_oraclePriceAndTimestamp`
 
@@ -1239,17 +1240,17 @@ See [`oraclePriceAndTimestamp`](#oraclepriceandtimestamp).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_oraclePriceAndTimestamp() returns (uint256, uint256)`
+    `_oraclePriceAndTimestamp() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_requireManagerNotPaused`
 
@@ -1259,21 +1260,21 @@ Reverts the transaction if the [`BinaryOptionMarketManager`](BinaryOptionMarketM
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_requireManagerNotPaused()`
+    `_requireManagerNotPaused()`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
-**Requires**
+    **Requires**
 
-- [require(..., This action cannot be performed while the contract is paused)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L388)
+    * [require(..., This action cannot be performed while the contract is paused)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L388)
 
 ### `_result`
 
@@ -1283,17 +1284,17 @@ See [`result`](#result).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_result() returns (enum IBinaryOptionMarket.Side)`
+    `_result() returns (enum IBinaryOptionMarket.Side)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_sUSD`
 
@@ -1303,17 +1304,17 @@ Retrieves the [cached](MixinResolver.md) address of the sUSD [`Synth`](Synth.md)
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_sUSD() returns (contract IERC20)`
+    `_sUSD() returns (contract IERC20)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_subToZero`
 
@@ -1323,17 +1324,17 @@ Returns the difference of two numbers, or zero if the difference is negative.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_subToZero(uint256 a, uint256 b) returns (uint256)`
+    `_subToZero(uint256 a, uint256 b) returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`pure`
+    `pure`
 
 ### `_systemStatus`
 
@@ -1343,17 +1344,17 @@ Retrieves the [cached](MixinResolver.md) address of the [`SystemStatus`](SystemS
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_systemStatus() returns (contract ISystemStatus)`
+    `_systemStatus() returns (contract ISystemStatus)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_totalBids`
 
@@ -1363,17 +1364,17 @@ See [`totalBids`](#totalbids).
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_totalBids() returns (uint256, uint256)`
+    `_totalBids() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`view`
+    `view`
 
 ### `_updatePrices`
 
@@ -1384,21 +1385,21 @@ value in the contract. See [`_computePrices`](#_computeprices) for details.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`_updatePrices(uint256 longBids, uint256 shortBids, uint256 _deposited)`
+    `_updatePrices(uint256 longBids, uint256 shortBids, uint256 _deposited)`
 
-**Visibility**
+    **Visibility**
 
-`internal`
+    `internal`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
-**Emits**
+    **Emits**
 
-- [PricesUpdated](#pricesupdated)
+    * [PricesUpdated](#pricesupdated)
 
 ## External Functions
 
@@ -1423,25 +1424,25 @@ or if the manager contract is paused.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`bid(enum IBinaryOptionMarket.Side side, uint256 value)`
+    `bid(enum IBinaryOptionMarket.Side side, uint256 value)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
-**Modifiers**
+    **Modifiers**
 
-- [duringBidding](#duringbidding)
+    * [duringBidding](#duringbidding)
 
-**Emits**
+    **Emits**
 
-- [Bid](#bid)
+    * [Bid](#bid)
 
 ### `claimOptions`
 
@@ -1458,17 +1459,17 @@ Implemented by the [`_claimOptions`](#_claimoptions) function.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`claimOptions() returns (uint256, uint256)`
+    `claimOptions() returns (uint256, uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
 ### `exerciseOptions`
 
@@ -1488,25 +1489,25 @@ This function reverts the transaction if the system is suspended or the manager 
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`exerciseOptions() returns (uint256)`
+    `exerciseOptions() returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
-**Requires**
+    **Requires**
 
-- [require(..., Nothing to exercise)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L517)
+    * [require(..., Nothing to exercise)](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol#L517)
 
-**Emits**
+    **Emits**
 
-- [OptionsExercised](#optionsexercised)
+    * [OptionsExercised](#optionsexercised)
 
 ### `refund`
 
@@ -1534,25 +1535,25 @@ or if the manager contract is paused.
 
 ??? example "Details"
 
-**Signature**
+    **Signature**
 
-`refund(enum IBinaryOptionMarket.Side side, uint256 value) returns (uint256)`
+    `refund(enum IBinaryOptionMarket.Side side, uint256 value) returns (uint256)`
 
-**Visibility**
+    **Visibility**
 
-`external`
+    `external`
 
-**State Mutability**
+    **State Mutability**
 
-`nonpayable`
+    `nonpayable`
 
-**Modifiers**
+    **Modifiers**
 
-- [duringBidding](#duringbidding)
+    * [duringBidding](#duringbidding)
 
-**Emits**
+    **Emits**
 
-- [Refund](#refund)
+    * [Refund](#refund)
 
 ## Modifiers
 
@@ -1635,6 +1636,4 @@ The option prices were updated.
 A refund was processed. The `value` argument is the quantity of sUSD actually refunded, without the fee.
 
 **Signature**: `Refund(enum IBinaryOptionMarket.Side side, address account, uint256 value, uint256 fee)`
-
-$$
 $$
