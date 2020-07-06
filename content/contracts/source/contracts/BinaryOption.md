@@ -13,7 +13,6 @@ the entire lifecycle, handling both bid and option balances, and the basic opera
 converting between them. Whenever a bid is made or refunded, or an option
 claimed or exercised, the values in this contract are updated by the market.
 
-
 **Source:** [contracts/BinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOption.sol)
 
 ## Architecture
@@ -322,7 +321,7 @@ The transaction is reverted if the desired refund exceeds the current bid of the
 See [`claimableBalanceOf`](#claimablebalanceof).
 
 This function requires the quantity of [exercisable deposits](BinaryOptionMarket.md#exercisabledeposits) in the parent
-market just in case the claimable value in the last account is different from the remaining deposits 
+market just in case the claimable value in the last account is different from the remaining deposits
 by a few wei due to rounding errors.
 
 ??? example "Details"
