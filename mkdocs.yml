@@ -193,6 +193,10 @@ plugins:
   - redirects:
       redirect_maps:
         contracts/AddressResolver.md: contracts/source/contracts/AddressResolver.md
+        contracts/BinaryOption.md: contracts/source/contracts/BinaryOption.md
+        contracts/BinaryOptionMarket.md: contracts/source/contracts/BinaryOptionMarket.md
+        contracts/BinaryOptionMarketFactory.md: contracts/source/contracts/BinaryOptionMarketFactory.md
+        contracts/BinaryOptionMarketManager.md: contracts/source/contracts/BinaryOptionMarketManager.md
         contracts/Depot.md: contracts/source/contracts/Depot.md
         contracts/Exchanger.md: contracts/source/contracts/Exchanger.md
         contracts/ExchangeRates.md: contracts/source/contracts/ExchangeRates.md
