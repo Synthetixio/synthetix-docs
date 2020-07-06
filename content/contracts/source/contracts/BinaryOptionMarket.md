@@ -997,8 +997,10 @@ See [`claimableBalancesOf`](#claimablebalancesof).
 Computes the market prices from the long and short bid totals, and the funds deposited in the contract.
 These prices are computed approximately as follows:
 
-   longPrice  = longBids  / (feeMultiplier * deposited)
-   shortPrice = shortBids / (feeMultiplier * deposited)
+```
+longPrice  = longBids  / (feeMultiplier * deposited)
+shortPrice = shortBids / (feeMultiplier * deposited)
+```
 
 Interpreting [`/`](/contracts/source/libraries/SafeDecimalMath.md#dividedecimalround) and [`*`](/contracts/source/libraries/SafeDecimalMath.md#multiplydecimalround)
 as [fixed point math operators (with rounding)](/contracts/source/libraries/SafeDecimalMath.md).
@@ -1636,4 +1638,3 @@ The option prices were updated.
 A refund was processed. The `value` argument is the quantity of sUSD actually refunded, without the fee.
 
 **Signature**: `Refund(enum IBinaryOptionMarket.Side side, address account, uint256 value, uint256 fee)`
-$$
