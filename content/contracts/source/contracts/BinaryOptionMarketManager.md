@@ -72,9 +72,9 @@ graph TD
 
 These are the parameters governing the limits that binary option market creators must abide by.
 
-| Field                | Type      | Description |
-| -------------------- | --------- | ----------- |
-| `capitalRequirement` | `uint256` | Markets require the creator to maintain at least this value of sUSD in bids. |
+| Field                | Type      | Description                                                                                                    |
+| -------------------- | --------- | -------------------------------------------------------------------------------------------------------------- |
+| `capitalRequirement` | `uint256` | Markets require the creator to maintain at least this value of sUSD in bids.                                   |
 | `skewLimit`          | `uint256` | The market requires a percentage of the creator's bids to be retained on each size, governed by this variable. |
 
 ### `Durations`
@@ -87,11 +87,11 @@ All durations are in seconds.
 Note that unlike other parameters, varying `maxOraclePriceAge` will affect
 already-instantiated markets.
 
-| Field               | Type      | Description |
-| ------------------- | --------- | ----------- |
+| Field               | Type      | Description                                                                                                                         |
+| ------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `maxOraclePriceAge` | `uint256` | A market can still be resolved if the last oracle price was updated less than `maxOraclePriceAge` seconds before the maturity date. |
-| `expiryDuration`    | `uint256` | The duration that options can be exercised for after maturity. |
-| `maxTimeToMaturity` | `uint256` | Markets cannot be created with a maturity date further in the future than this. |
+| `expiryDuration`    | `uint256` | The duration that options can be exercised for after maturity.                                                                      |
+| `maxTimeToMaturity` | `uint256` | Markets cannot be created with a maturity date further in the future than this.                                                     |
 
 ### `Fees`
 
@@ -101,10 +101,10 @@ The global fee rates, which are inherited by new markets.
 Note that the sum `poolFee + creatorFee` must be between 0 and 1 exclusive,
 while `refundFee` must be no greater than 1.
 
-| Field        | Type      | Description |
-| ------------ | --------- | ----------- |
-| `poolFee`    | `uint256` | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
-| `creatorFee` | `uint256` | The portion collected by the market's [creator](BinaryOptionMarket.md#creator) as a fee. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
+| Field        | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------ | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `poolFee`    | `uint256` | The portion of the sUSD deposited in the market at resolution that is collected by the [fee pool](FeePool.md). This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number.                                                                                                                                                                                                                    |
+| `creatorFee` | `uint256` | The portion collected by the market's [creator](BinaryOptionMarket.md#creator) as a fee. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number.                                                                                                                                                                                                                                          |
 | `refundFee`  | `uint256` | When a bid is refunded, this portion of its value is retained in the market to be paid out at maturity. This fee is intended to compensate the market for the toxic price signal that the bidder has sent, by increasing the payoff of the remaining bidders, and to discourage excessive price volatility at the end of bidding. This is an [18-decimal](/contracts/source/libraries/SafeDecimalMath.md) fixed point number. |
 
 ## Variables
@@ -756,7 +756,7 @@ Returns true if the provided address exists in either of the active or matured m
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarketManager.sol#L148)</sub>
 
-A key can be used for a binary option market if it is not `sUSD` (as the price of sUSD is fixed at $1), and not
+A key can be used for a binary option market if it is not `sUSD` (as the price of sUSD is fixed at \$1), and not
 an inverse synth (since they are equivalent to using the non-inverse and reversing long and short).
 
 ??? example "Details"
