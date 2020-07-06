@@ -85,10 +85,10 @@ After a period the market can be destroyed by a call to
 [`BinaryOptionMarketManager.expireMarkets`](BinaryOptionMarketManager.md#expiremarkets), which
 in turn calls [`BinaryOptionMarket.expire`](#expire).
 
-| Relevant Functions                                                                                            | Description                         |
-| ------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| [`BinaryOptionMarketManager.expireMarkets`](BinaryOptionMarketManager.md#expiremarkets)                       | Destroys a set of markets.          |
-| [`expire`](#expire)                                                                                           | Expires this market, destroying it. |
+| Relevant Functions                                                                      | Description                         |
+| --------------------------------------------------------------------------------------- | ----------------------------------- |
+| [`BinaryOptionMarketManager.expireMarkets`](BinaryOptionMarketManager.md#expiremarkets) | Destroys a set of markets.          |
+| [`expire`](#expire)                                                                     | Expires this market, destroying it. |
 
 **Enums**
 
@@ -96,12 +96,12 @@ in turn calls [`BinaryOptionMarket.expire`](#expire).
 
 The phases the market proceeds through.
 
-| Value         | Description                                                                      |
-| ------------- | -------------------------------------------------------------------------------- |
-| `Bidding`     | Users can place and refund bids.                                                 |
-| `Trading`     | Bidding is disabled, but options can be claimed and transferred as ERC20 tokens. |
-| `Maturity`    | The market has matured, and options can be exercised for a value of sUSD.        |
-| `Expiry`      | The market is ready to be destroyed.                                             |
+| Value      | Description                                                                      |
+| ---------- | -------------------------------------------------------------------------------- |
+| `Bidding`  | Users can place and refund bids.                                                 |
+| `Trading`  | Bidding is disabled, but options can be claimed and transferred as ERC20 tokens. |
+| `Maturity` | The market has matured, and options can be exercised for a value of sUSD.        |
+| `Expiry`   | The market is ready to be destroyed.                                             |
 
 **`Side`**
 
@@ -174,7 +174,6 @@ for options on each side of the market.
 
 Oracle-relevant details used at the resolution of the market.
 
-
 | Field         | Type      | Description                                                                                                                                                         |
 | ------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `key`         | `bytes32` | The key of the underlying asset of this market, as in the [`ExchangeRates`](ExchangeRates.md) contract.                                                             |
@@ -198,11 +197,11 @@ The prices of the options on each side of the market.
 
 Timestamps of important dates, which are given as unix timestamps in seconds.
 
-| Field         | Type      | Description                                                                |
-| ------------- | --------- | -------------------------------------------------------------------------- |
-| `biddingEnd`  | `uint256` | The time at which the bidding phase transitions to the trading phase.      |
-| `maturity`    | `uint256` | The time at which the trading phase transitions to the maturity phase.     |
-| `expiry`      | `uint256` | The time after which the market can be expired.                            |
+| Field        | Type      | Description                                                            |
+| ------------ | --------- | ---------------------------------------------------------------------- |
+| `biddingEnd` | `uint256` | The time at which the bidding phase transitions to the trading phase.  |
+| `maturity`   | `uint256` | The time at which the trading phase transitions to the maturity phase. |
+| `expiry`     | `uint256` | The time after which the market can be expired.                        |
 
 ## Variables
 
@@ -221,10 +220,10 @@ to the creator fee.
 
 The limits that the market creator is constrained to abide by.
 
-* `capitalRequirement`: the minimum capital that the market's [creator](#creator) must maintain in the market until the end of
-bidding. The market's initial bids must be at least this value, and the creator may not submit refunds that
-would reduce their open bids to a value less than this minimum.
-* `skewLimit`: The creator's smaller bid must be greater than this as a percentage of their total bids.
+- `capitalRequirement`: the minimum capital that the market's [creator](#creator) must maintain in the market until the end of
+  bidding. The market's initial bids must be at least this value, and the creator may not submit refunds that
+  would reduce their open bids to a value less than this minimum.
+- `skewLimit`: The creator's smaller bid must be greater than this as a percentage of their total bids.
 
 **Type:** `struct BinaryOptionMarketManager.CreatorLimits`
 
@@ -307,7 +306,6 @@ is performed by the manager contract upon construction.
 Initial timestamps should be provided in the order `[biddingEnd, maturity, destruction]`, initial bids as
 `[longBid, shortBid]`, and fees as `[poolFee, creatorFee, refundFee]`.
 
-
 ??? example "Details"
 
     **Signature**
@@ -359,9 +357,9 @@ If the result would be negative, because the desired operation can only move the
 from the target, the function returns 0.
 
 ??? info "Formula Derivation"
-    For brevity, the following definitions will be used:
-       
-    $$
+For brevity, the following definitions will be used:
+  
+ $$
     \begin{equation}
         \begin{split}
         \psi &:= 1 - (\text{poolFee} + \text{creatorFee}) \\
@@ -372,9 +370,9 @@ from the target, the function returns 0.
         \end{split}
     \end{equation}
     $$
-        
-    The variables $\text{this}$ and $\text{that}$ refer to the opposite sides of the market. Since prices
-    are symmetrical between the sides of the market, they can be interpreted in either order.
+  
+ The variables $\text{this}$ and $\text{that}$ refer to the opposite sides of the market. Since prices
+are symmetrical between the sides of the market, they can be interpreted in either order.
 
     If a bid with value $b$ is placed on $\text{this}$ side of the market, the resulting prices are as follows:
 
@@ -401,13 +399,13 @@ from the target, the function returns 0.
     So by bidding or refunding on $this$ side of the market, we alter the prices on both sides. Note that bids always
     increase prices on $this$ side and decrease prices on $that$ side, while refunds always decrease prices on $this$
     side and increase prices on $that$ side.
-    
+
     **Same-Side Price Targeting**
-    
+
     By changing our position on $this$ side of the market, we can change $P_{this}$ to a desired level $P^{*}_{this}$.
     If $P_{this} < P^{*}_{this}$, we must bid a value $b$ to increase the price, while if $P^{*}_{this} < P_{this}$,
     we must refund a value $r$ to decrease the price, as follows:
-  
+
     $$
     \begin{equation}
         \begin{split}
@@ -416,14 +414,14 @@ from the target, the function returns 0.
         \end{split}
     \end{equation}
     $$
-       
+
     **Opposite-Side Price Targeting**
-    
+
     Similarly, by changing our position on $this$ side, we can also change $P_{that}$ to a desired level $P^{*}_{that}$.
     The response of the market is the opposite to the same-side case, so if $P_{that} < P^{*}_{that}$, we must refund
     a value $r$ to increase the price, while if $P^{*}_{that} < P_{that}$, we must bid a value $b$ to decrease the
     price, as follows:
-    
+
     $$
     \begin{equation}
         \begin{split}
@@ -432,11 +430,11 @@ from the target, the function returns 0.
         \end{split}
     \end{equation}
     $$
-    
+
     Note that all of these values can be negative if the desired price is in the wrong direction relative to the way
     it will move given the side of the market we're looking at and whether we're bidding or refunding. Since we
     cannot perform negative bids or refunds, the function returns 0 instead of throwing an exception or returning
-    negative numbers. 
+    negative numbers.
 
 ??? example "Details"
 
@@ -753,7 +751,7 @@ The value of any expired but unexercised options is sent to the caller.
 The market will also destroy its child [`BinaryOption`](BinaryOption.md#expire) instances before it destroys itself.
 
 The function will revert if the market is not [resolved](#resolved), or if there are options remaining and
-the market is not yet past its expiry date. This means that a market can be expired early if all its 
+the market is not yet past its expiry date. This means that a market can be expired early if all its
 in-the-money options have been exercised.
 
 ??? example "Details"
