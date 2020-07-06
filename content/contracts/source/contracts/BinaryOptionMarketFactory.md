@@ -15,6 +15,12 @@ Additionally, separating out the construction of markets into
 a factory contract allows the manager and the markets to be upgraded
 independently of one another.
 
+??? example "Related Contracts"
+
+    - [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md): The manager is the only contract permitted to create contracts from the factory.
+    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The factory creates market instances with the provided parameters.
+    - [`AddressResolver`](AddressResolver.md): The factory uses the address resolver to retrieve the address of its manager, so if the manager is upgraded, this factory must be synchronised.
+
 **Source:** [contracts/BinaryOptionMarketFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarketFactory.sol)
 
 ## Architecture
@@ -27,23 +33,8 @@ graph TD
     BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> MixinResolver[MixinResolver]
     SelfDestructible[SelfDestructible] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
+
 ```
-
-### Related Contracts
-
-```mermaid
-graph TD
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarketFactory[BinaryOptionMarketFactory]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarket[BinaryOptionMarket]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> AddressResolver[AddressResolver]
-```
-
-??? example "Details"
-
-    - [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md): The manager is the only contract permitted to create contracts from the factory.
-    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The factory creates market instances with the provided parameters.
-    - [`AddressResolver`](AddressResolver.md): The factory uses the address resolver to retrieve the address of its manager, so if the manager is upgraded, this factory must be synchronised.
 
 ## Constructor
 

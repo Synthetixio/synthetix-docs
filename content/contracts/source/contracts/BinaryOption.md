@@ -13,6 +13,10 @@ the entire lifecycle, handling both bid and option balances, and the basic opera
 converting between them. Whenever a bid is made or refunded, or an option
 claimed or exercised, the values in this contract are updated by the market.
 
+??? example "Related Contracts"
+
+    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The parent contract of this binary option token.
+
 **Source:** [contracts/BinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOption.sol)
 
 ## Architecture
@@ -21,17 +25,6 @@ claimed or exercised, the values in this contract are updated by the market.
 
 - [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
 - [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
-
-### Related Contracts
-
-```mermaid
-graph TD
-    BinaryOption[BinaryOption] --> BinaryOptionMarket[BinaryOptionMarket]
-```
-
-??? example "Details"
-
-    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The parent contract of this binary option token.
 
 ## Constants
 

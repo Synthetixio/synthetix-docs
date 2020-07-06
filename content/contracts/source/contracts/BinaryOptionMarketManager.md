@@ -2,27 +2,34 @@
 
 ## Description
 
-**Source:** [contracts/BinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarketManager.sol)
-
 The `BinaryOptionMarketManager` contract is responsible for [creating](#createmarket) and [destroying](#destroymarket)
 [`BinaryOptionMarket`](BinaryOptionMarket.md) instances, as well as
-keeping track of the set of [currently-active](#activemarkets) and [matured](#maturedmarkets) markets, along with
-the [total value of deposits](#totaldeposited) across those markets. Markets can be created using any
-[valid](#_isvalidkey) currency key used in the [`ExchangeRates`](ExchangeRates.md) contract.
+keeping track of the set of [currently-active markets](#markets) and the [total value of deposits](#totaldeposited)
+across those markets.
 
 In addition, various static market parameters such as the current fee levels,
 are maintained in the manager, and these are inherited by new markets when they are
 created.
 
-The manager owner can [disable](#setmarketcreationenabled) the creation of new markets, or pause all binary option
+The manager owner can disable the creation of new markets, or pause all binary option
 markets altogether. The manager and its markets will also stop operating if the [system is suspended](SystemStatus.md).
 These facilities are provided to allow upgrades to occur smoothly, for which purpose the manager contract
-also provides functions to [migrate](#migratemarkets) its markets to a new manager instance.
+also provides functions to migrate its markets to a new manager instance.
 
 This contract operates in a complex with [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md), which is
 responsible for actually instantiating new [`BinaryOptionMarket`](BinaryOptionMarket.md) instances. Since the factory
 must contain the entire bytecode of the market contract, we must separate the factory from the manager, as the combined
 contract would otherwise exceed the maximum contract size specified in [EIP 170](https://eips.ethereum.org/EIPS/eip-170).
+
+??? example "Related Contracts"
+
+    - [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md): The factory is responsible for actually instantiating new `BinaryOptionMarket` instances at the direction of the manager.
+    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The manager directs the factory to construct new `BinaryOptionMarket` instances, and keeps track of them in the [`_markets`](#_markets) array.
+    - [`Synth (sUSD)`](Synth.md): As all bids and settlements are made in sUSD, the manager must know the sUSD address in order to accept initial bids.
+    - [`SystemStatus`](SystemStatus.md): The manager pauses if the system is suspended on the SystemStatus contract.
+    - [`AddressResolver`](AddressResolver.md): The addresses of SystemStatus and sUSD are retrieved from here.
+
+**Source:** [contracts/BinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarketManager.sol)
 
 ## Architecture
 
@@ -41,28 +48,8 @@ graph TD
     Pausable[Pausable] --> Owned[Owned]
     SelfDestructible[SelfDestructible] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
+
 ```
-
-### Related Contracts
-
-```mermaid
-graph TD
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarket[BinaryOptionMarket]
-    BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarketFactory[BinaryOptionMarketFactory]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> SystemStatus[SystemStatus]
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> AddressResolver[AddressResolver]
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> SynthsUSD[SynthsUSD]
-```
-
-??? example "Details"
-
-    - [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md): The factory is responsible for actually instantiating new `BinaryOptionMarket` instances at the direction of the manager.
-    - [`BinaryOptionMarket`](BinaryOptionMarket.md): The manager directs the factory to construct new `BinaryOptionMarket` instances, and keeps track of them in the [`_markets`](#_markets) array.
-    - [`Synth (sUSD)`](Synth.md): As all bids and settlements are made in sUSD, the manager must know the sUSD address in order to accept initial bids.
-    - [`SystemStatus`](SystemStatus.md): The manager pauses if the system is suspended on the SystemStatus contract.
-    - [`AddressResolver`](AddressResolver.md): The addresses of SystemStatus and sUSD are retrieved from here.
 
 ## Structs
 

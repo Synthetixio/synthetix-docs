@@ -112,6 +112,15 @@ The two sides of the market, each of which represents a particular event occurri
 | `Long`  | The event that the asset price is higher than or equal to the strike price at the maturity date. |
 | `Short` | The event that the asset price is lower than the strike price at the maturity date.              |
 
+??? example "Related Contracts"
+
+    - [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md): This factory contract instantiates `BinaryOptionMarket` instances.
+    - [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md): The manager that tracks `BinaryOptionMarket` instances.
+    - [`BinaryOption`](BinaryOption.md): Option token instances, which track bids and balances of participants in this market. Each market has two associated `BinaryOption` instances; one for long options and one for short options.
+    - [`ExchangeRates`](ExchangeRates.md): The contract that a market's underlying asset's price is queried from.
+    - [`SynthsUSD`](Synth.md): Binary option markets are denominated in sUSD.
+    - [`FeePool`](FeePool.md): Fees are remitted to the fee address.
+
 **Source:** [contracts/BinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.0/contracts/BinaryOptionMarket.sol)
 
 ## Architecture
@@ -129,30 +138,6 @@ graph TD
     MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
-
-### Related Contracts
-
-```mermaid
-graph TD
-    BinaryOptionMarket[BinaryOptionMarket] --> BinaryOptionMarketManager[BinaryOptionMarketManager]
-    BinaryOptionMarketManager[BinaryOptionMarketManager] --> BinaryOptionMarket[BinaryOptionMarket]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> BinaryOptionMarket[BinaryOptionMarket]
-    BinaryOptionMarket[BinaryOptionMarket] --> BinaryOption[BinaryOption]
-    BinaryOption[BinaryOption] --> BinaryOptionMarket[BinaryOptionMarket]
-    BinaryOptionMarket[BinaryOptionMarket] --> SystemStatus[SystemStatus]
-    BinaryOptionMarket[BinaryOptionMarket] --> ExchangeRates[ExchangeRates]
-    BinaryOptionMarket[BinaryOptionMarket] --> SynthsUSD[SynthsUSD]
-    BinaryOptionMarket[BinaryOptionMarket] --> FeePool[FeePool]
-```
-
-??? example "Details"
-
-    - [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md): This factory contract instantiates `BinaryOptionMarket` instances.
-    - [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md): The manager that tracks `BinaryOptionMarket` instances.
-    - [`BinaryOption`](BinaryOption.md): Option token instances, which track bids and balances of participants in this market. Each market has two associated `BinaryOption` instances; one for long options and one for short options.
-    - [`ExchangeRates`](ExchangeRates.md): The contract that a market's underlying asset's price is queried from.
-    - [`SynthsUSD`](Synth.md): Binary option markets are denominated in sUSD.
-    - [`FeePool`](FeePool.md): Fees are remitted to the fee address.
 
 ## Structs
 
@@ -997,10 +982,8 @@ See [`claimableBalancesOf`](#claimablebalancesof).
 Computes the market prices from the long and short bid totals, and the funds deposited in the contract.
 These prices are computed approximately as follows:
 
-```
-longPrice  = longBids  / (feeMultiplier * deposited)
-shortPrice = shortBids / (feeMultiplier * deposited)
-```
+    longPrice  = longBids  / (feeMultiplier * deposited)
+    shortPrice = shortBids / (feeMultiplier * deposited)
 
 Interpreting [`/`](/contracts/source/libraries/SafeDecimalMath.md#dividedecimalround) and [`*`](/contracts/source/libraries/SafeDecimalMath.md#multiplydecimalround)
 as [fixed point math operators (with rounding)](/contracts/source/libraries/SafeDecimalMath.md).
