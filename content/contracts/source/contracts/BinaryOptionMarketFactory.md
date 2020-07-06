@@ -45,7 +45,6 @@ graph TD
     - [`BinaryOptionMarket`](BinaryOptionMarket.md): The factory creates market instances with the provided parameters.
     - [`AddressResolver`](AddressResolver.md): The factory uses the address resolver to retrieve the address of its manager, so if the manager is upgraded, this factory must be synchronised.
 
-
 ## Constructor
 
 ### `constructor`
