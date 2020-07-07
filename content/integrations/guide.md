@@ -65,9 +65,14 @@ As of this moment, the following contracts are behind proxies:
 
 3.  **Phase 3**
 
-    <span class="wtb-ew-v1" style="width: 560px; display:inline-block"><script src="https://www.worldtimebuddy.com/event_widget.js?h=100&md=5/30/2020&mt=23.00&ml=0.50&sts=0&sln=0&wt=ew-ltc"></script><i><a target="_blank" href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</i><noscript><a href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
+    !!! Tip "Updated timeline to July 31"
 
-    On `May 30, 2020 11pm UTC`, we will set the `integrationProxy` property from `Synthetix` and `SynthsUSD` to `0x0`, meaning that no more incoming transactions on `0xC011A72400E58ecD99Ee497CF89E3775d4bd732F` (`ProxySynthetix`) or `0x57Ab1E02fEE23774580C119740129eAC7081e9D3` (`ProxysUSD`) will work. These will fail as the target contracts they use will no longer accept incoming requests from them. We will update our `ProxySynthetix` and `ProxysUSD` labels to point to the new ERC20 proxies (in our docs and in our contract-linker utility).
+        Due to some third party project requirements, we've decided to push back Phase 3 to the end of July, 2020. Please reach out to us in Discord channel [`#dev-portal`](https://discordapp.com/invite/AEdUHzt) if you need more time.
+
+    <span class="wtb-ew-v1" style="width: 560px; display:inline-block"><script src="https://www.worldtimebuddy.com/event_widget.js?h=100&md=7/31/2020&mt=23.00&ml=0.50&sts=0&sln=0&wt=ew-ltc"></script><i><a target="_blank" href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</i><noscript><a href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
+
+
+    On `July 31, 2020 11pm UTC`, we will set the `integrationProxy` property from `Synthetix` and `SynthsUSD` to `0x0`, meaning that no more incoming transactions on `0xC011A72400E58ecD99Ee497CF89E3775d4bd732F` (`ProxySynthetix`) or `0x57Ab1E02fEE23774580C119740129eAC7081e9D3` (`ProxysUSD`) will work. These will fail as the target contracts they use will no longer accept incoming requests from them. We will update our `ProxySynthetix` and `ProxysUSD` labels to point to the new ERC20 proxies (in our docs and in our contract-linker utility).
 
 4.  **Phase 4**: We will remove the `ProxyERC20` and `ProxyERC20sUSD` names altogether.
 
