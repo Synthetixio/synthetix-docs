@@ -334,9 +334,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$0.08000   | \$0.12000   | \$0.04000   |
+| \$0.13300   | \$0.19950   | \$0.06650   |
 
-> Inversely tracks the price of Inverse Cardano (ADA) through price feeds supplied by an oracle. The entry point is \$0.08 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.12 (i.e. when Inverse Cardano's value reaches \$0.04) or its lower limit of \$0.04 (i.e. when Inverse Cardano’s value reaches \$0.12). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iADA with different limits.
+> Inversely tracks the price of Inverse Cardano (ADA) through price feeds supplied by an oracle. The entry point is \$0.133 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.1995 (i.e. when Inverse Cardano's value reaches \$0.0665) or its lower limit of \$0.0665 (i.e. when Inverse Cardano’s value reaches \$0.1995). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iADA with different limits.
 
 ## Inverse Centralised Exchange Index (iCEX)
 
@@ -378,9 +378,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$3.66000   | \$5.49000   | \$1.83000   |
+| \$7.90000   | \$11.85000  | \$3.95000   |
 
-> Inversely tracks the price of Inverse Chainlink (LINK) through price feeds supplied by an oracle. The entry point is \$3.66 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$5.49 (i.e. when Inverse Chainlink's value reaches \$1.83) or its lower limit of \$1.83 (i.e. when Inverse Chainlink’s value reaches \$5.49). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
+> Inversely tracks the price of Inverse Chainlink (LINK) through price feeds supplied by an oracle. The entry point is \$7.9 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$11.85 (i.e. when Inverse Chainlink's value reaches \$3.95) or its lower limit of \$3.95 (i.e. when Inverse Chainlink’s value reaches \$11.85). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
 
 ## Inverse Dash (iDASH)
 
@@ -418,13 +418,13 @@
 
 **Inverse of**: [sDEFI](#defi-index-sdefi)
 
-| Entry Point | Upper Limit   | Lower Limit |
-| ----------- | ------------- | ----------- |
-| \$1,817     | \$2,725.50000 | \$908.50000 |
+| Entry Point | Upper Limit   | Lower Limit   |
+| ----------- | ------------- | ------------- |
+| \$2,757     | \$4,135.50000 | \$1,378.50000 |
 
 **Index of**: [sDEFI](#defi-index-sdefi)
 
-> Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$1817 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$2725.5 (i.e. when Inverse DeFi Index's value reaches \$908.5) or its lower limit of \$908.5 (i.e. when Inverse DeFi Index’s value reaches \$2725.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
+> Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$2757 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$4135.5 (i.e. when Inverse DeFi Index's value reaches \$1378.5) or its lower limit of \$1378.5 (i.e. when Inverse DeFi Index’s value reaches \$4135.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
 
 ## Inverse EOS (iEOS)
 
