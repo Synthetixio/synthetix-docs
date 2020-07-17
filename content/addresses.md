@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.24.1](https://github.com/Synthetixio/synthetix/tree/v2.24.1)
+**Version**: [v2.25.0-alpha](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha)
 
 !!! info "Naming Conventions"
 
@@ -3337,14 +3337,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>BinaryOptionMarketFactory</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketFactory.sol">BinaryOptionMarketFactory.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/BinaryOptionMarketFactory.json">BinaryOptionMarketFactory.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x14c049BDf3bcf46bc884e26ceBC130560C60D549">0x14c049BDf3bcf46bc884e26ceBC130560C60D549</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xdA78C7356D6E087fb0e1F62365C9259DA1a6b298">0xdA78C7356D6E087fb0e1F62365C9259DA1a6b298</a>
                 </td>
               </tr>
               <tr>
                 <td>BinaryOptionMarketManager</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketManager.sol">BinaryOptionMarketManager.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/BinaryOptionMarketManager.json">BinaryOptionMarketManager.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9492eac3c8c6F1E768C71Fa2eAf04FB2F42104eC">0x9492eac3c8c6F1E768C71Fa2eAf04FB2F42104eC</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4176483150F667B2303C1eeF295431F0Cc593783">0x4176483150F667B2303C1eeF295431F0Cc593783</a>
                 </td>
               </tr>
               <tr>

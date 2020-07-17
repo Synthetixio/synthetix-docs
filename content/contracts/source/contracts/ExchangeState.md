@@ -6,7 +6,7 @@
 
     This contract documentation is missing some descriptions.
 
-**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol)
+**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol)
 
 ## Architecture
 
@@ -19,34 +19,17 @@ graph TD
 
 ```
 
-## Structs
-
-### `ExchangeEntry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L11)</sub>
-
-| Field             | Type      | Description |
-| ----------------- | --------- | ----------- |
-| `src`             | `bytes32` | TBA         |
-| `amount`          | `uint256` | TBA         |
-| `dest`            | `bytes32` | TBA         |
-| `amountReceived`  | `uint256` | TBA         |
-| `exchangeFeeRate` | `uint256` | TBA         |
-| `timestamp`       | `uint256` | TBA         |
-| `roundIdForSrc`   | `uint256` | TBA         |
-| `roundIdForDest`  | `uint256` | TBA         |
-
 ## Variables
 
 ### `exchanges`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L11)</sub>
 
-**Type:** `mapping(address => mapping(bytes32 => struct ExchangeState.ExchangeEntry[]))`
+**Type:** `mapping(address => mapping(bytes32 => struct IExchangeState.ExchangeEntry[]))`
 
 ### `maxEntriesInQueue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L13)</sub>
 
 **Type:** `uint256`
 
@@ -54,7 +37,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -74,7 +57,7 @@ graph TD
 
 ### `getEntryAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -92,7 +75,7 @@ graph TD
 
 ### `getLengthOfEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -110,7 +93,7 @@ graph TD
 
 ### `getMaxTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -130,7 +113,7 @@ graph TD
 
 ### `appendExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -148,7 +131,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Max queue length reached)](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L47)
+    * [require(..., Max queue length reached)](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L36)
 
     **Modifiers**
 
@@ -156,7 +139,7 @@ graph TD
 
 ### `removeEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -178,7 +161,7 @@ graph TD
 
 ### `setMaxEntriesInQueue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.24.1/contracts/ExchangeState.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/ExchangeState.sol#L19)</sub>
 
 ??? example "Details"
 
