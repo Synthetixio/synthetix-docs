@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.25.0-rc](https://github.com/Synthetixio/synthetix/tree/v2.25.0-rc)
+**Version**: [v2.25.0](https://github.com/Synthetixio/synthetix/tree/v2.25.0)
 
 !!! info "Naming Conventions"
 
@@ -28,14 +28,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>BinaryOptionMarketFactory</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketFactory.sol">BinaryOptionMarketFactory.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/BinaryOptionMarketFactory.json">BinaryOptionMarketFactory.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x8EC58faA4c1B693B50B7F1331897AD6B52Dd824A">0x8EC58faA4c1B693B50B7F1331897AD6B52Dd824A</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x72c091691b5cD86fAcD048972157985f74Ea1F07">0x72c091691b5cD86fAcD048972157985f74Ea1F07</a>
                 </td>
               </tr>
               <tr>
                 <td>BinaryOptionMarketManager</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketManager.sol">BinaryOptionMarketManager.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/BinaryOptionMarketManager.json">BinaryOptionMarketManager.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x673e76631981Cb55783527F744e581ABA8Cf406D">0x673e76631981Cb55783527F744e581ABA8Cf406D</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x8071bA88e58a19176EF007995FB5D9E1Faa73F92">0x8071bA88e58a19176EF007995FB5D9E1Faa73F92</a>
                 </td>
               </tr>
               <tr>
