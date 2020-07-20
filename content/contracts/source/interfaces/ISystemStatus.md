@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/interfaces/ISystemStatus.sol)
+**Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.25.0-beta/contracts/interfaces/ISystemStatus.sol)
 
 ## Views
 
 ### `requireExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/interfaces/ISystemStatus.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-beta/contracts/interfaces/ISystemStatus.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `requireIssuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/interfaces/ISystemStatus.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-beta/contracts/interfaces/ISystemStatus.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `requireSynthActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/interfaces/ISystemStatus.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-beta/contracts/interfaces/ISystemStatus.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `requireSynthsActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/interfaces/ISystemStatus.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-beta/contracts/interfaces/ISystemStatus.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `requireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-alpha/contracts/interfaces/ISystemStatus.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0-beta/contracts/interfaces/ISystemStatus.sol#L6)</sub>
 
 ??? example "Details"
 
