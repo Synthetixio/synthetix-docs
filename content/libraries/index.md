@@ -8,7 +8,7 @@
 
 If you're looking to get the addresses and ABIs of any Synthetix contract, or maybe the list of synths and their parameters, the best way is to use our [`synthetix` `npm` module](synthetix.md#usage-and-requirements) (written for nodejs). Instead of looking it up online, the module contains all the details available to fetch locally (we manage this during our deployment processes).
 
-If you'd rather than functionality in the browser, you'll need to use our [`synthetix-js` JavaScript library on `npm`](synthetix-js.md).
+If you'd rather use this functionality in the browser, you'll need to use our [`synthetix-js` JavaScript library on `npm`](synthetix-js.md).
 
 ### Read and write state
 
