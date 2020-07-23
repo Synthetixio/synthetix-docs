@@ -2,6 +2,23 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Antares (v2.25.0)
+
+**Published**: Jul 20, 2020
+
+**Codebase**: [v2.25.0](https://github.com/Synthetixio/synthetix/tree/v2.25.0)
+
+> https://blog.synthetix.io/the-antares-release/
+
+Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
+
+- Allow market creators to cancel a market if no bids have been placed on it yet
+- Allow market creators to disable bid withdrawals at market creation
+- Emit bid events for the initial capital at market creation
+- Fix a bug that prevents creators from exercising their options before expiry under certain circumstances
+
+---
+
 # Aldebaran (2.24.0)
 
 **Published**: Jul 1, 2020
