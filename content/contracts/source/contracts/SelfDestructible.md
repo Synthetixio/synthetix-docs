@@ -4,7 +4,7 @@
 
 SelfDestructible allows an inheriting contract to be destroyed by its owner, who must [announce an intention to destroy it](#initiateselfdestruct), and then wait for a four week cooling-off period before it can be [destroyed](#selfdestruct). Any ether remaining in the contract at this time is forwarded to [a nominated beneficiary](#selfdestructbeneficiary).
 
-**Source:** [contracts/SelfDestructible.sol](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol)
+**Source:** [contracts/SelfDestructible.sol](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol)
 
 ## Architecture
 
@@ -20,7 +20,7 @@ graph TD
 
 ### `SELFDESTRUCT_DELAY`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L9)</sub>
 
 The duration (four weeks) that must be waited between self destruct initiation and actual destruction. That is the contract can only be destroyed after the timestamp `initiationTime + SELFDESTRUCT_DELAY`.
 
@@ -32,7 +32,7 @@ The duration (four weeks) that must be waited between self destruct initiation a
 
 ### `initiationTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L11)</sub>
 
 The timestamp at which the self destruction was begun.
 
@@ -40,7 +40,7 @@ The timestamp at which the self destruction was begun.
 
 ### `selfDestructBeneficiary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L14)</sub>
 
 The address where any lingering eth in this contract will be sent.
 
@@ -48,7 +48,7 @@ The address where any lingering eth in this contract will be sent.
 
 ### `selfDestructInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L12)</sub>
 
 True iff the contract is currently undergoing self destruction.
 
@@ -58,7 +58,7 @@ True iff the contract is currently undergoing self destruction.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L16)</sub>
 
 Initialises the inherited [`Owned`](Owned.md) instance and nominates that owner as the initial [self destruct beneficiary](#selfdestructbeneficiary).
 
@@ -78,7 +78,7 @@ Initialises the inherited [`Owned`](Owned.md) instance and nominates that owner 
 
     **Requires**
 
-    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L18)
+    * [require(..., Owner must be set)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L18)
 
     **Emits**
 
@@ -88,7 +88,7 @@ Initialises the inherited [`Owned`](Owned.md) instance and nominates that owner 
 
 ### `initiateSelfDestruct`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L39)</sub>
 
 Begins the self destruct countdown, updating [`initiationTime`](#initiationtime) and [`selfDestructInitiated`](#selfdestructinitiated). Only once the delay has elapsed can the contract be destroyed.
 
@@ -116,7 +116,7 @@ Begins the self destruct countdown, updating [`initiationTime`](#initiationtime)
 
 ### `selfDestruct`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L60)</sub>
 
 If self destruction is active and the timer has elapsed, destroy this contract and forward its ether to [`selfDestructBeneficiary`](#selfdestructbeneficiary).
 
@@ -136,9 +136,9 @@ If self destruction is active and the timer has elapsed, destroy this contract a
 
     **Requires**
 
-    * [require(..., Self Destruct not yet initiated)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L61)
+    * [require(..., Self Destruct not yet initiated)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L61)
 
-    * [require(..., Self destruct delay not met)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L62)
+    * [require(..., Self destruct delay not met)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L62)
 
     **Modifiers**
 
@@ -150,7 +150,7 @@ If self destruction is active and the timer has elapsed, destroy this contract a
 
 ### `setSelfDestructBeneficiary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L28)</sub>
 
 Changes the [self destruct beneficiary](#selfdestructbeneficiary).
 
@@ -170,7 +170,7 @@ Changes the [self destruct beneficiary](#selfdestructbeneficiary).
 
     **Requires**
 
-    * [require(..., Beneficiary must not be zero)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L29)
+    * [require(..., Beneficiary must not be zero)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L29)
 
     **Modifiers**
 
@@ -182,7 +182,7 @@ Changes the [self destruct beneficiary](#selfdestructbeneficiary).
 
 ### `terminateSelfDestruct`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L49)</sub>
 
 Resets the timer and disables self destruction.
 
@@ -212,7 +212,7 @@ Resets the timer and disables self destruction.
 
 ### `SelfDestructBeneficiaryUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L70)</sub>
 
 The self destruct beneficiary was changed to the indicated new address.
 
@@ -220,7 +220,7 @@ The self destruct beneficiary was changed to the indicated new address.
 
 ### `SelfDestructInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L69)</sub>
 
 Self destruction was initiated with the indicated delay time.
 
@@ -228,7 +228,7 @@ Self destruction was initiated with the indicated delay time.
 
 ### `SelfDestructTerminated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L67)</sub>
 
 Self destruction was terminated by the contract owner.
 
@@ -236,7 +236,7 @@ Self destruction was terminated by the contract owner.
 
 ### `SelfDestructed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SelfDestructible.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SelfDestructible.sol#L68)</sub>
 
 The contract was destroyed, forwarding the ether on to the [beneficiary](#selfdestructbeneficiary).
 

@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.25.0](https://github.com/Synthetixio/synthetix/tree/v2.25.0)
+**Version**: [v2.26.0-alpha](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha)
 
 !!! info "Naming Conventions"
 
@@ -498,6 +498,48 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/SafeDecimalMath.json">SafeDecimalMath.json</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x84D626B2BB4D0F064067e4BF80FCe7055d8F3E7B">0x84D626B2BB4D0F064067e4BF80FCe7055d8F3E7B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>StakingRewardsSNXBalancer</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/StakingRewards.json">StakingRewards.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0xFBaEdde70732540cE2B11A8AC58Eb2dC0D69dE10">0xFBaEdde70732540cE2B11A8AC58Eb2dC0D69dE10</a>
+                </td>
+              </tr>
+              <tr>
+                <td>StakingRewardsiETH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/iETHRewards.sol">iETHRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/iETHRewards.json">iETHRewards.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0xC746bc860781DC90BBFCD381d6A058Dc16357F8d">0xC746bc860781DC90BBFCD381d6A058Dc16357F8d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>StakingRewardssBTCCurve</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/StakingRewards.json">StakingRewards.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x13C1542A468319688B89E323fe9A3Be3A90EBb27">0x13C1542A468319688B89E323fe9A3Be3A90EBb27</a>
+                </td>
+              </tr>
+              <tr>
+                <td>StakingRewardssETHUniswapV1</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Unipool.sol">Unipool.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Unipool.json">Unipool.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x48D7f315feDcaD332F68aafa017c7C158BC54760">0x48D7f315feDcaD332F68aafa017c7C158BC54760</a>
+                </td>
+              </tr>
+              <tr>
+                <td>StakingRewardssUSDCurve</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CurveRewards.sol">CurveRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CurveRewards.json">CurveRewards.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0xDCB6A51eA3CA5d3Fd898Fd6564757c7aAeC3ca92">0xDCB6A51eA3CA5d3Fd898Fd6564757c7aAeC3ca92</a>
+                </td>
+              </tr>
+              <tr>
+                <td>StakingRewardssXAUUniswapV2</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/StakingRewards.json">StakingRewards.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x8302FE9F0C509a996573D3Cc5B0D5D51e4FDD5eC">0x8302FE9F0C509a996573D3Cc5B0D5D51e4FDD5eC</a>
                 </td>
               </tr>
               <tr>
@@ -3407,7 +3449,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Exchanger.json">Exchanger.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4B0833796E04DeBb063b30c73656eCFA6D5999fe">0x4B0833796E04DeBb063b30c73656eCFA6D5999fe</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xef23603Baf3AF24536F89ca9C0D2f893011ecABF">0xef23603Baf3AF24536F89ca9C0D2f893011ecABF</a>
                 </td>
               </tr>
               <tr>

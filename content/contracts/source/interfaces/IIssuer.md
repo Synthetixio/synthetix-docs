@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol)
+**Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol)
 
 ## Views
 
 ### `anySynthOrSNXRateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `canBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `collateralisationRatioAndAnyRatesStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `lastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `transferableSynthetixAndAnyRateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@
 
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -316,7 +316,7 @@
 
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -334,7 +334,7 @@
 
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -352,7 +352,7 @@
 
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -370,7 +370,7 @@
 
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -388,7 +388,7 @@
 
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -406,7 +406,7 @@
 
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -424,7 +424,7 @@
 
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -442,7 +442,7 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/interfaces/IIssuer.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/interfaces/IIssuer.sol#L78)</sub>
 
 ??? example "Details"
 

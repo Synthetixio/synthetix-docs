@@ -4,7 +4,7 @@
 
 Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various mechanisms to suspend the Synthetix system
 
-**Source:** [contracts/SystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol)
+**Source:** [contracts/SystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol)
 
 ## Architecture
 
@@ -16,55 +16,35 @@ graph TD
 
 ```
 
-## Structs
-
-### `Status`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L10)</sub>
-
-| Field        | Type   | Description |
-| ------------ | ------ | ----------- |
-| `canSuspend` | `bool` | TBA         |
-| `canResume`  | `bool` | TBA         |
-
-### `Suspension`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L17)</sub>
-
-| Field       | Type      | Description |
-| ----------- | --------- | ----------- |
-| `suspended` | `bool`    | TBA         |
-| `reason`    | `uint248` | TBA         |
-
 ## Constants
 
 ### `SECTION_EXCHANGE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L16)</sub>
 
 **Type:** `bytes32`
 
 ### `SECTION_ISSUANCE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L15)</sub>
 
 **Type:** `bytes32`
 
 ### `SECTION_SYNTH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L17)</sub>
 
 **Type:** `bytes32`
 
 ### `SECTION_SYSTEM`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L14)</sub>
 
 **Type:** `bytes32`
 
 ### `SUSPENSION_REASON_UPGRADE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L12)</sub>
 
 **Type:** `uint248`
 
@@ -72,39 +52,39 @@ graph TD
 
 ### `accessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L10)</sub>
 
-**Type:** `mapping(bytes32 => mapping(address => struct SystemStatus.Status))`
+**Type:** `mapping(bytes32 => mapping(address => struct ISystemStatus.Status))`
 
 ### `exchangeSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L23)</sub>
 
-**Type:** `struct SystemStatus.Suspension`
+**Type:** `struct ISystemStatus.Suspension`
 
 ### `issuanceSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L21)</sub>
 
-**Type:** `struct SystemStatus.Suspension`
+**Type:** `struct ISystemStatus.Suspension`
 
 ### `synthSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L25)</sub>
 
-**Type:** `mapping(bytes32 => struct SystemStatus.Suspension)`
+**Type:** `mapping(bytes32 => struct ISystemStatus.Suspension)`
 
 ### `systemSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L19)</sub>
 
-**Type:** `struct SystemStatus.Suspension`
+**Type:** `struct ISystemStatus.Suspension`
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -124,7 +104,7 @@ graph TD
 
 ### `getSynthSuspensions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -142,7 +122,7 @@ graph TD
 
 ### `isSystemUpgrading`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -160,7 +140,7 @@ graph TD
 
 ### `requireExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -178,13 +158,13 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L59)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L47)
 
-    * [require(..., Exchange is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L60)
+    * [require(..., Exchange is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L48)
 
 ### `requireIssuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -202,13 +182,13 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L53)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L41)
 
-    * [require(..., Issuance is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L54)
+    * [require(..., Issuance is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L42)
 
 ### `requireSynthActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -226,13 +206,13 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L65)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L53)
 
-    * [require(..., Synth is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L66)
+    * [require(..., Synth is suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L54)
 
 ### `requireSynthsActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -250,13 +230,13 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L71)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L59)
 
-    * [require(..., One or more synths are suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L73)
+    * [require(..., One or more synths are suspended. Operation prohibited)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L61)
 
 ### `requireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -274,13 +254,13 @@ graph TD
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L48)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L36)
 
 ## Restricted Functions
 
 ### `resumeExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -298,7 +278,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L143)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L131)
 
     **Emits**
 
@@ -306,7 +286,7 @@ graph TD
 
 ### `resumeIssuance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -324,7 +304,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L129)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L117)
 
     **Emits**
 
@@ -332,7 +312,7 @@ graph TD
 
 ### `resumeSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L144)</sub>
 
 ??? example "Details"
 
@@ -350,7 +330,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L157)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L145)
 
     **Emits**
 
@@ -358,7 +338,7 @@ graph TD
 
 ### `resumeSystem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -376,7 +356,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L115)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L103)
 
     **Emits**
 
@@ -384,7 +364,7 @@ graph TD
 
 ### `suspendExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -402,7 +382,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L136)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L124)
 
     **Emits**
 
@@ -410,7 +390,7 @@ graph TD
 
 ### `suspendIssuance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L109)</sub>
 
 ??? example "Details"
 
@@ -428,7 +408,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L122)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L110)
 
     **Emits**
 
@@ -436,7 +416,7 @@ graph TD
 
 ### `suspendSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L137)</sub>
 
 ??? example "Details"
 
@@ -454,7 +434,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L150)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L138)
 
     **Emits**
 
@@ -462,7 +442,7 @@ graph TD
 
 ### `suspendSystem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -480,7 +460,7 @@ graph TD
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L108)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L96)
 
     **Emits**
 
@@ -488,7 +468,7 @@ graph TD
 
 ### `updateAccessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -512,7 +492,7 @@ graph TD
 
 ### `_internalRequireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L160)</sub>
 
 ??? example "Details"
 
@@ -530,11 +510,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L173)
+    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L161)
 
 ### `_internalUpdateAccessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L181)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L169)</sub>
 
 ??? example "Details"
 
@@ -552,7 +532,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Invalid section supplied)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L187)
+    * [require(..., Invalid section supplied)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L175)
 
     **Emits**
 
@@ -560,7 +540,7 @@ graph TD
 
 ### `_requireAccessToResume`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -578,11 +558,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., Restricted to access control list)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L169)
+    * [require(..., Restricted to access control list)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L157)
 
 ### `_requireAccessToSuspend`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -600,60 +580,60 @@ graph TD
 
     **Requires**
 
-    * [require(..., Restricted to access control list)](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L165)
+    * [require(..., Restricted to access control list)](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L153)
 
 ## Events
 
 ### `AccessControlUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L201)</sub>
 
 **Signature**: `AccessControlUpdated(bytes32 section, address account, bool canSuspend, bool canResume)`
 
 ### `ExchangeResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L196)</sub>
 
 **Signature**: `ExchangeResumed(uint256 reason)`
 
 ### `ExchangeSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L195)</sub>
 
 **Signature**: `ExchangeSuspended(uint256 reason)`
 
 ### `IssuanceResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L193)</sub>
 
 **Signature**: `IssuanceResumed(uint256 reason)`
 
 ### `IssuanceSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L204)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L192)</sub>
 
 **Signature**: `IssuanceSuspended(uint256 reason)`
 
 ### `SynthResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L199)</sub>
 
 **Signature**: `SynthResumed(bytes32 currencyKey, uint256 reason)`
 
 ### `SynthSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L210)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L198)</sub>
 
 **Signature**: `SynthSuspended(bytes32 currencyKey, uint256 reason)`
 
 ### `SystemResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L190)</sub>
 
 **Signature**: `SystemResumed(uint256 reason)`
 
 ### `SystemSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/SystemStatus.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/SystemStatus.sol#L189)</sub>
 
 **Signature**: `SystemSuspended(uint256 reason)`

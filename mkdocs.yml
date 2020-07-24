@@ -91,6 +91,7 @@ nav:
             - RewardsDistribution: contracts/source/contracts/RewardsDistribution.md
             - RewardsDistributionRecipient: contracts/source/contracts/RewardsDistributionRecipient.md
             - SelfDestructible: contracts/source/contracts/SelfDestructible.md
+            - StakingRewards: contracts/source/contracts/StakingRewards.md
             - State: contracts/source/contracts/State.md
             - SupplySchedule: contracts/source/contracts/SupplySchedule.md
             - Synth: contracts/source/contracts/Synth.md
@@ -117,6 +118,7 @@ nav:
             - ILiquidations: contracts/source/interfaces/ILiquidations.md
             - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
             - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
+            - IStakingRewards: contracts/source/interfaces/IStakingRewards.md
             - ISynth: contracts/source/interfaces/ISynth.md
             - ISynthetix: contracts/source/interfaces/ISynthetix.md
             - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md

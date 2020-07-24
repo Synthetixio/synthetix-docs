@@ -6,7 +6,7 @@
 
     This contract is an empty implementation of [`EternalStorage`](EternalStorage.md) and will be removed in an upcoming release.
 
-**Source:** [contracts/IssuanceEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/IssuanceEternalStorage.sol)
+**Source:** [contracts/IssuanceEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/IssuanceEternalStorage.sol)
 
 ## Architecture
 
@@ -24,7 +24,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.25.0/contracts/IssuanceEternalStorage.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha/contracts/IssuanceEternalStorage.sol#L11)</sub>
 
 ??? example "Details"
 
