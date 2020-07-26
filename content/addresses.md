@@ -434,7 +434,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>ProxysUSD</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Proxy.json">Proxy.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3">0x57Ab1E02fEE23774580C119740129eAC7081e9D3</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51">0x57Ab1ec28D129707052df4dF418D58a2D46d5f51</a>
                 </td>
               </tr>
               <tr>
