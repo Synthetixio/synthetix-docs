@@ -172,7 +172,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ProxySynthetix</td>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Proxy.json">Proxy.json</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC011A72400E58ecD99Ee497CF89E3775d4bd732F">0xC011A72400E58ecD99Ee497CF89E3775d4bd732F</a>
@@ -431,7 +431,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ProxysUSD</td>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Proxy.json">Proxy.json</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3">0x57Ab1E02fEE23774580C119740129eAC7081e9D3</a>
@@ -1289,7 +1289,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ProxySynthetix</td>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/Proxy.json">Proxy.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0x013AE307648f529aa72c5767A334DDd37aaB43c3">0x013AE307648f529aa72c5767A334DDd37aaB43c3</a>
@@ -1548,7 +1548,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ProxysUSD</td>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/ropsten/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://ropsten.etherscan.io/address/0xDDEfe42790f2dEC7b0C37D4399884eFceA5361b1">0xDDEfe42790f2dEC7b0C37D4399884eFceA5361b1</a>
@@ -2406,7 +2406,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ProxySynthetix</td>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/Proxy.json">Proxy.json</a></td>
                 <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x322A3346bf24363f451164d96A5b5cd5A7F4c337">0x322A3346bf24363f451164d96A5b5cd5A7F4c337</a>
@@ -2651,7 +2651,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ProxysUSD</td>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xe109da5361299eD96D91146B8Cc12F682D21964e">0xe109da5361299eD96D91146B8Cc12F682D21964e</a>
@@ -3481,7 +3481,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ProxySynthetix</td>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Proxy.json">Proxy.json</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x22f1ba6dB6ca0A065e1b7EAe6FC22b7E675310EF">0x22f1ba6dB6ca0A065e1b7EAe6FC22b7E675310EF</a>
@@ -3726,7 +3726,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
-                <td>ProxysUSD</td>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ProxyERC20.json">ProxyERC20.json</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC674ad732Dfd4E1359ec4B18fA5472c0747E480A">0xC674ad732Dfd4E1359ec4B18fA5472c0747E480A</a>

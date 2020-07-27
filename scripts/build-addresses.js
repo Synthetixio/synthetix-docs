@@ -39,9 +39,17 @@ const generateAddresses = () => {
 					.map(targetContract => {
 						const { address, source } = targets[targetContract];
 						const networkPrefix = network !== 'mainnet' ? network + '.' : '';
+						let label = targetContract;
+
+						if (targetContract === 'ProxysUSD' || targetContract === 'ProxySynthetix') {
+							label = `<span style="color: #AAA; text-decoration: line-through">${targetContract}</span><sup>Use ${
+								targetContract === 'ProxysUSD' ? 'ProxyERC20sUSD' : 'ProxyERC20'
+							}</sup>`;
+						}
+
 						return `
               <tr>
-                <td>${targetContract}</td>
+                <td>${label}</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/${source}.sol">${source}.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/${network.toLowerCase()}/${source}.json">${source}.json</a></td>
                 <td><a target="_blank" href="https://${networkPrefix}etherscan.io/address/${address}">${address}</a>
