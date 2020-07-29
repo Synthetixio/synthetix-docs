@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol)
+**Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol)
 
 ## Views
 
 ### `FEE_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `feesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `getExchangeFeeRateForSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `isFeesClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `totalFeesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `totalRewardsAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `appendAccountIssuanceRecord`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `claimFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `claimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -172,7 +172,7 @@
 
 ### `closeCurrentFeePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@
 
 ### `recordFeePaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `setRewardsToDistribute`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1/contracts/interfaces/IFeePool.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha/contracts/interfaces/IFeePool.sol#L35)</sub>
 
 ??? example "Details"
 

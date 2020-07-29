@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.26.0-alpha-1](https://github.com/Synthetixio/synthetix/tree/v2.26.0-alpha-1)
+**Version**: [v2.26.1-alpha](https://github.com/Synthetixio/synthetix/tree/v2.26.1-alpha)
 
 !!! info "Naming Conventions"
 
@@ -3428,7 +3428,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>EtherCollateral</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EtherCollateral.sol">EtherCollateral.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/EtherCollateral.json">EtherCollateral.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xbc5658CeF24f221530eD8b418425a34Dd63c9b28">0xbc5658CeF24f221530eD8b418425a34Dd63c9b28</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x1C300bb7CCd2Ad92514ad2C57317f6c95202c0ff">0x1C300bb7CCd2Ad92514ad2C57317f6c95202c0ff</a>
                 </td>
               </tr>
               <tr>
