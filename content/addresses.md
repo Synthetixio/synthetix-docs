@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.26.2-rc0](https://github.com/Synthetixio/synthetix/tree/v2.26.2-rc0)
+**Version**: [v2.26.2](https://github.com/Synthetixio/synthetix/tree/v2.26.2)
 
 !!! info "Naming Conventions"
 
@@ -77,7 +77,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>EtherCollateral</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EtherCollateral.sol">EtherCollateral.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/EtherCollateral.json">EtherCollateral.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x0F3d8ad599Be443A54c7934B433A87464Ed0DFdC">0x0F3d8ad599Be443A54c7934B433A87464Ed0DFdC</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x7133afF303539b0A4F60Ab9bd9656598BF49E272">0x7133afF303539b0A4F60Ab9bd9656598BF49E272</a>
                 </td>
               </tr>
               <tr>
@@ -98,7 +98,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Exchanger.json">Exchanger.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xfaDAFb3ece40Eac206404B8dF5aF841F16f60E62">0xfaDAFb3ece40Eac206404B8dF5aF841F16f60E62</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x439502C922ADA61FE49329248B7A8ecb31C0b329">0x439502C922ADA61FE49329248B7A8ecb31C0b329</a>
                 </td>
               </tr>
               <tr>

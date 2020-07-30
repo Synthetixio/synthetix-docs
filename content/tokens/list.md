@@ -95,15 +95,17 @@
 
 **Index of**: [sCEX](#exchange-index-scex)
 
-| Token         | Symbol | Units     |
-| ------------- | ------ | --------- |
-| Binance Coin  | BNB    | 17.88000  |
-| UNUS SED LEO  | LEO    | 153.85000 |
-| Huobi Token   | HT     | 20.51000  |
-| OKB           | OKB    | 32.52000  |
-| KuCoin Shares | KCS    | 59.82000  |
+| Token         | Symbol | Units       |
+| ------------- | ------ | ----------- |
+| Binance Coin  | BNB    | 12.88000    |
+| Crypto com    | CRO    | 1,303.31000 |
+| UNUS SED LEO  | LEO    | 94.54000    |
+| Huobi Token   | HT     | 23.06000    |
+| FTX           | FTT    | 9.36000     |
+| OKB           | OKB    | 25.72000    |
+| KuCoin Shares | KCS    | 9.18000     |
 
-> Tracks the price of the index: Centralised Exchange Index (CEX) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 17.88 of BNB (Binance Coin), 153.85 of LEO (UNUS SED LEO), 20.51 of HT (Huobi Token), 32.52 of OKB, 59.82 of KCS (KuCoin Shares).
+> Tracks the price of the index: Centralised Exchange Index (CEX) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 12.88 of BNB (Binance Coin), 1303.31 of CRO (Crypto com), 94.54 of LEO (UNUS SED LEO), 23.06 of HT (Huobi Token), 9.36 of FTT (FTX), 25.72 of OKB, 9.18 of KCS (KuCoin Shares).
 
 ## Chainlink (sLINK)
 
@@ -150,19 +152,22 @@
 
 **Index of**: [sDEFI](#index-sdefi)
 
-| Token          | Symbol | Units       |
-| -------------- | ------ | ----------- |
-| Chainlink      | LINK   | 92.58300    |
-| Maker          | MKR    | 0.43200     |
-| 0x             | ZRX    | 502.71800   |
-| Synthetix      | SNX    | 107.68600   |
-| Ren Protocol   | REN    | 1,222.39300 |
-| Loopring       | LRC    | 2,164.70900 |
-| Kyber Network  | KNC    | 357.08500   |
-| Bancor         | BNT    | 119.19700   |
-| Melon Protocol | MLN    | 6.49500     |
+| Token         | Symbol | Units     |
+| ------------- | ------ | --------- |
+| Compound      | COMP   | 4.14000   |
+| Maker         | MKR    | 0.74000   |
+| 0x            | ZRX    | 668.16000 |
+| Augur         | REP    | 9.52000   |
+| Aave          | LEND   | 581.76000 |
+| UMA           | UMA    | 28.54000  |
+| Synthetix     | SNX    | 82.84000  |
+| Ren Protocol  | REN    | 822.92000 |
+| Loopring      | LRC    | 948.31000 |
+| Kyber Network | KNC    | 224.53000 |
+| Bancor        | BNT    | 61.20000  |
+| Balancer      | BAL    | 7.09000   |
 
-> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 92.583 of LINK (Chainlink), 0.432 of MKR (Maker), 502.718 of ZRX (0x), 107.686 of SNX (Synthetix), 1222.393 of REN (Ren Protocol), 2164.709 of LRC (Loopring), 357.085 of KNC (Kyber Network), 119.197 of BNT (Bancor), 6.495 of MLN (Melon Protocol).
+> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 4.14 of COMP (Compound), 0.74 of MKR (Maker), 668.16 of ZRX (0x), 9.52 of REP (Augur), 581.76 of LEND (Aave), 28.54 of UMA, 82.84 of SNX (Synthetix), 822.92 of REN (Ren Protocol), 948.31 of LRC (Loopring), 224.53 of KNC (Kyber Network), 61.2 of BNT (Bancor), 7.09 of BAL (Balancer).
 
 ## EOS (sEOS)
 
