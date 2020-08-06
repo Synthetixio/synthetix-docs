@@ -10,42 +10,30 @@ copyright: <a
   href=https://github.com/Synthetixio/synthetix/blob/master/LICENSE>Copyright
   &copy Synthetix 2018 - 2020</a>
 nav:
-  - System Overview:
-      - Home: index.md
-      - Synopsis: synopsis.md
-      - Incentives: incentives.md
-      - Governance: governance.md
-  - Litepaper:
-      - 🇦🇺 English: litepaper/index.md
-      - 🇰🇷 Korean: litepaper/korean.md
-      - 🇷🇺 Russian: litepaper/russian.md
-      - 🇨🇳 Chinese: litepaper/chinese.md
-  - Addresses:
-      - '': addresses.md
-  - Releases:
-      - '': releases.md
-  - Tokens:
-      - Home: tokens/index.md
-      - List: tokens/list.md
-  - Integrations:
-      - Home: integrations/index.md
-      - Integration Guide: integrations/guide.md
-      - Working with Testnets: integrations/testnets.md
-      - ENS Support: integrations/ens.md
-  - Historical Data:
-      - '': historical-data.md
-  - Libraries:
-      - Home: libraries/index.md
-      - Versioning: libraries/versioning.md
-      - Examples: libraries/examples.md
-      - synthetix: libraries/synthetix.md
-      - synthetix-js: libraries/synthetix-js.md
-      - synthetix-data: libraries/synthetix-data.md
-  - Smart Contracts:
-      - Architecture: contracts/index.md
-      - Automated Testing: contracts/testing.md
-      - Publisher: contracts/publisher.md
-      - Transaction Guide: contracts/transactions.md
+  - Menu:
+      - Welcome: index.md
+      - Litepaper:
+          - 🇦🇺 English: litepaper/index.md
+          - 🇰🇷 Korean: litepaper/korean.md
+          - 🇷🇺 Russian: litepaper/russian.md
+          - 🇨🇳 Chinese: litepaper/chinese.md
+      - System Overview:
+          - Synopsis: synopsis.md
+          - Governance: governance.md
+          - Incentives: incentives.md
+          - Releases: releases.md
+      - Tokens:
+          - Overview: tokens/index.md
+          - List: tokens/list.md
+      - Addresses: addresses.md
+      - Historical Data: historical-data.md
+      - Integrations:
+          - Getting Started: integrations/index.md
+          - Synths Integration Guide: integrations/guide.md
+          - Staking Integration Guide: integrations/guide.md
+          - Synthetix Data Integrations Guide: integrations/guide.md
+          - Working with Testnets: integrations/testnets.md
+          - ENS Support: integrations/ens.md
       - Walkthrus:
           - Overview: contracts/walkthrus/index.md
           - Claiming Rewards: contracts/walkthrus/claiming.md
@@ -55,82 +43,94 @@ nav:
           - Trading: contracts/walkthrus/trading.md
           - Trading Settlement: contracts/walkthrus/settlement.md
           - Unstaking SNX: contracts/walkthrus/unstaking.md
-      - Source:
-          Contracts:
-            - AddressResolver: contracts/source/contracts/AddressResolver.md
-            - BinaryOption: contracts/source/contracts/BinaryOption.md
-            - BinaryOptionMarket: contracts/source/contracts/BinaryOptionMarket.md
-            - BinaryOptionMarketFactory: contracts/source/contracts/BinaryOptionMarketFactory.md
-            - BinaryOptionMarketManager: contracts/source/contracts/BinaryOptionMarketManager.md
-            - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
-            - Depot: contracts/source/contracts/Depot.md
-            - EscrowChecker: contracts/source/contracts/EscrowChecker.md
-            - EternalStorage: contracts/source/contracts/EternalStorage.md
-            - EtherCollateral: contracts/source/contracts/EtherCollateral.md
-            - ExchangeRates: contracts/source/contracts/ExchangeRates.md
-            - ExchangeState: contracts/source/contracts/ExchangeState.md
-            - Exchanger: contracts/source/contracts/Exchanger.md
-            - ExternStateToken: contracts/source/contracts/ExternStateToken.md
-            - FeePool: contracts/source/contracts/FeePool.md
-            - FeePoolEternalStorage: contracts/source/contracts/FeePoolEternalStorage.md
-            - FeePoolState: contracts/source/contracts/FeePoolState.md
-            - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
-            - Issuer: contracts/source/contracts/Issuer.md
-            - LimitedSetup: contracts/source/contracts/LimitedSetup.md
-            - Liquidations: contracts/source/contracts/Liquidations.md
-            - MixinResolver: contracts/source/contracts/MixinResolver.md
-            - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
-            - Owned: contracts/source/contracts/Owned.md
-            - Pausable: contracts/source/contracts/Pausable.md
-            - Proxy: contracts/source/contracts/Proxy.md
-            - ProxyERC20: contracts/source/contracts/ProxyERC20.md
-            - Proxyable: contracts/source/contracts/Proxyable.md
-            - PurgeableSynth: contracts/source/contracts/PurgeableSynth.md
-            - ReadProxy: contracts/source/contracts/ReadProxy.md
-            - RewardEscrow: contracts/source/contracts/RewardEscrow.md
-            - RewardsDistribution: contracts/source/contracts/RewardsDistribution.md
-            - RewardsDistributionRecipient: contracts/source/contracts/RewardsDistributionRecipient.md
-            - SelfDestructible: contracts/source/contracts/SelfDestructible.md
-            - StakingRewards: contracts/source/contracts/StakingRewards.md
-            - State: contracts/source/contracts/State.md
-            - SupplySchedule: contracts/source/contracts/SupplySchedule.md
-            - Synth: contracts/source/contracts/Synth.md
-            - Synthetix: contracts/source/contracts/Synthetix.md
-            - SynthetixEscrow: contracts/source/contracts/SynthetixEscrow.md
-            - SynthetixState: contracts/source/contracts/SynthetixState.md
-            - SystemStatus: contracts/source/contracts/SystemStatus.md
-            - TokenState: contracts/source/contracts/TokenState.md
-          Interfaces:
-            - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
-            - IBinaryOption: contracts/source/interfaces/IBinaryOption.md
-            - IBinaryOptionMarket: contracts/source/interfaces/IBinaryOptionMarket.md
-            - IBinaryOptionMarketManager: contracts/source/interfaces/IBinaryOptionMarketManager.md
-            - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
-            - IDepot: contracts/source/interfaces/IDepot.md
-            - IERC20: contracts/source/interfaces/IERC20.md
-            - IEtherCollateral: contracts/source/interfaces/IEtherCollateral.md
-            - IExchangeRates: contracts/source/interfaces/IExchangeRates.md
-            - IExchangeState: contracts/source/interfaces/IExchangeState.md
-            - IExchanger: contracts/source/interfaces/IExchanger.md
-            - IFeePool: contracts/source/interfaces/IFeePool.md
-            - IHasBalance: contracts/source/interfaces/IHasBalance.md
-            - IIssuer: contracts/source/interfaces/IIssuer.md
-            - ILiquidations: contracts/source/interfaces/ILiquidations.md
-            - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
-            - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
-            - IStakingRewards: contracts/source/interfaces/IStakingRewards.md
-            - ISynth: contracts/source/interfaces/ISynth.md
-            - ISynthetix: contracts/source/interfaces/ISynthetix.md
-            - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
-            - ISynthetixInternal: contracts/source/interfaces/ISynthetixInternal.md
-            - ISynthetixState: contracts/source/interfaces/ISynthetixState.md
-            - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
-          Libraries:
-            - AddressListLib: contracts/source/libraries/AddressListLib.md
-            - Math: contracts/source/libraries/Math.md
-            - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
-            - SafeMath: contracts/source/libraries/SafeMath.md
-      - Audit History: contracts/audits.md
+      - Libraries:
+          - Home: libraries/index.md
+          - Versioning: libraries/versioning.md
+          - Examples: libraries/examples.md
+          - synthetix: libraries/synthetix.md
+          - synthetix-js: libraries/synthetix-js.md
+          - synthetix-data: libraries/synthetix-data.md
+      - Smart Contracts:
+          - Architecture: contracts/index.md
+          - Automated Testing: contracts/testing.md
+          - Publisher: contracts/publisher.md
+          - Transaction Guide: contracts/transactions.md
+          - Source:
+              Contracts:
+                - AddressResolver: contracts/source/contracts/AddressResolver.md
+                - BinaryOption: contracts/source/contracts/BinaryOption.md
+                - BinaryOptionMarket: contracts/source/contracts/BinaryOptionMarket.md
+                - BinaryOptionMarketFactory: contracts/source/contracts/BinaryOptionMarketFactory.md
+                - BinaryOptionMarketManager: contracts/source/contracts/BinaryOptionMarketManager.md
+                - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
+                - Depot: contracts/source/contracts/Depot.md
+                - EscrowChecker: contracts/source/contracts/EscrowChecker.md
+                - EternalStorage: contracts/source/contracts/EternalStorage.md
+                - EtherCollateral: contracts/source/contracts/EtherCollateral.md
+                - ExchangeRates: contracts/source/contracts/ExchangeRates.md
+                - ExchangeState: contracts/source/contracts/ExchangeState.md
+                - Exchanger: contracts/source/contracts/Exchanger.md
+                - ExternStateToken: contracts/source/contracts/ExternStateToken.md
+                - FeePool: contracts/source/contracts/FeePool.md
+                - FeePoolEternalStorage: contracts/source/contracts/FeePoolEternalStorage.md
+                - FeePoolState: contracts/source/contracts/FeePoolState.md
+                - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
+                - Issuer: contracts/source/contracts/Issuer.md
+                - LimitedSetup: contracts/source/contracts/LimitedSetup.md
+                - Liquidations: contracts/source/contracts/Liquidations.md
+                - MixinResolver: contracts/source/contracts/MixinResolver.md
+                - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
+                - Owned: contracts/source/contracts/Owned.md
+                - Pausable: contracts/source/contracts/Pausable.md
+                - Proxy: contracts/source/contracts/Proxy.md
+                - ProxyERC20: contracts/source/contracts/ProxyERC20.md
+                - Proxyable: contracts/source/contracts/Proxyable.md
+                - PurgeableSynth: contracts/source/contracts/PurgeableSynth.md
+                - ReadProxy: contracts/source/contracts/ReadProxy.md
+                - RewardEscrow: contracts/source/contracts/RewardEscrow.md
+                - RewardsDistribution: contracts/source/contracts/RewardsDistribution.md
+                - RewardsDistributionRecipient: contracts/source/contracts/RewardsDistributionRecipient.md
+                - SelfDestructible: contracts/source/contracts/SelfDestructible.md
+                - StakingRewards: contracts/source/contracts/StakingRewards.md
+                - State: contracts/source/contracts/State.md
+                - SupplySchedule: contracts/source/contracts/SupplySchedule.md
+                - Synth: contracts/source/contracts/Synth.md
+                - Synthetix: contracts/source/contracts/Synthetix.md
+                - SynthetixEscrow: contracts/source/contracts/SynthetixEscrow.md
+                - SynthetixState: contracts/source/contracts/SynthetixState.md
+                - SystemStatus: contracts/source/contracts/SystemStatus.md
+                - TokenState: contracts/source/contracts/TokenState.md
+              Interfaces:
+                - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
+                - IBinaryOption: contracts/source/interfaces/IBinaryOption.md
+                - IBinaryOptionMarket: contracts/source/interfaces/IBinaryOptionMarket.md
+                - IBinaryOptionMarketManager: contracts/source/interfaces/IBinaryOptionMarketManager.md
+                - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
+                - IDepot: contracts/source/interfaces/IDepot.md
+                - IERC20: contracts/source/interfaces/IERC20.md
+                - IEtherCollateral: contracts/source/interfaces/IEtherCollateral.md
+                - IExchangeRates: contracts/source/interfaces/IExchangeRates.md
+                - IExchangeState: contracts/source/interfaces/IExchangeState.md
+                - IExchanger: contracts/source/interfaces/IExchanger.md
+                - IFeePool: contracts/source/interfaces/IFeePool.md
+                - IHasBalance: contracts/source/interfaces/IHasBalance.md
+                - IIssuer: contracts/source/interfaces/IIssuer.md
+                - ILiquidations: contracts/source/interfaces/ILiquidations.md
+                - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
+                - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
+                - IStakingRewards: contracts/source/interfaces/IStakingRewards.md
+                - ISynth: contracts/source/interfaces/ISynth.md
+                - ISynthetix: contracts/source/interfaces/ISynthetix.md
+                - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
+                - ISynthetixInternal: contracts/source/interfaces/ISynthetixInternal.md
+                - ISynthetixState: contracts/source/interfaces/ISynthetixState.md
+                - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
+              Libraries:
+                - AddressListLib: contracts/source/libraries/AddressListLib.md
+                - Math: contracts/source/libraries/Math.md
+                - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
+                - SafeMath: contracts/source/libraries/SafeMath.md
+          - Audit History: contracts/audits.md
 extra:
   social:
     - icon: brands/github
