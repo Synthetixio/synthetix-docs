@@ -29,9 +29,9 @@ nav:
       - Historical Data: historical-data.md
       - Integrations:
           - Getting Started: integrations/index.md
-          - Synths Integration Guide: integrations/guide.md
-          - Staking Integration Guide: integrations/guide.md
-          - Synthetix Data Integrations Guide: integrations/guide.md
+          - Synths Integration Guide: integrations/synths-integration-guide.md
+          - Staking Integration Guide: integrations/staking-integration-guide.md
+          - Synthetix Data Integrations Guide: integrations/synthetix-data-integration-guide.md
           - Working with Testnets: integrations/testnets.md
           - ENS Support: integrations/ens.md
       - Walkthrus:
