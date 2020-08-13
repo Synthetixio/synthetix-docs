@@ -2,28 +2,11 @@
 
 In order to close their position, `SNX` stakers need to burn enough `sUSD` to cover their debt position (`Synthetix.debtBalanceOf(user, "sUSD")`).
 
-Via the contracts, the process is as follows:
-
 ## Burning API
-
-To burn `sUSD` in Mintr, this is how they perform the task:
-
-<img src="/img/misc/events-burn.png" width=300 />
 
 ### Contract
 
-!!! warning "Use the Proxies"
-
-    Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
-
-    1. the underlying is subject to change (and does most releases); and
-    2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
-
-    For best results, always interact with the proxy using the ABI of the underlying.
-
 **Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
-
-**Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
 ### Methods
 
@@ -175,3 +158,18 @@ On a successful transaction, the following events occur:
             }
         }
         ```
+
+### Advanced Contract
+
+!!! warning "Use the Proxies"
+
+Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
+
+1. the underlying is subject to change (and does most releases); and
+2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
+
+For best results, always interact with the proxy using the ABI of the underlying.
+
+**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
+
+**Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)

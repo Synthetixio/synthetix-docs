@@ -22,23 +22,11 @@ Leverage a suite of synthetic assets to enable traders to access fiat currencies
 
 Check out [Synthetix.Exchange](https://www.synthetix.io/products/exchange) to view a live trading interface for synths. You can view the source code at the Synthetix.Exchange [Github page](https://github.com/synthetixio/synthetix-exchange).
 
-To view our guide on how to integrate Synths, as well as information on how you can earn fees on Synth trades, click the button below.
-
-<a href="/integrations/synths-integration-guide/" >
-<img src="/img/misc/Synths Button.png" width="345" height="76" >
-</a>
-
 ## Building with Staking
 
 Enable users to earn SNX by locking up funds, mint and burn Synths, and monitor their collateralisation levels with the Synthetix Staking system.
 
 To see an example of staking in action, visit our live [Staking interface](https://www.synthetix.io/products/mintr). You can view the source code at the Synthetix Staking interface [Github page](https://github.com/synthetixio/synthetix-mintr).
-
-To view our guide on how to integrate staking into your dApp, click the button below.
-
-<a href="/integrations/staking-integration-guide/" >
-<img src="/img/misc/Staking Button.png" width="345" height="76" >
-</a>
 
 ## Building with Synthetix Data
 
@@ -46,11 +34,6 @@ Access rich Synthetix system data to create dashboards and trading tools.
 
 To view a live example of a dashboard built with Synthetix data, visit the [Synthetix Stats dashboard](https://dashboard.synthetix.io/). You can view the source code at the Synthetix Stats dashboard [Github page](https://github.com/synthetixio/synthetix-dashboard).
 
-For a complete guide to integrating Synthetix data into your project, click the button below.
-
-<a href="/integrations/synthetix-data-integration-guide/" >
-<img src="/img/misc/Synthetix Data.png" width="345" height="76" >
-</a>
 
 ### Governance Resources
 

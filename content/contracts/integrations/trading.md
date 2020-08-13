@@ -1,31 +1,12 @@
 # Trading: Exchanging Synths
 
-To exchange any synth into `sUSD` in Mintr, a user does:
-
-<img src="/img/misc/events-trade.png" width=200 />
-
-Alternatively, to exchange one synth for another in Synthetix.Exchange, a user does:
-
-<img src="/img/misc/events-exchange.png" width=200 />
-
-Via the contracts, the process is as follows:
+Synths can be directly exchanged for one another with zero slippage. To view a full list of all the synthetic assets available for trading on Synthetix, visit our [tokens section](./tokens).
 
 ## Exchanging API
 
 ### Contract
 
-!!! warning "Use the Proxies"
-
-    Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
-
-    1. the underlying is subject to change (and does most releases); and
-    2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
-
-    For best results, always interact with the proxy using the ABI of the underlying.
-
 **Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
-
-**Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
 ### Methods
 
@@ -206,3 +187,18 @@ Following any reclaims or rebates, the following events then occur:
             }
         }
         ```
+
+### Contract
+
+!!! warning "Use the Proxies"
+
+Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
+
+1. the underlying is subject to change (and does most releases); and
+2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
+
+For best results, always interact with the proxy using the ABI of the underlying.
+
+**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
+
+**Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)

@@ -1,11 +1,11 @@
-# Synthetix Data Integration Guide
+# Integrations Overview
 
+!!! Tip "Who this guide is for"
 
-## dApp and Script Integration
-This is method is for developers looking to integrate Synthetix data into a dApp or script.By leveraging Synthetix.js, you can efficiently integrate a wide variety of staking tools into your project.
+    This is a guide for smart contract developers looking into integrate one or more of Synthetix's contracts into their own contracts. Please read the below thoroughly and ask for help in the `#dev-portal` channel of our [Discord](https://discordapp.com/channels/413890591840272394/).
 
-## Smart Contract Integration
-This method is for smart contract developers looking into integrate one or more of Synthetix's contracts into their own contracts.
+    If instead you're looking to integrate Synthetix into your dApps and scripts, please see our [libraries section](/libraries/).
+
 
 ### Address Resolver
 

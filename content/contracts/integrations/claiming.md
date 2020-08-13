@@ -2,28 +2,11 @@
 
 `SNX` stakers (aka minters, aka issuers) get staking rewards each week, in the form of `sUSD` trading fees and `SNX` inflationary rewards ([see incentives](../../incentives.md#sources-of-value) for more information).
 
-In Mintr, this is how they perform the task:
-
-<img src="/img/misc/events-claim.png" width=300 />
-
-Via the contracts, the process is as follows:
-
 ## API
 
 ### Contract
 
-!!! warning "Use the Proxies"
-
-    Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
-
-    1. the underlying is subject to change (and does most releases); and
-    2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
-
-    For best results, always interact with the proxy using the ABI of the underlying.
-
 **Destination contract (address):** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
-
-**Underlying contract (ABI):** [`FeePool`](https://contracts.synthetix.io/FeePool)
 
 ### Methods
 
@@ -179,3 +162,17 @@ On a successful transaction, the following events occur:
             }
         }
         ```
+### Advanced Contract
+
+!!! warning "Use the Proxies"
+
+Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
+
+1. the underlying is subject to change (and does most releases); and
+2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
+
+For best results, always interact with the proxy using the ABI of the underlying.
+
+**Destination contract (address):** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
+
+**Underlying contract (ABI):** [`FeePool`](https://contracts.synthetix.io/FeePool)

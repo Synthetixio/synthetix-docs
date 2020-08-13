@@ -8,12 +8,6 @@ Stakers and traders can delegate the following actions to other accounts
 - Trading (exchanging)
 - (All of the above)
 
-In Mintr, this is how they perform the task:
-
-<img src="/img/misc/events-delegate.png" width=400 />
-
-Via the contracts, the process is as follows:
-
 ## Adding Approval API
 
 ### Contract

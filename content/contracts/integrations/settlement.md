@@ -1,4 +1,4 @@
-# Trading: Settlement
+# Settlement
 
 [SIP-37](https://sips.synthetix.io/sips/sip-37) in the Achernar release introduced Fee Reclamation into Synthetix. This means, following all exchanges into a synth, a waiting period must expire before subsequent exchanges out of that synth can be processed.
 

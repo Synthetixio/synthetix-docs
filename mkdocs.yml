@@ -26,23 +26,20 @@ nav:
           - Overview: tokens/index.md
           - List: tokens/list.md
       - Addresses: addresses.md
-      - Historical Data: historical-data.md
       - Integrations:
-          - Getting Started: integrations/index.md
-          - Synths Integration Guide: integrations/synths-integration-guide.md
-          - Staking Integration Guide: integrations/staking-integration-guide.md
-          - Synthetix Data Integrations Guide: integrations/synthetix-data-integration-guide.md
-          - Working with Testnets: integrations/testnets.md
-          - ENS Support: integrations/ens.md
-      - Walkthrus:
-          - Overview: contracts/walkthrus/index.md
-          - Claiming Rewards: contracts/walkthrus/claiming.md
-          - Delegating: contracts/walkthrus/delegating.md
-          - 'Depot: ETH/sUSD': contracts/walkthrus/depot.md
-          - Staking SNX: contracts/walkthrus/staking.md
-          - Trading: contracts/walkthrus/trading.md
-          - Trading Settlement: contracts/walkthrus/settlement.md
-          - Unstaking SNX: contracts/walkthrus/unstaking.md
+          - Overview: contracts/integrations/index.md
+          - Trading:
+              - Trading: contracts/integrations/trading.md
+              - Trading Settlement: contracts/integrations/settlement.md
+          - Staking:
+              - Staking SNX: contracts/integrations/staking.md
+              - Unstaking SNX: contracts/integrations/unstaking.md
+              - Claiming Rewards: contracts/integrations/claiming.md
+          - Data: contracts/integrations/data.md
+          - Delegating: contracts/integrations/delegating.md
+          - 'Depot: ETH/sUSD': contracts/integrations/depot.md
+          - Testnets: contracts/integrations/testnets.md
+          - ENS Support: contracts/integrations/ens.md
       - Libraries:
           - Home: libraries/index.md
           - Versioning: libraries/versioning.md
