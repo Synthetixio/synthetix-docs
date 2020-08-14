@@ -2,10 +2,21 @@
 
 !!! Tip "Who this guide is for"
 
-    This is a guide for smart contract developers looking into integrate one or more of Synthetix's contracts into their own contracts. Please read the below thoroughly and ask for help in the `#dev-portal` channel of our [Discord](https://discordapp.com/channels/413890591840272394/).
+    This is a series of guides for developers looking into integrate with Synthetix protocol. Please read the below thoroughly and ask for help in the `#dev-portal` channel of our [Discord](https://discordapp.com/channels/413890591840272394/).
 
-    If instead you're looking to integrate Synthetix into your dApps and scripts, please see our [libraries section](/libraries/).
+    If you're looking to integrate Synthetix into your dApps and scripts, please reference the [libraries section](/libraries/) in addition to the [data guide](/integrations/data).
 
+Synthetix provides the following integration guides:
+
+1. [Trading](/integrations/trading)
+2. [Staking](/integrations/staking)
+3. [Data](/integrations/data)
+4. [Delegating](/integrations/delegating)
+5. [Depot: ETH/sUSD](/integrations/depot)
+6. [Testnets](/integrations/testnets)
+7. [ENS Support](/integrations/ens)
+
+The additional contextual information below is also helpful as a companion reference to the guides provided.
 
 ### Address Resolver
 
@@ -15,7 +26,7 @@ In short, the `AddressResolver` allows any referencing contract to have access t
 
 The `ReadProxyAddressResolver` is our readable `AddressResolver` behind a proxy that won't change, so it's safe to use in your code (it only allows calls that do not mutate state). We have one for each testnet and mainnet up on the [addresses](../addresses.md) page.
 
-For guides on how to use the `AddressResolver` in Solidity, see our [walkthrus](/integrations/trading/#exchanging-in-solidity).
+For guides on how to use the `AddressResolver` in Solidity, see our [trading section](/integrations/trading/#exchanging-in-solidity).
 
 ### Proxies
 
