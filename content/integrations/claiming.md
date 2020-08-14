@@ -8,6 +8,10 @@
 
 **Destination contract (address):** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
 
+**Underlying contract (ABI):** [`FeePool`](https://contracts.synthetix.io/FeePool)
+
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `FeePool` contract you need is [`FeePool`](https://contracts.synthetix.io/FeePool). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+
 ### Methods
 
 - [`claimFees()`](../../FeePool#claimfees)
@@ -162,17 +166,3 @@ On a successful transaction, the following events occur:
             }
         }
         ```
-### Advanced Contract
-
-!!! warning "Use the Proxies"
-
-Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
-
-1. the underlying is subject to change (and does most releases); and
-2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
-
-For best results, always interact with the proxy using the ABI of the underlying.
-
-**Destination contract (address):** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
-
-**Underlying contract (ABI):** [`FeePool`](https://contracts.synthetix.io/FeePool)

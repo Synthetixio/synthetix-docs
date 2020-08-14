@@ -27,19 +27,19 @@ nav:
           - List: tokens/list.md
       - Addresses: addresses.md
       - Integrations:
-          - Overview: contracts/integrations/index.md
+          - Overview: integrations/index.md
           - Trading:
-              - Trading: contracts/integrations/trading.md
-              - Trading Settlement: contracts/integrations/settlement.md
+              - Trading: integrations/trading.md
+              - Trading Settlement: integrations/settlement.md
           - Staking:
-              - Staking SNX: contracts/integrations/staking.md
-              - Unstaking SNX: contracts/integrations/unstaking.md
-              - Claiming Rewards: contracts/integrations/claiming.md
-          - Data: contracts/integrations/data.md
-          - Delegating: contracts/integrations/delegating.md
-          - 'Depot: ETH/sUSD': contracts/integrations/depot.md
-          - Testnets: contracts/integrations/testnets.md
-          - ENS Support: contracts/integrations/ens.md
+              - Staking SNX: integrations/staking.md
+              - Unstaking SNX: integrations/unstaking.md
+              - Claiming Rewards: integrations/claiming.md
+          - Data: integrations/data.md
+          - Delegating: integrations/delegating.md
+          - 'Depot: ETH/sUSD': integrations/depot.md
+          - Testnets: integrations/testnets.md
+          - ENS Support: integrations/ens.md
       - Libraries:
           - Home: libraries/index.md
           - Versioning: libraries/versioning.md

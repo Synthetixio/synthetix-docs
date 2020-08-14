@@ -27,7 +27,7 @@ Alternatively, Each of these subgraphs can be queried using GraphQL - follow the
 
 Instead of using the subgraphs provided, you could directly query the EVM via most free providers (such as Infura or Etherscan).
 
-!!! example "E.g. Get all `Synthetix.SynthExchagne` events"
+!!! example "E.g. Get all `Synthetix.SynthExchange` events"
 
     ```javascript
     const synthetix = require('synthetix');

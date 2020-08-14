@@ -8,6 +8,11 @@ Synths can be directly exchanged for one another with zero slippage. To view a f
 
 **Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
 
+**Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
+
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies)
+
+
 ### Methods
 
 - [`exchange(bytes32 src, uint256 fromAmount, bytes32 dest)`](../../Synthetix#exchange)

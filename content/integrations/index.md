@@ -15,11 +15,16 @@ In short, the `AddressResolver` allows any referencing contract to have access t
 
 The `ReadProxyAddressResolver` is our readable `AddressResolver` behind a proxy that won't change, so it's safe to use in your code (it only allows calls that do not mutate state). We have one for each testnet and mainnet up on the [addresses](../addresses.md) page.
 
-For guides on how to use the `AddressResolver` in Solidity, see our [walkthrus](/contracts/walkthrus/trading/#exchanging-in-solidity).
+For guides on how to use the `AddressResolver` in Solidity, see our [walkthrus](/integrations/trading/#exchanging-in-solidity).
 
 ### Proxies
 
 Synthetix makes extensive use of the proxy pattern. This allows users and integrated systems to refer to immutable proxy addresses while the underlying functionality is passed through to the target or _underlying_ contracts which can be updated by an `owner` function. This allows for fast iteration of the Synthetix ecosystem at the cost of trust in the protocol.
+
+The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
+the underlying is subject to change (and does most releases); and the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
+
+For best results, always interact with the proxy using the ABI of the underlying.
 
 !!! Info "Decentralize All the Things"
 

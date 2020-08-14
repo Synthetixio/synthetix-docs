@@ -8,6 +8,10 @@ In order to close their position, `SNX` stakers need to burn enough `sUSD` to co
 
 **Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
 
+**Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
+
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+
 ### Methods
 
 - [`burnSynths(uint256 amount)`](../../Synthetix#burnsynths)
@@ -158,18 +162,3 @@ On a successful transaction, the following events occur:
             }
         }
         ```
-
-### Advanced Contract
-
-!!! warning "Use the Proxies"
-
-Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
-
-1. the underlying is subject to change (and does most releases); and
-2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
-
-For best results, always interact with the proxy using the ABI of the underlying.
-
-**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
-
-**Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
