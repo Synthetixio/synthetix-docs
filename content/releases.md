@@ -8,8 +8,9 @@
 
 **Codebase**: [v2.26.2](https://github.com/Synthetixio/synthetix/tree/v2.26.2)
 
-> - [SIP-54](https://sips.synthetix.io/sccp/sip-54) : Limit Orders
+> https://blog.synthetix.io/the-spica-release/
 
+- [SIP-54](https://sips.synthetix.io/sccp/sip-54) : Limit Orders
 - [SIP-65](https://sips.synthetix.io/sccp/sip-65) : Decentralized circuit breaker
 - [SIP-69](https://sips.synthetix.io/sccp/sip-69) : New Index Synths
 - [SIP-58](https://sips.synthetix.io/sccp/sip-58) : Emit individual Reclaim and Rebate events
