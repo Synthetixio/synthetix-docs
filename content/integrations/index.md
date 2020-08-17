@@ -75,7 +75,7 @@ Curve allows users (and smart contracts like [1inch](https://1inch.exchange/), [
                     <a target="_blank" href="https://github.com/curvefi/curve-contract/blob/pool_susd_plain/vyper/stableswap.vy">Curve sUSD Pool Contract</a>
                 </td>
                 <td>
-                    <a target="_blank" href="https://www.curve.fi/audits/01-ToB.pdf">Curve Audit Report</a>
+                    <a target="_blank" href="https://www.curve.fi/curve_audits/01-ToB.pdf">Curve Audit Report</a>
                 <td><a target="_blank" href="https://blog.curve.fi/vulnerability-disclosure/">Disclosures</a>
                 <td>
                     <a target="_blank" href="mailto:security@curve.fi">security@curve.fi</a>
