@@ -50,6 +50,6 @@ The primary reason iSynths need upper and lower limits is because the further an
 
 #### An example of how iSynth leverage works
 
-As BTC moves away from the entry point iBTC starts to behave more like a leveraged token. If iBTC was at `$3750`, halfway to its lower limit of `$2500`, then each `$1` of iBTC purchased generates `$1.50` of price movement when BTC moves `$1`. With iBTC at `$2500`, it would generate `$2` of price movement (if it wasn't frozen).
+As BTC moves away from the entry point iBTC starts to behave more like a leveraged token. If iBTC was at `$3750`, halfway to its lower limit of `$2500`, then each `$1` of iBTC purchased generates `$1.67` of price movement when BTC moves `$1`, since `6250 / 3750 = 1.6667`. With iBTC at `$2500`, it would generate `$3` of price movement (if it wasn't frozen), since `7500 / 2500 = 3`.
 
 To use a different and more extreme example without limits, if iBTC's entry point was at `$5000`, and sBTC got up to `$9999`, leaving iBTC at `$1`, then you get around `10,000x` leverage at that point, because for every `1:10,000` movement in sBTC you get a `1:1` movement in iBTC.
