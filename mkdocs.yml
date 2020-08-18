@@ -31,6 +31,7 @@ nav:
           - Trading:
               - Trading: integrations/trading.md
               - Trading Settlement: integrations/settlement.md
+              - Trading Volume Program: integrations/volume-program.md
           - Staking:
               - Staking SNX: integrations/staking.md
               - Unstaking SNX: integrations/unstaking.md
