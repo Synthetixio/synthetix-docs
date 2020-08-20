@@ -14,10 +14,10 @@ In order to close their position, `SNX` stakers need to burn enough `sUSD` to co
 
 ### Methods
 
-- [`burnSynths(uint256 amount)`](../../Synthetix#burnsynths)
-- [`burnSynthsOnBehalf(address user, uint256 amount)`](../../Synthetix#burnsynthsonbehalf)
-- [`burnSynthsToTarget()`](../../Synthetix#burnsynthstotarget)
-- [`burnSynthsToTargetOnBehalf(address user)`](../../Synthetix#burnsynthstotargetonbehalf)
+- [`burnSynths(uint256 amount)`](/contracts/source/contracts/Synthetix/#burnsynths)
+- [`burnSynthsOnBehalf(address user, uint256 amount)`](/contracts/source/contracts/Synthetix/#burnsynthsonbehalf)
+- [`burnSynthsToTarget()`](/contracts/source/contracts/Synthetix/#burnsynthstotarget)
+- [`burnSynthsToTargetOnBehalf(address user)`](/contracts/source/contracts/Synthetix/#burnsynthstotargetonbehalf)
 
 ### Events Emitted
 
@@ -25,15 +25,15 @@ On a successful transaction, the following events occur:
 
 | name                                          | emitted on  | `address from`           | `address to` | `uint value`       |
 | --------------------------------------------- | ----------- | ------------------------ | ------------ | ------------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` (or `user`) | `0x0`        | `amount` of `sUSD` |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` (or `user`) | `0x0`        | `amount` of `sUSD` |
 
 | name                           | emitted on  | `address account`        | `uint value` |
 | ------------------------------ | ----------- | ------------------------ | ------------ |
-| [`Burned`](../../Synth#burned) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
+| [`Burned`](/contracts/source/contracts/Synth#burned) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
 
 | name                                                             | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
 | ---------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
-| [`IssuanceDebtRatioEntry`](../../FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
+| [`IssuanceDebtRatioEntry`](/contracts/source/contracts/FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
 
 ### Examples from Mainnet
 

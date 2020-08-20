@@ -16,11 +16,11 @@ Stakers and traders can delegate the following actions to other accounts
 
 ### Methods
 
-- [`approveAllDelegatePowers(address delegate)`](../../DelegateApprovals#approvealldelegatepowers)
-- [`approveIssueOnBehalf(address delegate)`](../../DelegateApprovals#approveissueonbehalf)
-- [`approveBurnOnBehalf(address delegate)`](../../DelegateApprovals#approveburnonbehalf)
-- [`approveClaimOnBehalf(address delegate)`](../../DelegateApprovals#approveclaimonbehalf)
-- [`approveExchangeOnBehalf(address delegate)`](../../DelegateApprovals#approveexchangeonbehalf)
+- [`approveAllDelegatePowers(address delegate)`](/contracts/source/contracts/DelegateApprovals/#approvealldelegatepowers)
+- [`approveIssueOnBehalf(address delegate)`](/contracts/source/contracts/DelegateApprovals/#approveissueonbehalf)
+- [`approveBurnOnBehalf(address delegate)`](/contracts/source/contracts/DelegateApprovals/#approveburnonbehalf)
+- [`approveClaimOnBehalf(address delegate)`](/contracts/source/contracts/DelegateApprovals/#approveclaimonbehalf)
+- [`approveExchangeOnBehalf(address delegate)`](/contracts/source/contracts/DelegateApprovals/#approveexchangeonbehalf)
 
 ### Events Emitted
 
@@ -28,7 +28,7 @@ On a successful transaction, the following events occur:
 
 | name                                           | emitted on          | `address authoriser` | `address delegate` | `bytes32 action`                                                                          |
 | ---------------------------------------------- | ------------------- | -------------------- | ------------------ | ----------------------------------------------------------------------------------------- |
-| [`Approval`](../../DelegateApprovals#approval) | `DelegateApprovals` | `msg.sender`         | `delegate`         | One of `ApproveAll, BurnForAddress, ClaimForAddress, IssueForAddress, ExchangeForAddress` |
+| [`Approval`](/contracts/source/contracts/DelegateApprovals#approval) | `DelegateApprovals` | `msg.sender`         | `delegate`         | One of `ApproveAll, BurnForAddress, ClaimForAddress, IssueForAddress, ExchangeForAddress` |
 
 ### Examples from Mainnet
 
@@ -43,11 +43,11 @@ On a successful transaction, the following events occur:
 
 ### Methods
 
-- [`removeAllDelegatePowers(address delegate)`](../../DelegateApprovals#removealldelegatepowers)
-- [`removeIssueOnBehalf(address delegate)`](../../DelegateApprovals#removeissueonbehalf)
-- [`removeBurnOnBehalf(address delegate)`](../../DelegateApprovals#removeburnonbehalf)
-- [`removeClaimOnBehalf(address delegate)`](../../DelegateApprovals#removeclaimonbehalf)
-- [`removeExchangeOnBehalf(address delegate)`](../../DelegateApprovals#removeexchangeonbehalf)
+- [`removeAllDelegatePowers(address delegate)`](/contracts/source/contracts/DelegateApprovals#removealldelegatepowers)
+- [`removeIssueOnBehalf(address delegate)`](/contracts/source/contracts/DelegateApprovals#removeissueonbehalf)
+- [`removeBurnOnBehalf(address delegate)`](/contracts/source/contracts/DelegateApprovals#removeburnonbehalf)
+- [`removeClaimOnBehalf(address delegate)`](/contracts/source/contracts/DelegateApprovals#removeclaimonbehalf)
+- [`removeExchangeOnBehalf(address delegate)`](/contracts/source/contracts/DelegateApprovals#removeexchangeonbehalf)
 
 ### Events Emitted
 
@@ -55,7 +55,7 @@ On a successful transaction, the following events occur:
 
 | name                                                           | emitted on          | `address authoriser` | `address delegate` | `bytes32 action`                                                                          |
 | -------------------------------------------------------------- | ------------------- | -------------------- | ------------------ | ----------------------------------------------------------------------------------------- |
-| [`WithdrawApproval`](../../DelegateApprovals#withdrawapproval) | `DelegateApprovals` | `msg.sender`         | `delegate`         | One of `ApproveAll, BurnForAddress, ClaimForAddress, IssueForAddress, ExchangeForAddress` |
+| [`WithdrawApproval`](/contracts/source/contracts/DelegateApprovals#withdrawapproval) | `DelegateApprovals` | `msg.sender`         | `delegate`         | One of `ApproveAll, BurnForAddress, ClaimForAddress, IssueForAddress, ExchangeForAddress` |
 
 ---
 

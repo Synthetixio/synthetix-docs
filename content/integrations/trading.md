@@ -15,8 +15,9 @@ Synths can be directly exchanged for one another with zero slippage. To view a f
 
 ### Methods
 
-- [`exchange(bytes32 src, uint256 fromAmount, bytes32 dest)`](../../Synthetix#exchange)
-- [`exchangeOnBehalf(address user, bytes32 src, uint256 fromAmount, bytes32 dest)`](../../Synthetix#exchangeonbehalf)
+- [`exchange(bytes32 src, uint256 fromAmount, bytes32 dest)`](/contracts/source/contracts/Synthetix/#exchange)
+- [`exchangeOnBehalf(address user, bytes32 src, uint256 fromAmount, bytes32 dest)`](/contracts/source/contracts/Synthetix/#exchangeonbehalf)
+
 
 ### Events Emitted
 
@@ -28,31 +29,31 @@ Following any reclaims or rebates, the following events then occur:
 
 | name                                          | emitted on   | `address from`           | `address to` | `uint value` |
 | --------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `fromAmount` |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `fromAmount` |
 
 | name                           | emitted on   | `address account`        | `uint value` |
 | ------------------------------ | ------------ | ------------------------ | ------------ |
-| [`Burned`](../../Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `fromAmount` |
+| [`Burned`](/contracts/source/contracts/Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `fromAmount` |
 
 | name                                          | emitted on    | `address from` | `address to`             | `uint value`     |
 | --------------------------------------------- | ------------- | -------------- | ------------------------ | ---------------- |
-| [`Transfer`](../../ExternStateToken#transfer) | `Proxy<dest>` | `0x0`          | `msg.sender` (or `user`) | `toAmount - fee` |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<dest>` | `0x0`          | `msg.sender` (or `user`) | `toAmount - fee` |
 
 | name                           | emitted on    | `address account`        | `uint value`     |
 | ------------------------------ | ------------- | ------------------------ | ---------------- |
-| [`Issued`](../../Synth#issued) | `Proxy<dest>` | `msg.sender` (or `user`) | `toAmount - fee` |
+| [`Issued`](/contracts/source/contracts/Synth#issued) | `Proxy<dest>` | `msg.sender` (or `user`) | `toAmount - fee` |
 
 | name                                          | emitted on  | `address from` | `address to`                                | `uint value` |
 | --------------------------------------------- | ----------- | -------------- | ------------------------------------------- | ------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | [`FEE_ADDRESS`](/contracts/source/contracts/FeePool/#fee_address) | `fee`        |
 
 | name                           | emitted on  | `address account`                           | `uint value` |
 | ------------------------------ | ----------- | ------------------------------------------- | ------------ |
-| [`Issued`](../../Synth#issued) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
+| [`Issued`](/contracts/source/contracts/Synth#issued) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
 
 | name                                             | emitted on       | `address account`             | `bytes32 src` | `uint fromAmount` | `bytes32 dest` | `uint toAmount`  | `address toAddress`           |
 | ------------------------------------------------ | ---------------- | ----------------------------- | ------------- | ----------------- | -------------- | ---------------- | ----------------------------- |
-| [`SynthExchange`](../../Synthetix#synthexchange) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`      | `dest`         | `toAmount - fee` | `msg.sender`<br />(or `user`) |
+| [`SynthExchange`](/contracts/source/contracts/Synthetix#synthexchange) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`      | `dest`         | `toAmount - fee` | `msg.sender`<br />(or `user`) |
 
 ### Examples from Mainnet
 

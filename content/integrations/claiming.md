@@ -1,6 +1,6 @@
 # Claiming Rewards
 
-`SNX` stakers (aka minters, aka issuers) get staking rewards each week, in the form of `sUSD` trading fees and `SNX` inflationary rewards ([see incentives](../../incentives.md#sources-of-value) for more information).
+`SNX` stakers (aka minters, aka issuers) get staking rewards each week, in the form of `sUSD` trading fees and `SNX` inflationary rewards ([see incentives](/incentives/#sources-of-value) for more information).
 
 ## API
 
@@ -14,8 +14,8 @@
 
 ### Methods
 
-- [`claimFees()`](../../FeePool#claimfees)
-- [`claimOnBehalf(address user)`](../../FeePool#claimonbehalf)
+- [`claimFees()`](/contracts/source/contracts/FeePool/#claimfees)
+- [`claimOnBehalf(address user)`](/contracts/source/contracts/FeePool/#claimonbehalf)
 
 ### Events Emitted
 

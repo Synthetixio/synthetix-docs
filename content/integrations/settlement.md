@@ -27,7 +27,7 @@ There are a number of different ways to settle synths explicitly:
 
 #### Methods
 
-- [`settle(bytes32 currencyKey)`](../../Synthetix#settle)
+- [`settle(bytes32 currencyKey)`](/contracts/source/contracts/Synthetix/#settle)
 
 #### Examples on Mainnet
 
@@ -75,29 +75,29 @@ There are a number of different ways to settle synths explicitly:
 
 | name                                          | emitted on   | `address from`           | `address to` | `uint value` |
 | --------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `feesOwing`  |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `feesOwing`  |
 
 | name                           | emitted on   | `address account`        | `uint value` |
 | ------------------------------ | ------------ | ------------------------ | ------------ |
-| [`Burned`](../../Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwing`  |
+| [`Burned`](/contracts/source/contracts/Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwing`  |
 
 | name                                                 | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
 | ---------------------------------------------------- | ---------------- | ----------------------------- | --------------------- | ------------ |
-| [`ExchangeReclaim`](../../Synthetix#exchangereclaim) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwing`  |
+| [`ExchangeReclaim`](/contracts/source/contracts/Synthetix#exchangereclaim) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwing`  |
 
 #### Else if fees owed on `src` (fee rebate)
 
 | name                                          | emitted on   | `address from` | `address to`             | `uint value` |
 | --------------------------------------------- | ------------ | -------------- | ------------------------ | ------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `Proxy<src>` | `0x0`          | `msg.sender` (or `user`) | `feesOwed`   |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<src>` | `0x0`          | `msg.sender` (or `user`) | `feesOwed`   |
 
 | name                           | emitted on   | `address account`        | `uint value` |
 | ------------------------------ | ------------ | ------------------------ | ------------ |
-| [`Issued`](../../Synth#issued) | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwed`   |
+| [`Issued`](/contracts/source/contracts/Synth#issued) | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwed`   |
 
 | name                                               | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
 | -------------------------------------------------- | ---------------- | ----------------------------- | --------------------- | ------------ |
-| [`ExchangeRebate`](../../Synthetix#exchangerebate) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwed`   |
+| [`ExchangeRebate`](/contracts/source/contracts/Synthetix#exchangerebate) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwed`   |
 
 ---
 
