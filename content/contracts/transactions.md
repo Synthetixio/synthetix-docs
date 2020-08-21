@@ -17,7 +17,7 @@ This is a list of the most common user-facing transactions possible in the Synth
 
 !!! tip "More info"
 
-    Check out our [staking walkthru](walkthrus/staking.md) for more information
+    Check out our [staking walkthru](/integrations/staking) for more information
 
 **Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
 
@@ -47,7 +47,7 @@ On a successful transaction, the following events occur:
 
 !!! tip "More info"
 
-    Check out our [unstaking walkthru](walkthrus/unstaking.md) for more information
+    Check out our [unstaking walkthru](/integrations/unstaking) for more information
 
 **Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
 
@@ -78,7 +78,7 @@ On a successful transaction, the following events occur:
 
 !!! tip "More info"
 
-    Check out our [claiming walkthru](walkthrus/claiming.md) for more information
+    Check out our [claiming walkthru](/integrations/claiming) for more information
 
 **Called contract:** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
 
@@ -110,7 +110,7 @@ On a successful transaction, the following events occur:
 
 !!! tip "More info"
 
-    Check out our [trading walkthru](walkthrus/trading.md) for more information
+    Check out our [trading walkthru](/integrations/trading) for more information
 
 **Called contract:** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integration-guide#proxies))
 
