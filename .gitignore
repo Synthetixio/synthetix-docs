@@ -132,3 +132,5 @@ node_modules
 
 # Preview files
 *.preview
+
+*.DS_Store
