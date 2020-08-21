@@ -23,27 +23,27 @@ On a successful transaction, the following events occur:
 
 | name                                          | emitted on  | `address from`                              | `address to` | `uint value`       |
 | --------------------------------------------- | ----------- | ------------------------------------------- | ------------ | ------------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | to `0x0`     | `amount` of `sUSD` |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | [`FEE_ADDRESS`](/contracts/source/contracts/FeePool/#fee_address) | to `0x0`     | `amount` of `sUSD` |
 
 | name                           | emitted on  | `address account`                           | `uint value` |
 | ------------------------------ | ----------- | ------------------------------------------- | ------------ |
-| [`Burned`](../../Synth#burned) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `amount`     |
+| [`Burned`](/contracts/source/contracts/Synth#burned) | `ProxysUSD` | [`FEE_ADDRESS`](/contracts/source/contracts/FeePool/#fee_address) | `amount`     |
 
 | name                                          | emitted on  | `address from` | `address to`             | `uint value`       |
 | --------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
 | name                           | emitted on  | `address account`        | `uint value`       |
 | ------------------------------ | ----------- | ------------------------ | ------------------ |
-| [`Issued`](../../Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount` of `sUSD` |
+| [`Issued`](/contracts/source/contracts/Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
 | name                                                            | emitted on     | `address beneficiary`         | `uint time` | `uint value`              |
 | --------------------------------------------------------------- | -------------- | ----------------------------- | ----------- | ------------------------- |
-| [`VestingEntryCreated`](../../RewardEscrow#vestingentrycreated) | `RewardEscrow` | `msg.sender`<br />(or `user`) | `now`       | `amount` of `SNX` rewards |
+| [`VestingEntryCreated`](/contracts/source/contracts/RewardEscrow#vestingentrycreated) | `RewardEscrow` | `msg.sender`<br />(or `user`) | `now`       | `amount` of `SNX` rewards |
 
 | name                                       | emitted on     | `address account`        | `uint sUSDAmount` | `uint snxRewards` |
 | ------------------------------------------ | -------------- | ------------------------ | ----------------- | ----------------- |
-| [`FeesClaimed`](../../FeePool#feesclaimed) | `ProxyFeePool` | `msg.sender` (or `user`) | `sUSDAmount`      | `snxRewards`      |
+| [`FeesClaimed`](/contracts/source/contracts/FeePool#feesclaimed) | `ProxyFeePool` | `msg.sender` (or `user`) | `sUSDAmount`      | `snxRewards`      |
 
 ### Examples from Mainnet
 

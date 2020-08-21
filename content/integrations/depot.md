@@ -28,17 +28,17 @@ For each deposit paid through, the following two events are emitted:
 
 | name                                           | emitted on | `address fromAddress` | `address toAddress`                | `uint fromETHAmount`                              | `uint toAmount`                                    | `uint depositIndex`                                   |
 | ---------------------------------------------- | ---------- | --------------------- | ---------------------------------- | ------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------- |
-| [`ClearedDeposit`](../../Depot#cleareddeposit) | `Depot`    | `msg.sender`          | the current depositor in the queue | the amount of `ETH` the `toAddress` has been paid | the amont of `sUSD` the `msg.sender` will received | the `depositIndex` that was accessed in this exchange |
+| [`ClearedDeposit`](/contracts/source/contracts/Depot#cleareddeposit) | `Depot`    | `msg.sender`          | the current depositor in the queue | the amount of `ETH` the `toAddress` has been paid | the amont of `sUSD` the `msg.sender` will received | the `depositIndex` that was accessed in this exchange |
 
 | name                                          | emitted on  | `address from` | `address to` | `uint value`          |
 | --------------------------------------------- | ----------- | -------------- | ------------ | --------------------- |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `Depot`        | `msg.sender` | an `amount` of `sUSD` |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `Depot`        | `msg.sender` | an `amount` of `sUSD` |
 
 Following all deposits paid though, emits the following event:
 
 | name                               | emitted on | `string fromCurrency` | `uint fromAmount`                          | `string toCurrency` | `uint toAmount`                          |
 | ---------------------------------- | ---------- | --------------------- | ------------------------------------------ | ------------------- | ---------------------------------------- |
-| [`Exchange`](../../Depot#exchange) | `Depot`    | `ETH`                 | `fromAmount` of `ETH` sent by `msg.sender` | `sUSD`              | `toAmount` of `sUSD` the sender was sent |
+| [`Exchange`](/contracts/source/contracts/Depot#exchange) | `Depot`    | `ETH`                 | `fromAmount` of `ETH` sent by `msg.sender` | `sUSD`              | `toAmount` of `sUSD` the sender was sent |
 
 ### Example Transactions on Mainnet
 
