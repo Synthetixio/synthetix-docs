@@ -21,17 +21,17 @@ nav:
           - Synopsis: synopsis.md
           - Governance: governance.md
           - Incentives: incentives.md
-          - Releases: releases.md
       - Tokens:
           - Overview: tokens/index.md
           - List: tokens/list.md
       - Addresses: addresses.md
+      - Releases: releases.md
       - Integrations:
           - Overview: integrations/index.md
           - Trading:
               - Trading: integrations/trading.md
-              - Trading Settlement: integrations/settlement.md
-              - Trading Volume Program: integrations/volume-program.md
+              - Settlement: integrations/settlement.md
+              - Volume Program: integrations/volume-program.md
           - Staking:
               - Staking SNX: integrations/staking.md
               - Unstaking SNX: integrations/unstaking.md

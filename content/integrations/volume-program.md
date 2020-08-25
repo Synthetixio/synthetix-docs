@@ -70,7 +70,7 @@ No examples yet.
 !!! example "Exchanging (Trading)"
 
     === "SynthetixJs"
-        ```javascript hl_lines="14"
+        ```javascript hl_lines="16"
         const { SynthetixJs } = require('synthetix-js');
         const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
@@ -83,7 +83,7 @@ No examples yet.
 
         (async () => {
           try {
-         	 	const userAddress = '0x0000000000000000000000000000000000000001';
+         	const userAddress = '0x0000000000000000000000000000000000000001';
 
             // send transaction
             const txn = await snxjs.Synthetix.exchangeWithTracking(toUtf8Bytes32('sUSD'), parseEther('0.001'), toUtf8Bytes32('iETH'), userAddress, toUtf8Bytes32('1inch'));
@@ -105,7 +105,7 @@ No examples yet.
         ```
 
     === "Vanilla JavaScript"
-        ```javascript hl_lines="23"
+        ```javascript hl_lines="25"
         const synthetix = require('synthetix'); // nodejs
         const ethers = require('ethers'); // nodejs
         // or using ES modules:
@@ -127,7 +127,7 @@ No examples yet.
 
         (async () => {
           try {
-         	 	const userAddress = '0x0000000000000000000000000000000000000001';
+         	const userAddress = '0x0000000000000000000000000000000000000001';
 
             // send transaction
             const txn = await Synthetix.exchangeWithTracking(toBytes32('sUSD'), ethers.utils.parseEther('0.001'), toBytes32('iETH'), userAddress, toBytes32('1inch'));
