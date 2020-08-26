@@ -37,12 +37,14 @@ Access rich Synthetix system data to create dashboards and trading tools.
 
 ### Governance Resources
 
-**Researh Forum:** To participate in ongoing discussions regarding governance and improvements to Synthetix, join the [Synthetix Research Forum](https://research.synthetix.io/).
+**Discord discussions:** All Synthetix governance discussions begin in the [Synthetix community Discord](http://discordapp.com/invite/aApjG26) in the #governance channel. 
+
+**Research Forum:** After rough discussion occurs in Discord, more formalised opinions regarding governance and improvements to Synthetix are stored in the [Synthetix Research Forum](https://research.synthetix.io/).
 
 **SIP Website:** To review or create Synthetix Improvement Proposals (SIPs), visit the [Synthetix SIP interface](https://sips.synthetix.io).
 
 ### Support
 
-**Contact:** Get support from the [Synthetix Discord](https://discordapp.com/invite/AEdUHzt) or contact the Synthetix team directly by [email](https://www.synthetix.io/contact-us).
+**Contact:** You can get technical support from the [Synthetix Discord](https://discordapp.com/invite/AEdUHzt) in the #tech-support channel. 
 
-**FAQs:** For additional support resources, explanations, and links that are perfect for any newcomers, visit our community built [Synthetix Resources page](https://synthetix.community/docs/resources).
+**FAQs:** For additional support resources, explanations, and links that are perfect for any newcomers, visit our community-built [Synthetix Resources page](https://synthetix.community/docs/resources).
