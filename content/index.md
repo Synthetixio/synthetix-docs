@@ -1,4 +1,4 @@
-![Synthetix](img/logos/synthetix_text_logo.png)
+![Synthetix](img/logos/synthetix_blue_logo.png)
 
 # Welcome
 Here you will find all the resources you need to build synthetic asset trading, SNX staking, and Synthetix protocol data into your project.
@@ -7,7 +7,10 @@ Here you will find all the resources you need to build synthetic asset trading, 
 
 **GitHub:** To view Synthetix's codebase, visit the [Synthetix Github page](https://github.com/synthetixio).
 
-## Integrate Synth Trading
+##Build with Synthetix
+
+</br>
+[![integrations-synths](img/logos/integrate_trading.png)](./integrations/trading)
 
 Leverage a suite of synthetic assets to enable traders to access fiat currencies like USD, real-world assets like Gold, short positions on popular assets like BTC, indexes of assets from industries like DeFi, and much more. Visit the [tokens section](./tokens) for a complete list of the Synths available.
 
@@ -15,7 +18,8 @@ Leverage a suite of synthetic assets to enable traders to access fiat currencies
 
 **Synth Trading Integrations:** For a walkthrough of how to integrate synth trading into a dApp, as well as information about how you can earn revenue from trading fees with through the [Volume Program](./integrations/volume-program.md), visit the [trading integrations](./integrations/trading.md) section.
 
-## Integrate SNX Staking
+</br>
+[![integrations-staking](img/logos/integrate_staking.png)](./integrations/staking)
 
 Enable users to stake SNX, mint and burn Synths, and monitor their collateralisation levels with the Synthetix Staking system.
 
@@ -23,7 +27,8 @@ Enable users to stake SNX, mint and burn Synths, and monitor their collateralisa
 
 **Staking Integrations:** For a walkthrough of how to build SNX staking into a dApp, visit the [Staking Integrations](./integrations/staking.md) section.
 
-## Integrate Synthetix Data
+</br>
+[![integrations-data](img/logos/integrate_data.png)](./integrations/data)
 
 Access rich Synthetix system data to create dashboards and trading tools.
 
@@ -35,16 +40,16 @@ Access rich Synthetix system data to create dashboards and trading tools.
 ---
 
 
-### Governance Resources
+## Governance Resources
 
-**Discord discussions:** All Synthetix governance discussions begin in the [Synthetix community Discord](http://discordapp.com/invite/aApjG26) in the #governance channel. 
+**Discord discussions:** All Synthetix governance discussions begin in the [Synthetix community Discord](http://discordapp.com/invite/aApjG26) in the #governance channel.
 
 **Research Forum:** After rough discussion occurs in Discord, more formalised opinions regarding governance and improvements to Synthetix are stored in the [Synthetix Research Forum](https://research.synthetix.io/).
 
 **SIP Website:** To review or create Synthetix Improvement Proposals (SIPs), visit the [Synthetix SIP interface](https://sips.synthetix.io).
 
-### Support
+## Support
 
-**Contact:** You can get technical support from the [Synthetix Discord](https://discordapp.com/invite/AEdUHzt) in the #tech-support channel. 
+**Contact:** You can get technical support from the [Synthetix Discord](https://discordapp.com/invite/AEdUHzt) in the #tech-support channel.
 
 **FAQs:** For additional support resources, explanations, and links that are perfect for any newcomers, visit our community-built [Synthetix Resources page](https://synthetix.community/docs/resources).
