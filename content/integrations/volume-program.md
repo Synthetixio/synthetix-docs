@@ -8,7 +8,7 @@ Once accepted to the Volume Program, you can use the code functions below to tra
 
 ### Contract
 
-**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
+**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20)
 
 **Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
