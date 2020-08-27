@@ -127,7 +127,7 @@ const content = `
     This change is coming with [SIP-36](https://sips.synthetix.io/sips/sip-36).
 
 ${tokens
-	.sort((a, b) => (a.symbol > b.symbol ? 1 : -1))
+	.sort((a, b) => (a.name > b.name ? 1 : -1))
 	.map(
 		({ name, asset, symbol, address, decimals, description, index, inverted, feed }) =>
 			`## ${name} (${symbol})\n\n` +
