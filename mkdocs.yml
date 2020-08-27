@@ -59,8 +59,11 @@ nav:
                 - AddressResolver: contracts/source/contracts/AddressResolver.md
                 - BinaryOption: contracts/source/contracts/BinaryOption.md
                 - BinaryOptionMarket: contracts/source/contracts/BinaryOptionMarket.md
+                - BinaryOptionMarketData: contracts/source/contracts/BinaryOptionMarketData.md
                 - BinaryOptionMarketFactory: contracts/source/contracts/BinaryOptionMarketFactory.md
                 - BinaryOptionMarketManager: contracts/source/contracts/BinaryOptionMarketManager.md
+                - ContractStorage: contracts/source/contracts/ContractStorage.md
+                - DappMaintenance: contracts/source/contracts/DappMaintenance.md
                 - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
                 - Depot: contracts/source/contracts/Depot.md
                 - EscrowChecker: contracts/source/contracts/EscrowChecker.md
@@ -73,11 +76,14 @@ nav:
                 - FeePool: contracts/source/contracts/FeePool.md
                 - FeePoolEternalStorage: contracts/source/contracts/FeePoolEternalStorage.md
                 - FeePoolState: contracts/source/contracts/FeePoolState.md
+                - FlexibleStorage: contracts/source/contracts/FlexibleStorage.md
+                - IDepot: contracts/source/contracts/IDepot.md
                 - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
                 - Issuer: contracts/source/contracts/Issuer.md
                 - LimitedSetup: contracts/source/contracts/LimitedSetup.md
                 - Liquidations: contracts/source/contracts/Liquidations.md
                 - MixinResolver: contracts/source/contracts/MixinResolver.md
+                - MixinSystemSettings: contracts/source/contracts/MixinSystemSettings.md
                 - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
                 - Owned: contracts/source/contracts/Owned.md
                 - Pausable: contracts/source/contracts/Pausable.md
@@ -94,9 +100,11 @@ nav:
                 - State: contracts/source/contracts/State.md
                 - SupplySchedule: contracts/source/contracts/SupplySchedule.md
                 - Synth: contracts/source/contracts/Synth.md
+                - SynthUtil: contracts/source/contracts/SynthUtil.md
                 - Synthetix: contracts/source/contracts/Synthetix.md
                 - SynthetixEscrow: contracts/source/contracts/SynthetixEscrow.md
                 - SynthetixState: contracts/source/contracts/SynthetixState.md
+                - SystemSettings: contracts/source/contracts/SystemSettings.md
                 - SystemStatus: contracts/source/contracts/SystemStatus.md
                 - TokenState: contracts/source/contracts/TokenState.md
               Interfaces:
@@ -112,6 +120,7 @@ nav:
                 - IExchangeState: contracts/source/interfaces/IExchangeState.md
                 - IExchanger: contracts/source/interfaces/IExchanger.md
                 - IFeePool: contracts/source/interfaces/IFeePool.md
+                - IFlexibleStorage: contracts/source/interfaces/IFlexibleStorage.md
                 - IHasBalance: contracts/source/interfaces/IHasBalance.md
                 - IIssuer: contracts/source/interfaces/IIssuer.md
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
@@ -123,6 +132,7 @@ nav:
                 - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
                 - ISynthetixInternal: contracts/source/interfaces/ISynthetixInternal.md
                 - ISynthetixState: contracts/source/interfaces/ISynthetixState.md
+                - ISystemSettings: contracts/source/interfaces/ISystemSettings.md
                 - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
               Libraries:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md
