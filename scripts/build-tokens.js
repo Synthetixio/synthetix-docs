@@ -65,7 +65,7 @@ const tokens = snx
 				: desc(synth);
 		return Object.assign({ name: entry.desc, description }, entry);
 	})
-	.sort((a, b) => (a.asset > b.asset ? 1 : -1));
+	.sort((a, b) => (a.symbol > b.symbol ? 1 : -1));
 
 const format = num =>
 	numbro(num).format({
