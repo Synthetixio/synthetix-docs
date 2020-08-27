@@ -41,6 +41,7 @@ nav:
           - 'Depot: ETH/sUSD': integrations/depot.md
           - Testnets: integrations/testnets.md
           - ENS Support: integrations/ens.md
+          - Current Integrations: integrations/current-integrations.md
       - Libraries:
           - Home: libraries/index.md
           - Versioning: libraries/versioning.md
