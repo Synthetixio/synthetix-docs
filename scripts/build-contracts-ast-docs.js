@@ -7,7 +7,7 @@ const YAML = require('yaml');
 const { gray } = require('chalk');
 const snx = require('synthetix');
 
-const astDocs = snx.getAST();
+const astDocs = snx.getAST({ fs, path });
 const { version } = require('./utils');
 
 const baseUrl = `https://github.com/Synthetixio/synthetix/tree/v${version()}/`;

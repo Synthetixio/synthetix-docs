@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol)
+**Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol)
 
 ## Views
 
 ### `FEE_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -24,9 +24,27 @@
 
     `view`
 
+### `feePeriodDuration`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L12)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `feePeriodDuration() returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `feesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -42,27 +60,9 @@
 
     `view`
 
-### `getExchangeFeeRateForSynth`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L6)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getExchangeFeeRateForSynth(bytes32 synthKey) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `isFeesClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -78,9 +78,27 @@
 
     `view`
 
+### `targetThreshold`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L16)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `targetThreshold() returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `totalFeesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -98,7 +116,7 @@
 
 ### `totalRewardsAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -118,7 +136,7 @@
 
 ### `appendAccountIssuanceRecord`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -136,7 +154,7 @@
 
 ### `claimFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -154,7 +172,7 @@
 
 ### `claimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -172,7 +190,7 @@
 
 ### `closeCurrentFeePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -190,7 +208,7 @@
 
 ### `recordFeePaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -208,7 +226,7 @@
 
 ### `setRewardsToDistribute`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.26.1/contracts/interfaces/IFeePool.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/interfaces/IFeePool.sol#L38)</sub>
 
 ??? example "Details"
 
