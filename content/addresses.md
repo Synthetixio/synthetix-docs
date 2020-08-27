@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.27.1-alpha](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha)
+**Version**: [v2.27.2-alpha](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha)
 
 !!! info "Naming Conventions"
 
@@ -3519,7 +3519,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>ExchangeRates</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ExchangeRates.json">ExchangeRates.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xb169f410Da683c9782CCaE8339488c96d4397705">0xb169f410Da683c9782CCaE8339488c96d4397705</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xD4fC8ac667Edb298B8F421F17d61020Ab610613e">0xD4fC8ac667Edb298B8F421F17d61020Ab610613e</a>
                 </td>
               </tr>
               <tr>
@@ -3533,14 +3533,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Exchanger.json">Exchanger.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4E3d90e51979149B09E38A2B5A3F545F64F281B7">0x4E3d90e51979149B09E38A2B5A3F545F64F281B7</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4390C5D8591A078eB20c0DdD346bC5071E3c9115">0x4390C5D8591A078eB20c0DdD346bC5071E3c9115</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/FeePool.json">FeePool.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x597ce21435E593776321a1B124237B40087eBec3">0x597ce21435E593776321a1B124237B40087eBec3</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xE3871c056c3779DC19525C675f7dA7F306AEaFB0">0xE3871c056c3779DC19525C675f7dA7F306AEaFB0</a>
                 </td>
               </tr>
               <tr>
@@ -3561,7 +3561,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>FlexibleStorage</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/FlexibleStorage.json">FlexibleStorage.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xa142f3C819Dc24D5BC15695bC1eF5F9d137bf2cE">0xa142f3C819Dc24D5BC15695bC1eF5F9d137bf2cE</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xB1751e5EdE811288cE2fc4c65aaCA17A955366be">0xB1751e5EdE811288cE2fc4c65aaCA17A955366be</a>
                 </td>
               </tr>
               <tr>
@@ -3575,14 +3575,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x807773e7a5c9b644c690244f30b429fA4B6F384b">0x807773e7a5c9b644c690244f30b429fA4B6F384b</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x99Be578569F4D746377ce13fb7c50dB9d71094f1">0x99Be578569F4D746377ce13fb7c50dB9d71094f1</a>
                 </td>
               </tr>
               <tr>
                 <td>Liquidations</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Liquidations.sol">Liquidations.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Liquidations.json">Liquidations.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4A382522BEf4Ca3266eD9FF47ea1f50170D1bd77">0x4A382522BEf4Ca3266eD9FF47ea1f50170D1bd77</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x155d432847CA737d025438E60FFCCeb3cC4B1Df6">0x155d432847CA737d025438E60FFCCeb3cC4B1Df6</a>
                 </td>
               </tr>
               <tr>
@@ -3946,7 +3946,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8F42e36710438F662C7F6212fcb4D3057fbB78bb">0x8F42e36710438F662C7F6212fcb4D3057fbB78bb</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x5d2399cdA3Daedb92D0b9cde4F7B99Af75Ee408B">0x5d2399cdA3Daedb92D0b9cde4F7B99Af75Ee408B</a>
                 </td>
               </tr>
               <tr>
@@ -4247,7 +4247,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>SystemSettings</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/SystemSettings.json">SystemSettings.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xd155408E4D4C525259fB430DE76F4ae24ee22a5b">0xd155408E4D4C525259fB430DE76F4ae24ee22a5b</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9E7c3fc61bdDD74E4E6Ba99B7e797EA09bb90253">0x9E7c3fc61bdDD74E4E6Ba99B7e797EA09bb90253</a>
                 </td>
               </tr>
               <tr>
@@ -4542,5 +4542,12 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/TokenState.json">TokenState.json</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x76870433F648ad4FDa62111381ACe0A9FAC6F413">0x76870433F648ad4FDa62111381ACe0A9FAC6F413</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TradingRewards</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/TradingRewards.json">TradingRewards.json</a></td>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC7465779aDA35667515C92Eb8227F6b9f7EA8333">0xC7465779aDA35667515C92Eb8227F6b9f7EA8333</a>
                 </td>
               </tr></table>
