@@ -73,30 +73,30 @@ There are a number of different ways to settle synths explicitly:
 
 #### If fees owing on `src` (fee reclamation)
 
-| name                                          | emitted on   | `address from`           | `address to` | `uint value` |
-| --------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
+| name                                                                | emitted on   | `address from`           | `address to` | `uint value` |
+| ------------------------------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `feesOwing`  |
 
-| name                           | emitted on   | `address account`        | `uint value` |
-| ------------------------------ | ------------ | ------------------------ | ------------ |
+| name                                                 | emitted on   | `address account`        | `uint value` |
+| ---------------------------------------------------- | ------------ | ------------------------ | ------------ |
 | [`Burned`](/contracts/source/contracts/Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwing`  |
 
-| name                                                 | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
-| ---------------------------------------------------- | ---------------- | ----------------------------- | --------------------- | ------------ |
+| name                                                                       | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
+| -------------------------------------------------------------------------- | ---------------- | ----------------------------- | --------------------- | ------------ |
 | [`ExchangeReclaim`](/contracts/source/contracts/Synthetix#exchangereclaim) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwing`  |
 
 #### Else if fees owed on `src` (fee rebate)
 
-| name                                          | emitted on   | `address from` | `address to`             | `uint value` |
-| --------------------------------------------- | ------------ | -------------- | ------------------------ | ------------ |
+| name                                                                | emitted on   | `address from` | `address to`             | `uint value` |
+| ------------------------------------------------------------------- | ------------ | -------------- | ------------------------ | ------------ |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<src>` | `0x0`          | `msg.sender` (or `user`) | `feesOwed`   |
 
-| name                           | emitted on   | `address account`        | `uint value` |
-| ------------------------------ | ------------ | ------------------------ | ------------ |
+| name                                                 | emitted on   | `address account`        | `uint value` |
+| ---------------------------------------------------- | ------------ | ------------------------ | ------------ |
 | [`Issued`](/contracts/source/contracts/Synth#issued) | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwed`   |
 
-| name                                               | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
-| -------------------------------------------------- | ---------------- | ----------------------------- | --------------------- | ------------ |
+| name                                                                     | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
+| ------------------------------------------------------------------------ | ---------------- | ----------------------------- | --------------------- | ------------ |
 | [`ExchangeRebate`](/contracts/source/contracts/Synthetix#exchangerebate) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwed`   |
 
 ---

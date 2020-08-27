@@ -525,7 +525,7 @@ const generateContractMarkdown = (contractSource, contractName, contractKind) =>
 		}
 	}
 
-	const scEntryInYAML = mkdocsYAML.nav.find(entry => 'Smart Contracts' in entry);
+	const scEntryInYAML = mkdocsYAML.nav[0].Menu.find(entry => 'Smart Contracts' in entry);
 	const srcEntryInYAML = scEntryInYAML['Smart Contracts'].find(entry => 'Source' in entry);
 	srcEntryInYAML['Source'] = { Contracts: contracts, Interfaces: interfaces, Libraries: libraries };
 

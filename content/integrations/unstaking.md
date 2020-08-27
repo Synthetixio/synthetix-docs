@@ -23,16 +23,16 @@ In order to close their position, `SNX` stakers need to burn enough `sUSD` to co
 
 On a successful transaction, the following events occur:
 
-| name                                          | emitted on  | `address from`           | `address to` | `uint value`       |
-| --------------------------------------------- | ----------- | ------------------------ | ------------ | ------------------ |
+| name                                                                | emitted on  | `address from`           | `address to` | `uint value`       |
+| ------------------------------------------------------------------- | ----------- | ------------------------ | ------------ | ------------------ |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` (or `user`) | `0x0`        | `amount` of `sUSD` |
 
-| name                           | emitted on  | `address account`        | `uint value` |
-| ------------------------------ | ----------- | ------------------------ | ------------ |
+| name                                                 | emitted on  | `address account`        | `uint value` |
+| ---------------------------------------------------- | ----------- | ------------------------ | ------------ |
 | [`Burned`](/contracts/source/contracts/Synth#burned) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
 
-| name                                                             | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
-| ---------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
+| name                                                                                   | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
+| -------------------------------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
 | [`IssuanceDebtRatioEntry`](/contracts/source/contracts/FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
 
 ### Examples from Mainnet

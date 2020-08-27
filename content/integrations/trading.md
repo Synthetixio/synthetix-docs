@@ -12,12 +12,10 @@ Synths can be directly exchanged for one another with zero slippage. To view a f
 
 > **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies)
 
-
 ### Methods
 
 - [`exchange(bytes32 src, uint256 fromAmount, bytes32 dest)`](/contracts/source/contracts/Synthetix/#exchange)
 - [`exchangeOnBehalf(address user, bytes32 src, uint256 fromAmount, bytes32 dest)`](/contracts/source/contracts/Synthetix/#exchangeonbehalf)
-
 
 ### Events Emitted
 
@@ -27,32 +25,32 @@ On a successful transaction, the following events occur:
 
 Following any reclaims or rebates, the following events then occur:
 
-| name                                          | emitted on   | `address from`           | `address to` | `uint value` |
-| --------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
+| name                                                                | emitted on   | `address from`           | `address to` | `uint value` |
+| ------------------------------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `fromAmount` |
 
-| name                           | emitted on   | `address account`        | `uint value` |
-| ------------------------------ | ------------ | ------------------------ | ------------ |
+| name                                                 | emitted on   | `address account`        | `uint value` |
+| ---------------------------------------------------- | ------------ | ------------------------ | ------------ |
 | [`Burned`](/contracts/source/contracts/Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `fromAmount` |
 
-| name                                          | emitted on    | `address from` | `address to`             | `uint value`     |
-| --------------------------------------------- | ------------- | -------------- | ------------------------ | ---------------- |
+| name                                                                | emitted on    | `address from` | `address to`             | `uint value`     |
+| ------------------------------------------------------------------- | ------------- | -------------- | ------------------------ | ---------------- |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<dest>` | `0x0`          | `msg.sender` (or `user`) | `toAmount - fee` |
 
-| name                           | emitted on    | `address account`        | `uint value`     |
-| ------------------------------ | ------------- | ------------------------ | ---------------- |
+| name                                                 | emitted on    | `address account`        | `uint value`     |
+| ---------------------------------------------------- | ------------- | ------------------------ | ---------------- |
 | [`Issued`](/contracts/source/contracts/Synth#issued) | `Proxy<dest>` | `msg.sender` (or `user`) | `toAmount - fee` |
 
-| name                                          | emitted on  | `address from` | `address to`                                | `uint value` |
-| --------------------------------------------- | ----------- | -------------- | ------------------------------------------- | ------------ |
+| name                                                                | emitted on  | `address from` | `address to`                                                      | `uint value` |
+| ------------------------------------------------------------------- | ----------- | -------------- | ----------------------------------------------------------------- | ------------ |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | [`FEE_ADDRESS`](/contracts/source/contracts/FeePool/#fee_address) | `fee`        |
 
-| name                           | emitted on  | `address account`                           | `uint value` |
-| ------------------------------ | ----------- | ------------------------------------------- | ------------ |
+| name                                                 | emitted on  | `address account`                           | `uint value` |
+| ---------------------------------------------------- | ----------- | ------------------------------------------- | ------------ |
 | [`Issued`](/contracts/source/contracts/Synth#issued) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
 
-| name                                             | emitted on       | `address account`             | `bytes32 src` | `uint fromAmount` | `bytes32 dest` | `uint toAmount`  | `address toAddress`           |
-| ------------------------------------------------ | ---------------- | ----------------------------- | ------------- | ----------------- | -------------- | ---------------- | ----------------------------- |
+| name                                                                   | emitted on       | `address account`             | `bytes32 src` | `uint fromAmount` | `bytes32 dest` | `uint toAmount`  | `address toAddress`           |
+| ---------------------------------------------------------------------- | ---------------- | ----------------------------- | ------------- | ----------------- | -------------- | ---------------- | ----------------------------- |
 | [`SynthExchange`](/contracts/source/contracts/Synthetix#synthexchange) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`      | `dest`         | `toAmount - fee` | `msg.sender`<br />(or `user`) |
 
 ### Examples from Mainnet

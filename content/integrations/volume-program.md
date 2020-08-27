@@ -4,7 +4,7 @@ Projects that join the Synthetix Volume Program earn a 25% rebate on fees genera
 
 Once accepted to the Volume Program, you can use the code functions below to track your volume and earn fees. For more information, check out [SIP 63](https://sips.synthetix.io/sips/sip-63).
 
-##  Volume Program Integration
+## Volume Program Integration
 
 ### Contract
 
@@ -27,37 +27,37 @@ On a successful transaction, the following events occur:
 
 Following any reclaims or rebates, the following events then occur:
 
-| name                                          | emitted on   | `address from`           | `address to` | `uint value` |
-| --------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
+| name                                                                | emitted on   | `address from`           | `address to` | `uint value` |
+| ------------------------------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<src>` | `msg.sender` (or `user`) | `0x0`        | `fromAmount` |
 
-| name                           | emitted on   | `address account`        | `uint value` |
-| ------------------------------ | ------------ | ------------------------ | ------------ |
+| name                                                 | emitted on   | `address account`        | `uint value` |
+| ---------------------------------------------------- | ------------ | ------------------------ | ------------ |
 | [`Burned`](/contracts/source/contracts/Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `fromAmount` |
 
-| name                                          | emitted on    | `address from` | `address to`             | `uint value`     |
-| --------------------------------------------- | ------------- | -------------- | ------------------------ | ---------------- |
+| name                                                                | emitted on    | `address from` | `address to`             | `uint value`     |
+| ------------------------------------------------------------------- | ------------- | -------------- | ------------------------ | ---------------- |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `Proxy<dest>` | `0x0`          | `msg.sender` (or `user`) | `toAmount - fee` |
 
-| name                           | emitted on    | `address account`        | `uint value`     |
-| ------------------------------ | ------------- | ------------------------ | ---------------- |
+| name                                                 | emitted on    | `address account`        | `uint value`     |
+| ---------------------------------------------------- | ------------- | ------------------------ | ---------------- |
 | [`Issued`](/contracts/source/contracts/Synth#issued) | `Proxy<dest>` | `msg.sender` (or `user`) | `toAmount - fee` |
 
-| name                                          | emitted on  | `address from` | `address to`                                | `uint value` |
-| --------------------------------------------- | ----------- | -------------- | ------------------------------------------- | ------------ |
+| name                                                                | emitted on  | `address from` | `address to`                                                      | `uint value` |
+| ------------------------------------------------------------------- | ----------- | -------------- | ----------------------------------------------------------------- | ------------ |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | [`FEE_ADDRESS`](/contracts/source/contracts/FeePool/#fee_address) | `fee`        |
 
-| name                           | emitted on  | `address account`                           | `uint value` |
-| ------------------------------ | ----------- | ------------------------------------------- | ------------ |
+| name                                                 | emitted on  | `address account`                           | `uint value` |
+| ---------------------------------------------------- | ----------- | ------------------------------------------- | ------------ |
 | [`Issued`](/contracts/source/contracts/Synth#issued) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
 
-| name                                                                   | emitted on          | `address account`             | `bytes32 src` | `uint fromAmount` | `bytes32 dest` | `uint toAmount`  | `address toAddress`           |
-| ------------------------------------------------                       | ------------------- | ----------------------------- | ------------- | ----------------- | -------------- | ---------------- | ----------------------------- |
-| [`SynthExchange`](/contracts/source/contracts/Synthetix#synthexchange) | `ProxySynthetix`    | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`      | `dest`         | `toAmount - fee` | `msg.sender`<br />(or `user`) |
+| name                                                                   | emitted on       | `address account`             | `bytes32 src` | `uint fromAmount` | `bytes32 dest` | `uint toAmount`  | `address toAddress`           |
+| ---------------------------------------------------------------------- | ---------------- | ----------------------------- | ------------- | ----------------- | -------------- | ---------------- | ----------------------------- |
+| [`SynthExchange`](/contracts/source/contracts/Synthetix#synthexchange) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`      | `dest`         | `toAmount - fee` | `msg.sender`<br />(or `user`) |
 
-| name                                                                         | emitted on       | `bytes32 trackingCode`        | `bytes32 toCurrencyKey` | `uint amount`     |
-| ------------------------------------------------                             | ---------------- | ----------------------------- | -------------           | ----------------- |
-| [`ExchangeTracking`](/contracts/source/contracts/Synthetix#exchangetracking) | `ProxySynthetix` | `1inch`                       | `dest`                  | `toAmount`        |
+| name                                                                         | emitted on       | `bytes32 trackingCode` | `bytes32 toCurrencyKey` | `uint amount` |
+| ---------------------------------------------------------------------------- | ---------------- | ---------------------- | ----------------------- | ------------- |
+| [`ExchangeTracking`](/contracts/source/contracts/Synthetix#exchangetracking) | `ProxySynthetix` | `1inch`                | `dest`                  | `toAmount`    |
 
 ### Examples from Mainnet
 

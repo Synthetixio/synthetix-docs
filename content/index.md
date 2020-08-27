@@ -1,6 +1,7 @@
 ![Synthetix](img/logos/synthetix_blue_logo.png)
 
 # Welcome
+
 Here you will find all the resources you need to build synthetic asset trading, SNX staking, and Synthetix protocol data into your project.
 
 **Learn More:** To learn about the Synthetix protocol, read the [Synthetix Litepaper](./litepaper) or visit the [System Overview section](./synopsis).
@@ -36,9 +37,7 @@ Access rich Synthetix system data to create dashboards and trading tools.
 
 **Synthetix Data Integrations:** For a walkthrough of how to build Synthetix Data into a dApp, visit the [Synthetix Data Integrations](./integrations/data.md) section.
 
-
 ---
-
 
 ## Governance Resources
 

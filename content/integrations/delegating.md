@@ -26,8 +26,8 @@ Stakers and traders can delegate the following actions to other accounts
 
 On a successful transaction, the following events occur:
 
-| name                                           | emitted on          | `address authoriser` | `address delegate` | `bytes32 action`                                                                          |
-| ---------------------------------------------- | ------------------- | -------------------- | ------------------ | ----------------------------------------------------------------------------------------- |
+| name                                                                 | emitted on          | `address authoriser` | `address delegate` | `bytes32 action`                                                                          |
+| -------------------------------------------------------------------- | ------------------- | -------------------- | ------------------ | ----------------------------------------------------------------------------------------- |
 | [`Approval`](/contracts/source/contracts/DelegateApprovals#approval) | `DelegateApprovals` | `msg.sender`         | `delegate`         | One of `ApproveAll, BurnForAddress, ClaimForAddress, IssueForAddress, ExchangeForAddress` |
 
 ### Examples from Mainnet
@@ -53,8 +53,8 @@ On a successful transaction, the following events occur:
 
 On a successful transaction, the following events occur:
 
-| name                                                           | emitted on          | `address authoriser` | `address delegate` | `bytes32 action`                                                                          |
-| -------------------------------------------------------------- | ------------------- | -------------------- | ------------------ | ----------------------------------------------------------------------------------------- |
+| name                                                                                 | emitted on          | `address authoriser` | `address delegate` | `bytes32 action`                                                                          |
+| ------------------------------------------------------------------------------------ | ------------------- | -------------------- | ------------------ | ----------------------------------------------------------------------------------------- |
 | [`WithdrawApproval`](/contracts/source/contracts/DelegateApprovals#withdrawapproval) | `DelegateApprovals` | `msg.sender`         | `delegate`         | One of `ApproveAll, BurnForAddress, ClaimForAddress, IssueForAddress, ExchangeForAddress` |
 
 ---

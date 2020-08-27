@@ -25,16 +25,16 @@ To account for the risk stakers take on by being exposed to a shared debt pool, 
 
 On a successful transaction, the following events occur:
 
-| name                                          | emitted on  | `address from` | `address to`             | `uint value`       |
-| --------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
+| name                                                                | emitted on  | `address from` | `address to`             | `uint value`       |
+| ------------------------------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
 | [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-| name                           | emitted on  | `address account`        | `uint value` |
-| ------------------------------ | ----------- | ------------------------ | ------------ |
+| name                                                 | emitted on  | `address account`        | `uint value` |
+| ---------------------------------------------------- | ----------- | ------------------------ | ------------ |
 | [`Issued`](/contracts/source/contracts/Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
 
-| name                                                             | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
-| ---------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
+| name                                                                                   | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
+| -------------------------------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
 | [`IssuanceDebtRatioEntry`](/contracts/source/contracts/FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
 
 ### Examples from Mainnet
