@@ -56,6 +56,8 @@ const desc = synth => {
 
 console.log('Building tokens.md');
 
+// const tokens = snx.getTokens({ network });
+
 const tokens = [
 	{
 		symbol: 'SNX',
