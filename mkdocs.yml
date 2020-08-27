@@ -107,6 +107,7 @@ nav:
                 - SystemSettings: contracts/source/contracts/SystemSettings.md
                 - SystemStatus: contracts/source/contracts/SystemStatus.md
                 - TokenState: contracts/source/contracts/TokenState.md
+                - TradingRewards: contracts/source/contracts/TradingRewards.md
               Interfaces:
                 - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
                 - IBinaryOption: contracts/source/interfaces/IBinaryOption.md
@@ -134,6 +135,7 @@ nav:
                 - ISynthetixState: contracts/source/interfaces/ISynthetixState.md
                 - ISystemSettings: contracts/source/interfaces/ISystemSettings.md
                 - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
+                - ITradingRewards: contracts/source/interfaces/ITradingRewards.md
               Libraries:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md
                 - Math: contracts/source/libraries/Math.md
