@@ -14,7 +14,7 @@ See [`FeePool.feesByPeriod`](FeePool.md#feesbyperiod) and [`FeePool.effectiveDeb
 
     See also: [Design_Decisions.md](https://github.com/Synthetixio/synthetix/blob/master/Design_Decisions.md#feepoolstate).
 
-**Source:** [contracts/FeePoolState.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol)
+**Source:** [contracts/FeePoolState.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol)
 
 ## Architecture
 
@@ -41,7 +41,7 @@ graph TD
 
 ### `IssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L27)</sub>
 
 Holds the issuance state and index of users interacting with the [`FeePool`](FeePool.md) for the last [several fee periods](#fee_period_length).
 
@@ -62,7 +62,7 @@ For more information on these fields and their meaning, see the main [`Synthetix
 
 ### `FEE_PERIOD_LENGTH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L22)</sub>
 
 The number of fee periods (6) worth of issuance data to keep. Note the inconsistency with the corresponding constant in [`FeePool`](FeePool.md#fee_period_length), which is set to 3.
 
@@ -74,7 +74,7 @@ The number of fee periods (6) worth of issuance data to keep. Note the inconsist
 
 ### `accountIssuanceLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L33)</sub>
 
 A list of up to 6 [issuance data](#issuancedata) entries for each address, for the most recent changes to their issuance level. The fee periods do not have to be consecutive, but they are ordered from newest to oldest (decreasing debt ledger indexes).
 
@@ -84,7 +84,7 @@ Note that the entry `accountIssuanceLedger[account][0]` only corresponds to the 
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L24)</sub>
 
 The address of the main [`FeePool`](FeePool.md) contract.
 
@@ -94,7 +94,7 @@ The address of the main [`FeePool`](FeePool.md) contract.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L35)</sub>
 
 Initialises the fee pool address, as well as the inherited [`SelfDestructible`](SelfDestructible.md) and [`LimitedSetup`](LimitedSetup.md) instances. The setup period is initialised to six weeks.
 
@@ -116,7 +116,7 @@ Initialises the fee pool address, as well as the inherited [`SelfDestructible`](
 
 ### `applicableIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L73)</sub>
 
 From a given account's issuance data, retrieve the most recent entry which closed before the provided index. If there is no such entry, `(0,0)` is returned.
 
@@ -140,7 +140,7 @@ The returned values are as per [`getAccountsDebtEntry`](#getaccountsdebtentry), 
 
 ### `getAccountsDebtEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L57)</sub>
 
 Accesses [`accountIssuanceLedger`](#accountissuanceledger).
 
@@ -162,13 +162,13 @@ The first return value is a [27-decimal fixed point number](../libraries/SafeDec
 
     **Requires**
 
-    * [require(..., index exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L62)
+    * [require(..., index exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L62)
 
 ## Restricted Functions
 
 ### `appendAccountIssuanceRecord`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L98)</sub>
 
 Allows the [`Synthetix`](Synthetix.md#_appendaccountissuancerecord) contract, through [`FeePool.appendAccountIssuanceRecord`](FeePool.md#appendaccountissuancerecord), to record current fee period issuance information for a given account in the issuance ledger. This is used when synths are issued or burnt.
 
@@ -196,7 +196,7 @@ The `debtRatio` argument is a [27-decimal fixed point number](../libraries/SafeD
 
 ### `importIssuerData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L137)</sub>
 
 This function was used during the initial six week setup period to initialise the issuance ledger from the previous Synthetix version.
 
@@ -216,7 +216,7 @@ This function was used during the initial six week setup period to initialise th
 
     **Requires**
 
-    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L143)
+    * [require(..., Length mismatch)](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L143)
 
     **Modifiers**
 
@@ -226,7 +226,7 @@ This function was used during the initial six week setup period to initialise th
 
 ### `setFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L46)</sub>
 
 Changes the [fee pool address](#feepool).
 
@@ -252,7 +252,7 @@ Changes the [fee pool address](#feepool).
 
 ### `onlyFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L154)</sub>
 
 Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
 
@@ -260,7 +260,7 @@ Reverts the transaction if `msg.sender` is not the [fee pool address](#feepool).
 
 ### `IssuanceDebtRatioEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/FeePoolState.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/FeePoolState.sol#L160)</sub>
 
 Record that an entry was updated in the [issuance ledger](#accountissuanceledger) by the [`importIssuerData`](#importissuerdata) function during the setup period.
 

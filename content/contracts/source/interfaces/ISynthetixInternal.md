@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/Exchanger.sol)
 
 ## External Functions
 
 ### `emitExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/Exchanger.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/Exchanger.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `emitExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/Exchanger.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/Exchanger.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -42,9 +42,27 @@
 
     `nonpayable`
 
+### `emitExchangeTracking`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/Exchanger.sol#L26)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitExchangeTracking(bytes32 trackingCode, bytes32 toCurrencyKey, uint256 toAmount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
 ### `emitSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.0-alpha/contracts/Exchanger.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/Exchanger.sol#L32)</sub>
 
 ??? example "Details"
 
