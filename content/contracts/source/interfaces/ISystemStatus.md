@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol)
+**Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol)
 
 ## Structs
 
 ### `Status`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L5)</sub>
 
 | Field        | Type   | Description |
 | ------------ | ------ | ----------- |
@@ -17,7 +17,7 @@
 
 ### `Suspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L10)</sub>
 
 | Field       | Type      | Description |
 | ----------- | --------- | ----------- |
@@ -28,7 +28,7 @@
 
 ### `accessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `requireExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `requireIssuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `requireSynthActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `requireSynthsActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `requireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `synthSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `suspendSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@
 
 ### `updateAccessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.1-alpha/contracts/interfaces/ISystemStatus.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2-alpha/contracts/interfaces/ISystemStatus.sol#L35)</sub>
 
 ??? example "Details"
 

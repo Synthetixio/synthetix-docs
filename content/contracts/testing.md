@@ -8,15 +8,11 @@ The Synthetix ecosystem relies on automated testing as much as possible to enabl
 
 ## Continuous Integration
 
-[![CircleCI](https://circleci.com/gh/Synthetixio/synthetix.svg?style=svg)](https://circleci.com/gh/Synthetixio/synthetix) [![Travis Build Status](https://travis-ci.org/Synthetixio/synthetix.svg?branch=master)](https://travis-ci.org/Synthetixio/synthetix)
+[![CircleCI](https://circleci.com/gh/Synthetixio/synthetix.svg?style=svg)](https://circleci.com/gh/Synthetixio/synthetix)
 
 We rely primarily on CircleCI for our builds.
 
 <a href="https://circleci.com/gh/Synthetixio/synthetix"><img src="/img/misc/circleci.png" width="450px" /></a>
-
-However we use Travis additionally for coverage and gas reports.
-
-<a href="https://travis-ci.org/Synthetixio/synthetix"><img src="/img/misc/travis.png" width="450px" /></a>
 
 ## Contract Tests
 
