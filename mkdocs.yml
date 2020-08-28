@@ -77,7 +77,6 @@ nav:
                 - FeePoolEternalStorage: contracts/source/contracts/FeePoolEternalStorage.md
                 - FeePoolState: contracts/source/contracts/FeePoolState.md
                 - FlexibleStorage: contracts/source/contracts/FlexibleStorage.md
-                - IDepot: contracts/source/contracts/IDepot.md
                 - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
                 - Issuer: contracts/source/contracts/Issuer.md
                 - LimitedSetup: contracts/source/contracts/LimitedSetup.md
