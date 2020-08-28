@@ -11,13 +11,13 @@ There are a number a ways to access Synthetix's historical data.
 - Query event logs directly via the EVM
 - Use a third party service like Google BigQuery or DuneAnalytics
 
-### Subgraphs
+### The Graph
 
-Synthetix currently has four separate subgraphs on The Graph. A subgraph is an entity-based datasource that is populated by Graph indexers - these replay all transactions since the genesis block and use custom mapping code to create entities when events are emitted and functions are invoked.
+Synthetix has indexed protocol data on the [Graph](https://thegraph.com/), a decentralized network for querying Ethereum data. The Graph allows for the creation of custom data sets, aka "subgraphs", which are easily queryable. Synthetix currently has four separate subgraphs for retrieving information specific to Synthetix smart contracts. A subgraph is an entity-based data source which replays all transactions since the genesis block and uses custom code to create queryable entities as each block is processed.
 
-We've written a custom JavaScript library to abstract away the complexity of dealing with these subgraphs. It's called [synthetix-data](libraries/synthetix-data.md), and it's an `npm` module to query historical or subscribe to these events in real time.
+Since dealing with the Graph directly can be time consuming, we've written a custom JavaScript library to help users obtain Synthetix data and abstract away the complexity of dealing with these subgraphs. It's called [synthetix-data](/libraries/synthetix-data), and it's an `npm` module to query historical or subscribe to these events in real time.
 
-Alternatively, Each of these subgraphs can be queried using GraphQL - follow the links below to query the subgraphs using GrapHQL in the data explorer UIs provided.
+Alternatively, each of these subgraphs can be queried using GraphQL - follow the links below to query the subgraphs using GraphQL in the data explorer UIs provided.
 
 <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix"><img class="rounded-image" src="/img/misc/subgraph.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-exchanges"><img class="rounded-image" src="/img/misc/subgraph-exchanges.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-rates"><img class="rounded-image" src="/img/misc/subgraph-rates.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-depot"><img class="rounded-image"  src="/img/misc/subgraph-depot.png" /></a>
 
@@ -27,7 +27,7 @@ Alternatively, Each of these subgraphs can be queried using GraphQL - follow the
 
 Instead of using the subgraphs provided, you could directly query the EVM via most free providers (such as Infura or Etherscan).
 
-!!! example "E.g. Get all `Synthetix.SynthExchagne` events"
+!!! example "E.g. Get all `Synthetix.SynthExchange` events"
 
     ```javascript
     const synthetix = require('synthetix');
@@ -84,7 +84,7 @@ Instead of using the subgraphs provided, you could directly query the EVM via mo
 
 You can also use an Ethereum node with full historical state (an archive node) to read the blockchain state at some block in the past.
 
-Query using the `{ blockTag: <Number> }` option to get state at a previous block (note the call will fail if the contract was not deployed at the block). Note: usage of this feature of `ethers` and `web3` requires a provider that is a full archive node. [Infura](https://infura.io) and [QuikNode](https://quicknode.io) both provide access to archive nodes for monthly costs. This is supported in [SynthetixJs](libraries/synthetix-js.md) via the underlying `.contract` property in every contract target.
+Query using the `{ blockTag: <Number> }` option to get state at a previous block (note the call will fail if the contract was not deployed at the block). Note: usage of this feature of `ethers` and `web3` requires a provider that is a full archive node. [Infura](https://infura.io) and [QuikNode](https://quicknode.io) both provide access to archive nodes for monthly costs. This is supported in [SynthetixJs](/libraries/synthetix-js) via the underlying `.contract` property in every contract target.
 
 !!! example "E.g. fetch `Synthetix.totalIssuedSynths()` from a block in the past"
 

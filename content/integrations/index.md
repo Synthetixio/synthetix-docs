@@ -1,158 +1,140 @@
-# Integrations
+# Integrations Overview
 
-Here is a list of Synthetix Integrations both on and offchain. For projects wishing to integate with Synthetix please see the technical [Integrations guide](/integrations/guide/)
+!!! Tip "Who this guide is for"
 
-## The Graph
+    This is a series of guides for developers looking into integrate with Synthetix protocol. Please read the below thoroughly and ask for help in the `#dev-portal` channel of our [Discord](https://discordapp.com/channels/413890591840272394/).
 
-[The Graph](http://thegraph.com/) is a decentralised indexer and GraphQL query engine of blockchain events and function calls. Synthetix has a number of subgraphs tracking a number of events and key metrics within the system historically. For more information on how to query or subscribe to events in real time see [Historical Data](../historical-data.md).
+    If you're looking to integrate Synthetix into your dApps and scripts, please reference the [libraries section](/libraries/) in addition to the [data guide](/integrations/data).
 
-## KyberSwap
+Synthetix provides the following integration guides:
 
-Liquidity is further deepened by the integration of SNX and sUSD with [KyberSwap](https://kyberswap.com/swap/eth-snx), which is built on the [Kyber Network Protocol](https://kyber.network/). An example use case is described [here](https://blog.synthetix.io/snx-liquidity-has-been-added-to-kyberswap/).
+1. [Trading](/integrations/trading)
+2. [Staking](/integrations/staking)
+3. [Data](/integrations/data)
+4. [Delegating](/integrations/delegating)
+5. [Depot: ETH/sUSD](/integrations/depot)
+6. [Testnets](/integrations/testnets)
+7. [ENS Support](/integrations/ens)
 
-## UniSwap
+The additional contextual information below is also helpful as a companion reference to the guides provided.
 
-[Uniswap](https://uniswap.io/) is a decentralised exchange for exchanging ETH and ERC20 tokens. Synthetix integrates with it to deepen the Synthetix ecosystem's liquidity, and it acts as an on-ramp/off-ramp for the Synth market. Users who provide liquidity to the [ETH/sETH pool](https://uniswap.exchange/swap/0x42456D7084eacF4083f1140d3229471bbA2949A8) are provided with staking rewards as [part of the Synthetix protocol](https://sips.synthetix.io/sips/sip-8). This is discussed further [here](https://blog.synthetix.io/uniswap-seth-pool-incentives/), [here](https://blog.synthetix.io/snx-arbitrage-pool/), and [here](https://blog.synthetix.io/new-uniswap-seth-lp-reward-system/).
+### Address Resolver
 
-<table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Contract</th><th>Source</th><th>Audits</th><th>Disclosures</th><th>Security Contact</th></tr>
-              <tr>
-                <td>UNI-V1 sETH/ETH exchange</td>
-                <td><a target="_blank" href="https://uniswap.org">uniswap.org</a></td>
-                <td><a target="_blank" href="https://uniswap.exchange/swap?use=v1&outputCurrency=0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb">uniswap.exchange</a></td>
-                <td>
-                    <a target="_blank" href="https://defirate.com/synthetix-liquidity-incentive-tutorial/">Uniswap LP tutorial</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://etherscan.io/address/">sETH/ETH exchange contract</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/Uniswap/uniswap-v1">uniswap-v1</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/ConsenSys/Uniswap-audit-report-2018-12">Uniswap V1 Audit Report</a>
-                <td><a target="_blank" href="https://uniswap.org/bug-bounty/">Bug Bounty</a>
-                <td>
-                    <a target="_blank" href="mailto:contact@uniswap.org">contact@uniswap.org</a>
-                </td>
-              </tr>
-              <tr>
-                <td>UNI-V2 sXAU/USDC exchange</td>
-                <td><a target="_blank" href="https://uniswap.org">uniswap.org</a></td>
-                <td><a target="_blank" href="https://uniswap.exchange/swap?outputCurrency=0x261efcdd24cea98652b9700800a13dfbca4103ff">uniswap.exchange</a></td>
-                <td>
-                    <a target="_blank" href="https://blog.synthetix.io/uniswap-v2-sxau-trial/">Uniswap v2 sXAU Trial</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://etherscan.io/address/0x34a0216c5057bc18e5d34d4405284564efd759b2">sXAU/USDC exchange</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/Uniswap/uniswap-v2-core">uniswap-v2-core</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://uniswap.org/audit.html">Uniswap V2 Audit Report</a>
-                <td><a target="_blank" href="https://uniswap.org/bug-bounty/">Bug Bounty</a>
-                <td>
-                    <a target="_blank" href="mailto:contact@uniswap.org">contact@uniswap.org</a>
-                </td>
-              </tr>
-</table>
+In our Achernar release, we introduced a new feature called the `AddressResolver` contract.
 
-## Curve
+In short, the `AddressResolver` allows any referencing contract to have access to a number of key contract - in particular the underlying `Synthetix`, `FeePool`, `SynthsUSD` and `SynthsETH` contracts. There are plans in the near future to add our proxies as well.
 
-Curve is an exchange liquidity pool on Ethereum (like [Uniswap](https://uniswap.exchange/swap)) designed for (1) extremely efficient stablecoin trading (2) low risk, supplemental fee income for liquidity providers, without an opportunity cost.
-Curve allows users (and smart contracts like [1inch](https://1inch.exchange/), [Paraswap](https://paraswap.io/), Totle and [Dex.ag](http://dex.ag)) to trade between DAI and USDC with a bespoke low slippage, low fee algorithm designed specifically for stablecoins and earn fees.
+The `ReadProxyAddressResolver` is our readable `AddressResolver` behind a proxy that won't change, so it's safe to use in your code (it only allows calls that do not mutate state). We have one for each testnet and mainnet up on the [addresses](../addresses.md) page.
 
-<table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Contract</th><th>Source</th><th>Audits</th><th>Disclosures</th><th>Security Contact</th></tr>
-              <tr>
-                <td>Curve sUSD Pool</td>
-                <td><a target="_blank" href="https://www.curve.fi/">curve.fi</a></td>
-                <td><a target="_blank" href="https://beta.curve.fi/">beta.curve.fi</a></td>
-                <td>N/A</td>
-                <td>
-                    <a target="_blank" href="https://etherscan.io/address/0xA5407eAE9Ba41422680e2e00537571bcC53efBfD">Curve Pool</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/curvefi/curve-contract/blob/pool_susd_plain/vyper/stableswap.vy">Curve sUSD Pool Contract</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://www.curve.fi/curve_audits/01-ToB.pdf">Curve Audit Report</a>
-                <td><a target="_blank" href="https://blog.curve.fi/vulnerability-disclosure/">Disclosures</a>
-                <td>
-                    <a target="_blank" href="mailto:security@curve.fi">security@curve.fi</a>
-                </td>
-              </tr>
-   <tr>
-                <td>Curve Incentives</td>
-                <td><a target="_blank" href="https://synthetix.io">synthetix.io</a></td>
-                <td><a target="_blank" href="https://mintr.synthetix.io">mintr.synthetix.io</a></td>
-                <td><a target="_blank" href="https://blog.synthetix.io/susd-liquidity-trial-with-curve-iearn/">sUSD Liquidity with Curve</a></td>
-                <td>
-                    <a target="_blank" href="https://etherscan.io/address/0xdcb6a51ea3ca5d3fd898fd6564757c7aaec3ca92#code">Curve Rewards</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/Synthetixio/Unipool/compare/53df522...4675db3d">SNX Liquidity Rewards Contract</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/sigp/public-audits/blob/master/synthetix/unipool/review.pdf">SNX Liquidity Rewards Audit Report</a>
-                <td>
-                    <a target="_blank" href="https://blog.synthetix.io/synthetix-bug-bounties/">Bug Bounty</a>
-                <td>
-                    <a target="_blank" href="mailto:security@synthetix.io">security@synthetix.io</a>
-                </td>
-              </tr>
-             </tr></table>
+For guides on how to use the `AddressResolver` in Solidity, see our [trading section](/integrations/trading/#exchanging-in-solidity).
 
-## Balancer
+### Proxies
 
-A Balancer Pool is an automated market maker with certain key properties that cause it to function as a self-balancing weighted portfolio and price sensor.
+Synthetix makes extensive use of the proxy pattern. This allows users and integrated systems to refer to immutable proxy addresses while the underlying functionality is passed through to the target or _underlying_ contracts which can be updated by an `owner` function. This allows for fast iteration of the Synthetix ecosystem at the cost of trust in the protocol.
 
-Balancer turns the concept of an index fund on its head: instead of paying fees to portfolio managers to rebalance your portfolio, you collect fees from traders, who rebalance your portfolio by following arbitrage opportunities.
+The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
+the underlying is subject to change (and does most releases); and the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
 
-Balancer is based on a particular N-dimensional surface which defines a cost function for the exchange of any pair of tokens held in a Balancer Pool. This approach was first described by V. Buterin[0], generalized by Alan Lu[1], and proven viable for market making by the popular [Uniswap](https://uniswap.exchange/swap) dapp.
+For best results, always interact with the proxy using the ABI of the underlying.
 
-<table><tr><th>Name</th><th>Homepage</th><th>Dapp</th><th>Blogpost</th><th>Contract</th><th>Source</th><th>Audits</th><th>Disclosures</th><th>Security Contact</th></tr>
-              <tr>
-                <td>Balancer SNX Pool</td>
-                <td><a target="_blank" href="https://balancer.finance/">balancer.finance</a></td>
-                <td><a target="_blank" href="https://balancer.exchange/#/swap">balancer.exchange</a></td>
-                <td>N/A</td>
-                <td>
-                    <a target="_blank" href="https://etherscan.io/address/0x815f8ef4863451f4faf34fbc860034812e7377d9">Balancer SNX Pool</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/balancer-labs/">Balancer code</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://docs.balancer.finance/protocol/security/audits">Balancer Audit Reports</a>
-                <td><a target="_blank" href="">N/A</a>
-                <td>
-                    <a target="_blank" href="mailto:contact@balancer.finance">contact@balancer.finance</a>
-                </td>
-              </tr>
-   <tr>
-                <td>Balancer Incentives</td>
-                <td><a target="_blank" href="https://synthetix.io">synthetix.io</a></td>
-                <td><a target="_blank" href="https://mintr.synthetix.io">mintr.synthetix.io</a></td>
-                <td><a target="_blank" href="https://blog.synthetix.io/balancer-snx-usdc-liquidity-trial/">SNX/USDC Liquidity Trial</a></td>
-                <td>
-                    <a target="_blank" href="https://etherscan.io/address/0xFBaEdde70732540cE2B11A8AC58Eb2dC0D69dE10#code">Balancer SNX Rewards</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/a8d0ea24cc6c726ee29fcdfba90ae84915efdbee/contracts/StakingRewards.sol">SNX Liquidity Rewards Contract</a>
-                </td>
-                <td>
-                    <a target="_blank" href="https://github.com/sigp/public-audits/blob/master/synthetix/unipool/review.pdf">SNX Liquidity Rewards Audit Report</a>
-                <td>
-                    <a target="_blank" href="https://blog.synthetix.io/synthetix-bug-bounties/">Bug Bounty</a>
-                <td>
-                    <a target="_blank" href="mailto:security@synthetix.io">security@synthetix.io</a>
-                </td>
-              </tr>
-             </tr></table>
+!!! Info "Decentralize All the Things"
 
-## More Integrations to Document
+    In order for Synthetix to become a fully decentralized protocol, these upgradable proxy contracts need more oversight and constraint. Please read our blogpost for the path towards full decentralization and how the Proxy architecture is impacted: https://blog.synthetix.io/transition-to-decentralised-governance/ (see *Protocol Changes*)
 
-- DeFi Zap
-- DefiSnap
-- SNX LINK
-- Staked
+As of this moment, the following contracts are behind proxies:
+
+- `FeePool` is behind `ProxyFeePool`
+- `Synthetix` is behind both `ProxyERC20` and `ProxySynthetix` (deprecated, see notice below).
+- `SynthsUSD` is behind both `ProxyERC20sUSD` and `ProxysUSD` (deprecated)
+- All remaining synths are also behind a Proxy, all of which are the newer `ProxyERC20` pattern. e.g. `ProxysETH`, `ProxyiBTC`, etc.
+
+### Proxy Deprecation
+
+??? Info "Why are we deprecating proxies?"
+
+    The current proxies have been marked deprecated:
+
+    - [Synthetix](https://contracts.synthetix.io/ProxySynthetix) (aka `ProxySynthetix` at `0xC011A72400E58ecD99Ee497CF89E3775d4bd732F`) and
+    - [sUSD](https://contracts.synthetix.io/ProxysUSD) (aka `ProxysUSD` at `0x57Ab1E02fEE23774580C119740129eAC7081e9D3`)
+
+    The Synthetix proxies use the `CALL` pattern and set `messageSender` on the target for any request (see [here](https://github.com/Synthetixio/synthetix/blob/v2.21.6/contracts/Proxy.sol#L75)). This mutation inside functions that are marked `view` - such as `balanceOf`, break ERC20 interface conventions, and thus fail.
+
+    In their stead we have new _integration_ proxies in place, used by both Uniswap and Kyber. The new integration proxies are fully ERC20 compliant and explictly call through to the target for all ERC20 functions (see [ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.21.6/contracts/ProxyERC20.sol)).
+
+    If you are planning any integration with Synthetix, it is recommended that you use the newer proxies:
+
+    - [Synthetix](https://contracts.synthetix.io/ProxyERC20) (aka `ProxyERC20` at `0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F`) and
+    - [sUSD](https://contracts.synthetix.io/ProxyERC20sUSD) (aka `ProxyERC20sUSD` at `0x57Ab1ec28D129707052df4dF418D58a2D46d5f51`)
+
+    That said however, both are functioning side by side while we transition over.
+
+    One note of caution: the events from the underlying contracts - `Synthetix` and `Synth` are still emitted on the currently deprecated proxy contracts. Indeed, SynthetixJs still use the deprecated proxies for this reason (see [Synthetix.js](https://github.com/Synthetixio/synthetix-js/blob/v2.21.6/src/contracts/mainnet/Synthetix.js#L12)). Once we migrate to the new proxies, the events will be emitted on the integration proxies and the deprecated ones will be removed entirely.
+
+1.  **Phase 1**
+
+    Prior to May 10, 2020, both proxies for `Synthetix` and `SynthsUSD` will function. Our dApps and integrations will call and transact using the deprecated proxies, and all events emitted will be on the deprecated proxy.
+
+2.  **Phase 2 (Current)**
+
+    <span class="wtb-ew-v1" style="width: 560px; display:inline-block"><script src="https://www.worldtimebuddy.com/event_widget.js?h=100&md=5/10/2020&mt=23.00&ml=0.50&sts=0&sln=0&wt=ew-ltc"></script><i><a target="_blank" href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</i><noscript><a href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
+
+    On `May 10, 2020 11pm UTC`, we will switch the `proxy` and `integrationProxy` properties of `Synthetix` and our `SynthsUSD` contracts. We will then update our dApps and integrations (including `synthetix-js`) to use the addresses of the new proxies for all calls and transactions. **All events emitted will now be on the new ERC20 proxies.** However, the deprecated proxies will continue to work until Phase 3.
+
+3.  **Phase 3**
+
+    !!! Tip "Updated timeline to July 31"
+
+        Due to some third party project requirements, we've decided to push back Phase 3 to the end of July, 2020. Please reach out to us in Discord channel [`#dev-portal`](https://discordapp.com/invite/AEdUHzt) if you need more time.
+
+    <span class="wtb-ew-v1" style="width: 560px; display:inline-block"><script src="https://www.worldtimebuddy.com/event_widget.js?h=100&md=7/31/2020&mt=23.00&ml=0.50&sts=0&sln=0&wt=ew-ltc"></script><i><a target="_blank" href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</i><noscript><a href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
+
+
+    On `July 31, 2020 11pm UTC`, we will set the `integrationProxy` property from `Synthetix` and `SynthsUSD` to `0x0`, meaning that no more incoming transactions on `0xC011A72400E58ecD99Ee497CF89E3775d4bd732F` (`ProxySynthetix`) or `0x57Ab1E02fEE23774580C119740129eAC7081e9D3` (`ProxysUSD`) will work. These will fail as the target contracts they use will no longer accept incoming requests from them. We will update our `ProxySynthetix` and `ProxysUSD` labels to point to the new ERC20 proxies (in our docs and in our contract-linker utility).
+
+4.  **Phase 4**: We will remove the `ProxyERC20` and `ProxyERC20sUSD` names altogether.
+
+### Example Scenarios:
+
+#### Exchanging via Synthetix
+
+Let's say you want to exchange `100` `sUSD` for `sETH`:
+
+1.  **Phase 1 (prior to May 10, 2020):**
+
+    - You can invoke `exchange(sUSD, 100e18, sETH)` on either `ProxySynthetix` (`0xC011a72`) or `ProxyERC20` (`0xC011a73`).
+    - On success, `SynthExchange` will be emitted on `ProxySynthetix` (`0xC011a72`) regardless of which proxy you used to transact.
+
+2.  **Phase 2 (between May 10 - May 30, 2020):**
+
+    - You can still invoke `exchange(sUSD, 100e18, sETH)` on either `ProxySynthetix` (`0xC011a72`) or `ProxyERC20` (`0xC011a73`), _however you are strongly recommended to migrate to using `ProxyERC20`_.
+    - On success, `SynthExchange` will be emitted on `ProxyERC20` (`0xC011a73`) regardless of which proxy you used to transact.
+
+3.  **Phase 3 (From May 30, 2020):**
+
+    - You can only invoke `exchange(sUSD, 100e18, sETH)` on `ProxyERC20` (`0xC011a73`), _the old proxy address will fail_.
+    - On success, `SynthExchange` will be emitted on `ProxyERC20` (`0xC011a73`).
+
+#### Transferring sUSD
+
+Or say you want to transfer `5` `sUSD` to `user`
+
+1.  **Phase 1 (prior to May 10, 2020):**
+
+    - You can invoke `transfer(user, 5e18)` on either `ProxysUSD` (`0x57Ab1E0`) or `ProxyERC20sUSD` (`0x57Ab1ec`).
+    - On success, `Transfer` will be emitted on `ProxysUSD` (`0x57Ab1E0`) regardless of which proxy you used to transact.
+
+2.  **Phase 2 (between May 10 - May 30, 2020):**
+
+    - You can still invoke `transfer(user, 5e18)` on either `ProxysUSD` (`0x57Ab1E0`) or `ProxyERC20sUSD` (`0x57Ab1ec`), _however you are strongly recommended to migrate to using `ProxyERC20sUSD`_.
+    - On success, `Transfer` will be emitted on `ProxysUSD` (`0x57Ab1E0`) regardless of which proxy you used to transact.
+
+3.  **Phase 3 (From May 30, 2020):**
+
+    - You can only invoke `transfer(user, 5e18)` on `ProxyERC20sUSD` (`0x57Ab1ec`), _the old proxy will fail_.
+    - On success, `Transfer` will be emitted on `ProxyERC20sUSD` (`0x57Ab1ec`).
+
+### Fee Reclamation and Atomicity of Exchanges
+
+In our Achernar release, we introduced Fee Reclamation ([SIP-37](https://sips.synthetix.io/sips/sip-37)). The major implication here is that if you invoke `exchange(src, amount, dest)` in your smart contracts, you cannot atomically invoke `dest.transfer()` or `exchange(dest, ..., ...)` - both will fail until a waiting period expires.
+
+You can use [`Exchanger.maxSecsLeftInWaitingPeriod()`](/contracts/exchanger/#maxsecsleftinwaitingperiod) to check how many seconds are left in the waiting period for that `dest` synth. Once it's `0`, exchanges of the `dest` synth will automatically settle any rebates or reclaims. However after the waiting period expires, `dest.transfer()` will fail regardless if there are any exchanges awaiting settlement. To circumvent this, integrators are encouraged to use [`transferAndSettle`](/contracts/synth/#transferandsettle) or [`transferFromAndSettle`](/contracts/synth/#transferfromandsettle). Alternatively, [`Exchanger.settle()`](/contracts/exchanger#settle) can be invoked directly prior to a `transfer` or `transferFrom`.

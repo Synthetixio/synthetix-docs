@@ -2,51 +2,38 @@
 
 In order to close their position, `SNX` stakers need to burn enough `sUSD` to cover their debt position (`Synthetix.debtBalanceOf(user, "sUSD")`).
 
-Via the contracts, the process is as follows:
-
 ## Burning API
-
-To burn `sUSD` in Mintr, this is how they perform the task:
-
-<img src="/img/misc/events-burn.png" width=300 />
 
 ### Contract
 
-!!! warning "Use the Proxies"
-
-    Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
-
-    1. the underlying is subject to change (and does most releases); and
-    2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
-
-    For best results, always interact with the proxy using the ABI of the underlying.
-
-**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
+**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20)
 
 **Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+
 ### Methods
 
-- [`burnSynths(uint256 amount)`](../../Synthetix#burnsynths)
-- [`burnSynthsOnBehalf(address user, uint256 amount)`](../../Synthetix#burnsynthsonbehalf)
-- [`burnSynthsToTarget()`](../../Synthetix#burnsynthstotarget)
-- [`burnSynthsToTargetOnBehalf(address user)`](../../Synthetix#burnsynthstotargetonbehalf)
+- [`burnSynths(uint256 amount)`](/contracts/source/contracts/Synthetix/#burnsynths)
+- [`burnSynthsOnBehalf(address user, uint256 amount)`](/contracts/source/contracts/Synthetix/#burnsynthsonbehalf)
+- [`burnSynthsToTarget()`](/contracts/source/contracts/Synthetix/#burnsynthstotarget)
+- [`burnSynthsToTargetOnBehalf(address user)`](/contracts/source/contracts/Synthetix/#burnsynthstotargetonbehalf)
 
 ### Events Emitted
 
 On a successful transaction, the following events occur:
 
-| name                                          | emitted on  | `address from`           | `address to` | `uint value`       |
-| --------------------------------------------- | ----------- | ------------------------ | ------------ | ------------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` (or `user`) | `0x0`        | `amount` of `sUSD` |
+| name                                                                | emitted on  | `address from`           | `address to` | `uint value`       |
+| ------------------------------------------------------------------- | ----------- | ------------------------ | ------------ | ------------------ |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` (or `user`) | `0x0`        | `amount` of `sUSD` |
 
-| name                           | emitted on  | `address account`        | `uint value` |
-| ------------------------------ | ----------- | ------------------------ | ------------ |
-| [`Burned`](../../Synth#burned) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
+| name                                                 | emitted on  | `address account`        | `uint value` |
+| ---------------------------------------------------- | ----------- | ------------------------ | ------------ |
+| [`Burned`](/contracts/source/contracts/Synth#burned) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
 
-| name                                                             | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
-| ---------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
-| [`IssuanceDebtRatioEntry`](../../FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
+| name                                                                                   | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
+| -------------------------------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
+| [`IssuanceDebtRatioEntry`](/contracts/source/contracts/FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
 
 ### Examples from Mainnet
 

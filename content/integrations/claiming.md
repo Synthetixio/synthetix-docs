@@ -1,62 +1,49 @@
 # Claiming Rewards
 
-`SNX` stakers (aka minters, aka issuers) get staking rewards each week, in the form of `sUSD` trading fees and `SNX` inflationary rewards ([see incentives](../../incentives.md#sources-of-value) for more information).
-
-In Mintr, this is how they perform the task:
-
-<img src="/img/misc/events-claim.png" width=300 />
-
-Via the contracts, the process is as follows:
+`SNX` stakers (aka minters, aka issuers) get staking rewards each week, in the form of `sUSD` trading fees and `SNX` inflationary rewards ([see incentives](/incentives/#sources-of-value) for more information).
 
 ## API
 
 ### Contract
 
-!!! warning "Use the Proxies"
-
-    Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
-
-    1. the underlying is subject to change (and does most releases); and
-    2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
-
-    For best results, always interact with the proxy using the ABI of the underlying.
-
 **Destination contract (address):** [`ProxyFeePool`](https://contracts.synthetix.io/ProxyFeePool)
 
 **Underlying contract (ABI):** [`FeePool`](https://contracts.synthetix.io/FeePool)
 
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `FeePool` contract you need is [`FeePool`](https://contracts.synthetix.io/FeePool). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+
 ### Methods
 
-- [`claimFees()`](../../FeePool#claimfees)
-- [`claimOnBehalf(address user)`](../../FeePool#claimonbehalf)
+- [`claimFees()`](/contracts/source/contracts/FeePool/#claimfees)
+- [`claimOnBehalf(address user)`](/contracts/source/contracts/FeePool/#claimonbehalf)
 
 ### Events Emitted
 
 On a successful transaction, the following events occur:
 
-| name                                          | emitted on  | `address from`                              | `address to` | `uint value`       |
-| --------------------------------------------- | ----------- | ------------------------------------------- | ------------ | ------------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | to `0x0`     | `amount` of `sUSD` |
+| name                                                                | emitted on  | `address from`                                                    | `address to` | `uint value`       |
+| ------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------- | ------------ | ------------------ |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | [`FEE_ADDRESS`](/contracts/source/contracts/FeePool/#fee_address) | to `0x0`     | `amount` of `sUSD` |
 
-| name                           | emitted on  | `address account`                           | `uint value` |
-| ------------------------------ | ----------- | ------------------------------------------- | ------------ |
-| [`Burned`](../../Synth#burned) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `amount`     |
+| name                                                 | emitted on  | `address account`                                                 | `uint value` |
+| ---------------------------------------------------- | ----------- | ----------------------------------------------------------------- | ------------ |
+| [`Burned`](/contracts/source/contracts/Synth#burned) | `ProxysUSD` | [`FEE_ADDRESS`](/contracts/source/contracts/FeePool/#fee_address) | `amount`     |
 
-| name                                          | emitted on  | `address from` | `address to`             | `uint value`       |
-| --------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
+| name                                                                | emitted on  | `address from` | `address to`             | `uint value`       |
+| ------------------------------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-| name                           | emitted on  | `address account`        | `uint value`       |
-| ------------------------------ | ----------- | ------------------------ | ------------------ |
-| [`Issued`](../../Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount` of `sUSD` |
+| name                                                 | emitted on  | `address account`        | `uint value`       |
+| ---------------------------------------------------- | ----------- | ------------------------ | ------------------ |
+| [`Issued`](/contracts/source/contracts/Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-| name                                                            | emitted on     | `address beneficiary`         | `uint time` | `uint value`              |
-| --------------------------------------------------------------- | -------------- | ----------------------------- | ----------- | ------------------------- |
-| [`VestingEntryCreated`](../../RewardEscrow#vestingentrycreated) | `RewardEscrow` | `msg.sender`<br />(or `user`) | `now`       | `amount` of `SNX` rewards |
+| name                                                                                  | emitted on     | `address beneficiary`         | `uint time` | `uint value`              |
+| ------------------------------------------------------------------------------------- | -------------- | ----------------------------- | ----------- | ------------------------- |
+| [`VestingEntryCreated`](/contracts/source/contracts/RewardEscrow#vestingentrycreated) | `RewardEscrow` | `msg.sender`<br />(or `user`) | `now`       | `amount` of `SNX` rewards |
 
-| name                                       | emitted on     | `address account`        | `uint sUSDAmount` | `uint snxRewards` |
-| ------------------------------------------ | -------------- | ------------------------ | ----------------- | ----------------- |
-| [`FeesClaimed`](../../FeePool#feesclaimed) | `ProxyFeePool` | `msg.sender` (or `user`) | `sUSDAmount`      | `snxRewards`      |
+| name                                                             | emitted on     | `address account`        | `uint sUSDAmount` | `uint snxRewards` |
+| ---------------------------------------------------------------- | -------------- | ------------------------ | ----------------- | ----------------- |
+| [`FeesClaimed`](/contracts/source/contracts/FeePool#feesclaimed) | `ProxyFeePool` | `msg.sender` (or `user`) | `sUSDAmount`      | `snxRewards`      |
 
 ### Examples from Mainnet
 

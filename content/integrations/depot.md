@@ -1,11 +1,11 @@
 # Depot: Exchanging `ETH` for `sUSD`
 
-The Depot is a place to deposit any excess `sUSD` for others to purchase it with `ETH`. On [testnets](../../integrations/testnets.md) it also allows you to exchange testnet `ETH` for `SNX`.
+The Depot is a place to deposit any excess `sUSD` for others to purchase it with `ETH`. On [testnets](/integrations/testnets) it also allows you to exchange testnet `ETH` for `SNX`.
 
 !!! Warning "Notice"
 
     The Depot also supports exchanging `SNX` for `ETH` via any `SNX` the contract holds, however it will send all proceeds to the contract's `fundsWalet`, so
-    it's only used on testnets to allow developers to purchase testnet `SNX` (see [testnets](../../integrations/testnets.md))
+    it's only used on testnets to allow developers to purchase testnet `SNX` (see [testnets](/integrations/testnets))
 
 > Note: while the depositing of sUSD can be done in Mintr, the exchanging of ETH for sUSD has no corresponding controls in the Synthetix dApps (it is however used in third parties aggregators).
 
@@ -17,7 +17,7 @@ The Depot is a place to deposit any excess `sUSD` for others to purchase it with
 
 ### Methods
 
-- [`exchangeEtherForSynths()`](../../Depot#exchangeetherforsynths)
+- [`exchangeEtherForSynths()`](/contracts/source/contracts/Depot/#exchangeetherforsynths)
 - (sending `ETH` to the contract)
 
 ### Events Emitted
@@ -26,19 +26,19 @@ On a successful transaction, the following events occur:
 
 For each deposit paid through, the following two events are emitted:
 
-| name                                           | emitted on | `address fromAddress` | `address toAddress`                | `uint fromETHAmount`                              | `uint toAmount`                                    | `uint depositIndex`                                   |
-| ---------------------------------------------- | ---------- | --------------------- | ---------------------------------- | ------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------- |
-| [`ClearedDeposit`](../../Depot#cleareddeposit) | `Depot`    | `msg.sender`          | the current depositor in the queue | the amount of `ETH` the `toAddress` has been paid | the amont of `sUSD` the `msg.sender` will received | the `depositIndex` that was accessed in this exchange |
+| name                                                                 | emitted on | `address fromAddress` | `address toAddress`                | `uint fromETHAmount`                              | `uint toAmount`                                    | `uint depositIndex`                                   |
+| -------------------------------------------------------------------- | ---------- | --------------------- | ---------------------------------- | ------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------- |
+| [`ClearedDeposit`](/contracts/source/contracts/Depot#cleareddeposit) | `Depot`    | `msg.sender`          | the current depositor in the queue | the amount of `ETH` the `toAddress` has been paid | the amont of `sUSD` the `msg.sender` will received | the `depositIndex` that was accessed in this exchange |
 
-| name                                          | emitted on  | `address from` | `address to` | `uint value`          |
-| --------------------------------------------- | ----------- | -------------- | ------------ | --------------------- |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `Depot`        | `msg.sender` | an `amount` of `sUSD` |
+| name                                                                | emitted on  | `address from` | `address to` | `uint value`          |
+| ------------------------------------------------------------------- | ----------- | -------------- | ------------ | --------------------- |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `Depot`        | `msg.sender` | an `amount` of `sUSD` |
 
 Following all deposits paid though, emits the following event:
 
-| name                               | emitted on | `string fromCurrency` | `uint fromAmount`                          | `string toCurrency` | `uint toAmount`                          |
-| ---------------------------------- | ---------- | --------------------- | ------------------------------------------ | ------------------- | ---------------------------------------- |
-| [`Exchange`](../../Depot#exchange) | `Depot`    | `ETH`                 | `fromAmount` of `ETH` sent by `msg.sender` | `sUSD`              | `toAmount` of `sUSD` the sender was sent |
+| name                                                     | emitted on | `string fromCurrency` | `uint fromAmount`                          | `string toCurrency` | `uint toAmount`                          |
+| -------------------------------------------------------- | ---------- | --------------------- | ------------------------------------------ | ------------------- | ---------------------------------------- |
+| [`Exchange`](/contracts/source/contracts/Depot#exchange) | `Depot`    | `ETH`                 | `fromAmount` of `ETH` sent by `msg.sender` | `sUSD`              | `toAmount` of `sUSD` the sender was sent |
 
 ### Example Transactions on Mainnet
 

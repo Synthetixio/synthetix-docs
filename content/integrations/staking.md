@@ -4,51 +4,38 @@
 
 To account for the risk stakers take on by being exposed to a shared debt pool, they are rewarded each week in the form of `sUSD` trading fees and `SNX` inflationary rewards ([see incentives](/incentives#sources-of-value) for more information).
 
-Via the contracts, the process is as follows:
-
 ## Issuance API
-
-To issue `sUSD` in Mintr, this is how they perform the task:
-
-<img src="/img/misc/events-mint.png" width=300 />
 
 ### Contract
 
-!!! warning "Use the Proxies"
-
-    Note: The transaction's `to` parameter can be to either the proxy or the underlying, however two things are worth noting:
-
-    1. the underlying is subject to change (and does most releases); and
-    2. the events will always be emitted on the proxy, regardless of the `to` parameter in the transaction.
-
-    For best results, always interact with the proxy using the ABI of the underlying.
-
-**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20) (preferred) or [`ProxySynthetix`](https://contracts.synthetix.io/ProxySynthetix) (deprecated, [see this notice](/integrations/guide/#proxy-deprecation))
+**Destination contract (address):** [`ProxyERC20`](https://contracts.synthetix.io/ProxyERC20)
 
 **Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+
 ### Methods
 
-- [`issueSynths(uint256 amount)`](../../Synthetix#issuesynths)
-- [`issueSynthsOnBehalf(address user, uint256)`](../../Synthetix#issuesynthsonbehalf)
-- [`issueMaxSynths()`](../../Synthetix#issuemaxsynths)
-- [`issueMaxSynthsOnBehalf(address user)`](../../Synthetix#issuemaxsynthsonbehalf)
+- [`issueSynths(uint256 amount)`](/contracts/source/contracts/Synthetix/#issuesynths)
+- [`issueSynthsOnBehalf(address user, uint256)`](/contracts/source/contracts/Synthetix/#issuesynthsonbehalf)
+- [`issueMaxSynths()`](/contracts/source/contracts/Synthetix/#issuemaxsynths)
+- [`issueMaxSynthsOnBehalf(address user)`](/contracts/source/contracts/Synthetix/#issuemaxsynthsonbehalf)
 
 ### Events Emitted
 
 On a successful transaction, the following events occur:
 
-| name                                          | emitted on  | `address from` | `address to`             | `uint value`       |
-| --------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
-| [`Transfer`](../../ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
+| name                                                                | emitted on  | `address from` | `address to`             | `uint value`       |
+| ------------------------------------------------------------------- | ----------- | -------------- | ------------------------ | ------------------ |
+| [`Transfer`](/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `0x0`          | `msg.sender` (or `user`) | `amount` of `sUSD` |
 
-| name                           | emitted on  | `address account`        | `uint value` |
-| ------------------------------ | ----------- | ------------------------ | ------------ |
-| [`Issued`](../../Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
+| name                                                 | emitted on  | `address account`        | `uint value` |
+| ---------------------------------------------------- | ----------- | ------------------------ | ------------ |
+| [`Issued`](/contracts/source/contracts/Synth#issued) | `ProxysUSD` | `msg.sender` (or `user`) | `amount`     |
 
-| name                                                             | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
-| ---------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
-| [`IssuanceDebtRatioEntry`](../../FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
+| name                                                                                   | emitted on | `address account`        | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
+| -------------------------------------------------------------------------------------- | ---------- | ------------------------ | ---------------- | --------------------- | --------------------------------- |
+| [`IssuanceDebtRatioEntry`](/contracts/source/contracts/FeePool#issuancedebtratioentry) | `FeePool`  | `msg.sender` (or `user`) | `debtRatio`      | `debtEntryIndex`      | `feePeriodStartingDebtIndex`      |
 
 ### Examples from Mainnet
 
