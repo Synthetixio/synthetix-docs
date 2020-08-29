@@ -38,6 +38,7 @@ The below all return a Promise that resolves with the requested results.
 22. `binaryOptions.historicalOptionPrice` Get historical records of every option price for every market.
 23. `etherCollateral.loans` Get the list of all EtherCollateral loans opened.
 24. `exchanger.exchangeEntriesSettled({ max, from })` Get the list of all settled exchanges.
+25. `exchanges.aggregate({ max, timeSeries })` Get the total amount of exchanges aggregated across various time series.
 
 ## Supported subscriptions
 
