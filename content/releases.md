@@ -36,11 +36,11 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 
 ---
 
-# Aldebaran (2.24.0)
+# Aldebaran (v2.24.0)
 
 **Published**: Jul 1, 2020
 
-**Codebase**: [2.24.0](https://github.com/Synthetixio/synthetix/tree/2.24.0)
+**Codebase**: [v2.24.0](https://github.com/Synthetixio/synthetix/tree/v2.24.0)
 
 > - [SIP-66](https://sips.synthetix.io/sips/sip-66) Reduce gas of SNX transfers for non-stakers
 

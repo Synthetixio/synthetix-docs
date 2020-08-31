@@ -39,6 +39,7 @@ The below all return a Promise that resolves with the requested results.
 23. `etherCollateral.loans` Get the list of all EtherCollateral loans opened.
 24. `exchanger.exchangeEntriesSettled({ max, from })` Get the list of all settled exchanges.
 25. `exchanges.aggregate({ max, timeSeries })` Get the total amount of exchanges aggregated across various time series.
+26. `rate.snxAggregate({ max, timeSeries })` Get the price of snx aggregated across various time series.
 
 ## Supported subscriptions
 
