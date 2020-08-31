@@ -11,7 +11,7 @@ Here you will find all the resources you need to build synthetic asset trading, 
 ##Build with Synthetix
 
 </br>
-[![integrations-synths](img/logos/integrate_trading.png)](./integrations/trading)
+[![integrations-synths](img/logos/synths-integration-header.png)](./integrations/trading)
 
 Leverage a suite of synthetic assets to enable traders to access fiat currencies like USD, real-world assets like Gold, short positions on popular assets like BTC, indexes of assets from industries like DeFi, and much more. Visit the [tokens section](./tokens) for a complete list of the Synths available.
 
@@ -20,7 +20,7 @@ Leverage a suite of synthetic assets to enable traders to access fiat currencies
 **Synth Trading Integrations:** For a walkthrough of how to integrate synth trading into a dApp, as well as information about how you can earn revenue from trading fees with through the [Volume Program](./integrations/volume-program.md), visit the [trading integrations](./integrations/trading.md) section.
 
 </br>
-[![integrations-staking](img/logos/integrate_staking.png)](./integrations/staking)
+[![integrations-staking](img/logos/staking-integration-header.png)](./integrations/staking)
 
 Enable users to stake SNX, mint and burn Synths, and monitor their collateralisation levels with the Synthetix Staking system.
 
@@ -29,7 +29,7 @@ Enable users to stake SNX, mint and burn Synths, and monitor their collateralisa
 **Staking Integrations:** For a walkthrough of how to build SNX staking into a dApp, visit the [Staking Integrations](./integrations/staking.md) section.
 
 </br>
-[![integrations-data](img/logos/integrate_data.png)](./integrations/data)
+[![integrations-data](img/logos/data-integration-header.png)](./integrations/data)
 
 Access rich Synthetix system data to create dashboards and trading tools.
 
