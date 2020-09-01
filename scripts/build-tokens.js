@@ -111,7 +111,7 @@ const addOracleParameters = ({ asset, feed }) => {
 	} else if (!feed) {
 		return '';
 	}
-	const linkMap = { FTSE100: 'ftse-gbp', NIKKEI225: 'n225-jpy' };
+	const linkMap = { FTSE100: 'ftse-gbp', NIKKEI225: 'n225-jpy', DEFI: 'sdefi-usd', CEX: 'scex-usd' };
 	const symbolLink = linkMap[asset] || `${asset.toLowerCase()}-usd`;
 	return (
 		`**Price Feed**: Chainlink (decentralized)\n\n- Oracles: [Network overview](https://feeds.chain.link/${symbolLink})` +

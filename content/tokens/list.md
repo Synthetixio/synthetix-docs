@@ -100,7 +100,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network overview](https://feeds.chain.link/defi-usd)
+- Oracles: [Network overview](https://feeds.chain.link/sdefi-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0xa8E875F94138B0C5b51d1e1d5dE35bbDdd28EA87)
 
 **Index of**: [sDEFI](#index-sdefi)
@@ -282,7 +282,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network overview](https://feeds.chain.link/defi-usd)
+- Oracles: [Network overview](https://feeds.chain.link/sdefi-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0xa8E875F94138B0C5b51d1e1d5dE35bbDdd28EA87)
 
 **Inverse of**: [sDEFI](#defi-index-sdefi)
