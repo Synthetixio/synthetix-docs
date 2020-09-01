@@ -16,7 +16,7 @@
 **Price Feed**: Chainlink (decentralized)
 
 - Oracles: [Network overview](https://feeds.chain.link/aud-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x05Cf62c4bA0ccEA3Da680f9A8744Ac51116D6231)
+- Contract: [Aggregator](https://etherscan.io/address/0x77F9710E7d0A19669A13c055F62cd80d313dF022)
 
 > Tracks the price of Australian Dollars (AUD) through price feeds supplied by an oracle.
 
@@ -28,10 +28,10 @@
 
 **Price:** [sBNB on synthetix.exchange](https://synthetix.exchange/#/synths/sBNB)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/bnb-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x14e613AC84a31f709eadbdF89C6CC390fDc9540A)
 
 > Tracks the price of Binance Coin (BNB) through price feeds supplied by an oracle.
 
@@ -43,10 +43,10 @@
 
 **Price:** [sBTC on synthetix.exchange](https://synthetix.exchange/#/synths/sBTC)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/btc-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c)
 
 > Tracks the price of Bitcoin (BTC) through price feeds supplied by an oracle.
 
@@ -58,10 +58,10 @@
 
 **Price:** [sBCH on synthetix.exchange](https://synthetix.exchange/#/synths/sBCH)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/bch-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x9F0F69428F923D6c95B781F89E165C9b2df9789D)
 
 > Tracks the price of Bitcoin Cash (BCH) through price feeds supplied by an oracle.
 
@@ -73,39 +73,12 @@
 
 **Price:** [sADA on synthetix.exchange](https://synthetix.exchange/#/synths/sADA)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/ada-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xAE48c91dF1fE419994FFDa27da09D5aC69c30f55)
 
 > Tracks the price of Cardano (ADA) through price feeds supplied by an oracle.
-
-## Centralised Exchange Index (sCEX)
-
-**Contract:** [0xeABACD844A196D7Faf3CE596edeBF9900341B420](https://etherscan.io/token/0xeABACD844A196D7Faf3CE596edeBF9900341B420)
-
-**Decimals:** 18
-
-**Price:** [sCEX on synthetix.exchange](https://synthetix.exchange/#/synths/sCEX)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-**Index of**: [sCEX](#exchange-index-scex)
-
-| Token     | Symbol    | Units       |
-| --------- | --------- | ----------- |
-| undefined | undefined | 12.88000    |
-| undefined | undefined | 1,303.31000 |
-| undefined | undefined | 94.54000    |
-| undefined | undefined | 23.06000    |
-| undefined | undefined | 9.36000     |
-| undefined | undefined | 25.72000    |
-| undefined | undefined | 9.18000     |
-
-> Tracks the price of the index: Centralised Exchange Index (CEX) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 12.88 of undefined, 1303.31 of undefined, 94.54 of undefined, 23.06 of undefined, 9.36 of undefined, 25.72 of undefined, 9.18 of undefined.
 
 ## Chainlink (sLINK)
 
@@ -115,27 +88,12 @@
 
 **Price:** [sLINK on synthetix.exchange](https://synthetix.exchange/#/synths/sLINK)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/link-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c)
 
 > Tracks the price of Chainlink (LINK) through price feeds supplied by an oracle.
-
-## Dash (sDASH)
-
-**Contract:** [0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6](https://etherscan.io/token/0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6)
-
-**Decimals:** 18
-
-**Price:** [sDASH on synthetix.exchange](https://synthetix.exchange/#/synths/sDASH)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-> Tracks the price of Dash (DASH) through price feeds supplied by an oracle.
 
 ## DeFi Index (sDEFI)
 
@@ -145,10 +103,10 @@
 
 **Price:** [sDEFI on synthetix.exchange](https://synthetix.exchange/#/synths/sDEFI)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/defi-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xa8E875F94138B0C5b51d1e1d5dE35bbDdd28EA87)
 
 **Index of**: [sDEFI](#index-sdefi)
 
@@ -169,21 +127,6 @@
 
 > Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 4.14 of undefined, 0.74 of undefined, 668.16 of undefined, 9.52 of undefined, 581.76 of undefined, 28.54 of undefined, 82.84 of undefined, 822.92 of undefined, 948.31 of undefined, 224.53 of undefined, 61.2 of undefined, 7.09 of undefined.
 
-## EOS (sEOS)
-
-**Contract:** [0x88C8Cf3A212c0369698D13FE98Fcb76620389841](https://etherscan.io/token/0x88C8Cf3A212c0369698D13FE98Fcb76620389841)
-
-**Decimals:** 18
-
-**Price:** [sEOS on synthetix.exchange](https://synthetix.exchange/#/synths/sEOS)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-> Tracks the price of EOS (EOS) through price feeds supplied by an oracle.
-
 ## Ether (sETH)
 
 **Contract:** [0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb](https://etherscan.io/token/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb)
@@ -192,27 +135,12 @@
 
 **Price:** [sETH on synthetix.exchange](https://synthetix.exchange/#/synths/sETH)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/eth-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419)
 
 > Tracks the price of Ether (ETH) through price feeds supplied by an oracle.
-
-## Ethereum Classic (sETC)
-
-**Contract:** [0x22602469d704BfFb0936c7A7cfcD18f7aA269375](https://etherscan.io/token/0x22602469d704BfFb0936c7A7cfcD18f7aA269375)
-
-**Decimals:** 18
-
-**Price:** [sETC on synthetix.exchange](https://synthetix.exchange/#/synths/sETC)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-> Tracks the price of Ethereum Classic (ETC) through price feeds supplied by an oracle.
 
 ## Euros (sEUR)
 
@@ -225,24 +153,9 @@
 **Price Feed**: Chainlink (decentralized)
 
 - Oracles: [Network overview](https://feeds.chain.link/eur-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x25Fa978ea1a7dc9bDc33a2959B9053EaE57169B5)
+- Contract: [Aggregator](https://etherscan.io/address/0xb49f677943BC038e9857d61E7d053CaA2C1734C1)
 
 > Tracks the price of Euros (EUR) through price feeds supplied by an oracle.
-
-## FTSE 100 Index (sFTSE)
-
-**Contract:** [0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC](https://etherscan.io/token/0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC)
-
-**Decimals:** 18
-
-**Price:** [sFTSE on synthetix.exchange](https://synthetix.exchange/#/synths/sFTSE)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/ftse-gbp)
-- Contract: [Aggregator](https://etherscan.io/address/0x16924ae9C2ac6cdbC9D6bB16FAfCD38BeD560936)
-
-> Tracks the price of FTSE 100 Index (FTSE100) through price feeds supplied by an oracle.
 
 ## Gold Ounce (sXAU)
 
@@ -255,7 +168,7 @@
 **Price Feed**: Chainlink (decentralized)
 
 - Oracles: [Network overview](https://feeds.chain.link/xau-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0xafcE0c7b7fE3425aDb3871eAe5c0EC6d93E01935)
+- Contract: [Aggregator](https://etherscan.io/address/0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6)
 
 > Tracks the price of Gold Ounce (XAU) through price feeds supplied by an oracle.
 
@@ -267,10 +180,10 @@
 
 **Price:** [iBNB on synthetix.exchange](https://synthetix.exchange/#/synths/iBNB)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/bnb-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x14e613AC84a31f709eadbdF89C6CC390fDc9540A)
 
 **Inverse of**: [sBNB](#binance-coin-sbnb)
 
@@ -288,10 +201,10 @@
 
 **Price:** [iBTC on synthetix.exchange](https://synthetix.exchange/#/synths/iBTC)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/btc-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c)
 
 **Inverse of**: [sBTC](#bitcoin-sbtc)
 
@@ -309,10 +222,10 @@
 
 **Price:** [iBCH on synthetix.exchange](https://synthetix.exchange/#/synths/iBCH)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/bch-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x9F0F69428F923D6c95B781F89E165C9b2df9789D)
 
 **Inverse of**: [sBCH](#bitcoin-cash-sbch)
 
@@ -330,10 +243,10 @@
 
 **Price:** [iADA on synthetix.exchange](https://synthetix.exchange/#/synths/iADA)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/ada-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xAE48c91dF1fE419994FFDa27da09D5aC69c30f55)
 
 **Inverse of**: [sADA](#cardano-sada)
 
@@ -343,29 +256,6 @@
 
 > Inversely tracks the price of Inverse Cardano (ADA) through price feeds supplied by an oracle. The entry point is \$0.133 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.1995 (i.e. when Inverse Cardano's value reaches \$0.0665) or its lower limit of \$0.0665 (i.e. when Inverse Cardano’s value reaches \$0.1995). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iADA with different limits.
 
-## Inverse Centralised Exchange Index (iCEX)
-
-**Contract:** [0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d](https://etherscan.io/token/0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d)
-
-**Decimals:** 18
-
-**Price:** [iCEX on synthetix.exchange](https://synthetix.exchange/#/synths/iCEX)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-**Inverse of**: [sCEX](#centralised-exchange-index-scex)
-
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$563.20000 | \$844.80000 | \$281.60000 |
-
-**Index of**: [sCEX](#centralised-exchange-index-scex)
-
-> Inversely tracks the price of Inverse Centralised Exchange Index (CEX) through price feeds supplied by an oracle. The entry point is \$563.2 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$844.8 (i.e. when Inverse Centralised Exchange Index's value reaches \$281.6) or its lower limit of \$281.6 (i.e. when Inverse Centralised Exchange Index’s value reaches \$844.8). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iCEX with different limits.
-
 ## Inverse Chainlink (iLINK)
 
 **Contract:** [0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01](https://etherscan.io/token/0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01)
@@ -374,10 +264,10 @@
 
 **Price:** [iLINK on synthetix.exchange](https://synthetix.exchange/#/synths/iLINK)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/link-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c)
 
 **Inverse of**: [sLINK](#chainlink-slink)
 
@@ -387,27 +277,6 @@
 
 > Inversely tracks the price of Inverse Chainlink (LINK) through price feeds supplied by an oracle. The entry point is \$7.9 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$11.85 (i.e. when Inverse Chainlink's value reaches \$3.95) or its lower limit of \$3.95 (i.e. when Inverse Chainlink’s value reaches \$11.85). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
 
-## Inverse Dash (iDASH)
-
-**Contract:** [0xCB98f42221b2C251A4E74A1609722eE09f0cc08E](https://etherscan.io/token/0xCB98f42221b2C251A4E74A1609722eE09f0cc08E)
-
-**Decimals:** 18
-
-**Price:** [iDASH on synthetix.exchange](https://synthetix.exchange/#/synths/iDASH)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-**Inverse of**: [sDASH](#dash-sdash)
-
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$64.44000  | \$96.66000  | \$32.22000  |
-
-> Inversely tracks the price of Inverse Dash (DASH) through price feeds supplied by an oracle. The entry point is \$64.44 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$96.66 (i.e. when Inverse Dash's value reaches \$32.22) or its lower limit of \$32.22 (i.e. when Inverse Dash’s value reaches \$96.66). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDASH with different limits.
-
 ## Inverse DeFi Index (iDEFI)
 
 **Contract:** [0x14d10003807AC60d07BB0ba82cAeaC8d2087c157](https://etherscan.io/token/0x14d10003807AC60d07BB0ba82cAeaC8d2087c157)
@@ -416,10 +285,10 @@
 
 **Price:** [iDEFI on synthetix.exchange](https://synthetix.exchange/#/synths/iDEFI)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/defi-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xa8E875F94138B0C5b51d1e1d5dE35bbDdd28EA87)
 
 **Inverse of**: [sDEFI](#defi-index-sdefi)
 
@@ -431,27 +300,6 @@
 
 > Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$2757 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$4135.5 (i.e. when Inverse DeFi Index's value reaches \$1378.5) or its lower limit of \$1378.5 (i.e. when Inverse DeFi Index’s value reaches \$4135.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
 
-## Inverse EOS (iEOS)
-
-**Contract:** [0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4](https://etherscan.io/token/0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4)
-
-**Decimals:** 18
-
-**Price:** [iEOS on synthetix.exchange](https://synthetix.exchange/#/synths/iEOS)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-**Inverse of**: [sEOS](#eos-seos)
-
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$2.22000   | \$3.33000   | \$1.11000   |
-
-> Inversely tracks the price of Inverse EOS (EOS) through price feeds supplied by an oracle. The entry point is \$2.22 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$3.33 (i.e. when Inverse EOS's value reaches \$1.11) or its lower limit of \$1.11 (i.e. when Inverse EOS’s value reaches \$3.33). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iEOS with different limits.
-
 ## Inverse Ether (iETH)
 
 **Contract:** [0xA9859874e1743A32409f75bB11549892138BBA1E](https://etherscan.io/token/0xA9859874e1743A32409f75bB11549892138BBA1E)
@@ -460,10 +308,10 @@
 
 **Price:** [iETH on synthetix.exchange](https://synthetix.exchange/#/synths/iETH)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/eth-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419)
 
 **Inverse of**: [sETH](#ether-seth)
 
@@ -473,27 +321,6 @@
 
 > Inversely tracks the price of Inverse Ether (ETH) through price feeds supplied by an oracle. The entry point is \$314.54 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$550.445 (i.e. when Inverse Ether's value reaches \$78.635) or its lower limit of \$78.635 (i.e. when Inverse Ether’s value reaches \$550.445). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETH with different limits.
 
-## Inverse Ethereum Classic (iETC)
-
-**Contract:** [0xd50c1746D835d2770dDA3703B69187bFfeB14126](https://etherscan.io/token/0xd50c1746D835d2770dDA3703B69187bFfeB14126)
-
-**Decimals:** 18
-
-**Price:** [iETC on synthetix.exchange](https://synthetix.exchange/#/synths/iETC)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-**Inverse of**: [sETC](#ethereum-classic-setc)
-
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$6.16000   | \$9.24000   | \$3.08000   |
-
-> Inversely tracks the price of Inverse Ethereum Classic (ETC) through price feeds supplied by an oracle. The entry point is \$6.16 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$9.24 (i.e. when Inverse Ethereum Classic's value reaches \$3.08) or its lower limit of \$3.08 (i.e. when Inverse Ethereum Classic’s value reaches \$9.24). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETC with different limits.
-
 ## Inverse Litecoin (iLTC)
 
 **Contract:** [0x79da1431150C9b82D2E5dfc1C68B33216846851e](https://etherscan.io/token/0x79da1431150C9b82D2E5dfc1C68B33216846851e)
@@ -502,10 +329,10 @@
 
 **Price:** [iLTC on synthetix.exchange](https://synthetix.exchange/#/synths/iLTC)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/ltc-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x6AF09DF7563C363B5763b9102712EbeD3b9e859B)
 
 **Inverse of**: [sLTC](#litecoin-sltc)
 
@@ -515,27 +342,6 @@
 
 > Inversely tracks the price of Inverse Litecoin (LTC) through price feeds supplied by an oracle. The entry point is \$35.66 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$53.49 (i.e. when Inverse Litecoin's value reaches \$17.83) or its lower limit of \$17.83 (i.e. when Inverse Litecoin’s value reaches \$53.49). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLTC with different limits.
 
-## Inverse Monero (iXMR)
-
-**Contract:** [0x4AdF728E2Df4945082cDD6053869f51278fae196](https://etherscan.io/token/0x4AdF728E2Df4945082cDD6053869f51278fae196)
-
-**Decimals:** 18
-
-**Price:** [iXMR on synthetix.exchange](https://synthetix.exchange/#/synths/iXMR)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-**Inverse of**: [sXMR](#monero-sxmr)
-
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$47.24000  | \$70.86000  | \$23.62000  |
-
-> Inversely tracks the price of Inverse Monero (XMR) through price feeds supplied by an oracle. The entry point is \$47.24 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$70.86 (i.e. when Inverse Monero's value reaches \$23.62) or its lower limit of \$23.62 (i.e. when Inverse Monero’s value reaches \$70.86). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXMR with different limits.
-
 ## Inverse Ripple (iXRP)
 
 **Contract:** [0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6](https://etherscan.io/token/0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6)
@@ -544,10 +350,10 @@
 
 **Price:** [iXRP on synthetix.exchange](https://synthetix.exchange/#/synths/iXRP)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/xrp-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xCed2660c6Dd1Ffd856A5A82C67f3482d88C50b12)
 
 **Inverse of**: [sXRP](#ripple-sxrp)
 
@@ -557,27 +363,6 @@
 
 > Inversely tracks the price of Inverse Ripple (XRP) through price feeds supplied by an oracle. The entry point is \$0.1883 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.282 (i.e. when Inverse Ripple's value reaches \$0.095) or its lower limit of \$0.094 (i.e. when Inverse Ripple’s value reaches \$0.283). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXRP with different limits.
 
-## Inverse TRON (iTRX)
-
-**Contract:** [0xC5807183a9661A533CB08CbC297594a0B864dc12](https://etherscan.io/token/0xC5807183a9661A533CB08CbC297594a0B864dc12)
-
-**Decimals:** 18
-
-**Price:** [iTRX on synthetix.exchange](https://synthetix.exchange/#/synths/iTRX)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-**Inverse of**: [sTRX](#tron-strx)
-
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$0.01590   | \$0.02385   | \$0.00795   |
-
-> Inversely tracks the price of Inverse TRON (TRX) through price feeds supplied by an oracle. The entry point is \$0.0159 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.02385 (i.e. when Inverse TRON's value reaches \$0.00795) or its lower limit of \$0.00795 (i.e. when Inverse TRON’s value reaches \$0.02385). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iTRX with different limits.
-
 ## Inverse Tezos (iXTZ)
 
 **Contract:** [0x8deef89058090ac5655A99EEB451a4f9183D1678](https://etherscan.io/token/0x8deef89058090ac5655A99EEB451a4f9183D1678)
@@ -586,10 +371,10 @@
 
 **Price:** [iXTZ on synthetix.exchange](https://synthetix.exchange/#/synths/iXTZ)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/xtz-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x5239a625dEb44bF3EeAc2CD5366ba24b8e9DB63F)
 
 **Inverse of**: [sXTZ](#tezos-sxtz)
 
@@ -599,21 +384,6 @@
 
 > Inversely tracks the price of Inverse Tezos (XTZ) through price feeds supplied by an oracle. The entry point is \$2.27 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$3.405 (i.e. when Inverse Tezos's value reaches \$1.135) or its lower limit of \$1.135 (i.e. when Inverse Tezos’s value reaches \$3.405). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXTZ with different limits.
 
-## Japanese Yen (sJPY)
-
-**Contract:** [0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d](https://etherscan.io/token/0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d)
-
-**Decimals:** 18
-
-**Price:** [sJPY on synthetix.exchange](https://synthetix.exchange/#/synths/sJPY)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/jpy-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0xe1407BfAa6B5965BAd1C9f38316A3b655A09d8A6)
-
-> Tracks the price of Japanese Yen (JPY) through price feeds supplied by an oracle.
-
 ## Litecoin (sLTC)
 
 **Contract:** [0xC14103C2141E842e228FBaC594579e798616ce7A](https://etherscan.io/token/0xC14103C2141E842e228FBaC594579e798616ce7A)
@@ -622,57 +392,12 @@
 
 **Price:** [sLTC on synthetix.exchange](https://synthetix.exchange/#/synths/sLTC)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/ltc-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x6AF09DF7563C363B5763b9102712EbeD3b9e859B)
 
 > Tracks the price of Litecoin (LTC) through price feeds supplied by an oracle.
-
-## Monero (sXMR)
-
-**Contract:** [0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A](https://etherscan.io/token/0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A)
-
-**Decimals:** 18
-
-**Price:** [sXMR on synthetix.exchange](https://synthetix.exchange/#/synths/sXMR)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-> Tracks the price of Monero (XMR) through price feeds supplied by an oracle.
-
-## Nikkei 225 Index (sNIKKEI)
-
-**Contract:** [0x757de3ac6B830a931eF178C6634c5C551773155c](https://etherscan.io/token/0x757de3ac6B830a931eF178C6634c5C551773155c)
-
-**Decimals:** 18
-
-**Price:** [sNIKKEI on synthetix.exchange](https://synthetix.exchange/#/synths/sNIKKEI)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/n225-jpy)
-- Contract: [Aggregator](https://etherscan.io/address/0x3f6E09A4EC3811765F5b2ad15c0279910dbb2c04)
-
-> Tracks the price of Nikkei 225 Index (NIKKEI225) through price feeds supplied by an oracle.
-
-## Pound Sterling (sGBP)
-
-**Contract:** [0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F](https://etherscan.io/token/0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F)
-
-**Decimals:** 18
-
-**Price:** [sGBP on synthetix.exchange](https://synthetix.exchange/#/synths/sGBP)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/gbp-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x151445852B0cfDf6A4CC81440F2AF99176e8AD08)
-
-> Tracks the price of Pound Sterling (GBP) through price feeds supplied by an oracle.
 
 ## Ripple (sXRP)
 
@@ -682,10 +407,10 @@
 
 **Price:** [sXRP on synthetix.exchange](https://synthetix.exchange/#/synths/sXRP)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/xrp-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xCed2660c6Dd1Ffd856A5A82C67f3482d88C50b12)
 
 > Tracks the price of Ripple (XRP) through price feeds supplied by an oracle.
 
@@ -700,24 +425,9 @@
 **Price Feed**: Chainlink (decentralized)
 
 - Oracles: [Network overview](https://feeds.chain.link/xag-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x8946A183BFaFA95BEcf57c5e08fE5B7654d2807B)
+- Contract: [Aggregator](https://etherscan.io/address/0x379589227b15F1a12195D3f2d90bBc9F31f95235)
 
 > Tracks the price of Silver Ounce (XAG) through price feeds supplied by an oracle.
-
-## Swiss Franc (sCHF)
-
-**Contract:** [0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d](https://etherscan.io/token/0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d)
-
-**Decimals:** 18
-
-**Price:** [sCHF on synthetix.exchange](https://synthetix.exchange/#/synths/sCHF)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/chf-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x02D5c618DBC591544b19d0bf13543c0728A3c4Ec)
-
-> Tracks the price of Swiss Franc (CHF) through price feeds supplied by an oracle.
 
 ## Synthetix (SNX)
 
@@ -734,21 +444,6 @@
 
 > The Synthetix Network Token (SNX) gets staked as collateral to back Synths and entitles stakers to receive fees generated by Synth trades on Synthetix.Exchange.
 
-## TRON (sTRX)
-
-**Contract:** [0xf2E08356588EC5cd9E437552Da87C0076b4970B0](https://etherscan.io/token/0xf2E08356588EC5cd9E437552Da87C0076b4970B0)
-
-**Decimals:** 18
-
-**Price:** [sTRX on synthetix.exchange](https://synthetix.exchange/#/synths/sTRX)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
-
-> Tracks the price of TRON (TRX) through price feeds supplied by an oracle.
-
 ## Tezos (sXTZ)
 
 **Contract:** [0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd](https://etherscan.io/token/0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd)
@@ -757,10 +452,10 @@
 
 **Price:** [sXTZ on synthetix.exchange](https://synthetix.exchange/#/synths/sXTZ)
 
-**Price Feed**: Synthetix (centralized)
+**Price Feed**: Chainlink (decentralized)
 
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/xtz-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x5239a625dEb44bF3EeAc2CD5366ba24b8e9DB63F)
 
 > Tracks the price of Tezos (XTZ) through price feeds supplied by an oracle.
 
