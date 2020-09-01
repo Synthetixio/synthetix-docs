@@ -105,9 +105,10 @@ const addIndexParameters = ({ index, inverted, asset, name }) => {
 	);
 };
 
-const addOracleParameters = ({ asset, feed }) => {
-	if (!feed && asset === 'SNX') {
+const addOracleParameters = ({ symbol, asset, feed }) => {
+	if (!feed && symbol === 'SNX') {
 		feed = feeds['SNX'].feed;
+		asset = symbol; // can remove after https://github.com/Synthetixio/synthetix/commit/8479d5fae70c09fb9a8b35525797e12cd60731c2
 	} else if (!feed) {
 		return '';
 	}
@@ -132,7 +133,7 @@ ${tokens
 			(symbol !== 'SNX'
 				? `**Price:** [${symbol} on synthetix.exchange](https://synthetix.exchange/#/synths/${symbol})\n\n`
 				: '') +
-			addOracleParameters({ name, asset, feed }) +
+			addOracleParameters({ name, asset, symbol, feed }) +
 			addInverseParameters({ name, asset, inverted }) +
 			addIndexParameters({ name, asset, index, inverted }) +
 			`>${description}`,
