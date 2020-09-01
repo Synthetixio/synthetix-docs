@@ -2,6 +2,26 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Pollux (v2.27.2)
+
+**Published**: Sep 1, 2020
+
+**Codebase**: [v2.27.2](https://github.com/Synthetixio/synthetix/tree/v2.27.2)
+
+> https://blog.synthetix.io/the-pollux-release/
+
+- [SIP-36](https://sips.synthetix.io/sips/sip-36): Chainlink Phase 2
+- [SIP-63](https://sips.synthetix.io/sips/sip-63): Trading and volume incentives
+- [SIP-64](https://sips.synthetix.io/sips/sip-64): Flexible contract storage
+- [SIP-75](https://sips.synthetix.io/sips/sip-75): Freezing iSynths with public function with SNX reward
+- [SIP-76](https://sips.synthetix.io/sips/sip-76): Chainlink warning flags integration
+- [SIP-77](https://sips.synthetix.io/sips/sip-77): Staking rewards contract
+- [SIP-78](https://sips.synthetix.io/sips/sip-78): Reset iSynth does not trigger circuit breaker from SIP-65
+- [SIP-84](https://sips.synthetix.io/sips/sip-84): Pause Synths Below Open Interest Threshold
+- [SCCP-43](https://sips.synthetix.io/sccp/sccp-43): As part of the Pollux deployment and transition to Chainlink Oracles a number of SCCP controlled variables need to be updated to improve trading UX and reduce front-running attacks.
+
+---
+
 # Spica (v2.26.2)
 
 **Published**: Jul 30, 2020
@@ -287,13 +307,5 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 **Codebase**: [v1.0.0](https://github.com/Synthetixio/synthetix/tree/v1.0.0)
 
 > In this version of the nUSD system, nomins are havven-backed, and only the foundation may issue, up to an issuance ratio it sets.
-
----
-
-# Ether-Backed USD Nomins (v0.1.0)
-
-**Published**: Aug 7, 2018
-
-**Codebase**: [v0.1.0](https://github.com/Synthetixio/synthetix/tree/v0.1.0)
 
 ---
