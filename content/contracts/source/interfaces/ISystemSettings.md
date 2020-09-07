@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol)
+**Source:** [contracts/interfaces/ISystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol)
 
 ## Views
 
 ### `exchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `feePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `targetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.2/contracts/interfaces/ISystemSettings.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/interfaces/ISystemSettings.sol#L8)</sub>
 
 ??? example "Details"
 
