@@ -30,12 +30,12 @@
 
 > https://blog.synthetix.io/the-spica-release/
 
-- [SIP-54](https://sips.synthetix.io/sccp/sip-54) : Limit Orders
-- [SIP-65](https://sips.synthetix.io/sccp/sip-65) : Decentralized circuit breaker
-- [SIP-69](https://sips.synthetix.io/sccp/sip-69) : New Index Synths
-- [SIP-58](https://sips.synthetix.io/sccp/sip-58) : Emit individual Reclaim and Rebate events
-- [SIP-44](https://sips.synthetix.io/sccp/sip-44) : Settlement Improvements — Minor modifications to the settlement process for exchange rates deployments.
-- [SCCP-27](https://sips.synthetix.io/sccp/sccp-27) : Ether collateral second trial — Now that the first Ether collateral trial is complete, we will be launching a second trial that incorporates the collateralisation ratio update from 150% to 125%.
+- [SIP-54](https://sips.synthetix.io/sips/sip-54) : Limit Orders
+- [SIP-65](https://sips.synthetix.io/sips/sip-65) : Decentralized circuit breaker
+- [SIP-69](https://sips.synthetix.io/sips/sip-69) : New Index Synths
+- [SIP-58](https://sips.synthetix.io/sips/sip-58) : Emit individual Reclaim and Rebate events
+- [SIP-44](https://sips.synthetix.io/sips/sip-44) : Settlement Improvements — Minor modifications to the settlement process for exchange rates deployments.
+- [SCCP-27](https://sips.synthetix.io/sccp/sccp-27) : Ether collateral second trial — Now that the first Ether collateral trial is complete, we will be launching a second trial that incorporates the collateralization ratio update from 150% to 125%.
 
 ---
 
