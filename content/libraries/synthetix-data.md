@@ -40,6 +40,8 @@ The below all return a Promise that resolves with the requested results.
 24. `exchanger.exchangeEntriesSettled({ max, from })` Get the list of all settled exchanges.
 25. `exchanges.aggregate({ max, timeSeries })` Get the total amount of exchanges aggregated across various time series.
 26. `rate.snxAggregate({ max, timeSeries })` Get the price of snx aggregated across various time series.
+27. `snx.aggregateActiveStakers({ max, timeSeries })` Get the number of active stakers across various time series.
+28. `snx.totalActiveStakers()` Get the current number of active stakers.
 
 ## Supported subscriptions
 
