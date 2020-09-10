@@ -64,6 +64,9 @@ const tokens = snx.getTokens({ network }).map(entry => {
 	return Object.assign({ name: entry.desc, description }, entry);
 });
 
+// Note: required until https://github.com/Synthetixio/synthetix/commit/43b2ee69834fbd39ad4683acd746311313d67961 is published to synthetix on npm
+const feeds = snx.getFeeds({ network });
+
 const format = num =>
 	numbro(num).format({
 		optionalMantissa: true,
@@ -102,15 +105,14 @@ const addIndexParameters = ({ index, inverted, asset, name }) => {
 	);
 };
 
-const addOracleParameters = ({ asset, feed }) => {
-	const snxOracle = snx.getUsers({ network, user: 'oracle' }).address;
-	if (!feed) {
-		return (
-			`**Price Feed**: Synthetix (centralized)\n\n- Oracle: [${snxOracle}](https://etherscan.io/address/${snxOracle})` +
-			'\n- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)\n\n'
-		);
+const addOracleParameters = ({ symbol, asset, feed }) => {
+	if (!feed && symbol === 'SNX') {
+		feed = feeds['SNX'].feed;
+		asset = symbol; // can remove after https://github.com/Synthetixio/synthetix/commit/8479d5fae70c09fb9a8b35525797e12cd60731c2
+	} else if (!feed) {
+		return '';
 	}
-	const linkMap = { FTSE100: 'ftse-gbp', NIKKEI225: 'n225-jpy' };
+	const linkMap = { FTSE100: 'ftse-gbp', NIKKEI225: 'n225-jpy', DEFI: 'sdefi-usd', CEX: 'scex-usd' };
 	const symbolLink = linkMap[asset] || `${asset.toLowerCase()}-usd`;
 	return (
 		`**Price Feed**: Chainlink (decentralized)\n\n- Oracles: [Network overview](https://feeds.chain.link/${symbolLink})` +
@@ -121,24 +123,17 @@ const addOracleParameters = ({ asset, feed }) => {
 const content = `
 # Token List
 
-!!! Tip "Decentralizing the remaining price feeds"
-
-    We're in the process of migrating all price feeds to Chainlink's decentralized network.
-    This change is coming with [SIP-36](https://sips.synthetix.io/sips/sip-36).
-
 ${tokens
 	.sort((a, b) => (a.name > b.name ? 1 : -1))
 	.map(
 		({ name, asset, symbol, address, decimals, description, index, inverted, feed }) =>
 			`## ${name} (${symbol})\n\n` +
-			// Note: Manual addition of SIP-34 check of MKR
-			(asset === 'MKR'
-				? '!!! warning "Suspended"\n\n    MKR has been suspended due to [SIP-34](https://sips.synthetix.io/sips/sip-34)\n\n'
-				: '') +
 			`**Contract:** [${address}](https://etherscan.io/token/${address})\n\n` +
 			`**Decimals:** ${decimals}\n\n` +
-			`**Price:** [${symbol} on synthetix.exchange](https://synthetix.exchange/#/synths/${symbol})\n\n` +
-			addOracleParameters({ name, asset, feed }) +
+			(symbol !== 'SNX'
+				? `**Price:** [${symbol} on synthetix.exchange](https://synthetix.exchange/#/synths/${symbol})\n\n`
+				: '') +
+			addOracleParameters({ name, asset, symbol, feed }) +
 			addInverseParameters({ name, asset, inverted }) +
 			addIndexParameters({ name, asset, index, inverted }) +
 			`>${description}`,

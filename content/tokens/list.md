@@ -1,10 +1,5 @@
 # Token List
 
-!!! Tip "Decentralizing the remaining price feeds"
-
-    We're in the process of migrating all price feeds to Chainlink's decentralized network.
-    This change is coming with [SIP-36](https://sips.synthetix.io/sips/sip-36).
-
 ## Australian Dollars (sAUD)
 
 **Contract:** [0xF48e200EAF9906362BB1442fca31e0835773b8B4](https://etherscan.io/token/0xF48e200EAF9906362BB1442fca31e0835773b8B4)
@@ -105,7 +100,7 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network overview](https://feeds.chain.link/defi-usd)
+- Oracles: [Network overview](https://feeds.chain.link/sdefi-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0xa8E875F94138B0C5b51d1e1d5dE35bbDdd28EA87)
 
 **Index of**: [sDEFI](#index-sdefi)
@@ -189,9 +184,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$16.13000  | \$24.19500  | \$8.06500   |
+| \$22.88000  | \$34.32000  | \$11.44000  |
 
-> Inversely tracks the price of Inverse Binance Coin (BNB) through price feeds supplied by an oracle. The entry point is \$16.13 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$24.195 (i.e. when Inverse Binance Coin's value reaches \$8.065) or its lower limit of \$8.065 (i.e. when Inverse Binance Coin’s value reaches \$24.195). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBNB with different limits.
+> Inversely tracks the price of Inverse Binance Coin (BNB) through price feeds supplied by an oracle. The entry point is \$22.88 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$34.32 (i.e. when Inverse Binance Coin's value reaches \$11.44) or its lower limit of \$11.44 (i.e. when Inverse Binance Coin’s value reaches \$34.32). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBNB with different limits.
 
 ## Inverse Bitcoin (iBTC)
 
@@ -231,9 +226,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$218.33000 | \$327.49500 | \$109.16500 |
+| \$229.54000 | \$344.31000 | \$114.77000 |
 
-> Inversely tracks the price of Inverse Bitcoin Cash (BCH) through price feeds supplied by an oracle. The entry point is \$218.33 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$327.495 (i.e. when Inverse Bitcoin Cash's value reaches \$109.165) or its lower limit of \$109.165 (i.e. when Inverse Bitcoin Cash’s value reaches \$327.495). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBCH with different limits.
+> Inversely tracks the price of Inverse Bitcoin Cash (BCH) through price feeds supplied by an oracle. The entry point is \$229.54 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$344.31 (i.e. when Inverse Bitcoin Cash's value reaches \$114.77) or its lower limit of \$114.77 (i.e. when Inverse Bitcoin Cash’s value reaches \$344.31). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBCH with different limits.
 
 ## Inverse Cardano (iADA)
 
@@ -273,9 +268,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$7.90000   | \$11.85000  | \$3.95000   |
+| \$12.73000  | \$19.09500  | \$6.36500   |
 
-> Inversely tracks the price of Inverse Chainlink (LINK) through price feeds supplied by an oracle. The entry point is \$7.9 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$11.85 (i.e. when Inverse Chainlink's value reaches \$3.95) or its lower limit of \$3.95 (i.e. when Inverse Chainlink’s value reaches \$11.85). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
+> Inversely tracks the price of Inverse Chainlink (LINK) through price feeds supplied by an oracle. The entry point is \$12.73 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$19.095 (i.e. when Inverse Chainlink's value reaches \$6.365) or its lower limit of \$6.365 (i.e. when Inverse Chainlink’s value reaches \$19.095). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
 
 ## Inverse DeFi Index (iDEFI)
 
@@ -287,18 +282,18 @@
 
 **Price Feed**: Chainlink (decentralized)
 
-- Oracles: [Network overview](https://feeds.chain.link/defi-usd)
+- Oracles: [Network overview](https://feeds.chain.link/sdefi-usd)
 - Contract: [Aggregator](https://etherscan.io/address/0xa8E875F94138B0C5b51d1e1d5dE35bbDdd28EA87)
 
 **Inverse of**: [sDEFI](#defi-index-sdefi)
 
-| Entry Point | Upper Limit   | Lower Limit   |
-| ----------- | ------------- | ------------- |
-| \$2,757     | \$4,135.50000 | \$1,378.50000 |
+| Entry Point | Upper Limit | Lower Limit |
+| ----------- | ----------- | ----------- |
+| \$3,762     | \$5,643     | \$1,881     |
 
 **Index of**: [sDEFI](#defi-index-sdefi)
 
-> Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$2757 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$4135.5 (i.e. when Inverse DeFi Index's value reaches \$1378.5) or its lower limit of \$1378.5 (i.e. when Inverse DeFi Index’s value reaches \$4135.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
+> Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$3762 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$5643 (i.e. when Inverse DeFi Index's value reaches \$1881) or its lower limit of \$1881 (i.e. when Inverse DeFi Index’s value reaches \$5643). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
 
 ## Inverse Ether (iETH)
 
@@ -338,9 +333,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$35.66000  | \$53.49000  | \$17.83000  |
+| \$48.12000  | \$72.18000  | \$24.06000  |
 
-> Inversely tracks the price of Inverse Litecoin (LTC) through price feeds supplied by an oracle. The entry point is \$35.66 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$53.49 (i.e. when Inverse Litecoin's value reaches \$17.83) or its lower limit of \$17.83 (i.e. when Inverse Litecoin’s value reaches \$53.49). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLTC with different limits.
+> Inversely tracks the price of Inverse Litecoin (LTC) through price feeds supplied by an oracle. The entry point is \$48.12 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$72.18 (i.e. when Inverse Litecoin's value reaches \$24.06) or its lower limit of \$24.06 (i.e. when Inverse Litecoin’s value reaches \$72.18). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLTC with different limits.
 
 ## Inverse Ripple (iXRP)
 
@@ -380,9 +375,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$2.27000   | \$3.40500   | \$1.13500   |
+| \$2.54200   | \$3.81300   | \$1.27100   |
 
-> Inversely tracks the price of Inverse Tezos (XTZ) through price feeds supplied by an oracle. The entry point is \$2.27 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$3.405 (i.e. when Inverse Tezos's value reaches \$1.135) or its lower limit of \$1.135 (i.e. when Inverse Tezos’s value reaches \$3.405). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXTZ with different limits.
+> Inversely tracks the price of Inverse Tezos (XTZ) through price feeds supplied by an oracle. The entry point is \$2.542 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$3.813 (i.e. when Inverse Tezos's value reaches \$1.271) or its lower limit of \$1.271 (i.e. when Inverse Tezos’s value reaches \$3.813). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXTZ with different limits.
 
 ## Litecoin (sLTC)
 
@@ -435,12 +430,10 @@
 
 **Decimals:** 18
 
-**Price:** [SNX on synthetix.exchange](https://synthetix.exchange/#/synths/SNX)
+**Price Feed**: Chainlink (decentralized)
 
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
+- Oracles: [Network overview](https://feeds.chain.link/snx-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xDC3EA94CD0AC27d9A86C180091e7f78C683d3699)
 
 > The Synthetix Network Token (SNX) gets staked as collateral to back Synths and entitles stakers to receive fees generated by Synth trades on Synthetix.Exchange.
 
@@ -466,10 +459,5 @@
 **Decimals:** 18
 
 **Price:** [sUSD on synthetix.exchange](https://synthetix.exchange/#/synths/sUSD)
-
-**Price Feed**: Synthetix (centralized)
-
-- Oracle: [0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362](https://etherscan.io/address/0xaC1ED4Fabbd5204E02950D68b6FC8c446AC95362)
-- Contract: [ExchangeRates](https://contracts.synthetix.io/ExchangeRates)
 
 > Tracks the price of a single US Dollar (USD). This Synth always remains constant at 1.
