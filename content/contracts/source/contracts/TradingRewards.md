@@ -2,6 +2,10 @@
 
 ## Description
 
+This contract is an implementation of [SIP-63](https://sips.synthetix.io/sips/sip-63). It records exchange fees paid by users into periods, which, when closed with a given amount of SNX rewards, allows participants to claim such rewards pro-rata, according to the amount of fees recorded for them in such period.
+
+The recording of such fees can be enabled by the ProtocolDAO, via [SystemSettings](https://github.com/Synthetixio/synthetix/blob/v2.27.2/contracts/SystemSettings.sol#L129).
+
 **Source:** [contracts/TradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/TradingRewards.sol)
 
 ## Architecture
@@ -29,13 +33,13 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/TradingRewards.sol#L32)</sub>
 
-| Field                       | Type                          | Description |
-| --------------------------- | ----------------------------- | ----------- |
-| `isFinalized`               | `bool`                        | TBA         |
-| `recordedFees`              | `uint256`                     | TBA         |
-| `totalRewards`              | `uint256`                     | TBA         |
-| `availableRewards`          | `uint256`                     | TBA         |
-| `unaccountedFeesForAccount` | `mapping(address => uint256)` | TBA         |
+| Field                       | Type                          | Description                                                                                                                |
+| --------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `isFinalized`               | `bool`                        | A period needs to be finalized for participants to be able to claim rewards.                                               |
+| `recordedFees`              | `uint256`                     | Total recorded fees for the period.                                                                                        |
+| `totalRewards`              | `uint256`                     | Total SNX rewards assigned to the period when it's closed.                                                                 |
+| `availableRewards`          | `uint256`                     | Remaining SNX rewards after `totalRewards` have been assigned. Diminishes as participants claim their rewards.             |
+| `unaccountedFeesForAccount` | `mapping(address => uint256)` | Records fees for each participant during the period. Increases when fees are recorded, decreases when rewards are claimed. |
 
 ## Constructor
 
