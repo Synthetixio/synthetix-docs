@@ -105,20 +105,20 @@
 
 **Index of**: [sDEFI](#index-sdefi)
 
-| Token     | Symbol    | Units     |
-| --------- | --------- | --------- |
-| undefined | undefined | 4.14000   |
-| undefined | undefined | 0.74000   |
-| undefined | undefined | 668.16000 |
-| undefined | undefined | 9.52000   |
-| undefined | undefined | 581.76000 |
-| undefined | undefined | 28.54000  |
-| undefined | undefined | 82.84000  |
-| undefined | undefined | 822.92000 |
-| undefined | undefined | 948.31000 |
-| undefined | undefined | 224.53000 |
-| undefined | undefined | 61.20000  |
-| undefined | undefined | 7.09000   |
+| Token                   | Symbol | Units     | Initial Weight |
+| ----------------------- | ------ | --------- | -------------- |
+| Compound                | COMP   | 4.14000   | 20.5%          |
+| Maker                   | MKR    | 0.74000   | 15%            |
+| Kyber Network           | KNC    | 224.53000 | 11.8%          |
+| Synthetix Network Token | SNX    | 82.84000  | 10.2%          |
+| 0x                      | ZRX    | 668.16000 | 9.7%           |
+| Augur                   | REP    | 9.52000   | 7.2%           |
+| Aave                    | LEND   | 581.76000 | 6.7%           |
+| Ren                     | REN    | 822.92000 | 5%             |
+| UMA                     | UMA    | 28.54000  | 4.2%           |
+| Loopring                | LRC    | 948.31000 | 3.8%           |
+| Bancor                  | BNT    | 61.20000  | 3.4%           |
+| Balancer                | BAL    | 7.09000   | 2.5%           |
 
 > Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 4.14 of undefined, 0.74 of undefined, 668.16 of undefined, 9.52 of undefined, 581.76 of undefined, 28.54 of undefined, 82.84 of undefined, 822.92 of undefined, 948.31 of undefined, 224.53 of undefined, 61.2 of undefined, 7.09 of undefined.
 
