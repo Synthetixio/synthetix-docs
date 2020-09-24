@@ -42,6 +42,7 @@ The below all return a Promise that resolves with the requested results.
 26. `rate.snxAggregate({ max, timeSeries })` Get the price of snx aggregated across various time series.
 27. `snx.aggregateActiveStakers({ max, timeSeries })` Get the number of active stakers across various time series.
 28. `snx.totalActiveStakers()` Get the current number of active stakers.
+29. `rate.dailyRateChange({ synths })` get the rate change over the past 24 hours for any synth. Can pass in a list to retrieve multiple synths.
 
 ## Supported subscriptions
 

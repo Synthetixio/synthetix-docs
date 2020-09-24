@@ -17,7 +17,7 @@ const doRounding = (entry, limit) => {
 };
 
 const desc = synth => {
-	const underlying = synth.desc.replace(/^Inverted /, '');
+	const underlying = (synth.description || synth.desc).replace(/^Inverted /, '');
 	const assetSuffix = synth.name !== underlying ? ` (${synth.asset})` : '';
 	if (synth.name === 'sUSD') {
 		return 'Tracks the price of a single US Dollar (USD). This Synth always remains constant at 1.';
