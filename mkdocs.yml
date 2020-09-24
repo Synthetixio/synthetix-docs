@@ -69,6 +69,7 @@ nav:
                 - EscrowChecker: contracts/source/contracts/EscrowChecker.md
                 - EternalStorage: contracts/source/contracts/EternalStorage.md
                 - EtherCollateral: contracts/source/contracts/EtherCollateral.md
+                - EtherCollateralsUSD: contracts/source/contracts/EtherCollateralsUSD.md
                 - ExchangeRates: contracts/source/contracts/ExchangeRates.md
                 - ExchangeState: contracts/source/contracts/ExchangeState.md
                 - Exchanger: contracts/source/contracts/Exchanger.md
@@ -116,6 +117,7 @@ nav:
                 - IDepot: contracts/source/interfaces/IDepot.md
                 - IERC20: contracts/source/interfaces/IERC20.md
                 - IEtherCollateral: contracts/source/interfaces/IEtherCollateral.md
+                - IEtherCollateralsUSD: contracts/source/interfaces/IEtherCollateralsUSD.md
                 - IExchangeRates: contracts/source/interfaces/IExchangeRates.md
                 - IExchangeState: contracts/source/interfaces/IExchangeState.md
                 - IExchanger: contracts/source/interfaces/IExchanger.md
