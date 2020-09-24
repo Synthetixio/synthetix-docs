@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.28.4-alpha/contracts/interfaces/IExchangeState.sol)
+**Source:** [contracts/interfaces/IExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/interfaces/IExchangeState.sol)
 
 ## Structs
 
 ### `ExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-alpha/contracts/interfaces/IExchangeState.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/interfaces/IExchangeState.sol#L6)</sub>
 
 | Field             | Type      | Description |
 | ----------------- | --------- | ----------- |
@@ -25,7 +25,7 @@
 
 ### `getEntryAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-alpha/contracts/interfaces/IExchangeState.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/interfaces/IExchangeState.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -43,7 +43,7 @@
 
 ### `getLengthOfEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-alpha/contracts/interfaces/IExchangeState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/interfaces/IExchangeState.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -61,7 +61,7 @@
 
 ### `getMaxTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-alpha/contracts/interfaces/IExchangeState.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/interfaces/IExchangeState.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -81,7 +81,7 @@
 
 ### `appendExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-alpha/contracts/interfaces/IExchangeState.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/interfaces/IExchangeState.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -99,7 +99,7 @@
 
 ### `removeEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-alpha/contracts/interfaces/IExchangeState.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/interfaces/IExchangeState.sol#L52)</sub>
 
 ??? example "Details"
 

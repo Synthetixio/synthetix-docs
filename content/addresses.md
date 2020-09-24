@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.28.4-alpha](https://github.com/Synthetixio/synthetix/tree/v2.28.4-alpha)
+**Version**: [v2.28.4-beta](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta)
 
 !!! info "Naming Conventions"
 
