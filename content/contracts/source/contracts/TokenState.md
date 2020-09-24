@@ -4,7 +4,7 @@
 
 An external state contract to hold ERC20 balances and allowances. This operates as an adjunct to [`ExternStateToken`](ExternStateToken.md), so that important token information can persist while the token contract itself can be switched out to upgrade its functionality.
 
-**Source:** [contracts/TokenState.sol](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/TokenState.sol)
+**Source:** [contracts/TokenState.sol](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/TokenState.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/TokenState.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/TokenState.sol#L12)</sub>
 
 ERC20 allowances. Also generates an ERC20 accessor in the same way as the `balanceOf` member.
 
@@ -29,7 +29,7 @@ ERC20 allowances. Also generates an ERC20 accessor in the same way as the `balan
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/TokenState.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/TokenState.sol#L11)</sub>
 
 ERC20 balances, note that as a public variable, this synthesises an accessor which is itself ERC20 compliant, so balances can be queried by dApps directly from the state contract.
 
@@ -39,7 +39,7 @@ ERC20 balances, note that as a public variable, this synthesises an accessor whi
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/TokenState.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/TokenState.sol#L14)</sub>
 
 Initialises the inherited [`State`](State.md) instance.
 
@@ -61,7 +61,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setAllowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/TokenState.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/TokenState.sol#L26)</sub>
 
 Sets the token allowance granted to the `spender` by the `tokenOwner`.
 
@@ -85,7 +85,7 @@ Sets the token allowance granted to the `spender` by the `tokenOwner`.
 
 ### `setBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/TokenState.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/TokenState.sol#L40)</sub>
 
 Sets the balance of the specified account.
 

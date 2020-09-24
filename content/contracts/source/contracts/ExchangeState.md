@@ -6,7 +6,7 @@
 
     This contract documentation is missing some descriptions.
 
-**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol)
+**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol)
 
 ## Architecture
 
@@ -23,13 +23,13 @@ graph TD
 
 ### `exchanges`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L11)</sub>
 
 **Type:** `mapping(address => mapping(bytes32 => struct IExchangeState.ExchangeEntry[]))`
 
 ### `maxEntriesInQueue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L13)</sub>
 
 **Type:** `uint256`
 
@@ -37,7 +37,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -57,7 +57,7 @@ graph TD
 
 ### `getEntryAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -75,7 +75,7 @@ graph TD
 
 ### `getLengthOfEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@ graph TD
 
 ### `getMaxTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -113,7 +113,7 @@ graph TD
 
 ### `appendExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -131,7 +131,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Max queue length reached)](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L36)
+    * [require(..., Max queue length reached)](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L36)
 
     **Modifiers**
 
@@ -139,7 +139,7 @@ graph TD
 
 ### `removeEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -161,7 +161,7 @@ graph TD
 
 ### `setMaxEntriesInQueue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4-beta/contracts/ExchangeState.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/ExchangeState.sol#L19)</sub>
 
 ??? example "Details"
 
