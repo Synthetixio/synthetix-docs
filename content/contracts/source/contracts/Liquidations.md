@@ -184,8 +184,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/Liquidations.sol#L88)</sub>
 
-**Type:** `uint256`
-
 ??? example "Details"
 
     **Signature**
@@ -204,8 +202,6 @@ graph TD
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/Liquidations.sol#L96)</sub>
 
-**Type:** `uint256`
-
 ??? example "Details"
 
     **Signature**
@@ -223,8 +219,6 @@ graph TD
 ### `liquidationRatio`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/Liquidations.sol#L92)</sub>
-
-**Type:** `uint256`
 
 ??? example "Details"
 

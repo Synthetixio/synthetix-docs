@@ -165,8 +165,6 @@ Returns the number of synths in the system, that is [`availableSynths.length`](#
 
 List of the active [`Synths`](Synth.md). Used to compute the total value of issued synths.
 
-**Type:** `contract ISynth[]`
-
 ??? example "Details"
 
     **Signature**
@@ -329,8 +327,6 @@ If prices fluctuate then the account's issued synth debt may exceed its current 
 
 A mapping from currency keys (`bytes32`) to [`Synth`](Synth.md) token contract addresses.
 
-**Type:** `mapping(bytes32 => contract ISynth)`
-
 ??? example "Details"
 
     **Signature**
@@ -350,8 +346,6 @@ A mapping from currency keys (`bytes32`) to [`Synth`](Synth.md) token contract a
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/Synthetix.sol#L117)</sub>
 
 A reverse mapping from a synth's address to its `bytes32` currency key
-
-**Type:** `mapping(address => bytes32)`
 
 ??? example "Details"
 

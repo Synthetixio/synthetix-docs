@@ -155,8 +155,6 @@ This is the minimum duration of a single fee period in seconds. In practice they
 
 Its value is one week, but it may be between [`MIN_FEE_PERIOD_DURATION`](#min_fee_period_duration) and [`MAX_FEE_PERIOD_DURATION`](#max_fee_period_duration) (1 to 60 days).
 
-**Type:** `uint256`
-
 ??? example "Details"
 
     **Signature**
@@ -322,8 +320,6 @@ Stores [fee period information](#feeperiod) for the last three weeks, from newes
 ### `targetThreshold`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/FeePool.sol#L172)</sub>
-
-**Type:** `uint256`
 
 ??? example "Details"
 

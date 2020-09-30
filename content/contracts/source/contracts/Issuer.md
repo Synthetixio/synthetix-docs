@@ -300,8 +300,6 @@ If any, see:
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.28.4/contracts/Issuer.sol#L297)</sub>
 
-**Type:** `uint256`
-
 ??? example "Details"
 
     **Signature**
