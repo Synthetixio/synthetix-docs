@@ -8,8 +8,7 @@
 
 **Codebase**: [v2.28.4](https://github.com/Synthetixio/synthetix/tree/v2.28.4)
 
-> https://blog.synthetix.io/the-fomalhaut-release/
-> https://iosiro.com/audits/synthetix-fomalhaut-release-smart-contract-audit
+> https://blog.synthetix.io/the-fomalhaut-release/ > https://iosiro.com/audits/synthetix-fomalhaut-release-smart-contract-audit
 
 - [SIP-77](https://sips.synthetix.io/sips/sip-77): Staking rewards contract
 - [SIP-85](https://sips.synthetix.io/sips/sip-85): EtherCollateral for sUSD Loans
