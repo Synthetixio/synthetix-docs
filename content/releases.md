@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Fomalhaut (v2.28.4)
+
+**Published**: Sep 24, 2020
+
+**Codebase**: [v2.28.4](https://github.com/Synthetixio/synthetix/tree/v2.28.4)
+
+> https://blog.synthetix.io/the-fomalhaut-release/
+> https://iosiro.com/audits/synthetix-fomalhaut-release-smart-contract-audit
+
+- [SIP-77](https://sips.synthetix.io/sips/sip-77): Staking rewards contract
+- [SIP-85](https://sips.synthetix.io/sips/sip-85): EtherCollateral for sUSD Loans
+- [SIP-86](https://sips.synthetix.io/sips/sip-86): SIP 86: ExchangeRates Chainlink Aggregator V2V3
+- [SIP-87](https://sips.synthetix.io/sips/sip-87): Add iETH incentive to RewardsDistribution
+
+---
+
 # Pollux (v2.27.2)
 
 **Published**: Sep 1, 2020
@@ -15,7 +31,6 @@
 - [SIP-64](https://sips.synthetix.io/sips/sip-64): Flexible contract storage
 - [SIP-75](https://sips.synthetix.io/sips/sip-75): Freezing iSynths with public function with SNX reward
 - [SIP-76](https://sips.synthetix.io/sips/sip-76): Chainlink warning flags integration
-- [SIP-77](https://sips.synthetix.io/sips/sip-77): Staking rewards contract
 - [SIP-78](https://sips.synthetix.io/sips/sip-78): Reset iSynth does not trigger circuit breaker from SIP-65
 - [SIP-84](https://sips.synthetix.io/sips/sip-84): Pause Synths Below Open Interest Threshold
 - [SCCP-43](https://sips.synthetix.io/sccp/sccp-43): As part of the Pollux deployment and transition to Chainlink Oracles a number of SCCP controlled variables need to be updated to improve trading UX and reduce front-running attacks.
@@ -297,15 +312,5 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 **Codebase**: [v1.0.1](https://github.com/Synthetixio/synthetix/tree/v1.0.1)
 
 > Adds some convenience functions and minor optimisations and fixes.
-
----
-
-# nUSD System A - Foundation Static Issuance (v1.0.0)
-
-**Published**: Aug 7, 2018
-
-**Codebase**: [v1.0.0](https://github.com/Synthetixio/synthetix/tree/v1.0.0)
-
-> In this version of the nUSD system, nomins are havven-backed, and only the foundation may issue, up to an issuance ratio it sets.
 
 ---

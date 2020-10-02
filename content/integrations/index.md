@@ -74,13 +74,13 @@ As of this moment, the following contracts are behind proxies:
 
     Prior to May 10, 2020, both proxies for `Synthetix` and `SynthsUSD` will function. Our dApps and integrations will call and transact using the deprecated proxies, and all events emitted will be on the deprecated proxy.
 
-2.  **Phase 2 (Current)**
+2.  **Phase 2**
 
     <span class="wtb-ew-v1" style="width: 560px; display:inline-block"><script src="https://www.worldtimebuddy.com/event_widget.js?h=100&md=5/10/2020&mt=23.00&ml=0.50&sts=0&sln=0&wt=ew-ltc"></script><i><a target="_blank" href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</i><noscript><a href="https://www.worldtimebuddy.com/">Time converter</a> at worldtimebuddy.com</noscript><script>window[wtb_event_widgets.pop()].init()</script></span>
 
     On `May 10, 2020 11pm UTC`, we will switch the `proxy` and `integrationProxy` properties of `Synthetix` and our `SynthsUSD` contracts. We will then update our dApps and integrations (including `synthetix-js`) to use the addresses of the new proxies for all calls and transactions. **All events emitted will now be on the new ERC20 proxies.** However, the deprecated proxies will continue to work until Phase 3.
 
-3.  **Phase 3**
+3.  **Phase 3 (Current)**
 
     !!! Tip "Updated timeline to July 31"
 
@@ -91,7 +91,7 @@ As of this moment, the following contracts are behind proxies:
 
     On `July 31, 2020 11pm UTC`, we will set the `integrationProxy` property from `Synthetix` and `SynthsUSD` to `0x0`, meaning that no more incoming transactions on `0xC011A72400E58ecD99Ee497CF89E3775d4bd732F` (`ProxySynthetix`) or `0x57Ab1E02fEE23774580C119740129eAC7081e9D3` (`ProxysUSD`) will work. These will fail as the target contracts they use will no longer accept incoming requests from them. We will update our `ProxySynthetix` and `ProxysUSD` labels to point to the new ERC20 proxies (in our docs and in our contract-linker utility).
 
-4.  **Phase 4**: We will remove the `ProxyERC20` and `ProxyERC20sUSD` names altogether.
+4.  **Phase 4**: We will rename our proxy labels to all be `ProxyERC20<name>` where `<name>` is either `Synthetix` or the name of the synth (eg. `sUSD`, `iETH`, etc). We will also remove the `integrationProxy` property from `Proxyable.sol`.
 
 ### Example Scenarios:
 
