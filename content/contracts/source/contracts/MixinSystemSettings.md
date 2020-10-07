@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/MixinSystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol)
+**Source:** [contracts/MixinSystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol)
 
 ## Architecture
 
@@ -19,7 +19,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -39,7 +39,7 @@ graph TD
 
 ### `flexibleStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -57,7 +57,7 @@ graph TD
 
 ### `getAggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -75,7 +75,7 @@ graph TD
 
 ### `getDebtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@ graph TD
 
 ### `getExchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@ graph TD
 
 ### `getFeePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -129,7 +129,7 @@ graph TD
 
 ### `getIssuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -147,7 +147,7 @@ graph TD
 
 ### `getLiquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -165,7 +165,7 @@ graph TD
 
 ### `getLiquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -183,7 +183,7 @@ graph TD
 
 ### `getLiquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -201,7 +201,7 @@ graph TD
 
 ### `getMinimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -219,7 +219,7 @@ graph TD
 
 ### `getPriceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -237,7 +237,7 @@ graph TD
 
 ### `getRateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -255,7 +255,7 @@ graph TD
 
 ### `getTargetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -273,7 +273,7 @@ graph TD
 
 ### `getTradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -291,7 +291,7 @@ graph TD
 
 ### `getWaitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/MixinSystemSettings.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/MixinSystemSettings.sol#L41)</sub>
 
 ??? example "Details"
 

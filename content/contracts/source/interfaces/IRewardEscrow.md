@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/interfaces/IRewardEscrow.sol)
+**Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IRewardEscrow.sol)
 
 ## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/interfaces/IRewardEscrow.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IRewardEscrow.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/interfaces/IRewardEscrow.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IRewardEscrow.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/interfaces/IRewardEscrow.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IRewardEscrow.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/interfaces/IRewardEscrow.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IRewardEscrow.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/interfaces/IRewardEscrow.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IRewardEscrow.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `vest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/interfaces/IRewardEscrow.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IRewardEscrow.sol#L17)</sub>
 
 ??? example "Details"
 
