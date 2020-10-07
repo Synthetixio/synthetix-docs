@@ -34,7 +34,7 @@ Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchan
 
 Amount: `32,000 SNX` per week
 
-Duration: Apr 24, 2020 - Jul 17, 2020
+Duration: Apr 24, 2020 - ongoing
 
 Pool: None (`iETH` is staked directly)
 
@@ -45,6 +45,22 @@ Source: [`iETHRewards` (via `Unipool`)](https://github.com/Synthetixio/Unipool/b
 > Note: the source file above was [modified on L13](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol#L13) before deployment to use the [iETH proxy address](https://contracts.synthetix.io/ProxyiETH)
 
 Aim: This trial aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH.
+
+## Deprecated incentives
+
+### sETH/ETH liquidity on Uniswap v1
+
+Amount: Initially `5%` of the weekly inflationary SNX, then `64,000 SNX` per week, then progressively less.
+
+Duration: Jul 12, 2019 - Jun 26, 2020
+
+Pool: [`Uniswap sETH:ETH V1`](https://pools.fyi/#/returns/0xe9cf7887b93150d4f2da7dfc6d502b216438f244)
+
+Staking Contract: [`StakingRewardssETHUniswapV1`](https://contracts.synthetix.io/StakingRewardssETHUniswapV1)
+
+Source: [`Unipool`](https://github.com/Synthetixio/Unipool/blob/master/contracts/Unipool.sol)
+
+Aim: This incentive aimed to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with ETH. sETH was chosen over sUSD because these two assets should always trade at parity, and shifts in the price of ETH against USD do not require arbitrage.
 
 ### sBTC/renBTC-wBTC liquidity on Curve (trial)
 
@@ -62,21 +78,21 @@ Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synth
 
 Aim: This trial is providing the `SNX` component of a `SNX/REN` liquidity pool (along with Ren Protocol) to help generate rewards for the `sBTC/renBTC/WBTC` liquidity providers on Curve.
 
-## Deprecated incentives
+### iBTC holders (trial)
 
-### sETH/ETH liquidity on Uniswap v1
+Amount: `16,000 SNX` per week
 
-Amount: Initially `5%` of the weekly inflationary SNX, then `64,000 SNX` per week, then progressively less.
+Duration: Jul 24, 2020 - Sep 18, 2020
 
-Duration: Jul 12, 2019 - Jun 26, 2020
+Pool: None (`iBTC` is staked directly)
 
-Pool: [`Uniswap sETH:ETH V1`](https://pools.fyi/#/returns/0xe9cf7887b93150d4f2da7dfc6d502b216438f244)
+Staking Contract: [`StakingRewardsiBTC`](https://contracts.synthetix.io/StakingRewardsiBTC)
 
-Staking Contract: [`StakingRewardssETHUniswapV1`](https://contracts.synthetix.io/StakingRewardssETHUniswapV1)
+Source: [`iBTCRewards` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
 
-Source: [`Unipool`](https://github.com/Synthetixio/Unipool/blob/master/contracts/Unipool.sol)
+> Note: the source file above was [modified on L13](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol#L13) before deployment to use the [iBTC proxy address](https://contracts.synthetix.io/ProxyiBTC)
 
-Aim: This incentive aimed to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with ETH. sETH was chosen over sUSD because these two assets should always trade at parity, and shifts in the price of ETH against USD do not require arbitrage.
+Aim: This trial aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH.
 
 ### sXAU/USDC liquidity on Uniswap v2 (trial)
 

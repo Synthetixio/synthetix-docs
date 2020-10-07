@@ -17,7 +17,7 @@ const doRounding = (entry, limit) => {
 };
 
 const desc = synth => {
-	const underlying = synth.desc.replace(/^Inverted /, '');
+	const underlying = (synth.description || synth.desc).replace(/^Inverted /, '');
 	const assetSuffix = synth.name !== underlying ? ` (${synth.asset})` : '';
 	if (synth.name === 'sUSD') {
 		return 'Tracks the price of a single US Dollar (USD). This Synth always remains constant at 1.';
@@ -99,8 +99,14 @@ const addIndexParameters = ({ index, inverted, asset, name }) => {
 	}
 	return (
 		header +
-		'| Token | Symbol | Units |\n| - | - | - |\n' +
-		index.map(({ name, symbol, units }) => `| ${name} | ${symbol} | ${format(units)} |\n`).join('') +
+		'| Token | Symbol | Units | Initial Weight |\n| - | - | - |\n' +
+		index
+			.sort((a, b) => (a.weight > b.weight ? -1 : 1))
+			.map(
+				({ description: name, desc, asset, units, weight }) =>
+					`| ${name || desc} | ${asset} | ${format(units)} | ${weight}% |\n`,
+			)
+			.join('') +
 		'\n'
 	);
 };

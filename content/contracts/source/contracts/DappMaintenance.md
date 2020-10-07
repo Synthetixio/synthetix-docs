@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/DappMaintenance.sol](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol)
+**Source:** [contracts/DappMaintenance.sol](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol)
 
 ## Architecture
 
@@ -18,13 +18,13 @@ graph TD
 
 ### `isPausedSX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L14)</sub>
 
 **Type:** `bool`
 
 ### `isPausedStaking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L13)</sub>
 
 **Type:** `bool`
 
@@ -32,7 +32,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -50,7 +50,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Owner address cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L20)
+    * [require(..., Owner address cannot be 0)](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L20)
 
     **Emits**
 
@@ -60,7 +60,7 @@ graph TD
 
 ### `setMaintenanceModeAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@ graph TD
 
 ### `setMaintenanceModeSX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@ graph TD
 
 ### `setMaintenanceModeStaking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -142,12 +142,12 @@ graph TD
 
 ### `SXMaintenance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L43)</sub>
 
 **Signature**: `SXMaintenance(bool isPaused)`
 
 ### `StakingMaintenance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.27.4/contracts/DappMaintenance.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.29.3/contracts/DappMaintenance.sol#L42)</sub>
 
 **Signature**: `StakingMaintenance(bool isPaused)`

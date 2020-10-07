@@ -105,22 +105,22 @@
 
 **Index of**: [sDEFI](#index-sdefi)
 
-| Token     | Symbol    | Units     |
-| --------- | --------- | --------- |
-| undefined | undefined | 4.14000   |
-| undefined | undefined | 0.74000   |
-| undefined | undefined | 668.16000 |
-| undefined | undefined | 9.52000   |
-| undefined | undefined | 581.76000 |
-| undefined | undefined | 28.54000  |
-| undefined | undefined | 82.84000  |
-| undefined | undefined | 822.92000 |
-| undefined | undefined | 948.31000 |
-| undefined | undefined | 224.53000 |
-| undefined | undefined | 61.20000  |
-| undefined | undefined | 7.09000   |
+| Token                   | Symbol | Units     | Initial Weight |
+| ----------------------- | ------ | --------- | -------------- |
+| Synthetix Network Token | SNX    | 110.80000 | 15%            |
+| undefined               | YFI    | 0.02300   | 15%            |
+| undefined               | AAVE   | 8.61000   | 15%            |
+| undefined               | UNI    | 95.87000  | 10%            |
+| Compound                | COMP   | 1.92000   | 7.5%           |
+| Maker                   | MKR    | 0.40000   | 7.5%           |
+| Balancer                | BAL    | 9.34000   | 5%             |
+| UMA                     | UMA    | 20.14000  | 5%             |
+| undefined               | NXM    | 4.59000   | 5%             |
+| undefined               | CRV    | 259.62000 | 5%             |
+| Kyber Network           | KNC    | 157.76000 | 5%             |
+| Ren                     | REN    | 612.52000 | 5%             |
 
-> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 4.14 of undefined, 0.74 of undefined, 668.16 of undefined, 9.52 of undefined, 581.76 of undefined, 28.54 of undefined, 82.84 of undefined, 822.92 of undefined, 948.31 of undefined, 224.53 of undefined, 61.2 of undefined, 7.09 of undefined.
+> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.92 of undefined, 0.4 of undefined, 8.61 of undefined, 20.14 of undefined, 110.8 of undefined, 612.52 of undefined, 95.87 of undefined, 157.76 of undefined, 259.62 of undefined, 4.59 of undefined, 0.023 of undefined, 9.34 of undefined.
 
 ## Ether (sETH)
 

@@ -66,9 +66,11 @@ nav:
                 - DappMaintenance: contracts/source/contracts/DappMaintenance.md
                 - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
                 - Depot: contracts/source/contracts/Depot.md
+                - EmptyEtherCollateral: contracts/source/contracts/EmptyEtherCollateral.md
                 - EscrowChecker: contracts/source/contracts/EscrowChecker.md
                 - EternalStorage: contracts/source/contracts/EternalStorage.md
                 - EtherCollateral: contracts/source/contracts/EtherCollateral.md
+                - EtherCollateralsUSD: contracts/source/contracts/EtherCollateralsUSD.md
                 - ExchangeRates: contracts/source/contracts/ExchangeRates.md
                 - ExchangeState: contracts/source/contracts/ExchangeState.md
                 - Exchanger: contracts/source/contracts/Exchanger.md
@@ -76,6 +78,7 @@ nav:
                 - FeePool: contracts/source/contracts/FeePool.md
                 - FeePoolEternalStorage: contracts/source/contracts/FeePoolEternalStorage.md
                 - FeePoolState: contracts/source/contracts/FeePoolState.md
+                - FixedSupplySchedule: contracts/source/contracts/FixedSupplySchedule.md
                 - FlexibleStorage: contracts/source/contracts/FlexibleStorage.md
                 - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
                 - Issuer: contracts/source/contracts/Issuer.md
@@ -116,6 +119,7 @@ nav:
                 - IDepot: contracts/source/interfaces/IDepot.md
                 - IERC20: contracts/source/interfaces/IERC20.md
                 - IEtherCollateral: contracts/source/interfaces/IEtherCollateral.md
+                - IEtherCollateralsUSD: contracts/source/interfaces/IEtherCollateralsUSD.md
                 - IExchangeRates: contracts/source/interfaces/IExchangeRates.md
                 - IExchangeState: contracts/source/interfaces/IExchangeState.md
                 - IExchanger: contracts/source/interfaces/IExchanger.md
@@ -123,10 +127,12 @@ nav:
                 - IFlexibleStorage: contracts/source/interfaces/IFlexibleStorage.md
                 - IHasBalance: contracts/source/interfaces/IHasBalance.md
                 - IIssuer: contracts/source/interfaces/IIssuer.md
+                - IIssuerInternal: contracts/source/interfaces/IIssuerInternal.md
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
                 - IStakingRewards: contracts/source/interfaces/IStakingRewards.md
+                - ISupplySchedule: contracts/source/interfaces/ISupplySchedule.md
                 - ISynth: contracts/source/interfaces/ISynth.md
                 - ISynthetix: contracts/source/interfaces/ISynthetix.md
                 - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
