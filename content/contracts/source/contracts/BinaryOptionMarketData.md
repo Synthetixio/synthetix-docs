@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/BinaryOptionMarketData.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol)
+**Source:** [contracts/BinaryOptionMarketData.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol)
 
 ## Structs
 
 ### `AccountData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L53)</sub>
 
 | Field       | Type                                         | Description |
 | ----------- | -------------------------------------------- | ----------- |
@@ -18,7 +18,7 @@
 
 ### `Deposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L16)</sub>
 
 | Field                 | Type      | Description |
 | --------------------- | --------- | ----------- |
@@ -27,7 +27,7 @@
 
 ### `MarketData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L41)</sub>
 
 | Field                     | Type                                                    | Description |
 | ------------------------- | ------------------------------------------------------- | ----------- |
@@ -43,7 +43,7 @@
 
 ### `MarketParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L32)</sub>
 
 | Field           | Type                                             | Description |
 | --------------- | ------------------------------------------------ | ----------- |
@@ -56,7 +56,7 @@
 
 ### `OptionValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L11)</sub>
 
 | Field   | Type      | Description |
 | ------- | --------- | ----------- |
@@ -65,7 +65,7 @@
 
 ### `OraclePriceAndTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L26)</sub>
 
 | Field       | Type      | Description |
 | ----------- | --------- | ----------- |
@@ -74,7 +74,7 @@
 
 ### `Resolution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L21)</sub>
 
 | Field        | Type   | Description |
 | ------------ | ------ | ----------- |
@@ -85,7 +85,7 @@
 
 ### `getAccountMarketData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -103,7 +103,7 @@
 
 ### `getMarketData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -121,7 +121,7 @@
 
 ### `getMarketParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/BinaryOptionMarketData.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/BinaryOptionMarketData.sol#L59)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IEtherCollateralsUSD.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol)
+**Source:** [contracts/interfaces/IEtherCollateralsUSD.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol)
 
 ## Views
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `totalLoansCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `totalOpenLoanCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `closeLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `depositCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `liquidateUnclosedLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `openLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `repayLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `withdrawCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.0-beta/contracts/interfaces/IEtherCollateralsUSD.sol#L21)</sub>
 
 ??? example "Details"
 
