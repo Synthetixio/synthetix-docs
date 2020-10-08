@@ -103,8 +103,8 @@ const addIndexParameters = ({ index, inverted, asset, name }) => {
 		index
 			.sort((a, b) => (a.weight > b.weight ? -1 : 1))
 			.map(
-				({ description: name, desc, asset, units, weight }) =>
-					`| ${name || desc} | ${asset} | ${format(units)} | ${weight}% |\n`,
+				({ description: name, asset, units, weight }) =>
+					`| ${name || asset} | ${asset} | ${format(units)} | ${weight}% |\n`,
 			)
 			.join('') +
 		'\n'
