@@ -2,6 +2,21 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Deneb (v2.30.0)
+
+**Published**: Oct 8, 2020
+
+**Codebase**: [v2.30.0](https://github.com/Synthetixio/synthetix/tree/v2.30.0)
+
+> https://blog.synthetix.io/the-deneb-release
+
+- [SIP-83](https://sips.synthetix.io/sips/sip-83): Total Issued Synths (Debt pool) Snapshots
+- [SIP-88](https://sips.synthetix.io/sips/sip-88): ExchangeRates patch - Chainlink aggregator V2V3
+- [SCCP-51](https://sips.synthetix.io/sccp/sccp-51): Update sDEFI index
+- Resume synths paused previously by [SIP-84](https://sips.synthetix.io/sips/sip-84)
+
+---
+
 # Fomalhaut (v2.28.4)
 
 **Published**: Sep 24, 2020
@@ -301,15 +316,5 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 **Codebase**: [v2.0.0](https://github.com/Synthetixio/synthetix/tree/v2.0.0)
 
 > The Synthetix Platform enables the creation of on-chain synthetic assets (Synths) that track the value of assets in the real world. Some examples of assets that the platform supports now or will support in the future are synthetic fiat currencies (sUSD, sAUD, sKRW etc), synthetic commodities such as gold (sXAU), as well as more complex assets such as equity indices.
-
----
-
-# nUSD System A - Maintenance Patch 1 (v1.0.1)
-
-**Published**: Aug 7, 2018
-
-**Codebase**: [v1.0.1](https://github.com/Synthetixio/synthetix/tree/v1.0.1)
-
-> Adds some convenience functions and minor optimisations and fixes.
 
 ---
