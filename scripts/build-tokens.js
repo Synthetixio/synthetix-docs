@@ -101,7 +101,10 @@ const addIndexParameters = ({ index, inverted, asset, name }) => {
 		header +
 		'| Token | Symbol | Units | Initial Weight |\n| - | - | - |\n' +
 		index
-			.sort((a, b) => (a.weight > b.weight ? -1 : 1))
+			.sort((a, b) => {
+				if (a.weight === b.weight) return a.asset > b.asset ? 1 : -1;
+				return a.weight > b.weight ? -1 : 1;
+			})
 			.map(
 				({ description: name, asset, units, weight }) =>
 					`| ${name || asset} | ${asset} | ${format(units)} | ${weight}% |\n`,
