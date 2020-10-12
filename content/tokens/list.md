@@ -149,18 +149,18 @@
 
 | Token                   | Symbol | Units     | Initial Weight |
 | ----------------------- | ------ | --------- | -------------- |
-| AAVE                    | AAVE   | 8.41000   | 15%            |
 | Synthetix Network Token | SNX    | 109.93000 | 15%            |
-| YFI                     | YFI    | 0.02300   | 15%            |
-| UNI                     | UNI    | 92.09000  | 10%            |
+| yearn.finance           | YFI    | 0.02300   | 15%            |
+| Aave                    | AAVE   | 8.41000   | 15%            |
+| Uniswap                 | UNI    | 92.09000  | 10%            |
 | Compound                | COMP   | 1.88000   | 7.5%           |
 | Maker                   | MKR    | 0.39000   | 7.5%           |
-| UMA                     | UMA    | 19.47000  | 5%             |
-| Ren                     | REN    | 598.03000 | 5%             |
-| Kyber Network           | KNC    | 159.13000 | 5%             |
-| CRV                     | CRV    | 253.80000 | 5%             |
-| WNXM                    | WNXM   | 4.53000   | 5%             |
 | Balancer                | BAL    | 9.05000   | 5%             |
+| UMA                     | UMA    | 19.47000  | 5%             |
+| Wrapped Nexus Mutual    | WNXM   | 4.53000   | 5%             |
+| Curve DAO Token         | CRV    | 253.80000 | 5%             |
+| Kyber Network           | KNC    | 159.13000 | 5%             |
+| Ren                     | REN    | 598.03000 | 5%             |
 
 > Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.88 of undefined, 0.39 of undefined, 8.41 of undefined, 19.47 of undefined, 109.93 of undefined, 598.03 of undefined, 92.09 of undefined, 159.13 of undefined, 253.8 of undefined, 4.53 of undefined, 0.023 of undefined, 9.05 of undefined.
 
@@ -353,13 +353,13 @@
 
 **Inverse of**: [sCEX](#centralised-exchange-index-scex)
 
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$563.20000 | \$844.80000 | \$281.60000 |
+| Entry Point | Upper Limit   | Lower Limit |
+| ----------- | ------------- | ----------- |
+| \$988.56000 | \$1,482.84000 | \$494.28000 |
 
 **Index of**: [sCEX](#centralised-exchange-index-scex)
 
-> Inversely tracks the price of Inverse Centralised Exchange Index (CEX) through price feeds supplied by an oracle. The entry point is \$563.2 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$844.8 (i.e. when Inverse Centralised Exchange Index's value reaches \$281.6) or its lower limit of \$281.6 (i.e. when Inverse Centralised Exchange Index’s value reaches \$844.8). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iCEX with different limits.
+> Inversely tracks the price of Inverse Centralised Exchange Index (CEX) through price feeds supplied by an oracle. The entry point is \$988.56 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$1482.84 (i.e. when Inverse Centralised Exchange Index's value reaches \$494.28) or its lower limit of \$494.28 (i.e. when Inverse Centralised Exchange Index’s value reaches \$1482.84). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iCEX with different limits.
 
 ## Inverse Chainlink (iLINK)
 
@@ -527,9 +527,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$47.24000  | \$70.86000  | \$23.62000  |
+| \$132.26000 | \$198.40000 | \$66.13000  |
 
-> Inversely tracks the price of Inverse Monero (XMR) through price feeds supplied by an oracle. The entry point is \$47.24 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$70.86 (i.e. when Inverse Monero's value reaches \$23.62) or its lower limit of \$23.62 (i.e. when Inverse Monero’s value reaches \$70.86). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXMR with different limits.
+> Inversely tracks the price of Inverse Monero (XMR) through price feeds supplied by an oracle. The entry point is \$132.26 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$198.4 (i.e. when Inverse Monero's value reaches \$66.1) or its lower limit of \$66.13 (i.e. when Inverse Monero’s value reaches \$198.39). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXMR with different limits.
 
 ## Inverse Ripple (iXRP)
 
@@ -569,9 +569,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$0.01590   | \$0.02385   | \$0.00795   |
+| \$0.02670   | \$0.04000   | \$0.01330   |
 
-> Inversely tracks the price of Inverse TRON (TRX) through price feeds supplied by an oracle. The entry point is \$0.0159 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.02385 (i.e. when Inverse TRON's value reaches \$0.00795) or its lower limit of \$0.00795 (i.e. when Inverse TRON’s value reaches \$0.02385). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iTRX with different limits.
+> Inversely tracks the price of Inverse TRON (TRX) through price feeds supplied by an oracle. The entry point is \$0.0267 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.04 (i.e. when Inverse TRON's value reaches \$0.01) or its lower limit of \$0.0133 (i.e. when Inverse TRON’s value reaches \$0.0401). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iTRX with different limits.
 
 ## Inverse Tezos (iXTZ)
 
