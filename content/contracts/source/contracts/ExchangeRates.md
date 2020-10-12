@@ -499,6 +499,8 @@ The rate for a given currency is stale if its last update occurred more than [`r
 The duration after which a rate will be considered out of date. Synth exchange and other price-sensitive transactions in the [`Synthetix`](Synthetix.md) contract will not operate if a relevant rate is stale.
 Initialised to $3$ hours.
 
+**Type:** `uint256`
+
 ??? example "Details"
 
     **Signature**

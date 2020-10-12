@@ -202,6 +202,8 @@ This number must be `0` in order for [`settle()`](#settle) to succeed.
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/Exchanger.sol#L158)</sub>
 
+**Type:** `uint256`
+
 ??? example "Details"
 
     **Signature**
@@ -257,6 +259,8 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 ### `waitingPeriodSecs`
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/Exchanger.sol#L150)</sub>
+
+**Type:** `uint256`
 
 ??? example "Details"
 
