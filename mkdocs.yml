@@ -82,8 +82,10 @@ nav:
                 - FlexibleStorage: contracts/source/contracts/FlexibleStorage.md
                 - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
                 - Issuer: contracts/source/contracts/Issuer.md
+                - IssuerWithoutUpdatableCache: contracts/source/contracts/IssuerWithoutUpdatableCache.md
                 - LimitedSetup: contracts/source/contracts/LimitedSetup.md
                 - Liquidations: contracts/source/contracts/Liquidations.md
+                - MintableSynthetix: contracts/source/contracts/MintableSynthetix.md
                 - MixinResolver: contracts/source/contracts/MixinResolver.md
                 - MixinSystemSettings: contracts/source/contracts/MixinSystemSettings.md
                 - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
@@ -97,6 +99,7 @@ nav:
                 - RewardEscrow: contracts/source/contracts/RewardEscrow.md
                 - RewardsDistribution: contracts/source/contracts/RewardsDistribution.md
                 - RewardsDistributionRecipient: contracts/source/contracts/RewardsDistributionRecipient.md
+                - SecondaryDeposit: contracts/source/contracts/SecondaryDeposit.md
                 - SelfDestructible: contracts/source/contracts/SelfDestructible.md
                 - StakingRewards: contracts/source/contracts/StakingRewards.md
                 - State: contracts/source/contracts/State.md
@@ -131,6 +134,7 @@ nav:
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
+                - ISecondaryDeposit: contracts/source/interfaces/ISecondaryDeposit.md
                 - IStakingRewards: contracts/source/interfaces/IStakingRewards.md
                 - ISupplySchedule: contracts/source/interfaces/ISupplySchedule.md
                 - ISynth: contracts/source/interfaces/ISynth.md

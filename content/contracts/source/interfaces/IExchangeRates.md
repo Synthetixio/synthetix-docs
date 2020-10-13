@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol)
+**Source:** [contracts/interfaces/IExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol)
 
 ## Structs
 
 ### `InversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L12)</sub>
 
 | Field                | Type      | Description |
 | -------------------- | --------- | ----------- |
@@ -20,7 +20,7 @@
 
 ### `RateAndUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L7)</sub>
 
 | Field  | Type      | Description |
 | ------ | --------- | ----------- |
@@ -31,7 +31,7 @@
 
 ### `aggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -49,7 +49,7 @@
 
 ### `aggregators`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -67,7 +67,7 @@
 
 ### `anyRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -85,7 +85,7 @@
 
 ### `canFreezeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -103,7 +103,7 @@
 
 ### `currenciesUsingAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -121,7 +121,7 @@
 
 ### `currentRoundForRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -139,7 +139,7 @@
 
 ### `effectiveValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -157,7 +157,7 @@
 
 ### `effectiveValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -175,7 +175,7 @@
 
 ### `effectiveValueAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -193,7 +193,7 @@
 
 ### `getCurrentRoundId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -211,7 +211,7 @@
 
 ### `getLastRoundIdBeforeElapsedSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -229,7 +229,7 @@
 
 ### `inversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -247,7 +247,7 @@
 
 ### `lastRateUpdateTimes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -265,7 +265,7 @@
 
 ### `oracle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -283,7 +283,7 @@
 
 ### `rateAndInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -301,7 +301,7 @@
 
 ### `rateAndTimestampAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -319,7 +319,7 @@
 
 ### `rateAndUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -337,7 +337,7 @@
 
 ### `rateForCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -355,7 +355,7 @@
 
 ### `rateIsFlagged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -373,7 +373,7 @@
 
 ### `rateIsFrozen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -391,7 +391,7 @@
 
 ### `rateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -409,7 +409,7 @@
 
 ### `rateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -427,7 +427,7 @@
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -445,7 +445,7 @@
 
 ### `ratesAndInvalidForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -463,7 +463,7 @@
 
 ### `ratesAndUpdatedTimeForCurrencyLastNRounds`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -481,7 +481,7 @@
 
 ### `ratesForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -501,7 +501,7 @@
 
 ### `freezeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IExchangeRates.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IExchangeRates.sol#L115)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Exchanger.sol)
 
 ## External Functions
 
 ### `updateSNXIssuedDebtOnExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/Exchanger.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Exchanger.sol#L56)</sub>
 
 ??? example "Details"
 

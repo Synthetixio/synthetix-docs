@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IHasBalance.sol)
+**Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IHasBalance.sol)
 
 ## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IHasBalance.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IHasBalance.sol#L6)</sub>
 
 ??? example "Details"
 

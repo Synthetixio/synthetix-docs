@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IEtherCollateral.sol)
+**Source:** [contracts/interfaces/IEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IEtherCollateral.sol)
 
 ## Views
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IEtherCollateral.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IEtherCollateral.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `totalLoansCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IEtherCollateral.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IEtherCollateral.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `totalOpenLoanCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IEtherCollateral.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IEtherCollateral.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `closeLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IEtherCollateral.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IEtherCollateral.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `liquidateUnclosedLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IEtherCollateral.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IEtherCollateral.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `openLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.1/contracts/interfaces/IEtherCollateral.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IEtherCollateral.sol#L13)</sub>
 
 ??? example "Details"
 
