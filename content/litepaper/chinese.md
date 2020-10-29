@@ -34,7 +34,7 @@ SNX 抵押人创建 Synths 时会产生“债务”。根据网络中 Synths 的
 
 下面是 Delphi Digital 展示债务是如何在 Synthetix 系统中运作的：
 
-![Image of debt example](https://www.synthetix.io/uploads/delphi_digital_debt_example.png)
+![Image of debt example](../img/misc/delphi_digital_debt_example.png)
 
 Step 1: Medio 和 Yan 的初始投资金额均为 5 万美元，网络的总债务加起来等于 10 万美元。其中 Medio 和 Yan 分别承担了其中的 50%。
 Step 2: Medio 用他的 5 万美元购买了 sBTC，而 Yan 则继续持有 sUSD。

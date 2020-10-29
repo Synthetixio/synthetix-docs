@@ -26,7 +26,7 @@ SNX 토큰 홀더는 여러가지 이유로 보유하고 있는 토큰을 스테
 SNX의 스테이킹 참여자가 Synth를 발행할 때 채무가 발행됩니다. 해당 채무는 발행 당시의 가치와 관계없이 네트워크 내의 Synth 공급량과 환율에 따라 상승하거나 하락할 수 있습니다. 예를 들어, 시스템 상에 발행된 모든 Synth가 신세틱 비트코인 (sBTC)이라 가정하고 비트코인 가격이 50% 하락할 경우, 시스템 상의 전체 채무 역시 반으로 줄며, 각 스테이킹 참여자의 채무 역시 반으로 감소하게 됩니다. 그러나 전체 Synth의 50%만이 sBTC의 경우, BTC 가격이 두배 올랐을 때, 시스템 상의 전체 채무와 각 스테이킹 참여자의 채무는 25%밖에 상승하지 않습니다.
 이러한 방식으로 인해 SNX 스테이킹 참여자는 모든 Synth 거래에 있어 통합된 (Pooled) 거래상대방으로 참여하게 됩니다; 스테이킹 참여자는 시스템 상에서 발행된 총 채무에 대한 위험만 감수하게 됩니다. 이는 참여자로 하여금 시스템 외부에서 특정 포지션을 취해 리스크를 헷징 할 수 있습니다. Synthetix.Exchange에서 거래를 발생시킬 수 있는 환경을 조성함에 따라 스테이킹 참여자는 시스템 상에서 발생하는 거래 수수료를 보상으로 받을 수 있습니다.
 
-![Image of debt example](https://www.synthetix.io/uploads/delphi_digital_debt_example.png)
+![Image of debt example](../img/misc/delphi_digital_debt_example.png)
 _Synthetix Network 상에서 채무 작용방식에 대한 예시_
 
 ## Synth 페깅 메커니즘
