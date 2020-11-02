@@ -46,10 +46,16 @@ workflows:
   version: 2
   verify:
     jobs:
-      - prepare
+      - prepare:
+          context:
+            - Docker Auth
       - lint:
           requires:
             - prepare
+          context:
+            - Docker Auth
       - build:
           requires:
             - prepare
+          context:
+            - Docker Auth
