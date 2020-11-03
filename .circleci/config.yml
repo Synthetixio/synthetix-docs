@@ -1,6 +1,9 @@
 env_defaults:
   docker: &ref_0
     - image: circleci/node:10.16
+      auth:
+        username: $DOCKERHUB_USERNAME
+        password: $DOCKERHUB_TOKEN
 
 version: 2.1
 jobs:
@@ -43,10 +46,16 @@ workflows:
   version: 2
   verify:
     jobs:
-      - prepare
+      - prepare:
+          context:
+            - Docker Auth
       - lint:
           requires:
             - prepare
+          context:
+            - Docker Auth
       - build:
           requires:
             - prepare
+          context:
+            - Docker Auth
