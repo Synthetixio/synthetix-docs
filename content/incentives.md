@@ -30,9 +30,9 @@ Source: [`Curvepool` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blo
 
 Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with stablecoins.
 
-### iETH holders (trial)
+### iETH holders
 
-Amount: `32,000 SNX` per week
+Amount: `16,000 SNX` per week
 
 Duration: Apr 24, 2020 - ongoing
 
@@ -40,11 +40,25 @@ Pool: None (`iETH` is staked directly)
 
 Staking Contract: [`StakingRewardsiETH`](https://contracts.synthetix.io/StakingRewardsiETH)
 
-Source: [`iETHRewards` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
+Source: [`iETHRewards`](https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewards.sol)
 
 > Note: the source file above was [modified on L13](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol#L13) before deployment to use the [iETH proxy address](https://contracts.synthetix.io/ProxyiETH)
 
-Aim: This trial aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH.
+Aim: This incentive aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH.
+
+### iBTC holders (trial)
+
+Amount: `16,000 SNX` per week
+
+Duration: Oct 27, 2020 - Nov 24, 2020
+
+Pool: None (`iBTC` is staked directly)
+
+Staking Contract: [`StakingRewardsiBTC`](https://contracts.synthetix.io/StakingRewardsiBTC)
+
+Source: [`iBTCRewards`](https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewards.sol)
+
+Aim: This trial aims to help reduce the impact of iBTC holdings on the SNX stakers' debt pool by incentivising people to hold iBTC.
 
 ## Deprecated incentives
 
@@ -143,6 +157,21 @@ Traders on Synthetix.Exchange can take advantage of the system enabled by SNX st
 ### Arbitrageurs
 
 The primary opportunity for arbitrage in Synthetix is taking advantage of underpriced assets on the secondary market. If sETH or sUSD are ever trading below the price of ETH or USD respectively, then stakers can profit by purchasing them cheaply and using them within the Synthetix system, where their values do not take the market rate into consideration.
+
+## Bug Bounty
+
+Synthetix offers bug bounties for its [smart contracts](https://docs.synthetix.io/addresses/) (not minor issues relating to UI/UX or website domains).
+
+There are four tiers of bug bounties offered, each to be paid in sUSD.
+
+The reward brackets are as following:
+
+Informational: $100 sUSD
+Low severity: $500 sUSD
+Moderate severity: $1000 sUSD
+High severity: $5000 sUSD
+
+To report a bug, please practice responsible disclosure via email at [bugs@synthetix.io](mailto:bugs@synthetix.io).
 
 ## Additional Crypto-economic Discussions
 
