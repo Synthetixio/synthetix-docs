@@ -30,7 +30,7 @@ Source: [`Curvepool` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blo
 
 Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with stablecoins.
 
-### iETH holders 
+### iETH holders
 
 Amount: `16,000 SNX` per week
 
@@ -54,7 +54,7 @@ Duration: Oct 27, 2020 - Nov 24, 2020
 
 Pool: None (`iBTC` is staked directly)
 
-Staking Contract: [`StakingRewardsiBTC`] (https://contracts.synthetix.io/StakingRewardsiBTC)
+Staking Contract: [`StakingRewardsiBTC`](https://contracts.synthetix.io/StakingRewardsiBTC)
 
 Source: [`iBTCRewards`](https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewards.sol)
 
@@ -160,9 +160,9 @@ The primary opportunity for arbitrage in Synthetix is taking advantage of underp
 
 ## Bug Bounty
 
-Synthetix offers bug bounties for its [smart contracts](https://docs.synthetix.io/addresses/) (not minor issues relating to UI/UX or website domains). 
+Synthetix offers bug bounties for its [smart contracts](https://docs.synthetix.io/addresses/) (not minor issues relating to UI/UX or website domains).
 
-There are four tiers of bug bounties offered, each to be paid in sUSD. 
+There are four tiers of bug bounties offered, each to be paid in sUSD.
 
 The reward brackets are as following:
 
@@ -171,7 +171,7 @@ Low severity: $500 sUSD
 Moderate severity: $1000 sUSD
 High severity: $5000 sUSD
 
-To report a bug, please practice responsible disclosure via email at [bugs@synthetix.io](mailto:bugs@synthetix.io). 
+To report a bug, please practice responsible disclosure via email at [bugs@synthetix.io](mailto:bugs@synthetix.io).
 
 ## Additional Crypto-economic Discussions
 
