@@ -64,6 +64,7 @@ nav:
                 - BinaryOptionMarketManager: contracts/source/contracts/BinaryOptionMarketManager.md
                 - ContractStorage: contracts/source/contracts/ContractStorage.md
                 - DappMaintenance: contracts/source/contracts/DappMaintenance.md
+                - DebtCache: contracts/source/contracts/DebtCache.md
                 - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
                 - Depot: contracts/source/contracts/Depot.md
                 - EmptyEtherCollateral: contracts/source/contracts/EmptyEtherCollateral.md
@@ -74,6 +75,7 @@ nav:
                 - ExchangeRates: contracts/source/contracts/ExchangeRates.md
                 - ExchangeState: contracts/source/contracts/ExchangeState.md
                 - Exchanger: contracts/source/contracts/Exchanger.md
+                - ExchangerWithVirtualSynth: contracts/source/contracts/ExchangerWithVirtualSynth.md
                 - ExternStateToken: contracts/source/contracts/ExternStateToken.md
                 - FeePool: contracts/source/contracts/FeePool.md
                 - FeePoolEternalStorage: contracts/source/contracts/FeePoolEternalStorage.md
@@ -96,6 +98,7 @@ nav:
                 - Proxyable: contracts/source/contracts/Proxyable.md
                 - PurgeableSynth: contracts/source/contracts/PurgeableSynth.md
                 - ReadProxy: contracts/source/contracts/ReadProxy.md
+                - RealtimeDebtCache: contracts/source/contracts/RealtimeDebtCache.md
                 - RewardEscrow: contracts/source/contracts/RewardEscrow.md
                 - RewardsDistribution: contracts/source/contracts/RewardsDistribution.md
                 - RewardsDistributionRecipient: contracts/source/contracts/RewardsDistributionRecipient.md
@@ -107,17 +110,21 @@ nav:
                 - Synth: contracts/source/contracts/Synth.md
                 - SynthUtil: contracts/source/contracts/SynthUtil.md
                 - Synthetix: contracts/source/contracts/Synthetix.md
+                - SynthetixBridgeToBase: contracts/source/contracts/SynthetixBridgeToBase.md
+                - SynthetixBridgeToOptimism: contracts/source/contracts/SynthetixBridgeToOptimism.md
                 - SynthetixEscrow: contracts/source/contracts/SynthetixEscrow.md
                 - SynthetixState: contracts/source/contracts/SynthetixState.md
                 - SystemSettings: contracts/source/contracts/SystemSettings.md
                 - SystemStatus: contracts/source/contracts/SystemStatus.md
                 - TokenState: contracts/source/contracts/TokenState.md
                 - TradingRewards: contracts/source/contracts/TradingRewards.md
+                - VirtualSynth: contracts/source/contracts/VirtualSynth.md
               Interfaces:
                 - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
                 - IBinaryOption: contracts/source/interfaces/IBinaryOption.md
                 - IBinaryOptionMarket: contracts/source/interfaces/IBinaryOptionMarket.md
                 - IBinaryOptionMarketManager: contracts/source/interfaces/IBinaryOptionMarketManager.md
+                - IDebtCache: contracts/source/interfaces/IDebtCache.md
                 - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
                 - IDepot: contracts/source/interfaces/IDepot.md
                 - IERC20: contracts/source/interfaces/IERC20.md
@@ -126,11 +133,13 @@ nav:
                 - IExchangeRates: contracts/source/interfaces/IExchangeRates.md
                 - IExchangeState: contracts/source/interfaces/IExchangeState.md
                 - IExchanger: contracts/source/interfaces/IExchanger.md
+                - IExchangerInternalDebtCache: contracts/source/interfaces/IExchangerInternalDebtCache.md
                 - IFeePool: contracts/source/interfaces/IFeePool.md
                 - IFlexibleStorage: contracts/source/interfaces/IFlexibleStorage.md
                 - IHasBalance: contracts/source/interfaces/IHasBalance.md
                 - IIssuer: contracts/source/interfaces/IIssuer.md
                 - IIssuerInternal: contracts/source/interfaces/IIssuerInternal.md
+                - IIssuerInternalDebtCache: contracts/source/interfaces/IIssuerInternalDebtCache.md
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
@@ -139,12 +148,15 @@ nav:
                 - ISupplySchedule: contracts/source/interfaces/ISupplySchedule.md
                 - ISynth: contracts/source/interfaces/ISynth.md
                 - ISynthetix: contracts/source/interfaces/ISynthetix.md
+                - ISynthetixBridgeToBase: contracts/source/interfaces/ISynthetixBridgeToBase.md
+                - ISynthetixBridgeToOptimism: contracts/source/interfaces/ISynthetixBridgeToOptimism.md
                 - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
                 - ISynthetixInternal: contracts/source/interfaces/ISynthetixInternal.md
                 - ISynthetixState: contracts/source/interfaces/ISynthetixState.md
                 - ISystemSettings: contracts/source/interfaces/ISystemSettings.md
                 - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
                 - ITradingRewards: contracts/source/interfaces/ITradingRewards.md
+                - IVirtualSynth: contracts/source/interfaces/IVirtualSynth.md
               Libraries:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md
                 - Math: contracts/source/libraries/Math.md

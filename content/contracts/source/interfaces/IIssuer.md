@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol)
+**Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol)
 
 ## Views
 
 ### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -78,45 +78,9 @@
 
     `view`
 
-### `cachedSNXIssuedDebtForCurrencies`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L59)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cachedSNXIssuedDebtForCurrencies(bytes32[] currencyKeys) returns (uint256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `cachedSNXIssuedDebtInfo`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L66)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cachedSNXIssuedDebtInfo() returns (uint256, uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `canBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -134,7 +98,7 @@
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -152,7 +116,7 @@
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -170,7 +134,7 @@
 
 ### `collateralisationRatioAndAnyRatesInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -186,45 +150,9 @@
 
     `view`
 
-### `currentSNXIssuedDebt`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L64)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `currentSNXIssuedDebt() returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `currentSNXIssuedDebtForCurrencies`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L54)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `currentSNXIssuedDebtForCurrencies(bytes32[] currencyKeys) returns (uint256[], bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -240,33 +168,15 @@
 
     `view`
 
-### `debtCacheIsStale`
+### `getSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L75)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `debtCacheIsStale() returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `debtSnapshotStaleTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L49)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `debtSnapshotStaleTime() returns (uint256)`
+    `getSynths(bytes32[] currencyKeys) returns (contract ISynth[])`
 
     **Visibility**
 
@@ -278,7 +188,7 @@
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -296,7 +206,7 @@
 
 ### `lastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -314,7 +224,7 @@
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -332,7 +242,7 @@
 
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -350,7 +260,7 @@
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -368,7 +278,7 @@
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -386,7 +296,7 @@
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -404,7 +314,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -422,7 +332,7 @@
 
 ### `transferableSynthetixAndAnyRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -442,7 +352,7 @@
 
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -460,7 +370,7 @@
 
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -478,7 +388,7 @@
 
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -496,7 +406,7 @@
 
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -512,27 +422,9 @@
 
     `nonpayable`
 
-### `cacheSNXIssuedDebt`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L113)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cacheSNXIssuedDebt()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `nonpayable`
-
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -550,7 +442,7 @@
 
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -568,7 +460,7 @@
 
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -586,7 +478,7 @@
 
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -604,31 +496,13 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/interfaces/IIssuer.sol#L85)</sub>
 
 ??? example "Details"
 
     **Signature**
 
     `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator) returns (uint256, uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `nonpayable`
-
-### `updateSNXIssuedDebtForCurrencies`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/interfaces/IIssuer.sol#L115)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `updateSNXIssuedDebtForCurrencies(bytes32[] currencyKeys)`
 
     **Visibility**
 

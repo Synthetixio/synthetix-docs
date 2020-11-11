@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/MintableSynthetix.sol)
+**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol)
 
 ## Architecture
 
@@ -13,9 +13,7 @@ graph TD
     MintableSynthetix[MintableSynthetix] --> Synthetix[Synthetix]
     Synthetix[Synthetix] --> ExternStateToken[ExternStateToken]
     Synthetix[Synthetix] --> MixinResolver[MixinResolver]
-    ExternStateToken[ExternStateToken] --> SelfDestructible[SelfDestructible]
     ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
-    SelfDestructible[SelfDestructible] --> Owned[Owned]
     Proxyable[Proxyable] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
 
@@ -25,7 +23,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/MintableSynthetix.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -41,31 +39,11 @@ graph TD
 
     `nonpayable`
 
-## Internal Functions
-
-### `secondaryDeposit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/MintableSynthetix.sol#L22)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `secondaryDeposit() returns (address)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-## External Functions
+## Restricted Functions
 
 ### `burnSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/MintableSynthetix.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -81,13 +59,13 @@ graph TD
 
     `nonpayable`
 
-    **Requires**
+    **Modifiers**
 
-    * [require(..., Can only be invoked by the SecondaryDeposit contract)](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/MintableSynthetix.sol#L37)
+    * [onlyBridge](#onlybridge)
 
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/MintableSynthetix.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -103,6 +81,94 @@ graph TD
 
     `nonpayable`
 
+    **Modifiers**
+
+    * [onlyBridge](#onlybridge)
+
+### `mintSecondaryRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L52)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mintSecondaryRewards(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [onlyBridge](#onlybridge)
+
+## Internal Functions
+
+### `_mintSecondary`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L23)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_mintSecondary(address account, uint256 amount)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `onlyAllowFromBridge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L29)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `onlyAllowFromBridge()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
     **Requires**
 
-    * [require(..., Can only be invoked by the SecondaryDeposit contract)](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/MintableSynthetix.sol#L29)
+    * [require(..., Can only be invoked by the SynthetixBridgeToBase contract)](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L30)
+
+### `synthetixBridge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L42)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthetixBridge() returns (address)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+## Modifiers
+
+### `onlyBridge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/MintableSynthetix.sol#L35)</sub>

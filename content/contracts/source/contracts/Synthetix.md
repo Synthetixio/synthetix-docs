@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol)
+**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol)
 
 ## Architecture
 
@@ -12,9 +12,7 @@
 graph TD
     Synthetix[Synthetix] --> ExternStateToken[ExternStateToken]
     Synthetix[Synthetix] --> MixinResolver[MixinResolver]
-    ExternStateToken[ExternStateToken] --> SelfDestructible[SelfDestructible]
     ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
-    SelfDestructible[SelfDestructible] --> Owned[Owned]
     Proxyable[Proxyable] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
 
@@ -45,7 +43,7 @@ graph TD
 
 ### `DECIMALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L28)</sub>
 
 A constant used to initialise the ERC20 [`ExternStateToken.decimals`](ExternStateToken.md#decimals) field upon construction.
 
@@ -55,7 +53,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.decimals`](ExternStat
 
 ### `TOKEN_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L26)</sub>
 
 A constant used to initialise the ERC20 [`ExternStateToken.name`](ExternStateToken.md#name) field upon construction.
 
@@ -65,7 +63,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.name`](ExternStateTok
 
 ### `TOKEN_SYMBOL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L27)</sub>
 
 A constant used to initialise the ERC20 [`ExternStateToken.symbol`](ExternStateToken.md#symbol) field upon construction.
 
@@ -75,7 +73,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.symbol`](ExternStateT
 
 ### `sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L29)</sub>
 
 **Type:** `bytes32`
 
@@ -83,7 +81,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.symbol`](ExternStateT
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -103,7 +101,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.symbol`](ExternStateT
 
 ### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -121,7 +119,7 @@ A constant used to initialise the ERC20 [`ExternStateToken.symbol`](ExternStateT
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L102)</sub>
 
 Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSynths`](#availablesynths).
 
@@ -141,7 +139,7 @@ Returns the [currency key](Synth.md#currencykey) for each synth in [`availableSy
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L106)</sub>
 
 Returns the number of synths in the system, that is [`availableSynths.length`](#availablesynths).
 
@@ -161,7 +159,7 @@ Returns the number of synths in the system, that is [`availableSynths.length`](#
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L110)</sub>
 
 List of the active [`Synths`](Synth.md). Used to compute the total value of issued synths.
 
@@ -183,7 +181,7 @@ List of the active [`Synths`](Synth.md). Used to compute the total value of issu
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L316)</sub>
 
 Returns the total SNX owned by the given account, locked and unlocked, escrowed and unescrowed. This is the quantity of SNX synths can be issued against.
 
@@ -205,7 +203,7 @@ This is computed as the sum of [`Synthetix.balanceOf(account)`](TokenState.md#ba
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L291)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L312)</sub>
 
 The ratio between value of synths that an account has issued and the value of the collateral they control. That is, this is just [`debtBalanceOf(issuer, "SNX") /`](#debtbalanceof) [`collateral(issuer)`](#collateral).
 
@@ -227,7 +225,7 @@ Ideally, issuers should maintain their collateralisation ratio at a level less t
 
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L90)</sub>
 
 Reports the quantity of a given currency required to free up all SNX locked in given account.
 
@@ -261,7 +259,7 @@ Where $\omega$ is the account's debt ownership fraction at the time it [last iss
 
 ### `isWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L122)</sub>
 
 Whether or not the waiting period is ongoing for the given synth. If so, no exchanges into this synth will be allowed, nor will that synth be able to be transferred.
 
@@ -281,7 +279,7 @@ Whether or not the waiting period is ongoing for the given synth. If so, no exch
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L130)</sub>
 
 The maximum number of a given synth that is issuable against the issuer's collateral. This is simply [`issuanceRatio *`](SynthetixState.md#issuanceratio) [`collateral(issuer)`](#collateral), priced in the requested currency.
 
@@ -301,7 +299,7 @@ The maximum number of a given synth that is issuable against the issuer's collat
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L134)</sub>
 
 The remaining sUSD synths this account can issue.
 
@@ -325,7 +323,7 @@ If prices fluctuate then the account's issued synth debt may exceed its current 
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L114)</sub>
 
 A mapping from currency keys (`bytes32`) to [`Synth`](Synth.md) token contract addresses.
 
@@ -347,7 +345,7 @@ A mapping from currency keys (`bytes32`) to [`Synth`](Synth.md) token contract a
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L118)</sub>
 
 A reverse mapping from a synth's address to its `bytes32` currency key
 
@@ -369,7 +367,7 @@ A reverse mapping from a synth's address to its `bytes32` currency key
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L94)</sub>
 
 Returns the total value of Synths in the system, priced in terms of a given currency.
 
@@ -397,7 +395,7 @@ Where $\sigma_s$ and $\pi_s$ are the total supply and price of synth $s$, and $\
 
 ### `totalIssuedSynthsExcludeEtherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -415,7 +413,7 @@ Where $\sigma_s$ and $\pi_s$ are the total supply and price of synth $s$, and $\
 
 ### `transferableSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L299)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L320)</sub>
 
 The quantity of SNX this account can transfer given that a portion of it may be locked due to issuance.
 
@@ -469,7 +467,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `emitExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L446)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L471)</sub>
 
 ??? example "Details"
 
@@ -491,7 +489,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `emitExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L435)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L460)</sub>
 
 ??? example "Details"
 
@@ -513,7 +511,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `emitExchangeTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L424)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L449)</sub>
 
 ??? example "Details"
 
@@ -535,7 +533,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `emitSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L403)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L428)</sub>
 
 ??? example "Details"
 
@@ -559,7 +557,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `_canTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L146)</sub>
 
 ??? example "Details"
 
@@ -577,7 +575,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `emitAccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L457)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L482)</sub>
 
 ??? example "Details"
 
@@ -595,7 +593,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -613,7 +611,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -631,7 +629,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -649,7 +647,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `supplySchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -667,7 +665,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `synthetixState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -685,7 +683,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -705,7 +703,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `burnSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L363)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L388)</sub>
 
 ??? example "Details"
 
@@ -723,7 +721,7 @@ If $\text{balance}$ is [`balanceOf(account)`](TokenState.md#balanceof), and $\te
 
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L200)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L201)</sub>
 
 [Burns](Synth.md#burn) a quantity of `sUSD` in the calling address, in order to free up its locked SNX supply.
 
@@ -755,7 +753,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L204)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L205)</sub>
 
 ??? example "Details"
 
@@ -779,7 +777,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L209)</sub>
 
 [Burns](Synth.md#burn) enough sUSD to get the user's [collaterisation ratio](#collateralisationratio) back to the target [issuance ratio](SynthetixState.md#issuanceratio).
 
@@ -805,7 +803,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L212)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L213)</sub>
 
 ??? example "Details"
 
@@ -829,7 +827,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L216)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L217)</sub>
 
 Exchanges one synth flavour for an equivalent value of another at current [exchange rates](ExchangeRates.md) and transfers the converted quantity to a destination address. An [exchange fee](FeePool.md#exchangefeerate) is charged on the way.
 
@@ -857,7 +855,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L224)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L225)</sub>
 
 ??? example "Details"
 
@@ -881,7 +879,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L260)</sub>
 
 ??? example "Details"
 
@@ -905,7 +903,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L240)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L241)</sub>
 
 ??? example "Details"
 
@@ -927,9 +925,33 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
     * [optionalProxy](#optionalproxy)
 
+### `exchangeWithVirtual`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L280)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeWithVirtual(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256, contract IVirtualSynth)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Modifiers**
+
+    * [exchangeActive](#exchangeactive)
+
+    * [optionalProxy](#optionalproxy)
+
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L192)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L193)</sub>
 
 Issues the [maximum quantity](#remainingissuablesynths) `sUSD` issuable by the caller of a particular synth flavour. Otherwise, this operates exactly as [`issueSynths`](#issuesynths) does.
 
@@ -957,7 +979,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L196)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -981,7 +1003,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L184)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L185)</sub>
 
 [Issues](Synth.md#issue) a new quantity of `sUSD` into the calling address. The new debt issuance is recorded with [`_addToDebtRegister`](#_addtodebtregister), and the account's issuance records are updated with [`_appendAccountIssuanceRecord`](#_appendaccountissuancerecord).
 
@@ -1009,7 +1031,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L188)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -1033,7 +1055,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L340)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L361)</sub>
 
 ??? example "Details"
 
@@ -1057,7 +1079,7 @@ See [`Issuer`](Issuer.md#issueSynths) for further details.
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L303)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L324)</sub>
 
 This function is responsible for creating the inflationary SNX supply. It is a public function, so any address can ensure new tokens are released on schedule. When a new quantity is minted, the calling address is rewarded with a small incentive of SNX tokens, defined by [`SupplySchedule.minterReward`](SupplySchedule.md#minterreward).
 
@@ -1081,9 +1103,9 @@ This function always returns true if the transaction did not revert.
 
     **Requires**
 
-    * [require(..., RewardsDistribution not set)](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L304)
+    * [require(..., RewardsDistribution not set)](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L325)
 
-    * [require(..., No supply is mintable)](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L310)
+    * [require(..., No supply is mintable)](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L331)
 
     **Modifiers**
 
@@ -1091,7 +1113,7 @@ This function always returns true if the transaction did not revert.
 
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L359)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L380)</sub>
 
 ??? example "Details"
 
@@ -1107,9 +1129,27 @@ This function always returns true if the transaction did not revert.
 
     `nonpayable`
 
+### `mintSecondaryRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L384)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mintSecondaryRewards(uint256 )`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L300)</sub>
 
 Settles any amounts oustanding for previous exchanges into the given synth.
 
@@ -1135,7 +1175,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L162)</sub>
 
 This is a ERC20 transfer functions.
 
@@ -1165,7 +1205,7 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L172)</sub>
 
 This is a ERC20 transferFrom functions.
 
@@ -1197,33 +1237,33 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 ### `exchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L384)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L409)</sub>
 
 **Signature**: `exchangeActive(bytes32 src, bytes32 dest)`
 
 ### `issuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L379)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L404)</sub>
 
 ### `onlyExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L369)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L394)</sub>
 
 ### `systemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L374)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L399)</sub>
 
 ## Events
 
 ### `AccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L454)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L479)</sub>
 
 **Signature**: `AccountLiquidated(address account, uint256 snxRedeemed, uint256 amountLiquidated, address liquidator)`
 
 ### `ExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L443)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L468)</sub>
 
 !!! tip "Fee Rebates"
 
@@ -1237,7 +1277,7 @@ The amount is the total net amount from all unsettled exchanges into the given s
 
 ### `ExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L432)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L457)</sub>
 
 !!! tip "Fee Reclaims"
 
@@ -1251,13 +1291,13 @@ The amount is the total net amount from all unsettled exchanges into the given s
 
 ### `ExchangeTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L421)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L446)</sub>
 
 **Signature**: `ExchangeTracking(bytes32 trackingCode, bytes32 toCurrencyKey, uint256 toAmount)`
 
 ### `SynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.30.2-ovm/contracts/Synthetix.sol#L391)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/Synthetix.sol#L416)</sub>
 
 Records that an [exchange](#exchange) between two flavours of synths occurred.
 

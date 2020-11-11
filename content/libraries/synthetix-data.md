@@ -43,6 +43,10 @@ The below all return a Promise that resolves with the requested results.
 27. `snx.aggregateActiveStakers({ max, timeSeries })` Get the number of active stakers across various time series.
 28. `snx.totalActiveStakers()` Get the current number of active stakers.
 29. `rate.dailyRateChange({ synths })` get the rate change over the past 24 hours for any synth. Can pass in a list to retrieve multiple synths.
+30. `snx.accountsRemovedFromLiquidation({ maxTime, minTime, account, max })` finds all the accounts that have fixed their c-ratio to avoid being at risk of liquidation after being flagged.
+31. `snx.accountsFlaggedForLiquidation({ minTime, maxTime, account, max })` finds all the accounts that have been flagged for liquidation.
+32. `snx.accountsLiquidated({ maxTime, minTime, account, max })` finds all the accounts that have been liquidated after being flagged for liquidation.
+33. `snx.getActiveLiquidations({ max, account, minTime, maxTime })` finds all the accounts that have been flagged and are still pending liquidation or in a waiting state. Can also just check for a specific account if desired.
 
 ## Supported subscriptions
 

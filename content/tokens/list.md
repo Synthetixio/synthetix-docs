@@ -292,9 +292,9 @@
 
 | Entry Point | Upper Limit    | Lower Limit   |
 | ----------- | -------------- | ------------- |
-| \$9,659     | \$14,488.50000 | \$4,829.50000 |
+| \$15,699    | \$27,473.25000 | \$3,924.75000 |
 
-> Inversely tracks the price of Inverse Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is \$9659 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$14488.5 (i.e. when Inverse Bitcoin's value reaches \$4829.5) or its lower limit of \$4829.5 (i.e. when Inverse Bitcoin’s value reaches \$14488.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
+> Inversely tracks the price of Inverse Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is \$15699 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$27473.25 (i.e. when Inverse Bitcoin's value reaches \$3924.75) or its lower limit of \$3924.75 (i.e. when Inverse Bitcoin’s value reaches \$27473.25). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
 
 ## Inverse Bitcoin Cash (iBCH)
 
@@ -418,13 +418,13 @@
 
 **Inverse of**: [sDEFI](#defi-index-sdefi)
 
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$3,762     | \$5,643     | \$1,881     |
+| Entry Point   | Upper Limit   | Lower Limit   |
+| ------------- | ------------- | ------------- |
+| \$2,714.42000 | \$4,071.63000 | \$1,357.21000 |
 
 **Index of**: [sDEFI](#defi-index-sdefi)
 
-> Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$3762 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$5643 (i.e. when Inverse DeFi Index's value reaches \$1881) or its lower limit of \$1881 (i.e. when Inverse DeFi Index’s value reaches \$5643). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
+> Inversely tracks the price of Inverse DeFi Index (DEFI) through price feeds supplied by an oracle. The entry point is \$2714.42 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$4071.63 (i.e. when Inverse DeFi Index's value reaches \$1357.21) or its lower limit of \$1357.21 (i.e. when Inverse DeFi Index’s value reaches \$4071.63). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDEFI with different limits.
 
 ## Inverse EOS (iEOS)
 
