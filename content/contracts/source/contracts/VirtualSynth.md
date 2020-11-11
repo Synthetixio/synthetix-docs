@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/VirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol)
+**Source:** [contracts/VirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol)
 
 ## Architecture
 
@@ -15,7 +15,7 @@
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L29)</sub>
 
 **Type:** `uint8`
 
@@ -23,31 +23,31 @@
 
 ### `initialSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L32)</sub>
 
 **Type:** `uint256`
 
 ### `resolver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L25)</sub>
 
 **Type:** `contract IAddressResolver`
 
 ### `settled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L27)</sub>
 
 **Type:** `bool`
 
 ### `settledAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L35)</sub>
 
 **Type:** `uint256`
 
 ### `synth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L24)</sub>
 
 **Type:** `contract ISynth`
 
@@ -55,7 +55,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -75,7 +75,7 @@
 
 ### `balanceOfUnderlying`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@
 
 ### `rate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -129,7 +129,7 @@
 
 ### `readyToSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -147,7 +147,7 @@
 
 ### `secsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -165,7 +165,7 @@
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -185,7 +185,7 @@
 
 ### `balanceUnderlying`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -203,7 +203,7 @@
 
 ### `calcRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -221,7 +221,7 @@
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -239,7 +239,7 @@
 
 ### `secsLeft`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -257,7 +257,7 @@
 
 ### `settleSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -281,7 +281,7 @@
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -301,6 +301,6 @@
 
 ### `Settled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/VirtualSynth.sol#L146)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/VirtualSynth.sol#L146)</sub>
 
 **Signature**: `Settled(uint256 totalSupply, uint256 amountAfterSettled)`

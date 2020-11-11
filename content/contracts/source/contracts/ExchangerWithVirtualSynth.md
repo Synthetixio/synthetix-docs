@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/ExchangerWithVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/ExchangerWithVirtualSynth.sol)
+**Source:** [contracts/ExchangerWithVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/ExchangerWithVirtualSynth.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/ExchangerWithVirtualSynth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/ExchangerWithVirtualSynth.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@ graph TD
 
 ### `_createVirtualSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/ExchangerWithVirtualSynth.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/ExchangerWithVirtualSynth.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -65,6 +65,6 @@ graph TD
 
 ### `VirtualSynthCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.0-alpha/contracts/ExchangerWithVirtualSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/ExchangerWithVirtualSynth.sol#L24)</sub>
 
 **Signature**: `VirtualSynthCreated(address vSynth, address synth, bytes32 currencyKey, uint256 amount)`
