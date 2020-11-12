@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol)
+**Source:** [contracts/interfaces/ISynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol)
 
 ## Views
 
 ### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `isWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `totalIssuedSynthsExcludeEtherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `transferableSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -280,7 +280,7 @@
 
 ### `burnSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@
 
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -316,7 +316,7 @@
 
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -334,7 +334,7 @@
 
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -352,7 +352,7 @@
 
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -370,7 +370,7 @@
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -388,7 +388,7 @@
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -406,7 +406,7 @@
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -424,7 +424,7 @@
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -442,7 +442,7 @@
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -460,7 +460,7 @@
 
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -478,7 +478,7 @@
 
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -496,7 +496,7 @@
 
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -514,7 +514,7 @@
 
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -532,7 +532,7 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -550,7 +550,7 @@
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -568,7 +568,7 @@
 
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -586,7 +586,7 @@
 
 ### `mintSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -604,7 +604,7 @@
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1-beta/contracts/interfaces/ISynthetix.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetix.sol#L102)</sub>
 
 ??? example "Details"
 

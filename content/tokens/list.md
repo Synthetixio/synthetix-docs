@@ -15,6 +15,21 @@
 
 > Tracks the price of Australian Dollars (AUD) through price feeds supplied by an oracle.
 
+## BRENT USD (sOIL)
+
+**Contract:** [0x6d16cF3EC5F763d4d99cB0B0b110eefD93B11B56](https://etherscan.io/token/0x6d16cF3EC5F763d4d99cB0B0b110eefD93B11B56)
+
+**Decimals:** 18
+
+**Price:** [sOIL on synthetix.exchange](https://synthetix.exchange/#/synths/sOIL)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/oil-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xb70ba475F1a6b5396e46d9b2a5f7081080Dc9d09)
+
+> Tracks the price of BRENT USD (OIL) through price feeds supplied by an oracle.
+
 ## Binance Coin (sBNB)
 
 **Contract:** [0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848](https://etherscan.io/token/0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848)
@@ -253,6 +268,27 @@
 - Contract: [Aggregator](https://etherscan.io/address/0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6)
 
 > Tracks the price of Gold Ounce (XAU) through price feeds supplied by an oracle.
+
+## Inverse BRENT USD (iOIL)
+
+**Contract:** [0xA5a5DF41883Cdc00c4cCC6E8097130535399d9a3](https://etherscan.io/token/0xA5a5DF41883Cdc00c4cCC6E8097130535399d9a3)
+
+**Decimals:** 18
+
+**Price:** [iOIL on synthetix.exchange](https://synthetix.exchange/#/synths/iOIL)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/oil-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xb70ba475F1a6b5396e46d9b2a5f7081080Dc9d09)
+
+**Inverse of**: [sOIL](#brent-usd-soil)
+
+| Entry Point | Upper Limit | Lower Limit |
+| ----------- | ----------- | ----------- |
+| \$44.94590  | \$67.41890  | \$22.47300  |
+
+> Inversely tracks the price of Inverse BRENT USD (OIL) through price feeds supplied by an oracle. The entry point is \$44.9459 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$67.4189 (i.e. when Inverse BRENT USD's value reaches \$22.4729) or its lower limit of \$22.473 (i.e. when Inverse BRENT USD’s value reaches \$67.419). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iOIL with different limits.
 
 ## Inverse Binance Coin (iBNB)
 
