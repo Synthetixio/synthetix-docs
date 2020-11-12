@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Mimosa (v2.31.1)
+
+**Published**: Nov 12, 2020
+
+**Codebase**: [v2.31.1](https://github.com/Synthetixio/synthetix/tree/v2.31.1)
+
+> https://blog.synthetix.io/the-mimosa-release/
+
+- [SIP-89](https://sips.synthetix.io/sips/sip-89) Virtual Synths
+- [SIP-91](https://sips.synthetix.io/sips/sip-91) Debt Cache Contract
+- [SIP-92](https://sips.synthetix.io/sips/sip-92) Historical iSynths Pricing Tracks When Last Frozen
+
+---
+
 # Deneb (v2.30.0)
 
 **Published**: Oct 8, 2020
@@ -306,15 +320,5 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - Gas optimisation for Synth minting and burning
 - Transfer Fee Fix to allow it to be set to zero
 - SynthExchange event for DApps when exchanging between synths
-
----
-
-# Synthetix crypto-backed synthetic asset platform (v2.0.0)
-
-**Published**: Dec 18, 2018
-
-**Codebase**: [v2.0.0](https://github.com/Synthetixio/synthetix/tree/v2.0.0)
-
-> The Synthetix Platform enables the creation of on-chain synthetic assets (Synths) that track the value of assets in the real world. Some examples of assets that the platform supports now or will support in the future are synthetic fiat currencies (sUSD, sAUD, sKRW etc), synthetic commodities such as gold (sXAU), as well as more complex assets such as equity indices.
 
 ---
