@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.31.1](https://github.com/Synthetixio/synthetix/tree/v2.31.1)
+**Version**: [v2.32.1-beta](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta)
 
 !!! info "Naming Conventions"
 
@@ -560,7 +560,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>StakingRewardsiBTC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewardsiBTC.sol">StakingRewardsiBTC.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/StakingRewardsiBTC.json">StakingRewardsiBTC.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xE5Ea1DDA3299C0b133a93A47eF9F5536C6892AcE">0xE5Ea1DDA3299C0b133a93A47eF9F5536C6892AcE</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x32C9F03490A9F560EccC9f107e71560C1b0A2535">0x32C9F03490A9F560EccC9f107e71560C1b0A2535</a>
                 </td>
               </tr>
               <tr>
@@ -2549,7 +2549,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/ExchangerWithVirtualSynth.json">ExchangerWithVirtualSynth.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xF973f1ab453a3fbf7Fac2Be80161A62c456c4350">0xF973f1ab453a3fbf7Fac2Be80161A62c456c4350</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xB99009c7bE322d98f3c8d615f1DC9310DAe03d36">0xB99009c7bE322d98f3c8d615f1DC9310DAe03d36</a>
                 </td>
               </tr>
               <tr>
@@ -2962,7 +2962,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x65bAd0f094f2Cce90a2BD757372932CdaF079213">0x65bAd0f094f2Cce90a2BD757372932CdaF079213</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x74598aF355c85f5050B5E05e5BAB5559a51C34ab">0x74598aF355c85f5050B5E05e5BAB5559a51C34ab</a>
                 </td>
               </tr>
               <tr>
@@ -3680,7 +3680,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ExchangerWithVirtualSynth.json">ExchangerWithVirtualSynth.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9365b8875Fc4cC72cCb56A5BA16785F14c2436b2">0x9365b8875Fc4cC72cCb56A5BA16785F14c2436b2</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x189B2f2F23cC264518129a61c556490E1b8FF7A0">0x189B2f2F23cC264518129a61c556490E1b8FF7A0</a>
                 </td>
               </tr>
               <tr>
@@ -4093,7 +4093,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xBaF7cB0B9640d313A095E4074d874264a3A24B34">0xBaF7cB0B9640d313A095E4074d874264a3A24B34</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x953eAF38c30Aa8d358712Ca5606D1B6da8ca28D5">0x953eAF38c30Aa8d358712Ca5606D1B6da8ca28D5</a>
                 </td>
               </tr>
               <tr>

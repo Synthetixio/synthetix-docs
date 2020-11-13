@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IBinaryOption.sol)
+**Source:** [contracts/interfaces/IBinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IBinaryOption.sol)
 
 ## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IBinaryOption.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IBinaryOption.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `bidOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IBinaryOption.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IBinaryOption.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `claimableBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IBinaryOption.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IBinaryOption.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `market`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IBinaryOption.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IBinaryOption.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IBinaryOption.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IBinaryOption.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `totalClaimableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IBinaryOption.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IBinaryOption.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IBinaryOption.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IBinaryOption.sol#L19)</sub>
 
 ??? example "Details"
 

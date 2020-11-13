@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/ExchangerWithVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/ExchangerWithVirtualSynth.sol)
+**Source:** [contracts/ExchangerWithVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/ExchangerWithVirtualSynth.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/ExchangerWithVirtualSynth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/ExchangerWithVirtualSynth.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -41,13 +41,13 @@ graph TD
 
 ### `_createVirtualSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/ExchangerWithVirtualSynth.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/ExchangerWithVirtualSynth.sol#L15)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_createVirtualSynth(contract ISynth synth, address recipient, uint256 amount) returns (contract IVirtualSynth)`
+    `_createVirtualSynth(contract IERC20 synth, address recipient, uint256 amount, bytes32 currencyKey) returns (contract IVirtualSynth)`
 
     **Visibility**
 
@@ -57,6 +57,10 @@ graph TD
 
     `nonpayable`
 
+    **Requires**
+
+    * [require(..., Cannot virtualize this synth)](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/ExchangerWithVirtualSynth.sol#L22)
+
     **Emits**
 
     * [VirtualSynthCreated](#virtualsynthcreated)
@@ -65,6 +69,6 @@ graph TD
 
 ### `VirtualSynthCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/ExchangerWithVirtualSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/ExchangerWithVirtualSynth.sol#L28)</sub>
 
-**Signature**: `VirtualSynthCreated(address vSynth, address synth, bytes32 currencyKey, uint256 amount)`
+**Signature**: `VirtualSynthCreated(address synth, address recipient, address vSynth, bytes32 currencyKey, uint256 amount)`

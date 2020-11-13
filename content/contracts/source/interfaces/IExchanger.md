@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol)
+**Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol)
 
 ## Views
 
 ### `calculateAmountAfterSettlement`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `feeRateForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `getAmountsForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `hasWaitingPeriodOrSettlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `isSynthRateInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `maxSecsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `settlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -172,7 +172,7 @@
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -226,7 +226,7 @@
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -244,13 +244,13 @@
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L90)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeWithVirtual(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress) returns (uint256, contract IVirtualSynth)`
+    `exchangeWithVirtual(address from, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address destinationAddress, bytes32 trackingCode) returns (uint256, contract IVirtualSynth)`
 
     **Visibility**
 
@@ -262,7 +262,7 @@
 
 ### `setLastExchangeRateForSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -280,7 +280,7 @@
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@
 
 ### `suspendSynthWithInvalidRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/IExchanger.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/IExchanger.sol#L109)</sub>
 
 ??? example "Details"
 

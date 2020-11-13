@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
 
 ## External Functions
 
 ### `completeWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.31.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L6)</sub>
 
 ??? example "Details"
 
