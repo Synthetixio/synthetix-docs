@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.32.1-beta](https://github.com/Synthetixio/synthetix/tree/v2.32.1-beta)
+**Version**: [v2.32.2](https://github.com/Synthetixio/synthetix/tree/v2.32.2)
 
 !!! info "Naming Conventions"
 
@@ -126,7 +126,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/ExchangerWithVirtualSynth.json">ExchangerWithVirtualSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x300F0f100389282b51F1Bc486D8c2ad22B6C4E42">0x300F0f100389282b51F1Bc486D8c2ad22B6C4E42</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xd3970a9D35d2Be3aaf62D2b5B2be3Ee303aC4228">0xd3970a9D35d2Be3aaf62D2b5B2be3Ee303aC4228</a>
                 </td>
               </tr>
               <tr>
@@ -616,7 +616,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x7e6ab054070599ca7B1552aEa7962b6B344A9950">0x7e6ab054070599ca7B1552aEa7962b6B344A9950</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xf87A0587Fe48Ca05dd68a514Ce387C0d4d3AE31C">0xf87A0587Fe48Ca05dd68a514Ce387C0d4d3AE31C</a>
                 </td>
               </tr>
               <tr>
