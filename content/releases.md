@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Regulus (v2.32.2)
+
+**Published**: Nov 13, 2020
+
+**Codebase**: [v2.32.2](https://github.com/Synthetixio/synthetix/tree/v2.32.2)
+
+> https://blog.synthetix.io/the-regulus-release/
+
+- [SIP-94](https://sips.synthetix.io/sips/sip-94) Virtual Synth Fix to Ensure Settlement Is Connected
+
+---
+
 # Mimosa (v2.31.1)
 
 **Published**: Nov 12, 2020
@@ -306,19 +318,5 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 **Codebase**: [v2.1.9](https://github.com/Synthetixio/synthetix/tree/v2.1.9)
 
 > We added support for synthetix as an npm module. With it, you can load the ABIs, bytecode, and target addresses for `synthetix` on mainnet and all available testnets (`kovan`, `rinkeby` and `ropsten`). Please see our [README.md](https://github.com/Synthetixio/synthetix#usage-and-requirements) documentation for more details.
-
----
-
-# 10 new Synths and Synthetix upgrade (v2.1.0)
-
-**Published**: Feb 26, 2019
-
-**Codebase**: [v2.1.0](https://github.com/Synthetixio/synthetix/tree/v2.1.0)
-
-> Updates include;
-
-- Gas optimisation for Synth minting and burning
-- Transfer Fee Fix to allow it to be set to zero
-- SynthExchange event for DApps when exchanging between synths
 
 ---
