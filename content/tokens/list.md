@@ -53,11 +53,6 @@
 
 **Price:** [sBCH on synthetix.exchange](https://synthetix.exchange/#/synths/sBCH)
 
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/bch-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x9F0F69428F923D6c95B781F89E165C9b2df9789D)
-
 > Tracks the price of Bitcoin Cash (BCH) through price feeds supplied by an oracle.
 
 ## Brent Crude Oil (sOIL)
@@ -318,11 +313,6 @@
 **Decimals:** 18
 
 **Price:** [iBCH on synthetix.exchange](https://synthetix.exchange/#/synths/iBCH)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/bch-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x9F0F69428F923D6c95B781F89E165C9b2df9789D)
 
 **Inverse of**: [sBCH](#bitcoin-cash-sbch)
 

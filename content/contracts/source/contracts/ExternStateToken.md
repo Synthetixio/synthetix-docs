@@ -10,7 +10,7 @@ For upgradeability, this contract utilises an [external state contract](TokenSta
 
 The main [`Synthetix`](Synthetix.md) contract and all [`Synths`](Synth.md) are ExternStateTokens.
 
-**Source:** [contracts/ExternStateToken.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol)
+**Source:** [contracts/ExternStateToken.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol)
 
 ## Architecture
 
@@ -32,7 +32,7 @@ graph TD
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L28)</sub>
 
 The ERC20 decimal precision of this token. This is usually set to 18 in Synthetix.
 
@@ -40,7 +40,7 @@ The ERC20 decimal precision of this token. This is usually set to 18 in Syntheti
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L25)</sub>
 
 The ERC20 name of this token.
 
@@ -48,7 +48,7 @@ The ERC20 name of this token.
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L26)</sub>
 
 The ERC20 symbol of this token.
 
@@ -56,7 +56,7 @@ The ERC20 symbol of this token.
 
 ### `tokenState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L22)</sub>
 
 The external state contract holding this token's balances and allowances.
 
@@ -64,7 +64,7 @@ The external state contract holding this token's balances and allowances.
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L27)</sub>
 
 The ERC20 total token supply.
 
@@ -74,7 +74,7 @@ The ERC20 total token supply.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L30)</sub>
 
 Initialises this token's ERC20 fields, its proxy, token state, and its inherited [`SelfDestructible`](SelfDestructible.md) and [`Proxyable`](Proxyable.md) instances.
 
@@ -96,7 +96,7 @@ Initialises this token's ERC20 fields, its proxy, token state, and its inherited
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L54)</sub>
 
 Returns the ERC20 allowance of one party to spend on behalf of another.
 This information is retrieved from the [`tokenState`](TokenState.md) contract.
@@ -117,7 +117,7 @@ This information is retrieved from the [`tokenState`](TokenState.md) contract.
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L61)</sub>
 
 Returns the ERC20 token balance of the given address.
 This information is retrieved from the [`tokenState`](TokenState.md) contract.
@@ -140,7 +140,7 @@ This information is retrieved from the [`tokenState`](TokenState.md) contract.
 
 ### `setTokenState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L72)</sub>
 
 Allows the owner to set the address of the `tokenState`(TokenState.md) contract.
 Unhooking the token state will pause the contract by causing all transactions to revert.
@@ -167,7 +167,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 
 ### `_internalTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L77)</sub>
 
 Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_transfer_byproxy) and [`_transferFrom_byProxy`](#_transferfrom_byproxy).
 
@@ -189,11 +189,11 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **Requires**
 
-    * [require(..., Cannot transfer to this address)](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L83)
+    * [require(..., Cannot transfer to this address)](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L83)
 
 ### `_transferByProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -211,7 +211,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
 ### `_transferFromByProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -229,7 +229,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
 ### `addressToBytes32`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -247,7 +247,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
 ### `emitApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -265,7 +265,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
 ### `emitTokenStateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L163)</sub>
 
 ??? example "Details"
 
@@ -283,7 +283,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
 ### `emitTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -303,7 +303,7 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L125)</sub>
 
 ERC20 approve function.
 
@@ -329,7 +329,7 @@ ERC20 approve function.
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L149)</sub>
 
 Records that an ERC20 approval occurred.
 
@@ -339,7 +339,7 @@ This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitApp
 
 ### `TokenStateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L160)</sub>
 
 Records that the [token state address](#tokenstate) was updated.
 
@@ -349,7 +349,7 @@ This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTok
 
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/ExternStateToken.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/ExternStateToken.sol#L138)</sub>
 
 Records that an ERC20 transfer occurred.
 

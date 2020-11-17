@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/RealtimeDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol)
+**Source:** [contracts/RealtimeDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@ graph TD
 
 ### `cacheInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -59,7 +59,7 @@ graph TD
 
 ### `cacheInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -77,7 +77,7 @@ graph TD
 
 ### `cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -95,7 +95,7 @@ graph TD
 
 ### `cacheTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -113,7 +113,7 @@ graph TD
 
 ### `cachedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -131,7 +131,7 @@ graph TD
 
 ### `cachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -149,7 +149,7 @@ graph TD
 
 ### `cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -167,7 +167,7 @@ graph TD
 
 ### `debtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -187,7 +187,7 @@ graph TD
 
 ### `purgeCachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -205,7 +205,7 @@ graph TD
 
 ### `takeDebtSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -223,7 +223,7 @@ graph TD
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -241,7 +241,7 @@ graph TD
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -259,7 +259,7 @@ graph TD
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -277,7 +277,7 @@ graph TD
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2/contracts/RealtimeDebtCache.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/RealtimeDebtCache.sol#L74)</sub>
 
 ??? example "Details"
 
