@@ -1,6 +1,6 @@
 {
 	"name": "synthetix-docs",
-	"version": "2.32.2-sip-95-remove-BCH-aggregator",
+	"version": "2.32.3",
 	"description": "Synthetix docs builder",
 	"main": "index.js",
 	"scripts": {
