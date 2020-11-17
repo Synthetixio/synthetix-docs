@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.32.2-sip-95-remove-BCH-aggregator](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator)
+**Version**: [v2.32.3](https://github.com/Synthetixio/synthetix/tree/v2.32.3)
 
 !!! info "Naming Conventions"
 

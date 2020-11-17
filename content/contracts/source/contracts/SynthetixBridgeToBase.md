@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol)
+**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol)
 
 ## Architecture
 
@@ -19,7 +19,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -39,7 +39,7 @@ graph TD
 
 ### `mintSecondaryFromDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -65,7 +65,7 @@ graph TD
 
 ### `mintSecondaryFromDepositForRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@ graph TD
 
 ### `messenger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@ graph TD
 
 ### `onlyAllowFromOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -129,13 +129,13 @@ graph TD
 
     **Requires**
 
-    * [require(..., Only the relayer can call this)](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L51)
+    * [require(..., Only the relayer can call this)](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L51)
 
-    * [require(..., Only the L1 bridge can invoke)](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L52)
+    * [require(..., Only the L1 bridge can invoke)](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L52)
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -153,7 +153,7 @@ graph TD
 
 ### `synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -173,7 +173,7 @@ graph TD
 
 ### `initiateWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -197,24 +197,24 @@ graph TD
 
 ### `onlyOptimismBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L55)</sub>
 
 ## Events
 
 ### `MintedSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L95)</sub>
 
 **Signature**: `MintedSecondary(address account, uint256 amount)`
 
 ### `MintedSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L96)</sub>
 
 **Signature**: `MintedSecondaryRewards(uint256 amount)`
 
 ### `WithdrawalInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/SynthetixBridgeToBase.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/SynthetixBridgeToBase.sol#L97)</sub>
 
 **Signature**: `WithdrawalInitiated(address account, uint256 amount)`

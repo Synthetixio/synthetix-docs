@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/interfaces/IHasBalance.sol)
+**Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/interfaces/IHasBalance.sol)
 
 ## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.2-sip-95-remove-BCH-aggregator/contracts/interfaces/IHasBalance.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.32.3/contracts/interfaces/IHasBalance.sol#L7)</sub>
 
 ??? example "Details"
 
