@@ -57,6 +57,7 @@ nav:
           - Source:
               Contracts:
                 - AddressResolver: contracts/source/contracts/AddressResolver.md
+                - BaseSynthetix: contracts/source/contracts/BaseSynthetix.md
                 - BinaryOption: contracts/source/contracts/BinaryOption.md
                 - BinaryOptionMarket: contracts/source/contracts/BinaryOptionMarket.md
                 - BinaryOptionMarketData: contracts/source/contracts/BinaryOptionMarketData.md
@@ -159,6 +160,7 @@ nav:
                 - IVirtualSynth: contracts/source/interfaces/IVirtualSynth.md
               Libraries:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md
+                - AddressSetLib: contracts/source/libraries/AddressSetLib.md
                 - Math: contracts/source/libraries/Math.md
                 - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
                 - SafeMath: contracts/source/libraries/SafeMath.md
