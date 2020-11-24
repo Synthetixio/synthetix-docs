@@ -490,9 +490,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$314.54000 | \$550.44500 | \$78.63500  |
+| \$578.01000 | \$867.02000 | \$289.01000 |
 
-> Inversely tracks the price of Inverse Ether (ETH) through price feeds supplied by an oracle. The entry point is \$314.54 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$550.445 (i.e. when Inverse Ether's value reaches \$78.635) or its lower limit of \$78.635 (i.e. when Inverse Ether’s value reaches \$550.445). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETH with different limits.
+> Inversely tracks the price of Inverse Ether (ETH) through price feeds supplied by an oracle. The entry point is \$578.01 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$867.02 (i.e. when Inverse Ether's value reaches \$289.00) or its lower limit of \$289.01 (i.e. when Inverse Ether’s value reaches \$867.01). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iETH with different limits.
 
 ## Inverse Ethereum Classic (iETC)
 
