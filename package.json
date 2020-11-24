@@ -1,6 +1,6 @@
 {
 	"name": "synthetix-docs",
-	"version": "2.33.0-ovm",
+	"version": "2.33.1",
 	"description": "Synthetix docs builder",
 	"main": "index.js",
 	"scripts": {
