@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol)
+**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol)
 
 ## Architecture
 
@@ -44,7 +44,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@ graph TD
 
 ### `emitExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L230)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L230)</sub>
 
 ??? example "Details"
 
@@ -86,7 +86,7 @@ graph TD
 
 ### `emitExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L219)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L219)</sub>
 
 ??? example "Details"
 
@@ -108,7 +108,7 @@ graph TD
 
 ### `emitExchangeTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L208)</sub>
 
 ??? example "Details"
 
@@ -130,7 +130,7 @@ graph TD
 
 ### `emitSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L187)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L187)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@ graph TD
 
 ### `emitAccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L241)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L241)</sub>
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@ graph TD
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L21)</sub>
 
 Exchanges one synth flavour for an equivalent value of another at current [exchange rates](ExchangeRates.md) and transfers the converted quantity to a destination address. An [exchange fee](FeePool.md#exchangefeerate) is charged on the way.
 
@@ -202,7 +202,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -226,7 +226,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -250,7 +250,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -274,7 +274,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -322,7 +322,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L118)</sub>
 
 This function is responsible for creating the inflationary SNX supply. It is a public function, so any address can ensure new tokens are released on schedule. When a new quantity is minted, the calling address is rewarded with a small incentive of SNX tokens, defined by [`SupplySchedule.minterReward`](SupplySchedule.md#minterreward).
 
@@ -346,9 +346,9 @@ This function always returns true if the transaction did not revert.
 
     **Requires**
 
-    * [require(..., RewardsDistribution not set)](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L119)
+    * [require(..., RewardsDistribution not set)](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L119)
 
-    * [require(..., No supply is mintable)](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L125)
+    * [require(..., No supply is mintable)](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L125)
 
     **Modifiers**
 
@@ -356,7 +356,7 @@ This function always returns true if the transaction did not revert.
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L106)</sub>
 
 Settles any amounts oustanding for previous exchanges into the given synth.
 
@@ -384,13 +384,13 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `AccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L238)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L238)</sub>
 
 **Signature**: `AccountLiquidated(address account, uint256 snxRedeemed, uint256 amountLiquidated, address liquidator)`
 
 ### `ExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L227)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L227)</sub>
 
 !!! tip "Fee Rebates"
 
@@ -404,7 +404,7 @@ The amount is the total net amount from all unsettled exchanges into the given s
 
 ### `ExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L216)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L216)</sub>
 
 !!! tip "Fee Reclaims"
 
@@ -418,13 +418,13 @@ The amount is the total net amount from all unsettled exchanges into the given s
 
 ### `ExchangeTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L205)</sub>
 
 **Signature**: `ExchangeTracking(bytes32 trackingCode, bytes32 toCurrencyKey, uint256 toAmount)`
 
 ### `SynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.1/contracts/Synthetix.sol#L175)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.2/contracts/Synthetix.sol#L175)</sub>
 
 Records that an [exchange](#exchange) between two flavours of synths occurred.
 
