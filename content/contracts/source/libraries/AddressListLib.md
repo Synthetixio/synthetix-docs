@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/AddressListLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.33.0/contracts/AddressListLib.sol)
+**Source:** [contracts/AddressListLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/AddressListLib.sol)
 
 ## Structs
 
 ### `AddressList`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.0/contracts/AddressListLib.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/AddressListLib.sol#L6)</sub>
 
 | Field      | Type                          | Description |
 | ---------- | ----------------------------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `contains`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.0/contracts/AddressListLib.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/AddressListLib.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -37,7 +37,7 @@
 
 ### `getPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.0/contracts/AddressListLib.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/AddressListLib.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -55,7 +55,7 @@
 
 ### `push`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.0/contracts/AddressListLib.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/AddressListLib.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -73,7 +73,7 @@
 
 ### `remove`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.33.0/contracts/AddressListLib.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/AddressListLib.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -91,4 +91,4 @@
 
     **Requires**
 
-    * [require(..., Element not in list.)](https://github.com/Synthetixio/synthetix/tree/v2.33.0/contracts/AddressListLib.sol#L49)
+    * [require(..., Element not in list.)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/AddressListLib.sol#L49)
