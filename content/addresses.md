@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.33.2](https://github.com/Synthetixio/synthetix/tree/v2.33.2)
+**Version**: [v2.33.0](https://github.com/Synthetixio/synthetix/tree/v2.33.0)
 
 !!! info "Naming Conventions"
 
@@ -126,7 +126,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/ExchangerWithVirtualSynth.json">ExchangerWithVirtualSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xd3970a9D35d2Be3aaf62D2b5B2be3Ee303aC4228">0xd3970a9D35d2Be3aaf62D2b5B2be3Ee303aC4228</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x93b434b2e21d0F4E3ed1e9efa3Aa254A6D863B2A">0x93b434b2e21d0F4E3ed1e9efa3Aa254A6D863B2A</a>
                 </td>
               </tr>
               <tr>
@@ -3680,7 +3680,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/ExchangerWithVirtualSynth.json">ExchangerWithVirtualSynth.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x189B2f2F23cC264518129a61c556490E1b8FF7A0">0x189B2f2F23cC264518129a61c556490E1b8FF7A0</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8EfAB91EAd9C4A89A83A7BB6E9f278aa916Eb4E1">0x8EfAB91EAd9C4A89A83A7BB6E9f278aa916Eb4E1</a>
                 </td>
               </tr>
               <tr>
