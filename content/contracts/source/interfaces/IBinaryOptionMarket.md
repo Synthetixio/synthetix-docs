@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol)
+**Source:** [contracts/interfaces/IBinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol)
 
 ## Views
 
 ### `balancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `bidOrRefundForPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `bidsOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `canResolve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `claimableBalancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `creator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `creatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `deposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `exercisableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `options`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `oracleDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `oraclePriceAndTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `phase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `prices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `pricesAfterBidOrRefund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `refundsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -314,7 +314,7 @@
 
 ### `resolved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -332,7 +332,7 @@
 
 ### `result`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -350,7 +350,7 @@
 
 ### `times`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -386,7 +386,7 @@
 
 ### `totalClaimableSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -404,7 +404,7 @@
 
 ### `totalSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -424,7 +424,7 @@
 
 ### `bid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -442,7 +442,7 @@
 
 ### `claimOptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -460,7 +460,7 @@
 
 ### `exerciseOptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -478,7 +478,7 @@
 
 ### `refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/IBinaryOptionMarket.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/IBinaryOptionMarket.sol#L96)</sub>
 
 ??? example "Details"
 

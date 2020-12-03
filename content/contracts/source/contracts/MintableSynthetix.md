@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol)
+**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol)
 
 ## Architecture
 
@@ -10,9 +10,9 @@
 
 ```mermaid
 graph TD
-    MintableSynthetix[MintableSynthetix] --> Synthetix[Synthetix]
-    Synthetix[Synthetix] --> ExternStateToken[ExternStateToken]
-    Synthetix[Synthetix] --> MixinResolver[MixinResolver]
+    MintableSynthetix[MintableSynthetix] --> BaseSynthetix[BaseSynthetix]
+    BaseSynthetix[BaseSynthetix] --> ExternStateToken[ExternStateToken]
+    BaseSynthetix[BaseSynthetix] --> MixinResolver[MixinResolver]
     ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
     Proxyable[Proxyable] --> Owned[Owned]
     MixinResolver[MixinResolver] --> Owned[Owned]
@@ -23,7 +23,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -43,7 +43,7 @@ graph TD
 
 ### `burnSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -65,7 +65,7 @@ graph TD
 
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -87,7 +87,7 @@ graph TD
 
 ### `mintSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@ graph TD
 
 ### `_mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -129,7 +129,7 @@ graph TD
 
 ### `onlyAllowFromBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -147,11 +147,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., Can only be invoked by the SynthetixBridgeToBase contract)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L30)
+    * [require(..., Can only be invoked by the SynthetixBridgeToBase contract)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L30)
 
 ### `synthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -171,4 +171,4 @@ graph TD
 
 ### `onlyBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/MintableSynthetix.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L35)</sub>

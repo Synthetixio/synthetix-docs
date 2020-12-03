@@ -121,7 +121,7 @@ The two sides of the market, each of which represents a particular event occurri
     - [`SynthsUSD`](Synth.md): Binary option markets are denominated in sUSD.
     - [`FeePool`](FeePool.md): Fees are remitted to the fee address.
 
-**Source:** [contracts/BinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol)
+**Source:** [contracts/BinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol)
 
 ## Architecture
 
@@ -143,7 +143,7 @@ graph TD
 
 ### `Options`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L28)</sub>
 
 The addresses of the two [`BinaryOption`](BinaryOption.md) instances
 for options on each side of the market.
@@ -155,7 +155,7 @@ for options on each side of the market.
 
 ### `OracleDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L44)</sub>
 
 Oracle-relevant details used at the resolution of the market.
 
@@ -167,7 +167,7 @@ Oracle-relevant details used at the resolution of the market.
 
 ### `Prices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L33)</sub>
 
 The prices of the options on each side of the market.
 
@@ -178,7 +178,7 @@ The prices of the options on each side of the market.
 
 ### `Times`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L38)</sub>
 
 Timestamps of important dates, which are given as unix timestamps in seconds.
 
@@ -192,7 +192,7 @@ Timestamps of important dates, which are given as unix timestamps in seconds.
 
 ### `creator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L62)</sub>
 
 The initial creator of the market, who contributed the initial capital and market parameters, and is entitled
 to the creator fee.
@@ -201,7 +201,7 @@ to the creator fee.
 
 ### `creatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L57)</sub>
 
 The limits that the market creator is constrained to abide by.
 
@@ -214,7 +214,7 @@ The limits that the market creator is constrained to abide by.
 
 ### `deposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L61)</sub>
 
 The sum of open bids on both sides of the market, plus any sUSD witheld for refund fees.
 We store this explicitly in case any tokens are transferred to this contract directly, as in that
@@ -224,7 +224,7 @@ case querying the contract's sUSD token balance would throw off several calculat
 
 ### `fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L56)</sub>
 
 The [fee rates](#fees) charged in this market and the fees collected on behalf of the creator.
 
@@ -232,7 +232,7 @@ The [fee rates](#fees) charged in this market and the fees collected on behalf o
 
 ### `options`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L52)</sub>
 
 The [addresses](#options) of this market's `BinaryOption` instances.
 
@@ -240,7 +240,7 @@ The [addresses](#options) of this market's `BinaryOption` instances.
 
 ### `oracleDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L55)</sub>
 
 The [oracle parameters](#oracledetails) of this market, including the underlying asset and strike price.
 
@@ -248,7 +248,7 @@ The [oracle parameters](#oracledetails) of this market, including the underlying
 
 ### `prices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L53)</sub>
 
 The long and short option [prices](#prices) of this market.
 
@@ -256,13 +256,13 @@ The long and short option [prices](#prices) of this market.
 
 ### `refundsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L64)</sub>
 
 **Type:** `bool`
 
 ### `resolved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L63)</sub>
 
 True if the market has been [resolved](#resolve), and false otherwise.
 
@@ -270,7 +270,7 @@ True if the market has been [resolved](#resolve), and false otherwise.
 
 ### `times`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L54)</sub>
 
 The [unix timestamps](#times) at which this market transitions between [phases](#phase).
 
@@ -280,7 +280,7 @@ The [unix timestamps](#times) at which this market transitions between [phases](
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L79)</sub>
 
 The constructor sets up all the static values for [fees](#fees), [timestamps](#times), [asset and strike price](#oracledetails) among other parameters.
 The market's owner (the [manager](BinaryOptionMarketManager.md) contract), and [creator](#creator) are also set at this time.
@@ -321,7 +321,7 @@ Initial timestamps should be provided in the order `[biddingEnd, maturity, destr
 
 ### `balancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L337)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L337)</sub>
 
 Returns the [option balances](BinaryOption.md#balanceof) of the message sender on each side of the market.
 
@@ -341,7 +341,7 @@ Returns the [option balances](BinaryOption.md#balanceof) of the message sender o
 
 ### `bidOrRefundForPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L266)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L266)</sub>
 
 Produces the size of bid or refund necessary on a particular side of the market to move the price on one side
 or the other to a desired level.
@@ -450,7 +450,7 @@ from the target, the function returns 0.
 
 ### `bidsOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L309)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L309)</sub>
 
 Returns the current [bids](BinaryOption.md#bidof) on each side of the market of the message sender.
 
@@ -470,7 +470,7 @@ Returns the current [bids](BinaryOption.md#bidof) on each side of the market of 
 
 ### `canResolve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L191)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L191)</sub>
 
 Returns true if the market can currently be resolved, which is the case when:
 
@@ -494,7 +494,7 @@ Returns true if the market can currently be resolved, which is the case when:
 
 ### `claimableBalancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L325)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L325)</sub>
 
 Returns balance of options on each side of the market that [would be claimable](BinaryOption.md#claimableby)
 by the message sender at the [current prices](#prices).
@@ -518,7 +518,7 @@ market has transitioned to the [trading phase](#phase).
 
 ### `exercisableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L350)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L350)</sub>
 
 Returns the [deposited sUSD](#deposited), accounting for any fees that should be remitted. This is the value
 of options to be awarded to each side of the market.
@@ -539,7 +539,7 @@ of options to be awarded to each side of the market.
 
 ### `oraclePriceAndTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L182)</sub>
 
 Returns the current price of this market's [underlying asset](#oracledetails) at the [`ExchangeRates`](ExchangeRates.md)
 contract, along with the time it was updated.
@@ -560,7 +560,7 @@ contract, along with the time it was updated.
 
 ### `phase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L163)</sub>
 
 Returns the current [phase](#phase) the market is in.
 
@@ -580,7 +580,7 @@ Returns the current [phase](#phase) the market is in.
 
 ### `pricesAfterBidOrRefund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L244)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L244)</sub>
 
 Computes the resulting market prices if a given bid or refund is made. If a refund greater than or equal to the total
 bids on that side of the market is requested, the transaction will revert. See [`bidOrRefundForPrice`](#bidOrRefundForPrice)
@@ -602,7 +602,7 @@ for details of this computation.
 
 ### `requireActiveAndUnpaused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L405)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L405)</sub>
 
 Reverts the transaction if the system is suspended, or the manager is paused. This is used by
 [`BinaryOption`](BinaryOption.md) instances to pause transfers if either of these conditions is true.
@@ -623,11 +623,11 @@ Reverts the transaction if the system is suspended, or the manager is paused. Th
 
     **Requires**
 
-    * [_requireManagerNotPaused](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L407)
+    * [_requireManagerNotPaused](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L407)
 
 ### `result`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L207)</sub>
 
 If the market has not resolved, returns the side of the market that would pay out if it was resolved
 at the current price.
@@ -652,7 +652,7 @@ Note that no check is performed that the underlying asset price [is fresh](#_isf
 
 ### `senderPriceAndExercisableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L226)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L226)</sub>
 
 Used by this market's [`BinaryOption` instances](#options) to retrieve their own prices and the number
 of exercisable deposits available, which are used when computing claimable balances.
@@ -675,7 +675,7 @@ if it is called by any other address, the transaction is reverted.
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L317)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L317)</sub>
 
 Returns the [total value of bids](BinaryOption.md#totalbids) on each side of the market.
 
@@ -695,7 +695,7 @@ Returns the [total value of bids](BinaryOption.md#totalbids) on each side of the
 
 ### `totalClaimableSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L329)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L329)</sub>
 
 Returns the [total balance of options claimable](BinaryOption.md#totalclaimablesupply)
 from the [current total of bids](BinaryOption.md#totalbids) on each side of the market.
@@ -720,7 +720,7 @@ but will not attain its correct value until bidding has ended.
 
 ### `totalSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L341)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L341)</sub>
 
 Returns the [total supply of options](BinaryOption.md#totalsupply) on each side of the market.
 
@@ -742,7 +742,7 @@ Returns the [total supply of options](BinaryOption.md#totalsupply) on each side 
 
 ### `cancel`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L584)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L584)</sub>
 
 ??? example "Details"
 
@@ -760,7 +760,7 @@ Returns the [total supply of options](BinaryOption.md#totalsupply) on each side 
 
     **Requires**
 
-    * [require(..., Not cancellable)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L588)
+    * [require(..., Not cancellable)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L588)
 
     **Modifiers**
 
@@ -770,7 +770,7 @@ Returns the [total supply of options](BinaryOption.md#totalsupply) on each side 
 
 ### `expire`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L592)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L592)</sub>
 
 This function allows the manager to destroy this market at the end of its life.
 The value of any expired but unexercised options is sent to the caller.
@@ -796,7 +796,7 @@ in-the-money options have been exercised.
 
     **Requires**
 
-    * [require(..., Unexpired options remaining)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L593)
+    * [require(..., Unexpired options remaining)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L593)
 
     **Modifiers**
 
@@ -804,7 +804,7 @@ in-the-money options have been exercised.
 
 ### `resolve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L470)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L470)</sub>
 
 This function allows anyone to resolve the market, as long as it satisfies the conditions
 of [`canResolve()`](#canresolve).
@@ -833,9 +833,9 @@ This function reverts the transaction if the system is suspended or the manager 
 
     **Requires**
 
-    * [require(..., Market already resolved)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L471)
+    * [require(..., Market already resolved)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L471)
 
-    * [require(..., Price is stale)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L476)
+    * [require(..., Price is stale)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L476)
 
     **Modifiers**
 
@@ -855,7 +855,7 @@ This function reverts the transaction if the system is suspended or the manager 
 
 ### `_balancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L333)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L333)</sub>
 
 See [`balancesOf`](#balancesof).
 
@@ -875,7 +875,7 @@ See [`balancesOf`](#balancesof).
 
 ### `_biddingEnded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L151)</sub>
 
 True if the current time is after the [bidding end time](#times).
 
@@ -895,7 +895,7 @@ True if the current time is after the [bidding end time](#times).
 
 ### `_bidsOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L305)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L305)</sub>
 
 See [`bidsOf`](#bidsof).
 
@@ -915,7 +915,7 @@ See [`bidsOf`](#bidsof).
 
 ### `_checkCreatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L379)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L379)</sub>
 
 Reverts if the provided bids would violate the [creator limits](#creatorlimits).
 
@@ -935,13 +935,13 @@ Reverts if the provided bids would violate the [creator limits](#creatorlimits).
 
     **Requires**
 
-    * [require(..., Insufficient capital)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L381)
+    * [require(..., Insufficient capital)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L381)
 
-    * [require(..., Bids too skewed)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L383)
+    * [require(..., Bids too skewed)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L383)
 
 ### `_chooseSide`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L356)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L356)</sub>
 
 Selects between a long and a short value depending on its first input.
 
@@ -961,7 +961,7 @@ Selects between a long and a short value depending on its first input.
 
 ### `_claimOptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L498)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L498)</sub>
 
 See [`claimOptions`](#claimoptions).
 
@@ -981,7 +981,7 @@ See [`claimOptions`](#claimoptions).
 
     **Requires**
 
-    * [require(..., Nothing to claim)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L519)
+    * [require(..., Nothing to claim)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L519)
 
     **Modifiers**
 
@@ -997,7 +997,7 @@ See [`claimOptions`](#claimoptions).
 
 ### `_claimableBalancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L321)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L321)</sub>
 
 See [`claimableBalancesOf`](#claimablebalancesof).
 
@@ -1017,7 +1017,7 @@ See [`claimableBalancesOf`](#claimablebalancesof).
 
 ### `_computePrices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L213)</sub>
 
 Computes the market prices from the long and short bid totals, and the funds deposited in the contract.
 These prices are computed approximately as follows:
@@ -1052,11 +1052,11 @@ on either side of the market be refunded.
 
     **Requires**
 
-    * [require(..., Bids must be nonzero)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L218)
+    * [require(..., Bids must be nonzero)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L218)
 
 ### `_decrementDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L395)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L395)</sub>
 
 Deducts a value from the tracked deposited quantity, and ensures that it is also deducted [in the manager contract](BinaryOptionMarketManager.md#decrementtotaldeposited).
 
@@ -1076,7 +1076,7 @@ Deducts a value from the tracked deposited quantity, and ensures that it is also
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L133)</sub>
 
 Returns the [cached](MixinResolver.md) address of the [`ExchangeRates`](ExchangeRates.md) instance.
 
@@ -1096,7 +1096,7 @@ Returns the [cached](MixinResolver.md) address of the [`ExchangeRates`](Exchange
 
 ### `_exercisableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L345)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L345)</sub>
 
 See [`exercisableDeposits`](#exercisabledeposits).
 
@@ -1116,7 +1116,7 @@ See [`exercisableDeposits`](#exercisabledeposits).
 
 ### `_expired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L159)</sub>
 
 True if the market is [resolved](#resolved), and either the [expiry date](#times) is in the past, or there is no
 more sUSD [`deposited`](#deposited) in the market.
@@ -1137,7 +1137,7 @@ more sUSD [`deposited`](#deposited) in the market.
 
 ### `_feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L141)</sub>
 
 Retrieves the [cached](MixinResolver.md) address of the [`FeePool`](FeePool.md) instance.
 
@@ -1157,7 +1157,7 @@ Retrieves the [cached](MixinResolver.md) address of the [`FeePool`](FeePool.md) 
 
 ### `_incrementDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L389)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L389)</sub>
 
 Adds a value to the tracked deposited quantity, and ensures that it is also added [in the manager contract](BinaryOptionMarketManager.md#decrementtotaldeposited).
 
@@ -1177,7 +1177,7 @@ Adds a value to the tracked deposited quantity, and ensures that it is also adde
 
 ### `_isFreshPriceUpdateTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L186)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L186)</sub>
 
 True if a given timestamp is younger than the [maximum oracle price age](BinaryOptionMarketManager.md#durations),
 false otherwise; fresh prices are acceptable for [resolving the market](#resolve).
@@ -1198,7 +1198,7 @@ false otherwise; fresh prices are acceptable for [resolving the market](#resolve
 
 ### `_manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L145)</sub>
 
 Returns the address of the [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md) which tracks this market.
 Note that this address is also this contract's [owner](Owned.md#owner).
@@ -1219,7 +1219,7 @@ Note that this address is also this contract's [owner](Owned.md#owner).
 
 ### `_matured`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L155)</sub>
 
 True if the [maturity date](#times) is in the past, and false otherwise.
 
@@ -1239,7 +1239,7 @@ True if the [maturity date](#times) is in the past, and false otherwise.
 
 ### `_option`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L367)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L367)</sub>
 
 Returns the appropriate [option contract address](#options) for a given side of the market.
 
@@ -1259,7 +1259,7 @@ Returns the appropriate [option contract address](#options) for a given side of 
 
 ### `_oraclePriceAndTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L178)</sub>
 
 See [`oraclePriceAndTimestamp`](#oraclepriceandtimestamp).
 
@@ -1279,7 +1279,7 @@ See [`oraclePriceAndTimestamp`](#oraclepriceandtimestamp).
 
 ### `_requireManagerNotPaused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L401)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L401)</sub>
 
 Reverts the transaction if the [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md) is paused.
 
@@ -1299,11 +1299,11 @@ Reverts the transaction if the [`BinaryOptionMarketManager`](BinaryOptionMarketM
 
     **Requires**
 
-    * [require(..., This action cannot be performed while the contract is paused)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L402)
+    * [require(..., This action cannot be performed while the contract is paused)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L402)
 
 ### `_result`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L196)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L196)</sub>
 
 See [`result`](#result).
 
@@ -1323,7 +1323,7 @@ See [`result`](#result).
 
 ### `_sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L137)</sub>
 
 Retrieves the [cached](MixinResolver.md) address of the sUSD [`Synth`](Synth.md) instance.
 
@@ -1343,7 +1343,7 @@ Retrieves the [cached](MixinResolver.md) address of the sUSD [`Synth`](Synth.md)
 
 ### `_selfDestruct`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L564)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L564)</sub>
 
 ??? example "Details"
 
@@ -1361,7 +1361,7 @@ Retrieves the [cached](MixinResolver.md) address of the sUSD [`Synth`](Synth.md)
 
 ### `_subToZero`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L375)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L375)</sub>
 
 Returns the difference of two numbers, or zero if the difference is negative.
 
@@ -1381,7 +1381,7 @@ Returns the difference of two numbers, or zero if the difference is negative.
 
 ### `_systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L129)</sub>
 
 Retrieves the [cached](MixinResolver.md) address of the [`SystemStatus`](SystemStatus.md) contract.
 
@@ -1401,7 +1401,7 @@ Retrieves the [cached](MixinResolver.md) address of the [`SystemStatus`](SystemS
 
 ### `_totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L313)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L313)</sub>
 
 See [`totalBids`](#totalbids).
 
@@ -1421,7 +1421,7 @@ See [`totalBids`](#totalbids).
 
 ### `_updatePrices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L414)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L414)</sub>
 
 Updates the current [prices](#prices) from the long and short bid quantities, and the total deposited
 value in the contract. See [`_computePrices`](#_computeprices) for details.
@@ -1448,7 +1448,7 @@ value in the contract. See [`_computePrices`](#_computeprices) for details.
 
 ### `bid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L424)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L424)</sub>
 
 Allows a user to place an sUSD bid on one or the other side of the market.
 
@@ -1489,7 +1489,7 @@ or if the manager contract is paused.
 
 ### `claimOptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L524)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L524)</sub>
 
 Once the bidding period has concluded, this function claims all options [owing](#claimablebalancesof) to the message
 sender on both sides of the market. The number of options owed is simply the user's [bid balances](#bidsof), divided
@@ -1516,7 +1516,7 @@ Implemented by the [`_claimOptions`](#_claimoptions) function.
 
 ### `exerciseOptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L528)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L528)</sub>
 
 `exerciseOptions` allows a user to claim any sUSD owed to them after their options have matured.
 This function will exercise any options held by the message sender on either side of the market,
@@ -1546,7 +1546,7 @@ This function reverts the transaction if the system is suspended or the manager 
 
     **Requires**
 
-    * [require(..., Nothing to exercise)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L542)
+    * [require(..., Nothing to exercise)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L542)
 
     **Emits**
 
@@ -1554,7 +1554,7 @@ This function reverts the transaction if the system is suspended or the manager 
 
 ### `refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L439)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L439)</sub>
 
 Refunds an existing bid, remitting the refund value minus a percentage determined by the [refund fee rate](#fees) as sUSD.
 The function returns the value refunded as sUSD.
@@ -1592,7 +1592,7 @@ or if the manager contract is paused.
 
     **Requires**
 
-    * [require(..., Refunds disabled)](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L440)
+    * [require(..., Refunds disabled)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L440)
 
     **Modifiers**
 
@@ -1606,31 +1606,31 @@ or if the manager contract is paused.
 
 ### `afterBidding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L604)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L604)</sub>
 
 Reverts the transaction if bidding has not concluded.
 
 ### `afterMaturity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L609)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L609)</sub>
 
 Reverts the transaction if the market has not matured.
 
 ### `duringBidding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L599)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L599)</sub>
 
 Reverts the transaction if bidding has ended.
 
 ### `managerNotPaused`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L619)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L619)</sub>
 
 Reverts the transaction if the manager is not paused.
 
 ### `systemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L614)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L614)</sub>
 
 Reverts the transaction if the [system is suspended](SystemStatus.md).
 
@@ -1638,7 +1638,7 @@ Reverts the transaction if the [system is suspended](SystemStatus.md).
 
 ### `Bid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L626)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L626)</sub>
 
 A bid was made.
 
@@ -1646,7 +1646,7 @@ A bid was made.
 
 ### `MarketResolved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L629)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L629)</sub>
 
 The market was resolved.
 
@@ -1654,7 +1654,7 @@ The market was resolved.
 
 ### `OptionsClaimed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L637)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L637)</sub>
 
 The market was resolved.
 
@@ -1662,7 +1662,7 @@ The market was resolved.
 
 ### `OptionsExercised`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L638)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L638)</sub>
 
 A quantity of options was exercised.
 
@@ -1670,7 +1670,7 @@ A quantity of options was exercised.
 
 ### `PricesUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L628)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L628)</sub>
 
 The option prices were updated.
 
@@ -1678,7 +1678,7 @@ The option prices were updated.
 
 ### `Refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/BinaryOptionMarket.sol#L627)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/BinaryOptionMarket.sol#L627)</sub>
 
 A refund was processed. The `value` argument is the quantity of sUSD actually refunded, without the fee.
 

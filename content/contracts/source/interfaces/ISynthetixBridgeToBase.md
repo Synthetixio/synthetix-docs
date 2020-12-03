@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/ISynthetixBridgeToBase.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/ISynthetixBridgeToBase.sol)
 
 ## External Functions
 
 ### `initiateWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/ISynthetixBridgeToBase.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/ISynthetixBridgeToBase.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `mintSecondaryFromDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/ISynthetixBridgeToBase.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/ISynthetixBridgeToBase.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `mintSecondaryFromDepositForRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.2/contracts/interfaces/ISynthetixBridgeToBase.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/interfaces/ISynthetixBridgeToBase.sol#L12)</sub>
 
 ??? example "Details"
 
