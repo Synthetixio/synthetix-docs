@@ -2,6 +2,16 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Adhara (v2.34.0)
+
+**Published**: Dec 1, 2020
+
+**Codebase**: [v2.34.0](https://github.com/Synthetixio/synthetix/tree/v2.34.0)
+
+> [SIP-98](https://sips.synthetix.io/sips/sip-98) Re-implement double exchange fee rate on swing trades
+
+---
+
 # Regulus (v2.32.2)
 
 **Published**: Nov 13, 2020
@@ -308,15 +318,5 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SIP 17](http://sips.synthetix.io/sips/sip-16): This update will upgrade the currencyKeys from Bytes4 to Bytes32. This will enable Synthetix to create new Synths with symbols longer than 4 characters. e.g. sATOM, sDEFI, which is not currently possible with currencyKeys type defined as Bytes4.
 - [SIP 18](http://sips.synthetix.io/sips/sip-16): This will recover the \$2.9k sUSD that is currently unclaimable by minters in the SNX fee address. This sUSD is from the period in which there was a transfer fee for sending sUSD.
 - [SIP 19](http://sips.synthetix.io/sips/sip-16): The Synthetix contracts still have transfer fees written into them, from before we disabled transfer fees in February 2018. Removing that code will optimise reclaim bytecode size required for new features.
-
----
-
-# Synthetix npm module (v2.1.9)
-
-**Published**: Apr 4, 2019
-
-**Codebase**: [v2.1.9](https://github.com/Synthetixio/synthetix/tree/v2.1.9)
-
-> We added support for synthetix as an npm module. With it, you can load the ABIs, bytecode, and target addresses for `synthetix` on mainnet and all available testnets (`kovan`, `rinkeby` and `ropsten`). Please see our [README.md](https://github.com/Synthetixio/synthetix#usage-and-requirements) documentation for more details.
 
 ---

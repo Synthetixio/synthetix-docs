@@ -16,7 +16,7 @@ For example, if Alice locks 150 ETH as collateral, she can borrow 100 sETH. Even
 
 The final few details you should know are that the minting fee and interest rate paid by ETH stakers is also paid to SNX stakers and the minimum position size is 1 ETH. At the end of the three month trial period, all outstanding loans must be paid back. There will be a one week grace period, after which anyone will be able to send sETH to close the position and claim the outstanding ETH.
 
-**Source:** [contracts/EtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol)
+**Source:** [contracts/EtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol)
 
 ## Architecture
 
@@ -44,7 +44,7 @@ graph TD
 
 ### `SynthLoanStruct`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L75)</sub>
 
 | Field              | Type      | Description                          |
 | ------------------ | --------- | ------------------------------------ |
@@ -59,85 +59,85 @@ graph TD
 
 ### `accountLoanLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L55)</sub>
 
 **Type:** `uint256`
 
 ### `accountOpenLoanCounter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L94)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `accountsSynthLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L91)</sub>
 
 **Type:** `mapping(address => struct EtherCollateral.SynthLoanStruct[])`
 
 ### `collateralizationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L39)</sub>
 
 **Type:** `uint256`
 
 ### `interestPerSecond`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L43)</sub>
 
 **Type:** `uint256`
 
 ### `interestRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L42)</sub>
 
 **Type:** `uint256`
 
 ### `issueFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L46)</sub>
 
 **Type:** `uint256`
 
 ### `issueLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L49)</sub>
 
 **Type:** `uint256`
 
 ### `liquidationDeadline`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L61)</sub>
 
 **Type:** `uint256`
 
 ### `loanLiquidationOpen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L58)</sub>
 
 **Type:** `bool`
 
 ### `minLoanSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L52)</sub>
 
 **Type:** `uint256`
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L66)</sub>
 
 **Type:** `uint256`
 
 ### `totalLoansCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L69)</sub>
 
 **Type:** `uint256`
 
 ### `totalOpenLoanCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L72)</sub>
 
 **Type:** `uint256`
 
@@ -145,7 +145,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -165,7 +165,7 @@ graph TD
 
 ### `accruedInterestOnLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L227)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L227)</sub>
 
 ??? example "Details"
 
@@ -183,7 +183,7 @@ graph TD
 
 ### `calculateMintingFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L233)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L233)</sub>
 
 ??? example "Details"
 
@@ -201,7 +201,7 @@ graph TD
 
 ### `collateralAmountForLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L216)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L216)</sub>
 
 ??? example "Details"
 
@@ -219,7 +219,7 @@ graph TD
 
 ### `currentInterestOnLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L220)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L220)</sub>
 
 ??? example "Details"
 
@@ -237,7 +237,7 @@ graph TD
 
 ### `getContractInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L169)</sub>
 
 ??? example "Details"
 
@@ -255,7 +255,7 @@ graph TD
 
 ### `getLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L262)</sub>
 
 ??? example "Details"
 
@@ -273,7 +273,7 @@ graph TD
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L206)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L206)</sub>
 
 ??? example "Details"
 
@@ -291,7 +291,7 @@ graph TD
 
 ### `loanAmountFromCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L212)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L212)</sub>
 
 ??? example "Details"
 
@@ -309,7 +309,7 @@ graph TD
 
 ### `loanLifeSpan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L287)</sub>
 
 ??? example "Details"
 
@@ -327,7 +327,7 @@ graph TD
 
 ### `openLoanIDsByAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L239)</sub>
 
 ??? example "Details"
 
@@ -347,7 +347,7 @@ graph TD
 
 ### `setAccountLoanLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L154)</sub>
 
 ??? example "Details"
 
@@ -365,7 +365,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Owner cannot set higher than HARD_CAP)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L156)
+    * [require(..., Owner cannot set higher than HARD_CAP)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L156)
 
     **Modifiers**
 
@@ -377,7 +377,7 @@ graph TD
 
 ### `setCollateralizationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -395,9 +395,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Too high)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L125)
+    * [require(..., Too high)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L125)
 
-    * [require(..., Too low)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L126)
+    * [require(..., Too low)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L126)
 
     **Modifiers**
 
@@ -409,7 +409,7 @@ graph TD
 
 ### `setInterestRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L131)</sub>
 
 ??? example "Details"
 
@@ -427,9 +427,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Interest rate cannot be less that the SECONDS_IN_A_YEAR)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L132)
+    * [require(..., Interest rate cannot be less that the SECONDS_IN_A_YEAR)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L132)
 
-    * [require(..., Interest cannot be more than 100% APR)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L133)
+    * [require(..., Interest cannot be more than 100% APR)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L133)
 
     **Modifiers**
 
@@ -441,7 +441,7 @@ graph TD
 
 ### `setIssueFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L139)</sub>
 
 ??? example "Details"
 
@@ -467,7 +467,7 @@ graph TD
 
 ### `setIssueLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L144)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L144)</sub>
 
 ??? example "Details"
 
@@ -493,7 +493,7 @@ graph TD
 
 ### `setLoanLiquidationOpen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -511,7 +511,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Before liquidation deadline)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L162)
+    * [require(..., Before liquidation deadline)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L162)
 
     **Modifiers**
 
@@ -523,7 +523,7 @@ graph TD
 
 ### `setMinLoanSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L149)</sub>
 
 ??? example "Details"
 
@@ -551,7 +551,7 @@ graph TD
 
 ### `depot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L454)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L454)</sub>
 
 ??? example "Details"
 
@@ -569,7 +569,7 @@ graph TD
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L458)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L458)</sub>
 
 ??? example "Details"
 
@@ -587,7 +587,7 @@ graph TD
 
 ### `synthsETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L446)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L446)</sub>
 
 ??? example "Details"
 
@@ -605,7 +605,7 @@ graph TD
 
 ### `synthsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L450)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L450)</sub>
 
 ??? example "Details"
 
@@ -623,7 +623,7 @@ graph TD
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L442)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L442)</sub>
 
 ??? example "Details"
 
@@ -643,7 +643,7 @@ graph TD
 
 ### `closeLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L338)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L338)</sub>
 
 ??? example "Details"
 
@@ -667,7 +667,7 @@ graph TD
 
 ### `liquidateUnclosedLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L343)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L343)</sub>
 
 ??? example "Details"
 
@@ -685,7 +685,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Liquidation is not open)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L344)
+    * [require(..., Liquidation is not open)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L344)
 
     **Modifiers**
 
@@ -699,7 +699,7 @@ graph TD
 
 ### `openLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L294)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L294)</sub>
 
 ??? example "Details"
 
@@ -717,13 +717,13 @@ graph TD
 
     **Requires**
 
-    * [require(..., Not enough ETH to create this loan. Please see the minLoanSize)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L298)
+    * [require(..., Not enough ETH to create this loan. Please see the minLoanSize)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L298)
 
-    * [require(..., Loans are now being liquidated)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L301)
+    * [require(..., Loans are now being liquidated)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L301)
 
-    * [require(..., Each account is limted to 50 loans)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L304)
+    * [require(..., Each account is limted to 50 loans)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L304)
 
-    * [require(..., Loan Amount exceeds the supply cap.)](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L310)
+    * [require(..., Loan Amount exceeds the supply cap.)](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L310)
 
     **Modifiers**
 
@@ -741,66 +741,66 @@ graph TD
 
 ### `sETHRateNotInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L464)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L464)</sub>
 
 ## Events
 
 ### `AccountLoanLimitUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L476)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L476)</sub>
 
 **Signature**: `AccountLoanLimitUpdated(uint256 loanLimit)`
 
 ### `CollateralizationRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L471)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L471)</sub>
 
 **Signature**: `CollateralizationRatioUpdated(uint256 ratio)`
 
 ### `InterestRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L472)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L472)</sub>
 
 **Signature**: `InterestRateUpdated(uint256 interestRate)`
 
 ### `IssueFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L473)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L473)</sub>
 
 **Signature**: `IssueFeeRateUpdated(uint256 issueFeeRate)`
 
 ### `IssueLimitUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L474)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L474)</sub>
 
 **Signature**: `IssueLimitUpdated(uint256 issueLimit)`
 
 ### `LoanClosed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L479)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L479)</sub>
 
 **Signature**: `LoanClosed(address account, uint256 loanID, uint256 feesPaid)`
 
 ### `LoanCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L478)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L478)</sub>
 
 **Signature**: `LoanCreated(address account, uint256 loanID, uint256 amount)`
 
 ### `LoanLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L480)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L480)</sub>
 
 **Signature**: `LoanLiquidated(address account, uint256 loanID, address liquidator)`
 
 ### `LoanLiquidationOpenUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L477)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L477)</sub>
 
 **Signature**: `LoanLiquidationOpenUpdated(bool loanLiquidationOpen)`
 
 ### `MinLoanSizeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.0/contracts/EtherCollateral.sol#L475)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.34.1-ovm/contracts/EtherCollateral.sol#L475)</sub>
 
 **Signature**: `MinLoanSizeUpdated(uint256 minLoanSize)`
