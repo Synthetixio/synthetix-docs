@@ -266,9 +266,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$22.88000  | \$34.32000  | \$11.44000  |
+| \$30.19500  | \$45.29250  | \$15.09750  |
 
-> Inversely tracks the price of Inverse Binance Coin (BNB) through price feeds supplied by an oracle. The entry point is \$22.88 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$34.32 (i.e. when Inverse Binance Coin's value reaches \$11.44) or its lower limit of \$11.44 (i.e. when Inverse Binance Coin’s value reaches \$34.32). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBNB with different limits.
+> Inversely tracks the price of Inverse Binance Coin (BNB) through price feeds supplied by an oracle. The entry point is \$30.195 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$45.2925 (i.e. when Inverse Binance Coin's value reaches \$15.0975) or its lower limit of \$15.0975 (i.e. when Inverse Binance Coin’s value reaches \$45.2925). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBNB with different limits.
 
 ## Inverse Bitcoin (iBTC)
 
@@ -389,9 +389,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$64.44000  | \$96.66000  | \$32.22000  |
+| \$105.58000 | \$158.37000 | \$52.79000  |
 
-> Inversely tracks the price of Inverse Dash (DASH) through price feeds supplied by an oracle. The entry point is \$64.44 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$96.66 (i.e. when Inverse Dash's value reaches \$32.22) or its lower limit of \$32.22 (i.e. when Inverse Dash’s value reaches \$96.66). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDASH with different limits.
+> Inversely tracks the price of Inverse Dash (DASH) through price feeds supplied by an oracle. The entry point is \$105.58 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$158.37 (i.e. when Inverse Dash's value reaches \$52.79) or its lower limit of \$52.79 (i.e. when Inverse Dash’s value reaches \$158.37). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDASH with different limits.
 
 ## Inverse DeFi Index (iDEFI)
 
@@ -433,9 +433,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$2.22000   | \$3.33000   | \$1.11000   |
+| \$3.04310   | \$4.56470   | \$1.52160   |
 
-> Inversely tracks the price of Inverse EOS (EOS) through price feeds supplied by an oracle. The entry point is \$2.22 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$3.33 (i.e. when Inverse EOS's value reaches \$1.11) or its lower limit of \$1.11 (i.e. when Inverse EOS’s value reaches \$3.33). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iEOS with different limits.
+> Inversely tracks the price of Inverse EOS (EOS) through price feeds supplied by an oracle. The entry point is \$3.0431 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$4.5647 (i.e. when Inverse EOS's value reaches \$1.5215) or its lower limit of \$1.5216 (i.e. when Inverse EOS’s value reaches \$4.5646). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iEOS with different limits.
 
 ## Inverse Ether (iETH)
 
@@ -496,9 +496,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$48.12000  | \$72.18000  | \$24.06000  |
+| \$87.88000  | \$131.82000 | \$43.94000  |
 
-> Inversely tracks the price of Inverse Litecoin (LTC) through price feeds supplied by an oracle. The entry point is \$48.12 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$72.18 (i.e. when Inverse Litecoin's value reaches \$24.06) or its lower limit of \$24.06 (i.e. when Inverse Litecoin’s value reaches \$72.18). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLTC with different limits.
+> Inversely tracks the price of Inverse Litecoin (LTC) through price feeds supplied by an oracle. The entry point is \$87.88 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$131.82 (i.e. when Inverse Litecoin's value reaches \$43.94) or its lower limit of \$43.94 (i.e. when Inverse Litecoin’s value reaches \$131.82). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLTC with different limits.
 
 ## Inverse Monero (iXMR)
 
@@ -559,9 +559,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$0.18830   | \$0.28200   | \$0.09400   |
+| \$0.62010   | \$0.93020   | \$0.31010   |
 
-> Inversely tracks the price of Inverse Ripple (XRP) through price feeds supplied by an oracle. The entry point is \$0.1883 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.282 (i.e. when Inverse Ripple's value reaches \$0.095) or its lower limit of \$0.094 (i.e. when Inverse Ripple’s value reaches \$0.283). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXRP with different limits.
+> Inversely tracks the price of Inverse Ripple (XRP) through price feeds supplied by an oracle. The entry point is \$0.6201 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$0.9302 (i.e. when Inverse Ripple's value reaches \$0.3100) or its lower limit of \$0.3101 (i.e. when Inverse Ripple’s value reaches \$0.9301). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXRP with different limits.
 
 ## Inverse TRON (iTRX)
 
