@@ -6,7 +6,7 @@
 
     This contract documentation is missing some descriptions.
 
-**Source:** [contracts/Liquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol)
+**Source:** [contracts/Liquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol)
 
 ## Architecture
 
@@ -19,9 +19,9 @@
 
 ```mermaid
 graph TD
+    Liquidations[Liquidations] --> Owned[Owned]
     Liquidations[Liquidations] --> MixinSystemSettings[MixinSystemSettings]
     MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-    MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
 
@@ -29,7 +29,7 @@ graph TD
 
 ### `LiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L25)</sub>
 
 | Field      | Type      | Description |
 | ---------- | --------- | ----------- |
@@ -40,13 +40,13 @@ graph TD
 
 ### `LIQUIDATION_CALLER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L42)</sub>
 
 **Type:** `bytes32`
 
 ### `LIQUIDATION_DEADLINE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L41)</sub>
 
 **Type:** `bytes32`
 
@@ -54,7 +54,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@ graph TD
 
 ### `calculateAmountToFixCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@ graph TD
 
 ### `getLiquidationDeadlineForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@ graph TD
 
 ### `isLiquidationDeadlinePassed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@ graph TD
 
 ### `isOpenForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@ graph TD
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@ graph TD
 
 ### `liquidationCollateralRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -182,7 +182,7 @@ graph TD
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L83)</sub>
 
 **Type:** `uint256`
 
@@ -202,7 +202,7 @@ graph TD
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L91)</sub>
 
 **Type:** `uint256`
 
@@ -222,7 +222,7 @@ graph TD
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L87)</sub>
 
 **Type:** `uint256`
 
@@ -240,11 +240,29 @@ graph TD
 
     `view`
 
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L47)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() returns (bytes32[])`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
 ## Restricted Functions
 
 ### `removeAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L198)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -268,7 +286,7 @@ graph TD
 
 ### `_deadlinePassed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L127)</sub>
 
 ??? example "Details"
 
@@ -286,7 +304,7 @@ graph TD
 
 ### `_getKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -304,7 +322,7 @@ graph TD
 
 ### `_getLiquidationEntryForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L157)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -322,7 +340,7 @@ graph TD
 
 ### `_removeLiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L233)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L228)</sub>
 
 ??? example "Details"
 
@@ -344,7 +362,7 @@ graph TD
 
 ### `_storeLiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L223)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L218)</sub>
 
 ??? example "Details"
 
@@ -362,7 +380,7 @@ graph TD
 
 ### `eternalStorageLiquidations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -380,7 +398,7 @@ graph TD
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -398,7 +416,7 @@ graph TD
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -416,7 +434,7 @@ graph TD
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -434,7 +452,7 @@ graph TD
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -454,7 +472,7 @@ graph TD
 
 ### `checkAndRemoveAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L203)</sub>
 
 ??? example "Details"
 
@@ -472,7 +490,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Account has no liquidation set)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L213)
+    * [require(..., Account has no liquidation set)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L208)
 
     **Modifiers**
 
@@ -480,7 +498,7 @@ graph TD
 
 ### `flagAccountForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L167)</sub>
 
 ??? example "Details"
 
@@ -498,13 +516,13 @@ graph TD
 
     **Requires**
 
-    * [require(..., Liquidation ratio not set)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L175)
+    * [require(..., Liquidation ratio not set)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L170)
 
-    * [require(..., Liquidation delay not set)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L176)
+    * [require(..., Liquidation delay not set)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L171)
 
-    * [require(..., Account already flagged for liquidation)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L179)
+    * [require(..., Account already flagged for liquidation)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L174)
 
-    * [require(..., Account issuance ratio is less than liquidation ratio)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L184)
+    * [require(..., Account issuance ratio is less than liquidation ratio)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L179)
 
     **Modifiers**
 
@@ -518,11 +536,11 @@ graph TD
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L243)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L238)</sub>
 
 ### `rateNotInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L243)</sub>
 
 **Signature**: `rateNotInvalid(bytes32 currencyKey)`
 
@@ -530,12 +548,12 @@ graph TD
 
 ### `AccountFlaggedForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L255)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L250)</sub>
 
 **Signature**: `AccountFlaggedForLiquidation(address account, uint256 deadline)`
 
 ### `AccountRemovedFromLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/Liquidations.sol#L256)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/Liquidations.sol#L251)</sub>
 
 **Signature**: `AccountRemovedFromLiquidation(address account, uint256 time)`

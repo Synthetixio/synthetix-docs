@@ -6,7 +6,7 @@ This contract is an implementation of [SIP-63](https://sips.synthetix.io/sips/si
 
 The recording of such fees can be enabled by the ProtocolDAO, via [SystemSettings](https://github.com/Synthetixio/synthetix/blob/v2.27.2/contracts/SystemSettings.sol#L129).
 
-**Source:** [contracts/TradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol)
+**Source:** [contracts/TradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol)
 
 ## Architecture
 
@@ -23,7 +23,6 @@ graph TD
     TradingRewards[TradingRewards] --> Pausable[Pausable]
     TradingRewards[TradingRewards] --> MixinResolver[MixinResolver]
     Pausable[Pausable] --> Owned[Owned]
-    MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
 
@@ -31,7 +30,7 @@ graph TD
 
 ### `Period`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L33)</sub>
 
 | Field                       | Type                          | Description                                                                                                                |
 | --------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -45,7 +44,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -63,13 +62,13 @@ graph TD
 
     **Requires**
 
-    * [require(..., Invalid period controller)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L57)
+    * [require(..., Invalid period controller)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L55)
 
 ## Views
 
 ### `getAvailableRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -87,7 +86,7 @@ graph TD
 
 ### `getAvailableRewardsForAccountForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -105,7 +104,7 @@ graph TD
 
 ### `getAvailableRewardsForAccountForPeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -123,7 +122,7 @@ graph TD
 
 ### `getCurrentPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -141,7 +140,7 @@ graph TD
 
 ### `getPeriodAvailableRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -159,7 +158,7 @@ graph TD
 
 ### `getPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -177,7 +176,7 @@ graph TD
 
 ### `getPeriodIsClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -195,7 +194,7 @@ graph TD
 
 ### `getPeriodIsFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -213,7 +212,7 @@ graph TD
 
 ### `getPeriodRecordedFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -231,7 +230,7 @@ graph TD
 
 ### `getPeriodTotalRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -249,7 +248,7 @@ graph TD
 
 ### `getRewardsToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -267,7 +266,7 @@ graph TD
 
 ### `getUnaccountedFeesForAccountForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -285,7 +284,7 @@ graph TD
 
 ### `getUnassignedRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -301,11 +300,29 @@ graph TD
 
     `view`
 
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L62)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() returns (bytes32[])`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
 ## Restricted Functions
 
 ### `closeCurrentPeriodWithRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L192)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L196)</sub>
 
 ??? example "Details"
 
@@ -323,7 +340,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Insufficient free rewards)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L195)
+    * [require(..., Insufficient free rewards)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L199)
 
     **Modifiers**
 
@@ -337,7 +354,7 @@ graph TD
 
 ### `recordExchangeFeeForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L181)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L185)</sub>
 
 ??? example "Details"
 
@@ -363,7 +380,7 @@ graph TD
 
 ### `recoverAssignedRewardTokensAndDestroyPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L240)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L244)</sub>
 
 ??? example "Details"
 
@@ -381,9 +398,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Cannot recover from active)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L242)
+    * [require(..., Cannot recover from active)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L246)
 
-    * [require(..., No rewards available to recover)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L245)
+    * [require(..., No rewards available to recover)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L249)
 
     **Modifiers**
 
@@ -395,7 +412,7 @@ graph TD
 
 ### `recoverTokens`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L212)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L216)</sub>
 
 ??? example "Details"
 
@@ -413,9 +430,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Must use another function)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L214)
+    * [require(..., Must use another function)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L218)
 
-    * [require(..., No tokens to recover)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L219)
+    * [require(..., No tokens to recover)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L223)
 
     **Modifiers**
 
@@ -427,7 +444,7 @@ graph TD
 
 ### `recoverUnassignedRewardTokens`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L226)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L230)</sub>
 
 ??? example "Details"
 
@@ -445,9 +462,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., No tokens to recover)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L230)
+    * [require(..., No tokens to recover)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L234)
 
-    * [require(..., No tokens to recover)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L233)
+    * [require(..., No tokens to recover)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L237)
 
     **Modifiers**
 
@@ -459,7 +476,7 @@ graph TD
 
 ### `setPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L263)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L267)</sub>
 
 ??? example "Details"
 
@@ -477,7 +494,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Invalid period controller)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L264)
+    * [require(..., Invalid period controller)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L268)
 
     **Modifiers**
 
@@ -491,7 +508,7 @@ graph TD
 
 ### `_calculateRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L136)</sub>
 
 ??? example "Details"
 
@@ -509,7 +526,7 @@ graph TD
 
 ### `_claimRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L166)</sub>
 
 ??? example "Details"
 
@@ -527,9 +544,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Period is not finalized)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L164)
+    * [require(..., Period is not finalized)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L168)
 
-    * [require(..., No rewards available)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L167)
+    * [require(..., No rewards available)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L171)
 
     **Emits**
 
@@ -537,7 +554,7 @@ graph TD
 
 ### `_validateRecoverAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L257)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L261)</sub>
 
 ??? example "Details"
 
@@ -555,7 +572,7 @@ graph TD
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -573,7 +590,7 @@ graph TD
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -593,7 +610,7 @@ graph TD
 
 ### `claimRewardsForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -617,7 +634,7 @@ graph TD
 
 ### `claimRewardsForPeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L157)</sub>
 
 ??? example "Details"
 
@@ -643,58 +660,58 @@ graph TD
 
 ### `onlyExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L278)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L282)</sub>
 
 ### `onlyPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L273)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L277)</sub>
 
 ## Events
 
 ### `AssignedRewardTokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L291)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L295)</sub>
 
 **Signature**: `AssignedRewardTokensRecovered(address recoverAddress, uint256 amount, uint256 periodID)`
 
 ### `ExchangeFeeRecorded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L285)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L289)</sub>
 
 **Signature**: `ExchangeFeeRecorded(address account, uint256 amount, uint256 periodID)`
 
 ### `NewPeriodStarted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L291)</sub>
 
 **Signature**: `NewPeriodStarted(uint256 periodID)`
 
 ### `PeriodControllerChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L292)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L296)</sub>
 
 **Signature**: `PeriodControllerChanged(address newPeriodController)`
 
 ### `PeriodFinalizedWithRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L288)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L292)</sub>
 
 **Signature**: `PeriodFinalizedWithRewards(uint256 periodID, uint256 rewards)`
 
 ### `RewardsClaimed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L286)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L290)</sub>
 
 **Signature**: `RewardsClaimed(address account, uint256 amount, uint256 periodID)`
 
 ### `TokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L289)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L293)</sub>
 
 **Signature**: `TokensRecovered(address tokenAddress, address recoverAddress, uint256 amount)`
 
 ### `UnassignedRewardTokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/TradingRewards.sol#L290)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/TradingRewards.sol#L294)</sub>
 
 **Signature**: `UnassignedRewardTokensRecovered(address recoverAddress, uint256 amount)`

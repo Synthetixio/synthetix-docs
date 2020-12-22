@@ -63,17 +63,26 @@ nav:
                 - BinaryOptionMarketData: contracts/source/contracts/BinaryOptionMarketData.md
                 - BinaryOptionMarketFactory: contracts/source/contracts/BinaryOptionMarketFactory.md
                 - BinaryOptionMarketManager: contracts/source/contracts/BinaryOptionMarketManager.md
+                - Collateral: contracts/source/contracts/Collateral.md
+                - CollateralErc20: contracts/source/contracts/CollateralErc20.md
+                - CollateralEth: contracts/source/contracts/CollateralEth.md
+                - CollateralManager: contracts/source/contracts/CollateralManager.md
+                - CollateralManagerState: contracts/source/contracts/CollateralManagerState.md
+                - CollateralShort: contracts/source/contracts/CollateralShort.md
+                - CollateralState: contracts/source/contracts/CollateralState.md
                 - ContractStorage: contracts/source/contracts/ContractStorage.md
                 - DappMaintenance: contracts/source/contracts/DappMaintenance.md
                 - DebtCache: contracts/source/contracts/DebtCache.md
                 - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
                 - Depot: contracts/source/contracts/Depot.md
+                - EmptyCollateralManager: contracts/source/contracts/EmptyCollateralManager.md
                 - EmptyEtherCollateral: contracts/source/contracts/EmptyEtherCollateral.md
                 - EscrowChecker: contracts/source/contracts/EscrowChecker.md
                 - EternalStorage: contracts/source/contracts/EternalStorage.md
                 - EtherCollateral: contracts/source/contracts/EtherCollateral.md
                 - EtherCollateralsUSD: contracts/source/contracts/EtherCollateralsUSD.md
                 - ExchangeRates: contracts/source/contracts/ExchangeRates.md
+                - ExchangeRatesWithoutInvPricing: contracts/source/contracts/ExchangeRatesWithoutInvPricing.md
                 - ExchangeState: contracts/source/contracts/ExchangeState.md
                 - Exchanger: contracts/source/contracts/Exchanger.md
                 - ExchangerWithVirtualSynth: contracts/source/contracts/ExchangerWithVirtualSynth.md
@@ -85,6 +94,7 @@ nav:
                 - FlexibleStorage: contracts/source/contracts/FlexibleStorage.md
                 - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
                 - Issuer: contracts/source/contracts/Issuer.md
+                - IssuerWithoutLiquidations: contracts/source/contracts/IssuerWithoutLiquidations.md
                 - IssuerWithoutUpdatableCache: contracts/source/contracts/IssuerWithoutUpdatableCache.md
                 - LimitedSetup: contracts/source/contracts/LimitedSetup.md
                 - Liquidations: contracts/source/contracts/Liquidations.md
@@ -105,6 +115,7 @@ nav:
                 - RewardsDistributionRecipient: contracts/source/contracts/RewardsDistributionRecipient.md
                 - SecondaryDeposit: contracts/source/contracts/SecondaryDeposit.md
                 - SelfDestructible: contracts/source/contracts/SelfDestructible.md
+                - ShortingRewards: contracts/source/contracts/ShortingRewards.md
                 - StakingRewards: contracts/source/contracts/StakingRewards.md
                 - State: contracts/source/contracts/State.md
                 - SupplySchedule: contracts/source/contracts/SupplySchedule.md
@@ -125,6 +136,10 @@ nav:
                 - IBinaryOption: contracts/source/interfaces/IBinaryOption.md
                 - IBinaryOptionMarket: contracts/source/interfaces/IBinaryOptionMarket.md
                 - IBinaryOptionMarketManager: contracts/source/interfaces/IBinaryOptionMarketManager.md
+                - ICollateralErc20: contracts/source/interfaces/ICollateralErc20.md
+                - ICollateralEth: contracts/source/interfaces/ICollateralEth.md
+                - ICollateralLoan: contracts/source/interfaces/ICollateralLoan.md
+                - ICollateralManager: contracts/source/interfaces/ICollateralManager.md
                 - IDebtCache: contracts/source/interfaces/IDebtCache.md
                 - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
                 - IDepot: contracts/source/interfaces/IDepot.md
@@ -145,6 +160,7 @@ nav:
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
                 - ISecondaryDeposit: contracts/source/interfaces/ISecondaryDeposit.md
+                - IShortingRewards: contracts/source/interfaces/IShortingRewards.md
                 - IStakingRewards: contracts/source/interfaces/IStakingRewards.md
                 - ISupplySchedule: contracts/source/interfaces/ISupplySchedule.md
                 - ISynth: contracts/source/interfaces/ISynth.md
@@ -161,6 +177,7 @@ nav:
               Libraries:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md
                 - AddressSetLib: contracts/source/libraries/AddressSetLib.md
+                - Bytes32SetLib: contracts/source/libraries/Bytes32SetLib.md
                 - Math: contracts/source/libraries/Math.md
                 - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
                 - SafeMath: contracts/source/libraries/SafeMath.md

@@ -6,7 +6,7 @@ This is a [Synth](Synth.md) where all the holders can be force-[exchanged](Synth
 
 Purgeable synths were introduced by [SIP-3](https://github.com/Synthetixio/SIPs/blob/master/SIPS/sip-3.md) in response to increasing gas costs associated with minting, and to allow faster reconfiguration of inverse synths.
 
-**Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/PurgeableSynth.sol)
+**Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol)
 
 ## Architecture
 
@@ -23,7 +23,6 @@ graph TD
     Synth[Synth] --> MixinResolver[MixinResolver]
     ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
     Proxyable[Proxyable] --> Owned[Owned]
-    MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
 
@@ -35,7 +34,7 @@ graph TD
 
 ### `maxSupplyToPurgeInUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/PurgeableSynth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol#L18)</sub>
 
 Purging this Synth is disallowed unless the value of its supply is less than this. Initialised to $100\,000$.
 
@@ -45,7 +44,7 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/PurgeableSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -61,11 +60,31 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 
     `nonpayable`
 
+## Views
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol#L36)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() returns (bytes32[])`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
 ## Restricted Functions
 
 ### `purge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/PurgeableSynth.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol#L49)</sub>
 
 Allows the owner to liquidate all holders of this token back to `sUSD` if the total value of this Synth is worth less than [`maxSupplyToPurgeInUSD`](#maxsupplytopurgeinusd) US dollars at current prices, or if the token is an inverse synth whose price is frozen.
 
@@ -87,7 +106,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 
     **Requires**
 
-    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/PurgeableSynth.sol#L51)
+    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol#L55)
 
     **Modifiers**
 
@@ -97,7 +116,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 
 ### `emitPurged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/PurgeableSynth.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -115,7 +134,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/PurgeableSynth.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol#L43)</sub>
 
 The contract address to obtain price information from.
 
@@ -141,7 +160,7 @@ It is necessary to know the current price of this Synth to work out whether it i
 
 ### `Purged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/PurgeableSynth.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/PurgeableSynth.sol#L73)</sub>
 
 Records that a balance of this currency was liquidated back to `sUSD` for a particular account.
 

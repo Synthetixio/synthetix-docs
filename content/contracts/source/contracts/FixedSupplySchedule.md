@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/FixedSupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol)
+**Source:** [contracts/FixedSupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol)
 
 ## Architecture
 
@@ -16,8 +16,8 @@
 
 ```mermaid
 graph TD
+    FixedSupplySchedule[FixedSupplySchedule] --> Owned[Owned]
     FixedSupplySchedule[FixedSupplySchedule] --> MixinResolver[MixinResolver]
-    MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
 
@@ -25,19 +25,19 @@ graph TD
 
 ### `DEFAULT_MINT_BUFFER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L32)</sub>
 
 **Type:** `uint256`
 
 ### `DEFAULT_MINT_PERIOD_DURATION`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L30)</sub>
 
 **Type:** `uint256`
 
 ### `MAX_MINTER_REWARD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L27)</sub>
 
 **Type:** `uint256`
 
@@ -45,49 +45,49 @@ graph TD
 
 ### `fixedPeriodicSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L47)</sub>
 
 **Type:** `uint256`
 
 ### `inflationStartDate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L37)</sub>
 
 **Type:** `uint256`
 
 ### `lastMintEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L39)</sub>
 
 **Type:** `uint256`
 
 ### `mintBuffer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L45)</sub>
 
 **Type:** `uint256`
 
 ### `mintPeriodCounter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L41)</sub>
 
 **Type:** `uint256`
 
 ### `mintPeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L43)</sub>
 
 **Type:** `uint256`
 
 ### `minterReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L51)</sub>
 
 **Type:** `uint256`
 
 ### `supplyEnd`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L49)</sub>
 
 **Type:** `uint256`
 
@@ -95,7 +95,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -113,15 +113,15 @@ graph TD
 
     **Requires**
 
-    * [require(..., Buffer can't be greater than period)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L83)
+    * [require(..., Buffer can't be greater than period)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L81)
 
-    * [require(..., Reward can't exceed max minter reward)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L84)
+    * [require(..., Reward can't exceed max minter reward)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L82)
 
 ## Views
 
 ### `isMintable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L158)</sub>
 
 ??? example "Details"
 
@@ -139,7 +139,7 @@ graph TD
 
 ### `mintableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -157,7 +157,7 @@ graph TD
 
 ### `periodsSinceLastIssuance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L144)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -173,11 +173,29 @@ graph TD
 
     `view`
 
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L101)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() returns (bytes32[])`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
 ## Restricted Functions
 
 ### `recordMintEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L170)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L173)</sub>
 
 ??? example "Details"
 
@@ -203,7 +221,7 @@ graph TD
 
 ### `setMinterReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L196)</sub>
 
 ??? example "Details"
 
@@ -221,7 +239,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Reward can't exceed max minter reward)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L194)
+    * [require(..., Reward can't exceed max minter reward)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L197)
 
     **Modifiers**
 
@@ -235,7 +253,7 @@ graph TD
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -255,18 +273,18 @@ graph TD
 
 ### `onlySynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L204)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L207)</sub>
 
 ## Events
 
 ### `MinterRewardUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L218)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L221)</sub>
 
 **Signature**: `MinterRewardUpdated(uint256 newRewardAmount)`
 
 ### `SupplyMinted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/FixedSupplySchedule.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/FixedSupplySchedule.sol#L216)</sub>
 
 **Signature**: `SupplyMinted(uint256 supplyMinted, uint256 numberOfPeriodsIssued, uint256 lastMintEvent, uint256 timestamp)`

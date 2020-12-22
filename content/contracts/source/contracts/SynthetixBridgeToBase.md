@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol)
+**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol)
 
 ## Architecture
 
@@ -10,8 +10,9 @@
 
 ```mermaid
 graph TD
-    SynthetixBridgeToBase[SynthetixBridgeToBase] --> MixinResolver[MixinResolver]
-    MixinResolver[MixinResolver] --> Owned[Owned]
+    SynthetixBridgeToBase[SynthetixBridgeToBase] --> Owned[Owned]
+    SynthetixBridgeToBase[SynthetixBridgeToBase] --> MixinSystemSettings[MixinSystemSettings]
+    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
 
 ```
 
@@ -19,7 +20,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -35,17 +36,37 @@ graph TD
 
     `nonpayable`
 
-## Restricted Functions
+## Views
 
-### `mintSecondaryFromDeposit`
+### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L61)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `mintSecondaryFromDeposit(address account, uint256 amount)`
+    `resolverAddressesRequired() returns (bytes32[])`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
+## Restricted Functions
+
+### `completeDeposit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L92)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `completeDeposit(address account, uint256 amount)`
 
     **Visibility**
 
@@ -63,15 +84,15 @@ graph TD
 
     * [MintedSecondary](#mintedsecondary)
 
-### `mintSecondaryFromDepositForRewards`
+### `completeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L100)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `mintSecondaryFromDepositForRewards(uint256 amount)`
+    `completeRewardDeposit(uint256 amount)`
 
     **Visibility**
 
@@ -93,7 +114,7 @@ graph TD
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -111,7 +132,7 @@ graph TD
 
 ### `messenger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -129,7 +150,7 @@ graph TD
 
 ### `onlyAllowFromOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -147,13 +168,13 @@ graph TD
 
     **Requires**
 
-    * [require(..., Only the relayer can call this)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L58)
+    * [require(..., Only the relayer can call this)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L50)
 
-    * [require(..., Only the L1 bridge can invoke)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L59)
+    * [require(..., Only the L1 bridge can invoke)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L51)
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -171,7 +192,7 @@ graph TD
 
 ### `synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -191,7 +212,7 @@ graph TD
 
 ### `initiateWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -209,7 +230,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Cannot withdraw with debt)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L71)
+    * [require(..., Cannot withdraw with debt)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L75)
 
     **Emits**
 
@@ -219,24 +240,24 @@ graph TD
 
 ### `onlyOptimismBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L54)</sub>
 
 ## Events
 
 ### `MintedSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L108)</sub>
 
 **Signature**: `MintedSecondary(address account, uint256 amount)`
 
 ### `MintedSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L109)</sub>
 
 **Signature**: `MintedSecondaryRewards(uint256 amount)`
 
 ### `WithdrawalInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/SynthetixBridgeToBase.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/SynthetixBridgeToBase.sol#L110)</sub>
 
 **Signature**: `WithdrawalInitiated(address account, uint256 amount)`

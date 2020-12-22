@@ -9,7 +9,7 @@ This contract was required by [EtherCollateral](EtherCollateral.md) to allow it 
 It could be used where there a multiple Collateral contracts.
 i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contract for issuing sBTC then those synths would need to inherit MultiCollateralSynth and then have their corresponding Collateral Contract set via the constructor argument multiCollateralKey
 
-**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MultiCollateralSynth.sol)
+**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol)
 
 ## Architecture
 
@@ -22,7 +22,6 @@ graph TD
     Synth[Synth] --> MixinResolver[MixinResolver]
     ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
     Proxyable[Proxyable] --> Owned[Owned]
-    MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
 
@@ -30,25 +29,17 @@ graph TD
 
 - [EtherCollateral](EtherCollateral.md)
 
-## Variables
-
-### `multiCollateralKey`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MultiCollateralSynth.sol#L9)</sub>
-
-**Type:** `bytes32`
-
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MultiCollateralSynth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol#L22)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver, bytes32 _multiCollateralKey)`
+    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver)`
 
     **Visibility**
 
@@ -58,11 +49,31 @@ graph TD
 
     `nonpayable`
 
+## Views
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol#L47)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() returns (bytes32[])`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
 ## Restricted Functions
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MultiCollateralSynth.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -84,7 +95,7 @@ graph TD
 
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MultiCollateralSynth.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -106,15 +117,51 @@ graph TD
 
 ## Internal Functions
 
-### `multiCollateral`
+### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MultiCollateralSynth.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol#L35)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `multiCollateral() returns (address)`
+    `collateralManager() returns (contract ICollateralManager)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `etherCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol#L39)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `etherCollateral() returns (contract IEtherCollateral)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `etherCollateralsUSD`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol#L43)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `etherCollateralsUSD() returns (contract IEtherCollateralsUSD)`
 
     **Visibility**
 
@@ -128,4 +175,4 @@ graph TD
 
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MultiCollateralSynth.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MultiCollateralSynth.sol#L79)</sub>

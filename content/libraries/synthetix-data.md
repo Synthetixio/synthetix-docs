@@ -20,7 +20,7 @@ The below all return a Promise that resolves with the requested results.
 4. `exchanges.total()` Get the total exchange volume, total fees and total number of unique exchange addresses.
 5. `exchanges.rebates({ minTimestamp = 1 day ago })` Get the last `N` exchange rebates since the given `minTimestamp` in seconds. Ordered in reverse chronological order.
 6. `exchanges.reclaims({ minTimestamp = 1 day ago })` Get the last `N` exchange reclaims since the given `minTimestamp` in seconds. Ordered in reverse chronological order.
-7. `exchanges.since({ minTimestamp = 1 day ago })` Get the last `N` exchanges since the given `minTimestamp` (in seconds, so one hour ago is `3600`). These are ordered in reverse chronological order.
+7. `exchanges.since({ minTimestamp = 1 day ago })` Get the last `N` exchanges since the given `minTimestamp` (in seconds, so one hour ago is `Math.round(new Date().getTime()/1000) - 3600`). These are ordered in reverse chronological order.
 8. `rate.updates` Get all rate updates for synths in reverse chronological order
 9. `synths.issuers` Get all wallets that have invoked `Issue` on `sUSD` (other synths to come)
 10. `synths.transfers` Get synth transfers in reverse chronological order

@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol)
+**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol)
 
 ## Architecture
 
@@ -15,7 +15,6 @@ graph TD
     BaseSynthetix[BaseSynthetix] --> MixinResolver[MixinResolver]
     ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
     Proxyable[Proxyable] --> Owned[Owned]
-    MixinResolver[MixinResolver] --> Owned[Owned]
 
 ```
 
@@ -23,7 +22,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -39,11 +38,31 @@ graph TD
 
     `nonpayable`
 
+## Views
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L39)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() returns (bytes32[])`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
 ## Restricted Functions
 
 ### `burnSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -63,9 +82,11 @@ graph TD
 
     * [onlyBridge](#onlybridge)
 
+    * [systemActive](#systemactive)
+
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -87,7 +108,7 @@ graph TD
 
 ### `mintSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -111,7 +132,7 @@ graph TD
 
 ### `_mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -129,7 +150,7 @@ graph TD
 
 ### `onlyAllowFromBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -147,11 +168,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., Can only be invoked by the SynthetixBridgeToBase contract)](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L30)
+    * [require(..., Can only be invoked by bridge)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L28)
 
 ### `synthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -171,4 +192,4 @@ graph TD
 
 ### `onlyBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.0-ovm/contracts/MintableSynthetix.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/MintableSynthetix.sol#L33)</sub>
