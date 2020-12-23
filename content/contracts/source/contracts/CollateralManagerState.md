@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/CollateralManagerState.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol)
+**Source:** [contracts/CollateralManagerState.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol)
 
 ## Architecture
 
@@ -24,7 +24,7 @@ graph TD
 
 ### `Balance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L17)</sub>
 
 | Field   | Type      | Description |
 | ------- | --------- | ----------- |
@@ -35,37 +35,37 @@ graph TD
 
 ### `borrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L24)</sub>
 
 **Type:** `uint256[]`
 
 ### `borrowRatesLastUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L25)</sub>
 
 **Type:** `uint256`
 
 ### `shortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L27)</sub>
 
 **Type:** `mapping(bytes32 => uint256[])`
 
 ### `shortRatesLastUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L28)</sub>
 
 **Type:** `mapping(bytes32 => uint256)`
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L31)</sub>
 
 **Type:** `mapping(bytes32 => struct CollateralManagerState.Balance)`
 
 ### `totalLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L22)</sub>
 
 **Type:** `uint256`
 
@@ -73,7 +73,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@ graph TD
 
 ### `getRateAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@ graph TD
 
 ### `getRatesAndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -129,7 +129,7 @@ graph TD
 
 ### `getRatesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -147,7 +147,7 @@ graph TD
 
 ### `getShortRatesAndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -165,7 +165,7 @@ graph TD
 
 ### `long`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -187,7 +187,7 @@ graph TD
 
 ### `ratesLastUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -205,7 +205,7 @@ graph TD
 
 ### `short`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -229,7 +229,7 @@ graph TD
 
 ### `addShortCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -251,7 +251,7 @@ graph TD
 
 ### `decrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -273,7 +273,7 @@ graph TD
 
 ### `decrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -295,7 +295,7 @@ graph TD
 
 ### `incrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -317,7 +317,7 @@ graph TD
 
 ### `incrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -339,7 +339,7 @@ graph TD
 
 ### `incrementTotalLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -361,7 +361,7 @@ graph TD
 
 ### `long`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -383,7 +383,7 @@ graph TD
 
 ### `removeShortCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -405,7 +405,7 @@ graph TD
 
 ### `short`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -427,7 +427,7 @@ graph TD
 
 ### `updateBorrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -449,7 +449,7 @@ graph TD
 
 ### `updateShortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -473,7 +473,7 @@ graph TD
 
 ### `getShortRateAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -491,7 +491,7 @@ graph TD
 
 ### `getShortRatesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L119)</sub>
 
 ??? example "Details"
 
@@ -509,7 +509,7 @@ graph TD
 
 ### `shortRateLastUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/CollateralManagerState.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/CollateralManagerState.sol#L128)</sub>
 
 ??? example "Details"
 

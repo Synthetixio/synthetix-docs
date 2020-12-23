@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeRatesWithoutInvPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol)
+**Source:** [contracts/ExchangeRatesWithoutInvPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@ graph TD
 
 ### `canFreezeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -59,7 +59,7 @@ graph TD
 
 ### `rateIsFrozen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -79,7 +79,7 @@ graph TD
 
 ### `removeInversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -101,7 +101,7 @@ graph TD
 
 ### `setInversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -125,7 +125,7 @@ graph TD
 
 ### `_notImplemented`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -143,7 +143,7 @@ graph TD
 
 ### `_rateIsFrozen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -163,7 +163,7 @@ graph TD
 
 ### `freezeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/ExchangeRatesWithoutInvPricing.sol#L32)</sub>
 
 ??? example "Details"
 
