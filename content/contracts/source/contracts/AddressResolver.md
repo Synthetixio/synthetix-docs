@@ -4,7 +4,7 @@
 
 This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C (and updating every release), contract A can refer to an `AddressResolver` and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contract. Thus this ensures that contract A always has the latest B and C contracts.
 
-**Source:** [contracts/AddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol)
+**Source:** [contracts/AddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol)
 
 ## Architecture
 
@@ -20,7 +20,7 @@ graph TD
 
 ### `repository`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L14)</sub>
 
 The mapping of contract name to address
 
@@ -30,7 +30,7 @@ The mapping of contract name to address
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -50,7 +50,7 @@ The mapping of contract name to address
 
 ### `areAddressesImported`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -68,7 +68,7 @@ The mapping of contract name to address
 
 ### `getAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L50)</sub>
 
 Returns a single address by it's `bytes32` key.
 
@@ -88,7 +88,7 @@ Returns a single address by it's `bytes32` key.
 
 ### `getSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L60)</sub>
 
 !!! Warning "Not yet on mainnet"
 
@@ -110,11 +110,11 @@ Returns a single address by it's `bytes32` key.
 
     **Requires**
 
-    * [require(..., Cannot find Issuer address)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L62)
+    * [require(..., Cannot find Issuer address)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L62)
 
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -132,13 +132,13 @@ Returns a single address by it's `bytes32` key.
 
     **Requires**
 
-    * [require(..., calldata)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L56)
+    * [require(..., calldata)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L56)
 
 ## Restricted Functions
 
 ### `importAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L20)</sub>
 
 Import one or more addresses into the system for the given keys. Note: this function will overrwite any previous entries with the same key names, allowing for inline updates.
 
@@ -158,7 +158,7 @@ Import one or more addresses into the system for the given keys. Note: this func
 
     **Requires**
 
-    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L21)
+    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L21)
 
     **Modifiers**
 
@@ -168,7 +168,7 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 ### `rebuildCaches`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -188,6 +188,6 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 ### `AddressImported`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/AddressResolver.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/AddressResolver.sol#L68)</sub>
 
 **Signature**: `AddressImported(bytes32 name, address destination)`

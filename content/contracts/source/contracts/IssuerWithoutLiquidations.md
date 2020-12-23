@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/IssuerWithoutLiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/IssuerWithoutLiquidations.sol)
+**Source:** [contracts/IssuerWithoutLiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/IssuerWithoutLiquidations.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/IssuerWithoutLiquidations.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/IssuerWithoutLiquidations.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@ graph TD
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta/contracts/IssuerWithoutLiquidations.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/IssuerWithoutLiquidations.sol#L11)</sub>
 
 ??? example "Details"
 

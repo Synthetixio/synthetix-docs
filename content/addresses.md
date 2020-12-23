@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.35.1-beta](https://github.com/Synthetixio/synthetix/tree/v2.35.1-beta)
+**Version**: [v2.35.2-beta](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta)
 
 !!! info "Naming Conventions"
 
@@ -2472,56 +2472,56 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>CollateralErc20</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralErc20.sol">CollateralErc20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/CollateralErc20.json">CollateralErc20.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xbF68E71a0587EB800a3C744EE18e4B910fd6dA43">0xbF68E71a0587EB800a3C744EE18e4B910fd6dA43</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x3c88F556807ec4779BB24fE8FAB81Df4ABBdfed8">0x3c88F556807ec4779BB24fE8FAB81Df4ABBdfed8</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralEth</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/CollateralEth.json">CollateralEth.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x768cE50e56788B59282c24Cc32c0Ae78bE61b2b6">0x768cE50e56788B59282c24Cc32c0Ae78bE61b2b6</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x812b08B097faAA3D72034Ab639EEba063aebA1ab">0x812b08B097faAA3D72034Ab639EEba063aebA1ab</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManager</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/CollateralManager.json">CollateralManager.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x93D26D37D84b7aD4771EEF2E7D9283B89f564C32">0x93D26D37D84b7aD4771EEF2E7D9283B89f564C32</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xFC4B21B7CC5DCC62aE4ae229Ee96Af1DB1678F35">0xFC4B21B7CC5DCC62aE4ae229Ee96Af1DB1678F35</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManagerState</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/CollateralManagerState.json">CollateralManagerState.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xDE09679f63b128136446F7D5D8689695ad3B6808">0xDE09679f63b128136446F7D5D8689695ad3B6808</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xe8Cf8DBeFdf50DD2C5F8E03fee5E3FbfA928B9A3">0xe8Cf8DBeFdf50DD2C5F8E03fee5E3FbfA928B9A3</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralShort</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/CollateralShort.json">CollateralShort.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xa3e0E87520B53cb79522846B06f84E7c7abB15A9">0xa3e0E87520B53cb79522846B06f84E7c7abB15A9</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x852a385B32C2F226476500Cc303EB014448B66FB">0x852a385B32C2F226476500Cc303EB014448B66FB</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateErc20</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x1F013B9cd882484435113e195211C55df5bdC211">0x1F013B9cd882484435113e195211C55df5bdC211</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xe2fd57caF070A3F995D597a8B21cbF206E34Ff38">0xe2fd57caF070A3F995D597a8B21cbF206E34Ff38</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateEth</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xb11A6BF0Eee3898F139ae6abDCac5139e17c3C19">0xb11A6BF0Eee3898F139ae6abDCac5139e17c3C19</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x8f28322A3e85296D00dc3c378519AaB7f570bA79">0x8f28322A3e85296D00dc3c378519AaB7f570bA79</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateShort</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xfAC070301E94368936C128f91747B5aa7F6582CD">0xfAC070301E94368936C128f91747B5aa7F6582CD</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0xFAdbaf925eC35D97ae3EB87b458d005Dfd4C4b52">0xFAdbaf925eC35D97ae3EB87b458d005Dfd4C4b52</a>
                 </td>
               </tr>
               <tr>
@@ -2535,7 +2535,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>DebtCache</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DebtCache.sol">DebtCache.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/rinkeby/DebtCache.json">DebtCache.json</a></td>
-                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x01a849ec3d533305819bdf097922f3efD313Ef2F">0x01a849ec3d533305819bdf097922f3efD313Ef2F</a>
+                <td><a target="_blank" href="https://rinkeby.etherscan.io/address/0x1A9F7Ec8bA471809Adf1Ac44222d728e627ceC6B">0x1A9F7Ec8bA471809Adf1Ac44222d728e627ceC6B</a>
                 </td>
               </tr>
               <tr>
@@ -3659,56 +3659,56 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>CollateralErc20</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralErc20.sol">CollateralErc20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/CollateralErc20.json">CollateralErc20.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xBca433dE144e375034F21e2DDf7e38E0dC820B31">0xBca433dE144e375034F21e2DDf7e38E0dC820B31</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x42e1B593178BC75e452e5C88A706C9d4cDeBeAF8">0x42e1B593178BC75e452e5C88A706C9d4cDeBeAF8</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralEth</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/CollateralEth.json">CollateralEth.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9458436ccd294d0e465f9b4B6C0edC034F68145B">0x9458436ccd294d0e465f9b4B6C0edC034F68145B</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xbBe35b80B6F82F17Def6Ed6F76AC9DDf5029EC73">0xbBe35b80B6F82F17Def6Ed6F76AC9DDf5029EC73</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManager</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/CollateralManager.json">CollateralManager.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x057ee6230Fe8342ED627D99FB4E5169970f29b42">0x057ee6230Fe8342ED627D99FB4E5169970f29b42</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x53baE964339e8A742B5b47F6C10bbfa8Ff138F34">0x53baE964339e8A742B5b47F6C10bbfa8Ff138F34</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManagerState</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/CollateralManagerState.json">CollateralManagerState.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0D69b7f60dc6f26c1b5c0e424cD95A83d9FEFb3a">0x0D69b7f60dc6f26c1b5c0e424cD95A83d9FEFb3a</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8D65Ed88D6162a2b3B5F71c45D433d4aeAc93065">0x8D65Ed88D6162a2b3B5F71c45D433d4aeAc93065</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralShort</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/CollateralShort.json">CollateralShort.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x00fAaC0807a9928Bd84bD8958acAf8A2eA5DE14C">0x00fAaC0807a9928Bd84bD8958acAf8A2eA5DE14C</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0AC93512426e7D3C346E5a59B87504644f0780d0">0x0AC93512426e7D3C346E5a59B87504644f0780d0</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateErc20</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8D11865B2EfBeB9f73fa2621167e93690AE599af">0x8D11865B2EfBeB9f73fa2621167e93690AE599af</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8e6669A625c92279E137f887c0175de8C47a3622">0x8e6669A625c92279E137f887c0175de8C47a3622</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateEth</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xda2331Aa29486A8d3c2fF448c6B4f1E2194a6664">0xda2331Aa29486A8d3c2fF448c6B4f1E2194a6664</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xb0243A27b8c08B78B4d7Ae0730670Cf824345114">0xb0243A27b8c08B78B4d7Ae0730670Cf824345114</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateShort</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8d08f82A1e76E43b78b0F64F1a9fbcA41f6fCf68">0x8d08f82A1e76E43b78b0F64F1a9fbcA41f6fCf68</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x153d4BE15626736B9208958d5796EED017aB766c">0x153d4BE15626736B9208958d5796EED017aB766c</a>
                 </td>
               </tr>
               <tr>
@@ -3722,7 +3722,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>DebtCache</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DebtCache.sol">DebtCache.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan/DebtCache.json">DebtCache.json</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x2dC79215005767c7A8cF1954586Dd804eA1a8685">0x2dC79215005767c7A8cF1954586Dd804eA1a8685</a>
+                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xDcB48E969E69Df65F72f77b2AAE145509733E5C0">0xDcB48E969E69Df65F72f77b2AAE145509733E5C0</a>
                 </td>
               </tr>
               <tr>
