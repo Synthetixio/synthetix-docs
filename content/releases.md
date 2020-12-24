@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Shaula (v2.35.2)
+
+**Published**: Dec 24, 2020
+
+**Codebase**: [v2.35.2](https://github.com/Synthetixio/synthetix/tree/v2.35.2)
+
+> https://blog.synthetix.io/the-shaula-release/
+
+- [SIP-97](https://sips.synthetix.io/sips/sip-97): Multi-collateral loans — This SIP allows users to borrow Synths against ETH and ERC20 collateral. Initially, the system will support borrowing sUSD or sETH against ETH, and sUSD or sBTC against renBTC.
+- [SIP-100](https://sips.synthetix.io/sips/sip-100): Resolver and cache improvements — Improves the ‘AddressResolver’ to improve protocol upgrades, reduce gas of deployments and further decentralization.
+- [SIP-103](https://sips.synthetix.io/sips/sip-103): sUSD shorts — This SIP allows users to short Synths against sUSD. This mechanism provides an alternative to iSynths for users seeking inverse price exposure. While these positions require collateral, they return the sUSD proceeds of the sale to the shorter, which can then be deployed productively throughout DeFi.
+
+---
+
 # Adhara (v2.34.0)
 
 **Published**: Dec 1, 2020
@@ -251,18 +265,6 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 **Codebase**: [v2.15.0](https://github.com/Synthetixio/synthetix/tree/v2.15.0)
 
 > The `DappMaintenance` contract is here to keep a state of the dApps (Mintr and Synthetix Exchange) in order to check if they are supposed to be up or down.
-
----
-
-# Vega (v2.14.0)
-
-**Published**: Nov 27, 2019
-
-**Codebase**: [v2.14.0](https://github.com/Synthetixio/synthetix/tree/v2.14.0)
-
-> https://blog.synthetix.io/the-vega-release/
-
-- https://sips.synthetix.io/sips/sip-29
 
 ---
 
