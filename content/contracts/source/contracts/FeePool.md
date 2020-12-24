@@ -10,7 +10,7 @@ The FeePool currently maintains 2 [feeperiod](##feeperiod) structs where the cur
 
 Since [SIP 56: Differential Fees](https://sips.synthetix.io/sips/sip-56) it now supports the API for storing and reading the Synth Exchange Fee Rates per synth which are defined via SCCP's. The current eschange fee rates implemented in [sccp-24](https://sips.synthetix.io/sccp/sccp-24)
 
-**Source:** [contracts/FeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol)
+**Source:** [contracts/FeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol)
 
 ## Architecture
 
@@ -54,7 +54,7 @@ graph TD
 
 ### `FeePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L43)</sub>
 
 A record for a fee period, when it was opened, and the fees and rewards accrued within it. This information is maintained for the last several fee periods in [`recentFeePeriods`](#recentfeeperiods).
 
@@ -72,7 +72,7 @@ A record for a fee period, when it was opened, and the fees and rewards accrued 
 
 ### `FEE_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L37)</sub>
 
 The address where fees are pooled as sUSD.
 
@@ -82,7 +82,7 @@ The address where fees are pooled as sUSD.
 
 ### `FEE_PERIOD_LENGTH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L58)</sub>
 
 This is the number of weekly fee periods that are tracked by the smart contracts, hence the length of the [`recentFeePeriods`](#recentfeeperiods) array.
 
@@ -96,7 +96,7 @@ This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/s
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@ This was reduced from 6 to 3 as part of [SIP-4](https://sips.synthetix.io/sips/s
 
 ### `effectiveDebtRatioForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L685)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L685)</sub>
 
 Given an account and an index into [`recentFeePeriods`](#recentfeeperiods), this function computes the percentage of total debt ownership of the account at the end of that period.
 
@@ -140,13 +140,13 @@ In principle a future version could support the current fee period by using the 
 
     **Requires**
 
-    * [require(..., Current period is not closed yet)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L686)
+    * [require(..., Current period is not closed yet)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L686)
 
-    * [require(..., Exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L687)
+    * [require(..., Exceeds the FEE_PERIOD_LENGTH)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L687)
 
 ### `feePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L163)</sub>
 
 This is the minimum duration of a single fee period in seconds. In practice they may be slightly longer if [`closeCurrentFeePeriod`](#closecurrentfeeperiod) is not called immediately at the earliest valid moment.
 
@@ -170,7 +170,7 @@ Its value is one week, but it may be between [`MIN_FEE_PERIOD_DURATION`](#min_fe
 
 ### `feesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L531)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L531)</sub>
 
 Return the total of fees and rewards available to be withdrawn by this account. The result is reported as a `[fees, rewards]` pair denominated in the requested Synth flavour and SNX, respectively.
 
@@ -192,7 +192,7 @@ This is the total of fees accrued in completed periods, so is simply the the sum
 
 ### `feesByPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L580)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L580)</sub>
 
 Returns an array of [`FEE_PERIOD_LENGTH`](#fee_period_length) `[fees, rewards]` pairs owed to an account for each [recent fee period](#recentfeeperiods) (including the current one). Fees are denominated in sUSD and rewards in SNX.
 
@@ -218,7 +218,7 @@ Periods where the user has already withdrawn since that period closed are skippe
 
 ### `getLastFeeWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L707)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L707)</sub>
 
 Returns from [`FeePoolEternalStorage`](FeePoolEternalStorage.md) the id of the fee period during which the given address last withdrew fees.
 
@@ -238,7 +238,7 @@ Returns from [`FeePoolEternalStorage`](FeePoolEternalStorage.md) the id of the f
 
 ### `getPenaltyThresholdRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L714)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L714)</sub>
 
 Returns the collateralisation level a user can reach before they cannot claim fees. This is simply [`SynthetixState.issuanceRatio *`](SynthetixState.md#issuanceratio) [`(1 + TARGET_THRESHOLD)`](#target_threshold). The result is returned as a [18-decimal fixed point number](../libraries/SafeDecimalMath.md).
 
@@ -258,7 +258,7 @@ Returns the collateralisation level a user can reach before they cannot claim fe
 
 ### `isFeesClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L572)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L572)</sub>
 
 ??? example "Details"
 
@@ -276,7 +276,7 @@ Returns the collateralisation level a user can reach before they cannot claim fe
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -294,7 +294,7 @@ Returns the collateralisation level a user can reach before they cannot claim fe
 
 ### `recentFeePeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L171)</sub>
 
 Stores [fee period information](#feeperiod) for the last three weeks, from newest to olders.
 
@@ -318,7 +318,7 @@ Stores [fee period information](#feeperiod) for the last three weeks, from newes
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -336,7 +336,7 @@ Stores [fee period information](#feeperiod) for the last three weeks, from newes
 
 ### `targetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L167)</sub>
 
 **Type:** `uint256`
 
@@ -356,7 +356,7 @@ Stores [fee period information](#feeperiod) for the last three weeks, from newes
 
 ### `totalFeesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L500)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L500)</sub>
 
 Computes the total fees available to be withdrawn, valued in terms of `currencyKey`. This simply sums the unclaimed fees over [`recentFeePeriods`](#recentfeeperiods) except those from the current period, because they cannot yet be claimed.
 
@@ -376,7 +376,7 @@ Computes the total fees available to be withdrawn, valued in terms of `currencyK
 
 ### `totalRewardsAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L515)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L515)</sub>
 
 Computes the total SNX rewards available to be withdrawn. This simply sums the unclaimed rewards over [`recentFeePeriods`](#recentfeeperiods) except those from the current period, because they cannot yet be claimed.
 
@@ -398,7 +398,7 @@ Computes the total SNX rewards available to be withdrawn. This simply sums the u
 
 ### `appendAccountIssuanceRecord`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L210)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L210)</sub>
 
 Records that an account issued or burnt synths in the fee pool state.
 
@@ -426,7 +426,7 @@ The `debtRatio` argument is a [27-decimal fixed point number](../libraries/SafeD
 
 ### `appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L380)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L380)</sub>
 
 Allows the contract owner to escrow SNX rewards for particular accounts. The rewards are escrowed for one year.
 
@@ -452,7 +452,7 @@ The SNX is deposited into the [`RewardEscrow`](RewardEscrow.md) contract from th
 
 ### `importFeePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L352)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L352)</sub>
 
 During the setup period, allowed the contract owner to set a particular fee period entry in [`recentFeePeriods`](#recentfeeperiods) in order to migrate from a previous contract version.
 
@@ -472,7 +472,7 @@ During the setup period, allowed the contract owner to set a particular fee peri
 
     **Requires**
 
-    * [require(..., Cannot import bad data)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L362)
+    * [require(..., Cannot import bad data)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L362)
 
     **Modifiers**
 
@@ -482,7 +482,7 @@ During the setup period, allowed the contract owner to set a particular fee peri
 
 ### `recordFeePaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L229)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L229)</sub>
 
 Allows the [`Synthetix._internalExchange`](Synthetix.md#_internalexchange) function to record that a fee was paid whenever an exchange between Synth flavours occurs.
 
@@ -510,7 +510,7 @@ Adds the value in sUSD to the current fee period's pool of fees to be distribute
 
 ### `_claimFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L303)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L303)</sub>
 
 Claims fees and rewards owed to the specified address.
 
@@ -537,15 +537,15 @@ The return value is always true if the transaction was not reverted.
 
     **Requires**
 
-    * [require(..., C-Ratio below penalty threshold)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L313)
+    * [require(..., C-Ratio below penalty threshold)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L313)
 
-    * [require(..., A synth or SNX rate is invalid)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L315)
+    * [require(..., A synth or SNX rate is invalid)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L315)
 
-    * [require(..., No fees or rewards available for period, or fees already claimed)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L320)
+    * [require(..., No fees or rewards available for period, or fees already claimed)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L320)
 
 ### `_effectiveDebtRatioForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L669)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L669)</sub>
 
 Given entry and exit indices into the debt ledger, and a percentage of total debt ownership at the entry index, this function computes the adjusted ownership percentage at the exit index. This percentage changes due to fluctuations in Synth prices and total supply.
 
@@ -573,7 +573,7 @@ See [`Synthetix._addToDebtRegister`](Synthetix.md#_addToDebtRegister) for detail
 
 ### `_feesAndRewardsFromPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L642)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L642)</sub>
 
 Computes the fees (in sUSD) and rewards (in SNX) owed at the end of a recent fee period given an entry index and the percentage of total system debt owned.
 
@@ -597,7 +597,7 @@ Computes the fees (in sUSD) and rewards (in SNX) owed at the end of a recent fee
 
 ### `_isFeesClaimableAndAnyRatesInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L549)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L549)</sub>
 
 ??? example "Details"
 
@@ -615,7 +615,7 @@ Computes the fees (in sUSD) and rewards (in SNX) owed at the end of a recent fee
 
 ### `_payFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L471)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L471)</sub>
 
 Pays a quantity of fees in sUSD to a claiming address.
 
@@ -641,7 +641,7 @@ The quantity is burnt from the fee pool, and and then issued into the destinatio
 
 ### `_payRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L491)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L491)</sub>
 
 Pays a quantity of rewards to a specified address, escrowing it for one year with [`RewardEscrow.appendVestingEntry`](RewardEscrow.md#appendvestingentry).
 
@@ -665,7 +665,7 @@ Pays a quantity of rewards to a specified address, escrowing it for one year wit
 
 ### `_recentFeePeriodsStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L196)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L196)</sub>
 
 ??? example "Details"
 
@@ -683,7 +683,7 @@ Pays a quantity of rewards to a specified address, escrowing it for one year wit
 
 ### `_recordFeePayment`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L392)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L392)</sub>
 
 Claims a quantity of fees from the [recent fee periods](#recentfeeperiods).
 
@@ -731,7 +731,7 @@ In pseudo-code:
 
 ### `_recordRewardPayment`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L430)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L430)</sub>
 
 Claims a quantity of SNX rewards from the [recent fee periods](#recentfeeperiods). This is only called in `_claimFees`.
 
@@ -753,7 +753,7 @@ Its logic is identical to [`_recordFeePayment`](#_recordfeepayment), except that
 
 ### `_setLastFeeWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L723)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L723)</sub>
 
 Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee period during which this address last withdrew fees.
 
@@ -773,7 +773,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L135)</sub>
 
 ??? example "Details"
 
@@ -791,7 +791,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
 ### `delegateApprovals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -809,7 +809,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
 ### `emitFeePeriodClosed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L787)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L787)</sub>
 
 ??? example "Details"
 
@@ -827,7 +827,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
 ### `emitFeesClaimed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L794)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L794)</sub>
 
 ??? example "Details"
 
@@ -845,7 +845,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
 ### `emitIssuanceDebtRatioEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L768)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L768)</sub>
 
 ??? example "Details"
 
@@ -863,7 +863,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
 ### `etherCollateralsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L131)</sub>
 
 ??? example "Details"
 
@@ -881,7 +881,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L127)</sub>
 
 ??? example "Details"
 
@@ -899,7 +899,7 @@ Stores into [FeePoolEternalStorage](FeePoolEternalStorage.md) the id of the fee 
 
 ### `feePoolEternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L123)</sub>
 
 The [`FeePoolEternalStorage`](FeePoolEternalStorage.md) key-value store that holds account last withdrawal times.
 
@@ -921,7 +921,7 @@ The [`FeePoolEternalStorage`](FeePoolEternalStorage.md) key-value store that hol
 
 ### `feePoolState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L119)</sub>
 
 The [`FeePoolState`](FeePoolState.md) contract associated with this fee pool, which holds historical issuance data for the last several periods.
 
@@ -943,7 +943,7 @@ The [`FeePoolState`](FeePoolState.md) contract associated with this fee pool, wh
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L139)</sub>
 
 ??? example "Details"
 
@@ -961,7 +961,7 @@ The [`FeePoolState`](FeePoolState.md) contract associated with this fee pool, wh
 
 ### `rewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L147)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L147)</sub>
 
 The [`RewardEscrow`](RewardEscrow.md) instance which holds inflationary rewards.
 
@@ -983,7 +983,7 @@ The [`RewardEscrow`](RewardEscrow.md) instance which holds inflationary rewards.
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -1001,7 +1001,7 @@ The [`RewardEscrow`](RewardEscrow.md) instance which holds inflationary rewards.
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L115)</sub>
 
 The main [`Synthetix`](Synthetix.md) contract.
 
@@ -1023,7 +1023,7 @@ The main [`Synthetix`](Synthetix.md) contract.
 
 ### `synthetixState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L143)</sub>
 
 The associated [`SynthetixState`](SynthetixState.md) contract.
 
@@ -1045,7 +1045,7 @@ The associated [`SynthetixState`](SynthetixState.md) contract.
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -1065,7 +1065,7 @@ The associated [`SynthetixState`](SynthetixState.md) contract.
 
 ### `claimFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L287)</sub>
 
 The message sender claims their fees in `sUSD`.
 
@@ -1093,7 +1093,7 @@ This is equivalent to [`_claimFees(messageSender)`](#_claimfees).
 
 ### `claimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L297)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L297)</sub>
 
 The message sender claims fees in `sUSD` for a specified address; the funds are remitted to that address, and not to the sender.
 
@@ -1115,7 +1115,7 @@ This function first checks with the [`DelegateApprovals`](DelegateApprovals.md) 
 
     **Requires**
 
-    * [require(..., Not approved to claim on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L298)
+    * [require(..., Not approved to claim on behalf)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L298)
 
     **Modifiers**
 
@@ -1125,7 +1125,7 @@ This function first checks with the [`DelegateApprovals`](DelegateApprovals.md) 
 
 ### `closeCurrentFeePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L247)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L247)</sub>
 
 If the current fee period has been open for longer than [`feePeriodDuration`](#feeperiodduration), then anyone may call this function to close it and open a new one.
 
@@ -1149,9 +1149,9 @@ The new fee period's [`feePeriodId`](#feeperiod) is the previous id incremented 
 
     **Requires**
 
-    * [require(..., Fee Period Duration not set)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L248)
+    * [require(..., Fee Period Duration not set)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L248)
 
-    * [require(..., Too early to close fee period)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L249)
+    * [require(..., Too early to close fee period)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L249)
 
     **Modifiers**
 
@@ -1159,7 +1159,7 @@ The new fee period's [`feePeriodId`](#feeperiod) is the previous id incremented 
 
 ### `setRewardsToDistribute`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L237)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L237)</sub>
 
 Adds a quantity of SNX to the current fee period's total of rewards to be distributed.
 
@@ -1179,17 +1179,17 @@ Adds a quantity of SNX to the current fee period's total of rewards to be distri
 
     **Requires**
 
-    * [require(..., Caller is not rewardsAuthority)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L239)
+    * [require(..., Caller is not rewardsAuthority)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L239)
 
 ## Modifiers
 
 ### `issuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L751)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L751)</sub>
 
 ### `notFeeAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L746)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L746)</sub>
 
 Reverts the transaction if `account` is the [fee address](#fee_address).
 
@@ -1197,23 +1197,23 @@ Reverts the transaction if `account` is the [fee address](#fee_address).
 
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L731)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L731)</sub>
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L741)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L741)</sub>
 
 ## Events
 
 ### `FeePeriodClosed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L784)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L784)</sub>
 
 **Signature**: `FeePeriodClosed(uint256 feePeriodId)`
 
 ### `FeesClaimed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L791)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L791)</sub>
 
 Records that an account [claimed](#_claimfees) the fees and rewards owed to them.
 
@@ -1223,7 +1223,7 @@ This event is emitted from the FeePool's [proxy](Proxy.md#_emit) with the `emitF
 
 ### `IssuanceDebtRatioEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/FeePool.sol#L758)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/FeePool.sol#L758)</sub>
 
 Records that a new account issuance record was [appended](#appendaccountissuancerecord) to the account's issuance ledger in [`FeePoolState`](FeePoolState.md#appendaccountissuancerecord).
 

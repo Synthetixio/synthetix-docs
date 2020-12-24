@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.35.2-beta](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta)
+**Version**: [v2.35.2](https://github.com/Synthetixio/synthetix/tree/v2.35.2)
 
 !!! info "Naming Conventions"
 
@@ -21,7 +21,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>AddressResolver</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/AddressResolver.json">AddressResolver.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x61166014E3f04E40C953fe4EAb9D9E40863C83AE">0x61166014E3f04E40C953fe4EAb9D9E40863C83AE</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x823bE81bbF96BEc0e25CA13170F5AaCb5B79ba83">0x823bE81bbF96BEc0e25CA13170F5AaCb5B79ba83</a>
                 </td>
               </tr>
               <tr>
@@ -35,14 +35,70 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>BinaryOptionMarketFactory</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketFactory.sol">BinaryOptionMarketFactory.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/BinaryOptionMarketFactory.json">BinaryOptionMarketFactory.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x72c091691b5cD86fAcD048972157985f74Ea1F07">0x72c091691b5cD86fAcD048972157985f74Ea1F07</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x211bA925B35b82246a3CCfa3A991a39A840f025C">0x211bA925B35b82246a3CCfa3A991a39A840f025C</a>
                 </td>
               </tr>
               <tr>
                 <td>BinaryOptionMarketManager</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/BinaryOptionMarketManager.sol">BinaryOptionMarketManager.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/BinaryOptionMarketManager.json">BinaryOptionMarketManager.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x8071bA88e58a19176EF007995FB5D9E1Faa73F92">0x8071bA88e58a19176EF007995FB5D9E1Faa73F92</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x915D1c9dF12142B535F6a7437F0196D80bCCC1BD">0x915D1c9dF12142B535F6a7437F0196D80bCCC1BD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralErc20</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralErc20.sol">CollateralErc20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralErc20.json">CollateralErc20.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x3B3812BB9f6151bEb6fa10783F1ae848a77a0d46">0x3B3812BB9f6151bEb6fa10783F1ae848a77a0d46</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralEth</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralEth.json">CollateralEth.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x3FF5c0A14121Ca39211C95f6cEB221b86A90729E">0x3FF5c0A14121Ca39211C95f6cEB221b86A90729E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralManager</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralManager.json">CollateralManager.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x067e398605E84F2D0aEEC1806e62768C5110DCc6">0x067e398605E84F2D0aEEC1806e62768C5110DCc6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralManagerState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralManagerState.json">CollateralManagerState.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x573E5105c4B92416D1544A188F1bf77d442Bb52d">0x573E5105c4B92416D1544A188F1bf77d442Bb52d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralShort</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralShort.json">CollateralShort.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x188C2274B04Ea392B21487b5De299e382Ff84246">0x188C2274B04Ea392B21487b5De299e382Ff84246</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralStateErc20</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralState.json">CollateralState.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x54277B3a7A4aEe0fdF279E16aBF9D5Dad87828D6">0x54277B3a7A4aEe0fdF279E16aBF9D5Dad87828D6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralStateEth</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralState.json">CollateralState.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x04D9231B1fff88464a3d26Fd91A1bA0b24796107">0x04D9231B1fff88464a3d26Fd91A1bA0b24796107</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralStateShort</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralState.json">CollateralState.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0xd322259B4D93F81a2a59f6010BEC166F6f5E870c">0xd322259B4D93F81a2a59f6010BEC166F6f5E870c</a>
                 </td>
               </tr>
               <tr>
@@ -56,7 +112,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>DebtCache</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DebtCache.sol">DebtCache.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/DebtCache.json">DebtCache.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x198A560EA4842c8E64Dd7cF445C5fBC5903B2736">0x198A560EA4842c8E64Dd7cF445C5fBC5903B2736</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x12c815b0c404D66Dd0491f4EC62839904cec25e7">0x12c815b0c404D66Dd0491f4EC62839904cec25e7</a>
                 </td>
               </tr>
               <tr>
@@ -112,7 +168,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>ExchangeRates</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/ExchangeRates.json">ExchangeRates.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xA68C6020fF9Ea79F05345cDd2CE37DF4b89478ed">0xA68C6020fF9Ea79F05345cDd2CE37DF4b89478ed</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xd69b189020EF614796578AfE4d10378c5e7e1138">0xd69b189020EF614796578AfE4d10378c5e7e1138</a>
                 </td>
               </tr>
               <tr>
@@ -126,14 +182,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/ExchangerWithVirtualSynth.json">ExchangerWithVirtualSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x93b434b2e21d0F4E3ed1e9efa3Aa254A6D863B2A">0x93b434b2e21d0F4E3ed1e9efa3Aa254A6D863B2A</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x0bfDc04B38251394542586969E2356d0D731f7DE">0x0bfDc04B38251394542586969E2356d0D731f7DE</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/FeePool.json">FeePool.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x013D16CB1Bd493bBB89D45b43254842FadC169C8">0x013D16CB1Bd493bBB89D45b43254842FadC169C8</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x28d8458C76C7029257BAA10F86E9dA7481C513fb">0x28d8458C76C7029257BAA10F86E9dA7481C513fb</a>
                 </td>
               </tr>
               <tr>
@@ -168,14 +224,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xdd692195b3b632B196FE33eB274CCBE91b8D849f">0xdd692195b3b632B196FE33eB274CCBE91b8D849f</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x611Abc0e066A01AFf63910fC8935D164267eC6CF">0x611Abc0e066A01AFf63910fC8935D164267eC6CF</a>
                 </td>
               </tr>
               <tr>
                 <td>Liquidations</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Liquidations.sol">Liquidations.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Liquidations.json">Liquidations.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x46338723022deF2c5151e83BE759796A988754a2">0x46338723022deF2c5151e83BE759796A988754a2</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xAD95C918af576c82Df740878C3E983CBD175daB6">0xAD95C918af576c82Df740878C3E983CBD175daB6</a>
                 </td>
               </tr>
               <tr>
@@ -616,7 +672,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xf87A0587Fe48Ca05dd68a514Ce387C0d4d3AE31C">0xf87A0587Fe48Ca05dd68a514Ce387C0d4d3AE31C</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x6e6a43A8148B5c54A94C044a835476D3f3f4D59A">0x6e6a43A8148B5c54A94C044a835476D3f3f4D59A</a>
                 </td>
               </tr>
               <tr>
@@ -637,315 +693,315 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>SynthiADA</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x9D4193187B247a400E8D8ba716F1C18c0dC65528">0x9D4193187B247a400E8D8ba716F1C18c0dC65528</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x931c5516EE121a177bD2B60e0122Da5B27630ABc">0x931c5516EE121a177bD2B60e0122Da5B27630ABc</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiBCH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x0E87a320daCE86A0b427FA2Bae282dE5c7697278">0x0E87a320daCE86A0b427FA2Bae282dE5c7697278</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x13Fae0E7E85ba720078038bea5011C2957cDcef2">0x13Fae0E7E85ba720078038bea5011C2957cDcef2</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiBNB</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xf86048DFf23cF130107dfB4e6386f574231a5C65">0xf86048DFf23cF130107dfB4e6386f574231a5C65</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xf7B8dF8b16dA302d85603B8e7F95111a768458Cc">0xf7B8dF8b16dA302d85603B8e7F95111a768458Cc</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiBTC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xc704c9AA89d1ca60F67B3075d05fBb92b3B00B3B">0xc704c9AA89d1ca60F67B3075d05fBb92b3B00B3B</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x8350d1b2d6EF5289179fe49E5b0F208165B4e32e">0x8350d1b2d6EF5289179fe49E5b0F208165B4e32e</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiCEX</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x817c39c8825e12eA7752483c85dd2c800b78B357">0x817c39c8825e12eA7752483c85dd2c800b78B357</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x6Dc6a64724399524184C2c44a526A2cff1BaA507">0x6Dc6a64724399524184C2c44a526A2cff1BaA507</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiDASH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x5f7A299Be82D8f5A626300c62C477b233F616121">0x5f7A299Be82D8f5A626300c62C477b233F616121</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x947d5656725fB9A8f9c826A91b6082b07E2745B7">0x947d5656725fB9A8f9c826A91b6082b07E2745B7</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiDEFI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x489d4D4c4bC781EAab3A36C44d66762Ceb6e1e2D">0x489d4D4c4bC781EAab3A36C44d66762Ceb6e1e2D</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x87eb6e935e3C7E3E3A0E31a5658498bC87dE646E">0x87eb6e935e3C7E3E3A0E31a5658498bC87dE646E</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiEOS</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xc66a263f2C7C1Af0bD70c6cA4Bff5936F3D6Ef9F">0xc66a263f2C7C1Af0bD70c6cA4Bff5936F3D6Ef9F</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x806A599d60B2FdBda379D5890287D2fba1026cC0">0x806A599d60B2FdBda379D5890287D2fba1026cC0</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiETC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xF13f9E75913b352622F8AEEA5Ac32498b1C228d0">0xF13f9E75913b352622F8AEEA5Ac32498b1C228d0</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xCea42504874586a718954746A564B72bc7eba3E3">0xCea42504874586a718954746A564B72bc7eba3E3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiETH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xaE55F163337A2A46733AA66dA9F35299f9A46e9e">0xaE55F163337A2A46733AA66dA9F35299f9A46e9e</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x29DD4A59F4D339226867e77aF211724eaBb45c02">0x29DD4A59F4D339226867e77aF211724eaBb45c02</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiLINK</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x63d630B6D89c21E171E86c51C7243284510DBd79">0x63d630B6D89c21E171E86c51C7243284510DBd79</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x4D50A0e5f068ACdC80A1da2dd1f0Ad48845df2F8">0x4D50A0e5f068ACdC80A1da2dd1f0Ad48845df2F8</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiLTC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x0f5BdfD0958345C2e7Adb1741024aEd6Dd159e6C">0x0f5BdfD0958345C2e7Adb1741024aEd6Dd159e6C</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xb73c665825dAa926D6ef09417FbE5654473c1b49">0xb73c665825dAa926D6ef09417FbE5654473c1b49</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiOIL</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x54EA32890a1bDB1C1aE106C921bE010F2C7faaC2">0x54EA32890a1bDB1C1aE106C921bE010F2C7faaC2</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x53869BDa4b8d85aEDCC9C6cAcf015AF9447Cade7">0x53869BDa4b8d85aEDCC9C6cAcf015AF9447Cade7</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiTRX</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xdD87cbDe3C1f8F728C7924c8C9C983Af6dfcfeA8">0xdD87cbDe3C1f8F728C7924c8C9C983Af6dfcfeA8</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x0517A56da8A517e3b2D484Cc5F1Da4BDCfE68ec3">0x0517A56da8A517e3b2D484Cc5F1Da4BDCfE68ec3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiXMR</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xC5D2b3f5DAf11B6111Af86a72A5938B0fE6c5045">0xC5D2b3f5DAf11B6111Af86a72A5938B0fE6c5045</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x186E56A62E7caCE1308f1A1B0dbb27f33F80f16f">0x186E56A62E7caCE1308f1A1B0dbb27f33F80f16f</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiXRP</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x71Cd588eFA3609bc14E7B0c7C57dDDfd3a72E8a2">0x71Cd588eFA3609bc14E7B0c7C57dDDfd3a72E8a2</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x19cC1f63e344D74A87D955E3F3E95B28DDDc61d8">0x19cC1f63e344D74A87D955E3F3E95B28DDDc61d8</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiXTZ</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x6dFDFbfB4B180be4482F8b753fb33720C2831a9f">0x6dFDFbfB4B180be4482F8b753fb33720C2831a9f</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x099CfAd1640fc7EA686ab1D83F0A285Ba0470882">0x099CfAd1640fc7EA686ab1D83F0A285Ba0470882</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsADA</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x1Cda42C559D2EB137103D9A01d1ae736dEDA3aEF">0x1Cda42C559D2EB137103D9A01d1ae736dEDA3aEF</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xC22e51FA362654ea453B4018B616ef6f6ab3b779">0xC22e51FA362654ea453B4018B616ef6f6ab3b779</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsAUD</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xe04d8770Dc06135Dd97214ea8bcbf7B1CC057AA3">0xe04d8770Dc06135Dd97214ea8bcbf7B1CC057AA3</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x37B648a07476F4941D3D647f81118AFd55fa8a04">0x37B648a07476F4941D3D647f81118AFd55fa8a04</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsBCH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x9b68b85c61B082B2495B342F26B20a57cFd73D26">0x9b68b85c61B082B2495B342F26B20a57cFd73D26</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x7DA860eF331D22518C28E475af08a77e8599393A">0x7DA860eF331D22518C28E475af08a77e8599393A</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsBNB</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xadaD43Be81E2206f6D1aF4299cA2a029e16af7AB">0xadaD43Be81E2206f6D1aF4299cA2a029e16af7AB</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xda3c83750b1FA31Fda838136ef3f853b41cb7a5a">0xda3c83750b1FA31Fda838136ef3f853b41cb7a5a</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x17628A557d1Fc88D1c35989dcBAC3f3e275E2d2B">0x17628A557d1Fc88D1c35989dcBAC3f3e275E2d2B</a>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/MultiCollateralSynth.json">MultiCollateralSynth.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0xDB91E4B3b6E19bF22E810C43273eae48C9037e74">0xDB91E4B3b6E19bF22E810C43273eae48C9037e74</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsCEX</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x5eA2544551448cF6DcC1D853aDdd663D480fd8d3">0x5eA2544551448cF6DcC1D853aDdd663D480fd8d3</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x2acfe6265D358d982cB1c3B521199973CD443C71">0x2acfe6265D358d982cB1c3B521199973CD443C71</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsCHF</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x253914cf059f4c3E277c28060C404acFc38FB6e2">0x253914cf059f4c3E277c28060C404acFc38FB6e2</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xcf9bB94b5d65589039607BA66e3DAC686d3eFf01">0xcf9bB94b5d65589039607BA66e3DAC686d3eFf01</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsDASH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xc66499aCe3B6c6a30c784bE5511E8d338d543913">0xc66499aCe3B6c6a30c784bE5511E8d338d543913</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xcb6Cb218D558ae7fF6415f95BDA6616FCFF669Cb">0xcb6Cb218D558ae7fF6415f95BDA6616FCFF669Cb</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsDEFI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xf5a6115Aa582Fd1BEEa22BC93B7dC7a785F60d03">0xf5a6115Aa582Fd1BEEa22BC93B7dC7a785F60d03</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x46A7Af405093B27DA6DeF193C508Bd9240A255FA">0x46A7Af405093B27DA6DeF193C508Bd9240A255FA</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsEOS</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x31a9c51eEd5282F11ae5CDD061A65A4ce0346C08">0x31a9c51eEd5282F11ae5CDD061A65A4ce0346C08</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xAf090d6E583C082f2011908cf95c2518BE7A53ac">0xAf090d6E583C082f2011908cf95c2518BE7A53ac</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsETC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x2369D37ae9B30451D859C11CAbAc70df1CE48F78">0x2369D37ae9B30451D859C11CAbAc70df1CE48F78</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x21ee4afBd6c151fD9A69c1389598170B1d45E0e3">0x21ee4afBd6c151fD9A69c1389598170B1d45E0e3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsETH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/MultiCollateralSynth.json">MultiCollateralSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xD0DC005d31C2979CC0d38718e23c82D1A50004C0">0xD0DC005d31C2979CC0d38718e23c82D1A50004C0</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x87641989057242Bff28D0D6108d007C79774D06f">0x87641989057242Bff28D0D6108d007C79774D06f</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsEUR</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x2fB419E7023b32201e9aB3aba947f5c101a5C30e">0x2fB419E7023b32201e9aB3aba947f5c101a5C30e</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xC61b352fCc311Ae6B0301459A970150005e74b3E">0xC61b352fCc311Ae6B0301459A970150005e74b3E</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsFTSE</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x8D34924EAe7578692775fDd94Ed27bc355397E4a">0x8D34924EAe7578692775fDd94Ed27bc355397E4a</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x3E2dA260B4A85782A629320EB027A3B7c28eA9f1">0x3E2dA260B4A85782A629320EB027A3B7c28eA9f1</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsGBP</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xB3098Ae40f488ffdb979827Fd01597CC20c5a5A0">0xB3098Ae40f488ffdb979827Fd01597CC20c5a5A0</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xEF285D339c91aDf1dD7DE0aEAa6250805FD68258">0xEF285D339c91aDf1dD7DE0aEAa6250805FD68258</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsJPY</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x8ed1B71B00DbaB96A6db6DF0C910f749243de6D3">0x8ed1B71B00DbaB96A6db6DF0C910f749243de6D3</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x388fD1A8a7d36e03eFA1ab100a1c5159a3A3d427">0x388fD1A8a7d36e03eFA1ab100a1c5159a3A3d427</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsLINK</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xAf918f4a72BC34E59dFaF65866feC87947F1f590">0xAf918f4a72BC34E59dFaF65866feC87947F1f590</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xcd980Fc5CcdAe62B18A52b83eC64200121A929db">0xcd980Fc5CcdAe62B18A52b83eC64200121A929db</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsLTC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x6cF29c515A33209c6eCa43c293004ac80c0614f0">0x6cF29c515A33209c6eCa43c293004ac80c0614f0</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xA962208CDC8588F9238fae169d0F63306c353F4F">0xA962208CDC8588F9238fae169d0F63306c353F4F</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsNIKKEI</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x4CeB220C5E38E27ef5187F7ab853aC182D233d39">0x4CeB220C5E38E27ef5187F7ab853aC182D233d39</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xc02DD182Ce029E6d7f78F37492DFd39E4FEB1f8b">0xc02DD182Ce029E6d7f78F37492DFd39E4FEB1f8b</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsOIL</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xDE3Eaa39875d0528A575dBcC436b2C6ae9fc353c">0xDE3Eaa39875d0528A575dBcC436b2C6ae9fc353c</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x2962EA4E749e54b10CFA557770D597027BA67cB3">0x2962EA4E749e54b10CFA557770D597027BA67cB3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsTRX</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xC4Be4583bc0307C56CF301975b2B2B1E5f95fcB2">0xC4Be4583bc0307C56CF301975b2B2B1E5f95fcB2</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x47bD14817d7684082E04934878EE2Dd3576Ae19d">0x47bD14817d7684082E04934878EE2Dd3576Ae19d</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsUSD</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/MultiCollateralSynth.json">MultiCollateralSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x705142E6f3970F004721bdf05b696B45Fc4aD6d7">0x705142E6f3970F004721bdf05b696B45Fc4aD6d7</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x6C85C5198C3CC4dB1b87Cb43b2674241a30f4845">0x6C85C5198C3CC4dB1b87Cb43b2674241a30f4845</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXAG</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x1B9d6cD65dDC981410cb93Af91B097667E0Bc7eE">0x1B9d6cD65dDC981410cb93Af91B097667E0Bc7eE</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x9745606DA6e162866DAD7bF80f2AbF145EDD7571">0x9745606DA6e162866DAD7bF80f2AbF145EDD7571</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXAU</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xA408d8e01C8E084B67559226C5B55D6F0B7074e2">0xA408d8e01C8E084B67559226C5B55D6F0B7074e2</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x5eDf7dd83fE2889D264fa9D3b93d0a6e6A45D6C6">0x5eDf7dd83fE2889D264fa9D3b93d0a6e6A45D6C6</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXMR</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x86FD9c0261E804476bA11056fFD758da2469ed56">0x86FD9c0261E804476bA11056fFD758da2469ed56</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x7B29C9e188De18563B19d162374ce6836F31415a">0x7B29C9e188De18563B19d162374ce6836F31415a</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXRP</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synth.json">Synth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xF5d0BFBc617d3969C1AcE93490A76cE80Db1Ed0e">0xF5d0BFBc617d3969C1AcE93490A76cE80Db1Ed0e</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xe3D5E1c1bA874C0fF3BA31b999967F24d5ca04e5">0xe3D5E1c1bA874C0fF3BA31b999967F24d5ca04e5</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXTZ</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/PurgeableSynth.json">PurgeableSynth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x91DBC6f587D043FEfbaAD050AB48696B30F13d89">0x91DBC6f587D043FEfbaAD050AB48696B30F13d89</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x6F927644d55E32318629198081923894FbFe5c07">0x6F927644d55E32318629198081923894FbFe5c07</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemSettings</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/SystemSettings.json">SystemSettings.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x703D37fb776A4C905e28f7Ff23C73102ce36E08B">0x703D37fb776A4C905e28f7Ff23C73102ce36E08B</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x4751775867ebB3b5aa436a2F33D1e1ccA4157F35">0x4751775867ebB3b5aa436a2F33D1e1ccA4157F35</a>
                 </td>
               </tr>
               <tr>
@@ -1274,7 +1330,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>TradingRewards</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/TradingRewards.json">TradingRewards.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xfF535F02CE0Df35D52c7A1bdace447101D2514D3">0xfF535F02CE0Df35D52c7A1bdace447101D2514D3</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x62922670313bf6b41C580143d1f6C173C5C20019">0x62922670313bf6b41C580143d1f6C173C5C20019</a>
                 </td>
               </tr></table>
 

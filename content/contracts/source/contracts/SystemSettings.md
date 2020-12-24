@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/SystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol)
+**Source:** [contracts/SystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol)
 
 ## Architecture
 
@@ -25,67 +25,67 @@ graph TD
 
 ### `MAX_EXCHANGE_FEE_RATE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L37)</sub>
 
 **Type:** `uint256`
 
 ### `MAX_FEE_PERIOD_DURATION`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L23)</sub>
 
 **Type:** `uint256`
 
 ### `MAX_ISSUANCE_RATIO`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L19)</sub>
 
 **Type:** `uint256`
 
 ### `MAX_LIQUIDATION_DELAY`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L33)</sub>
 
 **Type:** `uint256`
 
 ### `MAX_LIQUIDATION_PENALTY`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L29)</sub>
 
 **Type:** `uint256`
 
 ### `MAX_LIQUIDATION_RATIO`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L27)</sub>
 
 **Type:** `uint256`
 
 ### `MAX_MINIMUM_STAKE_TIME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L40)</sub>
 
 **Type:** `uint256`
 
 ### `MAX_TARGET_THRESHOLD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L25)</sub>
 
 **Type:** `uint256`
 
 ### `MIN_FEE_PERIOD_DURATION`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L22)</sub>
 
 **Type:** `uint256`
 
 ### `MIN_LIQUIDATION_DELAY`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L34)</sub>
 
 **Type:** `uint256`
 
 ### `RATIO_FROM_TARGET_BUFFER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L31)</sub>
 
 **Type:** `uint256`
 
@@ -93,7 +93,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -113,7 +113,7 @@ graph TD
 
 ### `aggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -131,7 +131,7 @@ graph TD
 
 ### `crossDomainMessageGasLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -149,7 +149,7 @@ graph TD
 
 ### `debtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -167,7 +167,7 @@ graph TD
 
 ### `exchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L103)</sub>
 
 ??? example "Details"
 
@@ -185,7 +185,7 @@ graph TD
 
 ### `feePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -203,7 +203,7 @@ graph TD
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -221,7 +221,7 @@ graph TD
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -239,7 +239,7 @@ graph TD
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -257,7 +257,7 @@ graph TD
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -275,7 +275,7 @@ graph TD
 
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -293,7 +293,7 @@ graph TD
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -311,7 +311,7 @@ graph TD
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -329,7 +329,7 @@ graph TD
 
 ### `targetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -347,7 +347,7 @@ graph TD
 
 ### `tradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L121)</sub>
 
 ??? example "Details"
 
@@ -365,7 +365,7 @@ graph TD
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -385,7 +385,7 @@ graph TD
 
 ### `setAggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L252)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L252)</sub>
 
 ??? example "Details"
 
@@ -403,7 +403,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Valid address must be given)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L253)
+    * [require(..., Valid address must be given)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L253)
 
     **Modifiers**
 
@@ -415,7 +415,7 @@ graph TD
 
 ### `setCrossDomainMessageGasLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L131)</sub>
 
 ??? example "Details"
 
@@ -441,7 +441,7 @@ graph TD
 
 ### `setDebtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L247)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L247)</sub>
 
 ??? example "Details"
 
@@ -467,7 +467,7 @@ graph TD
 
 ### `setExchangeFeeRateForSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L225)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L225)</sub>
 
 ??? example "Details"
 
@@ -485,7 +485,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Array lengths dont match)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L229)
+    * [require(..., Array lengths dont match)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L229)
 
     **Modifiers**
 
@@ -493,7 +493,7 @@ graph TD
 
 ### `setFeePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L165)</sub>
 
 ??? example "Details"
 
@@ -511,9 +511,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., value < MIN_FEE_PERIOD_DURATION)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L166)
+    * [require(..., value < MIN_FEE_PERIOD_DURATION)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L166)
 
-    * [require(..., value > MAX_FEE_PERIOD_DURATION)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L167)
+    * [require(..., value > MAX_FEE_PERIOD_DURATION)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L167)
 
     **Modifiers**
 
@@ -525,7 +525,7 @@ graph TD
 
 ### `setIssuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -543,7 +543,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., New issuance ratio cannot exceed MAX_ISSUANCE_RATIO)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L160)
+    * [require(..., New issuance ratio cannot exceed MAX_ISSUANCE_RATIO)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L160)
 
     **Modifiers**
 
@@ -555,7 +555,7 @@ graph TD
 
 ### `setLiquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L184)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L184)</sub>
 
 ??? example "Details"
 
@@ -573,9 +573,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., Must be less than 30 days)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L185)
+    * [require(..., Must be less than 30 days)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L185)
 
-    * [require(..., Must be greater than 1 day)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L186)
+    * [require(..., Must be greater than 1 day)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L186)
 
     **Modifiers**
 
@@ -587,7 +587,7 @@ graph TD
 
 ### `setLiquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L211)</sub>
 
 ??? example "Details"
 
@@ -605,7 +605,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., penalty > MAX_LIQUIDATION_PENALTY)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L212)
+    * [require(..., penalty > MAX_LIQUIDATION_PENALTY)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L212)
 
     **Modifiers**
 
@@ -617,7 +617,7 @@ graph TD
 
 ### `setLiquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L195)</sub>
 
 ??? example "Details"
 
@@ -635,9 +635,9 @@ graph TD
 
     **Requires**
 
-    * [require(..., liquidationRatio > MAX_LIQUIDATION_RATIO / (1 + penalty))](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L196)
+    * [require(..., liquidationRatio > MAX_LIQUIDATION_RATIO / (1 + penalty))](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L196)
 
-    * [require(..., liquidationRatio < MIN_LIQUIDATION_RATIO)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L204)
+    * [require(..., liquidationRatio < MIN_LIQUIDATION_RATIO)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L204)
 
     **Modifiers**
 
@@ -649,7 +649,7 @@ graph TD
 
 ### `setMinimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L241)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L241)</sub>
 
 ??? example "Details"
 
@@ -667,7 +667,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., stake time exceed maximum 1 week)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L242)
+    * [require(..., stake time exceed maximum 1 week)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L242)
 
     **Modifiers**
 
@@ -679,7 +679,7 @@ graph TD
 
 ### `setPriceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L150)</sub>
 
 ??? example "Details"
 
@@ -705,7 +705,7 @@ graph TD
 
 ### `setRateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L219)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L219)</sub>
 
 ??? example "Details"
 
@@ -731,7 +731,7 @@ graph TD
 
 ### `setTargetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L174)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L174)</sub>
 
 ??? example "Details"
 
@@ -749,7 +749,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Threshold too high)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L175)
+    * [require(..., Threshold too high)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L175)
 
     **Modifiers**
 
@@ -761,7 +761,7 @@ graph TD
 
 ### `setTradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -787,7 +787,7 @@ graph TD
 
 ### `setWaitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L145)</sub>
 
 ??? example "Details"
 
@@ -815,90 +815,90 @@ graph TD
 
 ### `AggregatorWarningFlagsUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L273)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L273)</sub>
 
 **Signature**: `AggregatorWarningFlagsUpdated(address flags)`
 
 ### `CrossDomainMessageGasLimitChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L259)</sub>
 
 **Signature**: `CrossDomainMessageGasLimitChanged(uint256 newLimit)`
 
 ### `DebtSnapshotStaleTimeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L272)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L272)</sub>
 
 **Signature**: `DebtSnapshotStaleTimeUpdated(uint256 debtSnapshotStaleTime)`
 
 ### `ExchangeFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L270)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L270)</sub>
 
 **Signature**: `ExchangeFeeUpdated(bytes32 synthKey, uint256 newExchangeFeeRate)`
 
 ### `FeePeriodDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L264)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L264)</sub>
 
 **Signature**: `FeePeriodDurationUpdated(uint256 newFeePeriodDuration)`
 
 ### `IssuanceRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L263)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L263)</sub>
 
 **Signature**: `IssuanceRatioUpdated(uint256 newRatio)`
 
 ### `LiquidationDelayUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L266)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L266)</sub>
 
 **Signature**: `LiquidationDelayUpdated(uint256 newDelay)`
 
 ### `LiquidationPenaltyUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L268)</sub>
 
 **Signature**: `LiquidationPenaltyUpdated(uint256 newPenalty)`
 
 ### `LiquidationRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L267)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L267)</sub>
 
 **Signature**: `LiquidationRatioUpdated(uint256 newRatio)`
 
 ### `MinimumStakeTimeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L271)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L271)</sub>
 
 **Signature**: `MinimumStakeTimeUpdated(uint256 minimumStakeTime)`
 
 ### `PriceDeviationThresholdUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L262)</sub>
 
 **Signature**: `PriceDeviationThresholdUpdated(uint256 threshold)`
 
 ### `RateStalePeriodUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L269)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L269)</sub>
 
 **Signature**: `RateStalePeriodUpdated(uint256 rateStalePeriod)`
 
 ### `TargetThresholdUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L265)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L265)</sub>
 
 **Signature**: `TargetThresholdUpdated(uint256 newTargetThreshold)`
 
 ### `TradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L260)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L260)</sub>
 
 **Signature**: `TradingRewardsEnabled(bool enabled)`
 
 ### `WaitingPeriodSecsUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/SystemSettings.sol#L261)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/SystemSettings.sol#L261)</sub>
 
 **Signature**: `WaitingPeriodSecsUpdated(uint256 waitingPeriodSecs)`

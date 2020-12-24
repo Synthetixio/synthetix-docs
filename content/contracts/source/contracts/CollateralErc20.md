@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/CollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol)
+**Source:** [contracts/CollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol)
 
 ## Architecture
 
@@ -21,13 +21,13 @@ graph TD
 
 ### `underlyingContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L17)</sub>
 
 **Type:** `address`
 
 ### `underlyingContractDecimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L19)</sub>
 
 **Type:** `uint256`
 
@@ -35,7 +35,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -55,7 +55,7 @@ graph TD
 
 ### `scaleDownCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -73,7 +73,7 @@ graph TD
 
 ### `scaleUpCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@ graph TD
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@ graph TD
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -129,11 +129,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L67)
+    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L67)
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -151,7 +151,7 @@ graph TD
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -169,7 +169,7 @@ graph TD
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -187,11 +187,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L42)
+    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L42)
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -209,7 +209,7 @@ graph TD
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2-beta/contracts/CollateralErc20.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.2/contracts/CollateralErc20.sol#L77)</sub>
 
 ??? example "Details"
 
