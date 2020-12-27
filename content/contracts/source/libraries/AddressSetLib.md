@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/AddressSetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/AddressSetLib.sol)
+**Source:** [contracts/AddressSetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/AddressSetLib.sol)
 
 ## Structs
 
 ### `AddressSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/AddressSetLib.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/AddressSetLib.sol#L6)</sub>
 
 | Field      | Type                          | Description |
 | ---------- | ----------------------------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `add`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/AddressSetLib.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/AddressSetLib.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -37,7 +37,7 @@
 
 ### `contains`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/AddressSetLib.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/AddressSetLib.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -55,7 +55,7 @@
 
 ### `getPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/AddressSetLib.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/AddressSetLib.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -73,7 +73,7 @@
 
 ### `remove`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/AddressSetLib.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/AddressSetLib.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -91,4 +91,4 @@
 
     **Requires**
 
-    * [require(..., Element not in set.)](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/AddressSetLib.sol#L52)
+    * [require(..., Element not in set.)](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/AddressSetLib.sol#L52)

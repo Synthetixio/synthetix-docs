@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/CollateralState.sol)
+**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralState.sol)
 
 ## Architecture
 
@@ -24,7 +24,7 @@ graph TD
 
 ### `loans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/CollateralState.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralState.sol#L18)</sub>
 
 **Type:** `mapping(address => struct ICollateralLoan.Loan[])`
 
@@ -32,7 +32,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/CollateralState.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralState.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@ graph TD
 
 ### `getLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/CollateralState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralState.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -70,7 +70,7 @@ graph TD
 
 ### `getNumLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/CollateralState.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralState.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@ graph TD
 
 ### `createLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/CollateralState.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralState.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -112,7 +112,7 @@ graph TD
 
 ### `updateLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.3/contracts/CollateralState.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralState.sol#L43)</sub>
 
 ??? example "Details"
 
