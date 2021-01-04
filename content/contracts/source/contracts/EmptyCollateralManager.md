@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/EmptyCollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol)
+**Source:** [contracts/EmptyCollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol)
 
 ## Views
 
 ### `areShortableSynthsSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `areSynthsAndCurrenciesSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `exceedsDebtLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `getBorrowRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `getRatesAndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `getShortRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `getShortRatesAndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `hasCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `isSynthManaged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `long`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `short`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `totalLong`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `totalShort`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -244,7 +244,7 @@
 
 ### `addCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -262,7 +262,7 @@
 
 ### `addShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -280,7 +280,7 @@
 
 ### `addSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@
 
 ### `decrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -316,7 +316,7 @@
 
 ### `decrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -334,7 +334,7 @@
 
 ### `getNewLoanId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -352,7 +352,7 @@
 
 ### `incrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -370,7 +370,7 @@
 
 ### `incrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -388,7 +388,7 @@
 
 ### `removeCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -406,7 +406,7 @@
 
 ### `removeShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -424,7 +424,7 @@
 
 ### `removeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -442,7 +442,7 @@
 
 ### `updateBorrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -460,7 +460,7 @@
 
 ### `updateShortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/EmptyCollateralManager.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/EmptyCollateralManager.sol#L100)</sub>
 
 ??? example "Details"
 

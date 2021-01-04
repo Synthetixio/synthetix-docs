@@ -6,7 +6,7 @@
 
     This contract documentation is missing some descriptions.
 
-**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/RewardsDistributionRecipient.sol)
+**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/RewardsDistributionRecipient.sol)
 
 ## Architecture
 
@@ -22,7 +22,7 @@ graph TD
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/RewardsDistributionRecipient.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/RewardsDistributionRecipient.sol#L9)</sub>
 
 **Type:** `address`
 
@@ -30,7 +30,7 @@ graph TD
 
 ### `setRewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/RewardsDistributionRecipient.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/RewardsDistributionRecipient.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@ graph TD
 
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/RewardsDistributionRecipient.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/RewardsDistributionRecipient.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -74,4 +74,4 @@ graph TD
 
 ### `onlyRewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/RewardsDistributionRecipient.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/RewardsDistributionRecipient.sol#L13)</sub>

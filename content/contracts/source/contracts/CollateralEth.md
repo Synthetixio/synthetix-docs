@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/CollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol)
+**Source:** [contracts/CollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `pendingWithdrawals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L16)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -29,7 +29,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -49,7 +49,7 @@ graph TD
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -67,7 +67,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Transfer failed)](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L75)
+    * [require(..., Transfer failed)](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L75)
 
     **Modifiers**
 
@@ -75,7 +75,7 @@ graph TD
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@ graph TD
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@ graph TD
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -129,7 +129,7 @@ graph TD
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -147,7 +147,7 @@ graph TD
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -165,7 +165,7 @@ graph TD
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -183,7 +183,7 @@ graph TD
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.4/contracts/CollateralEth.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/CollateralEth.sol#L42)</sub>
 
 ??? example "Details"
 

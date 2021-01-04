@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.35.4](https://github.com/Synthetixio/synthetix/tree/v2.35.4)
+**Version**: [v2.35.5](https://github.com/Synthetixio/synthetix/tree/v2.35.5)
 
 !!! info "Naming Conventions"
 
@@ -623,7 +623,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>StakingRewardsiETH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewardsiETH.sol">StakingRewardsiETH.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/StakingRewardsiETH.json">StakingRewardsiETH.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x3fdbbbd81b0962fdf486d74f94a68c70ba87c6c7">0x3fdbbbd81b0962fdf486d74f94a68c70ba87c6c7</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x6d4F135aF7DFCd4BDF6dCb9D7911F5d243872a52">0x6d4F135aF7DFCd4BDF6dCb9D7911F5d243872a52</a>
                 </td>
               </tr>
               <tr>
