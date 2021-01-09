@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralLoan.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralLoan.sol)
+**Source:** [contracts/interfaces/ICollateralLoan.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralLoan.sol)
 
 ## Structs
 
 ### `Loan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralLoan.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralLoan.sol#L7)</sub>
 
 | Field             | Type              | Description |
 | ----------------- | ----------------- | ----------- |

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/IRewardsDistribution.sol)
+**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/IRewardsDistribution.sol)
 
 ## Structs
 
 ### `DistributionData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/IRewardsDistribution.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/IRewardsDistribution.sol#L7)</sub>
 
 | Field         | Type      | Description |
 | ------------- | --------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `authority`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/IRewardsDistribution.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/IRewardsDistribution.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -37,7 +37,7 @@
 
 ### `distributions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/IRewardsDistribution.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/IRewardsDistribution.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -55,7 +55,7 @@
 
 ### `distributionsLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/IRewardsDistribution.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/IRewardsDistribution.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -75,7 +75,7 @@
 
 ### `distributeRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/IRewardsDistribution.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/IRewardsDistribution.sol#L20)</sub>
 
 ??? example "Details"
 

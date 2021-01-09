@@ -287,9 +287,9 @@
 
 | Entry Point | Upper Limit | Lower Limit |
 | ----------- | ----------- | ----------- |
-| \$27,680    | \$41,520    | \$13,840    |
+| \$40,378    | \$60,567    | \$20,189    |
 
-> Inversely tracks the price of Inverse Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is \$27680 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$41520 (i.e. when Inverse Bitcoin's value reaches \$13840) or its lower limit of \$13840 (i.e. when Inverse Bitcoin’s value reaches \$41520). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
+> Inversely tracks the price of Inverse Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is \$40378 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$60567 (i.e. when Inverse Bitcoin's value reaches \$20189) or its lower limit of \$20189 (i.e. when Inverse Bitcoin’s value reaches \$60567). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
 
 ## Inverse Bitcoin Cash (iBCH)
 

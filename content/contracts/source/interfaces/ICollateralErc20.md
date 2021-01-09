@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralErc20.sol)
+**Source:** [contracts/interfaces/ICollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralErc20.sol)
 
 ## External Functions
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralErc20.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralErc20.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralErc20.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralErc20.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralErc20.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralErc20.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralErc20.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralErc20.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralErc20.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralErc20.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralErc20.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralErc20.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.5/contracts/interfaces/ICollateralErc20.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ICollateralErc20.sol#L19)</sub>
 
 ??? example "Details"
 
