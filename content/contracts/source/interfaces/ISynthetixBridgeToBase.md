@@ -2,19 +2,37 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ISynthetixBridgeToBase.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol)
 
 ## External Functions
 
 ### `completeDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ISynthetixBridgeToBase.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L12)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `completeDeposit(address account, uint256 amount)`
+    `completeDeposit(address account, uint256 depositAmount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `completeEscrowMigration`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L15)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `completeEscrowMigration(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
 
     **Visibility**
 
@@ -26,7 +44,7 @@
 
 ### `completeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ISynthetixBridgeToBase.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -44,7 +62,7 @@
 
 ### `initiateWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ISynthetixBridgeToBase.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L9)</sub>
 
 ??? example "Details"
 

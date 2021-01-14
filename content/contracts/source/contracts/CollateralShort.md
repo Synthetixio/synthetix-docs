@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/CollateralShort.sol)
+**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol)
 
 ## Architecture
 
@@ -10,8 +10,7 @@
 
 ```mermaid
 graph TD
-    CollateralShort[CollateralShort] --> CollateralErc20[CollateralErc20]
-    CollateralErc20[CollateralErc20] --> Collateral[Collateral]
+    CollateralShort[CollateralShort] --> Collateral[Collateral]
     Collateral[Collateral] --> Owned[Owned]
     Collateral[Collateral] --> MixinSystemSettings[MixinSystemSettings]
     MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
@@ -22,13 +21,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/CollateralShort.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L13)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(contract CollateralState _state, address _owner, address _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral, address _underlyingContract, uint256 decimals)`
+    `(contract CollateralState _state, address _owner, address _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
 
     **Visibility**
 
@@ -40,9 +39,67 @@ graph TD
 
 ## External Functions
 
+### `close`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L38)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `close(uint256 id)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `deposit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L44)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deposit(address borrower, uint256 id, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+    **Requires**
+
+    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L49)
+
+### `draw`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L70)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `draw(uint256 id, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/CollateralShort.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -58,9 +115,27 @@ graph TD
 
     `nonpayable`
 
+### `liquidate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L74)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidate(address borrower, uint256 id, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/CollateralShort.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -78,4 +153,40 @@ graph TD
 
     **Requires**
 
-    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/CollateralShort.sol#L43)
+    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L28)
+
+### `repay`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L62)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `repay(address borrower, uint256 id, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`
+
+### `withdraw`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/CollateralShort.sol#L56)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `withdraw(uint256 id, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `nonpayable`

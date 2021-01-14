@@ -57,6 +57,7 @@ nav:
           - Source:
               Contracts:
                 - AddressResolver: contracts/source/contracts/AddressResolver.md
+                - BaseRewardEscrowV2: contracts/source/contracts/BaseRewardEscrowV2.md
                 - BaseSynthetix: contracts/source/contracts/BaseSynthetix.md
                 - BinaryOption: contracts/source/contracts/BinaryOption.md
                 - BinaryOptionMarket: contracts/source/contracts/BinaryOptionMarket.md
@@ -92,6 +93,7 @@ nav:
                 - FeePoolState: contracts/source/contracts/FeePoolState.md
                 - FixedSupplySchedule: contracts/source/contracts/FixedSupplySchedule.md
                 - FlexibleStorage: contracts/source/contracts/FlexibleStorage.md
+                - ImportableRewardEscrowV2: contracts/source/contracts/ImportableRewardEscrowV2.md
                 - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
                 - Issuer: contracts/source/contracts/Issuer.md
                 - IssuerWithoutLiquidations: contracts/source/contracts/IssuerWithoutLiquidations.md
@@ -111,6 +113,7 @@ nav:
                 - ReadProxy: contracts/source/contracts/ReadProxy.md
                 - RealtimeDebtCache: contracts/source/contracts/RealtimeDebtCache.md
                 - RewardEscrow: contracts/source/contracts/RewardEscrow.md
+                - RewardEscrowV2: contracts/source/contracts/RewardEscrowV2.md
                 - RewardsDistribution: contracts/source/contracts/RewardsDistribution.md
                 - RewardsDistributionRecipient: contracts/source/contracts/RewardsDistributionRecipient.md
                 - SecondaryDeposit: contracts/source/contracts/SecondaryDeposit.md
@@ -158,6 +161,7 @@ nav:
                 - IIssuerInternalDebtCache: contracts/source/interfaces/IIssuerInternalDebtCache.md
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
+                - IRewardEscrowV2: contracts/source/interfaces/IRewardEscrowV2.md
                 - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
                 - ISecondaryDeposit: contracts/source/interfaces/ISecondaryDeposit.md
                 - IShortingRewards: contracts/source/interfaces/IShortingRewards.md
@@ -181,6 +185,7 @@ nav:
                 - Math: contracts/source/libraries/Math.md
                 - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
                 - SafeMath: contracts/source/libraries/SafeMath.md
+                - VestingEntries: contracts/source/libraries/VestingEntries.md
           - Audit History: contracts/audits.md
 extra:
   social:

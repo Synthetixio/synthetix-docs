@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ISupplySchedule.sol)
+**Source:** [contracts/interfaces/ISupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol)
 
 ## Views
 
 ### `isMintable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ISupplySchedule.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `mintableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ISupplySchedule.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -42,11 +42,29 @@
 
     `view`
 
+### `minterReward`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `minterReward() returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ## External Functions
 
 ### `recordMintEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.35.6/contracts/interfaces/ISupplySchedule.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol#L14)</sub>
 
 ??? example "Details"
 
