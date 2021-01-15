@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Castor (v2.36.0)
+
+**Published**: Jan 15, 2021
+
+**Codebase**: [v2.36.0](https://github.com/Synthetixio/synthetix/tree/v2.36.0)
+
+> https://blog.synthetix.io/the-castor-release/
+
+SIP-60 New Escrow Contract & Migration
+
+SIP-102 Support SNX on L2 with Optimism
+
+SIP-105 Multi-collateral Liquidation Bug Fix
+
+---
+
 # Shaula (v2.35.2)
 
 **Published**: Dec 24, 2020
@@ -255,16 +271,6 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 
 - [SIP-23](https://sips.synthetix.io/sips/sip-23)
 - [SIP-24](https://sips.synthetix.io/sips/sip-24)
-
----
-
-# DappMaintenance contract (v2.15.0)
-
-**Published**: Dec 9, 2019
-
-**Codebase**: [v2.15.0](https://github.com/Synthetixio/synthetix/tree/v2.15.0)
-
-> The `DappMaintenance` contract is here to keep a state of the dApps (Mintr and Synthetix Exchange) in order to check if they are supposed to be up or down.
 
 ---
 
