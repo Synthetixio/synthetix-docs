@@ -2,19 +2,17 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
-# Castor (v2.36.0)
+# Castor (v2.36.1)
 
 **Published**: Jan 15, 2021
 
-**Codebase**: [v2.36.0](https://github.com/Synthetixio/synthetix/tree/v2.36.0)
+**Codebase**: [v2.36.1](https://github.com/Synthetixio/synthetix/tree/v2.36.1)
 
 > https://blog.synthetix.io/the-castor-release/
 
-SIP-60 New Escrow Contract & Migration
-
-SIP-102 Support SNX on L2 with Optimism
-
-SIP-105 Multi-collateral Liquidation Bug Fix
+- [SIP-60](https://sips.synthetix.io/sips/sip-60): New Escrow Contract & Migration
+- [SIP-102](https://sips.synthetix.io/sips/sip-102) Support SNX on L2 with Optimism
+- [SIP-105](https://sips.synthetix.io/sips/sip-105) Multi-collateral Liquidation Bug Fix
 
 ---
 
