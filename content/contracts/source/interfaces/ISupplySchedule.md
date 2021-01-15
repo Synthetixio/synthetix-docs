@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol)
+**Source:** [contracts/interfaces/ISupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/interfaces/ISupplySchedule.sol)
 
 ## Views
 
 ### `isMintable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/interfaces/ISupplySchedule.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `mintableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/interfaces/ISupplySchedule.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `minterReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/interfaces/ISupplySchedule.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `recordMintEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/interfaces/ISupplySchedule.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/interfaces/ISupplySchedule.sol#L14)</sub>
 
 ??? example "Details"
 

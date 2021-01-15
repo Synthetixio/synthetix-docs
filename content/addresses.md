@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.36.0-alpha](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha)
+**Version**: [v2.36.0](https://github.com/Synthetixio/synthetix/tree/v2.36.0)
 
 !!! info "Naming Conventions"
 
@@ -49,14 +49,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>CollateralErc20</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralErc20.sol">CollateralErc20.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralErc20.json">CollateralErc20.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x3B3812BB9f6151bEb6fa10783F1ae848a77a0d46">0x3B3812BB9f6151bEb6fa10783F1ae848a77a0d46</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xaa03aB31b55DceEeF845C8d17890CC61cD98eD04">0xaa03aB31b55DceEeF845C8d17890CC61cD98eD04</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralEth</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralEth.json">CollateralEth.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x3FF5c0A14121Ca39211C95f6cEB221b86A90729E">0x3FF5c0A14121Ca39211C95f6cEB221b86A90729E</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x5c8344bcdC38F1aB5EB5C1d4a35DdEeA522B5DfA">0x5c8344bcdC38F1aB5EB5C1d4a35DdEeA522B5DfA</a>
                 </td>
               </tr>
               <tr>
@@ -77,28 +77,28 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>CollateralShort</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralShort.json">CollateralShort.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x188C2274B04Ea392B21487b5De299e382Ff84246">0x188C2274B04Ea392B21487b5De299e382Ff84246</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x1F2c3a1046c32729862fcB038369696e3273a516">0x1F2c3a1046c32729862fcB038369696e3273a516</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateErc20</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x54277B3a7A4aEe0fdF279E16aBF9D5Dad87828D6">0x54277B3a7A4aEe0fdF279E16aBF9D5Dad87828D6</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x8A1A00Df7aA0102497C7591912bA8301e8dB8CdB">0x8A1A00Df7aA0102497C7591912bA8301e8dB8CdB</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateEth</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x04D9231B1fff88464a3d26Fd91A1bA0b24796107">0x04D9231B1fff88464a3d26Fd91A1bA0b24796107</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xbe5B5a7c198bC156474ed5c33CBf2F3F604F8fF8">0xbe5B5a7c198bC156474ed5c33CBf2F3F604F8fF8</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateShort</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/CollateralState.json">CollateralState.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0xd322259B4D93F81a2a59f6010BEC166F6f5E870c">0xd322259B4D93F81a2a59f6010BEC166F6f5E870c</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x13A114a3Fa8A6CE03a0C5488BE9e614d78eDdb0c">0x13A114a3Fa8A6CE03a0C5488BE9e614d78eDdb0c</a>
                 </td>
               </tr>
               <tr>
@@ -189,7 +189,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>FeePool</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/FeePool.json">FeePool.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x28d8458C76C7029257BAA10F86E9dA7481C513fb">0x28d8458C76C7029257BAA10F86E9dA7481C513fb</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x778D2d3E3515e42573EB1e6a8d8915D4a22D9d54">0x778D2d3E3515e42573EB1e6a8d8915D4a22D9d54</a>
                 </td>
               </tr>
               <tr>
@@ -224,7 +224,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Issuer.json">Issuer.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x611Abc0e066A01AFf63910fC8935D164267eC6CF">0x611Abc0e066A01AFf63910fC8935D164267eC6CF</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x0DecF74C966438C3b4578b46Dcc64C907141f670">0x0DecF74C966438C3b4578b46Dcc64C907141f670</a>
                 </td>
               </tr>
               <tr>
@@ -592,6 +592,13 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>RewardEscrowV2</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardEscrowV2.sol">RewardEscrowV2.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/RewardEscrowV2.json">RewardEscrowV2.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0xDA4eF8520b1A57D7d63f1E249606D1A459698876">0xDA4eF8520b1A57D7d63f1E249606D1A459698876</a>
+                </td>
+              </tr>
+              <tr>
                 <td>RewardsDistribution</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/RewardsDistribution.json">RewardsDistribution.json</a></td>
@@ -679,7 +686,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/Synthetix.json">Synthetix.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x6e6a43A8148B5c54A94C044a835476D3f3f4D59A">0x6e6a43A8148B5c54A94C044a835476D3f3f4D59A</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0x273cA27361CbF5169fCb7C1391968b6371294420">0x273cA27361CbF5169fCb7C1391968b6371294420</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixBridgeToOptimism</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixBridgeToOptimism.sol">SynthetixBridgeToOptimism.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/SynthetixBridgeToOptimism.json">SynthetixBridgeToOptimism.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x045e507925d2e05D114534D0810a1abD94aca8d6">0x045e507925d2e05D114534D0810a1abD94aca8d6</a>
                 </td>
               </tr>
               <tr>
@@ -1008,7 +1022,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>SystemSettings</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/SystemSettings.json">SystemSettings.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x4751775867ebB3b5aa436a2F33D1e1ccA4157F35">0x4751775867ebB3b5aa436a2F33D1e1ccA4157F35</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xaC87648CA3b88b6CE566aaC9d7f3c0eB635b3a1e">0xaC87648CA3b88b6CE566aaC9d7f3c0eB635b3a1e</a>
                 </td>
               </tr>
               <tr>

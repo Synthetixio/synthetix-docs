@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/ImportableRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/ImportableRewardEscrowV2.sol)
+**Source:** [contracts/ImportableRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/ImportableRewardEscrowV2.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/ImportableRewardEscrowV2.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/ImportableRewardEscrowV2.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@ graph TD
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/ImportableRewardEscrowV2.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/ImportableRewardEscrowV2.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -61,7 +61,7 @@ graph TD
 
 ### `importVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/ImportableRewardEscrowV2.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/ImportableRewardEscrowV2.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -79,7 +79,7 @@ graph TD
 
     **Requires**
 
-    * [require(..., Insufficient balance in the contract to provide for escrowed balance)](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/ImportableRewardEscrowV2.sol#L39)
+    * [require(..., Insufficient balance in the contract to provide for escrowed balance)](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/ImportableRewardEscrowV2.sol#L39)
 
     **Modifiers**
 
@@ -89,7 +89,7 @@ graph TD
 
 ### `_importVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/ImportableRewardEscrowV2.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/ImportableRewardEscrowV2.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -107,7 +107,7 @@ graph TD
 
 ### `synthetixBridgeToBase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/ImportableRewardEscrowV2.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/ImportableRewardEscrowV2.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -127,4 +127,4 @@ graph TD
 
 ### `onlySynthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0-alpha/contracts/ImportableRewardEscrowV2.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.0/contracts/ImportableRewardEscrowV2.sol#L63)</sub>
