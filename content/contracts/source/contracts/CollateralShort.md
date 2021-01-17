@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol)
+**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@ graph TD
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -59,7 +59,7 @@ graph TD
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -77,11 +77,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L49)
+    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L49)
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -99,7 +99,7 @@ graph TD
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -117,7 +117,7 @@ graph TD
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -135,7 +135,7 @@ graph TD
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -153,11 +153,11 @@ graph TD
 
     **Requires**
 
-    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L28)
+    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L28)
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -175,7 +175,7 @@ graph TD
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/CollateralShort.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L56)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol)
+**Source:** [contracts/interfaces/IERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol)
 
 ## Views
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -174,12 +174,12 @@
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L34)</sub>
 
 **Signature**: `Approval(address owner, address spender, uint256 value)`
 
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IERC20.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L32)</sub>
 
 **Signature**: `Transfer(address from, address to, uint256 value)`

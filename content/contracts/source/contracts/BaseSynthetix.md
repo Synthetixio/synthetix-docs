@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/BaseSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol)
+**Source:** [contracts/BaseSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol)
 
 ## Architecture
 
@@ -21,25 +21,25 @@ graph TD
 
 ### `DECIMALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L26)</sub>
 
 **Type:** `uint8`
 
 ### `TOKEN_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L24)</sub>
 
 **Type:** `string`
 
 ### `TOKEN_SYMBOL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L25)</sub>
 
 **Type:** `string`
 
 ### `sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L27)</sub>
 
 **Type:** `bytes32`
 
@@ -47,7 +47,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -67,7 +67,7 @@ graph TD
 
 ### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -85,7 +85,7 @@ graph TD
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -103,7 +103,7 @@ graph TD
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -121,7 +121,7 @@ graph TD
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -139,7 +139,7 @@ graph TD
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -157,7 +157,7 @@ graph TD
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -175,7 +175,7 @@ graph TD
 
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -193,7 +193,7 @@ graph TD
 
 ### `isWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -211,7 +211,7 @@ graph TD
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -229,7 +229,7 @@ graph TD
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -247,7 +247,7 @@ graph TD
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -265,7 +265,7 @@ graph TD
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -283,7 +283,7 @@ graph TD
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -301,7 +301,7 @@ graph TD
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -319,7 +319,7 @@ graph TD
 
 ### `totalIssuedSynthsExcludeEtherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -337,7 +337,7 @@ graph TD
 
 ### `transferableSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L146)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L146)</sub>
 
 ??? example "Details"
 
@@ -357,7 +357,7 @@ graph TD
 
 ### `_canTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L150)</sub>
 
 ??? example "Details"
 
@@ -375,7 +375,7 @@ graph TD
 
 ### `_notImplemented`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L299)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L299)</sub>
 
 ??? example "Details"
 
@@ -393,7 +393,7 @@ graph TD
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -411,7 +411,7 @@ graph TD
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -429,7 +429,7 @@ graph TD
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -447,7 +447,7 @@ graph TD
 
 ### `synthetixState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -465,7 +465,7 @@ graph TD
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -485,7 +485,7 @@ graph TD
 
 ### `burnSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L295)</sub>
 
 ??? example "Details"
 
@@ -503,7 +503,7 @@ graph TD
 
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L205)</sub>
 
 ??? example "Details"
 
@@ -527,7 +527,7 @@ graph TD
 
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L209)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L209)</sub>
 
 ??? example "Details"
 
@@ -551,7 +551,7 @@ graph TD
 
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L213)</sub>
 
 ??? example "Details"
 
@@ -575,7 +575,7 @@ graph TD
 
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L217)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L217)</sub>
 
 ??? example "Details"
 
@@ -599,7 +599,7 @@ graph TD
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L221)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L221)</sub>
 
 ??? example "Details"
 
@@ -617,7 +617,7 @@ graph TD
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L229)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L229)</sub>
 
 ??? example "Details"
 
@@ -635,7 +635,7 @@ graph TD
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L248)</sub>
 
 ??? example "Details"
 
@@ -653,7 +653,7 @@ graph TD
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L238)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L238)</sub>
 
 ??? example "Details"
 
@@ -671,7 +671,7 @@ graph TD
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L259)</sub>
 
 ??? example "Details"
 
@@ -689,7 +689,7 @@ graph TD
 
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -713,7 +713,7 @@ graph TD
 
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L201)</sub>
 
 ??? example "Details"
 
@@ -737,7 +737,7 @@ graph TD
 
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -761,7 +761,7 @@ graph TD
 
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -785,7 +785,7 @@ graph TD
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L283)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L283)</sub>
 
 ??? example "Details"
 
@@ -803,7 +803,7 @@ graph TD
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L279)</sub>
 
 ??? example "Details"
 
@@ -821,7 +821,7 @@ graph TD
 
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L287)</sub>
 
 ??? example "Details"
 
@@ -839,7 +839,7 @@ graph TD
 
 ### `mintSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L291)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L291)</sub>
 
 ??? example "Details"
 
@@ -857,7 +857,7 @@ graph TD
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L268)</sub>
 
 ??? example "Details"
 
@@ -875,7 +875,7 @@ graph TD
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L166)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L166)</sub>
 
 ??? example "Details"
 
@@ -899,7 +899,7 @@ graph TD
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L176)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L176)</sub>
 
 ??? example "Details"
 
@@ -925,8 +925,8 @@ graph TD
 
 ### `issuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L314)</sub>
 
 ### `systemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/BaseSynthetix.sol#L305)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L305)</sub>

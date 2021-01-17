@@ -129,6 +129,7 @@ nav:
                 - SynthetixBridgeToOptimism: contracts/source/contracts/SynthetixBridgeToOptimism.md
                 - SynthetixEscrow: contracts/source/contracts/SynthetixEscrow.md
                 - SynthetixState: contracts/source/contracts/SynthetixState.md
+                - SynthetixStateWithLimitedSetup: contracts/source/contracts/SynthetixStateWithLimitedSetup.md
                 - SystemSettings: contracts/source/contracts/SystemSettings.md
                 - SystemStatus: contracts/source/contracts/SystemStatus.md
                 - TokenState: contracts/source/contracts/TokenState.md

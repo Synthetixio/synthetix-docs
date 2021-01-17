@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IAddressResolver.sol)
+**Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IAddressResolver.sol)
 
 ## Views
 
 ### `getAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IAddressResolver.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IAddressResolver.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `getSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IAddressResolver.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IAddressResolver.sol#L8)</sub>
 
 !!! Warning "Not yet on mainnet"
 
@@ -48,7 +48,7 @@
 
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.36.1/contracts/interfaces/IAddressResolver.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IAddressResolver.sol#L10)</sub>
 
 ??? example "Details"
 
