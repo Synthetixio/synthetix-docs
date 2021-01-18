@@ -2,6 +2,16 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Gacrux (v2.37.0)
+
+**Published**: Jan 17, 2021
+
+**Codebase**: [v2.37.0](https://github.com/Synthetixio/synthetix/tree/v2.37.0)
+
+> - [SIP-106](https://sips.synthetix.io/sips/sip-106) L2 Debt Register fix
+
+---
+
 # Castor (v2.36.1)
 
 **Published**: Jan 15, 2021
@@ -269,16 +279,6 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 
 - [SIP-23](https://sips.synthetix.io/sips/sip-23)
 - [SIP-24](https://sips.synthetix.io/sips/sip-24)
-
----
-
-# Arcturus (v2.13.1)
-
-**Published**: Nov 21, 2019
-
-**Codebase**: [v2.13.1](https://github.com/Synthetixio/synthetix/tree/v2.13.1)
-
-> https://blog.synthetix.io/the-arcturus-release/
 
 ---
 
