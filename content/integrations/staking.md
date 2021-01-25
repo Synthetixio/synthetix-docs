@@ -12,7 +12,7 @@ To account for the risk stakers take on by being exposed to a shared debt pool, 
 
 **Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
-> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](/integrations/#proxies).
 
 ### Methods
 

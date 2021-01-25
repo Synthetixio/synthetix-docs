@@ -10,7 +10,7 @@
 
 **Underlying contract (ABI):** [`FeePool`](https://contracts.synthetix.io/FeePool)
 
-> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `FeePool` contract you need is [`FeePool`](https://contracts.synthetix.io/FeePool). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `FeePool` contract you need is [`FeePool`](https://contracts.synthetix.io/FeePool). Learn more about how proxies work by visiting the [overview page](/integrations/#proxies).
 
 ### Methods
 

@@ -10,7 +10,7 @@ Synths can be directly exchanged for one another with zero slippage. To view a f
 
 **Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
-> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies)
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](/integrations/#proxies)
 
 ### Methods
 
@@ -49,9 +49,17 @@ Following any reclaims or rebates, the following events then occur:
 | ---------------------------------------------------- | ----------- | ------------------------------------------- | ------------ |
 | [`Issued`](/contracts/source/contracts/Synth#issued) | `ProxysUSD` | [`FEE_ADDRESS`](../../FeePool/#fee_address) | `fee`        |
 
+| name                                                                         | emitted on  | `uint cachedDebt`                                                                    |
+| ---------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------ |
+| [`DebtCacheUpdated`](/contracts/source/contracts/DebtCache#debtcacheupdated) | `DebtCache` | New `cachedDebt` in the system (see [SIP-91](https://sips.synthetix.io/sips/sip-91)) |
+
 | name                                                                   | emitted on       | `address account`             | `bytes32 src` | `uint fromAmount` | `bytes32 dest` | `uint toAmount`  | `address toAddress`           |
 | ---------------------------------------------------------------------- | ---------------- | ----------------------------- | ------------- | ----------------- | -------------- | ---------------- | ----------------------------- |
 | [`SynthExchange`](/contracts/source/contracts/Synthetix#synthexchange) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`      | `dest`         | `toAmount - fee` | `msg.sender`<br />(or `user`) |
+
+| name                                                                                   | emitted on  | `address account`             | `bytes32 src` | `uint amount` | `bytes32 dest` | `uint amountReceived` | `uint exchangeFeeRate`     | `uint roundIdForSrc`                  | `uint roundIdForDest`                  |
+| -------------------------------------------------------------------------------------- | ----------- | ----------------------------- | ------------- | ------------- | -------------- | --------------------- | -------------------------- | ------------------------------------- | -------------------------------------- |
+| [`ExchangeEntryAppended`](/contracts/source/contracts/Exchanger#exchangeentryappended) | `Exchanger` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`  | `dest`         | `toAmount - fee`      | the `exchangeFeeRate` paid | the `roundId` for rate of `src` synth | the `roundId` for rate of `dest` synth |
 
 ### Examples from Mainnet
 

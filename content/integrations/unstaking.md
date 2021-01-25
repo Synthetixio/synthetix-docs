@@ -10,7 +10,7 @@ In order to close their position, `SNX` stakers need to burn enough `sUSD` to co
 
 **Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
-> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](/integrations/#proxies).
 
 ### Methods
 

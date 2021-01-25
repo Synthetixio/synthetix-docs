@@ -39,6 +39,7 @@ nav:
           - Data: integrations/data.md
           - Delegating: integrations/delegating.md
           - 'Depot: ETH/sUSD': integrations/depot.md
+          - Virtual Synths: integrations/virtual-synths.md
           - Testnets: integrations/testnets.md
           - ENS Support: integrations/ens.md
           - Current Integrations: integrations/current-integrations.md

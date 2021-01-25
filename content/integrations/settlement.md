@@ -23,7 +23,7 @@ There are a number of different ways to settle synths explicitly:
 
 **Target contract (ABI):** [`Synthetix`](https://contracts.synthetix.io/Synthetix)
 
-> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](./integrations/#proxies).
+> **Note:** Synthetix uses a proxy system. The ABI of the underlying Synthetix `ProxyERC20` contract you need is [`Synthetix`](https://contracts.synthetix.io/Synthetix). Learn more about how proxies work by visiting the [overview page](/integrations/#proxies).
 
 #### Methods
 
@@ -31,7 +31,7 @@ There are a number of different ways to settle synths explicitly:
 
 #### Examples on Mainnet
 
-- `Synthetix.settle(iETH)` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0x9948f2248b2aabf0f35dd526b19ab65091356e7771718a2e9f0c2f3308c9dd53/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x9948f2248b2aabf0f35dd526b19ab65091356e7771718a2e9f0c2f3308c9dd53#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
+- `Exchanger.settle(iBTC)` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0xcb429740b32026fd8ab46e6b135f78f5ed59a33194710e8227d134fcf34a6c41/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xcb429740b32026fd8ab46e6b135f78f5ed59a33194710e8227d134fcf34a6c41#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
 ### 2. Anyone can settle on behalf of a user
 
@@ -43,7 +43,7 @@ There are a number of different ways to settle synths explicitly:
 
 #### Examples on Mainnet
 
-- `Exchanger.settle(iETH)` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0x547b45c81e151c98b4ab23fd451e02271325ec91ad896952a9cc05fc2331b237/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x547b45c81e151c98b4ab23fd451e02271325ec91ad896952a9cc05fc2331b237#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
+- `Exchanger.settle(sUSD)` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0x152c1abb7b6bb74376853fd9947ff0366dd50bb5e6bca427803cc0f62710e0c9/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0x152c1abb7b6bb74376853fd9947ff0366dd50bb5e6bca427803cc0f62710e0c9#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
 ### 3. User transfers and settles
 
@@ -57,7 +57,7 @@ There are a number of different ways to settle synths explicitly:
 
 #### Examples on Mainnet
 
-- `ProxysUSD.transferAndSettle(0xb5532ce, 2056e18)` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0xc8465034a7b9e3220f40b9a6dcbe8e8f15b69aa45140616396033888968329ec/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xc8465034a7b9e3220f40b9a6dcbe8e8f15b69aa45140616396033888968329ec#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
+- `ProxyERC20sUSD.transferAndSettle(0x1cd919, 1e18)` <a target=_blank href="https://dashboard.tenderly.co/tx/main/0xdae3ba0ae09d21377a07a9e157b7a30cb7bf304f8be129ec0f5fb2ab039bda88/logs"><img src="https://tenderly.co/icons/icon-48x48.png" width=24 /></a> <a target=_blank href="https://etherscan.io/tx/0xdae3ba0ae09d21377a07a9e157b7a30cb7bf304f8be129ec0f5fb2ab039bda88#eventlog"><img src="https://etherscan.io/images/favicon2.ico" width=24 /></a>
 
 ### 4. Approved contract transfers and settles for a user
 
@@ -81,10 +81,6 @@ There are a number of different ways to settle synths explicitly:
 | ---------------------------------------------------- | ------------ | ------------------------ | ------------ |
 | [`Burned`](/contracts/source/contracts/Synth#burned) | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwing`  |
 
-| name                                                                       | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
-| -------------------------------------------------------------------------- | ---------------- | ----------------------------- | --------------------- | ------------ |
-| [`ExchangeReclaim`](/contracts/source/contracts/Synthetix#exchangereclaim) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwing`  |
-
 #### Else if fees owed on `src` (fee rebate)
 
 | name                                                                | emitted on   | `address from` | `address to`             | `uint value` |
@@ -95,9 +91,15 @@ There are a number of different ways to settle synths explicitly:
 | ---------------------------------------------------- | ------------ | ------------------------ | ------------ |
 | [`Issued`](/contracts/source/contracts/Synth#issued) | `Proxy<src>` | `msg.sender` (or `user`) | `feesOwed`   |
 
-| name                                                                     | emitted on       | `address account`             | `bytes32 currencyKey` | `uint value` |
-| ------------------------------------------------------------------------ | ---------------- | ----------------------------- | --------------------- | ------------ |
-| [`ExchangeRebate`](/contracts/source/contracts/Synthetix#exchangerebate) | `ProxySynthetix` | `msg.sender`<br />(or `user`) | `src`                 | `feesOwed`   |
+#### And following those
+
+| name                                                                         | emitted on  | `uint cachedDebt`                                                                    |
+| ---------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------ |
+| [`DebtCacheUpdated`](/contracts/source/contracts/DebtCache#debtcacheupdated) | `DebtCache` | New `cachedDebt` in the system (see [SIP-91](https://sips.synthetix.io/sips/sip-91)) |
+
+| name                                                                                 | emitted on  | `address account`             | `bytes32 src` | `uint amount` | `bytes32 dest` | `uint reclaim`           | `uint rebate`         | `uint srcRoundIdAtPeriodEnd`                                   | `uint destRoundIdAtPeriodEnd`                                   | `uint exchangeTimestamp`      |
+| ------------------------------------------------------------------------------------ | ----------- | ----------------------------- | ------------- | ------------- | -------------- | ------------------------ | --------------------- | -------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------- |
+| [`ExchangeEntrySettled`](/contracts/source/contracts/Exchanger#exchangeentrysettled) | `Exchanger` | `msg.sender`<br />(or `user`) | `src`         | `fromAmount`  | `dest`         | `reclaimedAmount` if any | `rebateAmount` if any | the `roundId` for rate of `src` synth at waiting period expiry | the `roundId` for rate of `dest` synth at waiting period expiry | the timestamp of the exchange |
 
 ---
 
