@@ -18,17 +18,17 @@ The ReadProxy is a simple proxy for readonly views. If any mutative function is 
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/ReadProxy.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/ReadProxy.sol#L12)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor()`
+    `constructor(address _owner)`
 
     **Visibility**
 
-    `external`
+    `public`
 
     **State Mutability**
 

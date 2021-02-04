@@ -108,7 +108,7 @@ The total quantity of sUSD currently in the [`deposits`](#deposits) queue to be 
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/Depot.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/Depot.sol#L82)</sub>
 
 Initialises the various addresses this contract knows, along with the inherited [`SelfDestructible`](SelfDestructible.md) and [`Pausable`](Pausable.md) instances.
 
@@ -116,11 +116,11 @@ Initialises the various addresses this contract knows, along with the inherited 
 
     **Signature**
 
-    `constructor() payable`
+    `constructor(address _owner, address payable _fundsWallet, address _resolver)`
 
     **Visibility**
 
-    `external`
+    `public`
 
     **State Mutability**
 

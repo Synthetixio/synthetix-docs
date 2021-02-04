@@ -2,6 +2,21 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Bellatrix (v2.38.0)
+
+**Published**: Feb 4, 2021
+
+**Codebase**: [v2.38.0](https://github.com/Synthetixio/synthetix/tree/v2.38.0)
+
+> https://blog.synthetix.io/the-bellatrix-release/
+
+- [SIP-95](https://sips.synthetix.io/sips/sip-95): Delist s/iBCH
+- [SIP-101](https://sips.synthetix.io/sips/sip-101): New crypto Synths
+- [SIP-108](https://sips.synthetix.io/sips/sip-108): Shorting rewards
+- [SIP-109](https://sips.synthetix.io/sips/sip-109): Add Synth exchange suspension support
+
+---
+
 # Gacrux (v2.37.0)
 
 **Published**: Jan 17, 2021
@@ -266,19 +281,6 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SIP-30](https://sips.synthetix.io/sips/sip-30)
 - [SIP-32](https://sips.synthetix.io/sips/sip-32)
 - [SCCP-9](https://sips.synthetix.io/sccp/sccp-9)
-
----
-
-# Capella (v2.16.4)
-
-**Published**: Dec 12, 2019
-
-**Codebase**: [v2.16.4](https://github.com/Synthetixio/synthetix/tree/v2.16.4)
-
-> https://blog.synthetix.io/the-capella-release/
-
-- [SIP-23](https://sips.synthetix.io/sips/sip-23)
-- [SIP-24](https://sips.synthetix.io/sips/sip-24)
 
 ---
 
