@@ -2,87 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol)
-
-## Views
-
-### `canBurnFor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L7)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canBurnFor(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `canClaimFor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L11)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canClaimFor(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `canExchangeFor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L13)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canExchangeFor(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `canIssueFor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L9)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canIssueFor(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol)
 
 ## External Functions
 
 ### `approveAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -96,11 +22,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `approveBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -114,11 +40,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `approveClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -132,11 +58,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `approveExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -150,11 +76,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `approveIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -168,11 +94,83 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `canBurnFor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L7)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `canBurnFor(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `canClaimFor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `canClaimFor(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `canExchangeFor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L13)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `canExchangeFor(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `canIssueFor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L9)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `canIssueFor(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `removeAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -186,11 +184,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -204,11 +202,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -222,11 +220,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -240,11 +238,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IDelegateApprovals.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IDelegateApprovals.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -258,4 +256,4 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

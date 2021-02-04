@@ -2,123 +2,31 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol)
-
-## Views
-
-### `allowance`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L18)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `allowance(address owner, address spender) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `balanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L16)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `balanceOf(address owner) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `decimals`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L11)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `decimals() returns (uint8)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `name`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L7)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `name() returns (string)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `symbol`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L9)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `symbol() returns (string)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalSupply`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L14)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalSupply() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/interfaces/IERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol)
 
 ## External Functions
 
+### `allowance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L18)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `allowance(address owner, address spender) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -132,11 +40,101 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `balanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L16)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `balanceOf(address owner) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `decimals`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `decimals() view returns (uint8)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `name`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L7)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `name() view returns (string)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `symbol`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L9)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `symbol() view returns (string)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L14)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalSupply() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -150,11 +148,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -168,18 +166,18 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Events
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L34)</sub>
 
 **Signature**: `Approval(address owner, address spender, uint256 value)`
 
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IERC20.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IERC20.sol#L32)</sub>
 
 **Signature**: `Transfer(address from, address to, uint256 value)`

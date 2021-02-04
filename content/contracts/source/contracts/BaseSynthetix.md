@@ -2,44 +2,31 @@
 
 ## Description
 
-**Source:** [contracts/BaseSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol)
+**Source:** [contracts/BaseSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol)
 
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    BaseSynthetix[BaseSynthetix] --> ExternStateToken[ExternStateToken]
-    BaseSynthetix[BaseSynthetix] --> MixinResolver[MixinResolver]
-    ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
-    Proxyable[Proxyable] --> Owned[Owned]
-
-```
-
-## Constants
+## Variables
 
 ### `DECIMALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L26)</sub>
 
 **Type:** `uint8`
 
 ### `TOKEN_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L24)</sub>
 
 **Type:** `string`
 
 ### `TOKEN_SYMBOL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L25)</sub>
 
 **Type:** `string`
 
 ### `sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L27)</sub>
 
 **Type:** `bytes32`
 
@@ -47,13 +34,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L38)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address payable _proxy, contract TokenState _tokenState, address _owner, uint256 _totalSupply, address _resolver)`
+    `constructor(address payable _proxy, contract TokenState _tokenState, address _owner, uint256 _totalSupply, address _resolver)`
 
     **Visibility**
 
@@ -61,309 +48,19 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `anySynthOrSNXRateIsInvalid`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L118)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `anySynthOrSNXRateIsInvalid() returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `availableCurrencyKeys`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L94)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `availableCurrencyKeys() returns (bytes32[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `availableSynthCount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L98)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `availableSynthCount() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `availableSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L102)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `availableSynths(uint256 index) returns (contract ISynth)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `collateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L142)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `collateral(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `collateralisationRatio`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L138)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `collateralisationRatio(address _issuer) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `debtBalanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L82)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `debtBalanceOf(address account, bytes32 currencyKey) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `isWaitingPeriod`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L114)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `isWaitingPeriod(bytes32 currencyKey) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `maxIssuableSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L122)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `maxIssuableSynths(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `remainingIssuableSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L126)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `remainingIssuableSynths(address account) returns (uint256, uint256, uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L53)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `synths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L106)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synths(bytes32 currencyKey) returns (contract ISynth)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `synthsByAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L110)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthsByAddress(address synthAddress) returns (bytes32)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalIssuedSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L86)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalIssuedSynths(bytes32 currencyKey) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalIssuedSynthsExcludeEtherCollateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L90)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalIssuedSynthsExcludeEtherCollateral(bytes32 currencyKey) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `transferableSynthetix`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L146)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `transferableSynthetix(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Internal Functions
 
 ### `_canTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L150)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_canTransfer(address account, uint256 value) returns (bool)`
+    `_canTransfer(address account, uint256 value) view returns (bool)`
 
     **Visibility**
 
@@ -371,17 +68,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_notImplemented`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L299)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L299)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_notImplemented()`
+    `_notImplemented() pure`
 
     **Visibility**
 
@@ -389,17 +86,17 @@ graph TD
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L70)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchanger() returns (contract IExchanger)`
+    `exchanger() view returns (contract IExchanger)`
 
     **Visibility**
 
@@ -407,17 +104,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L74)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `issuer() returns (contract IIssuer)`
+    `issuer() view returns (contract IIssuer)`
 
     **Visibility**
 
@@ -425,17 +122,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L78)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `rewardsDistribution() returns (contract IRewardsDistribution)`
+    `rewardsDistribution() view returns (contract IRewardsDistribution)`
 
     **Visibility**
 
@@ -443,17 +140,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `synthetixState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L62)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetixState() returns (contract ISynthetixState)`
+    `synthetixState() view returns (contract ISynthetixState)`
 
     **Visibility**
 
@@ -461,17 +158,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L66)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `systemStatus() returns (contract ISystemStatus)`
+    `systemStatus() view returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -479,19 +176,19 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
-### `burnSecondary`
+### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L118)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `burnSecondary(address , uint256 )`
+    `anySynthOrSNXRateIsInvalid() view returns (bool anyRateInvalid)`
 
     **Visibility**
 
@@ -499,11 +196,83 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `availableCurrencyKeys`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L94)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `availableCurrencyKeys() view returns (bytes32[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `availableSynthCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L98)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `availableSynthCount() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `availableSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L102)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `availableSynths(uint256 index) view returns (contract ISynth)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `burnSecondary`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L295)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSecondary(address, uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L205)</sub>
 
 ??? example "Details"
 
@@ -517,7 +286,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -527,7 +296,7 @@ graph TD
 
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L209)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L209)</sub>
 
 ??? example "Details"
 
@@ -541,7 +310,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -551,7 +320,7 @@ graph TD
 
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L213)</sub>
 
 ??? example "Details"
 
@@ -565,7 +334,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -575,7 +344,7 @@ graph TD
 
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L217)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L217)</sub>
 
 ??? example "Details"
 
@@ -589,7 +358,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -597,15 +366,15 @@ graph TD
 
     * [optionalProxy](#optionalproxy)
 
-### `exchange`
+### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L221)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L142)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchange(bytes32 , uint256 , bytes32 ) returns (uint256)`
+    `collateral(address account) view returns (uint256)`
 
     **Visibility**
 
@@ -613,17 +382,71 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `collateralisationRatio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L138)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `collateralisationRatio(address _issuer) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `debtBalanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L82)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `debtBalanceOf(address account, bytes32 currencyKey) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `exchange`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L221)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchange(bytes32, uint256, bytes32) returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L229)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L229)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeOnBehalf(address , bytes32 , uint256 , bytes32 ) returns (uint256)`
+    `exchangeOnBehalf(address, bytes32, uint256, bytes32) returns (uint256)`
 
     **Visibility**
 
@@ -631,17 +454,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L248)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeOnBehalfWithTracking(address , bytes32 , uint256 , bytes32 , address , bytes32 ) returns (uint256)`
+    `exchangeOnBehalfWithTracking(address, bytes32, uint256, bytes32, address, bytes32) returns (uint256)`
 
     **Visibility**
 
@@ -649,17 +472,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L238)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L238)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeWithTracking(bytes32 , uint256 , bytes32 , address , bytes32 ) returns (uint256)`
+    `exchangeWithTracking(bytes32, uint256, bytes32, address, bytes32) returns (uint256)`
 
     **Visibility**
 
@@ -667,17 +490,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L259)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeWithVirtual(bytes32 , uint256 , bytes32 , bytes32 ) returns (uint256, contract IVirtualSynth)`
+    `exchangeWithVirtual(bytes32, uint256, bytes32, bytes32) returns (uint256, contract IVirtualSynth)`
 
     **Visibility**
 
@@ -685,11 +508,29 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `isWaitingPeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L114)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isWaitingPeriod(bytes32 currencyKey) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -703,7 +544,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -713,7 +554,7 @@ graph TD
 
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L201)</sub>
 
 ??? example "Details"
 
@@ -727,7 +568,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -737,7 +578,7 @@ graph TD
 
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -751,7 +592,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -761,7 +602,7 @@ graph TD
 
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -775,7 +616,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -785,13 +626,13 @@ graph TD
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L283)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L283)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `liquidateDelinquentAccount(address , uint256 ) returns (bool)`
+    `liquidateDelinquentAccount(address, uint256) returns (bool)`
 
     **Visibility**
 
@@ -799,11 +640,29 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `maxIssuableSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L122)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `maxIssuableSynths(address account) view returns (uint256 maxIssuable)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L279)</sub>
 
 ??? example "Details"
 
@@ -817,17 +676,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L287)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `mintSecondary(address , uint256 )`
+    `mintSecondary(address, uint256)`
 
     **Visibility**
 
@@ -835,17 +694,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `mintSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L291)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L291)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `mintSecondaryRewards(uint256 )`
+    `mintSecondaryRewards(uint256)`
 
     **Visibility**
 
@@ -853,17 +712,53 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `remainingIssuableSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L126)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `remainingIssuableSynths(address account) view returns (uint256 maxIssuable, uint256 alreadyIssued, uint256 totalSystemDebt)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L53)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L268)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `settle(bytes32 ) returns (uint256, uint256, uint256)`
+    `settle(bytes32) returns (uint256, uint256, uint256)`
 
     **Visibility**
 
@@ -871,11 +766,83 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `synths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L106)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synths(bytes32 currencyKey) view returns (contract ISynth)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `synthsByAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L110)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthsByAddress(address synthAddress) view returns (bytes32)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalIssuedSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L86)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalIssuedSynths(bytes32 currencyKey) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalIssuedSynthsExcludeEtherCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L90)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalIssuedSynthsExcludeEtherCollateral(bytes32 currencyKey) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L166)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L166)</sub>
 
 ??? example "Details"
 
@@ -889,7 +856,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -899,7 +866,7 @@ graph TD
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L176)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L176)</sub>
 
 ??? example "Details"
 
@@ -913,7 +880,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -921,12 +888,30 @@ graph TD
 
     * [systemActive](#systemactive)
 
+### `transferableSynthetix`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L146)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `transferableSynthetix(address account) view returns (uint256 transferable)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
 ## Modifiers
 
 ### `issuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L314)</sub>
 
 ### `systemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BaseSynthetix.sol#L305)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BaseSynthetix.sol#L305)</sub>

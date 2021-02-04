@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralEth.sol)
+**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralEth.sol)
 
 ## External Functions
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralEth.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralEth.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralEth.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralEth.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -40,17 +40,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralEth.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralEth.sol#L9)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `deposit(address borrower, uint256 id)`
+    `deposit(address borrower, uint256 id) payable`
 
     **Visibility**
 
@@ -58,11 +58,11 @@
 
     **State Mutability**
 
-    `payable`
+    `undefined`
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralEth.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralEth.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -76,17 +76,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralEth.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralEth.sol#L5)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `open(uint256 amount, bytes32 currency)`
+    `open(uint256 amount, bytes32 currency) payable`
 
     **Visibility**
 
@@ -94,11 +94,11 @@
 
     **State Mutability**
 
-    `payable`
+    `undefined`
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralEth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralEth.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -112,11 +112,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralEth.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralEth.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -130,4 +130,4 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

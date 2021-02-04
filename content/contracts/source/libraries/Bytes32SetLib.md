@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Bytes32SetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Bytes32SetLib.sol)
+**Source:** [contracts/Bytes32SetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Bytes32SetLib.sol)
 
 ## Structs
 
 ### `Bytes32Set`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Bytes32SetLib.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Bytes32SetLib.sol#L6)</sub>
 
 | Field      | Type                          | Description |
 | ---------- | ----------------------------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `add`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Bytes32SetLib.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Bytes32SetLib.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -33,17 +33,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `contains`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Bytes32SetLib.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Bytes32SetLib.sol#L11)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `contains(struct Bytes32SetLib.Bytes32Set set, bytes32 candidate) returns (bool)`
+    `contains(struct Bytes32SetLib.Bytes32Set set, bytes32 candidate) view returns (bool)`
 
     **Visibility**
 
@@ -51,17 +51,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `getPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Bytes32SetLib.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Bytes32SetLib.sol#L19)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getPage(struct Bytes32SetLib.Bytes32Set set, uint256 index, uint256 pageSize) returns (bytes32[])`
+    `getPage(struct Bytes32SetLib.Bytes32Set set, uint256 index, uint256 pageSize) view returns (bytes32[])`
 
     **Visibility**
 
@@ -69,11 +69,11 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `remove`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Bytes32SetLib.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Bytes32SetLib.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -87,8 +87,8 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Element not in set.)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Bytes32SetLib.sol#L52)
+    * [require(..., "Element not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Bytes32SetLib.sol#L52)

@@ -40,17 +40,9 @@ Additionally, events are a bit different; they must be encoded within the underl
 
 Finally, if the target contract needs to transfer ether around, then it will be remitted from the target address rather than the proxy address, though this is a quirk which it would be straightforward to remedy.
 
-**Source:** [contracts/Proxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Proxy.sol)
+**Source:** [contracts/Proxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Proxy.sol)
 
 ## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    Proxy[Proxy] --> Owned[Owned]
-
-```
 
 ### Related Contracts
 
@@ -60,7 +52,7 @@ graph TD
 
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Proxy.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Proxy.sol#L12)</sub>
 
 The underlying contract this proxy is standing in front of.
 
@@ -70,7 +62,7 @@ The underlying contract this proxy is standing in front of.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Proxy.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Proxy.sol#L58)</sub>
 
 Initialises the inherited [`Owned`](Owned.md) instance.
 
@@ -78,21 +70,21 @@ Initialises the inherited [`Owned`](Owned.md) instance.
 
     **Signature**
 
-    `(address _owner)`
+    `constructor() payable`
 
     **Visibility**
 
-    `public`
+    `external`
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Restricted Functions
 
 ### `_emit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Proxy.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Proxy.sol#L21)</sub>
 
 When operating in the `CALL` style, this function allows the proxy's underlying contract (and only that contract) to emit events from the proxy's address.
 
@@ -129,7 +121,7 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -137,7 +129,7 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
 ### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Proxy.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Proxy.sol#L16)</sub>
 
 Sets the address this proxy forwards its calls to.
 
@@ -153,7 +145,7 @@ Sets the address this proxy forwards its calls to.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -163,36 +155,11 @@ Sets the address this proxy forwards its calls to.
 
     * [TargetUpdated](#targetupdated)
 
-## Fallback Function
-
-### `() (fallback function)`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Proxy.sol#L58)</sub>
-
-If none of the above functions is hit, then the function call data and gas is forwarded to the [target contract](#target). The result of that invocation is returned to the message sender.
-
-If the proxy is in `DELEGATECALL` style, it operates like most other proxies.
-If it is in `CALL` mode, then it first calls [`target.setMessageSender(msg.sender)`](Proxyable.md#setmessagesender) to initialise the [`messageSender`](Proxyable.md#messagesender) variable in the underlying [`Proxyable`](Proxyable.md) instance. In addition it forwards any ether included in the transaction to its target.
-
-??? example "Details"
-
-    **Signature**
-
-    `()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `payable`
-
 ## Modifiers
 
 ### `onlyTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Proxy.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Proxy.sol#L77)</sub>
 
 Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
@@ -200,7 +167,7 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
 ### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Proxy.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Proxy.sol#L82)</sub>
 
 The proxy's target contract was changed.
 

@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol)
+**Source:** [contracts/interfaces/ISystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol)
 
-## Views
+## External Functions
 
 ### `exchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L25)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeFeeRate(bytes32 currencyKey) returns (uint256)`
+    `exchangeFeeRate(bytes32 currencyKey) view returns (uint256)`
 
     **Visibility**
 
@@ -22,17 +22,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `feePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L13)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `feePeriodDuration() returns (uint256)`
+    `feePeriodDuration() view returns (uint256)`
 
     **Visibility**
 
@@ -40,17 +40,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L11)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `issuanceRatio() returns (uint256)`
+    `issuanceRatio() view returns (uint256)`
 
     **Visibility**
 
@@ -58,17 +58,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L17)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `liquidationDelay() returns (uint256)`
+    `liquidationDelay() view returns (uint256)`
 
     **Visibility**
 
@@ -76,17 +76,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L21)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `liquidationPenalty() returns (uint256)`
+    `liquidationPenalty() view returns (uint256)`
 
     **Visibility**
 
@@ -94,17 +94,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L19)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `liquidationRatio() returns (uint256)`
+    `liquidationRatio() view returns (uint256)`
 
     **Visibility**
 
@@ -112,17 +112,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L27)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `minimumStakeTime() returns (uint256)`
+    `minimumStakeTime() view returns (uint256)`
 
     **Visibility**
 
@@ -130,17 +130,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L7)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `priceDeviationThresholdFactor() returns (uint256)`
+    `priceDeviationThresholdFactor() view returns (uint256)`
 
     **Visibility**
 
@@ -148,17 +148,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L23)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `rateStalePeriod() returns (uint256)`
+    `rateStalePeriod() view returns (uint256)`
 
     **Visibility**
 
@@ -166,17 +166,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `targetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L15)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `targetThreshold() returns (uint256)`
+    `targetThreshold() view returns (uint256)`
 
     **Visibility**
 
@@ -184,17 +184,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISystemSettings.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISystemSettings.sol#L9)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `waitingPeriodSecs() returns (uint256)`
+    `waitingPeriodSecs() view returns (uint256)`
 
     **Visibility**
 
@@ -202,4 +202,4 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`

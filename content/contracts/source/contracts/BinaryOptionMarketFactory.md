@@ -21,24 +21,13 @@ independently of one another.
     - [`BinaryOptionMarket`](BinaryOptionMarket.md): The factory creates market instances with the provided parameters.
     - [`AddressResolver`](AddressResolver.md): The factory uses the address resolver to retrieve the address of its manager, so if the manager is upgraded, this factory must be synchronised.
 
-**Source:** [contracts/BinaryOptionMarketFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BinaryOptionMarketFactory.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> Owned[Owned]
-    BinaryOptionMarketFactory[BinaryOptionMarketFactory] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/BinaryOptionMarketFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BinaryOptionMarketFactory.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BinaryOptionMarketFactory.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BinaryOptionMarketFactory.sol#L21)</sub>
 
 The constructor simply initialises the inherited classes.
 
@@ -46,7 +35,7 @@ The constructor simply initialises the inherited classes.
 
     **Signature**
 
-    `(address _owner, address _resolver)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -54,33 +43,13 @@ The constructor simply initialises the inherited classes.
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BinaryOptionMarketFactory.sol#L25)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Internal Functions
 
 ### `_manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BinaryOptionMarketFactory.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BinaryOptionMarketFactory.sol#L32)</sub>
 
 Returns the cached address of the
 [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md) instance
@@ -90,7 +59,7 @@ from the [`AddressResolver`](AddressResolver.md).
 
     **Signature**
 
-    `_manager() returns (address)`
+    `_manager() view returns (address)`
 
     **Visibility**
 
@@ -98,13 +67,13 @@ from the [`AddressResolver`](AddressResolver.md).
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
 ### `createMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BinaryOptionMarketFactory.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BinaryOptionMarketFactory.sol#L38)</sub>
 
 Simply creates a new [`BinaryOptionMarket`](BinaryOptionMarket.md) instance
 with the given parameters.
@@ -129,8 +98,26 @@ Initial timestamps should be provided in the order `[biddingEnd, maturity, expir
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Only permitted by the manager.)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/BinaryOptionMarketFactory.sol#L49)
+    * [require(..., "Only permitted by the manager.")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BinaryOptionMarketFactory.sol#L49)
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/BinaryOptionMarketFactory.sol#L25)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`

@@ -2,29 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralManagerState.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol)
-
-## Architecture
-
-### Libraries
-
-- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
-- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    CollateralManagerState[CollateralManagerState] --> State[State]
-    State[State] --> Owned[Owned]
-
-```
+**Source:** [contracts/CollateralManagerState.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol)
 
 ## Structs
 
 ### `Balance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L17)</sub>
 
 | Field   | Type      | Description |
 | ------- | --------- | ----------- |
@@ -35,37 +19,37 @@ graph TD
 
 ### `borrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L24)</sub>
 
 **Type:** `uint256[]`
 
 ### `borrowRatesLastUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L25)</sub>
 
 **Type:** `uint256`
 
 ### `shortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L27)</sub>
 
 **Type:** `mapping(bytes32 => uint256[])`
 
 ### `shortRatesLastUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L28)</sub>
 
 **Type:** `mapping(bytes32 => uint256)`
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L31)</sub>
 
 **Type:** `mapping(bytes32 => struct CollateralManagerState.Balance)`
 
 ### `totalLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L22)</sub>
 
 **Type:** `uint256`
 
@@ -73,13 +57,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L33)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _associatedContract)`
+    `constructor(address _owner, address _associatedContract)`
 
     **Visibility**
 
@@ -87,167 +71,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `getRateAt`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L69)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getRateAt(uint256 index) returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `getRatesAndTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L86)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getRatesAndTime(uint256 index) returns (uint256, uint256, uint256, uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getRatesLength`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L73)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getRatesLength() returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `getShortRatesAndTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L132)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getShortRatesAndTime(bytes32 currency, uint256 index) returns (uint256, uint256, uint256, uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getShortRatesLength`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L119)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getShortRatesLength(bytes32 currency) returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `long`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L43)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `long(bytes32 synth) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `ratesLastUpdated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L82)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `ratesLastUpdated() returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `short`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L47)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `short(bytes32 synth) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
+    `undefined`
 
 ## Restricted Functions
 
 ### `addShortCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -261,7 +91,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -269,7 +99,7 @@ graph TD
 
 ### `decrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -283,7 +113,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -291,7 +121,7 @@ graph TD
 
 ### `decrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -305,7 +135,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -313,7 +143,7 @@ graph TD
 
 ### `incrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -327,7 +157,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -335,7 +165,7 @@ graph TD
 
 ### `incrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -349,7 +179,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -357,7 +187,7 @@ graph TD
 
 ### `incrementTotalLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -371,7 +201,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -379,13 +209,13 @@ graph TD
 
 ### `long`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L43)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `long(bytes32 synth) returns (uint256)`
+    `long(bytes32 synth) view returns (uint256)`
 
     **Visibility**
 
@@ -393,7 +223,7 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
     **Modifiers**
 
@@ -401,7 +231,7 @@ graph TD
 
 ### `removeShortCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -415,7 +245,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -423,13 +253,13 @@ graph TD
 
 ### `short`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L47)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `short(bytes32 synth) returns (uint256)`
+    `short(bytes32 synth) view returns (uint256)`
 
     **Visibility**
 
@@ -437,7 +267,7 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
     **Modifiers**
 
@@ -445,7 +275,7 @@ graph TD
 
 ### `updateBorrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -459,7 +289,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -467,7 +297,7 @@ graph TD
 
 ### `updateShortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -481,7 +311,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -491,13 +321,13 @@ graph TD
 
 ### `getShortRateAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L115)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getShortRateAt(bytes32 currency, uint256 index) returns (uint256)`
+    `getShortRateAt(bytes32 currency, uint256 index) view returns (uint256)`
 
     **Visibility**
 
@@ -505,17 +335,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `shortRateLastUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralManagerState.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L128)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `shortRateLastUpdated(bytes32 currency) returns (uint256)`
+    `shortRateLastUpdated(bytes32 currency) view returns (uint256)`
 
     **Visibility**
 
@@ -523,4 +353,114 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
+
+## External Functions
+
+### `getRateAt`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L69)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getRateAt(uint256 index) view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getRatesAndTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L86)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getRatesAndTime(uint256 index) view returns (uint256 entryRate, uint256 lastRate, uint256 lastUpdated, uint256 newIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getRatesLength`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L73)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getRatesLength() view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getShortRatesAndTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L132)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getShortRatesAndTime(bytes32 currency, uint256 index) view returns (uint256 entryRate, uint256 lastRate, uint256 lastUpdated, uint256 newIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getShortRatesLength`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L119)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getShortRatesLength(bytes32 currency) view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `ratesLastUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralManagerState.sol#L82)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `ratesLastUpdated() view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`

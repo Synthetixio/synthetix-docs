@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/AddressSetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/AddressSetLib.sol)
+**Source:** [contracts/AddressSetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/AddressSetLib.sol)
 
 ## Structs
 
 ### `AddressSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/AddressSetLib.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/AddressSetLib.sol#L6)</sub>
 
 | Field      | Type                          | Description |
 | ---------- | ----------------------------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `add`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/AddressSetLib.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/AddressSetLib.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -33,17 +33,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `contains`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/AddressSetLib.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/AddressSetLib.sol#L11)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `contains(struct AddressSetLib.AddressSet set, address candidate) returns (bool)`
+    `contains(struct AddressSetLib.AddressSet set, address candidate) view returns (bool)`
 
     **Visibility**
 
@@ -51,17 +51,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `getPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/AddressSetLib.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/AddressSetLib.sol#L19)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getPage(struct AddressSetLib.AddressSet set, uint256 index, uint256 pageSize) returns (address[])`
+    `getPage(struct AddressSetLib.AddressSet set, uint256 index, uint256 pageSize) view returns (address[])`
 
     **Visibility**
 
@@ -69,11 +69,11 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `remove`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/AddressSetLib.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/AddressSetLib.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -87,8 +87,8 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Element not in set.)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/AddressSetLib.sol#L52)
+    * [require(..., "Element not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/AddressSetLib.sol#L52)

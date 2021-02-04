@@ -6,25 +6,9 @@ This is a [Synth](Synth.md) where all the holders can be force-[exchanged](Synth
 
 Purgeable synths were introduced by [SIP-3](https://github.com/Synthetixio/SIPs/blob/master/SIPS/sip-3.md) in response to increasing gas costs associated with minting, and to allow faster reconfiguration of inverse synths.
 
-**Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol)
+**Source:** [contracts/PurgeableSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol)
 
 ## Architecture
-
-### Libraries
-
-- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    PurgeableSynth[PurgeableSynth] --> Synth[Synth]
-    Synth[Synth] --> ExternStateToken[ExternStateToken]
-    Synth[Synth] --> MixinResolver[MixinResolver]
-    ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
-    Proxyable[Proxyable] --> Owned[Owned]
-
-```
 
 ### Related Contracts
 
@@ -34,7 +18,7 @@ graph TD
 
 ### `maxSupplyToPurgeInUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol#L18)</sub>
 
 Purging this Synth is disallowed unless the value of its supply is less than this. Initialised to $100\,000$.
 
@@ -44,13 +28,13 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol#L24)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address payable _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver)`
+    `constructor(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address payable _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver)`
 
     **Visibility**
 
@@ -58,33 +42,13 @@ Purging this Synth is disallowed unless the value of its supply is less than thi
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol#L36)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `purge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol#L49)</sub>
 
 Allows the owner to liquidate all holders of this token back to `sUSD` if the total value of this Synth is worth less than [`maxSupplyToPurgeInUSD`](#maxsupplytopurgeinusd) US dollars at current prices, or if the token is an inverse synth whose price is frozen.
 
@@ -102,11 +66,11 @@ If this is successfully invoked, balances in the provided list of addresses will
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Cannot purge as total supply is above threshold and rate is not frozen.)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol#L55)
+    * [require(..., "Cannot purge as total supply is above threshold and rate is not frozen.")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol#L55)
 
     **Modifiers**
 
@@ -116,7 +80,7 @@ If this is successfully invoked, balances in the provided list of addresses will
 
 ### `emitPurged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -130,11 +94,11 @@ If this is successfully invoked, balances in the provided list of addresses will
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol#L43)</sub>
 
 The contract address to obtain price information from.
 
@@ -146,7 +110,7 @@ It is necessary to know the current price of this Synth to work out whether it i
 
     **Signature**
 
-    `exchangeRates() returns (contract IExchangeRates)`
+    `exchangeRates() view returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -154,13 +118,33 @@ It is necessary to know the current price of this Synth to work out whether it i
 
     **State Mutability**
 
-    `view`
+    `undefined`
+
+## External Functions
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol#L36)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
 
 ## Events
 
 ### `Purged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/PurgeableSynth.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/PurgeableSynth.sol#L73)</sub>
 
 Records that a balance of this currency was liquidated back to `sUSD` for a particular account.
 

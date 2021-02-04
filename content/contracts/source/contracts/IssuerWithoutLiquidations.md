@@ -2,32 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/IssuerWithoutLiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/IssuerWithoutLiquidations.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    IssuerWithoutLiquidations[IssuerWithoutLiquidations] --> Issuer[Issuer]
-    Issuer[Issuer] --> Owned[Owned]
-    Issuer[Issuer] --> MixinSystemSettings[MixinSystemSettings]
-    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/IssuerWithoutLiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/IssuerWithoutLiquidations.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/IssuerWithoutLiquidations.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/IssuerWithoutLiquidations.sol#L9)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _resolver)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -35,19 +22,19 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Restricted Functions
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/IssuerWithoutLiquidations.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/IssuerWithoutLiquidations.sol#L11)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator) returns (uint256, uint256)`
+    `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator) returns (uint256 totalRedeemed, uint256 amountToLiquidate)`
 
     **Visibility**
 
@@ -55,7 +42,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 

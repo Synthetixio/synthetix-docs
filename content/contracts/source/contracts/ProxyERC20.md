@@ -8,30 +8,19 @@ As a result this proxy can verifiably support token functionality in its ABI if 
 
 In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token contract](Synthetix.md), alongside the pre-existing standard proxy. Thus clients can choose to use either of these two proxies to interact with the system.
 
-**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    ProxyERC20[ProxyERC20] --> Proxy[Proxy]
-    Proxy[Proxy] --> Owned[Owned]
-
-```
+**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L10)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner)`
+    `constructor(address _owner)`
 
     **Visibility**
 
@@ -39,123 +28,31 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `allowance`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L55)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `allowance(address owner, address spender) returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `balanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L44)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `balanceOf(address account) returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `decimals`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L24)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `decimals() returns (uint8)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `name`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L14)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `name() returns (string)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `symbol`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L19)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `symbol() returns (string)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `totalSupply`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L34)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalSupply() returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## External Functions
 
+### `allowance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L55)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `allowance(address owner, address spender) view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -169,11 +66,101 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `balanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L44)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `balanceOf(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `decimals`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L24)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `decimals() view returns (uint8)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `name`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L14)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `name() view returns (string)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `symbol`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `symbol() view returns (string)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L34)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalSupply() view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -187,11 +174,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ProxyERC20.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ProxyERC20.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -205,4 +192,4 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

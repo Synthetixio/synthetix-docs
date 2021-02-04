@@ -6,23 +6,13 @@
 
     This contract documentation is missing some descriptions.
 
-**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardsDistributionRecipient.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    RewardsDistributionRecipient[RewardsDistributionRecipient] --> Owned[Owned]
-
-```
+**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardsDistributionRecipient.sol)
 
 ## Variables
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardsDistributionRecipient.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardsDistributionRecipient.sol#L9)</sub>
 
 **Type:** `address`
 
@@ -30,7 +20,7 @@ graph TD
 
 ### `setRewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardsDistributionRecipient.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardsDistributionRecipient.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -44,7 +34,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -54,7 +44,7 @@ graph TD
 
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardsDistributionRecipient.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardsDistributionRecipient.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -68,10 +58,10 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Modifiers
 
 ### `onlyRewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardsDistributionRecipient.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardsDistributionRecipient.sol#L13)</sub>

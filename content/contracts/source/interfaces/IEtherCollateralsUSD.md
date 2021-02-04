@@ -2,69 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IEtherCollateralsUSD.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol)
-
-## Views
-
-### `totalIssuedSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L7)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalIssuedSynths() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalLoansCreated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L9)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalLoansCreated() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalOpenLoanCount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L11)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalOpenLoanCount() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/interfaces/IEtherCollateralsUSD.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol)
 
 ## External Functions
 
 ### `closeLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -78,17 +22,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `depositCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L20)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `depositCollateral(address account, uint256 loanID)`
+    `depositCollateral(address account, uint256 loanID) payable`
 
     **Visibility**
 
@@ -96,11 +40,11 @@
 
     **State Mutability**
 
-    `payable`
+    `undefined`
 
 ### `liquidateUnclosedLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -114,17 +58,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `openLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L14)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `openLoan(uint256 _loanAmount) returns (uint256)`
+    `openLoan(uint256 _loanAmount) payable returns (uint256 loanID)`
 
     **Visibility**
 
@@ -132,11 +76,11 @@
 
     **State Mutability**
 
-    `payable`
+    `undefined`
 
 ### `repayLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -150,11 +94,65 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `totalIssuedSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L7)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalIssuedSynths() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalLoansCreated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L9)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalLoansCreated() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalOpenLoanCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalOpenLoanCount() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `withdrawCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IEtherCollateralsUSD.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IEtherCollateralsUSD.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -168,4 +166,4 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

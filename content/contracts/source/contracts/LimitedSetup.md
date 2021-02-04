@@ -4,13 +4,13 @@
 
 This contract allows certain functions within inheriting contracts to only operate during a specific limited setup period. After this period elapses, any functions with the [`onlyDuringSetup`](#onlyduringsetup) modifier no longer operate.
 
-**Source:** [contracts/LimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/LimitedSetup.sol)
+**Source:** [contracts/LimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/LimitedSetup.sol)
 
 ## Variables
 
 ### `setupExpiryTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/LimitedSetup.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/LimitedSetup.sol#L6)</sub>
 
 The timestamp at which functions which have the [`onlyDuringSetup`](#onlyduringsetup) modifier will cease operating. This is determined by the `setupDuration` parameter passed into the contract [constructor](#constructor).
 
@@ -20,13 +20,13 @@ The timestamp at which functions which have the [`onlyDuringSetup`](#onlydurings
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/LimitedSetup.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/LimitedSetup.sol#L12)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(uint256 setupDuration)`
+    `constructor(uint256 setupDuration)`
 
     **Visibility**
 
@@ -34,12 +34,12 @@ The timestamp at which functions which have the [`onlyDuringSetup`](#onlydurings
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Modifiers
 
 ### `onlyDuringSetup`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/LimitedSetup.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/LimitedSetup.sol#L16)</sub>
 
 Reverts the transaction if the current timestamp is not before [`setupExpiryTime`](#setupexpirytime).

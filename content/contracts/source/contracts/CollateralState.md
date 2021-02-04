@@ -2,29 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralState.sol)
-
-## Architecture
-
-### Libraries
-
-- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
-- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    CollateralState[CollateralState] --> State[State]
-    State[State] --> Owned[Owned]
-
-```
+**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralState.sol)
 
 ## Variables
 
 ### `loans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralState.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralState.sol#L18)</sub>
 
 **Type:** `mapping(address => struct ICollateralLoan.Loan[])`
 
@@ -32,13 +16,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralState.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralState.sol#L20)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _associatedContract)`
+    `constructor(address _owner, address _associatedContract)`
 
     **Visibility**
 
@@ -46,51 +30,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `getLoan`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralState.sol#L24)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getLoan(address account, uint256 loanID) returns (struct ICollateralLoan.Loan)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getNumLoans`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralState.sol#L33)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getNumLoans(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `createLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralState.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralState.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -104,7 +50,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -112,7 +58,7 @@ graph TD
 
 ### `updateLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralState.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralState.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -126,8 +72,46 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
+
+## External Functions
+
+### `getLoan`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralState.sol#L24)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getLoan(address account, uint256 loanID) view returns (struct ICollateralLoan.Loan)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getNumLoans`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralState.sol#L33)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getNumLoans(address account) view returns (uint256 numLoans)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`

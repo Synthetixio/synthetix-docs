@@ -2,25 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    SynthetixBridgeToOptimism[SynthetixBridgeToOptimism] --> Owned[Owned]
-    SynthetixBridgeToOptimism[SynthetixBridgeToOptimism] --> MixinSystemSettings[MixinSystemSettings]
-    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/SynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol)
 
 ## Variables
 
 ### `activated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L32)</sub>
 
 **Type:** `bool`
 
@@ -28,13 +16,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L36)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _resolver)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -42,33 +30,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L81)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `migrateBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L139)</sub>
 
 ??? example "Details"
 
@@ -82,11 +50,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Cannot migrate to address 0)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L140)
+    * [require(..., "Cannot migrate to address 0")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L140)
 
     **Modifiers**
 
@@ -102,7 +70,7 @@ graph TD
 
 ### `_initiateRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L175)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L175)</sub>
 
 ??? example "Details"
 
@@ -116,7 +84,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Emits**
 
@@ -124,13 +92,13 @@ graph TD
 
 ### `hasZeroDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L75)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `hasZeroDebt()`
+    `hasZeroDebt() view`
 
     **Visibility**
 
@@ -138,21 +106,21 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Cannot deposit or migrate with debt)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L76)
+    * [require(..., "Cannot deposit or migrate with debt")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L76)
 
 ### `isActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L71)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `isActive()`
+    `isActive() view`
 
     **Visibility**
 
@@ -160,21 +128,21 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Function deactivated)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L72)
+    * [require(..., "Function deactivated")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L72)
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L55)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `issuer() returns (contract IIssuer)`
+    `issuer() view returns (contract IIssuer)`
 
     **Visibility**
 
@@ -182,17 +150,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `messenger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L43)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `messenger() returns (contract iOVM_BaseCrossDomainMessenger)`
+    `messenger() view returns (contract iOVM_BaseCrossDomainMessenger)`
 
     **Visibility**
 
@@ -200,17 +168,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L63)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `rewardEscrowV2() returns (contract IRewardEscrowV2)`
+    `rewardEscrowV2() view returns (contract IRewardEscrowV2)`
 
     **Visibility**
 
@@ -218,17 +186,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L59)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `rewardsDistribution() returns (address)`
+    `rewardsDistribution() view returns (address)`
 
     **Visibility**
 
@@ -236,17 +204,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L47)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetix() returns (contract ISynthetix)`
+    `synthetix() view returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -254,17 +222,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `synthetixBridgeToBase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L67)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetixBridgeToBase() returns (address)`
+    `synthetixBridgeToBase() view returns (address)`
 
     **Visibility**
 
@@ -272,17 +240,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `synthetixERC20`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L51)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetixERC20() returns (contract IERC20)`
+    `synthetixERC20() view returns (contract IERC20)`
 
     **Visibility**
 
@@ -290,13 +258,13 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
 ### `completeWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -310,13 +278,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Only the relayer can call this)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L128)
+    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L128)
 
-    * [require(..., Only the L2 bridge can invoke)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L129)
+    * [require(..., "Only the L2 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L129)
 
     **Modifiers**
 
@@ -328,7 +296,7 @@ graph TD
 
 ### `depositAndMigrateEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -342,7 +310,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -352,7 +320,7 @@ graph TD
 
 ### `initiateDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -366,7 +334,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -376,7 +344,7 @@ graph TD
 
 ### `initiateEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -390,7 +358,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -400,7 +368,7 @@ graph TD
 
 ### `initiateRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -414,7 +382,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -422,7 +390,7 @@ graph TD
 
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -436,54 +404,72 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Caller is not RewardsDistribution contract)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L153)
+    * [require(..., "Caller is not RewardsDistribution contract")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L153)
 
     **Modifiers**
 
     * [requireActive](#requireactive)
 
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L81)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
 ## Modifiers
 
 ### `requireActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L95)</sub>
 
 ### `requireZeroDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L100)</sub>
 
 ## Events
 
 ### `BridgeMigrated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L240)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L240)</sub>
 
 **Signature**: `BridgeMigrated(address oldBridge, address newBridge, uint256 amount)`
 
 ### `Deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L241)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L241)</sub>
 
 **Signature**: `Deposit(address account, uint256 amount)`
 
 ### `ExportedVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L242)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L242)</sub>
 
 **Signature**: `ExportedVestingEntries(address account, uint256 escrowedAccountBalance, struct VestingEntries.VestingEntry[] vestingEntries)`
 
 ### `RewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L247)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L247)</sub>
 
 **Signature**: `RewardDeposit(address account, uint256 amount)`
 
 ### `WithdrawalCompleted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToOptimism.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L248)</sub>
 
 **Signature**: `WithdrawalCompleted(address account, uint256 amount)`

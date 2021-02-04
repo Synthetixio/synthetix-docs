@@ -2,32 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/ImportableRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ImportableRewardEscrowV2.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    ImportableRewardEscrowV2[ImportableRewardEscrowV2] --> BaseRewardEscrowV2[BaseRewardEscrowV2]
-    BaseRewardEscrowV2[BaseRewardEscrowV2] --> Owned[Owned]
-    BaseRewardEscrowV2[BaseRewardEscrowV2] --> LimitedSetup[LimitedSetup]
-    BaseRewardEscrowV2[BaseRewardEscrowV2] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/ImportableRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ImportableRewardEscrowV2.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ImportableRewardEscrowV2.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ImportableRewardEscrowV2.sol#L15)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _resolver)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -35,33 +22,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ImportableRewardEscrowV2.sol#L19)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `importVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ImportableRewardEscrowV2.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ImportableRewardEscrowV2.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -75,11 +42,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Insufficient balance in the contract to provide for escrowed balance)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ImportableRewardEscrowV2.sol#L39)
+    * [require(..., "Insufficient balance in the contract to provide for escrowed balance")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ImportableRewardEscrowV2.sol#L39)
 
     **Modifiers**
 
@@ -89,7 +56,7 @@ graph TD
 
 ### `_importVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ImportableRewardEscrowV2.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ImportableRewardEscrowV2.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -103,17 +70,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `synthetixBridgeToBase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ImportableRewardEscrowV2.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ImportableRewardEscrowV2.sol#L26)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetixBridgeToBase() returns (address)`
+    `synthetixBridgeToBase() view returns (address)`
 
     **Visibility**
 
@@ -121,10 +88,30 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
+
+## External Functions
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ImportableRewardEscrowV2.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
 
 ## Modifiers
 
 ### `onlySynthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ImportableRewardEscrowV2.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ImportableRewardEscrowV2.sol#L63)</sub>

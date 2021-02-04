@@ -2,255 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/EmptyCollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol)
-
-## Views
-
-### `areShortableSynthsSet`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L75)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `areShortableSynthsSet(bytes32[] , bytes32[] ) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `areSynthsAndCurrenciesSet`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L71)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `areSynthsAndCurrenciesSet(bytes32[] , bytes32[] ) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `exceedsDebtLimit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L67)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exceedsDebtLimit(uint256 , bytes32 ) returns (bool, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBorrowRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L33)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBorrowRate() returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getRatesAndTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L41)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getRatesAndTime(uint256 ) returns (uint256, uint256, uint256, uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getShortRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L37)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getShortRate(bytes32 ) returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getShortRatesAndTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L54)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getShortRatesAndTime(bytes32 , uint256 ) returns (uint256, uint256, uint256, uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `hasCollateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L8)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `hasCollateral(address ) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `isSynthManaged`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L12)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `isSynthManaged(bytes32 ) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `long`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L17)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `long(bytes32 ) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `short`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L21)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `short(bytes32 ) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalLong`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L25)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalLong() returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalShort`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L29)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalShort() returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/EmptyCollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol)
 
 ## External Functions
 
 ### `addCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L85)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `addCollaterals(address[] )`
+    `addCollaterals(address[])`
 
     **Visibility**
 
@@ -258,17 +22,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `addShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L93)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `addShortableSynths(bytes32[2][] , bytes32[] )`
+    `addShortableSynths(bytes32[2][], bytes32[])`
 
     **Visibility**
 
@@ -276,17 +40,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `addSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L89)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `addSynths(bytes32[] , bytes32[] )`
+    `addSynths(bytes32[], bytes32[])`
 
     **Visibility**
 
@@ -294,17 +58,53 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `areShortableSynthsSet`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L75)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `areShortableSynthsSet(bytes32[], bytes32[]) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `areSynthsAndCurrenciesSet`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L71)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `areSynthsAndCurrenciesSet(bytes32[], bytes32[]) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `decrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L104)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `decrementLongs(bytes32 , uint256 )`
+    `decrementLongs(bytes32, uint256)`
 
     **Visibility**
 
@@ -312,17 +112,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `decrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L108)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `decrementShorts(bytes32 , uint256 )`
+    `decrementShorts(bytes32, uint256)`
 
     **Visibility**
 
@@ -330,17 +130,53 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `exceedsDebtLimit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L67)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exceedsDebtLimit(uint256, bytes32) view returns (bool canIssue, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBorrowRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L33)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBorrowRate() view returns (uint256 borrowRate, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `getNewLoanId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L80)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getNewLoanId() returns (uint256)`
+    `getNewLoanId() returns (uint256 id)`
 
     **Visibility**
 
@@ -348,17 +184,89 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `getRatesAndTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L41)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getRatesAndTime(uint256) view returns (uint256 entryRate, uint256 lastRate, uint256 lastUpdated, uint256 newIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getShortRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L37)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getShortRate(bytes32) view returns (uint256 shortRate, bool rateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getShortRatesAndTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L54)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getShortRatesAndTime(bytes32, uint256) view returns (uint256 entryRate, uint256 lastRate, uint256 lastUpdated, uint256 newIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `hasCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L8)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `hasCollateral(address) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `incrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L102)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `incrementLongs(bytes32 , uint256 )`
+    `incrementLongs(bytes32, uint256)`
 
     **Visibility**
 
@@ -366,17 +274,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `incrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L106)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `incrementShorts(bytes32 , uint256 )`
+    `incrementShorts(bytes32, uint256)`
 
     **Visibility**
 
@@ -384,17 +292,53 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `isSynthManaged`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L12)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isSynthManaged(bytes32) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `long`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L17)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `long(bytes32) view returns (uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `removeCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L87)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `removeCollaterals(address[] )`
+    `removeCollaterals(address[])`
 
     **Visibility**
 
@@ -402,17 +346,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L95)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `removeShortableSynths(bytes32[] )`
+    `removeShortableSynths(bytes32[])`
 
     **Visibility**
 
@@ -420,17 +364,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L91)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `removeSynths(bytes32[] , bytes32[] )`
+    `removeSynths(bytes32[], bytes32[])`
 
     **Visibility**
 
@@ -438,17 +382,71 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `short`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L21)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `short(bytes32) view returns (uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalLong`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L25)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalLong() view returns (uint256 susdValue, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalShort`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L29)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalShort() view returns (uint256 susdValue, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `updateBorrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L98)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `updateBorrowRates(uint256 )`
+    `updateBorrowRates(uint256)`
 
     **Visibility**
 
@@ -456,17 +454,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `updateShortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyCollateralManager.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyCollateralManager.sol#L100)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `updateShortRates(bytes32 , uint256 )`
+    `updateShortRates(bytes32, uint256)`
 
     **Visibility**
 
@@ -474,4 +472,4 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

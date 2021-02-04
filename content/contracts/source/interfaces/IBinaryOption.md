@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IBinaryOption.sol)
+**Source:** [contracts/interfaces/IBinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IBinaryOption.sol)
 
-## Views
+## External Functions
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IBinaryOption.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IBinaryOption.sol#L17)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `balanceOf(address account) returns (uint256)`
+    `balanceOf(address account) view returns (uint256)`
 
     **Visibility**
 
@@ -22,17 +22,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `bidOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IBinaryOption.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IBinaryOption.sol#L13)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `bidOf(address account) returns (uint256)`
+    `bidOf(address account) view returns (uint256)`
 
     **Visibility**
 
@@ -40,17 +40,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `claimableBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IBinaryOption.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IBinaryOption.sol#L21)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `claimableBalanceOf(address account) returns (uint256)`
+    `claimableBalanceOf(address account) view returns (uint256)`
 
     **Visibility**
 
@@ -58,17 +58,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `market`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IBinaryOption.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IBinaryOption.sol#L11)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `market() returns (contract IBinaryOptionMarket)`
+    `market() view returns (contract IBinaryOptionMarket)`
 
     **Visibility**
 
@@ -76,17 +76,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IBinaryOption.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IBinaryOption.sol#L15)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `totalBids() returns (uint256)`
+    `totalBids() view returns (uint256)`
 
     **Visibility**
 
@@ -94,17 +94,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `totalClaimableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IBinaryOption.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IBinaryOption.sol#L23)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `totalClaimableSupply() returns (uint256)`
+    `totalClaimableSupply() view returns (uint256)`
 
     **Visibility**
 
@@ -112,17 +112,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IBinaryOption.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IBinaryOption.sol#L19)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `totalSupply() returns (uint256)`
+    `totalSupply() view returns (uint256)`
 
     **Visibility**
 
@@ -130,4 +130,4 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`

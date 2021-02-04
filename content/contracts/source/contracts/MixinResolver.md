@@ -4,13 +4,13 @@
 
 A utility that gives the inheritor access to the [`AddressResolver`](AddressResolver.md)
 
-**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol)
+**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol)
 
 ## Variables
 
 ### `resolver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L13)</sub>
 
 The `AddressResolver` instance
 
@@ -20,13 +20,13 @@ The `AddressResolver` instance
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L17)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _resolver)`
+    `constructor(address _resolver)`
 
     **Visibility**
 
@@ -34,19 +34,61 @@ The `AddressResolver` instance
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
-## Views
+## Internal Functions
 
-### `isResolverCached`
+### `combineArrays`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L23)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `isResolverCached() returns (bool)`
+    `combineArrays(bytes32[] first, bytes32[] second) pure returns (bytes32[] combination)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `undefined`
+
+### `requireAndGetAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L76)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `requireAndGetAddress(bytes32 name) view returns (address)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `undefined`
+
+    **Requires**
+
+    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L78)
+
+## External Functions
+
+### `isResolverCached`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L61)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isResolverCached() view returns (bool)`
 
     **Visibility**
 
@@ -54,75 +96,11 @@ The `AddressResolver` instance
 
     **State Mutability**
 
-    `view`
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L42)</sub>
-
-**Type:** `bytes32[]`
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-## Internal Functions
-
-### `combineArrays`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L23)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `combineArrays(bytes32[] first, bytes32[] second) returns (bytes32[])`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `pure`
-
-### `requireAndGetAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L76)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `requireAndGetAddress(bytes32 name) returns (address)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-    **Requires**
-
-    * [require(..., memory)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L78)
-
-## External Functions
+    `undefined`
 
 ### `rebuildCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -136,12 +114,32 @@ The `AddressResolver` instance
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L42)</sub>
+
+**Type:** `bytes32[]`
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
 
 ## Events
 
 ### `CacheUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MixinResolver.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MixinResolver.sol#L84)</sub>
 
 **Signature**: `CacheUpdated(bytes32 name, address destination)`

@@ -2,86 +2,55 @@
 
 ## Description
 
-**Source:** [contracts/ShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol)
-
-## Architecture
-
-### Libraries
-
-- [SafeMath](/contracts/source/libraries/SafeMath) for `uint256`
-- [SafeERC20](/contracts/source/libraries/SafeERC20) for `IERC20`
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    ShortingRewards[ShortingRewards] --> RewardsDistributionRecipient[RewardsDistributionRecipient]
-    ShortingRewards[ShortingRewards] --> Pausable[Pausable]
-    ShortingRewards[ShortingRewards] --> MixinResolver[MixinResolver]
-    RewardsDistributionRecipient[RewardsDistributionRecipient] --> Owned[Owned]
-    Pausable[Pausable] --> Owned[Owned]
-
-```
+**Source:** [contracts/ShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol)
 
 ## Variables
 
 ### `lastUpdateTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L31)</sub>
 
 **Type:** `uint256`
 
 ### `periodFinish`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L28)</sub>
 
 **Type:** `uint256`
 
 ### `rewardPerTokenStored`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L32)</sub>
 
 **Type:** `uint256`
 
 ### `rewardRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L29)</sub>
 
 **Type:** `uint256`
 
 ### `rewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L35)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `rewardsDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L30)</sub>
 
 **Type:** `uint256`
 
 ### `rewardsToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L27)</sub>
 
 **Type:** `contract IERC20`
 
-### `short`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L28)</sub>
-
-**Type:** `contract ICollateralErc20`
-
-### `synth`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L29)</sub>
-
-**Type:** `bytes32`
-
 ### `userRewardPerTokenPaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L34)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -89,13 +58,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L46)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _resolver, address _rewardsDistribution, address _rewardsToken, address _short, bytes32 _synth)`
+    `constructor(address _owner, address _resolver, address _rewardsDistribution, address _rewardsToken)`
 
     **Visibility**
 
@@ -103,141 +72,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `balanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L77)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `balanceOf(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `earned`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L95)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `earned(address account) returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `getRewardForDuration`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L99)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getRewardForDuration() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `lastTimeRewardApplicable`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L81)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `lastTimeRewardApplicable() returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L62)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `rewardPerToken`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L85)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `rewardPerToken() returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `totalSupply`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L73)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalSupply() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `enrol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -251,11 +92,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Cannot stake 0)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L107)
+    * [require(..., "Cannot stake 0")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L101)
 
     **Modifiers**
 
@@ -271,15 +112,15 @@ graph TD
 
     * [Enrol](#enrol)
 
-### `exit`
+### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L116)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exit(address account)`
+    `getReward(address account)`
 
     **Visibility**
 
@@ -287,15 +128,19 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
     * [onlyShortContract](#onlyshortcontract)
 
+    * [nonReentrant](#nonreentrant)
+
+    * [updateReward](#updatereward)
+
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L127)</sub>
 
 ??? example "Details"
 
@@ -309,11 +154,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Provided reward too high)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L150)
+    * [require(..., "Provided reward too high")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L141)
 
     **Modifiers**
 
@@ -327,7 +172,7 @@ graph TD
 
 ### `setRewardsDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L157)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -341,11 +186,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Previous rewards period must be complete before changing the duration for the new period)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L158)
+    * [require(..., "Previous rewards period must be complete before changing the duration for the new period")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L149)
 
     **Modifiers**
 
@@ -357,7 +202,7 @@ graph TD
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -367,15 +212,15 @@ graph TD
 
     **Visibility**
 
-    `public`
+    `external`
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Cannot withdraw 0)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L114)
+    * [require(..., "Cannot withdraw 0")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L109)
 
     **Modifiers**
 
@@ -393,13 +238,13 @@ graph TD
 
 ### `_short`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L61)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_short() returns (contract ICollateralErc20)`
+    `_short() view returns (contract ICollateralErc20)`
 
     **Visibility**
 
@@ -407,19 +252,37 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
-### `getReward`
+### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L71)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getReward(address account)`
+    `balanceOf(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `earned`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L89)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `earned(address account) view returns (uint256)`
 
     **Visibility**
 
@@ -427,23 +290,107 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
-    **Modifiers**
+### `getRewardForDuration`
 
-    * [nonReentrant](#nonreentrant)
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L93)</sub>
 
-    * [updateReward](#updatereward)
+??? example "Details"
+
+    **Signature**
+
+    `getRewardForDuration() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `lastTimeRewardApplicable`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L75)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `lastTimeRewardApplicable() view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L56)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `rewardPerToken`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L79)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rewardPerToken() view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L67)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalSupply() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ## Modifiers
 
 ### `onlyShortContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L169)</sub>
 
 ### `updateReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L159)</sub>
 
 **Signature**: `updateReward(address account)`
 
@@ -451,36 +398,30 @@ graph TD
 
 ### `Enrol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L186)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L178)</sub>
 
 **Signature**: `Enrol(address user, uint256 amount)`
 
-### `Recovered`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L190)</sub>
-
-**Signature**: `Recovered(address token, uint256 amount)`
-
 ### `RewardAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L185)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L177)</sub>
 
 **Signature**: `RewardAdded(uint256 reward)`
 
 ### `RewardPaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L188)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L180)</sub>
 
 **Signature**: `RewardPaid(address user, uint256 reward)`
 
 ### `RewardsDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L181)</sub>
 
 **Signature**: `RewardsDurationUpdated(uint256 newDuration)`
 
 ### `Withdrawn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ShortingRewards.sol#L187)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ShortingRewards.sol#L179)</sub>
 
 **Signature**: `Withdrawn(address user, uint256 amount)`

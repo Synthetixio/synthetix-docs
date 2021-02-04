@@ -2,123 +2,49 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol)
-
-## Views
-
-### `balanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L17)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `balanceOf(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `earned`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L11)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `earned(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getRewardForDuration`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L13)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getRewardForDuration() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `lastTimeRewardApplicable`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L7)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `lastTimeRewardApplicable() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `rewardPerToken`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L9)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `rewardPerToken() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalSupply`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L15)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalSupply() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/interfaces/IShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol)
 
 ## External Functions
 
+### `balanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L17)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `balanceOf(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `earned`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `earned(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
 ### `enrol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -132,29 +58,11 @@
 
     **State Mutability**
 
-    `nonpayable`
-
-### `exit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L27)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exit(address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `nonpayable`
+    `undefined`
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -168,11 +76,83 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `getRewardForDuration`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L13)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getRewardForDuration() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `lastTimeRewardApplicable`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L7)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `lastTimeRewardApplicable() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `rewardPerToken`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L9)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rewardPerToken() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalSupply`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L15)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalSupply() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IShortingRewards.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IShortingRewards.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -186,4 +166,4 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

@@ -2,36 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/DebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol)
-
-## Architecture
-
-### Libraries
-
-- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
-- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    DebtCache[DebtCache] --> Owned[Owned]
-    DebtCache[DebtCache] --> MixinSystemSettings[MixinSystemSettings]
-    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/DebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L48)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _resolver)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -39,213 +22,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `cacheInfo`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L217)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cacheInfo() returns (uint256, uint256, bool, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `cacheInvalid`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L109)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cacheInvalid() returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `cacheStale`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L120)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cacheStale() returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `cacheTimestamp`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L105)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cacheTimestamp() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `cachedDebt`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L97)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cachedDebt() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `cachedSynthDebt`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L101)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cachedSynthDebt(bytes32 currencyKey) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `cachedSynthDebts`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L191)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cachedSynthDebts(bytes32[] currencyKeys) returns (uint256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `currentDebt`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L213)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `currentDebt() returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `currentSynthDebts`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L174)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `currentSynthDebts(bytes32[] currencyKeys) returns (uint256[], bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `debtSnapshotStaleTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L93)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `debtSnapshotStaleTime() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L52)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `purgeCachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L234)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L234)</sub>
 
 ??? example "Details"
 
@@ -259,11 +42,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Synth exists)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L235)
+    * [require(..., "Synth exists")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L235)
 
     **Modifiers**
 
@@ -271,7 +54,7 @@ graph TD
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L267)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L267)</sub>
 
 ??? example "Details"
 
@@ -285,7 +68,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -293,7 +76,7 @@ graph TD
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L275)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L275)</sub>
 
 ??? example "Details"
 
@@ -307,7 +90,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -315,7 +98,7 @@ graph TD
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L282)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L282)</sub>
 
 ??? example "Details"
 
@@ -329,7 +112,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -339,13 +122,13 @@ graph TD
 
 ### `_cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L113)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_cacheStale(uint256 timestamp) returns (bool)`
+    `_cacheStale(uint256 timestamp) view returns (bool)`
 
     **Visibility**
 
@@ -353,17 +136,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L182)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_cachedSynthDebts(bytes32[] currencyKeys) returns (uint256[])`
+    `_cachedSynthDebts(bytes32[] currencyKeys) view returns (uint256[])`
 
     **Visibility**
 
@@ -371,17 +154,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_currentDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L195)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_currentDebt() returns (uint256, bool)`
+    `_currentDebt() view returns (uint256 debt, bool anyRateIsInvalid)`
 
     **Visibility**
 
@@ -389,17 +172,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_currentSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L165)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_currentSynthDebts(bytes32[] currencyKeys) returns (uint256[], bool)`
+    `_currentSynthDebts(bytes32[] currencyKeys) view returns (uint256[] snxIssuedDebts, bool anyRateIsInvalid)`
 
     **Visibility**
 
@@ -407,17 +190,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_issuedSynthValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L124)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_issuedSynthValues(bytes32[] currencyKeys, uint256[] rates) returns (uint256[])`
+    `_issuedSynthValues(bytes32[] currencyKeys, uint256[] rates) view returns (uint256[])`
 
     **Visibility**
 
@@ -425,17 +208,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L346)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L346)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_onlyIssuer()`
+    `_onlyIssuer() view`
 
     **Visibility**
 
@@ -443,21 +226,21 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Sender is not Issuer)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L347)
+    * [require(..., "Sender is not Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L347)
 
 ### `_onlyIssuerOrExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L355)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L355)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_onlyIssuerOrExchanger()`
+    `_onlyIssuerOrExchanger() view`
 
     **Visibility**
 
@@ -465,21 +248,21 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Sender is not Issuer or Exchanger)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L356)
+    * [require(..., "Sender is not Issuer or Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L356)
 
 ### `_requireSystemActiveIfNotOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L335)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L335)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_requireSystemActiveIfNotOwner()`
+    `_requireSystemActiveIfNotOwner() view`
 
     **Visibility**
 
@@ -487,11 +270,11 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L295)</sub>
 
 ??? example "Details"
 
@@ -505,15 +288,15 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Input array lengths differ)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L301)
+    * [require(..., "Input array lengths differ")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L301)
 
 ### `_updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L288)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L288)</sub>
 
 ??? example "Details"
 
@@ -527,17 +310,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L89)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `collateralManager() returns (contract ICollateralManager)`
+    `collateralManager() view returns (contract ICollateralManager)`
 
     **Visibility**
 
@@ -545,17 +328,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `etherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L81)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `etherCollateral() returns (contract IEtherCollateral)`
+    `etherCollateral() view returns (contract IEtherCollateral)`
 
     **Visibility**
 
@@ -563,17 +346,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `etherCollateralsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L85)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `etherCollateralsUSD() returns (contract IEtherCollateralsUSD)`
+    `etherCollateralsUSD() view returns (contract IEtherCollateralsUSD)`
 
     **Visibility**
 
@@ -581,17 +364,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L73)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeRates() returns (contract IExchangeRates)`
+    `exchangeRates() view returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -599,17 +382,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L69)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchanger() returns (contract IExchanger)`
+    `exchanger() view returns (contract IExchanger)`
 
     **Visibility**
 
@@ -617,17 +400,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L65)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `issuer() returns (contract IIssuer)`
+    `issuer() view returns (contract IIssuer)`
 
     **Visibility**
 
@@ -635,17 +418,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L77)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `systemStatus() returns (contract ISystemStatus)`
+    `systemStatus() view returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -653,13 +436,211 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
+### `cacheInfo`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L217)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `cacheInfo() view returns (uint256 debt, uint256 timestamp, bool isInvalid, bool isStale)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `cacheInvalid`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L109)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `cacheInvalid() view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `cacheStale`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L120)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `cacheStale() view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `cacheTimestamp`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L105)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `cacheTimestamp() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `cachedDebt`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L97)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `cachedDebt() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `cachedSynthDebt`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L101)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `cachedSynthDebt(bytes32 currencyKey) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `cachedSynthDebts`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L191)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `cachedSynthDebts(bytes32[] currencyKeys) view returns (uint256[] snxIssuedDebts)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `currentDebt`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L213)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `currentDebt() view returns (uint256 debt, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `currentSynthDebts`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L174)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `currentSynthDebts(bytes32[] currencyKeys) view returns (uint256[] debtValues, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `debtSnapshotStaleTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L93)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `debtSnapshotStaleTime() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L52)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
 ### `takeDebtSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L239)</sub>
 
 ??? example "Details"
 
@@ -673,7 +654,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -687,7 +668,7 @@ graph TD
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L262)</sub>
 
 ??? example "Details"
 
@@ -701,7 +682,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -711,32 +692,32 @@ graph TD
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L350)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L350)</sub>
 
 ### `onlyIssuerOrExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L359)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L359)</sub>
 
 ### `requireSystemActiveIfNotOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L341)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L341)</sub>
 
 ## Events
 
 ### `DebtCacheSnapshotTaken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L367)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L367)</sub>
 
 **Signature**: `DebtCacheSnapshotTaken(uint256 timestamp)`
 
 ### `DebtCacheUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L366)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L366)</sub>
 
 **Signature**: `DebtCacheUpdated(uint256 cachedDebt)`
 
 ### `DebtCacheValidityChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DebtCache.sol#L368)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DebtCache.sol#L368)</sub>
 
 **Signature**: `DebtCacheValidityChanged(bool isInvalid)`

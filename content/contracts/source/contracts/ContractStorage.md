@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/ContractStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol)
+**Source:** [contracts/ContractStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol)
 
 ## Variables
 
 ### `hashes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol#L11)</sub>
 
 **Type:** `mapping(bytes32 => bytes32)`
 
 ### `resolverProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol#L9)</sub>
 
 **Type:** `contract IAddressResolver`
 
@@ -22,13 +22,13 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol#L13)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _resolver)`
+    `constructor(address _resolver)`
 
     **Visibility**
 
@@ -36,13 +36,13 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Restricted Functions
 
 ### `migrateContractKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -56,11 +56,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Cannot migrate empty contract)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol#L39)
+    * [require(..., "Cannot migrate empty contract")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol#L39)
 
     **Modifiers**
 
@@ -74,7 +74,7 @@
 
 ### `_memoizeHash`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -88,13 +88,13 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Modifiers
 
 ### `onlyContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol#L52)</sub>
 
 **Signature**: `onlyContract(bytes32 contractName)`
 
@@ -102,6 +102,6 @@
 
 ### `KeyMigrated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ContractStorage.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ContractStorage.sol#L63)</sub>
 
 **Signature**: `KeyMigrated(bytes32 fromContractName, bytes32 toContractName, bool removeAccessFromPreviousContract)`

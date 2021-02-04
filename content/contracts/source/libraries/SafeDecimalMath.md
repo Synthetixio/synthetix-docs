@@ -82,19 +82,13 @@ Synthetix provides versions of $\dot{\times}$ and $\dot{/}$ which perform the op
 
 The representation of a number $q$ at two different fixed point precision levels $\dot{q} = q \dot{u}$ and $\ddot{q} = q \ddot{u}$ is straightforward if $\dot{u}$ and $\ddot{u}$ divide evenly. If this is the case, and $\ddot{u}$ is the higher precision unit, then $\ddot{q} / \dot{q} = \ddot{u} / \dot{u}$. So converting between the high and low precision only involves multiplying or dividing by a factor of $\ddot{u} / \dot{u}$. Keep in mind that converting from a high precision to a low precision number involves some loss of information, and this operation is performed with rounding.
 
-**Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol)
+**Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol)
 
-## Architecture
-
-### Libraries
-
-- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
-
-## Constants
+## Variables
 
 ### `PRECISE_UNIT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L19)</sub>
 
 The high precision number ($10^{27}$) that represents $1.0$.
 
@@ -104,7 +98,7 @@ The high precision number ($10^{27}$) that represents $1.0$.
 
 ### `UNIT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L16)</sub>
 
 The standard precision number ($10^{18}$) that represents $1.0$.
 
@@ -114,7 +108,7 @@ The standard precision number ($10^{18}$) that represents $1.0$.
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L12)</sub>
 
 The number of decimals ($18$) in the standard precision fixed point representation.
 
@@ -124,7 +118,7 @@ The number of decimals ($18$) in the standard precision fixed point representati
 
 ### `highPrecisionDecimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L13)</sub>
 
 The number of decimals ($27$) in the high precision fixed point representation.
 
@@ -132,53 +126,11 @@ The number of decimals ($27$) in the high precision fixed point representation.
 
 **Type:** `uint8`
 
-## Views
-
-### `preciseUnit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L32)</sub>
-
-Pure alias to [`PRECISE_UNIT`](#precise_unit).
-
-??? example "Details"
-
-    **Signature**
-
-    `preciseUnit() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `pure`
-
-### `unit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L25)</sub>
-
-Pure alias to [`UNIT`](#unit).
-
-??? example "Details"
-
-    **Signature**
-
-    `unit() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `pure`
-
 ## Internal Functions
 
 ### `decimalToPreciseDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L172)</sub>
 
 Converts from standard precision to high precision numbers. This is just multiplication by $10^9$.
 
@@ -186,7 +138,7 @@ Converts from standard precision to high precision numbers. This is just multipl
 
     **Signature**
 
-    `decimalToPreciseDecimal(uint256 i) returns (uint256)`
+    `decimalToPreciseDecimal(uint256 i) pure returns (uint256)`
 
     **Visibility**
 
@@ -194,11 +146,11 @@ Converts from standard precision to high precision numbers. This is just multipl
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `divideDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L118)</sub>
 
 Returns the quotient of two standard precision fixed point numbers, handling precision loss by truncation.
 
@@ -206,7 +158,7 @@ Returns the quotient of two standard precision fixed point numbers, handling pre
 
     **Signature**
 
-    `divideDecimal(uint256 x, uint256 y) returns (uint256)`
+    `divideDecimal(uint256 x, uint256 y) pure returns (uint256)`
 
     **Visibility**
 
@@ -214,11 +166,11 @@ Returns the quotient of two standard precision fixed point numbers, handling pre
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `divideDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L153)</sub>
 
 Returns the quotient of two standard precision fixed point numbers, handling precision loss by rounding.
 
@@ -228,7 +180,7 @@ Equivalent to [`_divideDecimalRound(x, y, UNIT)`](#_dividedecimalround).
 
     **Signature**
 
-    `divideDecimalRound(uint256 x, uint256 y) returns (uint256)`
+    `divideDecimalRound(uint256 x, uint256 y) pure returns (uint256)`
 
     **Visibility**
 
@@ -236,11 +188,11 @@ Equivalent to [`_divideDecimalRound(x, y, UNIT)`](#_dividedecimalround).
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `divideDecimalRoundPrecise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L165)</sub>
 
 Returns the quotient of two high precision fixed point numbers, handling precision loss by rounding.
 
@@ -250,7 +202,7 @@ Equivalent to [`_divideDecimalRound(x, y, PRECISE_UNIT)`](#_dividedecimalround).
 
     **Signature**
 
-    `divideDecimalRoundPrecise(uint256 x, uint256 y) returns (uint256)`
+    `divideDecimalRoundPrecise(uint256 x, uint256 y) pure returns (uint256)`
 
     **Visibility**
 
@@ -258,11 +210,11 @@ Equivalent to [`_divideDecimalRound(x, y, PRECISE_UNIT)`](#_dividedecimalround).
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `multiplyDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L45)</sub>
 
 Returns the product of two standard precision fixed point numbers, handling precision loss by truncation.
 
@@ -270,7 +222,7 @@ Returns the product of two standard precision fixed point numbers, handling prec
 
     **Signature**
 
-    `multiplyDecimal(uint256 x, uint256 y) returns (uint256)`
+    `multiplyDecimal(uint256 x, uint256 y) pure returns (uint256)`
 
     **Visibility**
 
@@ -278,11 +230,11 @@ Returns the product of two standard precision fixed point numbers, handling prec
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `multiplyDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L105)</sub>
 
 Returns the product of two standard precision fixed point numbers, handling precision loss by rounding.
 
@@ -292,7 +244,7 @@ Equivalent to [`_multiplyDecimalRound(x, y, UNIT)`](#_multiplydecimalround).
 
     **Signature**
 
-    `multiplyDecimalRound(uint256 x, uint256 y) returns (uint256)`
+    `multiplyDecimalRound(uint256 x, uint256 y) pure returns (uint256)`
 
     **Visibility**
 
@@ -300,11 +252,11 @@ Equivalent to [`_multiplyDecimalRound(x, y, UNIT)`](#_multiplydecimalround).
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `multiplyDecimalRoundPrecise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L89)</sub>
 
 Returns the product of two high precision fixed point numbers, handling precision loss by rounding.
 
@@ -314,7 +266,7 @@ Equivalent to [`_multiplyDecimalRound(x, y, PRECISE_UNIT)`](#_multiplydecimalrou
 
     **Signature**
 
-    `multiplyDecimalRoundPrecise(uint256 x, uint256 y) returns (uint256)`
+    `multiplyDecimalRoundPrecise(uint256 x, uint256 y) pure returns (uint256)`
 
     **Visibility**
 
@@ -322,11 +274,11 @@ Equivalent to [`_multiplyDecimalRound(x, y, PRECISE_UNIT)`](#_multiplydecimalrou
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `preciseDecimalToDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SafeDecimalMath.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L179)</sub>
 
 Converts from high precision to standard precision numbers. This is division by $10^9$, where precision loss is handled by rounding.
 
@@ -334,7 +286,7 @@ Converts from high precision to standard precision numbers. This is division by 
 
     **Signature**
 
-    `preciseDecimalToDecimal(uint256 i) returns (uint256)`
+    `preciseDecimalToDecimal(uint256 i) pure returns (uint256)`
 
     **Visibility**
 
@@ -342,4 +294,46 @@ Converts from high precision to standard precision numbers. This is division by 
 
     **State Mutability**
 
-    `pure`
+    `undefined`
+
+## External Functions
+
+### `preciseUnit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L32)</sub>
+
+Pure alias to [`PRECISE_UNIT`](#precise_unit).
+
+??? example "Details"
+
+    **Signature**
+
+    `preciseUnit() pure returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `unit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SafeDecimalMath.sol#L25)</sub>
+
+Pure alias to [`UNIT`](#unit).
+
+??? example "Details"
+
+    **Signature**
+
+    `unit() pure returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`

@@ -17,17 +17,9 @@ In principle it is generic, as the approver just marks a number of delegates as 
 
 [User guide to delegation](https://blog.synthetix.io/a-guide-to-delegation/)
 
-**Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol)
+**Source:** [contracts/DelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol)
 
 ## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    DelegateApprovals[DelegateApprovals] --> Owned[Owned]
-
-```
 
 ### Related Contracts
 
@@ -41,43 +33,41 @@ graph TD
 
     * [`Synthetix`](Synthetix.md): This contract allows Synthetix to delegate issuing Synths, Burning Synths and exchanging Synths.
 
-## Constants
+## Variables
 
 ### `APPROVE_ALL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L17)</sub>
 
 **Type:** `bytes32`
 
 ### `BURN_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L13)</sub>
 
 **Type:** `bytes32`
 
 ### `CLAIM_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L15)</sub>
 
 **Type:** `bytes32`
 
 ### `EXCHANGE_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L16)</sub>
 
 **Type:** `bytes32`
 
 ### `ISSUE_FOR_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L14)</sub>
 
 **Type:** `bytes32`
 
-## Variables
-
 ### `eternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L28)</sub>
 
 **Type:** `contract EternalStorage`
 
@@ -85,7 +75,7 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L30)</sub>
 
 Initialises the inherited [`State`](State.md) instance.
 
@@ -93,7 +83,7 @@ Initialises the inherited [`State`](State.md) instance.
 
     **Signature**
 
-    `(address _owner, contract EternalStorage _eternalStorage)`
+    `constructor(address _owner, contract EternalStorage _eternalStorage)`
 
     **Visibility**
 
@@ -101,105 +91,13 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `approvedAll`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L64)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `approvedAll(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `canBurnFor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L48)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canBurnFor(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `canClaimFor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L56)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canClaimFor(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `canExchangeFor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L60)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canExchangeFor(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `canIssueFor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L52)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canIssueFor(address authoriser, address delegate) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `setEternalStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -213,11 +111,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Can't set eternalStorage to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L154)
+    * [require(..., "Can't set eternalStorage to address(0)")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L154)
 
     **Modifiers**
 
@@ -231,13 +129,13 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `_checkApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L71)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_checkApproval(bytes32 action, address authoriser, address delegate) returns (bool)`
+    `_checkApproval(bytes32 action, address authoriser, address delegate) view returns (bool)`
 
     **Visibility**
 
@@ -245,17 +143,17 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_getKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L39)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_getKey(bytes32 _action, address _authoriser, address _delegate) returns (bytes32)`
+    `_getKey(bytes32 _action, address _authoriser, address _delegate) pure returns (bytes32)`
 
     **Visibility**
 
@@ -263,11 +161,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `_setApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L131)</sub>
 
 ??? example "Details"
 
@@ -281,11 +179,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Can't delegate to address(0))](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L136)
+    * [require(..., "Can't delegate to address(0)")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L136)
 
     **Emits**
 
@@ -293,7 +191,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `_withdrawApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -307,13 +205,13 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## External Functions
 
 ### `approveAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -327,11 +225,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `approveBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -345,11 +243,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `approveClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -363,11 +261,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `approveExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -381,11 +279,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `approveIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -399,11 +297,101 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `approvedAll`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L64)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `approvedAll(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
+### `canBurnFor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L48)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `canBurnFor(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `canClaimFor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L56)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `canClaimFor(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `canExchangeFor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L60)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `canExchangeFor(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `canIssueFor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L52)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `canIssueFor(address authoriser, address delegate) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `removeAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -417,11 +405,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -435,11 +423,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -453,11 +441,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L127)</sub>
 
 ??? example "Details"
 
@@ -471,11 +459,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L109)</sub>
 
 ??? example "Details"
 
@@ -489,13 +477,13 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Events
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L160)</sub>
 
 The delegate was approved to act on the authoriser's behalf for the given action.
 
@@ -503,7 +491,7 @@ The delegate was approved to act on the authoriser's behalf for the given action
 
 ### `EternalStorageUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L162)</sub>
 
 The address of the eternal storage contract has changed.
 
@@ -511,7 +499,7 @@ The address of the eternal storage contract has changed.
 
 ### `WithdrawApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/DelegateApprovals.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/DelegateApprovals.sol#L161)</sub>
 
 The delegate was disapproved to act on the authoriser's behalf.
 

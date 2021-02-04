@@ -2,195 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFlexibleStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol)
-
-## Views
-
-### `getAddressValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L15)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getAddressValue(bytes32 contractName, bytes32 record) returns (address)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getAddressValues`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L17)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getAddressValues(bytes32 contractName, bytes32[] records) returns (address[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBoolValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L19)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBoolValue(bytes32 contractName, bytes32 record) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBoolValues`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L21)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBoolValues(bytes32 contractName, bytes32[] records) returns (bool[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBytes32Value`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L23)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBytes32Value(bytes32 contractName, bytes32 record) returns (bytes32)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBytes32Values`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L25)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBytes32Values(bytes32 contractName, bytes32[] records) returns (bytes32[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getIntValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L11)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getIntValue(bytes32 contractName, bytes32 record) returns (int256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getIntValues`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L13)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getIntValues(bytes32 contractName, bytes32[] records) returns (int256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getUIntValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L7)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getUIntValue(bytes32 contractName, bytes32 record) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getUIntValues`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L9)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getUIntValues(bytes32 contractName, bytes32[] records) returns (uint256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/interfaces/IFlexibleStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol)
 
 ## External Functions
 
 ### `deleteAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -204,11 +22,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `deleteBoolValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -222,11 +40,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `deleteBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -240,11 +58,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `deleteIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -258,11 +76,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `deleteUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -276,11 +94,191 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `getAddressValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L15)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getAddressValue(bytes32 contractName, bytes32 record) view returns (address)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getAddressValues`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L17)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getAddressValues(bytes32 contractName, bytes32[] records) view returns (address[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBoolValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBoolValue(bytes32 contractName, bytes32 record) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBoolValues`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L21)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBoolValues(bytes32 contractName, bytes32[] records) view returns (bool[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBytes32Value`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L23)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBytes32Value(bytes32 contractName, bytes32 record) view returns (bytes32)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBytes32Values`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L25)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBytes32Values(bytes32 contractName, bytes32[] records) view returns (bytes32[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getIntValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getIntValue(bytes32 contractName, bytes32 record) view returns (int256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getIntValues`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L13)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getIntValues(bytes32 contractName, bytes32[] records) view returns (int256[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getUIntValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L7)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getUIntValue(bytes32 contractName, bytes32 record) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getUIntValues`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L9)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getUIntValues(bytes32 contractName, bytes32[] records) view returns (uint256[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `setAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -294,11 +292,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setAddressValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -312,11 +310,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setBoolValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -330,11 +328,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setBoolValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -348,11 +346,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -366,11 +364,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setBytes32Values`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -384,11 +382,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -402,11 +400,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setIntValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -420,11 +418,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -438,11 +436,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `setUIntValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IFlexibleStorage.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IFlexibleStorage.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -456,4 +454,4 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

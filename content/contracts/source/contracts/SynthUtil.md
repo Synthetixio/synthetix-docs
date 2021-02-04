@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol)
+**Source:** [contracts/SynthUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol)
 
 ## Variables
 
 ### `addressResolverProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L13)</sub>
 
 **Type:** `contract IAddressResolver`
 
@@ -16,13 +16,13 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L19)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address resolver)`
+    `constructor(address resolver)`
 
     **Visibility**
 
@@ -30,111 +30,19 @@
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `frozenSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L70)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `frozenSynths() returns (bytes32[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `synthsBalances`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L46)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthsBalances(address account) returns (bytes32[], uint256[], uint256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `synthsRates`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L84)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthsRates() returns (bytes32[], uint256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `synthsTotalSupplies`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L89)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthsTotalSupplies() returns (bytes32[], uint256[], uint256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalSynthsInKey`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L31)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalSynthsInKey(address account, bytes32 currencyKey) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Internal Functions
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L27)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_exchangeRates() returns (contract IExchangeRates)`
+    `_exchangeRates() view returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -142,17 +50,17 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthUtil.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L23)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_synthetix() returns (contract ISynthetix)`
+    `_synthetix() view returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -160,4 +68,96 @@
 
     **State Mutability**
 
-    `view`
+    `undefined`
+
+## External Functions
+
+### `frozenSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L70)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `frozenSynths() view returns (bytes32[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `synthsBalances`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L46)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthsBalances(address account) view returns (bytes32[], uint256[], uint256[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `synthsRates`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L84)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthsRates() view returns (bytes32[], uint256[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `synthsTotalSupplies`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L89)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthsTotalSupplies() view returns (bytes32[], uint256[], uint256[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalSynthsInKey`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthUtil.sol#L31)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalSynthsInKey(address account, bytes32 currencyKey) view returns (uint256 total)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`

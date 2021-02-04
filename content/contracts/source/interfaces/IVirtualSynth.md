@@ -2,123 +2,85 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IVirtualSynth.sol)
-
-## Views
-
-### `balanceOfUnderlying`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IVirtualSynth.sol#L8)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `balanceOfUnderlying(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `rate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IVirtualSynth.sol#L10)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `rate() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `readyToSettle`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IVirtualSynth.sol#L12)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `readyToSettle() returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `secsLeftInWaitingPeriod`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IVirtualSynth.sol#L14)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `secsLeftInWaitingPeriod() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `settled`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IVirtualSynth.sol#L16)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `settled() returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `synth`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IVirtualSynth.sol#L18)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synth() returns (contract ISynth)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/interfaces/IVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IVirtualSynth.sol)
 
 ## External Functions
 
+### `balanceOfUnderlying`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IVirtualSynth.sol#L8)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `balanceOfUnderlying(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `rate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IVirtualSynth.sol#L10)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rate() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `readyToSettle`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IVirtualSynth.sol#L12)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `readyToSettle() view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `secsLeftInWaitingPeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IVirtualSynth.sol#L14)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `secsLeftInWaitingPeriod() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/IVirtualSynth.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IVirtualSynth.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -132,4 +94,40 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `settled`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IVirtualSynth.sol#L16)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `settled() view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `synth`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/IVirtualSynth.sol#L18)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synth() view returns (contract ISynth)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`

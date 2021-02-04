@@ -4,7 +4,7 @@
 
 A small utility contract that augments the SNX escrow contract to allow extracting a user's schedule as an array rather than as individual entries.
 
-**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EscrowChecker.sol)
+**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EscrowChecker.sol)
 
 ## Architecture
 
@@ -16,7 +16,7 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 
 ### `synthetix_escrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EscrowChecker.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EscrowChecker.sol#L13)</sub>
 
 The [SNX escrow contract](SynthetixEscrow.md).
 
@@ -26,7 +26,7 @@ The [SNX escrow contract](SynthetixEscrow.md).
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EscrowChecker.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EscrowChecker.sol#L15)</sub>
 
 Initialises the [synthetix escrow address](#synthetix_escrow).
 
@@ -34,7 +34,7 @@ Initialises the [synthetix escrow address](#synthetix_escrow).
 
     **Signature**
 
-    `(contract ISynthetixEscrow _esc)`
+    `constructor(contract ISynthetixEscrow _esc)`
 
     **Visibility**
 
@@ -42,13 +42,13 @@ Initialises the [synthetix escrow address](#synthetix_escrow).
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
-## Views
+## External Functions
 
 ### `checkAccountSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EscrowChecker.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EscrowChecker.sol#L19)</sub>
 
 Returns the given address's vesting schedule as up to 16 `uints`, composed of an alternating sequence of up to 8 `(timestamp, quantity)` pairs, as per [`SynthetixEscrow.getVestingScheduleEntry`](SynthetixEscrow.md#getVestingScheduleEntry).
 
@@ -58,7 +58,7 @@ Vested entries are not skipped, and appear as a leading sequence of zeroes.
 
     **Signature**
 
-    `checkAccountSchedule(address account) returns (uint256[16])`
+    `checkAccountSchedule(address account) view returns (uint256[16])`
 
     **Visibility**
 
@@ -66,4 +66,4 @@ Vested entries are not skipped, and appear as a leading sequence of zeroes.
 
     **State Mutability**
 
-    `view`
+    `undefined`

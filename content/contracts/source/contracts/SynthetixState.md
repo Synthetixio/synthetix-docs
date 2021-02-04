@@ -12,23 +12,9 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
     This contract also contains functionality enabling automatic [preferred currency](#preferredcurrency) conversion on Synth transfers, but it is currently disabled.
 
-**Source:** [contracts/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol)
+**Source:** [contracts/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol)
 
 ## Architecture
-
-### Libraries
-
-- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
-- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    SynthetixState[SynthetixState] --> State[State]
-    State[State] --> Owned[Owned]
-
-```
 
 ### Related Contracts
 
@@ -38,7 +24,7 @@ graph TD
 
 ### `IssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L18)</sub>
 
 | Field                  | Type      | Description |
 | ---------------------- | --------- | ----------- |
@@ -49,7 +35,7 @@ graph TD
 
 ### `debtLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L38)</sub>
 
 A list of factors indicating, for each [debt-modifying event](#appenddebtledgervalue), what effect it had on the percentage of debt of all other holders. Later debt ledger entries correspond to more recent issuance events.
 
@@ -57,7 +43,7 @@ A list of factors indicating, for each [debt-modifying event](#appenddebtledgerv
 
 ### `issuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L32)</sub>
 
 The most recent issuance data for each address.
 
@@ -65,7 +51,7 @@ The most recent issuance data for each address.
 
 ### `totalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L35)</sub>
 
 The number of people with outstanding synths.
 
@@ -75,7 +61,7 @@ The number of people with outstanding synths.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L40)</sub>
 
 Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.md) instances.
 
@@ -83,7 +69,7 @@ Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.
 
     **Signature**
 
-    `(address _owner, address _associatedContract)`
+    `constructor(address _owner, address _associatedContract)`
 
     **Visibility**
 
@@ -91,81 +77,13 @@ Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `debtLedgerLength`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L94)</sub>
-
-Returns the number of entries currently in [`debtLedger`](#debtledger).
-
-Primarily used in [`FeePool`](FeePool.md) for fee period computations.
-
-??? example "Details"
-
-    **Signature**
-
-    `debtLedgerLength() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `hasIssued`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L109)</sub>
-
-Returns true if a given account has any outstanding issuance debt resulting from Synth minting.
-
-Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to determine whether an minting event requires incrementing the total issuer count.
-
-??? example "Details"
-
-    **Signature**
-
-    `hasIssued(address account) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `lastDebtLedgerEntry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L101)</sub>
-
-Returns the most recent [`debtLedger`](#debtledger) entry.
-
-Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
-
-??? example "Details"
-
-    **Signature**
-
-    `lastDebtLedgerEntry() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `appendDebtLedgerValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L85)</sub>
 
 Pushes a new value to the end of the [`debtLedger`](#debtledger).
 
@@ -183,7 +101,7 @@ This is used by [`Synthetix._addToDebtRegister`](Synthetix.md#addtodebtregister)
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -191,7 +109,7 @@ This is used by [`Synthetix._addToDebtRegister`](Synthetix.md#addtodebtregister)
 
 ### `clearIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L60)</sub>
 
 Deletes the issuance data associated with a given account.
 
@@ -207,7 +125,7 @@ Deletes the issuance data associated with a given account.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -215,7 +133,7 @@ Deletes the issuance data associated with a given account.
 
 ### `decrementTotalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L76)</sub>
 
 Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._removeFromDebtRegister`](Synthetix.md#_removefromdebtregister) whenever an issuer burns enough Synths to pay down their entire outstanding debt.
 
@@ -231,7 +149,7 @@ Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -239,7 +157,7 @@ Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`
 
 ### `incrementTotalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L68)</sub>
 
 Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) whenever an account with no outstanding issuance debt mints new Synths.
 
@@ -255,7 +173,7 @@ Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within 
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -263,7 +181,7 @@ Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within 
 
 ### `setCurrentIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixState.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L50)</sub>
 
 Allows the [`Synthetix`](Synthetix.md) contract to update the debt ownership entry for this account and sets their debt entry index to the current length of the [`debtLedger`](#debtledger).
 The debt ledger itself is not modified.
@@ -280,8 +198,76 @@ The debt ledger itself is not modified.
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
     * [onlyAssociatedContract](#onlyassociatedcontract)
+
+## External Functions
+
+### `debtLedgerLength`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L94)</sub>
+
+Returns the number of entries currently in [`debtLedger`](#debtledger).
+
+Primarily used in [`FeePool`](FeePool.md) for fee period computations.
+
+??? example "Details"
+
+    **Signature**
+
+    `debtLedgerLength() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `hasIssued`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L109)</sub>
+
+Returns true if a given account has any outstanding issuance debt resulting from Synth minting.
+
+Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to determine whether an minting event requires incrementing the total issuer count.
+
+??? example "Details"
+
+    **Signature**
+
+    `hasIssued(address account) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `lastDebtLedgerEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixState.sol#L101)</sub>
+
+Returns the most recent [`debtLedger`](#debtledger) entry.
+
+Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
+
+??? example "Details"
+
+    **Signature**
+
+    `lastDebtLedgerEntry() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`

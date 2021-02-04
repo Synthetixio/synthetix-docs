@@ -2,51 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISynth.sol)
-
-## Views
-
-### `currencyKey`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISynth.sol#L7)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `currencyKey() returns (bytes32)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `transferableSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISynth.sol#L9)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `transferableSynths(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISynth.sol)
 
 ## External Functions
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISynth.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISynth.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -60,11 +22,29 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `currencyKey`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISynth.sol#L7)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `currencyKey() view returns (bytes32)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISynth.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISynth.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -78,11 +58,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `transferAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISynth.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISynth.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -96,11 +76,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `transferFromAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ISynth.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISynth.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -114,4 +94,22 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `transferableSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ISynth.sol#L9)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `transferableSynths(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`

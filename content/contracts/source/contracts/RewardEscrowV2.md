@@ -2,32 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/RewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    RewardEscrowV2[RewardEscrowV2] --> BaseRewardEscrowV2[BaseRewardEscrowV2]
-    BaseRewardEscrowV2[BaseRewardEscrowV2] --> Owned[Owned]
-    BaseRewardEscrowV2[BaseRewardEscrowV2] --> LimitedSetup[LimitedSetup]
-    BaseRewardEscrowV2[BaseRewardEscrowV2] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/RewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol)
 
 ## Variables
 
 ### `migrateEntriesThresholdAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L16)</sub>
 
 **Type:** `uint256`
 
 ### `totalBalancePendingMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L14)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -35,13 +22,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L26)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _resolver)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -49,39 +36,19 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L30)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `burnForMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L191)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L191)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `burnForMigration(address account, uint256[] entryIDs) returns (uint256, struct VestingEntries.VestingEntry[])`
+    `burnForMigration(address account, uint256[] entryIDs) returns (uint256 escrowedAccountBalance, struct VestingEntries.VestingEntry[] vestingEntries)`
 
     **Visibility**
 
@@ -89,11 +56,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Entry IDs required)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L196)
+    * [require(..., "Entry IDs required")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L196)
 
     **Modifiers**
 
@@ -105,7 +72,7 @@ graph TD
 
 ### `importVestingSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -119,11 +86,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Account and escrowAmounts Length mismatch)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L122)
+    * [require(..., "Account and escrowAmounts Length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L122)
 
     **Modifiers**
 
@@ -133,7 +100,7 @@ graph TD
 
 ### `migrateAccountEscrowBalances`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -147,13 +114,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Number of accounts and balances don't match)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L156)
+    * [require(..., "Number of accounts and balances don't match")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L156)
 
-    * [require(..., Number of accounts and vestedBalances don't match)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L157)
+    * [require(..., "Number of accounts and vestedBalances don't match")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L157)
 
     **Modifiers**
 
@@ -163,7 +130,7 @@ graph TD
 
 ### `setMigrateEntriesThresholdAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -177,7 +144,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -191,7 +158,7 @@ graph TD
 
 ### `_importVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L182)</sub>
 
 ??? example "Details"
 
@@ -205,7 +172,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Emits**
 
@@ -213,13 +180,13 @@ graph TD
 
 ### `oldRewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L43)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `oldRewardEscrow() returns (contract IRewardEscrow)`
+    `oldRewardEscrow() view returns (contract IRewardEscrow)`
 
     **Visibility**
 
@@ -227,17 +194,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L39)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetixBridgeToOptimism() returns (address)`
+    `synthetixBridgeToOptimism() view returns (address)`
 
     **Visibility**
 
@@ -245,17 +212,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L47)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `systemStatus() returns (contract ISystemStatus)`
+    `systemStatus() view returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -263,13 +230,13 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
 ### `migrateVestingSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -283,56 +250,74 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., No escrow migration pending)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L68)
+    * [require(..., "No escrow migration pending")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L68)
 
-    * [require(..., Address escrow balance is 0)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L69)
+    * [require(..., "Address escrow balance is 0")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L69)
 
     **Modifiers**
 
     * [systemActive](#systemactive)
 
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L30)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
 ## Modifiers
 
 ### `onlySynthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L230)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L230)</sub>
 
 ### `systemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L235)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L235)</sub>
 
 ## Events
 
 ### `BurnedForMigrationToL2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L243)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L243)</sub>
 
 **Signature**: `BurnedForMigrationToL2(address account, uint256[] entryIDs, uint256 escrowedAmountMigrated, uint256 time)`
 
 ### `ImportedVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L244)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L244)</sub>
 
 **Signature**: `ImportedVestingEntry(address account, uint256 entryID, uint256 escrowAmount, uint256 endTime)`
 
 ### `ImportedVestingSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L242)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L242)</sub>
 
 **Signature**: `ImportedVestingSchedule(address account, uint256 time, uint256 escrowAmount)`
 
 ### `MigrateEntriesThresholdAmountUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L245)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L245)</sub>
 
 **Signature**: `MigrateEntriesThresholdAmountUpdated(uint256 newAmount)`
 
 ### `MigratedAccountEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/RewardEscrowV2.sol#L241)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/RewardEscrowV2.sol#L241)</sub>
 
 **Signature**: `MigratedAccountEscrow(address account, uint256 escrowedAmount, uint256 vestedAmount, uint256 time)`

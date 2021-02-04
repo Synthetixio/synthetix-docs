@@ -9,21 +9,9 @@ This contract was required by [EtherCollateral](EtherCollateral.md) to allow it 
 It could be used where there a multiple Collateral contracts.
 i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contract for issuing sBTC then those synths would need to inherit MultiCollateralSynth and then have their corresponding Collateral Contract set via the constructor argument multiCollateralKey
 
-**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol)
+**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol)
 
 ## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    MultiCollateralSynth[MultiCollateralSynth] --> Synth[Synth]
-    Synth[Synth] --> ExternStateToken[ExternStateToken]
-    Synth[Synth] --> MixinResolver[MixinResolver]
-    ExternStateToken[ExternStateToken] --> Proxyable[Proxyable]
-    Proxyable[Proxyable] --> Owned[Owned]
-
-```
 
 ### Related Contracts
 
@@ -33,13 +21,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol#L22)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver)`
+    `constructor(address payable _proxy, contract TokenState _tokenState, string _tokenName, string _tokenSymbol, address _owner, bytes32 _currencyKey, uint256 _totalSupply, address _resolver)`
 
     **Visibility**
 
@@ -47,33 +35,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol#L47)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -87,7 +55,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -95,7 +63,7 @@ graph TD
 
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -109,7 +77,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -119,13 +87,13 @@ graph TD
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol#L35)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `collateralManager() returns (contract ICollateralManager)`
+    `collateralManager() view returns (contract ICollateralManager)`
 
     **Visibility**
 
@@ -133,17 +101,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `etherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol#L39)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `etherCollateral() returns (contract IEtherCollateral)`
+    `etherCollateral() view returns (contract IEtherCollateral)`
 
     **Visibility**
 
@@ -151,17 +119,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `etherCollateralsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol#L43)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `etherCollateralsUSD() returns (contract IEtherCollateralsUSD)`
+    `etherCollateralsUSD() view returns (contract IEtherCollateralsUSD)`
 
     **Visibility**
 
@@ -169,10 +137,30 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
+
+## External Functions
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol#L47)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
 
 ## Modifiers
 
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/MultiCollateralSynth.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/MultiCollateralSynth.sol#L79)</sub>

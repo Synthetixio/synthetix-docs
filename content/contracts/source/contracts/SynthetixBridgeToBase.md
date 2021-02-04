@@ -2,31 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    SynthetixBridgeToBase[SynthetixBridgeToBase] --> Owned[Owned]
-    SynthetixBridgeToBase[SynthetixBridgeToBase] --> MixinSystemSettings[MixinSystemSettings]
-    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L28)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _resolver)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -34,33 +22,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L63)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `completeDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -74,7 +42,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -86,7 +54,7 @@ graph TD
 
 ### `completeEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -100,7 +68,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -112,7 +80,7 @@ graph TD
 
 ### `completeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -126,7 +94,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -140,13 +108,13 @@ graph TD
 
 ### `messenger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L33)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `messenger() returns (contract iOVM_BaseCrossDomainMessenger)`
+    `messenger() view returns (contract iOVM_BaseCrossDomainMessenger)`
 
     **Visibility**
 
@@ -154,17 +122,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `onlyAllowFromOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L49)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `onlyAllowFromOptimism()`
+    `onlyAllowFromOptimism() view`
 
     **Visibility**
 
@@ -172,23 +140,23 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Only the relayer can call this)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L52)
+    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L52)
 
-    * [require(..., Only the L1 bridge can invoke)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L53)
+    * [require(..., "Only the L1 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L53)
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L41)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `rewardEscrowV2() returns (contract IRewardEscrowV2)`
+    `rewardEscrowV2() view returns (contract IRewardEscrowV2)`
 
     **Visibility**
 
@@ -196,17 +164,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L37)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetix() returns (contract ISynthetix)`
+    `synthetix() view returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -214,17 +182,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L45)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetixBridgeToOptimism() returns (address)`
+    `synthetixBridgeToOptimism() view returns (address)`
 
     **Visibility**
 
@@ -232,13 +200,13 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
 ### `initiateWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -252,44 +220,62 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Not enough transferable SNX)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L77)
+    * [require(..., "Not enough transferable SNX")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L77)
 
     **Emits**
 
     * [WithdrawalInitiated](#withdrawalinitiated)
 
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L63)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
 ## Modifiers
 
 ### `onlyOptimismBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L56)</sub>
 
 ## Events
 
 ### `ImportedVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L125)</sub>
 
 **Signature**: `ImportedVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
 
 ### `MintedSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L130)</sub>
 
 **Signature**: `MintedSecondary(address account, uint256 amount)`
 
 ### `MintedSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L131)</sub>
 
 **Signature**: `MintedSecondaryRewards(uint256 amount)`
 
 ### `WithdrawalInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/SynthetixBridgeToBase.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/SynthetixBridgeToBase.sol#L132)</sub>
 
 **Signature**: `WithdrawalInitiated(address account, uint256 amount)`

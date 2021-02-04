@@ -2,32 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeRatesWithoutInvPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    ExchangeRatesWithoutInvPricing[ExchangeRatesWithoutInvPricing] --> ExchangeRates[ExchangeRates]
-    ExchangeRates[ExchangeRates] --> Owned[Owned]
-    ExchangeRates[ExchangeRates] --> MixinSystemSettings[MixinSystemSettings]
-    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/ExchangeRatesWithoutInvPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L9)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _oracle, address _resolver, bytes32[] _currencyKeys, uint256[] _newRates)`
+    `constructor(address _owner, address _oracle, address _resolver, bytes32[] _currencyKeys, uint256[] _newRates)`
 
     **Visibility**
 
@@ -35,57 +22,19 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `canFreezeRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol#L36)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `canFreezeRate(bytes32 ) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `rateIsFrozen`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol#L40)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `rateIsFrozen(bytes32 ) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `removeInversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L28)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `removeInversePricing(bytes32 )`
+    `removeInversePricing(bytes32)`
 
     **Visibility**
 
@@ -93,7 +42,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -101,13 +50,13 @@ graph TD
 
 ### `setInversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L17)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setInversePricing(bytes32 , uint256 , uint256 , uint256 , bool , bool )`
+    `setInversePricing(bytes32, uint256, uint256, uint256, bool, bool)`
 
     **Visibility**
 
@@ -115,7 +64,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -125,13 +74,13 @@ graph TD
 
 ### `_notImplemented`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L48)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_notImplemented()`
+    `_notImplemented() pure`
 
     **Visibility**
 
@@ -139,17 +88,17 @@ graph TD
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `_rateIsFrozen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L44)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_rateIsFrozen(bytes32 ) returns (bool)`
+    `_rateIsFrozen(bytes32) view returns (bool)`
 
     **Visibility**
 
@@ -157,19 +106,19 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
-### `freezeRate`
+### `canFreezeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ExchangeRatesWithoutInvPricing.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L36)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `freezeRate(bytes32 )`
+    `canFreezeRate(bytes32) view returns (bool)`
 
     **Visibility**
 
@@ -177,4 +126,40 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `freezeRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L32)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `freezeRate(bytes32)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `rateIsFrozen`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L40)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rateIsFrozen(bytes32) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`

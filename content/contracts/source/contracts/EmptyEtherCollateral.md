@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/EmptyEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyEtherCollateral.sol)
+**Source:** [contracts/EmptyEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyEtherCollateral.sol)
 
-## Views
+## External Functions
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/EmptyEtherCollateral.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/EmptyEtherCollateral.sol#L7)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `totalIssuedSynths() returns (uint256)`
+    `totalIssuedSynths() pure returns (uint256)`
 
     **Visibility**
 
@@ -22,4 +22,4 @@
 
     **State Mutability**
 
-    `pure`
+    `undefined`

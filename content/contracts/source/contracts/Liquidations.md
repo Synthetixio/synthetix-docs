@@ -6,47 +6,30 @@
 
     This contract documentation is missing some descriptions.
 
-**Source:** [contracts/Liquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol)
-
-## Architecture
-
-### Libraries
-
-- [SafeMath](/contracts/source/libraries/SafeMath) for `uint`
-- [SafeDecimalMath](/contracts/source/libraries/SafeDecimalMath) for `uint`
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    Liquidations[Liquidations] --> Owned[Owned]
-    Liquidations[Liquidations] --> MixinSystemSettings[MixinSystemSettings]
-    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/Liquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol)
 
 ## Structs
 
 ### `LiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L25)</sub>
 
 | Field      | Type      | Description |
 | ---------- | --------- | ----------- |
 | `deadline` | `uint256` | TBA         |
 | `caller`   | `address` | TBA         |
 
-## Constants
+## Variables
 
 ### `LIQUIDATION_CALLER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L42)</sub>
 
 **Type:** `bytes32`
 
 ### `LIQUIDATION_DEADLINE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L41)</sub>
 
 **Type:** `bytes32`
 
@@ -54,13 +37,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L44)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner, address _resolver)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -68,201 +51,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `calculateAmountToFixCollateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L140)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `calculateAmountToFixCollateral(uint256 debtBalance, uint256 collateral) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getLiquidationDeadlineForAccount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L99)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getLiquidationDeadlineForAccount(address account) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `isLiquidationDeadlinePassed`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L122)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `isLiquidationDeadlinePassed(address account) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `isOpenForLiquidation`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L104)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `isOpenForLiquidation(address account) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `issuanceRatio`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L79)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issuanceRatio() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `liquidationCollateralRatio`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L95)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `liquidationCollateralRatio() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `liquidationDelay`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L83)</sub>
-
-**Type:** `uint256`
-
-??? example "Details"
-
-    **Signature**
-
-    `liquidationDelay() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `liquidationPenalty`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L91)</sub>
-
-**Type:** `uint256`
-
-??? example "Details"
-
-    **Signature**
-
-    `liquidationPenalty() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `liquidationRatio`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L87)</sub>
-
-**Type:** `uint256`
-
-??? example "Details"
-
-    **Signature**
-
-    `liquidationRatio() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L47)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() returns (bytes32[])`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `removeAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -276,7 +71,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -286,13 +81,13 @@ graph TD
 
 ### `_deadlinePassed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L127)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_deadlinePassed(uint256 deadline) returns (bool)`
+    `_deadlinePassed(uint256 deadline) view returns (bool)`
 
     **Visibility**
 
@@ -300,17 +95,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_getKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L159)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_getKey(bytes32 _scope, address _account) returns (bytes32)`
+    `_getKey(bytes32 _scope, address _account) pure returns (bytes32)`
 
     **Visibility**
 
@@ -318,17 +113,17 @@ graph TD
 
     **State Mutability**
 
-    `pure`
+    `undefined`
 
 ### `_getLiquidationEntryForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L152)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_getLiquidationEntryForAccount(address account) returns (struct Liquidations.LiquidationEntry)`
+    `_getLiquidationEntryForAccount(address account) view returns (struct Liquidations.LiquidationEntry _liquidation)`
 
     **Visibility**
 
@@ -336,11 +131,11 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `_removeLiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L228)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L228)</sub>
 
 ??? example "Details"
 
@@ -354,7 +149,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Emits**
 
@@ -362,7 +157,7 @@ graph TD
 
 ### `_storeLiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L218)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L218)</sub>
 
 ??? example "Details"
 
@@ -376,17 +171,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `eternalStorageLiquidations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L75)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `eternalStorageLiquidations() returns (contract EternalStorage)`
+    `eternalStorageLiquidations() view returns (contract EternalStorage)`
 
     **Visibility**
 
@@ -394,17 +189,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L70)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeRates() returns (contract IExchangeRates)`
+    `exchangeRates() view returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -412,17 +207,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L66)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `issuer() returns (contract IIssuer)`
+    `issuer() view returns (contract IIssuer)`
 
     **Visibility**
 
@@ -430,17 +225,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L58)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `synthetix() returns (contract ISynthetix)`
+    `synthetix() view returns (contract ISynthetix)`
 
     **Visibility**
 
@@ -448,17 +243,17 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L62)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `systemStatus() returns (contract ISystemStatus)`
+    `systemStatus() view returns (contract ISystemStatus)`
 
     **Visibility**
 
@@ -466,13 +261,31 @@ graph TD
 
     **State Mutability**
 
-    `view`
+    `undefined`
 
 ## External Functions
 
+### `calculateAmountToFixCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L140)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `calculateAmountToFixCollateral(uint256 debtBalance, uint256 collateral) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
 ### `checkAndRemoveAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L203)</sub>
 
 ??? example "Details"
 
@@ -486,11 +299,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Account has no liquidation set)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L208)
+    * [require(..., "Account has no liquidation set")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L208)
 
     **Modifiers**
 
@@ -498,7 +311,7 @@ graph TD
 
 ### `flagAccountForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L167)</sub>
 
 ??? example "Details"
 
@@ -512,17 +325,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Liquidation ratio not set)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L170)
+    * [require(..., "Liquidation ratio not set")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L170)
 
-    * [require(..., Liquidation delay not set)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L171)
+    * [require(..., "Liquidation delay not set")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L171)
 
-    * [require(..., Account already flagged for liquidation)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L174)
+    * [require(..., "Account already flagged for liquidation")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L174)
 
-    * [require(..., Account issuance ratio is less than liquidation ratio)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L179)
+    * [require(..., "Account issuance ratio is less than liquidation ratio")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L179)
 
     **Modifiers**
 
@@ -532,15 +345,183 @@ graph TD
 
     * [AccountFlaggedForLiquidation](#accountflaggedforliquidation)
 
+### `getLiquidationDeadlineForAccount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L99)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getLiquidationDeadlineForAccount(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `isLiquidationDeadlinePassed`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L122)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isLiquidationDeadlinePassed(address account) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `isOpenForLiquidation`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L104)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isOpenForLiquidation(address account) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `issuanceRatio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L79)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issuanceRatio() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `liquidationCollateralRatio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L95)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidationCollateralRatio() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `liquidationDelay`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L83)</sub>
+
+**Type:** `uint256`
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidationDelay() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `liquidationPenalty`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L91)</sub>
+
+**Type:** `uint256`
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidationPenalty() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `liquidationRatio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L87)</sub>
+
+**Type:** `uint256`
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidationRatio() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L47)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `undefined`
+
 ## Modifiers
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L238)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L238)</sub>
 
 ### `rateNotInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L243)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L243)</sub>
 
 **Signature**: `rateNotInvalid(bytes32 currencyKey)`
 
@@ -548,12 +529,12 @@ graph TD
 
 ### `AccountFlaggedForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L250)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L250)</sub>
 
 **Signature**: `AccountFlaggedForLiquidation(address account, uint256 deadline)`
 
 ### `AccountRemovedFromLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/Liquidations.sol#L251)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/Liquidations.sol#L251)</sub>
 
 **Signature**: `AccountRemovedFromLiquidation(address account, uint256 time)`

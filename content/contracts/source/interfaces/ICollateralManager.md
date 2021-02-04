@@ -2,249 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol)
-
-## Views
-
-### `areShortableSynthsSet`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L50)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `areShortableSynthsSet(bytes32[] requiredSynthNamesInResolver, bytes32[] synthKeys) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `areSynthsAndCurrenciesSet`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L45)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `areSynthsAndCurrenciesSet(bytes32[] requiredSynthNamesInResolver, bytes32[] synthKeys) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `exceedsDebtLimit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L43)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exceedsDebtLimit(uint256 amount, bytes32 currency) returns (bool, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBorrowRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L19)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBorrowRate() returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getRatesAndTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L23)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getRatesAndTime(uint256 index) returns (uint256, uint256, uint256, uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getShortRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L21)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getShortRate(bytes32 synth) returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getShortRatesAndTime`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L33)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getShortRatesAndTime(bytes32 currency, uint256 index) returns (uint256, uint256, uint256, uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `hasCollateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L6)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `hasCollateral(address collateral) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `isSynthManaged`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L8)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `isSynthManaged(bytes32 currencyKey) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `long`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L11)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `long(bytes32 synth) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `short`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L13)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `short(bytes32 synth) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalLong`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L15)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalLong() returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `totalShort`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L17)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `totalShort() returns (uint256, bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+**Source:** [contracts/interfaces/ICollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol)
 
 ## External Functions
 
 ### `addCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -258,11 +22,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `addShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -276,11 +40,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `addSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -294,11 +58,47 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `areShortableSynthsSet`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L50)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `areShortableSynthsSet(bytes32[] requiredSynthNamesInResolver, bytes32[] synthKeys) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `areSynthsAndCurrenciesSet`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L45)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `areSynthsAndCurrenciesSet(bytes32[] requiredSynthNamesInResolver, bytes32[] synthKeys) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `decrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -312,11 +112,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `decrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -330,17 +130,17 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
-### `getNewLoanId`
+### `exceedsDebtLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L43)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getNewLoanId() returns (uint256)`
+    `exceedsDebtLimit(uint256 amount, bytes32 currency) view returns (bool canIssue, bool anyRateIsInvalid)`
 
     **Visibility**
 
@@ -348,11 +148,119 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `getBorrowRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBorrowRate() view returns (uint256 borrowRate, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getNewLoanId`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L56)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getNewLoanId() returns (uint256 id)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getRatesAndTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L23)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getRatesAndTime(uint256 index) view returns (uint256 entryRate, uint256 lastRate, uint256 lastUpdated, uint256 newIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getShortRate`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L21)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getShortRate(bytes32 synth) view returns (uint256 shortRate, bool rateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getShortRatesAndTime`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L33)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getShortRatesAndTime(bytes32 currency, uint256 index) view returns (uint256 entryRate, uint256 lastRate, uint256 lastUpdated, uint256 newIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `hasCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L6)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `hasCollateral(address collateral) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `incrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -366,11 +274,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `incrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -384,11 +292,47 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `isSynthManaged`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L8)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isSynthManaged(bytes32 currencyKey) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `long`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `long(bytes32 synth) view returns (uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `removeCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -402,11 +346,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -420,11 +364,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `removeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -438,11 +382,65 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
+
+### `short`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L13)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `short(bytes32 synth) view returns (uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalLong`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L15)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalLong() view returns (uint256 susdValue, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `totalShort`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L17)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `totalShort() view returns (uint256 susdValue, bool anyRateIsInvalid)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
 
 ### `updateBorrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -456,11 +454,11 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `updateShortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/interfaces/ICollateralManager.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/interfaces/ICollateralManager.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -474,4 +472,4 @@
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

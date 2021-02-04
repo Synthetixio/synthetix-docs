@@ -2,32 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    CollateralShort[CollateralShort] --> Collateral[Collateral]
-    Collateral[Collateral] --> Owned[Owned]
-    Collateral[Collateral] --> MixinSystemSettings[MixinSystemSettings]
-    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L13)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(contract CollateralState _state, address _owner, address _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
+    `constructor(contract CollateralState _state, address _owner, address _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
 
     **Visibility**
 
@@ -35,13 +22,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## External Functions
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -55,11 +42,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -73,15 +60,15 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L49)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L49)
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -95,11 +82,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -113,11 +100,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -131,11 +118,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -149,15 +136,15 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Allowance not high enough)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L28)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L28)
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -171,11 +158,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralShort.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralShort.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -189,4 +176,4 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`

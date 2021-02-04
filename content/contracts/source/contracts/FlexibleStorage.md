@@ -2,29 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/FlexibleStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    FlexibleStorage[FlexibleStorage] --> ContractStorage[ContractStorage]
-
-```
+**Source:** [contracts/FlexibleStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L19)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _resolver)`
+    `constructor(address _resolver)`
 
     **Visibility**
 
@@ -32,195 +22,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
-
-## Views
-
-### `getAddressValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L98)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getAddressValue(bytes32 contractName, bytes32 record) returns (address)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getAddressValues`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L102)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getAddressValues(bytes32 contractName, bytes32[] records) returns (address[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBoolValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L112)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBoolValue(bytes32 contractName, bytes32 record) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBoolValues`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L116)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBoolValues(bytes32 contractName, bytes32[] records) returns (bool[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBytes32Value`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L126)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBytes32Value(bytes32 contractName, bytes32 record) returns (bytes32)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getBytes32Values`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L130)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getBytes32Values(bytes32 contractName, bytes32[] records) returns (bytes32[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getIntValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L84)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getIntValue(bytes32 contractName, bytes32 record) returns (int256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getIntValues`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L88)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getIntValues(bytes32 contractName, bytes32[] records) returns (int256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getUIntValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L70)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getUIntValue(bytes32 contractName, bytes32 record) returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `getUIntValues`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L74)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getUIntValues(bytes32 contractName, bytes32[] records) returns (uint256[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
+    `undefined`
 
 ## Restricted Functions
 
 ### `deleteAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L213)</sub>
 
 ??? example "Details"
 
@@ -234,7 +42,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -246,7 +54,7 @@ graph TD
 
 ### `deleteBoolValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L239)</sub>
 
 ??? example "Details"
 
@@ -260,7 +68,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -272,7 +80,7 @@ graph TD
 
 ### `deleteBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L265)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L265)</sub>
 
 ??? example "Details"
 
@@ -286,7 +94,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -298,7 +106,7 @@ graph TD
 
 ### `deleteIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L187)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L187)</sub>
 
 ??? example "Details"
 
@@ -312,7 +120,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -324,7 +132,7 @@ graph TD
 
 ### `deleteUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -338,7 +146,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -350,7 +158,7 @@ graph TD
 
 ### `setAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -364,7 +172,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -372,7 +180,7 @@ graph TD
 
 ### `setAddressValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L201)</sub>
 
 ??? example "Details"
 
@@ -386,11 +194,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L206)
+    * [require(..., "Input lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L206)
 
     **Modifiers**
 
@@ -398,7 +206,7 @@ graph TD
 
 ### `setBoolValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L219)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L219)</sub>
 
 ??? example "Details"
 
@@ -412,7 +220,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -420,7 +228,7 @@ graph TD
 
 ### `setBoolValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L227)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L227)</sub>
 
 ??? example "Details"
 
@@ -434,11 +242,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L232)
+    * [require(..., "Input lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L232)
 
     **Modifiers**
 
@@ -446,7 +254,7 @@ graph TD
 
 ### `setBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L245)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L245)</sub>
 
 ??? example "Details"
 
@@ -460,7 +268,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -468,7 +276,7 @@ graph TD
 
 ### `setBytes32Values`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L253)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L253)</sub>
 
 ??? example "Details"
 
@@ -482,11 +290,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L258)
+    * [require(..., "Input lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L258)
 
     **Modifiers**
 
@@ -494,7 +302,7 @@ graph TD
 
 ### `setIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L167)</sub>
 
 ??? example "Details"
 
@@ -508,7 +316,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -516,7 +324,7 @@ graph TD
 
 ### `setIntValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L175)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L175)</sub>
 
 ??? example "Details"
 
@@ -530,11 +338,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L180)
+    * [require(..., "Input lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L180)
 
     **Modifiers**
 
@@ -542,7 +350,7 @@ graph TD
 
 ### `setUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -556,7 +364,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -564,7 +372,7 @@ graph TD
 
 ### `setUIntValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L149)</sub>
 
 ??? example "Details"
 
@@ -578,11 +386,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Input lengths must match)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L154)
+    * [require(..., "Input lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L154)
 
     **Modifiers**
 
@@ -592,7 +400,7 @@ graph TD
 
 ### `_setAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -606,7 +414,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Emits**
 
@@ -614,7 +422,7 @@ graph TD
 
 ### `_setBoolValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -628,7 +436,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Emits**
 
@@ -636,7 +444,7 @@ graph TD
 
 ### `_setBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -650,7 +458,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Emits**
 
@@ -658,7 +466,7 @@ graph TD
 
 ### `_setIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -672,7 +480,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Emits**
 
@@ -680,7 +488,7 @@ graph TD
 
 ### `_setUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -694,70 +502,252 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Emits**
 
     * [ValueSetUInt](#valuesetuint)
 
+## External Functions
+
+### `getAddressValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L98)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getAddressValue(bytes32 contractName, bytes32 record) view returns (address)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getAddressValues`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L102)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getAddressValues(bytes32 contractName, bytes32[] records) view returns (address[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBoolValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L112)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBoolValue(bytes32 contractName, bytes32 record) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBoolValues`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L116)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBoolValues(bytes32 contractName, bytes32[] records) view returns (bool[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBytes32Value`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L126)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBytes32Value(bytes32 contractName, bytes32 record) view returns (bytes32)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getBytes32Values`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L130)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getBytes32Values(bytes32 contractName, bytes32[] records) view returns (bytes32[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getIntValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L84)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getIntValue(bytes32 contractName, bytes32 record) view returns (int256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getIntValues`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L88)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getIntValues(bytes32 contractName, bytes32[] records) view returns (int256[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getUIntValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L70)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getUIntValue(bytes32 contractName, bytes32 record) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+### `getUIntValues`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L74)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getUIntValues(bytes32 contractName, bytes32[] records) view returns (uint256[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
 ## Events
 
 ### `ValueDeletedAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L280)</sub>
 
 **Signature**: `ValueDeletedAddress(bytes32 contractName, bytes32 record, address value)`
 
 ### `ValueDeletedBool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L283)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L283)</sub>
 
 **Signature**: `ValueDeletedBool(bytes32 contractName, bytes32 record, bool value)`
 
 ### `ValueDeletedBytes32`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L286)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L286)</sub>
 
 **Signature**: `ValueDeletedBytes32(bytes32 contractName, bytes32 record, bytes32 value)`
 
 ### `ValueDeletedInt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L277)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L277)</sub>
 
 **Signature**: `ValueDeletedInt(bytes32 contractName, bytes32 record, int256 value)`
 
 ### `ValueDeletedUInt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L274)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L274)</sub>
 
 **Signature**: `ValueDeletedUInt(bytes32 contractName, bytes32 record, uint256 value)`
 
 ### `ValueSetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L279)</sub>
 
 **Signature**: `ValueSetAddress(bytes32 contractName, bytes32 record, address value)`
 
 ### `ValueSetBool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L282)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L282)</sub>
 
 **Signature**: `ValueSetBool(bytes32 contractName, bytes32 record, bool value)`
 
 ### `ValueSetBytes32`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L285)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L285)</sub>
 
 **Signature**: `ValueSetBytes32(bytes32 contractName, bytes32 record, bytes32 value)`
 
 ### `ValueSetInt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L276)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L276)</sub>
 
 **Signature**: `ValueSetInt(bytes32 contractName, bytes32 record, int256 value)`
 
 ### `ValueSetUInt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/FlexibleStorage.sol#L273)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/FlexibleStorage.sol#L273)</sub>
 
 **Signature**: `ValueSetUInt(bytes32 contractName, bytes32 record, uint256 value)`

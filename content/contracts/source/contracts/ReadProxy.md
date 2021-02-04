@@ -4,23 +4,13 @@
 
 The ReadProxy is a simple proxy for readonly views. If any mutative function is attempted on the underlying the EVM will revert.
 
-**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ReadProxy.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    ReadProxy[ReadProxy] --> Owned[Owned]
-
-```
+**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ReadProxy.sol)
 
 ## Variables
 
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ReadProxy.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ReadProxy.sol#L10)</sub>
 
 **Type:** `address`
 
@@ -28,27 +18,27 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ReadProxy.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ReadProxy.sol#L19)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(address _owner)`
+    `constructor()`
 
     **Visibility**
 
-    `public`
+    `external`
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## Restricted Functions
 
 ### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ReadProxy.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ReadProxy.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -62,7 +52,7 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Modifiers**
 
@@ -72,30 +62,10 @@ graph TD
 
     * [TargetUpdated](#targetupdated)
 
-## Fallback Function
-
-### `() (fallback function)`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ReadProxy.sol#L19)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `nonpayable`
-
 ## Events
 
 ### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/ReadProxy.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/ReadProxy.sol#L36)</sub>
 
 **Signature**: `TargetUpdated(address newTarget)`

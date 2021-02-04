@@ -2,26 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol)
-
-## Architecture
-
-### Inheritance Graph
-
-```mermaid
-graph TD
-    CollateralEth[CollateralEth] --> Collateral[Collateral]
-    Collateral[Collateral] --> Owned[Owned]
-    Collateral[Collateral] --> MixinSystemSettings[MixinSystemSettings]
-    MixinSystemSettings[MixinSystemSettings] --> MixinResolver[MixinResolver]
-
-```
+**Source:** [contracts/CollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol)
 
 ## Variables
 
 ### `pendingWithdrawals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L16)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -29,13 +16,13 @@ graph TD
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L18)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `(contract CollateralState _state, address _owner, address _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
+    `constructor(contract CollateralState _state, address _owner, address _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
 
     **Visibility**
 
@@ -43,13 +30,13 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ## External Functions
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -63,11 +50,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
     **Requires**
 
-    * [require(..., Transfer failed)](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L75)
+    * [require(..., "Transfer failed")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L75)
 
     **Modifiers**
 
@@ -75,7 +62,7 @@ graph TD
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -89,17 +76,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L38)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `deposit(address borrower, uint256 id)`
+    `deposit(address borrower, uint256 id) payable`
 
     **Visibility**
 
@@ -107,11 +94,11 @@ graph TD
 
     **State Mutability**
 
-    `payable`
+    `undefined`
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -125,11 +112,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -143,17 +130,17 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L28)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `open(uint256 amount, bytes32 currency)`
+    `open(uint256 amount, bytes32 currency) payable`
 
     **Visibility**
 
@@ -161,11 +148,11 @@ graph TD
 
     **State Mutability**
 
-    `payable`
+    `undefined`
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -179,11 +166,11 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.37.0/contracts/CollateralEth.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-alpha/contracts/CollateralEth.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -197,4 +184,4 @@ graph TD
 
     **State Mutability**
 
-    `nonpayable`
+    `undefined`
