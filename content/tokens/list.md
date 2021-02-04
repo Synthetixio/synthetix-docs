@@ -1,5 +1,20 @@
 # Token List
 
+## Aave (sAAVE)
+
+**Contract:** [0xd2dF355C19471c8bd7D8A3aa27Ff4e26A21b4076](https://etherscan.io/token/0xd2dF355C19471c8bd7D8A3aa27Ff4e26A21b4076)
+
+**Decimals:** 18
+
+**Price:** [sAAVE on synthetix.exchange](https://synthetix.exchange/#/synths/sAAVE)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/aave-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x547a514d5e3769680Ce22B2361c10Ea13619e8a9)
+
+> Tracks the price of Aave (AAVE) through price feeds supplied by an oracle.
+
 ## Australian Dollars (sAUD)
 
 **Contract:** [0xF48e200EAF9906362BB1442fca31e0835773b8B4](https://etherscan.io/token/0xF48e200EAF9906362BB1442fca31e0835773b8B4)
@@ -44,16 +59,6 @@
 - Contract: [Aggregator](https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c)
 
 > Tracks the price of Bitcoin (BTC) through price feeds supplied by an oracle.
-
-## Bitcoin Cash (sBCH)
-
-**Contract:** [0x36a2422a863D5B950882190Ff5433E513413343a](https://etherscan.io/token/0x36a2422a863D5B950882190Ff5433E513413343a)
-
-**Decimals:** 18
-
-**Price:** [sBCH on synthetix.exchange](https://synthetix.exchange/#/synths/sBCH)
-
-> Tracks the price of Bitcoin Cash (BCH) through price feeds supplied by an oracle.
 
 ## Cardano (sADA)
 
@@ -111,6 +116,21 @@
 - Contract: [Aggregator](https://etherscan.io/address/0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c)
 
 > Tracks the price of Chainlink (LINK) through price feeds supplied by an oracle.
+
+## Compound (sCOMP)
+
+**Contract:** [0xEb029507d3e043DD6C87F2917C4E82B902c35618](https://etherscan.io/token/0xEb029507d3e043DD6C87F2917C4E82B902c35618)
+
+**Decimals:** 18
+
+**Price:** [sCOMP on synthetix.exchange](https://synthetix.exchange/#/synths/sCOMP)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/comp-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xdbd020CAeF83eFd542f4De03e3cF0C28A4428bd5)
+
+> Tracks the price of Compound (COMP) through price feeds supplied by an oracle.
 
 ## Dash (sDASH)
 
@@ -249,6 +269,27 @@
 
 > Tracks the price of Gold Ounce (XAU) through price feeds supplied by an oracle.
 
+## Inverse Aave (iAAVE)
+
+**Contract:** [0x176C674Ee533C6139B0dc8b458D72A93dCB3e705](https://etherscan.io/token/0x176C674Ee533C6139B0dc8b458D72A93dCB3e705)
+
+**Decimals:** 18
+
+**Price:** [iAAVE on synthetix.exchange](https://synthetix.exchange/#/synths/iAAVE)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/aave-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x547a514d5e3769680Ce22B2361c10Ea13619e8a9)
+
+**Inverse of**: [sAAVE](#aave-saave)
+
+| Entry Point | Upper Limit | Lower Limit |
+| ----------- | ----------- | ----------- |
+| \$406       | \$609       | \$203       |
+
+> Inversely tracks the price of Inverse Aave (AAVE) through price feeds supplied by an oracle. The entry point is \$406 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$609 (i.e. when Inverse Aave's value reaches \$203) or its lower limit of \$203 (i.e. when Inverse Aave’s value reaches \$609). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iAAVE with different limits.
+
 ## Inverse Binance Coin (iBNB)
 
 **Contract:** [0xAFD870F32CE54EfdBF677466B612bf8ad164454B](https://etherscan.io/token/0xAFD870F32CE54EfdBF677466B612bf8ad164454B)
@@ -290,22 +331,6 @@
 | \$40,378    | \$60,567    | \$20,189    |
 
 > Inversely tracks the price of Inverse Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is \$40378 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$60567 (i.e. when Inverse Bitcoin's value reaches \$20189) or its lower limit of \$20189 (i.e. when Inverse Bitcoin’s value reaches \$60567). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
-
-## Inverse Bitcoin Cash (iBCH)
-
-**Contract:** [0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89](https://etherscan.io/token/0xf6E9b246319ea30e8C2fA2d1540AAEBF6f9E1B89)
-
-**Decimals:** 18
-
-**Price:** [iBCH on synthetix.exchange](https://synthetix.exchange/#/synths/iBCH)
-
-**Inverse of**: [sBCH](#bitcoin-cash-sbch)
-
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$229.54000 | \$344.31000 | \$114.77000 |
-
-> Inversely tracks the price of Inverse Bitcoin Cash (BCH) through price feeds supplied by an oracle. The entry point is \$229.54 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$344.31 (i.e. when Inverse Bitcoin Cash's value reaches \$114.77) or its lower limit of \$114.77 (i.e. when Inverse Bitcoin Cash’s value reaches \$344.31). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBCH with different limits.
 
 ## Inverse Cardano (iADA)
 
@@ -371,6 +396,27 @@
 | \$22.60000  | \$33.90000  | \$11.30000  |
 
 > Inversely tracks the price of Inverse Chainlink (LINK) through price feeds supplied by an oracle. The entry point is \$22.6 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$33.9 (i.e. when Inverse Chainlink's value reaches \$11.3) or its lower limit of \$11.3 (i.e. when Inverse Chainlink’s value reaches \$33.9). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iLINK with different limits.
+
+## Inverse Compound (iCOMP)
+
+**Contract:** [0x6345728B1ccE16E6f8C509950b5c84FFF88530d9](https://etherscan.io/token/0x6345728B1ccE16E6f8C509950b5c84FFF88530d9)
+
+**Decimals:** 18
+
+**Price:** [iCOMP on synthetix.exchange](https://synthetix.exchange/#/synths/iCOMP)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/comp-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xdbd020CAeF83eFd542f4De03e3cF0C28A4428bd5)
+
+**Inverse of**: [sCOMP](#compound-scomp)
+
+| Entry Point | Upper Limit | Lower Limit |
+| ----------- | ----------- | ----------- |
+| \$393       | \$589.50000 | \$196.50000 |
+
+> Inversely tracks the price of Inverse Compound (COMP) through price feeds supplied by an oracle. The entry point is \$393 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$589.5 (i.e. when Inverse Compound's value reaches \$196.5) or its lower limit of \$196.5 (i.e. when Inverse Compound’s value reaches \$589.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iCOMP with different limits.
 
 ## Inverse Dash (iDASH)
 
@@ -542,6 +588,48 @@
 
 > Inversely tracks the price of Inverse Perpetual Oil Futures (OIL) through price feeds supplied by an oracle. The entry point is \$45.087 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$67.63 (i.e. when Inverse Perpetual Oil Futures's value reaches \$22.54) or its lower limit of \$22.543 (i.e. when Inverse Perpetual Oil Futures’s value reaches \$67.631). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iOIL with different limits.
 
+## Inverse Polkadot (iDOT)
+
+**Contract:** [0x46a97629C9C1F58De6EC18C7F536e7E6d6A6ecDe](https://etherscan.io/token/0x46a97629C9C1F58De6EC18C7F536e7E6d6A6ecDe)
+
+**Decimals:** 18
+
+**Price:** [iDOT on synthetix.exchange](https://synthetix.exchange/#/synths/iDOT)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/dot-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x1C07AFb8E2B827c5A4739C6d59Ae3A5035f28734)
+
+**Inverse of**: [sDOT](#polkadot-sdot)
+
+| Entry Point | Upper Limit | Lower Limit |
+| ----------- | ----------- | ----------- |
+| \$20.60000  | \$30.90000  | \$10.30000  |
+
+> Inversely tracks the price of Inverse Polkadot (DOT) through price feeds supplied by an oracle. The entry point is \$20.6 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$30.9 (i.e. when Inverse Polkadot's value reaches \$10.3) or its lower limit of \$10.3 (i.e. when Inverse Polkadot’s value reaches \$30.9). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iDOT with different limits.
+
+## Inverse Ren (iREN)
+
+**Contract:** [0x0fEd38108bdb8e62ef7b5680E8E0726E2F29e0De](https://etherscan.io/token/0x0fEd38108bdb8e62ef7b5680E8E0726E2F29e0De)
+
+**Decimals:** 18
+
+**Price:** [iREN on synthetix.exchange](https://synthetix.exchange/#/synths/iREN)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/ren-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x0f59666EDE214281e956cb3b2D0d69415AfF4A01)
+
+**Inverse of**: [sREN](#ren-sren)
+
+| Entry Point | Upper Limit | Lower Limit |
+| ----------- | ----------- | ----------- |
+| \$0.70000   | \$1.05000   | \$0.35000   |
+
+> Inversely tracks the price of Inverse Ren (REN) through price feeds supplied by an oracle. The entry point is \$0.7 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$1.05 (i.e. when Inverse Ren's value reaches \$0.35) or its lower limit of \$0.35 (i.e. when Inverse Ren’s value reaches \$1.05). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iREN with different limits.
+
 ## Inverse Ripple (iXRP)
 
 **Contract:** [0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6](https://etherscan.io/token/0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6)
@@ -604,6 +692,48 @@
 | \$2.54200   | \$3.81300   | \$1.27100   |
 
 > Inversely tracks the price of Inverse Tezos (XTZ) through price feeds supplied by an oracle. The entry point is \$2.542 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$3.813 (i.e. when Inverse Tezos's value reaches \$1.271) or its lower limit of \$1.271 (i.e. when Inverse Tezos’s value reaches \$3.813). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iXTZ with different limits.
+
+## Inverse Uniswap (iUNI)
+
+**Contract:** [0x36A00FF9072570eF4B9292117850B8FE08d96cce](https://etherscan.io/token/0x36A00FF9072570eF4B9292117850B8FE08d96cce)
+
+**Decimals:** 18
+
+**Price:** [iUNI on synthetix.exchange](https://synthetix.exchange/#/synths/iUNI)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/uni-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x553303d460EE0afB37EdFf9bE42922D8FF63220e)
+
+**Inverse of**: [sUNI](#uniswap-suni)
+
+| Entry Point | Upper Limit | Lower Limit |
+| ----------- | ----------- | ----------- |
+| \$21        | \$31.50000  | \$10.50000  |
+
+> Inversely tracks the price of Inverse Uniswap (UNI) through price feeds supplied by an oracle. The entry point is \$21 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$31.5 (i.e. when Inverse Uniswap's value reaches \$10.5) or its lower limit of \$10.5 (i.e. when Inverse Uniswap’s value reaches \$31.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iUNI with different limits.
+
+## Inverse yearn.finance (iYFI)
+
+**Contract:** [0x592244301CeA952d6daB2fdC1fE6bd9E53917306](https://etherscan.io/token/0x592244301CeA952d6daB2fdC1fE6bd9E53917306)
+
+**Decimals:** 18
+
+**Price:** [iYFI on synthetix.exchange](https://synthetix.exchange/#/synths/iYFI)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/yfi-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xA027702dbb89fbd58938e4324ac03B58d812b0E1)
+
+**Inverse of**: [sYFI](#yearn.finance-syfi)
+
+| Entry Point | Upper Limit | Lower Limit |
+| ----------- | ----------- | ----------- |
+| \$33,300    | \$49,950    | \$16,650    |
+
+> Inversely tracks the price of Inverse yearn.finance (YFI) through price feeds supplied by an oracle. The entry point is \$33300 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$49950 (i.e. when Inverse yearn.finance's value reaches \$16650) or its lower limit of \$16650 (i.e. when Inverse yearn.finance’s value reaches \$49950). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iYFI with different limits.
 
 ## Japanese Yen (sJPY)
 
@@ -680,6 +810,21 @@
 
 > Tracks the price of Perpetual Oil Futures (OIL) through price feeds supplied by an oracle.
 
+## Polkadot (sDOT)
+
+**Contract:** [0x1715AC0743102BF5Cd58EfBB6Cf2dC2685d967b6](https://etherscan.io/token/0x1715AC0743102BF5Cd58EfBB6Cf2dC2685d967b6)
+
+**Decimals:** 18
+
+**Price:** [sDOT on synthetix.exchange](https://synthetix.exchange/#/synths/sDOT)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/dot-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x1C07AFb8E2B827c5A4739C6d59Ae3A5035f28734)
+
+> Tracks the price of Polkadot (DOT) through price feeds supplied by an oracle.
+
 ## Pound Sterling (sGBP)
 
 **Contract:** [0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F](https://etherscan.io/token/0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F)
@@ -694,6 +839,21 @@
 - Contract: [Aggregator](https://etherscan.io/address/0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5)
 
 > Tracks the price of Pound Sterling (GBP) through price feeds supplied by an oracle.
+
+## Ren (sREN)
+
+**Contract:** [0xD31533E8d0f3DF62060e94B3F1318137bB6E3525](https://etherscan.io/token/0xD31533E8d0f3DF62060e94B3F1318137bB6E3525)
+
+**Decimals:** 18
+
+**Price:** [sREN on synthetix.exchange](https://synthetix.exchange/#/synths/sREN)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/ren-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x0f59666EDE214281e956cb3b2D0d69415AfF4A01)
+
+> Tracks the price of Ren (REN) through price feeds supplied by an oracle.
 
 ## Ripple (sXRP)
 
@@ -792,3 +952,33 @@
 **Price:** [sUSD on synthetix.exchange](https://synthetix.exchange/#/synths/sUSD)
 
 > Tracks the price of a single US Dollar (USD). This Synth always remains constant at 1.
+
+## Uniswap (sUNI)
+
+**Contract:** [0x30635297E450b930f8693297eBa160D9e6c8eBcf](https://etherscan.io/token/0x30635297E450b930f8693297eBa160D9e6c8eBcf)
+
+**Decimals:** 18
+
+**Price:** [sUNI on synthetix.exchange](https://synthetix.exchange/#/synths/sUNI)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/uni-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x553303d460EE0afB37EdFf9bE42922D8FF63220e)
+
+> Tracks the price of Uniswap (UNI) through price feeds supplied by an oracle.
+
+## yearn.finance (sYFI)
+
+**Contract:** [0x992058B7DB08F9734d84485bfbC243C4ee6954A7](https://etherscan.io/token/0x992058B7DB08F9734d84485bfbC243C4ee6954A7)
+
+**Decimals:** 18
+
+**Price:** [sYFI on synthetix.exchange](https://synthetix.exchange/#/synths/sYFI)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/yfi-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xA027702dbb89fbd58938e4324ac03B58d812b0E1)
+
+> Tracks the price of yearn.finance (YFI) through price feeds supplied by an oracle.
