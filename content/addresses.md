@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.38.0](https://github.com/Synthetixio/synthetix/tree/v2.38.0)
+**Version**: [v2.38.0-sccp-77-defi-rebalance](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance)
 
 !!! info "Naming Conventions"
 

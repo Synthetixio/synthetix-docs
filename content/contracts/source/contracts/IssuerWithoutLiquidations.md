@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/IssuerWithoutLiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/IssuerWithoutLiquidations.sol)
+**Source:** [contracts/IssuerWithoutLiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/IssuerWithoutLiquidations.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/IssuerWithoutLiquidations.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/IssuerWithoutLiquidations.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/IssuerWithoutLiquidations.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/IssuerWithoutLiquidations.sol#L11)</sub>
 
 ??? example "Details"
 

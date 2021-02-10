@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/ICollateralEth.sol)
+**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralEth.sol)
 
 ## External Functions
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/ICollateralEth.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralEth.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/ICollateralEth.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralEth.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/ICollateralEth.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralEth.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/ICollateralEth.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralEth.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/ICollateralEth.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralEth.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/ICollateralEth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralEth.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/ICollateralEth.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralEth.sol#L11)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol)
+**Source:** [contracts/interfaces/IDelegateApprovals.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol)
 
 ## External Functions
 
 ### `approveAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `approveBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `approveClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `approveExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `approveIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `canBurnFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `canClaimFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `canExchangeFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `canIssueFor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `removeAllDelegatePowers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `removeBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `removeClaimOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `removeExchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `removeIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/interfaces/IDelegateApprovals.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDelegateApprovals.sol#L26)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/DebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol)
+**Source:** [contracts/DebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `purgeCachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L234)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L234)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
     **Requires**
 
-    * [require(..., "Synth exists")](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L235)
+    * [require(..., "Synth exists")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L235)
 
     **Modifiers**
 
@@ -54,7 +54,7 @@
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L267)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L267)</sub>
 
 ??? example "Details"
 
@@ -76,7 +76,7 @@
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L275)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L275)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L282)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L282)</sub>
 
 ??? example "Details"
 
@@ -122,7 +122,7 @@
 
 ### `_cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -140,7 +140,7 @@
 
 ### `_cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L182)</sub>
 
 ??? example "Details"
 
@@ -158,7 +158,7 @@
 
 ### `_currentDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L195)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@
 
 ### `_currentSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L165)</sub>
 
 ??? example "Details"
 
@@ -194,7 +194,7 @@
 
 ### `_issuedSynthValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -212,7 +212,7 @@
 
 ### `_onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L346)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L346)</sub>
 
 ??? example "Details"
 
@@ -230,11 +230,11 @@
 
     **Requires**
 
-    * [require(..., "Sender is not Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L347)
+    * [require(..., "Sender is not Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L347)
 
 ### `_onlyIssuerOrExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L355)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L355)</sub>
 
 ??? example "Details"
 
@@ -252,11 +252,11 @@
 
     **Requires**
 
-    * [require(..., "Sender is not Issuer or Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L356)
+    * [require(..., "Sender is not Issuer or Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L356)
 
 ### `_requireSystemActiveIfNotOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L335)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L335)</sub>
 
 ??? example "Details"
 
@@ -274,7 +274,7 @@
 
 ### `_updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L295)</sub>
 
 ??? example "Details"
 
@@ -292,11 +292,11 @@
 
     **Requires**
 
-    * [require(..., "Input array lengths differ")](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L301)
+    * [require(..., "Input array lengths differ")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L301)
 
 ### `_updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L288)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L288)</sub>
 
 ??? example "Details"
 
@@ -314,7 +314,7 @@
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -332,7 +332,7 @@
 
 ### `etherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -350,7 +350,7 @@
 
 ### `etherCollateralsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -386,7 +386,7 @@
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -404,7 +404,7 @@
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -422,7 +422,7 @@
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -442,7 +442,7 @@
 
 ### `cacheInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L217)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L217)</sub>
 
 ??? example "Details"
 
@@ -460,7 +460,7 @@
 
 ### `cacheInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L109)</sub>
 
 ??? example "Details"
 
@@ -478,7 +478,7 @@
 
 ### `cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -496,7 +496,7 @@
 
 ### `cacheTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -514,7 +514,7 @@
 
 ### `cachedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -532,7 +532,7 @@
 
 ### `cachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -550,7 +550,7 @@
 
 ### `cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L191)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L191)</sub>
 
 ??? example "Details"
 
@@ -568,7 +568,7 @@
 
 ### `currentDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L213)</sub>
 
 ??? example "Details"
 
@@ -586,7 +586,7 @@
 
 ### `currentSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L174)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L174)</sub>
 
 ??? example "Details"
 
@@ -604,7 +604,7 @@
 
 ### `debtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -622,7 +622,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -640,7 +640,7 @@
 
 ### `takeDebtSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L239)</sub>
 
 ??? example "Details"
 
@@ -668,7 +668,7 @@
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L262)</sub>
 
 ??? example "Details"
 
@@ -692,32 +692,32 @@
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L350)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L350)</sub>
 
 ### `onlyIssuerOrExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L359)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L359)</sub>
 
 ### `requireSystemActiveIfNotOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L341)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L341)</sub>
 
 ## Events
 
 ### `DebtCacheSnapshotTaken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L367)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L367)</sub>
 
 **Signature**: `DebtCacheSnapshotTaken(uint256 timestamp)`
 
 ### `DebtCacheUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L366)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L366)</sub>
 
 **Signature**: `DebtCacheUpdated(uint256 cachedDebt)`
 
 ### `DebtCacheValidityChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0/contracts/DebtCache.sol#L368)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/DebtCache.sol#L368)</sub>
 
 **Signature**: `DebtCacheValidityChanged(bool isInvalid)`
