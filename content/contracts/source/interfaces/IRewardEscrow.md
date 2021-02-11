@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol)
+**Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol)
 
 ## External Functions
 
 ### `appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `getNextVestingIndex`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `getVestingScheduleEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `vest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/interfaces/IRewardEscrow.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/IRewardEscrow.sol#L22)</sub>
 
 ??? example "Details"
 

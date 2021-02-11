@@ -2,6 +2,16 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Elnath (v2.39.0)
+
+**Published**: Feb 11, 2021
+
+**Codebase**: [v2.39.0](https://github.com/Synthetixio/synthetix/tree/v2.39.0)
+
+> - [SIP-110](https://sips.synthetix.io/sips/sip-110): Adding sTSLA Synth
+
+---
+
 # Bellatrix (v2.38.0)
 
 **Published**: Feb 4, 2021
@@ -267,20 +277,6 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SCCP-11](https://sips.synthetix.io/sips/sccp-11): Reduce trading fee to 0.3% — As part of the fee reclamation release, we’ll be reducing the trading fee back down to 30bps.
 - [SCCP-12](https://sips.synthetix.io/sips/sccp-12): Reactivate previously deactivated Synths — s/iXTZ, s/iBNB, and s/iLTC were all previously deactivated as they were being targeted by frontrunners, but we're reinstating them in the Achernar release.
 - [SCCP-13](https://sips.synthetix.io/sips/sccp-13): Reinstate fee claim buffer to 750% from 500% — The requirement to claim fees was reduced from 750% to 500% to allow stakers to not get hit by the temporary fee increase.
-
----
-
-# Procyon (v2.17.6)
-
-**Published**: Dec 18, 2019
-
-**Codebase**: [v2.17.6](https://github.com/Synthetixio/synthetix/tree/v2.17.6)
-
-> https://blog.synthetix.io/the-procyon-release/
-
-- [SIP-30](https://sips.synthetix.io/sips/sip-30)
-- [SIP-32](https://sips.synthetix.io/sips/sip-32)
-- [SCCP-9](https://sips.synthetix.io/sccp/sccp-9)
 
 ---
 

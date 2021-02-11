@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.39.0](https://github.com/Synthetixio/synthetix/tree/v2.39.0)
+**Version**: [v2.39.1](https://github.com/Synthetixio/synthetix/tree/v2.39.1)
 
 !!! info "Naming Conventions"
 
@@ -743,6 +743,13 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/StakingRewards.json">StakingRewards.json</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xc0d8994Cd78eE1980885DF1A0C5470fC977b5cFe">0xc0d8994Cd78eE1980885DF1A0C5470fC977b5cFe</a>
+                </td>
+              </tr>
+              <tr>
+                <td>StakingRewardssTSLABalancer</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/StakingRewards.json">StakingRewards.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0xF0de877F2F9E7A60767f9BA662F10751566AD01c">0xF0de877F2F9E7A60767f9BA662F10751566AD01c</a>
                 </td>
               </tr>
               <tr>
