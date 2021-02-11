@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDepot.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol)
+**Source:** [contracts/interfaces/IDepot.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol)
 
 ## External Functions
 
 ### `depositSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `exchangeEtherForSNX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `exchangeEtherForSNXAtRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `exchangeEtherForSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `exchangeEtherForSynthsAtRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `exchangeSynthsForSNX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `fundsWallet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `maxEthPurchase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `minimumDepositAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `synthetixReceivedForEther`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `synthetixReceivedForSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `synthsReceivedForEther`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `totalSellableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `withdrawMyDepositedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `withdrawSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IDepot.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IDepot.sol#L37)</sub>
 
 ??? example "Details"
 

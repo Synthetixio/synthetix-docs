@@ -164,22 +164,20 @@
 
 | Token                   | Symbol | Units     | Initial Weight |
 | ----------------------- | ------ | --------- | -------------- |
-| Aave                    | AAVE   | 4.93000   | 15%            |
-| Synthetix Network Token | SNX    | 84.93000  | 15%            |
-| Uniswap                 | UNI    | 82.21000  | 15%            |
-| Maker                   | MKR    | 0.66000   | 10%            |
-| Balancer                | BAL    | 18.40000  | 5%             |
-| Compound                | COMP   | 1.37000   | 5%             |
-| Curve DAO Token         | CRV    | 203.36000 | 5%             |
-| Kyber Network           | KNC    | 375.43000 | 5%             |
-| Ren                     | REN    | 802.67000 | 5%             |
-| SUSHI                   | SUSHI  | 49.24900  | 5%             |
-| UMA                     | UMA    | 44.53000  | 5%             |
-| yearn.finance           | YFI    | 0.01610   | 5%             |
-| 1INCH                   | 1INCH  | 53.28100  | 2.5%           |
-| Bancor                  | BNT    | 129.80200 | 2.5%           |
+| Aave                    | AAVE   | 8.41000   | 15%            |
+| Synthetix Network Token | SNX    | 109.93000 | 15%            |
+| yearn.finance           | YFI    | 0.02300   | 15%            |
+| Uniswap                 | UNI    | 92.09000  | 10%            |
+| Compound                | COMP   | 1.88000   | 7.5%           |
+| Maker                   | MKR    | 0.39000   | 7.5%           |
+| Balancer                | BAL    | 9.05000   | 5%             |
+| Curve DAO Token         | CRV    | 253.80000 | 5%             |
+| Kyber Network           | KNC    | 159.13000 | 5%             |
+| Ren                     | REN    | 598.03000 | 5%             |
+| UMA                     | UMA    | 19.47000  | 5%             |
+| Wrapped Nexus Mutual    | WNXM   | 4.53000   | 5%             |
 
-> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.37 of undefined, 0.66 of undefined, 4.93 of undefined, 44.53 of undefined, 84.93 of undefined, 802.67 of undefined, 82.21 of undefined, 375.43 of undefined, 203.36 of undefined, 49.249 of undefined, 0.0161 of undefined, 18.4 of undefined, 129.802 of undefined, 53.281 of undefined.
+> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.88 of undefined, 0.39 of undefined, 8.41 of undefined, 19.47 of undefined, 109.93 of undefined, 598.03 of undefined, 92.09 of undefined, 159.13 of undefined, 253.8 of undefined, 4.53 of undefined, 0.023 of undefined, 9.05 of undefined.
 
 ## EOS (sEOS)
 
@@ -929,6 +927,21 @@
 - Contract: [Aggregator](https://etherscan.io/address/0xacD0D1A29759CC01E8D925371B72cb2b5610EA25)
 
 > Tracks the price of TRON (TRX) through price feeds supplied by an oracle.
+
+## Tesla (sTSLA)
+
+**Contract:** [0x918dA91Ccbc32B7a6A0cc4eCd5987bbab6E31e6D](https://etherscan.io/token/0x918dA91Ccbc32B7a6A0cc4eCd5987bbab6E31e6D)
+
+**Decimals:** 18
+
+**Price:** [sTSLA on synthetix.exchange](https://synthetix.exchange/#/synths/sTSLA)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/tsla-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x1ceDaaB50936881B3e449e47e40A2cDAF5576A4a)
+
+> Tracks the price of Tesla (TSLA) through price feeds supplied by an oracle.
 
 ## Tezos (sXTZ)
 

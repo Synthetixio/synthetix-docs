@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IExchangeState.sol)
+**Source:** [contracts/interfaces/IExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IExchangeState.sol)
 
 ## Structs
 
 ### `ExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IExchangeState.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IExchangeState.sol#L7)</sub>
 
 | Field             | Type      | Description |
 | ----------------- | --------- | ----------- |
@@ -25,7 +25,7 @@
 
 ### `appendExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IExchangeState.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IExchangeState.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -43,7 +43,7 @@
 
 ### `getEntryAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IExchangeState.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IExchangeState.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -61,7 +61,7 @@
 
 ### `getLengthOfEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IExchangeState.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IExchangeState.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -79,7 +79,7 @@
 
 ### `getMaxTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IExchangeState.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IExchangeState.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -97,7 +97,7 @@
 
 ### `removeEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/IExchangeState.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/IExchangeState.sol#L53)</sub>
 
 ??? example "Details"
 

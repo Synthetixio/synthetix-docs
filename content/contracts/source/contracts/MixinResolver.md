@@ -4,13 +4,13 @@
 
 A utility that gives the inheritor access to the [`AddressResolver`](AddressResolver.md)
 
-**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol)
+**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol)
 
 ## Variables
 
 ### `resolver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L13)</sub>
 
 The `AddressResolver` instance
 
@@ -20,7 +20,7 @@ The `AddressResolver` instance
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -40,7 +40,7 @@ The `AddressResolver` instance
 
 ### `combineArrays`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -58,7 +58,7 @@ The `AddressResolver` instance
 
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -76,13 +76,13 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L78)
+    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L78)
 
 ## External Functions
 
 ### `isResolverCached`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@ The `AddressResolver` instance
 
 ### `rebuildCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@ The `AddressResolver` instance
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L42)</sub>
 
 **Type:** `bytes32[]`
 
@@ -140,6 +140,6 @@ The `AddressResolver` instance
 
 ### `CacheUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/MixinResolver.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/MixinResolver.sol#L84)</sub>
 
 **Signature**: `CacheUpdated(bytes32 name, address destination)`

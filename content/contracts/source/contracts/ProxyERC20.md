@@ -8,13 +8,13 @@ As a result this proxy can verifiably support token functionality in its ABI if 
 
 In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token contract](Synthetix.md), alongside the pre-existing standard proxy. Thus clients can choose to use either of these two proxies to interact with the system.
 
-**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol)
+**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -34,7 +34,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -70,7 +70,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -106,7 +106,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -124,7 +124,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -142,7 +142,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -160,7 +160,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -178,7 +178,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/ProxyERC20.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/ProxyERC20.sol#L102)</sub>
 
 ??? example "Details"
 

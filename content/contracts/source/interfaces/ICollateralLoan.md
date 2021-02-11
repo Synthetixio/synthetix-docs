@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralLoan.sol](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralLoan.sol)
+**Source:** [contracts/interfaces/ICollateralLoan.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/ICollateralLoan.sol)
 
 ## Structs
 
 ### `Loan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.38.0-sccp-77-defi-rebalance/contracts/interfaces/ICollateralLoan.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/interfaces/ICollateralLoan.sol#L7)</sub>
 
 | Field             | Type              | Description |
 | ----------------- | ----------------- | ----------- |
