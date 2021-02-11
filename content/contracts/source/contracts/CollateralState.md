@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/CollateralState.sol)
+**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/CollateralState.sol)
 
 ## Variables
 
 ### `loans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/CollateralState.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/CollateralState.sol#L18)</sub>
 
 **Type:** `mapping(address => struct ICollateralLoan.Loan[])`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/CollateralState.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/CollateralState.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `createLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/CollateralState.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/CollateralState.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -58,7 +58,7 @@
 
 ### `updateLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/CollateralState.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/CollateralState.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `getLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/CollateralState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/CollateralState.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `getNumLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0-alpha/contracts/CollateralState.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.0/contracts/CollateralState.sol#L33)</sub>
 
 ??? example "Details"
 
