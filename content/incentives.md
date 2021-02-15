@@ -50,7 +50,7 @@ Aim: This incentive aims to help reduce the impact of sETH holdings on the SNX s
 
 Amount: `16,000 SNX` per week
 
-Duration: Oct 27, 2020 - Dec 23, 2020
+Duration: Oct 27, 2020 - Jan 20, 2021
 
 Pool: None (`iBTC` is staked directly)
 
