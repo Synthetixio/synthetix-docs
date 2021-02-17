@@ -164,20 +164,22 @@
 
 | Token                   | Symbol | Units     | Initial Weight |
 | ----------------------- | ------ | --------- | -------------- |
-| Aave                    | AAVE   | 8.41000   | 15%            |
-| Synthetix Network Token | SNX    | 109.93000 | 15%            |
-| yearn.finance           | YFI    | 0.02300   | 15%            |
-| Uniswap                 | UNI    | 92.09000  | 10%            |
-| Compound                | COMP   | 1.88000   | 7.5%           |
-| Maker                   | MKR    | 0.39000   | 7.5%           |
-| Balancer                | BAL    | 9.05000   | 5%             |
-| Curve DAO Token         | CRV    | 253.80000 | 5%             |
-| Kyber Network           | KNC    | 159.13000 | 5%             |
-| Ren                     | REN    | 598.03000 | 5%             |
-| UMA                     | UMA    | 19.47000  | 5%             |
-| Wrapped Nexus Mutual    | WNXM   | 4.53000   | 5%             |
+| Aave                    | AAVE   | 4.72000   | 15%            |
+| Synthetix Network Token | SNX    | 87.20000  | 15%            |
+| Uniswap                 | UNI    | 100.71000 | 15%            |
+| Maker                   | MKR    | 0.54000   | 10%            |
+| Balancer                | BAL    | 14.84000  | 5%             |
+| Compound                | COMP   | 1.55000   | 5%             |
+| Curve DAO Token         | CRV    | 254.94000 | 5%             |
+| Kyber Network           | KNC    | 334.06000 | 5%             |
+| Ren                     | REN    | 680.59000 | 5%             |
+| SUSHI                   | SUSHI  | 43.11100  | 5%             |
+| UMA                     | UMA    | 26.06000  | 5%             |
+| yearn.finance           | YFI    | 0.01604   | 5%             |
+| 1INCH                   | 1INCH  | 71.83700  | 2.5%           |
+| Bancor                  | BNT    | 90.66100  | 2.5%           |
 
-> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.88 of undefined, 0.39 of undefined, 8.41 of undefined, 19.47 of undefined, 109.93 of undefined, 598.03 of undefined, 92.09 of undefined, 159.13 of undefined, 253.8 of undefined, 4.53 of undefined, 0.023 of undefined, 9.05 of undefined.
+> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.55 of undefined, 0.54 of undefined, 4.72 of undefined, 26.06 of undefined, 87.2 of undefined, 680.59 of undefined, 100.71 of undefined, 334.06 of undefined, 254.94 of undefined, 43.111 of undefined, 0.01604 of undefined, 14.84 of undefined, 90.661 of undefined, 71.837 of undefined.
 
 ## EOS (sEOS)
 

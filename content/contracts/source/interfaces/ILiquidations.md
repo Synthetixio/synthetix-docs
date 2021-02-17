@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ILiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol)
+**Source:** [contracts/interfaces/ILiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol)
 
 ## External Functions
 
 ### `calculateAmountToFixCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `checkAndRemoveAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `flagAccountForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `getLiquidationDeadlineForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `isLiquidationDeadlinePassed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `isOpenForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `removeAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.1/contracts/interfaces/ILiquidations.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/interfaces/ILiquidations.sol#L25)</sub>
 
 ??? example "Details"
 
