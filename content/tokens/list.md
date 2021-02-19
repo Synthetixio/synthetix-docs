@@ -100,7 +100,7 @@
 | FTX           | FTT    | 9.36000     | 3.56%          |
 | KuCoin Shares | KCS    | 9.18000     | 0.87%          |
 
-> Tracks the price of the index: Centralised Exchange Index (CEX) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 12.88 of undefined, 1303.31 of undefined, 94.54 of undefined, 23.06 of undefined, 9.36 of undefined, 25.72 of undefined, 9.18 of undefined.
+> Tracks the price of the index: Centralised Exchange Index (CEX) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 12.88 of undefined (Binance Coin), 1303.31 of undefined (Crypto com), 94.54 of undefined (UNUS SED LEO), 23.06 of undefined (Huobi Token), 9.36 of undefined (FTX), 25.72 of undefined (OKB), 9.18 of undefined (KuCoin Shares).
 
 ## Chainlink (sLINK)
 
@@ -179,7 +179,7 @@
 | 1INCH                   | 1INCH  | 71.83700  | 2.5%           |
 | Bancor                  | BNT    | 90.66100  | 2.5%           |
 
-> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.55 of undefined, 0.54 of undefined, 4.72 of undefined, 26.06 of undefined, 87.2 of undefined, 680.59 of undefined, 100.71 of undefined, 334.06 of undefined, 254.94 of undefined, 43.111 of undefined, 0.01604 of undefined, 14.84 of undefined, 90.661 of undefined, 71.837 of undefined.
+> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.55 of undefined (Compound), 0.54 of undefined (Maker), 4.72 of undefined (Aave), 26.06 of undefined (UMA), 87.2 of undefined (Synthetix Network Token), 680.59 of undefined (Ren), 100.71 of undefined (Uniswap), 334.06 of undefined (Kyber Network), 254.94 of undefined (Curve DAO Token), 43.111 of undefined, 0.01604 of undefined (yearn.finance), 14.84 of undefined (Balancer), 90.661 of undefined (Bancor), 71.837 of undefined.
 
 ## EOS (sEOS)
 

@@ -44,7 +44,7 @@ const desc = synth => {
 			`Tracks the price of the index: ${underlying}${assetSuffix} through price feeds supplied by an oracle. ` +
 			'This index is made up of the following assets and weights: ' +
 			synth.index
-				.map(({ symbol, name, units }) => `${units} of ${symbol}${name !== symbol ? ` (${name})` : ''}`)
+				.map(({ symbol, description: name, units }) => `${units} of ${symbol}${name !== symbol ? ` (${name})` : ''}`)
 				.join(', ') +
 			'.'
 		);

@@ -62,7 +62,7 @@ The underlying contract this proxy is standing in front of.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Proxy.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Proxy.sol#L14)</sub>
 
 Initialises the inherited [`Owned`](Owned.md) instance.
 
@@ -70,11 +70,11 @@ Initialises the inherited [`Owned`](Owned.md) instance.
 
     **Signature**
 
-    `constructor() payable`
+    `constructor(address _owner)`
 
     **Visibility**
 
-    `external`
+    `public`
 
     **State Mutability**
 
