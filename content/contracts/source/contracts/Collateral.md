@@ -2,79 +2,79 @@
 
 ## Description
 
-**Source:** [contracts/Collateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol)
+**Source:** [contracts/Collateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol)
 
 ## Variables
 
 ### `canOpenLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L71)</sub>
 
 **Type:** `bool`
 
 ### `collateralKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L37)</sub>
 
 **Type:** `bytes32`
 
 ### `interactionDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L69)</sub>
 
 **Type:** `uint256`
 
 ### `issueFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L62)</sub>
 
 **Type:** `uint256`
 
 ### `manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L42)</sub>
 
 **Type:** `address`
 
 ### `maxLoansPerAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L65)</sub>
 
 **Type:** `uint256`
 
 ### `minCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L59)</sub>
 
 **Type:** `uint256`
 
 ### `minCratio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L56)</sub>
 
 **Type:** `uint256`
 
 ### `shortingRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L51)</sub>
 
 **Type:** `mapping(bytes32 => address)`
 
 ### `state`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L40)</sub>
 
 **Type:** `contract CollateralState`
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L45)</sub>
 
 **Type:** `bytes32[]`
 
 ### `synthsByKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L48)</sub>
 
 **Type:** `mapping(bytes32 => bytes32)`
 
@@ -82,7 +82,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `addRewardsContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L251)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L251)</sub>
 
 ??? example "Details"
 
@@ -124,7 +124,7 @@
 
 ### `addSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L236)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L236)</sub>
 
 ??? example "Details"
 
@@ -142,7 +142,7 @@
 
     **Requires**
 
-    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L237)
+    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L237)
 
     **Modifiers**
 
@@ -150,7 +150,7 @@
 
 ### `setCanOpenLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L279)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@
 
 ### `setInteractionDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L268)</sub>
 
 ??? example "Details"
 
@@ -194,7 +194,7 @@
 
     **Requires**
 
-    * [require(..., "Max 1 hour")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L269)
+    * [require(..., "Max 1 hour")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L269)
 
     **Modifiers**
 
@@ -206,7 +206,7 @@
 
 ### `setIssueFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L263)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L263)</sub>
 
 ??? example "Details"
 
@@ -232,7 +232,7 @@
 
 ### `setManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L274)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L274)</sub>
 
 ??? example "Details"
 
@@ -258,7 +258,7 @@
 
 ### `setMinCratio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L257)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L257)</sub>
 
 ??? example "Details"
 
@@ -276,7 +276,7 @@
 
     **Requires**
 
-    * [require(..., "Must be greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L258)
+    * [require(..., "Must be greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L258)
 
     **Modifiers**
 
@@ -290,7 +290,7 @@
 
 ### `_checkLoanAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L223)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L223)</sub>
 
 ??? example "Details"
 
@@ -308,13 +308,13 @@
 
     **Requires**
 
-    * [require(..., "Loan does not exist")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L224)
+    * [require(..., "Loan does not exist")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L224)
 
-    * [require(..., "Loan recently interacted with")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L225)
+    * [require(..., "Loan recently interacted with")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L225)
 
 ### `_checkSynthBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L214)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L214)</sub>
 
 ??? example "Details"
 
@@ -332,11 +332,11 @@
 
     **Requires**
 
-    * [require(..., "Not enough synth balance")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L219)
+    * [require(..., "Not enough synth balance")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L219)
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L129)</sub>
 
 ??? example "Details"
 
@@ -354,7 +354,7 @@
 
 ### `_exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L133)</sub>
 
 ??? example "Details"
 
@@ -372,7 +372,7 @@
 
 ### `_feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L137)</sub>
 
 ??? example "Details"
 
@@ -390,7 +390,7 @@
 
 ### `_manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -408,7 +408,7 @@
 
 ### `_payFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L748)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L748)</sub>
 
 ??? example "Details"
 
@@ -426,7 +426,7 @@
 
 ### `_processPayment`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L719)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L719)</sub>
 
 ??? example "Details"
 
@@ -444,7 +444,7 @@
 
 ### `_synth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L121)</sub>
 
 ??? example "Details"
 
@@ -462,7 +462,7 @@
 
 ### `_synthsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -480,7 +480,7 @@
 
 ### `_systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -498,7 +498,7 @@
 
 ### `accrueInterest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L683)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L683)</sub>
 
 ??? example "Details"
 
@@ -516,11 +516,11 @@
 
     **Requires**
 
-    * [require(..., "Rates are invalid")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L696)
+    * [require(..., "Rates are invalid")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L696)
 
 ### `closeByLiquidationInternal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L420)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L420)</sub>
 
 ??? example "Details"
 
@@ -538,7 +538,7 @@
 
     **Requires**
 
-    * [require(..., "Waiting or settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L435)
+    * [require(..., "Waiting or settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L435)
 
     **Emits**
 
@@ -546,7 +546,7 @@
 
 ### `closeInternal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L365)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L365)</sub>
 
 ??? example "Details"
 
@@ -564,7 +564,7 @@
 
     **Requires**
 
-    * [require(..., "Waiting secs or settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L385)
+    * [require(..., "Waiting secs or settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L385)
 
     **Modifiers**
 
@@ -576,7 +576,7 @@
 
 ### `depositInternal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L464)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L464)</sub>
 
 ??? example "Details"
 
@@ -594,7 +594,7 @@
 
     **Requires**
 
-    * [require(..., "Deposit must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L473)
+    * [require(..., "Deposit must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L473)
 
     **Modifiers**
 
@@ -606,7 +606,7 @@
 
 ### `drawInternal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L631)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L631)</sub>
 
 ??? example "Details"
 
@@ -624,7 +624,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot draw this much")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L648)
+    * [require(..., "Cannot draw this much")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L648)
 
     **Modifiers**
 
@@ -636,7 +636,7 @@
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L228)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L228)</sub>
 
 ??? example "Details"
 
@@ -654,7 +654,7 @@
 
 ### `liquidateInternal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L529)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L529)</sub>
 
 ??? example "Details"
 
@@ -672,11 +672,11 @@
 
     **Requires**
 
-    * [require(..., "Payment must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L538)
+    * [require(..., "Payment must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L538)
 
-    * [require(..., "Cratio above liquidation ratio")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L553)
+    * [require(..., "Cratio above liquidation ratio")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L553)
 
-    * [require(..., "Waiting or settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L580)
+    * [require(..., "Waiting or settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L580)
 
     **Modifiers**
 
@@ -688,7 +688,7 @@
 
 ### `openInternal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L286)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L286)</sub>
 
 ??? example "Details"
 
@@ -706,19 +706,19 @@
 
     **Requires**
 
-    * [require(..., "Opening is disabled")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L295)
+    * [require(..., "Opening is disabled")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L295)
 
-    * [require(..., "Not allowed to issue this synth")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L298)
+    * [require(..., "Not allowed to issue this synth")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L298)
 
-    * [require(..., "Currency rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L301)
+    * [require(..., "Currency rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L301)
 
-    * [require(..., "Not enough collateral to open")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L304)
+    * [require(..., "Not enough collateral to open")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L304)
 
-    * [require(..., "Max loans exceeded")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L307)
+    * [require(..., "Max loans exceeded")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L307)
 
-    * [require(..., "Debt limit or invalid rate")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L312)
+    * [require(..., "Debt limit or invalid rate")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L312)
 
-    * [require(..., "Exceeds max borrowing power")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L315)
+    * [require(..., "Exceeds max borrowing power")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L315)
 
     **Modifiers**
 
@@ -730,7 +730,7 @@
 
 ### `repayInternal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L590)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L590)</sub>
 
 ??? example "Details"
 
@@ -748,9 +748,9 @@
 
     **Requires**
 
-    * [require(..., "Payment must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L600)
+    * [require(..., "Payment must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L600)
 
-    * [require(..., "Waiting or settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L621)
+    * [require(..., "Waiting or settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L621)
 
     **Modifiers**
 
@@ -762,7 +762,7 @@
 
 ### `withdrawInternal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L497)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L497)</sub>
 
 ??? example "Details"
 
@@ -780,7 +780,7 @@
 
     **Requires**
 
-    * [require(..., "Cratio too low")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L517)
+    * [require(..., "Cratio too low")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L517)
 
     **Modifiers**
 
@@ -794,7 +794,7 @@
 
 ### `areSynthsAndCurrenciesSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -812,7 +812,7 @@
 
 ### `collateralRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L147)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -830,7 +830,7 @@
 
 ### `collateralRedeemed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L182)</sub>
 
 ??? example "Details"
 
@@ -848,7 +848,7 @@
 
 ### `liquidationAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L167)</sub>
 
 ??? example "Details"
 
@@ -866,7 +866,7 @@
 
 ### `maxLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L154)</sub>
 
 ??? example "Details"
 
@@ -884,7 +884,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -904,96 +904,96 @@
 
 ### `rateIsValid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L760)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L760)</sub>
 
 ## Events
 
 ### `CanOpenLoansUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L777)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L777)</sub>
 
 **Signature**: `CanOpenLoansUpdated(bool canOpenLoans)`
 
 ### `CollateralDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L782)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L782)</sub>
 
 **Signature**: `CollateralDeposited(address account, uint256 id, uint256 amountDeposited, uint256 collateralAfter)`
 
 ### `CollateralWithdrawn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L783)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L783)</sub>
 
 **Signature**: `CollateralWithdrawn(address account, uint256 id, uint256 amountWithdrawn, uint256 collateralAfter)`
 
 ### `InteractionDelayUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L775)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L775)</sub>
 
 **Signature**: `InteractionDelayUpdated(uint256 interactionDelay)`
 
 ### `IssueFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L773)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L773)</sub>
 
 **Signature**: `IssueFeeRateUpdated(uint256 issueFeeRate)`
 
 ### `LoanClosed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L781)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L781)</sub>
 
 **Signature**: `LoanClosed(address account, uint256 id)`
 
 ### `LoanClosedByLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L793)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L793)</sub>
 
 **Signature**: `LoanClosedByLiquidation(address account, uint256 id, address liquidator, uint256 amountLiquidated, uint256 collateralLiquidated)`
 
 ### `LoanCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L780)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L780)</sub>
 
 **Signature**: `LoanCreated(address account, uint256 id, uint256 amount, uint256 collateral, bytes32 currency, uint256 issuanceFee)`
 
 ### `LoanDrawnDown`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L785)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L785)</sub>
 
 **Signature**: `LoanDrawnDown(address account, uint256 id, uint256 amount)`
 
 ### `LoanPartiallyLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L786)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L786)</sub>
 
 **Signature**: `LoanPartiallyLiquidated(address account, uint256 id, address liquidator, uint256 amountLiquidated, uint256 collateralLiquidated)`
 
 ### `LoanRepaymentMade`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L784)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L784)</sub>
 
 **Signature**: `LoanRepaymentMade(address account, address repayer, uint256 id, uint256 amountRepaid, uint256 amountAfter)`
 
 ### `ManagerUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L776)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L776)</sub>
 
 **Signature**: `ManagerUpdated(address manager)`
 
 ### `MaxLoansPerAccountUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L774)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L774)</sub>
 
 **Signature**: `MaxLoansPerAccountUpdated(uint256 maxLoansPerAccount)`
 
 ### `MinCollateralUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L772)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L772)</sub>
 
 **Signature**: `MinCollateralUpdated(uint256 minCollateral)`
 
 ### `MinCratioRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/Collateral.sol#L771)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/Collateral.sol#L771)</sub>
 
 **Signature**: `MinCratioRatioUpdated(uint256 minCratio)`

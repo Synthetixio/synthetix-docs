@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ImportableRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/ImportableRewardEscrowV2.sol)
+**Source:** [contracts/ImportableRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/ImportableRewardEscrowV2.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/ImportableRewardEscrowV2.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/ImportableRewardEscrowV2.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `importVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/ImportableRewardEscrowV2.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/ImportableRewardEscrowV2.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
     **Requires**
 
-    * [require(..., "Insufficient balance in the contract to provide for escrowed balance")](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/ImportableRewardEscrowV2.sol#L39)
+    * [require(..., "Insufficient balance in the contract to provide for escrowed balance")](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/ImportableRewardEscrowV2.sol#L39)
 
     **Modifiers**
 
@@ -56,7 +56,7 @@
 
 ### `_importVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/ImportableRewardEscrowV2.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/ImportableRewardEscrowV2.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `synthetixBridgeToBase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/ImportableRewardEscrowV2.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/ImportableRewardEscrowV2.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -94,7 +94,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/ImportableRewardEscrowV2.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/ImportableRewardEscrowV2.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -114,4 +114,4 @@
 
 ### `onlySynthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.2/contracts/ImportableRewardEscrowV2.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.3/contracts/ImportableRewardEscrowV2.sol#L63)</sub>
