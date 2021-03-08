@@ -7,12 +7,37 @@ env_defaults:
 
 version: 2.1
 jobs:
+  prepare:
+    docker: *ref_0
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - 'v1.2-dependencies-{{ checksum "package-lock.json" }}'
+            - v1.2-dependencies-
+      - run: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: 'v1.2-dependencies-{{ checksum "package-lock.json" }}'
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+  lint:
+    docker: *ref_0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: npm run lint
+
   build:
     docker: *ref_0
     steps:
       - checkout
-      - run: npm install
-      - run: npm run lint
+      - attach_workspace:
+          at: .
       - run:
           name: 'Ensure no changes after running a build'
           command: npm run build && git diff --exit-code
@@ -21,6 +46,16 @@ workflows:
   version: 2
   verify:
     jobs:
+      - prepare:
+          context:
+            - Docker Auth
+      - lint:
+          requires:
+            - prepare
+          context:
+            - Docker Auth
       - build:
+          requires:
+            - prepare
           context:
             - Docker Auth
