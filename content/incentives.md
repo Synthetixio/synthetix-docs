@@ -20,7 +20,9 @@ In addition to the two primary forms of incentives, Synthetix also runs various 
 
 Amount: `48,000 SNX` per week
 
-Duration: Mar 13, 2020 onwards
+Supplied by: SNX inflationary supply
+
+Duration: Mar 13, 2020 — ongoing
 
 Pool: [`Curve sBTC/renBTC/wBTC`](https://pools.fyi/#/returns/0xa5407eae9ba41422680e2e00537571bcc53efbfd)
 
@@ -28,13 +30,15 @@ Staking Contract: [`StakingRewardssUSDCurve`](https://contracts.synthetix.io/Sta
 
 Source: [`Curvepool` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
 
-Aim: This incentive aims to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with stablecoins.
+Aim: This incentive aims to provide an on-ramp into trading on [Kwenta](https://kwenta.io) for traders with stablecoins.
 
 ### iETH holders
 
 Amount: `16,000 SNX` per week
 
-Duration: Apr 24, 2020 - ongoing
+Supplied by: SNX inflationary supply
+
+Duration: Apr 24, 2020 — ongoing
 
 Pool: None (`iETH` is staked directly)
 
@@ -46,11 +50,63 @@ Source: [`iETHRewards`](https://github.com/Synthetixio/synthetix/blob/master/con
 
 Aim: This incentive aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH.
 
-### iBTC holders (trial)
+### Shorting rewards
+
+Amount: `8000 SNX` per week for each asset (sBTC and sETH)
+
+Supplied by: synthetixDAO
+
+Duration: Feb 5, 2021 — Apr 20, 2021
+
+Pool: None
+
+Staking Contract: [`ShortingRewardsETH`](https://etherscan.io/address/0x12DC1273915A16ab8BD47bA7866B240c253e4c12#code) & [`ShortingRewardsBTC`](https://etherscan.io/address/0xCed4055b47cfD0421f3727a35F69CE659c8bAF7a#code)
+
+Source: [`ShortingRewards`)](https://github.com/synthetixio/synthetix/blob/develop/contracts/ShortingRewards.sol)
+
+Aim: This incentive aims to balance out the global debt pool, which has recently been heavily skewed toward sBTC and sETH, and in the context of a bull market this skew represents a significant risk to SNX stakers.
+
+### sTSLA and sUSD liquidity pool on Balancer
+
+Amount: `4000 SNX` per week for 5 weeks
+
+Supplied by: synthetixDAO
+
+Duration: Feb 12, 2021 — Mar 19, 2021
+
+Pool: [`Balancer sTSLA/sUSD`](https://pools.balancer.exchange/#/pool/0x055db9aff4311788264798356bbf3a733ae181c6/)
+
+Staking Contract: [`StakingRewardssTSLABalancer`](https://etherscan.io/address/0xF0de877F2F9E7A60767f9BA662F10751566AD01c)
+
+Source: [`StakingRewards`](https://github.com/dhedge/synthetix/blob/develop/contracts/StakingRewards.sol)
+
+Aim: This incentive aims to provide a secondary market for sTSLA tokens outside of traditional market hours, as during these periods one cannot trade into sTSLA using the Synthetix smart contracts.
+
+### sUSD and DHT (dHedge) liquidity pool on Uniswap
+
+Amount: `3000 SNX` per week for 10 weeks
+
+Supplied by: synthetixDAO
+
+Duration: Mar 11, 2021 — May 20, 2021
+
+Pool: [`Uniswap sUSD/DHT`](https://etherscan.io/address/0x303ffcd201831db88422b76f633458e94e05c33e)
+
+Staking Contract: [`StakingDualRewards`](https://etherscan.io/address/0xb59e8d8ad40d06571dc0cf9936e727846dfae93f#code)
+
+Source: [`StakingDualRewards`)](https://github.com/dhedge/synthetix/blob/develop/contracts/StakingDualRewards.sol)
+
+Aim: This incentive aims to provide liquidity for DHT, the governance token of dHedge protocol, which supports Synthetix through generating trading volume.
+
+## Deprecated incentives
+
+### iBTC holders
 
 Amount: `16,000 SNX` per week
 
-Duration: Oct 27, 2020 - Dec 23, 2020
+Supplied by: synthetixDAO
+
+Duration: Oct 27, 2020 - Mar 9, 2021
 
 Pool: None (`iBTC` is staked directly)
 
@@ -60,11 +116,11 @@ Source: [`iBTCRewards`](https://github.com/Synthetixio/synthetix/blob/master/con
 
 Aim: This trial aims to help reduce the impact of iBTC holdings on the SNX stakers' debt pool by incentivising people to hold iBTC.
 
-## Deprecated incentives
-
 ### sETH/ETH liquidity on Uniswap v1
 
 Amount: Initially `5%` of the weekly inflationary SNX, then `64,000 SNX` per week, then progressively less.
+
+Supplied by: SNX inflationary supply
 
 Duration: Jul 12, 2019 - Jun 26, 2020
 
@@ -76,9 +132,11 @@ Source: [`Unipool`](https://github.com/Synthetixio/Unipool/blob/master/contracts
 
 Aim: This incentive aimed to provide an on-ramp into trading on [Synthetix.Exchange](https://synthetix.exchange) for traders with ETH. sETH was chosen over sUSD because these two assets should always trade at parity, and shifts in the price of ETH against USD do not require arbitrage.
 
-### sBTC/renBTC-wBTC liquidity on Curve (trial)
+### sBTC/renBTC-wBTC liquidity on Curve
 
 Amount: `10,000 SNX` and `25,000 REN` per week, distributed via Balancer `BPT` tokens in [a shared Balancer pool](http://contracts.synthetix.io/BalancerSNXREN)
+
+Supplied by: synthetixDAO
 
 Duration: Jun 19, 2020 - Aug 28, 2020
 
@@ -92,25 +150,11 @@ Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synth
 
 Aim: This trial is providing the `SNX` component of a `SNX/REN` liquidity pool (along with Ren Protocol) to help generate rewards for the `sBTC/renBTC/WBTC` liquidity providers on Curve.
 
-### iBTC holders (trial)
-
-Amount: `16,000 SNX` per week
-
-Duration: Jul 24, 2020 - Sep 18, 2020
-
-Pool: None (`iBTC` is staked directly)
-
-Staking Contract: [`StakingRewardsiBTC`](https://contracts.synthetix.io/StakingRewardsiBTC)
-
-Source: [`iBTCRewards` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
-
-> Note: the source file above was [modified on L13](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol#L13) before deployment to use the [iBTC proxy address](https://contracts.synthetix.io/ProxyiBTC)
-
-Aim: This trial aims to help reduce the impact of sETH holdings on the SNX stakers' debt pool by incentivising people to hold iETH.
-
-### sXAU/USDC liquidity on Uniswap v2 (trial)
+### sXAU/USDC liquidity on Uniswap v2
 
 Amount: `8,000 SNX` per week
+
+Supplied by: synthetixDAO
 
 Duration: May 30, 2020 - Jun 27, 2020
 
@@ -124,9 +168,11 @@ Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synth
 
 Aim: This trial aimed to test demand for sXAU (synthetic gold) and trial Uniswap v2, which was recently released.
 
-### SNX/USDC liquidity on Balancer (trial)
+### SNX/USDC liquidity on Balancer
 
 Amount: `8,000 SNX` per week
+
+Supplied by: synthetixDAO
 
 Duration: Jun 5, 2020 - Jul 3, 2020
 
