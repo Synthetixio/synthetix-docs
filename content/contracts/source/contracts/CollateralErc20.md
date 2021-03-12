@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/CollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol)
+**Source:** [contracts/CollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol)
 
 ## Variables
 
 ### `underlyingContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L17)</sub>
 
 **Type:** `address`
 
 ### `underlyingContractDecimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L19)</sub>
 
 **Type:** `uint256`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -78,11 +78,11 @@
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L67)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L67)
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -136,11 +136,11 @@
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L42)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L42)
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -158,7 +158,7 @@
 
 ### `scaleDownCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@
 
 ### `scaleUpCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -194,7 +194,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/CollateralErc20.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/CollateralErc20.sol#L77)</sub>
 
 ??? example "Details"
 

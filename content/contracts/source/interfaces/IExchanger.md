@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol)
+**Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol)
 
 ## External Functions
 
 ### `calculateAmountAfterSettlement`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `feeRateForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `getAmountsForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `hasWaitingPeriodOrSettlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `isSynthRateInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `maxSecsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `setLastExchangeRateForSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `settlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `suspendSynthWithInvalidRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L109)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IExchanger.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IExchanger.sol#L51)</sub>
 
 ??? example "Details"
 

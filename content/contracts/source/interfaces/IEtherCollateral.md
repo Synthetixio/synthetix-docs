@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IEtherCollateral.sol)
+**Source:** [contracts/interfaces/IEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IEtherCollateral.sol)
 
 ## External Functions
 
 ### `closeLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IEtherCollateral.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IEtherCollateral.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `liquidateUnclosedLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IEtherCollateral.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IEtherCollateral.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `openLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IEtherCollateral.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IEtherCollateral.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IEtherCollateral.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IEtherCollateral.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `totalLoansCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IEtherCollateral.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IEtherCollateral.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `totalOpenLoanCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/interfaces/IEtherCollateral.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/IEtherCollateral.sol#L11)</sub>
 
 ??? example "Details"
 
