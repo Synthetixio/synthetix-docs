@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixStateWithLimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol)
+**Source:** [contracts/SynthetixStateWithLimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol)
 
 ## Variables
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L13)</sub>
 
 **Type:** `contract IFeePool`
 
 ### `importedDebtAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L16)</sub>
 
 **Type:** `uint256`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `importIssuerData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
     **Requires**
 
-    * [require(..., "Length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol#L40)
+    * [require(..., "Length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L40)
 
     **Modifiers**
 
@@ -70,7 +70,7 @@
 
 ### `setFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `_addToDebtRegister`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -118,6 +118,6 @@
 
 ### `FeePoolUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/SynthetixStateWithLimitedSetup.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L99)</sub>
 
 **Signature**: `FeePoolUpdated(address newFeePool)`

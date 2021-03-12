@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol)
+**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol)
 
 ## Architecture
 
@@ -31,7 +31,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -49,97 +49,9 @@
 
 ## Restricted Functions
 
-### `emitExchangeRebate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L275)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `emitExchangeRebate(address account, bytes32 currencyKey, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyExchanger](#onlyexchanger)
-
-### `emitExchangeReclaim`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L264)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `emitExchangeReclaim(address account, bytes32 currencyKey, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyExchanger](#onlyexchanger)
-
-### `emitExchangeTracking`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L253)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `emitExchangeTracking(bytes32 trackingCode, bytes32 toCurrencyKey, uint256 toAmount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyExchanger](#onlyexchanger)
-
-### `emitSynthExchange`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L232)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `emitSynthExchange(address account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyExchanger](#onlyexchanger)
-
 ### `migrateEscrowBalanceToRewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L210)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -163,7 +75,7 @@
 
 ### `emitAccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L286)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L160)</sub>
 
 ??? example "Details"
 
@@ -181,7 +93,7 @@
 
 ### `rewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -199,7 +111,7 @@
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -217,7 +129,7 @@
 
 ### `supplySchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -235,109 +147,9 @@
 
 ## External Functions
 
-### `exchange`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L54)</sub>
-
-Exchanges one synth flavour for an equivalent value of another at current [exchange rates](ExchangeRates.md) and transfers the converted quantity to a destination address. An [exchange fee](FeePool.md#exchangefeerate) is charged on the way.
-
-See [`Exchanger`](Exchanger.md#exchange) for further details.
-
-??? example "Details"
-
-    **Signature**
-
-    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256 amountReceived)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [exchangeActive](#exchangeactive)
-
-    * [optionalProxy](#optionalproxy)
-
-### `exchangeOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L62)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256 amountReceived)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [exchangeActive](#exchangeactive)
-
-    * [optionalProxy](#optionalproxy)
-
-### `exchangeOnBehalfWithTracking`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L97)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeOnBehalfWithTracking(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address originator, bytes32 trackingCode) returns (uint256 amountReceived)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [exchangeActive](#exchangeactive)
-
-    * [optionalProxy](#optionalproxy)
-
-### `exchangeWithTracking`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L78)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeWithTracking(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address originator, bytes32 trackingCode) returns (uint256 amountReceived)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [exchangeActive](#exchangeactive)
-
-    * [optionalProxy](#optionalproxy)
-
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -361,7 +173,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L188)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -385,7 +197,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L88)</sub>
 
 This function is responsible for creating the inflationary SNX supply. It is a public function, so any address can ensure new tokens are released on schedule. When a new quantity is minted, the calling address is rewarded with a small incentive of SNX tokens, defined by [`SupplySchedule.minterReward`](SupplySchedule.md#minterreward).
 
@@ -409,9 +221,9 @@ This function always returns true if the transaction did not revert.
 
     **Requires**
 
-    * [require(..., "RewardsDistribution not set")](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L152)
+    * [require(..., "RewardsDistribution not set")](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L89)
 
-    * [require(..., "No supply is mintable")](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L158)
+    * [require(..., "No supply is mintable")](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L95)
 
     **Modifiers**
 
@@ -419,7 +231,7 @@ This function always returns true if the transaction did not revert.
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -437,7 +249,7 @@ This function always returns true if the transaction did not revert.
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L76)</sub>
 
 Settles any amounts oustanding for previous exchanges into the given synth.
 
@@ -461,66 +273,10 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
     * [optionalProxy](#optionalproxy)
 
-## Modifiers
-
-### `exchangeActive`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L313)</sub>
-
-**Signature**: `exchangeActive(bytes32 src, bytes32 dest)`
-
-### `onlyExchanger`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L304)</sub>
-
 ## Events
 
 ### `AccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L283)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.0-alpha/contracts/Synthetix.sol#L157)</sub>
 
 **Signature**: `AccountLiquidated(address account, uint256 snxRedeemed, uint256 amountLiquidated, address liquidator)`
-
-### `ExchangeRebate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L272)</sub>
-
-!!! tip "Fee Rebates"
-
-    See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
-
-Records that an `amount` of the synth denoted by `currencyKey` has been rebated (i.e. issued) by the system to the `account`.
-
-The amount is the total net amount from all unsettled exchanges into the given synth
-
-**Signature**: `ExchangeRebate(address account, bytes32 currencyKey, uint256 amount)`
-
-### `ExchangeReclaim`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L261)</sub>
-
-!!! tip "Fee Reclaims"
-
-    See [SIP-37](https://sips.synthetix.io/sips/sip-37) on Fee Reclamation & Rebates.
-
-Records that an `amount` of the synth denoted by `currencyKey` has been reclaimed (i.e. burned) from the `account` to the system.
-
-The amount is the total net amount from all unsettled exchanges into the given synth
-
-**Signature**: `ExchangeReclaim(address account, bytes32 currencyKey, uint256 amount)`
-
-### `ExchangeTracking`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L250)</sub>
-
-**Signature**: `ExchangeTracking(bytes32 trackingCode, bytes32 toCurrencyKey, uint256 toAmount)`
-
-### `SynthExchange`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.39.4/contracts/Synthetix.sol#L220)</sub>
-
-Records that an [exchange](#exchange) between two flavours of synths occurred.
-
-This event is emitted from the Synthetix [proxy](Proxy.md#_emit) with the `emitSynthExchange` function.
-
-**Signature**: `SynthExchange(address account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`

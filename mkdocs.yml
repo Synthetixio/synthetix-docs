@@ -58,6 +58,7 @@ nav:
           - Source:
               Contracts:
                 - AddressResolver: contracts/source/contracts/AddressResolver.md
+                - BaseDebtCache: contracts/source/contracts/BaseDebtCache.md
                 - BaseRewardEscrowV2: contracts/source/contracts/BaseRewardEscrowV2.md
                 - BaseSynthetix: contracts/source/contracts/BaseSynthetix.md
                 - BinaryOption: contracts/source/contracts/BinaryOption.md

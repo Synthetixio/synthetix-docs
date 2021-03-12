@@ -173,13 +173,13 @@
 | Curve DAO Token         | CRV    | 254.94000 | 5%             |
 | Kyber Network           | KNC    | 334.06000 | 5%             |
 | Ren                     | REN    | 680.59000 | 5%             |
-| SUSHI                   | SUSHI  | 43.11100  | 5%             |
+| SushiSwap               | SUSHI  | 43.11100  | 5%             |
 | UMA                     | UMA    | 26.06000  | 5%             |
 | yearn.finance           | YFI    | 0.01604   | 5%             |
-| 1INCH                   | 1INCH  | 71.83700  | 2.5%           |
+| 1inch                   | 1INCH  | 71.83700  | 2.5%           |
 | Bancor                  | BNT    | 90.66100  | 2.5%           |
 
-> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.55 of undefined (Compound), 0.54 of undefined (Maker), 4.72 of undefined (Aave), 26.06 of undefined (UMA), 87.2 of undefined (Synthetix Network Token), 680.59 of undefined (Ren), 100.71 of undefined (Uniswap), 334.06 of undefined (Kyber Network), 254.94 of undefined (Curve DAO Token), 43.111 of undefined, 0.01604 of undefined (yearn.finance), 14.84 of undefined (Balancer), 90.661 of undefined (Bancor), 71.837 of undefined.
+> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.55 of undefined (Compound), 0.54 of undefined (Maker), 4.72 of undefined (Aave), 26.06 of undefined (UMA), 87.2 of undefined (Synthetix Network Token), 680.59 of undefined (Ren), 100.71 of undefined (Uniswap), 334.06 of undefined (Kyber Network), 254.94 of undefined (Curve DAO Token), 43.111 of undefined (SushiSwap), 0.01604 of undefined (yearn.finance), 14.84 of undefined (Balancer), 90.661 of undefined (Bancor), 71.837 of undefined (1inch).
 
 ## EOS (sEOS)
 
