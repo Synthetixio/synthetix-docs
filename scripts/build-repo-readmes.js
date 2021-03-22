@@ -9,7 +9,7 @@ console.log('Building library pages');
 
 (async () => {
 	const readmes = await Promise.all(
-		['synthetix', 'synthetix-data', 'synthetix-js'].map(repo =>
+		['synthetix', 'synthetix-data', 'synthetix-js', 'synthetix-cli'].map(repo =>
 			axios
 				.get(`https://raw.githubusercontent.com/Synthetixio/${repo}/master/README.md`)
 				.then(({ data }) => [
