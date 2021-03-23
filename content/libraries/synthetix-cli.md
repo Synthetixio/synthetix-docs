@@ -12,6 +12,16 @@ Clone repo and install npm.
 
 ## Usage
 
+The interactive UI is the most useful:
+
+`npm start`
+
+![cli](https://user-images.githubusercontent.com/799038/112042938-b5734c00-8b0d-11eb-8f5b-5024d4cbdfac.gif)
+
+> Use `--help` for more features (including a testnet, the OVM, or adding private key if you want to transact)
+
+## Other scripts
+
 `node src/commands/<a-command.js> --help`
 
 ## Linking with a local Synthetix repo
