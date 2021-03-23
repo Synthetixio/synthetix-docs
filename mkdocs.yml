@@ -50,6 +50,7 @@ nav:
           - synthetix: libraries/synthetix.md
           - synthetix-js: libraries/synthetix-js.md
           - synthetix-data: libraries/synthetix-data.md
+          - synthetix-cli: libraries/synthetix-cli.md
       - Smart Contracts:
           - Architecture: contracts/index.md
           - Automated Testing: contracts/testing.md
