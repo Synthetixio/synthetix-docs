@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
 
 ## External Functions
 
 ### `completeWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `depositAndMigrateEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `initiateDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `initiateEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `initiateRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L14)</sub>
 
 ??? example "Details"
 

@@ -2,49 +2,49 @@
 
 ## Description
 
-**Source:** [contracts/VirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol)
+**Source:** [contracts/VirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol)
 
 ## Variables
 
 ### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L37)</sub>
 
 **Type:** `bytes32`
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L29)</sub>
 
 **Type:** `uint8`
 
 ### `initialSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L32)</sub>
 
 **Type:** `uint256`
 
 ### `resolver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L25)</sub>
 
 **Type:** `contract IAddressResolver`
 
 ### `settled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L27)</sub>
 
 **Type:** `bool`
 
 ### `settledAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L35)</sub>
 
 **Type:** `uint256`
 
 ### `synth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L24)</sub>
 
 **Type:** `contract IERC20`
 
@@ -52,7 +52,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `balanceUnderlying`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `calcRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -108,7 +108,7 @@
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `secsLeft`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@
 
 ### `settleSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -168,7 +168,7 @@
 
 ### `balanceOfUnderlying`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -186,7 +186,7 @@
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -204,7 +204,7 @@
 
 ### `rate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -222,7 +222,7 @@
 
 ### `readyToSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -240,7 +240,7 @@
 
 ### `secsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -258,7 +258,7 @@
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -276,7 +276,7 @@
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -296,6 +296,6 @@
 
 ### `Settled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.40.1-alpha/contracts/VirtualSynth.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/VirtualSynth.sol#L150)</sub>
 
 **Signature**: `Settled(uint256 totalSupply, uint256 amountAfterSettled)`
