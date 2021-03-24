@@ -887,6 +887,21 @@
 
 > Tracks the price of Silver Ounce (XAG) through price feeds supplied by an oracle.
 
+## South Korean Won (sKRW)
+
+**Contract:** [0x269895a3dF4D73b077Fc823dD6dA1B95f72Aaf9B](https://etherscan.io/token/0x269895a3dF4D73b077Fc823dD6dA1B95f72Aaf9B)
+
+**Decimals:** 18
+
+**Price:** [sKRW on synthetix.exchange](https://synthetix.exchange/#/synths/sKRW)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/krw-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x01435677FB11763550905594A16B645847C1d0F3)
+
+> Tracks the price of South Korean Won (KRW) through price feeds supplied by an oracle.
+
 ## Swiss Franc (sCHF)
 
 **Contract:** [0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d](https://etherscan.io/token/0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d)

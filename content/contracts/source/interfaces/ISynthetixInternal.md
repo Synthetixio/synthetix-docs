@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol)
 
 ## External Functions
 
 ### `emitExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/Exchanger.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `emitExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/Exchanger.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `emitExchangeTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/Exchanger.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `emitSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0-alpha/contracts/Exchanger.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L37)</sub>
 
 ??? example "Details"
 
