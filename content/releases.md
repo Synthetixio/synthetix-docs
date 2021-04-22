@@ -2,6 +2,21 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alnilam (v2.42.0)
+
+**Published**: Apr 22, 2021
+
+**Codebase**: [v2.42.0](https://github.com/Synthetixio/synthetix/tree/v2.42.0)
+
+> https://blog.synthetix.io/the-alnilam-release/
+
+- [SIP 114](https://sips.synthetix.io/sips/sip-114): Adding FAANG Synths
+- [SIP 107](https://sips.synthetix.io/sips/sip-107): Add CRV crypto synth
+- [SIP 126](https://sips.synthetix.io/sips/sip-126): New ERC-20 Synths
+- [SIP 127](https://sips.synthetix.io/sips/sip-127): Minimal Proxies for Virtual Synths
+
+---
+
 # Miaplacidus (v2.41.0)
 
 **Published**: Mar 24, 2021
@@ -266,23 +281,6 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SIP-40](https://sips.synthetix.io/sips/sip-40): Frontminting prevention ([read IOSIRO's audit report here](https://iosiro.com/audits/synthetix-pr-435-smart-contract-audit))
 - [SIP-41](https://sips.synthetix.io/sips/sip-41): ProtocolDAO phase zero
 - [SIP-42](https://sips.synthetix.io/sips/sip-42): Gas optimisations
-
----
-
-# Rigil (v2.12.2)
-
-**Published**: Nov 8, 2019
-
-**Codebase**: [v2.12.2](https://github.com/Synthetixio/synthetix/tree/v2.12.2)
-
-> https://blog.synthetix.io/the-rigil-release/
-
-- [SIP-21](https://sips.synthetix.io/sips/sip-21): This will double the exchange fee when changing between an s-Synth and an i-Synth, or vice versa, e.g. sTRX <> iBTC; or iTRX <> sBTC. The only Synth excluded is sUSD.
-  There is already a leveraged benefit on the inverse Synths and currently being able to trade short <> long in a volatile market is a continuous advantage to front runners. The normal exchange fee rate is 30 bips (0.3%). However, it is currently 50 bips, which would make the swing trade 100 bips. When it is restored to 30 bips it would then only be 60 bips on a swing trade.
-- [SIP-25](https://sips.synthetix.io/sips/sip-25): This SIP will decouple the gas limiter from the oracle. Currently, any invocation of the setGasPriceLimit() function has to be mined before a price update can be mined on-chain. This creates an unnecessary delay in serving timely oracle updates. This proposal is to change this access to setting the gasPriceLimit to a separate address, controlled by a setter only callable by the owner.
-- [SIP-26](https://sips.synthetix.io/sips/sip-26): This is a bug fix that would reduce the gas estimation of trading SNX via Uniswap down from 900K to 100K.
-- [SCCP-5](https://sips.synthetix.io/sccp/sccp-5): This change will divert 5% of the weekly SNX inflation into the arb pool — an increase from 2%. This is intended to provide a tighter sETH peg.
-- [SCCP-6](https://sips.synthetix.io/sccp/sccp-6): This SCCP will reduce the C-Ratio buffer to 1% from 10%. The buffer was originally implemented as a protection mechanism for slashing of fees, as fee slashing is no longer implemented there is no need for such a high buffer, as it only needs to protect from minor price fluctuations. The previous 10% buffer meant a C-Ratio of ~682% was required to claim fees, while the new 1% buffer means a C-Ratio of ~742.6% is required.
 
 ---
 

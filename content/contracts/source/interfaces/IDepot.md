@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDepot.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol)
+**Source:** [contracts/interfaces/IDepot.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol)
 
 ## External Functions
 
 ### `depositSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `exchangeEtherForSNX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `exchangeEtherForSNXAtRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `exchangeEtherForSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `exchangeEtherForSynthsAtRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `exchangeSynthsForSNX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `fundsWallet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `maxEthPurchase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `minimumDepositAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `synthetixReceivedForEther`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `synthetixReceivedForSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `synthsReceivedForEther`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `totalSellableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `withdrawMyDepositedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `withdrawSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IDepot.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IDepot.sol#L36)</sub>
 
 ??? example "Details"
 

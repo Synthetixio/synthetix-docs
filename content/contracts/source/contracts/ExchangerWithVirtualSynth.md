@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangerWithVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ExchangerWithVirtualSynth.sol)
+**Source:** [contracts/ExchangerWithVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/ExchangerWithVirtualSynth.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ExchangerWithVirtualSynth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/ExchangerWithVirtualSynth.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `_createVirtualSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ExchangerWithVirtualSynth.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/ExchangerWithVirtualSynth.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot virtualize this synth")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ExchangerWithVirtualSynth.sol#L39)
+    * [require(..., "Cannot virtualize this synth")](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/ExchangerWithVirtualSynth.sol#L39)
 
     **Emits**
 
@@ -54,7 +54,7 @@
 
 ### `_virtualSynthMastercopy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ExchangerWithVirtualSynth.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/ExchangerWithVirtualSynth.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ExchangerWithVirtualSynth.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/ExchangerWithVirtualSynth.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -94,6 +94,6 @@
 
 ### `VirtualSynthCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ExchangerWithVirtualSynth.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/ExchangerWithVirtualSynth.sol#L48)</sub>
 
 **Signature**: `VirtualSynthCreated(address synth, address recipient, address vSynth, bytes32 currencyKey, uint256 amount)`

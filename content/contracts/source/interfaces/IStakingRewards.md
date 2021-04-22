@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IStakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol)
+**Source:** [contracts/interfaces/IStakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol)
 
 ## External Functions
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `exit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `getRewardForDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `lastTimeRewardApplicable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `rewardPerToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `stake`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IStakingRewards.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/interfaces/IStakingRewards.sol#L22)</sub>
 
 ??? example "Details"
 

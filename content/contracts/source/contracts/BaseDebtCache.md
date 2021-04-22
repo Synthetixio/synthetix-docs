@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/BaseDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol)
+**Source:** [contracts/BaseDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `_cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `_cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L180)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L180)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `_currentDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `_currentSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L163)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `_issuedSynthValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `_onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L259)</sub>
 
 ??? example "Details"
 
@@ -136,11 +136,11 @@
 
     **Requires**
 
-    * [require(..., "Sender is not Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L260)
+    * [require(..., "Sender is not Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L260)
 
 ### `_onlyIssuerOrExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L268)</sub>
 
 ??? example "Details"
 
@@ -158,11 +158,11 @@
 
     **Requires**
 
-    * [require(..., "Sender is not Issuer or Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L269)
+    * [require(..., "Sender is not Issuer or Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L269)
 
 ### `_requireSystemActiveIfNotOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L248)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -198,7 +198,7 @@
 
 ### `etherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -216,7 +216,7 @@
 
 ### `etherCollateralsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -234,7 +234,7 @@
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -252,7 +252,7 @@
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -270,7 +270,7 @@
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -288,7 +288,7 @@
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -308,7 +308,7 @@
 
 ### `cacheInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L215)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L215)</sub>
 
 ??? example "Details"
 
@@ -326,7 +326,7 @@
 
 ### `cacheInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -344,7 +344,7 @@
 
 ### `cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L119)</sub>
 
 ??? example "Details"
 
@@ -362,7 +362,7 @@
 
 ### `cacheTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -380,7 +380,7 @@
 
 ### `cachedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -398,7 +398,7 @@
 
 ### `cachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -416,7 +416,7 @@
 
 ### `cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -434,7 +434,7 @@
 
 ### `currentDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L211)</sub>
 
 ??? example "Details"
 
@@ -452,7 +452,7 @@
 
 ### `currentSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L172)</sub>
 
 ??? example "Details"
 
@@ -470,7 +470,7 @@
 
 ### `debtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -488,7 +488,7 @@
 
 ### `purgeCachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L242)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L242)</sub>
 
 ??? example "Details"
 
@@ -506,7 +506,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -524,7 +524,7 @@
 
 ### `takeDebtSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L244)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L244)</sub>
 
 ??? example "Details"
 
@@ -542,7 +542,7 @@
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L236)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L236)</sub>
 
 ??? example "Details"
 
@@ -560,7 +560,7 @@
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L234)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L234)</sub>
 
 ??? example "Details"
 
@@ -578,7 +578,7 @@
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L238)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L238)</sub>
 
 ??? example "Details"
 
@@ -596,7 +596,7 @@
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L240)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L240)</sub>
 
 ??? example "Details"
 
@@ -616,12 +616,12 @@
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L263)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L263)</sub>
 
 ### `onlyIssuerOrExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L272)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L272)</sub>
 
 ### `requireSystemActiveIfNotOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BaseDebtCache.sol#L254)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.1/contracts/BaseDebtCache.sol#L254)</sub>
