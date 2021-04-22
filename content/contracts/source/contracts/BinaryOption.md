@@ -17,13 +17,13 @@ claimed or exercised, the values in this contract are updated by the market.
 
     - [`BinaryOptionMarket`](BinaryOptionMarket.md): The parent contract of this binary option token.
 
-**Source:** [contracts/BinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol)
+**Source:** [contracts/BinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol)
 
 ## Variables
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L35)</sub>
 
 The ERC20 allowances of this option. `allowance[owner][spender]` is the value of options `spender` is approved to transfer on behalf of `owner`.
 
@@ -31,7 +31,7 @@ The ERC20 allowances of this option. `allowance[owner][spender]` is the value of
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L31)</sub>
 
 The ERC20 balance of this option for each account.
 
@@ -39,7 +39,7 @@ The ERC20 balance of this option for each account.
 
 ### `bidOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L28)</sub>
 
 The current bid on this option made by each address.
 
@@ -47,7 +47,7 @@ The current bid on this option made by each address.
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L24)</sub>
 
 The ERC20 number of decimals of this token. Hardcoded to 18.
 
@@ -55,7 +55,7 @@ The ERC20 number of decimals of this token. Hardcoded to 18.
 
 ### `market`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L26)</sub>
 
 The parent market of this option.
 
@@ -63,7 +63,7 @@ The parent market of this option.
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L22)</sub>
 
 The ERC20 name of this token.
 
@@ -71,7 +71,7 @@ The ERC20 name of this token.
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L23)</sub>
 
 The ERC20 symbol of this token.
 
@@ -79,7 +79,7 @@ The ERC20 symbol of this token.
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L29)</sub>
 
 The total value of bids made by all addresses.
 
@@ -87,7 +87,7 @@ The total value of bids made by all addresses.
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L32)</sub>
 
 The ERC20 total supply of this option.
 
@@ -97,7 +97,7 @@ The ERC20 total supply of this option.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L42)</sub>
 
 The constructor initialises the parent market address and sets the initial bid by the creator of the parent market
 on this option.
@@ -120,7 +120,7 @@ on this option.
 
 ### `bid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L106)</sub>
 
 Allows the parent market to increase the bid for a particular address.
 
@@ -144,7 +144,7 @@ Allows the parent market to increase the bid for a particular address.
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L119)</sub>
 
 Allows the market to convert the entire claimable balance of a given account into options.
 On invocation, the bid is set to zero, while [`claimableBalanceOf(account)`](#claimablebalanceof) tokens are issued into the account.
@@ -176,7 +176,7 @@ The `Issued` event emitted is accompanied by a `Transfer` event from the zero ad
 
 ### `exercise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L144)</sub>
 
 Allows the market to burn the entire token balance in a given account.
 The `Burned` event emitted is accompanied by a `Transfer` event to the zero address.
@@ -207,7 +207,7 @@ The `Burned` event emitted is accompanied by a `Transfer` event to the zero addr
 
 ### `expire`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L160)</sub>
 
 Allows the market to destroy this option contract.
 
@@ -231,7 +231,7 @@ Allows the market to destroy this option contract.
 
 ### `refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L112)</sub>
 
 Allows the parent market to decrease the bid for a particular address.
 The transaction is reverted if the desired refund exceeds the current bid of the account.
@@ -258,7 +258,7 @@ The transaction is reverted if the desired refund exceeds the current bid of the
 
 ### `_claimableBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L50)</sub>
 
 See [`claimableBalanceOf`](#claimablebalanceof).
 
@@ -282,11 +282,11 @@ by a few wei due to rounding errors.
 
     **Requires**
 
-    * [require(..., "supply < claimable")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L75)
+    * [require(..., "supply < claimable")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L74)
 
 ### `_requireMinimumBid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L100)</sub>
 
 Reverts the transaction if the bid provided to its argument is less than 1 cent. This minimum value ensures that
 any last-bidder attacks based on the rounding error must accumulate at least $10^{16}$ wei worth of rounding
@@ -310,11 +310,11 @@ an infeasibly-large number of accounts to perform.
 
     **Requires**
 
-    * [require(..., "Balance < $0.01")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L102)
+    * [require(..., "Balance < $0.01")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L101)
 
 ### `_totalClaimableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L83)</sub>
 
 See [`totalClaimableSupply`](#totalclaimablesupply). Takes the total deposits in the system for a similar reason to
 [`claimableBalanceOf`](#_claimablebalanceof).
@@ -335,7 +335,7 @@ See [`totalClaimableSupply`](#totalclaimablesupply). Takes the total deposits in
 
 ### `_transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L170)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L169)</sub>
 
 Implements the internal behaviour of the [`transfer`](#transfer) and [`transferFrom`](#transferfrom) functions.
 Reverts if either sender or recipient is the zero account, or if the balance in the sending account is insufficient,
@@ -357,9 +357,9 @@ or if the system is [not operating](BinaryOptionMarket.md#requireactiveandunpaus
 
     **Requires**
 
-    * [require(..., "Invalid address")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L176)
+    * [require(..., "Invalid address")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L175)
 
-    * [require(..., "Insufficient balance")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L179)
+    * [require(..., "Insufficient balance")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L178)
 
     **Emits**
 
@@ -369,7 +369,7 @@ or if the system is [not operating](BinaryOptionMarket.md#requireactiveandunpaus
 
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L204)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L203)</sub>
 
 Allows an account to approve another account to transfer tokens on its behalf.
 Reverts if the designated spender is the zero account.
@@ -390,7 +390,7 @@ Reverts if the designated spender is the zero account.
 
     **Requires**
 
-    * [require(..., "bool")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L205)
+    * [require(..., "bool")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L204)
 
     **Emits**
 
@@ -398,7 +398,7 @@ Reverts if the designated spender is the zero account.
 
 ### `claimableBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L78)</sub>
 
 Returns the quantity of options claimable by an account at the current price. If account contains the entire (nonzero)
 bid supply, then their claimable amount is the total remaining supply of options, which accounts for any slight
@@ -420,7 +420,7 @@ rounding errors.
 
 ### `totalClaimableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L93)</sub>
 
 Returns the total supply of options claimable by all bidders.
 
@@ -440,7 +440,7 @@ Returns the total supply of options claimable by all bidders.
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L188)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L187)</sub>
 
 Transfers a quantity of options between accounts.
 Reverts if the balance in the sending account is insufficient, if the destination address is the zero address,
@@ -463,7 +463,7 @@ Implemented internally by the [`_transfer`](#_transfer) function.
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L192)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L191)</sub>
 
 Allows an account to transfer a quantity of options on behalf of another account.
 Reverts if the either the balance or sender approval is insufficient, if either the destination or
@@ -486,13 +486,13 @@ Implemented internally by the [`_transfer`](#_transfer) function.
 
     **Requires**
 
-    * [require(..., "Insufficient allowance")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L198)
+    * [require(..., "Insufficient allowance")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L197)
 
 ## Modifiers
 
 ### `onlyMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L212)</sub>
 
 Reverts the transaction if the message sender is not the [market](#market).
 
@@ -500,7 +500,7 @@ Reverts the transaction if the message sender is not the [market](#market).
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L223)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L222)</sub>
 
 A spending account was approved to transfer options by another account on its behalf.
 
@@ -508,7 +508,7 @@ A spending account was approved to transfer options by another account on its be
 
 ### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L221)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L220)</sub>
 
 A value of options was burned from the given account.
 
@@ -516,7 +516,7 @@ A value of options was burned from the given account.
 
 ### `Issued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L220)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L219)</sub>
 
 A value of options was issued into the given account.
 
@@ -524,7 +524,7 @@ A value of options was issued into the given account.
 
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/BinaryOption.sol#L222)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/BinaryOption.sol#L221)</sub>
 
 A value of options was transferred between accounts.
 

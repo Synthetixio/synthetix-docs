@@ -1,5 +1,20 @@
 # Token List
 
+## 1inch (s1INCH)
+
+**Contract:** [0xcD39b5434a0A92cf47D1F567a7dF84bE356814F0](https://etherscan.io/token/0xcD39b5434a0A92cf47D1F567a7dF84bE356814F0)
+
+**Decimals:** 18
+
+**Price:** [s1INCH on synthetix.exchange](https://synthetix.exchange/#/synths/s1INCH)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/1inch-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xc929ad75B72593967DE83E7F7Cda0493458261D9)
+
+> Tracks the price of 1inch (1INCH) through price feeds supplied by an oracle.
+
 ## Aave (sAAVE)
 
 **Contract:** [0xd2dF355C19471c8bd7D8A3aa27Ff4e26A21b4076](https://etherscan.io/token/0xd2dF355C19471c8bd7D8A3aa27Ff4e26A21b4076)
@@ -14,6 +29,51 @@
 - Contract: [Aggregator](https://etherscan.io/address/0x547a514d5e3769680Ce22B2361c10Ea13619e8a9)
 
 > Tracks the price of Aave (AAVE) through price feeds supplied by an oracle.
+
+## Alphabet (sGOOG)
+
+**Contract:** [0xC63B8ECCE56aB9C46184eC6aB85e4771fEa4c8AD](https://etherscan.io/token/0xC63B8ECCE56aB9C46184eC6aB85e4771fEa4c8AD)
+
+**Decimals:** 18
+
+**Price:** [sGOOG on synthetix.exchange](https://synthetix.exchange/#/synths/sGOOG)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/goog-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x36D39936BeA501755921beB5A382a88179070219)
+
+> Tracks the price of Alphabet (GOOG) through price feeds supplied by an oracle.
+
+## Amazon (sAMZN)
+
+**Contract:** [0x9CF7E61853ea30A41b02169391b393B901eac457](https://etherscan.io/token/0x9CF7E61853ea30A41b02169391b393B901eac457)
+
+**Decimals:** 18
+
+**Price:** [sAMZN on synthetix.exchange](https://synthetix.exchange/#/synths/sAMZN)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/amzn-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x8994115d287207144236c13Be5E2bDbf6357D9Fd)
+
+> Tracks the price of Amazon (AMZN) through price feeds supplied by an oracle.
+
+## Apple (sAAPL)
+
+**Contract:** [0x7537AAe01f3B218DAE75e10d952473823F961B87](https://etherscan.io/token/0x7537AAe01f3B218DAE75e10d952473823F961B87)
+
+**Decimals:** 18
+
+**Price:** [sAAPL on synthetix.exchange](https://synthetix.exchange/#/synths/sAAPL)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/aapl-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x139C8512Cde1778e9b9a8e721ce1aEbd4dD43587)
+
+> Tracks the price of Apple (AAPL) through price feeds supplied by an oracle.
 
 ## Australian Dollars (sAUD)
 
@@ -131,6 +191,21 @@
 - Contract: [Aggregator](https://etherscan.io/address/0xdbd020CAeF83eFd542f4De03e3cF0C28A4428bd5)
 
 > Tracks the price of Compound (COMP) through price feeds supplied by an oracle.
+
+## Curve DAO Token (sCRV)
+
+**Contract:** [0xD38aEb759891882e78E957c80656572503D8c1B1](https://etherscan.io/token/0xD38aEb759891882e78E957c80656572503D8c1B1)
+
+**Decimals:** 18
+
+**Price:** [sCRV on synthetix.exchange](https://synthetix.exchange/#/synths/sCRV)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/crv-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xCd627aA160A6fA45Eb793D19Ef54f5062F20f33f)
+
+> Tracks the price of Curve DAO Token (CRV) through price feeds supplied by an oracle.
 
 ## Dash (sDASH)
 
@@ -256,6 +331,21 @@
 
 > Tracks the price of FTSE 100 Index (FTSE100) through price feeds supplied by an oracle.
 
+## Facebook (sFB)
+
+**Contract:** [0xf50B5e535F62a56A9BD2d8e2434204E726c027Fa](https://etherscan.io/token/0xf50B5e535F62a56A9BD2d8e2434204E726c027Fa)
+
+**Decimals:** 18
+
+**Price:** [sFB on synthetix.exchange](https://synthetix.exchange/#/synths/sFB)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/fb-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xCe1051646393087e706288C1B57Fd26446657A7f)
+
+> Tracks the price of Facebook (FB) through price feeds supplied by an oracle.
+
 ## Gold Ounce (sXAU)
 
 **Contract:** [0x261EfCdD24CeA98652B9700800a13DfBca4103fF](https://etherscan.io/token/0x261EfCdD24CeA98652B9700800a13DfBca4103fF)
@@ -328,11 +418,11 @@
 
 **Inverse of**: [sBTC](#bitcoin-sbtc)
 
-| Entry Point | Upper Limit | Lower Limit |
-| ----------- | ----------- | ----------- |
-| \$40,378    | \$60,567    | \$20,189    |
+| Entry Point | Upper Limit    | Lower Limit    |
+| ----------- | -------------- | -------------- |
+| \$58,785    | \$88,177.50000 | \$29,392.50000 |
 
-> Inversely tracks the price of Inverse Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is \$40378 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$60567 (i.e. when Inverse Bitcoin's value reaches \$20189) or its lower limit of \$20189 (i.e. when Inverse Bitcoin’s value reaches \$60567). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
+> Inversely tracks the price of Inverse Bitcoin (BTC) through price feeds supplied by an oracle. The entry point is \$58785 (the approximate market price at time of creation). This Synth freezes when it reaches its upper limit of \$88177.5 (i.e. when Inverse Bitcoin's value reaches \$29392.5) or its lower limit of \$29392.5 (i.e. when Inverse Bitcoin’s value reaches \$88177.5). If it reaches either of its limits and gets frozen, it will no longer be able to be purchased on Synthetix.Exchange, but can still be traded for other Synths at its frozen value. At some point after it has reached either of its limits, it will be substituted for another iBTC with different limits.
 
 ## Inverse Cardano (iADA)
 
@@ -782,6 +872,21 @@
 
 > Tracks the price of Monero (XMR) through price feeds supplied by an oracle.
 
+## Netflix (sNFLX)
+
+**Contract:** [0x5A7E3c07604EB515C16b36cd51906a65f021F609](https://etherscan.io/token/0x5A7E3c07604EB515C16b36cd51906a65f021F609)
+
+**Decimals:** 18
+
+**Price:** [sNFLX on synthetix.exchange](https://synthetix.exchange/#/synths/sNFLX)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/nflx-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x67C2e69c5272B94AF3C90683a9947C39Dc605ddE)
+
+> Tracks the price of Netflix (NFLX) through price feeds supplied by an oracle.
+
 ## Nikkei 225 Index (sNIKKEI)
 
 **Contract:** [0x757de3ac6B830a931eF178C6634c5C551773155c](https://etherscan.io/token/0x757de3ac6B830a931eF178C6634c5C551773155c)
@@ -929,6 +1034,21 @@
 - Contract: [Aggregator](https://etherscan.io/address/0xDC3EA94CD0AC27d9A86C180091e7f78C683d3699)
 
 > The Synthetix Network Token (SNX) gets staked as collateral to back Synths and entitles stakers to receive fees generated by Synth trades on Synthetix.Exchange.
+
+## THORChain (sRUNE)
+
+**Contract:** [0x0352557B007A4Aae1511C114409b932F06F9E2f4](https://etherscan.io/token/0x0352557B007A4Aae1511C114409b932F06F9E2f4)
+
+**Decimals:** 18
+
+**Price:** [sRUNE on synthetix.exchange](https://synthetix.exchange/#/synths/sRUNE)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/rune-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x48731cF7e84dc94C5f84577882c14Be11a5B7456)
+
+> Tracks the price of THORChain (RUNE) through price feeds supplied by an oracle.
 
 ## TRON (sTRX)
 

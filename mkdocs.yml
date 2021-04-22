@@ -103,6 +103,7 @@ nav:
                 - IssuerWithoutUpdatableCache: contracts/source/contracts/IssuerWithoutUpdatableCache.md
                 - LimitedSetup: contracts/source/contracts/LimitedSetup.md
                 - Liquidations: contracts/source/contracts/Liquidations.md
+                - MinimalProxyFactory: contracts/source/contracts/MinimalProxyFactory.md
                 - MintableSynthetix: contracts/source/contracts/MintableSynthetix.md
                 - MixinResolver: contracts/source/contracts/MixinResolver.md
                 - MixinSystemSettings: contracts/source/contracts/MixinSystemSettings.md
@@ -138,6 +139,7 @@ nav:
                 - TokenState: contracts/source/contracts/TokenState.md
                 - TradingRewards: contracts/source/contracts/TradingRewards.md
                 - VirtualSynth: contracts/source/contracts/VirtualSynth.md
+                - VirtualSynthMastercopy: contracts/source/contracts/VirtualSynthMastercopy.md
               Interfaces:
                 - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
                 - IBinaryOption: contracts/source/interfaces/IBinaryOption.md

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFlexibleStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol)
+**Source:** [contracts/interfaces/IFlexibleStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol)
 
 ## External Functions
 
 ### `deleteAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `deleteBoolValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `deleteBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `deleteIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `deleteUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `getAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `getAddressValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `getBoolValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `getBoolValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `getBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `getBytes32Values`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `getIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `getIntValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `getUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `getUIntValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `setAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `setAddressValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -314,7 +314,7 @@
 
 ### `setBoolValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -332,7 +332,7 @@
 
 ### `setBoolValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -350,7 +350,7 @@
 
 ### `setBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@
 
 ### `setBytes32Values`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -386,7 +386,7 @@
 
 ### `setIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -404,7 +404,7 @@
 
 ### `setIntValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -422,7 +422,7 @@
 
 ### `setUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -440,7 +440,7 @@
 
 ### `setUIntValues`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/IFlexibleStorage.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/IFlexibleStorage.sol#L43)</sub>
 
 ??? example "Details"
 

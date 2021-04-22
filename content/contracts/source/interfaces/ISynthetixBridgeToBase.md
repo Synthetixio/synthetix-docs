@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/ISynthetixBridgeToBase.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/ISynthetixBridgeToBase.sol)
 
 ## External Functions
 
 ### `completeDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `completeEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `completeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `initiateWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L8)</sub>
 
 ??? example "Details"
 

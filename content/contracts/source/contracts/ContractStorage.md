@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/ContractStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol)
+**Source:** [contracts/ContractStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol)
 
 ## Variables
 
 ### `hashes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol#L10)</sub>
 
 **Type:** `mapping(bytes32 => bytes32)`
 
 ### `resolverProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol#L8)</sub>
 
 **Type:** `contract IAddressResolver`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `migrateContractKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot migrate empty contract")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol#L39)
+    * [require(..., "Cannot migrate empty contract")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol#L38)
 
     **Modifiers**
 
@@ -74,7 +74,7 @@
 
 ### `_memoizeHash`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -94,7 +94,7 @@
 
 ### `onlyContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol#L51)</sub>
 
 **Signature**: `onlyContract(bytes32 contractName)`
 
@@ -102,6 +102,6 @@
 
 ### `KeyMigrated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/ContractStorage.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/ContractStorage.sol#L60)</sub>
 
 **Signature**: `KeyMigrated(bytes32 fromContractName, bytes32 toContractName, bool removeAccessFromPreviousContract)`

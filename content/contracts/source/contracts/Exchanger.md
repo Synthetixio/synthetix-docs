@@ -4,7 +4,7 @@
 
 Performs all the heavy lifting internally of `exchange` and `settle` functionality.
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol)
 
 ## Architecture
 
@@ -18,7 +18,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `ExchangeEntrySettlement`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L69)</sub>
 
 | Field                    | Type      | Description |
 | ------------------------ | --------- | ----------- |
@@ -35,13 +35,13 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `CIRCUIT_BREAKER_SUSPENSION_REASON`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L83)</sub>
 
 **Type:** `uint256`
 
 ### `lastExchangeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L85)</sub>
 
 **Type:** `mapping(bytes32 => uint256)`
 
@@ -49,7 +49,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -69,7 +69,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L319)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L317)</sub>
 
 ??? example "Details"
 
@@ -91,7 +91,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L339)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L337)</sub>
 
 ??? example "Details"
 
@@ -109,7 +109,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
     **Requires**
 
-    * [require(..., "Not approved to act on behalf")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L346)
+    * [require(..., "Not approved to act on behalf")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L344)
 
     **Modifiers**
 
@@ -117,7 +117,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L385)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L383)</sub>
 
 ??? example "Details"
 
@@ -135,7 +135,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
     **Requires**
 
-    * [require(..., "Not approved to act on behalf")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L394)
+    * [require(..., "Not approved to act on behalf")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L392)
 
     **Modifiers**
 
@@ -143,7 +143,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L361)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L359)</sub>
 
 ??? example "Details"
 
@@ -165,7 +165,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L411)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L409)</sub>
 
 ??? example "Details"
 
@@ -187,7 +187,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `setLastExchangeRateForSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L657)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L655)</sub>
 
 ??? example "Details"
 
@@ -205,7 +205,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
     **Requires**
 
-    * [require(..., "Rate must be above 0")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L658)
+    * [require(..., "Rate must be above 0")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L656)
 
     **Modifiers**
 
@@ -215,7 +215,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_convert`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L603)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L601)</sub>
 
 ??? example "Details"
 
@@ -233,7 +233,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_createVirtualSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L627)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L625)</sub>
 
 ??? example "Details"
 
@@ -251,7 +251,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_emitTrackingEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L436)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L434)</sub>
 
 ??? example "Details"
 
@@ -269,7 +269,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_ensureCanExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L664)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L662)</sub>
 
 ??? example "Details"
 
@@ -287,15 +287,15 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
     **Requires**
 
-    * [require(..., "Can't be same synth")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L669)
+    * [require(..., "Can't be same synth")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L667)
 
-    * [require(..., "Zero amount")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L670)
+    * [require(..., "Zero amount")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L668)
 
-    * [require(..., "Src/dest rate invalid or not found")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L675)
+    * [require(..., "Src/dest rate invalid or not found")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L673)
 
 ### `_exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L497)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L495)</sub>
 
 ??? example "Details"
 
@@ -313,7 +313,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_feeRateForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L811)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L805)</sub>
 
 ??? example "Details"
 
@@ -331,7 +331,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_getAmountReceivedForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L881)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L875)</sub>
 
 ??? example "Details"
 
@@ -349,7 +349,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_getAmountsForExchangeMinusFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L855)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L849)</sub>
 
 ??? example "Details"
 
@@ -367,7 +367,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_getExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L251)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L249)</sub>
 
 ??? example "Details"
 
@@ -385,7 +385,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_internalSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L718)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L716)</sub>
 
 ??? example "Details"
 
@@ -403,11 +403,11 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
     **Requires**
 
-    * [require(..., "Cannot settle during waiting period")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L730)
+    * [require(..., "Cannot settle during waiting period")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L728)
 
 ### `_isDeviationAboveThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L703)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L701)</sub>
 
 ??? example "Details"
 
@@ -425,7 +425,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_isSynthRateInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L678)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L676)</sub>
 
 ??? example "Details"
 
@@ -443,7 +443,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_processTradingRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L444)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L442)</sub>
 
 ??? example "Details"
 
@@ -461,7 +461,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_settleAndCalcSourceAmountRemaining`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L481)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L479)</sub>
 
 ??? example "Details"
 
@@ -479,7 +479,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_settlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L186)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L183)</sub>
 
 ??? example "Details"
 
@@ -497,7 +497,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_suspendIfRateInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L450)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L448)</sub>
 
 ??? example "Details"
 
@@ -515,7 +515,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `_updateSNXIssuedDebtOnExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L459)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L457)</sub>
 
 ??? example "Details"
 
@@ -533,7 +533,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `appendExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L889)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L883)</sub>
 
 ??? example "Details"
 
@@ -555,7 +555,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `debtCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L150)</sub>
 
 ??? example "Details"
 
@@ -573,7 +573,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `delegateApprovals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -591,7 +591,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -609,7 +609,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `exchangeState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -627,7 +627,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -645,7 +645,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `getRoundIdsAtPeriodEnd`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L924)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L918)</sub>
 
 ??? example "Details"
 
@@ -663,7 +663,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L146)</sub>
 
 ??? example "Details"
 
@@ -681,7 +681,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `reclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L774)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L768)</sub>
 
 ??? example "Details"
 
@@ -699,7 +699,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L784)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L778)</sub>
 
 ??? example "Details"
 
@@ -717,7 +717,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `secsLeftInWaitingPeriodForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L794)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L788)</sub>
 
 ??? example "Details"
 
@@ -735,7 +735,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -753,7 +753,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -771,7 +771,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `tradingRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -791,7 +791,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `calculateAmountAfterSettlement`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L292)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L290)</sub>
 
 ??? example "Details"
 
@@ -809,7 +809,7 @@ Performs all the heavy lifting internally of `exchange` and `settle` functionali
 
 ### `feeRateForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L803)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L797)</sub>
 
 Determine the effective fee rate for the exchange, taking into considering swing trading.
 
@@ -829,7 +829,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
 ### `getAmountsForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L835)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L829)</sub>
 
 ??? example "Details"
 
@@ -847,7 +847,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
 ### `hasWaitingPeriodOrSettlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L278)</sub>
 
 ??? example "Details"
 
@@ -865,7 +865,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
 ### `isSynthRateInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L312)</sub>
 
 ??? example "Details"
 
@@ -883,7 +883,7 @@ Determine the effective fee rate for the exchange, taking into considering swing
 
 ### `maxSecsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L157)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L154)</sub>
 
 Returns the maximum number of seconds remaining in the waiting period for all exchanges into the given synth (`currencyKey`) by the account.
 
@@ -905,7 +905,7 @@ This number must be `0` in order for [`settle()`](#settle) to succeed.
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L166)</sub>
 
 **Type:** `uint256`
 
@@ -925,7 +925,7 @@ This number must be `0` in order for [`settle()`](#settle) to succeed.
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L103)</sub>
 
 ??? example "Details"
 
@@ -943,7 +943,7 @@ This number must be `0` in order for [`settle()`](#settle) to succeed.
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L637)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L635)</sub>
 
 Settle processes all exchanges into the given synth, calculating any `reclaimed` or `refunded` amounts via [`settlementOwing`](#settlementowing) and burning any reclaim and issuing any refund. This function may be called by anyone - the `msg.sender` is irrelevant.
 
@@ -963,7 +963,7 @@ Settle processes all exchanges into the given synth, calculating any `reclaimed`
 
 ### `settlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L173)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L170)</sub>
 
 Returns the total amount to be reclaimed or rebated for the given account and synth (`currencyKey`). Note: this function can be called at any time, even while the waiting period has not expired.
 
@@ -983,7 +983,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `suspendSynthWithInvalidRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L649)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L647)</sub>
 
 ??? example "Details"
 
@@ -1001,13 +1001,13 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
     **Requires**
 
-    * [require(..., "No such synth")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L651)
+    * [require(..., "No such synth")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L649)
 
-    * [require(..., "Synth price is valid")](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L652)
+    * [require(..., "Synth price is valid")](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L650)
 
 ### `tradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L162)</sub>
 
 ??? example "Details"
 
@@ -1025,7 +1025,7 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L158)</sub>
 
 **Type:** `uint256`
 
@@ -1047,22 +1047,22 @@ Returns the total amount to be reclaimed or rebated for the given account and sy
 
 ### `onlyExchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L957)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L951)</sub>
 
 ### `onlySynthetixorSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L948)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L942)</sub>
 
 ## Events
 
 ### `ExchangeEntryAppended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L964)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L958)</sub>
 
 **Signature**: `ExchangeEntryAppended(address account, bytes32 src, uint256 amount, bytes32 dest, uint256 amountReceived, uint256 exchangeFeeRate, uint256 roundIdForSrc, uint256 roundIdForDest)`
 
 ### `ExchangeEntrySettled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/Exchanger.sol#L975)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/Exchanger.sol#L969)</sub>
 
 **Signature**: `ExchangeEntrySettled(address from, bytes32 src, uint256 amount, bytes32 dest, uint256 reclaim, uint256 rebate, uint256 srcRoundIdAtPeriodEnd, uint256 destRoundIdAtPeriodEnd, uint256 exchangeTimestamp)`

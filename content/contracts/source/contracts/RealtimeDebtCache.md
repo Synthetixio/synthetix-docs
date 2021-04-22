@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/RealtimeDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol)
+**Source:** [contracts/RealtimeDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `cacheInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `cacheInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `cacheTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `cachedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `cachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `debtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -172,7 +172,7 @@
 
 ### `purgeCachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@
 
 ### `takeDebtSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -226,7 +226,7 @@
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -244,7 +244,7 @@
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -262,7 +262,7 @@
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RealtimeDebtCache.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RealtimeDebtCache.sol#L73)</sub>
 
 ??? example "Details"
 

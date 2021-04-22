@@ -6,13 +6,13 @@
 
     This contract documentation is missing some descriptions.
 
-**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RewardsDistributionRecipient.sol)
+**Source:** [contracts/RewardsDistributionRecipient.sol](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RewardsDistributionRecipient.sol)
 
 ## Variables
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RewardsDistributionRecipient.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RewardsDistributionRecipient.sol#L8)</sub>
 
 **Type:** `address`
 
@@ -20,7 +20,7 @@
 
 ### `setRewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RewardsDistributionRecipient.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RewardsDistributionRecipient.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RewardsDistributionRecipient.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RewardsDistributionRecipient.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -64,4 +64,4 @@
 
 ### `onlyRewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.41.0/contracts/RewardsDistributionRecipient.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.42.0/contracts/RewardsDistributionRecipient.sol#L12)</sub>

@@ -2,6 +2,16 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Miaplacidus (v2.41.0)
+
+**Published**: Mar 24, 2021
+
+**Codebase**: [v2.41.0](https://github.com/Synthetixio/synthetix/tree/v2.41.0)
+
+> - [SIP-113](https://sips.synthetix.io/sips/sip-113) Re-enable sKRW (Korean Won)
+
+---
+
 # Elnath (v2.39.0)
 
 **Published**: Feb 11, 2021
@@ -256,27 +266,6 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SIP-40](https://sips.synthetix.io/sips/sip-40): Frontminting prevention ([read IOSIRO's audit report here](https://iosiro.com/audits/synthetix-pr-435-smart-contract-audit))
 - [SIP-41](https://sips.synthetix.io/sips/sip-41): ProtocolDAO phase zero
 - [SIP-42](https://sips.synthetix.io/sips/sip-42): Gas optimisations
-
----
-
-# Achernar (v2.19.6)
-
-**Published**: Feb 20, 2020
-
-**Codebase**: [v2.19.6](https://github.com/Synthetixio/synthetix/tree/v2.19.6)
-
-> https://blog.synthetix.io/the-achernar-release/
-
-- [SIP-31](https://sips.synthetix.io/sips/sip-31): sETH pool automatic rewards — SNX rewards for providing sETH/ETH liquidity on Uniswap are currently paid out manually using a multisig. Using an automated system will be far more efficient and reduce the possibility of human error. Liquidity providers will now have to claim their rewards from a smart contract (no timeframe requirement).
-- [SIP-33](https://sips.synthetix.io/sips/sip-33): Removal of XDRs — The XDR Synth was originally used as the base unit of account, but sUSD now fills that role. Taking out XDR will simplify several functions for users, particularly the payment of trading fees.
-- [SIP-35](https://sips.synthetix.io/sips/sip-35): Skinny Ether collateral — There has been significant demand from the crypto community for ETH to be enabled as collateral in Synthetix. The three-month trial will reduce friction for new traders.
-- [SIP-37](https://sips.synthetix.io/sips/sip-37): Fee reclamations and rebates — This SIP implements anti-frontrunning measures, ensuring that traders cannot profit from Oracle latency.
-- [SIP-38](https://sips.synthetix.io/sips/sip-38): Charge fees during purge — This SIP adds a trading fee to when a Synth holder gets purged out of a Synth, to prevent users from camping out in these Synths without paying their fair share of fees.
-  Synthetix.Exchange v2 — We are launching a new version of Synthetix.Exchange. V2 will move to production from beta as part of the Achernar release.
-- [SIP-43](https://sips.synthetix.io/sips/sip-43): Adding an `AddressResolver` contract for better inter-contract communication within Synthetix
-- [SCCP-11](https://sips.synthetix.io/sips/sccp-11): Reduce trading fee to 0.3% — As part of the fee reclamation release, we’ll be reducing the trading fee back down to 30bps.
-- [SCCP-12](https://sips.synthetix.io/sips/sccp-12): Reactivate previously deactivated Synths — s/iXTZ, s/iBNB, and s/iLTC were all previously deactivated as they were being targeted by frontrunners, but we're reinstating them in the Achernar release.
-- [SCCP-13](https://sips.synthetix.io/sips/sccp-13): Reinstate fee claim buffer to 750% from 500% — The requirement to claim fees was reduced from 750% to 500% to allow stakers to not get hit by the temporary fee increase.
 
 ---
 
