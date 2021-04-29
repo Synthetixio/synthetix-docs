@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol)
+**Source:** [contracts/interfaces/IDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol)
 
 ## External Functions
 
 ### `cacheInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `cacheInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `cacheTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `cachedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `cachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `currentDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `currentSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `purgeCachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `takeDebtSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/IDebtCache.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/IDebtCache.sol#L43)</sub>
 
 ??? example "Details"
 

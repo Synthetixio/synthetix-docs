@@ -6,19 +6,19 @@
 
     This contract documentation is missing some descriptions.
 
-**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol)
+**Source:** [contracts/ExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol)
 
 ## Variables
 
 ### `exchanges`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L10)</sub>
 
 **Type:** `mapping(address => mapping(bytes32 => struct IExchangeState.ExchangeEntry[]))`
 
 ### `maxEntriesInQueue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L12)</sub>
 
 **Type:** `uint256`
 
@@ -26,7 +26,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `appendExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
     **Requires**
 
-    * [require(..., "Max queue length reached")](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L35)
+    * [require(..., "Max queue length reached")](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L35)
 
     **Modifiers**
 
@@ -72,7 +72,7 @@
 
 ### `removeEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -94,7 +94,7 @@
 
 ### `setMaxEntriesInQueue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `getEntryAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `getLengthOfEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `getMaxTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/ExchangeState.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/ExchangeState.sol#L92)</sub>
 
 ??? example "Details"
 

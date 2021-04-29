@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
 
 ## External Functions
 
 ### `completeWithdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `depositAndMigrateEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `initiateDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `initiateEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `initiateRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.0/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L13)</sub>
 
 ??? example "Details"
 

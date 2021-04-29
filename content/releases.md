@@ -2,6 +2,19 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Regor (v2.43.0)
+
+**Published**: Apr 29, 2021
+
+**Codebase**: [v2.43.0](https://github.com/Synthetixio/synthetix/tree/v2.43.0)
+
+> https://blog.synthetix.io/the-regor-release/
+
+[SIP 115](https://sips.synthetix.io/sips/sip-115): Add sMSFT equity synth
+[SIP 128](https://sips.synthetix.io/sips/sip-128): Add sCOIN equity synth
+
+---
+
 # Alnilam (v2.42.0)
 
 **Published**: Apr 22, 2021
@@ -281,19 +294,6 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SIP-40](https://sips.synthetix.io/sips/sip-40): Frontminting prevention ([read IOSIRO's audit report here](https://iosiro.com/audits/synthetix-pr-435-smart-contract-audit))
 - [SIP-41](https://sips.synthetix.io/sips/sip-41): ProtocolDAO phase zero
 - [SIP-42](https://sips.synthetix.io/sips/sip-42): Gas optimisations
-
----
-
-# Canopus (v2.11.2)
-
-**Published**: Oct 4, 2019
-
-**Codebase**: [v2.11.2](https://github.com/Synthetixio/synthetix/tree/v2.11.2)
-
-> https://blog.synthetix.io/the-canopus-release/
-
-- [SIP-8](http://sips.synthetix.io/sips/sip-8): This SIP formalises the sETH liquidity provider reward trial at the protocol level, diverting a portion of the SNX weekly inflation into a pool to incentivise liquidity providers of the sETH/ETH pair in Uniswap. The trial has been successful, but in order for this mechanism to work long term it must be formalised into the protocol.
-- [SIP-12](http://sips.synthetix.io/sips/sip-12): This SIP proposes to prevent front running of the price oracle by introducing max gas price for transactions on Synthetix exchanges. Front running occurs when a user or bot reads an incoming oracle update from the mempool and transmits an exchange with higher GWEI, taking advantage of a known price movement. Front running can jeopardise the debts of SNX stakers by enabling better odds at making profitable trades, and several accounts have used front running methods already. This first phase of SIP-12 will determine a max GWEI setting based on the current Ethereum congestion (somewhere between 'standard' and 'fast'), and traders will not be able to push a trade with more GWEI than that. Synthetix.Exchange will not allow traders to use a 'fast' GWEI setting, but if someone attempts a trade using the contacts directly, if they use a higher GWEI then the transaction will fail.
 
 ---
 
