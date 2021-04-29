@@ -177,6 +177,21 @@
 
 > Tracks the price of Chainlink (LINK) through price feeds supplied by an oracle.
 
+## Coinbase (sCOIN)
+
+**Contract:** [0x9EeF4CA7aB9fa8bc0650127341C2d3F707a40f8A](https://etherscan.io/token/0x9EeF4CA7aB9fa8bc0650127341C2d3F707a40f8A)
+
+**Decimals:** 18
+
+**Price:** [sCOIN on synthetix.exchange](https://synthetix.exchange/#/synths/sCOIN)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/coin-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xb10a047f8db80d781D006F1401BEB7d70Eb4da1a)
+
+> Tracks the price of Coinbase (COIN) through price feeds supplied by an oracle.
+
 ## Compound (sCOMP)
 
 **Contract:** [0xEb029507d3e043DD6C87F2917C4E82B902c35618](https://etherscan.io/token/0xEb029507d3e043DD6C87F2917C4E82B902c35618)
@@ -856,6 +871,21 @@
 - Contract: [Aggregator](https://etherscan.io/address/0x6AF09DF7563C363B5763b9102712EbeD3b9e859B)
 
 > Tracks the price of Litecoin (LTC) through price feeds supplied by an oracle.
+
+## Microsoft (sMSFT)
+
+**Contract:** [0x745a824D6aBBD236AA794b5530062778A6Ad7523](https://etherscan.io/token/0x745a824D6aBBD236AA794b5530062778A6Ad7523)
+
+**Decimals:** 18
+
+**Price:** [sMSFT on synthetix.exchange](https://synthetix.exchange/#/synths/sMSFT)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/msft-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0x021Fb44bfeafA0999C7b07C4791cf4B859C3b431)
+
+> Tracks the price of Microsoft (MSFT) through price feeds supplied by an oracle.
 
 ## Monero (sXMR)
 
