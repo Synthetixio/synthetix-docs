@@ -26,7 +26,7 @@ const generateAddresses = () => {
 		' https://contracts.synthetix.io to get a link that will always redirect to the latest version of the contract on Etherscan.\n\n    For example, try https://contracts.synthetix.io/Synthetix to get linked to the latest Synthetix underlying.' +
 		'\n\n    For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/Synthetix';
 
-	const contractContent = ['mainnet', 'ropsten', 'rinkeby', 'kovan']
+	const contractContent = ['mainnet', 'ropsten', 'rinkeby', 'kovan', 'mainnet-ovm', 'kovan-ovm']
 		.map(network => {
 			const targets = snx.getTarget({ network });
 
@@ -40,6 +40,10 @@ const generateAddresses = () => {
 						const { address, source } = targets[targetContract];
 						const networkPrefix = network !== 'mainnet' ? network + '.' : '';
 						let label = targetContract;
+						const addressLink =
+							network.indexOf('-ovm') > 0
+								? address
+								: `<a target="_blank" href="https://${networkPrefix}etherscan.io/address/${address}">${address}</a>`;
 
 						if (targetContract === 'ProxysUSD' || targetContract === 'ProxySynthetix') {
 							label = `<span style="color: #AAA; text-decoration: line-through">${targetContract}</span><sup>Use ${
@@ -52,7 +56,7 @@ const generateAddresses = () => {
                 <td>${label}</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/${source}.sol">${source}.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/${network.toLowerCase()}/${source}.json">${source}.json</a></td>
-                <td><a target="_blank" href="https://${networkPrefix}etherscan.io/address/${address}">${address}</a>
+                <td>${addressLink}
                 </td>
               </tr>`;
 					})
