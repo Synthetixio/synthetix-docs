@@ -5482,3 +5482,690 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x1f6b96d2e7a5D70777D2A9c52215044FB3f40D37">0x1f6b96d2e7a5D70777D2A9c52215044FB3f40D37</a>
                 </td>
               </tr></table>
+
+## MAINNET-OVM Contracts
+
+<table><tr><th>Name</th><th>Source</th><th>ABI</th><th>Address</th></tr>
+              <tr>
+                <td>AddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/AddressResolver.json">AddressResolver.json</a></td>
+                <td>0x95A6a3f44a70172E7d50a9e28c85Dfd712756B8C
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralManager</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EmptyCollateralManager.sol">EmptyCollateralManager.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/EmptyCollateralManager.json">EmptyCollateralManager.json</a></td>
+                <td>0x70B21B422Dade467659522892A857F0Ee31cebb4
+                </td>
+              </tr>
+              <tr>
+                <td>DappMaintenance</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/DappMaintenance.json">DappMaintenance.json</a></td>
+                <td>0x54581A23F62D147AC76d454f0b3eF77F9D766058
+                </td>
+              </tr>
+              <tr>
+                <td>DebtCache</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RealtimeDebtCache.sol">RealtimeDebtCache.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/RealtimeDebtCache.json">RealtimeDebtCache.json</a></td>
+                <td>0x5A528e35165e19f3392c9631243dd04d1229D324
+                </td>
+              </tr>
+              <tr>
+                <td>DelegateApprovals</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/DelegateApprovals.json">DelegateApprovals.json</a></td>
+                <td>0x2A23bc0EA97A89abD91214E8e4d20F02Fe14743f
+                </td>
+              </tr>
+              <tr>
+                <td>DelegateApprovalsEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/EternalStorage.json">EternalStorage.json</a></td>
+                <td>0x02f7fB66B55e6ca476d126d96f14c5732Eeb4363
+                </td>
+              </tr>
+              <tr>
+                <td>EscrowChecker</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/EscrowChecker.json">EscrowChecker.json</a></td>
+                <td>0xcdb7D0a946223255d39A6e29B54f08f3291cc118
+                </td>
+              </tr>
+              <tr>
+                <td>EternalStorageLiquidations</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/EternalStorage.json">EternalStorage.json</a></td>
+                <td>0x76d2de36936005A0182a1BB61dA501A8A044D477
+                </td>
+              </tr>
+              <tr>
+                <td>EtherCollateral</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/EmptyEtherCollateral.json">EmptyEtherCollateral.json</a></td>
+                <td>0xC8E91c926E04BE1cb94e51c5379d14774D51ae6C
+                </td>
+              </tr>
+              <tr>
+                <td>EtherCollateralsUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/EmptyEtherCollateral.json">EmptyEtherCollateral.json</a></td>
+                <td>0xC0c66470E766AE2026E6695966C56C90741811AA
+                </td>
+              </tr>
+              <tr>
+                <td>ExchangeRates</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeRatesWithoutInvPricing.sol">ExchangeRatesWithoutInvPricing.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/ExchangeRatesWithoutInvPricing.json">ExchangeRatesWithoutInvPricing.json</a></td>
+                <td>0x631E93A0fb06B5eC6d52c0A2D89a3f9672d6Ba64
+                </td>
+              </tr>
+              <tr>
+                <td>ExchangeState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/ExchangeState.json">ExchangeState.json</a></td>
+                <td>0x7EF87c14f50CFFe2e73d2C87916C3128c56593A8
+                </td>
+              </tr>
+              <tr>
+                <td>Exchanger</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/Exchanger.json">Exchanger.json</a></td>
+                <td>0xe318E4618E5684668992935d7231Cb837a44E670
+                </td>
+              </tr>
+              <tr>
+                <td>FeePool</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePool.sol">FeePool.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/FeePool.json">FeePool.json</a></td>
+                <td>0xF950a48E9463a13b13D75F452200E711c1c426b6
+                </td>
+              </tr>
+              <tr>
+                <td>FeePoolEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/FeePoolEternalStorage.json">FeePoolEternalStorage.json</a></td>
+                <td>0x41140Bf6498a36f2E44eFd49f21dAe3bbb7367c8
+                </td>
+              </tr>
+              <tr>
+                <td>FeePoolState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/FeePoolState.json">FeePoolState.json</a></td>
+                <td>0x6e0d26cffc3a63d763F1546f749bf62ebC7d72D8
+                </td>
+              </tr>
+              <tr>
+                <td>FlexibleStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/FlexibleStorage.json">FlexibleStorage.json</a></td>
+                <td>0x47649022380d182DA8010Ae5d257fea4227b21ff
+                </td>
+              </tr>
+              <tr>
+                <td>Issuer</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/IssuerWithoutLiquidations.sol">IssuerWithoutLiquidations.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/IssuerWithoutLiquidations.json">IssuerWithoutLiquidations.json</a></td>
+                <td>0x8377b25B8564f6Be579865639776c5082CB37163
+                </td>
+              </tr>
+              <tr>
+                <td>Liquidations</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Liquidations.sol">Liquidations.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/Liquidations.json">Liquidations.json</a></td>
+                <td>0x14E6f8e6Da00a32C069b11b64e48EA1FEF2361D4
+                </td>
+              </tr>
+              <tr>
+                <td>Math</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Math.sol">Math.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/Math.json">Math.json</a></td>
+                <td>0x0B3A73EE0740b3130e40B2A6b5aaf59E7E3Ef74c
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyERC20</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyERC20sUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyFeePool</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/Proxy.json">Proxy.json</a></td>
+                <td>0x4a16A42407AA491564643E1dfc1fd50af29794eF
+                </td>
+              </tr>
+              <tr>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/Proxy.json">Proxy.json</a></td>
+                <td>0x218067172e9E0460A883458D44BD1f56ea609502
+                </td>
+              </tr>
+              <tr>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/Proxy.json">Proxy.json</a></td>
+                <td>0xbecc58c6D7Ca71b6FCC4cC8c9c5294A0eA7A0397
+                </td>
+              </tr>
+              <tr>
+                <td>ReadProxyAddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/ReadProxy.json">ReadProxy.json</a></td>
+                <td>0x1Cb059b7e74fD21665968C908806143E744D5F30
+                </td>
+              </tr>
+              <tr>
+                <td>RewardEscrow</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/RewardEscrow.json">RewardEscrow.json</a></td>
+                <td>0xd32138018210edA0028240638f35b70ECC0D8C22
+                </td>
+              </tr>
+              <tr>
+                <td>RewardEscrowV2</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ImportableRewardEscrowV2.sol">ImportableRewardEscrowV2.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/ImportableRewardEscrowV2.json">ImportableRewardEscrowV2.json</a></td>
+                <td>0x47eE58801C1AC44e54FF2651aE50525c5cfc66d0
+                </td>
+              </tr>
+              <tr>
+                <td>RewardsDistribution</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/RewardsDistribution.json">RewardsDistribution.json</a></td>
+                <td>0x5d9187630E99dBce4BcAB8733B76757f7F44aA2e
+                </td>
+              </tr>
+              <tr>
+                <td>SafeDecimalMath</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SafeDecimalMath.json">SafeDecimalMath.json</a></td>
+                <td>0x0142F40c25CE1F1177Ed131101FA19217396cB88
+                </td>
+              </tr>
+              <tr>
+                <td>SynthUtil</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SynthUtil.json">SynthUtil.json</a></td>
+                <td>0x87b1481c82913301Fc6c884Ac266a7c430F92cFA
+                </td>
+              </tr>
+              <tr>
+                <td>Synthetix</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/MintableSynthetix.json">MintableSynthetix.json</a></td>
+                <td>0xD85eAFa37734E4ad237C3A3443D64DC94ae998E7
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixBridgeToBase</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SynthetixBridgeToBase.json">SynthetixBridgeToBase.json</a></td>
+                <td>0x4D7186818daBFe88bD80421656BbD07Dffc979Cc
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixEscrow</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SynthetixEscrow.json">SynthetixEscrow.json</a></td>
+                <td>0x06C6D063896ac733673c4474E44d9268f2402A55
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixStateWithLimitedSetup.sol">SynthetixStateWithLimitedSetup.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SynthetixStateWithLimitedSetup.json">SynthetixStateWithLimitedSetup.json</a></td>
+                <td>0x9770239D49Db97E77fc5Adcb5413654C9e45A510
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/Synth.json">Synth.json</a></td>
+                <td>0xF2FF43DA7B6e5963059b7004df43b5c5870EEb18
+                </td>
+              </tr>
+              <tr>
+                <td>SystemSettings</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SystemSettings.json">SystemSettings.json</a></td>
+                <td>0x8454190C164e52664Af2c9C24ab58c4e14D6bbE4
+                </td>
+              </tr>
+              <tr>
+                <td>SystemStatus</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SystemStatus.json">SystemStatus.json</a></td>
+                <td>0x357b58E0b1Be9d8A944380048fa1080c57c7A362
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStateSynthetix</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0xB9c6CA25452E7f6D0D3340CE1e9B573421afc2eE
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0x92bAc115d89cA17fd02Ed9357CEcA32842ACB4c2
+                </td>
+              </tr>
+              <tr>
+                <td>TradingRewards</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/TradingRewards.json">TradingRewards.json</a></td>
+                <td>0x2DcAD1A019fba8301b77810Ae14007cc88ED004B
+                </td>
+              </tr></table>
+
+## KOVAN-OVM Contracts
+
+<table><tr><th>Name</th><th>Source</th><th>ABI</th><th>Address</th></tr>
+              <tr>
+                <td>AddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/AddressResolver.json">AddressResolver.json</a></td>
+                <td>0xb08b62e1cdfd37eCCd69A9ACe67322CCF801b3A6
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralManager</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EmptyCollateralManager.sol">EmptyCollateralManager.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/EmptyCollateralManager.json">EmptyCollateralManager.json</a></td>
+                <td>0x212dD0505eDECA3947b07b86e0b0d44ba8eE81c4
+                </td>
+              </tr>
+              <tr>
+                <td>DappMaintenance</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/DappMaintenance.json">DappMaintenance.json</a></td>
+                <td>0xCDe046E1c635d2D9F69E2081d46732d249c8465F
+                </td>
+              </tr>
+              <tr>
+                <td>DebtCache</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RealtimeDebtCache.sol">RealtimeDebtCache.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/RealtimeDebtCache.json">RealtimeDebtCache.json</a></td>
+                <td>0xcCA368156B7DDe99ea7852BEcE3D8F1cC2989161
+                </td>
+              </tr>
+              <tr>
+                <td>DelegateApprovals</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/DelegateApprovals.json">DelegateApprovals.json</a></td>
+                <td>0xC9B552d3d395ae89646275C1591c40FA9EB950f6
+                </td>
+              </tr>
+              <tr>
+                <td>DelegateApprovalsEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/EternalStorage.json">EternalStorage.json</a></td>
+                <td>0xF43B4931749139AB1e7a85d50df5762481d80bEC
+                </td>
+              </tr>
+              <tr>
+                <td>EscrowChecker</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/EscrowChecker.json">EscrowChecker.json</a></td>
+                <td>0x23bB1e0975161077F16Dd34F28780720aC356C56
+                </td>
+              </tr>
+              <tr>
+                <td>EternalStorageLiquidations</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/EternalStorage.json">EternalStorage.json</a></td>
+                <td>0x38a322dB8dBa2b78B622e5224611de33b8cf6480
+                </td>
+              </tr>
+              <tr>
+                <td>EtherCollateral</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/EmptyEtherCollateral.json">EmptyEtherCollateral.json</a></td>
+                <td>0x1F93B9a8d1F3582697F17471207D707f7C519E38
+                </td>
+              </tr>
+              <tr>
+                <td>EtherCollateralsUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/EmptyEtherCollateral.json">EmptyEtherCollateral.json</a></td>
+                <td>0x4c22BC6FC957efb8D6737982e522950e77F0F47f
+                </td>
+              </tr>
+              <tr>
+                <td>ExchangeRates</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeRatesWithoutInvPricing.sol">ExchangeRatesWithoutInvPricing.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ExchangeRatesWithoutInvPricing.json">ExchangeRatesWithoutInvPricing.json</a></td>
+                <td>0x686cbD15BBC680F8261c7502c360Aa44A2593de6
+                </td>
+              </tr>
+              <tr>
+                <td>ExchangeState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ExchangeState.json">ExchangeState.json</a></td>
+                <td>0xEf8a2c1BC94e630463293F71bF5414d13e80F62D
+                </td>
+              </tr>
+              <tr>
+                <td>Exchanger</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Exchanger.json">Exchanger.json</a></td>
+                <td>0x4AcC0Ba2948F8aB47a4fA734C57B0c3B5a8459f7
+                </td>
+              </tr>
+              <tr>
+                <td>FeePool</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePool.sol">FeePool.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/FeePool.json">FeePool.json</a></td>
+                <td>0x381c19925E66e6117f990C74B8A3d56E5a184d2d
+                </td>
+              </tr>
+              <tr>
+                <td>FeePoolEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/FeePoolEternalStorage.json">FeePoolEternalStorage.json</a></td>
+                <td>0x0A1d3bde7751e92971891FB034AcDE4C271de408
+                </td>
+              </tr>
+              <tr>
+                <td>FeePoolState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/FeePoolState.json">FeePoolState.json</a></td>
+                <td>0x2e542fA43A19F3F07230dD125f9f81411141362F
+                </td>
+              </tr>
+              <tr>
+                <td>FlexibleStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/FlexibleStorage.json">FlexibleStorage.json</a></td>
+                <td>0x2f4959375ae4a6C368859FB51AF0513745db265F
+                </td>
+              </tr>
+              <tr>
+                <td>Issuer</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/IssuerWithoutLiquidations.sol">IssuerWithoutLiquidations.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/IssuerWithoutLiquidations.json">IssuerWithoutLiquidations.json</a></td>
+                <td>0xc9982C611C3bE471296144D215E518F2692D6982
+                </td>
+              </tr>
+              <tr>
+                <td>Liquidations</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Liquidations.sol">Liquidations.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Liquidations.json">Liquidations.json</a></td>
+                <td>0x20540E5EB1faff0DB6B1Dc5f0427C27f3852e2Ab
+                </td>
+              </tr>
+              <tr>
+                <td>Math</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Math.sol">Math.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Math.json">Math.json</a></td>
+                <td>0xEA83b3192a8aB126BaCC2CFB0443F3A61ABe2D60
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyERC20</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0x0064A673267696049938AA47595dD0B3C2e705A1
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyERC20sUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0xaA5068dC2B3AADE533d3e52C6eeaadC6a8154c57
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyFeePool</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Proxy.json">Proxy.json</a></td>
+                <td>0xd8c8887A629F98C56686Be6aEEDAae7f8f75D599
+                </td>
+              </tr>
+              <tr>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Proxy.json">Proxy.json</a></td>
+                <td>0x11164F6a47C3f8472D19b9aDd516Fc780cb7Ee02
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysAAVE</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0x503e91fc2b9Ad7453700130d0825E661565E4c3b
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysBTC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0x23F608ACc41bd7BCC617a01a9202214EE305439a
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysETH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0x94B41091eB29b36003aC1C6f0E55a5225633c884
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysLINK</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0xe2B26511C64FE18Acc0BE8EA7c888cDFcacD846E
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysUNI</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0x3E88bFAbDCd2b336C4a430262809Cf4a0AC5cd57
+                </td>
+              </tr>
+              <tr>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ProxyERC20.json">ProxyERC20.json</a></td>
+                <td>0xFf6a235133dc1233B20c5AB4C86885eBe90a69ee
+                </td>
+              </tr>
+              <tr>
+                <td>ReadProxyAddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ReadProxy.json">ReadProxy.json</a></td>
+                <td>0x7a6f9eDDC03Db81927eA4131919343f93CA9b6a7
+                </td>
+              </tr>
+              <tr>
+                <td>RewardEscrow</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/RewardEscrow.json">RewardEscrow.json</a></td>
+                <td>0x9952e42fF92149f48b3b7dee3f921A6DD106F79F
+                </td>
+              </tr>
+              <tr>
+                <td>RewardEscrowV2</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/ImportableRewardEscrowV2.sol">ImportableRewardEscrowV2.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/ImportableRewardEscrowV2.json">ImportableRewardEscrowV2.json</a></td>
+                <td>0xB613d148E47525478bD8A91eF7Cf2F7F63d81858
+                </td>
+              </tr>
+              <tr>
+                <td>RewardsDistribution</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/RewardsDistribution.json">RewardsDistribution.json</a></td>
+                <td>0x9147Cb9e5ef262bd0b1d362134C40948dC00C3EB
+                </td>
+              </tr>
+              <tr>
+                <td>SafeDecimalMath</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/SafeDecimalMath.json">SafeDecimalMath.json</a></td>
+                <td>0x87A479D8433121E4583D45D37B4A349b4350B79F
+                </td>
+              </tr>
+              <tr>
+                <td>SynthUtil</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/SynthUtil.json">SynthUtil.json</a></td>
+                <td>0x5DF689ea1FB350bcB177Ff5e66ED8Dfe28C6045D
+                </td>
+              </tr>
+              <tr>
+                <td>Synthetix</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/MintableSynthetix.json">MintableSynthetix.json</a></td>
+                <td>0xCA731366244C07221C07fC25d660b365A02bDcB7
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixBridgeToBase</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/SynthetixBridgeToBase.json">SynthetixBridgeToBase.json</a></td>
+                <td>0xC2E4aB21D4d68B82bA71C2Fb449EC8aACc86133A
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixEscrow</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/SynthetixEscrow.json">SynthetixEscrow.json</a></td>
+                <td>0xf545e539788AfEAA665B7d79568E306e37Ef05cC
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixStateWithLimitedSetup.sol">SynthetixStateWithLimitedSetup.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/SynthetixStateWithLimitedSetup.json">SynthetixStateWithLimitedSetup.json</a></td>
+                <td>0x8c941ead543dcd6a617931FdEC173B8B0E9F4531
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsAAVE</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Synth.json">Synth.json</a></td>
+                <td>0x5D5D431159Ca065846DC38aeA5d146A541a8Ec27
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsBTC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Synth.json">Synth.json</a></td>
+                <td>0x082fbbaE20E472D1cEb9b51912d069C94A2b949b
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsETH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Synth.json">Synth.json</a></td>
+                <td>0x41B7BE5A411e73Baf5B2C82dCD1C110b0c177335
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsLINK</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Synth.json">Synth.json</a></td>
+                <td>0x25D0b662813D959cD0D03533Df4Da051765743AC
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsUNI</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Synth.json">Synth.json</a></td>
+                <td>0xa5D3600FF0fb98925f926f6E7C4DeEAb3ed8D004
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/Synth.json">Synth.json</a></td>
+                <td>0x4305B0485aD00548a17473ada5b3bA8be98d283F
+                </td>
+              </tr>
+              <tr>
+                <td>SystemSettings</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/SystemSettings.json">SystemSettings.json</a></td>
+                <td>0x756725D2c10D629b031Cb33AfEaB059Bc7f2B196
+                </td>
+              </tr>
+              <tr>
+                <td>SystemStatus</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/SystemStatus.json">SystemStatus.json</a></td>
+                <td>0x030B4af7E63993AA16150FB8b3A591E4473eAaE0
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStateSynthetix</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0x22C9624c784214D53d43BDB4Bf56B3D3Bf2e773C
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesAAVE</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0x2Bf6Bed12D1733FD649676d482c3D6d2c1c3df33
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesBTC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0x0F73cf03DFD5595e862aa27E98914E70554eCf6d
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesETH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0x8E6734A7653175b3FDa62516A646709F547C8342
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesLINK</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0xbFD9DaF95246b6e21461f2D48aD1bE5984145FFE
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesUNI</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0xF6f4f3D2E06Af9BC431b8bC869A2B138a5175C26
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/TokenState.json">TokenState.json</a></td>
+                <td>0x77e4837cc55a3CB32A33988Fb670c5bcF13bBD3f
+                </td>
+              </tr>
+              <tr>
+                <td>TradingRewards</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/kovan-ovm/TradingRewards.json">TradingRewards.json</a></td>
+                <td>0xEC4075Ff2452907FCf86c8b7EA5B0B378e187373
+                </td>
+              </tr></table>
