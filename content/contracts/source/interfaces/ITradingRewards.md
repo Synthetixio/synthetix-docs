@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ITradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol)
+**Source:** [contracts/interfaces/ITradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol)
 
 ## External Functions
 
 ### `claimRewardsForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `claimRewardsForPeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `closeCurrentPeriodWithRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `getAvailableRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `getAvailableRewardsForAccountForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `getAvailableRewardsForAccountForPeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `getCurrentPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `getPeriodAvailableRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `getPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `getPeriodIsClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `getPeriodIsFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `getPeriodRecordedFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `getPeriodTotalRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `getRewardsToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `getUnaccountedFeesForAccountForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `getUnassignedRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `recordExchangeFeeForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -314,7 +314,7 @@
 
 ### `recoverAssignedRewardTokensAndDestroyPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -332,7 +332,7 @@
 
 ### `recoverTokens`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -350,7 +350,7 @@
 
 ### `recoverUnassignedRewardTokens`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@
 
 ### `setPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ITradingRewards.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ITradingRewards.sol#L54)</sub>
 
 ??? example "Details"
 

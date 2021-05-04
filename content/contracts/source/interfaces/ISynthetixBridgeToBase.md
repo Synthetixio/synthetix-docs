@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToBase.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol)
 
 ## External Functions
 
-### `completeDeposit`
+### `finalizeEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToBase.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L8)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `completeDeposit(address account, uint256 depositAmount)`
+    `finalizeEscrowMigration(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
 
     **Visibility**
 
@@ -24,51 +24,15 @@
 
     `undefined`
 
-### `completeEscrowMigration`
+### `finalizeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToBase.sol#L14)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `completeEscrowMigration(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `completeRewardDeposit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToBase.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L15)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `completeRewardDeposit(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `initiateWithdrawal`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/interfaces/ISynthetixBridgeToBase.sol#L8)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `initiateWithdrawal(uint256 amount)`
+    `finalizeRewardDeposit(address from, uint256 amount)`
 
     **Visibility**
 

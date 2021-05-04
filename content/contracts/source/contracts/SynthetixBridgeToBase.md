@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol)
+**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -26,15 +26,15 @@
 
 ## Restricted Functions
 
-### `completeDeposit`
+### `finalizeDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L94)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `completeDeposit(address account, uint256 depositAmount)`
+    `finalizeDeposit(address to, uint256 amount)`
 
     **Visibility**
 
@@ -50,17 +50,17 @@
 
     **Emits**
 
-    * [MintedSecondary](#mintedsecondary)
+    * [undefined](#undefined)
 
-### `completeEscrowMigration`
+### `finalizeEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L80)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `completeEscrowMigration(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
+    `finalizeEscrowMigration(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
 
     **Visibility**
 
@@ -78,15 +78,15 @@
 
     * [ImportedVestingEntries](#importedvestingentries)
 
-### `completeRewardDeposit`
+### `finalizeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L102)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `completeRewardDeposit(uint256 amount)`
+    `finalizeRewardDeposit(address from, uint256 amount)`
 
     **Visibility**
 
@@ -102,31 +102,13 @@
 
     **Emits**
 
-    * [MintedSecondaryRewards](#mintedsecondaryrewards)
+    * [RewardDepositFinalized](#rewarddepositfinalized)
 
 ## Internal Functions
 
-### `messenger`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L32)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `messenger() view returns (contract iOVM_BaseCrossDomainMessenger)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
 ### `onlyAllowFromOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -144,49 +126,13 @@
 
     **Requires**
 
-    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L51)
+    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L29)
 
-    * [require(..., "Only the L1 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L52)
-
-### `rewardEscrowV2`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L40)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `rewardEscrowV2() view returns (contract IRewardEscrowV2)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `synthetix`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L36)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthetix() view returns (contract ISynthetix)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
+    * [require(..., "Only the L1 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L30)
 
 ### `synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -204,35 +150,9 @@
 
 ## External Functions
 
-### `initiateWithdrawal`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L75)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `initiateWithdrawal(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Not enough transferable SNX")](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L76)
-
-    **Emits**
-
-    * [WithdrawalInitiated](#withdrawalinitiated)
-
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -248,34 +168,66 @@
 
     `undefined`
 
+### `withdraw`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L50)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `withdraw(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+    **Modifiers**
+
+    * [requireInitiationActive](#requireinitiationactive)
+
+### `withdrawTo`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L54)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `withdrawTo(address to, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `undefined`
+
+    **Modifiers**
+
+    * [requireInitiationActive](#requireinitiationactive)
+
 ## Modifiers
 
 ### `onlyOptimismBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L33)</sub>
 
 ## Events
 
 ### `ImportedVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L110)</sub>
 
 **Signature**: `ImportedVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
 
-### `MintedSecondary`
+### `RewardDepositFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/SynthetixBridgeToBase.sol#L116)</sub>
 
-**Signature**: `MintedSecondary(address account, uint256 amount)`
-
-### `MintedSecondaryRewards`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L130)</sub>
-
-**Signature**: `MintedSecondaryRewards(uint256 amount)`
-
-### `WithdrawalInitiated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.43.1/contracts/SynthetixBridgeToBase.sol#L131)</sub>
-
-**Signature**: `WithdrawalInitiated(address account, uint256 amount)`
+**Signature**: `RewardDepositFinalized(address from, uint256 amount)`

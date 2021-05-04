@@ -62,11 +62,13 @@ nav:
                 - BaseDebtCache: contracts/source/contracts/BaseDebtCache.md
                 - BaseRewardEscrowV2: contracts/source/contracts/BaseRewardEscrowV2.md
                 - BaseSynthetix: contracts/source/contracts/BaseSynthetix.md
+                - BaseSynthetixBridge: contracts/source/contracts/BaseSynthetixBridge.md
                 - BinaryOption: contracts/source/contracts/BinaryOption.md
                 - BinaryOptionMarket: contracts/source/contracts/BinaryOptionMarket.md
                 - BinaryOptionMarketData: contracts/source/contracts/BinaryOptionMarketData.md
                 - BinaryOptionMarketFactory: contracts/source/contracts/BinaryOptionMarketFactory.md
                 - BinaryOptionMarketManager: contracts/source/contracts/BinaryOptionMarketManager.md
+                - BridgeMigrator: contracts/source/contracts/BridgeMigrator.md
                 - Collateral: contracts/source/contracts/Collateral.md
                 - CollateralErc20: contracts/source/contracts/CollateralErc20.md
                 - CollateralEth: contracts/source/contracts/CollateralEth.md
@@ -129,6 +131,7 @@ nav:
                 - Synth: contracts/source/contracts/Synth.md
                 - SynthUtil: contracts/source/contracts/SynthUtil.md
                 - Synthetix: contracts/source/contracts/Synthetix.md
+                - SynthetixBridgeEscrow: contracts/source/contracts/SynthetixBridgeEscrow.md
                 - SynthetixBridgeToBase: contracts/source/contracts/SynthetixBridgeToBase.md
                 - SynthetixBridgeToOptimism: contracts/source/contracts/SynthetixBridgeToOptimism.md
                 - SynthetixEscrow: contracts/source/contracts/SynthetixEscrow.md
@@ -142,6 +145,7 @@ nav:
                 - VirtualSynthMastercopy: contracts/source/contracts/VirtualSynthMastercopy.md
               Interfaces:
                 - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
+                - IBaseSynthetixBridge: contracts/source/interfaces/IBaseSynthetixBridge.md
                 - IBinaryOption: contracts/source/interfaces/IBinaryOption.md
                 - IBinaryOptionMarket: contracts/source/interfaces/IBinaryOptionMarket.md
                 - IBinaryOptionMarketManager: contracts/source/interfaces/IBinaryOptionMarketManager.md
@@ -166,6 +170,8 @@ nav:
                 - IIssuerInternal: contracts/source/interfaces/IIssuerInternal.md
                 - IIssuerInternalDebtCache: contracts/source/interfaces/IIssuerInternalDebtCache.md
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
+                - IOldSynthetixBridgeToOptimism: contracts/source/interfaces/IOldSynthetixBridgeToOptimism.md
+                - IOwned: contracts/source/interfaces/IOwned.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardEscrowV2: contracts/source/interfaces/IRewardEscrowV2.md
                 - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
@@ -175,6 +181,7 @@ nav:
                 - ISupplySchedule: contracts/source/interfaces/ISupplySchedule.md
                 - ISynth: contracts/source/interfaces/ISynth.md
                 - ISynthetix: contracts/source/interfaces/ISynthetix.md
+                - ISynthetixBridgeEscrow: contracts/source/interfaces/ISynthetixBridgeEscrow.md
                 - ISynthetixBridgeToBase: contracts/source/interfaces/ISynthetixBridgeToBase.md
                 - ISynthetixBridgeToOptimism: contracts/source/interfaces/ISynthetixBridgeToOptimism.md
                 - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
