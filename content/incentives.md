@@ -208,16 +208,7 @@ The primary opportunity for arbitrage in Synthetix is taking advantage of underp
 
 Synthetix offers bug bounties for its [smart contracts](https://docs.synthetix.io/addresses/) (not minor issues relating to UI/UX or website domains).
 
-There are four tiers of bug bounties offered, each to be paid in sUSD.
-
-The reward brackets are as following:
-
-Informational: $100 sUSD
-Low severity: $500 sUSD
-Moderate severity: $1000 sUSD
-High severity: $5000 sUSD
-
-To report a bug, please practice responsible disclosure via email at [bugs@synthetix.io](mailto:bugs@synthetix.io).
+Please see our Immunefi site for details [immunefi.com/bounty/synthetix/](https://immunefi.com/bounty/synthetix/).
 
 ## Additional Crypto-economic Discussions
 
