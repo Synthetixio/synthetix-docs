@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/EmptyEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/EmptyEtherCollateral.sol)
+**Source:** [contracts/EmptyEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/EmptyEtherCollateral.sol)
 
 ## External Functions
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/EmptyEtherCollateral.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/EmptyEtherCollateral.sol#L6)</sub>
 
 ??? example "Details"
 

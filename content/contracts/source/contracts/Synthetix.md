@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol)
+**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol)
 
 ## Architecture
 
@@ -31,7 +31,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -51,7 +51,7 @@
 
 ### `migrateEscrowBalanceToRewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -75,7 +75,7 @@
 
 ### `emitAccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -93,7 +93,7 @@
 
 ### `rewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -111,7 +111,7 @@
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -129,7 +129,7 @@
 
 ### `supplySchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -149,7 +149,7 @@
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -173,7 +173,7 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -197,7 +197,7 @@
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L87)</sub>
 
 This function is responsible for creating the inflationary SNX supply. It is a public function, so any address can ensure new tokens are released on schedule. When a new quantity is minted, the calling address is rewarded with a small incentive of SNX tokens, defined by [`SupplySchedule.minterReward`](SupplySchedule.md#minterreward).
 
@@ -221,9 +221,9 @@ This function always returns true if the transaction did not revert.
 
     **Requires**
 
-    * [require(..., "RewardsDistribution not set")](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L88)
+    * [require(..., "RewardsDistribution not set")](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L88)
 
-    * [require(..., "No supply is mintable")](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L94)
+    * [require(..., "No supply is mintable")](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L94)
 
     **Modifiers**
 
@@ -231,7 +231,7 @@ This function always returns true if the transaction did not revert.
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -249,7 +249,7 @@ This function always returns true if the transaction did not revert.
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L75)</sub>
 
 Settles any amounts oustanding for previous exchanges into the given synth.
 
@@ -277,6 +277,6 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `AccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha/contracts/Synthetix.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/Synthetix.sol#L153)</sub>
 
 **Signature**: `AccountLiquidated(address account, uint256 snxRedeemed, uint256 amountLiquidated, address liquidator)`
