@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/BridgeMigrator.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/BridgeMigrator.sol)
+**Source:** [contracts/BridgeMigrator.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/BridgeMigrator.sol)
 
 ## External Functions
 
 ### `acceptOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/BridgeMigrator.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/BridgeMigrator.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `nominateNewOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/BridgeMigrator.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/BridgeMigrator.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `nominatedOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/BridgeMigrator.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/BridgeMigrator.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `owner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-1/contracts/BridgeMigrator.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/BridgeMigrator.sol#L8)</sub>
 
 ??? example "Details"
 
