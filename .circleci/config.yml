@@ -1,6 +1,6 @@
 env_defaults:
   docker: &ref_0
-    - image: circleci/node:10.16
+    - image: circleci/node:12.16
       auth:
         username: $DOCKERHUB_USERNAME
         password: $DOCKERHUB_TOKEN
@@ -13,13 +13,13 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - 'v1.3-dependencies-{{ checksum "package.json" }}'
-            - v1.3-dependencies-
+            - 'v1.4-dependencies-{{ checksum "package.json" }}'
+            - v1.4-dependencies-
       - run: npm install
       - save_cache:
           paths:
             - node_modules
-          key: 'v1.3-dependencies-{{ checksum "package.json" }}'
+          key: 'v1.4-dependencies-{{ checksum "package.json" }}'
       - persist_to_workspace:
           root: .
           paths:
