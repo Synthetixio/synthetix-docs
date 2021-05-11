@@ -1,33 +1,79 @@
 # Governance
 
-Ownership of tokens within the Synthetix ecosystem is determined by a public network of Ethereum smart contracts. However the basic protocol design, incentive parameter settings, and system development are presently governed by the Synthetix foundation. Although the foundation initially made this tradeoff between centralisation and speed of development, it is committed to further decentralising key decision-making processes in the system. Steps in this direction are being taken by the development of community-driven governance and development methodologies.
+The Synthetix Protocol has several key governing bodies and artifacts which co-exist to enable the decentralised nature of the Protocol. The key decentralised autonomous organisations (DAOs) are the - Spartan Council, Protocol DAO, Synthetix DAO, Ambassadors DAO and the Grants DAO.
 
-## Synthetix Improvement Proposals (SIPs)
+The Synthetix decentralised governance process utilises these key artifacts - Synthetix Improvement Proposals (SIPs) and the Synthetix Configuration Change Proposals (SCCPs) which effectively outline proposed present, past and future changes to the Synthetix Protocol.
 
-The SIP format describes protocol standards and proposed updates. They provide a central forum for the submission, discussion, and acceptance of rigorous definitions of various components of the core Synthetix system, and documentation of the rationale behind design decisions. SIPs are enumerated at their [official site](https://sips.synthetix.io/). The SIP format is based on EIPs (Ethereum Improvement Proposals).
+## Artifacts
 
-Historically, SIPs have been used to modify the fee/reward structure, allow the liquidation of unused synths, introduce new synths, and implement various exchange rate front-running protections. They are an appropriate mechanism for a broad range of fundamental alterations to the Synthetix platform and as such require an organised process for community consultation and iteration.
+### Synthetix Improvement Proposals (SIPs)
 
-SIPs live in their own [GitHub repository](https://github.com/Synthetixio/SIPs), where the SIP format is [documented](https://github.com/Synthetixio/SIPs/blob/master/SIPS/sip-1.md) and community members may participate in the acceptance process. Anyone may propose SIPs, though not all SIPs are necessarily accepted.
+The SIP is an artifact used to describe proposed changes to the core Synthetix Protocol. They can be authored by anyone and feature the motivation, technical specifications and rationale behind design decisions relating to the proposed idea.
 
-## Synthetix Configuration Change Proposal (SCCPs)
+SIPs are used as an artifact by the Spartan Council who is responsible for conducting interviews with the SIP author and debating on the implications of the SIP within the council chamber and also by the protocol DAO who is responsible for implementing the technical changes on the discretion of the Spartan Council.
 
-SCCPs are similar to SIPs, but concern modifications to system configuration values such as exchange fees and the global collateralisation limit.
+SIPs live at their [official site](https://sips.synthetix.io/) where anyone can see the status of SIPs and to find out more information about how to author one. Although anyone can author a SIP, it is ultimately up to the Spartan Council to approve and accept a SIP, all successful SIPs are granted a Synthetix Network Token reward.
 
-SCCPs live in the same repository and website as SIPs do, but have a [slightly different specification](https://github.com/Synthetixio/SIPs/blob/master/SCCP/sccp-1.md).
+### Synthetix Configuration Change Proposal (SCCPs)
 
-## Synthetix grantsDAO
+The SCCP is an artifact which follows the same authoring and review process as the SIP, except the contents of the SCCP contain proposed changes to existing parameters of the system. As a result of this, SCCPs commonly reference a SIP that is deployed on the Synthetix Protocol.
 
-The Synthetix grantsDAO was set up to fund community grant proposals for such purposes as infrastructure and promotional resources. The DAO consists of 3 community members and 2 core contributors, and there is an interface available for the public at [snxgrants.io](https://snxgrants.io/).
+SCCP’s live on the same site as the SIPs [official site](https://sips.synthetix.io/) but follow a slightly different specification.
 
-Grants are intended for individuals or teams who support Synthetix and are willing to contribute to the project in some way. There is a maximum of `50,000 SNX` per grant, though most are expected to be much smaller projects than this, and proposals can be submitted as a PR on the [snx-grants-dao repo](https://github.com/Synthetixio/snx-grants-dao/blob/master/proposals/proposal-template.md). The intention behind the grantsDAO is to reward people who already hold SNX and help further the ecosystem in some way.
+## Decentralised Autonomous Organisations
 
-It's recommended that before you go to the trouble of submitting a proposal to the grantsDAO, that you either gauge community sentiment around the utility of your proposed addition to the ecosystem, or contact a grantsDAO member to discuss it directly. This can be done through the [Synthetix Discord](https://discord.com/invite/AEdUHzt) in the #grants-dao channel.
+### Spartan Council (SC)
 
-## Community Governance Calls
+The Spartan Council (SC) is a governing DAO which currently comprises 8 members who are elected (see Elections) for the duration of an epoch by community staking participants. Established via [SIP-93](https://sips.synthetix.io/sips/sip-93), the SC is responsible for conducting SIP/SCCP interviews, debating the implications of proposed changes, coordinating protocol changes with the protocol DAO and hosting periodic community governance meetings in order to best represent and protect the wider Synthetix stakeholders.
 
-Community governance calls are a venue for the Synthetix team to consult with the community. These calls occur on a semi-regular basis and typically have a pre-set agenda of issues to be discussed and resolved. This complements Discord as a central component of the team's commitment to transparency and community engagement on the path to full decentralisation. Upcoming community governance calls are announced on the [Synthetix blog](https://blog.synthetix.io/); [here](https://www.youtube.com/channel/UCxsxeKabeNtozsolSM_1nuw) you can view every governance call in full.
+The SC, like other DAO roles, are paid a stipend by the Synthetix DAO and conduct their duties on the relevant discord governance channels and utilises [snapshot’s](https://snapshot.org/) IPFS signature voting on the staking governance [site](https://staking.synthetix.io/gov).
 
-## Development Bounties
+### Protocol DAO (pDAO)
 
-The code that runs Synthetix is mostly [MIT licenced](https://github.com/Synthetixio/synthetix/blob/master/LICENSE) and open source, and in principle anyone can contribute. To encourage this, the Synthetix foundation has offered bounties for development and bug reports by parties outside of the core engineering team. Development bounties are managed on [Gitcoin](https://gitcoin.co/profile/Synthetixio) and discussion takes place in corresponding [GitHub issues](https://github.com/Synthetixio/synthetix/issues). Bug bounties are described in [this blog post](https://blog.synthetix.io/synthetix-bug-bounties/).
+The Protocol DAO (pDAO) is the DAO is an organisation which operates out of a Gnosis multi-signature wallet. The wallet is assigned as the owner of the Synthetix Protocol core contracts, which makes the pDAO responsible for upgrading and releasing new contracts on behalf of the Spartan Council.
+
+Members of the pDAO are appointed to be signers of the Gnosis multi-sig by the Spartan Council, who use a strict [criteria](https://sips.synthetix.io/sips/sip-124) to identify who is eligible to become a pDAO member.
+
+The Gnosis multisignature wallet address that the pDAO operate out of is [`0xEb3107117FEAd7de89Cd14D463D340A2E6917769`](https://gnosis-safe.io/app/#/safes/0xEb3107117FEAd7de89Cd14D463D340A2E6917769).
+
+### Synthetix DAO (sDAO)
+
+The Synthetix DAO is the DAO responsible for managing the Synthetix Protocol treasury, their only role is ensuring that the Synthetix governing bodies remain incentivised to support the Synthetix Ecosystem’s upkeep and future development.
+
+### Ambassador DAO (aDAO)
+
+Ambassadors are nominated community members who are appointed as a signer on a Gnosis (multisig)[https://gnosis-safe.io/app/#/safes/0x46abFE1C972fCa43766d6aD70E1c1Df72F4Bb4d], their role is to gather support from Synthetix community members who delegate their governance tokens (from other external protocols) to the multisig, effectively empowering the Ambassadors to participate in external protocols governance systems which have a positive impact on the Synthetix ecosystem (i.e interoperable protocol features, listing of synthetix synths on DEX’s).
+
+The Ambassadors are re-elected every epoch, and the members are paid a stipend by the sDAO during their tenure.
+
+### Grants DAO (gDAO)
+
+The grantsDAO is the organisation that is responsible for vetting, issuing and accepting proposals to be funded. The proposals consist of public goods that community members want to be built that directly benefit the Synthetix ecosystem.
+
+With their budget, the gDAO also funds public hackathons and external developments in which the core contributors might consider out of their scope.
+
+They operate out of a Gnosis multisig found [here](https://gnosis-safe.io/app/#/safes/0xeb9a82736cc030fC4A4CD4b53e9B2c67e153208d) and are paid a stipend by the sDAO.
+
+### Core Contributors
+
+A decentralised cluster of autonomous teams that are paid a stipend by the sDAO and support the Synthetix Protocol via a variety of development and non-developmental roles (i.e marketing, design, development etc).
+
+## Ceremonies
+
+### Elections
+
+An integral part of the Synthetix Governance Process is the DAO election process. To prevent a stagnant governance system, the different DAO’s have specific epochs in which the members operate within.
+
+At the end of each epoch, the community conducts an election via [snapshot’s](https://snapshot.org/) IPFS infrastructure as specified in [SIP-90](https://sips.synthetix.io/sips/sip-90) where the participants staking to the Synthetix Protocol are assigned a weighted-vote in which they can delegate to the member they’d like to see on the DAO.
+
+### Community Governance Call
+
+Once a month, the DAO’s collectively host a community call on discord which is a public forum in which the DAO’s give an overview of their work and provide an open-environment for community members to express their opinions to the governing bodies directly.
+
+These governance calls are recorded and hosted on youtube and spotify.
+
+### SIP/SCCP interviews
+
+As a part of the Spartan Council role, interviews are conducted between the SIP/SCCP authors and the Spartan Council in order to discuss the implications and design choices of a proposed change to the Synthetix Protocol. The public nature of these interviews provides a transparent way for the community members to understand the changes being proposed and also safeguards the system through having more accountability within the decision making process.
+
+These interviews are recorded and publicly available on [spotify](https://open.spotify.com/show/3ucEqjfVDzJ8wSyVxheTPA).
