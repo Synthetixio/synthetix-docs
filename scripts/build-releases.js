@@ -10,7 +10,7 @@ const moment = require('moment');
 console.log('Building releases page');
 
 (async () => {
-	const { data } = await axios.get('https://api.github.com/repos/Synthetixio/synthetix/releases?per_page=150');
+	const { data } = await axios.get('https://api.github.com/repos/Synthetixio/synthetix/releases?per_page=1000');
 
 	const content = data
 		.sort((a, b) => (a.created_at < b.created_at ? 1 : -1))
