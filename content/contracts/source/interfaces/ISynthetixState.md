@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol)
+**Source:** [contracts/interfaces/ISynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol)
 
 ## External Functions
 
 ### `appendDebtLedgerValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `clearIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `debtLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `debtLedgerLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `decrementTotalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `hasIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `incrementTotalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `issuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `lastDebtLedgerEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `setCurrentIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ISynthetixState.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ISynthetixState.sol#L21)</sub>
 
 ??? example "Details"
 

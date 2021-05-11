@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/IHasBalance.sol)
+**Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/IHasBalance.sol)
 
 ## External Functions
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/IHasBalance.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/IHasBalance.sol#L6)</sub>
 
 ??? example "Details"
 

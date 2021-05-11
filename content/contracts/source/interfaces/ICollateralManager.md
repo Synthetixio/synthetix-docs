@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol)
+**Source:** [contracts/interfaces/ICollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol)
 
 ## External Functions
 
 ### `addCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `addShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `addSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `areShortableSynthsSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `areSynthsAndCurrenciesSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `decrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `decrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `exceedsDebtLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `getBorrowRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `getNewLoanId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `getRatesAndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `getShortRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `getShortRatesAndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `hasCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `incrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `incrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `isSynthManaged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -314,7 +314,7 @@
 
 ### `long`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -332,7 +332,7 @@
 
 ### `removeCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -350,7 +350,7 @@
 
 ### `removeShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@
 
 ### `removeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -386,7 +386,7 @@
 
 ### `short`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -404,7 +404,7 @@
 
 ### `totalLong`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -422,7 +422,7 @@
 
 ### `totalShort`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -440,7 +440,7 @@
 
 ### `updateBorrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -458,7 +458,7 @@
 
 ### `updateShortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2/contracts/interfaces/ICollateralManager.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.44.0/contracts/interfaces/ICollateralManager.sol#L74)</sub>
 
 ??? example "Details"
 

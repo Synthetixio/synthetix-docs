@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.44.0-alpha-2](https://github.com/Synthetixio/synthetix/tree/v2.44.0-alpha-2)
+**Version**: [v2.44.0](https://github.com/Synthetixio/synthetix/tree/v2.44.0)
 
 !!! info "Naming Conventions"
 
@@ -914,10 +914,17 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr>
               <tr>
+                <td>SynthetixBridgeEscrow</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixBridgeEscrow.sol">SynthetixBridgeEscrow.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/SynthetixBridgeEscrow.json">SynthetixBridgeEscrow.json</a></td>
+                <td><a target="_blank" href="https://etherscan.io/address/0x5Fd79D46EBA7F351fe49BFF9E87cdeA6c821eF9f">0x5Fd79D46EBA7F351fe49BFF9E87cdeA6c821eF9f</a>
+                </td>
+              </tr>
+              <tr>
                 <td>SynthetixBridgeToOptimism</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixBridgeToOptimism.sol">SynthetixBridgeToOptimism.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet/SynthetixBridgeToOptimism.json">SynthetixBridgeToOptimism.json</a></td>
-                <td><a target="_blank" href="https://etherscan.io/address/0x045e507925d2e05D114534D0810a1abD94aca8d6">0x045e507925d2e05D114534D0810a1abD94aca8d6</a>
+                <td><a target="_blank" href="https://etherscan.io/address/0xCd9D4988C0AE61887B075bA77f08cbFAd2b65068">0xCd9D4988C0AE61887B075bA77f08cbFAd2b65068</a>
                 </td>
               </tr>
               <tr>
@@ -5516,9 +5523,9 @@ Here is the list of all contracts within the current Synthetix system.
               </tr>
               <tr>
                 <td>DebtCache</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/RealtimeDebtCache.sol">RealtimeDebtCache.sol</a></td>
-                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/RealtimeDebtCache.json">RealtimeDebtCache.json</a></td>
-                <td>0x5A528e35165e19f3392c9631243dd04d1229D324
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/DebtCache.sol">DebtCache.sol</a></td>
+                <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/DebtCache.json">DebtCache.json</a></td>
+                <td>0x8be60b5031C0686e48a079C81822173bFa1268DA
                 </td>
               </tr>
               <tr>
@@ -5581,7 +5588,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/Exchanger.json">Exchanger.json</a></td>
-                <td>0xe318E4618E5684668992935d7231Cb837a44E670
+                <td>0xd48BEc0A784692dde6d2D481eD71911cdC12513A
                 </td>
               </tr>
               <tr>
@@ -5714,14 +5721,14 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/MintableSynthetix.json">MintableSynthetix.json</a></td>
-                <td>0xD85eAFa37734E4ad237C3A3443D64DC94ae998E7
+                <td>0x8e9D85099ffc4bE029F362728B84Bb8BBb5665c1
                 </td>
               </tr>
               <tr>
                 <td>SynthetixBridgeToBase</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SynthetixBridgeToBase.json">SynthetixBridgeToBase.json</a></td>
-                <td>0x4D7186818daBFe88bD80421656BbD07Dffc979Cc
+                <td>0x3f87Ff1de58128eF8FCb4c807eFD776E1aC72E51
                 </td>
               </tr>
               <tr>
@@ -5756,7 +5763,7 @@ Here is the list of all contracts within the current Synthetix system.
                 <td>SystemStatus</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/master/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
                 <td><a target="_blank" href="https://raw.githubusercontent.com/Synthetixio/synthetix-js/master/lib/abis/mainnet-ovm/SystemStatus.json">SystemStatus.json</a></td>
-                <td>0x357b58E0b1Be9d8A944380048fa1080c57c7A362
+                <td>0xf83c5f65dBef4017CD19Ae99b15E1B8649AdbEb4
                 </td>
               </tr>
               <tr>
