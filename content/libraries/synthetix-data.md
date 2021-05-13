@@ -1,6 +1,6 @@
 !!! info "Notice"
 
-    Imported from https://github.com/Synthetixio/synthetix-data
+    Imported from https://github.com/Synthetixio/synthetix-data/
 
 # synthetix-data
 
@@ -64,20 +64,20 @@ import snxData from 'synthetix-data'; // es modules
 
 // query and log resolved results
 snxData.exchanges
-  .since({
-    minTimestamp: Math.floor(Date.now() / 1e3) - 3600 * 24, // one day ago
-  })
-  .then(exchanges => console.log(exchanges));
+	.since({
+		minTimestamp: Math.floor(Date.now() / 1e3) - 3600 * 24, // one day ago
+	})
+	.then(exchanges => console.log(exchanges));
 
 // subscribe and log streaming results
 snxData.exchanges.observe().subscribe({
-  next(val) {
-    console.log(val);
-  },
-  error: console.error,
-  complete() {
-    console.log('done');
-  },
+	next(val) {
+		console.log(val);
+	},
+	error: console.error,
+	complete() {
+		console.log('done');
+	},
 });
 ```
 
@@ -86,13 +86,13 @@ snxData.exchanges.observe().subscribe({
 ```html
 <script src="//cdn.jsdelivr.net/npm/synthetix-data/browser.js"></script>
 <script>
-  window.snxData.exchanges
-    .since({
-      minTimestamp: Math.floor(Date.now() / 1e3) - 3600 * 24, // one day ago
-    })
-    .then(console.log);
+	window.snxData.exchanges
+		.since({
+			minTimestamp: Math.floor(Date.now() / 1e3) - 3600 * 24, // one day ago
+		})
+		.then(console.log);
 
-  window.snxData.exchanges.observe().subscribe({ next: console.log });
+	window.snxData.exchanges.observe().subscribe({ next: console.log });
 </script>
 ```
 
