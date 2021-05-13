@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/NativeEtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol)
+**Source:** [contracts/NativeEtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `etherWrapper`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `synthsETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `weth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
     **Requires**
 
-    * [require(..., "amount must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L67)
+    * [require(..., "amount must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L67)
 
     **Emits**
 
@@ -110,7 +110,7 @@
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@
 
     **Requires**
 
-    * [require(..., "msg.value must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L49)
+    * [require(..., "msg.value must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L49)
 
     **Emits**
 
@@ -136,7 +136,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -156,12 +156,12 @@
 
 ### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L97)</sub>
 
 **Signature**: `Burned(address account, uint256 amount)`
 
 ### `Minted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/NativeEtherWrapper.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/NativeEtherWrapper.sol#L96)</sub>
 
 **Signature**: `Minted(address account, uint256 amount)`

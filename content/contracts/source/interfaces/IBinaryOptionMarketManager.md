@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol)
+**Source:** [contracts/interfaces/IBinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol)
 
 ## External Functions
 
 ### `activeMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `cancelMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `createMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `creatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `durations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `expireMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `marketCreationEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `maturedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `numActiveMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `numMaturedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `resolveMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `totalDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0-alpha/contracts/interfaces/IBinaryOptionMarketManager.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L31)</sub>
 
 ??? example "Details"
 
