@@ -2,6 +2,19 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alioth (v2.45.0)
+
+**Published**: May 13, 2021
+
+**Codebase**: [v2.45.0](https://github.com/Synthetixio/synthetix/tree/v2.45.0)
+
+> https://blog.synthetix.io/the-alioth-release/
+
+- [SIP-112](https://sips.synthetix.io/sips/sip-112) EtherWrapper
+- [SIP-136](https://sips.synthetix.io/sips/sip-136) Improve DebtCache calculations
+
+---
+
 # Alnair (v2.44.0)
 
 **Published**: May 11, 2021
