@@ -87,6 +87,7 @@ nav:
                 - EternalStorage: contracts/source/contracts/EternalStorage.md
                 - EtherCollateral: contracts/source/contracts/EtherCollateral.md
                 - EtherCollateralsUSD: contracts/source/contracts/EtherCollateralsUSD.md
+                - EtherWrapper: contracts/source/contracts/EtherWrapper.md
                 - ExchangeRates: contracts/source/contracts/ExchangeRates.md
                 - ExchangeRatesWithoutInvPricing: contracts/source/contracts/ExchangeRatesWithoutInvPricing.md
                 - ExchangeState: contracts/source/contracts/ExchangeState.md
@@ -98,6 +99,7 @@ nav:
                 - FeePoolState: contracts/source/contracts/FeePoolState.md
                 - FixedSupplySchedule: contracts/source/contracts/FixedSupplySchedule.md
                 - FlexibleStorage: contracts/source/contracts/FlexibleStorage.md
+                - IEtherWrapper: contracts/source/contracts/IEtherWrapper.md
                 - ImportableRewardEscrowV2: contracts/source/contracts/ImportableRewardEscrowV2.md
                 - IssuanceEternalStorage: contracts/source/contracts/IssuanceEternalStorage.md
                 - Issuer: contracts/source/contracts/Issuer.md
@@ -110,6 +112,7 @@ nav:
                 - MixinResolver: contracts/source/contracts/MixinResolver.md
                 - MixinSystemSettings: contracts/source/contracts/MixinSystemSettings.md
                 - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
+                - NativeEtherWrapper: contracts/source/contracts/NativeEtherWrapper.md
                 - Owned: contracts/source/contracts/Owned.md
                 - Pausable: contracts/source/contracts/Pausable.md
                 - Proxy: contracts/source/contracts/Proxy.md
@@ -191,6 +194,7 @@ nav:
                 - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
                 - ITradingRewards: contracts/source/interfaces/ITradingRewards.md
                 - IVirtualSynth: contracts/source/interfaces/IVirtualSynth.md
+                - IWETH: contracts/source/interfaces/IWETH.md
               Libraries:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md
                 - AddressSetLib: contracts/source/libraries/AddressSetLib.md
