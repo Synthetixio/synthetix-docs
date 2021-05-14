@@ -72,7 +72,7 @@ const provider = ethers.providers.getDefaultProvider('kovan');
 const signer = new ethers.Wallet(
   // just a dummy kovan wallet with a little keth from the faucet
   '0xa0d951c494421559c63089093b020cf2f7aac003c916967dc36e989bc695222e',
-  provider
+  provider,
 );
 
 // and then instantiate synthetix with the signer
