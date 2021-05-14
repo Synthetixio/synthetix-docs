@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EscrowChecker.sol)
+**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EscrowChecker.sol)
 
-## External Functions
+## Views
 
 ### `getVestingScheduleEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EscrowChecker.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EscrowChecker.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EscrowChecker.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EscrowChecker.sol#L4)</sub>
 
 ??? example "Details"
 
@@ -40,4 +40,4 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`

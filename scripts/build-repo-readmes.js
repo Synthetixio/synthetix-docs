@@ -8,12 +8,16 @@ const path = require('path');
 console.log('Building library pages');
 
 (async () => {
+	const repoWorkspace = {
+		'js-monorepo': 'packages/contracts-interface/',
+	};
+
 	const readmes = await Promise.all(
-		['synthetix', 'synthetix-data', 'synthetix-js', 'synthetix-cli'].map(repo =>
+		['synthetix', 'synthetix-data', 'js-monorepo', 'synthetix-cli', 'synthetix-assets'].map(repo =>
 			axios
-				.get(`https://raw.githubusercontent.com/Synthetixio/${repo}/master/README.md`)
+				.get(`https://raw.githubusercontent.com/Synthetixio/${repo}/master/${repoWorkspace[repo] || ''}README.md`)
 				.then(({ data }) => [
-					`https://github.com/Synthetixio/${repo}`,
+					`https://github.com/Synthetixio/${repo}/${repoWorkspace[repo] ? 'tree/master/' + repoWorkspace[repo] : ''}`,
 					path.join(__dirname, '..', 'content', 'libraries', `${repo}.md`),
 					data,
 				]),

@@ -6,13 +6,13 @@ This contract is an implementation of [SIP-63](https://sips.synthetix.io/sips/si
 
 The recording of such fees can be enabled by the ProtocolDAO, via [SystemSettings](https://github.com/Synthetixio/synthetix/blob/v2.27.2/contracts/SystemSettings.sol#L129).
 
-**Source:** [contracts/TradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol)
+**Source:** [contracts/TradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol)
 
 ## Structs
 
 ### `Period`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L32)</sub>
 
 | Field                       | Type                          | Description                                                                                                                |
 | --------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -40,353 +40,17 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "Invalid period controller")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L54)
+    * [require(..., "Invalid period controller")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L54)
 
-## Restricted Functions
-
-### `closeCurrentPeriodWithRewards`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L195)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `closeCurrentPeriodWithRewards(uint256 rewards)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Insufficient free rewards")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L198)
-
-    **Modifiers**
-
-    * [onlyPeriodController](#onlyperiodcontroller)
-
-    **Emits**
-
-    * [PeriodFinalizedWithRewards](#periodfinalizedwithrewards)
-
-    * [NewPeriodStarted](#newperiodstarted)
-
-### `recordExchangeFeeForAccount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L184)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `recordExchangeFeeForAccount(uint256 usdFeeAmount, address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyExchanger](#onlyexchanger)
-
-    **Emits**
-
-    * [ExchangeFeeRecorded](#exchangefeerecorded)
-
-### `recoverAssignedRewardTokensAndDestroyPeriod`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L243)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `recoverAssignedRewardTokensAndDestroyPeriod(address recoverAddress, uint256 periodID)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Cannot recover from active")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L245)
-
-    * [require(..., "No rewards available to recover")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L248)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-    **Emits**
-
-    * [AssignedRewardTokensRecovered](#assignedrewardtokensrecovered)
-
-### `recoverTokens`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L215)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `recoverTokens(address tokenAddress, address recoverAddress)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Must use another function")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L217)
-
-    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L222)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-    **Emits**
-
-    * [TokensRecovered](#tokensrecovered)
-
-### `recoverUnassignedRewardTokens`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L229)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `recoverUnassignedRewardTokens(address recoverAddress)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L233)
-
-    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L236)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-    **Emits**
-
-    * [UnassignedRewardTokensRecovered](#unassignedrewardtokensrecovered)
-
-### `setPeriodController`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L266)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setPeriodController(address newPeriodController)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Invalid period controller")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L267)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-    **Emits**
-
-    * [PeriodControllerChanged](#periodcontrollerchanged)
-
-## Internal Functions
-
-### `_calculateRewards`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L135)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_calculateRewards(address account, uint256 periodID) view returns (uint256)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `_claimRewards`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L165)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_claimRewards(address account, uint256 periodID)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Period is not finalized")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L167)
-
-    * [require(..., "No rewards available")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L170)
-
-    **Emits**
-
-    * [RewardsClaimed](#rewardsclaimed)
-
-### `_validateRecoverAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L260)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_validateRecoverAddress(address recoverAddress) view`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `exchanger`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L71)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchanger() view returns (contract IExchanger)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `synthetix`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L67)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthetix() view returns (contract IERC20)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-## External Functions
-
-### `claimRewardsForPeriod`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L152)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `claimRewardsForPeriod(uint256 periodID)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [nonReentrant](#nonreentrant)
-
-    * [notPaused](#notpaused)
-
-### `claimRewardsForPeriods`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L156)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `claimRewardsForPeriods(uint256[] periodIDs)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [nonReentrant](#nonreentrant)
-
-    * [notPaused](#notpaused)
+## Views
 
 ### `getAvailableRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -400,11 +64,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getAvailableRewardsForAccountForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L119)</sub>
 
 ??? example "Details"
 
@@ -418,11 +82,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getAvailableRewardsForAccountForPeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -436,11 +100,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getCurrentPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -454,11 +118,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getPeriodAvailableRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -472,11 +136,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -490,11 +154,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getPeriodIsClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -508,11 +172,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getPeriodIsFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -526,11 +190,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getPeriodRecordedFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L103)</sub>
 
 ??? example "Details"
 
@@ -544,11 +208,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getPeriodTotalRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -562,11 +226,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getRewardsToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -580,11 +244,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getUnaccountedFeesForAccountForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -598,11 +262,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getUnassignedRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -616,11 +280,11 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -634,64 +298,402 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Restricted Functions
+
+### `closeCurrentPeriodWithRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L195)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `closeCurrentPeriodWithRewards(uint256 rewards)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Insufficient free rewards")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L198)
+
+    **Modifiers**
+
+    * [onlyPeriodController](#onlyperiodcontroller)
+
+    **Emits**
+
+    * [PeriodFinalizedWithRewards](#periodfinalizedwithrewards)
+
+    * [NewPeriodStarted](#newperiodstarted)
+
+### `recordExchangeFeeForAccount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L184)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `recordExchangeFeeForAccount(uint256 usdFeeAmount, address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyExchanger](#onlyexchanger)
+
+    **Emits**
+
+    * [ExchangeFeeRecorded](#exchangefeerecorded)
+
+### `recoverAssignedRewardTokensAndDestroyPeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L243)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `recoverAssignedRewardTokensAndDestroyPeriod(address recoverAddress, uint256 periodID)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Cannot recover from active")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L245)
+
+    * [require(..., "No rewards available to recover")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L248)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [AssignedRewardTokensRecovered](#assignedrewardtokensrecovered)
+
+### `recoverTokens`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L215)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `recoverTokens(address tokenAddress, address recoverAddress)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Must use another function")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L217)
+
+    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L222)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [TokensRecovered](#tokensrecovered)
+
+### `recoverUnassignedRewardTokens`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L229)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `recoverUnassignedRewardTokens(address recoverAddress)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L233)
+
+    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L236)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [UnassignedRewardTokensRecovered](#unassignedrewardtokensrecovered)
+
+### `setPeriodController`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L266)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setPeriodController(address newPeriodController)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Invalid period controller")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L267)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [PeriodControllerChanged](#periodcontrollerchanged)
+
+## Internal Functions
+
+### `_calculateRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L135)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_calculateRewards(address account, uint256 periodID) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_claimRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L165)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_claimRewards(address account, uint256 periodID)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Period is not finalized")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L167)
+
+    * [require(..., "No rewards available")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L170)
+
+    **Emits**
+
+    * [RewardsClaimed](#rewardsclaimed)
+
+### `_validateRecoverAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L260)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_validateRecoverAddress(address recoverAddress) view`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `exchanger`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L71)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchanger() view returns (contract IExchanger)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `synthetix`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L67)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthetix() view returns (contract IERC20)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+## External Functions
+
+### `claimRewardsForPeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L152)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `claimRewardsForPeriod(uint256 periodID)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [nonReentrant](#nonreentrant)
+
+    * [notPaused](#notpaused)
+
+### `claimRewardsForPeriods`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L156)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `claimRewardsForPeriods(uint256[] periodIDs)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [nonReentrant](#nonreentrant)
+
+    * [notPaused](#notpaused)
 
 ## Modifiers
 
 ### `onlyExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L281)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L281)</sub>
 
 ### `onlyPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L276)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L276)</sub>
 
 ## Events
 
 ### `AssignedRewardTokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L294)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L294)</sub>
 
 **Signature**: `AssignedRewardTokensRecovered(address recoverAddress, uint256 amount, uint256 periodID)`
 
 ### `ExchangeFeeRecorded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L288)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L288)</sub>
 
 **Signature**: `ExchangeFeeRecorded(address account, uint256 amount, uint256 periodID)`
 
 ### `NewPeriodStarted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L290)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L290)</sub>
 
 **Signature**: `NewPeriodStarted(uint256 periodID)`
 
 ### `PeriodControllerChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L295)</sub>
 
 **Signature**: `PeriodControllerChanged(address newPeriodController)`
 
 ### `PeriodFinalizedWithRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L291)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L291)</sub>
 
 **Signature**: `PeriodFinalizedWithRewards(uint256 periodID, uint256 rewards)`
 
 ### `RewardsClaimed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L289)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L289)</sub>
 
 **Signature**: `RewardsClaimed(address account, uint256 amount, uint256 periodID)`
 
 ### `TokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L292)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L292)</sub>
 
 **Signature**: `TokensRecovered(address tokenAddress, address recoverAddress, uint256 amount)`
 
 ### `UnassignedRewardTokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/TradingRewards.sol#L293)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/TradingRewards.sol#L293)</sub>
 
 **Signature**: `UnassignedRewardTokensRecovered(address recoverAddress, uint256 amount)`

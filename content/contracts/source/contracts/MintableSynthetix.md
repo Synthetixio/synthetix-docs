@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol)
+**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -22,143 +22,13 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Restricted Functions
-
-### `burnSecondary`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L61)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSecondary(address account, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyBridge](#onlybridge)
-
-    * [systemActive](#systemactive)
-
-### `mintSecondary`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L51)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `mintSecondary(address account, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyBridge](#onlybridge)
-
-### `mintSecondaryRewards`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L55)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `mintSecondaryRewards(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyBridge](#onlybridge)
-
-## Internal Functions
-
-### `_mintSecondary`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L20)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_mintSecondary(address account, uint256 amount)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `onlyAllowFromBridge`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L26)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `onlyAllowFromBridge() view`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Can only be invoked by bridge")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L27)
-
-### `synthetixBridge`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L45)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthetixBridge() view returns (address)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-## External Functions
+## Views
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -172,10 +42,140 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Restricted Functions
+
+### `burnSecondary`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L61)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSecondary(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyBridge](#onlybridge)
+
+    * [systemActive](#systemactive)
+
+### `mintSecondary`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L51)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mintSecondary(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyBridge](#onlybridge)
+
+### `mintSecondaryRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L55)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mintSecondaryRewards(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyBridge](#onlybridge)
+
+## Internal Functions
+
+### `_mintSecondary`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L20)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_mintSecondary(address account, uint256 amount)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `onlyAllowFromBridge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L26)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `onlyAllowFromBridge() view`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., "Can only be invoked by bridge")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L27)
+
+### `synthetixBridge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L45)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthetixBridge() view returns (address)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
 
 ## Modifiers
 
 ### `onlyBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MintableSynthetix.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MintableSynthetix.sol#L32)</sub>

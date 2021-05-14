@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralState.sol)
+**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/CollateralState.sol)
 
 ## Variables
 
 ### `loans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/CollateralState.sol#L17)</sub>
 
 **Type:** `mapping(address => struct ICollateralLoan.Loan[])`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralState.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/CollateralState.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -30,59 +30,13 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Restricted Functions
-
-### `createLoan`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralState.sol#L38)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `createLoan(struct ICollateralLoan.Loan loan)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `updateLoan`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralState.sol#L42)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `updateLoan(struct ICollateralLoan.Loan loan)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-## External Functions
+## Views
 
 ### `getLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralState.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/CollateralState.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -96,11 +50,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getNumLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralState.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/CollateralState.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -114,4 +68,50 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Restricted Functions
+
+### `createLoan`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/CollateralState.sol#L38)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `createLoan(struct ICollateralLoan.Loan loan)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `updateLoan`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/CollateralState.sol#L42)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `updateLoan(struct ICollateralLoan.Loan loan)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)

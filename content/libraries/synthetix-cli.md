@@ -1,6 +1,6 @@
 !!! info "Notice"
 
-    Imported from https://github.com/Synthetixio/synthetix-cli
+    Imported from https://github.com/Synthetixio/synthetix-cli/
 
 # synthetix-cli
 

@@ -2,49 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol)
+**Source:** [contracts/interfaces/ISynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol)
 
-## External Functions
-
-### `appendDebtLedgerValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L23)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `appendDebtLedgerValue(uint256 value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `clearIssuanceData`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L25)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `clearIssuanceData(address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+## Views
 
 ### `debtLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -58,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `debtLedgerLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -76,29 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `decrementTotalIssuerCount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L19)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `decrementTotalIssuerCount()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `hasIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -112,29 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `incrementTotalIssuerCount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L17)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `incrementTotalIssuerCount()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `issuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -148,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `lastDebtLedgerEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -166,11 +94,85 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `appendDebtLedgerValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L23)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `appendDebtLedgerValue(uint256 value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `clearIssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L25)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `clearIssuanceData(address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `decrementTotalIssuerCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `decrementTotalIssuerCount()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `incrementTotalIssuerCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L17)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `incrementTotalIssuerCount()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ### `setCurrentIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixState.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixState.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -184,4 +186,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

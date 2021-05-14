@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Issuer.sol)
+**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol)
 
-## External Functions
+## Views
 
 ### `cacheInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Issuer.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalNonSnxBackedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Issuer.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,13 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Issuer.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -58,11 +60,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Issuer.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -76,11 +78,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Issuer.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -94,4 +96,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

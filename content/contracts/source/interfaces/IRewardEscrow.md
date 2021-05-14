@@ -2,31 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol)
+**Source:** [contracts/interfaces/IRewardEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol)
 
-## External Functions
-
-### `appendVestingEntry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol#L19)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `appendVestingEntry(address account, uint256 quantity)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -40,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getNextVestingIndex`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -58,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getVestingScheduleEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -76,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -94,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -112,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -130,11 +112,31 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `appendVestingEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `appendVestingEntry(address account, uint256 quantity)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ### `vest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrow.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardEscrow.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -148,4 +150,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

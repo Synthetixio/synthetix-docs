@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/EmptyEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EmptyEtherCollateral.sol)
+**Source:** [contracts/EmptyEtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EmptyEtherCollateral.sol)
 
-## External Functions
+## Views
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EmptyEtherCollateral.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EmptyEtherCollateral.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -22,4 +22,4 @@
 
     **State Mutability**
 
-    `undefined`
+    `pure`

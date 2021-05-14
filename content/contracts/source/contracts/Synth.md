@@ -39,13 +39,13 @@ See the [main synth notes](../../synths) for more information about how Synths f
 
     That is, the relative profit is simply $(\phi_\kappa - \phi_\tau)$. With no transfer fee, this is $\phi_\kappa$, as expected.
 
-**Source:** [contracts/Synth.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol)
+**Source:** [contracts/Synth.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol)
 
 ## Variables
 
 ### `DECIMALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L23)</sub>
 
 The number of decimal places this token uses. Fixed at $18$.
 
@@ -55,13 +55,13 @@ The number of decimal places this token uses. Fixed at $18$.
 
 ### `FEE_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L26)</sub>
 
 **Type:** `address`
 
 ### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L21)</sub>
 
 The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosystem. The currency key could in principle be distinct from this token's [ERC20 symbol](ExternStateToken.md#symbol).
 
@@ -71,7 +71,7 @@ The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosyst
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L37)</sub>
 
 Initialises the [`feePool`](#feepool) and [`synthetix`](#synthetix) addresses, this Synth's [`currencyKey`](#currencyKey), and the inherited [`ExternStateToken`](ExternStateToken.md) instance.
 
@@ -89,19 +89,57 @@ The precision in every Synth's fixed point representation is fixed at 18 so they
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "_proxy cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L51)
+    * [require(..., "_proxy cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L51)
 
-    * [require(..., "_owner cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L52)
+    * [require(..., "_owner cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L52)
+
+## Views
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L177)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
+### `transferableSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L207)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `transferableSynths(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
 
 ## Restricted Functions
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L149)</sub>
 
 Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [burnt directly](Synthetix.md#burnSynths). This is also used to burn Synths involved in oracle frontrunning as part of the [protection circuit](Synthetix.md#protectioncircuit). This is also used by the [`FeePool`](FeePool.md) to [burn sUSD when fees are paid out](FeePool.md#_payfees).
 
@@ -117,7 +155,7 @@ Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this 
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -125,7 +163,7 @@ Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this 
 
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L145)</sub>
 
 Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [issued directly](Synthetix.md#issuesynths). This is also used by the [`FeePool`](FeePool.md) to [pay fees out](FeePool.md#_payfees).
 
@@ -141,7 +179,7 @@ Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flav
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -149,7 +187,7 @@ Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flav
 
 ### `setTotalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L170)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L170)</sub>
 
 This allows the owner to set the total supply directly for upgrades, where the [`tokenState`](ExternStateToken.md#tokenstate) is retained, but the total supply figure must be migrated.
 
@@ -167,7 +205,7 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -177,7 +215,7 @@ For example, just such a migration is performed by [this script](https://github.
 
 ### `_ensureCanTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L201)</sub>
 
 ??? example "Details"
 
@@ -191,17 +229,17 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
     **Requires**
 
-    * [require(..., "Cannot transfer during waiting period")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L202)
+    * [require(..., "Cannot transfer during waiting period")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L202)
 
-    * [require(..., "Insufficient balance after any settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L203)
+    * [require(..., "Insufficient balance after any settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L203)
 
 ### `_internalBurn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L160)</sub>
 
 ??? example "Details"
 
@@ -215,11 +253,11 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `_internalIssue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -233,11 +271,11 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `_internalTransferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L224)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L224)</sub>
 
 ??? example "Details"
 
@@ -251,11 +289,11 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `_transferToFeeAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L127)</sub>
 
 ??? example "Details"
 
@@ -269,11 +307,11 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `emitBurned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L261)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L261)</sub>
 
 ??? example "Details"
 
@@ -287,11 +325,11 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `emitIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L254)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L254)</sub>
 
 ??? example "Details"
 
@@ -305,11 +343,11 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -323,11 +361,11 @@ For example, just such a migration is performed by [this script](https://github.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L189)</sub>
 
 The address of the [`FeePool`](FeePool.md) contract.
 
@@ -345,11 +383,11 @@ The address of the [`FeePool`](FeePool.md) contract.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -363,11 +401,11 @@ The address of the [`FeePool`](FeePool.md) contract.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L185)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L185)</sub>
 
 ??? example "Details"
 
@@ -381,31 +419,13 @@ The address of the [`FeePool`](FeePool.md) contract.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ## External Functions
 
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L177)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() view returns (bytes32[] addresses)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `undefined`
-
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L59)</sub>
 
 This is a pair of ERC20 transfer function.
 
@@ -427,7 +447,7 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -435,7 +455,7 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
 ### `transferAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L75)</sub>
 
 Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transfer` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the sender.
 
@@ -453,7 +473,7 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -461,7 +481,7 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L92)</sub>
 
 This is a ERC20 transferFrom function.
 
@@ -483,7 +503,7 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -491,7 +511,7 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
 ### `transferFromAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L102)</sub>
 
 Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transferFrom` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the `from` address.
 
@@ -513,41 +533,23 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
     * [optionalProxy](#optionalproxy)
 
-### `transferableSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L207)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `transferableSynths(address account) view returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `undefined`
-
 ## Modifiers
 
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L241)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L241)</sub>
 
 ## Events
 
 ### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L258)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L258)</sub>
 
 Records that a quantity of this Synth was [burned](#burn).
 
@@ -557,7 +559,7 @@ This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitBu
 
 ### `Issued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synth.sol#L251)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synth.sol#L251)</sub>
 
 Records that a quantity of this Synth was newly [issued](#issue).
 

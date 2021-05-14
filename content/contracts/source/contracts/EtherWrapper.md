@@ -2,25 +2,25 @@
 
 ## Description
 
-**Source:** [contracts/EtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol)
+**Source:** [contracts/EtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol)
 
 ## Variables
 
 ### `feesEscrowed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L49)</sub>
 
 **Type:** `uint256`
 
 ### `sETHIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L47)</sub>
 
 **Type:** `uint256`
 
 ### `sUSDIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L48)</sub>
 
 **Type:** `uint256`
 
@@ -28,7 +28,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -42,181 +42,13 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Internal Functions
-
-### `_burn`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L230)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_burn(uint256 principal, uint256 amountIn)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L234)
-
-    * [require(..., "Balance is too low")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L235)
-
-    **Emits**
-
-    * [Burned](#burned)
-
-### `_mint`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L209)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_mint(uint256 amountIn)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Emits**
-
-    * [Minted](#minted)
-
-### `exchangeRates`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L85)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeRates() view returns (contract IExchangeRates)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `feePool`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L81)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `feePool() view returns (contract IFeePool)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `issuer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L89)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issuer() view returns (contract IIssuer)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `synthsETH`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L77)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthsETH() view returns (contract ISynth)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `synthsUSD`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L73)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthsUSD() view returns (contract ISynth)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-## External Functions
-
-### `burn`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L164)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burn(uint256 amountIn)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Contract cannot burn sETH for WETH, WETH balance is zero")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L166)
-
-    **Modifiers**
-
-    * [notPaused](#notpaused)
+## Views
 
 ### `burnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L136)</sub>
 
 ??? example "Details"
 
@@ -230,11 +62,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `calculateBurnFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -248,11 +80,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `calculateMintFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -266,11 +98,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `capacity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -284,33 +116,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `distributeFees`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L178)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `distributeFees()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Currency rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L180)
+    `view`
 
 ### `getReserves`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -324,11 +134,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `maxETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L128)</sub>
 
 ??? example "Details"
 
@@ -342,41 +152,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `mint`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L148)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `mint(uint256 amountIn)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L149)
-
-    * [require(..., "Balance is too low")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L150)
-
-    * [require(..., "Contract has no spare capacity to mint")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L153)
-
-    **Modifiers**
-
-    * [notPaused](#notpaused)
+    `view`
 
 ### `mintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -390,11 +170,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -408,11 +188,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -426,11 +206,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `weth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -444,18 +224,240 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Internal Functions
+
+### `_burn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L230)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_burn(uint256 principal, uint256 amountIn)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L234)
+
+    * [require(..., "Balance is too low")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L235)
+
+    **Emits**
+
+    * [Burned](#burned)
+
+### `_mint`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L209)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_mint(uint256 amountIn)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+    **Emits**
+
+    * [Minted](#minted)
+
+### `exchangeRates`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L85)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeRates() view returns (contract IExchangeRates)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `feePool`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L81)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `feePool() view returns (contract IFeePool)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `issuer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L89)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issuer() view returns (contract IIssuer)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `synthsETH`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L77)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthsETH() view returns (contract ISynth)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `synthsUSD`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L73)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthsUSD() view returns (contract ISynth)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+## External Functions
+
+### `burn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L164)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burn(uint256 amountIn)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Contract cannot burn sETH for WETH, WETH balance is zero")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L166)
+
+    **Modifiers**
+
+    * [notPaused](#notpaused)
+
+### `distributeFees`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L178)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `distributeFees()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Currency rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L180)
+
+### `mint`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L148)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mint(uint256 amountIn)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L149)
+
+    * [require(..., "Balance is too low")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L150)
+
+    * [require(..., "Contract has no spare capacity to mint")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L153)
+
+    **Modifiers**
+
+    * [notPaused](#notpaused)
 
 ## Events
 
 ### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L257)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L257)</sub>
 
 **Signature**: `Burned(address account, uint256 principal, uint256 fee, uint256 amountIn)`
 
 ### `Minted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EtherWrapper.sol#L256)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherWrapper.sol#L256)</sub>
 
 **Signature**: `Minted(address account, uint256 principal, uint256 fee, uint256 amountIn)`

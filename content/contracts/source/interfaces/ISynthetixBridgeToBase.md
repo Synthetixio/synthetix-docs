@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixBridgeToBase.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixBridgeToBase.sol)
 
 ## External Functions
 
 ### `finalizeEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixBridgeToBase.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `finalizeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetixBridgeToBase.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISynthetixBridgeToBase.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -40,4 +40,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

@@ -10,13 +10,13 @@ The contract is architected this way so that the access pattern is uniform and t
 
 Each type of variable has its own mapping, along with getters and setters. As this entails some replication, this document will express functions and variables generically with the type variable 𝕋, where 𝕋 $\in$ {`uint`, `string`, `address`, `bytes`, `bytes32`, `bool`, `int`}. This notation is used slightly abusively, standing in for both names and types; in the former case, substitution is in camelCase. More complex types, such as structs and nested mappings, are not supported.
 
-**Source:** [contracts/EternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol)
+**Source:** [contracts/EternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L16)</sub>
 
 Initialises the inherited [`State`](State.md) instance.
 
@@ -32,323 +32,13 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Restricted Functions
-
-### `deleteAddressValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L62)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `deleteAddressValue(bytes32 record)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `deleteBooleanValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L101)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `deleteBooleanValue(bytes32 record)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `deleteBytes32Value`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L88)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `deleteBytes32Value(bytes32 record)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `deleteBytesValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L75)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `deleteBytesValue(bytes32 record)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `deleteIntValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L114)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `deleteIntValue(bytes32 record)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `deleteStringValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L49)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `deleteStringValue(bytes32 record)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `deleteUIntValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L36)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `deleteUIntValue(bytes32 record)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `setAddressValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L58)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setAddressValue(bytes32 record, address value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `setBooleanValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L97)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setBooleanValue(bytes32 record, bool value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `setBytes32Value`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L84)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setBytes32Value(bytes32 record, bytes32 value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `setBytesValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L71)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setBytesValue(bytes32 record, bytes value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `setIntValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L110)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setIntValue(bytes32 record, int256 value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `setStringValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L45)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setStringValue(bytes32 record, string value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `setUIntValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L32)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setUIntValue(bytes32 record, uint256 value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-## External Functions
+## Views
 
 ### `getAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -362,11 +52,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getBooleanValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -380,11 +70,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -398,11 +88,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getBytesValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -416,11 +106,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -434,11 +124,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getStringValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -452,11 +142,11 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/EternalStorage.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -470,4 +160,314 @@ Initialises the inherited [`State`](State.md) instance.
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Restricted Functions
+
+### `deleteAddressValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L62)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deleteAddressValue(bytes32 record)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `deleteBooleanValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L101)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deleteBooleanValue(bytes32 record)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `deleteBytes32Value`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L88)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deleteBytes32Value(bytes32 record)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `deleteBytesValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L75)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deleteBytesValue(bytes32 record)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `deleteIntValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L114)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deleteIntValue(bytes32 record)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `deleteStringValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L49)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deleteStringValue(bytes32 record)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `deleteUIntValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L36)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deleteUIntValue(bytes32 record)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setAddressValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L58)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setAddressValue(bytes32 record, address value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setBooleanValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L97)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setBooleanValue(bytes32 record, bool value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setBytes32Value`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L84)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setBytes32Value(bytes32 record, bytes32 value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setBytesValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L71)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setBytesValue(bytes32 record, bytes value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setIntValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L110)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setIntValue(bytes32 record, int256 value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setStringValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L45)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setStringValue(bytes32 record, string value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setUIntValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EternalStorage.sol#L32)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setUIntValue(bytes32 record, uint256 value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)

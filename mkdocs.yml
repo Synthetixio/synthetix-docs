@@ -49,7 +49,8 @@ nav:
           - Versioning: libraries/versioning.md
           - Examples: libraries/examples.md
           - synthetix: libraries/synthetix.md
-          - synthetix-js: libraries/synthetix-js.md
+          - '@synthetixio/assets': libraries/synthetix-assets.md
+          - '@synthetixio/contracts-interface': libraries/js-monorepo.md
           - synthetix-data: libraries/synthetix-data.md
           - synthetix-cli: libraries/synthetix-cli.md
       - Smart Contracts:

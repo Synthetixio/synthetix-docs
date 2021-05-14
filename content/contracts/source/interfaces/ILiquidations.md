@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ILiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol)
+**Source:** [contracts/interfaces/ILiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol)
 
-## External Functions
+## Views
 
 ### `calculateAmountToFixCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -22,47 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `checkAndRemoveAccountInLiquidation`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L26)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `checkAndRemoveAccountInLiquidation(address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `flagAccountForLiquidation`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L21)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `flagAccountForLiquidation(address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `getLiquidationDeadlineForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -76,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `isLiquidationDeadlinePassed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -94,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `isOpenForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -112,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -130,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -148,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -166,11 +130,49 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `checkAndRemoveAccountInLiquidation`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L26)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `checkAndRemoveAccountInLiquidation(address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `flagAccountForLiquidation`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L21)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `flagAccountForLiquidation(address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ### `removeAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ILiquidations.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ILiquidations.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -184,4 +186,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

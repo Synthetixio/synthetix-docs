@@ -1,6 +1,6 @@
 !!! info "Notice"
 
-    Imported from https://github.com/Synthetixio/synthetix-data
+    Imported from https://github.com/Synthetixio/synthetix-data/
 
 # synthetix-data
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol)
+**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol)
 
 ## Architecture
 
@@ -31,7 +31,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -45,13 +45,33 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
+
+## Views
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L28)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
 
 ## Restricted Functions
 
 ### `migrateEscrowBalanceToRewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -65,7 +85,7 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -75,7 +95,7 @@
 
 ### `emitAccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -89,11 +109,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `rewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -107,11 +127,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -125,11 +145,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `supplySchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -143,13 +163,13 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ## External Functions
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -163,7 +183,7 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -173,7 +193,7 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -187,7 +207,7 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -197,7 +217,7 @@
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L87)</sub>
 
 This function is responsible for creating the inflationary SNX supply. It is a public function, so any address can ensure new tokens are released on schedule. When a new quantity is minted, the calling address is rewarded with a small incentive of SNX tokens, defined by [`SupplySchedule.minterReward`](SupplySchedule.md#minterreward).
 
@@ -217,39 +237,21 @@ This function always returns true if the transaction did not revert.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "RewardsDistribution not set")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L88)
+    * [require(..., "RewardsDistribution not set")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L88)
 
-    * [require(..., "No supply is mintable")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L94)
+    * [require(..., "No supply is mintable")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L94)
 
     **Modifiers**
 
     * [issuanceActive](#issuanceactive)
 
-### `resolverAddressesRequired`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L28)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolverAddressesRequired() view returns (bytes32[] addresses)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `undefined`
-
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L75)</sub>
 
 Settles any amounts oustanding for previous exchanges into the given synth.
 
@@ -267,7 +269,7 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -277,6 +279,6 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `AccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Synthetix.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Synthetix.sol#L153)</sub>
 
 **Signature**: `AccountLiquidated(address account, uint256 snxRedeemed, uint256 amountLiquidated, address liquidator)`

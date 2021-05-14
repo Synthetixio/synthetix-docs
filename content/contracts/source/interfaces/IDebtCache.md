@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol)
+**Source:** [contracts/interfaces/IDebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol)
 
-## External Functions
+## Views
 
 ### `cacheInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `cacheInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `cacheStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -58,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `cacheTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -76,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `cachedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -94,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `cachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -112,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `cachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -130,11 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `currentDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -148,11 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `currentSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -166,47 +166,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `purgeCachedSynthDebt`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L51)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `purgeCachedSynthDebt(bytes32 currencyKey)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `takeDebtSnapshot`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L53)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `takeDebtSnapshot()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `totalNonSnxBackedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -220,11 +184,49 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `purgeCachedSynthDebt`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L51)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `purgeCachedSynthDebt(bytes32 currencyKey)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `takeDebtSnapshot`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L53)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `takeDebtSnapshot()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -238,11 +240,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -256,11 +258,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -274,11 +276,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IDebtCache.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IDebtCache.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -292,4 +294,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

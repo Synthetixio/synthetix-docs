@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol)
+**Source:** [contracts/interfaces/ISystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol)
 
-## External Functions
+## Views
 
 ### `etherWrapperBurnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `etherWrapperMaxETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `etherWrapperMintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -58,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `exchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -76,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `feePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -94,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -112,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -130,11 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -148,11 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -166,11 +166,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -184,11 +184,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -202,11 +202,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -220,11 +220,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `targetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -238,11 +238,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISystemSettings.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ISystemSettings.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -256,4 +256,4 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`

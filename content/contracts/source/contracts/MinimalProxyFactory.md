@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/MinimalProxyFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MinimalProxyFactory.sol)
+**Source:** [contracts/MinimalProxyFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MinimalProxyFactory.sol)
 
 ## Internal Functions
 
 ### `_cloneAsMinimalProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MinimalProxyFactory.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MinimalProxyFactory.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -22,15 +22,15 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MinimalProxyFactory.sol#L17)
+    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MinimalProxyFactory.sol#L17)
 
 ### `_generateMinimalProxyCreateData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MinimalProxyFactory.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/MinimalProxyFactory.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -44,4 +44,4 @@
 
     **State Mutability**
 
-    `undefined`
+    `pure`

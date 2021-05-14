@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBaseSynthetixBridge.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBaseSynthetixBridge.sol)
+**Source:** [contracts/interfaces/IBaseSynthetixBridge.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IBaseSynthetixBridge.sol)
 
 ## External Functions
 
 ### `resumeInitiation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBaseSynthetixBridge.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IBaseSynthetixBridge.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `suspendInitiation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBaseSynthetixBridge.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IBaseSynthetixBridge.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -40,4 +40,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

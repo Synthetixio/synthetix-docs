@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol)
+**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -22,137 +22,13 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Restricted Functions
-
-### `finalizeDeposit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L94)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `finalizeDeposit(address to, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyOptimismBridge](#onlyoptimismbridge)
-
-    **Emits**
-
-    * [undefined](#undefined)
-
-### `finalizeEscrowMigration`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L80)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `finalizeEscrowMigration(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyOptimismBridge](#onlyoptimismbridge)
-
-    **Emits**
-
-    * [ImportedVestingEntries](#importedvestingentries)
-
-### `finalizeRewardDeposit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L102)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `finalizeRewardDeposit(address from, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyOptimismBridge](#onlyoptimismbridge)
-
-    **Emits**
-
-    * [RewardDepositFinalized](#rewarddepositfinalized)
-
-## Internal Functions
-
-### `onlyAllowFromOptimism`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L26)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `onlyAllowFromOptimism() view`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L29)
-
-    * [require(..., "Only the L1 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L30)
-
-### `synthetixBridgeToOptimism`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L22)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthetixBridgeToOptimism() view returns (address)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-## External Functions
+## Views
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -166,11 +42,137 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Restricted Functions
+
+### `finalizeDeposit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L94)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `finalizeDeposit(address to, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyOptimismBridge](#onlyoptimismbridge)
+
+    **Emits**
+
+    * [undefined](#undefined)
+
+### `finalizeEscrowMigration`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L80)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `finalizeEscrowMigration(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyOptimismBridge](#onlyoptimismbridge)
+
+    **Emits**
+
+    * [ImportedVestingEntries](#importedvestingentries)
+
+### `finalizeRewardDeposit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L102)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `finalizeRewardDeposit(address from, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyOptimismBridge](#onlyoptimismbridge)
+
+    **Emits**
+
+    * [RewardDepositFinalized](#rewarddepositfinalized)
+
+## Internal Functions
+
+### `onlyAllowFromOptimism`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L26)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `onlyAllowFromOptimism() view`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L29)
+
+    * [require(..., "Only the L1 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L30)
+
+### `synthetixBridgeToOptimism`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L22)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthetixBridgeToOptimism() view returns (address)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+## External Functions
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -184,7 +186,7 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -192,7 +194,7 @@
 
 ### `withdrawTo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -206,7 +208,7 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -216,18 +218,18 @@
 
 ### `onlyOptimismBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L33)</sub>
 
 ## Events
 
 ### `ImportedVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L110)</sub>
 
 **Signature**: `ImportedVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
 
 ### `RewardDepositFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixBridgeToBase.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/SynthetixBridgeToBase.sol#L116)</sub>
 
 **Signature**: `RewardDepositFinalized(address from, uint256 amount)`

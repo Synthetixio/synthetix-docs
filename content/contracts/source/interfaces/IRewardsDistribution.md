@@ -2,24 +2,24 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardsDistribution.sol)
+**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardsDistribution.sol)
 
 ## Structs
 
 ### `DistributionData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
 
 | Field         | Type      | Description |
 | ------------- | --------- | ----------- |
 | `destination` | `address` | TBA         |
 | `amount`      | `uint256` | TBA         |
 
-## External Functions
+## Views
 
 ### `authority`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardsDistribution.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardsDistribution.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -33,29 +33,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `distributeRewards`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardsDistribution.sol#L19)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `distributeRewards(uint256 amount) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `distributions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardsDistribution.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardsDistribution.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -69,11 +51,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `distributionsLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardsDistribution.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardsDistribution.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -87,4 +69,24 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `distributeRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/IRewardsDistribution.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `distributeRewards(uint256 amount) returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``

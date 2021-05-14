@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralErc20.sol)
+**Source:** [contracts/interfaces/ICollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ICollateralErc20.sol)
 
 ## External Functions
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralErc20.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ICollateralErc20.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralErc20.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ICollateralErc20.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralErc20.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ICollateralErc20.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -58,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralErc20.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ICollateralErc20.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -76,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralErc20.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ICollateralErc20.sol#L4)</sub>
 
 ??? example "Details"
 
@@ -94,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralErc20.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ICollateralErc20.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -112,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralErc20.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/interfaces/ICollateralErc20.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -130,4 +130,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
