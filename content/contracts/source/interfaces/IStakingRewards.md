@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IStakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol)
+**Source:** [contracts/interfaces/IStakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol)
 
-## External Functions
+## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -40,47 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `exit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L26)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exit()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `getReward`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L24)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getReward()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `getRewardForDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -94,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `lastTimeRewardApplicable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -112,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `rewardPerToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -130,29 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `stake`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L20)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `stake(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -166,11 +112,67 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `exit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L26)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exit()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `getReward`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L24)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getReward()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `stake`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L20)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `stake(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IStakingRewards.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IStakingRewards.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -184,4 +186,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

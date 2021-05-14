@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISupplySchedule.sol)
+**Source:** [contracts/interfaces/ISupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISupplySchedule.sol)
 
-## External Functions
+## Views
 
 ### `isMintable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISupplySchedule.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISupplySchedule.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `mintableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISupplySchedule.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISupplySchedule.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `minterReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISupplySchedule.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISupplySchedule.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -58,11 +58,13 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
 
 ### `recordMintEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISupplySchedule.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISupplySchedule.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -76,4 +78,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

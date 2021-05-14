@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralEth.sol)
+**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ICollateralEth.sol)
 
 ## External Functions
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralEth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ICollateralEth.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralEth.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ICollateralEth.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralEth.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ICollateralEth.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -58,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `payable`
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralEth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ICollateralEth.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -76,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralEth.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ICollateralEth.sol#L4)</sub>
 
 ??? example "Details"
 
@@ -94,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `payable`
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralEth.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ICollateralEth.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -112,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ICollateralEth.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ICollateralEth.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -130,4 +130,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

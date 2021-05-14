@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol)
+**Source:** [contracts/SynthUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol)
 
 ## Variables
 
 ### `addressResolverProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L12)</sub>
 
 **Type:** `contract IAddressResolver`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -30,51 +30,13 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Internal Functions
-
-### `_exchangeRates`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L26)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_exchangeRates() view returns (contract IExchangeRates)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `_synthetix`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L22)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_synthetix() view returns (contract ISynthetix)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-## External Functions
+## Views
 
 ### `frozenSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -88,11 +50,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `synthsBalances`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -106,11 +68,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `synthsRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -124,11 +86,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `synthsTotalSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -142,11 +104,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalSynthsInKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthUtil.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -160,4 +122,42 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Internal Functions
+
+### `_exchangeRates`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L26)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_exchangeRates() view returns (contract IExchangeRates)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_synthetix`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthUtil.sol#L22)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_synthetix() view returns (contract ISynthetix)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`

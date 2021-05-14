@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Bytes32SetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Bytes32SetLib.sol)
+**Source:** [contracts/Bytes32SetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/Bytes32SetLib.sol)
 
 ## Structs
 
 ### `Bytes32Set`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Bytes32SetLib.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/Bytes32SetLib.sol#L5)</sub>
 
 | Field      | Type                          | Description |
 | ---------- | ----------------------------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `add`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Bytes32SetLib.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/Bytes32SetLib.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -33,11 +33,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `contains`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Bytes32SetLib.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/Bytes32SetLib.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -51,11 +51,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Bytes32SetLib.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/Bytes32SetLib.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -69,11 +69,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `remove`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Bytes32SetLib.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/Bytes32SetLib.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -87,8 +87,8 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "Element not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/Bytes32SetLib.sol#L51)
+    * [require(..., "Element not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/Bytes32SetLib.sol#L51)

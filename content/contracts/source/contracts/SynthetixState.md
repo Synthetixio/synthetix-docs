@@ -12,7 +12,7 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
     This contract also contains functionality enabling automatic [preferred currency](#preferredcurrency) conversion on Synth transfers, but it is currently disabled.
 
-**Source:** [contracts/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol)
+**Source:** [contracts/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol)
 
 ## Architecture
 
@@ -24,7 +24,7 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
 ### `IssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L17)</sub>
 
 | Field                  | Type      | Description |
 | ---------------------- | --------- | ----------- |
@@ -35,7 +35,7 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
 ### `debtLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L37)</sub>
 
 A list of factors indicating, for each [debt-modifying event](#appenddebtledgervalue), what effect it had on the percentage of debt of all other holders. Later debt ledger entries correspond to more recent issuance events.
 
@@ -43,7 +43,7 @@ A list of factors indicating, for each [debt-modifying event](#appenddebtledgerv
 
 ### `issuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L31)</sub>
 
 The most recent issuance data for each address.
 
@@ -51,7 +51,7 @@ The most recent issuance data for each address.
 
 ### `totalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L34)</sub>
 
 The number of people with outstanding synths.
 
@@ -61,7 +61,7 @@ The number of people with outstanding synths.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L39)</sub>
 
 Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.md) instances.
 
@@ -77,138 +77,13 @@ Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Restricted Functions
-
-### `appendDebtLedgerValue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L84)</sub>
-
-Pushes a new value to the end of the [`debtLedger`](#debtledger).
-
-This is used by [`Synthetix._addToDebtRegister`](Synthetix.md#addtodebtregister) contract whenever Synths are issued or burnt, which modifies the total outstanding system debt.
-
-??? example "Details"
-
-    **Signature**
-
-    `appendDebtLedgerValue(uint256 value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `clearIssuanceData`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L59)</sub>
-
-Deletes the issuance data associated with a given account.
-
-??? example "Details"
-
-    **Signature**
-
-    `clearIssuanceData(address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `decrementTotalIssuerCount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L75)</sub>
-
-Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._removeFromDebtRegister`](Synthetix.md#_removefromdebtregister) whenever an issuer burns enough Synths to pay down their entire outstanding debt.
-
-??? example "Details"
-
-    **Signature**
-
-    `decrementTotalIssuerCount()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `incrementTotalIssuerCount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L67)</sub>
-
-Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) whenever an account with no outstanding issuance debt mints new Synths.
-
-??? example "Details"
-
-    **Signature**
-
-    `incrementTotalIssuerCount()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-### `setCurrentIssuanceData`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L49)</sub>
-
-Allows the [`Synthetix`](Synthetix.md) contract to update the debt ownership entry for this account and sets their debt entry index to the current length of the [`debtLedger`](#debtledger).
-The debt ledger itself is not modified.
-
-??? example "Details"
-
-    **Signature**
-
-    `setCurrentIssuanceData(address account, uint256 initialDebtOwnership)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyAssociatedContract](#onlyassociatedcontract)
-
-## External Functions
+## Views
 
 ### `debtLedgerLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L93)</sub>
 
 Returns the number of entries currently in [`debtLedger`](#debtledger).
 
@@ -226,11 +101,11 @@ Primarily used in [`FeePool`](FeePool.md) for fee period computations.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `hasIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L108)</sub>
 
 Returns true if a given account has any outstanding issuance debt resulting from Synth minting.
 
@@ -248,11 +123,11 @@ Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to det
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `lastDebtLedgerEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/SynthetixState.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L100)</sub>
 
 Returns the most recent [`debtLedger`](#debtledger) entry.
 
@@ -270,4 +145,129 @@ Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Restricted Functions
+
+### `appendDebtLedgerValue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L84)</sub>
+
+Pushes a new value to the end of the [`debtLedger`](#debtledger).
+
+This is used by [`Synthetix._addToDebtRegister`](Synthetix.md#addtodebtregister) contract whenever Synths are issued or burnt, which modifies the total outstanding system debt.
+
+??? example "Details"
+
+    **Signature**
+
+    `appendDebtLedgerValue(uint256 value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `clearIssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L59)</sub>
+
+Deletes the issuance data associated with a given account.
+
+??? example "Details"
+
+    **Signature**
+
+    `clearIssuanceData(address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `decrementTotalIssuerCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L75)</sub>
+
+Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._removeFromDebtRegister`](Synthetix.md#_removefromdebtregister) whenever an issuer burns enough Synths to pay down their entire outstanding debt.
+
+??? example "Details"
+
+    **Signature**
+
+    `decrementTotalIssuerCount()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `incrementTotalIssuerCount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L67)</sub>
+
+Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) whenever an account with no outstanding issuance debt mints new Synths.
+
+??? example "Details"
+
+    **Signature**
+
+    `incrementTotalIssuerCount()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)
+
+### `setCurrentIssuanceData`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/SynthetixState.sol#L49)</sub>
+
+Allows the [`Synthetix`](Synthetix.md) contract to update the debt ownership entry for this account and sets their debt entry index to the current length of the [`debtLedger`](#debtledger).
+The debt ledger itself is not modified.
+
+??? example "Details"
+
+    **Signature**
+
+    `setCurrentIssuanceData(address account, uint256 initialDebtOwnership)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyAssociatedContract](#onlyassociatedcontract)

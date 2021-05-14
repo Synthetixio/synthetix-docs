@@ -9,7 +9,7 @@ This contract was required by [EtherCollateral](EtherCollateral.md) to allow it 
 It could be used where there a multiple Collateral contracts.
 i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contract for issuing sBTC then those synths would need to inherit MultiCollateralSynth and then have their corresponding Collateral Contract set via the constructor argument multiCollateralKey
 
-**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol)
+**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -35,133 +35,13 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Restricted Functions
-
-### `burn`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L78)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burn(address account, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyInternalContracts](#onlyinternalcontracts)
-
-### `issue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L69)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issue(address account, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Modifiers**
-
-    * [onlyInternalContracts](#onlyinternalcontracts)
-
-## Internal Functions
-
-### `collateralManager`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L36)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `collateralManager() view returns (contract ICollateralManager)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `etherCollateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L40)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `etherCollateral() view returns (contract IEtherCollateral)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `etherCollateralsUSD`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L44)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `etherCollateralsUSD() view returns (contract IEtherCollateralsUSD)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `etherWrapper`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L48)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `etherWrapper() view returns (contract IEtherWrapper)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-## External Functions
+## Views
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -175,10 +55,130 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Restricted Functions
+
+### `burn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L78)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burn(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyInternalContracts](#onlyinternalcontracts)
+
+### `issue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L69)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issue(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyInternalContracts](#onlyinternalcontracts)
+
+## Internal Functions
+
+### `collateralManager`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L36)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `collateralManager() view returns (contract ICollateralManager)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `etherCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L40)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `etherCollateral() view returns (contract IEtherCollateral)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `etherCollateralsUSD`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L44)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `etherCollateralsUSD() view returns (contract IEtherCollateralsUSD)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `etherWrapper`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L48)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `etherWrapper() view returns (contract IEtherWrapper)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
 
 ## Modifiers
 
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/MultiCollateralSynth.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/MultiCollateralSynth.sol#L85)</sub>

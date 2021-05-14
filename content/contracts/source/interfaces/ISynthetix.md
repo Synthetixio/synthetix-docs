@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol)
+**Source:** [contracts/interfaces/ISynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol)
 
-## External Functions
+## Views
 
 ### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -58,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -76,101 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `burnSecondary`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L119)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSecondary(address account, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `burnSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L47)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSynths(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `burnSynthsOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L49)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSynthsOnBehalf(address burnForAddress, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `burnSynthsToTarget`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L51)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSynthsToTarget()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `burnSynthsToTargetOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L53)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSynthsToTargetOnBehalf(address burnForAddress)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -184,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -202,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -220,101 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `exchange`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L55)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256 amountReceived)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `exchangeOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L61)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256 amountReceived)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `exchangeOnBehalfWithTracking`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L76)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeOnBehalfWithTracking(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address originator, bytes32 trackingCode) returns (uint256 amountReceived)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `exchangeWithTracking`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L68)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeWithTracking(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address originator, bytes32 trackingCode) returns (uint256 amountReceived)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `exchangeWithVirtual`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L85)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchangeWithVirtual(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, bytes32 trackingCode) returns (uint256 amountReceived, contract IVirtualSynth vSynth)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `isWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -328,101 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `issueMaxSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L92)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issueMaxSynths()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `issueMaxSynthsOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L94)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issueMaxSynthsOnBehalf(address issueForAddress)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `issueSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L96)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issueSynths(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `issueSynthsOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L98)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issueSynthsOnBehalf(address issueForAddress, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `liquidateDelinquentAccount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L111)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `liquidateDelinquentAccount(address account, uint256 susdAmount) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -436,65 +166,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `mint`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L100)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `mint() returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `mintSecondary`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L115)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `mintSecondary(address account, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `mintSecondaryRewards`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L117)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `mintSecondaryRewards(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -508,29 +184,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `settle`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L102)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `settle(bytes32 currencyKey) returns (uint256 reclaimed, uint256 refunded, uint256 numEntries)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -544,11 +202,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -562,11 +220,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -580,11 +238,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalIssuedSynthsExcludeEtherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -598,11 +256,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `transferableSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/ISynthetix.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -616,4 +274,348 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `burnSecondary`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L119)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSecondary(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `burnSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L47)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynths(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `burnSynthsOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L49)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynthsOnBehalf(address burnForAddress, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `burnSynthsToTarget`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L51)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynthsToTarget()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `burnSynthsToTargetOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L53)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynthsToTargetOnBehalf(address burnForAddress)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `exchange`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L55)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchange(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256 amountReceived)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `exchangeOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L61)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeOnBehalf(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) returns (uint256 amountReceived)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `exchangeOnBehalfWithTracking`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L76)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeOnBehalfWithTracking(address exchangeForAddress, bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address originator, bytes32 trackingCode) returns (uint256 amountReceived)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `exchangeWithTracking`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L68)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeWithTracking(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, address originator, bytes32 trackingCode) returns (uint256 amountReceived)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `exchangeWithVirtual`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L85)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeWithVirtual(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, bytes32 trackingCode) returns (uint256 amountReceived, contract IVirtualSynth vSynth)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `issueMaxSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L92)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issueMaxSynths()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `issueMaxSynthsOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L94)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issueMaxSynthsOnBehalf(address issueForAddress)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `issueSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L96)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issueSynths(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `issueSynthsOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L98)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issueSynthsOnBehalf(address issueForAddress, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `liquidateDelinquentAccount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L111)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidateDelinquentAccount(address account, uint256 susdAmount) returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `mint`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L100)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mint() returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `mintSecondary`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L115)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mintSecondary(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `mintSecondaryRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L117)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mintSecondaryRewards(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `settle`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/ISynthetix.sol#L102)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `settle(bytes32 currencyKey) returns (uint256 reclaimed, uint256 refunded, uint256 numEntries)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``

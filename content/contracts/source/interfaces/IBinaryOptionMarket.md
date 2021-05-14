@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol)
+**Source:** [contracts/interfaces/IBinaryOptionMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol)
 
-## External Functions
+## Views
 
 ### `balancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -22,29 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `bid`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L93)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `bid(enum IBinaryOptionMarket.Side side, uint256 value)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `bidOrRefundForPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -58,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `bidsOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -76,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `canResolve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -94,29 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `claimOptions`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L97)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `claimOptions() returns (uint256 longClaimed, uint256 shortClaimed)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `claimableBalancesOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -130,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `creator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -148,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `creatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -166,11 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `deposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -184,11 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `exercisableDeposits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -202,29 +166,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `exerciseOptions`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L99)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exerciseOptions() returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -238,11 +184,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `options`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -256,11 +202,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `oracleDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -274,11 +220,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `oraclePriceAndTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -292,11 +238,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `phase`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -310,11 +256,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `prices`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -328,11 +274,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `pricesAfterBidOrRefund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -346,29 +292,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `refund`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L95)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `refund(enum IBinaryOptionMarket.Side side, uint256 value) returns (uint256 refundMinusFee)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `refundsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -382,11 +310,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `resolved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -400,11 +328,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `result`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -418,11 +346,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `times`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -436,11 +364,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -454,11 +382,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalClaimableSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -472,11 +400,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarket.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -490,4 +418,78 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `bid`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L93)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `bid(enum IBinaryOptionMarket.Side side, uint256 value)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `claimOptions`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L97)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `claimOptions() returns (uint256 longClaimed, uint256 shortClaimed)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `exerciseOptions`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L99)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exerciseOptions() returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `refund`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarket.sol#L95)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `refund(enum IBinaryOptionMarket.Side side, uint256 value) returns (uint256 refundMinusFee)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``

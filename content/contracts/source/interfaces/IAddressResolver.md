@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IAddressResolver.sol)
+**Source:** [contracts/interfaces/IAddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IAddressResolver.sol)
 
-## External Functions
+## Views
 
 ### `getAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IAddressResolver.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IAddressResolver.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IAddressResolver.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IAddressResolver.sol#L7)</sub>
 
 !!! Warning "Not yet on mainnet"
 
@@ -44,11 +44,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IAddressResolver.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IAddressResolver.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -62,4 +62,4 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`

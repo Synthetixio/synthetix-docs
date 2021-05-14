@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol)
+**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -22,13 +22,13 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ## External Functions
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -42,11 +42,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -60,15 +60,15 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L48)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L48)
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -82,11 +82,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -100,11 +100,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -118,11 +118,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -136,15 +136,15 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L27)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L27)
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -158,11 +158,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralShort.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralShort.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -176,4 +176,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

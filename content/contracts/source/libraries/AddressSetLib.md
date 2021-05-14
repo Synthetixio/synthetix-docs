@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/AddressSetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressSetLib.sol)
+**Source:** [contracts/AddressSetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressSetLib.sol)
 
 ## Structs
 
 ### `AddressSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressSetLib.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressSetLib.sol#L5)</sub>
 
 | Field      | Type                          | Description |
 | ---------- | ----------------------------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `add`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressSetLib.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressSetLib.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -33,11 +33,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `contains`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressSetLib.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressSetLib.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -51,11 +51,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressSetLib.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressSetLib.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -69,11 +69,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `remove`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressSetLib.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressSetLib.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -87,8 +87,8 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "Element not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressSetLib.sol#L51)
+    * [require(..., "Element not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressSetLib.sol#L51)

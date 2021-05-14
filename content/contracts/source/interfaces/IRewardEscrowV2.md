@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol)
+**Source:** [contracts/interfaces/IRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol)
 
-## External Functions
+## Views
 
 ### `accountMergingIsOpen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -22,29 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `appendVestingEntry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L53)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `appendVestingEntry(address account, uint256 quantity, uint256 duration)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -58,47 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `burnForMigration`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L84)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnForMigration(address account, uint256[] entryIDs) returns (uint256 escrowedAccountBalance, struct VestingEntries.VestingEntry[] vestingEntries)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `createEscrowEntry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L47)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `createEscrowEntry(address beneficiary, uint256 deposit, uint256 duration)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `getAccountVestingEntryIDs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -112,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -130,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getVestingEntryClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -148,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getVestingQuantity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -166,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getVestingSchedules`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -184,101 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `importVestingEntries`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L77)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `importVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `mergeAccount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L70)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `mergeAccount(address accountToMerge, uint256[] entryIDs)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `migrateAccountEscrowBalances`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L61)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `migrateAccountEscrowBalances(address[] accounts, uint256[] escrowBalances, uint256[] vestedBalances)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `migrateVestingSchedule`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L59)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `migrateVestingSchedule(address _addressToMigrate)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `nominateAccountToMerge`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L72)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `nominateAccountToMerge(address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -292,29 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `startMergingWindow`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L68)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `startMergingWindow()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -328,11 +166,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -346,11 +184,175 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `appendVestingEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L53)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `appendVestingEntry(address account, uint256 quantity, uint256 duration)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `burnForMigration`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L84)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnForMigration(address account, uint256[] entryIDs) returns (uint256 escrowedAccountBalance, struct VestingEntries.VestingEntry[] vestingEntries)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `createEscrowEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L47)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `createEscrowEntry(address beneficiary, uint256 deposit, uint256 duration)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `importVestingEntries`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L77)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `importVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `mergeAccount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L70)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mergeAccount(address accountToMerge, uint256[] entryIDs)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `migrateAccountEscrowBalances`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L61)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `migrateAccountEscrowBalances(address[] accounts, uint256[] escrowBalances, uint256[] vestedBalances)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `migrateVestingSchedule`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L59)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `migrateVestingSchedule(address _addressToMigrate)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `nominateAccountToMerge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L72)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `nominateAccountToMerge(address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `startMergingWindow`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L68)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `startMergingWindow()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ### `vest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IRewardEscrowV2.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IRewardEscrowV2.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -364,4 +366,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

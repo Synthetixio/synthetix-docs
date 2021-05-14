@@ -8,13 +8,13 @@ As a result this proxy can verifiably support token functionality in its ABI if 
 
 In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token contract](Synthetix.md), alongside the pre-existing standard proxy. Thus clients can choose to use either of these two proxies to interact with the system.
 
-**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol)
+**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -28,13 +28,13 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## External Functions
+## Views
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -48,29 +48,11 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
-
-### `approve`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L84)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `approve(address spender, uint256 value) returns (bool)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -84,11 +66,11 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -102,11 +84,11 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -120,11 +102,11 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -138,11 +120,11 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -156,11 +138,31 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `approve`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L84)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `approve(address spender, uint256 value) returns (bool)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    ``
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -174,11 +176,11 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ProxyERC20.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ProxyERC20.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -192,4 +194,4 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
     **State Mutability**
 
-    `undefined`
+    ``

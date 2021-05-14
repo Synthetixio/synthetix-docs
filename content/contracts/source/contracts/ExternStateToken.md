@@ -10,13 +10,13 @@ For upgradeability, this contract utilises an [external state contract](TokenSta
 
 The main [`Synthetix`](Synthetix.md) contract and all [`Synths`](Synth.md) are ExternStateTokens.
 
-**Source:** [contracts/ExternStateToken.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol)
+**Source:** [contracts/ExternStateToken.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol)
 
 ## Variables
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L27)</sub>
 
 The ERC20 decimal precision of this token. This is usually set to 18 in Synthetix.
 
@@ -24,7 +24,7 @@ The ERC20 decimal precision of this token. This is usually set to 18 in Syntheti
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L24)</sub>
 
 The ERC20 name of this token.
 
@@ -32,7 +32,7 @@ The ERC20 name of this token.
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L25)</sub>
 
 The ERC20 symbol of this token.
 
@@ -40,7 +40,7 @@ The ERC20 symbol of this token.
 
 ### `tokenState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L21)</sub>
 
 The external state contract holding this token's balances and allowances.
 
@@ -48,7 +48,7 @@ The external state contract holding this token's balances and allowances.
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L26)</sub>
 
 The ERC20 total token supply.
 
@@ -58,7 +58,7 @@ The ERC20 total token supply.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L29)</sub>
 
 Initialises this token's ERC20 fields, its proxy, token state, and its inherited [`SelfDestructible`](SelfDestructible.md) and [`Proxyable`](Proxyable.md) instances.
 
@@ -74,13 +74,57 @@ Initialises this token's ERC20 fields, its proxy, token state, and its inherited
 
     **State Mutability**
 
-    `undefined`
+    ``
+
+## Views
+
+### `allowance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L53)</sub>
+
+Returns the ERC20 allowance of one party to spend on behalf of another.
+This information is retrieved from the [`tokenState`](TokenState.md) contract.
+
+??? example "Details"
+
+    **Signature**
+
+    `allowance(address owner, address spender) view returns (uint256)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `view`
+
+### `balanceOf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L60)</sub>
+
+Returns the ERC20 token balance of the given address.
+This information is retrieved from the [`tokenState`](TokenState.md) contract.
+
+??? example "Details"
+
+    **Signature**
+
+    `balanceOf(address account) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
 
 ## Restricted Functions
 
 ### `setTokenState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L71)</sub>
 
 Allows the owner to set the address of the `tokenState`(TokenState.md) contract.
 Unhooking the token state will pause the contract by causing all transactions to revert.
@@ -97,7 +141,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
@@ -107,7 +151,7 @@ Unhooking the token state will pause the contract by causing all transactions to
 
 ### `_internalTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L76)</sub>
 
 Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_transfer_byproxy) and [`_transferFrom_byProxy`](#_transferfrom_byproxy).
 
@@ -125,15 +169,15 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "Cannot transfer to this address")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L82)
+    * [require(..., "Cannot transfer to this address")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L82)
 
 ### `_transferByProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -147,11 +191,11 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `_transferFromByProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -165,11 +209,11 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `addressToBytes32`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L133)</sub>
 
 ??? example "Details"
 
@@ -183,11 +227,11 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **State Mutability**
 
-    `undefined`
+    `pure`
 
 ### `emitApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -201,11 +245,11 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `emitTokenStateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L162)</sub>
 
 ??? example "Details"
 
@@ -219,11 +263,11 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `emitTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -237,34 +281,13 @@ Internal ERC20 transfer function used to implement [`_transfer_byProxy`](#_trans
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ## External Functions
 
-### `allowance`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L53)</sub>
-
-Returns the ERC20 allowance of one party to spend on behalf of another.
-This information is retrieved from the [`tokenState`](TokenState.md) contract.
-
-??? example "Details"
-
-    **Signature**
-
-    `allowance(address owner, address spender) view returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `undefined`
-
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L124)</sub>
 
 ERC20 approve function.
 
@@ -280,38 +303,17 @@ ERC20 approve function.
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Modifiers**
 
     * [optionalProxy](#optionalproxy)
 
-### `balanceOf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L60)</sub>
-
-Returns the ERC20 token balance of the given address.
-This information is retrieved from the [`tokenState`](TokenState.md) contract.
-
-??? example "Details"
-
-    **Signature**
-
-    `balanceOf(address account) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
 ## Events
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L148)</sub>
 
 Records that an ERC20 approval occurred.
 
@@ -321,7 +323,7 @@ This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitApp
 
 ### `TokenStateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L159)</sub>
 
 Records that the [token state address](#tokenstate) was updated.
 
@@ -331,7 +333,7 @@ This event is emitted from the token's [proxy](Proxy.md#_emit) with the `emitTok
 
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ExternStateToken.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ExternStateToken.sol#L137)</sub>
 
 Records that an ERC20 transfer occurred.
 

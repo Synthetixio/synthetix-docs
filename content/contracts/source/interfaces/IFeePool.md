@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol)
+**Source:** [contracts/interfaces/IFeePool.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol)
 
-## External Functions
+## Views
 
 ### `FEE_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -22,83 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `appendAccountIssuanceRecord`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L30)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `appendAccountIssuanceRecord(address account, uint256 lockedAmount, uint256 debtEntryIndex)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `claimFees`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L23)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `claimFees() returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `claimOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L25)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `claimOnBehalf(address claimingForAddress) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `closeCurrentFeePeriod`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L27)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `closeCurrentFeePeriod()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `feePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -112,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `feesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -130,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `isFeesClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -148,47 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `recordFeePaid`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L36)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `recordFeePaid(uint256 sUSDAmount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `setRewardsToDistribute`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L38)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setRewardsToDistribute(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `targetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -202,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalFeesAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -220,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalRewardsAvailable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IFeePool.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -238,4 +130,114 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `appendAccountIssuanceRecord`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L30)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `appendAccountIssuanceRecord(address account, uint256 lockedAmount, uint256 debtEntryIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `claimFees`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L23)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `claimFees() returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `claimOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L25)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `claimOnBehalf(address claimingForAddress) returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `closeCurrentFeePeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L27)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `closeCurrentFeePeriod()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `recordFeePaid`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L36)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `recordFeePaid(uint256 sUSDAmount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `setRewardsToDistribute`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IFeePool.sol#L38)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setRewardsToDistribute(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``

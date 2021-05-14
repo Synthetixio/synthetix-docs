@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ImportableRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ImportableRewardEscrowV2.sol)
+**Source:** [contracts/ImportableRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ImportableRewardEscrowV2.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ImportableRewardEscrowV2.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ImportableRewardEscrowV2.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -22,79 +22,13 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Restricted Functions
-
-### `importVestingEntries`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ImportableRewardEscrowV2.sol#L31)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `importVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Insufficient balance in the contract to provide for escrowed balance")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ImportableRewardEscrowV2.sol#L38)
-
-    **Modifiers**
-
-    * [onlySynthetixBridge](#onlysynthetixbridge)
-
-## Internal Functions
-
-### `_importVestingEntry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ImportableRewardEscrowV2.sol#L51)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_importVestingEntry(address account, struct VestingEntries.VestingEntry entry)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-### `synthetixBridgeToBase`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ImportableRewardEscrowV2.sol#L25)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `synthetixBridgeToBase() view returns (address)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `undefined`
-
-## External Functions
+## Views
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ImportableRewardEscrowV2.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ImportableRewardEscrowV2.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -108,10 +42,76 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## Restricted Functions
+
+### `importVestingEntries`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ImportableRewardEscrowV2.sol#L31)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `importVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Insufficient balance in the contract to provide for escrowed balance")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ImportableRewardEscrowV2.sol#L38)
+
+    **Modifiers**
+
+    * [onlySynthetixBridge](#onlysynthetixbridge)
+
+## Internal Functions
+
+### `_importVestingEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ImportableRewardEscrowV2.sol#L51)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_importVestingEntry(address account, struct VestingEntries.VestingEntry entry)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `synthetixBridgeToBase`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ImportableRewardEscrowV2.sol#L25)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthetixBridgeToBase() view returns (address)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
 
 ## Modifiers
 
 ### `onlySynthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/ImportableRewardEscrowV2.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/ImportableRewardEscrowV2.sol#L62)</sub>

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOption.sol)
+**Source:** [contracts/interfaces/IBinaryOption.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOption.sol)
 
-## External Functions
+## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOption.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOption.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `bidOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOption.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOption.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `claimableBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOption.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOption.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -58,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `market`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOption.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOption.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -76,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalBids`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOption.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOption.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -94,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalClaimableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOption.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOption.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -112,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOption.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOption.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -130,4 +130,4 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`

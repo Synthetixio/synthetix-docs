@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IHasBalance.sol)
+**Source:** [contracts/interfaces/IHasBalance.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IHasBalance.sol)
 
-## External Functions
+## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IHasBalance.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IHasBalance.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -22,4 +22,4 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol)
+**Source:** [contracts/interfaces/IBinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol)
 
-## External Functions
+## Views
 
 ### `activeMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -22,47 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `cancelMarket`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L53)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `cancelMarket(address market)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `createMarket`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L43)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `createMarket(bytes32 oracleKey, uint256 strikePrice, bool refundsEnabled, uint256[2] times, uint256[2] bids) returns (contract IBinaryOptionMarket)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `creatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -76,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `durations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -94,29 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `expireMarkets`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L55)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `expireMarkets(address[] market)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -130,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `marketCreationEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -148,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `maturedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -166,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `numActiveMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -184,11 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `numMaturedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -202,29 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `resolveMarket`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L51)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resolveMarket(address market)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `totalDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IBinaryOptionMarketManager.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -238,4 +166,78 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `cancelMarket`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L53)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `cancelMarket(address market)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `createMarket`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L43)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `createMarket(bytes32 oracleKey, uint256 strikePrice, bool refundsEnabled, uint256[2] times, uint256[2] bids) returns (contract IBinaryOptionMarket)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `expireMarkets`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L55)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `expireMarkets(address[] market)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `resolveMarket`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IBinaryOptionMarketManager.sol#L51)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolveMarket(address market)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``

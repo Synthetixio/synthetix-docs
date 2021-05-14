@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol)
+**Source:** [contracts/CollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol)
 
 ## Variables
 
 ### `pendingWithdrawals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L15)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -30,13 +30,13 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ## External Functions
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -50,11 +50,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
     **Requires**
 
-    * [require(..., "Transfer failed")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L74)
+    * [require(..., "Transfer failed")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L74)
 
     **Modifiers**
 
@@ -62,7 +62,7 @@
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -76,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -94,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `payable`
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -112,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -130,11 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -148,11 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `payable`
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -166,11 +166,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/CollateralEth.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/CollateralEth.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -184,4 +184,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

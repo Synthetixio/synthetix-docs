@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol)
+**Source:** [contracts/interfaces/IShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol)
 
-## External Functions
+## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -40,47 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `enrol`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L20)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `enrol(address account, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `getReward`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L24)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getReward(address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `getRewardForDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -94,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `lastTimeRewardApplicable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -112,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `rewardPerToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -130,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -148,11 +112,49 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `enrol`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L20)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `enrol(address account, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `getReward`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L24)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getReward(address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IShortingRewards.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IShortingRewards.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -166,4 +168,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

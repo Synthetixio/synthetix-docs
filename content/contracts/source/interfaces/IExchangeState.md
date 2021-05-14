@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IExchangeState.sol)
+**Source:** [contracts/interfaces/IExchangeState.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IExchangeState.sol)
 
 ## Structs
 
 ### `ExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IExchangeState.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IExchangeState.sol#L6)</sub>
 
 | Field             | Type      | Description |
 | ----------------- | --------- | ----------- |
@@ -21,29 +21,11 @@
 | `roundIdForSrc`   | `uint256` | TBA         |
 | `roundIdForDest`  | `uint256` | TBA         |
 
-## External Functions
-
-### `appendExchangeEntry`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IExchangeState.sol#L40)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `appendExchangeEntry(address account, bytes32 src, uint256 amount, bytes32 dest, uint256 amountReceived, uint256 exchangeFeeRate, uint256 timestamp, uint256 roundIdForSrc, uint256 roundIdForDest)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+## Views
 
 ### `getEntryAt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IExchangeState.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IExchangeState.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -57,11 +39,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getLengthOfEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IExchangeState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IExchangeState.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -75,11 +57,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getMaxTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IExchangeState.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IExchangeState.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -93,11 +75,31 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `appendExchangeEntry`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IExchangeState.sol#L40)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `appendExchangeEntry(address account, bytes32 src, uint256 amount, bytes32 dest, uint256 amountReceived, uint256 exchangeFeeRate, uint256 timestamp, uint256 roundIdForSrc, uint256 roundIdForDest)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ### `removeEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IExchangeState.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IExchangeState.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -111,4 +113,4 @@
 
     **State Mutability**
 
-    `undefined`
+    ``

@@ -2,31 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IEtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol)
+**Source:** [contracts/interfaces/IEtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol)
 
-## External Functions
-
-### `burn`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L9)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burn(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+## Views
 
 ### `burnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -40,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `calculateBurnFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -58,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `calculateMintFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -76,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `capacity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -94,29 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `distributeFees`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L11)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `distributeFees()`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `getReserves`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -130,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `maxETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -148,29 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `mint`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L7)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `mint(uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `mintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -184,11 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -202,11 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `weth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IEtherWrapper.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -220,4 +166,60 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `burn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L9)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burn(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `distributeFees`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L11)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `distributeFees()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `mint`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IEtherWrapper.sol#L7)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `mint(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``

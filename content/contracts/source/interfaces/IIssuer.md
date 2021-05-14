@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol)
+**Source:** [contracts/interfaces/IIssuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol)
 
-## External Functions
+## Views
 
 ### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -22,11 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -40,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -58,11 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -76,83 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `burnSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L72)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSynths(address from, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `burnSynthsOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L74)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSynthsOnBehalf(address burnForAddress, address from, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `burnSynthsToTarget`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L80)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSynthsToTarget(address from)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `burnSynthsToTargetOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L82)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `burnSynthsToTargetOnBehalf(address burnForAddress, address from)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `canBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -166,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -184,11 +112,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -202,11 +130,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `collateralisationRatioAndAnyRatesInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -220,11 +148,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -238,11 +166,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -256,11 +184,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -274,83 +202,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `issueMaxSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L68)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issueMaxSynths(address from)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `issueMaxSynthsOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L70)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issueMaxSynthsOnBehalf(address issueFor, address from)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `issueSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L60)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issueSynths(address from, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-### `issueSynthsOnBehalf`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L62)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issueSynthsOnBehalf(address issueFor, address from, uint256 amount)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `lastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -364,29 +220,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `liquidateDelinquentAccount`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L84)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator) returns (uint256 totalRedeemed, uint256 amountToLiquidate)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -400,11 +238,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -418,11 +256,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -436,11 +274,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -454,11 +292,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -472,11 +310,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -490,11 +328,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `transferableSynthetixAndAnyRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IIssuer.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -508,4 +346,168 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `burnSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L72)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynths(address from, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `burnSynthsOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L74)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynthsOnBehalf(address burnForAddress, address from, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `burnSynthsToTarget`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L80)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynthsToTarget(address from)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `burnSynthsToTargetOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L82)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `burnSynthsToTargetOnBehalf(address burnForAddress, address from)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `issueMaxSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L68)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issueMaxSynths(address from)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `issueMaxSynthsOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L70)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issueMaxSynthsOnBehalf(address issueFor, address from)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `issueSynths`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L60)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issueSynths(address from, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `issueSynthsOnBehalf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L62)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issueSynthsOnBehalf(address issueFor, address from, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `liquidateDelinquentAccount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IIssuer.sol#L84)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidateDelinquentAccount(address account, uint256 susdAmount, address liquidator) returns (uint256 totalRedeemed, uint256 amountToLiquidate)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``

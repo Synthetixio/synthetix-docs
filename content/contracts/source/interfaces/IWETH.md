@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IWETH.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol)
+**Source:** [contracts/interfaces/IWETH.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol)
 
-## External Functions
+## Views
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -22,29 +22,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `approve`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L21)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `approve(address spender, uint256 value) returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -58,11 +40,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -76,29 +58,11 @@
 
     **State Mutability**
 
-    `undefined`
-
-### `deposit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L30)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `deposit() payable`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    `view`
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -112,11 +76,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -130,11 +94,11 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -148,11 +112,49 @@
 
     **State Mutability**
 
-    `undefined`
+    `view`
+
+## External Functions
+
+### `approve`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L21)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `approve(address spender, uint256 value) returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `deposit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L30)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `deposit() payable`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `payable`
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -166,11 +168,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -184,11 +186,11 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -202,30 +204,30 @@
 
     **State Mutability**
 
-    `undefined`
+    ``
 
 ## Events
 
 ### `Approval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L36)</sub>
 
 **Signature**: `Approval(address owner, address spender, uint256 value)`
 
 ### `Deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L37)</sub>
 
 **Signature**: `Deposit(address to, uint256 amount)`
 
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L35)</sub>
 
 **Signature**: `Transfer(address from, address to, uint256 value)`
 
 ### `Withdrawal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/interfaces/IWETH.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/interfaces/IWETH.sol#L38)</sub>
 
 **Signature**: `Withdrawal(address to, uint256 amount)`

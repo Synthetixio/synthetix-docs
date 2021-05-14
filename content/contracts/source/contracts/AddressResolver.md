@@ -4,13 +4,13 @@
 
 This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C (and updating every release), contract A can refer to an `AddressResolver` and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contract. Thus this ensures that contract A always has the latest B and C contracts.
 
-**Source:** [contracts/AddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol)
+**Source:** [contracts/AddressResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol)
 
 ## Variables
 
 ### `repository`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L13)</sub>
 
 The mapping of contract name to address
 
@@ -20,7 +20,7 @@ The mapping of contract name to address
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -34,43 +34,13 @@ The mapping of contract name to address
 
     **State Mutability**
 
-    `undefined`
+    ``
 
-## Restricted Functions
-
-### `importAddresses`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L19)</sub>
-
-Import one or more addresses into the system for the given keys. Note: this function will overrwite any previous entries with the same key names, allowing for inline updates.
-
-??? example "Details"
-
-    **Signature**
-
-    `importAddresses(bytes32[] names, address[] destinations)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
-
-    **Requires**
-
-    * [require(..., "Input lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L20)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-## External Functions
+## Views
 
 ### `areAddressesImported`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -84,11 +54,11 @@ Import one or more addresses into the system for the given keys. Note: this func
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L49)</sub>
 
 Returns a single address by it's `bytes32` key.
 
@@ -104,11 +74,11 @@ Returns a single address by it's `bytes32` key.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
 ### `getSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L59)</sub>
 
 !!! Warning "Not yet on mainnet"
 
@@ -126,33 +96,15 @@ Returns a single address by it's `bytes32` key.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
     **Requires**
 
-    * [require(..., "Cannot find Issuer address")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L61)
-
-### `rebuildCaches`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L32)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `rebuildCaches(contract MixinResolver[] destinations)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `undefined`
+    * [require(..., "Cannot find Issuer address")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L61)
 
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -166,16 +118,66 @@ Returns a single address by it's `bytes32` key.
 
     **State Mutability**
 
-    `undefined`
+    `view`
 
     **Requires**
 
-    * [require(..., "string calldata")](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L55)
+    * [require(..., "string calldata")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L55)
+
+## Restricted Functions
+
+### `importAddresses`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L19)</sub>
+
+Import one or more addresses into the system for the given keys. Note: this function will overrwite any previous entries with the same key names, allowing for inline updates.
+
+??? example "Details"
+
+    **Signature**
+
+    `importAddresses(bytes32[] names, address[] destinations)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Input lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L20)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+## External Functions
+
+### `rebuildCaches`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L32)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rebuildCaches(contract MixinResolver[] destinations)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
 
 ## Events
 
 ### `AddressImported`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.0/contracts/AddressResolver.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.1/contracts/AddressResolver.sol#L67)</sub>
 
 **Signature**: `AddressImported(bytes32 name, address destination)`
