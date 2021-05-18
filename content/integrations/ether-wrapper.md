@@ -182,23 +182,23 @@ For each burn, among other events, two will be emitted:
         }
         ```
 
-## Tracking changes to parameters.
+## Tracking changes to parameters
 
 There are three parameters in the EtherWrapper, which are managed by Synthetix governance and can be changed through the [SCCP](/governance/#synthetix-configuration-change-proposal-sccps) process (see [SCCP-102](https://sips.synthetix.io/SCCP/sccp-102) for a good example).
 
-| Parameter   | Description                                                  |     |     |     |
-| ----------- | ------------------------------------------------------------ | --- | --- | --- |
-| maxETH      | the maximum amount of ETH held by contract                   |     |     |     |
-| mintFeeRate | the fee for depositing ETH into the contract                 |     |     |     |
-| burnFeeRate | the fee for burning sETH and releasing ETH from the contract |     |     |     |
+| Parameter   | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| maxETH      | the maximum amount of ETH held by contract                   |
+| mintFeeRate | the fee for depositing ETH into the contract                 |
+| burnFeeRate | the fee for burning sETH and releasing ETH from the contract |
 
 These can be tracked via listening to events on the [SystemSettings](/contracts/source/contracts/SystemSettings/) contract:
 
-| name                                                                                                 | emitted on       | `uint maxETH`                           |     |     |
-| ---------------------------------------------------------------------------------------------------- | ---------------- | --------------------------------------- | --- | --- |
-| [`EtherWrapperMaxETHUpdated`](/contracts/source/contracts/SystemSettings/#etherwrappermaxethupdated) | `SystemSettings` | The new maximum ETH cap of the wrapper. |     |     |
+| name                                                                                                 | emitted on       | `uint maxETH`                           |
+| ---------------------------------------------------------------------------------------------------- | ---------------- | --------------------------------------- |
+| [`EtherWrapperMaxETHUpdated`](/contracts/source/contracts/SystemSettings/#etherwrappermaxethupdated) | `SystemSettings` | The new maximum ETH cap of the wrapper. |
 
-| name                                                                                                       | emitted on       | `uint rate`           |     |     |
-| ---------------------------------------------------------------------------------------------------------- | ---------------- | --------------------- | --- | --- |
-| [`EtherWrapperMintFeeRateUpdated`](/contracts/source/contracts/SystemSettings/#etherwrappermintfeeupdated) | `SystemSettings` | The new mint fee rate |     |     |
-| [`EtherWrapperBurnFeeRateUpdated`](/contracts/source/contracts/SystemSettings/#etherwrapperburnfeeupdated) | `SystemSettings` | The new burn fee rate |     |     |
+| name                                                                                                           | emitted on       | `uint rate`           |
+| -------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------- |
+| [`EtherWrapperMintFeeRateUpdated`](/contracts/source/contracts/SystemSettings/#etherwrappermintfeerateupdated) | `SystemSettings` | The new mint fee rate |
+| [`EtherWrapperBurnFeeRateUpdated`](/contracts/source/contracts/SystemSettings/#etherwrapperburnfeerateupdated) | `SystemSettings` | The new burn fee rate |
