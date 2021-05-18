@@ -21,7 +21,11 @@ The EtherWrapper, introduced with [SIP-112](https://sips.synthetix.io/sips/sip-1
 
 ##### Methods
 
-- [`mint(uint amount)`](/contracts/source/contracts/EtherWrapper/#mint) _(requires WETH approval for transfer)_
+- [`mint(uint amount)`](/contracts/source/contracts/EtherWrapper/#mint)
+
+!!! tip "WETH Approval Required to Mint"
+
+    `EtherWrapper` needs to be approved to spend the user's `WETH` (as it needs to send it to itself for payment)
 
 ##### Events Emitted
 
@@ -45,6 +49,10 @@ For each mint, among other events, one primary event will be emitted:
 
 - [`burn(uint amount)`](/contracts/source/contracts/EtherWrapper/#burn)
 
+!!! tip "No Approval Required to Burn"
+
+    `EtherWrapper` does NOT need approval to burn, as `sETH` can be burned in-place directly using protected functionality.
+
 #### Events Emitted
 
 For each burn, among other events, two will be emitted:
@@ -67,6 +75,10 @@ For each burn, among other events, two will be emitted:
 
 - [`mint() payable`](/contracts/source/contracts/NativeEtherWrapper/#mint)
 
+!!! tip "No Approval Requied"
+
+    `NativeEtherWrapper` does not need approval to mint sETH as it accepts `payable` Ether
+
 #### Events Emitted
 
 For each mint, among other events, two will be emitted:
@@ -87,7 +99,11 @@ For each mint, among other events, two will be emitted:
 
 #### Methods
 
-- [`burn(uint amount)`](/contracts/source/contracts/NativeEtherWrapper/#burn) _(requires sETH approval for transfer)_
+- [`burn(uint amount)`](/contracts/source/contracts/NativeEtherWrapper/#burn)
+
+!!! tip "sETH Approval Required to Burn"
+
+    `NativeEtherWrapper` needs to be approved to spend the user's `sETH` (as it needs to send it to itself in order to invoke `EtherWrapper.burn()`)
 
 #### Events Emitted
 
