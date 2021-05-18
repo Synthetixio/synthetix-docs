@@ -28,21 +28,22 @@ nav:
       - Releases: releases.md
       - Integrations:
           - Overview: integrations/index.md
-          - Trading:
-              - Trading: integrations/trading.md
-              - Settlement: integrations/settlement.md
-              - Volume Program: integrations/volume-program.md
+          - Current Integrations: integrations/current-integrations.md
+          - Data: integrations/data.md
+          - Delegating: integrations/delegating.md
+          - 'Depot: ETH/sUSD': integrations/depot.md
+          - ENS Support: integrations/ens.md
+          - Ether Wrapper: integrations/ether-wrapper.md
           - Staking:
               - Staking SNX: integrations/staking.md
               - Unstaking SNX: integrations/unstaking.md
               - Claiming Rewards: integrations/claiming.md
-          - Data: integrations/data.md
-          - Delegating: integrations/delegating.md
-          - 'Depot: ETH/sUSD': integrations/depot.md
-          - Virtual Synths: integrations/virtual-synths.md
           - Testnets: integrations/testnets.md
-          - ENS Support: integrations/ens.md
-          - Current Integrations: integrations/current-integrations.md
+          - Trading:
+              - Trading: integrations/trading.md
+              - Settlement: integrations/settlement.md
+              - Volume Program: integrations/volume-program.md
+          - Virtual Synths: integrations/virtual-synths.md
       - Libraries:
           - Home: libraries/index.md
           - Versioning: libraries/versioning.md
