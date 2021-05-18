@@ -42,7 +42,7 @@ The Synthetix DAO is the DAO responsible for managing the Synthetix Protocol tre
 
 ### Ambassador DAO (aDAO)
 
-Ambassadors are nominated community members who are appointed as a signer on a Gnosis (multisig)[https://gnosis-safe.io/app/#/safes/0x46abFE1C972fCa43766d6aD70E1c1Df72F4Bb4d], their role is to gather support from Synthetix community members who delegate their governance tokens (from other external protocols) to the multisig, effectively empowering the Ambassadors to participate in external protocols governance systems which have a positive impact on the Synthetix ecosystem (i.e interoperable protocol features, listing of synthetix synths on DEX’s).
+Ambassadors are nominated community members who are appointed as a signer on a Gnosis [multisig](https://gnosis-safe.io/app/#/safes/0x46abFE1C972fCa43766d6aD70E1c1Df72F4Bb4d), their role is to gather support from Synthetix community members who delegate their governance tokens (from other external protocols) to the multisig, effectively empowering the Ambassadors to participate in external protocols governance systems which have a positive impact on the Synthetix ecosystem (i.e interoperable protocol features, listing of synthetix synths on DEX’s).
 
 The Ambassadors are re-elected every epoch, and the members are paid a stipend by the sDAO during their tenure.
 
