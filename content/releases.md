@@ -13,6 +13,8 @@
 - [SIP-112](https://sips.synthetix.io/sips/sip-112) EtherWrapper
 - [SIP-136](https://sips.synthetix.io/sips/sip-136) Improve DebtCache calculations
 
+> Audit: https://iosiro.com/audits/synthetix-aloith-release-smart-contract-audit
+
 ---
 
 # Alnair (v2.44.0)
@@ -27,6 +29,8 @@
 - [SIP-117](https://sips.synthetix.io/sips/sip-117) Support for exchanging on L2
 - [SIP-118](https://sips.synthetix.io/sips/sip-118) Support for conditional fee reclamation
 
+> Audit: https://iosiro.com/audits/synthetix-alnair-release-smart-contract-audit
+
 ---
 
 # Regor (v2.43.0)
@@ -39,6 +43,8 @@
 
 [SIP 115](https://sips.synthetix.io/sips/sip-115): Add sMSFT equity synth
 [SIP 128](https://sips.synthetix.io/sips/sip-128): Add sCOIN equity synth
+
+> (No audit required, no new contract changes)
 
 ---
 
@@ -55,6 +61,8 @@
 - [SIP 126](https://sips.synthetix.io/sips/sip-126): New ERC-20 Synths
 - [SIP 127](https://sips.synthetix.io/sips/sip-127): Minimal Proxies for Virtual Synths
 
+> Audit: https://iosiro.com/audits/synthetix-alnilam-release-smart-contract-audit
+
 ---
 
 # Miaplacidus (v2.41.0)
@@ -65,6 +73,8 @@
 
 > - [SIP-113](https://sips.synthetix.io/sips/sip-113) Re-enable sKRW (Korean Won)
 
+> (No audit required, no new contract changes)
+
 ---
 
 # Elnath (v2.39.0)
@@ -74,6 +84,8 @@
 **Codebase**: [v2.39.0](https://github.com/Synthetixio/synthetix/tree/v2.39.0)
 
 > - [SIP-110](https://sips.synthetix.io/sips/sip-110): Adding sTSLA Synth
+
+> (No audit required, no new contract changes)
 
 ---
 
@@ -90,6 +102,8 @@
 - [SIP-108](https://sips.synthetix.io/sips/sip-108): Shorting rewards
 - [SIP-109](https://sips.synthetix.io/sips/sip-109): Add Synth exchange suspension support
 
+> Audit: https://iosiro.com/audits/synthetix-release-bellatrix-smart-contract-audit
+
 ---
 
 # Gacrux (v2.37.0)
@@ -98,7 +112,11 @@
 
 **Codebase**: [v2.37.0](https://github.com/Synthetixio/synthetix/tree/v2.37.0)
 
-> - [SIP-106](https://sips.synthetix.io/sips/sip-106) L2 Debt Register fix
+> (No blog post)
+
+- [SIP-106](https://sips.synthetix.io/sips/sip-106) L2 Debt Register fix
+
+> No audit - reused older audited contract to fix debt issue on L2 caused by skewed pool from initial test involving 1 wei.
 
 ---
 
@@ -114,6 +132,8 @@
 - [SIP-102](https://sips.synthetix.io/sips/sip-102) Support SNX on L2 with Optimism
 - [SIP-105](https://sips.synthetix.io/sips/sip-105) Multi-collateral Liquidation Bug Fix
 
+> Audit: https://iosiro.com/audits/synthetix-castor-release-smart-contract-audit
+
 ---
 
 # Shaula (v2.35.2)
@@ -128,6 +148,8 @@
 - [SIP-100](https://sips.synthetix.io/sips/sip-100): Resolver and cache improvements — Improves the ‘AddressResolver’ to improve protocol upgrades, reduce gas of deployments and further decentralization.
 - [SIP-103](https://sips.synthetix.io/sips/sip-103): sUSD shorts — This SIP allows users to short Synths against sUSD. This mechanism provides an alternative to iSynths for users seeking inverse price exposure. While these positions require collateral, they return the sUSD proceeds of the sale to the shorter, which can then be deployed productively throughout DeFi.
 
+> Audit: https://iosiro.com/audits/synthetix-shaula-release-smart-contract-audit
+
 ---
 
 # Adhara (v2.34.0)
@@ -137,6 +159,8 @@
 **Codebase**: [v2.34.0](https://github.com/Synthetixio/synthetix/tree/v2.34.0)
 
 > [SIP-98](https://sips.synthetix.io/sips/sip-98) Re-implement double exchange fee rate on swing trades
+
+> Audit: https://iosiro.com/audits/synthetix-shaula-release-smart-contract-audit (report combined with Shaula release)
 
 ---
 
@@ -149,6 +173,8 @@
 > https://blog.synthetix.io/the-regulus-release/
 
 - [SIP-94](https://sips.synthetix.io/sips/sip-94) Virtual Synth Fix to Ensure Settlement Is Connected
+
+> Audit: https://iosiro.com/audits/synthetix-mimosa-release-smart-contract-audit (bundled with Mimosa report)
 
 ---
 
@@ -163,6 +189,8 @@
 - [SIP-89](https://sips.synthetix.io/sips/sip-89) Virtual Synths
 - [SIP-91](https://sips.synthetix.io/sips/sip-91) Debt Cache Contract
 - [SIP-92](https://sips.synthetix.io/sips/sip-92) Historical iSynths Pricing Tracks When Last Frozen
+
+> Audit: https://iosiro.com/audits/synthetix-mimosa-release-smart-contract-audit
 
 ---
 
@@ -179,6 +207,8 @@
 - [SCCP-51](https://sips.synthetix.io/sccp/sccp-51): Update sDEFI index
 - Resume synths paused previously by [SIP-84](https://sips.synthetix.io/sips/sip-84)
 
+> Audit: https://iosiro.com/audits/synthetix-deneb-release-smart-contract-audit
+
 ---
 
 # Fomalhaut (v2.28.4)
@@ -193,6 +223,8 @@
 - [SIP-85](https://sips.synthetix.io/sips/sip-85): EtherCollateral for sUSD Loans
 - [SIP-86](https://sips.synthetix.io/sips/sip-86): SIP 86: ExchangeRates Chainlink Aggregator V2V3
 - [SIP-87](https://sips.synthetix.io/sips/sip-87): Add iETH incentive to RewardsDistribution
+
+> Audit: https://iosiro.com/audits/synthetix-fomalhaut-release-smart-contract-audit
 
 ---
 
@@ -212,6 +244,8 @@
 - [SIP-78](https://sips.synthetix.io/sips/sip-78): Reset iSynth does not trigger circuit breaker from SIP-65
 - [SIP-84](https://sips.synthetix.io/sips/sip-84): Pause Synths Below Open Interest Threshold
 - [SCCP-43](https://sips.synthetix.io/sccp/sccp-43): As part of the Pollux deployment and transition to Chainlink Oracles a number of SCCP controlled variables need to be updated to improve trading UX and reduce front-running attacks.
+
+> Audit: https://iosiro.com/audits/synthetix-pollux-release-smart-contract-audit
 
 ---
 
@@ -286,6 +320,8 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SIP-56](https://sips.synthetix.io/sips/sip-56) Differential fees
 - [SIP-57](https://sips.synthetix.io/sips/sip-57) Address resolver proxy
 
+> Audit: https://iosiro.com/audits/synthetix-altair-release-smart-contract-audit
+
 ---
 
 # Hadar (v2.21.6)
@@ -308,6 +344,11 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 
 - [SIP-47](https://sips.synthetix.io/sips/sip-47) Prevent empty exchanges
 
+> Audits:
+>
+> 1. https://iosiro.com/audits/synthetix-sip-44-and-sip-46-smart-contract-audit
+> 2. https://github.com/sigp/public-audits/blob/master/synthetix/delegates/review.pdf
+
 ---
 
 # Betelgeuse (v2.20.0)
@@ -321,6 +362,8 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SIP-40](https://sips.synthetix.io/sips/sip-40): Frontminting prevention ([read IOSIRO's audit report here](https://iosiro.com/audits/synthetix-pr-435-smart-contract-audit))
 - [SIP-41](https://sips.synthetix.io/sips/sip-41): ProtocolDAO phase zero
 - [SIP-42](https://sips.synthetix.io/sips/sip-42): Gas optimisations
+
+> Audit: https://iosiro.com/audits/synthetix-pr-435-smart-contract-audit
 
 ---
 
@@ -342,6 +385,12 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - [SCCP-11](https://sips.synthetix.io/sips/sccp-11): Reduce trading fee to 0.3% — As part of the fee reclamation release, we’ll be reducing the trading fee back down to 30bps.
 - [SCCP-12](https://sips.synthetix.io/sips/sccp-12): Reactivate previously deactivated Synths — s/iXTZ, s/iBNB, and s/iLTC were all previously deactivated as they were being targeted by frontrunners, but we're reinstating them in the Achernar release.
 - [SCCP-13](https://sips.synthetix.io/sips/sccp-13): Reinstate fee claim buffer to 750% from 500% — The requirement to claim fees was reduced from 750% to 500% to allow stakers to not get hit by the temporary fee increase.
+
+> Audits:
+>
+> 1. https://github.com/sigp/public-audits/blob/master/synthetix/ethercollateral/review.pdf
+> 2. https://www.iosiro.com/audits/synthetix-SIP37-smart-contract-audit
+> 3. https://github.com/sigp/public-audits/blob/master/synthetix/unipool/review.pdf
 
 ---
 
@@ -471,6 +520,8 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 - Transfer Fee Fix to allow it to be set to zero
 - SynthExchange event for DApps when exchanging between synths
 
+> Audit: https://www.iosiro.com/audits/synthetix-phase-1-smart-contract-audit
+
 ---
 
 # Synthetix crypto-backed synthetic asset platform (v2.0.0)
@@ -480,6 +531,8 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 **Codebase**: [v2.0.0](https://github.com/Synthetixio/synthetix/tree/v2.0.0)
 
 > The Synthetix Platform enables the creation of on-chain synthetic assets (Synths) that track the value of assets in the real world. Some examples of assets that the platform supports now or will support in the future are synthetic fiat currencies (sUSD, sAUD, sKRW etc), synthetic commodities such as gold (sXAU), as well as more complex assets such as equity indices.
+
+> Audit: https://github.com/sigp/public-audits/blob/master/synthetix/multicurrency/review.pdf
 
 ---
 
@@ -501,6 +554,11 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 
 > In this version of the nUSD system, nomins are havven-backed, and only the foundation may issue, up to an issuance ratio it sets.
 
+> Audits:
+>
+> 1. https://github.com/sigp/public-audits/blob/master/havven-2018-06-06/havven-review.pdf
+> 2. https://github.com/sigp/public-audits/blob/master/havven-2018-06-18/review.pdf
+
 ---
 
 # Ether-Backed USD Nomins (v0.1.0)
@@ -508,5 +566,7 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 **Published**: Aug 7, 2018
 
 **Codebase**: [v0.1.0](https://github.com/Synthetixio/synthetix/tree/v0.1.0)
+
+> > Audit: https://github.com/sigp/public-audits/tree/master/havven-2018-04-05/README.md
 
 ---
