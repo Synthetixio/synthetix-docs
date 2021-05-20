@@ -264,6 +264,8 @@
 - [SIP-44](https://sips.synthetix.io/sips/sip-44) : Settlement Improvements — Minor modifications to the settlement process for exchange rates deployments.
 - [SCCP-27](https://sips.synthetix.io/sccp/sccp-27) : Ether collateral second trial — Now that the first Ether collateral trial is complete, we will be launching a second trial that incorporates the collateralization ratio update from 150% to 125%.
 
+> Audit: https://iosiro.com/audits/synthetix-spica-release-smart-contract-audit
+
 ---
 
 # Antares (v2.25.0)
@@ -305,6 +307,8 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 
 - [SIP-48](https://sips.synthetix.io/sips/sip-48) Allow read views while rates are stale
 - [SIP-53](https://sips.synthetix.io/sips/sip-53) Binary options
+
+> Audit: https://iosiro.com/audits/synthetix-acrux-release-smart-contract-audit
 
 ---
 
