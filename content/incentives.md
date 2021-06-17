@@ -12,6 +12,34 @@ Exchange fees are generated whenever a user exchanges one synthetic asset (Synth
 
 SNX staking rewards are generated through the inflationary monetary policy implemented in March 2018. At the same time as they claim their exchange fees stakers can claim their staking rewards, which are escrowed for a year. The SNX staking rewards enabled by the inflationary supply are set to decrease gradually until September 2023, where it will become a 2.5% annual terminal inflation rate.
 
+### Staking Requirements
+
+The information below presents collateralization ratio (CR) requirements that will help stakers earn SNX rewards and avoid liquidations, as well as other relevant information. 
+
+### L1 Requirements
+
+- Initial CR required for staking: 500% 
+
+- CR Under 200%: Staker can get flagged for liquidation, has 3 days to fix CR ratio to 500% 
+
+- Claiming Period: stakers need to claim rewards on a weekly basis 
+
+- Minimums: No minimum amount, recommend to do above10,000 SNX because of L1 fees
+
+- Rewards Escrow: 1 year
+
+### L2 Requirements
+
+- Initial CR required for staking: 1000% 
+
+- CR Under 200% : Staker can get flagged for liquidation, has 3 days to fix CR ratio to 1000%
+
+- Claiming Period: stakers need to claim rewards on a weekly basis 
+
+- Minimums: No minimum amount
+
+- Rewards Escrow: 1 year
+
 ## Secondary incentives
 
 In addition to the two primary forms of incentives, Synthetix also runs various incentives to create on-ramps, balance out particular dynamics, or trial different behaviour. These are either paid with a portion of the weekly inflationary SNX when implemented at the protocol level, or with SNX from the synthetixDAO treasury if they are just trials.
