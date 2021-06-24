@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/IssuerWithoutLiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/IssuerWithoutLiquidations.sol)
+**Source:** [contracts/IssuerWithoutLiquidations.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/IssuerWithoutLiquidations.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/IssuerWithoutLiquidations.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/IssuerWithoutLiquidations.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/IssuerWithoutLiquidations.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/IssuerWithoutLiquidations.sol#L10)</sub>
 
 ??? example "Details"
 

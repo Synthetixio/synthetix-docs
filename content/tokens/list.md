@@ -254,22 +254,28 @@
 
 | Token                   | Symbol | Units     | Initial Weight |
 | ----------------------- | ------ | --------- | -------------- |
-| Aave                    | AAVE   | 4.72000   | 15%            |
-| Synthetix Network Token | SNX    | 87.20000  | 15%            |
-| Uniswap                 | UNI    | 100.71000 | 15%            |
-| Maker                   | MKR    | 0.54000   | 10%            |
-| Balancer                | BAL    | 14.84000  | 5%             |
-| Compound                | COMP   | 1.55000   | 5%             |
-| Curve DAO Token         | CRV    | 254.94000 | 5%             |
-| Kyber Network           | KNC    | 334.06000 | 5%             |
-| Ren                     | REN    | 680.59000 | 5%             |
-| SushiSwap               | SUSHI  | 43.11100  | 5%             |
-| UMA                     | UMA    | 26.06000  | 5%             |
-| yearn.finance           | YFI    | 0.01604   | 5%             |
-| 1inch                   | 1INCH  | 71.83700  | 2.5%           |
-| Bancor                  | BNT    | 90.66100  | 2.5%           |
+| Uniswap                 | UNI    | 66.30520  | 15%            |
+| Aave                    | AAVE   | 4.16340   | 11%            |
+| Terra Luna              | LUNA   | 143.07530 | 10%            |
+| Maker                   | MKR    | 0.31160   | 9%             |
+| THORChain               | RUNE   | 105.84070 | 8%             |
+| Synthetix Network Token | SNX    | 92.26720  | 8%             |
+| Compound                | COMP   | 2.24990   | 7%             |
+| SushiSwap               | SUSHI  | 78.22580  | 7%             |
+| yearn.finance           | YFI    | 0.01503   | 6%             |
+| Bancor                  | BNT    | 74.54980  | 3%             |
+| UMA                     | UMA    | 25.60800  | 3%             |
+| Curve DAO Token         | CRV    | 124.24960 | 2.5%           |
+| 0x                      | ZRX    | 294.78570 | 2.5%           |
+| 1inch                   | 1INCH  | 59.01850  | 2%             |
+| Ren                     | REN    | 440.83560 | 2%             |
+| Balancer                | BAL    | 4.43330   | 1%             |
+| Barnbridge              | BOND   | 2.27400   | 1%             |
+| Kyber Network           | KNC    | 57.66700  | 1%             |
+| Alpha Finance           | ALPHA  | 102.31210 | 0.5%           |
+| Cream Finance           | CREAM  | 0.26670   | 0.5%           |
 
-> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 1.55 of undefined (Compound), 0.54 of undefined (Maker), 4.72 of undefined (Aave), 26.06 of undefined (UMA), 87.2 of undefined (Synthetix Network Token), 680.59 of undefined (Ren), 100.71 of undefined (Uniswap), 334.06 of undefined (Kyber Network), 254.94 of undefined (Curve DAO Token), 43.111 of undefined (SushiSwap), 0.01604 of undefined (yearn.finance), 14.84 of undefined (Balancer), 90.661 of undefined (Bancor), 71.837 of undefined (1inch).
+> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 66.3052 of undefined (Uniswap), 4.1634 of undefined (Aave), 143.0753 of undefined (Terra Luna), 0.3116 of undefined (Maker), 92.2672 of undefined (Synthetix Network Token), 105.8407 of undefined (THORChain), 78.2258 of undefined (SushiSwap), 2.2499 of undefined (Compound), 0.01503 of undefined (yearn.finance), 74.5498 of undefined (Bancor), 25.608 of undefined (UMA), 294.7857 of undefined (0x), 124.2496 of undefined (Curve DAO Token), 59.0185 of undefined (1inch), 440.8356 of undefined (Ren), 4.4333 of undefined (Balancer), 57.667 of undefined (Kyber Network), 2.274 of undefined (Barnbridge), 0.2667 of undefined (Cream Finance), 102.3121 of undefined (Alpha Finance).
 
 ## EOS (sEOS)
 
