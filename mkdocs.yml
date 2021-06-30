@@ -62,6 +62,7 @@ nav:
               Contracts:
                 - AddressResolver: contracts/source/contracts/AddressResolver.md
                 - BaseDebtCache: contracts/source/contracts/BaseDebtCache.md
+                - BaseMigration: contracts/source/contracts/BaseMigration.md
                 - BaseRewardEscrowV2: contracts/source/contracts/BaseRewardEscrowV2.md
                 - BaseSynthetix: contracts/source/contracts/BaseSynthetix.md
                 - BaseSynthetixBridge: contracts/source/contracts/BaseSynthetixBridge.md
@@ -85,6 +86,7 @@ nav:
                 - Depot: contracts/source/contracts/Depot.md
                 - EmptyCollateralManager: contracts/source/contracts/EmptyCollateralManager.md
                 - EmptyEtherCollateral: contracts/source/contracts/EmptyEtherCollateral.md
+                - EmptyEtherWrapper: contracts/source/contracts/EmptyEtherWrapper.md
                 - EscrowChecker: contracts/source/contracts/EscrowChecker.md
                 - EternalStorage: contracts/source/contracts/EternalStorage.md
                 - EtherCollateral: contracts/source/contracts/EtherCollateral.md
@@ -107,6 +109,8 @@ nav:
                 - Issuer: contracts/source/contracts/Issuer.md
                 - IssuerWithoutLiquidations: contracts/source/contracts/IssuerWithoutLiquidations.md
                 - IssuerWithoutUpdatableCache: contracts/source/contracts/IssuerWithoutUpdatableCache.md
+                - LegacyOwned: contracts/source/contracts/LegacyOwned.md
+                - LegacyTokenState: contracts/source/contracts/LegacyTokenState.md
                 - LimitedSetup: contracts/source/contracts/LimitedSetup.md
                 - Liquidations: contracts/source/contracts/Liquidations.md
                 - MinimalProxyFactory: contracts/source/contracts/MinimalProxyFactory.md

@@ -29,13 +29,13 @@ contract would otherwise exceed the maximum contract size specified in [EIP 170]
     - [`SystemStatus`](SystemStatus.md): The manager pauses if the system is suspended on the SystemStatus contract.
     - [`AddressResolver`](AddressResolver.md): The addresses of SystemStatus and sUSD are retrieved from here.
 
-**Source:** [contracts/BinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol)
+**Source:** [contracts/BinaryOptionMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol)
 
 ## Structs
 
 ### `CreatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L42)</sub>
 
 These are the parameters governing the limits that binary option market creators must abide by.
 
@@ -46,7 +46,7 @@ These are the parameters governing the limits that binary option market creators
 
 ### `Durations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L36)</sub>
 
 This struct holds the current values of time periods governing the duration of various `BinaryOptionMarket` phases.
 All durations are in seconds.
@@ -62,7 +62,7 @@ already-instantiated markets.
 
 ### `Fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L30)</sub>
 
 The global fee rates, which are inherited by new markets.
 Note that the sum `poolFee + creatorFee` must be between 0 and 1 exclusive,
@@ -78,7 +78,7 @@ while `refundFee` must be no greater than 1.
 
 ### `creatorLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L51)</sub>
 
 This holds the current values for market creator limits.
 
@@ -86,7 +86,7 @@ This holds the current values for market creator limits.
 
 ### `durations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L50)</sub>
 
 This holds the current values that new markets will inherit for several time-related parameters.
 
@@ -94,7 +94,7 @@ This holds the current values that new markets will inherit for several time-rel
 
 ### `fees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L49)</sub>
 
 This holds the current values that new markets will inherit for their fee rates.
 Once created, a market's fee rates are constant, so that if they are altered on the
@@ -104,7 +104,7 @@ manager contract they do not change in existing markets.
 
 ### `marketCreationEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L53)</sub>
 
 New markets cannot be created if this is false.
 
@@ -112,7 +112,7 @@ New markets cannot be created if this is false.
 
 ### `totalDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L54)</sub>
 
 This tracks the total of sUSD deposited across all binary option markets.
 This is updated whenever bids are made or refunded, options exercised,
@@ -124,7 +124,7 @@ or a markets created or destroyed.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L70)</sub>
 
 The constructor initialises the inherited contracts and sets the initial values for fees, durations and other settings.
 These parameters follow the constraints of the setter functions so that the various
@@ -146,13 +146,13 @@ parameters can't be set out of range.
 
     **Requires**
 
-    * [setCreatorCapitalRequirement](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L87)
+    * [setCreatorCapitalRequirement](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L87)
 
 ## Views
 
 ### `activeMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L133)</sub>
 
 Returns markets that are not yet mature.
 
@@ -177,7 +177,7 @@ with `markets(0, numMarkets())`, or any larger page size.
 
 ### `maturedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L141)</sub>
 
 Returns markets that are mature.
 
@@ -199,7 +199,7 @@ This function behaves the same way as [`activeMarkets`](#activemarkets) does.
 
 ### `numActiveMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L129)</sub>
 
 Returns the number of currently-tracked non-matured markets.
 
@@ -219,7 +219,7 @@ Returns the number of currently-tracked non-matured markets.
 
 ### `numMaturedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L137)</sub>
 
 Returns the number of currently-tracked matured markets.
 
@@ -239,7 +239,7 @@ Returns the number of currently-tracked matured markets.
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -259,7 +259,7 @@ Returns the number of currently-tracked matured markets.
 
 ### `decrementTotalDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L226)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L226)</sub>
 
 Allows markets to decrease the tracked total deposit value.
 
@@ -288,7 +288,7 @@ or if the manager is [paused](Pausable.md), or if the [system is suspended](Syst
 
 ### `incrementTotalDeposited`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L221)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L221)</sub>
 
 Allows markets to increase the tracked total deposit value.
 
@@ -317,7 +317,7 @@ or if the manager is [paused](Pausable.md), or if the [system is suspended](Syst
 
 ### `migrateMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L349)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L349)</sub>
 
 Allows the contract owner to migrate a set of markets to a new manager instance, for example in case of upgrades.
 This requires first [setting the migrating manager](#setmigratingmanager) in the receiving manager, so that the
@@ -354,7 +354,7 @@ The transaction will revert if any of the markets provided is not known, or is a
 
 ### `setCreatorCapitalRequirement`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L208)</sub>
 
 Allows the contract owner to set the [minimum sUSD value](#creatorlimits) required to open a market.
 
@@ -382,7 +382,7 @@ Allows the contract owner to set the [minimum sUSD value](#creatorlimits) requir
 
 ### `setCreatorFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L194)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L194)</sub>
 
 Allows the contract owner to update [`fees.creatorFee`](#fees).
 
@@ -404,9 +404,9 @@ The transaction reverts if the sum of `fees.poolFee` and `fees.creatorFee` is no
 
     **Requires**
 
-    * [require(..., "Total fee must be less than 100%.")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L196)
+    * [require(..., "Total fee must be less than 100%.")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L196)
 
-    * [require(..., "Total fee must be nonzero.")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L197)
+    * [require(..., "Total fee must be nonzero.")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L197)
 
     **Modifiers**
 
@@ -418,7 +418,7 @@ The transaction reverts if the sum of `fees.poolFee` and `fees.creatorFee` is no
 
 ### `setCreatorSkewLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L213)</sub>
 
 Allows the contract owner to set the [skew limit](#creatorlimits) creators must abide by to open a market.
 
@@ -438,7 +438,7 @@ Allows the contract owner to set the [skew limit](#creatorlimits) creators must 
 
     **Requires**
 
-    * [require(..., "Creator skew limit must be no greater than 1.")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L214)
+    * [require(..., "Creator skew limit must be no greater than 1.")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L214)
 
     **Modifiers**
 
@@ -450,7 +450,7 @@ Allows the contract owner to set the [skew limit](#creatorlimits) creators must 
 
 ### `setExpiryDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L176)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L176)</sub>
 
 Allows the contract owner to update [`durations.expiryDuration`](#durations).
 
@@ -478,7 +478,7 @@ Allows the contract owner to update [`durations.expiryDuration`](#durations).
 
 ### `setMarketCreationEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L338)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L338)</sub>
 
 Allows the owner to toggle whether [market creation is enabled](#marketcreationenabled).
 
@@ -502,7 +502,7 @@ Allows the owner to toggle whether [market creation is enabled](#marketcreatione
 
 ### `setMaxOraclePriceAge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L171)</sub>
 
 Allows the contract owner to update [`durations.maxOraclePriceAge`](#durations).
 
@@ -530,7 +530,7 @@ Allows the contract owner to update [`durations.maxOraclePriceAge`](#durations).
 
 ### `setMaxTimeToMaturity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L181)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L181)</sub>
 
 Allows the contract owner to update [`durations.maxTimeToMaturity`](#durations).
 
@@ -558,7 +558,7 @@ Allows the contract owner to update [`durations.maxTimeToMaturity`](#durations).
 
 ### `setMigratingManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L345)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L345)</sub>
 
 Allows the owner to set the value of [`_migratingManager`](#_migratingmanager).
 
@@ -582,7 +582,7 @@ Allows the owner to set the value of [`_migratingManager`](#_migratingmanager).
 
 ### `setPoolFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L186)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L186)</sub>
 
 Allows the contract owner to update [`fees.poolFee`](#fees).
 
@@ -604,9 +604,9 @@ The transaction reverts if the sum of `fees.poolFee` and `fees.creatorFee` is no
 
     **Requires**
 
-    * [require(..., "Total fee must be less than 100%.")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L188)
+    * [require(..., "Total fee must be less than 100%.")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L188)
 
-    * [require(..., "Total fee must be nonzero.")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L189)
+    * [require(..., "Total fee must be nonzero.")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L189)
 
     **Modifiers**
 
@@ -618,7 +618,7 @@ The transaction reverts if the sum of `fees.poolFee` and `fees.creatorFee` is no
 
 ### `setRefundFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L202)</sub>
 
 Allows the contract owner to update [`fees.refundFee`](#fees).
 
@@ -640,7 +640,7 @@ The transaction reverts if the refund fee is greater than 100%.
 
     **Requires**
 
-    * [require(..., "Refund fee must be no greater than 100%.")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L203)
+    * [require(..., "Refund fee must be no greater than 100%.")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L203)
 
     **Modifiers**
 
@@ -654,7 +654,7 @@ The transaction reverts if the refund fee is greater than 100%.
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L115)</sub>
 
 Retrieves the [cached](MixinResolver.md) address of the [`ExchangeRates`](ExchangeRates.md) instance, which
 is used to determine whether currency keys [are valid to create new markets](#_isvalidkey).
@@ -675,7 +675,7 @@ is used to determine whether currency keys [are valid to create new markets](#_i
 
 ### `_factory`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L119)</sub>
 
 Retrieves the [cached](MixinResolver.md) address of the [`BinaryOptionMarketFactory`](BinaryOptionMarketFactory.md) instance.
 
@@ -695,7 +695,7 @@ Retrieves the [cached](MixinResolver.md) address of the [`BinaryOptionMarketFact
 
 ### `_isKnownMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L125)</sub>
 
 Returns true if the provided address exists in either of the active or matured markets lists, and false otherwise.
 
@@ -715,7 +715,7 @@ Returns true if the provided address exists in either of the active or matured m
 
 ### `_isValidKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L145)</sub>
 
 A key can be used for a binary option market if it is not `sUSD` (as the price of sUSD is fixed at \$1), and not
 an inverse synth (since they are equivalent to using the non-inverse and reversing long and short).
@@ -736,7 +736,7 @@ an inverse synth (since they are equivalent to using the non-inverse and reversi
 
 ### `_sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L111)</sub>
 
 The [cached](MixinResolver.md) `sUSD` instance.
 
@@ -756,7 +756,7 @@ The [cached](MixinResolver.md) `sUSD` instance.
 
 ### `_systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L107)</sub>
 
 The [cached](MixinResolver.md) [`SystemStatus`](SystemStatus.md) instance. The manager contract does not function when
 the system is suspended.
@@ -779,7 +779,7 @@ the system is suspended.
 
 ### `cancelMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L294)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L294)</sub>
 
 ??? example "Details"
 
@@ -797,9 +797,9 @@ the system is suspended.
 
     **Requires**
 
-    * [require(..., "Not an active market")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L295)
+    * [require(..., "Not an active market")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L295)
 
-    * [require(..., "Sender not market creator")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L297)
+    * [require(..., "Sender not market creator")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L297)
 
     **Modifiers**
 
@@ -811,7 +811,7 @@ the system is suspended.
 
 ### `createMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L236)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L236)</sub>
 
 Calls out to [`BinaryOptionMarketFactory.createMarket`](BinaryOptionMarketFactory.md#createmarket) to create a new
 [`BinaryOptionMarket`](BinaryOptionMarket.md) instance and adds its address to the [`_markets`](#_markets) array.
@@ -870,15 +870,15 @@ The transaction reverts if any of the following conditions is true:
 
     **Requires**
 
-    * [require(..., "Market creation is disabled")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L250)
+    * [require(..., "Market creation is disabled")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L250)
 
-    * [require(..., "Invalid key")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L251)
+    * [require(..., "Invalid key")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L251)
 
-    * [require(..., "Maturity too far in the future")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L254)
+    * [require(..., "Maturity too far in the future")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L254)
 
-    * [require(..., "End of bidding has passed")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L258)
+    * [require(..., "End of bidding has passed")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L258)
 
-    * [require(..., "Maturity predates end of bidding")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L259)
+    * [require(..., "Maturity predates end of bidding")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L259)
 
     **Modifiers**
 
@@ -890,7 +890,7 @@ The transaction reverts if any of the following conditions is true:
 
 ### `expireMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L303)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L303)</sub>
 
 Allows markets to be destroyed once they have reached their expiry dates. The transaction will revert if any
 single market in the provided list is not ready to expire.
@@ -915,7 +915,7 @@ single market in the provided list is not ready to expire.
 
 ### `rebuildMarketCaches`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L318)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L318)</sub>
 
 ??? example "Details"
 
@@ -933,7 +933,7 @@ single market in the provided list is not ready to expire.
 
 ### `receiveMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L380)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L380)</sub>
 
 This is called by a migrating manager once it has prepared its markets to be received to finalise the migration.
 The value of deposits in the migrated markets will be added to the receiving manager's total.
@@ -958,7 +958,7 @@ the manager, or is a duplicate.
 
     **Requires**
 
-    * [require(..., "Only permitted for migrating manager.")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L381)
+    * [require(..., "Only permitted for migrating manager.")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L381)
 
     **Emits**
 
@@ -966,7 +966,7 @@ the manager, or is a duplicate.
 
 ### `resolveMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L287)</sub>
 
 Allows a particular market to be [resolved](BinaryOptionMarket.md#resolve). When this occurs, the market will be moved
 from the active markets list to the matured markets list.
@@ -987,19 +987,19 @@ from the active markets list to the matured markets list.
 
     **Requires**
 
-    * [require(..., "Not an active market")](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L288)
+    * [require(..., "Not an active market")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L288)
 
 ## Modifiers
 
 ### `onlyActiveMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L405)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L405)</sub>
 
 The transaction reverts if the message sender is not an [active market](#activemarkets).
 
 ### `onlyKnownMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L410)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L410)</sub>
 
 The transaction reverts if the message sender is not a [known market](#_isknownmarket).
 
@@ -1007,7 +1007,7 @@ The transaction reverts if the message sender is not a [known market](#_isknownm
 
 ### `CreatorCapitalRequirementUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L435)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L435)</sub>
 
 The [capital requirement](#creatorlimits) was updated.
 
@@ -1015,7 +1015,7 @@ The [capital requirement](#creatorlimits) was updated.
 
 ### `CreatorFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L438)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L438)</sub>
 
 The [creator fee](#fees) was updated.
 
@@ -1023,7 +1023,7 @@ The [creator fee](#fees) was updated.
 
 ### `CreatorSkewLimitUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L436)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L436)</sub>
 
 The [skew limit](#creatorlimits) was updated.
 
@@ -1031,13 +1031,13 @@ The [skew limit](#creatorlimits) was updated.
 
 ### `ExerciseDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L432)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L432)</sub>
 
 **Signature**: `ExerciseDurationUpdated(uint256 duration)`
 
 ### `ExpiryDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L433)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L433)</sub>
 
 The [expiry duration](#durations) was updated.
 
@@ -1045,13 +1045,13 @@ The [expiry duration](#durations) was updated.
 
 ### `MarketCancelled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L427)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L427)</sub>
 
 **Signature**: `MarketCancelled(address market)`
 
 ### `MarketCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L417)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L417)</sub>
 
 A new market was created.
 
@@ -1059,7 +1059,7 @@ A new market was created.
 
 ### `MarketCreationEnabledUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L430)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L430)</sub>
 
 [Market creation](#marketcreationenabled) was enabled or disabled.
 
@@ -1067,7 +1067,7 @@ A new market was created.
 
 ### `MarketExpired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L426)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L426)</sub>
 
 An expiring market was destroyed.
 
@@ -1075,7 +1075,7 @@ An expiring market was destroyed.
 
 ### `MarketsMigrated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L428)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L428)</sub>
 
 A set of markets was migrated to a certain receiving manager.
 
@@ -1083,7 +1083,7 @@ A set of markets was migrated to a certain receiving manager.
 
 ### `MarketsReceived`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L429)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L429)</sub>
 
 A set of markets was migrated from a certain migrating manager.
 
@@ -1091,7 +1091,7 @@ A set of markets was migrated from a certain migrating manager.
 
 ### `MaxOraclePriceAgeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L431)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L431)</sub>
 
 The [max oracle price age](#durations) was updated.
 
@@ -1099,7 +1099,7 @@ The [max oracle price age](#durations) was updated.
 
 ### `MaxTimeToMaturityUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L434)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L434)</sub>
 
 The [maximum time to maturity](#durations) was updated.
 
@@ -1107,7 +1107,7 @@ The [maximum time to maturity](#durations) was updated.
 
 ### `PoolFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L437)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L437)</sub>
 
 The [pool fee](#fees) was updated.
 
@@ -1115,7 +1115,7 @@ The [pool fee](#fees) was updated.
 
 ### `RefundFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/BinaryOptionMarketManager.sol#L439)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/BinaryOptionMarketManager.sol#L439)</sub>
 
 The [refund fee](#fees) was updated.
 

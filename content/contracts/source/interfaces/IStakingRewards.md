@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IStakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol)
+**Source:** [contracts/interfaces/IStakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol)
 
 ## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `getRewardForDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `lastTimeRewardApplicable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `rewardPerToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -96,9 +96,45 @@
 
     `view`
 
+### `rewardsDistribution`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L17)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rewardsDistribution() view returns (address)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `rewardsToken`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L19)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `rewardsToken() view returns (address)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -118,7 +154,7 @@
 
 ### `exit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -136,7 +172,7 @@
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -154,7 +190,7 @@
 
 ### `stake`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -172,7 +208,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.3/contracts/interfaces/IStakingRewards.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha/contracts/interfaces/IStakingRewards.sol#L31)</sub>
 
 ??? example "Details"
 
