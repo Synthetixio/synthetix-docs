@@ -40,7 +40,7 @@ Additionally, events are a bit different; they must be encoded within the underl
 
 Finally, if the target contract needs to transfer ether around, then it will be remitted from the target address rather than the proxy address, though this is a quirk which it would be straightforward to remedy.
 
-**Source:** [contracts/Proxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/Proxy.sol)
+**Source:** [contracts/Proxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/Proxy.sol)
 
 ## Architecture
 
@@ -52,7 +52,7 @@ Finally, if the target contract needs to transfer ether around, then it will be 
 
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/Proxy.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/Proxy.sol#L11)</sub>
 
 The underlying contract this proxy is standing in front of.
 
@@ -62,7 +62,7 @@ The underlying contract this proxy is standing in front of.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/Proxy.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/Proxy.sol#L13)</sub>
 
 Initialises the inherited [`Owned`](Owned.md) instance.
 
@@ -84,7 +84,7 @@ Initialises the inherited [`Owned`](Owned.md) instance.
 
 ### `_emit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/Proxy.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/Proxy.sol#L20)</sub>
 
 When operating in the `CALL` style, this function allows the proxy's underlying contract (and only that contract) to emit events from the proxy's address.
 
@@ -129,7 +129,7 @@ Note that 0 is a valid argument for `numTopics`, which produces `LOG0`, an "even
 
 ### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/Proxy.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/Proxy.sol#L15)</sub>
 
 Sets the address this proxy forwards its calls to.
 
@@ -159,7 +159,7 @@ Sets the address this proxy forwards its calls to.
 
 ### `onlyTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/Proxy.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/Proxy.sol#L76)</sub>
 
 Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
@@ -167,7 +167,7 @@ Reverts the transaction if `msg.sender` is not the [`target`](#target) contract.
 
 ### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/Proxy.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/Proxy.sol#L81)</sub>
 
 The proxy's target contract was changed.
 
