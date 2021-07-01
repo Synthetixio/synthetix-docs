@@ -2,6 +2,23 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alnitak (v2.46.0-ovm)
+
+**Published**: Jul 1, 2021
+
+**Codebase**: [v2.46.0-ovm](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm)
+
+> https://blog.synthetix.io/the-alnitak-release/
+
+- [SIP-138: Update Volume Tracking Event](https://sips.synthetix.io/sips/sip-138)
+- [SIP-139: Allow owner to reset the decentralized circuit breaker pricing](https://sips.synthetix.io/sips/sip-139)
+- [SIP-140: Allow Exchange Into Origin Address](https://sips.synthetix.io/sips/sip-140)
+- [SIP-151: Migration Contracts for Upgrades](https://sips.synthetix.io/sips/sip-151)
+
+> Audit: https://iosiro.com/audits/synthetix-alnitak-release-smart-contract-audit
+
+---
+
 # Alioth (v2.45.0)
 
 **Published**: May 13, 2021
