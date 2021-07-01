@@ -9,7 +9,7 @@ This contract was required by [EtherCollateral](EtherCollateral.md) to allow it 
 It could be used where there a multiple Collateral contracts.
 i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contract for issuing sBTC then those synths would need to inherit MultiCollateralSynth and then have their corresponding Collateral Contract set via the constructor argument multiCollateralKey
 
-**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol)
+**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol)
 
 ## Architecture
 
@@ -21,7 +21,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -61,7 +61,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -83,7 +83,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -107,7 +107,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -125,7 +125,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `etherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -143,7 +143,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `etherCollateralsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -161,7 +161,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `etherWrapper`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -181,4 +181,4 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-alpha-ovm/contracts/MultiCollateralSynth.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0/contracts/MultiCollateralSynth.sol#L85)</sub>
