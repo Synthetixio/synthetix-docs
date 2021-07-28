@@ -21,13 +21,13 @@ independently of one another.
     - [`BinaryOptionMarket`](BinaryOptionMarket.md): The factory creates market instances with the provided parameters.
     - [`AddressResolver`](AddressResolver.md): The factory uses the address resolver to retrieve the address of its manager, so if the manager is upgraded, this factory must be synchronised.
 
-**Source:** [contracts/BinaryOptionMarketFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/BinaryOptionMarketFactory.sol)
+**Source:** [contracts/BinaryOptionMarketFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BinaryOptionMarketFactory.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/BinaryOptionMarketFactory.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BinaryOptionMarketFactory.sol#L20)</sub>
 
 The constructor simply initialises the inherited classes.
 
@@ -49,7 +49,7 @@ The constructor simply initialises the inherited classes.
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/BinaryOptionMarketFactory.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BinaryOptionMarketFactory.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -69,7 +69,7 @@ The constructor simply initialises the inherited classes.
 
 ### `_manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/BinaryOptionMarketFactory.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BinaryOptionMarketFactory.sol#L31)</sub>
 
 Returns the cached address of the
 [`BinaryOptionMarketManager`](BinaryOptionMarketManager.md) instance
@@ -93,7 +93,7 @@ from the [`AddressResolver`](AddressResolver.md).
 
 ### `createMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/BinaryOptionMarketFactory.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BinaryOptionMarketFactory.sol#L37)</sub>
 
 Simply creates a new [`BinaryOptionMarket`](BinaryOptionMarket.md) instance
 with the given parameters.
@@ -122,4 +122,4 @@ Initial timestamps should be provided in the order `[biddingEnd, maturity, expir
 
     **Requires**
 
-    * [require(..., "Only permitted by the manager.")](https://github.com/Synthetixio/synthetix/tree/v2.46.0-ovm/contracts/BinaryOptionMarketFactory.sol#L48)
+    * [require(..., "Only permitted by the manager.")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BinaryOptionMarketFactory.sol#L48)
