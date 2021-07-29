@@ -12,9 +12,9 @@ Here are the different kinds of tokens used in the Synthetix ecosystem.
 
 `SNX` gradually decreases inflation by 1.25% per week, and reaches a final terminal inflation of 2.5% annualized on September 6, 2023.
 
-A gradual decrease in inflation was chosen by the community in order to prevent risks that abrupt halvenings pose. 
+A gradual decrease in inflation was chosen by the community in order to prevent risks that abrupt halvenings pose.
 
-Additionally, a perpetual final inflation was chosen to insure long term stability. 
+Additionally, a perpetual final inflation was chosen to insure long term stability.
 
 The inflation model can be seen [here](https://docs.google.com/spreadsheets/d/1a5r9aFP5bh6wGG4-HIW2MWPf4yMthZvesZOurnG-v_8/edit#gid=0). Additional information on the topic is presented on [SIP-23](https://sips.synthetix.io/sips/sip-23) and [SIP-24](https://sips.synthetix.io/sips/sip-24).
 
