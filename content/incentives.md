@@ -14,15 +14,15 @@ SNX staking rewards are generated through the inflationary monetary policy imple
 
 ### Staking Requirements
 
-The information below presents collateralization ratio (CR) requirements that will help stakers earn SNX rewards and avoid liquidations, as well as other relevant information. 
+The information below presents collateralization ratio (CR) requirements that will help stakers earn SNX rewards and avoid liquidations, as well as other relevant information.
 
 ### L1 Requirements
 
-- Initial CR required for staking: 500% 
+- Initial CR required for staking: 500%
 
-- CR Under 200%: Staker can get flagged for liquidation, has 3 days to fix CR ratio to 500% 
+- CR Under 200%: Staker can get flagged for liquidation, has 3 days to fix CR ratio to 500%
 
-- Claiming Period: stakers need to claim rewards on a weekly basis 
+- Claiming Period: stakers need to claim rewards on a weekly basis
 
 - Minimums: No minimum amount, recommend to do above10,000 SNX because of L1 fees
 
@@ -30,11 +30,11 @@ The information below presents collateralization ratio (CR) requirements that wi
 
 ### L2 Requirements
 
-- Initial CR required for staking: 1000% 
+- Initial CR required for staking: 1000%
 
 - CR Under 200% : Staker can get flagged for liquidation, has 3 days to fix CR ratio to 1000%
 
-- Claiming Period: stakers need to claim rewards on a weekly basis 
+- Claiming Period: stakers need to claim rewards on a weekly basis
 
 - Minimums: No minimum amount
 
