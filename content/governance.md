@@ -77,3 +77,61 @@ These governance calls are recorded and hosted on youtube and spotify.
 As a part of the Spartan Council role, interviews are conducted between the SIP/SCCP authors and the Spartan Council in order to discuss the implications and design choices of a proposed change to the Synthetix Protocol. The public nature of these interviews provides a transparent way for the community members to understand the changes being proposed and also safeguards the system through having more accountability within the decision making process.
 
 These interviews are recorded and publicly available on [spotify](https://open.spotify.com/show/3ucEqjfVDzJ8wSyVxheTPA).
+
+## Technical Information
+
+### Spartan Council
+
+#### Election Flow
+
+1. An election is created on the [snapshot-space](https://snapshot.org/#/spartancouncil.eth) or on the [staking website](https://staking.synthetix.io/gov) with the nominations gathered on the [nomination sheet](https://docs.google.com/spreadsheets/d/1nbAUAioVvxlhtBzUI0dwmedGC2R3AZL-mDws7BzvZDQ/edit#gid=1350569431).
+
+2. Once the election is completed, the [SC-NFT](http://contracts.synthetix.io/SpartanCouncilNFT) must be revoked from ex-members and issued to new members of the Spartan Council.
+
+3. To enable [Dilution](https://sips.synthetix.io/sips/sip-104), the relevant information from the election must be logged into the CouncilDilution [contract](https://contracts.synthetix.io/CouncilDilution), to do this, there is a script avaliable on [synthetix-scripts](https://github.com/Synthetixio/synthetix-scripts)
+
+4. Once the NFT is distributed, the holders will be entitled to vote on SIPs/SCCPs under the [snxgov.eth](https://snapshot.org/#/snxgov.eth) space, when the CouncilDilution is updated with the latest election hash onchain, voters are able to dilute members whom they have voted for per proposal.
+
+#### Contracts & Links
+
+Old Council Dilution: https://etherscan.io/address/0x30Ba359FE295E311D24BcCb1502c7a6e89Fb2100 (deprecated due to a [bug](https://sips.synthetix.io/sips/sip-152))
+
+Council Dilution: https://contracts.synthetix.io/CouncilDilution
+
+SpartanCouncilNFT: http://contracts.synthetix.io/SpartanCouncilNFT
+
+Snapshot Space: https://snapshot.org/#/spartancouncil.eth
+
+Staking dApp Voting: https://staking.synthetix.io/gov/spartancouncil.eth
+
+### grantsDAO
+
+#### Election Flow
+
+1. An election is created on the [snapshot-space](https://snapshot.org/#/snxgov.eth) or on the [staking website](https://staking.synthetix.io/gov/snxgov.eth) with the nominations gathered on the [nomination sheet](https://docs.google.com/spreadsheets/d/1nbAUAioVvxlhtBzUI0dwmedGC2R3AZL-mDws7BzvZDQ/edit#gid=1350569431).
+
+2. Once the election is completed, the gDAO [multisig](https://gnosis-safe.io/app/#/safes/0xeb9a82736cc030fC4A4CD4b53e9B2c67e153208d) must be updated with the new owners and the old owners must be removed.
+
+#### Contracts & Links
+
+gDAO Multisig: https://etherscan.io/address/0xeb9a82736cc030fC4A4CD4b53e9B2c67e153208d
+
+Snapshot Space: https://snapshot.org/#/snxgov.eth
+
+Staking dApp Voting: https://staking.synthetix.io/gov/snxgov.eth
+
+### ambassadorDAO
+
+#### Election Flow
+
+1. An election is created on the [snapshot-space](https://snapshot.org/#/snxambassador.eth) or on the [staking website](https://staking.synthetix.io/gov/snxambassador.eth) with the nominations gathered on the [nomination sheet](https://docs.google.com/spreadsheets/d/1nbAUAioVvxlhtBzUI0dwmedGC2R3AZL-mDws7BzvZDQ/edit#gid=1350569431).
+
+2. Once the election is completed, the gDAO [multisig](https://gnosis-safe.io/app/#/safes/0x46abFE1C972fCa43766d6aD70E1c1Df72F4Bb4d1) must be updated with the new owners and the old owners must be removed.
+
+#### Contracts & Links
+
+aDAO Multisig: https://etherscan.io/address/0x46abFE1C972fCa43766d6aD70E1c1Df72F4Bb4d1
+
+Snapshot Space: https://snapshot.org/#/snxgov.eth
+
+Staking dApp Voting: https://staking.synthetix.io/gov/snxgov.eth

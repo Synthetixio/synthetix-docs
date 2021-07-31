@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol)
+**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Issuer.sol)
 
 ## Views
 
 ### `cacheInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Issuer.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `totalNonSnxBackedDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Issuer.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Issuer.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Issuer.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Issuer.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Issuer.sol#L37)</sub>
 
 ??? example "Details"
 

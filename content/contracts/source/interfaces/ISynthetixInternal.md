@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Exchanger.sol)
 
 ## External Functions
 
 ### `emitExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Exchanger.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Exchanger.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `emitExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Exchanger.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Exchanger.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -44,13 +44,13 @@
 
 ### `emitExchangeTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Exchanger.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Exchanger.sol#L30)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `emitExchangeTracking(bytes32 trackingCode, bytes32 toCurrencyKey, uint256 toAmount)`
+    `emitExchangeTracking(bytes32 trackingCode, bytes32 toCurrencyKey, uint256 toAmount, uint256 fee)`
 
     **Visibility**
 
@@ -62,7 +62,7 @@
 
 ### `emitSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/Exchanger.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/Exchanger.sol#L37)</sub>
 
 ??? example "Details"
 

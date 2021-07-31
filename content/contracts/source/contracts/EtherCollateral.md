@@ -16,7 +16,7 @@ For example, if Alice locks 150 ETH as collateral, she can borrow 100 sETH. Even
 
 The final few details you should know are that the minting fee and interest rate paid by ETH stakers is also paid to SNX stakers and the minimum position size is 1 ETH. At the end of the three month trial period, all outstanding loans must be paid back. There will be a one week grace period, after which anyone will be able to send sETH to close the position and claim the outstanding ETH.
 
-**Source:** [contracts/EtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol)
+**Source:** [contracts/EtherCollateral.sol](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol)
 
 ## Architecture
 
@@ -28,7 +28,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `SynthLoanStruct`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L74)</sub>
 
 | Field              | Type      | Description                          |
 | ------------------ | --------- | ------------------------------------ |
@@ -43,85 +43,85 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `accountLoanLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L54)</sub>
 
 **Type:** `uint256`
 
 ### `accountOpenLoanCounter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L93)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `accountsSynthLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L90)</sub>
 
 **Type:** `mapping(address => struct EtherCollateral.SynthLoanStruct[])`
 
 ### `collateralizationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L38)</sub>
 
 **Type:** `uint256`
 
 ### `interestPerSecond`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L42)</sub>
 
 **Type:** `uint256`
 
 ### `interestRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L41)</sub>
 
 **Type:** `uint256`
 
 ### `issueFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L45)</sub>
 
 **Type:** `uint256`
 
 ### `issueLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L48)</sub>
 
 **Type:** `uint256`
 
 ### `liquidationDeadline`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L60)</sub>
 
 **Type:** `uint256`
 
 ### `loanLiquidationOpen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L57)</sub>
 
 **Type:** `bool`
 
 ### `minLoanSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L51)</sub>
 
 **Type:** `uint256`
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L65)</sub>
 
 **Type:** `uint256`
 
 ### `totalLoansCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L68)</sub>
 
 **Type:** `uint256`
 
 ### `totalOpenLoanCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L71)</sub>
 
 **Type:** `uint256`
 
@@ -129,7 +129,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -149,7 +149,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `accruedInterestOnLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L222)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L222)</sub>
 
 ??? example "Details"
 
@@ -167,7 +167,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `calculateMintingFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L228)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L228)</sub>
 
 ??? example "Details"
 
@@ -185,7 +185,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `collateralAmountForLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L211)</sub>
 
 ??? example "Details"
 
@@ -203,7 +203,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `currentInterestOnLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L215)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L215)</sub>
 
 ??? example "Details"
 
@@ -221,7 +221,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `getContractInfo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L164)</sub>
 
 ??? example "Details"
 
@@ -239,7 +239,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `getLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L257)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L257)</sub>
 
 ??? example "Details"
 
@@ -257,7 +257,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L201)</sub>
 
 ??? example "Details"
 
@@ -275,7 +275,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `loanAmountFromCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L207)</sub>
 
 ??? example "Details"
 
@@ -293,7 +293,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `loanLifeSpan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L282)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L282)</sub>
 
 ??? example "Details"
 
@@ -311,7 +311,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `openLoanIDsByAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L234)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L234)</sub>
 
 ??? example "Details"
 
@@ -329,7 +329,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -349,7 +349,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `setAccountLoanLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -367,7 +367,7 @@ The final few details you should know are that the minting fee and interest rate
 
     **Requires**
 
-    * [require(..., "Owner cannot set higher than HARD_CAP")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L142)
+    * [require(..., "Owner cannot set higher than HARD_CAP")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L142)
 
     **Modifiers**
 
@@ -379,7 +379,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `setCollateralizationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -397,9 +397,9 @@ The final few details you should know are that the minting fee and interest rate
 
     **Requires**
 
-    * [require(..., "Too high")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L111)
+    * [require(..., "Too high")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L111)
 
-    * [require(..., "Too low")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L112)
+    * [require(..., "Too low")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L112)
 
     **Modifiers**
 
@@ -411,7 +411,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `setInterestRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -429,9 +429,9 @@ The final few details you should know are that the minting fee and interest rate
 
     **Requires**
 
-    * [require(..., "Interest rate cannot be less that the SECONDS_IN_A_YEAR")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L118)
+    * [require(..., "Interest rate cannot be less that the SECONDS_IN_A_YEAR")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L118)
 
-    * [require(..., "Interest cannot be more than 100% APR")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L119)
+    * [require(..., "Interest cannot be more than 100% APR")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L119)
 
     **Modifiers**
 
@@ -443,7 +443,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `setIssueFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -469,7 +469,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `setIssueLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -495,7 +495,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `setLoanLiquidationOpen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L147)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -513,7 +513,7 @@ The final few details you should know are that the minting fee and interest rate
 
     **Requires**
 
-    * [require(..., "Before liquidation deadline")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L148)
+    * [require(..., "Before liquidation deadline")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L148)
 
     **Modifiers**
 
@@ -525,7 +525,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `setMinLoanSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L135)</sub>
 
 ??? example "Details"
 
@@ -553,7 +553,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `depot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L450)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L450)</sub>
 
 ??? example "Details"
 
@@ -571,7 +571,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L454)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L454)</sub>
 
 ??? example "Details"
 
@@ -589,7 +589,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `synthsETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L442)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L442)</sub>
 
 ??? example "Details"
 
@@ -607,7 +607,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `synthsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L446)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L446)</sub>
 
 ??? example "Details"
 
@@ -625,7 +625,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L438)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L438)</sub>
 
 ??? example "Details"
 
@@ -645,7 +645,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `closeLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L334)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L334)</sub>
 
 ??? example "Details"
 
@@ -669,7 +669,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `liquidateUnclosedLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L339)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L339)</sub>
 
 ??? example "Details"
 
@@ -687,7 +687,7 @@ The final few details you should know are that the minting fee and interest rate
 
     **Requires**
 
-    * [require(..., "Liquidation is not open")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L340)
+    * [require(..., "Liquidation is not open")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L340)
 
     **Modifiers**
 
@@ -701,7 +701,7 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `openLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L289)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L289)</sub>
 
 ??? example "Details"
 
@@ -719,13 +719,13 @@ The final few details you should know are that the minting fee and interest rate
 
     **Requires**
 
-    * [require(..., "Not enough ETH to create this loan. Please see the minLoanSize")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L293)
+    * [require(..., "Not enough ETH to create this loan. Please see the minLoanSize")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L293)
 
-    * [require(..., "Loans are now being liquidated")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L296)
+    * [require(..., "Loans are now being liquidated")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L296)
 
-    * [require(..., "Each account is limted to 50 loans")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L299)
+    * [require(..., "Each account is limted to 50 loans")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L299)
 
-    * [require(..., "Loan Amount exceeds the supply cap.")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L305)
+    * [require(..., "Loan Amount exceeds the supply cap.")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L305)
 
     **Modifiers**
 
@@ -743,66 +743,66 @@ The final few details you should know are that the minting fee and interest rate
 
 ### `sETHRateNotInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L460)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L460)</sub>
 
 ## Events
 
 ### `AccountLoanLimitUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L472)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L472)</sub>
 
 **Signature**: `AccountLoanLimitUpdated(uint256 loanLimit)`
 
 ### `CollateralizationRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L467)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L467)</sub>
 
 **Signature**: `CollateralizationRatioUpdated(uint256 ratio)`
 
 ### `InterestRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L468)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L468)</sub>
 
 **Signature**: `InterestRateUpdated(uint256 interestRate)`
 
 ### `IssueFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L469)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L469)</sub>
 
 **Signature**: `IssueFeeRateUpdated(uint256 issueFeeRate)`
 
 ### `IssueLimitUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L470)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L470)</sub>
 
 **Signature**: `IssueLimitUpdated(uint256 issueLimit)`
 
 ### `LoanClosed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L475)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L475)</sub>
 
 **Signature**: `LoanClosed(address account, uint256 loanID, uint256 feesPaid)`
 
 ### `LoanCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L474)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L474)</sub>
 
 **Signature**: `LoanCreated(address account, uint256 loanID, uint256 amount)`
 
 ### `LoanLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L476)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L476)</sub>
 
 **Signature**: `LoanLiquidated(address account, uint256 loanID, address liquidator)`
 
 ### `LoanLiquidationOpenUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L473)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L473)</sub>
 
 **Signature**: `LoanLiquidationOpenUpdated(bool loanLiquidationOpen)`
 
 ### `MinLoanSizeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/EtherCollateral.sol#L471)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/EtherCollateral.sol#L471)</sub>
 
 **Signature**: `MinLoanSizeUpdated(uint256 minLoanSize)`

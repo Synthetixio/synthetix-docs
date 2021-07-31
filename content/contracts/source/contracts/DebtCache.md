@@ -2,13 +2,21 @@
 
 ## Description
 
-**Source:** [contracts/DebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol)
+**Source:** [contracts/DebtCache.sol](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol)
+
+## Variables
+
+### `CONTRACT_NAME`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L13)</sub>
+
+**Type:** `bytes32`
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -28,7 +36,7 @@
 
 ### `purgeCachedSynthDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -46,7 +54,7 @@
 
     **Requires**
 
-    * [require(..., "Synth exists")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L21)
+    * [require(..., "Synth exists")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L23)
 
     **Modifiers**
 
@@ -54,7 +62,7 @@
 
 ### `updateCachedSynthDebtWithRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -76,7 +84,7 @@
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -98,7 +106,7 @@
 
 ### `updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -122,7 +130,7 @@
 
 ### `_updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -140,11 +148,11 @@
 
     **Requires**
 
-    * [require(..., "Input array lengths differ")](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L86)
+    * [require(..., "Input array lengths differ")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L89)
 
 ### `_updateDebtCacheValidity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -164,7 +172,7 @@
 
 ### `takeDebtSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -192,7 +200,7 @@
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -216,18 +224,18 @@
 
 ### `DebtCacheSnapshotTaken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L137)</sub>
 
 **Signature**: `DebtCacheSnapshotTaken(uint256 timestamp)`
 
 ### `DebtCacheUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L136)</sub>
 
 **Signature**: `DebtCacheUpdated(uint256 cachedDebt)`
 
 ### `DebtCacheValidityChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.45.2/contracts/DebtCache.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/DebtCache.sol#L138)</sub>
 
 **Signature**: `DebtCacheValidityChanged(bool isInvalid)`
