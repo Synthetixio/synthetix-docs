@@ -18,7 +18,7 @@ The information below presents collateralization ratio (CR) requirements that wi
 
 ### L1 Requirements
 
-- Initial CR required for staking: 500%
+- Initial CR required for staking: 400%
 
 - CR Under 200%: Staker can get flagged for liquidation, has 3 days to fix CR ratio to 400%
 
