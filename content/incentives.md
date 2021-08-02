@@ -20,11 +20,11 @@ The information below presents collateralization ratio (CR) requirements that wi
 
 - Initial CR required for staking: 500%
 
-- CR Under 200%: Staker can get flagged for liquidation, has 3 days to fix CR ratio to 500%
+- CR Under 200%: Staker can get flagged for liquidation, has 3 days to fix CR ratio to 400%
 
 - Claiming Period: stakers need to claim rewards on a weekly basis
 
-- Minimums: No minimum amount, recommend to do above10,000 SNX because of L1 fees
+- Minimums: No minimum amount, recommend to do above 10,000 SNX because of L1 fees
 
 - Rewards Escrow: 1 year
 
