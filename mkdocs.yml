@@ -211,16 +211,18 @@ nav:
                 - VestingEntries: contracts/source/libraries/VestingEntries.md
           - Audit History: contracts/audits.md
 extra:
+  analytics:
+    provider: matomo
   social:
-    - icon: brands/github
+    - icon: fontawesome/brands/github
       link: https://github.com/synthetixio
-    - icon: brands/twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/synthetix_io
-    - icon: brands/discord
+    - icon: fontawesome/brands/discord
       link: https://discordapp.com/channels/413890591840272394/
-    - icon: brands/reddit
+    - icon: fontawesome/brands/reddit
       link: https://www.reddit.com/r/synthetix_io/
-    - icon: brands/medium
+    - icon: fontawesome/brands/medium
       link: https://blog.synthetix.io
 theme:
   name: material
@@ -233,6 +235,7 @@ theme:
   feature:
     tabs: true
     instant: false
+  custom_dir: overrides
 markdown_extensions:
   - toc:
       permalink: true
