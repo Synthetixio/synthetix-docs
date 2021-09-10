@@ -26,7 +26,7 @@ const generateAddresses = () => {
 		' https://contracts.synthetix.io to get a link that will always redirect to the latest version of the contract on Etherscan.\n\n    For example, try https://contracts.synthetix.io/Synthetix to get linked to the latest Synthetix underlying.' +
 		'\n\n    For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/kovan/Synthetix';
 
-	const contractContent = ['mainnet', 'mainnet-ovm', 'kovan', 'kovan-ovm', 'ropsten', 'rinkeby']
+	const contractContent = ['mainnet', 'mainnet-ovm', 'kovan', 'kovan-ovm']
 		.map(networkLabel => {
 			const [network, useOvm] = networkLabel.split('-');
 
