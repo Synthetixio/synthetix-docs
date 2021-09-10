@@ -79,6 +79,7 @@ nav:
                 - CollateralManagerState: contracts/source/contracts/CollateralManagerState.md
                 - CollateralShort: contracts/source/contracts/CollateralShort.md
                 - CollateralState: contracts/source/contracts/CollateralState.md
+                - CollateralUtil: contracts/source/contracts/CollateralUtil.md
                 - ContractStorage: contracts/source/contracts/ContractStorage.md
                 - DappMaintenance: contracts/source/contracts/DappMaintenance.md
                 - DebtCache: contracts/source/contracts/DebtCache.md
@@ -138,6 +139,7 @@ nav:
                 - State: contracts/source/contracts/State.md
                 - SupplySchedule: contracts/source/contracts/SupplySchedule.md
                 - Synth: contracts/source/contracts/Synth.md
+                - SynthRedeemer: contracts/source/contracts/SynthRedeemer.md
                 - SynthUtil: contracts/source/contracts/SynthUtil.md
                 - Synthetix: contracts/source/contracts/Synthetix.md
                 - SynthetixBridgeEscrow: contracts/source/contracts/SynthetixBridgeEscrow.md
@@ -162,6 +164,7 @@ nav:
                 - ICollateralEth: contracts/source/interfaces/ICollateralEth.md
                 - ICollateralLoan: contracts/source/interfaces/ICollateralLoan.md
                 - ICollateralManager: contracts/source/interfaces/ICollateralManager.md
+                - ICollateralUtil: contracts/source/interfaces/ICollateralUtil.md
                 - IDebtCache: contracts/source/interfaces/IDebtCache.md
                 - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
                 - IDepot: contracts/source/interfaces/IDepot.md
@@ -181,6 +184,7 @@ nav:
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
                 - IOldSynthetixBridgeToOptimism: contracts/source/interfaces/IOldSynthetixBridgeToOptimism.md
                 - IOwned: contracts/source/interfaces/IOwned.md
+                - IProxy: contracts/source/interfaces/IProxy.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardEscrowV2: contracts/source/interfaces/IRewardEscrowV2.md
                 - IRewardsDistribution: contracts/source/interfaces/IRewardsDistribution.md
@@ -189,6 +193,7 @@ nav:
                 - IStakingRewards: contracts/source/interfaces/IStakingRewards.md
                 - ISupplySchedule: contracts/source/interfaces/ISupplySchedule.md
                 - ISynth: contracts/source/interfaces/ISynth.md
+                - ISynthRedeemer: contracts/source/interfaces/ISynthRedeemer.md
                 - ISynthetix: contracts/source/interfaces/ISynthetix.md
                 - ISynthetixBridgeEscrow: contracts/source/interfaces/ISynthetixBridgeEscrow.md
                 - ISynthetixBridgeToBase: contracts/source/interfaces/ISynthetixBridgeToBase.md
@@ -200,6 +205,7 @@ nav:
                 - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
                 - ITradingRewards: contracts/source/interfaces/ITradingRewards.md
                 - IVirtualSynth: contracts/source/interfaces/IVirtualSynth.md
+                - IVirtualSynthInternal: contracts/source/interfaces/IVirtualSynthInternal.md
                 - IWETH: contracts/source/interfaces/IWETH.md
               Libraries:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md

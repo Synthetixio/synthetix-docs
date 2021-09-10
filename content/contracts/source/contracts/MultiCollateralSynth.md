@@ -9,7 +9,7 @@ This contract was required by [EtherCollateral](EtherCollateral.md) to allow it 
 It could be used where there a multiple Collateral contracts.
 i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contract for issuing sBTC then those synths would need to inherit MultiCollateralSynth and then have their corresponding Collateral Contract set via the constructor argument multiCollateralKey
 
-**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol)
+**Source:** [contracts/MultiCollateralSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol)
 
 ## Architecture
 
@@ -17,11 +17,19 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 - [EtherCollateral](EtherCollateral.md)
 
+## Variables
+
+### `CONTRACT_NAME`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol#L12)</sub>
+
+**Type:** `bytes32`
+
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -41,7 +49,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -61,7 +69,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -83,7 +91,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -107,7 +115,7 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -123,45 +131,9 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
     `view`
 
-### `etherCollateral`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L40)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `etherCollateral() view returns (contract IEtherCollateral)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `etherCollateralsUSD`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L44)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `etherCollateralsUSD() view returns (contract IEtherCollateralsUSD)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
 ### `etherWrapper`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -181,4 +153,4 @@ i.e. If there where a DAICollateral for issuing sUSD or a WBTCCollateral Contrac
 
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/MultiCollateralSynth.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/MultiCollateralSynth.sol#L73)</sub>

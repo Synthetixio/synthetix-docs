@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol)
+**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L12)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(contract CollateralState _state, address _owner, address _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
+    `constructor(contract CollateralState _state, address _owner, contract ICollateralManager _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
 
     **Visibility**
 
@@ -28,7 +28,7 @@
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -64,11 +64,11 @@
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L48)
+    * [require(..., "Allowance too low")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L45)
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -84,27 +84,9 @@
 
     ``
 
-### `getReward`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L83)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `getReward(bytes32 currency, address account)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    ``
-
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -122,7 +104,7 @@
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -140,11 +122,11 @@
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L27)
+    * [require(..., "Allowance too low")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L27)
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -160,9 +142,27 @@
 
     ``
 
+### `repayWithCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L66)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `repayWithCollateral(address borrower, uint256 id, uint256 amount, bool payInterest)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/CollateralShort.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/CollateralShort.sol#L52)</sub>
 
 ??? example "Details"
 
