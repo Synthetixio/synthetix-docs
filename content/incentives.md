@@ -30,9 +30,9 @@ The information below presents collateralization ratio (CR) requirements that wi
 
 ### L2 Requirements
 
-- Initial CR required for staking: 1000%
+- Initial CR required for staking: 750%
 
-- CR Under 200% : Staker can get flagged for liquidation, has 3 days to fix CR ratio to 1000%
+- CR Under 200% : Staker can get flagged for liquidation, has 3 days to fix CR ratio to 750%
 
 - Claiming Period: stakers need to claim rewards on a weekly basis
 
@@ -46,7 +46,7 @@ In addition to the two primary forms of incentives, Synthetix also runs various 
 
 ### sUSD/DAI-USDC-USDT liquidity on Curve
 
-Amount: `48,000 SNX` per week
+Amount: `6,000 SNX` per week
 
 Supplied by: SNX inflationary supply
 
@@ -59,6 +59,8 @@ Staking Contract: [`StakingRewardssUSDCurve`](https://contracts.synthetix.io/Sta
 Source: [`Curvepool` (via `Unipool`)](https://github.com/Synthetixio/Unipool/blob/curverewards/contracts/Unipool.sol)
 
 Aim: This incentive aims to provide an on-ramp into trading on [Kwenta](https://kwenta.io) for traders with stablecoins.
+
+## Deprecated incentives
 
 ### iETH holders
 
@@ -125,8 +127,6 @@ Staking Contract: [`StakingDualRewards`](https://etherscan.io/address/0xb59e8d8a
 Source: [`StakingDualRewards`)](https://github.com/dhedge/synthetix/blob/develop/contracts/StakingDualRewards.sol)
 
 Aim: This incentive aims to provide liquidity for DHT, the governance token of dHedge protocol, which supports Synthetix through generating trading volume.
-
-## Deprecated incentives
 
 ### iBTC holders
 
