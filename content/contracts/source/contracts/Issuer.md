@@ -4,7 +4,7 @@
 
 This contract does all the heavy lifting of issuing and burning `sUSD`. It's used primarily to reduce the size of the `Synthetix` contract
 
-**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol)
+**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol)
 
 ## Architecture
 
@@ -31,25 +31,25 @@ If any, see:
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L57)</sub>
 
 **Type:** `bytes32`
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L60)</sub>
 
 **Type:** `contract ISynth[]`
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L61)</sub>
 
 **Type:** `mapping(bytes32 => contract ISynth)`
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L62)</sub>
 
 **Type:** `mapping(address => bytes32)`
 
@@ -57,7 +57,7 @@ If any, see:
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -77,7 +77,7 @@ If any, see:
 
 ### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L330)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L330)</sub>
 
 ??? example "Details"
 
@@ -95,7 +95,7 @@ If any, see:
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L322)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L322)</sub>
 
 ??? example "Details"
 
@@ -113,7 +113,7 @@ If any, see:
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L326)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L326)</sub>
 
 ??? example "Details"
 
@@ -131,7 +131,7 @@ If any, see:
 
 ### `canBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L318)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L318)</sub>
 
 ??? example "Details"
 
@@ -149,7 +149,7 @@ If any, see:
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L354)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L354)</sub>
 
 ??? example "Details"
 
@@ -167,7 +167,7 @@ If any, see:
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L342)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L342)</sub>
 
 ??? example "Details"
 
@@ -185,7 +185,7 @@ If any, see:
 
 ### `collateralisationRatioAndAnyRatesInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L346)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L346)</sub>
 
 ??? example "Details"
 
@@ -203,7 +203,7 @@ If any, see:
 
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L358)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L358)</sub>
 
 ??? example "Details"
 
@@ -221,7 +221,7 @@ If any, see:
 
 ### `getSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L412)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L412)</sub>
 
 ??? example "Details"
 
@@ -239,7 +239,7 @@ If any, see:
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L158)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L158)</sub>
 
 ??? example "Details"
 
@@ -257,7 +257,7 @@ If any, see:
 
 ### `lastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L338)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L338)</sub>
 
 ??? example "Details"
 
@@ -275,7 +275,7 @@ If any, see:
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L382)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L382)</sub>
 
 ??? example "Details"
 
@@ -293,7 +293,7 @@ If any, see:
 
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L314)</sub>
 
 **Type:** `uint256`
 
@@ -313,7 +313,7 @@ If any, see:
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L370)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L370)</sub>
 
 ??? example "Details"
 
@@ -331,7 +331,7 @@ If any, see:
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -349,7 +349,7 @@ If any, see:
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L334)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L334)</sub>
 
 ??? example "Details"
 
@@ -367,7 +367,7 @@ If any, see:
 
 ### `transferableSynthetixAndAnyRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L387)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L387)</sub>
 
 ??? example "Details"
 
@@ -387,7 +387,7 @@ If any, see:
 
 ### `addSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L437)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L437)</sub>
 
 ??? example "Details"
 
@@ -409,7 +409,7 @@ If any, see:
 
 ### `addSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L445)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L445)</sub>
 
 ??? example "Details"
 
@@ -431,7 +431,7 @@ If any, see:
 
 ### `burnForRedemption`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L566)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L566)</sub>
 
 ??? example "Details"
 
@@ -453,7 +453,7 @@ If any, see:
 
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L544)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L544)</sub>
 
 ??? example "Details"
 
@@ -475,7 +475,7 @@ If any, see:
 
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L548)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L548)</sub>
 
 ??? example "Details"
 
@@ -493,7 +493,7 @@ If any, see:
 
     **Requires**
 
-    * [_requireCanBurnOnBehalf](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L553)
+    * [_requireCanBurnOnBehalf](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L553)
 
     **Modifiers**
 
@@ -501,7 +501,7 @@ If any, see:
 
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L557)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L557)</sub>
 
 ??? example "Details"
 
@@ -523,7 +523,7 @@ If any, see:
 
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L561)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L561)</sub>
 
 ??? example "Details"
 
@@ -541,7 +541,7 @@ If any, see:
 
     **Requires**
 
-    * [_requireCanBurnOnBehalf](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L562)
+    * [_requireCanBurnOnBehalf](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L562)
 
     **Modifiers**
 
@@ -549,7 +549,7 @@ If any, see:
 
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L526)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L526)</sub>
 
 ??? example "Details"
 
@@ -571,7 +571,7 @@ If any, see:
 
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L539)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L539)</sub>
 
 ??? example "Details"
 
@@ -589,7 +589,7 @@ If any, see:
 
     **Requires**
 
-    * [_requireCanIssueOnBehalf](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L540)
+    * [_requireCanIssueOnBehalf](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L540)
 
     **Modifiers**
 
@@ -597,7 +597,7 @@ If any, see:
 
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L522)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L522)</sub>
 
 ??? example "Details"
 
@@ -619,7 +619,7 @@ If any, see:
 
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L530)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L530)</sub>
 
 ??? example "Details"
 
@@ -637,7 +637,7 @@ If any, see:
 
     **Requires**
 
-    * [_requireCanIssueOnBehalf](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L535)
+    * [_requireCanIssueOnBehalf](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L535)
 
     **Modifiers**
 
@@ -645,7 +645,7 @@ If any, see:
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L574)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L574)</sub>
 
 ??? example "Details"
 
@@ -663,13 +663,13 @@ If any, see:
 
     **Requires**
 
-    * [require(..., "sUSD needs to be settled")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L580)
+    * [require(..., "sUSD needs to be settled")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L580)
 
-    * [require(..., "Account not open for liquidation")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L583)
+    * [require(..., "Account not open for liquidation")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L583)
 
-    * [require(..., "Not enough sUSD")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L586)
+    * [require(..., "Not enough sUSD")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L586)
 
-    * [_requireRatesNotInvalid](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L593)
+    * [_requireRatesNotInvalid](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L593)
 
     **Modifiers**
 
@@ -677,7 +677,7 @@ If any, see:
 
 ### `removeSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L497)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L497)</sub>
 
 ??? example "Details"
 
@@ -699,7 +699,7 @@ If any, see:
 
 ### `removeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L507)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L507)</sub>
 
 ??? example "Details"
 
@@ -723,7 +723,7 @@ If any, see:
 
 ### `_addSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L425)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L425)</sub>
 
 ??? example "Details"
 
@@ -741,9 +741,9 @@ If any, see:
 
     **Requires**
 
-    * [require(..., "Synth exists")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L427)
+    * [require(..., "Synth exists")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L427)
 
-    * [require(..., "Synth address already exists")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L428)
+    * [require(..., "Synth address already exists")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L428)
 
     **Emits**
 
@@ -751,7 +751,7 @@ If any, see:
 
 ### `_addToDebtRegister`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L753)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L753)</sub>
 
 ??? example "Details"
 
@@ -769,7 +769,7 @@ If any, see:
 
 ### `_appendAccountIssuanceRecord`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L746)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L746)</sub>
 
 ??? example "Details"
 
@@ -787,7 +787,7 @@ If any, see:
 
 ### `_availableCurrencyKeysWithOptionalSNX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L162)</sub>
 
 ??? example "Details"
 
@@ -805,7 +805,7 @@ If any, see:
 
 ### `_burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L675)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L675)</sub>
 
 ??? example "Details"
 
@@ -823,7 +823,7 @@ If any, see:
 
 ### `_canBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L241)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L241)</sub>
 
 ??? example "Details"
 
@@ -841,7 +841,7 @@ If any, see:
 
 ### `_collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L300)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L300)</sub>
 
 ??? example "Details"
 
@@ -859,7 +859,7 @@ If any, see:
 
 ### `_collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L289)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L289)</sub>
 
 ??? example "Details"
 
@@ -877,7 +877,7 @@ If any, see:
 
 ### `_debtBalanceOfAndTotalDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L203)</sub>
 
 ??? example "Details"
 
@@ -895,7 +895,7 @@ If any, see:
 
 ### `_issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L645)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L645)</sub>
 
 ??? example "Details"
 
@@ -913,11 +913,11 @@ If any, see:
 
     **Requires**
 
-    * [_requireRatesNotInvalid](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L651)
+    * [_requireRatesNotInvalid](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L651)
 
 ### `_lastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L245)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L245)</sub>
 
 ??? example "Details"
 
@@ -935,7 +935,7 @@ If any, see:
 
 ### `_maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L280)</sub>
 
 ??? example "Details"
 
@@ -953,7 +953,7 @@ If any, see:
 
 ### `_onlySynthRedeemer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L846)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L846)</sub>
 
 ??? example "Details"
 
@@ -971,11 +971,11 @@ If any, see:
 
     **Requires**
 
-    * [require(..., "Issuer: Only the SynthRedeemer contract can perform this action")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L847)
+    * [require(..., "Issuer: Only the SynthRedeemer contract can perform this action")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L847)
 
 ### `_onlySynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L837)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L837)</sub>
 
 ??? example "Details"
 
@@ -993,11 +993,11 @@ If any, see:
 
     **Requires**
 
-    * [require(..., "Issuer: Only the synthetix contract can perform this action")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L838)
+    * [require(..., "Issuer: Only the synthetix contract can perform this action")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L838)
 
 ### `_remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L250)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L250)</sub>
 
 ??? example "Details"
 
@@ -1015,7 +1015,7 @@ If any, see:
 
 ### `_removeFromDebtRegister`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L793)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L793)</sub>
 
 ??? example "Details"
 
@@ -1033,7 +1033,7 @@ If any, see:
 
 ### `_removeSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L455)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L455)</sub>
 
 ??? example "Details"
 
@@ -1051,9 +1051,9 @@ If any, see:
 
     **Requires**
 
-    * [require(..., "Synth does not exist")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L457)
+    * [require(..., "Synth does not exist")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L457)
 
-    * [require(..., "Cannot remove synth")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L458)
+    * [require(..., "Cannot remove synth")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L458)
 
     **Emits**
 
@@ -1061,7 +1061,7 @@ If any, see:
 
 ### `_requireCanBurnOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L641)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L641)</sub>
 
 ??? example "Details"
 
@@ -1079,11 +1079,11 @@ If any, see:
 
     **Requires**
 
-    * [require(..., "Not approved to act on behalf")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L642)
+    * [require(..., "Not approved to act on behalf")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L642)
 
 ### `_requireCanIssueOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L637)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L637)</sub>
 
 ??? example "Details"
 
@@ -1101,11 +1101,11 @@ If any, see:
 
     **Requires**
 
-    * [require(..., "Not approved to act on behalf")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L638)
+    * [require(..., "Not approved to act on behalf")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L638)
 
 ### `_requireRatesNotInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L633)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L633)</sub>
 
 ??? example "Details"
 
@@ -1123,11 +1123,11 @@ If any, see:
 
     **Requires**
 
-    * [require(..., "A synth or SNX rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L634)
+    * [require(..., "A synth or SNX rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L634)
 
 ### `_setLastIssueEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L737)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L737)</sub>
 
 ??? example "Details"
 
@@ -1145,7 +1145,7 @@ If any, see:
 
 ### `_snxToUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L272)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L272)</sub>
 
 ??? example "Details"
 
@@ -1163,7 +1163,7 @@ If any, see:
 
 ### `_totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L178)</sub>
 
 ??? example "Details"
 
@@ -1181,7 +1181,7 @@ If any, see:
 
 ### `_usdToSnx`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L276)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L276)</sub>
 
 ??? example "Details"
 
@@ -1199,7 +1199,7 @@ If any, see:
 
 ### `_voluntaryBurnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L704)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L704)</sub>
 
 ??? example "Details"
 
@@ -1217,13 +1217,13 @@ If any, see:
 
     **Requires**
 
-    * [_requireRatesNotInvalid](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L721)
+    * [_requireRatesNotInvalid](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L721)
 
-    * [require(..., "No debt to forgive")](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L722)
+    * [require(..., "No debt to forgive")](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L722)
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -1241,7 +1241,7 @@ If any, see:
 
 ### `debtCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L150)</sub>
 
 ??? example "Details"
 
@@ -1259,7 +1259,7 @@ If any, see:
 
 ### `delegateApprovals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -1277,7 +1277,7 @@ If any, see:
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -1295,7 +1295,7 @@ If any, see:
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -1313,7 +1313,7 @@ If any, see:
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -1331,7 +1331,7 @@ If any, see:
 
 ### `liquidations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -1349,7 +1349,7 @@ If any, see:
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -1367,7 +1367,7 @@ If any, see:
 
 ### `synthRedeemer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L154)</sub>
 
 ??? example "Details"
 
@@ -1385,7 +1385,7 @@ If any, see:
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -1403,7 +1403,7 @@ If any, see:
 
 ### `synthetixEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L146)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L146)</sub>
 
 ??? example "Details"
 
@@ -1421,7 +1421,7 @@ If any, see:
 
 ### `synthetixState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -1441,22 +1441,22 @@ If any, see:
 
 ### `onlySynthRedeemer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L850)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L850)</sub>
 
 ### `onlySynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L841)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L841)</sub>
 
 ## Events
 
 ### `SynthAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L857)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L857)</sub>
 
 **Signature**: `SynthAdded(bytes32 currencyKey, address synth)`
 
 ### `SynthRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/Issuer.sol#L858)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/Issuer.sol#L858)</sub>
 
 **Signature**: `SynthRemoved(bytes32 currencyKey, address synth)`

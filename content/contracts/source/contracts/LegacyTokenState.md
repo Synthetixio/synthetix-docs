@@ -2,25 +2,25 @@
 
 ## Description
 
-**Source:** [contracts/legacy/LegacyTokenState.sol](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol)
+**Source:** [contracts/legacy/LegacyTokenState.sol](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol)
 
 ## Variables
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L12)</sub>
 
 **Type:** `mapping(address => mapping(address => uint256))`
 
 ### `associatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L8)</sub>
 
 **Type:** `address`
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L11)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -28,7 +28,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@
 
 ### `setAllowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `setAssociatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `setBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -124,12 +124,12 @@
 
 ### `onlyAssociatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L41)</sub>
 
 ## Events
 
 ### `AssociatedContractUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0-alpha/contracts/legacy/LegacyTokenState.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.48.0/contracts/legacy/LegacyTokenState.sol#L48)</sub>
 
 **Signature**: `AssociatedContractUpdated(address _associatedContract)`
