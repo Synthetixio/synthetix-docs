@@ -15,6 +15,8 @@
 - [SIP-170](https://sips.synthetix.io/sips/sip-170) Inflation Diversion for L2 Incentives: Directs part of SNX inflation to L2 staking rewards.
 - [SIP-174](https://sips.synthetix.io/sips/sip-174) Redeem Deprecated Synths: Creates a synth redeemer contract that allows holders of deprecated synths to redeem them for sUSD at a frozen price from the time of deprecation. Note that no synths will be deprecated during this release.
 
+> Audit: https://iosiro.com/audits/synthetix-mirfak-release-smart-contract-audit
+
 ---
 
 # Alnitak (v2.46.0-ovm)
