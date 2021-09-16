@@ -1,6 +1,6 @@
 Here is the list of all contracts within the current Synthetix system.
 
-**Version**: [v2.48.0](https://github.com/Synthetixio/synthetix/tree/v2.48.0)
+**Version**: [v2.49.0-alpha](https://github.com/Synthetixio/synthetix/tree/v2.49.0-alpha)
 
 !!! info "Naming Conventions"
 
@@ -19,1603 +19,1603 @@ Here is the list of all contracts within the current Synthetix system.
 <table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
               <tr>
                 <td>AddressResolver</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x823bE81bbF96BEc0e25CA13170F5AaCb5B79ba83">0x823bE81bbF96BEc0e25CA13170F5AaCb5B79ba83</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralErc20</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralErc20.sol">CollateralErc20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralErc20.sol">CollateralErc20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xaa03aB31b55DceEeF845C8d17890CC61cD98eD04">0xaa03aB31b55DceEeF845C8d17890CC61cD98eD04</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralEth</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x5c8344bcdC38F1aB5EB5C1d4a35DdEeA522B5DfA">0x5c8344bcdC38F1aB5EB5C1d4a35DdEeA522B5DfA</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManager</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x067e398605E84F2D0aEEC1806e62768C5110DCc6">0x067e398605E84F2D0aEEC1806e62768C5110DCc6</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManagerState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x573E5105c4B92416D1544A188F1bf77d442Bb52d">0x573E5105c4B92416D1544A188F1bf77d442Bb52d</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralShort</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x1F2c3a1046c32729862fcB038369696e3273a516">0x1F2c3a1046c32729862fcB038369696e3273a516</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateErc20</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x8A1A00Df7aA0102497C7591912bA8301e8dB8CdB">0x8A1A00Df7aA0102497C7591912bA8301e8dB8CdB</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateEth</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xbe5B5a7c198bC156474ed5c33CBf2F3F604F8fF8">0xbe5B5a7c198bC156474ed5c33CBf2F3F604F8fF8</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateShort</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x13A114a3Fa8A6CE03a0C5488BE9e614d78eDdb0c">0x13A114a3Fa8A6CE03a0C5488BE9e614d78eDdb0c</a>
                 </td>
               </tr>
               <tr>
                 <td>DappMaintenance</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xAb0B2f1Cf979cdbF4676251F35353eC5AF2732Dd">0xAb0B2f1Cf979cdbF4676251F35353eC5AF2732Dd</a>
                 </td>
               </tr>
               <tr>
                 <td>DebtCache</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DebtCache.sol">DebtCache.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DebtCache.sol">DebtCache.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xe92B4c7428152052B0930c81F4c687a5F1A12292">0xe92B4c7428152052B0930c81F4c687a5F1A12292</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovals</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x15fd6e554874B9e70F832Ed37f231Ac5E142362f">0x15fd6e554874B9e70F832Ed37f231Ac5E142362f</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovalsEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x8F586F063ffbb89b186C8e604FC6614766f9C9d1">0x8F586F063ffbb89b186C8e604FC6614766f9C9d1</a>
                 </td>
               </tr>
               <tr>
                 <td>Depot</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Depot.sol">Depot.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Depot.sol">Depot.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xE1f64079aDa6Ef07b03982Ca34f1dD7152AA3b86">0xE1f64079aDa6Ef07b03982Ca34f1dD7152AA3b86</a>
                 </td>
               </tr>
               <tr>
                 <td>EscrowChecker</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x3b399e00AFd8201ACf8A5a0EcCF1C47d8D5E41da">0x3b399e00AFd8201ACf8A5a0EcCF1C47d8D5E41da</a>
                 </td>
               </tr>
               <tr>
                 <td>EternalStorageLiquidations</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x0F7c200C4d3b5570C777764884Ce6DE67F31D3Ba">0x0F7c200C4d3b5570C777764884Ce6DE67F31D3Ba</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherWrapper</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EtherWrapper.sol">EtherWrapper.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EtherWrapper.sol">EtherWrapper.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC1AAE9d18bBe386B102435a8632C8063d31e747C">0xC1AAE9d18bBe386B102435a8632C8063d31e747C</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeRates</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xd69b189020EF614796578AfE4d10378c5e7e1138">0xd69b189020EF614796578AfE4d10378c5e7e1138</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x545973f28950f50fc6c7F52AAb4Ad214A27C0564">0x545973f28950f50fc6c7F52AAb4Ad214A27C0564</a>
                 </td>
               </tr>
               <tr>
                 <td>Exchanger</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7634F2A1741a683ccda37Dce864c187F990D7B4b">0x7634F2A1741a683ccda37Dce864c187F990D7B4b</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePool.sol">FeePool.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x510adfDF6E7554C571b7Cd9305Ce91473610015e">0x510adfDF6E7554C571b7Cd9305Ce91473610015e</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC9DFff5fA5605fd94F8B7927b892F2B57391e8bB">0xC9DFff5fA5605fd94F8B7927b892F2B57391e8bB</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x11164F6a47C3f8472D19b9aDd516Fc780cb7Ee02">0x11164F6a47C3f8472D19b9aDd516Fc780cb7Ee02</a>
                 </td>
               </tr>
               <tr>
                 <td>FlexibleStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xc757aCBa3c0506218b3022266a9DC7F3612d85f5">0xc757aCBa3c0506218b3022266a9DC7F3612d85f5</a>
                 </td>
               </tr>
               <tr>
                 <td>IssuanceEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/IssuanceEternalStorage.sol">IssuanceEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/IssuanceEternalStorage.sol">IssuanceEternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x631E93A0fb06B5eC6d52c0A2D89a3f9672d6Ba64">0x631E93A0fb06B5eC6d52c0A2D89a3f9672d6Ba64</a>
                 </td>
               </tr>
               <tr>
                 <td>Issuer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Issuer.sol">Issuer.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x922C84B3894298296C34842D866BfC0d36C54778">0x922C84B3894298296C34842D866BfC0d36C54778</a>
                 </td>
               </tr>
               <tr>
                 <td>Liquidations</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Liquidations.sol">Liquidations.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Liquidations.sol">Liquidations.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xAD95C918af576c82Df740878C3E983CBD175daB6">0xAD95C918af576c82Df740878C3E983CBD175daB6</a>
                 </td>
               </tr>
               <tr>
                 <td>Math</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Math.sol">Math.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Math.sol">Math.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x385e1Eb2FF28F4A637DA2C9971F8CAF5F5b1E77c">0x385e1Eb2FF28F4A637DA2C9971F8CAF5F5b1E77c</a>
                 </td>
               </tr>
               <tr>
                 <td>NativeEtherWrapper</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/NativeEtherWrapper.sol">NativeEtherWrapper.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/NativeEtherWrapper.sol">NativeEtherWrapper.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7A3d898b717e50a96fd8b232E9d15F0A547A7eeb">0x7A3d898b717e50a96fd8b232E9d15F0A547A7eeb</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyERC20</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F">0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyERC20sUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51">0x57Ab1ec28D129707052df4dF418D58a2D46d5f51</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyFeePool</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xb440DD674e1243644791a4AdfE3A2AbB0A92d309">0xb440DD674e1243644791a4AdfE3A2AbB0A92d309</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC011A72400E58ecD99Ee497CF89E3775d4bd732F">0xC011A72400E58ecD99Ee497CF89E3775d4bd732F</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x176C674Ee533C6139B0dc8b458D72A93dCB3e705">0x176C674Ee533C6139B0dc8b458D72A93dCB3e705</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83">0x8A8079c7149B8A1611e5C5d978DCA3bE16545F83</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xAFD870F32CE54EfdBF677466B612bf8ad164454B">0xAFD870F32CE54EfdBF677466B612bf8ad164454B</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xD6014EA05BDe904448B743833dDF07c3C7837481">0xD6014EA05BDe904448B743833dDF07c3C7837481</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d">0x336213e1DDFC69f4701Fc3F86F4ef4A160c1159d</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiCOMP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6345728B1ccE16E6f8C509950b5c84FFF88530d9">0x6345728B1ccE16E6f8C509950b5c84FFF88530d9</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xCB98f42221b2C251A4E74A1609722eE09f0cc08E">0xCB98f42221b2C251A4E74A1609722eE09f0cc08E</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x14d10003807AC60d07BB0ba82cAeaC8d2087c157">0x14d10003807AC60d07BB0ba82cAeaC8d2087c157</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiDOT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x46a97629C9C1F58De6EC18C7F536e7E6d6A6ecDe">0x46a97629C9C1F58De6EC18C7F536e7E6d6A6ecDe</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4">0xF4EebDD0704021eF2a6Bbe993fdf93030Cd784b4</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xd50c1746D835d2770dDA3703B69187bFfeB14126">0xd50c1746D835d2770dDA3703B69187bFfeB14126</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xA9859874e1743A32409f75bB11549892138BBA1E">0xA9859874e1743A32409f75bB11549892138BBA1E</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01">0x2d7aC061fc3db53c39fe1607fB8cec1B2C162B01</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x79da1431150C9b82D2E5dfc1C68B33216846851e">0x79da1431150C9b82D2E5dfc1C68B33216846851e</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiOIL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xA5a5DF41883Cdc00c4cCC6E8097130535399d9a3">0xA5a5DF41883Cdc00c4cCC6E8097130535399d9a3</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiREN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x0fEd38108bdb8e62ef7b5680E8E0726E2F29e0De">0x0fEd38108bdb8e62ef7b5680E8E0726E2F29e0De</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC5807183a9661A533CB08CbC297594a0B864dc12">0xC5807183a9661A533CB08CbC297594a0B864dc12</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x36A00FF9072570eF4B9292117850B8FE08d96cce">0x36A00FF9072570eF4B9292117850B8FE08d96cce</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x4AdF728E2Df4945082cDD6053869f51278fae196">0x4AdF728E2Df4945082cDD6053869f51278fae196</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6">0x27269b3e45A4D3E79A3D6BFeE0C8fB13d0D711A6</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x8deef89058090ac5655A99EEB451a4f9183D1678">0x8deef89058090ac5655A99EEB451a4f9183D1678</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyiYFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x592244301CeA952d6daB2fdC1fE6bd9E53917306">0x592244301CeA952d6daB2fdC1fE6bd9E53917306</a>
                 </td>
               </tr>
               <tr>
                 <td>Proxys1INCH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xcD39b5434a0A92cf47D1F567a7dF84bE356814F0">0xcD39b5434a0A92cf47D1F567a7dF84bE356814F0</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysAAPL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7537AAe01f3B218DAE75e10d952473823F961B87">0x7537AAe01f3B218DAE75e10d952473823F961B87</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xd2dF355C19471c8bd7D8A3aa27Ff4e26A21b4076">0xd2dF355C19471c8bd7D8A3aa27Ff4e26A21b4076</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xe36E2D3c7c34281FA3bC737950a68571736880A1">0xe36E2D3c7c34281FA3bC737950a68571736880A1</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysAMZN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9CF7E61853ea30A41b02169391b393B901eac457">0x9CF7E61853ea30A41b02169391b393B901eac457</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysAUD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xF48e200EAF9906362BB1442fca31e0835773b8B4">0xF48e200EAF9906362BB1442fca31e0835773b8B4</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848">0x617aeCB6137B5108D1E7D4918e3725C8cEbdB848</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6">0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xeABACD844A196D7Faf3CE596edeBF9900341B420">0xeABACD844A196D7Faf3CE596edeBF9900341B420</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysCHF</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d">0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysCOIN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9EeF4CA7aB9fa8bc0650127341C2d3F707a40f8A">0x9EeF4CA7aB9fa8bc0650127341C2d3F707a40f8A</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysCOMP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xEb029507d3e043DD6C87F2917C4E82B902c35618">0xEb029507d3e043DD6C87F2917C4E82B902c35618</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysCRV</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xD38aEb759891882e78E957c80656572503D8c1B1">0xD38aEb759891882e78E957c80656572503D8c1B1</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6">0xfE33ae95A9f0DA8A845aF33516EDc240DCD711d6</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B">0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysDOT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x1715AC0743102BF5Cd58EfBB6Cf2dC2685d967b6">0x1715AC0743102BF5Cd58EfBB6Cf2dC2685d967b6</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x88C8Cf3A212c0369698D13FE98Fcb76620389841">0x88C8Cf3A212c0369698D13FE98Fcb76620389841</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x22602469d704BfFb0936c7A7cfcD18f7aA269375">0x22602469d704BfFb0936c7A7cfcD18f7aA269375</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb">0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysEUR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xD71eCFF9342A5Ced620049e616c5035F1dB98620">0xD71eCFF9342A5Ced620049e616c5035F1dB98620</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysFB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xf50B5e535F62a56A9BD2d8e2434204E726c027Fa">0xf50B5e535F62a56A9BD2d8e2434204E726c027Fa</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysFTSE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC">0x23348160D7f5aca21195dF2b70f28Fce2B0be9fC</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysGBP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F">0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysGOOG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC63B8ECCE56aB9C46184eC6aB85e4771fEa4c8AD">0xC63B8ECCE56aB9C46184eC6aB85e4771fEa4c8AD</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysJPY</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d">0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysKRW</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x269895a3dF4D73b077Fc823dD6dA1B95f72Aaf9B">0x269895a3dF4D73b077Fc823dD6dA1B95f72Aaf9B</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6">0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC14103C2141E842e228FBaC594579e798616ce7A">0xC14103C2141E842e228FBaC594579e798616ce7A</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysMSFT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x745a824D6aBBD236AA794b5530062778A6Ad7523">0x745a824D6aBBD236AA794b5530062778A6Ad7523</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysNFLX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x5A7E3c07604EB515C16b36cd51906a65f021F609">0x5A7E3c07604EB515C16b36cd51906a65f021F609</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysNIKKEI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x757de3ac6B830a931eF178C6634c5C551773155c">0x757de3ac6B830a931eF178C6634c5C551773155c</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysOIL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6d16cF3EC5F763d4d99cB0B0b110eefD93B11B56">0x6d16cF3EC5F763d4d99cB0B0b110eefD93B11B56</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysREN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xD31533E8d0f3DF62060e94B3F1318137bB6E3525">0xD31533E8d0f3DF62060e94B3F1318137bB6E3525</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysRUNE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x0352557B007A4Aae1511C114409b932F06F9E2f4">0x0352557B007A4Aae1511C114409b932F06F9E2f4</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xf2E08356588EC5cd9E437552Da87C0076b4970B0">0xf2E08356588EC5cd9E437552Da87C0076b4970B0</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysTSLA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x918dA91Ccbc32B7a6A0cc4eCd5987bbab6E31e6D">0x918dA91Ccbc32B7a6A0cc4eCd5987bbab6E31e6D</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x30635297E450b930f8693297eBa160D9e6c8eBcf">0x30635297E450b930f8693297eBa160D9e6c8eBcf</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x57Ab1E02fEE23774580C119740129eAC7081e9D3">0x57Ab1E02fEE23774580C119740129eAC7081e9D3</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysXAG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6A22e5e94388464181578Aa7A6B869e00fE27846">0x6A22e5e94388464181578Aa7A6B869e00fE27846</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysXAU</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x261EfCdD24CeA98652B9700800a13DfBca4103fF">0x261EfCdD24CeA98652B9700800a13DfBca4103fF</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A">0x5299d6F7472DCc137D7f3C4BcfBBB514BaBF341A</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c">0xa2B0fDe6D710e201d0d608e924A484d1A5fEd57c</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd">0x2e59005c5c0f0a4D77CcA82653d48b46322EE5Cd</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysYFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x992058B7DB08F9734d84485bfbC243C4ee6954A7">0x992058B7DB08F9734d84485bfbC243C4ee6954A7</a>
                 </td>
               </tr>
               <tr>
                 <td>ReadProxyAddressResolver</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x4E3b31eB0E5CB73641EE1E65E7dCEFe520bA3ef2">0x4E3b31eB0E5CB73641EE1E65E7dCEFe520bA3ef2</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xb671F2210B1F6621A2607EA63E6B2DC3e2464d1F">0xb671F2210B1F6621A2607EA63E6B2DC3e2464d1F</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrowV2</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardEscrowV2.sol">RewardEscrowV2.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardEscrowV2.sol">RewardEscrowV2.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xDA4eF8520b1A57D7d63f1E249606D1A459698876">0xDA4eF8520b1A57D7d63f1E249606D1A459698876</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardsDistribution</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x29C295B046a73Cde593f21f63091B072d407e3F2">0x29C295B046a73Cde593f21f63091B072d407e3F2</a>
                 </td>
               </tr>
               <tr>
                 <td>SafeDecimalMath</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x84D626B2BB4D0F064067e4BF80FCe7055d8F3E7B">0x84D626B2BB4D0F064067e4BF80FCe7055d8F3E7B</a>
                 </td>
               </tr>
               <tr>
                 <td>ShortingRewardssBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ShortingRewards.sol">ShortingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ShortingRewards.sol">ShortingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xCed4055b47cfD0421f3727a35F69CE659c8bAF7a">0xCed4055b47cfD0421f3727a35F69CE659c8bAF7a</a>
                 </td>
               </tr>
               <tr>
                 <td>ShortingRewardssETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ShortingRewards.sol">ShortingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ShortingRewards.sol">ShortingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x12DC1273915A16ab8BD47bA7866B240c253e4c12">0x12DC1273915A16ab8BD47bA7866B240c253e4c12</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardsSNXBalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewardsSNXBalancer.sol">StakingRewardsSNXBalancer.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewardsSNXBalancer.sol">StakingRewardsSNXBalancer.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xFBaEdde70732540cE2B11A8AC58Eb2dC0D69dE10">0xFBaEdde70732540cE2B11A8AC58Eb2dC0D69dE10</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardsiBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x167009dcDA2e49930a71712D956f02cc980DcC1b">0x167009dcDA2e49930a71712D956f02cc980DcC1b</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardsiETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x3f27c540ADaE3a9E8c875C61e3B970b559d7F65d">0x3f27c540ADaE3a9E8c875C61e3B970b559d7F65d</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssAAPLBalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7af65f1740c0eB816A27FD808EaF6Ab09F6Fa646">0x7af65f1740c0eB816A27FD808EaF6Ab09F6Fa646</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssAMZNBalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xDC338C7544654c7dadFEb7E44076E457963113B0">0xDC338C7544654c7dadFEb7E44076E457963113B0</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssBTCCurve</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewardssBTCCurve.sol">StakingRewardssBTCCurve.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewardssBTCCurve.sol">StakingRewardssBTCCurve.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x13C1542A468319688B89E323fe9A3Be3A90EBb27">0x13C1542A468319688B89E323fe9A3Be3A90EBb27</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssCOINBalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x1C1D97f6338759AB814a5A717aE359573Ab5D5d4">0x1C1D97f6338759AB814a5A717aE359573Ab5D5d4</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssETHUniswapV1</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewardssETHUniswapV1.sol">StakingRewardssETHUniswapV1.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewardssETHUniswapV1.sol">StakingRewardssETHUniswapV1.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x48D7f315feDcaD332F68aafa017c7C158BC54760">0x48D7f315feDcaD332F68aafa017c7C158BC54760</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssEURCurve</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xc0d8994Cd78eE1980885DF1A0C5470fC977b5cFe">0xc0d8994Cd78eE1980885DF1A0C5470fC977b5cFe</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssFBBalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x26Fa0665660c1D3a3666584669511d3c66Ad37Cb">0x26Fa0665660c1D3a3666584669511d3c66Ad37Cb</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssGOOGBalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6fB7F0E78582746bd01BcB6dfbFE62cA5F4F9175">0x6fB7F0E78582746bd01BcB6dfbFE62cA5F4F9175</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssMSFTBalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9D003Cc298E7Ea141A809C241C0a703176DA3ba3">0x9D003Cc298E7Ea141A809C241C0a703176DA3ba3</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssNFLXBalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x8Ef8cA2AcAaAfEc19fB366C11561718357F780F2">0x8Ef8cA2AcAaAfEc19fB366C11561718357F780F2</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssTSLABalancer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xF0de877F2F9E7A60767f9BA662F10751566AD01c">0xF0de877F2F9E7A60767f9BA662F10751566AD01c</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssUSDCurve</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewardssUSDCurve.sol">StakingRewardssUSDCurve.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewardssUSDCurve.sol">StakingRewardssUSDCurve.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xDCB6A51eA3CA5d3Fd898Fd6564757c7aAeC3ca92">0xDCB6A51eA3CA5d3Fd898Fd6564757c7aAeC3ca92</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardssXAUUniswapV2</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewardssXAUUniswapV2.sol">StakingRewardssXAUUniswapV2.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewardssXAUUniswapV2.sol">StakingRewardssXAUUniswapV2.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x8302FE9F0C509a996573D3Cc5B0D5D51e4FDD5eC">0x8302FE9F0C509a996573D3Cc5B0D5D51e4FDD5eC</a>
                 </td>
               </tr>
               <tr>
                 <td>SupplySchedule</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SupplySchedule.sol">SupplySchedule.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SupplySchedule.sol">SupplySchedule.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xA05e45396703BabAa9C276B5E5A9B6e2c175b521">0xA05e45396703BabAa9C276B5E5A9B6e2c175b521</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthRedeemer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthRedeemer.sol">SynthRedeemer.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthRedeemer.sol">SynthRedeemer.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xe533139Af961c9747356D947838c98451015e234">0xe533139Af961c9747356D947838c98451015e234</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthUtil</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x81Aee4EA48f678E172640fB5813cf7A96AFaF6C3">0x81Aee4EA48f678E172640fB5813cf7A96AFaF6C3</a>
                 </td>
               </tr>
               <tr>
                 <td>Synthetix</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synthetix.sol">Synthetix.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x54f25546260C7539088982bcF4b7dC8EDEF19f21">0x54f25546260C7539088982bcF4b7dC8EDEF19f21</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixBridgeEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixBridgeEscrow.sol">SynthetixBridgeEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixBridgeEscrow.sol">SynthetixBridgeEscrow.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x5Fd79D46EBA7F351fe49BFF9E87cdeA6c821eF9f">0x5Fd79D46EBA7F351fe49BFF9E87cdeA6c821eF9f</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixBridgeToOptimism</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixBridgeToOptimism.sol">SynthetixBridgeToOptimism.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixBridgeToOptimism.sol">SynthetixBridgeToOptimism.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xCd9D4988C0AE61887B075bA77f08cbFAd2b65068">0xCd9D4988C0AE61887B075bA77f08cbFAd2b65068</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x971e78e0C92392A4E39099835cF7E6aB535b2227">0x971e78e0C92392A4E39099835cF7E6aB535b2227</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixState.sol">SynthetixState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixState.sol">SynthetixState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x4b9Ca5607f1fF8019c1C6A3c2f0CC8de622D5B82">0x4b9Ca5607f1fF8019c1C6A3c2f0CC8de622D5B82</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x1cB27Ac646afAE192dF9928A2808C0f7f586Af7d">0x1cB27Ac646afAE192dF9928A2808C0f7f586Af7d</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x931c5516EE121a177bD2B60e0122Da5B27630ABc">0x931c5516EE121a177bD2B60e0122Da5B27630ABc</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xf7B8dF8b16dA302d85603B8e7F95111a768458Cc">0xf7B8dF8b16dA302d85603B8e7F95111a768458Cc</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x8350d1b2d6EF5289179fe49E5b0F208165B4e32e">0x8350d1b2d6EF5289179fe49E5b0F208165B4e32e</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6Dc6a64724399524184C2c44a526A2cff1BaA507">0x6Dc6a64724399524184C2c44a526A2cff1BaA507</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiCOMP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9A5Ea0D8786B8d17a70410A905Aed1443fae5A38">0x9A5Ea0D8786B8d17a70410A905Aed1443fae5A38</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x947d5656725fB9A8f9c826A91b6082b07E2745B7">0x947d5656725fB9A8f9c826A91b6082b07E2745B7</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x87eb6e935e3C7E3E3A0E31a5658498bC87dE646E">0x87eb6e935e3C7E3E3A0E31a5658498bC87dE646E</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiDOT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xF6ce55E09De0F9F97210aAf6DB88Ed6b6792Ca1f">0xF6ce55E09De0F9F97210aAf6DB88Ed6b6792Ca1f</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x806A599d60B2FdBda379D5890287D2fba1026cC0">0x806A599d60B2FdBda379D5890287D2fba1026cC0</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xCea42504874586a718954746A564B72bc7eba3E3">0xCea42504874586a718954746A564B72bc7eba3E3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x29DD4A59F4D339226867e77aF211724eaBb45c02">0x29DD4A59F4D339226867e77aF211724eaBb45c02</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x4D50A0e5f068ACdC80A1da2dd1f0Ad48845df2F8">0x4D50A0e5f068ACdC80A1da2dd1f0Ad48845df2F8</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xb73c665825dAa926D6ef09417FbE5654473c1b49">0xb73c665825dAa926D6ef09417FbE5654473c1b49</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiOIL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x53869BDa4b8d85aEDCC9C6cAcf015AF9447Cade7">0x53869BDa4b8d85aEDCC9C6cAcf015AF9447Cade7</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiREN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xacAAB69C2BA65A2DB415605F309007e18D4F5E8C">0xacAAB69C2BA65A2DB415605F309007e18D4F5E8C</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x0517A56da8A517e3b2D484Cc5F1Da4BDCfE68ec3">0x0517A56da8A517e3b2D484Cc5F1Da4BDCfE68ec3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x3dD7b893c25025CabFBd290A5E06BaFF3DE335b8">0x3dD7b893c25025CabFBd290A5E06BaFF3DE335b8</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x186E56A62E7caCE1308f1A1B0dbb27f33F80f16f">0x186E56A62E7caCE1308f1A1B0dbb27f33F80f16f</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x19cC1f63e344D74A87D955E3F3E95B28DDDc61d8">0x19cC1f63e344D74A87D955E3F3E95B28DDDc61d8</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x099CfAd1640fc7EA686ab1D83F0A285Ba0470882">0x099CfAd1640fc7EA686ab1D83F0A285Ba0470882</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthiYFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x1A4505543C92084bE57ED80113eaB7241171e7a8">0x1A4505543C92084bE57ED80113eaB7241171e7a8</a>
                 </td>
               </tr>
               <tr>
                 <td>Synths1INCH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x0E8Fa2339314AB7E164818F26207897bBe29C3af">0x0E8Fa2339314AB7E164818F26207897bBe29C3af</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsAAPL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x815CeF3b7773f35428B4353073B086ecB658f73C">0x815CeF3b7773f35428B4353073B086ecB658f73C</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xaB38249f4f56Ef868F6b5E01D9cFa26B952c1270">0xaB38249f4f56Ef868F6b5E01D9cFa26B952c1270</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC22e51FA362654ea453B4018B616ef6f6ab3b779">0xC22e51FA362654ea453B4018B616ef6f6ab3b779</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsAMZN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9530FA32a3059114AC20A5812870Da12D97d1174">0x9530FA32a3059114AC20A5812870Da12D97d1174</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsAUD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x37B648a07476F4941D3D647f81118AFd55fa8a04">0x37B648a07476F4941D3D647f81118AFd55fa8a04</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xda3c83750b1FA31Fda838136ef3f853b41cb7a5a">0xda3c83750b1FA31Fda838136ef3f853b41cb7a5a</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC8a5f06858a1B49A7F703EacD433A1444a5e5bd9">0xC8a5f06858a1B49A7F703EacD433A1444a5e5bd9</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x2acfe6265D358d982cB1c3B521199973CD443C71">0x2acfe6265D358d982cB1c3B521199973CD443C71</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsCHF</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xcf9bB94b5d65589039607BA66e3DAC686d3eFf01">0xcf9bB94b5d65589039607BA66e3DAC686d3eFf01</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsCOIN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x249612F641111022f2f48769f3Df5D85cb3E26a2">0x249612F641111022f2f48769f3Df5D85cb3E26a2</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsCOMP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x34c76BC146b759E58886e821D62548AC1e0BA7Bc">0x34c76BC146b759E58886e821D62548AC1e0BA7Bc</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsCRV</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x13D0F5B8630520eA04f694F17A001fb95eaFD30E">0x13D0F5B8630520eA04f694F17A001fb95eaFD30E</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xcb6Cb218D558ae7fF6415f95BDA6616FCFF669Cb">0xcb6Cb218D558ae7fF6415f95BDA6616FCFF669Cb</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x46A7Af405093B27DA6DeF193C508Bd9240A255FA">0x46A7Af405093B27DA6DeF193C508Bd9240A255FA</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsDOT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xfD0435A588BF5c5a6974BA19Fa627b772833d4eb">0xfD0435A588BF5c5a6974BA19Fa627b772833d4eb</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xAf090d6E583C082f2011908cf95c2518BE7A53ac">0xAf090d6E583C082f2011908cf95c2518BE7A53ac</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x21ee4afBd6c151fD9A69c1389598170B1d45E0e3">0x21ee4afBd6c151fD9A69c1389598170B1d45E0e3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xCFA46B4923c0E75B7b84E9FBde70ED26feFefBf6">0xCFA46B4923c0E75B7b84E9FBde70ED26feFefBf6</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsEUR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC61b352fCc311Ae6B0301459A970150005e74b3E">0xC61b352fCc311Ae6B0301459A970150005e74b3E</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsFB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xb0e0BA880775B7F2ba813b3800b3979d719F0379">0xb0e0BA880775B7F2ba813b3800b3979d719F0379</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsFTSE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x3E2dA260B4A85782A629320EB027A3B7c28eA9f1">0x3E2dA260B4A85782A629320EB027A3B7c28eA9f1</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsGBP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xEF285D339c91aDf1dD7DE0aEAa6250805FD68258">0xEF285D339c91aDf1dD7DE0aEAa6250805FD68258</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsGOOG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x8e082925e78538955bC0e2F363FC5d1Ab3be739b">0x8e082925e78538955bC0e2F363FC5d1Ab3be739b</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsJPY</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x388fD1A8a7d36e03eFA1ab100a1c5159a3A3d427">0x388fD1A8a7d36e03eFA1ab100a1c5159a3A3d427</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsKRW</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xCeC4e038371d32212C6Dcdf36Fdbcb6F8a34C6d8">0xCeC4e038371d32212C6Dcdf36Fdbcb6F8a34C6d8</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xcd980Fc5CcdAe62B18A52b83eC64200121A929db">0xcd980Fc5CcdAe62B18A52b83eC64200121A929db</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xA962208CDC8588F9238fae169d0F63306c353F4F">0xA962208CDC8588F9238fae169d0F63306c353F4F</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsMSFT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x04720DbBD4599aD26811545595d97fB813E84964">0x04720DbBD4599aD26811545595d97fB813E84964</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsNFLX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x399BA516a6d68d6Ad4D5f3999902D0DeAcaACDdd">0x399BA516a6d68d6Ad4D5f3999902D0DeAcaACDdd</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsNIKKEI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xc02DD182Ce029E6d7f78F37492DFd39E4FEB1f8b">0xc02DD182Ce029E6d7f78F37492DFd39E4FEB1f8b</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsOIL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x2962EA4E749e54b10CFA557770D597027BA67cB3">0x2962EA4E749e54b10CFA557770D597027BA67cB3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsREN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x4287dac1cC7434991119Eba7413189A66fFE65cF">0x4287dac1cC7434991119Eba7413189A66fFE65cF</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsRUNE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xe615Df79AC987193561f37E77465bEC2aEfe9aDb">0xe615Df79AC987193561f37E77465bEC2aEfe9aDb</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x47bD14817d7684082E04934878EE2Dd3576Ae19d">0x47bD14817d7684082E04934878EE2Dd3576Ae19d</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsTSLA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x0d1c4e5C07B071aa4E6A14A604D4F6478cAAC7B4">0x0d1c4e5C07B071aa4E6A14A604D4F6478cAAC7B4</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xAa1b12E3e5F70aBCcd1714F4260A74ca21e7B17b">0xAa1b12E3e5F70aBCcd1714F4260A74ca21e7B17b</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x967968963517AFDC9b8Ccc9AD6649bC507E83a7b">0x967968963517AFDC9b8Ccc9AD6649bC507E83a7b</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXAG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9745606DA6e162866DAD7bF80f2AbF145EDD7571">0x9745606DA6e162866DAD7bF80f2AbF145EDD7571</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXAU</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x5eDf7dd83fE2889D264fa9D3b93d0a6e6A45D6C6">0x5eDf7dd83fE2889D264fa9D3b93d0a6e6A45D6C6</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7B29C9e188De18563B19d162374ce6836F31415a">0x7B29C9e188De18563B19d162374ce6836F31415a</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xe3D5E1c1bA874C0fF3BA31b999967F24d5ca04e5">0xe3D5E1c1bA874C0fF3BA31b999967F24d5ca04e5</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6F927644d55E32318629198081923894FbFe5c07">0x6F927644d55E32318629198081923894FbFe5c07</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsYFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x0F393ce493d8FB0b83915248a21a3104932ed97c">0x0F393ce493d8FB0b83915248a21a3104932ed97c</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemSettings</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xD3C8d372bFCd36c2B452639a7ED6ef7dbFDC56F8">0xD3C8d372bFCd36c2B452639a7ED6ef7dbFDC56F8</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemStatus</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x1c86B3CDF2a60Ae3a574f7f71d44E2C50BDdB87E">0x1c86B3CDF2a60Ae3a574f7f71d44E2C50BDdB87E</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateSynthetix</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/LegacyTokenState.sol">LegacyTokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/LegacyTokenState.sol">LegacyTokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x5b1b5fEa1b99D83aD479dF0C222F0492385381dD">0x5b1b5fEa1b99D83aD479dF0C222F0492385381dD</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xC43c0D8b2A3509d193974695568164C190af2AAF">0xC43c0D8b2A3509d193974695568164C190af2AAF</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xD636802A5b903b23726189D9B89daAD2750177FA">0xD636802A5b903b23726189D9B89daAD2750177FA</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xc4E4c442653fDC78A71401684fd6cF9d67B3B643">0xc4E4c442653fDC78A71401684fd6cF9d67B3B643</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xa1652766155D4Debc31D01BF3f748cB46508745b">0xa1652766155D4Debc31D01BF3f748cB46508745b</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x3Fb1F228168432688b4E851Fe909907248cf9eCD">0x3Fb1F228168432688b4E851Fe909907248cf9eCD</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiCOMP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x673Be1f8b8e1F2AB64C475b44060EE39163423f0">0x673Be1f8b8e1F2AB64C475b44060EE39163423f0</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x01ADA1140cA795897c45016Dfd296382267b264a">0x01ADA1140cA795897c45016Dfd296382267b264a</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6E9BAC2827dBBa78D11b270115086CC357988928">0x6E9BAC2827dBBa78D11b270115086CC357988928</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiDOT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x41d85Df6513A86eb2eA186e2cf4ec0fE5dD16754">0x41d85Df6513A86eb2eA186e2cf4ec0fE5dD16754</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x68a8b098967Ae077dcFf5cC8E29B7cb15f1A3cC8">0x68a8b098967Ae077dcFf5cC8E29B7cb15f1A3cC8</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x71892d13BA2b19f196760f619eE9C67534a49E37">0x71892d13BA2b19f196760f619eE9C67534a49E37</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7b6ab32Ca02B31485fbf7265437c2853792CC5d9">0x7b6ab32Ca02B31485fbf7265437c2853792CC5d9</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x3FdF819c3665D6866b5Bb0F56E1EDA0D7f69B714">0x3FdF819c3665D6866b5Bb0F56E1EDA0D7f69B714</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7B1010586F923CbF61e7C314146853675705751F">0x7B1010586F923CbF61e7C314146853675705751F</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiOIL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xF92BE89BF1aebA61AC48D90CF7C9Ac2b3616c4Da">0xF92BE89BF1aebA61AC48D90CF7C9Ac2b3616c4Da</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiREN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x348C3c80c4F23574BC8cDF669A0Dc106a4E32BFf">0x348C3c80c4F23574BC8cDF669A0Dc106a4E32BFf</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xd69EabdF940174cA571A6D71dde9B9A4dbCdBb0f">0xd69EabdF940174cA571A6D71dde9B9A4dbCdBb0f</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x13caB49E4484C2E0624d2bdF3dADfAD43e5611f9">0x13caB49E4484C2E0624d2bdF3dADfAD43e5611f9</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xE20117888AB22ACF65b02C196A9f8423b502876c">0xE20117888AB22ACF65b02C196A9f8423b502876c</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xa9d6aE0F9E9da6FFC357Cd155CCe18E3491e135D">0xa9d6aE0F9E9da6FFC357Cd155CCe18E3491e135D</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xca0d3004f5E771A129fB94619f8867A23e8A23de">0xca0d3004f5E771A129fB94619f8867A23e8A23de</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateiYFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x643088Ad7A6CEB1ec95be0E7B382438399CA8e7C">0x643088Ad7A6CEB1ec95be0E7B382438399CA8e7C</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStates1INCH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xeD1EfD716C7E2e821BBD4EC1480D649df7fb2279">0xeD1EfD716C7E2e821BBD4EC1480D649df7fb2279</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesAAPL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x830B48539D82a4D34dD670bfE163f9eF84B6c2f1">0x830B48539D82a4D34dD670bfE163f9eF84B6c2f1</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9BcED8A8E3Ad81c9b146FFC880358f734A06f7c0">0x9BcED8A8E3Ad81c9b146FFC880358f734A06f7c0</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9956c5019a24fbd5B506AD070b771577bAc5c343">0x9956c5019a24fbd5B506AD070b771577bAc5c343</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesAMZN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xc341BD8d6BB064FdD94b5142513027A01c1716C9">0xc341BD8d6BB064FdD94b5142513027A01c1716C9</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesAUD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xCb29D2cf2C65d3Be1d00F07f3441390432D55203">0xCb29D2cf2C65d3Be1d00F07f3441390432D55203</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xf9bd94C6F93c1FA5F38174c5e424721e1046af07">0xf9bd94C6F93c1FA5F38174c5e424721e1046af07</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x4F6296455F8d754c19821cF1EC8FeBF2cD456E67">0x4F6296455F8d754c19821cF1EC8FeBF2cD456E67</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xc5680d24C3086e10f618b5176A59E90D6284be9f">0xc5680d24C3086e10f618b5176A59E90D6284be9f</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesCHF</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x52496fE8a4feaEFe14d9433E00D48E6929c13deC">0x52496fE8a4feaEFe14d9433E00D48E6929c13deC</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesCOIN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x102e541a34AA7e7205c32ddF58308395d733Ce1f">0x102e541a34AA7e7205c32ddF58308395d733Ce1f</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesCOMP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x5f298BD4391d32Af25368FA78dc210A56c7Ccc9c">0x5f298BD4391d32Af25368FA78dc210A56c7Ccc9c</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesCRV</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x602590F2aa35B71ccB1Ca72E673A75b26eC7f4E8">0x602590F2aa35B71ccB1Ca72E673A75b26eC7f4E8</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x136b1EC699c62b0606854056f02dC7Bb80482d63">0x136b1EC699c62b0606854056f02dC7Bb80482d63</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7Ac2D37098a65B0f711CFfA3be635F1E6aCacFaB">0x7Ac2D37098a65B0f711CFfA3be635F1E6aCacFaB</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesDOT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x73B1a2643507Cd30F11Dfcf2D974f4373E5BC077">0x73B1a2643507Cd30F11Dfcf2D974f4373E5BC077</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x631443C4121ca7B4c90dC79a37B1DcE8B79aDeEc">0x631443C4121ca7B4c90dC79a37B1DcE8B79aDeEc</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xd4DB55Cf39c37BEAa3A47F2555D57B4ea2d9Ff39">0xd4DB55Cf39c37BEAa3A47F2555D57B4ea2d9Ff39</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x34A5ef81d18F3a305aE9C2d7DF42beef4c79031c">0x34A5ef81d18F3a305aE9C2d7DF42beef4c79031c</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesEUR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6568D9e750fC44AF00f857885Dfb8281c00529c4">0x6568D9e750fC44AF00f857885Dfb8281c00529c4</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesFB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xBF416bdf37b1590A3A37A1504865354Bf5D90b34">0xBF416bdf37b1590A3A37A1504865354Bf5D90b34</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesFTSE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xD1B420854527e4b0e489bd37ec8f9DB1E6305515">0xD1B420854527e4b0e489bd37ec8f9DB1E6305515</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesGBP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7e88D19A79b291cfE5696d496055f7e57F537A75">0x7e88D19A79b291cfE5696d496055f7e57F537A75</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesGOOG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x272BbF5eEf131A3eb4a3078A58cFcD0978585F98">0x272BbF5eEf131A3eb4a3078A58cFcD0978585F98</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesJPY</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x4dFACfB15514C21c991ff75Bc7Bf6Fb1F98361ed">0x4dFACfB15514C21c991ff75Bc7Bf6Fb1F98361ed</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesKRW</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x93B6e9FbBd2c32a0DC3C2B943B7C3CBC2fE23730">0x93B6e9FbBd2c32a0DC3C2B943B7C3CBC2fE23730</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x577D4a7395c6A5f46d9981a5F83fa7294926aBB0">0x577D4a7395c6A5f46d9981a5F83fa7294926aBB0</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xe1a2C7957a4771031301f2E25b0f52039aD97270">0xe1a2C7957a4771031301f2E25b0f52039aD97270</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesMSFT</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7EbeEa83591c048a40502985254A3Df19Ea90067">0x7EbeEa83591c048a40502985254A3Df19Ea90067</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesNFLX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x438D8701892AB7578ea34F8cDCdCAdc93e48D443">0x438D8701892AB7578ea34F8cDCdCAdc93e48D443</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesNIKKEI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xc69D8B688a309FDEa9273DDE1A46bF1e51928a55">0xc69D8B688a309FDEa9273DDE1A46bF1e51928a55</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesOIL</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x98d7CcF403B8BD2F6DC3F3cA4161f1E8db3dD080">0x98d7CcF403B8BD2F6DC3F3cA4161f1E8db3dD080</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesREN</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x6e6d86D88d2Ce382918EB4F062F0fff82B8c9b99">0x6e6d86D88d2Ce382918EB4F062F0fff82B8c9b99</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesRUNE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x860C5f944b098cE28CF9f2Da099913F01c9364D8">0x860C5f944b098cE28CF9f2Da099913F01c9364D8</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x7EC5697C724895DA7f2320bDE063BEF6215a72e2">0x7EC5697C724895DA7f2320bDE063BEF6215a72e2</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesTSLA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x259F2584E8A672DA3773F91D66567a3229Dee93d">0x259F2584E8A672DA3773F91D66567a3229Dee93d</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x9234733bD0F3E227e431BBE7B09CEB0E3E9755e3">0x9234733bD0F3E227e431BBE7B09CEB0E3E9755e3</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x05a9CBe762B36632b3594DA4F082340E0e5343e8">0x05a9CBe762B36632b3594DA4F082340E0e5343e8</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesXAG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x53d244Fb46357568DBeF082225cCC87cBD94aAE8">0x53d244Fb46357568DBeF082225cCC87cBD94aAE8</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesXAU</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x20569B49d74c1EDE765382574F7F3fdC2a078A4f">0x20569B49d74c1EDE765382574F7F3fdC2a078A4f</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x23d5381713841724A67B731026b32322228cA3C7">0x23d5381713841724A67B731026b32322228cA3C7</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xb90AafFB61dFC042e7a7AbcE069DDB4BAE9ab192">0xb90AafFB61dFC042e7a7AbcE069DDB4BAE9ab192</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x959894a82fbF99d35B12ed1EA81e783296229862">0x959894a82fbF99d35B12ed1EA81e783296229862</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesYFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xF61F4A57C63340ac1Fd75578ae878c8a263aeC06">0xF61F4A57C63340ac1Fd75578ae878c8a263aeC06</a>
                 </td>
               </tr>
               <tr>
                 <td>TradingRewards</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0x62922670313bf6b41C580143d1f6C173C5C20019">0x62922670313bf6b41C580143d1f6C173C5C20019</a>
                 </td>
               </tr>
               <tr>
                 <td>VirtualSynthMastercopy</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/VirtualSynthMastercopy.sol">VirtualSynthMastercopy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/VirtualSynthMastercopy.sol">VirtualSynthMastercopy.sol</a></td>
                 <td><a target="_blank" href="https://etherscan.io/address/0xf02ce48fD47D7FA1B7a45a0444805d320D035775">0xf02ce48fD47D7FA1B7a45a0444805d320D035775</a>
                 </td>
               </tr></table>
@@ -1625,307 +1625,307 @@ Here is the list of all contracts within the current Synthetix system.
 <table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
               <tr>
                 <td>AddressResolver</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x95A6a3f44a70172E7d50a9e28c85Dfd712756B8C">0x95A6a3f44a70172E7d50a9e28c85Dfd712756B8C</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManager</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EmptyCollateralManager.sol">EmptyCollateralManager.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EmptyCollateralManager.sol">EmptyCollateralManager.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x70B21B422Dade467659522892A857F0Ee31cebb4">0x70B21B422Dade467659522892A857F0Ee31cebb4</a>
                 </td>
               </tr>
               <tr>
                 <td>DappMaintenance</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x54581A23F62D147AC76d454f0b3eF77F9D766058">0x54581A23F62D147AC76d454f0b3eF77F9D766058</a>
                 </td>
               </tr>
               <tr>
                 <td>DebtCache</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DebtCache.sol">DebtCache.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DebtCache.sol">DebtCache.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x8be60b5031C0686e48a079C81822173bFa1268DA">0x8be60b5031C0686e48a079C81822173bFa1268DA</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovals</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x2A23bc0EA97A89abD91214E8e4d20F02Fe14743f">0x2A23bc0EA97A89abD91214E8e4d20F02Fe14743f</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovalsEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x02f7fB66B55e6ca476d126d96f14c5732Eeb4363">0x02f7fB66B55e6ca476d126d96f14c5732Eeb4363</a>
                 </td>
               </tr>
               <tr>
                 <td>EscrowChecker</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xcdb7D0a946223255d39A6e29B54f08f3291cc118">0xcdb7D0a946223255d39A6e29B54f08f3291cc118</a>
                 </td>
               </tr>
               <tr>
                 <td>EternalStorageLiquidations</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x76d2de36936005A0182a1BB61dA501A8A044D477">0x76d2de36936005A0182a1BB61dA501A8A044D477</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherCollateral</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xC8E91c926E04BE1cb94e51c5379d14774D51ae6C">0xC8E91c926E04BE1cb94e51c5379d14774D51ae6C</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherCollateralsUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xC0c66470E766AE2026E6695966C56C90741811AA">0xC0c66470E766AE2026E6695966C56C90741811AA</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherWrapper</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EmptyEtherWrapper.sol">EmptyEtherWrapper.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EmptyEtherWrapper.sol">EmptyEtherWrapper.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xc3Ee42caBD773A608fa9Ec951982c94BD6F33d59">0xc3Ee42caBD773A608fa9Ec951982c94BD6F33d59</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeRates</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangeRatesWithoutInvPricing.sol">ExchangeRatesWithoutInvPricing.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol">ExchangeRatesWithoutInvPricing.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x631E93A0fb06B5eC6d52c0A2D89a3f9672d6Ba64">0x631E93A0fb06B5eC6d52c0A2D89a3f9672d6Ba64</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x7EF87c14f50CFFe2e73d2C87916C3128c56593A8">0x7EF87c14f50CFFe2e73d2C87916C3128c56593A8</a>
                 </td>
               </tr>
               <tr>
                 <td>Exchanger</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Exchanger.sol">Exchanger.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x395eC94bf3E3dCd3aFBd82cd03197731411E396B">0x395eC94bf3E3dCd3aFBd82cd03197731411E396B</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePool.sol">FeePool.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xF950a48E9463a13b13D75F452200E711c1c426b6">0xF950a48E9463a13b13D75F452200E711c1c426b6</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x41140Bf6498a36f2E44eFd49f21dAe3bbb7367c8">0x41140Bf6498a36f2E44eFd49f21dAe3bbb7367c8</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x6e0d26cffc3a63d763F1546f749bf62ebC7d72D8">0x6e0d26cffc3a63d763F1546f749bf62ebC7d72D8</a>
                 </td>
               </tr>
               <tr>
                 <td>FlexibleStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x47649022380d182DA8010Ae5d257fea4227b21ff">0x47649022380d182DA8010Ae5d257fea4227b21ff</a>
                 </td>
               </tr>
               <tr>
                 <td>Issuer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/IssuerWithoutLiquidations.sol">IssuerWithoutLiquidations.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/IssuerWithoutLiquidations.sol">IssuerWithoutLiquidations.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x8377b25B8564f6Be579865639776c5082CB37163">0x8377b25B8564f6Be579865639776c5082CB37163</a>
                 </td>
               </tr>
               <tr>
                 <td>Liquidations</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Liquidations.sol">Liquidations.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Liquidations.sol">Liquidations.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x14E6f8e6Da00a32C069b11b64e48EA1FEF2361D4">0x14E6f8e6Da00a32C069b11b64e48EA1FEF2361D4</a>
                 </td>
               </tr>
               <tr>
                 <td>Math</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Math.sol">Math.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Math.sol">Math.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x0B3A73EE0740b3130e40B2A6b5aaf59E7E3Ef74c">0x0B3A73EE0740b3130e40B2A6b5aaf59E7E3Ef74c</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyERC20</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4">0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyERC20sUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9">0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyFeePool</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x4a16A42407AA491564643E1dfc1fd50af29794eF">0x4a16A42407AA491564643E1dfc1fd50af29794eF</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x218067172e9E0460A883458D44BD1f56ea609502">0x218067172e9E0460A883458D44BD1f56ea609502</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x298B9B95708152ff6968aafd889c6586e9169f1D">0x298B9B95708152ff6968aafd889c6586e9169f1D</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49">0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xc5Db22719A06418028A40A9B5E9A7c02959D0d08">0xc5Db22719A06418028A40A9B5E9A7c02959D0d08</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xbecc58c6D7Ca71b6FCC4cC8c9c5294A0eA7A0397">0xbecc58c6D7Ca71b6FCC4cC8c9c5294A0eA7A0397</a>
                 </td>
               </tr>
               <tr>
                 <td>ReadProxyAddressResolver</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x1Cb059b7e74fD21665968C908806143E744D5F30">0x1Cb059b7e74fD21665968C908806143E744D5F30</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xd32138018210edA0028240638f35b70ECC0D8C22">0xd32138018210edA0028240638f35b70ECC0D8C22</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrowV2</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ImportableRewardEscrowV2.sol">ImportableRewardEscrowV2.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ImportableRewardEscrowV2.sol">ImportableRewardEscrowV2.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x47eE58801C1AC44e54FF2651aE50525c5cfc66d0">0x47eE58801C1AC44e54FF2651aE50525c5cfc66d0</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardsDistribution</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x5d9187630E99dBce4BcAB8733B76757f7F44aA2e">0x5d9187630E99dBce4BcAB8733B76757f7F44aA2e</a>
                 </td>
               </tr>
               <tr>
                 <td>SafeDecimalMath</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x0142F40c25CE1F1177Ed131101FA19217396cB88">0x0142F40c25CE1F1177Ed131101FA19217396cB88</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthUtil</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x87b1481c82913301Fc6c884Ac266a7c430F92cFA">0x87b1481c82913301Fc6c884Ac266a7c430F92cFA</a>
                 </td>
               </tr>
               <tr>
                 <td>Synthetix</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xAe4CA85A36920b4130A8DB9303a31abA64e3d2A8">0xAe4CA85A36920b4130A8DB9303a31abA64e3d2A8</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixBridgeToBase</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x3f87Ff1de58128eF8FCb4c807eFD776E1aC72E51">0x3f87Ff1de58128eF8FCb4c807eFD776E1aC72E51</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x06C6D063896ac733673c4474E44d9268f2402A55">0x06C6D063896ac733673c4474E44d9268f2402A55</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixStateWithLimitedSetup.sol">SynthetixStateWithLimitedSetup.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol">SynthetixStateWithLimitedSetup.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x9770239D49Db97E77fc5Adcb5413654C9e45A510">0x9770239D49Db97E77fc5Adcb5413654C9e45A510</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x6f1EE829627C8a544CB3e7AB296de386245C14a3">0x6f1EE829627C8a544CB3e7AB296de386245C14a3</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xE118737eB5F931FCeB663fACd3234B4169aC638A">0xE118737eB5F931FCeB663fACd3234B4169aC638A</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x388dD240bFFA4047D85D1d6F3Dc814c054217a23">0x388dD240bFFA4047D85D1d6F3Dc814c054217a23</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xF2FF43DA7B6e5963059b7004df43b5c5870EEb18">0xF2FF43DA7B6e5963059b7004df43b5c5870EEb18</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemSettings</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x46D4504ed0f751309e3c6b1f544ad2E8458537Dc">0x46D4504ed0f751309e3c6b1f544ad2E8458537Dc</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemStatus</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xf83c5f65dBef4017CD19Ae99b15E1B8649AdbEb4">0xf83c5f65dBef4017CD19Ae99b15E1B8649AdbEb4</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateSynthetix</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xB9c6CA25452E7f6D0D3340CE1e9B573421afc2eE">0xB9c6CA25452E7f6D0D3340CE1e9B573421afc2eE</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xA9E630952522E3F110322711F424528Af894e307">0xA9E630952522E3F110322711F424528Af894e307</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0xEc3665F7e696b0Ad0D04Ae5161b18782D48cd1fd">0xEc3665F7e696b0Ad0D04Ae5161b18782D48cd1fd</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x08a008eEA07d3cC7ca1913EEC3468C10F8F79e6A">0x08a008eEA07d3cC7ca1913EEC3468C10F8F79e6A</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x92bAc115d89cA17fd02Ed9357CEcA32842ACB4c2">0x92bAc115d89cA17fd02Ed9357CEcA32842ACB4c2</a>
                 </td>
               </tr>
               <tr>
                 <td>TradingRewards</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
                 <td><a target="_blank" href="https://explorer.optimism.io/address/0x2DcAD1A019fba8301b77810Ae14007cc88ED004B">0x2DcAD1A019fba8301b77810Ae14007cc88ED004B</a>
                 </td>
               </tr></table>
@@ -1935,1039 +1935,535 @@ Here is the list of all contracts within the current Synthetix system.
 <table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
               <tr>
                 <td>AddressResolver</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x84f87E3636Aa9cC1080c07E6C61aDfDCc23c0db6">0x84f87E3636Aa9cC1080c07E6C61aDfDCc23c0db6</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralErc20</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralErc20.sol">CollateralErc20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralErc20.sol">CollateralErc20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x5AD5469D8A1Eee2cF7c8B8205CbeD95A032cdff3">0x5AD5469D8A1Eee2cF7c8B8205CbeD95A032cdff3</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralEth</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xdFd01d828D34982DFE882B9fDC6DC17fcCA33C25">0xdFd01d828D34982DFE882B9fDC6DC17fcCA33C25</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManager</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x53baE964339e8A742B5b47F6C10bbfa8Ff138F34">0x53baE964339e8A742B5b47F6C10bbfa8Ff138F34</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManagerState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8D65Ed88D6162a2b3B5F71c45D433d4aeAc93065">0x8D65Ed88D6162a2b3B5F71c45D433d4aeAc93065</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralShort</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9712DdCC43F42402acC483e297eeFf650d18D354">0x9712DdCC43F42402acC483e297eeFf650d18D354</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateErc20</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x04C3f6207BE48De777967eB1886469E4E268FE07">0x04C3f6207BE48De777967eB1886469E4E268FE07</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateEth</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4B58bbB4Ff947315b558904fDcEbbdA65b9523aD">0x4B58bbB4Ff947315b558904fDcEbbdA65b9523aD</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralStateShort</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/CollateralState.sol">CollateralState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/CollateralState.sol">CollateralState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xd74E3A605A1a7A8a83D25DF00D4057985E3CAC30">0xd74E3A605A1a7A8a83D25DF00D4057985E3CAC30</a>
                 </td>
               </tr>
               <tr>
                 <td>DappMaintenance</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x28B624Ef2284749AEBF3dA3c7f5E287F716D1935">0x28B624Ef2284749AEBF3dA3c7f5E287F716D1935</a>
                 </td>
               </tr>
               <tr>
                 <td>DebtCache</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DebtCache.sol">DebtCache.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DebtCache.sol">DebtCache.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x45545Ab4a249E93Bd204329b295AFbeDF94E1Fa8">0x45545Ab4a249E93Bd204329b295AFbeDF94E1Fa8</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovals</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xB8CFB40B4c66533cD8f760c1b15cc228452bB03E">0xB8CFB40B4c66533cD8f760c1b15cc228452bB03E</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovalsEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x3C11FE34E416eDA134D30f7550f2986BDF8B5c08">0x3C11FE34E416eDA134D30f7550f2986BDF8B5c08</a>
                 </td>
               </tr>
               <tr>
                 <td>Depot</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Depot.sol">Depot.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Depot.sol">Depot.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xF92e70301E26AaDeCCEc5016b7D0167DAF416d72">0xF92e70301E26AaDeCCEc5016b7D0167DAF416d72</a>
                 </td>
               </tr>
               <tr>
                 <td>EscrowChecker</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xF778Ec504245EfE1eA010C5C3E50b6F5f5E117da">0xF778Ec504245EfE1eA010C5C3E50b6F5f5E117da</a>
                 </td>
               </tr>
               <tr>
                 <td>EternalStorageLiquidations</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x5D4A4B51A824E2dD1C25aD16023Bf8FF3F648602">0x5D4A4B51A824E2dD1C25aD16023Bf8FF3F648602</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherWrapper</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EtherWrapper.sol">EtherWrapper.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EtherWrapper.sol">EtherWrapper.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x44Af736495544a726ED15CB0EBe2d87a6bCC1832">0x44Af736495544a726ED15CB0EBe2d87a6bCC1832</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeRates</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC9985cAc4a69588Da66F74E42845B784798fe5aB">0xC9985cAc4a69588Da66F74E42845B784798fe5aB</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xa3F59b8E28cABC4411198dDa2e65C380BD5d6Dfe">0xa3F59b8E28cABC4411198dDa2e65C380BD5d6Dfe</a>
                 </td>
               </tr>
               <tr>
                 <td>Exchanger</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangerWithVirtualSynth.sol">ExchangerWithVirtualSynth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xa7679E25A6DF152691AE8Dbd147E88f0974D6f5A">0xa7679E25A6DF152691AE8Dbd147E88f0974D6f5A</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePool.sol">FeePool.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x660F51083E8c8eC1aD2771bDAa4104B84b1A793E">0x660F51083E8c8eC1aD2771bDAa4104B84b1A793E</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x7bB8B3Cc191600547b9467639aD397c05AF3ce8D">0x7bB8B3Cc191600547b9467639aD397c05AF3ce8D</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x78b70223d9Fa1a0abE6cD967472Fa04fEf3C7586">0x78b70223d9Fa1a0abE6cD967472Fa04fEf3C7586</a>
                 </td>
               </tr>
               <tr>
                 <td>FlexibleStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xB1751e5EdE811288cE2fc4c65aaCA17A955366be">0xB1751e5EdE811288cE2fc4c65aaCA17A955366be</a>
                 </td>
               </tr>
               <tr>
                 <td>IssuanceEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/IssuanceEternalStorage.sol">IssuanceEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/IssuanceEternalStorage.sol">IssuanceEternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xe66000ee63050461Fe930E6F5A3456A735dC86A1">0xe66000ee63050461Fe930E6F5A3456A735dC86A1</a>
                 </td>
               </tr>
               <tr>
                 <td>Issuer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Issuer.sol">Issuer.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Issuer.sol">Issuer.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x26a2356A295bEa8bCA0440a88Eec8605234FdC29">0x26a2356A295bEa8bCA0440a88Eec8605234FdC29</a>
                 </td>
               </tr>
               <tr>
                 <td>Liquidations</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Liquidations.sol">Liquidations.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Liquidations.sol">Liquidations.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9880cfA7B81E8841e216ebB32687A2c9551ae333">0x9880cfA7B81E8841e216ebB32687A2c9551ae333</a>
                 </td>
               </tr>
               <tr>
                 <td>Math</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Math.sol">Math.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Math.sol">Math.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x2cAaB90c2D4328E32baB3e2fAdf84cEd1DD229F6">0x2cAaB90c2D4328E32baB3e2fAdf84cEd1DD229F6</a>
                 </td>
               </tr>
               <tr>
                 <td>NativeEtherWrapper</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/NativeEtherWrapper.sol">NativeEtherWrapper.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/NativeEtherWrapper.sol">NativeEtherWrapper.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x5814d3c40a5A951EFdb4A37Bd93f4407450Cd424">0x5814d3c40a5A951EFdb4A37Bd93f4407450Cd424</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyERC20</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F">0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyERC20sUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51">0x57Ab1ec28D129707052df4dF418D58a2D46d5f51</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyFeePool</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xc43b833F93C3896472dED3EfF73311f571e38742">0xc43b833F93C3896472dED3EfF73311f571e38742</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x22f1ba6dB6ca0A065e1b7EAe6FC22b7E675310EF">0x22f1ba6dB6ca0A065e1b7EAe6FC22b7E675310EF</a>
                 </td>
               </tr>
               <tr>
-                <td>ProxyiADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x15697a9dc703FfB6dc6AC40f7A144284D3a73bEB">0x15697a9dc703FfB6dc6AC40f7A144284D3a73bEB</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xdbB1D3B58D7e101588a44E642F8c442165730289">0xdbB1D3B58D7e101588a44E642F8c442165730289</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xF418D59792E4bd9ab8cC4b733Ea60edC01abc77c">0xF418D59792E4bd9ab8cC4b733Ea60edC01abc77c</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x5047d4FeD0805632a6d84D16C08E9899d17ef3e2">0x5047d4FeD0805632a6d84D16C08E9899d17ef3e2</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x7A2354508041246F50d527081937C5CB872468c8">0x7A2354508041246F50d527081937C5CB872468c8</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x23Db12CF9Ad1fBBdE25650D4AAA6B46AC17EAA80">0x23Db12CF9Ad1fBBdE25650D4AAA6B46AC17EAA80</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xEe2d75e783df7c191012896BFf140fc2Bec08b3a">0xEe2d75e783df7c191012896BFf140fc2Bec08b3a</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xe7FcFd693dD77a083d0B38ad399f9b6b8B37A597">0xe7FcFd693dD77a083d0B38ad399f9b6b8B37A597</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x498df32429693fE31685Da7fb9B4b65696a5508d">0x498df32429693fE31685Da7fb9B4b65696a5508d</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x21dc51Dd8BFfeCe537eFf6FbAB3D1C82340b0A40">0x21dc51Dd8BFfeCe537eFf6FbAB3D1C82340b0A40</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xcC72c855D4d5792938611Ca44Bd3A07860f64dd0">0xcC72c855D4d5792938611Ca44Bd3A07860f64dd0</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4C3213Db129C528D97CBF48f451913071b094Af2">0x4C3213Db129C528D97CBF48f451913071b094Af2</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xCE532C4e0de97C43374E0e26D6134Aa33F297dBb">0xCE532C4e0de97C43374E0e26D6134Aa33F297dBb</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxyiXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x141A298596a25D86D0E6D4F8cC0eC0223ebaa938">0x141A298596a25D86D0E6D4F8cC0eC0223ebaa938</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxysADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xBA939808928b7a823D6F1Fc6522FC57A8000694b">0xBA939808928b7a823D6F1Fc6522FC57A8000694b</a>
-                </td>
-              </tr>
-              <tr>
                 <td>ProxysAUD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4e5D412141145767F7db90c22bd0240a85da0B73">0x4e5D412141145767F7db90c22bd0240a85da0B73</a>
                 </td>
               </tr>
               <tr>
-                <td>ProxysBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4D5C55a1046725a80B20296D0A98DcE02d8eAAc3">0x4D5C55a1046725a80B20296D0A98DcE02d8eAAc3</a>
-                </td>
-              </tr>
-              <tr>
                 <td>ProxysBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x3Aa2d4A15aA7F50158DEEAE0208F862a461f19Cf">0x3Aa2d4A15aA7F50158DEEAE0208F862a461f19Cf</a>
                 </td>
               </tr>
               <tr>
-                <td>ProxysCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xAE1101551c334Ed0f4c6238E7fD4Fc0fdB2b7C77">0xAE1101551c334Ed0f4c6238E7fD4Fc0fdB2b7C77</a>
-                </td>
-              </tr>
-              <tr>
                 <td>ProxysCHF</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8E23100f9C9bd442f5bAc6A927f49B284E390Df4">0x8E23100f9C9bd442f5bAc6A927f49B284E390Df4</a>
                 </td>
               </tr>
               <tr>
-                <td>ProxysDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xE4bC13C29513e5D0BdD68258325f2D01a4B641A0">0xE4bC13C29513e5D0BdD68258325f2D01a4B641A0</a>
-                </td>
-              </tr>
-              <tr>
                 <td>ProxysDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xf91b2d345838922b26c8899483be3f867eeaFAb5">0xf91b2d345838922b26c8899483be3f867eeaFAb5</a>
                 </td>
               </tr>
               <tr>
-                <td>ProxysEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x2fc23EfCDc06636DE7f9CFfB70a8a2A10C5b601e">0x2fc23EfCDc06636DE7f9CFfB70a8a2A10C5b601e</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxysETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x2De5Edf295c21FCBA340A4C4fa9F376F24282E73">0x2De5Edf295c21FCBA340A4C4fa9F376F24282E73</a>
-                </td>
-              </tr>
-              <tr>
                 <td>ProxysETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x54c4B5cb58C880DD1734123c8b588e49eDf442Fb">0x54c4B5cb58C880DD1734123c8b588e49eDf442Fb</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysEUR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x57E8Bd85F3d8De4557739bc3C5ee0f4bfC931528">0x57E8Bd85F3d8De4557739bc3C5ee0f4bfC931528</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysGBP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x41d49b1ac182C9d2c8dDf8b450342DE2Ac03aC19">0x41d49b1ac182C9d2c8dDf8b450342DE2Ac03aC19</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysJPY</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xCcC5c7625c90FC93D2508723e60281E6DE535166">0xCcC5c7625c90FC93D2508723e60281E6DE535166</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysKRW</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xb02C0F5D8fDAD1242dceca095328dc8213A8349C">0xb02C0F5D8fDAD1242dceca095328dc8213A8349C</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x3a4A90a2D8cBA26F2e32C4a6e6d01ffBfCE8DBB4">0x3a4A90a2D8cBA26F2e32C4a6e6d01ffBfCE8DBB4</a>
                 </td>
               </tr>
               <tr>
-                <td>ProxysLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xCffb601E31D4f1D967Aac24f742DEEb2459a2e18">0xCffb601E31D4f1D967Aac24f742DEEb2459a2e18</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxysTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0754bd514B7b41052777417217655fD7254F4528">0x0754bd514B7b41052777417217655fD7254F4528</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxysTSLA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x53A14CdBCE36F870461Ffc2cB0C9D63b0f4a297a">0x53A14CdBCE36F870461Ffc2cB0C9D63b0f4a297a</a>
-                </td>
-              </tr>
-              <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC674ad732Dfd4E1359ec4B18fA5472c0747E480A">0xC674ad732Dfd4E1359ec4B18fA5472c0747E480A</a>
                 </td>
               </tr>
               <tr>
-                <td>ProxysXAG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0Ae5a541ea8FD2e8E3b514D8706ac26e3a30272b">0x0Ae5a541ea8FD2e8E3b514D8706ac26e3a30272b</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxysXAU</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xbc62e250AD0e6759FC104f09C4a7F8b83129346f">0xbc62e250AD0e6759FC104f09C4a7F8b83129346f</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxysXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4708C998e2979f77766258bE94526BAfa84b1270">0x4708C998e2979f77766258bE94526BAfa84b1270</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxysXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x5C59b3eFAE14Bb56c30319fbAF0413b543278382">0x5C59b3eFAE14Bb56c30319fbAF0413b543278382</a>
-                </td>
-              </tr>
-              <tr>
-                <td>ProxysXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xd39bBa8F8049674152B5439A631eEd691436b92a">0xd39bBa8F8049674152B5439A631eEd691436b92a</a>
-                </td>
-              </tr>
-              <tr>
                 <td>ReadProxyAddressResolver</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x242a3DF52c375bEe81b1c668741D7c63aF68FDD2">0x242a3DF52c375bEe81b1c668741D7c63aF68FDD2</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8c6680412e914932A9abC02B6c7cbf690e583aFA">0x8c6680412e914932A9abC02B6c7cbf690e583aFA</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrowV2</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardEscrowV2.sol">RewardEscrowV2.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardEscrowV2.sol">RewardEscrowV2.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x64ac15AB583fFfA6a7401B83E3aA5cf4Ad1aA92A">0x64ac15AB583fFfA6a7401B83E3aA5cf4Ad1aA92A</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardsDistribution</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xD29160e4f5D2e5818041f9Cd9192853BA349c47E">0xD29160e4f5D2e5818041f9Cd9192853BA349c47E</a>
                 </td>
               </tr>
               <tr>
                 <td>SafeDecimalMath</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x1A60E2E2A8BE0BC2B6381dd31Fd3fD5F9A28dE4c">0x1A60E2E2A8BE0BC2B6381dd31Fd3fD5F9A28dE4c</a>
                 </td>
               </tr>
               <tr>
                 <td>ShortingRewardssBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ShortingRewards.sol">ShortingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ShortingRewards.sol">ShortingRewards.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xCEECB8D9c19Abe84E13a2B6De3F5aD6e2991FE6d">0xCEECB8D9c19Abe84E13a2B6De3F5aD6e2991FE6d</a>
                 </td>
               </tr>
               <tr>
                 <td>ShortingRewardssETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ShortingRewards.sol">ShortingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ShortingRewards.sol">ShortingRewards.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x945d2dfFEE2d478D3D32E0f42b9649D1cbAe5528">0x945d2dfFEE2d478D3D32E0f42b9649D1cbAe5528</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardsiBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x72Bfefac12fAbC2224fE66d7840E8134BEf95e39">0x72Bfefac12fAbC2224fE66d7840E8134BEf95e39</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardsiETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x347E15f035B4645C6E330d758F73eC3AD2bFa5B5">0x347E15f035B4645C6E330d758F73eC3AD2bFa5B5</a>
                 </td>
               </tr>
               <tr>
                 <td>StakingRewardsiETH2</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/StakingRewards.sol">StakingRewards.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xbd700862ef238028E3C28D0670851eA1230ac7B1">0xbd700862ef238028E3C28D0670851eA1230ac7B1</a>
                 </td>
               </tr>
               <tr>
                 <td>SupplySchedule</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SupplySchedule.sol">SupplySchedule.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SupplySchedule.sol">SupplySchedule.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x3728543A1e0ca98FFC0A979cF817C95b6F8d9E7b">0x3728543A1e0ca98FFC0A979cF817C95b6F8d9E7b</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthRedeemer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthRedeemer.sol">SynthRedeemer.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthRedeemer.sol">SynthRedeemer.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xFa01a0494913b150Dd37CbE1fF775B08f108dEEa">0xFa01a0494913b150Dd37CbE1fF775B08f108dEEa</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthUtil</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC88AE3be40CAa09CD16Db5816e6145E0E929c93c">0xC88AE3be40CAa09CD16Db5816e6145E0E929c93c</a>
                 </td>
               </tr>
               <tr>
                 <td>Synthetix</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synthetix.sol">Synthetix.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synthetix.sol">Synthetix.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9CAa994c1de15B13bb9b1C435305AE1e548E0721">0x9CAa994c1de15B13bb9b1C435305AE1e548E0721</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixBridgeEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixBridgeEscrow.sol">SynthetixBridgeEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixBridgeEscrow.sol">SynthetixBridgeEscrow.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xFdB31235cDFe68bfFD1d687AC3A2b31E80eacf0d">0xFdB31235cDFe68bfFD1d687AC3A2b31E80eacf0d</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixBridgeToOptimism</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixBridgeToOptimism.sol">SynthetixBridgeToOptimism.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixBridgeToOptimism.sol">SynthetixBridgeToOptimism.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xD134Db47DDF5A6feB245452af17cCAf92ee53D3c">0xD134Db47DDF5A6feB245452af17cCAf92ee53D3c</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x548c18a49a66Ad1238e17824C18B0b9Be35fB604">0x548c18a49a66Ad1238e17824C18B0b9Be35fB604</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixState.sol">SynthetixState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixState.sol">SynthetixState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xAfcBC491B67c01B40f6c077EF53488876a0a0D6E">0xAfcBC491B67c01B40f6c077EF53488876a0a0D6E</a>
                 </td>
               </tr>
               <tr>
-                <td>SynthiADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x75928A56B81876eEfE2cE762E06B939648D775Ec">0x75928A56B81876eEfE2cE762E06B939648D775Ec</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xe9a2A90241f0474c460A1e6106b66F8DcB42c851">0xe9a2A90241f0474c460A1e6106b66F8DcB42c851</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xEbCdeFe5F392eb16c71a4905fB2720f580e09B88">0xEbCdeFe5F392eb16c71a4905fB2720f580e09B88</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xD3E46f5D15ED12f008C9E8727374A24A7F598605">0xD3E46f5D15ED12f008C9E8727374A24A7F598605</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x99947fA8aeDD08838B4cBa632f590730dCDf808b">0x99947fA8aeDD08838B4cBa632f590730dCDf808b</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xd748Fcbb98F1F1943C7d7b5D04e530d2040611FA">0xd748Fcbb98F1F1943C7d7b5D04e530d2040611FA</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x22f1E84c484132D48dF1848c1D13Ad247d0dc30C">0x22f1E84c484132D48dF1848c1D13Ad247d0dc30C</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xc13E77E4F1a1aF9dF03B26DADd51a31A45eEa5D9">0xc13E77E4F1a1aF9dF03B26DADd51a31A45eEa5D9</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x6F4a1312a48D9887Aa8a05c282C387663528Fe05">0x6F4a1312a48D9887Aa8a05c282C387663528Fe05</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x07d1503D736B5a5Ef7b19686f34dF6Ca360ce917">0x07d1503D736B5a5Ef7b19686f34dF6Ca360ce917</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xA8A2Ef65e6E5df51fe30620d639edDCd2dE32A89">0xA8A2Ef65e6E5df51fe30620d639edDCd2dE32A89</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9A71fC5AAa6716b66A44D11B4BBC04bD9F36AE8f">0x9A71fC5AAa6716b66A44D11B4BBC04bD9F36AE8f</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xf796f60c5feE6dEfC55720aE09a1212D0A1d7707">0xf796f60c5feE6dEfC55720aE09a1212D0A1d7707</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthiXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x95541c84A45d61Ff7aCf2912aa8cb3d7AdD1f6eE">0x95541c84A45d61Ff7aCf2912aa8cb3d7AdD1f6eE</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthsADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xEca41030226Ace8F54D0AF5DbD37C276E100055A">0xEca41030226Ace8F54D0AF5DbD37C276E100055A</a>
-                </td>
-              </tr>
-              <tr>
                 <td>SynthsAUD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x2a6BCfE6Ef91a7679053875a540737636Ec30E4f">0x2a6BCfE6Ef91a7679053875a540737636Ec30E4f</a>
                 </td>
               </tr>
               <tr>
-                <td>SynthsBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xD6f913019bc26ab98911046FFE202141D9d7f2e6">0xD6f913019bc26ab98911046FFE202141D9d7f2e6</a>
-                </td>
-              </tr>
-              <tr>
                 <td>SynthsBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xe9bC4e7AE355c88724C5d43BD89fBDB118B95eb0">0xe9bC4e7AE355c88724C5d43BD89fBDB118B95eb0</a>
                 </td>
               </tr>
               <tr>
-                <td>SynthsCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x6A8a006786819D551eF4f0AbFA9264D2d2A7ff2f">0x6A8a006786819D551eF4f0AbFA9264D2d2A7ff2f</a>
-                </td>
-              </tr>
-              <tr>
                 <td>SynthsCHF</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x857f40aa756e93816a9Fa5ce378762ec8bD13278">0x857f40aa756e93816a9Fa5ce378762ec8bD13278</a>
                 </td>
               </tr>
               <tr>
-                <td>SynthsDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xCC200785cea662a7fA66E033AA1a4a054022a197">0xCC200785cea662a7fA66E033AA1a4a054022a197</a>
-                </td>
-              </tr>
-              <tr>
                 <td>SynthsDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x130613411D53076923Af9bA1d830205b34126d76">0x130613411D53076923Af9bA1d830205b34126d76</a>
                 </td>
               </tr>
               <tr>
-                <td>SynthsEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x63417fCE3a75eB4FA5Df2a26d8fD82BB952eE9C0">0x63417fCE3a75eB4FA5Df2a26d8fD82BB952eE9C0</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthsETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xD62933a82cDBba32b4CA51309CA2D7000445d0c5">0xD62933a82cDBba32b4CA51309CA2D7000445d0c5</a>
-                </td>
-              </tr>
-              <tr>
                 <td>SynthsETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x75dc07eF40b3fC1045E25EE2bf3FfDD9BE4cCD68">0x75dc07eF40b3fC1045E25EE2bf3FfDD9BE4cCD68</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsEUR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x0F126120C20A4d696D8D27516C579a605536ba16">0x0F126120C20A4d696D8D27516C579a605536ba16</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsGBP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xeF71dd8EB832D574D35cCBD23cC9e5cde43f92De">0xeF71dd8EB832D574D35cCBD23cC9e5cde43f92De</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsJPY</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x88021D729298B0D8F59581388b49eAaA2A5CE1D2">0x88021D729298B0D8F59581388b49eAaA2A5CE1D2</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsKRW</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xF7631453c32b8278a5c8bbcC9Fe4c3072d6c25B6">0xF7631453c32b8278a5c8bbcC9Fe4c3072d6c25B6</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xf4435125fEAC75600d8CC502710A7c4F702E4180">0xf4435125fEAC75600d8CC502710A7c4F702E4180</a>
                 </td>
               </tr>
               <tr>
-                <td>SynthsLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC5301Eb1A4eD3552DFec9C21d966bD25dDe0aD40">0xC5301Eb1A4eD3552DFec9C21d966bD25dDe0aD40</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthsTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x908b892d240220D9de9A21db4Fc2f66d0893FadE">0x908b892d240220D9de9A21db4Fc2f66d0893FadE</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthsTSLA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xbf075BF30c5Fc4929785f0E50eC42078B92DF869">0xbf075BF30c5Fc4929785f0E50eC42078B92DF869</a>
-                </td>
-              </tr>
-              <tr>
                 <td>SynthsUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4e890A2aee91ddcaef97410cB45D4C6cBCA583B0">0x4e890A2aee91ddcaef97410cB45D4C6cBCA583B0</a>
                 </td>
               </tr>
               <tr>
-                <td>SynthsXAG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xA0544264Ea43FD5A536E5b8d43d7c76C3D6229a7">0xA0544264Ea43FD5A536E5b8d43d7c76C3D6229a7</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthsXAU</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xc6Cd03C78f585076cdF8f6561B7D5FebeeBD9cC2">0xc6Cd03C78f585076cdF8f6561B7D5FebeeBD9cC2</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthsXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xfFd76a5fE92Cfe681aEFDEA9FA5C22372D72B510">0xfFd76a5fE92Cfe681aEFDEA9FA5C22372D72B510</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthsXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x550683599b2f8C031F1db911598d16C793B99E51">0x550683599b2f8C031F1db911598d16C793B99E51</a>
-                </td>
-              </tr>
-              <tr>
-                <td>SynthsXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/PurgeableSynth.sol">PurgeableSynth.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x75408bdC4647Ac7EC3ec5B94a86bA65a91519Bb2">0x75408bdC4647Ac7EC3ec5B94a86bA65a91519Bb2</a>
-                </td>
-              </tr>
-              <tr>
                 <td>SystemSettings</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x48079E5a2A9BE87676C84F52Fed2b02C376AdE17">0x48079E5a2A9BE87676C84F52Fed2b02C376AdE17</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemStatus</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xcf8B3d452A56Dab495dF84905655047BC1Dc41Bc">0xcf8B3d452A56Dab495dF84905655047BC1Dc41Bc</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateSynthetix</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x46824bFAaFd049fB0Af9a45159A88e595Bbbb9f7">0x46824bFAaFd049fB0Af9a45159A88e595Bbbb9f7</a>
                 </td>
               </tr>
               <tr>
-                <td>TokenStateiADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xce53Cd0C8A8f1C0E658E524DA3fdd11ea3097965">0xce53Cd0C8A8f1C0E658E524DA3fdd11ea3097965</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x7fefB90141c56fBE2D55f36181b26B3Dc514d256">0x7fefB90141c56fBE2D55f36181b26B3Dc514d256</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x04CFbc89F161EE33f4984490B1B73A2D1548fA3D">0x04CFbc89F161EE33f4984490B1B73A2D1548fA3D</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xF1B4c2A03cd37d5B9c7B908f1BE66D2f098880Ca">0xF1B4c2A03cd37d5B9c7B908f1BE66D2f098880Ca</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8a30035876Ff4e75FE68E9758A7A1ACc0a1f5fF4">0x8a30035876Ff4e75FE68E9758A7A1ACc0a1f5fF4</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xfB4B52980FbdA970fcb414CF70d412F618656d71">0xfB4B52980FbdA970fcb414CF70d412F618656d71</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x98E250579F62F8F1096531C1aDCDF458D47cF105">0x98E250579F62F8F1096531C1aDCDF458D47cF105</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x5a78b68792607a5B6ccd7E86A8865DFb2C99DAa9">0x5a78b68792607a5B6ccd7E86A8865DFb2C99DAa9</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xe95134Cc50EADFE2C9dd950C8a86c0766a3C829F">0xe95134Cc50EADFE2C9dd950C8a86c0766a3C829F</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xC33D4644B5c6F73F34B48ABBC566BF0b62e7D647">0xC33D4644B5c6F73F34B48ABBC566BF0b62e7D647</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xdA3D35Bd84155B01a1EccD8fa96367F90675eeDc">0xdA3D35Bd84155B01a1EccD8fa96367F90675eeDc</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x20bf23be496fA039F5a11358DE93F9417189659b">0x20bf23be496fA039F5a11358DE93F9417189659b</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x93D8e930533a58c91729F2a72310748cDBbA2dCC">0x93D8e930533a58c91729F2a72310748cDBbA2dCC</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStateiXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xF356b4Fa2ff124eff4ad4a707D740F1d22c8548a">0xF356b4Fa2ff124eff4ad4a707D740F1d22c8548a</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStatesADA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xb645c8c6ebfc1EE3B178998b780cEde91ca2f8Bf">0xb645c8c6ebfc1EE3B178998b780cEde91ca2f8Bf</a>
-                </td>
-              </tr>
-              <tr>
                 <td>TokenStatesAUD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xDDEfe42790f2dEC7b0C37D4399884eFceA5361b1">0xDDEfe42790f2dEC7b0C37D4399884eFceA5361b1</a>
                 </td>
               </tr>
               <tr>
-                <td>TokenStatesBNB</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x6289fd70d3Dce8DE61896959cdEfcFF3cE46A108">0x6289fd70d3Dce8DE61896959cdEfcFF3cE46A108</a>
-                </td>
-              </tr>
-              <tr>
                 <td>TokenStatesBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x029E1687c7BB8ead5Ab02DB390eB82b87b2D54a2">0x029E1687c7BB8ead5Ab02DB390eB82b87b2D54a2</a>
                 </td>
               </tr>
               <tr>
-                <td>TokenStatesCEX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x8F70d2d9a593e28c86Ae0f1B03600310B3491C43">0x8F70d2d9a593e28c86Ae0f1B03600310B3491C43</a>
-                </td>
-              </tr>
-              <tr>
                 <td>TokenStatesCHF</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xEf58E3aC7F34649B640fb04188642B5e062Fa3Be">0xEf58E3aC7F34649B640fb04188642B5e062Fa3Be</a>
                 </td>
               </tr>
               <tr>
-                <td>TokenStatesDASH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x2fe02b9445F20d2Aa49Bef93Ca201f81FD8A7461">0x2fe02b9445F20d2Aa49Bef93Ca201f81FD8A7461</a>
-                </td>
-              </tr>
-              <tr>
                 <td>TokenStatesDEFI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xa8eE3730031f28a4a4a3Ed28A3308d83cabd9Ce1">0xa8eE3730031f28a4a4a3Ed28A3308d83cabd9Ce1</a>
                 </td>
               </tr>
               <tr>
-                <td>TokenStatesEOS</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4cab7DB60Ba60E795Fe06De213F5d5483Aa25233">0x4cab7DB60Ba60E795Fe06De213F5d5483Aa25233</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStatesETC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xcc1fb912786Ca8447235d3c5Ab7c253f98AD4E22">0xcc1fb912786Ca8447235d3c5Ab7c253f98AD4E22</a>
-                </td>
-              </tr>
-              <tr>
                 <td>TokenStatesETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xFbB6526ed92DA8915d4843a86166020d0B7bAAd0">0xFbB6526ed92DA8915d4843a86166020d0B7bAAd0</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesEUR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x4f719F0346636B9Dc23B092F637de2A66A254420">0x4f719F0346636B9Dc23B092F637de2A66A254420</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesGBP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x3DdF5dAd59F8F8e8f957709B044eE84e87B42e25">0x3DdF5dAd59F8F8e8f957709B044eE84e87B42e25</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesJPY</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x310705B7FecA92C2445D7471706e058653D9f989">0x310705B7FecA92C2445D7471706e058653D9f989</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesKRW</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x780476375FEE186824Bdabc9bDA71433017Fd591">0x780476375FEE186824Bdabc9bDA71433017Fd591</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x89656EF0A87fD947A181189209F6525E91D91f46">0x89656EF0A87fD947A181189209F6525E91D91f46</a>
                 </td>
               </tr>
               <tr>
-                <td>TokenStatesLTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x2E73aE701C3fd0c9856ed7fa5321938C9f753e36">0x2E73aE701C3fd0c9856ed7fa5321938C9f753e36</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStatesTRX</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xe34552e5E0CEBC83e742BCB11F426731EF05e34a">0xe34552e5E0CEBC83e742BCB11F426731EF05e34a</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStatesTSLA</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xaf4FE67f2e9f9faBf26691D55D0DB6A694f2f107">0xaf4FE67f2e9f9faBf26691D55D0DB6A694f2f107</a>
-                </td>
-              </tr>
-              <tr>
                 <td>TokenStatesUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x9aF5763Dc180f388A5fd20Dd7BA4B2790566f2eF">0x9aF5763Dc180f388A5fd20Dd7BA4B2790566f2eF</a>
                 </td>
               </tr>
               <tr>
-                <td>TokenStatesXAG</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x1Aa58E7823E2a4acC9B4B2A18C1e946b01D78E25">0x1Aa58E7823E2a4acC9B4B2A18C1e946b01D78E25</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStatesXAU</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x7E7B920857Ffa8569A90a9a94A07877f2a81514c">0x7E7B920857Ffa8569A90a9a94A07877f2a81514c</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStatesXMR</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x195721A55507bd3dfA65Ad1A8026A51Ad5aAD33D">0x195721A55507bd3dfA65Ad1A8026A51Ad5aAD33D</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStatesXRP</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0xd632C73752944D1d999270d4e9c33099d7C302b1">0xd632C73752944D1d999270d4e9c33099d7C302b1</a>
-                </td>
-              </tr>
-              <tr>
-                <td>TokenStatesXTZ</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://kovan.etherscan.io/address/0x76870433F648ad4FDa62111381ACe0A9FAC6F413">0x76870433F648ad4FDa62111381ACe0A9FAC6F413</a>
-                </td>
-              </tr>
-              <tr>
                 <td>TradingRewards</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0xBBfAd9112203b943f26320B330B75BABF6e2aF2a">0xBBfAd9112203b943f26320B330B75BABF6e2aF2a</a>
                 </td>
               </tr>
               <tr>
                 <td>VirtualSynthMastercopy</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/VirtualSynthMastercopy.sol">VirtualSynthMastercopy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/VirtualSynthMastercopy.sol">VirtualSynthMastercopy.sol</a></td>
                 <td><a target="_blank" href="https://kovan.etherscan.io/address/0x1f6b96d2e7a5D70777D2A9c52215044FB3f40D37">0x1f6b96d2e7a5D70777D2A9c52215044FB3f40D37</a>
                 </td>
               </tr></table>
@@ -2977,343 +2473,343 @@ Here is the list of all contracts within the current Synthetix system.
 <table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
               <tr>
                 <td>AddressResolver</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xb08b62e1cdfd37eCCd69A9ACe67322CCF801b3A6">0xb08b62e1cdfd37eCCd69A9ACe67322CCF801b3A6</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManager</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EmptyCollateralManager.sol">EmptyCollateralManager.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EmptyCollateralManager.sol">EmptyCollateralManager.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x212dD0505eDECA3947b07b86e0b0d44ba8eE81c4">0x212dD0505eDECA3947b07b86e0b0d44ba8eE81c4</a>
                 </td>
               </tr>
               <tr>
                 <td>DappMaintenance</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xCDe046E1c635d2D9F69E2081d46732d249c8465F">0xCDe046E1c635d2D9F69E2081d46732d249c8465F</a>
                 </td>
               </tr>
               <tr>
                 <td>DebtCache</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DebtCache.sol">DebtCache.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DebtCache.sol">DebtCache.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x331b338aa12E59b936E6273f7C754cae6fC715ce">0x331b338aa12E59b936E6273f7C754cae6fC715ce</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovals</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xC9B552d3d395ae89646275C1591c40FA9EB950f6">0xC9B552d3d395ae89646275C1591c40FA9EB950f6</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovalsEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xF43B4931749139AB1e7a85d50df5762481d80bEC">0xF43B4931749139AB1e7a85d50df5762481d80bEC</a>
                 </td>
               </tr>
               <tr>
                 <td>EscrowChecker</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x23bB1e0975161077F16Dd34F28780720aC356C56">0x23bB1e0975161077F16Dd34F28780720aC356C56</a>
                 </td>
               </tr>
               <tr>
                 <td>EternalStorageLiquidations</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x38a322dB8dBa2b78B622e5224611de33b8cf6480">0x38a322dB8dBa2b78B622e5224611de33b8cf6480</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherCollateral</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x1F93B9a8d1F3582697F17471207D707f7C519E38">0x1F93B9a8d1F3582697F17471207D707f7C519E38</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherCollateralsUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EmptyEtherCollateral.sol">EmptyEtherCollateral.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x4c22BC6FC957efb8D6737982e522950e77F0F47f">0x4c22BC6FC957efb8D6737982e522950e77F0F47f</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherWrapper</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/EmptyEtherWrapper.sol">EmptyEtherWrapper.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/EmptyEtherWrapper.sol">EmptyEtherWrapper.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xc57207f9b20eC58600a674a3e9FE104B9c1caB61">0xc57207f9b20eC58600a674a3e9FE104B9c1caB61</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeRates</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangeRatesWithoutInvPricing.sol">ExchangeRatesWithoutInvPricing.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangeRatesWithoutInvPricing.sol">ExchangeRatesWithoutInvPricing.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x686cbD15BBC680F8261c7502c360Aa44A2593de6">0x686cbD15BBC680F8261c7502c360Aa44A2593de6</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xEf8a2c1BC94e630463293F71bF5414d13e80F62D">0xEf8a2c1BC94e630463293F71bF5414d13e80F62D</a>
                 </td>
               </tr>
               <tr>
                 <td>Exchanger</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Exchanger.sol">Exchanger.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Exchanger.sol">Exchanger.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x712890eb501C2E7bB2f80D94326FF7ecF67ca7E4">0x712890eb501C2E7bB2f80D94326FF7ecF67ca7E4</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePool.sol">FeePool.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePool.sol">FeePool.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x381c19925E66e6117f990C74B8A3d56E5a184d2d">0x381c19925E66e6117f990C74B8A3d56E5a184d2d</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolEternalStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x0A1d3bde7751e92971891FB034AcDE4C271de408">0x0A1d3bde7751e92971891FB034AcDE4C271de408</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x2e542fA43A19F3F07230dD125f9f81411141362F">0x2e542fA43A19F3F07230dD125f9f81411141362F</a>
                 </td>
               </tr>
               <tr>
                 <td>FlexibleStorage</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x2f4959375ae4a6C368859FB51AF0513745db265F">0x2f4959375ae4a6C368859FB51AF0513745db265F</a>
                 </td>
               </tr>
               <tr>
                 <td>Issuer</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/IssuerWithoutLiquidations.sol">IssuerWithoutLiquidations.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/IssuerWithoutLiquidations.sol">IssuerWithoutLiquidations.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xc9982C611C3bE471296144D215E518F2692D6982">0xc9982C611C3bE471296144D215E518F2692D6982</a>
                 </td>
               </tr>
               <tr>
                 <td>Liquidations</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Liquidations.sol">Liquidations.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Liquidations.sol">Liquidations.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x20540E5EB1faff0DB6B1Dc5f0427C27f3852e2Ab">0x20540E5EB1faff0DB6B1Dc5f0427C27f3852e2Ab</a>
                 </td>
               </tr>
               <tr>
                 <td>Math</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Math.sol">Math.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Math.sol">Math.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xEA83b3192a8aB126BaCC2CFB0443F3A61ABe2D60">0xEA83b3192a8aB126BaCC2CFB0443F3A61ABe2D60</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyERC20</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x0064A673267696049938AA47595dD0B3C2e705A1">0x0064A673267696049938AA47595dD0B3C2e705A1</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyERC20sUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xaA5068dC2B3AADE533d3e52C6eeaadC6a8154c57">0xaA5068dC2B3AADE533d3e52C6eeaadC6a8154c57</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyFeePool</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xd8c8887A629F98C56686Be6aEEDAae7f8f75D599">0xd8c8887A629F98C56686Be6aEEDAae7f8f75D599</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x11164F6a47C3f8472D19b9aDd516Fc780cb7Ee02">0x11164F6a47C3f8472D19b9aDd516Fc780cb7Ee02</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x503e91fc2b9Ad7453700130d0825E661565E4c3b">0x503e91fc2b9Ad7453700130d0825E661565E4c3b</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x23F608ACc41bd7BCC617a01a9202214EE305439a">0x23F608ACc41bd7BCC617a01a9202214EE305439a</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x94B41091eB29b36003aC1C6f0E55a5225633c884">0x94B41091eB29b36003aC1C6f0E55a5225633c884</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xe2B26511C64FE18Acc0BE8EA7c888cDFcacD846E">0xe2B26511C64FE18Acc0BE8EA7c888cDFcacD846E</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x3E88bFAbDCd2b336C4a430262809Cf4a0AC5cd57">0x3E88bFAbDCd2b336C4a430262809Cf4a0AC5cd57</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xFf6a235133dc1233B20c5AB4C86885eBe90a69ee">0xFf6a235133dc1233B20c5AB4C86885eBe90a69ee</a>
                 </td>
               </tr>
               <tr>
                 <td>ReadProxyAddressResolver</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x7a6f9eDDC03Db81927eA4131919343f93CA9b6a7">0x7a6f9eDDC03Db81927eA4131919343f93CA9b6a7</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardEscrow.sol">RewardEscrow.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x9952e42fF92149f48b3b7dee3f921A6DD106F79F">0x9952e42fF92149f48b3b7dee3f921A6DD106F79F</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrowV2</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/ImportableRewardEscrowV2.sol">ImportableRewardEscrowV2.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/ImportableRewardEscrowV2.sol">ImportableRewardEscrowV2.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xB613d148E47525478bD8A91eF7Cf2F7F63d81858">0xB613d148E47525478bD8A91eF7Cf2F7F63d81858</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardsDistribution</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x9147Cb9e5ef262bd0b1d362134C40948dC00C3EB">0x9147Cb9e5ef262bd0b1d362134C40948dC00C3EB</a>
                 </td>
               </tr>
               <tr>
                 <td>SafeDecimalMath</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x87A479D8433121E4583D45D37B4A349b4350B79F">0x87A479D8433121E4583D45D37B4A349b4350B79F</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthUtil</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x5DF689ea1FB350bcB177Ff5e66ED8Dfe28C6045D">0x5DF689ea1FB350bcB177Ff5e66ED8Dfe28C6045D</a>
                 </td>
               </tr>
               <tr>
                 <td>Synthetix</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xEC929D0638Fe6DE68928487acCEfF73F70D8b7f1">0xEC929D0638Fe6DE68928487acCEfF73F70D8b7f1</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixBridgeToBase</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x5C3f51CEd0C2F6157e2be67c029264D6C44bfe42">0x5C3f51CEd0C2F6157e2be67c029264D6C44bfe42</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixEscrow</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xf545e539788AfEAA665B7d79568E306e37Ef05cC">0xf545e539788AfEAA665B7d79568E306e37Ef05cC</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixState</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SynthetixStateWithLimitedSetup.sol">SynthetixStateWithLimitedSetup.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SynthetixStateWithLimitedSetup.sol">SynthetixStateWithLimitedSetup.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x8c941ead543dcd6a617931FdEC173B8B0E9F4531">0x8c941ead543dcd6a617931FdEC173B8B0E9F4531</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x5D5D431159Ca065846DC38aeA5d146A541a8Ec27">0x5D5D431159Ca065846DC38aeA5d146A541a8Ec27</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x082fbbaE20E472D1cEb9b51912d069C94A2b949b">0x082fbbaE20E472D1cEb9b51912d069C94A2b949b</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x41B7BE5A411e73Baf5B2C82dCD1C110b0c177335">0x41B7BE5A411e73Baf5B2C82dCD1C110b0c177335</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x25D0b662813D959cD0D03533Df4Da051765743AC">0x25D0b662813D959cD0D03533Df4Da051765743AC</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xa5D3600FF0fb98925f926f6E7C4DeEAb3ed8D004">0xa5D3600FF0fb98925f926f6E7C4DeEAb3ed8D004</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/Synth.sol">Synth.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/Synth.sol">Synth.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x4305B0485aD00548a17473ada5b3bA8be98d283F">0x4305B0485aD00548a17473ada5b3bA8be98d283F</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemSettings</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x177D78D74879Ff3B042FB0E3C3e6d32d10d9FCE1">0x177D78D74879Ff3B042FB0E3C3e6d32d10d9FCE1</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemStatus</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xA6B255CB2Bd5Ad5f3EaE2D246ec1c2c3F7F79574">0xA6B255CB2Bd5Ad5f3EaE2D246ec1c2c3F7F79574</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateSynthetix</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x22C9624c784214D53d43BDB4Bf56B3D3Bf2e773C">0x22C9624c784214D53d43BDB4Bf56B3D3Bf2e773C</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesAAVE</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x2Bf6Bed12D1733FD649676d482c3D6d2c1c3df33">0x2Bf6Bed12D1733FD649676d482c3D6d2c1c3df33</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesBTC</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x0F73cf03DFD5595e862aa27E98914E70554eCf6d">0x0F73cf03DFD5595e862aa27E98914E70554eCf6d</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesETH</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x8E6734A7653175b3FDa62516A646709F547C8342">0x8E6734A7653175b3FDa62516A646709F547C8342</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesLINK</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xbFD9DaF95246b6e21461f2D48aD1bE5984145FFE">0xbFD9DaF95246b6e21461f2D48aD1bE5984145FFE</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesUNI</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xF6f4f3D2E06Af9BC431b8bC869A2B138a5175C26">0xF6f4f3D2E06Af9BC431b8bC869A2B138a5175C26</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesUSD</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0x77e4837cc55a3CB32A33988Fb670c5bcF13bBD3f">0x77e4837cc55a3CB32A33988Fb670c5bcF13bBD3f</a>
                 </td>
               </tr>
               <tr>
                 <td>TradingRewards</td>
-                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.48.0/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.49.0-alpha/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
                 <td><a target="_blank" href="https://kovan-explorer.optimism.io/address/0xEC4075Ff2452907FCf86c8b7EA5B0B378e187373">0xEC4075Ff2452907FCf86c8b7EA5B0B378e187373</a>
                 </td>
               </tr></table>
