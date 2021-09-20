@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.49.0-alpha/contracts/CollateralState.sol)
+**Source:** [contracts/CollateralState.sol](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralState.sol)
 
 ## Variables
 
 ### `loans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0-alpha/contracts/CollateralState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralState.sol#L17)</sub>
 
 **Type:** `mapping(address => struct ICollateralLoan.Loan[])`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0-alpha/contracts/CollateralState.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralState.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `getLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0-alpha/contracts/CollateralState.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralState.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `getNumLoans`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0-alpha/contracts/CollateralState.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralState.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `createLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0-alpha/contracts/CollateralState.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralState.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -96,7 +96,7 @@
 
 ### `updateLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0-alpha/contracts/CollateralState.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralState.sol#L42)</sub>
 
 ??? example "Details"
 

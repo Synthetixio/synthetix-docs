@@ -2,6 +2,19 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Wezen (v2.49.0)
+
+**Published**: Sep 20, 2021
+
+**Codebase**: [v2.49.0](https://github.com/Synthetixio/synthetix/tree/v2.49.0)
+
+> https://blog.synthetix.io/the-wezen-release/
+
+- [SIP-158](https://sips.synthetix.io/sips/sip-158) Deprecate Inverse Synths: This SIP will deprecate all iSynths (which have already been frozen for some time) in favor of synth shorting.
+- [SIP-169](https://sips.synthetix.io/sips/sip-169) Deprecate Low Volume L1 Synths: Deprecates a number of synths with relatively low usage on L1 (see here for more details).
+
+---
+
 # Mirfak (v2.48.0)
 
 **Published**: Sep 14, 2021
