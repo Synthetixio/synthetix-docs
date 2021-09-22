@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/interfaces/ICollateralEth.sol)
+**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol)
 
 ## External Functions
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/interfaces/ICollateralEth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -26,13 +26,13 @@
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/interfaces/ICollateralEth.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L6)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `close(uint256 id)`
+    `close(uint256 id) returns (uint256 amount, uint256 collateral)`
 
     **Visibility**
 
@@ -44,13 +44,13 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/interfaces/ICollateralEth.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L8)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `deposit(address borrower, uint256 id) payable`
+    `deposit(address borrower, uint256 id) payable returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -60,9 +60,27 @@
 
     `payable`
 
+### `draw`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L18)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `draw(uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/interfaces/ICollateralEth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -80,13 +98,13 @@
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/interfaces/ICollateralEth.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L4)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `open(uint256 amount, bytes32 currency) payable`
+    `open(uint256 amount, bytes32 currency) payable returns (uint256 id)`
 
     **Visibility**
 
@@ -98,13 +116,13 @@
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/interfaces/ICollateralEth.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L12)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `repay(address borrower, uint256 id, uint256 amount)`
+    `repay(address borrower, uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -116,13 +134,13 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/interfaces/ICollateralEth.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L10)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `withdraw(uint256 id, uint256 amount)`
+    `withdraw(uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 

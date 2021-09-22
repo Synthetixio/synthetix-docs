@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/CollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol)
+**Source:** [contracts/CollateralErc20.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol)
 
 ## Variables
 
 ### `underlyingContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L12)</sub>
 
 **Type:** `address`
 
 ### `underlyingContractDecimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L14)</sub>
 
 **Type:** `uint256`
 
@@ -22,13 +22,13 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L16)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(contract CollateralState _state, address _owner, contract ICollateralManager _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral, address _underlyingContract, uint256 _underlyingDecimals)`
+    `constructor(address _owner, contract ICollateralManager _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral, address _underlyingContract, uint256 _underlyingDecimals)`
 
     **Visibility**
 
@@ -42,7 +42,7 @@
 
 ### `scaleDownCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `scaleUpCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -80,13 +80,13 @@
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L47)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `close(uint256 id)`
+    `close(uint256 id) returns (uint256 amount, uint256 collateral)`
 
     **Visibility**
 
@@ -98,13 +98,13 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L56)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `deposit(address borrower, uint256 id, uint256 amount)`
+    `deposit(address borrower, uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -116,17 +116,17 @@
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L66)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L61)
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L91)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `draw(uint256 id, uint256 amount)`
+    `draw(uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -138,7 +138,7 @@
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -156,13 +156,13 @@
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L31)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `open(uint256 collateral, uint256 amount, bytes32 currency)`
+    `open(uint256 collateral, uint256 amount, bytes32 currency) returns (uint256 id)`
 
     **Visibility**
 
@@ -174,17 +174,17 @@
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L41)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L36)
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L83)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `repay(address borrower, uint256 id, uint256 amount)`
+    `repay(address borrower, uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -196,13 +196,13 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralErc20.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralErc20.sol#L71)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `withdraw(uint256 id, uint256 amount)`
+    `withdraw(uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 

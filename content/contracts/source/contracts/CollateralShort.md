@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol)
+**Source:** [contracts/CollateralShort.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L9)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(contract CollateralState _state, address _owner, contract ICollateralManager _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
+    `constructor(address _owner, contract ICollateralManager _manager, address _resolver, bytes32 _collateralKey, uint256 _minCratio, uint256 _minCollateral)`
 
     **Visibility**
 
@@ -24,17 +24,55 @@
 
     ``
 
-## External Functions
+## Views
 
-### `close`
+### `getShortAndCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L74)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `close(uint256 id)`
+    `getShortAndCollateral(address borrower, uint256 id) view returns (uint256 principal, uint256 collateral)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+## External Functions
+
+### `close`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L29)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `close(uint256 id) returns (uint256 amount, uint256 collateral)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `closeWithCollateral`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L61)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `closeWithCollateral(uint256 id) returns (uint256 amount, uint256 collateral)`
 
     **Visibility**
 
@@ -46,13 +84,13 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L35)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `deposit(address borrower, uint256 id, uint256 amount)`
+    `deposit(address borrower, uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -64,17 +102,17 @@
 
     **Requires**
 
-    * [require(..., "Allowance too low")](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L45)
+    * [require(..., "Allowance too low")](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L40)
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L79)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `draw(uint256 id, uint256 amount)`
+    `draw(uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -86,7 +124,7 @@
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -104,13 +142,13 @@
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L18)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `open(uint256 collateral, uint256 amount, bytes32 currency)`
+    `open(uint256 collateral, uint256 amount, bytes32 currency) returns (uint256 id)`
 
     **Visibility**
 
@@ -120,19 +158,15 @@
 
     ``
 
-    **Requires**
-
-    * [require(..., "Allowance too low")](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L27)
-
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L53)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `repay(address borrower, uint256 id, uint256 amount)`
+    `repay(address borrower, uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -144,13 +178,13 @@
 
 ### `repayWithCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L69)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `repayWithCollateral(address borrower, uint256 id, uint256 amount, bool payInterest)`
+    `repayWithCollateral(uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
@@ -162,13 +196,13 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.49.0/contracts/CollateralShort.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/CollateralShort.sol#L47)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `withdraw(uint256 id, uint256 amount)`
+    `withdraw(uint256 id, uint256 amount) returns (uint256 principal, uint256 collateral)`
 
     **Visibility**
 
