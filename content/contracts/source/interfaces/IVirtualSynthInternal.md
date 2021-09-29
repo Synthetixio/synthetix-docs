@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangerWithVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/ExchangerWithVirtualSynth.sol)
+**Source:** [contracts/ExchangerWithVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/ExchangerWithVirtualSynth.sol)
 
 ## External Functions
 
 ### `initialize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.0-ovm-alpha/contracts/ExchangerWithVirtualSynth.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/ExchangerWithVirtualSynth.sol#L12)</sub>
 
 ??? example "Details"
 
