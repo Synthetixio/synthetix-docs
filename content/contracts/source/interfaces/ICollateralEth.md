@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol)
+**Source:** [contracts/interfaces/ICollateralEth.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol)
 
 ## External Functions
 
 ### `claim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `close`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `deposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `draw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `liquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `open`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L4)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `repay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.1-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/interfaces/ICollateralEth.sol#L10)</sub>
 
 ??? example "Details"
 
