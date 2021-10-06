@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixStateWithLimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol)
+**Source:** [contracts/SynthetixStateWithLimitedSetup.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol)
 
 ## Variables
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L12)</sub>
 
 **Type:** `contract IFeePool`
 
 ### `importedDebtAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L15)</sub>
 
 **Type:** `uint256`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `importIssuerData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
     **Requires**
 
-    * [require(..., "Length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L39)
+    * [require(..., "Length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L39)
 
     **Modifiers**
 
@@ -70,7 +70,7 @@
 
 ### `setFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `_addToDebtRegister`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -118,6 +118,6 @@
 
 ### `FeePoolUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/SynthetixStateWithLimitedSetup.sol#L98)</sub>
 
 **Signature**: `FeePoolUpdated(address newFeePool)`

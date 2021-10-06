@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeRatesWithoutInvPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol)
+**Source:** [contracts/ExchangeRatesWithoutInvPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `canFreezeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `rateIsFrozen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -66,7 +66,7 @@
 
 ### `removeInversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@
 
 ### `setInversePricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -112,7 +112,7 @@
 
 ### `_notImplemented`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -130,7 +130,7 @@
 
 ### `_rateIsFrozen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -150,7 +150,7 @@
 
 ### `freezeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.2-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/ExchangeRatesWithoutInvPricing.sol#L31)</sub>
 
 ??? example "Details"
 
