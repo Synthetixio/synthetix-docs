@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/interfaces/ISynthetixBridgeEscrow.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm-alpha/contracts/interfaces/ISynthetixBridgeEscrow.sol)
 
 ## External Functions
 
 ### `approveBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.3-ovm-alpha/contracts/interfaces/ISynthetixBridgeEscrow.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm-alpha/contracts/interfaces/ISynthetixBridgeEscrow.sol#L4)</sub>
 
 ??? example "Details"
 
