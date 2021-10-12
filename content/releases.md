@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Sargas (v2.50.4-ovm)
+
+**Published**: Oct 12, 2021
+
+**Codebase**: [v2.50.4-ovm](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm)
+
+> https://blog.synthetix.io/the-sargas-release/
+
+- [SIP-135](https://sips.synthetix.io/sips/sip-135) L2 Shortable Synths
+
+> Audit: https://iosiro.com/audits/synthetix-sargas-release-smart-contract-audit
+
+---
+
 # Wezen (v2.49.0)
 
 **Published**: Sep 20, 2021
