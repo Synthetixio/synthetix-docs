@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm-alpha/contracts/EscrowChecker.sol)
+**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/EscrowChecker.sol)
 
 ## Views
 
 ### `getVestingScheduleEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm-alpha/contracts/EscrowChecker.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/EscrowChecker.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm-alpha/contracts/EscrowChecker.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/EscrowChecker.sol#L4)</sub>
 
 ??? example "Details"
 
