@@ -212,6 +212,7 @@ nav:
                 - AddressSetLib: contracts/source/libraries/AddressSetLib.md
                 - Bytes32SetLib: contracts/source/libraries/Bytes32SetLib.md
                 - Math: contracts/source/libraries/Math.md
+                - SafeCast: contracts/source/libraries/SafeCast.md
                 - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
                 - SafeMath: contracts/source/libraries/SafeMath.md
                 - VestingEntries: contracts/source/libraries/VestingEntries.md

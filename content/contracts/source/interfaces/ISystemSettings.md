@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol)
+**Source:** [contracts/interfaces/ISystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol)
 
 ## Views
 
 ### `collateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `etherWrapperBurnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `etherWrapperMaxETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `etherWrapperMintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `exchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `feePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `interactionDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `minCratio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `targetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.50.4-ovm/contracts/interfaces/ISystemSettings.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/interfaces/ISystemSettings.sol#L8)</sub>
 
 ??? example "Details"
 
