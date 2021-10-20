@@ -8,13 +8,13 @@ As a result this proxy can verifiably support token functionality in its ABI if 
 
 In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token contract](Synthetix.md), alongside the pre-existing standard proxy. Thus clients can choose to use either of these two proxies to interact with the system.
 
-**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol)
+**Source:** [contracts/ProxyERC20.sol](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -34,7 +34,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -70,7 +70,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -106,7 +106,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -124,7 +124,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -162,7 +162,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@ In the Synthetix system, an ERC20 proxy operates in front of the main [SNX token
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0-alpha/contracts/ProxyERC20.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.51.0/contracts/ProxyERC20.sol#L101)</sub>
 
 ??? example "Details"
 
