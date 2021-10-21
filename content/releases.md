@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Kaus (v2.51.0)
+
+**Published**: Oct 20, 2021
+
+**Codebase**: [v2.51.0](https://github.com/Synthetixio/synthetix/tree/v2.51.0)
+
+> https://blog.synthetix.io/the-kaus-release/
+
+- [SIP-187](https://sips.synthetix.io/sips/sip-187) Fix Partial Update in Debt Cache
+
+---
+
 # Sargas (v2.50.4-ovm)
 
 **Published**: Oct 12, 2021
