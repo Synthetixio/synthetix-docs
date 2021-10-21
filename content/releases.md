@@ -12,6 +12,8 @@
 
 - [SIP-187](https://sips.synthetix.io/sips/sip-187) Fix Partial Update in Debt Cache
 
+> Audit: https://iosiro.com/audits/synthetix-kaus-release-smart-contract-audit
+
 ---
 
 # Sargas (v2.50.4-ovm)
