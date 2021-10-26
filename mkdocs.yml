@@ -154,6 +154,8 @@ nav:
                 - TradingRewards: contracts/source/contracts/TradingRewards.md
                 - VirtualSynth: contracts/source/contracts/VirtualSynth.md
                 - VirtualSynthMastercopy: contracts/source/contracts/VirtualSynthMastercopy.md
+                - Wrapper: contracts/source/contracts/Wrapper.md
+                - WrapperFactory: contracts/source/contracts/WrapperFactory.md
               Interfaces:
                 - IAddressResolver: contracts/source/interfaces/IAddressResolver.md
                 - IBaseSynthetixBridge: contracts/source/interfaces/IBaseSynthetixBridge.md
@@ -207,6 +209,8 @@ nav:
                 - IVirtualSynth: contracts/source/interfaces/IVirtualSynth.md
                 - IVirtualSynthInternal: contracts/source/interfaces/IVirtualSynthInternal.md
                 - IWETH: contracts/source/interfaces/IWETH.md
+                - IWrapper: contracts/source/interfaces/IWrapper.md
+                - IWrapperFactory: contracts/source/interfaces/IWrapperFactory.md
               Libraries:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md
                 - AddressSetLib: contracts/source/libraries/AddressSetLib.md
