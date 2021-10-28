@@ -15,17 +15,17 @@ There are multiple ways to access Synthetix’s historical data:
 
 [The Graph](https://thegraph.com/) is a decentralized protocol for indexing and querying data. Subgraphs define which data The Graph will index and how it will be stored. This data is then provided via a GraphQL API. The Graph currently consists of a hosted service and a decentralized network. In the future, the hosted service will be gradually sunset after the decentralized network achieves feature parity.
 
-!!! warning "Subgraphs may introduce breaking changes"
-
-    The Synthetix subgraphs are under active development. Because The Graph does not currently support pinning subgraph versions, the Synthetix subgraphs should be used with caution.
-
 #### Hosted Service
 
-The hosted service can be used to query data from the Synthetix subgraphs. A list of the available Synthetix subgraphs can be found in [the README here](https://github.com/Synthetixio/synthetix-subgraph).
+The hosted service can be used to query data from the Synthetix subgraphs. All of Synthetix’s subgraphs are maintained in [this repository](https://github.com/Synthetixio/synthetix-subgraph).
 
-Each subgraph can be inspected in The Graph’s web application. For instance, you can find the API endpoint, statistics, and a "playground" for the Exchanges subgraph [here](https://thegraph.com/hosted-service/subgraph/synthetixio-team/synthetix-exchanges).
+Each subgraph can be inspected in The Graph’s web application. For instance, you can find the API endpoint, statistics, and a "playground" for the Exchanges subgraph [here](https://thegraph.com/hosted-service/subgraph/synthetixio-team/synthetix-exchanges). Links for each of the subgraphs can be found in [the README of the subgraph repository](https://github.com/Synthetixio/synthetix-subgraph/blob/main/README.md).
 
 To abstract interacting with The Graph directly, Synthetix maintains a JavaScript library: [synthetix-data](/libraries/synthetix-data). The library provides TypeScript support for the returned data and allows you to subscribe to real-time updates.
+
+!!! warning "Using subgraphs with the hosted service may introduce breaking changes"
+
+    The Synthetix subgraphs are under active development. Because The Graph does not currently support pinning subgraph versions on the hosted service, these subgraphs should be used with caution.
 
 #### The Graph Network
 
