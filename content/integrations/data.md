@@ -1,31 +1,39 @@
 # Historical Data
 
-??? tip "Tip: The Synthetix Dashboard"
+!!! tip "Synthetix Stats"
 
-    Synthetix has a custom dashboard app - https://dashboard.synthetix.io - which shows a number of key metrics within the system. Some of the dashboard is powered by the subgraphs below and some by an internal metrics gathering system (closed source). We are in the process of migrating towards the Graph for our entire dashboard: https://github.com/Synthetixio/synthetix/issues/254
+    For current metrics from the Synthetix system, visit https://stats.synthetix.io
 
-There are a number a ways to access Synthetix's historical data.
+There are multiple ways to access Synthetix’s historical data:
 
-- Query Synthetix event log history and calls using The Graph subgraphs
-- Fetch state at some block in the past using an Archive Node
-- Query event logs directly via the EVM
-- Use a third party service like Google BigQuery or DuneAnalytics
+- **The Graph** - Use [The Graph](https://thegraph.com/) to retrieve data from a GraphQL API.
+- **Event Logs** - Query event logs directly via the EVM.
+- **Archive Nodes** - Fetch state at a specific block using an archive node.
+- **Third-party Services** - Use a third-party service like Google BigQuery or Dune Analytics.
 
 ### The Graph
 
-Synthetix has indexed protocol data on the [Graph](https://thegraph.com/), a decentralized network for querying Ethereum data. The Graph allows for the creation of custom data sets, aka "subgraphs", which are easily queryable. Synthetix currently has four separate subgraphs for retrieving information specific to Synthetix smart contracts. A subgraph is an entity-based data source which replays all transactions since the genesis block and uses custom code to create queryable entities as each block is processed.
+[The Graph](https://thegraph.com/) is a decentralized protocol for indexing and querying data. Subgraphs define which data The Graph will index and how it will be stored. This data is then provided via a GraphQL API. The Graph currently consists of a hosted service and a decentralized network. In the future, the hosted service will be gradually sunset after the decentralized network achieves feature parity.
 
-Since dealing with the Graph directly can be time consuming, we've written a custom JavaScript library to help users obtain Synthetix data and abstract away the complexity of dealing with these subgraphs. It's called [synthetix-data](/libraries/synthetix-data), and it's an `npm` module to query historical or subscribe to these events in real time.
+#### Hosted Service
 
-Alternatively, each of these subgraphs can be queried using GraphQL - follow the links below to query the subgraphs using GraphQL in the data explorer UIs provided.
+The hosted service can be used to query data from the Synthetix subgraphs. All of Synthetix’s subgraphs are maintained in [this repository](https://github.com/Synthetixio/synthetix-subgraph).
 
-<a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix"><img class="rounded-image" src="/img/misc/subgraph.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-exchanges"><img class="rounded-image" src="/img/misc/subgraph-exchanges.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-rates"><img class="rounded-image" src="/img/misc/subgraph-rates.png" /></a> <a href="//thegraph.com/explorer/subgraph/synthetixio-team/synthetix-depot"><img class="rounded-image"  src="/img/misc/subgraph-depot.png" /></a>
+Each subgraph can be inspected in The Graph’s web application. For instance, you can find the API endpoint, statistics, and a "playground" for the Exchanges subgraph [here](https://thegraph.com/hosted-service/subgraph/synthetixio-team/synthetix-exchanges). Links for each of the subgraphs can be found in [the README of the subgraph repository](https://github.com/Synthetixio/synthetix-subgraph/blob/main/README.md).
 
-> The code for these subgraphs is up at: @Synthetixio/synthetix-subgraph
+!!! warning "Using subgraphs with the hosted service may introduce breaking changes"
 
-### Query event logs directly on the EVM
+    The Synthetix subgraphs are under active development. Because The Graph does not currently support pinning subgraph versions on the hosted service, these subgraphs should be used with caution.
 
-Instead of using the subgraphs provided, you could directly query the EVM via most free providers (such as Infura or Etherscan).
+To abstract interacting with The Graph’s hosted service directly, Synthetix maintains a JavaScript library: [synthetix-data](/libraries/synthetix-data). The library provides TypeScript support for the returned data and allows you to subscribe to real-time updates.
+
+#### The Graph Network
+
+Synthetix’s data can also be queried on the decentralized network. Information about the "mega" subgraph (which aggregates the individual subgraphs on the hosted service) can be found [here in the Graph Explorer](https://thegraph.com/explorer/subgraph?id=0xde910777c787903f78c89e7a0bf7f4c435cbb1fe-0&view=Overview).
+
+### Event Logs
+
+Instead of using the subgraphs, you can directly query the EVM via most free providers (such as Infura or Etherscan).
 
 !!! example "E.g. Get all `Synthetix.SynthExchange` events"
 
@@ -80,7 +88,7 @@ Instead of using the subgraphs provided, you could directly query the EVM via mo
     }
     ```
 
-### Using an Archive Node
+### Archive Nodes
 
 You can also use an Ethereum node with full historical state (an archive node) to read the blockchain state at some block in the past.
 
@@ -122,7 +130,7 @@ Query using the `{ blockTag: <Number> }` option to get state at a previous block
     })();
     ```
 
-### Third Party Services
+### Third-Party Services
 
 There are a number of third parties services that provide queryable datasources for generic smart contract usage:
 
