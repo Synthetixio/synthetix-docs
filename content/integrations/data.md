@@ -21,11 +21,11 @@ The hosted service can be used to query data from the Synthetix subgraphs. All o
 
 Each subgraph can be inspected in The Graph’s web application. For instance, you can find the API endpoint, statistics, and a "playground" for the Exchanges subgraph [here](https://thegraph.com/hosted-service/subgraph/synthetixio-team/synthetix-exchanges). Links for each of the subgraphs can be found in [the README of the subgraph repository](https://github.com/Synthetixio/synthetix-subgraph/blob/main/README.md).
 
-To abstract interacting with The Graph directly, Synthetix maintains a JavaScript library: [synthetix-data](/libraries/synthetix-data). The library provides TypeScript support for the returned data and allows you to subscribe to real-time updates.
-
 !!! warning "Using subgraphs with the hosted service may introduce breaking changes"
 
     The Synthetix subgraphs are under active development. Because The Graph does not currently support pinning subgraph versions on the hosted service, these subgraphs should be used with caution.
+
+To abstract interacting with The Graph’s hosted service directly, Synthetix maintains a JavaScript library: [synthetix-data](/libraries/synthetix-data). The library provides TypeScript support for the returned data and allows you to subscribe to real-time updates.
 
 #### The Graph Network
 
