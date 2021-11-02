@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Avior (v2.52.1-ovm)
+
+**Published**: Oct 28, 2021
+
+**Codebase**: [v2.52.1-ovm](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm)
+
+> https://blog.synthetix.io/the-avior-release/
+
+Target: L2 (OVM) only
+
+- [SIP-182](https://sips.synthetix.io/sips/sip-182) The Wrapper Factory
+
+> Audit: https://iosiro.com/audits/synthetix-avior-release-smart-contract-audit
+
+---
+
 # Kaus (v2.51.0)
 
 **Published**: Oct 20, 2021
