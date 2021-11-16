@@ -94,9 +94,11 @@ nav:
                 - EtherCollateralsUSD: contracts/source/contracts/EtherCollateralsUSD.md
                 - EtherWrapper: contracts/source/contracts/EtherWrapper.md
                 - ExchangeRates: contracts/source/contracts/ExchangeRates.md
+                - ExchangeRatesWithDexPricing: contracts/source/contracts/ExchangeRatesWithDexPricing.md
                 - ExchangeRatesWithoutInvPricing: contracts/source/contracts/ExchangeRatesWithoutInvPricing.md
                 - ExchangeState: contracts/source/contracts/ExchangeState.md
                 - Exchanger: contracts/source/contracts/Exchanger.md
+                - ExchangerWithFeeRecAlternatives: contracts/source/contracts/ExchangerWithFeeRecAlternatives.md
                 - ExchangerWithVirtualSynth: contracts/source/contracts/ExchangerWithVirtualSynth.md
                 - ExternStateToken: contracts/source/contracts/ExternStateToken.md
                 - FeePool: contracts/source/contracts/FeePool.md
@@ -170,6 +172,7 @@ nav:
                 - IDebtCache: contracts/source/interfaces/IDebtCache.md
                 - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
                 - IDepot: contracts/source/interfaces/IDepot.md
+                - IDexPriceAggregator: contracts/source/interfaces/IDexPriceAggregator.md
                 - IERC20: contracts/source/interfaces/IERC20.md
                 - IEtherCollateral: contracts/source/interfaces/IEtherCollateral.md
                 - IEtherCollateralsUSD: contracts/source/interfaces/IEtherCollateralsUSD.md

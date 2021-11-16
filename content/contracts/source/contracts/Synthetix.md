@@ -2,7 +2,7 @@
 
 ## Description
 
-**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol)
+**Source:** [contracts/Synthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol)
 
 ## Architecture
 
@@ -31,7 +31,7 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L13)</sub>
 
 **Type:** `bytes32`
 
@@ -39,7 +39,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -59,7 +59,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -77,9 +77,31 @@
 
 ## Restricted Functions
 
+### `emitAtomicSynthExchange`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L229)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitAtomicSynthExchange(address account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyExchanger](#onlyexchanger)
+
 ### `migrateEscrowBalanceToRewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -103,7 +125,7 @@
 
 ### `emitAccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L185)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L202)</sub>
 
 ??? example "Details"
 
@@ -121,7 +143,7 @@
 
 ### `rewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -139,7 +161,7 @@
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -157,7 +179,7 @@
 
 ### `supplySchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -175,9 +197,33 @@
 
 ## External Functions
 
+### `exchangeAtomically`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L104)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchangeAtomically(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, bytes32 trackingCode) returns (uint256 amountReceived)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [exchangeActive](#exchangeactive)
+
+    * [optionalProxy](#optionalproxy)
+
 ### `exchangeWithTrackingForInitiator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -201,7 +247,7 @@
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -225,7 +271,7 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L170)</sub>
 
 ??? example "Details"
 
@@ -249,7 +295,7 @@
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L133)</sub>
 
 This function is responsible for creating the inflationary SNX supply. It is a public function, so any address can ensure new tokens are released on schedule. When a new quantity is minted, the calling address is rewarded with a small incentive of SNX tokens, defined by [`SupplySchedule.minterReward`](SupplySchedule.md#minterreward).
 
@@ -273,9 +319,9 @@ This function always returns true if the transaction did not revert.
 
     **Requires**
 
-    * [require(..., "RewardsDistribution not set")](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L117)
+    * [require(..., "RewardsDistribution not set")](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L134)
 
-    * [require(..., "No supply is mintable")](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L123)
+    * [require(..., "No supply is mintable")](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L140)
 
     **Modifiers**
 
@@ -283,7 +329,7 @@ This function always returns true if the transaction did not revert.
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L121)</sub>
 
 Settles any amounts oustanding for previous exchanges into the given synth.
 
@@ -311,6 +357,12 @@ See [`Exchanger`](Exchanger.md#exchange) for further details.
 
 ### `AccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/Synthetix.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L199)</sub>
 
 **Signature**: `AccountLiquidated(address account, uint256 snxRedeemed, uint256 amountLiquidated, address liquidator)`
+
+### `AtomicSynthExchange`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/Synthetix.sol#L218)</sub>
+
+**Signature**: `AtomicSynthExchange(address account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`

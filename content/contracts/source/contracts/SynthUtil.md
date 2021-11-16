@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol)
+**Source:** [contracts/SynthUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol)
 
 ## Variables
 
 ### `addressResolverProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol#L12)</sub>
 
 **Type:** `contract IAddressResolver`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -34,27 +34,9 @@
 
 ## Views
 
-### `frozenSynths`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L69)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `frozenSynths() view returns (bytes32[])`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `synthsBalances`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -72,7 +54,7 @@
 
 ### `synthsRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -90,7 +72,7 @@
 
 ### `synthsTotalSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -108,7 +90,7 @@
 
 ### `totalSynthsInKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -128,7 +110,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -146,7 +128,7 @@
 
 ### `_synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.52.1-ovm/contracts/SynthUtil.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.53.0-alpha/contracts/SynthUtil.sol#L22)</sub>
 
 ??? example "Details"
 
