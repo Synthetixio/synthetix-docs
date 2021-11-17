@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alkaid (v2.53.0)
+
+**Published**: Nov 17, 2021
+
+**Codebase**: [v2.53.0](https://github.com/Synthetixio/synthetix/tree/v2.53.0)
+
+> https://blog.synthetix.io/the-alkaid-release/
+
+- [SIP-120](https://sips.synthetix.io/sips/sip-120/): Atomic Exchange Function: This SIP creates a new exchange function allowing users to atomically exchange synths via TWAP Uniswap oracles secured by Chainlink oracles.
+- [SIP-182](https://sips.synthetix.io/sips/sip-182) Wrappr Factory deploy to L1 (to align the protocol with L2)
+-
+
+> Audit: https://iosiro.com/audits/synthetix-alkaid-release-smart-contract-audit
+
+---
+
 # Avior (v2.52.1-ovm)
 
 **Published**: Oct 28, 2021
