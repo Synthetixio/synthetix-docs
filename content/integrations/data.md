@@ -19,7 +19,7 @@ See the [Synthetix subgraph repository](https://github.com/Synthetixio/synthetix
 
 #### Hosted Service
 
-The hosted service can be used to query data from the Synthetix subgraph. The Synthetix subgraph is available on the hosted service on **[mainnet](https://thegraph.com/hosted-service/subgraph/synthetixio-team/main)**, **[optimism](https://thegraph.com/hosted-service/subgraph/synthetixio-team/optimism-main)**, **[kovan](https://thegraph.com/hosted-service/subgraph/synthetixio-team/kovan-main)**, and **[optimism-kovan](https://thegraph.com/hosted-service/subgraph/synthetixio-team/optimism-kovan-main)**.
+The hosted service can be used to query data from the Synthetix subgraph. The Synthetix subgraph is available on the hosted service on **[mainnet](https://thegraph.com/hosted-service/subgraph/synthetixio-team/mainnet-main)**, **[optimism](https://thegraph.com/hosted-service/subgraph/synthetixio-team/optimism-main)**, **[kovan](https://thegraph.com/hosted-service/subgraph/synthetixio-team/kovan-main)**, and **[optimism-kovan](https://thegraph.com/hosted-service/subgraph/synthetixio-team/optimism-kovan-main)**.
 
 *Note that data queried from the optimism network may be incomplete due the regenesis on 11/11/21.*
 
