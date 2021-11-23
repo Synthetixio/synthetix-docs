@@ -10,6 +10,8 @@
 
 > https://blog.synthetix.io/the-alkaid-release/
 
+Target: L1 only
+
 - [SIP-120](https://sips.synthetix.io/sips/sip-120/): Atomic Exchange Function: This SIP creates a new exchange function allowing users to atomically exchange synths via TWAP Uniswap oracles secured by Chainlink oracles.
 - [SIP-182](https://sips.synthetix.io/sips/sip-182) Wrappr Factory deploy to L1 (to align the protocol with L2)
 -

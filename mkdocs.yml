@@ -116,6 +116,10 @@ nav:
                 - LegacyTokenState: contracts/source/contracts/LegacyTokenState.md
                 - LimitedSetup: contracts/source/contracts/LimitedSetup.md
                 - Liquidations: contracts/source/contracts/Liquidations.md
+                - Migration_Alkaid: contracts/source/contracts/Migration_Alkaid.md
+                - Migration_Alnitak: contracts/source/contracts/Migration_Alnitak.md
+                - Migration_Kaus: contracts/source/contracts/Migration_Kaus.md
+                - Migration_Mirfak: contracts/source/contracts/Migration_Mirfak.md
                 - MinimalProxyFactory: contracts/source/contracts/MinimalProxyFactory.md
                 - MintableSynthetix: contracts/source/contracts/MintableSynthetix.md
                 - MixinResolver: contracts/source/contracts/MixinResolver.md
@@ -123,6 +127,8 @@ nav:
                 - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
                 - NativeEtherWrapper: contracts/source/contracts/NativeEtherWrapper.md
                 - Owned: contracts/source/contracts/Owned.md
+                - OwnerRelayOnEthereum: contracts/source/contracts/OwnerRelayOnEthereum.md
+                - OwnerRelayOnOptimism: contracts/source/contracts/OwnerRelayOnOptimism.md
                 - Pausable: contracts/source/contracts/Pausable.md
                 - Proxy: contracts/source/contracts/Proxy.md
                 - ProxyERC20: contracts/source/contracts/ProxyERC20.md
@@ -137,6 +143,7 @@ nav:
                 - SecondaryDeposit: contracts/source/contracts/SecondaryDeposit.md
                 - SelfDestructible: contracts/source/contracts/SelfDestructible.md
                 - ShortingRewards: contracts/source/contracts/ShortingRewards.md
+                - StakingRewardUpdater: contracts/source/contracts/StakingRewardUpdater.md
                 - StakingRewards: contracts/source/contracts/StakingRewards.md
                 - State: contracts/source/contracts/State.md
                 - SupplySchedule: contracts/source/contracts/SupplySchedule.md
@@ -152,6 +159,7 @@ nav:
                 - SynthetixStateWithLimitedSetup: contracts/source/contracts/SynthetixStateWithLimitedSetup.md
                 - SystemSettings: contracts/source/contracts/SystemSettings.md
                 - SystemStatus: contracts/source/contracts/SystemStatus.md
+                - TemporarilyOwned: contracts/source/contracts/TemporarilyOwned.md
                 - TokenState: contracts/source/contracts/TokenState.md
                 - TradingRewards: contracts/source/contracts/TradingRewards.md
                 - VirtualSynth: contracts/source/contracts/VirtualSynth.md
@@ -189,6 +197,7 @@ nav:
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
                 - IOldSynthetixBridgeToOptimism: contracts/source/interfaces/IOldSynthetixBridgeToOptimism.md
                 - IOwned: contracts/source/interfaces/IOwned.md
+                - IOwnerRelayOnOptimism: contracts/source/interfaces/IOwnerRelayOnOptimism.md
                 - IProxy: contracts/source/interfaces/IProxy.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardEscrowV2: contracts/source/interfaces/IRewardEscrowV2.md
@@ -205,6 +214,7 @@ nav:
                 - ISynthetixBridgeToOptimism: contracts/source/interfaces/ISynthetixBridgeToOptimism.md
                 - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
                 - ISynthetixInternal: contracts/source/interfaces/ISynthetixInternal.md
+                - ISynthetixNamedContract: contracts/source/interfaces/ISynthetixNamedContract.md
                 - ISynthetixState: contracts/source/interfaces/ISynthetixState.md
                 - ISystemSettings: contracts/source/interfaces/ISystemSettings.md
                 - ISystemStatus: contracts/source/interfaces/ISystemStatus.md
@@ -219,6 +229,7 @@ nav:
                 - AddressSetLib: contracts/source/libraries/AddressSetLib.md
                 - Bytes32SetLib: contracts/source/libraries/Bytes32SetLib.md
                 - Math: contracts/source/libraries/Math.md
+                - Migration_Alkaid_Supplemental: contracts/source/libraries/Migration_Alkaid_Supplemental.md
                 - SafeCast: contracts/source/libraries/SafeCast.md
                 - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
                 - SafeMath: contracts/source/libraries/SafeMath.md
