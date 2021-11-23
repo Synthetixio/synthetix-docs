@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Menkalinan (v2.54.0)
+
+**Published**: Nov 23, 2021
+
+**Codebase**: [v2.54.0](https://github.com/Synthetixio/synthetix/tree/v2.54.0)
+
+> https://blog.synthetix.io/the-menkalinan-release/
+
+Target: L1 & L2
+
+- [SIP-167](https://sips.synthetix.io/sips/sip-167) L2 Bridged Governance. This SIP creates a bridge to connect L2 contracts to an L1 Gnosis Safe. The bridge will allow the ProtocolDAO to execute actions on L2 contracts using the same mechanism used on L1.
+
+> Audit: https://iosiro.com/audits/synthetix-menkalinan-release-smart-contract-audit
+
+---
+
 # Alkaid (v2.53.0)
 
 **Published**: Nov 17, 2021

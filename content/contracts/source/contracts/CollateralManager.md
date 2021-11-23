@@ -2,61 +2,61 @@
 
 ## Description
 
-**Source:** [contracts/CollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol)
+**Source:** [contracts/CollateralManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L35)</sub>
 
 **Type:** `bytes32`
 
 ### `baseBorrowRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L70)</sub>
 
 **Type:** `uint256`
 
 ### `baseShortRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L73)</sub>
 
 **Type:** `uint256`
 
 ### `maxDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L64)</sub>
 
 **Type:** `uint256`
 
 ### `maxSkewRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L67)</sub>
 
 **Type:** `uint256`
 
 ### `shortableSynthsByKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L58)</sub>
 
 **Type:** `mapping(bytes32 => bytes32)`
 
 ### `state`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L41)</sub>
 
 **Type:** `contract CollateralManagerState`
 
 ### `synthsByKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L53)</sub>
 
 **Type:** `mapping(bytes32 => bytes32)`
 
 ### `utilisationMultiplier`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L61)</sub>
 
 **Type:** `uint256`
 
@@ -64,7 +64,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `areShortableSynthsSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L441)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L441)</sub>
 
 ??? example "Details"
 
@@ -102,11 +102,11 @@
 
     **Requires**
 
-    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L446)
+    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L446)
 
 ### `areSynthsAndCurrenciesSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L380)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L380)</sub>
 
 ??? example "Details"
 
@@ -124,7 +124,7 @@
 
 ### `exceedsDebtLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L299)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L299)</sub>
 
 ??? example "Details"
 
@@ -142,7 +142,7 @@
 
 ### `getBorrowRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L226)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L226)</sub>
 
 ??? example "Details"
 
@@ -160,7 +160,7 @@
 
 ### `getRatesAndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L273)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L273)</sub>
 
 ??? example "Details"
 
@@ -178,7 +178,7 @@
 
 ### `getShortRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L248)</sub>
 
 ??? example "Details"
 
@@ -196,7 +196,7 @@
 
 ### `getShortRatesAndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L286)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L286)</sub>
 
 ??? example "Details"
 
@@ -214,7 +214,7 @@
 
 ### `hasAllCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -232,7 +232,7 @@
 
 ### `hasCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -250,7 +250,7 @@
 
 ### `isSynthManaged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L131)</sub>
 
 ??? example "Details"
 
@@ -268,7 +268,7 @@
 
 ### `long`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L166)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L166)</sub>
 
 ??? example "Details"
 
@@ -286,7 +286,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -304,7 +304,7 @@
 
 ### `short`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L170)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L170)</sub>
 
 ??? example "Details"
 
@@ -322,7 +322,7 @@
 
 ### `totalLong`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L174)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L174)</sub>
 
 ??? example "Details"
 
@@ -340,7 +340,7 @@
 
 ### `totalLongAndShort`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L210)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L210)</sub>
 
 ??? example "Details"
 
@@ -358,7 +358,7 @@
 
 ### `totalShort`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L194)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L194)</sub>
 
 ??? example "Details"
 
@@ -378,7 +378,7 @@
 
 ### `accrueInterest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L513)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L513)</sub>
 
 ??? example "Details"
 
@@ -396,7 +396,7 @@
 
     **Requires**
 
-    * [require(..., "Invalid rate")](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L525)
+    * [require(..., "Invalid rate")](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L525)
 
     **Modifiers**
 
@@ -404,7 +404,7 @@
 
 ### `addCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L346)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L346)</sub>
 
 ??? example "Details"
 
@@ -426,7 +426,7 @@
 
 ### `addShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L416)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L416)</sub>
 
 ??? example "Details"
 
@@ -444,7 +444,7 @@
 
     **Requires**
 
-    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L420)
+    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L420)
 
     **Modifiers**
 
@@ -452,7 +452,7 @@
 
 ### `addSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L364)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L364)</sub>
 
 ??? example "Details"
 
@@ -470,7 +470,7 @@
 
     **Requires**
 
-    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L365)
+    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L365)
 
     **Modifiers**
 
@@ -478,7 +478,7 @@
 
 ### `decrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L501)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L501)</sub>
 
 ??? example "Details"
 
@@ -500,7 +500,7 @@
 
 ### `decrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L509)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L509)</sub>
 
 ??? example "Details"
 
@@ -522,7 +522,7 @@
 
 ### `getNewLoanId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L340)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L340)</sub>
 
 ??? example "Details"
 
@@ -544,7 +544,7 @@
 
 ### `incrementLongs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L497)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L497)</sub>
 
 ??? example "Details"
 
@@ -566,7 +566,7 @@
 
 ### `incrementShorts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L505)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L505)</sub>
 
 ??? example "Details"
 
@@ -588,7 +588,7 @@
 
 ### `removeCollaterals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L355)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L355)</sub>
 
 ??? example "Details"
 
@@ -610,7 +610,7 @@
 
 ### `removeShortableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L462)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L462)</sub>
 
 ??? example "Details"
 
@@ -632,7 +632,7 @@
 
 ### `removeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L401)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L401)</sub>
 
 ??? example "Details"
 
@@ -650,7 +650,7 @@
 
     **Requires**
 
-    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L402)
+    * [require(..., "Input array length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L402)
 
     **Modifiers**
 
@@ -658,7 +658,7 @@
 
 ### `setBaseBorrowRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L328)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L328)</sub>
 
 ??? example "Details"
 
@@ -684,7 +684,7 @@
 
 ### `setBaseShortRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L333)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L333)</sub>
 
 ??? example "Details"
 
@@ -710,7 +710,7 @@
 
 ### `setMaxDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L317)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L317)</sub>
 
 ??? example "Details"
 
@@ -728,7 +728,7 @@
 
     **Requires**
 
-    * [require(..., "Must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L318)
+    * [require(..., "Must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L318)
 
     **Modifiers**
 
@@ -740,7 +740,7 @@
 
 ### `setMaxSkewRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L323)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L323)</sub>
 
 ??? example "Details"
 
@@ -766,7 +766,7 @@
 
 ### `setUtilisationMultiplier`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L311)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L311)</sub>
 
 ??? example "Details"
 
@@ -784,7 +784,7 @@
 
     **Requires**
 
-    * [require(..., "Must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L312)
+    * [require(..., "Must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L312)
 
     **Modifiers**
 
@@ -796,7 +796,7 @@
 
 ### `updateBorrowRatesCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L489)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L489)</sub>
 
 ??? example "Details"
 
@@ -818,7 +818,7 @@
 
 ### `updateShortRatesCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L493)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L493)</sub>
 
 ??? example "Details"
 
@@ -842,7 +842,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -860,7 +860,7 @@
 
 ### `_issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L137)</sub>
 
 ??? example "Details"
 
@@ -878,7 +878,7 @@
 
 ### `_synth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L145)</sub>
 
 ??? example "Details"
 
@@ -896,7 +896,7 @@
 
 ### `updateBorrowRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L481)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L481)</sub>
 
 ??? example "Details"
 
@@ -914,7 +914,7 @@
 
 ### `updateShortRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L485)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L485)</sub>
 
 ??? example "Details"
 
@@ -934,78 +934,78 @@
 
 ### `onlyCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L544)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L544)</sub>
 
 ## Events
 
 ### `BaseBorrowRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L555)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L555)</sub>
 
 **Signature**: `BaseBorrowRateUpdated(uint256 baseBorrowRate)`
 
 ### `BaseShortRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L556)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L556)</sub>
 
 **Signature**: `BaseShortRateUpdated(uint256 baseShortRate)`
 
 ### `CollateralAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L559)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L559)</sub>
 
 **Signature**: `CollateralAdded(address collateral)`
 
 ### `CollateralRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L560)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L560)</sub>
 
 **Signature**: `CollateralRemoved(address collateral)`
 
 ### `LiquidationPenaltyUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L554)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L554)</sub>
 
 **Signature**: `LiquidationPenaltyUpdated(uint256 liquidationPenalty)`
 
 ### `MaxDebtUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L552)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L552)</sub>
 
 **Signature**: `MaxDebtUpdated(uint256 maxDebt)`
 
 ### `MaxSkewRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L553)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L553)</sub>
 
 **Signature**: `MaxSkewRateUpdated(uint256 maxSkewRate)`
 
 ### `ShortableSynthAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L565)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L565)</sub>
 
 **Signature**: `ShortableSynthAdded(bytes32 synth)`
 
 ### `ShortableSynthRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L566)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L566)</sub>
 
 **Signature**: `ShortableSynthRemoved(bytes32 synth)`
 
 ### `SynthAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L562)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L562)</sub>
 
 **Signature**: `SynthAdded(bytes32 synth)`
 
 ### `SynthRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L563)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L563)</sub>
 
 **Signature**: `SynthRemoved(bytes32 synth)`
 
 ### `UtilisationMultiplierUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0-alpha/contracts/CollateralManager.sol#L557)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/CollateralManager.sol#L557)</sub>
 
 **Signature**: `UtilisationMultiplierUpdated(uint256 utilisationMultiplier)`
