@@ -2,31 +2,31 @@
 
 ## Description
 
-**Source:** [contracts/Wrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol)
+**Source:** [contracts/Wrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol)
 
 ## Variables
 
 ### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L42)</sub>
 
 **Type:** `bytes32`
 
 ### `synthContractName`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L43)</sub>
 
 **Type:** `bytes32`
 
 ### `targetSynthIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L45)</sub>
 
 **Type:** `uint256`
 
 ### `token`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L41)</sub>
 
 **Type:** `contract IERC20`
 
@@ -34,7 +34,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `burnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `calculateBurnFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L133)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `calculateMintFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -108,7 +108,7 @@
 
 ### `capacity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `getReserves`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L119)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@
 
 ### `maxTokenAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -162,7 +162,7 @@
 
 ### `mintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L147)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -198,7 +198,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -218,7 +218,7 @@
 
 ### `_burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L249)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L249)</sub>
 
 ??? example "Details"
 
@@ -236,7 +236,7 @@
 
 ### `_mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L231)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L231)</sub>
 
 ??? example "Details"
 
@@ -254,7 +254,7 @@
 
 ### `_safeTransferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L277)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L277)</sub>
 
 ??? example "Details"
 
@@ -272,7 +272,7 @@
 
 ### `_setTargetSynthIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L271)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L271)</sub>
 
 ??? example "Details"
 
@@ -290,7 +290,7 @@
 
 ### `debtCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -308,7 +308,7 @@
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -326,7 +326,7 @@
 
 ### `synth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -344,7 +344,7 @@
 
 ### `synthsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -362,7 +362,7 @@
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -380,7 +380,7 @@
 
 ### `wrapperFactory`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -400,7 +400,7 @@
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L184)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L184)</sub>
 
 ??? example "Details"
 
@@ -418,13 +418,13 @@
 
     **Requires**
 
-    * [require(..., "Balance is too low")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L185)
+    * [require(..., "Balance is too low")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L185)
 
-    * [require(..., "Currency rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L186)
+    * [require(..., "Currency rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L186)
 
-    * [require(..., "Contract cannot burn for token, token balance is zero")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L187)
+    * [require(..., "Contract cannot burn for token, token balance is zero")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L187)
 
-    * [require(..., "Transfer did not succeed")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L212)
+    * [require(..., "Transfer did not succeed")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L212)
 
     **Modifiers**
 
@@ -438,7 +438,7 @@
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -456,15 +456,15 @@
 
     **Requires**
 
-    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L160)
+    * [require(..., "Allowance not high enough")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L160)
 
-    * [require(..., "Balance is too low")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L161)
+    * [require(..., "Balance is too low")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L161)
 
-    * [require(..., "Currency rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L162)
+    * [require(..., "Currency rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L162)
 
-    * [require(..., "Contract has no spare capacity to mint")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L165)
+    * [require(..., "Contract has no spare capacity to mint")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L165)
 
-    * [require(..., "Transfer did not succeed")](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L174)
+    * [require(..., "Transfer did not succeed")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L174)
 
     **Modifiers**
 
@@ -480,18 +480,18 @@
 
 ### `issuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L314)</sub>
 
 ## Events
 
 ### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L321)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L321)</sub>
 
 **Signature**: `Burned(address account, uint256 principal, uint256 fee, uint256 amountIn)`
 
 ### `Minted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/Wrapper.sol#L320)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/Wrapper.sol#L320)</sub>
 
 **Signature**: `Minted(address account, uint256 principal, uint256 fee, uint256 amountIn)`

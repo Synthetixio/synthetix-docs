@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/SynthetixBridgeEscrow.sol)
+**Source:** [contracts/SynthetixBridgeEscrow.sol](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/SynthetixBridgeEscrow.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/SynthetixBridgeEscrow.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/SynthetixBridgeEscrow.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `approveBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/SynthetixBridgeEscrow.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/SynthetixBridgeEscrow.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -56,6 +56,6 @@
 
 ### `BridgeApproval`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/SynthetixBridgeEscrow.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/SynthetixBridgeEscrow.sol#L26)</sub>
 
 **Signature**: `BridgeApproval(address _token, address spender, uint256 value)`
