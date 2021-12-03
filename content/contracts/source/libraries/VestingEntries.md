@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/interfaces/IRewardEscrowV2.sol)
+**Source:** [contracts/interfaces/IRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/interfaces/IRewardEscrowV2.sol)
 
 ## Structs
 
 ### `VestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/interfaces/IRewardEscrowV2.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/interfaces/IRewardEscrowV2.sol#L5)</sub>
 
 | Field          | Type      | Description |
 | -------------- | --------- | ----------- |
@@ -17,7 +17,7 @@
 
 ### `VestingEntryWithID`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.54.0/contracts/interfaces/IRewardEscrowV2.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0-alpha/contracts/interfaces/IRewardEscrowV2.sol#L9)</sub>
 
 | Field          | Type      | Description |
 | -------------- | --------- | ----------- |
