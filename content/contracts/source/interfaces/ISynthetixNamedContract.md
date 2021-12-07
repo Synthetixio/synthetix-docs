@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Mirfak.sol](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/migrations/Migration_Mirfak.sol)
+**Source:** [contracts/migrations/Migration_Mirfak.sol](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/migrations/Migration_Mirfak.sol)
 
 ## Views
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/migrations/Migration_Mirfak.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/migrations/Migration_Mirfak.sol#L31)</sub>
 
 ??? example "Details"
 

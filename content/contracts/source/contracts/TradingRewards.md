@@ -6,13 +6,13 @@ This contract is an implementation of [SIP-63](https://sips.synthetix.io/sips/si
 
 The recording of such fees can be enabled by the ProtocolDAO, via [SystemSettings](https://github.com/Synthetixio/synthetix/blob/v2.27.2/contracts/SystemSettings.sol#L129).
 
-**Source:** [contracts/TradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol)
+**Source:** [contracts/TradingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol)
 
 ## Structs
 
 ### `Period`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L31)</sub>
 
 | Field                       | Type                          | Description                                                                                                                |
 | --------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -44,13 +44,13 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **Requires**
 
-    * [require(..., "Invalid period controller")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L53)
+    * [require(..., "Invalid period controller")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L53)
 
 ## Views
 
 ### `getAvailableRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -68,7 +68,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getAvailableRewardsForAccountForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -86,7 +86,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getAvailableRewardsForAccountForPeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -104,7 +104,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getCurrentPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -122,7 +122,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getPeriodAvailableRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -140,7 +140,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -158,7 +158,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getPeriodIsClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getPeriodIsFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -194,7 +194,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getPeriodRecordedFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -212,7 +212,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getPeriodTotalRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -230,7 +230,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getRewardsToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -248,7 +248,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getUnaccountedFeesForAccountForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -266,7 +266,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `getUnassignedRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -284,7 +284,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -304,7 +304,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `closeCurrentPeriodWithRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L194)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L194)</sub>
 
 ??? example "Details"
 
@@ -322,7 +322,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **Requires**
 
-    * [require(..., "Insufficient free rewards")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L197)
+    * [require(..., "Insufficient free rewards")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L197)
 
     **Modifiers**
 
@@ -336,7 +336,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `recordExchangeFeeForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L183)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L183)</sub>
 
 ??? example "Details"
 
@@ -362,7 +362,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `recoverAssignedRewardTokensAndDestroyPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L242)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L242)</sub>
 
 ??? example "Details"
 
@@ -380,9 +380,9 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **Requires**
 
-    * [require(..., "Cannot recover from active")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L244)
+    * [require(..., "Cannot recover from active")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L244)
 
-    * [require(..., "No rewards available to recover")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L247)
+    * [require(..., "No rewards available to recover")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L247)
 
     **Modifiers**
 
@@ -394,7 +394,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `recoverTokens`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L214)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L214)</sub>
 
 ??? example "Details"
 
@@ -412,9 +412,9 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **Requires**
 
-    * [require(..., "Must use another function")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L216)
+    * [require(..., "Must use another function")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L216)
 
-    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L221)
+    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L221)
 
     **Modifiers**
 
@@ -426,7 +426,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `recoverUnassignedRewardTokens`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L228)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L228)</sub>
 
 ??? example "Details"
 
@@ -444,9 +444,9 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **Requires**
 
-    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L232)
+    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L232)
 
-    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L235)
+    * [require(..., "No tokens to recover")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L235)
 
     **Modifiers**
 
@@ -458,7 +458,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `setPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L265)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L265)</sub>
 
 ??? example "Details"
 
@@ -476,7 +476,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **Requires**
 
-    * [require(..., "Invalid period controller")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L266)
+    * [require(..., "Invalid period controller")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L266)
 
     **Modifiers**
 
@@ -490,7 +490,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `_calculateRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -508,7 +508,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `_claimRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L164)</sub>
 
 ??? example "Details"
 
@@ -526,9 +526,9 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
     **Requires**
 
-    * [require(..., "Period is not finalized")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L166)
+    * [require(..., "Period is not finalized")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L166)
 
-    * [require(..., "No rewards available")](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L169)
+    * [require(..., "No rewards available")](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L169)
 
     **Emits**
 
@@ -536,7 +536,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `_validateRecoverAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L259)</sub>
 
 ??? example "Details"
 
@@ -554,7 +554,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -572,7 +572,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -592,7 +592,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `claimRewardsForPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -616,7 +616,7 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `claimRewardsForPeriods`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -642,58 +642,58 @@ The recording of such fees can be enabled by the ProtocolDAO, via [SystemSetting
 
 ### `onlyExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L280)</sub>
 
 ### `onlyPeriodController`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L275)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L275)</sub>
 
 ## Events
 
 ### `AssignedRewardTokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L293)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L293)</sub>
 
 **Signature**: `AssignedRewardTokensRecovered(address recoverAddress, uint256 amount, uint256 periodID)`
 
 ### `ExchangeFeeRecorded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L287)</sub>
 
 **Signature**: `ExchangeFeeRecorded(address account, uint256 amount, uint256 periodID)`
 
 ### `NewPeriodStarted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L289)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L289)</sub>
 
 **Signature**: `NewPeriodStarted(uint256 periodID)`
 
 ### `PeriodControllerChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L294)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L294)</sub>
 
 **Signature**: `PeriodControllerChanged(address newPeriodController)`
 
 ### `PeriodFinalizedWithRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L290)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L290)</sub>
 
 **Signature**: `PeriodFinalizedWithRewards(uint256 periodID, uint256 rewards)`
 
 ### `RewardsClaimed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L288)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L288)</sub>
 
 **Signature**: `RewardsClaimed(address account, uint256 amount, uint256 periodID)`
 
 ### `TokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L291)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L291)</sub>
 
 **Signature**: `TokensRecovered(address tokenAddress, address recoverAddress, uint256 amount)`
 
 ### `UnassignedRewardTokensRecovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.55.0/contracts/TradingRewards.sol#L292)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.0-alpha/contracts/TradingRewards.sol#L292)</sub>
 
 **Signature**: `UnassignedRewardTokensRecovered(address recoverAddress, uint256 amount)`

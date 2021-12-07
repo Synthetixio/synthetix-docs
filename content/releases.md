@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Atria (v2.55.0)
+
+**Published**: Dec 3, 2021
+
+**Codebase**: [v2.55.0](https://github.com/Synthetixio/synthetix/tree/v2.55.0)
+
+> https://blog.synthetix.io/the-atria-release/
+
+- [SIP-192](https://sips.synthetix.io/sips/sip-192): Fee Pool Accounting Error Fix and Reimbursement: Fixes an error where fees from WrapperFactory are double-counted.
+
+---
+
 # Menkalinan (v2.54.0)
 
 **Published**: Nov 23, 2021
