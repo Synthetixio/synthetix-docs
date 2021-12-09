@@ -12,6 +12,8 @@
 
 - [SIP-192](https://sips.synthetix.io/sips/sip-192): Fee Pool Accounting Error Fix and Reimbursement: Fixes an error where fees from WrapperFactory are double-counted.
 
+> Audit: https://iosiro.com/audits/synthetix-atria-release-smart-contract-audit
+
 ---
 
 # Menkalinan (v2.54.0)
