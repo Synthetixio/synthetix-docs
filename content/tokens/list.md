@@ -117,7 +117,7 @@
 
 ## ETH / BTC (sETHBTC)
 
-**Contract:** [undefined](https://etherscan.io/token/undefined)
+**Contract:** [0x104eDF1da359506548BFc7c25bA1E28C16a70235](https://etherscan.io/token/0x104eDF1da359506548BFc7c25bA1E28C16a70235)
 
 **Decimals:** 18
 
