@@ -115,6 +115,21 @@
 
 > Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 66.3052 of undefined (Uniswap), 4.1634 of undefined (Aave), 143.0753 of undefined (Terra Luna), 0.3116 of undefined (Maker), 92.2672 of undefined (Synthetix Network Token), 105.8407 of undefined (THORChain), 78.2258 of undefined (SushiSwap), 2.2499 of undefined (Compound), 0.01503 of undefined (yearn.finance), 74.5498 of undefined (Bancor), 25.608 of undefined (UMA), 294.7857 of undefined (0x), 124.2496 of undefined (Curve DAO Token), 59.0185 of undefined (1inch), 440.8356 of undefined (Ren), 4.4333 of undefined (Balancer), 57.667 of undefined (Kyber Network), 2.274 of undefined (Barnbridge), 0.2667 of undefined (Cream Finance), 102.3121 of undefined (Alpha Finance).
 
+## ETH / BTC (sETHBTC)
+
+**Contract:** [undefined](https://etherscan.io/token/undefined)
+
+**Decimals:** 18
+
+**Price:** [sETHBTC on synthetix.exchange](https://synthetix.exchange/#/synths/sETHBTC)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/ethbtc-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xAc559F25B1619171CbC396a50854A3240b6A4e99)
+
+> Tracks the price of ETH / BTC (ETHBTC) through price feeds supplied by an oracle.
+
 ## Ether (sETH)
 
 **Contract:** [0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb](https://etherscan.io/token/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb)
