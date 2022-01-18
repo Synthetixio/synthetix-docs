@@ -1,6 +1,6 @@
 env_defaults:
   docker: &ref_0
-    - image: circleci/node:12.16
+    - image: circleci/node:16.13
       auth:
         username: $DOCKERHUB_USERNAME
         password: $DOCKERHUB_TOKEN
