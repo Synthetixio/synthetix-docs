@@ -120,6 +120,8 @@ nav:
                 - Migration_Alnitak: contracts/source/contracts/Migration_Alnitak.md
                 - Migration_Kaus: contracts/source/contracts/Migration_Kaus.md
                 - Migration_Mirfak: contracts/source/contracts/Migration_Mirfak.md
+                - Migration_Peacock: contracts/source/contracts/Migration_Peacock.md
+                - Migration_PeacockOptimism: contracts/source/contracts/Migration_PeacockOptimism.md
                 - MinimalProxyFactory: contracts/source/contracts/MinimalProxyFactory.md
                 - MintableSynthetix: contracts/source/contracts/MintableSynthetix.md
                 - MixinResolver: contracts/source/contracts/MixinResolver.md
@@ -233,6 +235,7 @@ nav:
                 - SafeCast: contracts/source/libraries/SafeCast.md
                 - SafeDecimalMath: contracts/source/libraries/SafeDecimalMath.md
                 - SafeMath: contracts/source/libraries/SafeMath.md
+                - SystemSettingsLib: contracts/source/libraries/SystemSettingsLib.md
                 - VestingEntries: contracts/source/libraries/VestingEntries.md
           - Audit History: contracts/audits.md
 extra:

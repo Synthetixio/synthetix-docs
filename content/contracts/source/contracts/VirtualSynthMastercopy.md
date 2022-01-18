@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/VirtualSynthMastercopy.sol](https://github.com/Synthetixio/synthetix/tree/v2.56.1/contracts/VirtualSynthMastercopy.sol)
+**Source:** [contracts/VirtualSynthMastercopy.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/VirtualSynthMastercopy.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.56.1/contracts/VirtualSynthMastercopy.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/VirtualSynthMastercopy.sol#L9)</sub>
 
 ??? example "Details"
 

@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alhena (v2.56.1)
+
+**Published**: Dec 15, 2021
+
+**Codebase**: [v2.56.1](https://github.com/Synthetixio/synthetix/tree/v2.56.1)
+
+> https://blog.synthetix.io/the-alhena-release/
+
+- [SIP-188](https://sips.synthetix.io/sips/sip-188): Add sETHBTC synth on L1: Adds a synth to L1 that mirrors the ratio of prices between ETH and BTC.
+- [SIP-194](https://sips.synthetix.io/sips/sip-194): Fix Liquidations on L2: Fixes an error in liquidations that didn't allow L2 liquidations to function correctly.
+- [SIP-195](https://sips.synthetix.io/sips/sip-195): L2 Multi ETH Collateral Loans: Allow users to borrow synthetic assets against ETH on L2.
+
+> No audit required as no new code developed in this release.
+
+---
+
 # Atria (v2.55.0)
 
 **Published**: Dec 3, 2021
