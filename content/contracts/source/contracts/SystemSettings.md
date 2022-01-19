@@ -2,39 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol)
+**Source:** [contracts/SystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol)
 
-## Constructor
-
-### `constructor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L15)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `constructor(address _owner, address _resolver)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    ``
-
-    **Requires**
-
-    * [require(..., "read and write keys not equal")](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L19)
-
-## Views
+## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L26)</sub>
-
-**Type:** `bytes32`
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -50,9 +24,153 @@
 
     `view`
 
+**Type:** `bytes32`
+
+### `MAX_ATOMIC_TWAP_WINDOW`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L54)</sub>
+
+**Type:** `uint256`
+
+### `MAX_ATOMIC_VOLATILITY_CONSIDERATION_WINDOW`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L58)</sub>
+
+**Type:** `uint256`
+
+### `MAX_ATOMIC_VOLUME_PER_BLOCK`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L50)</sub>
+
+**Type:** `uint256`
+
+### `MAX_CROSS_DOMAIN_GAS_LIMIT`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L43)</sub>
+
+**Type:** `uint256`
+
+### `MAX_EXCHANGE_FEE_RATE`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L38)</sub>
+
+**Type:** `uint256`
+
+### `MAX_FEE_PERIOD_DURATION`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L24)</sub>
+
+**Type:** `uint256`
+
+### `MAX_ISSUANCE_RATIO`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L20)</sub>
+
+**Type:** `uint256`
+
+### `MAX_LIQUIDATION_DELAY`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L34)</sub>
+
+**Type:** `uint256`
+
+### `MAX_LIQUIDATION_PENALTY`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L30)</sub>
+
+**Type:** `uint256`
+
+### `MAX_LIQUIDATION_RATIO`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L28)</sub>
+
+**Type:** `uint256`
+
+### `MAX_MINIMUM_STAKE_TIME`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L41)</sub>
+
+**Type:** `uint256`
+
+### `MAX_TARGET_THRESHOLD`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L26)</sub>
+
+**Type:** `uint256`
+
+### `MAX_WRAPPER_BURN_FEE_RATE`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L47)</sub>
+
+**Type:** `int256`
+
+### `MAX_WRAPPER_MINT_FEE_RATE`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L46)</sub>
+
+**Type:** `int256`
+
+### `MIN_ATOMIC_TWAP_WINDOW`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L53)</sub>
+
+**Type:** `uint256`
+
+### `MIN_ATOMIC_VOLATILITY_CONSIDERATION_WINDOW`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L57)</sub>
+
+**Type:** `uint256`
+
+### `MIN_CROSS_DOMAIN_GAS_LIMIT`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L44)</sub>
+
+**Type:** `uint256`
+
+### `MIN_FEE_PERIOD_DURATION`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L23)</sub>
+
+**Type:** `uint256`
+
+### `MIN_LIQUIDATION_DELAY`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L35)</sub>
+
+**Type:** `uint256`
+
+### `RATIO_FROM_TARGET_BUFFER`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L32)</sub>
+
+**Type:** `uint256`
+
+## Constructor
+
+### `constructor`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L60)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `constructor(address _owner, address _resolver)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    ``
+
+## Views
+
 ### `aggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L133)</sub>
 
 ??? example "Details"
 
@@ -70,7 +188,7 @@
 
 ### `atomicEquivalentForDexPricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L213)</sub>
 
 ??? example "Details"
 
@@ -88,7 +206,7 @@
 
 ### `atomicExchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L177)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L219)</sub>
 
 ??? example "Details"
 
@@ -106,7 +224,7 @@
 
 ### `atomicMaxVolumePerBlock`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L201)</sub>
 
 ??? example "Details"
 
@@ -124,7 +242,7 @@
 
 ### `atomicPriceBuffer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L183)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L225)</sub>
 
 ??? example "Details"
 
@@ -142,7 +260,7 @@
 
 ### `atomicTwapWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L207)</sub>
 
 ??? example "Details"
 
@@ -160,7 +278,7 @@
 
 ### `atomicVolatilityConsiderationWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L231)</sub>
 
 ??? example "Details"
 
@@ -178,7 +296,7 @@
 
 ### `atomicVolatilityUpdateThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L237)</sub>
 
 ??? example "Details"
 
@@ -196,7 +314,7 @@
 
 ### `collapseFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L195)</sub>
 
 ??? example "Details"
 
@@ -212,9 +330,27 @@
 
     `view`
 
+### `collateralManager`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L187)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `collateralManager(address collateral) view returns (address)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `crossDomainMessageGasLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -232,7 +368,7 @@
 
 ### `debtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L129)</sub>
 
 ??? example "Details"
 
@@ -250,7 +386,7 @@
 
 ### `etherWrapperBurnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -268,7 +404,7 @@
 
 ### `etherWrapperMaxETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L149)</sub>
 
 ??? example "Details"
 
@@ -286,7 +422,7 @@
 
 ### `etherWrapperMintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -304,7 +440,7 @@
 
 ### `exchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L121)</sub>
 
 ??? example "Details"
 
@@ -322,7 +458,7 @@
 
 ### `feePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -340,7 +476,7 @@
 
 ### `interactionDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L191)</sub>
 
 ??? example "Details"
 
@@ -358,7 +494,7 @@
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -376,7 +512,7 @@
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -394,7 +530,7 @@
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -412,7 +548,7 @@
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -428,9 +564,27 @@
 
     `view`
 
+### `minCratio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L183)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `minCratio(address collateral) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `minimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -448,7 +602,7 @@
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -466,7 +620,7 @@
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -484,7 +638,7 @@
 
 ### `targetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -502,7 +656,7 @@
 
 ### `tradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L139)</sub>
 
 ??? example "Details"
 
@@ -520,7 +674,7 @@
 
 ### `waitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -538,7 +692,7 @@
 
 ### `wrapperBurnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L179)</sub>
 
 ??? example "Details"
 
@@ -556,7 +710,7 @@
 
 ### `wrapperMaxTokenAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L167)</sub>
 
 ??? example "Details"
 
@@ -574,7 +728,7 @@
 
 ### `wrapperMintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L173)</sub>
 
 ??? example "Details"
 
@@ -594,7 +748,7 @@
 
 ### `setAggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L289)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L372)</sub>
 
 ??? example "Details"
 
@@ -610,6 +764,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "Valid address must be given")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L373)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -620,7 +778,7 @@
 
 ### `setAtomicEquivalentForDexPricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L354)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L491)</sub>
 
 ??? example "Details"
 
@@ -636,6 +794,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "Atomic equivalent is 0 address")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L492)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -646,7 +808,7 @@
 
 ### `setAtomicExchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L363)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L501)</sub>
 
 ??? example "Details"
 
@@ -662,6 +824,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "MAX_EXCHANGE_FEE_RATE exceeded")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L502)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -672,7 +838,7 @@
 
 ### `setAtomicMaxVolumePerBlock`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L344)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L478)</sub>
 
 ??? example "Details"
 
@@ -688,6 +854,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "Atomic max volume exceed maximum uint192")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L479)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -698,7 +868,7 @@
 
 ### `setAtomicPriceBuffer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L368)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L511)</sub>
 
 ??? example "Details"
 
@@ -724,7 +894,7 @@
 
 ### `setAtomicTwapWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L349)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L484)</sub>
 
 ??? example "Details"
 
@@ -740,6 +910,12 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "Atomic twap window under minimum 1 min")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L485)
+
+    * [require(..., "Atomic twap window exceed maximum 1 day")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L486)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -750,7 +926,7 @@
 
 ### `setAtomicVolatilityConsiderationWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L373)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L520)</sub>
 
 ??? example "Details"
 
@@ -776,7 +952,7 @@
 
 ### `setAtomicVolatilityUpdateThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L382)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L539)</sub>
 
 ??? example "Details"
 
@@ -802,7 +978,7 @@
 
 ### `setCollapseFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L339)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L469)</sub>
 
 ??? example "Details"
 
@@ -826,15 +1002,15 @@
 
     * [CollapseFeeRateUpdated](#collapsefeerateupdated)
 
-### `setCrossDomainMessageGasLimit`
+### `setCollateralManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L450)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setCrossDomainMessageGasLimit(enum MixinSystemSettings.CrossDomainMessageGasLimits _gasLimitType, uint256 _crossDomainMessageGasLimit)`
+    `setCollateralManager(address _collateral, address _newCollateralManager)`
 
     **Visibility**
 
@@ -850,11 +1026,41 @@
 
     **Emits**
 
+    * [CollateralManagerUpdated](#collateralmanagerupdated)
+
+### `setCrossDomainMessageGasLimit`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L243)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setCrossDomainMessageGasLimit(enum MixinSystemSettings.CrossDomainMessageGasLimits _gasLimitType, uint256 _crossDomainMessageGasLimit)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Out of range xDomain gasLimit")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L247)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
     * [CrossDomainMessageGasLimitChanged](#crossdomainmessagegaslimitchanged)
 
 ### `setDebtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L284)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L367)</sub>
 
 ??? example "Details"
 
@@ -880,7 +1086,7 @@
 
 ### `setEtherWrapperBurnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L304)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L389)</sub>
 
 ??? example "Details"
 
@@ -896,6 +1102,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "rate > MAX_WRAPPER_BURN_FEE_RATE")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L390)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -906,7 +1116,7 @@
 
 ### `setEtherWrapperMaxETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L294)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L378)</sub>
 
 ??? example "Details"
 
@@ -932,7 +1142,7 @@
 
 ### `setEtherWrapperMintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L299)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L383)</sub>
 
 ??? example "Details"
 
@@ -948,6 +1158,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "rate > MAX_WRAPPER_MINT_FEE_RATE")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L384)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -958,7 +1172,7 @@
 
 ### `setExchangeFeeRateForSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L269)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L345)</sub>
 
 ??? example "Details"
 
@@ -974,13 +1188,17 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "Array lengths dont match")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L349)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
 
 ### `setFeePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L232)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L285)</sub>
 
 ??? example "Details"
 
@@ -996,6 +1214,12 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "value < MIN_FEE_PERIOD_DURATION")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L286)
+
+    * [require(..., "value > MAX_FEE_PERIOD_DURATION")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L287)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -1006,7 +1230,7 @@
 
 ### `setInteractionDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L334)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L459)</sub>
 
 ??? example "Details"
 
@@ -1022,6 +1246,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "Max 1 hour")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L460)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -1032,13 +1260,13 @@
 
 ### `setIssuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L209)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L279)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setIssuanceRatio(uint256 issuanceRatio)`
+    `setIssuanceRatio(uint256 _issuanceRatio)`
 
     **Visibility**
 
@@ -1047,6 +1275,10 @@
     **State Mutability**
 
     ``
+
+    **Requires**
+
+    * [require(..., "New issuance ratio cannot exceed MAX_ISSUANCE_RATIO")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L280)
 
     **Modifiers**
 
@@ -1058,7 +1290,7 @@
 
 ### `setLiquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L242)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L304)</sub>
 
 ??? example "Details"
 
@@ -1074,6 +1306,12 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "Must be less than 30 days")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L305)
+
+    * [require(..., "Must be greater than 1 day")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L306)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -1084,7 +1322,7 @@
 
 ### `setLiquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L331)</sub>
 
 ??? example "Details"
 
@@ -1100,6 +1338,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "penalty > MAX_LIQUIDATION_PENALTY")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L332)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -1110,7 +1352,7 @@
 
 ### `setLiquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L249)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L315)</sub>
 
 ??? example "Details"
 
@@ -1126,6 +1368,12 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "liquidationRatio > MAX_LIQUIDATION_RATIO / (1 + penalty)")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L316)
+
+    * [require(..., "liquidationRatio < MIN_LIQUIDATION_RATIO")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L324)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -1134,9 +1382,39 @@
 
     * [LiquidationRatioUpdated](#liquidationratioupdated)
 
+### `setMinCratio`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L440)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setMinCratio(address _collateral, uint256 _minCratio)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Cratio must be above 1")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L441)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [MinCratioRatioUpdated](#mincratioratioupdated)
+
 ### `setMinimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L361)</sub>
 
 ??? example "Details"
 
@@ -1152,6 +1430,10 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "stake time exceed maximum 1 week")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L362)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -1162,7 +1444,7 @@
 
 ### `setPriceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L224)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L270)</sub>
 
 ??? example "Details"
 
@@ -1188,7 +1470,7 @@
 
 ### `setRateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L264)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L339)</sub>
 
 ??? example "Details"
 
@@ -1214,13 +1496,13 @@
 
 ### `setTargetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L237)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L294)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setTargetThreshold(uint256 percent)`
+    `setTargetThreshold(uint256 _percent)`
 
     **Visibility**
 
@@ -1229,6 +1511,10 @@
     **State Mutability**
 
     ``
+
+    **Requires**
+
+    * [require(..., "Threshold too high")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L295)
 
     **Modifiers**
 
@@ -1240,7 +1526,7 @@
 
 ### `setTradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L214)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L260)</sub>
 
 ??? example "Details"
 
@@ -1266,7 +1552,7 @@
 
 ### `setWaitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L219)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L265)</sub>
 
 ??? example "Details"
 
@@ -1292,7 +1578,7 @@
 
 ### `setWrapperBurnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L324)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L422)</sub>
 
 ??? example "Details"
 
@@ -1308,6 +1594,12 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "rate > MAX_WRAPPER_BURN_FEE_RATE")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L423)
+
+    * [require(..., "rate < -MAX_WRAPPER_BURN_FEE_RATE")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L424)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -1318,7 +1610,7 @@
 
 ### `setWrapperMaxTokenAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L309)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L395)</sub>
 
 ??? example "Details"
 
@@ -1344,7 +1636,7 @@
 
 ### `setWrapperMintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L404)</sub>
 
 ??? example "Details"
 
@@ -1360,6 +1652,12 @@
 
     ``
 
+    **Requires**
+
+    * [require(..., "rate > MAX_WRAPPER_MINT_FEE_RATE")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L405)
+
+    * [require(..., "rate < -MAX_WRAPPER_MINT_FEE_RATE")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L406)
+
     **Modifiers**
 
     * [onlyOwner](#onlyowner)
@@ -1372,180 +1670,192 @@
 
 ### `AggregatorWarningFlagsUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L406)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L563)</sub>
 
 **Signature**: `AggregatorWarningFlagsUpdated(address flags)`
 
 ### `AtomicEquivalentForDexPricingUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L417)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L576)</sub>
 
 **Signature**: `AtomicEquivalentForDexPricingUpdated(bytes32 synthKey, address equivalent)`
 
 ### `AtomicExchangeFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L418)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L577)</sub>
 
 **Signature**: `AtomicExchangeFeeUpdated(bytes32 synthKey, uint256 newExchangeFeeRate)`
 
 ### `AtomicMaxVolumePerBlockUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L415)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L574)</sub>
 
 **Signature**: `AtomicMaxVolumePerBlockUpdated(uint256 newMaxVolume)`
 
 ### `AtomicPriceBufferUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L419)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L578)</sub>
 
 **Signature**: `AtomicPriceBufferUpdated(bytes32 synthKey, uint256 newBuffer)`
 
 ### `AtomicTwapWindowUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L416)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L575)</sub>
 
 **Signature**: `AtomicTwapWindowUpdated(uint256 newWindow)`
 
 ### `AtomicVolatilityConsiderationWindowUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L420)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L579)</sub>
 
 **Signature**: `AtomicVolatilityConsiderationWindowUpdated(bytes32 synthKey, uint256 newVolatilityConsiderationWindow)`
 
 ### `AtomicVolatilityUpdateThresholdUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L421)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L580)</sub>
 
 **Signature**: `AtomicVolatilityUpdateThresholdUpdated(bytes32 synthKey, uint256 newVolatilityUpdateThreshold)`
 
 ### `CollapseFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L414)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L573)</sub>
 
 **Signature**: `CollapseFeeRateUpdated(uint256 collapseFeeRate)`
 
+### `CollateralManagerUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L571)</sub>
+
+**Signature**: `CollateralManagerUpdated(address newCollateralManager)`
+
 ### `CrossDomainMessageGasLimitChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L392)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L549)</sub>
 
 **Signature**: `CrossDomainMessageGasLimitChanged(enum MixinSystemSettings.CrossDomainMessageGasLimits gasLimitType, uint256 newLimit)`
 
 ### `DebtSnapshotStaleTimeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L405)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L562)</sub>
 
 **Signature**: `DebtSnapshotStaleTimeUpdated(uint256 debtSnapshotStaleTime)`
 
 ### `EtherWrapperBurnFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L409)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L566)</sub>
 
 **Signature**: `EtherWrapperBurnFeeRateUpdated(uint256 rate)`
 
 ### `EtherWrapperMaxETHUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L407)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L564)</sub>
 
 **Signature**: `EtherWrapperMaxETHUpdated(uint256 maxETH)`
 
 ### `EtherWrapperMintFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L408)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L565)</sub>
 
 **Signature**: `EtherWrapperMintFeeRateUpdated(uint256 rate)`
 
 ### `ExchangeFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L403)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L560)</sub>
 
 **Signature**: `ExchangeFeeUpdated(bytes32 synthKey, uint256 newExchangeFeeRate)`
 
 ### `FeePeriodDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L397)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L554)</sub>
 
 **Signature**: `FeePeriodDurationUpdated(uint256 newFeePeriodDuration)`
 
 ### `InteractionDelayUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L413)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L572)</sub>
 
 **Signature**: `InteractionDelayUpdated(uint256 interactionDelay)`
 
 ### `IssuanceRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L393)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L553)</sub>
 
 **Signature**: `IssuanceRatioUpdated(uint256 newRatio)`
 
 ### `LiquidationDelayUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L399)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L556)</sub>
 
 **Signature**: `LiquidationDelayUpdated(uint256 newDelay)`
 
 ### `LiquidationPenaltyUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L401)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L558)</sub>
 
 **Signature**: `LiquidationPenaltyUpdated(uint256 newPenalty)`
 
 ### `LiquidationRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L400)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L557)</sub>
 
 **Signature**: `LiquidationRatioUpdated(uint256 newRatio)`
 
+### `MinCratioRatioUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L570)</sub>
+
+**Signature**: `MinCratioRatioUpdated(uint256 minCratio)`
+
 ### `MinimumStakeTimeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L404)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L561)</sub>
 
 **Signature**: `MinimumStakeTimeUpdated(uint256 minimumStakeTime)`
 
 ### `PriceDeviationThresholdUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L396)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L552)</sub>
 
 **Signature**: `PriceDeviationThresholdUpdated(uint256 threshold)`
 
 ### `RateStalePeriodUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L402)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L559)</sub>
 
 **Signature**: `RateStalePeriodUpdated(uint256 rateStalePeriod)`
 
 ### `TargetThresholdUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L398)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L555)</sub>
 
 **Signature**: `TargetThresholdUpdated(uint256 newTargetThreshold)`
 
 ### `TradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L394)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L550)</sub>
 
 **Signature**: `TradingRewardsEnabled(bool enabled)`
 
 ### `WaitingPeriodSecsUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L395)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L551)</sub>
 
 **Signature**: `WaitingPeriodSecsUpdated(uint256 waitingPeriodSecs)`
 
 ### `WrapperBurnFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L412)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L569)</sub>
 
 **Signature**: `WrapperBurnFeeRateUpdated(address wrapper, int256 rate)`
 
 ### `WrapperMaxTokenAmountUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L410)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L567)</sub>
 
 **Signature**: `WrapperMaxTokenAmountUpdated(address wrapper, uint256 maxTokenAmount)`
 
 ### `WrapperMintFeeRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/SystemSettings.sol#L411)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/SystemSettings.sol#L568)</sub>
 
 **Signature**: `WrapperMintFeeRateUpdated(address wrapper, int256 rate)`

@@ -2,55 +2,55 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Kaus.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol)
+**Source:** [contracts/migrations/Migration_Kaus.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L16)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L23)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L27)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_DebtCache_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L36)</sub>
 
 **Type:** `address`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L38)</sub>
 
 **Type:** `address`
 
 ### `new_ProxySynthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L34)</sub>
 
 **Type:** `address`
 
 ### `new_ProxysUSD_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L40)</sub>
 
 **Type:** `address`
 
 ### `synthetixstate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L25)</sub>
 
 **Type:** `contract SynthetixState`
 
@@ -58,7 +58,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -116,11 +116,11 @@
 
     **Requires**
 
-    * [require(..., "Only the assigned owner can be re-assigned when complete")](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L52)
+    * [require(..., "Only the assigned owner can be re-assigned when complete")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L52)
 
-    * [require(..., "Invalid contract supplied for DebtCache")](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L54)
+    * [require(..., "Invalid contract supplied for DebtCache")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L54)
 
-    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L58)
+    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L58)
 
     **Modifiers**
 
@@ -130,7 +130,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -148,7 +148,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -166,7 +166,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -184,7 +184,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -202,7 +202,7 @@
 
 ### `issuer_addSynths_6`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -220,7 +220,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_Kaus.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_Kaus.sol#L89)</sub>
 
 ??? example "Details"
 

@@ -2,63 +2,57 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_PeacockOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol)
+**Source:** [contracts/migrations/Migration_PeacockOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L19)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L26)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `feepool_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L34)</sub>
 
 **Type:** `contract FeePool`
 
 ### `feepooleternalstorage_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L30)</sub>
 
 **Type:** `contract FeePoolEternalStorage`
 
 ### `feepoolstate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L32)</sub>
 
 **Type:** `contract FeePoolState`
 
 ### `new_FeePool_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L41)</sub>
 
 **Type:** `address`
 
 ### `proxyfeepool_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L28)</sub>
 
 **Type:** `contract Proxy`
-
-### `rewardescrow_i`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L35)</sub>
-
-**Type:** `contract RewardEscrow`
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -78,7 +72,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -98,7 +92,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -116,9 +110,9 @@
 
     **Requires**
 
-    * [require(..., "Only the assigned owner can be re-assigned when complete")](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L59)
+    * [require(..., "Only the assigned owner can be re-assigned when complete")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L55)
 
-    * [require(..., "Invalid contract supplied for FeePool")](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L61)
+    * [require(..., "Invalid contract supplied for FeePool")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L57)
 
     **Modifiers**
 
@@ -128,7 +122,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -146,7 +140,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -164,7 +158,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -182,7 +176,7 @@
 
 ### `importFeePeriod_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -200,7 +194,7 @@
 
 ### `importFeePeriod_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L158)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L150)</sub>
 
 ??? example "Details"
 
@@ -218,7 +212,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1-alpha/contracts/migrations/Migration_PeacockOptimism.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L89)</sub>
 
 ??? example "Details"
 
