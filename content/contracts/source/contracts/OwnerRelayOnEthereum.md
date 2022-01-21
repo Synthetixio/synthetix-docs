@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/OwnerRelayOnEthereum.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/OwnerRelayOnEthereum.sol)
+**Source:** [contracts/OwnerRelayOnEthereum.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/OwnerRelayOnEthereum.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/OwnerRelayOnEthereum.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/OwnerRelayOnEthereum.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/OwnerRelayOnEthereum.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/OwnerRelayOnEthereum.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `initiateRelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/OwnerRelayOnEthereum.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/OwnerRelayOnEthereum.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `initiateRelayBatch`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/OwnerRelayOnEthereum.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/OwnerRelayOnEthereum.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@
 
     **Requires**
 
-    * [require(..., "Argument length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/OwnerRelayOnEthereum.sol#L72)
+    * [require(..., "Argument length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/OwnerRelayOnEthereum.sol#L72)
 
     **Modifiers**
 
@@ -106,12 +106,12 @@
 
 ### `RelayBatchInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/OwnerRelayOnEthereum.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/OwnerRelayOnEthereum.sol#L86)</sub>
 
 **Signature**: `RelayBatchInitiated(address[] targets, bytes[] payloads)`
 
 ### `RelayInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/OwnerRelayOnEthereum.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/OwnerRelayOnEthereum.sol#L85)</sub>
 
 **Signature**: `RelayInitiated(address target, bytes payload)`

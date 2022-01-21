@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Peacock (v2.57.1)
+
+**Published**: Jan 19, 2022
+
+**Codebase**: [v2.57.1](https://github.com/Synthetixio/synthetix/tree/v2.57.1)
+
+> https://blog.synthetix.io/the-peacock-release/
+
+- [SIP-200](https://sips.synthetix.io/sips/sip-200/): Fix the FeePool contract such that only correctly authorized addresses can call `setRewardsToDistribute`.
+
+> Audit: https://iosiro.com/audits/synthetix-peacock-release-smart-contract-audit
+
+---
+
 # Alhena (v2.56.1)
 
 **Published**: Dec 15, 2021

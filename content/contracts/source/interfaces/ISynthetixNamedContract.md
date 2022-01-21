@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_PeacockOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol)
+**Source:** [contracts/migrations/Migration_PeacockOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/migrations/Migration_PeacockOptimism.sol)
 
 ## Views
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.1/contracts/migrations/Migration_PeacockOptimism.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/migrations/Migration_PeacockOptimism.sol#L13)</sub>
 
 ??? example "Details"
 
