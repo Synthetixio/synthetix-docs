@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeRatesWithDexPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol)
+**Source:** [contracts/ExchangeRatesWithDexPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L9)</sub>
 
 **Type:** `bytes32`
 
@@ -16,13 +16,13 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L13)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(address _owner, address _oracle, address _resolver, bytes32[] _currencyKeys, uint256[] _newRates)`
+    `constructor(address _owner, address _resolver)`
 
     **Visibility**
 
@@ -36,7 +36,7 @@
 
 ### `atomicEquivalentForDexPricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `atomicPriceBuffer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `atomicTwapWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `atomicVolatilityConsiderationWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -108,7 +108,7 @@
 
 ### `atomicVolatilityUpdateThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `dexPriceAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@
 
 ### `effectiveAtomicValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -162,13 +162,13 @@
 
     **Requires**
 
-    * [require(..., "No atomic equivalent for src")](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L79)
+    * [require(..., "No atomic equivalent for src")](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L73)
 
-    * [require(..., "No atomic equivalent for dest")](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L82)
+    * [require(..., "No atomic equivalent for dest")](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L76)
 
 ### `synthTooVolatileForAtomicExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L121)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `setDexPriceAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -216,7 +216,7 @@
 
 ### `_dexPriceDestinationValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -234,14 +234,14 @@
 
     **Requires**
 
-    * [require(..., "Uninitialized atomic twap window")](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L112)
+    * [require(..., "Uninitialized atomic twap window")](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L106)
 
-    * [require(..., "dex price returned 0")](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L121)
+    * [require(..., "dex price returned 0")](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L115)
 
 ## Events
 
 ### `DexPriceAggregatorUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/ExchangeRatesWithDexPricing.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L163)</sub>
 
 **Signature**: `DexPriceAggregatorUpdated(address newDexPriceAggregator)`

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol)
+**Source:** [contracts/interfaces/IExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol)
 
 ## Structs
 
 ### `RateAndUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L6)</sub>
 
 | Field  | Type      | Description |
 | ------ | --------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `aggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -37,7 +37,7 @@
 
 ### `aggregators`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -55,7 +55,7 @@
 
 ### `anyRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -71,9 +71,27 @@
 
     `view`
 
+### `anyRateIsInvalidAtRound`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L18)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `anyRateIsInvalidAtRound(bytes32[] currencyKeys, uint256[] roundIds) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `currenciesUsingAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -89,27 +107,9 @@
 
     `view`
 
-### `currentRoundForRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L18)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `currentRoundForRate(bytes32 currencyKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `effectiveAtomicValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -127,7 +127,7 @@
 
 ### `effectiveValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -145,7 +145,7 @@
 
 ### `effectiveValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -161,15 +161,15 @@
 
     `view`
 
-### `effectiveValueAtRound`
+### `effectiveValueAndRatesAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L41)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `effectiveValueAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest) view returns (uint256 value)`
+    `effectiveValueAndRatesAtRound(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey, uint256 roundIdForSrc, uint256 roundIdForDest) view returns (uint256 value, uint256 sourceRate, uint256 destinationRate)`
 
     **Visibility**
 
@@ -181,7 +181,7 @@
 
 ### `getCurrentRoundId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -199,7 +199,7 @@
 
 ### `getLastRoundIdBeforeElapsedSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -217,7 +217,7 @@
 
 ### `lastRateUpdateTimes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -233,27 +233,9 @@
 
     `view`
 
-### `oracle`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L74)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `oracle() view returns (address)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `rateAndInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -271,7 +253,7 @@
 
 ### `rateAndTimestampAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -289,7 +271,7 @@
 
 ### `rateAndUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -307,7 +289,7 @@
 
 ### `rateForCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -325,7 +307,7 @@
 
 ### `rateIsFlagged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -343,7 +325,7 @@
 
 ### `rateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -361,7 +343,7 @@
 
 ### `rateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -379,7 +361,7 @@
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -397,7 +379,7 @@
 
 ### `ratesAndInvalidForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L103)</sub>
 
 ??? example "Details"
 
@@ -415,13 +397,13 @@
 
 ### `ratesAndUpdatedTimeForCurrencyLastNRounds`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L97)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `ratesAndUpdatedTimeForCurrencyLastNRounds(bytes32 currencyKey, uint256 numRounds) view returns (uint256[] rates, uint256[] times)`
+    `ratesAndUpdatedTimeForCurrencyLastNRounds(bytes32 currencyKey, uint256 numRounds, uint256 roundId) view returns (uint256[] rates, uint256[] times)`
 
     **Visibility**
 
@@ -433,7 +415,7 @@
 
 ### `ratesForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -451,7 +433,7 @@
 
 ### `synthTooVolatileForAtomicExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/interfaces/IExchangeRates.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/interfaces/IExchangeRates.sol#L110)</sub>
 
 ??? example "Details"
 

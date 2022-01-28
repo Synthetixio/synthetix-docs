@@ -6,13 +6,13 @@ FeePoolEternalStorage is currently used only to store the last fee withdrawal ti
 
 This contract is just wrapper around [EternalStorage](EternalStorage.md) with a limited setup period and a setup function that sets each account's last fee withdrawal times.
 
-**Source:** [contracts/FeePoolEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/FeePoolEternalStorage.sol)
+**Source:** [contracts/FeePoolEternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/FeePoolEternalStorage.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/FeePoolEternalStorage.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/FeePoolEternalStorage.sol#L11)</sub>
 
 Initialises the inherited [`EternalStorage`](EternalStorage.md) instance, and sets a [limited setup period](LimitedSetup.md) of six weeks.
 
@@ -34,7 +34,7 @@ Initialises the inherited [`EternalStorage`](EternalStorage.md) instance, and se
 
 ### `importFeeWithdrawalData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/FeePoolEternalStorage.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/FeePoolEternalStorage.sol#L13)</sub>
 
 This is a helper to import fee withdrawal information from a previous version of the system during the setup period.
 
@@ -54,7 +54,7 @@ This is a helper to import fee withdrawal information from a previous version of
 
     **Requires**
 
-    * [require(..., "Length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.57.2/contracts/FeePoolEternalStorage.sol#L18)
+    * [require(..., "Length mismatch")](https://github.com/Synthetixio/synthetix/tree/v2.58.0-alpha/contracts/FeePoolEternalStorage.sol#L18)
 
     **Modifiers**
 
