@@ -118,6 +118,8 @@ nav:
                 - Liquidations: contracts/source/contracts/Liquidations.md
                 - Migration_Alkaid: contracts/source/contracts/Migration_Alkaid.md
                 - Migration_Alnitak: contracts/source/contracts/Migration_Alnitak.md
+                - Migration_Alsephina: contracts/source/contracts/Migration_Alsephina.md
+                - Migration_AlsephinaOptimism: contracts/source/contracts/Migration_AlsephinaOptimism.md
                 - Migration_Kaus: contracts/source/contracts/Migration_Kaus.md
                 - Migration_Mirfak: contracts/source/contracts/Migration_Mirfak.md
                 - Migration_Peacock: contracts/source/contracts/Migration_Peacock.md
