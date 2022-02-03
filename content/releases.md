@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alsephina (v2.58.0)
+
+**Published**: Feb 2, 2022
+
+**Codebase**: [v2.58.0](https://github.com/Synthetixio/synthetix/tree/v2.58.0)
+
+> https://blog.synthetix.io/the-alsephina-release/
+
+- [SIP-184](https://sips.synthetix.io/sips/sip-184/): Dynamic Exchange Fees
+- [SIP-193](https://sips.synthetix.io/sips/sip-193/): Refactor SystemSettings into Library to reduce contract size
+- [SIP-196](https://sips.synthetix.io/sips/sip-196/): Remove all centralized oracle code from Synthetix contracts and testing
+
+> Audit: https://iosiro.com/audits/synthetix-alsephina-release-smart-contract-audit
+
+---
+
 # Peacock (v2.57.1)
 
 **Published**: Jan 19, 2022
