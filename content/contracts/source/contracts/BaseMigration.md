@@ -2,21 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/BaseMigration.sol](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/BaseMigration.sol)
-
-## Variables
-
-### `deployer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/BaseMigration.sol#L6)</sub>
-
-**Type:** `address`
+**Source:** [contracts/BaseMigration.sol](https://github.com/Synthetixio/synthetix/tree/v2.60.0-alpha/contracts/BaseMigration.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/BaseMigration.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.60.0-alpha/contracts/BaseMigration.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -36,7 +28,7 @@
 
 ### `returnOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/BaseMigration.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.60.0-alpha/contracts/BaseMigration.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -51,9 +43,3 @@
     **State Mutability**
 
     ``
-
-## Modifiers
-
-### `onlyDeployer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/BaseMigration.sol#L34)</sub>

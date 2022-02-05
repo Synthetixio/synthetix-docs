@@ -158,6 +158,7 @@ nav:
                 - SynthetixBridgeEscrow: contracts/source/contracts/SynthetixBridgeEscrow.md
                 - SynthetixBridgeToBase: contracts/source/contracts/SynthetixBridgeToBase.md
                 - SynthetixBridgeToOptimism: contracts/source/contracts/SynthetixBridgeToOptimism.md
+                - SynthetixDebtShare: contracts/source/contracts/SynthetixDebtShare.md
                 - SynthetixEscrow: contracts/source/contracts/SynthetixEscrow.md
                 - SynthetixState: contracts/source/contracts/SynthetixState.md
                 - SynthetixStateWithLimitedSetup: contracts/source/contracts/SynthetixStateWithLimitedSetup.md
@@ -216,6 +217,7 @@ nav:
                 - ISynthetixBridgeEscrow: contracts/source/interfaces/ISynthetixBridgeEscrow.md
                 - ISynthetixBridgeToBase: contracts/source/interfaces/ISynthetixBridgeToBase.md
                 - ISynthetixBridgeToOptimism: contracts/source/interfaces/ISynthetixBridgeToOptimism.md
+                - ISynthetixDebtShare: contracts/source/interfaces/ISynthetixDebtShare.md
                 - ISynthetixEscrow: contracts/source/interfaces/ISynthetixEscrow.md
                 - ISynthetixInternal: contracts/source/interfaces/ISynthetixInternal.md
                 - ISynthetixNamedContract: contracts/source/interfaces/ISynthetixNamedContract.md
