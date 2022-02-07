@@ -122,6 +122,8 @@ nav:
                 - Migration_AlsephinaOptimism: contracts/source/contracts/Migration_AlsephinaOptimism.md
                 - Migration_Kaus: contracts/source/contracts/Migration_Kaus.md
                 - Migration_Mirfak: contracts/source/contracts/Migration_Mirfak.md
+                - Migration_Mirzam: contracts/source/contracts/Migration_Mirzam.md
+                - Migration_MirzamOptimism: contracts/source/contracts/Migration_MirzamOptimism.md
                 - Migration_Peacock: contracts/source/contracts/Migration_Peacock.md
                 - Migration_PeacockOptimism: contracts/source/contracts/Migration_PeacockOptimism.md
                 - MinimalProxyFactory: contracts/source/contracts/MinimalProxyFactory.md

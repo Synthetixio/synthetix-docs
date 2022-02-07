@@ -2,61 +2,61 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_AlsephinaOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol)
+**Source:** [contracts/migrations/Migration_AlsephinaOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L19)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L26)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `exchangerates_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L32)</sub>
 
 **Type:** `contract ExchangeRates`
 
 ### `exchangestate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L28)</sub>
 
 **Type:** `contract ExchangeState`
 
 ### `new_ExchangeRates_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L41)</sub>
 
 **Type:** `address`
 
 ### `new_Exchanger_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L45)</sub>
 
 **Type:** `address`
 
 ### `new_SystemSettings_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L43)</sub>
 
 **Type:** `address`
 
 ### `systemsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L34)</sub>
 
 **Type:** `contract SystemSettings`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L30)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -64,7 +64,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -104,7 +104,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -122,13 +122,13 @@
 
     **Requires**
 
-    * [require(..., "Only the assigned owner can be re-assigned when complete")](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L59)
+    * [require(..., "Only the assigned owner can be re-assigned when complete")](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L59)
 
-    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L61)
+    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L61)
 
-    * [require(..., "Invalid contract supplied for SystemSettings")](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L62)
+    * [require(..., "Invalid contract supplied for SystemSettings")](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L62)
 
-    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L63)
+    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L63)
 
     **Modifiers**
 
@@ -138,7 +138,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L128)</sub>
 
 ??? example "Details"
 
@@ -192,7 +192,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.58.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/migrations/Migration_AlsephinaOptimism.sol#L107)</sub>
 
 ??? example "Details"
 
