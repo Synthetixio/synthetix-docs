@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Mirzam (v2.59.0)
+
+**Published**: Feb 7, 2022
+
+**Codebase**: [v2.59.0](https://github.com/Synthetixio/synthetix/tree/v2.59.0)
+
+> https://blog.synthetix.io/the-mirzam-release/
+
+- [SIP-209](https://sips.synthetix.io/sips/sip-209/): Update Exchanger for backwards compatibility
+
+---
+
 # Alsephina (v2.58.0)
 
 **Published**: Feb 2, 2022
