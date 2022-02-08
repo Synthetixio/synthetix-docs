@@ -30,9 +30,9 @@ The information below presents collateralization ratio (CR) requirements that wi
 
 ### L2 Requirements
 
-- Initial CR required for staking: 750%
+- Initial CR required for staking: 500%
 
-- CR Under 200% : Staker can get flagged for liquidation, has 3 days to fix CR ratio to 750%
+- CR Under 200% : Staker can get flagged for liquidation, has 3 days to fix CR ratio to 500%
 
 - Claiming Period: stakers need to claim rewards on a weekly basis
 
