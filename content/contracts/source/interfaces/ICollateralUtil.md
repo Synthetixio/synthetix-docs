@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICollateralUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/interfaces/ICollateralUtil.sol)
+**Source:** [contracts/interfaces/ICollateralUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.60.0/contracts/interfaces/ICollateralUtil.sol)
 
 ## Views
 
 ### `collateralRedeemed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/interfaces/ICollateralUtil.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.60.0/contracts/interfaces/ICollateralUtil.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `getCollateralRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/interfaces/ICollateralUtil.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.60.0/contracts/interfaces/ICollateralUtil.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `liquidationAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/interfaces/ICollateralUtil.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.60.0/contracts/interfaces/ICollateralUtil.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `maxLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/interfaces/ICollateralUtil.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.60.0/contracts/interfaces/ICollateralUtil.sol#L13)</sub>
 
 ??? example "Details"
 
