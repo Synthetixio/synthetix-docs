@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alphard (v2.60.0)
+
+**Published**: Feb 9, 2022
+
+**Codebase**: [v2.60.0](https://github.com/Synthetixio/synthetix/tree/v2.60.0)
+
+> https://blog.synthetix.io/the-alphard-release/
+
+- [SIP-185](https://blog.synthetix.io/the-alphard-release/) Debt Shares
+
+> Audit: https://iosiro.com/audits/synthetix-alphard-release-smart-contract-audit
+
+---
+
 # Mirzam (v2.59.0)
 
 **Published**: Feb 7, 2022
