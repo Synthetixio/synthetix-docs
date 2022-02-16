@@ -2,6 +2,21 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Polaris (v2.61.0)
+
+**Published**: Feb 14, 2022
+
+**Codebase**: [v2.61.0](https://github.com/Synthetixio/synthetix/tree/v2.61.0)
+
+> https://blog.synthetix.io/the-polaris-release/
+
+- [SIP-199](https://sips.synthetix.io/sips/sip-199) Adding sSOL to Optimism
+- [SCCP-163](https://sips.synthetix.io/sccp/sccp-163/) Update Optimism Chainlink Oracles to OCR
+
+> Audit: none required - no new contract changes
+
+---
+
 # Alphard (v2.60.0)
 
 **Published**: Feb 9, 2022
@@ -25,6 +40,8 @@
 > https://blog.synthetix.io/the-mirzam-release/
 
 - [SIP-209](https://sips.synthetix.io/sips/sip-209/): Update Exchanger for backwards compatibility
+
+> Audit: none required (a minor change to a `view` function)
 
 ---
 
