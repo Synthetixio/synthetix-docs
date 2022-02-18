@@ -122,6 +122,7 @@ nav:
                 - Migration_AlphardOptimism: contracts/source/contracts/Migration_AlphardOptimism.md
                 - Migration_Alsephina: contracts/source/contracts/Migration_Alsephina.md
                 - Migration_AlsephinaOptimism: contracts/source/contracts/Migration_AlsephinaOptimism.md
+                - Migration_Hamal: contracts/source/contracts/Migration_Hamal.md
                 - Migration_Kaus: contracts/source/contracts/Migration_Kaus.md
                 - Migration_Mirfak: contracts/source/contracts/Migration_Mirfak.md
                 - Migration_Mirzam: contracts/source/contracts/Migration_Mirzam.md

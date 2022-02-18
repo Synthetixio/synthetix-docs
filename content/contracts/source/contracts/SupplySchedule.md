@@ -10,7 +10,7 @@ The supply decay follows an exponential decay formula calculated for each week.
 
 supplyForWeek = Initial Weekly Supply \* (1 - rate of decay) ^ number of weeks
 
-**Source:** [contracts/SupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol)
+**Source:** [contracts/SupplySchedule.sol](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol)
 
 ## Architecture
 
@@ -20,15 +20,15 @@ supplyForWeek = Initial Weekly Supply \* (1 - rate of decay) ^ number of weeks
 
 ## Variables
 
-### `DECAY_RATE`
+### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L22)</sub>
 
-**Type:** `uint256`
+**Type:** `bytes32`
 
 ### `INFLATION_START_DATE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L30)</sub>
 
 The timestamp at which the inflationary SNX supply began to be minted.
 
@@ -36,25 +36,15 @@ The timestamp at which the inflationary SNX supply began to be minted.
 
 **Type:** `uint256`
 
-### `INITIAL_WEEKLY_SUPPLY`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L33)</sub>
-
-The amount of tokens being issued weekly before exponential decay started. Used to calculate the supply each week once decay starts.
-
-**Value:** `1442307692307692307692307 - 75e6 / 52`
-
-**Type:** `uint256`
-
 ### `MAX_MINTER_REWARD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L44)</sub>
 
 **Type:** `uint256`
 
 ### `MINT_BUFFER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L49)</sub>
 
 A buffer added to the lastMintEvent to ensure that synthetix rewards are issued after a feePeriod closes.
 
@@ -64,7 +54,7 @@ A buffer added to the lastMintEvent to ensure that synthetix rewards are issued 
 
 ### `MINT_PERIOD_DURATION`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L47)</sub>
 
 The duration of each minting period. This is constant at one week.
 
@@ -72,45 +62,29 @@ The duration of each minting period. This is constant at one week.
 
 **Type:** `uint256`
 
-### `SUPPLY_DECAY_END`
+### `inflationAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L47)</sub>
-
-Week number when supply decay ends. Used along with weekCounter to determine when decay supply should end.
-
-Inflation after this week would become be on the terminal inflation schedule.
-
-**Value:** `234`
-
-**Type:** `uint8`
-
-### `SUPPLY_DECAY_START`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L46)</sub>
-
-Week number when supply decay starts. Used along with weekCounter to determine when decay supply starts.
-
-**Value:** `40`
-
-**Type:** `uint8`
-
-### `TERMINAL_SUPPLY_RATE_ANNUAL`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L36)</sub>
 
 **Type:** `uint256`
 
 ### `lastMintEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L25)</sub>
 
 The timestamp when new supply was last minted - Is set to the number of weeks since inflation start date plus a minting buffer to allow feePeriod to close first.
 
 **Type:** `uint256`
 
+### `maxInflationAmount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L38)</sub>
+
+**Type:** `uint256`
+
 ### `minterReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L33)</sub>
 
 Used as the quantity of SNX to reward the caller of [`Synthetix.mint`](Synthetix.md#mint), which incentivises users to continue minting the inflationary supply over time. Initialised to 200 SNX.
 
@@ -118,7 +92,7 @@ Used as the quantity of SNX to reward the caller of [`Synthetix.mint`](Synthetix
 
 ### `synthetixProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L41)</sub>
 
 The address of the main [`SynthetixProxy`](Proxy.md) contract.
 
@@ -126,7 +100,7 @@ The address of the main [`SynthetixProxy`](Proxy.md) contract.
 
 ### `weekCounter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L28)</sub>
 
 Counter to record the number of weeks inflation has been issued and calculate the applicable supply to add based on the current weekCounter.
 
@@ -136,7 +110,7 @@ Counter to record the number of weeks inflation has been issued and calculate th
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L51)</sub>
 
 Sets up the minting schedule and the inherited [`Owned`](Owned.md) instance.
 
@@ -158,7 +132,7 @@ Sets up the minting schedule and the inherited [`Owned`](Owned.md) instance.
 
 ### `isMintable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L93)</sub>
 
 Returns true if minting from the inflationary supply is permitted at the present time.
 
@@ -180,7 +154,7 @@ This means that tokens are only mintable once a week.
 
 ### `mintableSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L65)</sub>
 
 Returns the number of tokens currently mintable from the inflationary supply.
 
@@ -200,45 +174,9 @@ If [`isMintable`](#ismintable) returns false, this is $0$. Otherwise, it is the 
 
     `view`
 
-### `terminalInflationSupply`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L127)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `terminalInflationSupply(uint256 totalSupply, uint256 numOfWeeks) pure returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `pure`
-
-### `tokenDecaySupplyForWeek`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L114)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `tokenDecaySupplyForWeek(uint256 counter) pure returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `pure`
-
 ### `weeksSinceLastIssuance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L82)</sub>
 
 This just returns its argument floor divided by [`MINT_PERIOD_DURATION`](#MINT_PERIOD_DURATION). Since this is only used in `mintableSupply()` it seems as if a variable would have done better than a public function.
 
@@ -260,7 +198,7 @@ This just returns its argument floor divided by [`MINT_PERIOD_DURATION`](#MINT_P
 
 ### `recordMintEvent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L109)</sub>
 
 This is called within [`Synthetix.mint`](Synthetix.md#mint) to declare that the outstanding inflationary supply of tokens has been minted before they are actually distributed.
 
@@ -274,7 +212,7 @@ The function always returns `true` if the transaction was not reverted.
 
     **Signature**
 
-    `recordMintEvent(uint256 supplyMinted) returns (bool)`
+    `recordMintEvent(uint256 supplyMinted) returns (uint256)`
 
     **Visibility**
 
@@ -292,9 +230,65 @@ The function always returns `true` if the transaction was not reverted.
 
     * [SupplyMinted](#supplyminted)
 
+### `setInflationAmount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L154)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setInflationAmount(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Amount above maximum inflation")](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L155)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [InflationAmountUpdated](#inflationamountupdated)
+
+### `setMaxInflationAmount`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L160)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setMaxInflationAmount(uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [MaxInflationAmountUpdated](#maxinflationamountupdated)
+
 ### `setMinterReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L186)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L132)</sub>
 
 Allows the owner to set the current [minter reward](#minterreward).
 
@@ -314,7 +308,7 @@ Allows the owner to set the current [minter reward](#minterreward).
 
     **Requires**
 
-    * [require(..., "Reward cannot exceed max minter reward")](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L187)
+    * [require(..., "Reward cannot exceed max minter reward")](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L133)
 
     **Modifiers**
 
@@ -326,7 +320,7 @@ Allows the owner to set the current [minter reward](#minterreward).
 
 ### `setSynthetixProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L199)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L143)</sub>
 
 Allows the owner to set the [`synthetix`](#synthetix) address.
 
@@ -346,7 +340,7 @@ Allows the owner to set the [`synthetix`](#synthetix) address.
 
     **Requires**
 
-    * [require(..., "Address cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L200)
+    * [require(..., "Address cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L144)
 
     **Modifiers**
 
@@ -360,15 +354,27 @@ Allows the owner to set the [`synthetix`](#synthetix) address.
 
 ### `onlySynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L210)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L170)</sub>
 
 Reverts the transaction if `msg.sender` is not the [`synthetix`](#synthetix) address. Synthetix address is found by lookup to the proxy.target().
 
 ## Events
 
+### `InflationAmountUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L192)</sub>
+
+**Signature**: `InflationAmountUpdated(uint256 newInflationAmount)`
+
+### `MaxInflationAmountUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L197)</sub>
+
+**Signature**: `MaxInflationAmountUpdated(uint256 newInflationAmount)`
+
 ### `MinterRewardUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L227)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L187)</sub>
 
 Records that the [minter reward was updated](#setminterreward).
 
@@ -376,7 +382,7 @@ Records that the [minter reward was updated](#setminterreward).
 
 ### `SupplyMinted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L222)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L182)</sub>
 
 Records that a quantity of new tokens was [minted](#updatemintvalues).
 
@@ -384,6 +390,6 @@ Records that a quantity of new tokens was [minted](#updatemintvalues).
 
 ### `SynthetixProxyUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.61.2-alpha/contracts/SupplySchedule.sol#L232)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/SupplySchedule.sol#L202)</sub>
 
 **Signature**: `SynthetixProxyUpdated(address newAddress)`
