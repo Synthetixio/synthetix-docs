@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/interfaces/IRewardsDistribution.sol)
+**Source:** [contracts/interfaces/IRewardsDistribution.sol](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/interfaces/IRewardsDistribution.sol)
 
 ## Structs
 
 ### `DistributionData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/interfaces/IRewardsDistribution.sol#L6)</sub>
 
 | Field         | Type      | Description |
 | ------------- | --------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `authority`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/interfaces/IRewardsDistribution.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/interfaces/IRewardsDistribution.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -37,7 +37,7 @@
 
 ### `distributions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/interfaces/IRewardsDistribution.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/interfaces/IRewardsDistribution.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -55,7 +55,7 @@
 
 ### `distributionsLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/interfaces/IRewardsDistribution.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/interfaces/IRewardsDistribution.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -75,7 +75,7 @@
 
 ### `distributeRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0-alpha/contracts/interfaces/IRewardsDistribution.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/interfaces/IRewardsDistribution.sol#L19)</sub>
 
 ??? example "Details"
 
