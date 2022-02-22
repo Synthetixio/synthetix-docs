@@ -2,6 +2,21 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Hamal (v2.62.0)
+
+**Published**: Feb 19, 2022
+
+**Codebase**: [v2.62.0](https://github.com/Synthetixio/synthetix/tree/v2.62.0)
+
+> https://blog.synthetix.io/the-hamal-release/
+
+- [SIP-202 Target Staking Ratio](https://sips.synthetix.io/sips/sip-202/): Introduce a target staking ratio incentivized through inflation.
+- [SCCP-164 Extend Burn Lock to 7 Days](https://sips.synthetix.io/sccp/sccp-164): Adjust Burn Lock from 24 hours to 7 days (168 hours).
+
+> Audit: https://iosiro.com/audits/synthetix-hamal-release-smart-contract-audit
+
+---
+
 # Polaris (v2.61.0)
 
 **Published**: Feb 14, 2022
