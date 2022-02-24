@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/BaseMigration.sol](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/BaseMigration.sol)
+**Source:** [contracts/BaseMigration.sol](https://github.com/Synthetixio/synthetix/tree/v2.63.0/contracts/BaseMigration.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/BaseMigration.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.0/contracts/BaseMigration.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `returnOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.62.0/contracts/BaseMigration.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.0/contracts/BaseMigration.sol#L9)</sub>
 
 ??? example "Details"
 
