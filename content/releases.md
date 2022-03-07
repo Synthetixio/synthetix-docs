@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Algieba (v2.63.0)
+
+**Published**: Feb 24, 2022
+
+**Codebase**: [v2.63.0](https://github.com/Synthetixio/synthetix/tree/v2.63.0)
+
+> https://blog.synthetix.io/the-algieba-release/
+
+- [SIP-205: Add AVAX, MATIC and EUR To Optimism ](https://sips.synthetix.io/sips/sip-205/): Add AVAX, MATIC and EUR Synths on Optimism for trading and shorting.
+
+---
+
 # Hamal (v2.62.0)
 
 **Published**: Feb 19, 2022
