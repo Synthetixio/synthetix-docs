@@ -106,11 +106,11 @@ The system tracks the debt pool (as well as each individual staker’s debt) eac
 
 Updating the Cumulative Debt Delta Ratio on the Debt Register allows the system to track every user’s % of the debt. It calculates the % change the new debt introduces against the debt pool using the formula below and appends it to the Debt Register:
 
-`New Debt Minted ( Total Existing Debt + New Debt)`
+`New Debt Minted = Total Existing Debt + New Debt`
 
 The staker’s last mint/burn action is then recorded in the Debt Register within their issuance data and the relative index number at which this action happened. The detail recorded is the percentage of the debt pool they represent, which is calculated by this formula:
 
-`User debt percentage =(New Debt + Existing Debt) (Previous Debt Pool + New Debt)`
+`User Debt Percentage = (New Debt + Existing User Debt) / (Previous Debt Pool + New Debt)`
 
 The Debt Register holds the Cumulative Debt Delta Ratio, which is the product of the calculation above, and the relative time (index) the debt was added, so that it can be used to calculate any user’s % of the debt pool at any index in the future based on the % shift in the debt pool their last mint/burn caused.
 
@@ -124,11 +124,11 @@ When a staker pays back their debt (i.e. by burning the Synths they minted) to u
 
 This is the inverse calculation from when a user mints new debt:
 
-`user's new debt percentage =(existing debt - debt to be burned) (debt pool - debt to be burned)`
+`user's new debt percentage =(existing debt - debt to be burned) / (debt pool - debt to be burned)`
 
 This is the formula for calculating the updated Cumulative Debt Delta:
 
-`delta = debt to be burned (debt pool -debt to be burned)`
+`delta = debt to be burned / (debt pool - debt to be burned)`
 
 If a staker burns all their debt, their issuance data in the Debt Register will be set to 0 and they will no longer be part of the debt pool.
 
