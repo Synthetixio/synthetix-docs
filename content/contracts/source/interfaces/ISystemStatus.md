@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol)
+**Source:** [contracts/interfaces/ISystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol)
 
 ## Structs
 
 ### `Status`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L5)</sub>
 
 | Field        | Type   | Description |
 | ------------ | ------ | ----------- |
@@ -17,7 +17,7 @@
 
 ### `Suspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L10)</sub>
 
 | Field       | Type      | Description |
 | ----------- | --------- | ----------- |
@@ -28,7 +28,7 @@
 
 ### `accessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `exchangeSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -62,9 +62,63 @@
 
     `view`
 
+### `futuresMarketSuspension`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L52)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `futuresMarketSuspension(bytes32 marketKey) view returns (bool suspended, uint248 reason)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `futuresSuspension`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L46)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `futuresSuspension() view returns (bool suspended, uint248 reason)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `getFuturesMarketSuspensions`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L64)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `getFuturesMarketSuspensions(bytes32[] marketKeys) view returns (bool[] suspensions, uint256[] reasons)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `getSynthExchangeSuspensions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -82,7 +136,7 @@
 
 ### `getSynthSuspensions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -100,7 +154,7 @@
 
 ### `issuanceSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -118,7 +172,7 @@
 
 ### `requireExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -136,7 +190,7 @@
 
 ### `requireExchangeBetweenSynthsAllowed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -152,9 +206,45 @@
 
     `view`
 
+### `requireFuturesActive`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L28)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `requireFuturesActive() view`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `requireFuturesMarketActive`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L30)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `requireFuturesMarketActive(bytes32 marketKey) view`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `requireIssuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -172,7 +262,7 @@
 
 ### `requireSynthActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -190,7 +280,7 @@
 
 ### `requireSynthsActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -208,7 +298,7 @@
 
 ### `requireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -226,7 +316,7 @@
 
 ### `synthExchangeSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -242,9 +332,27 @@
 
     `view`
 
+### `synthSuspended`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L36)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `synthSuspended(bytes32 currencyKey) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `synthSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -260,9 +368,27 @@
 
     `view`
 
+### `systemSuspended`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L22)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `systemSuspended() view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `systemSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -280,9 +406,45 @@
 
 ## External Functions
 
+### `suspendFuturesMarket`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L73)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `suspendFuturesMarket(bytes32 marketKey, uint256 reason)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `suspendIssuance`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L70)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `suspendIssuance(uint256 reason)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
 ### `suspendSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -300,7 +462,7 @@
 
 ### `updateAccessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISystemStatus.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISystemStatus.sol#L75)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,31 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
 
 ## External Functions
 
+### `closeFeePeriod`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L5)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `closeFeePeriod(uint256 snxBackedDebt, uint256 debtSharesSupply)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
 ### `depositAndMigrateEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -26,7 +44,7 @@
 
 ### `depositReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -44,7 +62,7 @@
 
 ### `migrateEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.63.1-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L7)</sub>
 
 ??? example "Details"
 
