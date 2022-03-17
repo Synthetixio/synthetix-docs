@@ -4,97 +4,103 @@
 
 Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various mechanisms to suspend the Synthetix system
 
-**Source:** [contracts/SystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol)
+**Source:** [contracts/SystemStatus.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol)
 
 ## Variables
 
+### `CONTRACT_NAME`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L20)</sub>
+
+**Type:** `bytes32`
+
 ### `SECTION_EXCHANGE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L15)</sub>
 
 **Type:** `bytes32`
 
 ### `SECTION_FUTURES`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L16)</sub>
 
 **Type:** `bytes32`
 
 ### `SECTION_ISSUANCE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L14)</sub>
 
 **Type:** `bytes32`
 
 ### `SECTION_SYNTH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L18)</sub>
 
 **Type:** `bytes32`
 
 ### `SECTION_SYNTH_EXCHANGE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L17)</sub>
 
 **Type:** `bytes32`
 
 ### `SECTION_SYSTEM`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L13)</sub>
 
 **Type:** `bytes32`
 
 ### `SUSPENSION_REASON_UPGRADE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L11)</sub>
 
 **Type:** `uint248`
 
 ### `accessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L9)</sub>
 
 **Type:** `mapping(bytes32 => mapping(address => struct ISystemStatus.Status))`
 
 ### `exchangeSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L26)</sub>
 
 **Type:** `struct ISystemStatus.Suspension`
 
 ### `futuresMarketSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L34)</sub>
 
 **Type:** `mapping(bytes32 => struct ISystemStatus.Suspension)`
 
 ### `futuresSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L28)</sub>
 
 **Type:** `struct ISystemStatus.Suspension`
 
 ### `issuanceSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L24)</sub>
 
 **Type:** `struct ISystemStatus.Suspension`
 
 ### `synthExchangeSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L30)</sub>
 
 **Type:** `mapping(bytes32 => struct ISystemStatus.Suspension)`
 
 ### `synthSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L32)</sub>
 
 **Type:** `mapping(bytes32 => struct ISystemStatus.Suspension)`
 
 ### `systemSuspension`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L22)</sub>
 
 **Type:** `struct ISystemStatus.Suspension`
 
@@ -102,7 +108,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -122,7 +128,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `getFuturesMarketSuspensions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L147)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L149)</sub>
 
 ??? example "Details"
 
@@ -140,7 +146,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `getSynthExchangeSuspensions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -158,7 +164,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `getSynthSuspensions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -176,7 +182,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `isSystemUpgrading`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -194,7 +200,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `requireExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -212,13 +218,13 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L55)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L57)
 
-    * [_internalRequireExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L58)
+    * [_internalRequireExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L60)
 
 ### `requireExchangeBetweenSynthsAllowed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -236,21 +242,21 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L100)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L102)
 
-    * [_internalRequireExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L103)
+    * [_internalRequireExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L105)
 
-    * [_internalRequireSynthExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L106)
+    * [_internalRequireSynthExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L108)
 
-    * [_internalRequireSynthExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L107)
+    * [_internalRequireSynthExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L109)
 
-    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L110)
+    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L112)
 
-    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L111)
+    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L113)
 
 ### `requireFuturesActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -268,15 +274,15 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L68)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L70)
 
-    * [_internalRequireExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L69)
+    * [_internalRequireExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L71)
 
-    * [_internalRequireFuturesActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L70)
+    * [_internalRequireFuturesActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L72)
 
 ### `requireFuturesMarketActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -294,17 +300,17 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L75)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L77)
 
-    * [_internalRequireExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L76)
+    * [_internalRequireExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L78)
 
-    * [_internalRequireFuturesActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L77)
+    * [_internalRequireFuturesActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L79)
 
-    * [_internalRequireFuturesMarketActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L78)
+    * [_internalRequireFuturesMarketActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L80)
 
 ### `requireIssuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -322,13 +328,13 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L47)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L49)
 
-    * [_internalRequireIssuanceActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L50)
+    * [_internalRequireIssuanceActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L52)
 
 ### `requireSynthActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -346,13 +352,13 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L87)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L89)
 
-    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L88)
+    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L90)
 
 ### `requireSynthExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -370,13 +376,13 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L63)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L65)
 
-    * [_internalRequireSynthExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L64)
+    * [_internalRequireSynthExchangeActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L66)
 
 ### `requireSynthsActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -394,15 +400,15 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L93)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L95)
 
-    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L94)
+    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L96)
 
-    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L95)
+    * [_internalRequireSynthActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L97)
 
 ### `requireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -420,11 +426,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L38)
+    * [_internalRequireSystemActive](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L40)
 
 ### `synthSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -442,7 +448,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `systemSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -462,7 +468,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `_internalResumeFuturesMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L399)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L401)</sub>
 
 ??? example "Details"
 
@@ -480,11 +486,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L400)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L402)
 
 ### `_internalResumeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L361)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L363)</sub>
 
 ??? example "Details"
 
@@ -502,11 +508,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L362)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L364)
 
 ### `_internalResumeSynthsExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L380)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L382)</sub>
 
 ??? example "Details"
 
@@ -524,11 +530,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L381)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L383)
 
 ### `_internalSuspendFuturesMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L389)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L391)</sub>
 
 ??? example "Details"
 
@@ -546,11 +552,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L390)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L392)
 
 ### `_internalSuspendSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L370)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L372)</sub>
 
 ??? example "Details"
 
@@ -568,11 +574,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L371)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L373)
 
 ### `_internalSuspendSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L351)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L353)</sub>
 
 ??? example "Details"
 
@@ -590,11 +596,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L352)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L354)
 
 ### `resumeExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L223)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L225)</sub>
 
 ??? example "Details"
 
@@ -612,7 +618,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L224)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L226)
 
     **Emits**
 
@@ -620,7 +626,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `resumeFutures`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L237)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L239)</sub>
 
 ??? example "Details"
 
@@ -638,7 +644,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L238)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L240)
 
     **Emits**
 
@@ -646,7 +652,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `resumeIssuance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L209)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L211)</sub>
 
 ??? example "Details"
 
@@ -664,7 +670,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L210)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L212)
 
     **Emits**
 
@@ -672,7 +678,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `resumeSystem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -690,7 +696,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L196)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L198)
 
     **Emits**
 
@@ -698,7 +704,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L216)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L218)</sub>
 
 ??? example "Details"
 
@@ -716,7 +722,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L217)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L219)
 
     **Emits**
 
@@ -724,7 +730,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendFutures`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L230)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L232)</sub>
 
 ??? example "Details"
 
@@ -742,7 +748,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L231)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L233)
 
     **Emits**
 
@@ -750,7 +756,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendIssuance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L204)</sub>
 
 ??? example "Details"
 
@@ -768,7 +774,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L203)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L205)
 
     **Emits**
 
@@ -776,7 +782,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendSystem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L188)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L190)</sub>
 
 ??? example "Details"
 
@@ -794,7 +800,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L189)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L191)
 
     **Emits**
 
@@ -802,7 +808,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `updateAccessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L164)</sub>
 
 ??? example "Details"
 
@@ -824,7 +830,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `updateAccessControls`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L173)</sub>
 
 ??? example "Details"
 
@@ -842,7 +848,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Input array lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L177)
+    * [require(..., "Input array lengths must match")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L179)
 
     **Modifiers**
 
@@ -852,7 +858,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `_internalRequireExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L331)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L333)</sub>
 
 ??? example "Details"
 
@@ -870,11 +876,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Exchange is suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L332)
+    * [require(..., "Exchange is suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L334)
 
 ### `_internalRequireFuturesActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L335)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L337)</sub>
 
 ??? example "Details"
 
@@ -892,11 +898,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Futures markets are suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L336)
+    * [require(..., "Futures markets are suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L338)
 
 ### `_internalRequireFuturesMarketActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L347)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L349)</sub>
 
 ??? example "Details"
 
@@ -914,11 +920,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Market suspended")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L348)
+    * [require(..., "Market suspended")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L350)
 
 ### `_internalRequireIssuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L327)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L329)</sub>
 
 ??? example "Details"
 
@@ -936,11 +942,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Issuance is suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L328)
+    * [require(..., "Issuance is suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L330)
 
 ### `_internalRequireSynthActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L343)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L345)</sub>
 
 ??? example "Details"
 
@@ -958,11 +964,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Synth is suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L344)
+    * [require(..., "Synth is suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L346)
 
 ### `_internalRequireSynthExchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L339)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L341)</sub>
 
 ??? example "Details"
 
@@ -980,11 +986,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Synth exchange suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L340)
+    * [require(..., "Synth exchange suspended. Operation prohibited")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L342)
 
 ### `_internalRequireSystemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L318)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L320)</sub>
 
 ??? example "Details"
 
@@ -1002,11 +1008,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L319)
+    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L321)
 
 ### `_internalResumeFuturesMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L399)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L401)</sub>
 
 ??? example "Details"
 
@@ -1024,11 +1030,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L400)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L402)
 
 ### `_internalResumeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L361)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L363)</sub>
 
 ??? example "Details"
 
@@ -1046,11 +1052,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L362)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L364)
 
 ### `_internalResumeSynthsExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L380)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L382)</sub>
 
 ??? example "Details"
 
@@ -1068,11 +1074,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L381)
+    * [_requireAccessToResume](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L383)
 
 ### `_internalSuspendFuturesMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L389)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L391)</sub>
 
 ??? example "Details"
 
@@ -1090,11 +1096,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L390)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L392)
 
 ### `_internalSuspendSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L370)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L372)</sub>
 
 ??? example "Details"
 
@@ -1112,11 +1118,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L371)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L373)
 
 ### `_internalSuspendSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L351)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L353)</sub>
 
 ??? example "Details"
 
@@ -1134,11 +1140,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L352)
+    * [_requireAccessToSuspend](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L354)
 
 ### `_internalUpdateAccessControl`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L408)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L410)</sub>
 
 ??? example "Details"
 
@@ -1156,7 +1162,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Invalid section supplied")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L414)
+    * [require(..., "Invalid section supplied")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L416)
 
     **Emits**
 
@@ -1164,7 +1170,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `_requireAccessToResume`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L316)</sub>
 
 ??? example "Details"
 
@@ -1182,11 +1188,11 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Restricted to access control list")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L315)
+    * [require(..., "Restricted to access control list")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L317)
 
 ### `_requireAccessToSuspend`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L310)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L312)</sub>
 
 ??? example "Details"
 
@@ -1204,13 +1210,13 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
     **Requires**
 
-    * [require(..., "Restricted to access control list")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L311)
+    * [require(..., "Restricted to access control list")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L313)
 
 ## External Functions
 
 ### `resumeFuturesMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L257)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L259)</sub>
 
 ??? example "Details"
 
@@ -1228,7 +1234,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `resumeFuturesMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L264)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L266)</sub>
 
 ??? example "Details"
 
@@ -1246,7 +1252,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `resumeSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L298)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L300)</sub>
 
 ??? example "Details"
 
@@ -1264,7 +1270,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `resumeSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L278)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L280)</sub>
 
 ??? example "Details"
 
@@ -1282,7 +1288,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `resumeSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L304)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L306)</sub>
 
 ??? example "Details"
 
@@ -1300,7 +1306,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `resumeSynthsExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L284)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L286)</sub>
 
 ??? example "Details"
 
@@ -1318,7 +1324,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendFuturesMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L245)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L247)</sub>
 
 ??? example "Details"
 
@@ -1336,7 +1342,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendFuturesMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L252)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L254)</sub>
 
 ??? example "Details"
 
@@ -1354,7 +1360,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L288)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L290)</sub>
 
 ??? example "Details"
 
@@ -1372,7 +1378,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L270)</sub>
 
 ??? example "Details"
 
@@ -1390,7 +1396,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L294)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L296)</sub>
 
 ??? example "Details"
 
@@ -1408,7 +1414,7 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `suspendSynthsExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L274)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L276)</sub>
 
 ??? example "Details"
 
@@ -1428,90 +1434,90 @@ Implemented to address [SIP-44](https://sips.synthetix.io/sips/sip-44) - various
 
 ### `AccessControlUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L451)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L453)</sub>
 
 **Signature**: `AccessControlUpdated(bytes32 section, address account, bool canSuspend, bool canResume)`
 
 ### `ExchangeResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L437)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L439)</sub>
 
 **Signature**: `ExchangeResumed(uint256 reason)`
 
 ### `ExchangeSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L436)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L438)</sub>
 
 **Signature**: `ExchangeSuspended(uint256 reason)`
 
 ### `FuturesMarketResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L449)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L451)</sub>
 
 **Signature**: `FuturesMarketResumed(bytes32 marketKey, uint256 reason)`
 
 ### `FuturesMarketSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L448)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L450)</sub>
 
 **Signature**: `FuturesMarketSuspended(bytes32 marketKey, uint256 reason)`
 
 ### `FuturesResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L440)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L442)</sub>
 
 **Signature**: `FuturesResumed(uint256 reason)`
 
 ### `FuturesSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L439)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L441)</sub>
 
 **Signature**: `FuturesSuspended(uint256 reason)`
 
 ### `IssuanceResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L434)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L436)</sub>
 
 **Signature**: `IssuanceResumed(uint256 reason)`
 
 ### `IssuanceSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L433)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L435)</sub>
 
 **Signature**: `IssuanceSuspended(uint256 reason)`
 
 ### `SynthExchangeResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L443)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L445)</sub>
 
 **Signature**: `SynthExchangeResumed(bytes32 currencyKey, uint256 reason)`
 
 ### `SynthExchangeSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L442)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L444)</sub>
 
 **Signature**: `SynthExchangeSuspended(bytes32 currencyKey, uint256 reason)`
 
 ### `SynthResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L446)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L448)</sub>
 
 **Signature**: `SynthResumed(bytes32 currencyKey, uint256 reason)`
 
 ### `SynthSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L445)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L447)</sub>
 
 **Signature**: `SynthSuspended(bytes32 currencyKey, uint256 reason)`
 
 ### `SystemResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L431)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L433)</sub>
 
 **Signature**: `SystemResumed(uint256 reason)`
 
 ### `SystemSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/SystemStatus.sol#L430)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/SystemStatus.sol#L432)</sub>
 
 **Signature**: `SystemSuspended(uint256 reason)`

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/Exchanger.sol)
+**Source:** [contracts/Exchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/Exchanger.sol)
 
 ## External Functions
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/Exchanger.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/Exchanger.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/Exchanger.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/Exchanger.sol#L67)</sub>
 
 ??? example "Details"
 

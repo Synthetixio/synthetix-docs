@@ -12,7 +12,7 @@ This contract interacts with the oracle's frontrunning protection, which is part
 
 This does not turn off any functionality in the exchange rate contract, but is used by [`Synthetix`](Synthetix.md) to disable [currency exchanges](Synthetix.md#_internalexchange) while prices are being updated to protect against oracle front running. The lock is released when [rate updates have completed](#internalupdaterates).
 
-**Source:** [contracts/ExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol)
+**Source:** [contracts/ExchangeRates.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol)
 
 ## Architecture
 
@@ -33,13 +33,13 @@ This does not turn off any functionality in the exchange rate contract, but is u
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L24)</sub>
 
 **Type:** `bytes32`
 
 ### `aggregatorKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L34)</sub>
 
 A list of the keys of currencies with a decentralized aggregated pricing network.
 
@@ -47,7 +47,7 @@ A list of the keys of currencies with a decentralized aggregated pricing network
 
 ### `aggregators`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L29)</sub>
 
 For each currency with a decentralized aggregated pricing network, return the Aggregation contract address.
 
@@ -55,7 +55,7 @@ For each currency with a decentralized aggregated pricing network, return the Ag
 
 ### `currencyKeyDecimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L31)</sub>
 
 **Type:** `mapping(bytes32 => uint8)`
 
@@ -63,7 +63,7 @@ For each currency with a decentralized aggregated pricing network, return the Ag
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L38)</sub>
 
 Initialises the oracle address and initial currency prices, along with the inherited [`SelfDestructible`](SelfDestructible.md) instance.
 
@@ -85,7 +85,7 @@ Initialises the oracle address and initial currency prices, along with the inher
 
 ### `aggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -103,7 +103,7 @@ Initialises the oracle address and initial currency prices, along with the inher
 
 ### `anyRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L301)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L301)</sub>
 
 ??? example "Details"
 
@@ -121,7 +121,7 @@ Initialises the oracle address and initial currency prices, along with the inher
 
 ### `anyRateIsInvalidAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L319)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L319)</sub>
 
 ??? example "Details"
 
@@ -139,11 +139,11 @@ Initialises the oracle address and initial currency prices, along with the inher
 
     **Requires**
 
-    * [require(..., "roundIds must be the same length as currencyKeys")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L326)
+    * [require(..., "roundIds must be the same length as currencyKeys")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L326)
 
 ### `currenciesUsingAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -161,7 +161,7 @@ Initialises the oracle address and initial currency prices, along with the inher
 
 ### `effectiveAtomicValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -179,7 +179,7 @@ Initialises the oracle address and initial currency prices, along with the inher
 
 ### `effectiveValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L168)</sub>
 
 Given a quantity of a source currency, returns a quantity of a destination currency that is of equivalent value at current exchange rates, if those rates are fresh.
 
@@ -207,7 +207,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
 ### `effectiveValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L176)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L176)</sub>
 
 ??? example "Details"
 
@@ -225,7 +225,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
 ### `effectiveValueAndRatesAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -243,7 +243,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
 ### `getCurrentRoundId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -261,7 +261,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
 ### `getLastRoundIdBeforeElapsedSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -279,7 +279,7 @@ This computation is simple because all fractional quantities in the Synthetix sy
 
 ### `lastRateUpdateTimes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L154)</sub>
 
 Retrieves the timestamp the given rate was last updated. Accessed by the same keys as [`rates`](#rates) is.
 
@@ -299,7 +299,7 @@ Retrieves the timestamp the given rate was last updated. Accessed by the same ke
 
 ### `lastRateUpdateTimesForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L158)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L158)</sub>
 
 Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
 
@@ -319,7 +319,7 @@ Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
 
 ### `rateAndInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L252)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L252)</sub>
 
 ??? example "Details"
 
@@ -337,7 +337,7 @@ Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
 
 ### `rateAndTimestampAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L150)</sub>
 
 ??? example "Details"
 
@@ -355,7 +355,7 @@ Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
 
 ### `rateAndUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -373,7 +373,7 @@ Maps [`lastRateUpdateTimes`](#lastrateupdatetimes) over an array of keys.
 
 ### `rateForCurrency`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L210)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L210)</sub>
 
 Returns the last recorded rate for the given currency. This is just an alias to the public mapping `rates`, so it could probably be eliminated.
 
@@ -393,7 +393,7 @@ Returns the last recorded rate for the given currency. This is just an alias to 
 
 ### `rateIsFlagged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L297)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L297)</sub>
 
 ??? example "Details"
 
@@ -411,7 +411,7 @@ Returns the last recorded rate for the given currency. This is just an alias to 
 
 ### `rateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L291)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L291)</sub>
 
 ??? example "Details"
 
@@ -429,7 +429,7 @@ Returns the last recorded rate for the given currency. This is just an alias to 
 
 ### `rateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L287)</sub>
 
 The rate for a given currency is stale if its last update occurred more than [`rateStalePeriod`](#ratestaleperiod) seconds ago.
 
@@ -451,7 +451,7 @@ The rate for a given currency is stale if its last update occurred more than [`r
 
 ### `rateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L84)</sub>
 
 The duration after which a rate will be considered out of date. Synth exchange and other price-sensitive transactions in the [`Synthetix`](Synthetix.md) contract will not operate if a relevant rate is stale.
 Initialised to $3$ hours.
@@ -474,7 +474,7 @@ Initialised to $3$ hours.
 
 ### `ratesAndInvalidForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L265)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L265)</sub>
 
 ??? example "Details"
 
@@ -492,7 +492,7 @@ Initialised to $3$ hours.
 
 ### `ratesAndUpdatedTimeForCurrencyLastNRounds`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L219)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L219)</sub>
 
 ??? example "Details"
 
@@ -510,7 +510,7 @@ Initialised to $3$ hours.
 
 ### `ratesForCurrencies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L242)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L242)</sub>
 
 Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
@@ -530,7 +530,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `synthTooVolatileForAtomicExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L340)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L340)</sub>
 
 ??? example "Details"
 
@@ -550,7 +550,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `addAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -568,9 +568,9 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
     **Requires**
 
-    * [require(..., "Given Aggregator is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L47)
+    * [require(..., "Given Aggregator is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L47)
 
-    * [require(..., "Aggregator decimals should be lower or equal to 18")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L49)
+    * [require(..., "Aggregator decimals should be lower or equal to 18")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L49)
 
     **Modifiers**
 
@@ -582,7 +582,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `removeAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -600,7 +600,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
     **Requires**
 
-    * [require(..., "No aggregator exists for key")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L60)
+    * [require(..., "No aggregator exists for key")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L60)
 
     **Modifiers**
 
@@ -610,7 +610,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_effectiveValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L460)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L460)</sub>
 
 ??? example "Details"
 
@@ -628,7 +628,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_formatAggregatorAnswer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L382)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L382)</sub>
 
 ??? example "Details"
 
@@ -646,11 +646,11 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
     **Requires**
 
-    * [require(..., "Negative rate not supported")](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L383)
+    * [require(..., "Negative rate not supported")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L383)
 
 ### `_getCurrentRoundId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L418)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L418)</sub>
 
 ??? example "Details"
 
@@ -668,7 +668,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_getRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L452)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L452)</sub>
 
 ??? example "Details"
 
@@ -686,7 +686,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_getRateAndTimestampAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L428)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L428)</sub>
 
 ??? example "Details"
 
@@ -704,7 +704,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_getRateAndUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L391)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L391)</sub>
 
 ??? example "Details"
 
@@ -722,7 +722,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_getUpdatedTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L456)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L456)</sub>
 
 ??? example "Details"
 
@@ -740,7 +740,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_notImplemented`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L526)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L526)</sub>
 
 ??? example "Details"
 
@@ -758,7 +758,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_rateIsFlagged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L513)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L513)</sub>
 
 ??? example "Details"
 
@@ -776,7 +776,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_rateIsStale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L488)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L488)</sub>
 
 ??? example "Details"
 
@@ -794,7 +794,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_rateIsStaleAtRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L496)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L496)</sub>
 
 ??? example "Details"
 
@@ -812,7 +812,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `_rateIsStaleWithTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L509)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L509)</sub>
 
 ??? example "Details"
 
@@ -830,7 +830,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `getFlagsForRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L346)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L346)</sub>
 
 ??? example "Details"
 
@@ -848,7 +848,7 @@ Maps [`rateForCurrency`](#rateforcurrency) over an array of keys.
 
 ### `removeFromArray`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L363)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L363)</sub>
 
 Helper function that removes an `entry` from an existing array in storage. Returns `true` if found and removed, `false` otherwise.
 
@@ -870,7 +870,7 @@ Helper function that removes an `entry` from an existing array in storage. Retur
 
 ### `AggregatorAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L533)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L533)</sub>
 
 Records that an Aggregator pricing network was added
 
@@ -878,7 +878,7 @@ Records that an Aggregator pricing network was added
 
 ### `AggregatorRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.0-alpha/contracts/ExchangeRates.sol#L534)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/ExchangeRates.sol#L534)</sub>
 
 Records that an Aggregator pricing network was removed
 
