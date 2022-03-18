@@ -2,91 +2,91 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_AlphardOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol)
+**Source:** [contracts/migrations/Migration_AlphardOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L22)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L29)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `feepool_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L45)</sub>
 
 **Type:** `contract FeePool`
 
 ### `feepooleternalstorage_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L33)</sub>
 
 **Type:** `contract FeePoolEternalStorage`
 
 ### `feepoolstate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L36)</sub>
 
 **Type:** `contract FeePoolState`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L47)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_FeePool_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L56)</sub>
 
 **Type:** `address`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L60)</sub>
 
 **Type:** `address`
 
 ### `new_SynthetixDebtShare_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L54)</sub>
 
 **Type:** `address`
 
 ### `new_Synthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L58)</sub>
 
 **Type:** `address`
 
 ### `proxyfeepool_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L31)</sub>
 
 **Type:** `contract Proxy`
 
 ### `proxysynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L38)</sub>
 
 **Type:** `contract ProxyERC20`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L42)</sub>
 
 **Type:** `contract RewardsDistribution`
 
 ### `tokenstatesynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L40)</sub>
 
 **Type:** `contract TokenState`
 
@@ -94,7 +94,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -152,11 +152,11 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for SynthetixDebtShare")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L78)
+    * [require(..., "Invalid contract supplied for SynthetixDebtShare")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L78)
 
-    * [require(..., "Invalid contract supplied for FeePool")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L82)
+    * [require(..., "Invalid contract supplied for FeePool")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L82)
 
-    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L86)
+    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L86)
 
     **Modifiers**
 
@@ -166,7 +166,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -184,7 +184,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L136)</sub>
 
 ??? example "Details"
 
@@ -202,7 +202,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -220,7 +220,7 @@
 
 ### `importFeePeriod_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L177)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L177)</sub>
 
 ??? example "Details"
 
@@ -238,7 +238,7 @@
 
 ### `importFeePeriod_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L202)</sub>
 
 ??? example "Details"
 
@@ -256,7 +256,7 @@
 
 ### `issuer_addSynths_16`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L227)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L227)</sub>
 
 ??? example "Details"
 
@@ -274,7 +274,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1-alpha/contracts/migrations/Migration_AlphardOptimism.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_AlphardOptimism.sol#L129)</sub>
 
 ??? example "Details"
 
