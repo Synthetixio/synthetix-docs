@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Diphda (v2.64.1)
+
+**Published**: Mar 18, 2022
+
+**Codebase**: [v2.64.1](https://github.com/Synthetixio/synthetix/tree/v2.64.1)
+
+> https://blog.synthetix.io/the-diphda-release/
+
+- [SIP-80](https://sips.synthetix.io/sips/sip-80/): Synthetic Futures: Creates a perpetual futures market that trades against the Synthetix Debt Pool, allowing traders to access 10x leverage on a dedicated trading platform, [Kwenta](https://kwenta.io/).
+- [SIP-165](https://sips.synthetix.io/sips/sip-165): Debt Pool Synthesis: Merges the debt pools across all chains on which Synthetix is deployed, tracking the total synth debt with a chainlink oracle.
+- [SIP-213](https://sips.synthetix.io/sips/sip-213/): Add AAVE and UNI to Optimism: Add sAAVE and sUNI synths to Optimism.
+
+> Audit: https://iosiro.com/audits/synthetix-didpha-release-smart-contract-audit
+
+---
+
 # Algieba (v2.63.0)
 
 **Published**: Feb 24, 2022
