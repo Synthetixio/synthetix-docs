@@ -2,73 +2,73 @@
 
 ## Description
 
-**Source:** [contracts/BaseRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol)
+**Source:** [contracts/BaseRewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol)
 
 ## Variables
 
 ### `accountMergingDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L51)</sub>
 
 **Type:** `uint256`
 
 ### `accountMergingStartTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L53)</sub>
 
 **Type:** `uint256`
 
 ### `accountVestingEntryIDs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L26)</sub>
 
 **Type:** `mapping(address => uint256[])`
 
 ### `maxAccountMergingDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L47)</sub>
 
 **Type:** `uint256`
 
 ### `max_duration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L44)</sub>
 
 **Type:** `uint256`
 
 ### `nextEntryId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L29)</sub>
 
 **Type:** `uint256`
 
 ### `nominatedReceiver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L38)</sub>
 
 **Type:** `mapping(address => address)`
 
 ### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L32)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `totalEscrowedBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L41)</sub>
 
 **Type:** `uint256`
 
 ### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L35)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `vestingSchedules`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L24)</sub>
 
 **Type:** `mapping(address => mapping(uint256 => struct VestingEntries.VestingEntry))`
 
@@ -76,7 +76,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -96,7 +96,7 @@
 
 ### `accountMergingIsOpen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L285)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L285)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -132,7 +132,7 @@
 
 ### `getAccountVestingEntryIDs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -150,7 +150,7 @@
 
 ### `getVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -168,7 +168,7 @@
 
 ### `getVestingEntryClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L188)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L188)</sub>
 
 ??? example "Details"
 
@@ -186,7 +186,7 @@
 
 ### `getVestingQuantity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L174)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L174)</sub>
 
 ??? example "Details"
 
@@ -204,7 +204,7 @@
 
 ### `getVestingSchedules`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -222,7 +222,7 @@
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -240,7 +240,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L261)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L261)</sub>
 
 ??? example "Details"
 
@@ -282,7 +282,7 @@
 
 ### `setAccountMergingDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L294)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L294)</sub>
 
 ??? example "Details"
 
@@ -300,7 +300,7 @@
 
     **Requires**
 
-    * [require(..., "exceeds max merging duration")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L295)
+    * [require(..., "exceeds max merging duration")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L295)
 
     **Modifiers**
 
@@ -312,7 +312,7 @@
 
 ### `setMaxAccountMergingWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L300)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L300)</sub>
 
 ??? example "Details"
 
@@ -338,7 +338,7 @@
 
 ### `setMaxEscrowDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L305)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L305)</sub>
 
 ??? example "Details"
 
@@ -364,7 +364,7 @@
 
 ### `startMergingWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L289)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L289)</sub>
 
 ??? example "Details"
 
@@ -392,7 +392,7 @@
 
 ### `_addVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L355)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L355)</sub>
 
 ??? example "Details"
 
@@ -410,7 +410,7 @@
 
 ### `_appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L398)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L398)</sub>
 
 ??? example "Details"
 
@@ -428,11 +428,11 @@
 
     **Requires**
 
-    * [require(..., "Quantity cannot be zero")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L404)
+    * [require(..., "Quantity cannot be zero")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L404)
 
-    * [require(..., "Cannot escrow with 0 duration OR above max_duration")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L405)
+    * [require(..., "Cannot escrow with 0 duration OR above max_duration")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L405)
 
-    * [require(..., "Must be enough balance in the contract to provide for the vesting entry")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L410)
+    * [require(..., "Must be enough balance in the contract to provide for the vesting entry")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L410)
 
     **Emits**
 
@@ -440,7 +440,7 @@
 
 ### `_claimableAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -458,7 +458,7 @@
 
 ### `_notImplemented`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -476,7 +476,7 @@
 
 ### `_reduceAccountEscrowBalances`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L277)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L277)</sub>
 
 ??? example "Details"
 
@@ -494,7 +494,7 @@
 
 ### `_transferVestedTokens`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L270)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L270)</sub>
 
 ??? example "Details"
 
@@ -516,7 +516,7 @@
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -534,7 +534,7 @@
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -552,7 +552,7 @@
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -572,7 +572,7 @@
 
 ### `burnForMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L384)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L384)</sub>
 
 ??? example "Details"
 
@@ -590,7 +590,7 @@
 
 ### `createEscrowEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L239)</sub>
 
 ??? example "Details"
 
@@ -608,13 +608,13 @@
 
     **Requires**
 
-    * [require(..., "Cannot create escrow with address(0)")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L244)
+    * [require(..., "Cannot create escrow with address(0)")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L244)
 
-    * [require(..., "token transfer failed")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L247)
+    * [require(..., "token transfer failed")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L247)
 
 ### `importVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L388)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L388)</sub>
 
 ??? example "Details"
 
@@ -632,7 +632,7 @@
 
 ### `mergeAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L319)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L319)</sub>
 
 ??? example "Details"
 
@@ -650,11 +650,11 @@
 
     **Requires**
 
-    * [require(..., "Account merging has ended")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L320)
+    * [require(..., "Account merging has ended")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L320)
 
-    * [require(..., "Cannot merge accounts with debt")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L321)
+    * [require(..., "Cannot merge accounts with debt")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L321)
 
-    * [require(..., "Address is not nominated to merge")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L322)
+    * [require(..., "Address is not nominated to merge")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L322)
 
     **Emits**
 
@@ -662,7 +662,7 @@
 
 ### `migrateAccountEscrowBalances`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L374)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L374)</sub>
 
 ??? example "Details"
 
@@ -680,7 +680,7 @@
 
 ### `migrateVestingSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L370)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L370)</sub>
 
 ??? example "Details"
 
@@ -698,7 +698,7 @@
 
 ### `nominateAccountToMerge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L311)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L311)</sub>
 
 ??? example "Details"
 
@@ -716,11 +716,11 @@
 
     **Requires**
 
-    * [require(..., "Cannot nominate own account to merge")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L312)
+    * [require(..., "Cannot nominate own account to merge")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L312)
 
-    * [require(..., "Account merging has ended")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L313)
+    * [require(..., "Account merging has ended")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L313)
 
-    * [require(..., "Cannot merge accounts with debt")](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L314)
+    * [require(..., "Cannot merge accounts with debt")](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L314)
 
     **Emits**
 
@@ -728,7 +728,7 @@
 
 ### `vest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L209)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L209)</sub>
 
 ??? example "Details"
 
@@ -748,54 +748,54 @@
 
 ### `onlyFeePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L433)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L433)</sub>
 
 ## Events
 
 ### `AccountMerged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L445)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L445)</sub>
 
 **Signature**: `AccountMerged(address accountToMerge, address destinationAddress, uint256 escrowAmountMerged, uint256[] entryIDs, uint256 time)`
 
 ### `AccountMergingDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L443)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L443)</sub>
 
 **Signature**: `AccountMergingDurationUpdated(uint256 newDuration)`
 
 ### `AccountMergingStarted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L444)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L444)</sub>
 
 **Signature**: `AccountMergingStarted(uint256 time, uint256 endTime)`
 
 ### `MaxAccountMergingDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L442)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L442)</sub>
 
 **Signature**: `MaxAccountMergingDurationUpdated(uint256 newDuration)`
 
 ### `MaxEscrowDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L441)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L441)</sub>
 
 **Signature**: `MaxEscrowDurationUpdated(uint256 newDuration)`
 
 ### `NominateAccountToMerge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L452)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L452)</sub>
 
 **Signature**: `NominateAccountToMerge(address account, address destination)`
 
 ### `Vested`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L439)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L439)</sub>
 
 **Signature**: `Vested(address beneficiary, uint256 time, uint256 value)`
 
 ### `VestingEntryCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/BaseRewardEscrowV2.sol#L440)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/BaseRewardEscrowV2.sol#L440)</sub>
 
 **Signature**: `VestingEntryCreated(address beneficiary, uint256 time, uint256 value, uint256 duration, uint256 entryID)`

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_MirzamOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_MirzamOptimism.sol)
+**Source:** [contracts/migrations/Migration_MirzamOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/migrations/Migration_MirzamOptimism.sol)
 
 ## Views
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.1/contracts/migrations/Migration_MirzamOptimism.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/migrations/Migration_MirzamOptimism.sol#L10)</sub>
 
 ??? example "Details"
 
