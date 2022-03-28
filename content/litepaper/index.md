@@ -6,7 +6,7 @@
 
 Synthetix is a decentralized synthetic asset issuance protocol built on Ethereum and Optimistic Ethereum (a layer two scaling solution built on Ethereum). These synthetic assets are collateralized by the Synthetix Network Token (SNX) which when locked in the contract enables the issuance of synthetic assets (Synths). This pooled collateral model allows users to perform conversions between Synths directly with the smart contract, avoiding the need for counterparties. This mechanism solves the liquidity and slippage issues experienced by DEX’s. Synthetix currently supports synthetic fiat currencies, cryptocurrencies (long and short) and commodities. SNX holders are incentivized to stake their tokens as they are paid a pro-rata portion of the fees generated through activity on Synthetix from integrators (Kwenta, Lyra, Curve, dHEDGE, and many others). It is the right to participate in the network and capture fees generated from Synth exchanges, from which the value of the SNX token is derived. Trading on the Synthetix infrastructure does not require the trader to hold SNX.
 
-Many protocols have built ontop of the Synthetix infrastructure. These include but are not limited to, Kwenta which offers perpetual futures and spot exchanges, Lyra which offers options trading, Curve which offers cross asset swaps, and dHEDGE which allows traders to pool capital and offer a decentralized hedge fund service. 
+Many protocols have built ontop of the Synthetix infrastructure. These include but are not limited to, Kwenta which offers perpetual futures and spot exchanges, Lyra which offers options trading, Curve which offers cross asset swaps, and dHEDGE which allows traders to pool capital and offer a decentralized hedge fund service.
 
 ## SNX as collateral
 
@@ -26,7 +26,7 @@ The mechanisms above ensure SNX stakers are incentivized to maintain their Colla
 
 **Stakers, debt, and pooled counterparties**
 
-SNX stakers incur a ‘debt’ when they mint Synths. This debt can increase or decrease independent of their original minted value, based on the exchange rates and supply of Synths within the network. 
+SNX stakers incur a ‘debt’ when they mint Synths. This debt can increase or decrease independent of their original minted value, based on the exchange rates and supply of Synths within the network.
 
 For example, if 100% of the Synths in the system were synthetic Bitcoin (sBTC), which halved in price, the debt in the system would halve, and each staker’s debt would also halve. This means in another scenario, where only half the Synths across the system were sBTC, and BTC doubled in price, the system’s total debt—and each staker’s debt—would increase by one quarter.
 
@@ -34,7 +34,6 @@ In this way, SNX stakers act as a pooled counterparty to all Synth exchanges; st
 
 ![Image of debt example](../img/misc/delphi_digital_debt_example.png)
 _Examples from Delphi Digital demonstrating how debt works in the Synthetix system._
-
 
 ## Synthetix and Partner Protocols
 
@@ -56,8 +55,7 @@ Synthetix's perpetual futures enable a much expanded and capital-efficient tradi
 
 For SNX stakers, futures provide an additional revenue stream due to exchange and funding rate fees and reduce the need to hedge the additional debt due to inherent self-hedging and controlled exposure through market size limits.
 
-Another useful property of Synthetix’s perps markets is that support for new assets can be expanded more readily for futures than for spot assets. This is because perpetual markets don’t share some of the limitations and risks of spot synths, allowing for more assets to be safely added.  This means that the Synthetix protocol may soon offer a broader range of perpetual futures pairs than many competitors.
-
+Another useful property of Synthetix’s perps markets is that support for new assets can be expanded more readily for futures than for spot assets. This is because perpetual markets don’t share some of the limitations and risks of spot synths, allowing for more assets to be safely added. This means that the Synthetix protocol may soon offer a broader range of perpetual futures pairs than many competitors.
 
 **How Synths work**
 
@@ -65,7 +63,7 @@ Synths are synthetic assets that track the price of the underlying asset. They a
 
 **The current Synths**
 
-For a current and continually updated list of synthetic assets and perpetual markets, please refer to https://kwenta.io/dashboard and https://v2.beta.kwenta.io/dashboard/overview  on Ethereum and Optimistic Ethereum (seperatetly)
+For a current and continually updated list of synthetic assets and perpetual markets, please refer to https://kwenta.io/dashboard and https://v2.beta.kwenta.io/dashboard/overview on Ethereum and Optimistic Ethereum (seperatetly)
 
 ## System Architecture
 
@@ -111,9 +109,7 @@ When an SNX staker wants to exit the system or reduce their debt and unlock stak
 
 **The debt pool**
 
-The system tracks the debt pool by issuing debt shares (a token) to stakers when they mint or burn sUSD. A staker’s debt percentage would be their balance of tokens divided by the total supply of debt shares. 
-
-
+The system tracks the debt pool by issuing debt shares (a token) to stakers when they mint or burn sUSD. A staker’s debt percentage would be their balance of tokens divided by the total supply of debt shares.
 
 Example:
 
@@ -130,10 +126,9 @@ Burning sUSD reduces the number of debt shares issued against a staker and the n
 
 Example:
 
-Alice now burns 100 sUSD, which burns (100 / 400) * 200 shares = 50 shares
+Alice now burns 100 sUSD, which burns (100 / 400) _ 200 shares = 50 shares
 Alice would have 50 shares after her burn, ⅓ of the debt pool.
-Alice’s remaining debt will be (50 / 150 shares) * 300 = 100 sUSD
-
+Alice’s remaining debt will be (50 / 150 shares) _ 300 = 100 sUSD
 
 **The oracle**
 
@@ -157,13 +152,11 @@ As a decentralized protocol, the Synthetix team is committed to decentralization
 
 Another important area is governance, Synthetic has a system of councils that helps to oversee and govern the protocol. The Spartan Council, the key governing council of Synthetix, is elected by the community and decides which changes to the protocol are approved.
 
-
 ## Future Functionality
 
 **Additional Synths**
 
 There are many different kinds of Synths that can be added to the system to provide greater utility to Synthetix. These include commodities, long tail crypto assets, and others..
-
 
 ## Conclusion
 
