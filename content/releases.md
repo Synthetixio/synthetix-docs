@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Mizar (v2.65.0)
+
+**Published**: Mar 28, 2022
+
+**Codebase**: [v2.65.0](https://github.com/Synthetixio/synthetix/tree/v2.65.0)
+
+> - [SIP-220 Fix for Issuance after Debt Synthesis](https://sips.synthetix.io/sips/sip-220)
+
+> Audit: https://iosiro.com/audits/synthetix-mizar-release-smart-contract-audit
+
+---
+
 # Diphda (v2.64.1)
 
 **Published**: Mar 18, 2022
