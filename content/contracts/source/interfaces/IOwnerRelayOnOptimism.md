@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IOwnerRelayOnOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IOwnerRelayOnOptimism.sol)
+**Source:** [contracts/interfaces/IOwnerRelayOnOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IOwnerRelayOnOptimism.sol)
 
 ## External Functions
 
 ### `finalizeRelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IOwnerRelayOnOptimism.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IOwnerRelayOnOptimism.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `finalizeRelayBatch`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IOwnerRelayOnOptimism.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IOwnerRelayOnOptimism.sol#L7)</sub>
 
 ??? example "Details"
 

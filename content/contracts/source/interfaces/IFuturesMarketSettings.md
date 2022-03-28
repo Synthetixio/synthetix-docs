@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFuturesMarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol)
+**Source:** [contracts/interfaces/IFuturesMarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol)
 
 ## Structs
 
 ### `Parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L4)</sub>
 
 | Field                    | Type      | Description |
 | ------------------------ | --------- | ----------- |
@@ -26,7 +26,7 @@
 
 ### `liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -62,13 +62,13 @@
 
 ### `makerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L18)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `makerFee(bytes32 _baseAsset) view returns (uint256)`
+    `makerFee(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -80,13 +80,13 @@
 
 ### `makerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L22)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `makerFeeNextPrice(bytes32 _baseAsset) view returns (uint256)`
+    `makerFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -98,13 +98,13 @@
 
 ### `maxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L30)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `maxFundingRate(bytes32 _baseAsset) view returns (uint256)`
+    `maxFundingRate(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -116,13 +116,13 @@
 
 ### `maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L26)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `maxLeverage(bytes32 _baseAsset) view returns (uint256)`
+    `maxLeverage(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -134,13 +134,13 @@
 
 ### `maxMarketValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L28)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `maxMarketValueUSD(bytes32 _baseAsset) view returns (uint256)`
+    `maxMarketValueUSD(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -152,7 +152,7 @@
 
 ### `minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -188,13 +188,13 @@
 
 ### `nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L24)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `nextPriceConfirmWindow(bytes32 _baseAsset) view returns (uint256)`
+    `nextPriceConfirmWindow(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -206,13 +206,13 @@
 
 ### `parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L34)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `parameters(bytes32 _baseAsset) view returns (uint256 _takerFee, uint256 _makerFee, uint256 _takerFeeNextPrice, uint256 _makerFeeNextPrice, uint256 _nextPriceConfirmWindow, uint256 _maxLeverage, uint256 _maxMarketValueUSD, uint256 _maxFundingRate, uint256 _skewScaleUSD)`
+    `parameters(bytes32 _marketKey) view returns (uint256 _takerFee, uint256 _makerFee, uint256 _takerFeeNextPrice, uint256 _makerFeeNextPrice, uint256 _nextPriceConfirmWindow, uint256 _maxLeverage, uint256 _maxMarketValueUSD, uint256 _maxFundingRate, uint256 _skewScaleUSD)`
 
     **Visibility**
 
@@ -224,13 +224,13 @@
 
 ### `skewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L32)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `skewScaleUSD(bytes32 _baseAsset) view returns (uint256)`
+    `skewScaleUSD(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -242,13 +242,13 @@
 
 ### `takerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L16)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `takerFee(bytes32 _baseAsset) view returns (uint256)`
+    `takerFee(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -260,13 +260,13 @@
 
 ### `takerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.64.2/contracts/interfaces/IFuturesMarketSettings.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L20)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `takerFeeNextPrice(bytes32 _baseAsset) view returns (uint256)`
+    `takerFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
