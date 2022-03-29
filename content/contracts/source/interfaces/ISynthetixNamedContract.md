@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_MizarOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.65.0/contracts/migrations/Migration_MizarOptimism.sol)
+**Source:** [contracts/migrations/Migration_NunkiOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/migrations/Migration_NunkiOptimism.sol)
 
 ## Views
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.65.0/contracts/migrations/Migration_MizarOptimism.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/migrations/Migration_NunkiOptimism.sol#L15)</sub>
 
 ??? example "Details"
 
