@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/FuturesMarketBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/FuturesMarketBase.sol)
+**Source:** [contracts/FuturesMarketBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/FuturesMarketBase.sol)
 
 ## External Functions
 
 ### `burnSUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/FuturesMarketBase.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/FuturesMarketBase.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `issueSUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/FuturesMarketBase.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/FuturesMarketBase.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `payFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/FuturesMarketBase.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/FuturesMarketBase.sol#L77)</sub>
 
 ??? example "Details"
 

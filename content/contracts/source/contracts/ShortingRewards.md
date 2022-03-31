@@ -2,55 +2,55 @@
 
 ## Description
 
-**Source:** [contracts/ShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol)
+**Source:** [contracts/ShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol)
 
 ## Variables
 
 ### `lastUpdateTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L29)</sub>
 
 **Type:** `uint256`
 
 ### `periodFinish`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L26)</sub>
 
 **Type:** `uint256`
 
 ### `rewardPerTokenStored`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L30)</sub>
 
 **Type:** `uint256`
 
 ### `rewardRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L27)</sub>
 
 **Type:** `uint256`
 
 ### `rewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L33)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `rewardsDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L28)</sub>
 
 **Type:** `uint256`
 
 ### `rewardsToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L25)</sub>
 
 **Type:** `contract IERC20`
 
 ### `userRewardPerTokenPaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L32)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -58,7 +58,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -96,7 +96,7 @@
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `getRewardForDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -132,7 +132,7 @@
 
 ### `lastTimeRewardApplicable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -150,7 +150,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -168,7 +168,7 @@
 
 ### `rewardPerToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -186,7 +186,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `enrol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot stake 0")](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L99)
+    * [require(..., "Cannot stake 0")](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L99)
 
     **Modifiers**
 
@@ -242,7 +242,7 @@
 
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
     **Requires**
 
-    * [require(..., "Provided reward too high")](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L139)
+    * [require(..., "Provided reward too high")](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L139)
 
     **Modifiers**
 
@@ -274,7 +274,7 @@
 
 ### `setRewardsDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L146)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L146)</sub>
 
 ??? example "Details"
 
@@ -292,7 +292,7 @@
 
     **Requires**
 
-    * [require(..., "Previous rewards period must be complete before changing the duration for the new period")](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L147)
+    * [require(..., "Previous rewards period must be complete before changing the duration for the new period")](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L147)
 
     **Modifiers**
 
@@ -304,7 +304,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -322,7 +322,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot withdraw 0")](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L107)
+    * [require(..., "Cannot withdraw 0")](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L107)
 
     **Modifiers**
 
@@ -340,7 +340,7 @@
 
 ### `_short`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -360,7 +360,7 @@
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -386,11 +386,11 @@
 
 ### `onlyShortContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L167)</sub>
 
 ### `updateReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L157)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L157)</sub>
 
 **Signature**: `updateReward(address account)`
 
@@ -398,30 +398,30 @@
 
 ### `Enrol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L176)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L176)</sub>
 
 **Signature**: `Enrol(address user, uint256 amount)`
 
 ### `RewardAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L175)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L175)</sub>
 
 **Signature**: `RewardAdded(uint256 reward)`
 
 ### `RewardPaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L178)</sub>
 
 **Signature**: `RewardPaid(address user, uint256 reward)`
 
 ### `RewardsDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L179)</sub>
 
 **Signature**: `RewardsDurationUpdated(uint256 newDuration)`
 
 ### `Withdrawn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0-alpha/contracts/ShortingRewards.sol#L177)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/ShortingRewards.sol#L177)</sub>
 
 **Signature**: `Withdrawn(address user, uint256 amount)`
