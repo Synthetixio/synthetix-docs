@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Nunki (v2.66.0)
+
+**Published**: Mar 31, 2022
+
+**Codebase**: [v2.66.0](https://github.com/Synthetixio/synthetix/tree/v2.66.0)
+
+> - [SIP-217: Additional perpetual futures markets](https://sips.synthetix.io/sips/sip-217)
+
+Second stage of futures markets rollout: add markets for SOL, AVAX, MATIC, AAVE, UNI, EUR, GOLD, SILVER.
+
+---
+
 # Mizar (v2.65.0)
 
 **Published**: Mar 28, 2022
