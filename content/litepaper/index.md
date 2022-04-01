@@ -1,62 +1,69 @@
 # Litepaper
 
-**Version**: 1.4 (March 2020)
+**Version**: 1.5 (March 2022)
 
 ## Abstract
 
-Synthetix is a decentralised synthetic asset issuance protocol built on Ethereum. These synthetic assets are collateralized by the Synthetix Network Token (SNX) which when locked in the contract enables the issuance of synthetic assets (Synths). This pooled collateral model enables users to perform conversions between Synths directly with the smart contract, avoiding the need for counterparties. This mechanism solves the liquidity and slippage issues experienced by DEX’s. Synthetix currently supports synthetic fiat currencies, cryptocurrencies (long and short) and commodities. SNX holders are incentivised to stake their tokens as they are paid a pro-rata portion of the fees generated through activity on Synthetix.Exchange, based on their contribution to the network. It is the right to participate in the network and capture fees generated from Synth exchanges, from which the value of the SNX token is derived. Trading on Synthetix.Exchange does not require the trader to hold SNX.
+Synthetix is a decentralized synthetic asset issuance protocol built on Ethereum and Optimistic Ethereum (a layer two scaling solution built on Ethereum). These synthetic assets are collateralized by the Synthetix Network Token (SNX) which when locked in the contract enables the issuance of synthetic assets (Synths). This pooled collateral model allows users to perform conversions between Synths directly with the smart contract, avoiding the need for counterparties. This mechanism solves the liquidity and slippage issues experienced by DEX’s. Synthetix currently supports synthetic fiat currencies, cryptocurrencies (long and short) and commodities. SNX holders are incentivized to stake their tokens as they are paid a pro-rata portion of the fees generated through activity on Synthetix from integrators (Kwenta, Lyra, Curve, dHEDGE, and many others). It is the right to participate in the network and capture fees generated from Synth exchanges, from which the value of the SNX token is derived. Trading on the Synthetix infrastructure does not require the trader to hold SNX.
+
+Many protocols have built ontop of the Synthetix infrastructure. These include but are not limited to, Kwenta which offers perpetual futures and spot exchanges, Lyra which offers options trading, Curve which offers cross asset swaps, and dHEDGE which allows traders to pool capital and offer a decentralized hedge fund service.
 
 ## SNX as collateral
 
 **How SNX backs Synths**
 
-All Synths are backed by SNX tokens. Synths are minted when SNX holders stake their SNX as collateral using Mintr, a decentralised application for interacting with the Synthetix contracts. Synths are currently backed by a 750% collateralisation ratio, although this may be raised or lowered in the future through community governance mechanisms. SNX stakers incur debt when they mint Synths, and to exit the system (i.e. unlock their SNX) they must pay back this debt by burning Synths.
+All Synths are backed by SNX tokens. Synths are minted when SNX holders stake their SNX as collateral using the Synthetix Staking application, a decentralized application for interacting with the Synthetix contracts. Synths are currently backed by a 500% collateralization ratio on L2 and 400% C-ratio on L1, although this may be raised or lowered in the future through community governance mechanisms. SNX stakers incur debt when they mint Synths, and to exit the system (i.e. unlock their SNX), they must pay back this debt by burning Synths.
 
-Synthetix is also currently trialling Ether as an alternative form of collateral. This means traders can borrow Synths against their ETH and begin trading immediately, rather than needing to sell their ETH. Staking ETH requires a collateralisation ratio of 150% and creates a debt denominated in ETH, so ETH stakers mint sETH rather than sUSD and do not participate in the ‘pooled debt’ aspect of the system. In this model, ETH stakers do not receive fees or rewards as they take no risk for the debt pool.
+Synthetix also currently uses Ether as an alternative form of collateral. This means traders can borrow Synths against their ETH and begin trading immediately, rather than needing to sell their ETH. Staking ETH requires a collateralization ratio of 150% and creates a debt denominated in ETH, so ETH stakers mint sETH rather than sUSD and do not participate in the ‘pooled debt’ aspect of the system. In this model, ETH stakers do not receive fees or rewards as they take no risk for the debt pool.
 
 **Why SNX holders stake**
 
-SNX holders are incentivised to stake their tokens and mint Synths in several ways. Firstly, there are exchange rewards. These are generated whenever someone exchanges one Synth to another (i.e. on Synthetix.Exchange). Each trade generates an exchange fee that is sent to a fee pool, available for SNX stakers to claim their proportion each week. This fee is between 10-100 bps (0.1% - 1%, though typically 0.3%), and will be displayed during any trade on Synthetix.Exchange. The other incentive for SNX holders to stake/mint is SNX staking rewards, which comes from the protocol’s inflationary monetary policy. From March 2019 to August 2023, the total SNX supply will increase from 100,000,000 to 260,263,816, with a weekly decay rate of 1.25% (from December 2019). From September 2023, there will be an annual 2.5% terminal inflation for perpetuity. These SNX tokens are distributed to SNX stakers weekly on a pro-rata basis provided their collateralisation ratio does not fall below the target threshold.
+SNX holders are incentivized to stake their SNX tokens in many ways. Firstly, there are exchange rewards. These are generated whenever someone exchanges one Synth to another (i.e. on Kwenta Perpetual Futures). Each trade generates an exchange fee that is sent to a fee pool, available for SNX stakers to claim their proportion each week. This fee is between 10-60 bps (0.1% - .6%, though typically 0.3%), and will be displayed during any trade. The other incentive for SNX holders to stake/mint is SNX staking rewards, which comes from the protocol’s inflationary monetary policy. As of February of 2022, the Synthetix inflationary system is derived from a target staking ratio. This change introduces a target ratio for staking of 85%. It then adjusts the inflation weekly up or down by 10% depending on whether the staking ratio is below or above the target ratio to incentivize stakers to hit this target. If it is between 80-90%, then inflation is decreased by 5%. These SNX tokens are distributed to SNX stakers weekly on a pro-rata basis provided their collateralization ratio does not fall below the target threshold.
 
 **Minting, burning, and the C-Ratio**
 
-The mechanisms above ensure SNX stakers are incentivised to maintain their Collateralisation Ratio (C-Ratio) at the optimal rate (currently 750%). This ensures Synths are backed by sufficient collateral to absorb large price shocks. If the value of SNX or Synths fluctuate, each staker’s C Ratio will fluctuate. If it falls below 750% (although there is a small buffer allowing for minor fluctuations), they will be unable to claim fees until they restore their ratio. They adjust their ratio by either minting Synths if their ratio is above 750%, or burning Synths if their ratio is below 750%.
+The mechanisms above ensure SNX stakers are incentivized to maintain their Collateralisation Ratio (C-Ratio) at the optimal rate (currently 500% L2, 400% L1). This ensures Synths are backed by sufficient collateral to absorb large price shocks. If the value of SNX or Synths fluctuates, each staker’s C Ratio will fluctuate. If it falls below 500/400% (although there is a small buffer allowing for minor fluctuations), they will be unable to claim fees until they restore their ratio. They adjust their ratio by either minting Synths if their ratio is above 500/400%, or burning Synths if their ratio is below 500/400%.
 
 **Stakers, debt, and pooled counterparties**
 
-SNX stakers incur a ‘debt’ when they mint Synths. This debt can increase or decrease independent of their original minted value, based on the exchange rates and supply of Synths within the network. For example, if 100% of the Synths in the system were synthetic Bitcoin (sBTC), which halved in price, the debt in the system would halve, and each staker’s debt would also halve. This means in another scenario, where only half the Synths across the system were sBTC, and BTC doubled in price, the system’s total debt—and each staker’s debt—would increase by one quarter.
-In this way, SNX stakers act as a pooled counterparty to all Synth exchanges; stakers take on the risk of the overall debt in the system. They have the option of hedging this risk by taking positions external to the system. By incurring this risk and enabling trading on Synthetix.Exchange stakers earn a right to fees generated by the system.
+SNX stakers incur a ‘debt’ when they mint Synths. This debt can increase or decrease independent of their original minted value, based on the exchange rates and supply of Synths within the network.
+
+For example, if 100% of the Synths in the system were synthetic Bitcoin (sBTC), which halved in price, the debt in the system would halve, and each staker’s debt would also halve. This means in another scenario, where only half the Synths across the system were sBTC, and BTC doubled in price, the system’s total debt—and each staker’s debt—would increase by one quarter.
+
+In this way, SNX stakers act as a pooled counterparty to all Synth exchanges; stakers take on the risk of the overall debt in the system. They have the option of hedging this risk by taking positions external to the system. By incurring this risk and enabling trading on Synthetix stakers earn a right to fees generated by the system.
 
 ![Image of debt example](../img/misc/delphi_digital_debt_example.png)
 _Examples from Delphi Digital demonstrating how debt works in the Synthetix system._
 
-## Synth Pegging Mechanism
-
-The Synth peg is critical to a well functioning system, because traders require both liquidity and stability between a Synth/s and other cryptoassets in order to take profits from trading. Some Synths trade on the open market, so it is possible for them to fall below par with the assets they track. Incentives are required to ensure that deviations from the peg are minimal and that actors are motivated to correct them.
-
-There are three methods to maintain the Synth peg:
-
-- **Arbitrage**: SNX stakers have created debt by minting Synths, so if the peg drops they can now profit by buying sUSD back below par and burning it to reduce their debt, as the Synthetix system always values 1 sUSD at \$1 USD.
-- **sETH liquidity pool on Uniswap**: each week, a portion of the SNX added to the total supply through the inflationary monetary policy is distributed as reward to people providing sETH/ETH liquidity on Uniswap. This has incentivised liquidity providers to collectively create the largest liquidity pool on Uniswap (at time of writing), allowing traders to purchase Synths to start trading or sell Synths to take profits.
-- **SNX auction**: Synthetix is currently trialling a new mechanism with the dFusion protocol (from Gnosis) in which discounted SNX is sold at auction for ETH, which is then used to purchase Synths below the peg.
-
-## Synthetix.Exchange
+## Synthetix and Partner Protocols
 
 **Why trade synthetic assets?**
 
-Synthetic assets provide exposure to an asset without holding the underlying resource. This has a range of advantages, including reducing the friction when switching between different assets (e.g. from Apple shares to synthetic gold), expanding the accessibility of certain assets, and censorship resistance.
+Synthetic assets provide exposure to an asset without holding the underlying resource. This has a range of advantages, including reducing the friction when switching between different assets, expanding the accessibility of certain assets, and censorship resistance.
 
-**Advantages of Synthetix.Exchange**
+**Advantages of Synthetix Infrastructure **
 
-Trading on Synthetix.Exchange provides many advantages over centralised exchanges and order book based DEX’s. The lack of an order book means all trades are executed against the contract, known as P2C (peer-to-contract) trading. Assets are assigned an exchange rate through price feeds supplied by an oracle, and can be converted using the Synthetix.Exchange dApp. This provides infinite liquidity up to the total amount of collateral in the system, zero slippage, and permissionless on-chain trading.
+Trading on Synthetix infrastructure provides many advantages over centralized exchanges and order book based DEX’s. The lack of an order book means all trades are executed against the contract, known as P2C (peer-to-contract) trading. Assets are assigned an exchange rate through price feeds supplied by an oracle, and can be converted using the Kwenta.io dApp. This provides infinite liquidity up to the total amount of collateral in the system, zero slippage, and permissionless on-chain trading.
+
+**Synthetic futures**
+
+Synthetix has recently launched Perpetual Futures Beta. Anyone with access to the internet can leverage Synthetix’s infrastructure to access up to 10x leverage on an evergrowing list of Synthetic assets.
+
+Kwenta, a fully decentralized and composable protocol with an easy-to-use trading UI, is the first partner to integrate Synthetix’s perps. Synthetix perps markets are accessible through a dedicated Kwenta UI.
+
+Synthetix's perpetual futures enable a much expanded and capital-efficient trading experience by allowing both leveraged longs and shorts on a large selection of assets.
+
+For SNX stakers, futures provide an additional revenue stream due to exchange and funding rate fees and reduce the need to hedge the additional debt due to inherent self-hedging and controlled exposure through market size limits.
+
+Another useful property of Synthetix’s perps markets is that support for new assets can be expanded more readily for futures than for spot assets. This is because perpetual markets don’t share some of the limitations and risks of spot synths, allowing for more assets to be safely added. This means that the Synthetix protocol may soon offer a broader range of perpetual futures pairs than many competitors.
 
 **How Synths work**
 
-Synths are synthetic assets that track the price of the underlying asset. They allow holders to gain exposure on Ethereum to various asset classes without holding the underlying assets themselves or trusting a custodian. Synths are backed by the Synthetix Network Token (SNX), which is staked as collateral at a ratio of 750%.
+Synths are synthetic assets that track the price of the underlying asset. They allow holders to gain exposure on Ethereum to various asset classes without holding the underlying assets themselves or trusting a custodian. Synths are backed by the Synthetix Network Token (SNX), which is staked as collateral at a ratio of 500/400%.
 
 **The current Synths**
 
-There are currently five categories of Synths available: fiat currencies, commodities, cryptocurrencies, inverse cryptocurrencies, and cryptocurrency indexes. Our fiat Synths include sUSD, sEUR, sKRW, and many more; our commodity Synths include synthetic gold and synthetic silver, both measured per ounce; our cryptocurrencies include sBTC, sETH, and sBNB, with more to come; and our Inverse Synths inversely track the price of those available cryptocurrencies, meaning that when BTC’s price decreases, iBTC’s price increases. Our current cryptocurrency indexes are sDEFI and sCEX (and their inverses), which respectively track a basket of DeFi assets and a basket of centralised exchange tokens.
+For a current and continually updated list of synthetic assets and perpetual markets, please refer to https://kwenta.io/dashboard and https://v2.beta.kwenta.io/dashboard/overview on Ethereum and Optimistic Ethereum (seperatetly)
 
 ## System Architecture
 
@@ -64,8 +71,8 @@ There are currently five categories of Synths available: fiat currencies, commod
 
 An SNX holder can mint sUSD by locking their SNX as collateral via the Synthetix smart contract. The steps involved when an SNX holder mints are:
 
-- The Synthetix contract checks that the SNX staker can mint Synths against their SNX, which requires their Collateralisation Ratio to be below 750%.
-- Their debt is added to the Debt Register. The debt is the amount of the new value minted, and is stored in sUSD
+- The Synthetix contract checks that the SNX staker can mint Synths against their SNX, which requires their Collateralisation Ratio to be below 500/400%.
+- Debt shares are issues to a staker to track stakers issued debt amount when minting or burning sUSD
 - With the debt assigned to the staker, the Synthetix contract instructs the sUSD contract to issue the new amount. It adds it to its total supply and assigns the newly minted sUSD to the user’s wallet.
 
 If the price of SNX increases, an equivalent portion of a staker’s SNX is automatically unlocked as collateral. For example, if a user locks $100 of SNX as collateral, and the value of SNX doubles, then half of their SNX (total value: $200) is locked and the other half is unlocked. If they wish, that extra unlocked SNX can then be staked to mint more sUSD.
@@ -84,11 +91,11 @@ No counterparty is required to exchange, as the system converts the debt from on
 
 **Claiming Fees**
 
-When Synths are exchanged through the Synthetix contract, a 0.3% fee is extracted and sent to the fee pool to be claimed by SNX stakers. When claiming fees (also called Synth exchange rewards) a staker also claims their SNX staking rewards, which reward them with extra SNX for staking the SNX they currently have. The smart contracts’ process once a staker requests to claim their fees is as follows:
+When Synths are exchanged through the Synthetix contract, a fee is extracted and sent to the fee pool to be claimed by SNX stakers. When claiming fees (also called Synth exchange rewards) a staker also claims their SNX staking rewards, which reward them with extra SNX for staking the SNX they currently have. The smart contracts’ process once a staker requests to claim their fees is as follows:
 
 - The fee pool checks whether there are fees currently available and whether the staker is eligible to receive fees.
 - The amount of fees in sUSD is sent to the staker’s wallet address and the balance of the fee pool is updated.
-- Additionally, a pro-rata amount of escrowed SNX is assigned to the wallet address from the SNX staking rewards contract.
+- Additionally, a pro-rata amount of escrowed (inflationary)SNX is assigned to the wallet address from the SNX staking rewards contract.
 
 Fees are allocated based on the proportion of debt each staker has issued. For example, if a staker has issued 1,000 sUSD in debt, the debt pool is 10,000 sUSD, and 100 in fees are generated in a fee period, this staker is entitled to 10 sUSD because their debt represents 10% of the debt pool. The same proportional distribution mechanism is used for SNX staking rewards.
 
@@ -102,39 +109,30 @@ When an SNX staker wants to exit the system or reduce their debt and unlock stak
 
 **The debt pool**
 
-The system tracks the debt pool (as well as each individual staker’s debt) each time an SNX holder mints or burns Synths. It does this by updating the Cumulative Debt Delta Ratio. This measures the SNX staker’s proportion of the debt pool at the time they last minted or burned, as well as the debt change caused by other stakers entering or leaving the system. The system uses this information to determine the individual debt of each staker at any time in the future, without having to actually record the changing debt of each individual staker.
+The system tracks the debt pool by issuing debt shares (a token) to stakers when they mint or burn sUSD. A staker’s debt percentage would be their balance of tokens divided by the total supply of debt shares.
 
-Updating the Cumulative Debt Delta Ratio on the Debt Register allows the system to track every user’s % of the debt. It calculates the % change the new debt introduces against the debt pool using the formula below and appends it to the Debt Register:
+Example:
 
-`New Debt Minted ( Total Existing Debt + New Debt)`
+Alice mints 100 sUSD, gets issued with 100 debt shares
+Bob mints 100 sUSD, gets issued with 100 debt shares
+Both Alice and Bob each have 50% of the debt shares (100 / 200 shares)
 
-The staker’s last mint/burn action is then recorded in the Debt Register within their issuance data and the relative index number at which this action happened. The detail recorded is the percentage of the debt pool they represent, which is calculated by this formula:
+When the total debt pool value fluctuates, the shares will be used to calculate how much debt the minter owes. For example, if the debt pool now doubles to 400 sUSD, based on the above scenario:
 
-`User debt percentage =(New Debt + Existing Debt) (Previous Debt Pool + New Debt)`
+Alice who has 50% (100 shares), will have 200 sUSD debt
+Alice who has 50% (100 shares), will have 200 sUSD debt
 
-The Debt Register holds the Cumulative Debt Delta Ratio, which is the product of the calculation above, and the relative time (index) the debt was added, so that it can be used to calculate any user’s % of the debt pool at any index in the future based on the % shift in the debt pool their last mint/burn caused.
+Burning sUSD reduces the number of debt shares issued against a staker and the number of shares burnt is calculated with the total debt pool value. Continuing with the example above,
 
-We recalculate the debt pool by summing the number of tokens in each Synth contract multiplied by the current exchange rates, each time new debt is issued/burned:
+Example:
 
-`totalDebtIssued = totalIssuedSynths`
-
-This enables the calculation of the current debt pool, and is included in the updated Cumulative Debt Delta Ratio so that we know at each Debt Register entry the size of the debt (in Synths).
-
-When a staker pays back their debt (i.e. by burning the Synths they minted) to unlock their SNX collateral the system updates the Cumulative Debt Delta based on the % shift in the amount of debt to be burned against the total value of the system’s debt after the reduction in debt.
-
-This is the inverse calculation from when a user mints new debt:
-
-`user's new debt percentage =(existing debt - debt to be burned) (debt pool - debt to be burned)`
-
-This is the formula for calculating the updated Cumulative Debt Delta:
-
-`delta = debt to be burned (debt pool -debt to be burned)`
-
-If a staker burns all their debt, their issuance data in the Debt Register will be set to 0 and they will no longer be part of the debt pool.
+Alice now burns 100 sUSD, which burns (100 / 400) _ 200 shares = 50 shares
+Alice would have 50 shares after her burn, ⅓ of the debt pool.
+Alice’s remaining debt will be (50 / 150 shares) _ 300 = 100 sUSD
 
 **The oracle**
 
-The value of all synthetic assets in the Synthetix system are currently determined by oracles that push price feeds on-chain. It uses an algorithm with a variety of sources to form an aggregate value for each asset. The price feeds are currently supplied by both Chainlink’s independent node operators and Synthetix, and will soon all be supplied by Chainlink.
+The value of all synthetic assets in the Synthetix system is determined by oracles that push price feeds on-chain. It uses an algorithm with a variety of sources to form an aggregate value for each asset. The price feeds are currently supplied by Chainlink’s independent node operators.
 
 ## Current Risks and Risk Mitigation Strategies
 
@@ -144,34 +142,22 @@ There are several risks in the current architecture, as Synthetix is still an ex
 
 One risk involves the debt SNX holders issue when they stake their SNX and mint Synths. As previously explained, this debt can fluctuate due to exchange rate shifts within the system. This means that to exit the system and unlock their staked SNX, they may need to burn more Synths than they originally minted.
 
-Most people in the cryptocurrency space are aware of this risk, but the prices of most cryptoassets are highly correlated to Bitcoin and/or Ethereum. This means it’s possible for major price fluctuations in the SNX token to occur for reasons that have little to do with SNX or the Synthetix system.
+Most people in the cryptocurrency space are aware of this risk, but the prices of most crypto assets are highly correlated to Bitcoin and/or Ethereum. This means it’s possible for major price fluctuations in the SNX token to occur for reasons that have little to do with SNX or the Synthetix system.
 
-Finally, there are a number of aspects of the system that are currently centralised. This decision has been made to ensure efficient implementation of the project. One example of centralisation is the use of proxy contracts across much of the architecture. This is to ensure the system can be upgraded easily but confers a level of control to the engineering team which requires trust from users. While these aspects will be phased out over time, it is important to understand the risks inherent in the current system architecture.
+Finally, there are a number of aspects of the system that are currently centralized. This decision has been made to ensure the efficient implementation of the project. One example of centralization is the use of proxy contracts across much of the architecture. This is to ensure the system can be upgraded easily but confers a level of control to the engineering team which requires trust from users. While these aspects will be phased out over time, it is important to understand the risks inherent in the current system architecture.
 
 **Risk mitigation strategies**
 
-As a decentralised protocol, the Synthetix team is committed to decentralisation and censorship resistance — this will be a gradual process as the system matures. This includes crucial areas such as our price feeds. We have previously announced a partnership with Chainlink, a provider of decentralised oracle solutions.
+As a decentralized protocol, the Synthetix team is committed to decentralization and censorship resistance — this will be a gradual process as the system matures. This includes crucial areas such as our price feeds. Chainlink, reputable a provider of decentralized oracle solutions, supplies all oracles, and Synthetix does not rely on a centralized solution.
 
-Another important area is governance, we have recently initiated regular community governance calls to ensure the project’s goals are aligned with the community. Another aspect of this process is a move to a formal change management process, we have introduced SIP’s (Synthetix Improvement Proposals) to allow the community to introduce change requests and to ensure that any changes to the system are well understood and considered by all stakeholders.
+Another important area is governance, Synthetic has a system of councils that helps to oversee and govern the protocol. The Spartan Council, the key governing council of Synthetix, is elected by the community and decides which changes to the protocol are approved.
 
 ## Future Functionality
 
 **Additional Synths**
 
-There are many different kinds of Synths that can be added to the system to provide greater utility to Synthetix.Exchange. These include leveraged assets that are not available on other platforms as well as indices like the S&P500 and equities like APPL and TSLA.
-
-**Synthetic futures**
-
-We expect to launch the ability for traders to take synthetic futures on Synthetix.Exchange in the near future. Many aspects of this functionality are yet to be finalised, but it’s expected it will use a self balancing mechanism similar to the Uniswap auto market maker algorithm, where the total open interest of each position and therefore the risk to SNX stakers is capped and borrow rates are adjusted based on the current open interest. The system will also encourage traders to balance the risk in the system by paying a percentage of the fees to traders who rebalance positions, though this feature will not be in the initial release. There are already a number of derivatives trading platforms for cryptoassets, but they are all limited by counterparty liquidity. The unique design of the Synthetix system means it may be able to capture market share in this area, similarly to how Binance captured market share by listing more cryptoassets than most other centralised exchanges.
-
-**Leveraged trading**
-
-Leveraged trading drives a significant amount of volume on crypto exchanges, and while synthetic futures will compete directly with centralised futures platforms, there is a lot of value in supporting tokenised leverage.
-
-**Advanced order types**
-
-The current version of Synthetix.Exchange supports only market orders which limits the usability of the exchange. An advanced order engine will be able to support limit, stop loss, stop limits, and other advanced order types. This will use a relay network for processing advanced orders. Advanced order types are critical to reaching feature parity with centralised exchanges.
+There are many different kinds of Synths that can be added to the system to provide greater utility to Synthetix. These include commodities, long tail crypto assets, and others..
 
 ## Conclusion
 
-Synthetix has already delivered one of the most complex and useful protocols built on Ethereum to date. But the potential for censorship-resistant synthetic assets is still largely untapped. Further improvements to the mechanism as well as functional upgrades and new Synths will vastly increase the utility of the platform. Movement to a decentralised governance process will also reduce systemic risk and increase the long term viability of the project.
+Synthetix has already delivered one of the most complex and useful protocols built on Ethereum to date. But the potential for censorship-resistant synthetic assets is still largely untapped. Further improvements to the mechanism as well as functional upgrades and new Synths will vastly increase the utility of the platform.

@@ -2,13 +2,21 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol)
+**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol)
+
+## Variables
+
+### `CONTRACT_NAME`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L14)</sub>
+
+**Type:** `bytes32`
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -28,7 +36,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -48,7 +56,7 @@
 
 ### `finalizeDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -74,7 +82,7 @@
 
 ### `finalizeEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -98,9 +106,35 @@
 
     * [ImportedVestingEntries](#importedvestingentries)
 
+### `finalizeFeePeriodClose`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L112)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `finalizeFeePeriodClose(uint256 snxBackedAmount, uint256 totalDebtShares)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyOptimismBridge](#onlyoptimismbridge)
+
+    **Emits**
+
+    * [FeePeriodCloseFinalized](#feeperiodclosefinalized)
+
 ### `finalizeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -128,7 +162,7 @@
 
 ### `onlyAllowFromOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -146,13 +180,13 @@
 
     **Requires**
 
-    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L29)
+    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L31)
 
-    * [require(..., "Only the L1 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L30)
+    * [require(..., "Only the L1 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L32)
 
 ### `synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -172,7 +206,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -194,7 +228,7 @@
 
 ### `withdrawTo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -218,18 +252,24 @@
 
 ### `onlyOptimismBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L35)</sub>
 
 ## Events
 
+### `FeePeriodCloseFinalized`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L127)</sub>
+
+**Signature**: `FeePeriodCloseFinalized(uint256 snxBackedAmount, uint256 totalDebtShares)`
+
 ### `ImportedVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L120)</sub>
 
 **Signature**: `ImportedVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
 
 ### `RewardDepositFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.59.0/contracts/SynthetixBridgeToBase.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L126)</sub>
 
 **Signature**: `RewardDepositFinalized(address from, uint256 amount)`

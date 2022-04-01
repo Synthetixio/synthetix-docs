@@ -2,6 +2,90 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Mizar (v2.65.0)
+
+**Published**: Mar 28, 2022
+
+**Codebase**: [v2.65.0](https://github.com/Synthetixio/synthetix/tree/v2.65.0)
+
+> - [SIP-220 Fix for Issuance after Debt Synthesis](https://sips.synthetix.io/sips/sip-220)
+
+> Audit: https://iosiro.com/audits/synthetix-mizar-release-smart-contract-audit
+
+---
+
+# Diphda (v2.64.1)
+
+**Published**: Mar 18, 2022
+
+**Codebase**: [v2.64.1](https://github.com/Synthetixio/synthetix/tree/v2.64.1)
+
+> https://blog.synthetix.io/the-diphda-release/
+
+- [SIP-80](https://sips.synthetix.io/sips/sip-80/): Synthetic Futures: Creates a perpetual futures market that trades against the Synthetix Debt Pool, allowing traders to access 10x leverage on a dedicated trading platform, [Kwenta](https://kwenta.io/).
+- [SIP-165](https://sips.synthetix.io/sips/sip-165): Debt Pool Synthesis: Merges the debt pools across all chains on which Synthetix is deployed, tracking the total synth debt with a chainlink oracle.
+- [SIP-213](https://sips.synthetix.io/sips/sip-213/): Add AAVE and UNI to Optimism: Add sAAVE and sUNI synths to Optimism.
+
+> Audit: https://iosiro.com/audits/synthetix-didpha-release-smart-contract-audit
+
+---
+
+# Algieba (v2.63.0)
+
+**Published**: Feb 24, 2022
+
+**Codebase**: [v2.63.0](https://github.com/Synthetixio/synthetix/tree/v2.63.0)
+
+> https://blog.synthetix.io/the-algieba-release/
+
+- [SIP-205: Add AVAX, MATIC and EUR To Optimism ](https://sips.synthetix.io/sips/sip-205/): Add AVAX, MATIC and EUR Synths on Optimism for trading and shorting.
+
+---
+
+# Hamal (v2.62.0)
+
+**Published**: Feb 19, 2022
+
+**Codebase**: [v2.62.0](https://github.com/Synthetixio/synthetix/tree/v2.62.0)
+
+> https://blog.synthetix.io/the-hamal-release/
+
+- [SIP-202 Target Staking Ratio](https://sips.synthetix.io/sips/sip-202/): Introduce a target staking ratio incentivized through inflation.
+- [SCCP-164 Extend Burn Lock to 7 Days](https://sips.synthetix.io/sccp/sccp-164): Adjust Burn Lock from 24 hours to 7 days (168 hours).
+
+> Audit: https://iosiro.com/audits/synthetix-hamal-release-smart-contract-audit
+
+---
+
+# Polaris (v2.61.0)
+
+**Published**: Feb 14, 2022
+
+**Codebase**: [v2.61.0](https://github.com/Synthetixio/synthetix/tree/v2.61.0)
+
+> https://blog.synthetix.io/the-polaris-release/
+
+- [SIP-199](https://sips.synthetix.io/sips/sip-199) Adding sSOL to Optimism
+- [SCCP-163](https://sips.synthetix.io/sccp/sccp-163/) Update Optimism Chainlink Oracles to OCR
+
+> Audit: none required - no new contract changes
+
+---
+
+# Alphard (v2.60.0)
+
+**Published**: Feb 9, 2022
+
+**Codebase**: [v2.60.0](https://github.com/Synthetixio/synthetix/tree/v2.60.0)
+
+> https://blog.synthetix.io/the-alphard-release/
+
+- [SIP-185](https://blog.synthetix.io/the-alphard-release/) Debt Shares
+
+> Audit: https://iosiro.com/audits/synthetix-alphard-release-smart-contract-audit
+
+---
+
 # Mirzam (v2.59.0)
 
 **Published**: Feb 7, 2022
@@ -11,6 +95,8 @@
 > https://blog.synthetix.io/the-mirzam-release/
 
 - [SIP-209](https://sips.synthetix.io/sips/sip-209/): Update Exchanger for backwards compatibility
+
+> Audit: none required (a minor change to a `view` function)
 
 ---
 
