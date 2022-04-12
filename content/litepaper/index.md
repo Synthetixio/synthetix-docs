@@ -36,7 +36,7 @@ Interested in learning some of the basics about staking? Read our new guide - ht
 
 **Liquidation Risk**
 
-An internal liquidation contract exists that is peer to peer in nature and allows an account to be flagged for liquidation as soon as the account’s c-ratio drops below 200%. After an account has been flagged, a liquidation timer of 72 hours begins on the account to give a window of opportunity to the flagged staker to fix their c-ratio and stop the liquidation countdown. To halt the liquidation timer and remove the flag the staker must reach the target c-ratio (and not just get above 200% again). The flagging of an account does not designate a liquidator. A liquidator is the first participant on-chain that provides the sUSD required to liquidate the proportionate SNX as soon as the liquidation timer has gone to zero. 
+An internal liquidation contract exists that is peer to peer in nature and allows an account to be flagged for liquidation as soon as the account’s c-ratio drops below 200%. After an account has been flagged, a liquidation timer of 72 hours begins on the account to give a window of opportunity to the flagged staker to fix their c-ratio and stop the liquidation countdown. To halt the liquidation timer and remove the flag the staker must reach the target c-ratio (and not just get above 200% again). The flagging of an account does not designate a liquidator. A liquidator is the first participant on-chain that provides the sUSD required to liquidate the proportionate SNX as soon as the liquidation timer has gone to zero.
 
 Essentially this is an on-chain ‘free-for-all’ to anyone that knows how to interact with the liquidation contract properly and is happy to pay the associated gas costs.
 
