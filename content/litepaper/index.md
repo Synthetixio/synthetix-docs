@@ -34,6 +34,14 @@ In this way, SNX stakers act as a pooled counterparty to all Synth exchanges; st
 
 Interested in learning some of the basics about staking? Read our new guide - https://blog.synthetix.io/basics-of-staking-snx-2022/
 
+**Liquidation Risk**
+
+An internal liquidation contract exists that is peer to peer in nature and allows an account to be flagged for liquidation as soon as the account’s c-ratio drops below 200%. After an account has been flagged, a liquidation timer of 72 hours begins on the account to give a window of opportunity to the flagged staker to fix their c-ratio and stop the liquidation countdown. To halt the liquidation timer and remove the flag the staker must reach the target c-ratio (and not just get above 200% again). The flagging of an account does not designate a liquidator. A liquidator is the first participant on-chain that provides the sUSD required to liquidate the proportionate SNX as soon as the liquidation timer has gone to zero. 
+
+Essentially this is an on-chain ‘free-for-all’ to anyone that knows how to interact with the liquidation contract properly and is happy to pay the associated gas costs.
+
+When an account is liquidated, the liquidated SNX amount is 10% above the required sUSD put forward to burn. This is a bonus purposely put into the liquidation mechanics to incentivize liquidators and a punishment deterrent to stakers for neglecting their obligations. The liquidation smart contract governs the process so that the liquidated will only have the 10% penalty removed and no more, and can only be liquidated to target c-ratio.
+
 ## Synthetix and Partner Protocols
 
 **Why trade synthetic assets?**
