@@ -42,6 +42,17 @@ Finally, if the target contract needs to transfer ether around, then it will be 
 
 **Source:** [contracts/Proxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/Proxy.sol)
 
+## Proxy Upgradability - Protocol DAO
+
+Any contract behind a proxy can be upgraded with any proposed changes through the following process:
+
+A SIP (Synthetix Improvement proposal) must be written and published to the Synthetix GitHub, presented to the community on Discord, 5/8 Spartan Council members must vote yes on it. Then the protocol DAO (5/8) has to sign it and implement it. The protocolDAO has no time lock when implementing a change. 
+
+Public presentations for proposed SIPs/SCCPs can be delayed during an emergency. However, all changes still need a 5/8 yes vote from the Spartan Council and then 5/8 signatures from the protocolDAO to sign and implement the change.
+
+There is no other way to implement changes to Synthetix contracts and the overall Synthetix codebase.
+
+
 ## Architecture
 
 ### Related Contracts
