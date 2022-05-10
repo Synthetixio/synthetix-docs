@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/legacy/LegacyOwned.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol)
+**Source:** [contracts/legacy/LegacyOwned.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol)
 
 ## Variables
 
 ### `nominatedOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L5)</sub>
 
 **Type:** `address`
 
 ### `owner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L4)</sub>
 
 **Type:** `address`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `nominateOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -70,7 +70,7 @@
 
 ### `acceptOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@
 
     **Requires**
 
-    * [require(..., "bool")](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L17)
+    * [require(..., "bool")](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L17)
 
     **Emits**
 
@@ -98,18 +98,18 @@
 
 ### `onlyOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L23)</sub>
 
 ## Events
 
 ### `OwnerChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L29)</sub>
 
 **Signature**: `OwnerChanged(address oldOwner, address newOwner)`
 
 ### `OwnerNominated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/legacy/LegacyOwned.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/legacy/LegacyOwned.sol#L28)</sub>
 
 **Signature**: `OwnerNominated(address newOwner)`

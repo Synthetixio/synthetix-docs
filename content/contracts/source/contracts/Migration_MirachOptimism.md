@@ -2,75 +2,117 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_MirachOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol)
+**Source:** [contracts/migrations/Migration_MirachOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L23)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L33)</sub>
 
 **Type:** `contract AddressResolver`
 
+### `exchangerates_i`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L46)</sub>
+
+**Type:** `contract ExchangeRates`
+
+### `exchangestate_i`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L37)</sub>
+
+**Type:** `contract ExchangeState`
+
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L30)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
 ### `futuresmarketsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L50)</sub>
 
 **Type:** `contract FuturesMarketSettings`
 
-### `new_FuturesMarketXAG_contract`
+### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L48)</sub>
+
+**Type:** `contract Issuer`
+
+### `new_ExchangeRates_contract`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L58)</sub>
 
 **Type:** `address`
 
-### `new_FuturesMarketXAU_contract`
+### `new_Exchanger_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L64)</sub>
 
 **Type:** `address`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L66)</sub>
 
 **Type:** `address`
 
 ### `new_SynthetixBridgeToBase_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L68)</sub>
+
+**Type:** `address`
+
+### `new_Synthetix_contract`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L62)</sub>
 
 **Type:** `address`
 
 ### `new_SystemSettings_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L60)</sub>
 
 **Type:** `address`
 
+### `proxysynthetix_i`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L35)</sub>
+
+**Type:** `contract ProxyERC20`
+
+### `rewardsdistribution_i`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L43)</sub>
+
+**Type:** `contract RewardsDistribution`
+
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L39)</sub>
 
 **Type:** `contract SystemStatus`
+
+### `tokenstatesynthetix_i`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L41)</sub>
+
+**Type:** `contract TokenState`
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -90,7 +132,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -110,7 +152,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -134,7 +176,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L175)</sub>
 
 ??? example "Details"
 
@@ -152,7 +194,7 @@
 
 ### `addressresolver_importAddresses_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L208)</sub>
 
 ??? example "Details"
 
@@ -170,7 +212,7 @@
 
 ### `addressresolver_rebuildCaches_3`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L229)</sub>
 
 ??? example "Details"
 
@@ -188,7 +230,7 @@
 
 ### `addressresolver_rebuildCaches_4`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L254)</sub>
 
 ??? example "Details"
 
@@ -204,9 +246,27 @@
 
     ``
 
+### `addressresolver_rebuildCaches_5`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L279)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `addressresolver_rebuildCaches_5()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
 ### `futuresmarketmanager_addMarkets_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L196)</sub>
 
 ??? example "Details"
 
@@ -224,7 +284,7 @@
 
 ### `futuresmarketmanager_removeMarkets_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -240,9 +300,27 @@
 
     ``
 
+### `issuer_addSynths_43`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L292)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issuer_addSynths_43()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/migrations/Migration_MirachOptimism.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.1-alpha/contracts/migrations/Migration_MirachOptimism.sol#L182)</sub>
 
 ??? example "Details"
 
