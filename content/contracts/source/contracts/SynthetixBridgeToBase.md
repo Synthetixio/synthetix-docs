@@ -30,8 +30,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.0-alpha/contracts/SynthetixBridgeToBase.sol#L16)</sub>
 
-**Type:** `bytes32`
-
 ??? example "Details"
 
     **Signature**
