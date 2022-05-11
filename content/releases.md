@@ -2,6 +2,34 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Mirach (v2.68.2)
+
+**Published**: May 11, 2022
+
+**Codebase**: [v2.68.2](https://github.com/Synthetixio/synthetix/tree/v2.68.2)
+
+> - [SIP-216: Add Indian Rupee Synth](https://sips.synthetix.io/sips/sip-216/)
+
+- [SIP-219: APECOIN PERP](https://sips.synthetix.io/sips/sip-219/)
+- [SIP-223: DYDX PERP](https://sips.synthetix.io/sips/sip-223/)
+- [SIP-198: Update to Atomic Exchange Function](https://sips.synthetix.io/sips/sip-198/)
+- [SIP-222: Update Exchange Fee System](https://sips.synthetix.io/sips/sip-222/)
+- [SIP-229: Optimism Bridge for Synths](https://sips.synthetix.io/sips/sip-229/)
+
+> Audit: https://iosiro.com/audits/synthetix-mirarch-release-smart-contract-audit
+
+## Release notes
+
+- Adds new spot synth(s) to L2: **INR** (Indian Rupee)
+  - Update fx market closure bot for INR
+- Adds new futures market(s) to L2: **APE**, **DYDX**
+  - Update pausing bot for APE, DYDX
+- Updated base exchange rate to factor in source AND destination currencies
+- Updated `ISynthetix` and `IExchanger` interfaces to take in a `minAmount` for slippage control
+- Updated the Optimism bridges to enable cross chain synth transfers
+
+---
+
 # Nunki (v2.66.0)
 
 **Published**: Mar 31, 2022
