@@ -4,7 +4,7 @@
 
 A small utility contract that augments the SNX escrow contract to allow extracting a user's schedule as an array rather than as individual entries.
 
-**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/EscrowChecker.sol)
+**Source:** [contracts/EscrowChecker.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/EscrowChecker.sol)
 
 ## Architecture
 
@@ -16,7 +16,7 @@ A small utility contract that augments the SNX escrow contract to allow extracti
 
 ### `synthetix_escrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/EscrowChecker.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/EscrowChecker.sol#L11)</sub>
 
 The [SNX escrow contract](SynthetixEscrow.md).
 
@@ -26,7 +26,7 @@ The [SNX escrow contract](SynthetixEscrow.md).
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/EscrowChecker.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/EscrowChecker.sol#L13)</sub>
 
 Initialises the [synthetix escrow address](#synthetix_escrow).
 
@@ -48,7 +48,7 @@ Initialises the [synthetix escrow address](#synthetix_escrow).
 
 ### `checkAccountSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/EscrowChecker.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/EscrowChecker.sol#L17)</sub>
 
 Returns the given address's vesting schedule as up to 16 `uints`, composed of an alternating sequence of up to 8 `(timestamp, quantity)` pairs, as per [`SynthetixEscrow.getVestingScheduleEntry`](SynthetixEscrow.md#getVestingScheduleEntry).
 

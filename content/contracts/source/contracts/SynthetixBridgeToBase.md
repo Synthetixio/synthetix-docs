@@ -2,21 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol)
-
-## Variables
-
-### `CONTRACT_NAME`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L14)</sub>
-
-**Type:** `bytes32`
+**Source:** [contracts/SynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -34,9 +26,29 @@
 
 ## Views
 
+### `CONTRACT_NAME`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L16)</sub>
+
+**Type:** `bytes32`
+
+??? example "Details"
+
+    **Signature**
+
+    `CONTRACT_NAME() pure returns (bytes32)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    `pure`
+
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -56,7 +68,7 @@
 
 ### `finalizeDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -74,7 +86,7 @@
 
     **Modifiers**
 
-    * [onlyOptimismBridge](#onlyoptimismbridge)
+    * [onlyCounterpart](#onlycounterpart)
 
     **Emits**
 
@@ -82,7 +94,7 @@
 
 ### `finalizeEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -100,7 +112,7 @@
 
     **Modifiers**
 
-    * [onlyOptimismBridge](#onlyoptimismbridge)
+    * [onlyCounterpart](#onlycounterpart)
 
     **Emits**
 
@@ -108,7 +120,7 @@
 
 ### `finalizeFeePeriodClose`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -126,7 +138,7 @@
 
     **Modifiers**
 
-    * [onlyOptimismBridge](#onlyoptimismbridge)
+    * [onlyCounterpart](#onlycounterpart)
 
     **Emits**
 
@@ -134,7 +146,7 @@
 
 ### `finalizeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -152,7 +164,7 @@
 
     **Modifiers**
 
-    * [onlyOptimismBridge](#onlyoptimismbridge)
+    * [onlyCounterpart](#onlycounterpart)
 
     **Emits**
 
@@ -160,15 +172,15 @@
 
 ## Internal Functions
 
-### `onlyAllowFromOptimism`
+### `counterpart`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L30)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `onlyAllowFromOptimism() view`
+    `counterpart() view returns (address)`
 
     **Visibility**
 
@@ -178,15 +190,9 @@
 
     `view`
 
-    **Requires**
-
-    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L31)
-
-    * [require(..., "Only the L1 bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L32)
-
 ### `synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -206,7 +212,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -228,7 +234,7 @@
 
 ### `withdrawTo`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -248,28 +254,22 @@
 
     * [requireInitiationActive](#requireinitiationactive)
 
-## Modifiers
-
-### `onlyOptimismBridge`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L35)</sub>
-
 ## Events
 
 ### `FeePeriodCloseFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L121)</sub>
 
 **Signature**: `FeePeriodCloseFinalized(uint256 snxBackedAmount, uint256 totalDebtShares)`
 
 ### `ImportedVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L114)</sub>
 
 **Signature**: `ImportedVestingEntries(address account, uint256 escrowedAmount, struct VestingEntries.VestingEntry[] vestingEntries)`
 
 ### `RewardDepositFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/SynthetixBridgeToBase.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/SynthetixBridgeToBase.sol#L120)</sub>
 
 **Signature**: `RewardDepositFinalized(address from, uint256 amount)`

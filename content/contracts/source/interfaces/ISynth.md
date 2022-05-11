@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/interfaces/ISynth.sol)
+**Source:** [contracts/interfaces/ISynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/interfaces/ISynth.sol)
 
 ## Views
 
 ### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/interfaces/ISynth.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/interfaces/ISynth.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `transferableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/interfaces/ISynth.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/interfaces/ISynth.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/interfaces/ISynth.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/interfaces/ISynth.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/interfaces/ISynth.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/interfaces/ISynth.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `transferAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/interfaces/ISynth.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/interfaces/ISynth.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `transferFromAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.66.0/contracts/interfaces/ISynth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/interfaces/ISynth.sol#L13)</sub>
 
 ??? example "Details"
 

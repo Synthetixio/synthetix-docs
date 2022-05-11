@@ -139,6 +139,9 @@ nav:
                 - Migration_Diphda_part2: contracts/source/contracts/Migration_Diphda_part2.md
                 - Migration_Hamal: contracts/source/contracts/Migration_Hamal.md
                 - Migration_Kaus: contracts/source/contracts/Migration_Kaus.md
+                - Migration_MenkentOptimism: contracts/source/contracts/Migration_MenkentOptimism.md
+                - Migration_Mirach: contracts/source/contracts/Migration_Mirach.md
+                - Migration_MirachOptimism: contracts/source/contracts/Migration_MirachOptimism.md
                 - Migration_Mirfak: contracts/source/contracts/Migration_Mirfak.md
                 - Migration_Mirzam: contracts/source/contracts/Migration_Mirzam.md
                 - Migration_MirzamOptimism: contracts/source/contracts/Migration_MirzamOptimism.md
@@ -152,6 +155,9 @@ nav:
                 - MixinFuturesMarketSettings: contracts/source/contracts/MixinFuturesMarketSettings.md
                 - MixinFuturesNextPriceOrders: contracts/source/contracts/MixinFuturesNextPriceOrders.md
                 - MixinFuturesViews: contracts/source/contracts/MixinFuturesViews.md
+                - MixinPerpsV2MarketNextPrice: contracts/source/contracts/MixinPerpsV2MarketNextPrice.md
+                - MixinPerpsV2MarketSettings: contracts/source/contracts/MixinPerpsV2MarketSettings.md
+                - MixinPerpsV2MarketViews: contracts/source/contracts/MixinPerpsV2MarketViews.md
                 - MixinResolver: contracts/source/contracts/MixinResolver.md
                 - MixinSystemSettings: contracts/source/contracts/MixinSystemSettings.md
                 - MultiCollateralSynth: contracts/source/contracts/MultiCollateralSynth.md
@@ -162,6 +168,9 @@ nav:
                 - OwnerRelayOnEthereum: contracts/source/contracts/OwnerRelayOnEthereum.md
                 - OwnerRelayOnOptimism: contracts/source/contracts/OwnerRelayOnOptimism.md
                 - Pausable: contracts/source/contracts/Pausable.md
+                - PerpsV2Market: contracts/source/contracts/PerpsV2Market.md
+                - PerpsV2MarketBase: contracts/source/contracts/PerpsV2MarketBase.md
+                - PerpsV2Settings: contracts/source/contracts/PerpsV2Settings.md
                 - Proxy: contracts/source/contracts/Proxy.md
                 - ProxyERC20: contracts/source/contracts/ProxyERC20.md
                 - Proxyable: contracts/source/contracts/Proxyable.md
@@ -237,9 +246,13 @@ nav:
                 - IIssuerInternal: contracts/source/interfaces/IIssuerInternal.md
                 - IIssuerInternalDebtCache: contracts/source/interfaces/IIssuerInternalDebtCache.md
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
+                - IMarketViews: contracts/source/interfaces/IMarketViews.md
                 - IOldSynthetixBridgeToOptimism: contracts/source/interfaces/IOldSynthetixBridgeToOptimism.md
                 - IOwned: contracts/source/interfaces/IOwned.md
                 - IOwnerRelayOnOptimism: contracts/source/interfaces/IOwnerRelayOnOptimism.md
+                - IPerpsV2BaseTypes: contracts/source/interfaces/IPerpsV2BaseTypes.md
+                - IPerpsV2Market: contracts/source/interfaces/IPerpsV2Market.md
+                - IPerpsV2Settings: contracts/source/interfaces/IPerpsV2Settings.md
                 - IProxy: contracts/source/interfaces/IProxy.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardEscrowV2: contracts/source/interfaces/IRewardEscrowV2.md
