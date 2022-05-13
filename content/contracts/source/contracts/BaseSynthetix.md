@@ -2,31 +2,31 @@
 
 ## Description
 
-**Source:** [contracts/BaseSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol)
+**Source:** [contracts/BaseSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol)
 
 ## Variables
 
 ### `DECIMALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L26)</sub>
 
 **Type:** `uint8`
 
 ### `TOKEN_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L24)</sub>
 
 **Type:** `string`
 
 ### `TOKEN_SYMBOL`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L25)</sub>
 
 **Type:** `string`
 
 ### `sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L27)</sub>
 
 **Type:** `bytes32`
 
@@ -34,7 +34,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `anySynthOrSNXRateIsInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `availableCurrencyKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `availableSynthCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -108,7 +108,7 @@
 
 ### `availableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `collateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@
 
 ### `collateralisationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L144)</sub>
 
 ??? example "Details"
 
@@ -162,7 +162,7 @@
 
 ### `debtBalanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `isWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -198,7 +198,7 @@
 
 ### `maxIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L128)</sub>
 
 ??? example "Details"
 
@@ -216,7 +216,7 @@
 
 ### `remainingIssuableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -234,7 +234,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -252,7 +252,7 @@
 
 ### `synths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -270,7 +270,7 @@
 
 ### `synthsByAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -288,7 +288,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -306,7 +306,7 @@
 
 ### `totalIssuedSynthsExcludeOtherCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -324,7 +324,7 @@
 
 ### `transferableSynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -344,7 +344,7 @@
 
 ### `emitExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L478)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L538)</sub>
 
 ??? example "Details"
 
@@ -366,7 +366,7 @@
 
 ### `emitExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L467)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L527)</sub>
 
 ??? example "Details"
 
@@ -388,7 +388,7 @@
 
 ### `emitExchangeTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L455)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L515)</sub>
 
 ??? example "Details"
 
@@ -410,7 +410,7 @@
 
 ### `emitSynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L434)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L494)</sub>
 
 ??? example "Details"
 
@@ -434,7 +434,7 @@
 
 ### `_canTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -452,7 +452,7 @@
 
 ### `_notImplemented`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L361)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L421)</sub>
 
 ??? example "Details"
 
@@ -470,7 +470,7 @@
 
 ### `emitAccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L407)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L467)</sub>
 
 ??? example "Details"
 
@@ -488,7 +488,7 @@
 
 ### `exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -506,7 +506,7 @@
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -522,9 +522,45 @@
 
     `view`
 
+### `liquidator`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L84)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidator() view returns (contract ILiquidator)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `liquidatorRewards`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L80)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidatorRewards() view returns (contract ILiquidatorRewards)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -542,7 +578,7 @@
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -562,7 +598,7 @@
 
 ### `burnSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L357)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L417)</sub>
 
 ??? example "Details"
 
@@ -580,7 +616,7 @@
 
 ### `burnSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L284)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L298)</sub>
 
 ??? example "Details"
 
@@ -604,7 +640,7 @@
 
 ### `burnSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L288)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L302)</sub>
 
 ??? example "Details"
 
@@ -628,7 +664,7 @@
 
 ### `burnSynthsToTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L292)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L306)</sub>
 
 ??? example "Details"
 
@@ -652,7 +688,7 @@
 
 ### `burnSynthsToTargetOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L296)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L310)</sub>
 
 ??? example "Details"
 
@@ -676,7 +712,7 @@
 
 ### `exchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L169)</sub>
 
 ??? example "Details"
 
@@ -700,7 +736,7 @@
 
 ### `exchangeAtomically`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L335)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L395)</sub>
 
 ??? example "Details"
 
@@ -718,7 +754,7 @@
 
 ### `exchangeOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L173)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L187)</sub>
 
 ??? example "Details"
 
@@ -742,7 +778,7 @@
 
 ### `exchangeOnBehalfWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L224)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L238)</sub>
 
 ??? example "Details"
 
@@ -766,7 +802,7 @@
 
 ### `exchangeWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L204)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L218)</sub>
 
 ??? example "Details"
 
@@ -790,7 +826,7 @@
 
 ### `exchangeWithTrackingForInitiator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L316)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L376)</sub>
 
 ??? example "Details"
 
@@ -808,7 +844,7 @@
 
 ### `exchangeWithVirtual`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L326)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L386)</sub>
 
 ??? example "Details"
 
@@ -826,7 +862,7 @@
 
 ### `issueMaxSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L276)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L290)</sub>
 
 ??? example "Details"
 
@@ -850,7 +886,7 @@
 
 ### `issueMaxSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L294)</sub>
 
 ??? example "Details"
 
@@ -874,7 +910,7 @@
 
 ### `issueSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L282)</sub>
 
 ??? example "Details"
 
@@ -898,7 +934,7 @@
 
 ### `issueSynthsOnBehalf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L272)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L286)</sub>
 
 ??? example "Details"
 
@@ -922,13 +958,13 @@
 
 ### `liquidateDelinquentAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L300)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L316)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `liquidateDelinquentAccount(address account, uint256 susdAmount) returns (bool)`
+    `liquidateDelinquentAccount(address account) returns (bool)`
 
     **Visibility**
 
@@ -944,9 +980,37 @@
 
     * [optionalProxy](#optionalproxy)
 
+### `liquidateSelf`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L359)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidateSelf() returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Transfer to LiquidatorRewards failed")](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L368)
+
+    **Modifiers**
+
+    * [systemActive](#systemactive)
+
+    * [optionalProxy](#optionalproxy)
+
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L345)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L405)</sub>
 
 ??? example "Details"
 
@@ -964,7 +1028,7 @@
 
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L349)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L409)</sub>
 
 ??? example "Details"
 
@@ -982,7 +1046,7 @@
 
 ### `mintSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L353)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L413)</sub>
 
 ??? example "Details"
 
@@ -1000,7 +1064,7 @@
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L192)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L206)</sub>
 
 ??? example "Details"
 
@@ -1022,7 +1086,7 @@
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L245)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L259)</sub>
 
 ??? example "Details"
 
@@ -1046,7 +1110,7 @@
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L255)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L269)</sub>
 
 ??? example "Details"
 
@@ -1072,50 +1136,50 @@
 
 ### `exchangeActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L385)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L445)</sub>
 
 **Signature**: `exchangeActive(bytes32 src, bytes32 dest)`
 
 ### `issuanceActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L376)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L436)</sub>
 
 ### `onlyExchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L394)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L454)</sub>
 
 ### `systemActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L367)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L427)</sub>
 
 ## Events
 
 ### `AccountLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L404)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L464)</sub>
 
 **Signature**: `AccountLiquidated(address account, uint256 snxRedeemed, uint256 amountLiquidated, address liquidator)`
 
 ### `ExchangeRebate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L475)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L535)</sub>
 
 **Signature**: `ExchangeRebate(address account, bytes32 currencyKey, uint256 amount)`
 
 ### `ExchangeReclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L464)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L524)</sub>
 
 **Signature**: `ExchangeReclaim(address account, bytes32 currencyKey, uint256 amount)`
 
 ### `ExchangeTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L452)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L512)</sub>
 
 **Signature**: `ExchangeTracking(bytes32 trackingCode, bytes32 toCurrencyKey, uint256 toAmount, uint256 fee)`
 
 ### `SynthExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/BaseSynthetix.sol#L423)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/BaseSynthetix.sol#L483)</sub>
 
 **Signature**: `SynthExchange(address account, bytes32 fromCurrencyKey, uint256 fromAmount, bytes32 toCurrencyKey, uint256 toAmount, address toAddress)`

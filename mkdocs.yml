@@ -125,10 +125,13 @@ nav:
                 - LegacyTokenState: contracts/source/contracts/LegacyTokenState.md
                 - LimitedSetup: contracts/source/contracts/LimitedSetup.md
                 - Liquidations: contracts/source/contracts/Liquidations.md
+                - Liquidator: contracts/source/contracts/Liquidator.md
+                - LiquidatorRewards: contracts/source/contracts/LiquidatorRewards.md
                 - Migration_Alkaid: contracts/source/contracts/Migration_Alkaid.md
                 - Migration_Alnitak: contracts/source/contracts/Migration_Alnitak.md
                 - Migration_Alphard: contracts/source/contracts/Migration_Alphard.md
                 - Migration_AlphardOptimism: contracts/source/contracts/Migration_AlphardOptimism.md
+                - Migration_AlpheratzOptimism: contracts/source/contracts/Migration_AlpheratzOptimism.md
                 - Migration_Alsephina: contracts/source/contracts/Migration_Alsephina.md
                 - Migration_AlsephinaOptimism: contracts/source/contracts/Migration_AlsephinaOptimism.md
                 - Migration_Diphda: contracts/source/contracts/Migration_Diphda.md
@@ -246,6 +249,8 @@ nav:
                 - IIssuerInternal: contracts/source/interfaces/IIssuerInternal.md
                 - IIssuerInternalDebtCache: contracts/source/interfaces/IIssuerInternalDebtCache.md
                 - ILiquidations: contracts/source/interfaces/ILiquidations.md
+                - ILiquidator: contracts/source/interfaces/ILiquidator.md
+                - ILiquidatorRewards: contracts/source/interfaces/ILiquidatorRewards.md
                 - IMarketViews: contracts/source/interfaces/IMarketViews.md
                 - IOldSynthetixBridgeToOptimism: contracts/source/interfaces/IOldSynthetixBridgeToOptimism.md
                 - IOwned: contracts/source/interfaces/IOwned.md

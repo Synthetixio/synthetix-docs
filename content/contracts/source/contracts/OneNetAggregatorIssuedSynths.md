@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/OneNetAggregatorIssuedSynths.sol](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/OneNetAggregatorIssuedSynths.sol)
+**Source:** [contracts/OneNetAggregatorIssuedSynths.sol](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/OneNetAggregatorIssuedSynths.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/OneNetAggregatorIssuedSynths.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/OneNetAggregatorIssuedSynths.sol#L6)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/OneNetAggregatorIssuedSynths.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/OneNetAggregatorIssuedSynths.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `getRoundData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.68.2/contracts/OneNetAggregatorIssuedSynths.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/OneNetAggregatorIssuedSynths.sol#L10)</sub>
 
 ??? example "Details"
 
