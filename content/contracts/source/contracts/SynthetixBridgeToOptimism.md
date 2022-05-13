@@ -30,8 +30,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/SynthetixBridgeToOptimism.sol#L26)</sub>
 
-**Type:** `bytes32`
-
 ??? example "Details"
 
     **Signature**
