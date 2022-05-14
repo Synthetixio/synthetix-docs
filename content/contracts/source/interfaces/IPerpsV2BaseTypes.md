@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2BaseTypes.sol](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IPerpsV2BaseTypes.sol)
+**Source:** [contracts/interfaces/IPerpsV2BaseTypes.sol](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IPerpsV2BaseTypes.sol)
 
 ## Structs
 
 ### `NextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IPerpsV2BaseTypes.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IPerpsV2BaseTypes.sol#L31)</sub>
 
 | Field           | Type      | Description |
 | --------------- | --------- | ----------- |
@@ -20,7 +20,7 @@
 
 ### `Position`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IPerpsV2BaseTypes.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IPerpsV2BaseTypes.sol#L22)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |

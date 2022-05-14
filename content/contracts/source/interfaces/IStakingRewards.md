@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IStakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol)
+**Source:** [contracts/interfaces/IStakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol)
 
 ## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `getRewardForDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `lastTimeRewardApplicable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `rewardPerToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `rewardsDistribution`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `rewardsToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `exit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -172,7 +172,7 @@
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@
 
 ### `stake`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0-alpha/contracts/interfaces/IStakingRewards.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/interfaces/IStakingRewards.sol#L31)</sub>
 
 ??? example "Details"
 
