@@ -2,6 +2,26 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alpheratz (v2.69.0)
+
+**Published**: May 14, 2022
+
+**Codebase**: [v2.69.0](https://github.com/Synthetixio/synthetix/tree/v2.69.0)
+
+> - [SIP-148: Upgrade Liquidation Mechanism V2](https://sips.synthetix.io/sips/sip-148/)
+
+- [SIP-236: Fix Exchange before fee reclaimation evaluation](https://sips.synthetix.io/sips/sip-219/)
+
+> Audit: https://iosiro.com/audits/synthetix-alpheratz-release-smart-contract-audit
+
+## Release notes
+
+- The legacy `Liquidations` contract has been deprecated and replaced with `Liquidator`
+- Updated the `ISynthetix` interface to conform to the new liquidation mechanism
+- Added the `LiquidatorRewards` contract to distribute redeemed SNX amongst stakers
+
+---
+
 # Mirach (v2.68.2)
 
 **Published**: May 11, 2022
