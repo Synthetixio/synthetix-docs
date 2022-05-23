@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeCircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol)
+**Source:** [contracts/ExchangeCircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol)
 
 ## Variables
 
 ### `CIRCUIT_BREAKER_SUSPENSION_REASON`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L36)</sub>
 
 **Type:** `uint256`
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L33)</sub>
 
 **Type:** `bytes32`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `isDeviationAboveThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `lastExchangeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -96,7 +96,7 @@
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `rateWithInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -132,7 +132,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `resetLastExchangeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L145)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
     **Requires**
 
-    * [require(..., "Rates for given synths not valid")](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L148)
+    * [require(..., "Rates for given synths not valid")](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L148)
 
     **Modifiers**
 
@@ -180,7 +180,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -198,7 +198,7 @@
 
 ### `_isDeviationAboveThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L158)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L158)</sub>
 
 ??? example "Details"
 
@@ -216,7 +216,7 @@
 
 ### `_isRateOutOfBounds`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L179)</sub>
 
 ??? example "Details"
 
@@ -234,7 +234,7 @@
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -252,7 +252,7 @@
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -272,7 +272,7 @@
 
 ### `rateWithBreakCircuit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -292,6 +292,6 @@
 
 ### `LastRateOverriden`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/ExchangeCircuitBreaker.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/ExchangeCircuitBreaker.sol#L208)</sub>
 
 **Signature**: `LastRateOverriden(bytes32 currencyKey, uint256 previousRate, uint256 newRate)`

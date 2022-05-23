@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Liquidator.sol](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol)
+**Source:** [contracts/Liquidator.sol](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol)
 
 ## Structs
 
 ### `LiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L25)</sub>
 
 | Field      | Type      | Description |
 | ---------- | --------- | ----------- |
@@ -19,19 +19,19 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L39)</sub>
 
 **Type:** `bytes32`
 
 ### `LIQUIDATION_CALLER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L43)</sub>
 
 **Type:** `bytes32`
 
 ### `LIQUIDATION_DEADLINE`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L42)</sub>
 
 **Type:** `bytes32`
 
@@ -39,7 +39,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -59,7 +59,7 @@
 
 ### `calculateAmountToFixCollateral`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L167)</sub>
 
 ??? example "Details"
 
@@ -77,7 +77,7 @@
 
 ### `flagReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -95,7 +95,7 @@
 
 ### `getLiquidationCallerForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -113,7 +113,7 @@
 
 ### `getLiquidationDeadlineForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -131,7 +131,7 @@
 
 ### `isLiquidationDeadlinePassed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -149,7 +149,7 @@
 
 ### `isLiquidationOpen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -167,7 +167,7 @@
 
 ### `issuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -185,7 +185,7 @@
 
 ### `liquidateReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -203,7 +203,7 @@
 
 ### `liquidationCollateralRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -221,7 +221,7 @@
 
 ### `liquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -239,7 +239,7 @@
 
 ### `liquidationEscrowDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -257,7 +257,7 @@
 
 ### `liquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -275,7 +275,7 @@
 
 ### `liquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -293,7 +293,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -311,7 +311,7 @@
 
 ### `selfLiquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -331,7 +331,7 @@
 
 ### `removeAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L224)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L224)</sub>
 
 ??? example "Details"
 
@@ -355,7 +355,7 @@
 
 ### `_deadlinePassed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -373,7 +373,7 @@
 
 ### `_getKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L190)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L190)</sub>
 
 ??? example "Details"
 
@@ -391,7 +391,7 @@
 
 ### `_getLiquidationEntryForAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L183)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L183)</sub>
 
 ??? example "Details"
 
@@ -409,7 +409,7 @@
 
 ### `_hasEnoughSNX`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -427,7 +427,7 @@
 
 ### `_removeLiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L260)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L260)</sub>
 
 ??? example "Details"
 
@@ -449,7 +449,7 @@
 
 ### `_storeLiquidationEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L248)</sub>
 
 ??? example "Details"
 
@@ -467,7 +467,7 @@
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -485,7 +485,7 @@
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -503,7 +503,7 @@
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -521,7 +521,7 @@
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -541,7 +541,7 @@
 
 ### `checkAndRemoveAccountInLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L233)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L233)</sub>
 
 ??? example "Details"
 
@@ -559,7 +559,7 @@
 
     **Requires**
 
-    * [require(..., "Account has no liquidation set")](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L238)
+    * [require(..., "Account has no liquidation set")](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L238)
 
     **Modifiers**
 
@@ -567,7 +567,7 @@
 
 ### `flagAccountForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L198)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L198)</sub>
 
 ??? example "Details"
 
@@ -585,13 +585,13 @@
 
     **Requires**
 
-    * [require(..., "Liquidation ratio not set")](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L201)
+    * [require(..., "Liquidation ratio not set")](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L201)
 
-    * [require(..., "Liquidation delay not set")](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L202)
+    * [require(..., "Liquidation delay not set")](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L202)
 
-    * [require(..., "Account already flagged for liquidation")](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L205)
+    * [require(..., "Account already flagged for liquidation")](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L205)
 
-    * [require(..., "Account issuance ratio is less than liquidation ratio")](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L210)
+    * [require(..., "Account issuance ratio is less than liquidation ratio")](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L210)
 
     **Modifiers**
 
@@ -605,11 +605,11 @@
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L267)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L267)</sub>
 
 ### `rateNotInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L272)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L272)</sub>
 
 **Signature**: `rateNotInvalid(bytes32 currencyKey)`
 
@@ -617,12 +617,12 @@
 
 ### `AccountFlaggedForLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L279)</sub>
 
 **Signature**: `AccountFlaggedForLiquidation(address account, uint256 deadline)`
 
 ### `AccountRemovedFromLiquidation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.69.0/contracts/Liquidator.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/Liquidator.sol#L280)</sub>
 
 **Signature**: `AccountRemovedFromLiquidation(address account, uint256 time)`
