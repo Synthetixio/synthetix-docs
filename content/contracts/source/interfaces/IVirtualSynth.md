@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/interfaces/IVirtualSynth.sol)
+**Source:** [contracts/interfaces/IVirtualSynth.sol](https://github.com/Synthetixio/synthetix/tree/v2.70.1/contracts/interfaces/IVirtualSynth.sol)
 
 ## Views
 
 ### `balanceOfUnderlying`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/interfaces/IVirtualSynth.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.1/contracts/interfaces/IVirtualSynth.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `rate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/interfaces/IVirtualSynth.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.1/contracts/interfaces/IVirtualSynth.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `readyToSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/interfaces/IVirtualSynth.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.1/contracts/interfaces/IVirtualSynth.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `secsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/interfaces/IVirtualSynth.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.1/contracts/interfaces/IVirtualSynth.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `settled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/interfaces/IVirtualSynth.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.1/contracts/interfaces/IVirtualSynth.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `synth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/interfaces/IVirtualSynth.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.1/contracts/interfaces/IVirtualSynth.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `settle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.0-alpha/contracts/interfaces/IVirtualSynth.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.70.1/contracts/interfaces/IVirtualSynth.sol#L20)</sub>
 
 ??? example "Details"
 
