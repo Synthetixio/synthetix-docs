@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Rasalhague (v2.70.1)
+
+**Published**: May 24, 2022
+
+**Codebase**: [v2.70.1](https://github.com/Synthetixio/synthetix/tree/v2.70.1)
+
+> - [SIP-239: Liquidator Rewards Restitution](https://sips.synthetix.io/sips/sip-239/)
+
+> Audit: https://iosiro.com/audits/synthetix-rasalhague-release-smart-contract-audit
+
+## Release notes
+
+- Recovers locked liquidation rewards due to an initialization issue
+
+---
+
 # Alpheratz (v2.69.0)
 
 **Published**: May 14, 2022
