@@ -2,13 +2,21 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2Settings.sol](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol)
+**Source:** [contracts/PerpsV2Settings.sol](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol)
+
+## Variables
+
+### `CONTRACT_NAME`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L21)</sub>
+
+**Type:** `bytes32`
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -26,9 +34,45 @@
 
 ## Views
 
+### `baseFee`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L45)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `baseFee(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `baseFeeNextPrice`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L52)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `baseFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -46,7 +90,7 @@
 
 ### `liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -62,45 +106,9 @@
 
     `view`
 
-### `makerFee`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L50)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `makerFee(bytes32 _marketKey) view returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
-### `makerFeeNextPrice`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L64)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `makerFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    `view`
-
 ### `maxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -118,7 +126,7 @@
 
 ### `maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -134,15 +142,15 @@
 
     `view`
 
-### `maxMarketValueUSD`
+### `maxSingleSideValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L73)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `maxMarketValueUSD(bytes32 _marketKey) view returns (uint256)`
+    `maxSingleSideValueUSD(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -154,7 +162,7 @@
 
 ### `minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -172,7 +180,7 @@
 
 ### `minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -190,7 +198,7 @@
 
 ### `nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -208,13 +216,13 @@
 
 ### `parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L91)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `parameters(bytes32 _marketKey) view returns (uint256 takerFee, uint256 makerFee, uint256 takerFeeNextPrice, uint256 makerFeeNextPrice, uint256 nextPriceConfirmWindow, uint256 maxLeverage, uint256 maxMarketValueUSD, uint256 maxFundingRate, uint256 skewScaleUSD)`
+    `parameters(bytes32 _marketKey) view returns (uint256 baseFee, uint256 baseFeeNextPrice, uint256 nextPriceConfirmWindow, uint256 maxLeverage, uint256 maxSingleSideValueUSD, uint256 maxFundingRate, uint256 skewScaleUSD)`
 
     **Visibility**
 
@@ -226,7 +234,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -244,7 +252,7 @@
 
 ### `skewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -260,47 +268,63 @@
 
     `view`
 
-### `takerFee`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L43)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `takerFee(bytes32 _marketKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `takerFeeNextPrice`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L57)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `takerFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ## Restricted Functions
+
+### `setBaseFee`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L157)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setBaseFee(bytes32 _marketKey, uint256 _baseFee)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "taker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L158)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+### `setBaseFeeNextPrice`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L162)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setBaseFeeNextPrice(bytes32 _marketKey, uint256 _baseFeeNextPrice)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "taker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L163)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
 
 ### `setLiquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L232)</sub>
 
 ??? example "Details"
 
@@ -326,7 +350,7 @@
 
 ### `setLiquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L257)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L227)</sub>
 
 ??? example "Details"
 
@@ -350,61 +374,9 @@
 
     * [LiquidationFeeRatioUpdated](#liquidationfeeratioupdated)
 
-### `setMakerFee`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L178)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setMakerFee(bytes32 _marketKey, uint256 _makerFee)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    ``
-
-    **Requires**
-
-    * [require(..., "maker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L179)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-### `setMakerFeeNextPrice`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L188)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setMakerFeeNextPrice(bytes32 _marketKey, uint256 _makerFeeNextPrice)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    ``
-
-    **Requires**
-
-    * [require(..., "maker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L189)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
 ### `setMaxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L216)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L190)</sub>
 
 ??? example "Details"
 
@@ -426,7 +398,7 @@
 
 ### `setMaxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L171)</sub>
 
 ??? example "Details"
 
@@ -446,15 +418,15 @@
 
     * [onlyOwner](#onlyowner)
 
-### `setMaxMarketValueUSD`
+### `setMaxSingleSideValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L201)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L175)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setMaxMarketValueUSD(bytes32 _marketKey, uint256 _maxMarketValueUSD)`
+    `setMaxSingleSideValueUSD(bytes32 _marketKey, uint256 _maxSingleSideValueUSD)`
 
     **Visibility**
 
@@ -470,7 +442,7 @@
 
 ### `setMinInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L267)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L237)</sub>
 
 ??? example "Details"
 
@@ -488,7 +460,7 @@
 
     **Requires**
 
-    * [require(..., "min margin < liquidation fee")](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L268)
+    * [require(..., "min margin < liquidation fee")](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L238)
 
     **Modifiers**
 
@@ -500,7 +472,7 @@
 
 ### `setMinKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L251)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L221)</sub>
 
 ??? example "Details"
 
@@ -518,7 +490,7 @@
 
     **Requires**
 
-    * [require(..., "min margin < liquidation fee")](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L252)
+    * [require(..., "min margin < liquidation fee")](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L222)
 
     **Modifiers**
 
@@ -530,7 +502,7 @@
 
 ### `setNextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L167)</sub>
 
 ??? example "Details"
 
@@ -552,13 +524,13 @@
 
 ### `setParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L227)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L201)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `setParameters(bytes32 _marketKey, uint256 _takerFee, uint256 _makerFee, uint256 _takerFeeNextPrice, uint256 _makerFeeNextPrice, uint256 _nextPriceConfirmWindow, uint256 _maxLeverage, uint256 _maxMarketValueUSD, uint256 _maxFundingRate, uint256 _skewScaleUSD)`
+    `setParameters(bytes32 _marketKey, uint256 _baseFee, uint256 _baseFeeNextPrice, uint256 _nextPriceConfirmWindow, uint256 _maxLeverage, uint256 _maxSingleSideValueUSD, uint256 _maxFundingRate, uint256 _skewScaleUSD)`
 
     **Visibility**
 
@@ -574,7 +546,7 @@
 
 ### `setSkewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L221)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L195)</sub>
 
 ??? example "Details"
 
@@ -592,59 +564,7 @@
 
     **Requires**
 
-    * [require(..., "cannot set skew scale 0")](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L222)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-### `setTakerFee`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L173)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setTakerFee(bytes32 _marketKey, uint256 _takerFee)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    ``
-
-    **Requires**
-
-    * [require(..., "taker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L174)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-### `setTakerFeeNextPrice`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L183)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `setTakerFeeNextPrice(bytes32 _marketKey, uint256 _takerFeeNextPrice)`
-
-    **Visibility**
-
-    `public`
-
-    **State Mutability**
-
-    ``
-
-    **Requires**
-
-    * [require(..., "taker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L184)
+    * [require(..., "cannot set skew scale 0")](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L196)
 
     **Modifiers**
 
@@ -654,7 +574,7 @@
 
 ### `_futuresMarketManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -672,7 +592,7 @@
 
 ### `_recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L208)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L182)</sub>
 
 ??? example "Details"
 
@@ -690,7 +610,7 @@
 
 ### `_setParameter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -714,30 +634,30 @@
 
 ### `LiquidationBufferRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L278)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L248)</sub>
 
 **Signature**: `LiquidationBufferRatioUpdated(uint256 bps)`
 
 ### `LiquidationFeeRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L277)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L247)</sub>
 
 **Signature**: `LiquidationFeeRatioUpdated(uint256 bps)`
 
 ### `MinInitialMarginUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L249)</sub>
 
 **Signature**: `MinInitialMarginUpdated(uint256 minMargin)`
 
 ### `MinKeeperFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L276)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L246)</sub>
 
 **Signature**: `MinKeeperFeeUpdated(uint256 sUSD)`
 
 ### `ParameterUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/PerpsV2Settings.sol#L275)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/PerpsV2Settings.sol#L245)</sub>
 
 **Signature**: `ParameterUpdated(bytes32 marketKey, bytes32 parameter, uint256 value)`

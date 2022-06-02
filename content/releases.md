@@ -2,6 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Kochab (v2.71.0)
+
+**Published**: May 26, 2022
+
+**Codebase**: [v2.71.0](https://github.com/Synthetixio/synthetix/tree/v2.71.0)
+
+> - [SIP-243: Upgrade Collateral Short](https://sips.synthetix.io/sips/sip-243/)
+
+> Audit: https://iosiro.com/audits/synthetix-kochab-release-smart-contract-audit
+
+---
+
 # Rasalhague (v2.70.1)
 
 **Published**: May 24, 2022

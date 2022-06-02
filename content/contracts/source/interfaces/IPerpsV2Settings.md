@@ -2,31 +2,65 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2Settings.sol](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol)
+**Source:** [contracts/interfaces/IPerpsV2Settings.sol](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol)
 
 ## Structs
 
 ### `Parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L4)</sub>
 
 | Field                    | Type      | Description |
 | ------------------------ | --------- | ----------- |
-| `takerFee`               | `uint256` | TBA         |
-| `makerFee`               | `uint256` | TBA         |
-| `takerFeeNextPrice`      | `uint256` | TBA         |
-| `makerFeeNextPrice`      | `uint256` | TBA         |
+| `baseFee`                | `uint256` | TBA         |
+| `baseFeeNextPrice`       | `uint256` | TBA         |
 | `nextPriceConfirmWindow` | `uint256` | TBA         |
 | `maxLeverage`            | `uint256` | TBA         |
-| `maxMarketValueUSD`      | `uint256` | TBA         |
+| `maxSingleSideValueUSD`  | `uint256` | TBA         |
 | `maxFundingRate`         | `uint256` | TBA         |
 | `skewScaleUSD`           | `uint256` | TBA         |
 
 ## Views
 
+### `baseFee`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L14)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `baseFee(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `baseFeeNextPrice`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L16)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `baseFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -44,7 +78,7 @@
 
 ### `liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -60,45 +94,9 @@
 
     `view`
 
-### `makerFee`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L18)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `makerFee(bytes32 _marketKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `makerFeeNextPrice`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L22)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `makerFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `maxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -116,7 +114,7 @@
 
 ### `maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -132,15 +130,15 @@
 
     `view`
 
-### `maxMarketValueUSD`
+### `maxSingleSideValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L22)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `maxMarketValueUSD(bytes32 _marketKey) view returns (uint256)`
+    `maxSingleSideValueUSD(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -152,7 +150,7 @@
 
 ### `minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -170,7 +168,7 @@
 
 ### `minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -188,7 +186,7 @@
 
 ### `nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -206,13 +204,13 @@
 
 ### `parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L28)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `parameters(bytes32 _marketKey) view returns (uint256 _takerFee, uint256 _makerFee, uint256 _takerFeeNextPrice, uint256 _makerFeeNextPrice, uint256 _nextPriceConfirmWindow, uint256 _maxLeverage, uint256 _maxMarketValueUSD, uint256 _maxFundingRate, uint256 _skewScaleUSD)`
+    `parameters(bytes32 _marketKey) view returns (uint256 _baseFee, uint256 _baseFeeNextPrice, uint256 _nextPriceConfirmWindow, uint256 _maxLeverage, uint256 _maxSingleSideValueUSD, uint256 _maxFundingRate, uint256 _skewScaleUSD)`
 
     **Visibility**
 
@@ -224,49 +222,13 @@
 
 ### `skewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/interfaces/IPerpsV2Settings.sol#L26)</sub>
 
 ??? example "Details"
 
     **Signature**
 
     `skewScaleUSD(bytes32 _marketKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `takerFee`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L16)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `takerFee(bytes32 _marketKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `takerFeeNextPrice`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/interfaces/IPerpsV2Settings.sol#L20)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `takerFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 

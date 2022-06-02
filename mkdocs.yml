@@ -177,7 +177,10 @@ nav:
                 - Pausable: contracts/source/contracts/Pausable.md
                 - PerpsV2Market: contracts/source/contracts/PerpsV2Market.md
                 - PerpsV2MarketBase: contracts/source/contracts/PerpsV2MarketBase.md
+                - PerpsV2NextPriceMixin: contracts/source/contracts/PerpsV2NextPriceMixin.md
                 - PerpsV2Settings: contracts/source/contracts/PerpsV2Settings.md
+                - PerpsV2SettingsMixin: contracts/source/contracts/PerpsV2SettingsMixin.md
+                - PerpsV2ViewsMixin: contracts/source/contracts/PerpsV2ViewsMixin.md
                 - Proxy: contracts/source/contracts/Proxy.md
                 - ProxyERC20: contracts/source/contracts/ProxyERC20.md
                 - Proxyable: contracts/source/contracts/Proxyable.md
