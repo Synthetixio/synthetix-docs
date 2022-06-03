@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_RasalhagueOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/migrations/Migration_RasalhagueOptimism.sol)
+**Source:** [contracts/migrations/Migration_RasalhagueOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/migrations/Migration_RasalhagueOptimism.sol)
 
 ## Views
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.1-alpha/contracts/migrations/Migration_RasalhagueOptimism.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/migrations/Migration_RasalhagueOptimism.sol#L11)</sub>
 
 ??? example "Details"
 
