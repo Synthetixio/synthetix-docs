@@ -157,6 +157,7 @@ nav:
                 - Migration_PeacockOptimism: contracts/source/contracts/Migration_PeacockOptimism.md
                 - Migration_Rasalhague: contracts/source/contracts/Migration_Rasalhague.md
                 - Migration_RasalhagueOptimism: contracts/source/contracts/Migration_RasalhagueOptimism.md
+                - Migration_SaiphOptimism: contracts/source/contracts/Migration_SaiphOptimism.md
                 - MinimalProxyFactory: contracts/source/contracts/MinimalProxyFactory.md
                 - MintableSynthetix: contracts/source/contracts/MintableSynthetix.md
                 - MixinFuturesMarketSettings: contracts/source/contracts/MixinFuturesMarketSettings.md

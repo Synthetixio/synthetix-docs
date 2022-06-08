@@ -39,19 +39,19 @@ See the [main synth notes](../../synths) for more information about how Synths f
 
     That is, the relative profit is simply $(\phi_\kappa - \phi_\tau)$. With no transfer fee, this is $\phi_\kappa$, as expected.
 
-**Source:** [contracts/Synth.sol](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol)
+**Source:** [contracts/Synth.sol](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L19)</sub>
 
 **Type:** `bytes32`
 
 ### `DECIMALS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L26)</sub>
 
 The number of decimal places this token uses. Fixed at $18$.
 
@@ -61,13 +61,13 @@ The number of decimal places this token uses. Fixed at $18$.
 
 ### `FEE_ADDRESS`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L29)</sub>
 
 **Type:** `address`
 
 ### `currencyKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L24)</sub>
 
 The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosystem. The currency key could in principle be distinct from this token's [ERC20 symbol](ExternStateToken.md#symbol).
 
@@ -77,7 +77,7 @@ The [identifier](Synthetix.md#synths) of this Synth within the Synthetix ecosyst
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L41)</sub>
 
 Initialises the [`feePool`](#feepool) and [`synthetix`](#synthetix) addresses, this Synth's [`currencyKey`](#currencyKey), and the inherited [`ExternStateToken`](ExternStateToken.md) instance.
 
@@ -99,15 +99,15 @@ The precision in every Synth's fixed point representation is fixed at 18 so they
 
     **Requires**
 
-    * [require(..., "_proxy cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L55)
+    * [require(..., "_proxy cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L55)
 
-    * [require(..., "_owner cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L56)
+    * [require(..., "_owner cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L56)
 
 ## Views
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L191)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L191)</sub>
 
 ??? example "Details"
 
@@ -125,7 +125,7 @@ The precision in every Synth's fixed point representation is fixed at 18 so they
 
 ### `transferableSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L226)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L226)</sub>
 
 ??? example "Details"
 
@@ -145,7 +145,7 @@ The precision in every Synth's fixed point representation is fixed at 18 so they
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L163)</sub>
 
 Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [burnt directly](Synthetix.md#burnSynths). This is also used to burn Synths involved in oracle frontrunning as part of the [protection circuit](Synthetix.md#protectioncircuit). This is also used by the [`FeePool`](FeePool.md) to [burn sUSD when fees are paid out](FeePool.md#_payfees).
 
@@ -169,7 +169,7 @@ Allows the [`Synthetix`](Synthetix.md) contract to burn existing Synths of this 
 
 ### `issue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L159)</sub>
 
 Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flavour. This is used whenever Synths are [exchanged](Synthetix.md#_internalexchange) or [issued directly](Synthetix.md#issuesynths). This is also used by the [`FeePool`](FeePool.md) to [pay fees out](FeePool.md#_payfees).
 
@@ -193,7 +193,7 @@ Allows the [`Synthetix`](Synthetix.md) contract to issue new Synths of this flav
 
 ### `setTotalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L184)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L184)</sub>
 
 This allows the owner to set the total supply directly for upgrades, where the [`tokenState`](ExternStateToken.md#tokenstate) is retained, but the total supply figure must be migrated.
 
@@ -217,257 +217,9 @@ For example, just such a migration is performed by [this script](https://github.
 
     * [optionalProxy_onlyOwner](#optionalproxy_onlyowner)
 
-## Internal Functions
-
-### `_ensureCanTransfer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L220)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_ensureCanTransfer(address from, uint256 value) view`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-    **Requires**
-
-    * [require(..., "Cannot transfer during waiting period")](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L221)
-
-    * [require(..., "Insufficient balance after any settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L222)
-
-### `_internalBurn`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L174)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_internalBurn(address account, uint256 amount) returns (bool)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `_internalIssue`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L167)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_internalIssue(address account, uint256 amount)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `_internalTransferFrom`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L243)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_internalTransferFrom(address from, address to, uint256 value) returns (bool)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `_isInternalContract`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L260)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_isInternalContract(address account) view returns (bool)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `_transferToFeeAddress`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L131)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_transferToFeeAddress(address to, uint256 value) returns (bool)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `emitBurned`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L284)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `emitBurned(address account, uint256 value)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `emitIssued`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L277)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `emitIssued(address account, uint256 value)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `exchanger`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L208)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `exchanger() view returns (contract IExchanger)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `feePool`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L204)</sub>
-
-The address of the [`FeePool`](FeePool.md) contract.
-
-**Type:** `FeePool public`
-
-??? example "Details"
-
-    **Signature**
-
-    `feePool() view returns (contract IFeePool)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `futuresMarketManager`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L216)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `futuresMarketManager() view returns (contract IFuturesMarketManager)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `issuer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L212)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issuer() view returns (contract IIssuer)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `systemStatus`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L200)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `systemStatus() view returns (contract ISystemStatus)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-## External Functions
-
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L63)</sub>
 
 This is a pair of ERC20 transfer function.
 
@@ -493,11 +245,11 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     **Modifiers**
 
-    * [optionalProxy](#optionalproxy)
+    * [onlyProxyOrInternal](#onlyproxyorinternal)
 
 ### `transferAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L79)</sub>
 
 Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transfer` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the sender.
 
@@ -519,11 +271,11 @@ Implemented based on [`ExternStateToken._transfer_byProxy`](ExternStateToken#_tr
 
     **Modifiers**
 
-    * [optionalProxy](#optionalproxy)
+    * [onlyProxyOrInternal](#onlyproxyorinternal)
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L96)</sub>
 
 This is a ERC20 transferFrom function.
 
@@ -549,11 +301,11 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     **Modifiers**
 
-    * [optionalProxy](#optionalproxy)
+    * [onlyProxyOrInternal](#onlyproxyorinternal)
 
 ### `transferFromAndSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L106)</sub>
 
 Settles any outstanding fee reclaims and rebates from [SIP-37](https://sips.synthetix.io/sips/sip-37) and then performs the `transferFrom` functionality. If there is insufficient balance to transfer `value` after any reclaims, the `amount` will be reduced to the remaining balance of the `from` address.
 
@@ -579,19 +331,305 @@ Implemented based on [`ExternStateToken._transferFrom_byProxy`](ExternStateToken
 
     **Modifiers**
 
-    * [optionalProxy](#optionalproxy)
+    * [onlyProxyOrInternal](#onlyproxyorinternal)
+
+## Internal Functions
+
+### `_ensureCanTransfer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L220)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_ensureCanTransfer(address from, uint256 value) view`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+    **Requires**
+
+    * [require(..., "Cannot transfer during waiting period")](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L221)
+
+    * [require(..., "Insufficient balance after any settlement owing")](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L222)
+
+### `_internalBurn`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L174)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_internalBurn(address account, uint256 amount) returns (bool)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `_internalIssue`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L167)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_internalIssue(address account, uint256 amount)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `_internalTransferFrom`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L243)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_internalTransferFrom(address from, address to, uint256 value) returns (bool)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `_isInternalContract`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L260)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_isInternalContract(address account) view returns (bool)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_isInternalTransferCaller`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L292)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_isInternalTransferCaller(address caller) view returns (bool)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_onlyProxyOrInternal`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L278)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_onlyProxyOrInternal()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `_transferToFeeAddress`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L131)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_transferToFeeAddress(address to, uint256 value) returns (bool)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `emitBurned`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L319)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitBurned(address account, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `emitIssued`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L311)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `emitIssued(address account, uint256 value)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `exchanger`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L208)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `exchanger() view returns (contract IExchanger)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `feePool`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L204)</sub>
+
+The address of the [`FeePool`](FeePool.md) contract.
+
+**Type:** `FeePool public`
+
+??? example "Details"
+
+    **Signature**
+
+    `feePool() view returns (contract IFeePool)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `futuresMarketManager`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L216)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `futuresMarketManager() view returns (contract IFuturesMarketManager)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `issuer`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L212)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `issuer() view returns (contract IIssuer)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `systemStatus`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L200)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `systemStatus() view returns (contract ISystemStatus)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
 
 ## Modifiers
 
 ### `onlyInternalContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L268)</sub>
+
+### `onlyProxyOrInternal`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L273)</sub>
 
 ## Events
 
 ### `Burned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L281)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L315)</sub>
 
 Records that a quantity of this Synth was [burned](#burn).
 
@@ -601,7 +639,7 @@ This event is emitted from the Synths's [proxy](Proxy.md#_emit) with the `emitBu
 
 ### `Issued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.2/contracts/Synth.sol#L274)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/Synth.sol#L307)</sub>
 
 Records that a quantity of this Synth was newly [issued](#issue).
 
