@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2SettingsMixin.sol](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol)
+**Source:** [contracts/PerpsV2SettingsMixin.sol](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `_baseFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -66,7 +66,7 @@
 
 ### `_baseFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `_flexibleStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `_liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `_liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -138,7 +138,7 @@
 
 ### `_maxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `_maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@
 
 ### `_maxSingleSideValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -192,7 +192,7 @@
 
 ### `_minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -210,7 +210,7 @@
 
 ### `_minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -228,7 +228,7 @@
 
 ### `_nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -246,7 +246,7 @@
 
 ### `_parameter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -264,7 +264,7 @@
 
 ### `_skewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.0-alpha/contracts/PerpsV2SettingsMixin.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/PerpsV2SettingsMixin.sol#L79)</sub>
 
 ??? example "Details"
 
