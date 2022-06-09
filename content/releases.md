@@ -2,6 +2,27 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Saiph (v2.72.1)
+
+**Published**: Jun 9, 2022
+
+**Codebase**: [v2.72.1](https://github.com/Synthetixio/synthetix/tree/v2.72.1)
+
+> - [SIP-235: Update Issuer Modifier](https://sips.synthetix.io/sips/sip-235/)
+
+- [SIP-238: Only allow token transfers via their proxies](https://sips.synthetix.io/sips/sip-238/)
+- [SIP-240: Update Liquidate Amount](https://sips.synthetix.io/sips/sip-240/)
+
+> Audit: https://iosiro.com/audits/synthetix-saiph-release-smart-contract-audit
+
+## Release notes
+
+- Introduces minimal modifications to the system that will only allow users to call transfer\* functions with SNX, as well as synths, via their proxies, and stop allowing such interactions via their implementations
+- Liquidates the correct amount of debt for accounts with mostly escrowed SNX
+- Adds another require check to the `onlyTrustedMinters` modifier in `Issuer`
+
+---
+
 # Kochab (v2.71.2)
 
 **Published**: Jun 3, 2022
