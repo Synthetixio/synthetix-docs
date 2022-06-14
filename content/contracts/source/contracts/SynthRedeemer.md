@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/SynthRedeemer.sol](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol)
+**Source:** [contracts/SynthRedeemer.sol](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L17)</sub>
 
 **Type:** `bytes32`
 
 ### `redemptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L19)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `deprecate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -116,11 +116,11 @@
 
     **Requires**
 
-    * [require(..., "Synth is already deprecated")](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L77)
+    * [require(..., "Synth is already deprecated")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L77)
 
-    * [require(..., "No rate for synth to redeem")](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L78)
+    * [require(..., "No rate for synth to redeem")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L78)
 
-    * [require(..., "sUSD must first be supplied")](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L81)
+    * [require(..., "sUSD must first be supplied")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L81)
 
     **Modifiers**
 
@@ -134,7 +134,7 @@
 
 ### `_redeem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -152,9 +152,9 @@
 
     **Requires**
 
-    * [require(..., "Synth not redeemable")](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L67)
+    * [require(..., "Synth not redeemable")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L67)
 
-    * [require(..., "No balance of synth to redeem")](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L68)
+    * [require(..., "No balance of synth to redeem")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L68)
 
     **Emits**
 
@@ -162,7 +162,7 @@
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `requireOnlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -198,11 +198,11 @@
 
     **Requires**
 
-    * [require(..., "Restricted to Issuer contract")](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L87)
+    * [require(..., "Restricted to Issuer contract")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L87)
 
 ### `sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -222,7 +222,7 @@
 
 ### `redeem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -240,7 +240,7 @@
 
 ### `redeemAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -258,7 +258,7 @@
 
 ### `redeemPartial`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -276,24 +276,24 @@
 
     **Requires**
 
-    * [require(..., "Insufficient balance")](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L61)
+    * [require(..., "Insufficient balance")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L61)
 
 ## Modifiers
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L90)</sub>
 
 ## Events
 
 ### `SynthDeprecated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L96)</sub>
 
 **Signature**: `SynthDeprecated(address synth, uint256 rateToRedeem, uint256 totalSynthSupply, uint256 supplyInsUSD)`
 
 ### `SynthRedeemed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SynthRedeemer.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SynthRedeemer.sol#L95)</sub>
 
 **Signature**: `SynthRedeemed(address synth, address account, uint256 amountOfSynth, uint256 amountInsUSD)`

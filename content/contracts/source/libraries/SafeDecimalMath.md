@@ -82,13 +82,13 @@ Synthetix provides versions of $\dot{\times}$ and $\dot{/}$ which perform the op
 
 The representation of a number $q$ at two different fixed point precision levels $\dot{q} = q \dot{u}$ and $\ddot{q} = q \ddot{u}$ is straightforward if $\dot{u}$ and $\ddot{u}$ divide evenly. If this is the case, and $\ddot{u}$ is the higher precision unit, then $\ddot{q} / \dot{q} = \ddot{u} / \dot{u}$. So converting between the high and low precision only involves multiplying or dividing by a factor of $\ddot{u} / \dot{u}$. Keep in mind that converting from a high precision to a low precision number involves some loss of information, and this operation is performed with rounding.
 
-**Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol)
+**Source:** [contracts/SafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol)
 
 ## Variables
 
 ### `PRECISE_UNIT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L18)</sub>
 
 The high precision number ($10^{27}$) that represents $1.0$.
 
@@ -98,7 +98,7 @@ The high precision number ($10^{27}$) that represents $1.0$.
 
 ### `UNIT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L15)</sub>
 
 The standard precision number ($10^{18}$) that represents $1.0$.
 
@@ -108,7 +108,7 @@ The standard precision number ($10^{18}$) that represents $1.0$.
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L11)</sub>
 
 The number of decimals ($18$) in the standard precision fixed point representation.
 
@@ -118,7 +118,7 @@ The number of decimals ($18$) in the standard precision fixed point representati
 
 ### `highPrecisionDecimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L12)</sub>
 
 The number of decimals ($27$) in the high precision fixed point representation.
 
@@ -130,7 +130,7 @@ The number of decimals ($27$) in the high precision fixed point representation.
 
 ### `preciseUnit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L31)</sub>
 
 Pure alias to [`PRECISE_UNIT`](#precise_unit).
 
@@ -150,7 +150,7 @@ Pure alias to [`PRECISE_UNIT`](#precise_unit).
 
 ### `unit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L24)</sub>
 
 Pure alias to [`UNIT`](#unit).
 
@@ -172,7 +172,7 @@ Pure alias to [`UNIT`](#unit).
 
 ### `abs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L204)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L204)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@ Pure alias to [`UNIT`](#unit).
 
 ### `decimalToPreciseDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L171)</sub>
 
 Converts from standard precision to high precision numbers. This is just multiplication by $10^9$.
 
@@ -210,7 +210,7 @@ Converts from standard precision to high precision numbers. This is just multipl
 
 ### `divideDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L117)</sub>
 
 Returns the quotient of two standard precision fixed point numbers, handling precision loss by truncation.
 
@@ -230,7 +230,7 @@ Returns the quotient of two standard precision fixed point numbers, handling pre
 
 ### `divideDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L152)</sub>
 
 Returns the quotient of two standard precision fixed point numbers, handling precision loss by rounding.
 
@@ -252,7 +252,7 @@ Equivalent to [`_divideDecimalRound(x, y, UNIT)`](#_dividedecimalround).
 
 ### `divideDecimalRoundPrecise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L164)</sub>
 
 Returns the quotient of two high precision fixed point numbers, handling precision loss by rounding.
 
@@ -274,7 +274,7 @@ Equivalent to [`_divideDecimalRound(x, y, PRECISE_UNIT)`](#_dividedecimalround).
 
 ### `floorsub`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -292,7 +292,7 @@ Equivalent to [`_divideDecimalRound(x, y, PRECISE_UNIT)`](#_dividedecimalround).
 
 ### `multiplyDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L44)</sub>
 
 Returns the product of two standard precision fixed point numbers, handling precision loss by truncation.
 
@@ -312,7 +312,7 @@ Returns the product of two standard precision fixed point numbers, handling prec
 
 ### `multiplyDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L104)</sub>
 
 Returns the product of two standard precision fixed point numbers, handling precision loss by rounding.
 
@@ -334,7 +334,7 @@ Equivalent to [`_multiplyDecimalRound(x, y, UNIT)`](#_multiplydecimalround).
 
 ### `multiplyDecimalRoundPrecise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L88)</sub>
 
 Returns the product of two high precision fixed point numbers, handling precision loss by rounding.
 
@@ -356,7 +356,7 @@ Equivalent to [`_multiplyDecimalRound(x, y, PRECISE_UNIT)`](#_multiplydecimalrou
 
 ### `preciseDecimalToDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L178)</sub>
 
 Converts from high precision to standard precision numbers. This is division by $10^9$, where precision loss is handled by rounding.
 
@@ -376,7 +376,7 @@ Converts from high precision to standard precision numbers. This is division by 
 
 ### `signedAbs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/SafeDecimalMath.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/SafeDecimalMath.sol#L197)</sub>
 
 ??? example "Details"
 

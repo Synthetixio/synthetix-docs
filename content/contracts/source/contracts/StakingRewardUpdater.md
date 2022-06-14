@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/migrations/StakingRewardUpdater.sol](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/migrations/StakingRewardUpdater.sol)
+**Source:** [contracts/migrations/StakingRewardUpdater.sol](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/migrations/StakingRewardUpdater.sol)
 
 ## Variables
 
 ### `deployer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/migrations/StakingRewardUpdater.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/migrations/StakingRewardUpdater.sol#L6)</sub>
 
 **Type:** `address`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/migrations/StakingRewardUpdater.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/migrations/StakingRewardUpdater.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `execute`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/migrations/StakingRewardUpdater.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/migrations/StakingRewardUpdater.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -54,11 +54,11 @@
 
     **Requires**
 
-    * [require(..., "Only the deployer can invoke this")](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/migrations/StakingRewardUpdater.sol#L20)
+    * [require(..., "Only the deployer can invoke this")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/migrations/StakingRewardUpdater.sol#L20)
 
 ### `returnFunds`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.72.1/contracts/migrations/StakingRewardUpdater.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/migrations/StakingRewardUpdater.sol#L51)</sub>
 
 ??? example "Details"
 

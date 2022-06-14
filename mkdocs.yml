@@ -173,6 +173,7 @@ nav:
                 - NativeEtherWrapper: contracts/source/contracts/NativeEtherWrapper.md
                 - OneNetAggregatorDebtRatio: contracts/source/contracts/OneNetAggregatorDebtRatio.md
                 - OneNetAggregatorIssuedSynths: contracts/source/contracts/OneNetAggregatorIssuedSynths.md
+                - OneNetAggregatorsDEFI: contracts/source/contracts/OneNetAggregatorsDEFI.md
                 - Owned: contracts/source/contracts/Owned.md
                 - OwnerRelayOnEthereum: contracts/source/contracts/OwnerRelayOnEthereum.md
                 - OwnerRelayOnOptimism: contracts/source/contracts/OwnerRelayOnOptimism.md
