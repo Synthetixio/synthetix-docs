@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2Settings.sol](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol)
+**Source:** [contracts/interfaces/IPerpsV2Settings.sol](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol)
 
 ## Structs
 
 ### `Parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L4)</sub>
 
 | Field                    | Type      | Description |
 | ------------------------ | --------- | ----------- |
@@ -24,7 +24,7 @@
 
 ### `baseFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `baseFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -96,7 +96,7 @@
 
 ### `maxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -132,7 +132,7 @@
 
 ### `maxSingleSideValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -150,7 +150,7 @@
 
 ### `minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -168,7 +168,7 @@
 
 ### `minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -186,7 +186,7 @@
 
 ### `nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -204,7 +204,7 @@
 
 ### `parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -222,7 +222,7 @@
 
 ### `skewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/interfaces/IPerpsV2Settings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/interfaces/IPerpsV2Settings.sol#L26)</sub>
 
 ??? example "Details"
 

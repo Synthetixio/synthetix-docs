@@ -75,46 +75,6 @@
 
 > Tracks the price of Chainlink (LINK) through price feeds supplied by an oracle.
 
-## DeFi Index (sDEFI)
-
-**Contract:** [0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B](https://etherscan.io/token/0xe1aFe1Fd76Fd88f78cBf599ea1846231B8bA3B6B)
-
-**Decimals:** 18
-
-**Price:** [sDEFI on synthetix.exchange](https://synthetix.exchange/#/synths/sDEFI)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/sdefi-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0xa8E875F94138B0C5b51d1e1d5dE35bbDdd28EA87)
-
-**Index of**: [sDEFI](#index-sdefi)
-
-| Token                   | Symbol | Units     | Initial Weight |
-| ----------------------- | ------ | --------- | -------------- |
-| Uniswap                 | UNI    | 66.30520  | 15%            |
-| Aave                    | AAVE   | 4.16340   | 11%            |
-| Terra Luna              | LUNA   | 143.07530 | 10%            |
-| Maker                   | MKR    | 0.31160   | 9%             |
-| THORChain               | RUNE   | 105.84070 | 8%             |
-| Synthetix Network Token | SNX    | 92.26720  | 8%             |
-| Compound                | COMP   | 2.24990   | 7%             |
-| SushiSwap               | SUSHI  | 78.22580  | 7%             |
-| yearn.finance           | YFI    | 0.01503   | 6%             |
-| Bancor                  | BNT    | 74.54980  | 3%             |
-| UMA                     | UMA    | 25.60800  | 3%             |
-| Curve DAO Token         | CRV    | 124.24960 | 2.5%           |
-| 0x                      | ZRX    | 294.78570 | 2.5%           |
-| 1inch                   | 1INCH  | 59.01850  | 2%             |
-| Ren                     | REN    | 440.83560 | 2%             |
-| Balancer                | BAL    | 4.43330   | 1%             |
-| Barnbridge              | BOND   | 2.27400   | 1%             |
-| Kyber Network           | KNC    | 57.66700  | 1%             |
-| Alpha Finance           | ALPHA  | 102.31210 | 0.5%           |
-| Cream Finance           | CREAM  | 0.26670   | 0.5%           |
-
-> Tracks the price of the index: DeFi Index (DEFI) through price feeds supplied by an oracle. This index is made up of the following assets and weights: 66.3052 of undefined (Uniswap), 4.1634 of undefined (Aave), 143.0753 of undefined (Terra Luna), 0.3116 of undefined (Maker), 92.2672 of undefined (Synthetix Network Token), 105.8407 of undefined (THORChain), 78.2258 of undefined (SushiSwap), 2.2499 of undefined (Compound), 0.01503 of undefined (yearn.finance), 74.5498 of undefined (Bancor), 25.608 of undefined (UMA), 294.7857 of undefined (0x), 124.2496 of undefined (Curve DAO Token), 59.0185 of undefined (1inch), 440.8356 of undefined (Ren), 4.4333 of undefined (Balancer), 57.667 of undefined (Kyber Network), 2.274 of undefined (Barnbridge), 0.2667 of undefined (Cream Finance), 102.3121 of undefined (Alpha Finance).
-
 ## ETH / BTC (sETHBTC)
 
 **Contract:** [0x104eDF1da359506548BFc7c25bA1E28C16a70235](https://etherscan.io/token/0x104eDF1da359506548BFc7c25bA1E28C16a70235)

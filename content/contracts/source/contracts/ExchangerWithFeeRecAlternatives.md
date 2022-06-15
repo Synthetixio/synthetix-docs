@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangerWithFeeRecAlternatives.sol](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol)
+**Source:** [contracts/ExchangerWithFeeRecAlternatives.sol](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol)
 
 ## Structs
 
 ### `ExchangeVolumeAtPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L27)</sub>
 
 | Field    | Type      | Description |
 | -------- | --------- | ----------- |
@@ -19,13 +19,13 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L23)</sub>
 
 **Type:** `bytes32`
 
 ### `lastAtomicVolume`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L32)</sub>
 
 **Type:** `struct ExchangerWithFeeRecAlternatives.ExchangeVolumeAtPeriod`
 
@@ -33,7 +33,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -53,7 +53,7 @@
 
 ### `atomicMaxVolumePerBlock`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -71,7 +71,7 @@
 
 ### `feeRateForAtomicExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -89,7 +89,7 @@
 
 ### `getAmountsForAtomicExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -107,7 +107,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -127,7 +127,7 @@
 
 ### `exchangeAtomically`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -145,7 +145,7 @@
 
     **Requires**
 
-    * [require(..., "The amount received is below the minimum amount specified.")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L101)
+    * [require(..., "The amount received is below the minimum amount specified.")](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L101)
 
     **Modifiers**
 
@@ -155,7 +155,7 @@
 
 ### `_checkAndUpdateAtomicVolume`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L258)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L258)</sub>
 
 ??? example "Details"
 
@@ -173,11 +173,11 @@
 
     **Requires**
 
-    * [require(..., "Surpassed volume limit")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L263)
+    * [require(..., "Surpassed volume limit")](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L263)
 
 ### `_createVirtualSynth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -195,7 +195,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot virtualize this synth")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L123)
+    * [require(..., "Cannot virtualize this synth")](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L123)
 
     **Emits**
 
@@ -203,7 +203,7 @@
 
 ### `_exchangeAtomically`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L133)</sub>
 
 ??? example "Details"
 
@@ -221,15 +221,15 @@
 
     **Requires**
 
-    * [require(..., "Src synth too volatile")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L141)
+    * [require(..., "Src synth too volatile")](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L141)
 
-    * [require(..., "Dest synth too volatile")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L142)
+    * [require(..., "Dest synth too volatile")](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L142)
 
-    * [require(..., "Atomic rate deviates too much")](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L173)
+    * [require(..., "Atomic rate deviates too much")](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L173)
 
 ### `_feeRateForAtomicExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L268)</sub>
 
 ??? example "Details"
 
@@ -247,7 +247,7 @@
 
 ### `_getAmountsForAtomicExchangeMinusFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L283)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L283)</sub>
 
 ??? example "Details"
 
@@ -265,7 +265,7 @@
 
 ### `_virtualSynthMastercopy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -285,6 +285,6 @@
 
 ### `VirtualSynthCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L308)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.73.1/contracts/ExchangerWithFeeRecAlternatives.sol#L308)</sub>
 
 **Signature**: `VirtualSynthCreated(address synth, address recipient, address vSynth, bytes32 currencyKey, uint256 amount)`
