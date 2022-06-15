@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Denebola (v2.73.1)
+
+**Published**: Jun 15, 2022
+
+**Codebase**: [v2.73.1](https://github.com/Synthetixio/synthetix/tree/v2.73.1)
+
+> - [SIP-243: Deprecate sDEFI ](https://sips.synthetix.io/sips/sip-243/)
+
+> Audit: https://iosiro.com/audits/synthetix-denebola-release-smart-contract-audit
+
+## Release notes
+
+- Deprecate sDEFI and open it for redemption at the price of \$3,195 per token.
+
+---
+
 # Saiph (v2.72.1)
 
 **Published**: Jun 9, 2022
