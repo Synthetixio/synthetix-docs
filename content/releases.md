@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Algol (v2.74.1)
+
+**Published**: Jun 23, 2022
+
+**Codebase**: [v2.74.1](https://github.com/Synthetixio/synthetix/tree/v2.74.1)
+
+> - [SIP-251: Differentiate Liquidation Penalties](https://sips.synthetix.io/sips/sip-251/)
+
+> Audit: https://iosiro.com/audits/synthetix-algol-release-smart-contract-audit
+
+## Release notes
+
+- Adds a new system setting in order to distinguish between liquidations on Collateral loans and SNX stakers
+
+---
+
 # Denebola (v2.73.1)
 
 **Published**: Jun 15, 2022
