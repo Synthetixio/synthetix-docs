@@ -13,6 +13,7 @@ Check out a copy of the `synthetix` repo and run `npm install` to install depend
 Even though our project uses hardhat, the integration and deploy tests require `anvil`. `anvil` is used because it provides superior performance and has earliest support for certain commands within `cannon`
 
 Foundry/anvil can be installed with the following command sequence:
+
 ```
 curl -L https://foundry.paradigm.xyz | bash
 foundryup
