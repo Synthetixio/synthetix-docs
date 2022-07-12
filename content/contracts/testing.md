@@ -82,6 +82,7 @@ npx hardhat test:integration:l2 --build --deploy
 ```
 
 For fork mode, you will need to set your provider URL in `.env`. Then run:
+
 ```
 npm run fork:mainnet
 # In a separate terminal
