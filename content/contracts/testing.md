@@ -74,12 +74,14 @@ Finally, under the `test/integration` folder are tests which verify integrity of
 
 To run the integration tests, ensure you have `anvil` installed and run:
 
+> `--compile` flag is needed for the first run and can be omitted for subsequent runs with same contracts
+
 ```
-npx hardhat test:integration:l1 --build --deploy
+npx hardhat test:integration:l1 --compile --deploy
 
 # or, for L2 contracts
 
-npx hardhat test:integration:l2 --build --deploy
+npx hardhat test:integration:l2 --compile --deploy
 ```
 
 For fork mode, you will need to set your provider URL in `.env`. Then run:
@@ -87,11 +89,11 @@ For fork mode, you will need to set your provider URL in `.env`. Then run:
 ```
 npm run fork:mainnet
 # In a separate terminal
-npx hardhat test:integration:l1 --build --deploy --use-fork
+npx hardhat test:integration:l1 --compile --deploy --use-fork
 
 # or, for L2 contracts
 
 npm run fork:ovm
 # In a separate terminal
-npx hardhat test:integration:l2 --build --deploy --use-fork
+npx hardhat test:integration:l2 --compile --deploy --use-fork
 ```
