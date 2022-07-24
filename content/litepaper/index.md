@@ -78,7 +78,7 @@ For a current and continually updated list of synthetic assets and perpetual mar
 
 An SNX holder can mint sUSD by locking their SNX as collateral via the Synthetix smart contract. The steps involved when an SNX holder mints are:
 
-- The Synthetix contract checks that the SNX staker can mint Synths against their SNX, which requires their Collateralisation Ratio to be below 400%.
+- The Synthetix contract checks that the SNX staker can mint Synths against their SNX, which requires their Collateralisation Ratio to be above 400%.
 - Debt shares are issues to a staker to track stakers issued debt amount when minting or burning sUSD
 - With the debt assigned to the staker, the Synthetix contract instructs the sUSD contract to issue the new amount. It adds it to its total supply and assigns the newly minted sUSD to the user’s wallet.
 
