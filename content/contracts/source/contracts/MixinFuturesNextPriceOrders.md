@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/MixinFuturesNextPriceOrders.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol)
+**Source:** [contracts/MixinFuturesNextPriceOrders.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol)
 
 ## Variables
 
 ### `nextPriceOrders`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L20)</sub>
 
 **Type:** `mapping(address => struct IFuturesMarketBaseTypes.NextPriceOrder)`
 
@@ -16,7 +16,7 @@
 
 ### `_confirmationWindowOver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L232)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L232)</sub>
 
 ??? example "Details"
 
@@ -34,7 +34,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L238)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L238)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@
 
 ### `_nextPriceCommitDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L243)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L243)</sub>
 
 ??? example "Details"
 
@@ -70,7 +70,7 @@
 
 ### `_submitNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@
 
     **Requires**
 
-    * [require(..., "previous order exists")](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L43)
+    * [require(..., "previous order exists")](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L43)
 
     **Emits**
 
@@ -100,7 +100,7 @@
 
 ### `cancelNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
     **Requires**
 
-    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L109)
+    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L109)
 
     **Emits**
 
@@ -126,7 +126,7 @@
 
 ### `executeNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L164)</sub>
 
 ??? example "Details"
 
@@ -144,11 +144,11 @@
 
     **Requires**
 
-    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L168)
+    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L168)
 
-    * [require(..., "target roundId not reached")](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L172)
+    * [require(..., "target roundId not reached")](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L172)
 
-    * [require(..., "order too old, use cancel")](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L179)
+    * [require(..., "order too old, use cancel")](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L179)
 
     **Emits**
 
@@ -158,7 +158,7 @@
 
 ### `submitNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@
 
 ### `submitNextPriceOrderWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -196,12 +196,12 @@
 
 ### `NextPriceOrderRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L265)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L265)</sub>
 
 **Signature**: `NextPriceOrderRemoved(address account, uint256 currentRoundId, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
 
 ### `NextPriceOrderSubmitted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.0-alpha/contracts/MixinFuturesNextPriceOrders.sol#L256)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesNextPriceOrders.sol#L256)</sub>
 
 **Signature**: `NextPriceOrderSubmitted(address account, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
