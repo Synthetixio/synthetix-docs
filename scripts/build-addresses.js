@@ -43,9 +43,14 @@ const generateAddresses = () => {
 					.map(targetContract => {
 						const { address, source } = targets[targetContract];
 						let label = targetContract;
-						const addressLink = `<a target="_blank" href="https://${
-							network !== 'mainnet' ? network + (useOvm ? '-' : '.') : ''
-						}${useOvm ? 'explorer.optimism' : 'etherscan'}.io/address/${address}">${address}</a>`;
+						const addressLink = `<a target="_blank" href="https://${network !== 'mainnet' ? network + '.' : ''}
+						${
+							useOvm
+								? network !== 'goerli'
+									? 'optimistic.etherscan.io'
+									: 'blockscout.com/optimism/goerli'
+								: 'etherscan.io'
+						}/address/${address}">${address}</a>`;
 
 						if (targetContract === 'ProxysUSD' || targetContract === 'ProxySynthetix') {
 							label = `<span style="color: #AAA; text-decoration: line-through">${targetContract}</span><sup>Use ${
