@@ -1760,360 +1760,360 @@ Here is the list of all contracts within the current Synthetix system.
               <tr>
                 <td>AddressResolver</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x1d551351613a28d676BaC1Af157799e201279198">0x1d551351613a28d676BaC1Af157799e201279198</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x1d551351613a28d676BaC1Af157799e201279198">0x1d551351613a28d676BaC1Af157799e201279198</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralEth</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x35725C94f3B1aB6BbD533c0B6Df525537d422c5F">0x35725C94f3B1aB6BbD533c0B6Df525537d422c5F</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x35725C94f3B1aB6BbD533c0B6Df525537d422c5F">0x35725C94f3B1aB6BbD533c0B6Df525537d422c5F</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManager</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x0440f82444C825a0842f50e1c25cb68676d736e3">0x0440f82444C825a0842f50e1c25cb68676d736e3</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x0440f82444C825a0842f50e1c25cb68676d736e3">0x0440f82444C825a0842f50e1c25cb68676d736e3</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralManagerState</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xA6B255CB2Bd5Ad5f3EaE2D246ec1c2c3F7F79574">0xA6B255CB2Bd5Ad5f3EaE2D246ec1c2c3F7F79574</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xA6B255CB2Bd5Ad5f3EaE2D246ec1c2c3F7F79574">0xA6B255CB2Bd5Ad5f3EaE2D246ec1c2c3F7F79574</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralShort</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x1a471C12f7efd7adB0065E3c7e457a0c36c13490">0x1a471C12f7efd7adB0065E3c7e457a0c36c13490</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x1a471C12f7efd7adB0065E3c7e457a0c36c13490">0x1a471C12f7efd7adB0065E3c7e457a0c36c13490</a>
                 </td>
               </tr>
               <tr>
                 <td>CollateralUtil</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/CollateralUtil.sol">CollateralUtil.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x4BbDe1e5f91e6E8928CdCBF800aC990015387EbA">0x4BbDe1e5f91e6E8928CdCBF800aC990015387EbA</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x4BbDe1e5f91e6E8928CdCBF800aC990015387EbA">0x4BbDe1e5f91e6E8928CdCBF800aC990015387EbA</a>
                 </td>
               </tr>
               <tr>
                 <td>DappMaintenance</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x4259a2004A1E110A86564ff1441c37F1461F344F">0x4259a2004A1E110A86564ff1441c37F1461F344F</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x4259a2004A1E110A86564ff1441c37F1461F344F">0x4259a2004A1E110A86564ff1441c37F1461F344F</a>
                 </td>
               </tr>
               <tr>
                 <td>DebtCache</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/DebtCache.sol">DebtCache.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x216EaF79575563A5e13227ad075850cDeb004083">0x216EaF79575563A5e13227ad075850cDeb004083</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x216EaF79575563A5e13227ad075850cDeb004083">0x216EaF79575563A5e13227ad075850cDeb004083</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovals</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x2715DC87A9c9a9A1a02641403205F4F093E1A659">0x2715DC87A9c9a9A1a02641403205F4F093E1A659</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x2715DC87A9c9a9A1a02641403205F4F093E1A659">0x2715DC87A9c9a9A1a02641403205F4F093E1A659</a>
                 </td>
               </tr>
               <tr>
                 <td>DelegateApprovalsEternalStorage</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x9800812f1d80bbe763DA97C967e746ca7a2d1Ccd">0x9800812f1d80bbe763DA97C967e746ca7a2d1Ccd</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x9800812f1d80bbe763DA97C967e746ca7a2d1Ccd">0x9800812f1d80bbe763DA97C967e746ca7a2d1Ccd</a>
                 </td>
               </tr>
               <tr>
                 <td>EscrowChecker</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x69927Cda9Df863464afAC7DA506928BF3a3ec11f">0x69927Cda9Df863464afAC7DA506928BF3a3ec11f</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x69927Cda9Df863464afAC7DA506928BF3a3ec11f">0x69927Cda9Df863464afAC7DA506928BF3a3ec11f</a>
                 </td>
               </tr>
               <tr>
                 <td>EtherWrapper</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/EmptyEtherWrapper.sol">EmptyEtherWrapper.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x858A2FF0EAe5fcb0be10df79B741Cff89B77FeCB">0x858A2FF0EAe5fcb0be10df79B741Cff89B77FeCB</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x858A2FF0EAe5fcb0be10df79B741Cff89B77FeCB">0x858A2FF0EAe5fcb0be10df79B741Cff89B77FeCB</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeCircuitBreaker</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ExchangeCircuitBreaker.sol">ExchangeCircuitBreaker.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xFdb50671276DbC9D24D68b272B54dE4a87aaCc6c">0xFdb50671276DbC9D24D68b272B54dE4a87aaCc6c</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xFdb50671276DbC9D24D68b272B54dE4a87aaCc6c">0xFdb50671276DbC9D24D68b272B54dE4a87aaCc6c</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeRates</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xd90690084Cc97F87214f373a6835A2748C5bedd5">0xd90690084Cc97F87214f373a6835A2748C5bedd5</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xd90690084Cc97F87214f373a6835A2748C5bedd5">0xd90690084Cc97F87214f373a6835A2748C5bedd5</a>
                 </td>
               </tr>
               <tr>
                 <td>ExchangeState</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xeD5D12c5A772F32dE608CF84F671C123e132FA80">0xeD5D12c5A772F32dE608CF84F671C123e132FA80</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xeD5D12c5A772F32dE608CF84F671C123e132FA80">0xeD5D12c5A772F32dE608CF84F671C123e132FA80</a>
                 </td>
               </tr>
               <tr>
                 <td>Exchanger</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/Exchanger.sol">Exchanger.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xcFAd59957537e62FB11E70d25c654e1538cC31C2">0xcFAd59957537e62FB11E70d25c654e1538cC31C2</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xcFAd59957537e62FB11E70d25c654e1538cC31C2">0xcFAd59957537e62FB11E70d25c654e1538cC31C2</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePool</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FeePool.sol">FeePool.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x216B2767C7E28f26878e668a6a06d3C364dE0725">0x216B2767C7E28f26878e668a6a06d3C364dE0725</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x216B2767C7E28f26878e668a6a06d3C364dE0725">0x216B2767C7E28f26878e668a6a06d3C364dE0725</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolEternalStorage</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xd01075abdD086006c85840de62544506d7Ab3C79">0xd01075abdD086006c85840de62544506d7Ab3C79</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xd01075abdD086006c85840de62544506d7Ab3C79">0xd01075abdD086006c85840de62544506d7Ab3C79</a>
                 </td>
               </tr>
               <tr>
                 <td>FeePoolState</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x0FA904962C4f5427590dD4517697C32363639303">0x0FA904962C4f5427590dD4517697C32363639303</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x0FA904962C4f5427590dD4517697C32363639303">0x0FA904962C4f5427590dD4517697C32363639303</a>
                 </td>
               </tr>
               <tr>
                 <td>FlexibleStorage</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x88CAf687f3E1cae053BF0CdbB52EFb1c5dcAbD87">0x88CAf687f3E1cae053BF0CdbB52EFb1c5dcAbD87</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x88CAf687f3E1cae053BF0CdbB52EFb1c5dcAbD87">0x88CAf687f3E1cae053BF0CdbB52EFb1c5dcAbD87</a>
                 </td>
               </tr>
               <tr>
                 <td>FuturesMarketBTC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FuturesMarket.sol">FuturesMarket.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x2f421752B7C07268DEA60A1B39D67927a5abA2F6">0x2f421752B7C07268DEA60A1B39D67927a5abA2F6</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x2f421752B7C07268DEA60A1B39D67927a5abA2F6">0x2f421752B7C07268DEA60A1B39D67927a5abA2F6</a>
                 </td>
               </tr>
               <tr>
                 <td>FuturesMarketData</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FuturesMarketData.sol">FuturesMarketData.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x3FAe35Cfea950Fada314589213BABC54A084d5Bf">0x3FAe35Cfea950Fada314589213BABC54A084d5Bf</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x3FAe35Cfea950Fada314589213BABC54A084d5Bf">0x3FAe35Cfea950Fada314589213BABC54A084d5Bf</a>
                 </td>
               </tr>
               <tr>
                 <td>FuturesMarketETH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FuturesMarket.sol">FuturesMarket.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x0D10c032ad006C98C33A95e59ab3BA2b0849bD59">0x0D10c032ad006C98C33A95e59ab3BA2b0849bD59</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x0D10c032ad006C98C33A95e59ab3BA2b0849bD59">0x0D10c032ad006C98C33A95e59ab3BA2b0849bD59</a>
                 </td>
               </tr>
               <tr>
                 <td>FuturesMarketManager</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FuturesMarketManager.sol">FuturesMarketManager.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x95d6B120862986Fb605B0ccD1f0E8a71f5f4fB2c">0x95d6B120862986Fb605B0ccD1f0E8a71f5f4fB2c</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x95d6B120862986Fb605B0ccD1f0E8a71f5f4fB2c">0x95d6B120862986Fb605B0ccD1f0E8a71f5f4fB2c</a>
                 </td>
               </tr>
               <tr>
                 <td>FuturesMarketSettings</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/FuturesMarketSettings.sol">FuturesMarketSettings.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x0dde87714C3bdACB93bB1d38605aFff209a85998">0x0dde87714C3bdACB93bB1d38605aFff209a85998</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x0dde87714C3bdACB93bB1d38605aFff209a85998">0x0dde87714C3bdACB93bB1d38605aFff209a85998</a>
                 </td>
               </tr>
               <tr>
                 <td>Issuer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/Issuer.sol">Issuer.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xd054361Cc8DeE60A32bDaF4B0d1c610326c29FE5">0xd054361Cc8DeE60A32bDaF4B0d1c610326c29FE5</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xd054361Cc8DeE60A32bDaF4B0d1c610326c29FE5">0xd054361Cc8DeE60A32bDaF4B0d1c610326c29FE5</a>
                 </td>
               </tr>
               <tr>
                 <td>Liquidator</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/Liquidator.sol">Liquidator.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x94215de0377428c810E32c73f7fc12E5f2Af2FE2">0x94215de0377428c810E32c73f7fc12E5f2Af2FE2</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x94215de0377428c810E32c73f7fc12E5f2Af2FE2">0x94215de0377428c810E32c73f7fc12E5f2Af2FE2</a>
                 </td>
               </tr>
               <tr>
                 <td>LiquidatorRewards</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/LiquidatorRewards.sol">LiquidatorRewards.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x1c6C0a89064206e397E75b11Bcd370E8A8A007B4">0x1c6C0a89064206e397E75b11Bcd370E8A8A007B4</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x1c6C0a89064206e397E75b11Bcd370E8A8A007B4">0x1c6C0a89064206e397E75b11Bcd370E8A8A007B4</a>
                 </td>
               </tr>
               <tr>
                 <td>Math</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/Math.sol">Math.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x6fa3D41F37F544c6982693eFEe8B0d4BD88986ed">0x6fa3D41F37F544c6982693eFEe8B0d4BD88986ed</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x6fa3D41F37F544c6982693eFEe8B0d4BD88986ed">0x6fa3D41F37F544c6982693eFEe8B0d4BD88986ed</a>
                 </td>
               </tr>
               <tr>
                 <td>OneNetAggregatorDebtRatio</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/OneNetAggregatorDebtRatio.sol">OneNetAggregatorDebtRatio.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x88e566CF9E29e08AfFB23abe3E9065bD88ACB152">0x88e566CF9E29e08AfFB23abe3E9065bD88ACB152</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x88e566CF9E29e08AfFB23abe3E9065bD88ACB152">0x88e566CF9E29e08AfFB23abe3E9065bD88ACB152</a>
                 </td>
               </tr>
               <tr>
                 <td>OneNetAggregatorIssuedSynths</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/OneNetAggregatorIssuedSynths.sol">OneNetAggregatorIssuedSynths.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x904c9424484ba6D5C47d979d8e9Fc5261747D681">0x904c9424484ba6D5C47d979d8e9Fc5261747D681</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x904c9424484ba6D5C47d979d8e9Fc5261747D681">0x904c9424484ba6D5C47d979d8e9Fc5261747D681</a>
                 </td>
               </tr>
               <tr>
                 <td>OwnerRelayOnOptimism</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/OwnerRelayOnOptimism.sol">OwnerRelayOnOptimism.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x55C20ea46766E3E50D4eD1973A88550B2949825c">0x55C20ea46766E3E50D4eD1973A88550B2949825c</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x55C20ea46766E3E50D4eD1973A88550B2949825c">0x55C20ea46766E3E50D4eD1973A88550B2949825c</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxyFeePool</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/Proxy.sol">Proxy.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x4Fa8252a6C60C891BE35Db51F1F4F5973b88dF98">0x4Fa8252a6C60C891BE35Db51F1F4F5973b88dF98</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x4Fa8252a6C60C891BE35Db51F1F4F5973b88dF98">0x4Fa8252a6C60C891BE35Db51F1F4F5973b88dF98</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x2E5ED97596a8368EB9E44B1f3F25B2E813845303">0x2E5ED97596a8368EB9E44B1f3F25B2E813845303</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x2E5ED97596a8368EB9E44B1f3F25B2E813845303">0x2E5ED97596a8368EB9E44B1f3F25B2E813845303</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysBTC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x23c7a77D22Fc1274eCecB703f74699500db106E6">0x23c7a77D22Fc1274eCecB703f74699500db106E6</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x23c7a77D22Fc1274eCecB703f74699500db106E6">0x23c7a77D22Fc1274eCecB703f74699500db106E6</a>
                 </td>
               </tr>
               <tr>
                 <td>ProxysETH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x6c3856488e664C6b0380AAEfBFD1c28cd6727eC8">0x6c3856488e664C6b0380AAEfBFD1c28cd6727eC8</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x6c3856488e664C6b0380AAEfBFD1c28cd6727eC8">0x6c3856488e664C6b0380AAEfBFD1c28cd6727eC8</a>
                 </td>
               </tr>
               <tr>
                 <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xeBaEAAD9236615542844adC5c149F86C36aD1136">0xeBaEAAD9236615542844adC5c149F86C36aD1136</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xeBaEAAD9236615542844adC5c149F86C36aD1136">0xeBaEAAD9236615542844adC5c149F86C36aD1136</a>
                 </td>
               </tr>
               <tr>
                 <td>ReadProxyAddressResolver</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x9Fc84992dF5496797784374B810E04238728743d">0x9Fc84992dF5496797784374B810E04238728743d</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x9Fc84992dF5496797784374B810E04238728743d">0x9Fc84992dF5496797784374B810E04238728743d</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardEscrowV2</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/ImportableRewardEscrowV2.sol">ImportableRewardEscrowV2.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x6dd94459B5A844a6739c2b38a9E6d6b165cE45D9">0x6dd94459B5A844a6739c2b38a9E6d6b165cE45D9</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x6dd94459B5A844a6739c2b38a9E6d6b165cE45D9">0x6dd94459B5A844a6739c2b38a9E6d6b165cE45D9</a>
                 </td>
               </tr>
               <tr>
                 <td>RewardsDistribution</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xb12704F8BddA7CF3eBa5F9A463404D4ba5d0e282">0xb12704F8BddA7CF3eBa5F9A463404D4ba5d0e282</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xb12704F8BddA7CF3eBa5F9A463404D4ba5d0e282">0xb12704F8BddA7CF3eBa5F9A463404D4ba5d0e282</a>
                 </td>
               </tr>
               <tr>
                 <td>SafeDecimalMath</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x6Bb3B18694A6849654379F040DcB112E07da9DC7">0x6Bb3B18694A6849654379F040DcB112E07da9DC7</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x6Bb3B18694A6849654379F040DcB112E07da9DC7">0x6Bb3B18694A6849654379F040DcB112E07da9DC7</a>
                 </td>
               </tr>
               <tr>
                 <td>SignedSafeDecimalMath</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SignedSafeDecimalMath.sol">SignedSafeDecimalMath.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x6d2eA159C128eC361a9a23b1456Ef0aAD0bec46b">0x6d2eA159C128eC361a9a23b1456Ef0aAD0bec46b</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x6d2eA159C128eC361a9a23b1456Ef0aAD0bec46b">0x6d2eA159C128eC361a9a23b1456Ef0aAD0bec46b</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthRedeemer</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SynthRedeemer.sol">SynthRedeemer.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x2A8338199D802620B4516a557195a498595d7Eb6">0x2A8338199D802620B4516a557195a498595d7Eb6</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x2A8338199D802620B4516a557195a498595d7Eb6">0x2A8338199D802620B4516a557195a498595d7Eb6</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthUtil</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xC647DecC9c4f9162dBF77E4367199F5ED0950355">0xC647DecC9c4f9162dBF77E4367199F5ED0950355</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xC647DecC9c4f9162dBF77E4367199F5ED0950355">0xC647DecC9c4f9162dBF77E4367199F5ED0950355</a>
                 </td>
               </tr>
               <tr>
                 <td>Synthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xE5Ff777aBF6bCDBEA930179526AE5284cD884e0B">0xE5Ff777aBF6bCDBEA930179526AE5284cD884e0B</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xE5Ff777aBF6bCDBEA930179526AE5284cD884e0B">0xE5Ff777aBF6bCDBEA930179526AE5284cD884e0B</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixBridgeToBase</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xD2b3F0Ea40dB68088415412b0043F37B3088836D">0xD2b3F0Ea40dB68088415412b0043F37B3088836D</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xD2b3F0Ea40dB68088415412b0043F37B3088836D">0xD2b3F0Ea40dB68088415412b0043F37B3088836D</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixDebtShare</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SynthetixDebtShare.sol">SynthetixDebtShare.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x3c710172e7f95aCAaDeD243982a90F8F235fF9f1">0x3c710172e7f95aCAaDeD243982a90F8F235fF9f1</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x3c710172e7f95aCAaDeD243982a90F8F235fF9f1">0x3c710172e7f95aCAaDeD243982a90F8F235fF9f1</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthetixEscrow</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xFaFd00D0CaA6D5cd5161c5C1F18AaB24942aCAFA">0xFaFd00D0CaA6D5cd5161c5C1F18AaB24942aCAFA</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xFaFd00D0CaA6D5cd5161c5C1F18AaB24942aCAFA">0xFaFd00D0CaA6D5cd5161c5C1F18AaB24942aCAFA</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsBTC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xFdB84151Bfc76857398BC3efd8d1b32A32c571f2">0xFdB84151Bfc76857398BC3efd8d1b32A32c571f2</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xFdB84151Bfc76857398BC3efd8d1b32A32c571f2">0xFdB84151Bfc76857398BC3efd8d1b32A32c571f2</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsETH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x7D442107e2AD048C02F06332C918b1F81bd6850d">0x7D442107e2AD048C02F06332C918b1F81bd6850d</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x7D442107e2AD048C02F06332C918b1F81bd6850d">0x7D442107e2AD048C02F06332C918b1F81bd6850d</a>
                 </td>
               </tr>
               <tr>
                 <td>SynthsUSD</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/Synth.sol">Synth.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x7c0B9FbA343fC80086ccC248A8431D5D8531d782">0x7c0B9FbA343fC80086ccC248A8431D5D8531d782</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x7c0B9FbA343fC80086ccC248A8431D5D8531d782">0x7c0B9FbA343fC80086ccC248A8431D5D8531d782</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemSettings</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xD2cECA6DD62243aB2d342Eb04882c86a10b35274">0xD2cECA6DD62243aB2d342Eb04882c86a10b35274</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xD2cECA6DD62243aB2d342Eb04882c86a10b35274">0xD2cECA6DD62243aB2d342Eb04882c86a10b35274</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemSettingsLib</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SystemSettingsLib.sol">SystemSettingsLib.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x83732C3eD8F24Af9b87DAcDC23b0Fe40abb77337">0x83732C3eD8F24Af9b87DAcDC23b0Fe40abb77337</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x83732C3eD8F24Af9b87DAcDC23b0Fe40abb77337">0x83732C3eD8F24Af9b87DAcDC23b0Fe40abb77337</a>
                 </td>
               </tr>
               <tr>
                 <td>SystemStatus</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x9D89fF8C6f3CC22F4BbB859D0F85FB3a4e1FA916">0x9D89fF8C6f3CC22F4BbB859D0F85FB3a4e1FA916</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x9D89fF8C6f3CC22F4BbB859D0F85FB3a4e1FA916">0x9D89fF8C6f3CC22F4BbB859D0F85FB3a4e1FA916</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStateSynthetix</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/LegacyTokenState.sol">LegacyTokenState.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0xB9525040A5B6a2d9e013240397079Fd1320559C4">0xB9525040A5B6a2d9e013240397079Fd1320559C4</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0xB9525040A5B6a2d9e013240397079Fd1320559C4">0xB9525040A5B6a2d9e013240397079Fd1320559C4</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesBTC</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x716044850a48DeD57B0581298018D2d8502B1091">0x716044850a48DeD57B0581298018D2d8502B1091</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x716044850a48DeD57B0581298018D2d8502B1091">0x716044850a48DeD57B0581298018D2d8502B1091</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesETH</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x1557769Cf42EE9e7c8D98CCFE0b454c2DEC125B6">0x1557769Cf42EE9e7c8D98CCFE0b454c2DEC125B6</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x1557769Cf42EE9e7c8D98CCFE0b454c2DEC125B6">0x1557769Cf42EE9e7c8D98CCFE0b454c2DEC125B6</a>
                 </td>
               </tr>
               <tr>
                 <td>TokenStatesUSD</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/TokenState.sol">TokenState.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x43CA5848a2957C0718D240c02A4381A90111591e">0x43CA5848a2957C0718D240c02A4381A90111591e</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x43CA5848a2957C0718D240c02A4381A90111591e">0x43CA5848a2957C0718D240c02A4381A90111591e</a>
                 </td>
               </tr>
               <tr>
                 <td>TradingRewards</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x08fb827Ee5A00232aDe347964225Ba4344665eD5">0x08fb827Ee5A00232aDe347964225Ba4344665eD5</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x08fb827Ee5A00232aDe347964225Ba4344665eD5">0x08fb827Ee5A00232aDe347964225Ba4344665eD5</a>
                 </td>
               </tr>
               <tr>
                 <td>WrapperFactory</td>
                 <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.75.1-alpha/contracts/WrapperFactory.sol">WrapperFactory.sol</a></td>
-                <td><a target="_blank" href="https://goerli-explorer.optimism.io/address/0x507cbddCF4e01396981190F0Ced8Ea37ca25b452">0x507cbddCF4e01396981190F0Ced8Ea37ca25b452</a>
+                <td><a target="_blank" href="https://blockscout.com/optimism/goerli/address/0x507cbddCF4e01396981190F0Ced8Ea37ca25b452">0x507cbddCF4e01396981190F0Ced8Ea37ca25b452</a>
                 </td>
               </tr></table>
