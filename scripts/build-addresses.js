@@ -51,7 +51,7 @@ const generateAddresses = () => {
 									: 'etherscan.io'
 								: network !== 'mainnet'
 								? 'blockscout.com/optimism/' + network
-								: 'optimistic.etherscan.io'
+								: 'explorer.optimism.io'
 						}/address/${address}">${address}</a>`;
 
 						if (targetContract === 'ProxysUSD' || targetContract === 'ProxySynthetix') {
