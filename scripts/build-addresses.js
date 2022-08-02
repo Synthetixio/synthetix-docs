@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 'use strict';
 
 const fs = require('fs');
@@ -43,13 +44,14 @@ const generateAddresses = () => {
 					.map(targetContract => {
 						const { address, source } = targets[targetContract];
 						let label = targetContract;
-						const addressLink = `<a target="_blank" href="https://${network !== 'mainnet' ? network + '.' : ''}
-						${
-							useOvm
-								? network !== 'goerli'
-									? 'optimistic.etherscan.io'
-									: 'blockscout.com/optimism/goerli'
-								: 'etherscan.io'
+						const addressLink = `<a target="_blank" href="https://${
+							!useOvm
+								? network !== 'mainnet'
+									? network + '.etherscan.io'
+									: 'etherscan.io'
+								: network !== 'mainnet'
+								? 'blockscout.com/optimism/' + network
+								: 'optimistic.etherscan.io'
 						}/address/${address}">${address}</a>`;
 
 						if (targetContract === 'ProxysUSD' || targetContract === 'ProxySynthetix') {
