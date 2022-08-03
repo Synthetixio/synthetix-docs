@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/OneNetAggregatorsDEFI.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/OneNetAggregatorsDEFI.sol)
+**Source:** [contracts/OneNetAggregatorsDEFI.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OneNetAggregatorsDEFI.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/OneNetAggregatorsDEFI.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OneNetAggregatorsDEFI.sol#L6)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/OneNetAggregatorsDEFI.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OneNetAggregatorsDEFI.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/OneNetAggregatorsDEFI.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OneNetAggregatorsDEFI.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `getRoundData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/OneNetAggregatorsDEFI.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OneNetAggregatorsDEFI.sol#L14)</sub>
 
 ??? example "Details"
 

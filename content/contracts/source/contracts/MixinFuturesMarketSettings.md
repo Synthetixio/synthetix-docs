@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/MixinFuturesMarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol)
+**Source:** [contracts/MixinFuturesMarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `_flexibleStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -66,7 +66,7 @@
 
 ### `_liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `_liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `_makerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `_makerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -138,7 +138,7 @@
 
 ### `_maxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `_maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@
 
 ### `_maxMarketValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -192,7 +192,7 @@
 
 ### `_minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L109)</sub>
 
 ??? example "Details"
 
@@ -210,7 +210,7 @@
 
 ### `_minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -228,7 +228,7 @@
 
 ### `_nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -246,7 +246,7 @@
 
 ### `_parameter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -264,7 +264,7 @@
 
 ### `_skewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -282,7 +282,7 @@
 
 ### `_takerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -300,7 +300,7 @@
 
 ### `_takerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.1-alpha/contracts/MixinFuturesMarketSettings.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/MixinFuturesMarketSettings.sol#L69)</sub>
 
 ??? example "Details"
 
