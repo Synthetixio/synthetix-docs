@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Tiaki (v2.75.2)
+
+**Published**: Aug 3, 2022
+
+**Codebase**: [v2.75.2](https://github.com/Synthetixio/synthetix/tree/v2.75.2)
+
+> - [SIP-258: Trade Directionality In Pricing of Atomic Swaps](https://sips.synthetix.io/sips/sip-258/)
+
+> Audit: https://iosiro.com/audits/synthetix-tiaki-release-smart-contract-audit
+
+## Release notes
+
+- Improves the pricing of atomic swaps by incorporating directionality of trades in the Uniswap pricing methodology
+
+---
+
 # Algol (v2.74.1)
 
 **Published**: Jun 23, 2022
