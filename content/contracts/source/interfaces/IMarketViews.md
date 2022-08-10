@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/FuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/FuturesMarketManager.sol)
+**Source:** [contracts/FuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketManager.sol)
 
 ## Views
 
 ### `assetPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/FuturesMarketManager.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketManager.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/FuturesMarketManager.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketManager.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `currentFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/FuturesMarketManager.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketManager.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `marketDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/FuturesMarketManager.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketManager.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/FuturesMarketManager.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketManager.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `marketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/FuturesMarketManager.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketManager.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `marketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/FuturesMarketManager.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketManager.sol#L28)</sub>
 
 ??? example "Details"
 

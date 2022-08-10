@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeCircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol)
+**Source:** [contracts/ExchangeCircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/ExchangeCircuitBreaker.sol)
 
 ## Variables
 
 ### `CIRCUIT_BREAKER_SUSPENSION_REASON`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/ExchangeCircuitBreaker.sol#L36)</sub>
 
 **Type:** `uint256`
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/ExchangeCircuitBreaker.sol#L33)</sub>
 
 **Type:** `bytes32`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/ExchangeCircuitBreaker.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -42,13 +42,13 @@
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/ExchangeCircuitBreaker.sol#L52)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `exchangeRates() view returns (address)`
+    `exchangeRates() view returns (contract IExchangeRates)`
 
     **Visibility**
 
@@ -58,69 +58,15 @@
 
     `view`
 
-### `isDeviationAboveThreshold`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L72)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `isDeviationAboveThreshold(uint256 base, uint256 comparison) view returns (bool)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `lastExchangeRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L80)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `lastExchangeRate(bytes32 currencyKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `priceDeviationThresholdFactor`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L76)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `priceDeviationThresholdFactor() view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `rateWithInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/ExchangeCircuitBreaker.sol#L61)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `rateWithInvalid(bytes32 currencyKey) view returns (uint256, bool)`
+    `rateWithInvalid(bytes32 currencyKey) view returns (uint256 rate, bool invalid)`
 
     **Visibility**
 
@@ -132,7 +78,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/ExchangeCircuitBreaker.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -148,137 +94,17 @@
 
     `view`
 
-## Restricted Functions
-
-### `resetLastExchangeRate`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L145)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `resetLastExchangeRate(bytes32[] currencyKeys)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    ``
-
-    **Requires**
-
-    * [require(..., "Rates for given synths not valid")](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L148)
-
-    **Modifiers**
-
-    * [onlyOwner](#onlyowner)
-
-## Internal Functions
-
-### `_exchangeRates`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L89)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_exchangeRates() view returns (contract IExchangeRates)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `_isDeviationAboveThreshold`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L158)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_isDeviationAboveThreshold(uint256 base, uint256 comparison) view returns (bool)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `_isRateOutOfBounds`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L179)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_isRateOutOfBounds(bytes32 currencyKey, uint256 currentRate) view returns (bool)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `issuer`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L97)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `issuer() view returns (contract IIssuer)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
-### `systemStatus`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L93)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `systemStatus() view returns (contract ISystemStatus)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
 ## External Functions
 
 ### `rateWithBreakCircuit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/ExchangeCircuitBreaker.sol#L71)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `rateWithBreakCircuit(bytes32 currencyKey) returns (uint256 lastValidRate, bool circuitBroken)`
+    `rateWithBreakCircuit(bytes32 currencyKey) returns (uint256 lastValidRate, bool invalid)`
 
     **Visibility**
 
@@ -287,11 +113,3 @@
     **State Mutability**
 
     ``
-
-## Events
-
-### `LastRateOverriden`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/ExchangeCircuitBreaker.sol#L208)</sub>
-
-**Signature**: `LastRateOverriden(bytes32 currencyKey, uint256 previousRate, uint256 newRate)`

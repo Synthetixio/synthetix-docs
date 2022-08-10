@@ -74,6 +74,7 @@ nav:
                 - BinaryOptionMarketFactory: contracts/source/contracts/BinaryOptionMarketFactory.md
                 - BinaryOptionMarketManager: contracts/source/contracts/BinaryOptionMarketManager.md
                 - BridgeMigrator: contracts/source/contracts/BridgeMigrator.md
+                - CircuitBreaker: contracts/source/contracts/CircuitBreaker.md
                 - Collateral: contracts/source/contracts/Collateral.md
                 - CollateralErc20: contracts/source/contracts/CollateralErc20.md
                 - CollateralEth: contracts/source/contracts/CollateralEth.md
@@ -233,6 +234,7 @@ nav:
                 - IBinaryOption: contracts/source/interfaces/IBinaryOption.md
                 - IBinaryOptionMarket: contracts/source/interfaces/IBinaryOptionMarket.md
                 - IBinaryOptionMarketManager: contracts/source/interfaces/IBinaryOptionMarketManager.md
+                - ICircuitBreaker: contracts/source/interfaces/ICircuitBreaker.md
                 - ICollateralErc20: contracts/source/interfaces/ICollateralErc20.md
                 - ICollateralEth: contracts/source/interfaces/ICollateralEth.md
                 - ICollateralLoan: contracts/source/interfaces/ICollateralLoan.md

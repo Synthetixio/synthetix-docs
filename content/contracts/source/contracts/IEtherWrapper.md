@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IEtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol)
+**Source:** [contracts/interfaces/IEtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol)
 
 ## Views
 
 ### `burnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `calculateBurnFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `calculateMintFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `capacity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `getReserves`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `maxETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `mintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `weth`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -172,7 +172,7 @@
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@
 
 ### `distributeFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/interfaces/IEtherWrapper.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/IEtherWrapper.sol#L7)</sub>
 
 ??? example "Details"
 

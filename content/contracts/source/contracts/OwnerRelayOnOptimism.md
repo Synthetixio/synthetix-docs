@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/OwnerRelayOnOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol)
+**Source:** [contracts/OwnerRelayOnOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `directRelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `finalizeRelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `finalizeRelayBatch`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@
 
 ### `_onlyAllowMessengerAndL1Relayer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -146,32 +146,32 @@
 
     **Requires**
 
-    * [require(..., "Sender is not the messenger")](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L46)
+    * [require(..., "Sender is not the messenger")](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L46)
 
-    * [require(..., "L1 sender is not the owner relay")](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L47)
+    * [require(..., "L1 sender is not the owner relay")](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L47)
 
 ## Modifiers
 
 ### `onlyMessengerAndL1Relayer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L50)</sub>
 
 ## Events
 
 ### `DirectRelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L87)</sub>
 
 **Signature**: `DirectRelay(address target, bytes payload)`
 
 ### `RelayBatchFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L89)</sub>
 
 **Signature**: `RelayBatchFinalized(address[] targets, bytes[] payloads)`
 
 ### `RelayFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.75.2/contracts/OwnerRelayOnOptimism.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/OwnerRelayOnOptimism.sol#L88)</sub>
 
 **Signature**: `RelayFinalized(address target, bytes payload)`
