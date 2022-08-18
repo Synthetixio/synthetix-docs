@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/FuturesMarketBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol)
+**Source:** [contracts/FuturesMarketBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol)
 
 ## Structs
 
 ### `TradeParams`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L155)</sub>
 
 | Field          | Type      | Description |
 | -------------- | --------- | ----------- |
@@ -22,43 +22,43 @@
 
 ### `baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L104)</sub>
 
 **Type:** `bytes32`
 
 ### `fundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L124)</sub>
 
 **Type:** `uint32`
 
 ### `fundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L125)</sub>
 
 **Type:** `int128[]`
 
 ### `marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L101)</sub>
 
 **Type:** `bytes32`
 
 ### `marketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L107)</sub>
 
 **Type:** `uint128`
 
 ### `marketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L113)</sub>
 
 **Type:** `int128`
 
 ### `positions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L131)</sub>
 
 **Type:** `mapping(address => struct IFuturesMarketBaseTypes.Position)`
 
@@ -66,7 +66,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L165)</sub>
 
 ??? example "Details"
 
@@ -86,7 +86,7 @@
 
 ### `assetPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L624)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L624)</sub>
 
 ??? example "Details"
 
@@ -104,7 +104,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L194)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L194)</sub>
 
 ??? example "Details"
 
@@ -124,7 +124,7 @@
 
 ### `_abs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L577)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L577)</sub>
 
 ??? example "Details"
 
@@ -142,7 +142,7 @@
 
 ### `_accessibleMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L367)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L367)</sub>
 
 ??? example "Details"
 
@@ -160,7 +160,7 @@
 
 ### `_accruedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L316)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L316)</sub>
 
 ??? example "Details"
 
@@ -178,7 +178,7 @@
 
 ### `_applyDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L741)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L741)</sub>
 
 ??? example "Details"
 
@@ -196,7 +196,7 @@
 
 ### `_assetPriceRequireSystemChecks`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L639)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L639)</sub>
 
 ??? example "Details"
 
@@ -214,7 +214,7 @@
 
 ### `_canLiquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L423)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L423)</sub>
 
 ??? example "Details"
 
@@ -232,7 +232,7 @@
 
 ### `_closePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L947)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L947)</sub>
 
 ??? example "Details"
 
@@ -250,7 +250,7 @@
 
 ### `_currentFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L240)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L240)</sub>
 
 ??? example "Details"
 
@@ -268,7 +268,7 @@
 
 ### `_currentLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L432)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L432)</sub>
 
 ??? example "Details"
 
@@ -286,7 +286,7 @@
 
 ### `_dynamicFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L462)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L462)</sub>
 
 ??? example "Details"
 
@@ -304,7 +304,7 @@
 
 ### `_exchangeCircuitBreaker`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L205)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L205)</sub>
 
 ??? example "Details"
 
@@ -322,7 +322,7 @@
 
 ### `_exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L209)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L209)</sub>
 
 ??? example "Details"
 
@@ -340,7 +340,7 @@
 
 ### `_isError`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L598)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L598)</sub>
 
 ??? example "Details"
 
@@ -358,7 +358,7 @@
 
 ### `_latestFundingIndex`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L466)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L466)</sub>
 
 ??? example "Details"
 
@@ -376,7 +376,7 @@
 
 ### `_liquidatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L964)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L964)</sub>
 
 ??? example "Details"
 
@@ -400,7 +400,7 @@
 
 ### `_liquidationFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L400)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L400)</sub>
 
 ??? example "Details"
 
@@ -418,7 +418,7 @@
 
 ### `_liquidationMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L418)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L418)</sub>
 
 ??? example "Details"
 
@@ -436,7 +436,7 @@
 
 ### `_manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L217)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L217)</sub>
 
 ??? example "Details"
 
@@ -454,7 +454,7 @@
 
 ### `_marginPlusProfitFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L328)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L328)</sub>
 
 ??? example "Details"
 
@@ -472,7 +472,7 @@
 
 ### `_marketDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L726)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L726)</sub>
 
 ??? example "Details"
 
@@ -490,7 +490,7 @@
 
 ### `_max`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L581)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L581)</sub>
 
 ??? example "Details"
 
@@ -508,7 +508,7 @@
 
 ### `_min`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L585)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L585)</sub>
 
 ??? example "Details"
 
@@ -526,7 +526,7 @@
 
 ### `_modifyPosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L920)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L920)</sub>
 
 ??? example "Details"
 
@@ -544,7 +544,7 @@
 
 ### `_netFundingPerUnit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L261)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L261)</sub>
 
 ??? example "Details"
 
@@ -562,7 +562,7 @@
 
 ### `_nextFundingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L257)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L257)</sub>
 
 ??? example "Details"
 
@@ -580,7 +580,7 @@
 
 ### `_notionalValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L307)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L307)</sub>
 
 ??? example "Details"
 
@@ -598,7 +598,7 @@
 
 ### `_orderFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L445)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L445)</sub>
 
 ??? example "Details"
 
@@ -616,7 +616,7 @@
 
 ### `_orderSizeTooLarge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L271)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L271)</sub>
 
 ??? example "Details"
 
@@ -634,7 +634,7 @@
 
 ### `_positionDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L694)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L694)</sub>
 
 ??? example "Details"
 
@@ -652,7 +652,7 @@
 
 ### `_postTradeDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L470)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L470)</sub>
 
 ??? example "Details"
 
@@ -670,7 +670,7 @@
 
 ### `_profitLoss`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L311)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L311)</sub>
 
 ??? example "Details"
 
@@ -688,7 +688,7 @@
 
 ### `_proportionalSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L232)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L232)</sub>
 
 ??? example "Details"
 
@@ -706,13 +706,13 @@
 
     **Requires**
 
-    * [require(..., "price can't be zero")](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L234)
+    * [require(..., "price can't be zero")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L234)
 
-    * [require(..., "skewScale is zero")](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L236)
+    * [require(..., "skewScale is zero")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L236)
 
 ### `_recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L658)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L658)</sub>
 
 ??? example "Details"
 
@@ -734,7 +734,7 @@
 
 ### `_recomputeMarginWithDelta`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L339)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L339)</sub>
 
 ??? example "Details"
 
@@ -752,7 +752,7 @@
 
 ### `_remainingMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L360)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L360)</sub>
 
 ??? example "Details"
 
@@ -770,7 +770,7 @@
 
 ### `_revertIfError`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L605)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L605)</sub>
 
 ??? example "Details"
 
@@ -788,7 +788,7 @@
 
 ### `_sameSide`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L591)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L591)</sub>
 
 ??? example "Details"
 
@@ -806,7 +806,7 @@
 
 ### `_settings`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L221)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L221)</sub>
 
 ??? example "Details"
 
@@ -824,7 +824,7 @@
 
 ### `_signedAbs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L570)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L570)</sub>
 
 ??? example "Details"
 
@@ -842,7 +842,7 @@
 
 ### `_systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L213)</sub>
 
 ??? example "Details"
 
@@ -860,7 +860,7 @@
 
 ### `_trade`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L846)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L846)</sub>
 
 ??? example "Details"
 
@@ -882,7 +882,7 @@
 
 ### `_transferMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L747)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L747)</sub>
 
 ??? example "Details"
 
@@ -906,7 +906,7 @@
 
 ### `_unrecordedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L246)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L246)</sub>
 
 ??? example "Details"
 
@@ -924,7 +924,7 @@
 
 ### `_updatePositionMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L782)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L782)</sub>
 
 ??? example "Details"
 
@@ -944,7 +944,7 @@
 
 ### `closePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L938)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L938)</sub>
 
 ??? example "Details"
 
@@ -962,7 +962,7 @@
 
 ### `closePositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L943)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L943)</sub>
 
 ??? example "Details"
 
@@ -980,7 +980,7 @@
 
 ### `liquidatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L1007)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L1007)</sub>
 
 ??? example "Details"
 
@@ -998,7 +998,7 @@
 
 ### `modifyPosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L908)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L908)</sub>
 
 ??? example "Details"
 
@@ -1016,7 +1016,7 @@
 
 ### `modifyPositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L916)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L916)</sub>
 
 ??? example "Details"
 
@@ -1034,7 +1034,7 @@
 
 ### `recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L676)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L676)</sub>
 
 ??? example "Details"
 
@@ -1052,11 +1052,11 @@
 
     **Requires**
 
-    * [require(..., "Invalid price")](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L687)
+    * [require(..., "Invalid price")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L687)
 
 ### `transferMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L828)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L828)</sub>
 
 ??? example "Details"
 
@@ -1074,7 +1074,7 @@
 
 ### `withdrawAllMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L838)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L838)</sub>
 
 ??? example "Details"
 
@@ -1094,30 +1094,30 @@
 
 ### `FundingRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L1040)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L1040)</sub>
 
 **Signature**: `FundingRecomputed(int256 funding, uint256 index, uint256 timestamp)`
 
 ### `FuturesTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L1042)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L1042)</sub>
 
 **Signature**: `FuturesTracking(bytes32 trackingCode, bytes32 baseAsset, bytes32 marketKey, int256 sizeDelta, uint256 fee)`
 
 ### `MarginTransferred`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L1018)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L1018)</sub>
 
 **Signature**: `MarginTransferred(address account, int256 marginDelta)`
 
 ### `PositionLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L1031)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L1031)</sub>
 
 **Signature**: `PositionLiquidated(uint256 id, address account, address liquidator, int256 size, uint256 price, uint256 fee)`
 
 ### `PositionModified`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/FuturesMarketBase.sol#L1020)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/FuturesMarketBase.sol#L1020)</sub>
 
 **Signature**: `PositionModified(uint256 id, address account, uint256 margin, int256 size, int256 tradeSize, uint256 lastPrice, uint256 fundingIndex, uint256 fee)`

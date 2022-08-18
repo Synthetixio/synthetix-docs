@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ILiquidatorRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/ILiquidatorRewards.sol)
+**Source:** [contracts/interfaces/ILiquidatorRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/interfaces/ILiquidatorRewards.sol)
 
 ## Views
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/ILiquidatorRewards.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/interfaces/ILiquidatorRewards.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/ILiquidatorRewards.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/interfaces/ILiquidatorRewards.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/ILiquidatorRewards.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/interfaces/ILiquidatorRewards.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `updateEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.0-alpha/contracts/interfaces/ILiquidatorRewards.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/interfaces/ILiquidatorRewards.sol#L14)</sub>
 
 ??? example "Details"
 
