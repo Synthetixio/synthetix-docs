@@ -2,6 +2,29 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Muhlifain (v2.76.1)
+
+**Published**: Aug 18, 2022
+
+**Codebase**: [v2.76.1](https://github.com/Synthetixio/synthetix/tree/v2.76.1)
+
+> - [SIP-230: Universal Circuit Breaker](https://sips.synthetix.io/sips/sip-230/)
+
+- [SIP-257: Debt Ratio Futures Market](https://sips.synthetix.io/sips/sip-257/)
+- [SIP-249: BNB Perp](https://sips.synthetix.io/sips/sip-249/)
+- [SIP-262: XMR and DOGE Perps](https://sips.synthetix.io/sips/sip-262/)
+- [SIP-269: OP Perp](https://sips.synthetix.io/sips/sip-269/)
+
+> Audit: https://iosiro.com/audits/synthetix-muhlifain-release-smart-contract-audit
+
+## Release notes
+
+- Update the `ExchangeCircuitBreaker` contract to support oracles outside the regular price system. This is a technical debt item which will improve the maintainability and security of the protocol.
+- Create a futures market for the price of SynthetixDebtShare (debt ratio) for capital efficient debt-hedging
+- Create additional futures markets for BNB, OP, DOGE, & XMR perps
+
+---
+
 # Tiaki (v2.75.2)
 
 **Published**: Aug 3, 2022
