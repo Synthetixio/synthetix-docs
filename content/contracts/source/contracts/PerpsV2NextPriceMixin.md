@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2NextPriceMixin.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol)
+**Source:** [contracts/PerpsV2NextPriceMixin.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol)
 
 ## Variables
 
 ### `nextPriceOrders`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L20)</sub>
 
 **Type:** `mapping(address => struct IPerpsV2BaseTypes.NextPriceOrder)`
 
@@ -16,7 +16,7 @@
 
 ### `_confirmationWindowOver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L230)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L230)</sub>
 
 ??? example "Details"
 
@@ -34,7 +34,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L236)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L236)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@
 
 ### `_nextPriceCommitDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L241)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L241)</sub>
 
 ??? example "Details"
 
@@ -70,7 +70,7 @@
 
 ### `_submitNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@
 
     **Requires**
 
-    * [require(..., "previous order exists")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L43)
+    * [require(..., "previous order exists")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L43)
 
     **Emits**
 
@@ -100,7 +100,7 @@
 
 ### `cancelNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
     **Requires**
 
-    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L108)
+    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L108)
 
     **Emits**
 
@@ -126,7 +126,7 @@
 
 ### `executeNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L163)</sub>
 
 ??? example "Details"
 
@@ -144,11 +144,11 @@
 
     **Requires**
 
-    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L167)
+    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L167)
 
-    * [require(..., "target roundId not reached")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L171)
+    * [require(..., "target roundId not reached")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L171)
 
-    * [require(..., "order too old, use cancel")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L178)
+    * [require(..., "order too old, use cancel")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L178)
 
     **Emits**
 
@@ -158,7 +158,7 @@
 
 ### `submitNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@
 
 ### `submitNextPriceOrderWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -196,12 +196,12 @@
 
 ### `NextPriceOrderRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L262)</sub>
 
 **Signature**: `NextPriceOrderRemoved(address account, uint256 currentRoundId, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
 
 ### `NextPriceOrderSubmitted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2NextPriceMixin.sol#L253)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2NextPriceMixin.sol#L253)</sub>
 
 **Signature**: `NextPriceOrderSubmitted(address account, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`

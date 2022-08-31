@@ -2,37 +2,37 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Mirzam.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol)
+**Source:** [contracts/migrations/Migration_Mirzam.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L16)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L23)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `exchangestate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L25)</sub>
 
 **Type:** `contract ExchangeState`
 
 ### `new_Exchanger_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L34)</sub>
 
 **Type:** `address`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L27)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -40,7 +40,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L46)
+    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L46)
 
     **Modifiers**
 
@@ -108,7 +108,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -162,7 +162,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/migrations/Migration_Mirzam.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Mirzam.sol#L77)</sub>
 
 ??? example "Details"
 

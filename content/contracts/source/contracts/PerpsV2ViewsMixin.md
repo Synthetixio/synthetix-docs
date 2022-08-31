@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2ViewsMixin.sol](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol)
+**Source:** [contracts/PerpsV2ViewsMixin.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol)
 
 ## Views
 
 ### `accessibleMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `accruedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `approxLiquidationPriceAndFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `canLiquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L121)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `currentFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `fundingSequenceLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `marketDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `marketSizes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `notionalValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `orderFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `postTradeDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L145)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L145)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `profitLoss`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `remainingMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `unrecordedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -262,7 +262,7 @@
 
 ### `_approxLiquidationPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.76.1/contracts/PerpsV2ViewsMixin.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2ViewsMixin.sol#L172)</sub>
 
 ??? example "Details"
 
