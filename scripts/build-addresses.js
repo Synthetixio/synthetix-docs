@@ -47,12 +47,12 @@ const generateAddresses = () => {
 						const addressLink = `<a target="_blank" href="https://${
 							!useOvm
 								? network !== 'mainnet'
-									? network + '.etherscan.io'
-									: 'etherscan.io'
+									? network + '.'
+									: ''
 								: network !== 'mainnet'
-								? 'blockscout.com/optimism/' + network
-								: 'explorer.optimism.io'
-						}/address/${address}">${address}</a>`;
+								? network + '-optimism.'
+								: 'optimistic.'
+						}etherscan.io/address/${address}">${address}</a>`;
 
 						if (targetContract === 'ProxysUSD' || targetContract === 'ProxySynthetix') {
 							label = `<span style="color: #AAA; text-decoration: line-through">${targetContract}</span><sup>Use ${
