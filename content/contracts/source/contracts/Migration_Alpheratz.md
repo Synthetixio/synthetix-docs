@@ -2,103 +2,103 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Alpheratz.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol)
+**Source:** [contracts/migrations/Migration_Alpheratz.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L22)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L29)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `exchangestate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L33)</sub>
 
 **Type:** `contract ExchangeState`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L44)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_Exchanger_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L59)</sub>
 
 **Type:** `address`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L63)</sub>
 
 **Type:** `address`
 
 ### `new_LiquidatorRewards_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L55)</sub>
 
 **Type:** `address`
 
 ### `new_Liquidator_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L57)</sub>
 
 **Type:** `address`
 
 ### `new_Synthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L61)</sub>
 
 **Type:** `address`
 
 ### `new_SystemSettings_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L53)</sub>
 
 **Type:** `address`
 
 ### `proxysynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L31)</sub>
 
 **Type:** `contract Proxy`
 
 ### `rewardescrow_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L39)</sub>
 
 **Type:** `contract RewardEscrow`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L41)</sub>
 
 **Type:** `contract RewardsDistribution`
 
 ### `systemsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L46)</sub>
 
 **Type:** `contract SystemSettings`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L35)</sub>
 
 **Type:** `contract SystemStatus`
 
 ### `tokenstatesynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L37)</sub>
 
 **Type:** `contract LegacyTokenState`
 
@@ -106,7 +106,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L178)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `issuer_addSynths_15`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_Alpheratz.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_Alpheratz.sol#L125)</sub>
 
 ??? example "Details"
 

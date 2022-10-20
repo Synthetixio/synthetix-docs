@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeRatesWithDexPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol)
+**Source:** [contracts/ExchangeRatesWithDexPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L9)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `atomicEquivalentForDexPricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `atomicTwapWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `atomicVolatilityConsiderationWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `atomicVolatilityUpdateThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -108,7 +108,7 @@
 
 ### `dexPriceAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `effectiveAtomicValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@
 
 ### `synthTooVolatileForAtomicExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `setDexPriceAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -192,7 +192,7 @@
 
 ### `_dexPriceDestinationValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L136)</sub>
 
 ??? example "Details"
 
@@ -210,13 +210,13 @@
 
     **Requires**
 
-    * [require(..., "Uninitialized atomic twap window")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L146)
+    * [require(..., "Uninitialized atomic twap window")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L146)
 
-    * [require(..., "dex price returned 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L155)
+    * [require(..., "dex price returned 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L155)
 
 ### `_getMaxValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L103)</sub>
 
 ??? example "Details"
 
@@ -234,7 +234,7 @@
 
 ### `_getMinValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -252,7 +252,7 @@
 
 ### `_getPriceFromDexAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -270,20 +270,20 @@
 
     **Requires**
 
-    * [require(..., "Amount must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L120)
+    * [require(..., "Amount must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L120)
 
-    * [require(..., "Atomic swaps must go through sUSD")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L121)
+    * [require(..., "Atomic swaps must go through sUSD")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L121)
 
-    * [require(..., "No atomic equivalent for source")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L124)
+    * [require(..., "No atomic equivalent for source")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L124)
 
-    * [require(..., "No atomic equivalent for dest")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L127)
+    * [require(..., "No atomic equivalent for dest")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L127)
 
-    * [require(..., "Result must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L131)
+    * [require(..., "Result must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L131)
 
 ## Events
 
 ### `DexPriceAggregatorUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/ExchangeRatesWithDexPricing.sol#L203)</sub>
 
 **Signature**: `DexPriceAggregatorUpdated(address newDexPriceAggregator)`

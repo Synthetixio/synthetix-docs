@@ -2,91 +2,91 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_AspidiskeOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol)
+**Source:** [contracts/migrations/Migration_AspidiskeOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L21)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L28)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L42)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L60)</sub>
 
 **Type:** `address`
 
 ### `new_Liquidator_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L58)</sub>
 
 **Type:** `address`
 
 ### `new_RewardEscrowV2Storage_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L56)</sub>
 
 **Type:** `address`
 
 ### `new_RewardEscrowV2_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L52)</sub>
 
 **Type:** `address`
 
 ### `new_Synthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L54)</sub>
 
 **Type:** `address`
 
 ### `proxysynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L30)</sub>
 
 **Type:** `contract ProxyERC20`
 
 ### `rewardescrowv2frozen_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L44)</sub>
 
 **Type:** `contract BaseRewardEscrowV2`
 
 ### `rewardescrowv2storage_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L39)</sub>
 
 **Type:** `contract RewardEscrowV2Storage`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L36)</sub>
 
 **Type:** `contract RewardsDistribution`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L32)</sub>
 
 **Type:** `contract SystemStatus`
 
 ### `tokenstatesynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L34)</sub>
 
 **Type:** `contract LegacyTokenState`
 
@@ -94,7 +94,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -152,11 +152,11 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for RewardEscrowV2Storage")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L77)
+    * [require(..., "Invalid contract supplied for RewardEscrowV2Storage")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L77)
 
-    * [require(..., "Invalid contract supplied for Liquidator")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L81)
+    * [require(..., "Invalid contract supplied for Liquidator")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L81)
 
-    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L85)
+    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L85)
 
     **Modifiers**
 
@@ -166,7 +166,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L123)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L123)</sub>
 
 ??? example "Details"
 
@@ -184,7 +184,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L137)</sub>
 
 ??? example "Details"
 
@@ -202,7 +202,7 @@
 
 ### `addressresolver_importAddresses_11`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L179)</sub>
 
 ??? example "Details"
 
@@ -220,7 +220,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -238,7 +238,7 @@
 
 ### `issuer_addSynths_15`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L190)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L190)</sub>
 
 ??? example "Details"
 
@@ -256,7 +256,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/migrations/Migration_AspidiskeOptimism.sol#L130)</sub>
 
 ??? example "Details"
 

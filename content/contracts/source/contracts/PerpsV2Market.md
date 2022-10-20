@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2Market.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2Market.sol)
+**Source:** [contracts/PerpsV2Market.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/PerpsV2Market.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.0-alpha/contracts/PerpsV2Market.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/PerpsV2Market.sol#L16)</sub>
 
 ??? example "Details"
 
