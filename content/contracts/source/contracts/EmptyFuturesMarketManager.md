@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/EmptyFuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/EmptyFuturesMarketManager.sol)
+**Source:** [contracts/EmptyFuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/EmptyFuturesMarketManager.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/EmptyFuturesMarketManager.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/EmptyFuturesMarketManager.sol#L9)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `allMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/EmptyFuturesMarketManager.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/EmptyFuturesMarketManager.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -34,7 +34,7 @@
 
 ### `marketForKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/EmptyFuturesMarketManager.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/EmptyFuturesMarketManager.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@
 
 ### `markets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/EmptyFuturesMarketManager.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/EmptyFuturesMarketManager.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -70,7 +70,7 @@
 
 ### `marketsForKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/EmptyFuturesMarketManager.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/EmptyFuturesMarketManager.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@
 
 ### `numMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/EmptyFuturesMarketManager.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/EmptyFuturesMarketManager.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -106,7 +106,7 @@
 
 ### `totalDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/EmptyFuturesMarketManager.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/EmptyFuturesMarketManager.sol#L38)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthetixDebtShare.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol)
+**Source:** [contracts/SynthetixDebtShare.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol)
 
 ## Structs
 
 ### `PeriodBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L16)</sub>
 
 | Field      | Type      | Description |
 | ---------- | --------- | ----------- |
@@ -19,61 +19,61 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L21)</sub>
 
 **Type:** `bytes32`
 
 ### `authorizedBrokers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L32)</sub>
 
 **Type:** `mapping(address => bool)`
 
 ### `authorizedToSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L39)</sub>
 
 **Type:** `mapping(address => bool)`
 
 ### `balances`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L47)</sub>
 
 **Type:** `mapping(address => struct SynthetixDebtShare.PeriodBalance[])`
 
 ### `currentPeriodId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L65)</sub>
 
 **Type:** `uint128`
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L59)</sub>
 
 **Type:** `uint8`
 
 ### `isInitialized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L70)</sub>
 
 **Type:** `bool`
 
 ### `name`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L57)</sub>
 
 **Type:** `string`
 
 ### `symbol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L58)</sub>
 
 **Type:** `string`
 
 ### `totalSupplyOnPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L54)</sub>
 
 **Type:** `mapping(uint256 => uint256)`
 
@@ -81,7 +81,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -101,7 +101,7 @@
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -119,7 +119,7 @@
 
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L189)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L189)</sub>
 
 ??? example "Details"
 
@@ -137,7 +137,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -155,7 +155,7 @@
 
 ### `balanceOfOnPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -173,11 +173,11 @@
 
     **Requires**
 
-    * [require(..., "SynthetixDebtShare: not found in recent history")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L110)
+    * [require(..., "SynthetixDebtShare: not found in recent history")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L110)
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -195,7 +195,7 @@
 
 ### `sharePercent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -213,7 +213,7 @@
 
 ### `sharePercentOnPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -231,7 +231,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -249,7 +249,7 @@
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -269,7 +269,7 @@
 
 ### `addAuthorizedBroker`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -295,7 +295,7 @@
 
 ### `addAuthorizedToSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -321,7 +321,7 @@
 
 ### `burnShare`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L179)</sub>
 
 ??? example "Details"
 
@@ -339,7 +339,7 @@
 
     **Requires**
 
-    * [require(..., "ERC20: burn from zero address")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L180)
+    * [require(..., "ERC20: burn from zero address")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L180)
 
     **Modifiers**
 
@@ -353,7 +353,7 @@
 
 ### `finishSetup`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L235)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L235)</sub>
 
 ??? example "Details"
 
@@ -375,7 +375,7 @@
 
 ### `importAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L212)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L212)</sub>
 
 ??? example "Details"
 
@@ -399,7 +399,7 @@
 
 ### `mintShare`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L168)</sub>
 
 ??? example "Details"
 
@@ -417,7 +417,7 @@
 
     **Requires**
 
-    * [require(..., "ERC20: mint to the zero address")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L169)
+    * [require(..., "ERC20: mint to the zero address")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L169)
 
     **Modifiers**
 
@@ -431,7 +431,7 @@
 
 ### `removeAuthorizedBroker`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L147)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -457,7 +457,7 @@
 
 ### `removeAuthorizedToSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L157)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L157)</sub>
 
 ??? example "Details"
 
@@ -483,7 +483,7 @@
 
 ### `takeSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L162)</sub>
 
 ??? example "Details"
 
@@ -501,7 +501,7 @@
 
     **Requires**
 
-    * [require(..., "period id must always increase")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L163)
+    * [require(..., "period id must always increase")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L163)
 
     **Modifiers**
 
@@ -509,7 +509,7 @@
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -527,7 +527,7 @@
 
     **Requires**
 
-    * [require(..., "ERC20: send to the zero address")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L202)
+    * [require(..., "ERC20: send to the zero address")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L202)
 
     **Modifiers**
 
@@ -541,7 +541,7 @@
 
 ### `_deductBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L256)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L256)</sub>
 
 ??? example "Details"
 
@@ -559,11 +559,11 @@
 
     **Requires**
 
-    * [require(..., "SynthetixDebtShare: account has no share to deduct")](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L259)
+    * [require(..., "SynthetixDebtShare: account has no share to deduct")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L259)
 
 ### `_increaseBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L240)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L240)</sub>
 
 ??? example "Details"
 
@@ -583,48 +583,48 @@
 
 ### `onlyAuthorizedBrokers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L285)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L285)</sub>
 
 ### `onlyAuthorizedToSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L277)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L277)</sub>
 
 ### `onlyIssuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L272)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L272)</sub>
 
 ### `onlySetup`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L290)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L290)</sub>
 
 ## Events
 
 ### `Burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L297)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L297)</sub>
 
 **Signature**: `Burn(address account, uint256 amount)`
 
 ### `ChangeAuthorizedBroker`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L300)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L300)</sub>
 
 **Signature**: `ChangeAuthorizedBroker(address authorizedBroker, bool authorized)`
 
 ### `ChangeAuthorizedToSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L301)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L301)</sub>
 
 **Signature**: `ChangeAuthorizedToSnapshot(address authorizedToSnapshot, bool authorized)`
 
 ### `Mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L296)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L296)</sub>
 
 **Signature**: `Mint(address account, uint256 amount)`
 
 ### `Transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.1-alpha/contracts/SynthetixDebtShare.sol#L298)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/SynthetixDebtShare.sol#L298)</sub>
 
 **Signature**: `Transfer(address from, address to, uint256 value)`
