@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Aspidiske (v2.77.2)
+
+**Published**: Oct 21, 2022
+
+**Codebase**: [v2.77.2](https://github.com/Synthetixio/synthetix/tree/v2.77.2)
+
+> - [SIP-252: Liquidation of SNX Escrow](https://sips.synthetix.io/sips/sip-252/)
+
+> Audit: https://iosiro.com/audits/synthetix-aspidiske-release-smart-contract-audit
+
+## Release notes
+
+- Allows for SNX escrow entries to be liquidated in case of forced liquidation
+
+---
+
 # Muhlifain (v2.76.1)
 
 **Published**: Aug 18, 2022
