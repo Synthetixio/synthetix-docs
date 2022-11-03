@@ -253,6 +253,21 @@ Second stage of futures markets rollout: add markets for SOL, AVAX, MATIC, AAVE,
 
 ---
 
+# Polaris (v2.61.0)
+
+**Published**: Feb 14, 2022
+
+**Codebase**: [v2.61.0](https://github.com/Synthetixio/synthetix/tree/v2.61.0)
+
+> https://blog.synthetix.io/the-polaris-release/
+
+- [SIP-199](https://sips.synthetix.io/sips/sip-199) Adding sSOL to Optimism
+- [SCCP-163](https://sips.synthetix.io/sccp/sccp-163/) Update Optimism Chainlink Oracles to OCR
+
+> Audit: none required - no new contract changes
+
+---
+
 # Alphard (v2.60.0)
 
 **Published**: Feb 9, 2022
