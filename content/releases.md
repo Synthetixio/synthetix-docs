@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Suhail (v2.78.1)
+
+**Published**: Nov 3, 2022
+
+**Codebase**: [v2.78.1](https://github.com/Synthetixio/synthetix/tree/v2.78.1)
+
+> - [SIP-267: Direct Integration](https://sips.synthetix.io/sips/sip-267/)
+
+> Audit: https://iosiro.com/audits/synthetix-suhail-release-smart-contract-audit
+
+## Release notes
+
+- Introduces DirectIntegration which enables integrator contracts to access Synthetix exchange functionalities with a customized parameter set
+
+---
+
 # Aspidiske (v2.77.2)
 
 **Published**: Oct 21, 2022
