@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol)
+**Source:** [contracts/interfaces/IWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol)
 
 ## Views
 
 ### `burnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `calculateBurnFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `calculateMintFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `capacity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `maxTokenAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `mintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `burn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `mint`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/interfaces/IWrapper.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/interfaces/IWrapper.sol#L7)</sub>
 
 ??? example "Details"
 

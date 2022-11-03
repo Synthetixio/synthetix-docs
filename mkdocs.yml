@@ -89,6 +89,7 @@ nav:
                 - DebtCache: contracts/source/contracts/DebtCache.md
                 - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
                 - Depot: contracts/source/contracts/Depot.md
+                - DirectIntegrationManager: contracts/source/contracts/DirectIntegrationManager.md
                 - EmptyCollateralManager: contracts/source/contracts/EmptyCollateralManager.md
                 - EmptyEtherCollateral: contracts/source/contracts/EmptyEtherCollateral.md
                 - EmptyEtherWrapper: contracts/source/contracts/EmptyEtherWrapper.md
@@ -169,6 +170,8 @@ nav:
                 - Migration_RasalhagueOptimism: contracts/source/contracts/Migration_RasalhagueOptimism.md
                 - Migration_Saiph: contracts/source/contracts/Migration_Saiph.md
                 - Migration_SaiphOptimism: contracts/source/contracts/Migration_SaiphOptimism.md
+                - Migration_Suhail: contracts/source/contracts/Migration_Suhail.md
+                - Migration_SuhailOptimism: contracts/source/contracts/Migration_SuhailOptimism.md
                 - Migration_Tiaki: contracts/source/contracts/Migration_Tiaki.md
                 - MinimalProxyFactory: contracts/source/contracts/MinimalProxyFactory.md
                 - MintableSynthetix: contracts/source/contracts/MintableSynthetix.md
@@ -253,6 +256,7 @@ nav:
                 - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
                 - IDepot: contracts/source/interfaces/IDepot.md
                 - IDexPriceAggregator: contracts/source/interfaces/IDexPriceAggregator.md
+                - IDirectIntegrationManager: contracts/source/interfaces/IDirectIntegrationManager.md
                 - IERC20: contracts/source/interfaces/IERC20.md
                 - IEtherCollateral: contracts/source/interfaces/IEtherCollateral.md
                 - IEtherCollateralsUSD: contracts/source/interfaces/IEtherCollateralsUSD.md
@@ -315,6 +319,7 @@ nav:
                 - AddressListLib: contracts/source/libraries/AddressListLib.md
                 - AddressSetLib: contracts/source/libraries/AddressSetLib.md
                 - Bytes32SetLib: contracts/source/libraries/Bytes32SetLib.md
+                - ExchangeSettlementLib: contracts/source/libraries/ExchangeSettlementLib.md
                 - Math: contracts/source/libraries/Math.md
                 - MigrationLib_Diphda: contracts/source/libraries/MigrationLib_Diphda.md
                 - MigrationLib_DiphdaOptimism: contracts/source/libraries/MigrationLib_DiphdaOptimism.md

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/FuturesMarketData.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol)
+**Source:** [contracts/FuturesMarketData.sol](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol)
 
 ## Structs
 
 ### `FeeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L63)</sub>
 
 | Field               | Type      | Description |
 | ------------------- | --------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `FundingDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L70)</sub>
 
 | Field                   | Type      | Description |
 | ----------------------- | --------- | ----------- |
@@ -29,7 +29,7 @@
 
 ### `FundingParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L58)</sub>
 
 | Field            | Type      | Description |
 | ---------------- | --------- | ----------- |
@@ -38,7 +38,7 @@
 
 ### `FuturesGlobals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L16)</sub>
 
 | Field                    | Type      | Description |
 | ------------------------ | --------- | ----------- |
@@ -49,7 +49,7 @@
 
 ### `MarketData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L76)</sub>
 
 | Field               | Type                                         | Description |
 | ------------------- | -------------------------------------------- | ----------- |
@@ -64,7 +64,7 @@
 
 ### `MarketLimits`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L36)</sub>
 
 | Field               | Type      | Description |
 | ------------------- | --------- | ----------- |
@@ -73,7 +73,7 @@
 
 ### `MarketSizeDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L46)</sub>
 
 | Field        | Type                             | Description |
 | ------------ | -------------------------------- | ----------- |
@@ -84,7 +84,7 @@
 
 ### `MarketSummary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L23)</sub>
 
 | Field                | Type                                | Description |
 | -------------------- | ----------------------------------- | ----------- |
@@ -101,7 +101,7 @@
 
 ### `PositionData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L87)</sub>
 
 | Field                  | Type                                      | Description |
 | ---------------------- | ----------------------------------------- | ----------- |
@@ -116,7 +116,7 @@
 
 ### `PriceDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L53)</sub>
 
 | Field     | Type      | Description |
 | --------- | --------- | ----------- |
@@ -125,7 +125,7 @@
 
 ### `Sides`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L41)</sub>
 
 | Field   | Type      | Description |
 | ------- | --------- | ----------- |
@@ -136,7 +136,7 @@
 
 ### `resolverProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L100)</sub>
 
 **Type:** `contract IAddressResolver`
 
@@ -144,7 +144,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `allMarketSummaries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L202)</sub>
 
 ??? example "Details"
 
@@ -182,7 +182,7 @@
 
 ### `globals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -200,7 +200,7 @@
 
 ### `marketDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L240)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L240)</sub>
 
 ??? example "Details"
 
@@ -218,7 +218,7 @@
 
 ### `marketDetailsForKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L244)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L244)</sub>
 
 ??? example "Details"
 
@@ -236,7 +236,7 @@
 
 ### `marketSummaries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L194)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L194)</sub>
 
 ??? example "Details"
 
@@ -254,7 +254,7 @@
 
 ### `marketSummariesForKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L198)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L198)</sub>
 
 ??? example "Details"
 
@@ -272,7 +272,7 @@
 
 ### `parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L135)</sub>
 
 ??? example "Details"
 
@@ -290,7 +290,7 @@
 
 ### `positionDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L314)</sub>
 
 ??? example "Details"
 
@@ -308,7 +308,7 @@
 
 ### `positionDetailsForMarketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L318)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L318)</sub>
 
 ??? example "Details"
 
@@ -328,7 +328,7 @@
 
 ### `_accessibleMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L290)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L290)</sub>
 
 ??? example "Details"
 
@@ -346,7 +346,7 @@
 
 ### `_accruedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L280)</sub>
 
 ??? example "Details"
 
@@ -364,7 +364,7 @@
 
 ### `_fundingParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L206)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L206)</sub>
 
 ??? example "Details"
 
@@ -382,7 +382,7 @@
 
 ### `_futuresMarketManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -400,7 +400,7 @@
 
 ### `_futuresMarketSettings`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -418,7 +418,7 @@
 
 ### `_liquidationPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L295)</sub>
 
 ??? example "Details"
 
@@ -436,7 +436,7 @@
 
 ### `_marketDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L219)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L219)</sub>
 
 ??? example "Details"
 
@@ -454,7 +454,7 @@
 
 ### `_marketSizes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L214)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L214)</sub>
 
 ??? example "Details"
 
@@ -472,7 +472,7 @@
 
 ### `_marketSummaries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L165)</sub>
 
 ??? example "Details"
 
@@ -490,7 +490,7 @@
 
 ### `_notionalValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L270)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L270)</sub>
 
 ??? example "Details"
 
@@ -508,7 +508,7 @@
 
 ### `_parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L139)</sub>
 
 ??? example "Details"
 
@@ -526,7 +526,7 @@
 
 ### `_position`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L248)</sub>
 
 ??? example "Details"
 
@@ -544,7 +544,7 @@
 
 ### `_positionDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L300)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L300)</sub>
 
 ??? example "Details"
 
@@ -562,7 +562,7 @@
 
 ### `_profitLoss`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L275)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L275)</sub>
 
 ??? example "Details"
 
@@ -580,7 +580,7 @@
 
 ### `_remainingMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/FuturesMarketData.sol#L285)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/FuturesMarketData.sol#L285)</sub>
 
 ??? example "Details"
 

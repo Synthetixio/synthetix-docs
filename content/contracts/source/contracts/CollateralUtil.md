@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CollateralUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/CollateralUtil.sol)
+**Source:** [contracts/CollateralUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/CollateralUtil.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/CollateralUtil.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/CollateralUtil.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `collateralRedeemed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/CollateralUtil.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/CollateralUtil.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `getCollateralRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/CollateralUtil.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/CollateralUtil.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `liquidationAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/CollateralUtil.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/CollateralUtil.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `maxLoan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/CollateralUtil.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/CollateralUtil.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/CollateralUtil.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/CollateralUtil.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/CollateralUtil.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/CollateralUtil.sol#L36)</sub>
 
 ??? example "Details"
 

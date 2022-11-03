@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeRatesWithDexPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol)
+**Source:** [contracts/ExchangeRatesWithDexPricing.sol](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L10)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -34,81 +34,9 @@
 
 ## Views
 
-### `atomicEquivalentForDexPricing`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L39)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `atomicEquivalentForDexPricing(bytes32 currencyKey) view returns (address)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `atomicTwapWindow`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L35)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `atomicTwapWindow() view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `atomicVolatilityConsiderationWindow`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L43)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `atomicVolatilityConsiderationWindow(bytes32 currencyKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
-### `atomicVolatilityUpdateThreshold`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L47)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `atomicVolatilityUpdateThreshold(bytes32 currencyKey) view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `dexPriceAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -126,17 +54,35 @@
 
 ### `effectiveAtomicValueAndRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L52)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `effectiveAtomicValueAndRates(bytes32 sourceCurrencyKey, uint256 sourceAmount, bytes32 destinationCurrencyKey) view returns (uint256 value, uint256 systemValue, uint256 systemSourceRate, uint256 systemDestinationRate)`
+    `effectiveAtomicValueAndRates(bytes32 sourceCurrencyKey, uint256 amount, bytes32 destinationCurrencyKey) view returns (uint256 value, uint256 systemValue, uint256 systemSourceRate, uint256 systemDestinationRate)`
 
     **Visibility**
 
-    `external`
+    `public`
+
+    **State Mutability**
+
+    `view`
+
+### `resolverAddressesRequired`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L20)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `resolverAddressesRequired() view returns (bytes32[] addresses)`
+
+    **Visibility**
+
+    `public`
 
     **State Mutability**
 
@@ -144,7 +90,7 @@
 
 ### `synthTooVolatileForAtomicExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L207)</sub>
 
 ??? example "Details"
 
@@ -154,7 +100,7 @@
 
     **Visibility**
 
-    `external`
+    `public`
 
     **State Mutability**
 
@@ -164,7 +110,7 @@
 
 ### `setDexPriceAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -192,13 +138,13 @@
 
 ### `_dexPriceDestinationValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L178)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_dexPriceDestinationValue(contract IERC20 sourceEquivalent, contract IERC20 destEquivalent, uint256 sourceAmount) view returns (uint256)`
+    `_dexPriceDestinationValue(contract IDexPriceAggregator dexAggregator, contract IERC20 sourceEquivalent, contract IERC20 destEquivalent, uint256 sourceAmount, uint256 twapWindow) view returns (uint256)`
 
     **Visibility**
 
@@ -210,13 +156,15 @@
 
     **Requires**
 
-    * [require(..., "Uninitialized atomic twap window")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L146)
+    * [require(..., "dex aggregator address is 0")](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L189)
 
-    * [require(..., "dex price returned 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L155)
+    * [require(..., "Uninitialized atomic twap window")](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L191)
+
+    * [require(..., "dex price returned 0")](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L201)
 
 ### `_getMaxValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L103)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -234,7 +182,7 @@
 
 ### `_getMinValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L128)</sub>
 
 ??? example "Details"
 
@@ -252,13 +200,13 @@
 
 ### `_getPriceFromDexAggregator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L144)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_getPriceFromDexAggregator(bytes32 sourceCurrencyKey, bytes32 destCurrencyKey, uint256 amount) view returns (uint256)`
+    `_getPriceFromDexAggregator(struct IDirectIntegrationManager.ParameterIntegrationSettings sourceSettings, struct IDirectIntegrationManager.ParameterIntegrationSettings destinationSettings, uint256 amount) view returns (uint256)`
 
     **Visibility**
 
@@ -270,20 +218,38 @@
 
     **Requires**
 
-    * [require(..., "Amount must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L120)
+    * [require(..., "Amount must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L149)
 
-    * [require(..., "Atomic swaps must go through sUSD")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L121)
+    * [require(..., "Atomic swaps must go through sUSD")](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L150)
 
-    * [require(..., "No atomic equivalent for source")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L124)
+    * [require(..., "No atomic equivalent for source")](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L156)
 
-    * [require(..., "No atomic equivalent for dest")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L127)
+    * [require(..., "No atomic equivalent for dest")](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L159)
 
-    * [require(..., "Result must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L131)
+    * [require(..., "Result must be greater than 0")](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L173)
+
+### `directIntegrationManager`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L40)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `directIntegrationManager() view returns (contract IDirectIntegrationManager)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
 
 ## Events
 
 ### `DexPriceAggregatorUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.77.2/contracts/ExchangeRatesWithDexPricing.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.0-alpha/contracts/ExchangeRatesWithDexPricing.sol#L260)</sub>
 
 **Signature**: `DexPriceAggregatorUpdated(address newDexPriceAggregator)`
