@@ -2,61 +2,61 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Hamal.sol](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol)
+**Source:** [contracts/migrations/Migration_Hamal.sol](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L19)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L26)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `new_SupplySchedule_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L46)</sub>
 
 **Type:** `address`
 
 ### `new_Synthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L44)</sub>
 
 **Type:** `address`
 
 ### `proxysynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L28)</sub>
 
 **Type:** `contract Proxy`
 
 ### `rewardescrow_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L32)</sub>
 
 **Type:** `contract RewardEscrow`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L36)</sub>
 
 **Type:** `contract RewardsDistribution`
 
 ### `supplyschedule_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L34)</sub>
 
 **Type:** `contract SupplySchedule`
 
 ### `tokenstatesynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L30)</sub>
 
 **Type:** `contract LegacyTokenState`
 
@@ -64,7 +64,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -104,7 +104,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -122,9 +122,9 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for Synthetix")](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L61)
+    * [require(..., "Invalid contract supplied for Synthetix")](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L61)
 
-    * [require(..., "Invalid contract supplied for SupplySchedule")](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L65)
+    * [require(..., "Invalid contract supplied for SupplySchedule")](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L65)
 
     **Modifiers**
 
@@ -134,7 +134,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.78.1/contracts/migrations/Migration_Hamal.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_Hamal.sol#L100)</sub>
 
 ??? example "Details"
 
