@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Alphecca (v2.79.1)
+
+**Published**: Dec 2, 2022
+
+**Codebase**: [v2.79.1](https://github.com/Synthetixio/synthetix/tree/v2.79.1)
+
+> - [SIP-299: Minor upgrades to v2x to support V3 migration](https://sips.synthetix.io/sips/sip-299/)
+
+> Audit: https://iosiro.com/audits/synthetix-alphecca-release-smart-contract-audit
+
+## Release notes
+
+- Grants special permissions to the LegacyMarket contract which will facilitate the migration of collateral and debt to Synthetix V3
+
+---
+
 # Suhail (v2.78.1)
 
 **Published**: Nov 3, 2022
