@@ -10,13 +10,13 @@ The contract is architected this way so that the access pattern is uniform and t
 
 Each type of variable has its own mapping, along with getters and setters. As this entails some replication, this document will express functions and variables generically with the type variable 𝕋, where 𝕋 $\in$ {`uint`, `string`, `address`, `bytes`, `bytes32`, `bool`, `int`}. This notation is used slightly abusively, standing in for both names and types; in the former case, substitution is in camelCase. More complex types, such as structs and nested mappings, are not supported.
 
-**Source:** [contracts/EternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol)
+**Source:** [contracts/EternalStorage.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L16)</sub>
 
 Initialises the inherited [`State`](State.md) instance.
 
@@ -38,7 +38,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `getAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -56,7 +56,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `getBooleanValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `getBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `getBytesValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `getIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `getStringValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `getUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -166,7 +166,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `deleteAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `deleteBooleanValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -210,7 +210,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `deleteBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -232,7 +232,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `deleteBytesValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -254,7 +254,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `deleteIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -276,7 +276,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `deleteStringValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `deleteUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -320,7 +320,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setAddressValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -342,7 +342,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setBooleanValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -364,7 +364,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setBytes32Value`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -386,7 +386,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setBytesValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -408,7 +408,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -430,7 +430,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setStringValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -452,7 +452,7 @@ Initialises the inherited [`State`](State.md) instance.
 
 ### `setUIntValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/EternalStorage.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/EternalStorage.sol#L32)</sub>
 
 ??? example "Details"
 

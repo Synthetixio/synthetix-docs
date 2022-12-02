@@ -4,13 +4,13 @@
 
 A utility that gives the inheritor access to the [`AddressResolver`](AddressResolver.md)
 
-**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol)
+**Source:** [contracts/MixinResolver.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol)
 
 ## Variables
 
 ### `resolver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L8)</sub>
 
 The `AddressResolver` instance
 
@@ -20,7 +20,7 @@ The `AddressResolver` instance
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -40,7 +40,7 @@ The `AddressResolver` instance
 
 ### `isResolverCached`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -58,7 +58,7 @@ The `AddressResolver` instance
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L37)</sub>
 
 **Type:** `bytes32[]`
 
@@ -80,7 +80,7 @@ The `AddressResolver` instance
 
 ### `combineArrays`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@ The `AddressResolver` instance
 
 ### `requireAndGetAddress`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -116,13 +116,13 @@ The `AddressResolver` instance
 
     **Requires**
 
-    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L71)
+    * [require(..., "string memory")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L71)
 
 ## External Functions
 
 ### `rebuildCache`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -142,6 +142,6 @@ The `AddressResolver` instance
 
 ### `CacheUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/MixinResolver.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinResolver.sol#L77)</sub>
 
 **Signature**: `CacheUpdated(bytes32 name, address destination)`

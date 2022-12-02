@@ -194,16 +194,27 @@ nav:
                 - OwnerRelayOnEthereum: contracts/source/contracts/OwnerRelayOnEthereum.md
                 - OwnerRelayOnOptimism: contracts/source/contracts/OwnerRelayOnOptimism.md
                 - Pausable: contracts/source/contracts/Pausable.md
+                - PerpsV2ExchangeRate: contracts/source/contracts/PerpsV2ExchangeRate.md
                 - PerpsV2Market: contracts/source/contracts/PerpsV2Market.md
                 - PerpsV2MarketBase: contracts/source/contracts/PerpsV2MarketBase.md
+                - PerpsV2MarketData: contracts/source/contracts/PerpsV2MarketData.md
+                - PerpsV2MarketDelayedOrders: contracts/source/contracts/PerpsV2MarketDelayedOrders.md
+                - PerpsV2MarketDelayedOrdersBase: contracts/source/contracts/PerpsV2MarketDelayedOrdersBase.md
+                - PerpsV2MarketDelayedOrdersOffchain: contracts/source/contracts/PerpsV2MarketDelayedOrdersOffchain.md
+                - PerpsV2MarketProxyable: contracts/source/contracts/PerpsV2MarketProxyable.md
+                - PerpsV2MarketSettings: contracts/source/contracts/PerpsV2MarketSettings.md
+                - PerpsV2MarketState: contracts/source/contracts/PerpsV2MarketState.md
+                - PerpsV2MarketViews: contracts/source/contracts/PerpsV2MarketViews.md
                 - PerpsV2NextPriceMixin: contracts/source/contracts/PerpsV2NextPriceMixin.md
                 - PerpsV2Settings: contracts/source/contracts/PerpsV2Settings.md
                 - PerpsV2SettingsMixin: contracts/source/contracts/PerpsV2SettingsMixin.md
                 - PerpsV2ViewsMixin: contracts/source/contracts/PerpsV2ViewsMixin.md
                 - Proxy: contracts/source/contracts/Proxy.md
                 - ProxyERC20: contracts/source/contracts/ProxyERC20.md
+                - ProxyPerpsV2: contracts/source/contracts/ProxyPerpsV2.md
                 - Proxyable: contracts/source/contracts/Proxyable.md
                 - PurgeableSynth: contracts/source/contracts/PurgeableSynth.md
+                - PythStructs: contracts/source/contracts/PythStructs.md
                 - ReadProxy: contracts/source/contracts/ReadProxy.md
                 - RealtimeDebtCache: contracts/source/contracts/RealtimeDebtCache.md
                 - RewardEscrow: contracts/source/contracts/RewardEscrow.md
@@ -220,6 +231,7 @@ nav:
                 - StakingRewardUpdater: contracts/source/contracts/StakingRewardUpdater.md
                 - StakingRewards: contracts/source/contracts/StakingRewards.md
                 - State: contracts/source/contracts/State.md
+                - StateShared: contracts/source/contracts/StateShared.md
                 - SupplySchedule: contracts/source/contracts/SupplySchedule.md
                 - Synth: contracts/source/contracts/Synth.md
                 - SynthRedeemer: contracts/source/contracts/SynthRedeemer.md
@@ -286,9 +298,17 @@ nav:
                 - IOwned: contracts/source/interfaces/IOwned.md
                 - IOwnerRelayOnOptimism: contracts/source/interfaces/IOwnerRelayOnOptimism.md
                 - IPerpsV2BaseTypes: contracts/source/interfaces/IPerpsV2BaseTypes.md
+                - IPerpsV2ExchangeRate: contracts/source/interfaces/IPerpsV2ExchangeRate.md
                 - IPerpsV2Market: contracts/source/interfaces/IPerpsV2Market.md
+                - IPerpsV2MarketBaseTypes: contracts/source/interfaces/IPerpsV2MarketBaseTypes.md
+                - IPerpsV2MarketDelayedOrders: contracts/source/interfaces/IPerpsV2MarketDelayedOrders.md
+                - IPerpsV2MarketOffchainOrders: contracts/source/interfaces/IPerpsV2MarketOffchainOrders.md
+                - IPerpsV2MarketSettings: contracts/source/interfaces/IPerpsV2MarketSettings.md
+                - IPerpsV2MarketState: contracts/source/interfaces/IPerpsV2MarketState.md
+                - IPerpsV2MarketViews: contracts/source/interfaces/IPerpsV2MarketViews.md
                 - IPerpsV2Settings: contracts/source/interfaces/IPerpsV2Settings.md
                 - IProxy: contracts/source/interfaces/IProxy.md
+                - IPyth: contracts/source/interfaces/IPyth.md
                 - IRewardEscrow: contracts/source/interfaces/IRewardEscrow.md
                 - IRewardEscrowV2: contracts/source/interfaces/IRewardEscrowV2.md
                 - IRewardEscrowV2Frozen: contracts/source/interfaces/IRewardEscrowV2Frozen.md

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/MixinPerpsV2MarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol)
+**Source:** [contracts/MixinPerpsV2MarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -46,9 +46,27 @@
 
 ## Internal Functions
 
+### `_delayedOrderConfirmWindow`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L99)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_delayedOrderConfirmWindow(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
 ### `_flexibleStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -66,7 +84,7 @@
 
 ### `_liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -84,7 +102,7 @@
 
 ### `_liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -102,7 +120,7 @@
 
 ### `_makerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -118,15 +136,15 @@
 
     `view`
 
-### `_makerFeeNextPrice`
+### `_makerFeeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L83)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_makerFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
+    `_makerFeeDelayedOrder(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -136,15 +154,51 @@
 
     `view`
 
-### `_maxFundingRate`
+### `_makerFeeOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L91)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_maxFundingRate(bytes32 _marketKey) view returns (uint256)`
+    `_makerFeeOffchainDelayedOrder(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_maxDelayTimeDelta`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L131)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_maxDelayTimeDelta(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_maxFundingVelocity`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L123)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_maxFundingVelocity(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -156,7 +210,7 @@
 
 ### `_maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -172,15 +226,33 @@
 
     `view`
 
-### `_maxMarketValueUSD`
+### `_maxMarketValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L115)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_maxMarketValueUSD(bytes32 _marketKey) view returns (uint256)`
+    `_maxMarketValue(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_minDelayTimeDelta`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L127)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_minDelayTimeDelta(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -192,7 +264,7 @@
 
 ### `_minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -210,7 +282,7 @@
 
 ### `_minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -228,7 +300,7 @@
 
 ### `_nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -244,9 +316,81 @@
 
     `view`
 
+### `_offchainDelayedOrderMaxAge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L107)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_offchainDelayedOrderMaxAge(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_offchainDelayedOrderMinAge`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L103)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_offchainDelayedOrderMinAge(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_offchainMarketKey`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L135)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_offchainMarketKey(bytes32 _marketKey) view returns (bytes32)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_offchainPriceDivergence`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L143)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_offchainPriceDivergence(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
 ### `_parameter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -262,15 +406,15 @@
 
     `view`
 
-### `_skewScaleUSD`
+### `_skewScale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L119)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_skewScaleUSD(bytes32 _marketKey) view returns (uint256)`
+    `_skewScale(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 
@@ -282,7 +426,7 @@
 
 ### `_takerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -298,15 +442,33 @@
 
     `view`
 
-### `_takerFeeNextPrice`
+### `_takerFeeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.71.0/contracts/MixinPerpsV2MarketSettings.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L79)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_takerFeeNextPrice(bytes32 _marketKey) view returns (uint256)`
+    `_takerFeeDelayedOrder(bytes32 _marketKey) view returns (uint256)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    `view`
+
+### `_takerFeeOffchainDelayedOrder`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/MixinPerpsV2MarketSettings.sol#L87)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_takerFeeOffchainDelayedOrder(bytes32 _marketKey) view returns (uint256)`
 
     **Visibility**
 

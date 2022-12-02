@@ -2,67 +2,67 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Muhlifain.sol](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol)
+**Source:** [contracts/migrations/Migration_Muhlifain.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L18)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L25)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `exchangerates_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L31)</sub>
 
 **Type:** `contract ExchangeRatesWithDexPricing`
 
 ### `exchangestate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L27)</sub>
 
 **Type:** `contract ExchangeState`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L34)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_CircuitBreaker_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L45)</sub>
 
 **Type:** `address`
 
 ### `new_ExchangeRates_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L41)</sub>
 
 **Type:** `address`
 
 ### `new_Exchanger_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L43)</sub>
 
 **Type:** `address`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L47)</sub>
 
 **Type:** `address`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L29)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -70,7 +70,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -128,13 +128,13 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L61)
+    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L61)
 
-    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L65)
+    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L65)
 
-    * [require(..., "Invalid contract supplied for CircuitBreaker")](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L69)
+    * [require(..., "Invalid contract supplied for CircuitBreaker")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L69)
 
-    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L73)
+    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L73)
 
     **Modifiers**
 
@@ -144,7 +144,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -162,7 +162,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L169)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L186)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L186)</sub>
 
 ??? example "Details"
 
@@ -198,7 +198,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L211)</sub>
 
 ??? example "Details"
 
@@ -216,7 +216,7 @@
 
 ### `issuer_addSynths_36`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L232)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L232)</sub>
 
 ??? example "Details"
 
@@ -234,7 +234,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_Muhlifain.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/migrations/Migration_Muhlifain.sol#L162)</sub>
 
 ??? example "Details"
 

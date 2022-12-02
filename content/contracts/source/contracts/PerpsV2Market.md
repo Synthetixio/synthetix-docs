@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2Market.sol](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/PerpsV2Market.sol)
+**Source:** [contracts/PerpsV2Market.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/PerpsV2Market.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L83)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `constructor(address _resolver, bytes32 _baseAsset, bytes32 _marketKey)`
+    `constructor(address payable _proxy, address _marketState, address _owner, address _resolver)`
 
     **Visibility**
 
@@ -23,3 +23,293 @@
     **State Mutability**
 
     ``
+
+## Restricted Functions
+
+### `_closePosition`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L225)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_closePosition(uint256 priceImpactDelta, bytes32 trackingCode)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyProxy](#onlyproxy)
+
+### `_modifyPosition`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L193)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_modifyPosition(int256 sizeDelta, uint256 priceImpactDelta, bytes32 trackingCode)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyProxy](#onlyproxy)
+
+### `liquidatePosition`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L289)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `liquidatePosition(address account)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyProxy](#onlyproxy)
+
+### `transferMargin`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L155)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `transferMargin(int256 marginDelta)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyProxy](#onlyproxy)
+
+### `withdrawAllMargin`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L165)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `withdrawAllMargin()`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyProxy](#onlyproxy)
+
+## Internal Functions
+
+### `_closePosition`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L225)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_closePosition(uint256 priceImpactDelta, bytes32 trackingCode)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyProxy](#onlyproxy)
+
+### `_liquidatePosition`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L243)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_liquidatePosition(address account, address liquidator, uint256 price)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `_modifyPosition`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L193)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_modifyPosition(int256 sizeDelta, uint256 priceImpactDelta, bytes32 trackingCode)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyProxy](#onlyproxy)
+
+### `_transferMargin`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L114)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `_transferMargin(int256 marginDelta, uint256 price, address sender)`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+## External Functions
+
+### `closePosition`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L216)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `closePosition(uint256 priceImpactDelta)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `closePositionWithTracking`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L221)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `closePositionWithTracking(uint256 priceImpactDelta, bytes32 trackingCode)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `modifyPosition`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L177)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `modifyPosition(int256 sizeDelta, uint256 priceImpactDelta)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `modifyPositionWithTracking`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L185)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `modifyPositionWithTracking(int256 sizeDelta, uint256 priceImpactDelta, bytes32 trackingCode)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+### `recomputeFunding`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L99)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `recomputeFunding() returns (uint256 lastIndex)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Invalid price")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2Market.sol#L110)
