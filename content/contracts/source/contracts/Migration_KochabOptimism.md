@@ -2,55 +2,55 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_KochabOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol)
+**Source:** [contracts/migrations/Migration_KochabOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L18)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L25)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `collateralmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L31)</sub>
 
 **Type:** `contract ICollateralManager`
 
 ### `collateralshort_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L33)</sub>
 
 **Type:** `contract CollateralShort`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L29)</sub>
 
 **Type:** `contract IIssuer`
 
 ### `new_CollateralShort_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L42)</sub>
 
 **Type:** `address`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L40)</sub>
 
 **Type:** `address`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L27)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -58,7 +58,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -122,7 +122,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -140,7 +140,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -158,7 +158,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L133)</sub>
 
 ??? example "Details"
 
@@ -194,7 +194,7 @@
 
 ### `collateralmanager_addCollaterals_8`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -212,7 +212,7 @@
 
 ### `collateralshort_addSynths_9`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L167)</sub>
 
 ??? example "Details"
 
@@ -230,7 +230,7 @@
 
 ### `issuer_addSynths_6`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -248,7 +248,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.0-alpha/contracts/migrations/Migration_KochabOptimism.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.79.1/contracts/migrations/Migration_KochabOptimism.sol#L88)</sub>
 
 ??? example "Details"
 
