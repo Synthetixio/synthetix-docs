@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPyth.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol)
+**Source:** [contracts/interfaces/IPyth.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol)
 
 ## Views
 
 ### `getEmaPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `getEmaPriceNoOlderThan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `getEmaPriceUnsafe`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `getPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `getPriceNoOlderThan`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `getPriceUnsafe`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -116,13 +116,13 @@
 
 ### `getUpdateFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L111)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `getUpdateFee(uint256 updateDataSize) view returns (uint256 feeAmount)`
+    `getUpdateFee(bytes[] updateData) view returns (uint256 feeAmount)`
 
     **Visibility**
 
@@ -134,7 +134,7 @@
 
 ### `getValidTimePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -152,9 +152,27 @@
 
 ## External Functions
 
+### `parsePriceFeedUpdates`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L130)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `parsePriceFeedUpdates(bytes[] updateData, bytes32[] priceIds, uint64 minPublishTime, uint64 maxPublishTime) payable returns (struct PythStructs.PriceFeed[] priceFeeds)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `payable`
+
 ### `updatePriceFeeds`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -172,7 +190,7 @@
 
 ### `updatePriceFeedsIfNecessary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -192,18 +210,12 @@
 
 ### `BatchPriceFeedUpdate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L22)</sub>
 
-**Signature**: `BatchPriceFeedUpdate(uint16 chainId, uint64 sequenceNumber, uint256 batchSize, uint256 freshPricesInBatch)`
+**Signature**: `BatchPriceFeedUpdate(uint16 chainId, uint64 sequenceNumber)`
 
 ### `PriceFeedUpdate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPyth.sol#L17)</sub>
 
-**Signature**: `PriceFeedUpdate(bytes32 id, bool fresh, uint16 chainId, uint64 sequenceNumber, uint256 lastPublishTime, uint256 publishTime, int64 price, uint64 conf)`
-
-### `UpdatePriceFeeds`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPyth.sol#L44)</sub>
-
-**Signature**: `UpdatePriceFeeds(address sender, uint256 batchCount, uint256 fee)`
+**Signature**: `PriceFeedUpdate(bytes32 id, uint64 publishTime, int64 price, uint64 conf)`

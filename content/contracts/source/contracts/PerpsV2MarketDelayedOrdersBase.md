@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2MarketDelayedOrdersBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol)
+**Source:** [contracts/PerpsV2MarketDelayedOrdersBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `delayedOrders`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `_cancelDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -66,7 +66,7 @@
 
 ### `_confirmCanCancel`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L228)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L206)</sub>
 
 ??? example "Details"
 
@@ -82,27 +82,9 @@
 
     ``
 
-### `_delayedOrderCommitDeposit`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L237)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `_delayedOrderCommitDeposit(struct PerpsV2MarketBase.TradeParams params) view returns (uint256)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    `view`
-
 ### `_executeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L154)</sub>
 
 ??? example "Details"
 
@@ -120,7 +102,7 @@
 
 ### `_submitDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -138,19 +120,19 @@
 
     **Requires**
 
-    * [require(..., "previous order exists")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L48)
+    * [require(..., "previous order exists")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L50)
 
-    * [require(..., "delay out of bounds")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L56)
+    * [require(..., "delay out of bounds")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L58)
 
 ### `emitDelayedOrderRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L260)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `emitDelayedOrderRemoved(address account, uint256 currentRoundId, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
+    `emitDelayedOrderRemoved(address account, uint256 currentRoundId, struct IPerpsV2MarketBaseTypes.DelayedOrder order)`
 
     **Visibility**
 
@@ -162,13 +144,13 @@
 
 ### `emitDelayedOrderSubmitted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L263)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L227)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `emitDelayedOrderSubmitted(address account, bool isOffchain, int256 sizeDelta, uint256 targetRoundId, uint256 executableAtTime, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
+    `emitDelayedOrderSubmitted(address account, struct IPerpsV2MarketBaseTypes.DelayedOrder order)`
 
     **Visibility**
 
@@ -182,12 +164,12 @@
 
 ### `DelayedOrderRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L283)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L247)</sub>
 
-**Signature**: `DelayedOrderRemoved(address account, uint256 currentRoundId, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
+**Signature**: `DelayedOrderRemoved(address account, bool isOffchain, uint256 currentRoundId, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
 
 ### `DelayedOrderSubmitted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L250)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketDelayedOrdersBase.sol#L213)</sub>
 
-**Signature**: `DelayedOrderSubmitted(address account, bool isOffchain, int256 sizeDelta, uint256 targetRoundId, uint256 executableAtTime, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
+**Signature**: `DelayedOrderSubmitted(address account, bool isOffchain, int256 sizeDelta, uint256 targetRoundId, uint256 intentionTime, uint256 executableAtTime, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`

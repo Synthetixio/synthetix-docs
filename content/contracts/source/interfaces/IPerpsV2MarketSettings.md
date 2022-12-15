@@ -2,18 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2MarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol)
+**Source:** [contracts/interfaces/IPerpsV2MarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol)
 
 ## Structs
 
 ### `Parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L5)</sub>
 
 | Field                          | Type      | Description |
 | ------------------------------ | --------- | ----------- |
 | `takerFee`                     | `uint256` | TBA         |
 | `makerFee`                     | `uint256` | TBA         |
+| `overrideCommitFee`            | `uint256` | TBA         |
 | `takerFeeDelayedOrder`         | `uint256` | TBA         |
 | `makerFeeDelayedOrder`         | `uint256` | TBA         |
 | `takerFeeOffchainDelayedOrder` | `uint256` | TBA         |
@@ -35,7 +36,7 @@
 
 ### `delayedOrderConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -53,7 +54,7 @@
 
 ### `liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -71,7 +72,7 @@
 
 ### `liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -89,7 +90,7 @@
 
 ### `makerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -107,7 +108,7 @@
 
 ### `makerFeeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -125,7 +126,7 @@
 
 ### `makerFeeOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -143,7 +144,7 @@
 
 ### `maxDelayTimeDelta`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -161,7 +162,7 @@
 
 ### `maxFundingVelocity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -179,7 +180,7 @@
 
 ### `maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -197,7 +198,7 @@
 
 ### `maxMarketValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -215,7 +216,7 @@
 
 ### `minDelayTimeDelta`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -233,7 +234,7 @@
 
 ### `minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -251,7 +252,7 @@
 
 ### `minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -269,7 +270,7 @@
 
 ### `nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -287,7 +288,7 @@
 
 ### `offchainDelayedOrderMaxAge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -305,7 +306,7 @@
 
 ### `offchainDelayedOrderMinAge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -323,7 +324,7 @@
 
 ### `offchainMarketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -341,7 +342,7 @@
 
 ### `offchainPriceDivergence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -359,7 +360,7 @@
 
 ### `parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -377,7 +378,7 @@
 
 ### `skewScale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -395,7 +396,7 @@
 
 ### `takerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -413,7 +414,7 @@
 
 ### `takerFeeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -431,7 +432,7 @@
 
 ### `takerFeeOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/IPerpsV2MarketSettings.sol#L35)</sub>
 
 ??? example "Details"
 

@@ -2,31 +2,31 @@
 
 ## Description
 
-**Source:** [contracts/SignedSafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol)
+**Source:** [contracts/SignedSafeDecimalMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol)
 
 ## Variables
 
 ### `PRECISE_UNIT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L19)</sub>
 
 **Type:** `int256`
 
 ### `UNIT`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L16)</sub>
 
 **Type:** `int256`
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L12)</sub>
 
 **Type:** `uint8`
 
 ### `highPrecisionDecimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L13)</sub>
 
 **Type:** `uint8`
 
@@ -34,7 +34,7 @@
 
 ### `preciseUnit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@
 
 ### `unit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `decimalToPreciseDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L178)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `divideDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L129)</sub>
 
 ??? example "Details"
 
@@ -108,7 +108,7 @@
 
 ### `divideDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `divideDecimalRoundPrecise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L171)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@
 
 ### `multiplyDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -162,7 +162,7 @@
 
 ### `multiplyDecimalRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `multiplyDecimalRoundPrecise`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -198,7 +198,7 @@
 
 ### `preciseDecimalToDecimal`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/SignedSafeDecimalMath.sol#L185)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/SignedSafeDecimalMath.sol#L185)</sub>
 
 ??? example "Details"
 

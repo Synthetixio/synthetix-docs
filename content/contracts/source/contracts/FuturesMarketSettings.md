@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/FuturesMarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol)
+**Source:** [contracts/FuturesMarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L147)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `makerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `makerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `maxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `maxMarketValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -172,7 +172,7 @@
 
 ### `minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@
 
 ### `nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -226,7 +226,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -244,7 +244,7 @@
 
 ### `skewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -262,7 +262,7 @@
 
 ### `takerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -280,7 +280,7 @@
 
 ### `takerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -300,7 +300,7 @@
 
 ### `setLiquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L261)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L261)</sub>
 
 ??? example "Details"
 
@@ -326,7 +326,7 @@
 
 ### `setLiquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L256)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L256)</sub>
 
 ??? example "Details"
 
@@ -352,7 +352,7 @@
 
 ### `setMakerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L177)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L177)</sub>
 
 ??? example "Details"
 
@@ -370,7 +370,7 @@
 
     **Requires**
 
-    * [require(..., "maker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L178)
+    * [require(..., "maker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L178)
 
     **Modifiers**
 
@@ -378,7 +378,7 @@
 
 ### `setMakerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L187)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L187)</sub>
 
 ??? example "Details"
 
@@ -396,7 +396,7 @@
 
     **Requires**
 
-    * [require(..., "maker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L188)
+    * [require(..., "maker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L188)
 
     **Modifiers**
 
@@ -404,7 +404,7 @@
 
 ### `setMaxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L215)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L215)</sub>
 
 ??? example "Details"
 
@@ -426,7 +426,7 @@
 
 ### `setMaxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L196)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L196)</sub>
 
 ??? example "Details"
 
@@ -448,7 +448,7 @@
 
 ### `setMaxMarketValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L200)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L200)</sub>
 
 ??? example "Details"
 
@@ -470,7 +470,7 @@
 
 ### `setMinInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L266)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L266)</sub>
 
 ??? example "Details"
 
@@ -488,7 +488,7 @@
 
     **Requires**
 
-    * [require(..., "min margin < liquidation fee")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L267)
+    * [require(..., "min margin < liquidation fee")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L267)
 
     **Modifiers**
 
@@ -500,7 +500,7 @@
 
 ### `setMinKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L250)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L250)</sub>
 
 ??? example "Details"
 
@@ -518,7 +518,7 @@
 
     **Requires**
 
-    * [require(..., "min margin < liquidation fee")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L251)
+    * [require(..., "min margin < liquidation fee")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L251)
 
     **Modifiers**
 
@@ -530,7 +530,7 @@
 
 ### `setNextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L192)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L192)</sub>
 
 ??? example "Details"
 
@@ -552,7 +552,7 @@
 
 ### `setParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L226)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L226)</sub>
 
 ??? example "Details"
 
@@ -574,7 +574,7 @@
 
 ### `setSkewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L220)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L220)</sub>
 
 ??? example "Details"
 
@@ -592,7 +592,7 @@
 
     **Requires**
 
-    * [require(..., "cannot set skew scale 0")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L221)
+    * [require(..., "cannot set skew scale 0")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L221)
 
     **Modifiers**
 
@@ -600,7 +600,7 @@
 
 ### `setTakerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L172)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L172)</sub>
 
 ??? example "Details"
 
@@ -618,7 +618,7 @@
 
     **Requires**
 
-    * [require(..., "taker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L173)
+    * [require(..., "taker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L173)
 
     **Modifiers**
 
@@ -626,7 +626,7 @@
 
 ### `setTakerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L182)</sub>
 
 ??? example "Details"
 
@@ -644,7 +644,7 @@
 
     **Requires**
 
-    * [require(..., "taker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L183)
+    * [require(..., "taker fee greater than 1")](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L183)
 
     **Modifiers**
 
@@ -654,7 +654,7 @@
 
 ### `_futuresMarketManager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -672,7 +672,7 @@
 
 ### `_recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L207)</sub>
 
 ??? example "Details"
 
@@ -690,7 +690,7 @@
 
 ### `_setParameter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L163)</sub>
 
 ??? example "Details"
 
@@ -714,30 +714,30 @@
 
 ### `LiquidationBufferRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L277)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L277)</sub>
 
 **Signature**: `LiquidationBufferRatioUpdated(uint256 bps)`
 
 ### `LiquidationFeeRatioUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L276)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L276)</sub>
 
 **Signature**: `LiquidationFeeRatioUpdated(uint256 bps)`
 
 ### `MinInitialMarginUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L278)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L278)</sub>
 
 **Signature**: `MinInitialMarginUpdated(uint256 minMargin)`
 
 ### `MinKeeperFeeUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L275)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L275)</sub>
 
 **Signature**: `MinKeeperFeeUpdated(uint256 sUSD)`
 
 ### `ParameterUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/FuturesMarketSettings.sol#L274)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/FuturesMarketSettings.sol#L274)</sub>
 
 **Signature**: `ParameterUpdated(bytes32 marketKey, bytes32 parameter, uint256 value)`

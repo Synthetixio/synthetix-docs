@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/AggregatorV2V3Interface.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/AggregatorV2V3Interface.sol)
+**Source:** [contracts/interfaces/AggregatorV2V3Interface.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/AggregatorV2V3Interface.sol)
 
 ## Views
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `getAnswer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `getRoundData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `getTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `latestRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `latestRoundData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.0-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/interfaces/AggregatorV2V3Interface.sol#L25)</sub>
 
 ??? example "Details"
 

@@ -301,6 +301,7 @@ nav:
                 - IPerpsV2ExchangeRate: contracts/source/interfaces/IPerpsV2ExchangeRate.md
                 - IPerpsV2Market: contracts/source/interfaces/IPerpsV2Market.md
                 - IPerpsV2MarketBaseTypes: contracts/source/interfaces/IPerpsV2MarketBaseTypes.md
+                - IPerpsV2MarketConsolidated: contracts/source/interfaces/IPerpsV2MarketConsolidated.md
                 - IPerpsV2MarketDelayedOrders: contracts/source/interfaces/IPerpsV2MarketDelayedOrders.md
                 - IPerpsV2MarketOffchainOrders: contracts/source/interfaces/IPerpsV2MarketOffchainOrders.md
                 - IPerpsV2MarketSettings: contracts/source/interfaces/IPerpsV2MarketSettings.md
