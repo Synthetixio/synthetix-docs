@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/MixinPerpsV2MarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol)
+**Source:** [contracts/MixinPerpsV2MarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `_delayedOrderConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -66,7 +66,7 @@
 
 ### `_flexibleStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `_liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L160)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `_liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `_makerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -138,7 +138,7 @@
 
 ### `_makerFeeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `_makerFeeOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@
 
 ### `_maxDelayTimeDelta`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L136)</sub>
 
 ??? example "Details"
 
@@ -192,7 +192,7 @@
 
 ### `_maxFundingVelocity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L128)</sub>
 
 ??? example "Details"
 
@@ -210,7 +210,7 @@
 
 ### `_maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -228,7 +228,7 @@
 
 ### `_maxMarketValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -246,7 +246,7 @@
 
 ### `_minDelayTimeDelta`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -264,7 +264,7 @@
 
 ### `_minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L164)</sub>
 
 ??? example "Details"
 
@@ -282,7 +282,7 @@
 
 ### `_minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -300,7 +300,7 @@
 
 ### `_nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -318,7 +318,7 @@
 
 ### `_offchainDelayedOrderMaxAge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -336,7 +336,7 @@
 
 ### `_offchainDelayedOrderMinAge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -354,7 +354,7 @@
 
 ### `_offchainMarketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -372,7 +372,7 @@
 
 ### `_offchainPriceDivergence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -390,7 +390,7 @@
 
 ### `_overrideCommitFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -408,7 +408,7 @@
 
 ### `_parameter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -426,7 +426,7 @@
 
 ### `_skewScale`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -444,7 +444,7 @@
 
 ### `_takerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -462,7 +462,7 @@
 
 ### `_takerFeeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -480,7 +480,7 @@
 
 ### `_takerFeeOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/MixinPerpsV2MarketSettings.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/MixinPerpsV2MarketSettings.sol#L92)</sub>
 
 ??? example "Details"
 

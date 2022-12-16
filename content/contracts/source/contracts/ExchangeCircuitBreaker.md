@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeCircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/ExchangeCircuitBreaker.sol)
+**Source:** [contracts/ExchangeCircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/ExchangeCircuitBreaker.sol)
 
 ## Variables
 
 ### `CIRCUIT_BREAKER_SUSPENSION_REASON`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/ExchangeCircuitBreaker.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/ExchangeCircuitBreaker.sol#L36)</sub>
 
 **Type:** `uint256`
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/ExchangeCircuitBreaker.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/ExchangeCircuitBreaker.sol#L33)</sub>
 
 **Type:** `bytes32`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/ExchangeCircuitBreaker.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/ExchangeCircuitBreaker.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/ExchangeCircuitBreaker.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/ExchangeCircuitBreaker.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `rateWithInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/ExchangeCircuitBreaker.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/ExchangeCircuitBreaker.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/ExchangeCircuitBreaker.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/ExchangeCircuitBreaker.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `rateWithBreakCircuit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/ExchangeCircuitBreaker.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/ExchangeCircuitBreaker.sol#L71)</sub>
 
 ??? example "Details"
 

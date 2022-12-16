@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2MarketBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol)
+**Source:** [contracts/PerpsV2MarketBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol)
 
 ## Structs
 
 ### `TradeParams`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L69)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |
@@ -23,7 +23,7 @@
 
 ### `marketState`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L53)</sub>
 
 **Type:** `contract IPerpsV2MarketState`
 
@@ -31,7 +31,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -51,7 +51,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -71,7 +71,7 @@
 
 ### `_abs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L675)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L675)</sub>
 
 ??? example "Details"
 
@@ -89,7 +89,7 @@
 
 ### `_accessibleMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L335)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L335)</sub>
 
 ??? example "Details"
 
@@ -107,7 +107,7 @@
 
 ### `_accruedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L276)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L276)</sub>
 
 ??? example "Details"
 
@@ -125,7 +125,7 @@
 
 ### `_assetPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L580)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L580)</sub>
 
 ??? example "Details"
 
@@ -143,7 +143,7 @@
 
 ### `_baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -161,7 +161,7 @@
 
 ### `_canLiquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L416)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L416)</sub>
 
 ??? example "Details"
 
@@ -179,7 +179,7 @@
 
 ### `_currentFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L181)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L181)</sub>
 
 ??? example "Details"
 
@@ -197,7 +197,7 @@
 
 ### `_currentFundingVelocity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L165)</sub>
 
 ??? example "Details"
 
@@ -215,7 +215,7 @@
 
 ### `_currentLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L425)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L425)</sub>
 
 ??? example "Details"
 
@@ -233,7 +233,7 @@
 
 ### `_dynamicFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L475)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L475)</sub>
 
 ??? example "Details"
 
@@ -251,7 +251,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -269,7 +269,7 @@
 
 ### `_exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -287,7 +287,7 @@
 
 ### `_fillPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L592)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L592)</sub>
 
 ??? example "Details"
 
@@ -305,7 +305,7 @@
 
 ### `_isError`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L696)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L696)</sub>
 
 ??? example "Details"
 
@@ -323,7 +323,7 @@
 
 ### `_latestFundingIndex`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L479)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L479)</sub>
 
 ??? example "Details"
 
@@ -341,7 +341,7 @@
 
 ### `_liquidationFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L368)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L368)</sub>
 
 ??? example "Details"
 
@@ -359,7 +359,7 @@
 
 ### `_liquidationMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L386)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L386)</sub>
 
 ??? example "Details"
 
@@ -377,7 +377,7 @@
 
 ### `_liquidationPremium`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L407)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L407)</sub>
 
 ??? example "Details"
 
@@ -395,7 +395,7 @@
 
 ### `_manager`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -413,7 +413,7 @@
 
 ### `_marginPlusProfitFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L288)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L288)</sub>
 
 ??? example "Details"
 
@@ -431,7 +431,7 @@
 
 ### `_marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L147)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L147)</sub>
 
 ??? example "Details"
 
@@ -449,7 +449,7 @@
 
 ### `_max`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L679)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L679)</sub>
 
 ??? example "Details"
 
@@ -467,7 +467,7 @@
 
 ### `_min`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L683)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L683)</sub>
 
 ??? example "Details"
 
@@ -485,7 +485,7 @@
 
 ### `_netFundingPerUnit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L221)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L221)</sub>
 
 ??? example "Details"
 
@@ -503,7 +503,7 @@
 
 ### `_nextFundingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L217)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L217)</sub>
 
 ??? example "Details"
 
@@ -521,7 +521,7 @@
 
 ### `_notionalValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L267)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L267)</sub>
 
 ??? example "Details"
 
@@ -539,7 +539,7 @@
 
 ### `_orderFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L438)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L438)</sub>
 
 ??? example "Details"
 
@@ -557,7 +557,7 @@
 
 ### `_orderSizeTooLarge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L231)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L231)</sub>
 
 ??? example "Details"
 
@@ -575,7 +575,7 @@
 
 ### `_postTradeDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L483)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L483)</sub>
 
 ??? example "Details"
 
@@ -593,7 +593,7 @@
 
 ### `_priceImpactLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L655)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L655)</sub>
 
 ??? example "Details"
 
@@ -611,7 +611,7 @@
 
 ### `_profitLoss`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L271)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L271)</sub>
 
 ??? example "Details"
 
@@ -629,7 +629,7 @@
 
 ### `_proportionalElapsed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -647,7 +647,7 @@
 
 ### `_proportionalSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L154)</sub>
 
 ??? example "Details"
 
@@ -665,7 +665,7 @@
 
 ### `_recomputeMarginWithDelta`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L299)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L299)</sub>
 
 ??? example "Details"
 
@@ -683,7 +683,7 @@
 
 ### `_remainingLiquidatableMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L330)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L330)</sub>
 
 ??? example "Details"
 
@@ -701,7 +701,7 @@
 
 ### `_remainingMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L320)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L320)</sub>
 
 ??? example "Details"
 
@@ -719,7 +719,7 @@
 
 ### `_revertIfError`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L703)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L703)</sub>
 
 ??? example "Details"
 
@@ -737,7 +737,7 @@
 
 ### `_sameSide`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L689)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L689)</sub>
 
 ??? example "Details"
 
@@ -755,7 +755,7 @@
 
 ### `_settings`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -773,7 +773,7 @@
 
 ### `_signedAbs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L668)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L668)</sub>
 
 ??? example "Details"
 
@@ -791,7 +791,7 @@
 
 ### `_systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -809,7 +809,7 @@
 
 ### `_unrecordedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L206)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L206)</sub>
 
 ??? example "Details"
 

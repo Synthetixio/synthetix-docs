@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2MarketBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol)
+**Source:** [contracts/PerpsV2MarketBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol)
 
 ## External Functions
 
 ### `burnSUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `issueSUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `payFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.1-alpha/contracts/PerpsV2MarketBase.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/PerpsV2MarketBase.sol#L31)</sub>
 
 ??? example "Details"
 
