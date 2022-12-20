@@ -2,6 +2,26 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Mintaka (v2.80.3)
+
+**Published**: Dec 20, 2022
+
+**Codebase**: [v2.80.3](https://github.com/Synthetixio/synthetix/tree/v2.80.3)
+
+> - [SIP-279: PerpsV2](https://sips.synthetix.io/sips/sip-279/)
+
+- [SIP-280: PerpsV2 (Perps Upgradability)](https://sips.synthetix.io/sips/sip-280/)
+- [SIP-281: PerpsV2 (Trading fixes & improvements)](https://sips.synthetix.io/sips/sip-281)
+- [SIP-285: Pyth Network Oracles for Synthetix Perps](https://sips.synthetix.io/sips/sip-285/)
+
+> Audit: https://iosiro.com/audits/synthetix-mintaka-release-smart-contract-audit
+
+## Release notes
+
+- Introduces `PerpsV2`: a redesign of the Synthetix perpetual futures mechanism to enable (1) unconstrained open interest limits, (2) broader asset compatibility, and (3) low fee execution
+
+---
+
 # Alphecca (v2.79.1)
 
 **Published**: Dec 2, 2022
