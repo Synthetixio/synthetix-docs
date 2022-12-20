@@ -2,109 +2,109 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_MuhlifainOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol)
+**Source:** [contracts/migrations/Migration_MuhlifainOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L20)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L30)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `exchangerates_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L36)</sub>
 
 **Type:** `contract ExchangeRates`
 
 ### `exchangestate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L32)</sub>
 
 **Type:** `contract ExchangeState`
 
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L27)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
 ### `futuresmarketsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L40)</sub>
 
 **Type:** `contract FuturesMarketSettings`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L38)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_CircuitBreaker_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L50)</sub>
 
 **Type:** `address`
 
 ### `new_ExchangeRates_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L48)</sub>
 
 **Type:** `address`
 
 ### `new_Exchanger_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L54)</sub>
 
 **Type:** `address`
 
 ### `new_FuturesMarketBNB_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L62)</sub>
 
 **Type:** `address`
 
 ### `new_FuturesMarketDOGE_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L64)</sub>
 
 **Type:** `address`
 
 ### `new_FuturesMarketDebtRatio_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L56)</sub>
 
 **Type:** `address`
 
 ### `new_FuturesMarketOP_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L60)</sub>
 
 **Type:** `address`
 
 ### `new_FuturesMarketXMR_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L58)</sub>
 
 **Type:** `address`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L52)</sub>
 
 **Type:** `address`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L34)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -112,7 +112,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -132,7 +132,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -170,13 +170,13 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L80)
+    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L80)
 
-    * [require(..., "Invalid contract supplied for CircuitBreaker")](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L84)
+    * [require(..., "Invalid contract supplied for CircuitBreaker")](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L84)
 
-    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L88)
+    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L88)
 
-    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L92)
+    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L92)
 
     **Modifiers**
 
@@ -186,7 +186,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L248)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L248)</sub>
 
 ??? example "Details"
 
@@ -204,7 +204,7 @@
 
 ### `addressresolver_importAddresses_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L272)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L272)</sub>
 
 ??? example "Details"
 
@@ -222,7 +222,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L299)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L299)</sub>
 
 ??? example "Details"
 
@@ -240,7 +240,7 @@
 
 ### `addressresolver_rebuildCaches_3`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L324)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L324)</sub>
 
 ??? example "Details"
 
@@ -258,7 +258,7 @@
 
 ### `addressresolver_rebuildCaches_4`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L349)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L349)</sub>
 
 ??? example "Details"
 
@@ -276,7 +276,7 @@
 
 ### `futuresmarketmanager_addMarkets_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L262)</sub>
 
 ??? example "Details"
 
@@ -294,7 +294,7 @@
 
 ### `issuer_addSynths_46`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L366)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L366)</sub>
 
 ??? example "Details"
 
@@ -312,7 +312,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.2-alpha/contracts/migrations/Migration_MuhlifainOptimism.sol#L255)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_MuhlifainOptimism.sol#L255)</sub>
 
 ??? example "Details"
 

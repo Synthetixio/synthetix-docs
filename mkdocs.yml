@@ -156,6 +156,8 @@ nav:
                 - Migration_Kaus: contracts/source/contracts/Migration_Kaus.md
                 - Migration_KochabOptimism: contracts/source/contracts/Migration_KochabOptimism.md
                 - Migration_MenkentOptimism: contracts/source/contracts/Migration_MenkentOptimism.md
+                - Migration_Mintaka: contracts/source/contracts/Migration_Mintaka.md
+                - Migration_MintakaOptimism: contracts/source/contracts/Migration_MintakaOptimism.md
                 - Migration_Mirach: contracts/source/contracts/Migration_Mirach.md
                 - Migration_MirachOptimism: contracts/source/contracts/Migration_MirachOptimism.md
                 - Migration_Mirfak: contracts/source/contracts/Migration_Mirfak.md
