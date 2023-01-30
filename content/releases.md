@@ -2,17 +2,18 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
-# Mintaka (v2.80.3)
+# Mintaka (v2.80.5)
 
-**Published**: Dec 20, 2022
+**Published**: Jan 30, 2023
 
-**Codebase**: [v2.80.3](https://github.com/Synthetixio/synthetix/tree/v2.80.3)
+**Codebase**: [v2.80.5](https://github.com/Synthetixio/synthetix/tree/v2.80.5)
 
 > - [SIP-279: PerpsV2](https://sips.synthetix.io/sips/sip-279/)
 
 - [SIP-280: PerpsV2 (Perps Upgradability)](https://sips.synthetix.io/sips/sip-280/)
 - [SIP-281: PerpsV2 (Trading fixes & improvements)](https://sips.synthetix.io/sips/sip-281)
 - [SIP-285: Pyth Network Oracles for Synthetix Perps](https://sips.synthetix.io/sips/sip-285/)
+- [SIP-297: Perps V2 Fixes](https://sips.synthetix.io/sips/sip-297/)
 
 > Audit: https://iosiro.com/audits/synthetix-mintaka-release-smart-contract-audit
 
