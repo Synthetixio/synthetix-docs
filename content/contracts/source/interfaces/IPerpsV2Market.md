@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2Market.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol)
+**Source:** [contracts/interfaces/IPerpsV2Market.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol)
 
 ## External Functions
 
 ### `closePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `closePositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `liquidatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `modifyPosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `modifyPositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `transferMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `withdrawAllMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/interfaces/IPerpsV2Market.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/interfaces/IPerpsV2Market.sol#L14)</sub>
 
 ??? example "Details"
 

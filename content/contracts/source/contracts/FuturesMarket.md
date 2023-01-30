@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/FuturesMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/FuturesMarket.sol)
+**Source:** [contracts/FuturesMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/FuturesMarket.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/FuturesMarket.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/FuturesMarket.sol#L59)</sub>
 
 ??? example "Details"
 

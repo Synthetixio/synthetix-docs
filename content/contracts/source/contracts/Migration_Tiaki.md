@@ -2,31 +2,31 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Tiaki.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol)
+**Source:** [contracts/migrations/Migration_Tiaki.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L15)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L22)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `exchangerates_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L24)</sub>
 
 **Type:** `contract ExchangeRatesWithDexPricing`
 
 ### `new_ExchangeRates_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L32)</sub>
 
 **Type:** `address`
 
@@ -34,7 +34,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L43)
+    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L43)
 
     **Modifiers**
 
@@ -102,7 +102,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L131)</sub>
 
 ??? example "Details"
 
@@ -138,7 +138,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.3/contracts/migrations/Migration_Tiaki.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_Tiaki.sol#L124)</sub>
 
 ??? example "Details"
 
