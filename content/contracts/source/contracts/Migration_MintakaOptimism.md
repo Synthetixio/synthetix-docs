@@ -2,97 +2,73 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_MintakaOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol)
+**Source:** [contracts/migrations/Migration_MintakaOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L22)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L47)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L44)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
-### `new_FuturesMarketManager_contract`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L57)</sub>
-
-**Type:** `address`
-
-### `new_PerpsV2ExchangeRate_contract`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L65)</sub>
-
-**Type:** `address`
-
-### `new_PerpsV2MarketData_contract`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L61)</sub>
-
-**Type:** `address`
-
 ### `new_PerpsV2MarketSettings_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L59)</sub>
-
-**Type:** `address`
-
-### `new_PerpsV2MarketStateETHPERP_contract`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L57)</sub>
 
 **Type:** `address`
 
 ### `perpsv2exchangerate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L41)</sub>
 
 **Type:** `contract PerpsV2ExchangeRate`
 
 ### `perpsv2market_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L37)</sub>
 
 **Type:** `contract PerpsV2Market`
 
 ### `perpsv2marketdelayedorders_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L31)</sub>
 
 **Type:** `contract PerpsV2MarketDelayedOrders`
 
 ### `perpsv2marketdelayedordersoffchain_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L34)</sub>
 
 **Type:** `contract PerpsV2MarketDelayedOrdersOffchain`
 
 ### `perpsv2marketsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L49)</sub>
 
 **Type:** `contract PerpsV2MarketSettings`
 
 ### `perpsv2marketstate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L29)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `proxyperpsv2_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L39)</sub>
 
 **Type:** `contract ProxyPerpsV2`
 
@@ -100,7 +76,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -120,7 +96,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -140,7 +116,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -164,7 +140,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L188)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L174)</sub>
 
 ??? example "Details"
 
@@ -180,15 +156,15 @@
 
     ``
 
-### `addressresolver_importAddresses_57`
+### `addressresolver_importAddresses_56`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L271)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L240)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `addressresolver_importAddresses_57()`
+    `addressresolver_importAddresses_56()`
 
     **Visibility**
 
@@ -198,15 +174,15 @@
 
     ``
 
-### `addressresolver_rebuildCaches_58`
+### `addressresolver_rebuildCaches_57`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L290)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L251)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `addressresolver_rebuildCaches_58()`
+    `addressresolver_rebuildCaches_57()`
 
     **Visibility**
 
@@ -216,51 +192,15 @@
 
     ``
 
-### `addressresolver_rebuildCaches_59`
+### `futuresmarketmanager_updateMarketsImplementations_55`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L315)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `addressresolver_rebuildCaches_59()`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `futuresmarketmanager_addMarkets_0`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L230)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `futuresmarketmanager_addMarkets_0()`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `futuresmarketmanager_addProxiedMarkets_56`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L265)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `futuresmarketmanager_addProxiedMarkets_56()`
+    `futuresmarketmanager_updateMarketsImplementations_55()`
 
     **Visibility**
 
@@ -272,7 +212,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L181)</sub>
 
 ??? example "Details"
 
@@ -288,15 +228,51 @@
 
     ``
 
-### `perpsv2exchangerate_addAssociatedContracts_55`
+### `perpsv2exchangerate_addAssociatedContracts_54`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L257)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L222)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `perpsv2exchangerate_addAssociatedContracts_55()`
+    `perpsv2exchangerate_addAssociatedContracts_54()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `perpsv2exchangerate_removeAssociatedContracts_53`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L212)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `perpsv2exchangerate_removeAssociatedContracts_53()`
+
+    **Visibility**
+
+    `internal`
+
+    **State Mutability**
+
+    ``
+
+### `perpsv2marketstate_addAssociatedContracts_0`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L188)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `perpsv2marketstate_addAssociatedContracts_0()`
 
     **Visibility**
 
@@ -308,7 +284,7 @@
 
 ### `perpsv2marketstate_addAssociatedContracts_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L233)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L196)</sub>
 
 ??? example "Details"
 
@@ -326,49 +302,13 @@
 
 ### `perpsv2marketstate_addAssociatedContracts_4`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L241)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_MintakaOptimism.sol#L204)</sub>
 
 ??? example "Details"
 
     **Signature**
 
     `perpsv2marketstate_addAssociatedContracts_4()`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `perpsv2marketstate_addAssociatedContracts_6`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L249)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `perpsv2marketstate_addAssociatedContracts_6()`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
-### `perpsv2marketstate_removeAssociatedContracts_1`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.4-alpha/contracts/migrations/Migration_MintakaOptimism.sol#L225)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `perpsv2marketstate_removeAssociatedContracts_1()`
 
     **Visibility**
 
