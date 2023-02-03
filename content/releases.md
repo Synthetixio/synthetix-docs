@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Sadr (v2.81.0)
+
+**Published**: Feb 3, 2023
+
+**Codebase**: [v2.81.0](https://github.com/Synthetixio/synthetix/tree/v2.81.0)
+
+> - [SIP-293: Deprecate Low Volume Synths](https://sips.synthetix.io/sips/sip-293/)
+
+## Release notes
+
+- Deprecate `synths` and open them for redemption at the specified fixed prices.
+
+---
+
 # Mintaka (v2.80.5)
 
 **Published**: Jan 30, 2023
