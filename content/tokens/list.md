@@ -1,20 +1,5 @@
 # Token List
 
-## Aave (sAAVE)
-
-**Contract:** [0xd2dF355C19471c8bd7D8A3aa27Ff4e26A21b4076](https://etherscan.io/token/0xd2dF355C19471c8bd7D8A3aa27Ff4e26A21b4076)
-
-**Decimals:** 18
-
-**Price:** [sAAVE on synthetix.exchange](https://synthetix.exchange/#/synths/sAAVE)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/aave-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x547a514d5e3769680Ce22B2361c10Ea13619e8a9)
-
-> Tracks the price of Aave (AAVE) through price feeds supplied by an oracle.
-
 ## Australian Dollars (sAUD)
 
 **Contract:** [0xF48e200EAF9906362BB1442fca31e0835773b8B4](https://etherscan.io/token/0xF48e200EAF9906362BB1442fca31e0835773b8B4)
@@ -44,36 +29,6 @@
 - Contract: [Aggregator](https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c)
 
 > Tracks the price of Bitcoin (BTC) through price feeds supplied by an oracle.
-
-## Cardano (sADA)
-
-**Contract:** [0xe36E2D3c7c34281FA3bC737950a68571736880A1](https://etherscan.io/token/0xe36E2D3c7c34281FA3bC737950a68571736880A1)
-
-**Decimals:** 18
-
-**Price:** [sADA on synthetix.exchange](https://synthetix.exchange/#/synths/sADA)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/ada-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0xAE48c91dF1fE419994FFDa27da09D5aC69c30f55)
-
-> Tracks the price of Cardano (ADA) through price feeds supplied by an oracle.
-
-## Chainlink (sLINK)
-
-**Contract:** [0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6](https://etherscan.io/token/0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6)
-
-**Decimals:** 18
-
-**Price:** [sLINK on synthetix.exchange](https://synthetix.exchange/#/synths/sLINK)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/link-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c)
-
-> Tracks the price of Chainlink (LINK) through price feeds supplied by an oracle.
 
 ## ETH / BTC (sETHBTC)
 
@@ -134,21 +89,6 @@
 - Contract: [Aggregator](https://etherscan.io/address/0xBcE206caE7f0ec07b545EddE332A47C2F75bbeb3)
 
 > Tracks the price of Japanese Yen (JPY) through price feeds supplied by an oracle.
-
-## Polkadot (sDOT)
-
-**Contract:** [0x1715AC0743102BF5Cd58EfBB6Cf2dC2685d967b6](https://etherscan.io/token/0x1715AC0743102BF5Cd58EfBB6Cf2dC2685d967b6)
-
-**Decimals:** 18
-
-**Price:** [sDOT on synthetix.exchange](https://synthetix.exchange/#/synths/sDOT)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/dot-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0x1C07AFb8E2B827c5A4739C6d59Ae3A5035f28734)
-
-> Tracks the price of Polkadot (DOT) through price feeds supplied by an oracle.
 
 ## Pound Sterling (sGBP)
 

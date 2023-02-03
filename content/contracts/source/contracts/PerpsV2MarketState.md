@@ -2,61 +2,61 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2MarketState.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol)
+**Source:** [contracts/PerpsV2MarketState.sol](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol)
 
 ## Variables
 
 ### `baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L21)</sub>
 
 **Type:** `bytes32`
 
 ### `delayedOrders`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L73)</sub>
 
 **Type:** `mapping(address => struct IPerpsV2MarketBaseTypes.DelayedOrder)`
 
 ### `fundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L48)</sub>
 
 **Type:** `uint32`
 
 ### `fundingRateLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L55)</sub>
 
 **Type:** `int128`
 
 ### `fundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L49)</sub>
 
 **Type:** `int128[]`
 
 ### `marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L18)</sub>
 
 **Type:** `bytes32`
 
 ### `marketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L24)</sub>
 
 **Type:** `uint128`
 
 ### `marketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L30)</sub>
 
 **Type:** `int128`
 
 ### `positions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L61)</sub>
 
 **Type:** `mapping(address => struct IPerpsV2MarketBaseTypes.Position)`
 
@@ -64,7 +64,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `entryDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `fundingSequenceLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `getDelayedOrderAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -142,7 +142,7 @@
 
 ### `getDelayedOrderAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `getPositionAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -186,7 +186,7 @@
 
 ### `getPositionAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `nextPositionId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -228,7 +228,7 @@
 
 ### `deleteDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L240)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L240)</sub>
 
 ??? example "Details"
 
@@ -250,7 +250,7 @@
 
 ### `deletePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L233)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L233)</sub>
 
 ??? example "Details"
 
@@ -272,7 +272,7 @@
 
 ### `getDelayedOrderAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -294,7 +294,7 @@
 
 ### `getDelayedOrderAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -316,7 +316,7 @@
 
 ### `getPositionAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -338,7 +338,7 @@
 
 ### `getPositionAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -360,7 +360,7 @@
 
 ### `pushFundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L158)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L158)</sub>
 
 ??? example "Details"
 
@@ -382,7 +382,7 @@
 
 ### `setBaseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L133)</sub>
 
 ??? example "Details"
 
@@ -400,7 +400,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot change base asset")](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L134)
+    * [require(..., "Cannot change base asset")](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L134)
 
     **Modifiers**
 
@@ -408,7 +408,7 @@
 
 ### `setEntryDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -430,7 +430,7 @@
 
 ### `setFundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L154)</sub>
 
 ??? example "Details"
 
@@ -452,7 +452,7 @@
 
 ### `setFundingRateLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L163)</sub>
 
 ??? example "Details"
 
@@ -474,7 +474,7 @@
 
 ### `setMarketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L128)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L128)</sub>
 
 ??? example "Details"
 
@@ -492,7 +492,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot change market key")](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L129)
+    * [require(..., "Cannot change market key")](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L129)
 
     **Modifiers**
 
@@ -500,7 +500,7 @@
 
 ### `setMarketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -522,7 +522,7 @@
 
 ### `setMarketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L150)</sub>
 
 ??? example "Details"
 
@@ -544,7 +544,7 @@
 
 ### `setNextPositionId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L146)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L146)</sub>
 
 ??? example "Details"
 
@@ -566,7 +566,7 @@
 
 ### `updateDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L202)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L202)</sub>
 
 ??? example "Details"
 
@@ -588,7 +588,7 @@
 
 ### `updatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/PerpsV2MarketState.sol#L177)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/PerpsV2MarketState.sol#L177)</sub>
 
 ??? example "Details"
 

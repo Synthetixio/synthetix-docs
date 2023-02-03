@@ -2,55 +2,55 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Alphecca.sol](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol)
+**Source:** [contracts/migrations/Migration_Alphecca.sol](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L18)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L25)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `new_Liquidator_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L43)</sub>
 
 **Type:** `address`
 
 ### `new_Synthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L41)</sub>
 
 **Type:** `address`
 
 ### `proxysynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L27)</sub>
 
 **Type:** `contract Proxy`
 
 ### `rewardescrow_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L31)</sub>
 
 **Type:** `contract RewardEscrow`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L33)</sub>
 
 **Type:** `contract RewardsDistribution`
 
 ### `tokenstatesynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L29)</sub>
 
 **Type:** `contract LegacyTokenState`
 
@@ -58,7 +58,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -116,9 +116,9 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for Synthetix")](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L57)
+    * [require(..., "Invalid contract supplied for Synthetix")](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L57)
 
-    * [require(..., "Invalid contract supplied for Liquidator")](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L61)
+    * [require(..., "Invalid contract supplied for Liquidator")](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L61)
 
     **Modifiers**
 
@@ -128,7 +128,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -182,7 +182,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.80.5/contracts/migrations/Migration_Alphecca.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Alphecca.sol#L94)</sub>
 
 ??? example "Details"
 
