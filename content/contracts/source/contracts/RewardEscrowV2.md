@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/RewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/RewardEscrowV2.sol)
+**Source:** [contracts/RewardEscrowV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/RewardEscrowV2.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/RewardEscrowV2.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/RewardEscrowV2.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/RewardEscrowV2.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/RewardEscrowV2.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `burnForMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/RewardEscrowV2.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/RewardEscrowV2.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -66,7 +66,7 @@
 
     **Requires**
 
-    * [require(..., "Entry IDs required")](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/RewardEscrowV2.sol#L40)
+    * [require(..., "Entry IDs required")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/RewardEscrowV2.sol#L40)
 
     **Modifiers**
 
@@ -80,7 +80,7 @@
 
 ### `synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/RewardEscrowV2.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/RewardEscrowV2.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -100,12 +100,12 @@
 
 ### `onlySynthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/RewardEscrowV2.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/RewardEscrowV2.sol#L75)</sub>
 
 ## Events
 
 ### `BurnedForMigrationToL2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/RewardEscrowV2.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/RewardEscrowV2.sol#L81)</sub>
 
 **Signature**: `BurnedForMigrationToL2(address account, uint256[] entryIDs, uint256 escrowedAmountMigrated, uint256 time)`

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangerWithFeeRecAlternatives.sol](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/ExchangerWithFeeRecAlternatives.sol)
+**Source:** [contracts/ExchangerWithFeeRecAlternatives.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol)
 
 ## External Functions
 
 ### `initialize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/ExchangerWithFeeRecAlternatives.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/ExchangerWithFeeRecAlternatives.sol#L13)</sub>
 
 ??? example "Details"
 

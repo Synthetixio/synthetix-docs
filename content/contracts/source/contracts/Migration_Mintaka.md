@@ -2,25 +2,25 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Mintaka.sol](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol)
+**Source:** [contracts/migrations/Migration_Mintaka.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L14)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L21)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `new_FuturesMarketManager_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L28)</sub>
 
 **Type:** `address`
 
@@ -28,7 +28,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -68,7 +68,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -86,7 +86,7 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for FuturesMarketManager")](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L38)
+    * [require(..., "Invalid contract supplied for FuturesMarketManager")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L38)
 
     **Modifiers**
 
@@ -96,7 +96,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -132,7 +132,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -150,7 +150,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_Mintaka.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_Mintaka.sol#L63)</sub>
 
 ??? example "Details"
 

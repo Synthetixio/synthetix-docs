@@ -2,37 +2,37 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_MizarOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol)
+**Source:** [contracts/migrations/Migration_MizarOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L16)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L23)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L27)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L34)</sub>
 
 **Type:** `address`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L25)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -40,7 +40,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L46)
+    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L46)
 
     **Modifiers**
 
@@ -108,7 +108,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -144,7 +144,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -162,7 +162,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `issuer_addSynths_5`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -198,7 +198,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.81.0/contracts/migrations/Migration_MizarOptimism.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_MizarOptimism.sol#L77)</sub>
 
 ??? example "Details"
 
