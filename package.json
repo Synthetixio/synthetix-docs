@@ -29,7 +29,7 @@
 		"marked": "^1.1.0",
 		"moment": "~2.24.0",
 		"numbro": "2.1.2",
-		"synthetix": "2.81.0",
+		"synthetix": "2.82.0-alpha",
 		"traverse": "^0.6.6",
 		"yaml": "^1.10.0"
 	},
