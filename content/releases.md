@@ -2,6 +2,24 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Eltanin (v2.82.1)
+
+**Published**: Feb 7, 2023
+
+**Codebase**: [v2.82.1](https://github.com/Synthetixio/synthetix/tree/v2.82.1)
+
+> - [SIP-295: Adding Perps V1 perps markets to Synthetix Perps V2](https://sips.synthetix.io/sips/sip-295/)
+
+- [SIP-2000: Add ATOM, AXS, FLOW, FTM, NEAR, AUD/USD and GBP/USD to Perps V2](https://sips.synthetix.io/sips/sip-2000/)
+
+## Release notes
+
+- Adds `22` new Perps markets for:
+  - **BTC, LINK, SOL, AVAX, AAVE, UNI, MATIC, XAU, XAG, EUR, APE, DYDX, BNB, OP, DOGE**
+  - **ATOM, AXS, FLOW, FTM, NEAR, AUD, GBP**
+
+---
+
 # Sadr (v2.81.0)
 
 **Published**: Feb 3, 2023
