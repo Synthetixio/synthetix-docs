@@ -2,73 +2,73 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_SuhailOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol)
+**Source:** [contracts/migrations/Migration_SuhailOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L18)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L25)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `exchangerates_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L31)</sub>
 
 **Type:** `contract ExchangeRates`
 
 ### `exchangestate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L27)</sub>
 
 **Type:** `contract ExchangeState`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L33)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_DirectIntegrationManager_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L46)</sub>
 
 **Type:** `address`
 
 ### `new_ExchangeRates_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L40)</sub>
 
 **Type:** `address`
 
 ### `new_Exchanger_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L44)</sub>
 
 **Type:** `address`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L48)</sub>
 
 **Type:** `address`
 
 ### `new_SystemSettings_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L42)</sub>
 
 **Type:** `address`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L29)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -76,7 +76,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -96,7 +96,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -134,13 +134,13 @@
 
     **Requires**
 
-    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L62)
+    * [require(..., "Invalid contract supplied for ExchangeRates")](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L62)
 
-    * [require(..., "Invalid contract supplied for SystemSettings")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L66)
+    * [require(..., "Invalid contract supplied for SystemSettings")](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L66)
 
-    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L70)
+    * [require(..., "Invalid contract supplied for Exchanger")](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L70)
 
-    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L74)
+    * [require(..., "Invalid contract supplied for Issuer")](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L74)
 
     **Modifiers**
 
@@ -150,7 +150,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L162)</sub>
 
 ??? example "Details"
 
@@ -168,7 +168,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L176)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L176)</sub>
 
 ??? example "Details"
 
@@ -186,7 +186,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L195)</sub>
 
 ??? example "Details"
 
@@ -204,7 +204,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L220)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L220)</sub>
 
 ??? example "Details"
 
@@ -222,7 +222,7 @@
 
 ### `addressresolver_rebuildCaches_3`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L245)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L245)</sub>
 
 ??? example "Details"
 
@@ -240,7 +240,7 @@
 
 ### `issuer_addSynths_41`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L264)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L264)</sub>
 
 ??? example "Details"
 
@@ -258,7 +258,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/migrations/Migration_SuhailOptimism.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/migrations/Migration_SuhailOptimism.sol#L169)</sub>
 
 ??? example "Details"
 

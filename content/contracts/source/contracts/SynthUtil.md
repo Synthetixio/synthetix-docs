@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SynthUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol)
+**Source:** [contracts/SynthUtil.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol)
 
 ## Variables
 
 ### `addressResolverProxy`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol#L12)</sub>
 
 **Type:** `contract IAddressResolver`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `synthsBalances`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `synthsRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `synthsTotalSupplies`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `totalSynthsInKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@
 
 ### `_synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/SynthUtil.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/SynthUtil.sol#L22)</sub>
 
 ??? example "Details"
 

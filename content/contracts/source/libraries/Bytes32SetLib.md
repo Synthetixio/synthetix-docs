@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Bytes32SetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/Bytes32SetLib.sol)
+**Source:** [contracts/Bytes32SetLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/Bytes32SetLib.sol)
 
 ## Structs
 
 ### `Bytes32Set`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/Bytes32SetLib.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/Bytes32SetLib.sol#L5)</sub>
 
 | Field      | Type                          | Description |
 | ---------- | ----------------------------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `add`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/Bytes32SetLib.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/Bytes32SetLib.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -37,7 +37,7 @@
 
 ### `contains`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/Bytes32SetLib.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/Bytes32SetLib.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -55,7 +55,7 @@
 
 ### `getPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/Bytes32SetLib.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/Bytes32SetLib.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -73,7 +73,7 @@
 
 ### `remove`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/Bytes32SetLib.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/Bytes32SetLib.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -91,4 +91,4 @@
 
     **Requires**
 
-    * [require(..., "Element not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/Bytes32SetLib.sol#L51)
+    * [require(..., "Element not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/Bytes32SetLib.sol#L51)

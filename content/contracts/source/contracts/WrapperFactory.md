@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/WrapperFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol)
+**Source:** [contracts/WrapperFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L17)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `feesEscrowed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `isWrapper`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@
 
 ### `createWrapper`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -138,7 +138,7 @@
 
 ### `flexibleStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `synthsUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@
 
 ### `distributeFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -196,6 +196,6 @@
 
 ### `WrapperCreated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/WrapperFactory.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/WrapperFactory.sol#L99)</sub>
 
 **Signature**: `WrapperCreated(address token, bytes32 currencyKey, address wrapperAddress)`

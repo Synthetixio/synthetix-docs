@@ -6,13 +6,13 @@ An external state contract whose functions can only be called by an [associated 
 
 This is designed to allow behaviour to be decoupled from storage so that upgrades can be made without losing data.
 
-**Source:** [contracts/State.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/State.sol)
+**Source:** [contracts/State.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/State.sol)
 
 ## Variables
 
 ### `associatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/State.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/State.sol#L10)</sub>
 
 The address (presumably a contract) which is permitted to use functions on this contract which have the [`onlyAssociatedContract`](#onlyassociatedcontract) modifier.
 
@@ -22,7 +22,7 @@ The address (presumably a contract) which is permitted to use functions on this 
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/State.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/State.sol#L12)</sub>
 
 Initialises the associated contract and the owner, who has the exclusive right to switch the associated contract.
 
@@ -42,7 +42,7 @@ Initialises the associated contract and the owner, who has the exclusive right t
 
     **Requires**
 
-    * [require(..., "Owner must be set")](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/State.sol#L14)
+    * [require(..., "Owner must be set")](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/State.sol#L14)
 
     **Emits**
 
@@ -52,7 +52,7 @@ Initialises the associated contract and the owner, who has the exclusive right t
 
 ### `setAssociatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/State.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/State.sol#L23)</sub>
 
 Allows the contract's owner to update the [associated contract](#associatedContract).
 
@@ -82,7 +82,7 @@ Allows the contract's owner to update the [associated contract](#associatedContr
 
 ### `onlyAssociatedContract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/State.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/State.sol#L30)</sub>
 
 Reverts the transaction if the `msg.sender` is not the [associated contract](#associatedcontract). Provided for use by inheriting contracts.
 
@@ -90,7 +90,7 @@ Reverts the transaction if the `msg.sender` is not the [associated contract](#as
 
 ### `AssociatedContractUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.0-alpha/contracts/State.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/State.sol#L37)</sub>
 
 The associated contract was updated by the owner. This event reports the new associated contract.
 
