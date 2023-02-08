@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2MarketState.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol)
+**Source:** [contracts/interfaces/IPerpsV2MarketState.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol)
 
 ## Views
 
 ### `baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `delayedOrders`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `entryDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `fundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `fundingRateLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `fundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `fundingSequenceLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `getDelayedOrderAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `getDelayedOrderAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `getPositionAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `getPositionAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `marketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `marketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `nextPositionId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `positions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@
 
 ### `deleteDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -316,7 +316,7 @@
 
 ### `deletePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -334,7 +334,7 @@
 
 ### `pushFundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -352,7 +352,7 @@
 
 ### `setBaseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -370,7 +370,7 @@
 
 ### `setEntryDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -388,7 +388,7 @@
 
 ### `setFundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -406,7 +406,7 @@
 
 ### `setFundingRateLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -424,7 +424,7 @@
 
 ### `setMarketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -442,7 +442,7 @@
 
 ### `setMarketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -460,7 +460,7 @@
 
 ### `setMarketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -478,7 +478,7 @@
 
 ### `setNextPositionId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -496,7 +496,7 @@
 
 ### `updateDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -514,7 +514,7 @@
 
 ### `updatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.1/contracts/interfaces/IPerpsV2MarketState.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/interfaces/IPerpsV2MarketState.sol#L58)</sub>
 
 ??? example "Details"
 
