@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/RewardEscrowV2Storage.sol](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol)
+**Source:** [contracts/RewardEscrowV2Storage.sol](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol)
 
 ## Structs
 
 ### `StorageEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L25)</sub>
 
 | Field          | Type      | Description |
 | -------------- | --------- | ----------- |
@@ -19,25 +19,25 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L73)</sub>
 
 **Type:** `bytes32`
 
 ### `fallbackRewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L70)</sub>
 
 **Type:** `contract IRewardEscrowV2Frozen`
 
 ### `firstNonFallbackId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L59)</sub>
 
 **Type:** `uint256`
 
 ### `nextEntryId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L56)</sub>
 
 **Type:** `uint256`
 
@@ -45,7 +45,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -65,7 +65,7 @@
 
 ### `accountVestingEntryIDs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -87,7 +87,7 @@
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L154)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L154)</sub>
 
 ??? example "Details"
 
@@ -109,7 +109,7 @@
 
 ### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L129)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L129)</sub>
 
 ??? example "Details"
 
@@ -131,7 +131,7 @@
 
 ### `totalEscrowedBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -153,7 +153,7 @@
 
 ### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -175,7 +175,7 @@
 
 ### `vestingSchedules`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -199,7 +199,7 @@
 
 ### `addVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L275)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L275)</sub>
 
 ??? example "Details"
 
@@ -217,7 +217,7 @@
 
     **Requires**
 
-    * [require(..., "vesting target time zero")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L282)
+    * [require(..., "vesting target time zero")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L282)
 
     **Modifiers**
 
@@ -227,7 +227,7 @@
 
 ### `setFallbackRewardEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -245,9 +245,9 @@
 
     **Requires**
 
-    * [require(..., "already set")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L82)
+    * [require(..., "already set")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L82)
 
-    * [require(..., "cannot be zero address")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L83)
+    * [require(..., "cannot be zero address")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L83)
 
     **Modifiers**
 
@@ -255,7 +255,7 @@
 
 ### `setZeroAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L175)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L175)</sub>
 
 ??? example "Details"
 
@@ -279,7 +279,7 @@
 
 ### `setZeroAmountUntilTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -297,11 +297,11 @@
 
     **Requires**
 
-    * [require(..., "targetAmount is zero")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L211)
+    * [require(..., "targetAmount is zero")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L211)
 
-    * [require(..., "no entries to iterate")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L217)
+    * [require(..., "no entries to iterate")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L217)
 
-    * [require(..., "startIndex too high")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L218)
+    * [require(..., "startIndex too high")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L218)
 
     **Modifiers**
 
@@ -311,7 +311,7 @@
 
 ### `updateEscrowAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L243)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L243)</sub>
 
 ??? example "Details"
 
@@ -329,7 +329,7 @@
 
     **Requires**
 
-    * [require(..., "updateEscrowAccountBalance: balance must be positive")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L246)
+    * [require(..., "updateEscrowAccountBalance: balance must be positive")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L246)
 
     **Modifiers**
 
@@ -339,7 +339,7 @@
 
 ### `updateTotalEscrowedBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L268)</sub>
 
 ??? example "Details"
 
@@ -357,7 +357,7 @@
 
     **Requires**
 
-    * [require(..., "updateTotalEscrowedBalance: balance must be positive")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L270)
+    * [require(..., "updateTotalEscrowedBalance: balance must be positive")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L270)
 
     **Modifiers**
 
@@ -367,7 +367,7 @@
 
 ### `updateVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L256)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L256)</sub>
 
 ??? example "Details"
 
@@ -385,7 +385,7 @@
 
     **Requires**
 
-    * [require(..., "updateVestedAccountBalance: balance must be positive")](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L259)
+    * [require(..., "updateVestedAccountBalance: balance must be positive")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L259)
 
     **Modifiers**
 
@@ -397,7 +397,7 @@
 
 ### `_cacheFallbackIDCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L320)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L320)</sub>
 
 ??? example "Details"
 
@@ -415,7 +415,7 @@
 
 ### `_fallbackNumVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -433,7 +433,7 @@
 
 ### `_readWithZeroPlaceholder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L335)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L335)</sub>
 
 ??? example "Details"
 
@@ -451,7 +451,7 @@
 
 ### `_setZeroAmountWithEndTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L304)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L304)</sub>
 
 ??? example "Details"
 
@@ -469,7 +469,7 @@
 
 ### `_writeWithZeroPlaceholder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L330)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L330)</sub>
 
 ??? example "Details"
 
@@ -489,4 +489,4 @@
 
 ### `withFallback`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.82.2/contracts/RewardEscrowV2Storage.sol#L342)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/RewardEscrowV2Storage.sol#L342)</sub>
