@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Schedar (v2.83.1)
+
+**Published**: Feb 15, 2023
+
+**Codebase**: [v2.83.1](https://github.com/Synthetixio/synthetix/tree/v2.83.1)
+
+> - [SIP-255: Burn fees instead of distributing them](https://sips.synthetix.io/sips/sip-255/)
+
+> Audit: https://iosiro.com/audits/synthetix-schedar-release-smart-contract-audit
+
+## Release notes
+
+- The sUSD fees collected by the FeePool are now burned at the close of the fee period, effectively reducing user debt automatically instead of having to manually claim the synths.
+
+---
+
 # Eltanin (v2.82.1)
 
 **Published**: Feb 7, 2023
