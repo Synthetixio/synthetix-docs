@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/SignedSafeMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol)
+**Source:** [contracts/SignedSafeMath.sol](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol)
 
 ## Internal Functions
 
 ### `add`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -26,11 +26,11 @@
 
     **Requires**
 
-    * [require(..., "SignedSafeMath: addition overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L119)
+    * [require(..., "SignedSafeMath: addition overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L119)
 
 ### `div`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -48,13 +48,13 @@
 
     **Requires**
 
-    * [require(..., "SignedSafeMath: division by zero")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L82)
+    * [require(..., "SignedSafeMath: division by zero")](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L82)
 
-    * [require(..., "SignedSafeMath: division overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L83)
+    * [require(..., "SignedSafeMath: division overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L83)
 
 ### `mul`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -72,13 +72,13 @@
 
     **Requires**
 
-    * [require(..., "SignedSafeMath: multiplication overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L61)
+    * [require(..., "SignedSafeMath: multiplication overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L61)
 
-    * [require(..., "SignedSafeMath: multiplication overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L64)
+    * [require(..., "SignedSafeMath: multiplication overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L64)
 
 ### `sub`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -96,4 +96,4 @@
 
     **Requires**
 
-    * [require(..., "SignedSafeMath: subtraction overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/SignedSafeMath.sol#L102)
+    * [require(..., "SignedSafeMath: subtraction overflow")](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/SignedSafeMath.sol#L102)

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFuturesMarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol)
+**Source:** [contracts/interfaces/IFuturesMarketSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol)
 
 ## Structs
 
 ### `Parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L4)</sub>
 
 | Field                    | Type      | Description |
 | ------------------------ | --------- | ----------- |
@@ -26,7 +26,7 @@
 
 ### `liquidationBufferRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `liquidationFeeRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `makerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `makerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `maxFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `maxLeverage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `maxMarketValueUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `minInitialMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `minKeeperFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `nextPriceConfirmWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `parameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `skewScaleUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `takerFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `takerFeeNextPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.0-alpha/contracts/interfaces/IFuturesMarketSettings.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IFuturesMarketSettings.sol#L20)</sub>
 
 ??? example "Details"
 
