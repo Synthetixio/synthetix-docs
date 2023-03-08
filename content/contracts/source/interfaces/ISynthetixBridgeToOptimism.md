@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol)
 
 ## External Functions
 
 ### `closeFeePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L5)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `depositAndMigrateEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `depositReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -60,9 +60,27 @@
 
     ``
 
+### `depositTo`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L9)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `depositTo(address to, uint256 amount)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
 ### `migrateEscrow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/ISynthetixBridgeToOptimism.sol#L7)</sub>
 
 ??? example "Details"
 

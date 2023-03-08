@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IBaseSynthetixBridge.sol](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IBaseSynthetixBridge.sol)
+**Source:** [contracts/interfaces/IBaseSynthetixBridge.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/IBaseSynthetixBridge.sol)
 
 ## External Functions
 
 ### `resumeInitiation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IBaseSynthetixBridge.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/IBaseSynthetixBridge.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `suspendInitiation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/interfaces/IBaseSynthetixBridge.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/IBaseSynthetixBridge.sol#L5)</sub>
 
 ??? example "Details"
 

@@ -62,6 +62,7 @@ nav:
               Contracts:
                 - AddressResolver: contracts/source/contracts/AddressResolver.md
                 - BaseDebtCache: contracts/source/contracts/BaseDebtCache.md
+                - BaseDebtMigrator: contracts/source/contracts/BaseDebtMigrator.md
                 - BaseMigration: contracts/source/contracts/BaseMigration.md
                 - BaseOneNetAggregator: contracts/source/contracts/BaseOneNetAggregator.md
                 - BaseRewardEscrowV2: contracts/source/contracts/BaseRewardEscrowV2.md
@@ -87,6 +88,8 @@ nav:
                 - ContractStorage: contracts/source/contracts/ContractStorage.md
                 - DappMaintenance: contracts/source/contracts/DappMaintenance.md
                 - DebtCache: contracts/source/contracts/DebtCache.md
+                - DebtMigratorOnEthereum: contracts/source/contracts/DebtMigratorOnEthereum.md
+                - DebtMigratorOnOptimism: contracts/source/contracts/DebtMigratorOnOptimism.md
                 - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
                 - Depot: contracts/source/contracts/Depot.md
                 - DirectIntegrationManager: contracts/source/contracts/DirectIntegrationManager.md
@@ -168,6 +171,8 @@ nav:
                 - Migration_MizarOptimism: contracts/source/contracts/Migration_MizarOptimism.md
                 - Migration_Muhlifain: contracts/source/contracts/Migration_Muhlifain.md
                 - Migration_MuhlifainOptimism: contracts/source/contracts/Migration_MuhlifainOptimism.md
+                - Migration_Naos: contracts/source/contracts/Migration_Naos.md
+                - Migration_NaosOptimism: contracts/source/contracts/Migration_NaosOptimism.md
                 - Migration_NunkiOptimism: contracts/source/contracts/Migration_NunkiOptimism.md
                 - Migration_Peacock: contracts/source/contracts/Migration_Peacock.md
                 - Migration_PeacockOptimism: contracts/source/contracts/Migration_PeacockOptimism.md
@@ -272,6 +277,7 @@ nav:
                 - ICollateralManager: contracts/source/interfaces/ICollateralManager.md
                 - ICollateralUtil: contracts/source/interfaces/ICollateralUtil.md
                 - IDebtCache: contracts/source/interfaces/IDebtCache.md
+                - IDebtMigrator: contracts/source/interfaces/IDebtMigrator.md
                 - IDelegateApprovals: contracts/source/interfaces/IDelegateApprovals.md
                 - IDepot: contracts/source/interfaces/IDepot.md
                 - IDexPriceAggregator: contracts/source/interfaces/IDexPriceAggregator.md

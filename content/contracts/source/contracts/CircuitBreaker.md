@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/CircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol)
+**Source:** [contracts/CircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L35)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `circuitBroken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `isDeviationAboveThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `isInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `lastValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -108,7 +108,7 @@
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -126,7 +126,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@
 
 ### `probeCircuitBreaker`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
     **Requires**
 
-    * [require(..., "Oracle address is 0")](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L99)
+    * [require(..., "Oracle address is 0")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L99)
 
     **Modifiers**
 
@@ -172,7 +172,7 @@
 
 ### `resetLastValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L126)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L126)</sub>
 
 ??? example "Details"
 
@@ -196,7 +196,7 @@
 
 ### `_isDeviationAboveThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L137)</sub>
 
 ??? example "Details"
 
@@ -214,7 +214,7 @@
 
 ### `_isRateOutOfBounds`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -232,7 +232,7 @@
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -252,18 +252,18 @@
 
 ### `onlyProbers`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L169)</sub>
 
 ## Events
 
 ### `CircuitBroken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L185)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L185)</sub>
 
 **Signature**: `CircuitBroken(address oracleAddress, uint256 previousValue, uint256 newValue)`
 
 ### `LastValueOverridden`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.83.1/contracts/CircuitBreaker.sol#L182)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/CircuitBreaker.sol#L182)</sub>
 
 **Signature**: `LastValueOverridden(address oracleAddress, uint256 previousValue, uint256 newValue)`
