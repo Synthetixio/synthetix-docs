@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/BaseDebtMigrator.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol)
+**Source:** [contracts/BaseDebtMigrator.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -44,9 +44,45 @@
 
     `pure`
 
+### `debtTransferReceived`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L83)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `debtTransferReceived() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
+### `debtTransferSent`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L77)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `debtTransferSent() view returns (uint256)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -66,7 +102,7 @@
 
 ### `_incrementDebtTransferCounter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -84,7 +120,7 @@
 
 ### `_issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -102,7 +138,7 @@
 
 ### `_messenger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -120,7 +156,7 @@
 
 ### `_rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -138,7 +174,7 @@
 
 ### `_synthetixERC20`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/BaseDebtMigrator.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/BaseDebtMigrator.sol#L61)</sub>
 
 ??? example "Details"
 

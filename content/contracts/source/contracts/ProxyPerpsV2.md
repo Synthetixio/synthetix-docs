@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ProxyPerpsV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol)
+**Source:** [contracts/ProxyPerpsV2.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol)
 
 ## Structs
 
 ### `Route`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L22)</sub>
 
 | Field            | Type      | Description |
 | ---------------- | --------- | ----------- |
@@ -20,7 +20,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -40,7 +40,7 @@
 
 ### `getAllTargets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L163)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L163)</sub>
 
 ??? example "Details"
 
@@ -58,7 +58,7 @@
 
 ### `getRoute`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -76,7 +76,7 @@
 
 ### `getRoutesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L139)</sub>
 
 ??? example "Details"
 
@@ -94,7 +94,7 @@
 
 ### `getRoutesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `_emit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L170)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L170)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `addRoute`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L69)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
     **Requires**
 
-    * [require(..., "Invalid nil selector")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L74)
+    * [require(..., "Invalid nil selector")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L74)
 
     **Modifiers**
 
@@ -166,7 +166,7 @@
 
 ### `removeRoute`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -184,7 +184,7 @@
 
     **Requires**
 
-    * [require(..., "Selector not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L109)
+    * [require(..., "Selector not in set.")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L109)
 
     **Modifiers**
 
@@ -198,7 +198,7 @@
 
 ### `_contains`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -216,7 +216,7 @@
 
 ### `_removeTargetReference`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -234,36 +234,36 @@
 
     **Requires**
 
-    * [require(..., "Target not referenced.")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L48)
+    * [require(..., "Target not referenced.")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L48)
 
 ## Modifiers
 
 ### `onlyTargets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L249)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L249)</sub>
 
 ## Events
 
 ### `RouteRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L256)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L256)</sub>
 
 **Signature**: `RouteRemoved(bytes4 route)`
 
 ### `RouteUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L254)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L254)</sub>
 
 **Signature**: `RouteUpdated(bytes4 route, address implementation, bool isView)`
 
 ### `TargetedRouteAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L258)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L258)</sub>
 
 **Signature**: `TargetedRouteAdded(address targetedRoute)`
 
 ### `TargetedRouteRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/ProxyPerpsV2.sol#L260)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/ProxyPerpsV2.sol#L260)</sub>
 
 **Signature**: `TargetedRouteRemoved(address targetedRoute)`

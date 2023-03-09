@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFuturesMarketBaseTypes.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/IFuturesMarketBaseTypes.sol)
+**Source:** [contracts/interfaces/IFuturesMarketBaseTypes.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/interfaces/IFuturesMarketBaseTypes.sol)
 
 ## Structs
 
 ### `NextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/IFuturesMarketBaseTypes.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/interfaces/IFuturesMarketBaseTypes.sol#L31)</sub>
 
 | Field           | Type      | Description |
 | --------------- | --------- | ----------- |
@@ -20,7 +20,7 @@
 
 ### `Position`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/interfaces/IFuturesMarketBaseTypes.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/interfaces/IFuturesMarketBaseTypes.sol#L22)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |

@@ -2,21 +2,27 @@
 
 ## Description
 
-**Source:** [contracts/DebtMigratorOnEthereum.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol)
+**Source:** [contracts/DebtMigratorOnEthereum.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol)
 
 ## Variables
 
 ### `initiationActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L27)</sub>
 
 **Type:** `bool`
+
+### `minimumEscrowDuration`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L28)</sub>
+
+**Type:** `uint256`
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -36,7 +42,7 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -52,27 +58,9 @@
 
     `pure`
 
-### `debtTransferSent`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L90)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `debtTransferSent() view returns (uint256)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    `view`
-
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -92,7 +80,7 @@
 
 ### `resumeInitiation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L177)</sub>
 
 ??? example "Details"
 
@@ -110,7 +98,7 @@
 
     **Requires**
 
-    * [require(..., "Initiation not suspended")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L180)
+    * [require(..., "Initiation not suspended")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L178)
 
     **Modifiers**
 
@@ -120,9 +108,39 @@
 
     * [InitiationResumed](#initiationresumed)
 
+### `setMinimumEscrowDuration`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L165)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `setMinimumEscrowDuration(uint256 _duration)`
+
+    **Visibility**
+
+    `public`
+
+    **State Mutability**
+
+    ``
+
+    **Requires**
+
+    * [require(..., "Must be greater than zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L166)
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
+    **Emits**
+
+    * [MinimumEscrowDurationUpdated](#minimumescrowdurationupdated)
+
 ### `suspendInitiation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L173)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L171)</sub>
 
 ??? example "Details"
 
@@ -140,7 +158,7 @@
 
     **Requires**
 
-    * [require(..., "Initiation suspended")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L174)
+    * [require(..., "Initiation suspended")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L172)
 
     **Modifiers**
 
@@ -154,7 +172,7 @@
 
 ### `_initiatingActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -172,11 +190,11 @@
 
     **Requires**
 
-    * [require(..., "Initiation deactivated")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L59)
+    * [require(..., "Initiation deactivated")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L57)
 
 ### `_liquidator`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -194,7 +212,7 @@
 
 ### `_liquidatorRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -212,7 +230,7 @@
 
 ### `_migrateDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -230,21 +248,21 @@
 
     **Requires**
 
-    * [require(..., "Cannot migrate if open for liquidation")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L106)
+    * [require(..., "Cannot migrate if open for liquidation")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L98)
 
-    * [require(..., "No debt to migrate")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L114)
+    * [require(..., "No debt to migrate")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L106)
 
-    * [require(..., "Cannot migrate zero balances")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L125)
+    * [require(..., "Cannot migrate zero balances")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L117)
 
-    * [require(..., "Debt Migrator On Optimism not set")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L126)
+    * [require(..., "Debt Migrator On Optimism not set")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L118)
 
-    * [require(..., "Debt share balance is not zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L135)
+    * [require(..., "Debt share balance is not zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L127)
 
-    * [require(..., "SNX balance is not zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L136)
+    * [require(..., "SNX balance is not zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L128)
 
-    * [require(..., "Escrow balanace is not zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L137)
+    * [require(..., "Escrow balanace is not zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L129)
 
-    * [require(..., "Earned balance is not zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L138)
+    * [require(..., "Earned balance is not zero")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L130)
 
     **Emits**
 
@@ -252,7 +270,7 @@
 
 ### `_synthetixBridgeToOptimism`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -270,7 +288,7 @@
 
 ### `_synthetixDebtShare`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -290,7 +308,7 @@
 
 ### `migrateDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -308,7 +326,7 @@
 
     **Requires**
 
-    * [require(..., "Must be the account owner")](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L100)
+    * [require(..., "Must be the account owner")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L92)
 
     **Modifiers**
 
@@ -318,24 +336,30 @@
 
 ### `requireInitiationActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L187)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L185)</sub>
 
 ## Events
 
 ### `InitiationResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L196)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L196)</sub>
 
 **Signature**: `InitiationResumed()`
 
 ### `InitiationSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L194)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L194)</sub>
 
 **Signature**: `InitiationSuspended()`
 
 ### `MigrationInitiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.0-alpha/contracts/DebtMigratorOnEthereum.sol#L198)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L198)</sub>
 
 **Signature**: `MigrationInitiated(address account, uint256 totalDebtSharesMigrated, uint256 totalEscrowMigrated, uint256 totalLiquidBalanceMigrated)`
+
+### `MinimumEscrowDurationUpdated`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnEthereum.sol#L192)</sub>
+
+**Signature**: `MinimumEscrowDurationUpdated(uint256 duration)`
