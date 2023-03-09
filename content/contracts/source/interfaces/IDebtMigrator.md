@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDebtMigrator.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/interfaces/IDebtMigrator.sol)
+**Source:** [contracts/interfaces/IDebtMigrator.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IDebtMigrator.sol)
 
 ## External Functions
 
 ### `finalizeDebtMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/interfaces/IDebtMigrator.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IDebtMigrator.sol#L5)</sub>
 
 ??? example "Details"
 

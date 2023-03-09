@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/DebtMigratorOnOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol)
+**Source:** [contracts/DebtMigratorOnOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -66,7 +66,7 @@
 
 ### `finalizeDebtMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -94,7 +94,7 @@
 
 ### `_counterpart`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -112,7 +112,7 @@
 
 ### `_onlyAllowFromCounterpart`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -130,20 +130,20 @@
 
     **Requires**
 
-    * [require(..., "Sender is not the messenger")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L59)
+    * [require(..., "Sender is not the messenger")](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L59)
 
-    * [require(..., "L1 sender is not the debt migrator")](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L60)
+    * [require(..., "L1 sender is not the debt migrator")](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L60)
 
 ## Modifiers
 
 ### `onlyCounterpart`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L63)</sub>
 
 ## Events
 
 ### `MigrationFinalized`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.1-alpha/contracts/DebtMigratorOnOptimism.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/DebtMigratorOnOptimism.sol#L96)</sub>
 
 **Signature**: `MigrationFinalized(address account, uint256 totalDebtSharesMigrated, uint256 totalEscrowMigrated, uint256 totalLiquidBalanceMigrated)`
