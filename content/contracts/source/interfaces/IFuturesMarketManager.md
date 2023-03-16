@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IFuturesMarketManager.sol)
+**Source:** [contracts/interfaces/IFuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IFuturesMarketManager.sol)
 
 ## Views
 
 ### `allMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IFuturesMarketManager.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IFuturesMarketManager.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `marketForKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IFuturesMarketManager.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IFuturesMarketManager.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `markets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IFuturesMarketManager.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IFuturesMarketManager.sol#L4)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `marketsForKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IFuturesMarketManager.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IFuturesMarketManager.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `numMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IFuturesMarketManager.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IFuturesMarketManager.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `totalDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.2-alpha/contracts/interfaces/IFuturesMarketManager.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IFuturesMarketManager.sol#L24)</sub>
 
 ??? example "Details"
 
