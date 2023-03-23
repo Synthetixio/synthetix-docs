@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Naos (v2.84.4)
+
+**Published**: Mar 23, 2023
+
+**Codebase**: [v2.84.4](https://github.com/Synthetixio/synthetix/tree/v2.84.4)
+
+> - [SIP-237: Debt Migration](https://sips.synthetix.io/sips/sip-237/)
+
+> Audit: https://iosiro.com/audits/synthetix-naos-release-smart-contract-audit
+
+## Release notes
+
+- Introduces a mechanism that grants SNX stakers the ability to migrate their staking position from Ethereum (L1) to Optimism (L2) without the need to burn debt.
+
+---
+
 # Schedar (v2.83.1)
 
 **Published**: Feb 15, 2023
