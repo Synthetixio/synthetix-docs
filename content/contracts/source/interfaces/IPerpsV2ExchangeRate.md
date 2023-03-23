@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2ExchangeRate.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IPerpsV2ExchangeRate.sol)
+**Source:** [contracts/interfaces/IPerpsV2ExchangeRate.sol](https://github.com/Synthetixio/synthetix/tree/v2.84.4/contracts/interfaces/IPerpsV2ExchangeRate.sol)
 
 ## Views
 
 ### `offchainOracle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IPerpsV2ExchangeRate.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.4/contracts/interfaces/IPerpsV2ExchangeRate.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `offchainPriceFeedId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IPerpsV2ExchangeRate.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.4/contracts/interfaces/IPerpsV2ExchangeRate.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `resolveAndGetLatestPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IPerpsV2ExchangeRate.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.4/contracts/interfaces/IPerpsV2ExchangeRate.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `resolveAndGetPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IPerpsV2ExchangeRate.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.4/contracts/interfaces/IPerpsV2ExchangeRate.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `setOffchainOracle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IPerpsV2ExchangeRate.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.4/contracts/interfaces/IPerpsV2ExchangeRate.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `setOffchainPriceFeedId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IPerpsV2ExchangeRate.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.4/contracts/interfaces/IPerpsV2ExchangeRate.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `updatePythPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.3-alpha/contracts/interfaces/IPerpsV2ExchangeRate.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.84.4/contracts/interfaces/IPerpsV2ExchangeRate.sol#L20)</sub>
 
 ??? example "Details"
 
