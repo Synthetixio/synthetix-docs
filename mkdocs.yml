@@ -138,6 +138,7 @@ nav:
                 - Migration_Algol: contracts/source/contracts/Migration_Algol.md
                 - Migration_AlgolOptimism: contracts/source/contracts/Migration_AlgolOptimism.md
                 - Migration_Alkaid: contracts/source/contracts/Migration_Alkaid.md
+                - Migration_AlmachOptimism: contracts/source/contracts/Migration_AlmachOptimism.md
                 - Migration_Alnitak: contracts/source/contracts/Migration_Alnitak.md
                 - Migration_Alphard: contracts/source/contracts/Migration_Alphard.md
                 - Migration_AlphardOptimism: contracts/source/contracts/Migration_AlphardOptimism.md
