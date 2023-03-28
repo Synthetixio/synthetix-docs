@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Almach (v2.85.0)
+
+**Published**: Mar 27, 2023
+
+**Codebase**: [v2.85.0](https://github.com/Synthetixio/synthetix/tree/v2.85.0)
+
+> - [SIP-2010: Create ARB Perp](https://sips.synthetix.io/sips/sip-2010/)
+
+## Release notes
+
+- Add `ARB` (Arbitrum) market to Synthetix Perps
+
+---
+
 # Naos (v2.84.4)
 
 **Published**: Mar 23, 2023
