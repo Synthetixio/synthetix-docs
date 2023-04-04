@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2MarketBaseTypes.sol](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2MarketBaseTypes.sol)
+**Source:** [contracts/interfaces/IPerpsV2MarketBaseTypes.sol](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol)
 
 ## Structs
 
 ### `DelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2MarketBaseTypes.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol#L37)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |
 | `isOffchain`       | `bool`    | TBA         |
 | `sizeDelta`        | `int128`  | TBA         |
-| `priceImpactDelta` | `uint128` | TBA         |
+| `desiredFillPrice` | `uint128` | TBA         |
 | `targetRoundId`    | `uint128` | TBA         |
 | `commitDeposit`    | `uint128` | TBA         |
 | `keeperDeposit`    | `uint128` | TBA         |
@@ -24,7 +24,7 @@
 
 ### `Position`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2MarketBaseTypes.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol#L28)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |

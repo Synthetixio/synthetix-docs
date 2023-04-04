@@ -209,12 +209,16 @@ nav:
                 - PerpsV2Market: contracts/source/contracts/PerpsV2Market.md
                 - PerpsV2MarketBase: contracts/source/contracts/PerpsV2MarketBase.md
                 - PerpsV2MarketData: contracts/source/contracts/PerpsV2MarketData.md
+                - PerpsV2MarketDelayedExecution: contracts/source/contracts/PerpsV2MarketDelayedExecution.md
+                - PerpsV2MarketDelayedIntent: contracts/source/contracts/PerpsV2MarketDelayedIntent.md
                 - PerpsV2MarketDelayedOrders: contracts/source/contracts/PerpsV2MarketDelayedOrders.md
                 - PerpsV2MarketDelayedOrdersBase: contracts/source/contracts/PerpsV2MarketDelayedOrdersBase.md
                 - PerpsV2MarketDelayedOrdersOffchain: contracts/source/contracts/PerpsV2MarketDelayedOrdersOffchain.md
+                - PerpsV2MarketLiquidate: contracts/source/contracts/PerpsV2MarketLiquidate.md
                 - PerpsV2MarketProxyable: contracts/source/contracts/PerpsV2MarketProxyable.md
                 - PerpsV2MarketSettings: contracts/source/contracts/PerpsV2MarketSettings.md
                 - PerpsV2MarketState: contracts/source/contracts/PerpsV2MarketState.md
+                - PerpsV2MarketStateLegacyR1: contracts/source/contracts/PerpsV2MarketStateLegacyR1.md
                 - PerpsV2MarketViews: contracts/source/contracts/PerpsV2MarketViews.md
                 - PerpsV2NextPriceMixin: contracts/source/contracts/PerpsV2NextPriceMixin.md
                 - PerpsV2Settings: contracts/source/contracts/PerpsV2Settings.md
@@ -313,8 +317,12 @@ nav:
                 - IPerpsV2ExchangeRate: contracts/source/interfaces/IPerpsV2ExchangeRate.md
                 - IPerpsV2Market: contracts/source/interfaces/IPerpsV2Market.md
                 - IPerpsV2MarketBaseTypes: contracts/source/interfaces/IPerpsV2MarketBaseTypes.md
+                - IPerpsV2MarketBaseTypesLegacyR1: contracts/source/interfaces/IPerpsV2MarketBaseTypesLegacyR1.md
                 - IPerpsV2MarketConsolidated: contracts/source/interfaces/IPerpsV2MarketConsolidated.md
+                - IPerpsV2MarketDelayedExecution: contracts/source/interfaces/IPerpsV2MarketDelayedExecution.md
+                - IPerpsV2MarketDelayedIntent: contracts/source/interfaces/IPerpsV2MarketDelayedIntent.md
                 - IPerpsV2MarketDelayedOrders: contracts/source/interfaces/IPerpsV2MarketDelayedOrders.md
+                - IPerpsV2MarketLiquidate: contracts/source/interfaces/IPerpsV2MarketLiquidate.md
                 - IPerpsV2MarketOffchainOrders: contracts/source/interfaces/IPerpsV2MarketOffchainOrders.md
                 - IPerpsV2MarketSettings: contracts/source/interfaces/IPerpsV2MarketSettings.md
                 - IPerpsV2MarketState: contracts/source/interfaces/IPerpsV2MarketState.md

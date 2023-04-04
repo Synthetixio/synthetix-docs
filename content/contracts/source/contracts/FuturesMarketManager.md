@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/FuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol)
+**Source:** [contracts/FuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol)
 
 ## Structs
 
 ### `MarketSummary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L181)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L184)</sub>
 
 | Field                    | Type      | Description |
 | ------------------------ | --------- | ----------- |
@@ -28,13 +28,13 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L63)</sub>
 
 **Type:** `bytes32`
 
 ### `marketForKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L52)</sub>
 
 **Type:** `mapping(bytes32 => address)`
 
@@ -42,7 +42,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L69)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -60,9 +60,27 @@
 
 ## Views
 
+### `allEndorsedAddresses`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L240)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `allEndorsedAddresses() view returns (address[])`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `allMarketSummaries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L233)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L236)</sub>
 
 ??? example "Details"
 
@@ -80,7 +98,7 @@
 
 ### `allMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -96,9 +114,27 @@
 
     `view`
 
+### `isEndorsed`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L244)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `isEndorsed(address account) view returns (bool)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    `view`
+
 ### `marketSummaries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L225)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L228)</sub>
 
 ??? example "Details"
 
@@ -116,7 +152,7 @@
 
 ### `marketSummariesForKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L229)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L232)</sub>
 
 ??? example "Details"
 
@@ -134,7 +170,7 @@
 
 ### `markets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -152,7 +188,7 @@
 
 ### `marketsForKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L165)</sub>
 
 ??? example "Details"
 
@@ -170,7 +206,7 @@
 
 ### `numMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -188,7 +224,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -206,7 +242,7 @@
 
 ### `totalDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L172)</sub>
 
 ??? example "Details"
 
@@ -226,7 +262,7 @@
 
 ### `_addMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L291)</sub>
 
 ??? example "Details"
 
@@ -244,9 +280,9 @@
 
     **Requires**
 
-    * [require(..., "Market already exists")](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L281)
+    * [require(..., "Market already exists")](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L292)
 
-    * [require(..., "Market already exists for key")](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L286)
+    * [require(..., "Market already exists for key")](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L297)
 
     **Modifiers**
 
@@ -256,9 +292,31 @@
 
     * [MarketAdded](#marketadded)
 
+### `addEndorsedAddresses`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L442)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `addEndorsedAddresses(address[] addresses)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
 ### `addMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L260)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L271)</sub>
 
 ??? example "Details"
 
@@ -280,7 +338,7 @@
 
 ### `addProxiedMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L270)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L281)</sub>
 
 ??? example "Details"
 
@@ -302,7 +360,7 @@
 
 ### `burnSUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L371)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L382)</sub>
 
 ??? example "Details"
 
@@ -324,7 +382,7 @@
 
 ### `issueSUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L361)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L372)</sub>
 
 ??? example "Details"
 
@@ -346,7 +404,7 @@
 
 ### `payFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L398)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L409)</sub>
 
 ??? example "Details"
 
@@ -366,9 +424,31 @@
 
     * [onlyMarketImplementations](#onlymarketimplementations)
 
+### `removeEndorsedAddresses`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L429)</sub>
+
+??? example "Details"
+
+    **Signature**
+
+    `removeEndorsedAddresses(address[] addresses)`
+
+    **Visibility**
+
+    `external`
+
+    **State Mutability**
+
+    ``
+
+    **Modifiers**
+
+    * [onlyOwner](#onlyowner)
+
 ### `removeMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L330)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L341)</sub>
 
 ??? example "Details"
 
@@ -390,7 +470,7 @@
 
 ### `removeMarketsByKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L337)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L348)</sub>
 
 ??? example "Details"
 
@@ -412,7 +492,7 @@
 
 ### `updateMarketsImplementations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L341)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L352)</sub>
 
 ??? example "Details"
 
@@ -436,7 +516,7 @@
 
 ### `_addImplementations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L250)</sub>
 
 ??? example "Details"
 
@@ -454,7 +534,7 @@
 
 ### `_addMarket`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L291)</sub>
 
 ??? example "Details"
 
@@ -472,9 +552,9 @@
 
     **Requires**
 
-    * [require(..., "Market already exists")](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L281)
+    * [require(..., "Market already exists")](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L292)
 
-    * [require(..., "Market already exists for key")](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L286)
+    * [require(..., "Market already exists for key")](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L297)
 
     **Modifiers**
 
@@ -486,7 +566,7 @@
 
 ### `_exchanger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -504,7 +584,7 @@
 
 ### `_feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -522,7 +602,7 @@
 
 ### `_marketSummaries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L198)</sub>
 
 ??? example "Details"
 
@@ -540,7 +620,7 @@
 
 ### `_marketsForKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -558,7 +638,7 @@
 
 ### `_payFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L407)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L418)</sub>
 
 ??? example "Details"
 
@@ -576,7 +656,7 @@
 
 ### `_removeImplementations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L247)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L258)</sub>
 
 ??? example "Details"
 
@@ -594,7 +674,7 @@
 
 ### `_removeMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L302)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L313)</sub>
 
 ??? example "Details"
 
@@ -612,7 +692,7 @@
 
 ### `_requireIsMarketOrImplementation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L416)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L451)</sub>
 
 ??? example "Details"
 
@@ -630,11 +710,11 @@
 
     **Requires**
 
-    * [require(..., "Permitted only for market implementations")](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L417)
+    * [require(..., "Permitted only for market implementations")](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L452)
 
 ### `_sUSD`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -654,18 +734,30 @@
 
 ### `onlyMarketImplementations`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L423)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L458)</sub>
 
 ## Events
 
+### `EndorsedAddressAdded`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L469)</sub>
+
+**Signature**: `EndorsedAddressAdded(address endorsedAddress)`
+
+### `EndorsedAddressRemoved`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L471)</sub>
+
+**Signature**: `EndorsedAddressRemoved(address endorsedAddress)`
+
 ### `MarketAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L430)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L465)</sub>
 
 **Signature**: `MarketAdded(address market, bytes32 asset, bytes32 marketKey)`
 
 ### `MarketRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/FuturesMarketManager.sol#L432)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/FuturesMarketManager.sol#L467)</sub>
 
 **Signature**: `MarketRemoved(address market, bytes32 asset, bytes32 marketKey)`

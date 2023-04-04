@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2MarketProxyable.sol](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol)
+**Source:** [contracts/PerpsV2MarketProxyable.sol](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `_applyDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -44,15 +44,15 @@
 
     ``
 
-### `_assertPriceImpact`
+### `_assertFillPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L98)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_assertPriceImpact(uint256 price, uint256 fillPrice, uint256 priceImpactDelta, int256 sizeDelta) view returns (uint256)`
+    `_assertFillPrice(uint256 fillPrice, uint256 desiredFillPrice, int256 sizeDelta) view returns (uint256)`
 
     **Visibility**
 
@@ -64,7 +64,7 @@
 
 ### `_assetPriceRequireSystemChecks`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `_positionDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `_recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `_trade`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L188)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -134,15 +134,19 @@
 
     ``
 
+    **Modifiers**
+
+    * [notFlagged](#notflagged)
+
 ### `_updatePositionMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L125)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `_updatePositionMargin(address account, struct IPerpsV2MarketBaseTypes.Position position, uint256 price, int256 marginDelta)`
+    `_updatePositionMargin(address account, struct IPerpsV2MarketBaseTypes.Position position, int256 orderSizeDelta, uint256 price, int256 marginDelta)`
 
     **Visibility**
 
@@ -154,7 +158,7 @@
 
 ### `addressToBytes32`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L269)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L276)</sub>
 
 ??? example "Details"
 
@@ -172,7 +176,7 @@
 
 ### `emitFundingRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L331)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L318)</sub>
 
 ??? example "Details"
 
@@ -188,27 +192,9 @@
 
     ``
 
-### `emitMarginTransferred`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L309)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `emitMarginTransferred(address account, int256 marginDelta)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
 ### `emitPerpsTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L343)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L330)</sub>
 
 ??? example "Details"
 
@@ -224,33 +210,15 @@
 
     ``
 
-### `emitPositionLiquidated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L317)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `emitPositionLiquidated(uint256 id, address account, address liquidator, int256 size, uint256 price, uint256 fee)`
-
-    **Visibility**
-
-    `internal`
-
-    **State Mutability**
-
-    ``
-
 ### `emitPositionModified`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L286)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L294)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `emitPositionModified(uint256 id, address account, uint256 margin, int256 size, int256 tradeSize, uint256 lastPrice, uint256 fundingIndex, uint256 fee)`
+    `emitPositionModified(uint256 id, address account, uint256 margin, int256 size, int256 tradeSize, uint256 lastPrice, uint256 fundingIndex, uint256 fee, int256 skew)`
 
     **Visibility**
 
@@ -259,35 +227,37 @@
     **State Mutability**
 
     ``
+
+## Modifiers
+
+### `flagged`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L342)</sub>
+
+**Signature**: `flagged(address account)`
+
+### `notFlagged`
+
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L349)</sub>
+
+**Signature**: `notFlagged(address account)`
 
 ## Events
 
 ### `FundingRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L328)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L315)</sub>
 
 **Signature**: `FundingRecomputed(int256 funding, int256 fundingRate, uint256 index, uint256 timestamp)`
 
-### `MarginTransferred`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L306)</sub>
-
-**Signature**: `MarginTransferred(address account, int256 marginDelta)`
-
 ### `PerpsTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L340)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L327)</sub>
 
 **Signature**: `PerpsTracking(bytes32 trackingCode, bytes32 baseAsset, bytes32 marketKey, int256 sizeDelta, uint256 fee)`
 
-### `PositionLiquidated`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L313)</sub>
-
-**Signature**: `PositionLiquidated(uint256 id, address account, address liquidator, int256 size, uint256 price, uint256 fee)`
-
 ### `PositionModified`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/PerpsV2MarketProxyable.sol#L273)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/PerpsV2MarketProxyable.sol#L280)</sub>
 
-**Signature**: `PositionModified(uint256 id, address account, uint256 margin, int256 size, int256 tradeSize, uint256 lastPrice, uint256 fundingIndex, uint256 fee)`
+**Signature**: `PositionModified(uint256 id, address account, uint256 margin, int256 size, int256 tradeSize, uint256 lastPrice, uint256 fundingIndex, uint256 fee, int256 skew)`

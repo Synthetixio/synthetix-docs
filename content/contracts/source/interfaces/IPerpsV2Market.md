@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2Market.sol](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol)
+**Source:** [contracts/interfaces/IPerpsV2Market.sol](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2Market.sol)
 
 ## External Functions
 
 ### `closePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2Market.sol#L24)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `closePosition(uint256 priceImpactDelta)`
+    `closePosition(uint256 desiredFillPrice)`
 
     **Visibility**
 
@@ -26,31 +26,13 @@
 
 ### `closePositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2Market.sol#L26)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `closePositionWithTracking(uint256 priceImpactDelta, bytes32 trackingCode)`
-
-    **Visibility**
-
-    `external`
-
-    **State Mutability**
-
-    ``
-
-### `liquidatePosition`
-
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol#L28)</sub>
-
-??? example "Details"
-
-    **Signature**
-
-    `liquidatePosition(address account)`
+    `closePositionWithTracking(uint256 desiredFillPrice, bytes32 trackingCode)`
 
     **Visibility**
 
@@ -62,13 +44,13 @@
 
 ### `modifyPosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2Market.sol#L16)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `modifyPosition(int256 sizeDelta, uint256 priceImpactDelta)`
+    `modifyPosition(int256 sizeDelta, uint256 desiredFillPrice)`
 
     **Visibility**
 
@@ -80,13 +62,13 @@
 
 ### `modifyPositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2Market.sol#L18)</sub>
 
 ??? example "Details"
 
     **Signature**
 
-    `modifyPositionWithTracking(int256 sizeDelta, uint256 priceImpactDelta, bytes32 trackingCode)`
+    `modifyPositionWithTracking(int256 sizeDelta, uint256 desiredFillPrice, bytes32 trackingCode)`
 
     **Visibility**
 
@@ -98,7 +80,7 @@
 
 ### `recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2Market.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -116,7 +98,7 @@
 
 ### `transferMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2Market.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -134,7 +116,7 @@
 
 ### `withdrawAllMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.85.0/contracts/interfaces/IPerpsV2Market.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/interfaces/IPerpsV2Market.sol#L14)</sub>
 
 ??? example "Details"
 
