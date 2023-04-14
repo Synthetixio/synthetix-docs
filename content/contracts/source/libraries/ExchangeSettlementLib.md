@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ExchangeSettlementLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol)
+**Source:** [contracts/ExchangeSettlementLib.sol](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol)
 
 ## Structs
 
 ### `ResolvedAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L18)</sub>
 
 | Field            | Type                                   | Description |
 | ---------------- | -------------------------------------- | ----------- |
@@ -23,7 +23,7 @@
 
 ### `hasWaitingPeriodOrSettlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L127)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@
 
 ### `maxSecsLeftInWaitingPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -59,7 +59,7 @@
 
 ### `settlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -79,7 +79,7 @@
 
 ### `_deductFeesFromAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L293)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L293)</sub>
 
 ??? example "Details"
 
@@ -97,7 +97,7 @@
 
 ### `_getExchangeEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L244)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L244)</sub>
 
 ??? example "Details"
 
@@ -115,7 +115,7 @@
 
 ### `_getRoundIdsAtPeriodEnd`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L274)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L274)</sub>
 
 ??? example "Details"
 
@@ -133,7 +133,7 @@
 
 ### `_reclaim`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -151,7 +151,7 @@
 
 ### `_refund`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L116)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L116)</sub>
 
 ??? example "Details"
 
@@ -169,7 +169,7 @@
 
 ### `_secsLeftInWaitingPeriodForExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -187,7 +187,7 @@
 
 ### `_settlementOwing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -207,7 +207,7 @@
 
 ### `appendExchange`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L301)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L301)</sub>
 
 ??? example "Details"
 
@@ -229,7 +229,7 @@
 
 ### `internalSettle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -247,18 +247,18 @@
 
     **Requires**
 
-    * [require(..., "Cannot settle during waiting period")](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L43)
+    * [require(..., "Cannot settle during waiting period")](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L43)
 
 ## Events
 
 ### `ExchangeEntryAppended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L337)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L337)</sub>
 
 **Signature**: `ExchangeEntryAppended(address account, bytes32 src, uint256 amount, bytes32 dest, uint256 amountReceived, uint256 exchangeFeeRate, uint256 roundIdForSrc, uint256 roundIdForDest)`
 
 ### `ExchangeEntrySettled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.0-alpha/contracts/ExchangeSettlementLib.sol#L348)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/ExchangeSettlementLib.sol#L348)</sub>
 
 **Signature**: `ExchangeEntrySettled(address from, bytes32 src, uint256 amount, bytes32 dest, uint256 reclaim, uint256 rebate, uint256 srcRoundIdAtPeriodEnd, uint256 destRoundIdAtPeriodEnd, uint256 exchangeTimestamp)`

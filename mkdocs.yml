@@ -150,6 +150,21 @@ nav:
                 - Migration_AlsephinaOptimism: contracts/source/contracts/Migration_AlsephinaOptimism.md
                 - Migration_Aspidiske: contracts/source/contracts/Migration_Aspidiske.md
                 - Migration_AspidiskeOptimism: contracts/source/contracts/Migration_AspidiskeOptimism.md
+                - Migration_Caph: contracts/source/contracts/Migration_Caph.md
+                - Migration_CaphOptimismStep1: contracts/source/contracts/Migration_CaphOptimismStep1.md
+                - Migration_CaphOptimismStep10: contracts/source/contracts/Migration_CaphOptimismStep10.md
+                - Migration_CaphOptimismStep11: contracts/source/contracts/Migration_CaphOptimismStep11.md
+                - Migration_CaphOptimismStep12: contracts/source/contracts/Migration_CaphOptimismStep12.md
+                - Migration_CaphOptimismStep13: contracts/source/contracts/Migration_CaphOptimismStep13.md
+                - Migration_CaphOptimismStep14: contracts/source/contracts/Migration_CaphOptimismStep14.md
+                - Migration_CaphOptimismStep2: contracts/source/contracts/Migration_CaphOptimismStep2.md
+                - Migration_CaphOptimismStep3: contracts/source/contracts/Migration_CaphOptimismStep3.md
+                - Migration_CaphOptimismStep4: contracts/source/contracts/Migration_CaphOptimismStep4.md
+                - Migration_CaphOptimismStep5: contracts/source/contracts/Migration_CaphOptimismStep5.md
+                - Migration_CaphOptimismStep6: contracts/source/contracts/Migration_CaphOptimismStep6.md
+                - Migration_CaphOptimismStep7: contracts/source/contracts/Migration_CaphOptimismStep7.md
+                - Migration_CaphOptimismStep8: contracts/source/contracts/Migration_CaphOptimismStep8.md
+                - Migration_CaphOptimismStep9: contracts/source/contracts/Migration_CaphOptimismStep9.md
                 - Migration_Diphda: contracts/source/contracts/Migration_Diphda.md
                 - Migration_DiphdaOptimism: contracts/source/contracts/Migration_DiphdaOptimism.md
                 - Migration_DiphdaOptimism_part1: contracts/source/contracts/Migration_DiphdaOptimism_part1.md
