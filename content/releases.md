@@ -2,6 +2,27 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Caph (v2.86.1)
+
+**Published**: Apr 14, 2023
+
+**Codebase**: [v2.86.1](https://github.com/Synthetixio/synthetix/tree/v2.86.1)
+
+> - [SIP-2004: Better Delayed Order Integration Trading Experience](https://sips.synthetix.io/sips/sip-2004/)
+
+- [SIP-2005: Perps V2 Slippage Protection for Liquidations](https://sips.synthetix.io/sips/sip-2005/)
+
+> Audit: https://iosiro.com/audits/synthetix-caph-release-smart-contract-audit
+
+## Release notes
+
+- Removal of commitment fees on submission of delayed orders
+- Close mechanism for delayed orders
+- Split liquidations into a two-step mechanism: Flag and Liquidate
+- Added some small fixes and minor improvements
+
+---
+
 # Almach (v2.85.0)
 
 **Published**: Mar 27, 2023
