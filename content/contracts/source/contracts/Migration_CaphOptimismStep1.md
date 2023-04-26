@@ -2,49 +2,49 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_CaphOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol)
+**Source:** [contracts/migrations/Migration_CaphOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L15)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L25)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L22)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
 ### `new_FuturesMarketManager_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L32)</sub>
 
 **Type:** `address`
 
 ### `new_PerpsV2ExchangeRate_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L36)</sub>
 
 **Type:** `address`
 
 ### `new_PerpsV2MarketData_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L34)</sub>
 
 **Type:** `address`
 
 ### `new_PerpsV2MarketSettings_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L38)</sub>
 
 **Type:** `address`
 
@@ -52,7 +52,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L40)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `addressresolver_importAddresses_4`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L144)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L144)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `addressresolver_importAddresses_5`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `addressresolver_rebuildCaches_6`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L178)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L178)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `futuresmarketmanager_addMarkets_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_3`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L135)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/migrations/Migration_CaphOptimismStep1.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_CaphOptimismStep1.sol#L75)</sub>
 
 ??? example "Details"
 

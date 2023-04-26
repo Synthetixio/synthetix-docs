@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDirectIntegrationManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/interfaces/IDirectIntegrationManager.sol)
+**Source:** [contracts/interfaces/IDirectIntegrationManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/interfaces/IDirectIntegrationManager.sol)
 
 ## Structs
 
 ### `ParameterIntegrationSettings`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/interfaces/IDirectIntegrationManager.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/interfaces/IDirectIntegrationManager.sol#L6)</sub>
 
 | Field                                 | Type      | Description |
 | ------------------------------------- | --------- | ----------- |
@@ -30,7 +30,7 @@
 
 ### `getExchangeParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/interfaces/IDirectIntegrationManager.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/interfaces/IDirectIntegrationManager.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -50,7 +50,7 @@
 
 ### `setExchangeParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.86.1/contracts/interfaces/IDirectIntegrationManager.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/interfaces/IDirectIntegrationManager.sol#L27)</sub>
 
 ??? example "Details"
 
