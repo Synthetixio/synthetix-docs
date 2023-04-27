@@ -2,6 +2,23 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Izar (v2.87.1)
+
+**Published**: Apr 27, 2023
+
+**Codebase**: [v2.87.1](https://github.com/Synthetixio/synthetix/tree/v2.87.1)
+
+> - [SIP-2011: Perps V2 Updates](https://sips.synthetix.io/sips/sip-2011/)
+
+> Audit: https://iosiro.com/audits/synthetix-izar-release-smart-contract-audit
+
+## Release notes
+
+- Fix view function reverting on PerpsV2MarketData (`allMarketSummaries`)
+- Fix Flagging for accounts with pending orders
+
+---
+
 # Caph (v2.86.1)
 
 **Published**: Apr 14, 2023
