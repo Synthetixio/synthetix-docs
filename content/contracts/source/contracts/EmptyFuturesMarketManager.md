@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/EmptyFuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol)
+**Source:** [contracts/EmptyFuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L9)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `allEndorsedAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -34,7 +34,7 @@
 
 ### `allMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@
 
 ### `isEndorsed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -70,7 +70,7 @@
 
 ### `marketForKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -88,7 +88,7 @@
 
 ### `markets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -106,7 +106,7 @@
 
 ### `marketsForKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -124,7 +124,7 @@
 
 ### `numMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -142,7 +142,7 @@
 
 ### `totalDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -162,7 +162,7 @@
 
 ### `addEndorsedAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `removeEndorsedAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/EmptyFuturesMarketManager.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/EmptyFuturesMarketManager.sol#L79)</sub>
 
 ??? example "Details"
 

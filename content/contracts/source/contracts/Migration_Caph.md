@@ -2,25 +2,25 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Caph.sol](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol)
+**Source:** [contracts/migrations/Migration_Caph.sol](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L14)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L21)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `new_FuturesMarketManager_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L28)</sub>
 
 **Type:** `address`
 
@@ -28,7 +28,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L32)</sub>
 
 ??? example "Details"
 
@@ -68,7 +68,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.0-alpha/contracts/migrations/Migration_Caph.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/migrations/Migration_Caph.sol#L58)</sub>
 
 ??? example "Details"
 
