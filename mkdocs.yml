@@ -171,6 +171,9 @@ nav:
                 - Migration_DiphdaOptimism_part2: contracts/source/contracts/Migration_DiphdaOptimism_part2.md
                 - Migration_Diphda_part1: contracts/source/contracts/Migration_Diphda_part1.md
                 - Migration_Diphda_part2: contracts/source/contracts/Migration_Diphda_part2.md
+                - Migration_DschubbaOptimismStep1: contracts/source/contracts/Migration_DschubbaOptimismStep1.md
+                - Migration_DschubbaOptimismStep2: contracts/source/contracts/Migration_DschubbaOptimismStep2.md
+                - Migration_DschubbaOptimismStep3: contracts/source/contracts/Migration_DschubbaOptimismStep3.md
                 - Migration_EltaninOptimism: contracts/source/contracts/Migration_EltaninOptimism.md
                 - Migration_Hamal: contracts/source/contracts/Migration_Hamal.md
                 - Migration_IzarOptimismStep1: contracts/source/contracts/Migration_IzarOptimismStep1.md

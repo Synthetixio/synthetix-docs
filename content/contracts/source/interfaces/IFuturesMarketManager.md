@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol)
+**Source:** [contracts/interfaces/IFuturesMarketManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol)
 
 ## Views
 
 ### `allEndorsedAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L28)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `allMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `isEndorsed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `marketForKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `markets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L4)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `marketsForKeys`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `numMarkets`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `totalDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `addEndorsedAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L30)</sub>
 
 ??? example "Details"
 
@@ -172,7 +172,7 @@
 
 ### `removeEndorsedAddresses`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.87.1/contracts/interfaces/IFuturesMarketManager.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/IFuturesMarketManager.sol#L32)</sub>
 
 ??? example "Details"
 
