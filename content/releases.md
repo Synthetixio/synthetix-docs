@@ -2,6 +2,21 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Dschubba (v2.88.1)
+
+**Published**: May 3, 2023
+
+**Codebase**: [v2.88.1](https://github.com/Synthetixio/synthetix/tree/v2.88.1)
+
+> - [SIP-298: Adding APT, LDO, ADA, GMX, FIL, LTC, BCH, SHIB, and CRV to Synthetix Perps V2](https://sips.synthetix.io/sips/sip-298/)
+
+## Release notes
+
+- Introduces nine new markets to Perps V2:
+  - APT, LDO, ADA, GMX, FIL, LTC, BCH, SHIB, and CRV
+
+---
+
 # Izar (v2.87.1)
 
 **Published**: Apr 27, 2023
