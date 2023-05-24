@@ -2,6 +2,24 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Larawag (v2.89.1)
+
+**Published**: May 24, 2023
+
+**Codebase**: [v2.89.1](https://github.com/Synthetixio/synthetix/tree/v2.89.1)
+
+> - [SIP-2014: Adding PEPE, SUI, and BLUR to Synthetix Perps V2](https://sips.synthetix.io/sips/sip-2014/)
+
+- [SIP-2015: Add XRP, DOT, TRX, FLOKI and INJ to Perps V2](https://sips.synthetix.io/sips/sip-2015/)
+
+## Release notes
+
+- Introduces eight new perps markets:
+  - PEPE, SUI, and BLUR (SIP-2014)
+  - XRP, DOT, TRX, FLOKI and INJ (SIP-2015)
+
+---
+
 # Dschubba (v2.88.1)
 
 **Published**: May 3, 2023
