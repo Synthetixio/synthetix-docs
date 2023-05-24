@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/PythStructs.sol](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/PythStructs.sol)
+**Source:** [contracts/interfaces/PythStructs.sol](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/PythStructs.sol)
 
 ## Structs
 
 ### `Price`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/PythStructs.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/PythStructs.sol#L14)</sub>
 
 | Field         | Type      | Description |
 | ------------- | --------- | ----------- |
@@ -19,7 +19,7 @@
 
 ### `PriceFeed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.88.1/contracts/interfaces/PythStructs.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/PythStructs.sol#L26)</sub>
 
 | Field      | Type                       | Description |
 | ---------- | -------------------------- | ----------- |
