@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol)
+**Source:** [contracts/interfaces/IShortingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol)
 
 ## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `getRewardForDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `lastTimeRewardApplicable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `rewardPerToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `enrol`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IShortingRewards.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.1/contracts/interfaces/IShortingRewards.sol#L22)</sub>
 
 ??? example "Details"
 

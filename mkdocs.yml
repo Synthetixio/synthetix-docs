@@ -185,6 +185,7 @@ nav:
                 - Migration_LarawagOptimismStep1: contracts/source/contracts/Migration_LarawagOptimismStep1.md
                 - Migration_LarawagOptimismStep2: contracts/source/contracts/Migration_LarawagOptimismStep2.md
                 - Migration_MenkentOptimism: contracts/source/contracts/Migration_MenkentOptimism.md
+                - Migration_MerakOptimismStep1: contracts/source/contracts/Migration_MerakOptimismStep1.md
                 - Migration_Mintaka: contracts/source/contracts/Migration_Mintaka.md
                 - Migration_MintakaOptimism: contracts/source/contracts/Migration_MintakaOptimism.md
                 - Migration_Mirach: contracts/source/contracts/Migration_Mirach.md
