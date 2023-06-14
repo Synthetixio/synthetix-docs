@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Merak (v2.90.1)
+
+**Published**: Jun 14, 2023
+
+**Codebase**: [v2.90.1](https://github.com/Synthetixio/synthetix/tree/v2.90.1)
+
+> - [SIP-2021: Adding steth/usd to Synthetix Perps](https://sips.synthetix.io/sips/sip-2021/)
+
+## Release notes
+
+- Introduces one new perp market for `STETH`
+
+---
+
 # Larawag (v2.89.1)
 
 **Published**: May 24, 2023
