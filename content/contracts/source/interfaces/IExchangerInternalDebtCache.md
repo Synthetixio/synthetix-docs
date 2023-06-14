@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IExchanger.sol)
+**Source:** [contracts/interfaces/IExchanger.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IExchanger.sol)
 
 ## External Functions
 
 ### `updateCachedSynthDebts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IExchanger.sol#L153)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IExchanger.sol#L153)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `updateCachedSynthDebtsWithRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IExchanger.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IExchanger.sol#L151)</sub>
 
 ??? example "Details"
 

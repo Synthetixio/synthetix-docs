@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2MarketConsolidated.sol](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol)
+**Source:** [contracts/interfaces/IPerpsV2MarketConsolidated.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol)
 
 ## Structs
 
 ### `DelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L42)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |
@@ -24,7 +24,7 @@
 
 ### `Position`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L33)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |
@@ -38,7 +38,7 @@
 
 ### `accessibleMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -56,7 +56,7 @@
 
 ### `accruedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `assetPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L76)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L76)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@
 
 ### `baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@
 
 ### `canLiquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L110)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L110)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@
 
 ### `currentFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@
 
 ### `currentFundingVelocity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `delayedOrders`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -182,7 +182,7 @@
 
 ### `fillPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -200,7 +200,7 @@
 
 ### `fundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -218,7 +218,7 @@
 
 ### `fundingRateLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -236,7 +236,7 @@
 
 ### `fundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -254,7 +254,7 @@
 
 ### `fundingSequenceLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -272,7 +272,7 @@
 
 ### `isFlagged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -290,7 +290,7 @@
 
 ### `liquidationFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -308,7 +308,7 @@
 
 ### `liquidationPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -326,7 +326,7 @@
 
 ### `marketDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -344,7 +344,7 @@
 
 ### `marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -362,7 +362,7 @@
 
 ### `marketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -380,7 +380,7 @@
 
 ### `marketSizes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L80)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L80)</sub>
 
 ??? example "Details"
 
@@ -398,7 +398,7 @@
 
 ### `marketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -416,7 +416,7 @@
 
 ### `notionalValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L94)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L94)</sub>
 
 ??? example "Details"
 
@@ -434,7 +434,7 @@
 
 ### `orderFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -452,7 +452,7 @@
 
 ### `positions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -470,7 +470,7 @@
 
 ### `postTradeDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -488,7 +488,7 @@
 
 ### `profitLoss`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L96)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L96)</sub>
 
 ??? example "Details"
 
@@ -506,7 +506,7 @@
 
 ### `remainingMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -524,7 +524,7 @@
 
 ### `unrecordedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L88)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L88)</sub>
 
 ??? example "Details"
 
@@ -544,7 +544,7 @@
 
 ### `cancelDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L197)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L197)</sub>
 
 ??? example "Details"
 
@@ -562,7 +562,7 @@
 
 ### `cancelOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L199)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L199)</sub>
 
 ??? example "Details"
 
@@ -580,7 +580,7 @@
 
 ### `closePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L149)</sub>
 
 ??? example "Details"
 
@@ -598,7 +598,7 @@
 
 ### `closePositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L151)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L151)</sub>
 
 ??? example "Details"
 
@@ -616,7 +616,7 @@
 
 ### `executeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L193)</sub>
 
 ??? example "Details"
 
@@ -634,7 +634,7 @@
 
 ### `executeOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L195)</sub>
 
 ??? example "Details"
 
@@ -652,7 +652,7 @@
 
 ### `flagPosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -670,7 +670,7 @@
 
 ### `forceLiquidatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L159)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L159)</sub>
 
 ??? example "Details"
 
@@ -688,7 +688,7 @@
 
 ### `liquidatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L157)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L157)</sub>
 
 ??? example "Details"
 
@@ -706,7 +706,7 @@
 
 ### `modifyPosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -724,7 +724,7 @@
 
 ### `modifyPositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -742,7 +742,7 @@
 
 ### `recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L135)</sub>
 
 ??? example "Details"
 
@@ -760,7 +760,7 @@
 
 ### `submitCloseDelayedOrderWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L164)</sub>
 
 ??? example "Details"
 
@@ -778,7 +778,7 @@
 
 ### `submitCloseOffchainDelayedOrderWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L162)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L162)</sub>
 
 ??? example "Details"
 
@@ -796,7 +796,7 @@
 
 ### `submitDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L170)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L170)</sub>
 
 ??? example "Details"
 
@@ -814,7 +814,7 @@
 
 ### `submitDelayedOrderWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L176)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L176)</sub>
 
 ??? example "Details"
 
@@ -832,7 +832,7 @@
 
 ### `submitOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L183)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L183)</sub>
 
 ??? example "Details"
 
@@ -850,7 +850,7 @@
 
 ### `submitOffchainDelayedOrderWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L185)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L185)</sub>
 
 ??? example "Details"
 
@@ -868,7 +868,7 @@
 
 ### `transferMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L137)</sub>
 
 ??? example "Details"
 
@@ -886,7 +886,7 @@
 
 ### `withdrawAllMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L139)</sub>
 
 ??? example "Details"
 
@@ -906,48 +906,48 @@
 
 ### `DelayedOrderRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L234)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L234)</sub>
 
 **Signature**: `DelayedOrderRemoved(address account, bool isOffchain, uint256 currentRoundId, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
 
 ### `DelayedOrderSubmitted`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L245)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L245)</sub>
 
 **Signature**: `DelayedOrderSubmitted(address account, bool isOffchain, int256 sizeDelta, uint256 targetRoundId, uint256 intentionTime, uint256 executableAtTime, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`
 
 ### `FundingRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L230)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L230)</sub>
 
 **Signature**: `FundingRecomputed(int256 funding, int256 fundingRate, uint256 index, uint256 timestamp)`
 
 ### `MarginTransferred`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L215)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L215)</sub>
 
 **Signature**: `MarginTransferred(address account, int256 marginDelta)`
 
 ### `PerpsTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L232)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L232)</sub>
 
 **Signature**: `PerpsTracking(bytes32 trackingCode, bytes32 baseAsset, bytes32 marketKey, int256 sizeDelta, uint256 fee)`
 
 ### `PositionFlagged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L217)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L217)</sub>
 
 **Signature**: `PositionFlagged(uint256 id, address account, address flagger, uint256 price, uint256 timestamp)`
 
 ### `PositionLiquidated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L219)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L219)</sub>
 
 **Signature**: `PositionLiquidated(uint256 id, address account, address liquidator, int256 size, uint256 price, uint256 flaggerFee, uint256 liquidatorFee, uint256 stakersFee)`
 
 ### `PositionModified`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/interfaces/IPerpsV2MarketConsolidated.sol#L203)</sub>
 
 **Signature**: `PositionModified(uint256 id, address account, uint256 margin, int256 size, int256 tradeSize, uint256 lastPrice, uint256 fundingIndex, uint256 fee, int256 skew)`

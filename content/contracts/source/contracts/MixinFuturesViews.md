@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/frozen/MixinFuturesViews.sol](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol)
+**Source:** [contracts/frozen/MixinFuturesViews.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol)
 
 ## Views
 
 ### `accessibleMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `accruedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `canLiquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `currentFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `fundingSequenceLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `liquidationFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `liquidationPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `marketDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `marketSizes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `notionalValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `orderFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `postTradeDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L160)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `profitLoss`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `remainingMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `unrecordedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -280,7 +280,7 @@
 
 ### `_approxLiquidationPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.89.1/contracts/frozen/MixinFuturesViews.sol#L193)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.0-alpha/contracts/frozen/MixinFuturesViews.sol#L193)</sub>
 
 ??? example "Details"
 
