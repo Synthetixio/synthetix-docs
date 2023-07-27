@@ -4,13 +4,13 @@
 
 The ReadProxy is a simple proxy for readonly views. If any mutative function is attempted on the underlying the EVM will revert.
 
-**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/ReadProxy.sol)
+**Source:** [contracts/ReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/ReadProxy.sol)
 
 ## Variables
 
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/ReadProxy.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/ReadProxy.sol#L9)</sub>
 
 **Type:** `address`
 
@@ -18,7 +18,7 @@ The ReadProxy is a simple proxy for readonly views. If any mutative function is 
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/ReadProxy.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/ReadProxy.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -38,7 +38,7 @@ The ReadProxy is a simple proxy for readonly views. If any mutative function is 
 
 ### `setTarget`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/ReadProxy.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/ReadProxy.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -66,6 +66,6 @@ The ReadProxy is a simple proxy for readonly views. If any mutative function is 
 
 ### `TargetUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/ReadProxy.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/ReadProxy.sol#L35)</sub>
 
 **Signature**: `TargetUpdated(address newTarget)`

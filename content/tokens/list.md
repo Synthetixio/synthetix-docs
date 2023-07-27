@@ -30,21 +30,6 @@
 
 > Tracks the price of Bitcoin (BTC) through price feeds supplied by an oracle.
 
-## ETH / BTC (sETHBTC)
-
-**Contract:** [0x104eDF1da359506548BFc7c25bA1E28C16a70235](https://etherscan.io/token/0x104eDF1da359506548BFc7c25bA1E28C16a70235)
-
-**Decimals:** 18
-
-**Price:** [sETHBTC on synthetix.exchange](https://synthetix.exchange/#/synths/sETHBTC)
-
-**Price Feed**: Chainlink (decentralized)
-
-- Oracles: [Network overview](https://feeds.chain.link/ethbtc-usd)
-- Contract: [Aggregator](https://etherscan.io/address/0xAc559F25B1619171CbC396a50854A3240b6A4e99)
-
-> Tracks the price of ETH / BTC (ETHBTC) through price feeds supplied by an oracle.
-
 ## Ether (sETH)
 
 **Contract:** [0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb](https://etherscan.io/token/0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb)
@@ -59,6 +44,21 @@
 - Contract: [Aggregator](https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419)
 
 > Tracks the price of Ether (ETH) through price feeds supplied by an oracle.
+
+## Ether/Bitcoin Ratio (sETHBTC)
+
+**Contract:** [0x104eDF1da359506548BFc7c25bA1E28C16a70235](https://etherscan.io/token/0x104eDF1da359506548BFc7c25bA1E28C16a70235)
+
+**Decimals:** 18
+
+**Price:** [sETHBTC on synthetix.exchange](https://synthetix.exchange/#/synths/sETHBTC)
+
+**Price Feed**: Chainlink (decentralized)
+
+- Oracles: [Network overview](https://feeds.chain.link/ethbtc-usd)
+- Contract: [Aggregator](https://etherscan.io/address/0xAc559F25B1619171CbC396a50854A3240b6A4e99)
+
+> Tracks the price of Ether/Bitcoin Ratio (ETHBTC) through price feeds supplied by an oracle.
 
 ## Euros (sEUR)
 

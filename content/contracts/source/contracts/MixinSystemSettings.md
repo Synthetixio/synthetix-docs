@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/MixinSystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol)
+**Source:** [contracts/MixinSystemSettings.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol)
 
 ## Structs
 
 ### `DynamicFeeConfig`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L65)</sub>
 
 | Field         | Type      | Description |
 | ------------- | --------- | ----------- |
@@ -21,7 +21,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -41,7 +41,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -61,7 +61,7 @@
 
 ### `_getGasLimitSetting`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -79,7 +79,7 @@
 
 ### `flexibleStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -97,7 +97,7 @@
 
 ### `getAggregatorWarningFlags`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L195)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L195)</sub>
 
 ??? example "Details"
 
@@ -115,7 +115,7 @@
 
 ### `getAtomicEquivalentForDexPricing`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L263)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L263)</sub>
 
 ??? example "Details"
 
@@ -133,7 +133,7 @@
 
 ### `getAtomicExchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L271)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L271)</sub>
 
 ??? example "Details"
 
@@ -151,7 +151,7 @@
 
 ### `getAtomicMaxVolumePerBlock`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L255)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L255)</sub>
 
 ??? example "Details"
 
@@ -169,7 +169,7 @@
 
 ### `getAtomicTwapWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L259)</sub>
 
 ??? example "Details"
 
@@ -187,7 +187,7 @@
 
 ### `getAtomicVolatilityConsiderationWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L279)</sub>
 
 ??? example "Details"
 
@@ -205,7 +205,7 @@
 
 ### `getAtomicVolatilityUpdateThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L287)</sub>
 
 ??? example "Details"
 
@@ -223,7 +223,7 @@
 
 ### `getCollapseFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L247)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L247)</sub>
 
 ??? example "Details"
 
@@ -241,7 +241,7 @@
 
 ### `getCrossChainSynthTransferEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L303)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L303)</sub>
 
 ??? example "Details"
 
@@ -259,7 +259,7 @@
 
 ### `getCrossDomainMessageGasLimit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -277,7 +277,7 @@
 
 ### `getDebtSnapshotStaleTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L199)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L199)</sub>
 
 ??? example "Details"
 
@@ -295,7 +295,7 @@
 
 ### `getEtherWrapperBurnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L211)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L211)</sub>
 
 ??? example "Details"
 
@@ -313,7 +313,7 @@
 
 ### `getEtherWrapperMaxETH`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L203)</sub>
 
 ??? example "Details"
 
@@ -331,7 +331,7 @@
 
 ### `getEtherWrapperMintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L207)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L207)</sub>
 
 ??? example "Details"
 
@@ -349,7 +349,7 @@
 
 ### `getExchangeDynamicFeeConfig`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L179)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L179)</sub>
 
 ??? example "Details"
 
@@ -367,7 +367,7 @@
 
 ### `getExchangeDynamicFeeRounds`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L315)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L315)</sub>
 
 ??? example "Details"
 
@@ -385,7 +385,7 @@
 
 ### `getExchangeDynamicFeeThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L319)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L319)</sub>
 
 ??? example "Details"
 
@@ -403,7 +403,7 @@
 
 ### `getExchangeDynamicFeeWeightDecay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L323)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L323)</sub>
 
 ??? example "Details"
 
@@ -421,7 +421,7 @@
 
 ### `getExchangeFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L169)</sub>
 
 ??? example "Details"
 
@@ -439,7 +439,7 @@
 
 ### `getExchangeMaxDynamicFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L311)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L311)</sub>
 
 ??? example "Details"
 
@@ -457,7 +457,7 @@
 
 ### `getFeePeriodDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L122)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L122)</sub>
 
 ??? example "Details"
 
@@ -475,7 +475,7 @@
 
 ### `getFlagReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -493,7 +493,7 @@
 
 ### `getInteractionDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L239)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L239)</sub>
 
 ??? example "Details"
 
@@ -511,7 +511,7 @@
 
 ### `getIssuanceRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -529,7 +529,7 @@
 
 ### `getLiquidateReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L160)</sub>
 
 ??? example "Details"
 
@@ -547,7 +547,7 @@
 
 ### `getLiquidationDelay`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -565,7 +565,7 @@
 
 ### `getLiquidationEscrowDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L140)</sub>
 
 ??? example "Details"
 
@@ -583,7 +583,7 @@
 
 ### `getLiquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L144)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L144)</sub>
 
 ??? example "Details"
 
@@ -601,7 +601,7 @@
 
 ### `getLiquidationRatio`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L136)</sub>
 
 ??? example "Details"
 
@@ -619,7 +619,7 @@
 
 ### `getMinimumStakeTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L191)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L191)</sub>
 
 ??? example "Details"
 
@@ -637,7 +637,7 @@
 
 ### `getPriceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -655,7 +655,7 @@
 
 ### `getPureChainlinkPriceForAtomicSwapsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L295)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L295)</sub>
 
 ??? example "Details"
 
@@ -673,7 +673,7 @@
 
 ### `getRateStalePeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L164)</sub>
 
 ??? example "Details"
 
@@ -691,7 +691,7 @@
 
 ### `getSelfLiquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -709,7 +709,7 @@
 
 ### `getSnxLiquidationPenalty`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -727,7 +727,7 @@
 
 ### `getTargetThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L127)</sub>
 
 ??? example "Details"
 
@@ -745,7 +745,7 @@
 
 ### `getTradingRewardsEnabled`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -763,7 +763,7 @@
 
 ### `getWaitingPeriodSecs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L109)</sub>
 
 ??? example "Details"
 
@@ -781,7 +781,7 @@
 
 ### `getWrapperBurnFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L231)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L231)</sub>
 
 ??? example "Details"
 
@@ -799,7 +799,7 @@
 
 ### `getWrapperMaxTokenAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L215)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L215)</sub>
 
 ??? example "Details"
 
@@ -817,7 +817,7 @@
 
 ### `getWrapperMintFeeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/MixinSystemSettings.sol#L223)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/MixinSystemSettings.sol#L223)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol)
+**Source:** [contracts/interfaces/ISynthetixBridgeToBase.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol)
 
 ## External Functions
 
 ### `finalizeEscrowMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `finalizeFeePeriodClose`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `finalizeRewardDeposit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ISynthetixBridgeToBase.sol#L15)</sub>
 
 ??? example "Details"
 

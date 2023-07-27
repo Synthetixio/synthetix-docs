@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ICircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ICircuitBreaker.sol)
+**Source:** [contracts/interfaces/ICircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ICircuitBreaker.sol)
 
 ## Views
 
 ### `circuitBroken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ICircuitBreaker.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ICircuitBreaker.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `isDeviationAboveThreshold`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ICircuitBreaker.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ICircuitBreaker.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `isInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ICircuitBreaker.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ICircuitBreaker.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `lastValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ICircuitBreaker.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ICircuitBreaker.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `priceDeviationThresholdFactor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ICircuitBreaker.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ICircuitBreaker.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `probeCircuitBreaker`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ICircuitBreaker.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ICircuitBreaker.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `resetLastValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.90.2-alpha/contracts/interfaces/ICircuitBreaker.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/interfaces/ICircuitBreaker.sol#L17)</sub>
 
 ??? example "Details"
 
