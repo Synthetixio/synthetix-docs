@@ -2,6 +2,32 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Ankaa (v2.91.1)
+
+**Published**: Jul 28, 2023
+
+**Codebase**: [v2.91.1](https://github.com/Synthetixio/synthetix/tree/v2.91.1)
+
+>
+
+## Release notes
+
+- Introduces new markets for: ETHBTC, XMR, ETC, COMP, MAV, YFI, MKR, RPL
+
+[SIP-2009: Adding ETH/BTC ratio to Synthetix Perps V2](https://sips.synthetix.io/sips/sip-2009/)
+
+[SIP-2023: Add XMR to Perps V2](https://sips.synthetix.io/sips/sip-2023/)
+
+[SIP-2024: Add ETC and COMP to Perps V2](https://sips.synthetix.io/sips/sip-2024/)
+
+[SIP-2025: Add MAV to Perps V2](https://sips.synthetix.io/sips/sip-2025/)
+
+[SIP-2026: Add YFI and MKR to Perps V2](https://sips.synthetix.io/sips/sip-2026/)
+
+[SIP-2027: Add RPL to Perps V2](https://sips.synthetix.io/sips/sip-2027/)
+
+---
+
 # Merak (v2.90.1)
 
 **Published**: Jun 14, 2023
