@@ -2,25 +2,25 @@
 
 ## Description
 
-**Source:** [contracts/TemporarilyOwned.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol)
+**Source:** [contracts/TemporarilyOwned.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol)
 
 ## Variables
 
 ### `expiryTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L6)</sub>
 
 **Type:** `uint256`
 
 ### `nominatedOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L5)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L5)</sub>
 
 **Type:** `address`
 
 ### `temporaryOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L4)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L4)</sub>
 
 **Type:** `address`
 
@@ -28,7 +28,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -46,15 +46,15 @@
 
     **Requires**
 
-    * [require(..., "Temp owner address cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L9)
+    * [require(..., "Temp owner address cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L9)
 
-    * [require(..., "Duration cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L10)
+    * [require(..., "Duration cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L10)
 
 ## Restricted Functions
 
 ### `nominateNewOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `setNewExpiryTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
     **Requires**
 
-    * [require(..., "New expiry time must be sooner than it currently is")](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L17)
+    * [require(..., "New expiry time must be sooner than it currently is")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L17)
 
     **Modifiers**
 
@@ -108,7 +108,7 @@
 
 ### `acceptOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -126,9 +126,9 @@
 
     **Requires**
 
-    * [require(..., "Ownership expired")](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L27)
+    * [require(..., "Ownership expired")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L27)
 
-    * [require(..., "You must be nominated before you can accept ownership")](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L28)
+    * [require(..., "You must be nominated before you can accept ownership")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L28)
 
     **Emits**
 
@@ -138,18 +138,18 @@
 
 ### `onlyTemporaryOwner`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L34)</sub>
 
 ## Events
 
 ### `OwnerChanged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L45)</sub>
 
 **Signature**: `OwnerChanged(address oldOwner, address newOwner)`
 
 ### `OwnerNominated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/TemporarilyOwned.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/TemporarilyOwned.sol#L44)</sub>
 
 **Signature**: `OwnerNominated(address newOwner)`

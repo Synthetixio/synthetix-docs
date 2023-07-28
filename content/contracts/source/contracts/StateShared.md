@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/StateShared.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol)
+**Source:** [contracts/StateShared.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L24)</sub>
 
 ??? example "Details"
 
@@ -26,13 +26,13 @@
 
     **Requires**
 
-    * [require(..., "Owner must be set")](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L26)
+    * [require(..., "Owner must be set")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L26)
 
 ## Views
 
 ### `associatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -52,7 +52,7 @@
 
 ### `addAssociatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `removeAssociatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `_addAssociatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -118,18 +118,18 @@
 
 ### `onlyAssociatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L63)</sub>
 
 ## Events
 
 ### `AssociatedContractAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L70)</sub>
 
 **Signature**: `AssociatedContractAdded(address associatedContract)`
 
 ### `AssociatedContractRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.0-alpha/contracts/StateShared.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/StateShared.sol#L71)</sub>
 
 **Signature**: `AssociatedContractRemoved(address associatedContract)`
