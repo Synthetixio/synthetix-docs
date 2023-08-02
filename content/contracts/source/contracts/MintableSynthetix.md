@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol)
+**Source:** [contracts/MintableSynthetix.sol](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `burnSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -94,7 +94,7 @@
 
 ### `mintSecondaryRewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `_mintSecondary`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `onlyAllowFromBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L26)</sub>
 
 ??? example "Details"
 
@@ -154,11 +154,11 @@
 
     **Requires**
 
-    * [require(..., "Can only be invoked by bridge")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L27)
+    * [require(..., "Can only be invoked by bridge")](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L27)
 
 ### `synthetixBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -178,4 +178,4 @@
 
 ### `onlyBridge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/MintableSynthetix.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/MintableSynthetix.sol#L32)</sub>

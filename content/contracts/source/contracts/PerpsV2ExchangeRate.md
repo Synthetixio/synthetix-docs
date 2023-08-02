@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2ExchangeRate.sol](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol)
+**Source:** [contracts/PerpsV2ExchangeRate.sol](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L19)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `associatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L67)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `offchainOracle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L73)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L73)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `offchainPriceFeedId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `resolveAndGetLatestPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L117)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L117)</sub>
 
 ??? example "Details"
 
@@ -108,11 +108,11 @@
 
     **Requires**
 
-    * [require(..., "No price feed found for asset")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L119)
+    * [require(..., "No price feed found for asset")](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L119)
 
 ### `resolveAndGetPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L109)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L109)</sub>
 
 ??? example "Details"
 
@@ -130,13 +130,13 @@
 
     **Requires**
 
-    * [require(..., "No price feed found for asset")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L111)
+    * [require(..., "No price feed found for asset")](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L111)
 
 ## Restricted Functions
 
 ### `addAssociatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -158,7 +158,7 @@
 
 ### `removeAssociatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -180,7 +180,7 @@
 
 ### `setOffchainOracle`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `setOffchainPriceFeedId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -232,7 +232,7 @@
 
 ### `updatePythPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -250,7 +250,7 @@
 
     **Requires**
 
-    * [require(..., "Not enough eth for paying the fee")](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L95)
+    * [require(..., "Not enough eth for paying the fee")](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L95)
 
     **Modifiers**
 
@@ -262,7 +262,7 @@
 
 ### `_calculatePrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L124)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L124)</sub>
 
 ??? example "Details"
 
@@ -280,7 +280,7 @@
 
 ### `_getPythPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L150)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L150)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@
 
 ### `_getPythPriceUnsafe`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L142)</sub>
 
 ??? example "Details"
 
@@ -318,30 +318,30 @@
 
 ### `onlyAssociatedContracts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L160)</sub>
 
 ## Events
 
 ### `AssociatedContractAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L167)</sub>
 
 **Signature**: `AssociatedContractAdded(address associatedContract)`
 
 ### `AssociatedContractRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L168)</sub>
 
 **Signature**: `AssociatedContractRemoved(address associatedContract)`
 
 ### `OffchainOracleUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L170)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L170)</sub>
 
 **Signature**: `OffchainOracleUpdated(address offchainOracle)`
 
 ### `OffchainPriceFeedIdUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.91.1/contracts/PerpsV2ExchangeRate.sol#L171)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.0-alpha/contracts/PerpsV2ExchangeRate.sol#L171)</sub>
 
 **Signature**: `OffchainPriceFeedIdUpdated(bytes32 assetId, bytes32 priceFeedId)`
