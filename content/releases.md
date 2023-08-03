@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Enif (v2.92.1)
+
+**Published**: Aug 2, 2023
+
+**Codebase**: [v2.92.1](https://github.com/Synthetixio/synthetix/tree/v2.92.1)
+
+> ## Release notes
+
+- Introduces new market for: WLD
+
+[SIP-2028: Add WLD to Perps V2](https://sips.synthetix.io/sips/sip-2028/)
+
+---
+
 # Ankaa (v2.91.1)
 
 **Published**: Jul 28, 2023
