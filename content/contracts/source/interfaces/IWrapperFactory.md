@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IWrapperFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.92.1/contracts/interfaces/IWrapperFactory.sol)
+**Source:** [contracts/interfaces/IWrapperFactory.sol](https://github.com/Synthetixio/synthetix/tree/v2.93.0-alpha/contracts/interfaces/IWrapperFactory.sol)
 
 ## Views
 
 ### `isWrapper`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.1/contracts/interfaces/IWrapperFactory.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.0-alpha/contracts/interfaces/IWrapperFactory.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `createWrapper`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.1/contracts/interfaces/IWrapperFactory.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.0-alpha/contracts/interfaces/IWrapperFactory.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `distributeFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.92.1/contracts/interfaces/IWrapperFactory.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.0-alpha/contracts/interfaces/IWrapperFactory.sol#L15)</sub>
 
 ??? example "Details"
 
