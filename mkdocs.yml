@@ -209,6 +209,7 @@ nav:
                 - Migration_RasalhagueOptimism: contracts/source/contracts/Migration_RasalhagueOptimism.md
                 - Migration_Saiph: contracts/source/contracts/Migration_Saiph.md
                 - Migration_SaiphOptimism: contracts/source/contracts/Migration_SaiphOptimism.md
+                - Migration_ScheatOptimismStep1: contracts/source/contracts/Migration_ScheatOptimismStep1.md
                 - Migration_Schedar: contracts/source/contracts/Migration_Schedar.md
                 - Migration_SchedarOptimism: contracts/source/contracts/Migration_SchedarOptimism.md
                 - Migration_Suhail: contracts/source/contracts/Migration_Suhail.md
