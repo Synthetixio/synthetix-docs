@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Scheat (v2.93.1)
+
+**Published**: Aug 9, 2023
+
+**Codebase**: [v2.93.1](https://github.com/Synthetixio/synthetix/tree/v2.93.1)
+
+> ## Release notes
+
+- Introduces new market for: USDT
+
+[SIP-2030: Add USDT to Perps V2](https://sips.synthetix.io/sips/sip-2030/)
+
+---
+
 # Enif (v2.92.1)
 
 **Published**: Aug 2, 2023
