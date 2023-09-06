@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/DirectIntegrationManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/DirectIntegrationManager.sol)
+**Source:** [contracts/DirectIntegrationManager.sol](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/DirectIntegrationManager.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/DirectIntegrationManager.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/DirectIntegrationManager.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `getExchangeParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/DirectIntegrationManager.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/DirectIntegrationManager.sol#L44)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `setExchangeParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/DirectIntegrationManager.sol#L102)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/DirectIntegrationManager.sol#L102)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `_setExchangeParameters`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/DirectIntegrationManager.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/DirectIntegrationManager.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
     **Requires**
 
-    * [require(..., "Address cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/DirectIntegrationManager.sol#L119)
+    * [require(..., "Address cannot be 0")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/DirectIntegrationManager.sol#L119)
 
     **Emits**
 
@@ -100,6 +100,6 @@
 
 ### `IntegrationParametersSet`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/DirectIntegrationManager.sol#L127)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/DirectIntegrationManager.sol#L127)</sub>
 
 **Signature**: `IntegrationParametersSet(address integration, bytes32 currencyKey, struct IDirectIntegrationManager.ParameterIntegrationSettings overrides)`

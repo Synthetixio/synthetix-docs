@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/BaseSynthetixBridge.sol](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol)
+**Source:** [contracts/BaseSynthetixBridge.sol](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol)
 
 ## Variables
 
 ### `initiationActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L40)</sub>
 
 **Type:** `bool`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L38)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `synthTransferReceived`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L119)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `synthTransferSent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L115)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L115)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@
 
 ### `finalizeSynthTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L177)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L177)</sub>
 
 ??? example "Details"
 
@@ -136,7 +136,7 @@
 
 ### `resumeInitiation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -154,7 +154,7 @@
 
     **Requires**
 
-    * [require(..., "Initiation not suspended")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L144)
+    * [require(..., "Initiation not suspended")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L144)
 
     **Modifiers**
 
@@ -166,7 +166,7 @@
 
 ### `suspendInitiation`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L137)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L137)</sub>
 
 ??? example "Details"
 
@@ -184,7 +184,7 @@
 
     **Requires**
 
-    * [require(..., "Initiation suspended")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L138)
+    * [require(..., "Initiation suspended")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L138)
 
     **Modifiers**
 
@@ -198,7 +198,7 @@
 
 ### `_incrementSynthsTransferCounter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L191)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L191)</sub>
 
 ??? example "Details"
 
@@ -216,7 +216,7 @@
 
 ### `_sumTransferAmounts`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L203)</sub>
 
 ??? example "Details"
 
@@ -234,11 +234,11 @@
 
     **Requires**
 
-    * [require(..., "Rates are invalid")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L210)
+    * [require(..., "Rates are invalid")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L210)
 
 ### `counterpart`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L90)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L90)</sub>
 
 ??? example "Details"
 
@@ -256,7 +256,7 @@
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -274,7 +274,7 @@
 
 ### `feePool`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -292,7 +292,7 @@
 
 ### `flexibleStorage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -310,7 +310,7 @@
 
 ### `initiatingActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L86)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L86)</sub>
 
 ??? example "Details"
 
@@ -328,11 +328,11 @@
 
     **Requires**
 
-    * [require(..., "Initiation deactivated")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L87)
+    * [require(..., "Initiation deactivated")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L87)
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -350,7 +350,7 @@
 
 ### `messenger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@
 
 ### `onlyAllowFromCounterpart`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -386,13 +386,13 @@
 
     **Requires**
 
-    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L95)
+    * [require(..., "Only the relayer can call this")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L95)
 
-    * [require(..., "Only a counterpart bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L96)
+    * [require(..., "Only a counterpart bridge can invoke")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L96)
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -410,7 +410,7 @@
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -428,7 +428,7 @@
 
 ### `systemStatus`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -448,7 +448,7 @@
 
 ### `initiateSynthTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L149)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L149)</sub>
 
 ??? example "Details"
 
@@ -466,11 +466,11 @@
 
     **Requires**
 
-    * [require(..., "Cannot send to zero address")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L154)
+    * [require(..., "Cannot send to zero address")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L154)
 
-    * [require(..., "Synth not enabled for cross chain transfer")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L155)
+    * [require(..., "Synth not enabled for cross chain transfer")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L155)
 
-    * [require(..., "Cannot initiate if synth rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L161)
+    * [require(..., "Cannot initiate if synth rate is invalid")](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L161)
 
     **Modifiers**
 
@@ -484,34 +484,34 @@
 
 ### `onlyCounterpart`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L130)</sub>
 
 ### `requireInitiationActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L125)</sub>
 
 ## Events
 
 ### `FinalizeSynthTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L232)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L232)</sub>
 
 **Signature**: `FinalizeSynthTransfer(bytes32 currencyKey, address destination, uint256 amount)`
 
 ### `InitiateSynthTransfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L231)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L231)</sub>
 
 **Signature**: `InitiateSynthTransfer(bytes32 currencyKey, address destination, uint256 amount)`
 
 ### `InitiationResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L229)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L229)</sub>
 
 **Signature**: `InitiationResumed()`
 
 ### `InitiationSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.93.1/contracts/BaseSynthetixBridge.sol#L227)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.0-alpha/contracts/BaseSynthetixBridge.sol#L227)</sub>
 
 **Signature**: `InitiationSuspended()`
