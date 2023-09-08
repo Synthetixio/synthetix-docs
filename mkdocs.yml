@@ -207,6 +207,11 @@ nav:
                 - Migration_PeacockOptimism: contracts/source/contracts/Migration_PeacockOptimism.md
                 - Migration_Rasalhague: contracts/source/contracts/Migration_Rasalhague.md
                 - Migration_RasalhagueOptimism: contracts/source/contracts/Migration_RasalhagueOptimism.md
+                - Migration_SabikOptimismStep1: contracts/source/contracts/Migration_SabikOptimismStep1.md
+                - Migration_SabikOptimismStep2: contracts/source/contracts/Migration_SabikOptimismStep2.md
+                - Migration_SabikOptimismStep3: contracts/source/contracts/Migration_SabikOptimismStep3.md
+                - Migration_SabikOptimismStep4: contracts/source/contracts/Migration_SabikOptimismStep4.md
+                - Migration_SabikOptimismStep5: contracts/source/contracts/Migration_SabikOptimismStep5.md
                 - Migration_Saiph: contracts/source/contracts/Migration_Saiph.md
                 - Migration_SaiphOptimism: contracts/source/contracts/Migration_SaiphOptimism.md
                 - Migration_ScheatOptimismStep1: contracts/source/contracts/Migration_ScheatOptimismStep1.md
