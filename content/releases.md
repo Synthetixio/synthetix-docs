@@ -2,6 +2,27 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Sabik (v2.94.1)
+
+**Published**: Sep 8, 2023
+
+**Codebase**: [v2.94.1](https://github.com/Synthetixio/synthetix/tree/v2.94.1)
+
+> ## Release notes
+
+- Perps V2 new market(s):
+  - RUNE, SUSHI, ZEC, XTZ, UMA, ENJ, ICP, XLM, 1INCH, EOS, CELO, ALGO, ZRX (SIP-2032)
+  - BAL, FXS, KNC, RNDR, ONE, PERP and ZIL (SIP-2033)
+  - SEI (SIP-2029)
+  - stETHETH (SIP-2031)
+
+[SIP-2029: Add SEI to Perps V2](https://sips.synthetix.io/sips/sip-2029/)
+[SIP-2031: Add stETH/ETH on Synthetix Perps](https://sips.synthetix.io/sips/sip-2031/)
+[SIP-2032: List all current DYDX assets on Perps v2](https://sips.synthetix.io/sips/sip-2032/)
+[SIP-2033: List assets with Chainlink and Pyth feed deployed on Perps V2](https://sips.synthetix.io/sips/sip-2033/)
+
+---
+
 # Scheat (v2.93.1)
 
 **Published**: Aug 9, 2023
