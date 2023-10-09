@@ -126,8 +126,8 @@ Both Alice and Bob each have 50% of the debt shares (100 / 200 shares)
 
 When the total debt pool value fluctuates, the shares will be used to calculate how much debt the minter owes. For example, if the debt pool now doubles to 400 sUSD, based on the above scenario:
 
-Alice who has 50% (100 shares), will have 200 sUSD debt
-Alice who has 50% (100 shares), will have 200 sUSD debt
+Alice who has 50% (100 shares), will have 200 sUSD debt <br />
+Bob who has 50% (100 shares), will have 200 sUSD debt
 
 Burning sUSD reduces the number of debt shares issued against a staker and the number of shares burnt is calculated with the total debt pool value. Continuing with the example above,
 
