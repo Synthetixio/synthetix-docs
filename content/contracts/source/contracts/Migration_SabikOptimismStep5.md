@@ -2,55 +2,55 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_SabikOptimismStep5.sol](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol)
+**Source:** [contracts/migrations/Migration_SabikOptimismStep5.sol](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L18)</sub>
 
 **Type:** `address`
 
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L31)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
 ### `perpsv2exchangerate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L28)</sub>
 
 **Type:** `contract PerpsV2ExchangeRate`
 
 ### `perpsv2marketsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L34)</sub>
 
 **Type:** `contract PerpsV2MarketSettings`
 
 ### `perpsv2marketstateseiperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L39)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstatestethethperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L42)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstatezrxperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L25)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L37)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -58,7 +58,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L62)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L62)</sub>
 
 ??? example "Details"
 
@@ -122,7 +122,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L161)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L161)</sub>
 
 ??? example "Details"
 
@@ -140,7 +140,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L186)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L186)</sub>
 
 ??? example "Details"
 
@@ -158,7 +158,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_29`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L203)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L203)</sub>
 
 ??? example "Details"
 
@@ -176,7 +176,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_56`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L220)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L220)</sub>
 
 ??? example "Details"
 
@@ -194,7 +194,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L168)</sub>
 
 ??? example "Details"
 
@@ -212,7 +212,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L175)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L175)</sub>
 
 ??? example "Details"
 
@@ -230,7 +230,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_28`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L192)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L192)</sub>
 
 ??? example "Details"
 
@@ -248,7 +248,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_55`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.94.1/contracts/migrations/Migration_SabikOptimismStep5.sol#L209)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/migrations/Migration_SabikOptimismStep5.sol#L209)</sub>
 
 ??? example "Details"
 
