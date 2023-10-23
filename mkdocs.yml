@@ -205,6 +205,7 @@ nav:
                 - Migration_NunkiOptimism: contracts/source/contracts/Migration_NunkiOptimism.md
                 - Migration_Peacock: contracts/source/contracts/Migration_Peacock.md
                 - Migration_PeacockOptimism: contracts/source/contracts/Migration_PeacockOptimism.md
+                - Migration_Phecda: contracts/source/contracts/Migration_Phecda.md
                 - Migration_Rasalhague: contracts/source/contracts/Migration_Rasalhague.md
                 - Migration_RasalhagueOptimism: contracts/source/contracts/Migration_RasalhagueOptimism.md
                 - Migration_SabikOptimismStep1: contracts/source/contracts/Migration_SabikOptimismStep1.md

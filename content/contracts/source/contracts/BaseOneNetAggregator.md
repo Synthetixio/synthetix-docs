@@ -2,19 +2,19 @@
 
 ## Description
 
-**Source:** [contracts/BaseOneNetAggregator.sol](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol)
+**Source:** [contracts/BaseOneNetAggregator.sol](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol)
 
 ## Variables
 
 ### `overrideTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L19)</sub>
 
 **Type:** `uint256`
 
 ### `resolver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L17)</sub>
 
 **Type:** `contract AddressResolver`
 
@@ -22,7 +22,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -42,7 +42,7 @@
 
 ### `decimals`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -60,7 +60,7 @@
 
 ### `getAnswer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -78,7 +78,7 @@
 
 ### `getRoundData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -96,7 +96,7 @@
 
 ### `getTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -114,7 +114,7 @@
 
 ### `latestRound`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -132,7 +132,7 @@
 
 ### `latestRoundData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `setOverrideTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -180,6 +180,6 @@
 
 ### `SetOverrideTimestamp`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.0-alpha/contracts/BaseOneNetAggregator.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.96.1/contracts/BaseOneNetAggregator.sol#L72)</sub>
 
 **Signature**: `SetOverrideTimestamp(uint256 timestamp)`
