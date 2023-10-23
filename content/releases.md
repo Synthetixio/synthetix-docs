@@ -2,6 +2,20 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Phecda (v2.96.1)
+
+**Published**: Oct 23, 2023
+
+**Codebase**: [v2.96.1](https://github.com/Synthetixio/synthetix/tree/v2.96.1)
+
+> ## Release notes
+
+- Deploy new rewards distributor to fix SIP-2036
+
+[SIP-2036: Revert Inflation Mint on L2 Distribution Failure](https://sips.synthetix.io/sips/sip-2036/)
+
+---
+
 # Sabik (v2.94.1)
 
 **Published**: Sep 8, 2023
