@@ -2,6 +2,31 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Aludra (v2.97.3)
+
+**Published**: Dec 6, 2023
+
+**Codebase**: [v2.97.3](https://github.com/Synthetixio/synthetix/tree/v2.97.3)
+
+> ## Release notes
+
+- Perps V2 new market(s):
+  - TIA (SIP-2035)
+  - IMX and TRB (SIP-2037)
+  - MEME (SIP-2039)
+  - ANKR, FET and GRT (SIP-2040)
+  - PYTH (SIP-2041)
+  - BONK (SIP-2042)
+
+[SIP-2035: List TIA on Synthetix Perps](https://sips.synthetix.io/sips/sip-2035/)
+[SIP-2037: List IMX amd TRB on Synthetix Perps](https://sips.synthetix.io/sips/sip-2037/)
+[SIP-2039: List MEME on Synthetix Perps](https://sips.synthetix.io/sips/sip-2039/)
+[SIP-2040: List ANKR, FET, GRT on Synthetix Perps](https://sips.synthetix.io/sips/sip-2040/)
+[SIP-2041: List PYTH on Synthetix Perps](https://sips.synthetix.io/sips/sip-2041/)
+[SIP-2042: List BONK on Synthetix Perps](https://sips.synthetix.io/sips/sip-2042/)
+
+---
+
 # Phecda (v2.96.1)
 
 **Published**: Oct 23, 2023
