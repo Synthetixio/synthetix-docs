@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol)
+**Source:** [contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol)
 
 ## Views
 
 ### `accountMergingIsOpen`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `accountVestingEntryIDs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `getAccountVestingEntryIDs`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `getVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `getVestingEntryClaimable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `getVestingQuantity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `getVestingSchedules`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `nextEntryId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `numVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `totalEscrowedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `totalEscrowedBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `totalVestedAccountBalance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `vestingSchedules`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -262,7 +262,7 @@
 
 ### `appendVestingEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -280,7 +280,7 @@
 
 ### `burnForMigration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@
 
 ### `createEscrowEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -316,7 +316,7 @@
 
 ### `importVestingEntries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -334,7 +334,7 @@
 
 ### `mergeAccount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -352,7 +352,7 @@
 
 ### `migrateAccountEscrowBalances`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -370,7 +370,7 @@
 
 ### `migrateVestingSchedule`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -388,7 +388,7 @@
 
 ### `nominateAccountToMerge`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -406,7 +406,7 @@
 
 ### `startMergingWindow`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -424,7 +424,7 @@
 
 ### `vest`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/RewardEscrowV2Frozen/IRewardEscrowV2Frozen.sol#L52)</sub>
 
 ??? example "Details"
 

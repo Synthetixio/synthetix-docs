@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/EmptyEtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/EmptyEtherWrapper.sol)
+**Source:** [contracts/EmptyEtherWrapper.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/EmptyEtherWrapper.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/EmptyEtherWrapper.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/EmptyEtherWrapper.sol#L6)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `totalIssuedSynths`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/EmptyEtherWrapper.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/EmptyEtherWrapper.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `distributeFees`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/EmptyEtherWrapper.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/EmptyEtherWrapper.sol#L14)</sub>
 
 ??? example "Details"
 

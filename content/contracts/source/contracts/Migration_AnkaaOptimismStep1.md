@@ -2,67 +2,67 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_AnkaaOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol)
+**Source:** [contracts/migrations/Migration_AnkaaOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L19)</sub>
 
 **Type:** `address`
 
 ### `exchangerates_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L49)</sub>
 
 **Type:** `contract ExchangeRates`
 
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L32)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
 ### `perpsv2exchangerate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L29)</sub>
 
 **Type:** `contract PerpsV2ExchangeRate`
 
 ### `perpsv2marketsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L35)</sub>
 
 **Type:** `contract PerpsV2MarketSettings`
 
 ### `perpsv2marketstatecompperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L43)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstateetcperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L40)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstateethbtcperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L26)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstatexmrperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L46)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L38)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -70,7 +70,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L255)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L255)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L280)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L280)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_29`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L297)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L297)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_56`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L314)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L314)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_83`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L331)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L331)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L262)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L269)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L269)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_28`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L286)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L286)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_55`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L303)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L303)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_82`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L320)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_AnkaaOptimismStep1.sol#L320)</sub>
 
 ??? example "Details"
 

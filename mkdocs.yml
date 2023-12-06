@@ -148,6 +148,8 @@ nav:
                 - Migration_AlpheratzOptimism: contracts/source/contracts/Migration_AlpheratzOptimism.md
                 - Migration_Alsephina: contracts/source/contracts/Migration_Alsephina.md
                 - Migration_AlsephinaOptimism: contracts/source/contracts/Migration_AlsephinaOptimism.md
+                - Migration_AludraOptimismStep1: contracts/source/contracts/Migration_AludraOptimismStep1.md
+                - Migration_AludraOptimismStep2: contracts/source/contracts/Migration_AludraOptimismStep2.md
                 - Migration_AnkaaOptimismStep1: contracts/source/contracts/Migration_AnkaaOptimismStep1.md
                 - Migration_AnkaaOptimismStep2: contracts/source/contracts/Migration_AnkaaOptimismStep2.md
                 - Migration_Aspidiske: contracts/source/contracts/Migration_Aspidiske.md

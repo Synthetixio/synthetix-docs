@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthRedeemer.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/interfaces/ISynthRedeemer.sol)
+**Source:** [contracts/interfaces/ISynthRedeemer.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/interfaces/ISynthRedeemer.sol)
 
 ## Views
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/interfaces/ISynthRedeemer.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/interfaces/ISynthRedeemer.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `redemptions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/interfaces/ISynthRedeemer.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/interfaces/ISynthRedeemer.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/interfaces/ISynthRedeemer.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/interfaces/ISynthRedeemer.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `deprecate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/interfaces/ISynthRedeemer.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/interfaces/ISynthRedeemer.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `redeem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/interfaces/ISynthRedeemer.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/interfaces/ISynthRedeemer.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `redeemAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/interfaces/ISynthRedeemer.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/interfaces/ISynthRedeemer.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -118,7 +118,7 @@
 
 ### `redeemPartial`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.2-alpha/contracts/interfaces/ISynthRedeemer.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/interfaces/ISynthRedeemer.sol#L19)</sub>
 
 ??? example "Details"
 
