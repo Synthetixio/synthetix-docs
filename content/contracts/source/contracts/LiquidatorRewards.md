@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/LiquidatorRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol)
+**Source:** [contracts/LiquidatorRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol)
 
 ## Structs
 
 ### `AccountRewardsEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L29)</sub>
 
 | Field                     | Type      | Description |
 | ------------------------- | --------- | ----------- |
@@ -19,25 +19,25 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L41)</sub>
 
 **Type:** `bytes32`
 
 ### `accumulatedRewardsPerShare`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L36)</sub>
 
 **Type:** `uint256`
 
 ### `entries`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L38)</sub>
 
 **Type:** `mapping(address => struct LiquidatorRewards.AccountRewardsEntry)`
 
 ### `initiated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L39)</sub>
 
 **Type:** `mapping(address => bool)`
 
@@ -45,7 +45,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -65,7 +65,7 @@
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L82)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L82)</sub>
 
 ??? example "Details"
 
@@ -83,7 +83,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -103,7 +103,7 @@
 
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L120)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L120)</sub>
 
 ??? example "Details"
 
@@ -127,7 +127,7 @@
 
 ### `issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -145,7 +145,7 @@
 
 ### `rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -163,7 +163,7 @@
 
 ### `synthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -181,7 +181,7 @@
 
 ### `synthetixDebtShare`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -201,7 +201,7 @@
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -223,7 +223,7 @@
 
 ### `updateEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -243,12 +243,12 @@
 
 ### `onlySynthetix`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L130)</sub>
 
 ## Events
 
 ### `RewardPaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/LiquidatorRewards.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/LiquidatorRewards.sol#L138)</sub>
 
 **Signature**: `RewardPaid(address user, uint256 reward)`

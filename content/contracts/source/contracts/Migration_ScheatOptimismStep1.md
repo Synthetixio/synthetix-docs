@@ -2,49 +2,49 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_ScheatOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol)
+**Source:** [contracts/migrations/Migration_ScheatOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L19)</sub>
 
 **Type:** `address`
 
 ### `exchangerates_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L40)</sub>
 
 **Type:** `contract ExchangeRates`
 
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L32)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
 ### `perpsv2exchangerate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L29)</sub>
 
 **Type:** `contract PerpsV2ExchangeRate`
 
 ### `perpsv2marketsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L35)</sub>
 
 **Type:** `contract PerpsV2MarketSettings`
 
 ### `perpsv2marketstateusdtperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L26)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L38)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -52,7 +52,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L46)</sub>
 
 ??? example "Details"
 
@@ -72,7 +72,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -92,7 +92,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L107)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L107)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L132)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L132)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L114)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L114)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.97.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L121)</sub>
 
 ??? example "Details"
 
