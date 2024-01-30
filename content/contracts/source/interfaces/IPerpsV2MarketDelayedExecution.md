@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2MarketDelayedExecution.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol)
+**Source:** [contracts/interfaces/IPerpsV2MarketDelayedExecution.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol)
 
 ## External Functions
 
 ### `cancelDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `cancelOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `executeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `executeOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketDelayedExecution.sol#L9)</sub>
 
 ??? example "Details"
 

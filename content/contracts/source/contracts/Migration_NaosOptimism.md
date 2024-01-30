@@ -2,61 +2,61 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_NaosOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol)
+**Source:** [contracts/migrations/Migration_NaosOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L19)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L26)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L37)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L46)</sub>
 
 **Type:** `address`
 
 ### `new_Synthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L44)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L44)</sub>
 
 **Type:** `address`
 
 ### `proxysynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L28)</sub>
 
 **Type:** `contract ProxyERC20`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L34)</sub>
 
 **Type:** `contract RewardsDistribution`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L30)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L30)</sub>
 
 **Type:** `contract SystemStatus`
 
 ### `tokenstatesynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L32)</sub>
 
 **Type:** `contract TokenState`
 
@@ -64,7 +64,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L48)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L50)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L50)</sub>
 
 ??? example "Details"
 
@@ -104,7 +104,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L84)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L98)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L98)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L111)</sub>
 
 ??? example "Details"
 
@@ -182,7 +182,7 @@
 
 ### `issuer_addSynths_8`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L136)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L136)</sub>
 
 ??? example "Details"
 
@@ -200,7 +200,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/migrations/Migration_NaosOptimism.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_NaosOptimism.sol#L91)</sub>
 
 ??? example "Details"
 

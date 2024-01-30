@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/BaseDebtMigrator.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol)
+**Source:** [contracts/BaseDebtMigrator.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `debtTransferReceived`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `debtTransferSent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L77)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L77)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `_incrementDebtTransferCounter`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `_issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -138,7 +138,7 @@
 
 ### `_messenger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `_rewardEscrowV2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@
 
 ### `_synthetixERC20`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.1/contracts/BaseDebtMigrator.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/BaseDebtMigrator.sol#L61)</sub>
 
 ??? example "Details"
 
