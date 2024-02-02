@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2MarketLiquidate.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketLiquidate.sol)
+**Source:** [contracts/interfaces/IPerpsV2MarketLiquidate.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketLiquidate.sol)
 
 ## External Functions
 
 ### `flagPosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketLiquidate.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketLiquidate.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `forceLiquidatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketLiquidate.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketLiquidate.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `liquidatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/interfaces/IPerpsV2MarketLiquidate.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketLiquidate.sol#L12)</sub>
 
 ??? example "Details"
 

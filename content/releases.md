@@ -2,20 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
-# Markeb (v2.98.1)
+# Markeb (v2.98.2)
 
-**Published**: Jan 25, 2024
+**Published**: Jan 30, 2024
 
-**Codebase**: [v2.98.1](https://github.com/Synthetixio/synthetix/tree/v2.98.1)
+**Codebase**: [v2.98.2](https://github.com/Synthetixio/synthetix/tree/v2.98.2)
 
 > ## Release notes
 
 - Perps V2 new market(s):
   - ORDI (SIP-2044)
   - JITO (SIP-2045)
+- Deprecated `sINR` synth
 
 [SIP-2044: List ORDI on Synthetix Perps](https://sips.synthetix.io/sips/sip-2044/)
 [SIP-2045: List JITO on Synthetix Perps](https://sips.synthetix.io/sips/sip-2045/)
+[SIP-2050: Deprecate sINR Synth](https://sips.synthetix.io/sips/sip-2050/)
 
 ---
 

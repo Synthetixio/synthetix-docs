@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/Issuer.sol)
+**Source:** [contracts/Issuer.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/Issuer.sol)
 
 ## Views
 
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/Issuer.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/Issuer.sol#L31)</sub>
 
 ??? example "Details"
 

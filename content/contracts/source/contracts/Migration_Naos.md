@@ -2,67 +2,67 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Naos.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol)
+**Source:** [contracts/migrations/Migration_Naos.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L20)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L27)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `issuer_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L40)</sub>
 
 **Type:** `contract Issuer`
 
 ### `new_Issuer_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L49)</sub>
 
 **Type:** `address`
 
 ### `new_Synthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L47)</sub>
 
 **Type:** `address`
 
 ### `proxysynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L29)</sub>
 
 **Type:** `contract Proxy`
 
 ### `rewardescrow_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L35)</sub>
 
 **Type:** `contract RewardEscrow`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L37)</sub>
 
 **Type:** `contract RewardsDistribution`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L31)</sub>
 
 **Type:** `contract SystemStatus`
 
 ### `tokenstatesynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L33)</sub>
 
 **Type:** `contract LegacyTokenState`
 
@@ -70,7 +70,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L64)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L64)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L92)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L92)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L119)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `addressresolver_rebuildCaches_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L144)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L144)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `issuer_addSynths_10`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L155)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L155)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Naos.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Naos.sol#L99)</sub>
 
 ??? example "Details"
 

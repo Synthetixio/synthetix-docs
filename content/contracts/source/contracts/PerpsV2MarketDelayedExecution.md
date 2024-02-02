@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2MarketDelayedExecution.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol)
+**Source:** [contracts/PerpsV2MarketDelayedExecution.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `cancelDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -46,9 +46,9 @@
 
     **Requires**
 
-    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L152)
+    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L152)
 
-    * [require(..., "use offchain method")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L154)
+    * [require(..., "use offchain method")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L154)
 
     **Modifiers**
 
@@ -56,7 +56,7 @@
 
 ### `cancelOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L169)</sub>
 
 ??? example "Details"
 
@@ -74,9 +74,9 @@
 
     **Requires**
 
-    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L173)
+    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L173)
 
-    * [require(..., "use onchain method")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L175)
+    * [require(..., "use onchain method")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L175)
 
     **Modifiers**
 
@@ -84,7 +84,7 @@
 
 ### `executeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L56)</sub>
 
 ??? example "Details"
 
@@ -102,13 +102,13 @@
 
     **Requires**
 
-    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L60)
+    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L60)
 
-    * [require(..., "use offchain method")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L62)
+    * [require(..., "use offchain method")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L62)
 
-    * [require(..., "executability not reached")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L65)
+    * [require(..., "executability not reached")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L65)
 
-    * [require(..., "order too old, use cancel")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L75)
+    * [require(..., "order too old, use cancel")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L75)
 
     **Modifiers**
 
@@ -116,7 +116,7 @@
 
 ### `executeOffchainDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L105)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L105)</sub>
 
 ??? example "Details"
 
@@ -134,15 +134,15 @@
 
     **Requires**
 
-    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L109)
+    * [require(..., "no previous order")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L109)
 
-    * [require(..., "use onchain method")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L111)
+    * [require(..., "use onchain method")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L111)
 
-    * [require(..., "price not updated")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L122)
+    * [require(..., "price not updated")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L122)
 
-    * [require(..., "executability not reached")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L123)
+    * [require(..., "executability not reached")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L123)
 
-    * [require(..., "order too old, use cancel")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L124)
+    * [require(..., "order too old, use cancel")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L124)
 
     **Modifiers**
 
@@ -152,7 +152,7 @@
 
 ### `_cancelDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L229)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L229)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `_confirmCanCancel`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L180)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L180)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `_confirmationWindowOver`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L198)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L198)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `_executeDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L273)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L273)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `_offchainAssetPriceRequireSystemChecks`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L213)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L213)</sub>
 
 ??? example "Details"
 
@@ -242,13 +242,13 @@
 
     **Requires**
 
-    * [require(..., "invalid, price is 0")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L218)
+    * [require(..., "invalid, price is 0")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L218)
 
-    * [require(..., "price divergence too high")](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L224)
+    * [require(..., "price divergence too high")](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L224)
 
 ### `_perpsV2ExchangeRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -266,7 +266,7 @@
 
 ### `emitDelayedOrderRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L352)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L352)</sub>
 
 ??? example "Details"
 
@@ -286,6 +286,6 @@
 
 ### `DelayedOrderRemoved`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/PerpsV2MarketDelayedExecution.sol#L339)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol#L339)</sub>
 
 **Signature**: `DelayedOrderRemoved(address account, bool isOffchain, uint256 currentRoundId, int256 sizeDelta, uint256 targetRoundId, uint256 commitDeposit, uint256 keeperDeposit, bytes32 trackingCode)`

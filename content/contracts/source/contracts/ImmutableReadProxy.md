@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/ImmutableReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/ImmutableReadProxy.sol)
+**Source:** [contracts/ImmutableReadProxy.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/ImmutableReadProxy.sol)
 
 ## Variables
 
 ### `target`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/ImmutableReadProxy.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/ImmutableReadProxy.sol#L9)</sub>
 
 **Type:** `address`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/ImmutableReadProxy.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/ImmutableReadProxy.sol#L11)</sub>
 
 ??? example "Details"
 

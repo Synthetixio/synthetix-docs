@@ -2,31 +2,31 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_Phecda.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol)
+**Source:** [contracts/migrations/Migration_Phecda.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L15)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L22)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `new_RewardsDistribution_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L32)</sub>
 
 **Type:** `address`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L24)</sub>
 
 **Type:** `contract RewardsDistribution`
 
@@ -34,7 +34,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L34)</sub>
 
 ??? example "Details"
 
@@ -54,7 +54,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -74,7 +74,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L42)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L74)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L74)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.2/contracts/migrations/Migration_Phecda.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_Phecda.sol#L67)</sub>
 
 ??? example "Details"
 
