@@ -9785,3 +9785,3961 @@ Here is the list of all contracts within the current Synthetix system.
                 <td><a target="_blank" href="https://goerli-optimism.etherscan.io/address/0x507cbddCF4e01396981190F0Ced8Ea37ca25b452">0x507cbddCF4e01396981190F0Ced8Ea37ca25b452</a>
                 </td>
               </tr></table>
+
+## SEPOLIA Optimism (L2)
+
+<table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
+              <tr>
+                <td>AddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/AddressResolver.sol">AddressResolver.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x352436A7d39F7250bfe2D3E1EC679A6e87c2F715">0x352436A7d39F7250bfe2D3E1EC679A6e87c2F715</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CircuitBreaker</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/CircuitBreaker.sol">CircuitBreaker.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x4E3e02627Dd2Ac579eafd6B33Cc5a569856b61D2">0x4E3e02627Dd2Ac579eafd6B33Cc5a569856b61D2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralEth</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/CollateralEth.sol">CollateralEth.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8908D0E448c20cBE65483f68f587107Ff069Fa3D">0x8908D0E448c20cBE65483f68f587107Ff069Fa3D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralManager</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/CollateralManager.sol">CollateralManager.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc9dc1B5DcB64f7a8D38c28741E2BeC2aa8C4aC9f">0xc9dc1B5DcB64f7a8D38c28741E2BeC2aa8C4aC9f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralManagerState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/CollateralManagerState.sol">CollateralManagerState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x25383baa8c3B5D96086B01976fCCA94a7520Ed23">0x25383baa8c3B5D96086B01976fCCA94a7520Ed23</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralShort</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/CollateralShort.sol">CollateralShort.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x66058F354ed038FE252F924FEc35F40dBBB98292">0x66058F354ed038FE252F924FEc35F40dBBB98292</a>
+                </td>
+              </tr>
+              <tr>
+                <td>CollateralUtil</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/CollateralUtil.sol">CollateralUtil.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x14561e58757C419b6c8138523ffE142081672503">0x14561e58757C419b6c8138523ffE142081672503</a>
+                </td>
+              </tr>
+              <tr>
+                <td>DappMaintenance</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/DappMaintenance.sol">DappMaintenance.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0D7EC97023D648e9FEeb90510A64D5957AfFe6e8">0x0D7EC97023D648e9FEeb90510A64D5957AfFe6e8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>DebtCache</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/DebtCache.sol">DebtCache.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xad2AB207da822dEd242b678f855ecbcA30860b58">0xad2AB207da822dEd242b678f855ecbcA30860b58</a>
+                </td>
+              </tr>
+              <tr>
+                <td>DebtMigratorOnOptimism</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/DebtMigratorOnOptimism.sol">DebtMigratorOnOptimism.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2cBA0Affe1b3C811Da78CBAf0fCD60A896a36da9">0x2cBA0Affe1b3C811Da78CBAf0fCD60A896a36da9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>DelegateApprovals</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/DelegateApprovals.sol">DelegateApprovals.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0947b21c804ba4BEDE09fd167c4764Db93A654c0">0x0947b21c804ba4BEDE09fd167c4764Db93A654c0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>DelegateApprovalsEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/EternalStorage.sol">EternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf75a0c6eDfE01196d04C54a7e81C2234964D001E">0xf75a0c6eDfE01196d04C54a7e81C2234964D001E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>DirectIntegrationManager</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/DirectIntegrationManager.sol">DirectIntegrationManager.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1bcE49b0543197c865477db206D11d553814859c">0x1bcE49b0543197c865477db206D11d553814859c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>EscrowChecker</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/EscrowChecker.sol">EscrowChecker.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xAf5E03bF7d4274873A23f343048e1cd3Edca22c0">0xAf5E03bF7d4274873A23f343048e1cd3Edca22c0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>EtherWrapper</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/EmptyEtherWrapper.sol">EmptyEtherWrapper.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x94dD4B5845BB6e13CD9cb8C9798660c7d1fC4863">0x94dD4B5845BB6e13CD9cb8C9798660c7d1fC4863</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ExchangeCircuitBreaker</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ExchangeCircuitBreaker.sol">ExchangeCircuitBreaker.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5E7ed002E882b125a96C02c4D55A642E9aA31D2b">0x5E7ed002E882b125a96C02c4D55A642E9aA31D2b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ExchangeRates</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ExchangeRates.sol">ExchangeRates.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd538CF9649fd65aAaaB92829e0Fc13f371A1d3fe">0xd538CF9649fd65aAaaB92829e0Fc13f371A1d3fe</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ExchangeSettlementLib</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ExchangeSettlementLib.sol">ExchangeSettlementLib.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3f60FFAef1eBd84E3C2d0C9C0E12388365D5dF12">0x3f60FFAef1eBd84E3C2d0C9C0E12388365D5dF12</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ExchangeState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ExchangeState.sol">ExchangeState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xDb48e982D07AD1A7D8CA87E00007d3e96e75C0cD">0xDb48e982D07AD1A7D8CA87E00007d3e96e75C0cD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Exchanger</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/Exchanger.sol">Exchanger.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe17b5ec91a4a68887634fef472cD1Ef556AabDb0">0xe17b5ec91a4a68887634fef472cD1Ef556AabDb0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>FeePool</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/FeePool.sol">FeePool.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x46D3a0308b70a221AE65865d62308197D4c95400">0x46D3a0308b70a221AE65865d62308197D4c95400</a>
+                </td>
+              </tr>
+              <tr>
+                <td>FeePoolEternalStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/FeePoolEternalStorage.sol">FeePoolEternalStorage.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xAC1d377Fb74aAEECA27C697432318066157Ff5c7">0xAC1d377Fb74aAEECA27C697432318066157Ff5c7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>FeePoolState</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/FeePoolState.sol">FeePoolState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd9542412D32d33D9eFAF478A997BD94476074B0b">0xd9542412D32d33D9eFAF478A997BD94476074B0b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>FlexibleStorage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/FlexibleStorage.sol">FlexibleStorage.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1af2636f34483fB709C91F8Bf4732429Fe681b1c">0x1af2636f34483fB709C91F8Bf4732429Fe681b1c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>FuturesMarketManager</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/FuturesMarketManager.sol">FuturesMarketManager.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x00D79DBB8e9fC344C015ADD2D4135E5181b61e66">0x00D79DBB8e9fC344C015ADD2D4135E5181b61e66</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Issuer</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/Issuer.sol">Issuer.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB737796d01b91f52177d55AF91225DB1c280a004">0xB737796d01b91f52177d55AF91225DB1c280a004</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Liquidator</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/Liquidator.sol">Liquidator.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xeB5b29e7a2E8a5F50D3BB81B2B6c223EF6Fd3BE8">0xeB5b29e7a2E8a5F50D3BB81B2B6c223EF6Fd3BE8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>LiquidatorRewards</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/LiquidatorRewards.sol">LiquidatorRewards.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xCD7A2bebaB14f40162287f5EA1635922803b1f01">0xCD7A2bebaB14f40162287f5EA1635922803b1f01</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Math</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/Math.sol">Math.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xee4287a9e9B89F880D50F68597E91a06f69dCc21">0xee4287a9e9B89F880D50F68597E91a06f69dCc21</a>
+                </td>
+              </tr>
+              <tr>
+                <td>OneNetAggregatorDebtRatio</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/OneNetAggregatorDebtRatio.sol">OneNetAggregatorDebtRatio.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1F5971B28458d456627d72fCDe826Bb9653386Cf">0x1F5971B28458d456627d72fCDe826Bb9653386Cf</a>
+                </td>
+              </tr>
+              <tr>
+                <td>OneNetAggregatorIssuedSynths</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/OneNetAggregatorIssuedSynths.sol">OneNetAggregatorIssuedSynths.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE37A7ad23755E37F9D06BcCC861ab5DF1fA2C83B">0xE37A7ad23755E37F9D06BcCC861ab5DF1fA2C83B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>OwnerRelayOnOptimism</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/OwnerRelayOnOptimism.sol">OwnerRelayOnOptimism.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xDd60917DB0Ee90e4c4976BEa9eFa7eDBa6EDdEaF">0xDd60917DB0Ee90e4c4976BEa9eFa7eDBa6EDdEaF</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecution1INCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf005Bffb43cD1B0d052EB258A5DD21f3cF416a01">0xf005Bffb43cD1B0d052EB258A5DD21f3cF416a01</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionAAVEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x25ed39Eb34f64bceeD9359EDc532fB2E11c67ce8">0x25ed39Eb34f64bceeD9359EDc532fB2E11c67ce8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionADAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7e20c0f09cC0Bb246a5A845b9d48bfA3fCeE1e40">0x7e20c0f09cC0Bb246a5A845b9d48bfA3fCeE1e40</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionALGOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x97cd65D9bF786FA43a55B6eB8C80668851b3F5a6">0x97cd65D9bF786FA43a55B6eB8C80668851b3F5a6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionANKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xEE40b9398971Ceb7EDfa57e6B0E28a2B71c6C952">0xEE40b9398971Ceb7EDfa57e6B0E28a2B71c6C952</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionAPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa0Ea9B6C544E4Df1351D1DEe426A70c4154F0D03">0xa0Ea9B6C544E4Df1351D1DEe426A70c4154F0D03</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionAPTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xAf0b585160353d32745752247Ecfd948f720724A">0xAf0b585160353d32745752247Ecfd948f720724A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionARBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0b3310D06e5aaB8bD3c1a08f1c6187DECdFe5c56">0x0b3310D06e5aaB8bD3c1a08f1c6187DECdFe5c56</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionATOMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x70b15FFC0f119748ae2575e4eAD4AA9229e9B197">0x70b15FFC0f119748ae2575e4eAD4AA9229e9B197</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionAUDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x95c26E65216824CcC72A786504035B585E95C3C3">0x95c26E65216824CcC72A786504035B585E95C3C3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionAVAXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x919f63540C03C5C9288E6e29DB5049D15AAd15ad">0x919f63540C03C5C9288E6e29DB5049D15AAd15ad</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionAXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xdca79dA12c24CEB882fa0a6B8e7D2eF94373474f">0xdca79dA12c24CEB882fa0a6B8e7D2eF94373474f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionBALPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBdF2953911E4Cfa43B5B384022B0CEc355c95A55">0xBdF2953911E4Cfa43B5B384022B0CEc355c95A55</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionBCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9F68966dF64d6496f5676ab30d11f6E6e05ad7d3">0x9F68966dF64d6496f5676ab30d11f6E6e05ad7d3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionBLURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x21021D65731eF93978311C4Ff2011771aA658395">0x21021D65731eF93978311C4Ff2011771aA658395</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionBNBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB092bF7D2f6bE537a29d6a6462f4913D92E2D504">0xB092bF7D2f6bE537a29d6a6462f4913D92E2D504</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionBONKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb10B75f20fC8d47297251a3551d6926D6D4057E0">0xb10B75f20fC8d47297251a3551d6926D6D4057E0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x43229D7C67e44AF09C9931CCB82506eaC76D664f">0x43229D7C67e44AF09C9931CCB82506eaC76D664f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionCELOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x27a058E3607129f3c4db2774C457b9b80eFb5BE0">0x27a058E3607129f3c4db2774C457b9b80eFb5BE0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionCOMPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA2b438824627B5A2Bad668e35df72489Adc9db8E">0xA2b438824627B5A2Bad668e35df72489Adc9db8E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionCRVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf645cD1A10Bdc153834f6c07F19142D72f1D2B85">0xf645cD1A10Bdc153834f6c07F19142D72f1D2B85</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionDOGEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x200801C26BD2181f1a5396988F31515A2Dfd39d1">0x200801C26BD2181f1a5396988F31515A2Dfd39d1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionDOTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0aacb1DDCF65d8347e3a2585cD78b423987cA04d">0x0aacb1DDCF65d8347e3a2585cD78b423987cA04d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionDYDXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa3abDBCE518c24C201292134dc7882D971edfb35">0xa3abDBCE518c24C201292134dc7882D971edfb35</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionENJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0F044E697E2273599C6e08fe2Cb50C35e86359BD">0x0F044E697E2273599C6e08fe2Cb50C35e86359BD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionEOSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x10f83932752AaC0142CD0Cbd096F5A4599b50302">0x10f83932752AaC0142CD0Cbd096F5A4599b50302</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionETCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x50910F0e8AA54Fa8C211449389069F69Bf13FF70">0x50910F0e8AA54Fa8C211449389069F69Bf13FF70</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionETHBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb7f7f4f752D901981702eA9CD10e0Ce5175a832F">0xb7f7f4f752D901981702eA9CD10e0Ce5175a832F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2A19D346e940174E1b97199adAB9D07F13508A3A">0x2A19D346e940174E1b97199adAB9D07F13508A3A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionEURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xfC68237Fc2C210AaD2d49E4442cd1582C660ebd1">0xfC68237Fc2C210AaD2d49E4442cd1582C660ebd1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionFETPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc8aC77e7CDA289A3e845b1C2c926eFffd013F956">0xc8aC77e7CDA289A3e845b1C2c926eFffd013F956</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionFILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xad22009De99658Dc7b924383c4A163faEb2562C2">0xad22009De99658Dc7b924383c4A163faEb2562C2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionFLOKIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xAD3E99cF097A15f7D9D057376FbC9E30C21E8263">0xAD3E99cF097A15f7D9D057376FbC9E30C21E8263</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionFLOWPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xEFDC184604EA2cb21A083f44fB06E2d340758d83">0xEFDC184604EA2cb21A083f44fB06E2d340758d83</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionFTMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x95949895D7CC9eEF57F98B3c571576519F1420A9">0x95949895D7CC9eEF57F98B3c571576519F1420A9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionFXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xFEE8D3026baB7F567778173a68987DbB9C00b60d">0xFEE8D3026baB7F567778173a68987DbB9C00b60d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionGBPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2CB2B3e26c42a9880E3d73867177a6058314E8e4">0x2CB2B3e26c42a9880E3d73867177a6058314E8e4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionGMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3E1B4dCEf7586D5f6f0D4b93323d0def28919CA6">0x3E1B4dCEf7586D5f6f0D4b93323d0def28919CA6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionGRTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xEdee5811585d7cc5BB5b46fd7072Ea40a63b0A17">0xEdee5811585d7cc5BB5b46fd7072Ea40a63b0A17</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionICPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd429b1F289e79D958C724Af7cE78D333e4612010">0xd429b1F289e79D958C724Af7cE78D333e4612010</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionIMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x852a2B8386782029D46B0604851e2C95E44a13dc">0x852a2B8386782029D46B0604851e2C95E44a13dc</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionINJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5357EB52d79a81547eb1e40EB9D5bBD683a0Ebee">0x5357EB52d79a81547eb1e40EB9D5bBD683a0Ebee</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionJTOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0D40BBFFAa21EEDf460210ba9F1e63b2f394D498">0x0D40BBFFAa21EEDf460210ba9F1e63b2f394D498</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionKNCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x28e93928EB4CcdbA64509ADCa4c9E44BC72B69e4">0x28e93928EB4CcdbA64509ADCa4c9E44BC72B69e4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionLDOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB83D67D255F200f35b4BFC76C940B46A427a3265">0xB83D67D255F200f35b4BFC76C940B46A427a3265</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionLINKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0d3ba9DEe8Ba45529ff5Db695672ec93e06268a5">0x0d3ba9DEe8Ba45529ff5Db695672ec93e06268a5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionLTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3f91E54E1533A27323C3c939e18269Ae1b90c862">0x3f91E54E1533A27323C3c939e18269Ae1b90c862</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionMATICPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xEB5bCc95f3B1ee53756aF25917ACc05bA430843D">0xEB5bCc95f3B1ee53756aF25917ACc05bA430843D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionMAVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xCA8c691E1803a55e573D0d1144B6e4ba805ED5A4">0xCA8c691E1803a55e573D0d1144B6e4ba805ED5A4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionMEMEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x64dDCFAB3A3df6604503b46D4528f6Af05681cE6">0x64dDCFAB3A3df6604503b46D4528f6Af05681cE6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionMKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xcB1f8CBe181136FFd6d47130347afdE24E1F83fb">0xcB1f8CBe181136FFd6d47130347afdE24E1F83fb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionNEARPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x76ac18078973A3C252c7cdcb4869dF0bA458c5A1">0x76ac18078973A3C252c7cdcb4869dF0bA458c5A1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionONEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xAaf39603ac757E0a3C09f81225BcF03eDdE5dd71">0xAaf39603ac757E0a3C09f81225BcF03eDdE5dd71</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionOPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3174d4bBb940BCED30F0acC71605204d2AE590C9">0x3174d4bBb940BCED30F0acC71605204d2AE590C9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionORDIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x295e15dB84c204141f2aAD11FbDb7F1E02a340FC">0x295e15dB84c204141f2aAD11FbDb7F1E02a340FC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionPEPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA21421c9adbc32C18126F143C606213C6838e2E8">0xA21421c9adbc32C18126F143C606213C6838e2E8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionPERPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2D725570FdF280612087d7CEEa76Fba411858c2a">0x2D725570FdF280612087d7CEEa76Fba411858c2a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionPYTHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0aCE16cDf71fC7DC1E91eb082015d70708252c3A">0x0aCE16cDf71fC7DC1E91eb082015d70708252c3A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionRNDRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xFaa1D4E0Ea7b9Ea3Db090405192ea6ee3EF20CA7">0xFaa1D4E0Ea7b9Ea3Db090405192ea6ee3EF20CA7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionRPLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x583F2be201eC286eD634a424De0984CFDC19e074">0x583F2be201eC286eD634a424De0984CFDC19e074</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionRUNEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0F2e8b4C993845eAE260dECDa855edDbEE000048">0x0F2e8b4C993845eAE260dECDa855edDbEE000048</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionSEIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xdbc9bF16710c4F8D6Aec278B788A3982F5890f0F">0xdbc9bF16710c4F8D6Aec278B788A3982F5890f0F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionSHIBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0CA91B2f2A047F292Dd7C2EEdF10874c7F6CC4AC">0x0CA91B2f2A047F292Dd7C2EEdF10874c7F6CC4AC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionSOLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x320195D9170dF99851BA41757C701C97ECf26d1F">0x320195D9170dF99851BA41757C701C97ECf26d1F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionSTETHETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xccA3ddfF0858911782381fc0851588f7a40E3133">0xccA3ddfF0858911782381fc0851588f7a40E3133</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionSTETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xaf0ACcb97cE1Ec6c6C1d579739208232E9000241">0xaf0ACcb97cE1Ec6c6C1d579739208232E9000241</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionSUIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xdF553D334463659f8d46e41eE640986Bd61d1303">0xdF553D334463659f8d46e41eE640986Bd61d1303</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionSUSHIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x78fa0f0640cD788C449cb3AA1e0d093762aB4aD0">0x78fa0f0640cD788C449cb3AA1e0d093762aB4aD0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionTIAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x417Bb773D7a0556610588aA530Ec2338BF04Ff30">0x417Bb773D7a0556610588aA530Ec2338BF04Ff30</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionTRBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x789C5bB342a61F98eA3bAC20F3116B1EA6f46487">0x789C5bB342a61F98eA3bAC20F3116B1EA6f46487</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionTRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB4AD503073D1f4f0a5EC0964ddc06d2fa9C03378">0xB4AD503073D1f4f0a5EC0964ddc06d2fa9C03378</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionUMAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x52B54Df16Ec914E4Beba0bD9EA65483F91ecd352">0x52B54Df16Ec914E4Beba0bD9EA65483F91ecd352</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionUNIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE091A7351175e576c3E7689caF671AC970Da9aDc">0xE091A7351175e576c3E7689caF671AC970Da9aDc</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionUSDTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x81EC39d911596D0EA579ddAeCB8fa48Ea7898194">0x81EC39d911596D0EA579ddAeCB8fa48Ea7898194</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionWLDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0AFb892F3a8cD24557CE3089F474d324A6Ad5e69">0x0AFb892F3a8cD24557CE3089F474d324A6Ad5e69</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionXAGPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x238aB31f0EDf804e4a47854FA8a03a3DaCbFe2f8">0x238aB31f0EDf804e4a47854FA8a03a3DaCbFe2f8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionXAUPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x25566ddA0bFd676CEB3e19df6a19930CC9f274E0">0x25566ddA0bFd676CEB3e19df6a19930CC9f274E0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionXLMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x66C232e164b60cc960a4b17205439F92611dc7E5">0x66C232e164b60cc960a4b17205439F92611dc7E5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionXMRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x174B0D08b78cd93390dEe5392dcbf1BC6EB345e3">0x174B0D08b78cd93390dEe5392dcbf1BC6EB345e3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionXRPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF1e3031231Be756fC22DB73459eB589A9F65Db0d">0xF1e3031231Be756fC22DB73459eB589A9F65Db0d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionXTZPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x23915a6C00162B372C256Ff1f603aB436A4Ae495">0x23915a6C00162B372C256Ff1f603aB436A4Ae495</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionYFIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD64E29fBB50af779aF34C5d481B662806406b04d">0xD64E29fBB50af779aF34C5d481B662806406b04d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionZECPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x692d11347Ae16a126C5c382919f9e8877e47C275">0x692d11347Ae16a126C5c382919f9e8877e47C275</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionZILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xDf32f3Bd479B5D430631945c822Bec1050484d1a">0xDf32f3Bd479B5D430631945c822Bec1050484d1a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedExecutionZRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedExecution.sol">PerpsV2MarketDelayedExecution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa0F7AE565d5b95C447881ec289107e32EDd628e6">0xa0F7AE565d5b95C447881ec289107e32EDd628e6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntent1INCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB16fFd3B5088BA8123D551B3Ec0a00cc9EC5d313">0xB16fFd3B5088BA8123D551B3Ec0a00cc9EC5d313</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentAAVEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x80DE2257Cd4BC4B32fEbBe39d132ba06Dd94e382">0x80DE2257Cd4BC4B32fEbBe39d132ba06Dd94e382</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentADAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA0A117933FB118db1C8FA15765Acb4B97aCEa0bB">0xA0A117933FB118db1C8FA15765Acb4B97aCEa0bB</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentALGOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xfC1534452193ABda3B7Ef040a351537fe951665B">0xfC1534452193ABda3B7Ef040a351537fe951665B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentANKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x48C3a3542AEd98A12ff8Ee7A6EAD71F327B25B6c">0x48C3a3542AEd98A12ff8Ee7A6EAD71F327B25B6c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentAPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF929965a6BcF6F279031AB314D609b54CDa073a1">0xF929965a6BcF6F279031AB314D609b54CDa073a1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentAPTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x140FBa32A1567A418BA9E9778F9A5BFbb5CE3c9D">0x140FBa32A1567A418BA9E9778F9A5BFbb5CE3c9D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentARBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x378e937d9111F482e6a3D4a1B4D0ef3d93D876Ba">0x378e937d9111F482e6a3D4a1B4D0ef3d93D876Ba</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentATOMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2a8e1b5E20F1661620bF0e47d470FA9483d01DF9">0x2a8e1b5E20F1661620bF0e47d470FA9483d01DF9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentAUDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6d92963643357570bFb5049693E1F19eB378dcb0">0x6d92963643357570bFb5049693E1F19eB378dcb0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentAVAXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x30Eb8f0014B8429ad6C81BeaA2017f5C306A4229">0x30Eb8f0014B8429ad6C81BeaA2017f5C306A4229</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentAXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xdc38548938b61827a95430136F3e80eb881481D3">0xdc38548938b61827a95430136F3e80eb881481D3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentBALPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB9b2b5B82BC8c2aD11ABd7314a9870d9110afA1D">0xB9b2b5B82BC8c2aD11ABd7314a9870d9110afA1D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentBCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x844555CD787188cBaA2eB36E58DF7Ee526Ee8aE5">0x844555CD787188cBaA2eB36E58DF7Ee526Ee8aE5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentBLURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x00F83D95AdEC7674cF7C8338690E666C25Ba56E9">0x00F83D95AdEC7674cF7C8338690E666C25Ba56E9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentBNBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9a8ed34f54DaA071071b164b6ae5376f80cE41F4">0x9a8ed34f54DaA071071b164b6ae5376f80cE41F4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentBONKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x51B43E3b78Fb66F3ABFD846D145Ca84Bc37899A7">0x51B43E3b78Fb66F3ABFD846D145Ca84Bc37899A7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0DE0150D12aE2fAa1c4704d3335A9f72CFE78b1e">0x0DE0150D12aE2fAa1c4704d3335A9f72CFE78b1e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentCELOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3D999423e9B559acc4122FA5Daf6fF086DF01FCD">0x3D999423e9B559acc4122FA5Daf6fF086DF01FCD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentCOMPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x617c153F55B44E3557e226189C7E5003DB2808Ac">0x617c153F55B44E3557e226189C7E5003DB2808Ac</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentCRVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x177D503a06F9bB3ead6DCA5360C2e39E1Dd9DE48">0x177D503a06F9bB3ead6DCA5360C2e39E1Dd9DE48</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentDOGEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB69618Ba9599Bf6f7B866369C13cE0FE94e9c83E">0xB69618Ba9599Bf6f7B866369C13cE0FE94e9c83E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentDOTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD1bF2Cd45F24751ba9743a050890f5c21b3008DC">0xD1bF2Cd45F24751ba9743a050890f5c21b3008DC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentDYDXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x811faDff66dB8B2Be64B9B679368EaFaD38aD663">0x811faDff66dB8B2Be64B9B679368EaFaD38aD663</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentENJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x358A619CbD65f0988CcfF665f86F056aad75e9fb">0x358A619CbD65f0988CcfF665f86F056aad75e9fb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentEOSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7589aE12e581e8fC5D14eA4Cd03C30b62b2B4ab4">0x7589aE12e581e8fC5D14eA4Cd03C30b62b2B4ab4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentETCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf5F9Aa38095d5a1e3C99a4A4E4F40a848b7401C2">0xf5F9Aa38095d5a1e3C99a4A4E4F40a848b7401C2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentETHBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x731Ed89e76A5CC48571ccFF5a5C602a9C32A8848">0x731Ed89e76A5CC48571ccFF5a5C602a9C32A8848</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x54e08ec995536b78321fEAED2D518e95D62B388A">0x54e08ec995536b78321fEAED2D518e95D62B388A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentEURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xCea694F1704D714C94A7322c22b5c16Bbd2403c2">0xCea694F1704D714C94A7322c22b5c16Bbd2403c2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentFETPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC919F948A156F9A5a92009FE0823C4B40A443A69">0xC919F948A156F9A5a92009FE0823C4B40A443A69</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentFILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x72a38FC0c46b4eEcA9583a715A0c66C3d7B1b15F">0x72a38FC0c46b4eEcA9583a715A0c66C3d7B1b15F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentFLOKIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x88790A9E0F3b09aE38EDC34C713E82F65db5c404">0x88790A9E0F3b09aE38EDC34C713E82F65db5c404</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentFLOWPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xEED61f0CB02f3B38923b1b6EAa939D5f04f431b6">0xEED61f0CB02f3B38923b1b6EAa939D5f04f431b6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentFTMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA65574A3FaE065F70C707702CF8cc637B0B750b1">0xA65574A3FaE065F70C707702CF8cc637B0B750b1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentFXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2C0C8f2E7b61D23eBEfb807A8e236983969A9757">0x2C0C8f2E7b61D23eBEfb807A8e236983969A9757</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentGBPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xfceA9A0D1267A44E9E4Dd1DA79c6EbfD49d53Ef4">0xfceA9A0D1267A44E9E4Dd1DA79c6EbfD49d53Ef4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentGMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7D9BE9d326Cd3757980540bacaED99d080F5644b">0x7D9BE9d326Cd3757980540bacaED99d080F5644b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentGRTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf2D9a9A2d79fFC36912bE87d504FA476A339E1Bb">0xf2D9a9A2d79fFC36912bE87d504FA476A339E1Bb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentICPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1190F5b556430bf08B1a38ba14B8EA8Dc4948569">0x1190F5b556430bf08B1a38ba14B8EA8Dc4948569</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentIMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x605523D44abe81e0e9d91A7Ae04c70b732723222">0x605523D44abe81e0e9d91A7Ae04c70b732723222</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentINJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9Fb27EEC93155db3D9C078544AAb9ADe1E1949B2">0x9Fb27EEC93155db3D9C078544AAb9ADe1E1949B2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentJTOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9A6690Eb972E25B6bac51C5EfAB7647Bc1b699f5">0x9A6690Eb972E25B6bac51C5EfAB7647Bc1b699f5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentKNCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa8a690d60331a00F67c31eA90f9F899173f1a034">0xa8a690d60331a00F67c31eA90f9F899173f1a034</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentLDOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2db0448891756B6d0f68faC7c8eA26ED126476fD">0x2db0448891756B6d0f68faC7c8eA26ED126476fD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentLINKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xbcbEA5bb3D68d4491af220bD2d1F793AF3fEaE92">0xbcbEA5bb3D68d4491af220bD2d1F793AF3fEaE92</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentLTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x833fb2D8dC68d2DC15becf619C0F2F4150aA1Aa7">0x833fb2D8dC68d2DC15becf619C0F2F4150aA1Aa7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentMATICPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE8fd0e679DB025D56e2cb807B0422072aC02DC88">0xE8fd0e679DB025D56e2cb807B0422072aC02DC88</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentMAVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe79749494Fbb5A4c9311C4dad8f3c40EdeA55C4c">0xe79749494Fbb5A4c9311C4dad8f3c40EdeA55C4c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentMEMEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x75B35e116449f734F198E9Ae473B6098c818c3d0">0x75B35e116449f734F198E9Ae473B6098c818c3d0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentMKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x12dDB46C5F821906df399dd4B982917F9e7C5A9A">0x12dDB46C5F821906df399dd4B982917F9e7C5A9A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentNEARPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xDb706ca67A1313e1bff898ABa4601451C9E09dc2">0xDb706ca67A1313e1bff898ABa4601451C9E09dc2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentONEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x829FA66D857c2Ab32518f26FeF91d74bbD2806Cf">0x829FA66D857c2Ab32518f26FeF91d74bbD2806Cf</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentOPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x220b34bB0BCc7D31E7893f16440D76384D6a94E8">0x220b34bB0BCc7D31E7893f16440D76384D6a94E8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentORDIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8aD63161b684ab5DFA42A3958C567CF88E6248A3">0x8aD63161b684ab5DFA42A3958C567CF88E6248A3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentPEPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x69C7D564FbCd8Ce2AA15A610b401280fB8815342">0x69C7D564FbCd8Ce2AA15A610b401280fB8815342</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentPERPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1CB33e3D4f733ad20753a89e138f58691Ba91395">0x1CB33e3D4f733ad20753a89e138f58691Ba91395</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentPYTHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x081362F0a752003de90a6bF0De80f60160b38CD4">0x081362F0a752003de90a6bF0De80f60160b38CD4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentRNDRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC8634511740f508423b50AE19bb159F75Ff47ea7">0xC8634511740f508423b50AE19bb159F75Ff47ea7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentRPLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x72A910e7D80996518ec88927e771920a03d464D9">0x72A910e7D80996518ec88927e771920a03d464D9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentRUNEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1369D74fBc353183A3E790E8BAC3a467f75bbBd2">0x1369D74fBc353183A3E790E8BAC3a467f75bbBd2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentSEIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1242b0EE38AB8F13e1a3CdDE99D2Ae4b0F79bd75">0x1242b0EE38AB8F13e1a3CdDE99D2Ae4b0F79bd75</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentSHIBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf8305181be287f3Fbda1d4EBD167b88eD39D2c17">0xf8305181be287f3Fbda1d4EBD167b88eD39D2c17</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentSOLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9693B5716B6Dbe340DC61346D6C89d3412917C3E">0x9693B5716B6Dbe340DC61346D6C89d3412917C3E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentSTETHETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2b8799CcBD204b58b9F0923Ec6BF836d4f90F779">0x2b8799CcBD204b58b9F0923Ec6BF836d4f90F779</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentSTETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3719d324c3D318F09014D7a27D7e43Ee1E8c1eBF">0x3719d324c3D318F09014D7a27D7e43Ee1E8c1eBF</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentSUIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9CeaC57BbFe32434074c0D340a083BE2b93fF125">0x9CeaC57BbFe32434074c0D340a083BE2b93fF125</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentSUSHIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2C1bEdA23501590A5F2418Ba0348F86b8F0d110D">0x2C1bEdA23501590A5F2418Ba0348F86b8F0d110D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentTIAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6A27E1eDa7c023e2f803430F8B40f0584c730bFc">0x6A27E1eDa7c023e2f803430F8B40f0584c730bFc</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentTRBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x79888Ca13Fb80A8827AAAC940B8493B2B80e614A">0x79888Ca13Fb80A8827AAAC940B8493B2B80e614A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentTRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc368624a2236F1491F59AA1b74e371D4d232152F">0xc368624a2236F1491F59AA1b74e371D4d232152F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentUMAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x51C8556Ca9099aa44ae89459A5b12E95Ea19BDB3">0x51C8556Ca9099aa44ae89459A5b12E95Ea19BDB3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentUNIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x090f69A3fAd37717C219862EB4Cd7C5202A16a14">0x090f69A3fAd37717C219862EB4Cd7C5202A16a14</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentUSDTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8f81CfE198420BD7d0257Ca9e4191e5087fd5422">0x8f81CfE198420BD7d0257Ca9e4191e5087fd5422</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentWLDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xbEBfA7Ed8f0c47028aC14212db7c32D5b9AbB286">0xbEBfA7Ed8f0c47028aC14212db7c32D5b9AbB286</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentXAGPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF80f610B9B324aa6A50F938690cb4F211c02206f">0xF80f610B9B324aa6A50F938690cb4F211c02206f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentXAUPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x265877592e613D4a79A0F678Da8013179837bBF4">0x265877592e613D4a79A0F678Da8013179837bBF4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentXLMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xEbc1d4A8f1ae244A3Aa81a2681b779924c1C7323">0xEbc1d4A8f1ae244A3Aa81a2681b779924c1C7323</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentXMRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC10854dC7f142Bc065FFfb99795581cbb8164cAd">0xC10854dC7f142Bc065FFfb99795581cbb8164cAd</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentXRPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE4A0CAdeB243B42805aB0DCBFb0ba7aD2Cba8c70">0xE4A0CAdeB243B42805aB0DCBFb0ba7aD2Cba8c70</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentXTZPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD7B601f982d8D4b625d1370a68B119b234E4f6C4">0xD7B601f982d8D4b625d1370a68B119b234E4f6C4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentYFIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x97203fF2824fc4513bC249FE1C88b867762eB933">0x97203fF2824fc4513bC249FE1C88b867762eB933</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentZECPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2f6B2d71eF966336336CD840253fD53Ea5a95788">0x2f6B2d71eF966336336CD840253fD53Ea5a95788</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentZILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x442ce92F92F25DA1bc84Ad967597D0350EFb94BE">0x442ce92F92F25DA1bc84Ad967597D0350EFb94BE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2DelayedIntentZRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketDelayedIntent.sol">PerpsV2MarketDelayedIntent.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xAb6fC2fcA267a145B4D81A800f9dC9D25Da81434">0xAb6fC2fcA267a145B4D81A800f9dC9D25Da81434</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ExchangeRate</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2ExchangeRate.sol">PerpsV2ExchangeRate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBDA9863eFC244692816814E686Bd3A94aEc604Ad">0xBDA9863eFC244692816814E686Bd3A94aEc604Ad</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2Market1INCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf3F09f79B7677D7469F31945439CA552Aa3792D1">0xf3F09f79B7677D7469F31945439CA552Aa3792D1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketAAVEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x23491e44a882ED0158CC2Cb55E1ABd08f533Bc61">0x23491e44a882ED0158CC2Cb55E1ABd08f533Bc61</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketADAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x531528e2e4740013101692E83cF68B12c31c2A82">0x531528e2e4740013101692E83cF68B12c31c2A82</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketALGOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe627E778776706243E63E3ce237d9e92ffec9cc0">0xe627E778776706243E63E3ce237d9e92ffec9cc0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketANKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x4f42aA707b061f8bE4b610Da565dE8b64eE37bfa">0x4f42aA707b061f8bE4b610Da565dE8b64eE37bfa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketAPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x439129f9458ccADbEb3418520E4d7346895692D3">0x439129f9458ccADbEb3418520E4d7346895692D3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketAPTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA5e35A9472B817B8F86d34cE873A03004146Aeb3">0xA5e35A9472B817B8F86d34cE873A03004146Aeb3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketARBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3d3d14869D0C0aB6F2E54f56afC3578B0cF4D564">0x3d3d14869D0C0aB6F2E54f56afC3578B0cF4D564</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketATOMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xde6E6eE8D24C44937FF29cC1E4850FB7D0cD2ABC">0xde6E6eE8D24C44937FF29cC1E4850FB7D0cD2ABC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketAUDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xDEe80af497f821fe4AbFC7b2bD1F6334dbc7103f">0xDEe80af497f821fe4AbFC7b2bD1F6334dbc7103f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketAVAXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8Af70a806a6115678Dc74B1782B047D6F9F69a5e">0x8Af70a806a6115678Dc74B1782B047D6F9F69a5e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketAXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x122B156B92CC4B2390af115c971B6e447334c71b">0x122B156B92CC4B2390af115c971B6e447334c71b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketBALPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x397e7583423a1cFdf0dB884ae8631f6418D77dDe">0x397e7583423a1cFdf0dB884ae8631f6418D77dDe</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketBCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa3C55BE41F4B810cEC9Da96d4B9ed14D37Eb624a">0xa3C55BE41F4B810cEC9Da96d4B9ed14D37Eb624a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketBLURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5b27083c4f352e264af08da286332f078bA792Ef">0x5b27083c4f352e264af08da286332f078bA792Ef</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketBNBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0c4Ae633eC09e64933c1C6d9c18De101cF477412">0x0c4Ae633eC09e64933c1C6d9c18De101cF477412</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketBONKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x61AAF157263CE6F161837f7c95D1b92de3F6bcd0">0x61AAF157263CE6F161837f7c95D1b92de3F6bcd0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x550A9781E9B8E0DB2Cc7AfDeA5393F30319B52DC">0x550A9781E9B8E0DB2Cc7AfDeA5393F30319B52DC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketCELOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa147F190A6964CEa11f45eF59CbCF875D79a6d43">0xa147F190A6964CEa11f45eF59CbCF875D79a6d43</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketCOMPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8aabCB4C1e77F044A5AF0bcC86f9bb22062b1Dfa">0x8aabCB4C1e77F044A5AF0bcC86f9bb22062b1Dfa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketCRVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x64C52F804B6B494d806235c01F244e4D7fAA25Fe">0x64C52F804B6B494d806235c01F244e4D7fAA25Fe</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketDOGEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x63C6906C53297e8ccdc4Ba84351f940460e49c52">0x63C6906C53297e8ccdc4Ba84351f940460e49c52</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketDOTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x30B98efF223b32a261073A598f5fB32c596734Ad">0x30B98efF223b32a261073A598f5fB32c596734Ad</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketDYDXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xeD8627893DC66f00Ee90Da53Ab06395106d4b60D">0xeD8627893DC66f00Ee90Da53Ab06395106d4b60D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketData</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketData.sol">PerpsV2MarketData.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2D19525051C491CD6F48e22a11E7e484aC172FCE">0x2D19525051C491CD6F48e22a11E7e484aC172FCE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketENJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xCA3B4d47513107F7D6Aa1BbDAcDf6Ce0eEC3022D">0xCA3B4d47513107F7D6Aa1BbDAcDf6Ce0eEC3022D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketEOSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x37992255107bC956c3Ce3372Bb4692F091C241B9">0x37992255107bC956c3Ce3372Bb4692F091C241B9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketETCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1138f7B279518cB9c26248A66f69231354BE288f">0x1138f7B279518cB9c26248A66f69231354BE288f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketETHBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x08542cE4F0d3fB7Df7FF64549dB23123cE20530d">0x08542cE4F0d3fB7Df7FF64549dB23123cE20530d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb62ca8cF0E1A52e0fDF7342CC372C2609F1800cE">0xb62ca8cF0E1A52e0fDF7342CC372C2609F1800cE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketEURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x14b1568725aeD20b5CD76e3E784F43310738a38b">0x14b1568725aeD20b5CD76e3E784F43310738a38b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketFETPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3bd0F1dE51450b710A4d7494a071e5aC863a6e67">0x3bd0F1dE51450b710A4d7494a071e5aC863a6e67</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketFILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2b72B2B4935A0152720221202271f6bcD3e13f72">0x2b72B2B4935A0152720221202271f6bcD3e13f72</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketFLOKIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD6F7A9987c0fA5cF783390Ea9BfC8B0B7135e2f6">0xD6F7A9987c0fA5cF783390Ea9BfC8B0B7135e2f6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketFLOWPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF8D374661cD26317648B23E02a442939B71f5502">0xF8D374661cD26317648B23E02a442939B71f5502</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketFTMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf84F9e5f156F780A1458e4b9C591917a8908F119">0xf84F9e5f156F780A1458e4b9C591917a8908F119</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketFXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB8eC4cA9B02Ba3024ef796ffE5893E6C8cE2C1Aa">0xB8eC4cA9B02Ba3024ef796ffE5893E6C8cE2C1Aa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketGBPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC814df7621afae50a0Eb4d32Ee895D066594E045">0xC814df7621afae50a0Eb4d32Ee895D066594E045</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketGMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x78727c8ca536a3e2cd04457EE7dF57c478e39044">0x78727c8ca536a3e2cd04457EE7dF57c478e39044</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketGRTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x59CBc126375B0723672af799cDFf0Cfc2B0dE704">0x59CBc126375B0723672af799cDFf0Cfc2B0dE704</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketICPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5a3Af57F1af12F6212f60d1069a0C314E3788ACC">0x5a3Af57F1af12F6212f60d1069a0C314E3788ACC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketIMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf5a4364892F960BeDEFeD762D3E3b1aD51eA41f0">0xf5a4364892F960BeDEFeD762D3E3b1aD51eA41f0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketINJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x550a7cE4B42163F3E816c7a56477D70505d372Cc">0x550a7cE4B42163F3E816c7a56477D70505d372Cc</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketJTOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x64f9d426c230a1326A84cd1BcbeB9c8fC1C0A1e6">0x64f9d426c230a1326A84cd1BcbeB9c8fC1C0A1e6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketKNCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd897f5485BB58983f3F24f3B28f05334E25b6338">0xd897f5485BB58983f3F24f3B28f05334E25b6338</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLDOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa1f2b7c267C0a477317145BAE51776eeD7A02810">0xa1f2b7c267C0a477317145BAE51776eeD7A02810</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLINKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xbF992870c742411DA65d2a945b8A3f11098efD6f">0xbF992870c742411DA65d2a945b8A3f11098efD6f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x09fAa539B6AD1aD130286Eb9c30052D1a9b4a02b">0x09fAa539B6AD1aD130286Eb9c30052D1a9b4a02b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidate1INCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x94d8EDF3aE03BED38b804e85dECff4ADbF8988c1">0x94d8EDF3aE03BED38b804e85dECff4ADbF8988c1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateAAVEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xEA1998Ae746e03A6241cEA036aC41F18dd7EFB74">0xEA1998Ae746e03A6241cEA036aC41F18dd7EFB74</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateADAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xeD777c5C552e1C05281fE7de3B52434CD6C93F0e">0xeD777c5C552e1C05281fE7de3B52434CD6C93F0e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateALGOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xebbe7D729BF043eF5421a75F82001bebBc3875F0">0xebbe7D729BF043eF5421a75F82001bebBc3875F0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateANKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x41cb970A0eA81B561f1A720D14f1a2b24161F436">0x41cb970A0eA81B561f1A720D14f1a2b24161F436</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateAPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD59B850F442aECD66cc78663b91D7A7Ee46ef3fD">0xD59B850F442aECD66cc78663b91D7A7Ee46ef3fD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateAPTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x883A43082a4393b5717faFc7AC880D8Aa0803537">0x883A43082a4393b5717faFc7AC880D8Aa0803537</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateARBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB50f684D78600A5C06f1E19Fa357Bc5e9A08811F">0xB50f684D78600A5C06f1E19Fa357Bc5e9A08811F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateATOMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x797000a25a29736369DBD35cdE8C38a68815265F">0x797000a25a29736369DBD35cdE8C38a68815265F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateAUDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf97fE0496BC4D0669117B2d76d20412Ad6b25B2A">0xf97fE0496BC4D0669117B2d76d20412Ad6b25B2A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateAVAXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x45c264C5d244a887014ECDDaf2A193c75Cd83D4A">0x45c264C5d244a887014ECDDaf2A193c75Cd83D4A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateAXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x40791AD11302ddc89a1B692e1dbbAAfE09Fc61ab">0x40791AD11302ddc89a1B692e1dbbAAfE09Fc61ab</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateBALPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8B3CD3A461eB16620c762fe002678ff676840546">0x8B3CD3A461eB16620c762fe002678ff676840546</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateBCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA7698a63EFFA72b7F8215E9c0E521fcDaE2869a3">0xA7698a63EFFA72b7F8215E9c0E521fcDaE2869a3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateBLURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x833b0c78d9600123C2083Cd76f415516ADdeB64B">0x833b0c78d9600123C2083Cd76f415516ADdeB64B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateBNBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xEB2841928c39deC1775645985069f3e336808477">0xEB2841928c39deC1775645985069f3e336808477</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateBONKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xad735Ed99C4aA89c93A077f0b59F9F055ed3b06E">0xad735Ed99C4aA89c93A077f0b59F9F055ed3b06E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x401FDe7e0e0C19786F701FB3Ec95A35D77F6961d">0x401FDe7e0e0C19786F701FB3Ec95A35D77F6961d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateCELOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8121aC3602eA98869a22DfA1d24d19659F3d70A9">0x8121aC3602eA98869a22DfA1d24d19659F3d70A9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateCOMPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x32C7584Ec8ca7f6FD6876157A1CDB214c958D384">0x32C7584Ec8ca7f6FD6876157A1CDB214c958D384</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateCRVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x756D8773f7ac0a8ddc31731C92e1d7C94B0e1429">0x756D8773f7ac0a8ddc31731C92e1d7C94B0e1429</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateDOGEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD3B848f04B4e0694C9C2923fA82fc8E7E073e6c3">0xD3B848f04B4e0694C9C2923fA82fc8E7E073e6c3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateDOTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3dCF4Fe1dddf190047578Dbb0e460A2a93776fF1">0x3dCF4Fe1dddf190047578Dbb0e460A2a93776fF1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateDYDXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3a3AFd4667d2Ba75AeCc65E11878c356C32c1791">0x3a3AFd4667d2Ba75AeCc65E11878c356C32c1791</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateENJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x967d78E94F9D704c816Aa37601d3cD8F9f758167">0x967d78E94F9D704c816Aa37601d3cD8F9f758167</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateEOSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x61A1b0b0B5Da274A37AB7d6e271EC332fe13Ab97">0x61A1b0b0B5Da274A37AB7d6e271EC332fe13Ab97</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateETCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x89E6F0Abb30E968CA73f0c53b3CD3A508b990Db3">0x89E6F0Abb30E968CA73f0c53b3CD3A508b990Db3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateETHBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7F79f7d9d8D2E6abccF8d862B7bfaB3c1ADaFcc7">0x7F79f7d9d8D2E6abccF8d862B7bfaB3c1ADaFcc7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf9B1BA133B3bC149b5d5dc5d0CaF88b36ffe81cA">0xf9B1BA133B3bC149b5d5dc5d0CaF88b36ffe81cA</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateEURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa38Dd98cB362890a69F39D4d61Dd1846d21AaA5f">0xa38Dd98cB362890a69F39D4d61Dd1846d21AaA5f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateFETPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x43f0848f18507D047B8687FCFb9e269B64B70b39">0x43f0848f18507D047B8687FCFb9e269B64B70b39</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateFILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF4387d9C8EB668eEecFa1fC249585ad14fDA060b">0xF4387d9C8EB668eEecFa1fC249585ad14fDA060b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateFLOKIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9e710BCe14294B7728250DC990CFa60EC3943A62">0x9e710BCe14294B7728250DC990CFa60EC3943A62</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateFLOWPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe1089F25De0f203f1d68cDdE5FDfC6ABd6d2e346">0xe1089F25De0f203f1d68cDdE5FDfC6ABd6d2e346</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateFTMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x775CcD342b5e3101e36724773d2CfD1c3612B302">0x775CcD342b5e3101e36724773d2CfD1c3612B302</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateFXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x30f07D72e689d164cdc78dDa1b04947537093C37">0x30f07D72e689d164cdc78dDa1b04947537093C37</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateGBPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7B8C58bcB992B042863A8a1CD1FEb85BAd5e8A78">0x7B8C58bcB992B042863A8a1CD1FEb85BAd5e8A78</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateGMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf232ADcde80009eead7033F3982dc4711bE5f539">0xf232ADcde80009eead7033F3982dc4711bE5f539</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateGRTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc18cfa28b3C8a455DFbdac3A00B47b6e1D19928c">0xc18cfa28b3C8a455DFbdac3A00B47b6e1D19928c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateICPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE9CE5cFE6135D3B38a434390e462fbB79Ea4D708">0xE9CE5cFE6135D3B38a434390e462fbB79Ea4D708</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateIMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf2BA98D2A6A43De8DBFD45451c2cF0dF3Da7d0aE">0xf2BA98D2A6A43De8DBFD45451c2cF0dF3Da7d0aE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateINJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2616E07A06632FC003bF019bce683a0f08817E67">0x2616E07A06632FC003bF019bce683a0f08817E67</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateJTOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x071df6D0105a51EB7EfD32320BC966978C6F8332">0x071df6D0105a51EB7EfD32320BC966978C6F8332</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateKNCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC1884762815c7F973ABCE3be53aCA222C7D4feF7">0xC1884762815c7F973ABCE3be53aCA222C7D4feF7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateLDOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA875340Da755C992a071656FE6fb4723099C58F8">0xA875340Da755C992a071656FE6fb4723099C58F8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateLINKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE898E9111c987360C5052731f9c34d3Dc7750f70">0xE898E9111c987360C5052731f9c34d3Dc7750f70</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateLTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb3De9E9d9cB7cef362E7dE3eABB3edCA986771c0">0xb3De9E9d9cB7cef362E7dE3eABB3edCA986771c0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateMATICPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x413630Ff78847a0c089028c6DB3A313dF670F08a">0x413630Ff78847a0c089028c6DB3A313dF670F08a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateMAVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc3aF98aa6680B894a859A1e03EaCf1ad14Fcbe2e">0xc3aF98aa6680B894a859A1e03EaCf1ad14Fcbe2e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateMEMEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8ead010D7cCcE887e6f3B04D1539AD467Ac565B4">0x8ead010D7cCcE887e6f3B04D1539AD467Ac565B4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateMKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7585ee4088B3e1d0F887fB4C3A5080aD7fa01258">0x7585ee4088B3e1d0F887fB4C3A5080aD7fa01258</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateNEARPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe204Ac2eEd6D49047645e395331E1b1AfB371a6E">0xe204Ac2eEd6D49047645e395331E1b1AfB371a6E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateONEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xcD0EFF193325298b3579dc3D0A84D2B511e0cdF2">0xcD0EFF193325298b3579dc3D0A84D2B511e0cdF2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateOPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xccCC18CccEa85525eEa0aDd7Ca34c0a9645EDf09">0xccCC18CccEa85525eEa0aDd7Ca34c0a9645EDf09</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateORDIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xeFaCFdBe04b41B354d51d4A88210d29567d8E2AC">0xeFaCFdBe04b41B354d51d4A88210d29567d8E2AC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidatePEPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc52a7D57B3EBFee52b7B8c99fE3Ab66C0Bdf1Fd5">0xc52a7D57B3EBFee52b7B8c99fE3Ab66C0Bdf1Fd5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidatePERPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8122ce9966802308bBCEE4Ed437BcF2864d397BD">0x8122ce9966802308bBCEE4Ed437BcF2864d397BD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidatePYTHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC55DBbF1440cF55869EE9352449a9B086Cc44E55">0xC55DBbF1440cF55869EE9352449a9B086Cc44E55</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateRNDRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa839Da4300A2be763C058DBd5aBae8E1b3EDDa56">0xa839Da4300A2be763C058DBd5aBae8E1b3EDDa56</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateRPLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x813C17f1c4872cd46DDdeF2B01Cc2408E339137D">0x813C17f1c4872cd46DDdeF2B01Cc2408E339137D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateRUNEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x66d77839D53a2e4e6e914C6cee4B4F4f8dC53ef4">0x66d77839D53a2e4e6e914C6cee4B4F4f8dC53ef4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateSEIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5a96B3be169eEB2fd0f8557E80FD672682C8b800">0x5a96B3be169eEB2fd0f8557E80FD672682C8b800</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateSHIBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x81091f40f3dAD80a863278C476F5bE58cE99457F">0x81091f40f3dAD80a863278C476F5bE58cE99457F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateSOLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x28333654363a8447136Ed8cBdc4fff12E95ccC0F">0x28333654363a8447136Ed8cBdc4fff12E95ccC0F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateSTETHETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xcbC6540003B7f277A89925875931c2487d4DfDd5">0xcbC6540003B7f277A89925875931c2487d4DfDd5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateSTETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x06C155aC5Af487d8062E191a14bC66d2277797A9">0x06C155aC5Af487d8062E191a14bC66d2277797A9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateSUIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x624D23C6180383bD14068CF5662fA88a1707e6c4">0x624D23C6180383bD14068CF5662fA88a1707e6c4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateSUSHIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x960f16Fd25cFa108DDE27791d05392cD244fD7bb">0x960f16Fd25cFa108DDE27791d05392cD244fD7bb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateTIAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd9f1B24E52670a2Df7d35a62ADdc31fcf882c2aa">0xd9f1B24E52670a2Df7d35a62ADdc31fcf882c2aa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateTRBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2a3aF265F023Df3354AFc9404FD76Ea2C10d90F6">0x2a3aF265F023Df3354AFc9404FD76Ea2C10d90F6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateTRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5a97adD21b2092d48af84696960e3fE80Ab2AD3D">0x5a97adD21b2092d48af84696960e3fE80Ab2AD3D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateUMAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf70cd51746D12702ab127e39e2d05d49048e520B">0xf70cd51746D12702ab127e39e2d05d49048e520B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateUNIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8E8CB964a972CfBAFE6470e1729F0188E0A4137F">0x8E8CB964a972CfBAFE6470e1729F0188E0A4137F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateUSDTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x591E399c87aBa11e5EEE041F198305266D63C92B">0x591E399c87aBa11e5EEE041F198305266D63C92B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateWLDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1b7847a0A30C2AF6AB4337dFA34ece9A9C6426a1">0x1b7847a0A30C2AF6AB4337dFA34ece9A9C6426a1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateXAGPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb04F33e02DdA68cAF8ddD14928b626616f12eCD6">0xb04F33e02DdA68cAF8ddD14928b626616f12eCD6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateXAUPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd05600Aa6C65c6b1b10F4E83Beb9807024d97dd3">0xd05600Aa6C65c6b1b10F4E83Beb9807024d97dd3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateXLMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3415726F4B2F451FC21f94304078739Cf23C80f5">0x3415726F4B2F451FC21f94304078739Cf23C80f5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateXMRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x38dE2c7483981110702dc3f2e49b4348b7dbdB71">0x38dE2c7483981110702dc3f2e49b4348b7dbdB71</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateXRPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x477432907D61E84C5A2Ec105CdA783c5199e8D71">0x477432907D61E84C5A2Ec105CdA783c5199e8D71</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateXTZPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xCa12D969d021a330d38c189Bc1bA701f8189D21C">0xCa12D969d021a330d38c189Bc1bA701f8189D21C</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateYFIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x50394BC72e3a0C3fa5436df196057BB02cbD07a2">0x50394BC72e3a0C3fa5436df196057BB02cbD07a2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateZECPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x92778e1ffB77693092C6781E9284fdA912A1Cdf7">0x92778e1ffB77693092C6781E9284fdA912A1Cdf7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateZILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x814A82e8211d50b485C6f87Fa4044714c6A1cCAD">0x814A82e8211d50b485C6f87Fa4044714c6A1cCAD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketLiquidateZRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketLiquidate.sol">PerpsV2MarketLiquidate.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x65f721021C972faFe14B5E7176Fc43E95FAA2820">0x65f721021C972faFe14B5E7176Fc43E95FAA2820</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketMATICPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xbEF96640159109042F1B7265e22503eb963fB59D">0xbEF96640159109042F1B7265e22503eb963fB59D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketMAVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa72b3cF9e3e51dE49F0FaC8402C70AB5c163b42F">0xa72b3cF9e3e51dE49F0FaC8402C70AB5c163b42F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketMEMEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x05eea6bd6Fa833Becf16CD3345a480799aF6940D">0x05eea6bd6Fa833Becf16CD3345a480799aF6940D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketMKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x07F256B7Bf35373cd1d36af406A3DF1c42fb3B80">0x07F256B7Bf35373cd1d36af406A3DF1c42fb3B80</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketNEARPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xFd6F52438a8E5ac9aD9ace656ff36c0893e3BB49">0xFd6F52438a8E5ac9aD9ace656ff36c0893e3BB49</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketONEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xDc5AA37846c077c4Cd37ca4f1F940C24Fbaf7E37">0xDc5AA37846c077c4Cd37ca4f1F940C24Fbaf7E37</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketOPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA5A8b4C6892098C497fCe75c6EfCee22de816bC8">0xA5A8b4C6892098C497fCe75c6EfCee22de816bC8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketORDIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x766E0D33787B0452b56E5b32e0dc8EA8F5B11277">0x766E0D33787B0452b56E5b32e0dc8EA8F5B11277</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketPEPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x41076E867566c22435a6A9f8Ba7997570ca6d314">0x41076E867566c22435a6A9f8Ba7997570ca6d314</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketPERPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC80CeC9Ce360832AFF4464F05A409e02999f2Cd6">0xC80CeC9Ce360832AFF4464F05A409e02999f2Cd6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketPYTHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2fBc05692919C17A480AC7ce3A5b89Cc1D07Ca83">0x2fBc05692919C17A480AC7ce3A5b89Cc1D07Ca83</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketRNDRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6F3dAcd316347092988B69EEF41821ce6015abe9">0x6F3dAcd316347092988B69EEF41821ce6015abe9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketRPLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x59802b9d656581f77B81F0AbaC781529ddE53763">0x59802b9d656581f77B81F0AbaC781529ddE53763</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketRUNEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x03a92053D1F69a217C18AD465C8cA89C7eDc6689">0x03a92053D1F69a217C18AD465C8cA89C7eDc6689</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketSEIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8635b77F46AAe2754C458424DA3b81A4ae224D4F">0x8635b77F46AAe2754C458424DA3b81A4ae224D4F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketSHIBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6bb821777814C5ac99A663B58e816479a4dca6e7">0x6bb821777814C5ac99A663B58e816479a4dca6e7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketSOLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x906628240e8E766745770154FCf3240aDE0da828">0x906628240e8E766745770154FCf3240aDE0da828</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketSTETHETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x4FcD252c08F8eD5b0f93D927F453FEeB513213cf">0x4FcD252c08F8eD5b0f93D927F453FEeB513213cf</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketSTETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x817F3F46d741852859B307b18916fF7aBb46a5d0">0x817F3F46d741852859B307b18916fF7aBb46a5d0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketSUIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x930832bff1b6D0d2DD920aC86154D27C8A83Fc2a">0x930832bff1b6D0d2DD920aC86154D27C8A83Fc2a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketSUSHIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD5c6D96154B0C74cd887c4dE07103A47c6cD75A2">0xD5c6D96154B0C74cd887c4dE07103A47c6cD75A2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketSettings</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketSettings.sol">PerpsV2MarketSettings.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x34ffA8af41B1B3077e7b40cC19B6906c3125Cd0c">0x34ffA8af41B1B3077e7b40cC19B6906c3125Cd0c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketState1INCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7a1A217D5cF0ff084c3053bdd123D425bADb6488">0x7a1A217D5cF0ff084c3053bdd123D425bADb6488</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateAAVEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5982cd52a23E4a36362fDBD0f741dd17c8a494b7">0x5982cd52a23E4a36362fDBD0f741dd17c8a494b7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateADAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1F6996e58c0De9c7e94aBa4681957803Ee25ee1f">0x1F6996e58c0De9c7e94aBa4681957803Ee25ee1f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateALGOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x931f4EC3c9632883d93585258FEee9b6F6C0eC89">0x931f4EC3c9632883d93585258FEee9b6F6C0eC89</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateANKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x647A15Cba7F859F1192aDEEb2C36b6Ab39Ce071C">0x647A15Cba7F859F1192aDEEb2C36b6Ab39Ce071C</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateAPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD21624ca16F9C57f2ceF3d046eB7D7cAf5f54cB4">0xD21624ca16F9C57f2ceF3d046eB7D7cAf5f54cB4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateAPTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xbCfeFE75a5bDEd6e6739e9EcD956fABeEFBA183B">0xbCfeFE75a5bDEd6e6739e9EcD956fABeEFBA183B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateARBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe468E2014363ba6ADe2D7EF0124134D14e8f7Af0">0xe468E2014363ba6ADe2D7EF0124134D14e8f7Af0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateATOMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5fDa66Ed855EA186ed6719F866775079E8957334">0x5fDa66Ed855EA186ed6719F866775079E8957334</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateAUDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xbA59D241dEE2146b1Be366C70B54ED638a168530">0xbA59D241dEE2146b1Be366C70B54ED638a168530</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateAVAXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8960d18CfF0414FD419ab9d16d2f6a276e2e1589">0x8960d18CfF0414FD419ab9d16d2f6a276e2e1589</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateAXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x18755fd7a3E6fDA69ebF9ce8b43C809fe3d3eC59">0x18755fd7a3E6fDA69ebF9ce8b43C809fe3d3eC59</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateBALPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7a74802d0B062364bFd59D28286f82308Bc84864">0x7a74802d0B062364bFd59D28286f82308Bc84864</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateBCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xcf3bBd69015eea9e3FF20E708ce13087Ebb27416">0xcf3bBd69015eea9e3FF20E708ce13087Ebb27416</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateBLURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1634fa451d660fF74F85aCcc9b2C82E7af431C24">0x1634fa451d660fF74F85aCcc9b2C82E7af431C24</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateBNBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8BAEB830c492177323596cbd1fEcA77Ff1E45ac0">0x8BAEB830c492177323596cbd1fEcA77Ff1E45ac0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateBONKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5e3578813AFFd46603bcE71220D0C89E03246d5C">0x5e3578813AFFd46603bcE71220D0C89E03246d5C</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1781D6a7bBa67e280c3E1064CF89b8fD37B4E61b">0x1781D6a7bBa67e280c3E1064CF89b8fD37B4E61b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateCELOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBD5DF3772dd240b5e0495020FF091f5785D37514">0xBD5DF3772dd240b5e0495020FF091f5785D37514</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateCOMPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x070A7545b3e8E2da4FB80a376eedA1903d3A4F47">0x070A7545b3e8E2da4FB80a376eedA1903d3A4F47</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateCRVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9C25375eC7eC02e9d4005f4d1AfD102bc6E0e5Cd">0x9C25375eC7eC02e9d4005f4d1AfD102bc6E0e5Cd</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateDOGEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2500FDEc2C6bAb607De9E1935C9A4c5fBCe171F7">0x2500FDEc2C6bAb607De9E1935C9A4c5fBCe171F7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateDOTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x907b6C505089eE3c1C9fF408fEA08803b3aFd023">0x907b6C505089eE3c1C9fF408fEA08803b3aFd023</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateDYDXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA3c7570E39e116d371B54f7Fb9B0A2d0CA972C81">0xA3c7570E39e116d371B54f7Fb9B0A2d0CA972C81</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateENJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x16aAd97B7640ba747EdC1bD5aB0fF3D8eC932006">0x16aAd97B7640ba747EdC1bD5aB0fF3D8eC932006</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateEOSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x39940dbF59044dA28d84809768bF9166491d6A08">0x39940dbF59044dA28d84809768bF9166491d6A08</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateETCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc85D9ACd99E9216Ba2fcef58f5355776aCF2252b">0xc85D9ACd99E9216Ba2fcef58f5355776aCF2252b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateETHBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3B89Ef25BDDcA74b92e560857C41f45aaee3E323">0x3B89Ef25BDDcA74b92e560857C41f45aaee3E323</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x43f5DF3AF588eB36028c26BeC54DBC054953B467">0x43f5DF3AF588eB36028c26BeC54DBC054953B467</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateEURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC70acc95C8b816433d3650E2b8E0c0B40e2Cfd0E">0xC70acc95C8b816433d3650E2b8E0c0B40e2Cfd0E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateFETPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x99C436Df9F3EAaEb5c7BB4ee627a696e9691D7B0">0x99C436Df9F3EAaEb5c7BB4ee627a696e9691D7B0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateFILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7f59b9Bd22Dc1df6C52969119F13A179eFAC51eC">0x7f59b9Bd22Dc1df6C52969119F13A179eFAC51eC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateFLOKIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5AD5500BDeF91437c0503DFD575fE326AEe512FA">0x5AD5500BDeF91437c0503DFD575fE326AEe512FA</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateFLOWPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0634fd9bc1d00F8a5b4DB661F4af1A299611d7D3">0x0634fd9bc1d00F8a5b4DB661F4af1A299611d7D3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateFTMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf160B3173a14Cd7464E1CBe5fbAEB4c90da3Ad39">0xf160B3173a14Cd7464E1CBe5fbAEB4c90da3Ad39</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateFXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7cF146C291ea9bb79322225b91003142E5260995">0x7cF146C291ea9bb79322225b91003142E5260995</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateGBPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x15E8BeA9C75EDa0F64eE63468d86A8F50625553c">0x15E8BeA9C75EDa0F64eE63468d86A8F50625553c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateGMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x13B0D3d8De76cD9f8C2c768f8FA17eF68E719847">0x13B0D3d8De76cD9f8C2c768f8FA17eF68E719847</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateGRTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3dB8F853842320940C46D0D54A00fD8C8EF83810">0x3dB8F853842320940C46D0D54A00fD8C8EF83810</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateICPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3B7BcefeF061E8723c93de1343E76E53dbDd0414">0x3B7BcefeF061E8723c93de1343E76E53dbDd0414</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateIMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x25C61140ef8597410205e3580A9dDEd1b40dA6F0">0x25C61140ef8597410205e3580A9dDEd1b40dA6F0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateINJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF905cAc2cbd7B8628aC547F397B91b1FC90210B0">0xF905cAc2cbd7B8628aC547F397B91b1FC90210B0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateJTOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD139D7cF6A5D6D46Bd92Da0e81B1509abEE2fB96">0xD139D7cF6A5D6D46Bd92Da0e81B1509abEE2fB96</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateKNCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x05847D5C5e44Db9A6683E0a73A752792c0f35CfF">0x05847D5C5e44Db9A6683E0a73A752792c0f35CfF</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateLDOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe5c5506A7c76FA56dcc3d6D4025361BF2E799883">0xe5c5506A7c76FA56dcc3d6D4025361BF2E799883</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateLINKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xCE82360bbB39d86c8Eb34bFae5369944F1B49aB9">0xCE82360bbB39d86c8Eb34bFae5369944F1B49aB9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateLTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xAE55c944509DBd7958A632c7054D70fF90C7C118">0xAE55c944509DBd7958A632c7054D70fF90C7C118</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateMATICPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf4020A929d3cafD9985EBbB7fCdeA5E3DDC04892">0xf4020A929d3cafD9985EBbB7fCdeA5E3DDC04892</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateMAVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBDE276b0a817F37B41700cf89Eb2bAce7f739249">0xBDE276b0a817F37B41700cf89Eb2bAce7f739249</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateMEMEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd677d059444a476c268141200cf7d802be50cAd5">0xd677d059444a476c268141200cf7d802be50cAd5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateMKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3328C0E28BEA582bE033D8c0d6B7e314F1c8a27a">0x3328C0E28BEA582bE033D8c0d6B7e314F1c8a27a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateNEARPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA1bda9CA49cE373102A9Ef1a9Db0798eeF87AdCa">0xA1bda9CA49cE373102A9Ef1a9Db0798eeF87AdCa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateONEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD441bE35D36deE567Cc53626A3E072Cf38adC811">0xD441bE35D36deE567Cc53626A3E072Cf38adC811</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateOPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2Dbdb1941D4B02e4D8ad02A82E376eaEfC4573A5">0x2Dbdb1941D4B02e4D8ad02A82E376eaEfC4573A5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateORDIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x980BcaAc4D8FCA954580f3B1E0Ca0344c9b57677">0x980BcaAc4D8FCA954580f3B1E0Ca0344c9b57677</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStatePEPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xFbE4FFA5e1844A4A2121086623125C99B2A322b9">0xFbE4FFA5e1844A4A2121086623125C99B2A322b9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStatePERPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe97C378C14bba40024EAa0FE81E99DFE3f7d5bD0">0xe97C378C14bba40024EAa0FE81E99DFE3f7d5bD0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStatePYTHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x928Da45B61eaBD477D5B28119C5c1Cf84Ee404E0">0x928Da45B61eaBD477D5B28119C5c1Cf84Ee404E0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateRNDRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xfd7b4c21bcBcF4Ea40A03D0bf3a5aDe06b56Ec68">0xfd7b4c21bcBcF4Ea40A03D0bf3a5aDe06b56Ec68</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateRPLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x87DE8ee830a90D665AdD22Bdd668aFCde78577bA">0x87DE8ee830a90D665AdD22Bdd668aFCde78577bA</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateRUNEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5190F12dEe482f8e58759Cc6d0522dfD15b18131">0x5190F12dEe482f8e58759Cc6d0522dfD15b18131</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateSEIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x86771CAc78a8Ce62CBCFAD639dFdeB9443856fAb">0x86771CAc78a8Ce62CBCFAD639dFdeB9443856fAb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateSHIBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x4926222EDDa82965Aa08080f281928f8cba5922A">0x4926222EDDa82965Aa08080f281928f8cba5922A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateSOLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9C562c040BcD99d6c4B223A83169e9c29ecf960B">0x9C562c040BcD99d6c4B223A83169e9c29ecf960B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateSTETHETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd712bEf33Cd46cee9d79934d602b21B147Cd9E54">0xd712bEf33Cd46cee9d79934d602b21B147Cd9E54</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateSTETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB48e1F6dE254d37f26079D66dbc547011d73189f">0xB48e1F6dE254d37f26079D66dbc547011d73189f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateSUIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xab507bdf251AD73665a4846475D8Fa7B6c463c44">0xab507bdf251AD73665a4846475D8Fa7B6c463c44</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateSUSHIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5fC6c426930f6ab9E97bd1036BDc793CeF4551C5">0x5fC6c426930f6ab9E97bd1036BDc793CeF4551C5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateTIAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x577EAE5044950ec9A6753dd6Bc2360bbe75169b7">0x577EAE5044950ec9A6753dd6Bc2360bbe75169b7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateTRBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3d05f17FF19f05eC8b32B6f7Dd468c05b95d1680">0x3d05f17FF19f05eC8b32B6f7Dd468c05b95d1680</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateTRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2CB6843d468848898c9fF2204F7eCEF1d53D08b7">0x2CB6843d468848898c9fF2204F7eCEF1d53D08b7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateUMAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE200157c076Ae9a1C875f9AE0B0a8e3ae27A4936">0xE200157c076Ae9a1C875f9AE0B0a8e3ae27A4936</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateUNIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x475b7637040E5C0260e8c90440C4688e2349c07e">0x475b7637040E5C0260e8c90440C4688e2349c07e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateUSDTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x924992a9A2D2032294AE64f4d5774A748CE08ca1">0x924992a9A2D2032294AE64f4d5774A748CE08ca1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateWLDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6af8Ceb40b07F3a7262F71d2b4A72c410Cc647A7">0x6af8Ceb40b07F3a7262F71d2b4A72c410Cc647A7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateXAGPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2385286c401800204BcDD6BF2e5B3eBd71E1440d">0x2385286c401800204BcDD6BF2e5B3eBd71E1440d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateXAUPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x92424427291C2EB68af3CE67EA67ca42EcB438c5">0x92424427291C2EB68af3CE67EA67ca42EcB438c5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateXLMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0d33c7019f534002d1637a71aE9baD8F6D4E97c9">0x0d33c7019f534002d1637a71aE9baD8F6D4E97c9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateXMRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x329Dc1b08530e1C83e05150E3Ff0D66F4DC49d56">0x329Dc1b08530e1C83e05150E3Ff0D66F4DC49d56</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateXRPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x11eA85beadeAE65aCCd341400A5d6d5aa2CD8D09">0x11eA85beadeAE65aCCd341400A5d6d5aa2CD8D09</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateXTZPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1A7a4475e2245e6e2adAeBB5831c341920aF3374">0x1A7a4475e2245e6e2adAeBB5831c341920aF3374</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateYFIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF7491a37eEfE32cD93964962b21Ff0638e02e4c2">0xF7491a37eEfE32cD93964962b21Ff0638e02e4c2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateZECPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x386Fe29CDFE9239aCE9400CC92B955cFF91F3a44">0x386Fe29CDFE9239aCE9400CC92B955cFF91F3a44</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateZILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA502E56412B4Ce5123a40d201552A87cAf199fEA">0xA502E56412B4Ce5123a40d201552A87cAf199fEA</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketStateZRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketState.sol">PerpsV2MarketState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x68b6974A4c151C466c0c3656b965F9948947515e">0x68b6974A4c151C466c0c3656b965F9948947515e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketTIAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6A7CCd69B7D83B855E9CD4eDC784AA3629deaA86">0x6A7CCd69B7D83B855E9CD4eDC784AA3629deaA86</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketTRBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x65bc6C9f1B01AcFc67Ac0393559011Ec1fF64bF5">0x65bc6C9f1B01AcFc67Ac0393559011Ec1fF64bF5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketTRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x464B4540D5a74e1F1Dbf2A3E8aD7203Ee3EFe476">0x464B4540D5a74e1F1Dbf2A3E8aD7203Ee3EFe476</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketUMAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf98f058c9c252906b7d53548A31316718680cCF4">0xf98f058c9c252906b7d53548A31316718680cCF4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketUNIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x957Ca78d3174b61F7A7CA63813e5DE1b4Fc99075">0x957Ca78d3174b61F7A7CA63813e5DE1b4Fc99075</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketUSDTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xfdD14eBE0F2311a8CA21be097A6971d9F0A4B7b4">0xfdD14eBE0F2311a8CA21be097A6971d9F0A4B7b4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViews1INCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5C164BC121fce42cA3a56D9f4fA48f361535fC44">0x5C164BC121fce42cA3a56D9f4fA48f361535fC44</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsAAVEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x39f44d1E92b858ff1D945D0a7440318553d83375">0x39f44d1E92b858ff1D945D0a7440318553d83375</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsADAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1CBC6fE7db100289E9b6c16130f123C4b8C49a33">0x1CBC6fE7db100289E9b6c16130f123C4b8C49a33</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsALGOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9AcC73a2Daf1f533ec2900160cfF154dA7A9A145">0x9AcC73a2Daf1f533ec2900160cfF154dA7A9A145</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsANKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd9d1DBfDEb0dda18eE564D7bb5189B4ea0C16a84">0xd9d1DBfDEb0dda18eE564D7bb5189B4ea0C16a84</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsAPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9F9c27B91fCC32F41787dD4486411D1d5a21839D">0x9F9c27B91fCC32F41787dD4486411D1d5a21839D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsAPTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x80f78C4381Db3a3bcb1E5453dD1bC9DaDd052c60">0x80f78C4381Db3a3bcb1E5453dD1bC9DaDd052c60</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsARBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x196Cb95C605cD36859DCdA594eEfAD91c21006D3">0x196Cb95C605cD36859DCdA594eEfAD91c21006D3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsATOMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa6E03c91AF7Ea284772000F809e30b9a8006d8c0">0xa6E03c91AF7Ea284772000F809e30b9a8006d8c0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsAUDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb7a4e69dEd852e5e1161C50BA1417622287Bb18C">0xb7a4e69dEd852e5e1161C50BA1417622287Bb18C</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsAVAXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd7DE432702b430CBc91f43308F8836256264c150">0xd7DE432702b430CBc91f43308F8836256264c150</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsAXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x345743a5B132856327118872900c7baCb44A1066">0x345743a5B132856327118872900c7baCb44A1066</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsBALPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb045cA31Ee8eeE63cd7cF8c9098910285d18d2d5">0xb045cA31Ee8eeE63cd7cF8c9098910285d18d2d5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsBCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5194C4103CC7e62566530af3f14AE6642ABC4B1f">0x5194C4103CC7e62566530af3f14AE6642ABC4B1f</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsBLURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x577EC271A31087D4a8AFc11cc9737eca21C4e28D">0x577EC271A31087D4a8AFc11cc9737eca21C4e28D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsBNBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x48a5749406bf8A229c6A258A651C840a075DB28e">0x48a5749406bf8A229c6A258A651C840a075DB28e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsBONKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x34EF1434913a1CD24a1e66436ca099287AefBFF8">0x34EF1434913a1CD24a1e66436ca099287AefBFF8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x78dB364AF61bA187e98E8499A820D536c4aE9502">0x78dB364AF61bA187e98E8499A820D536c4aE9502</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsCELOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x4B67d6051Bf3C16cf4Ba7cFADBf1eF3965af9d6c">0x4B67d6051Bf3C16cf4Ba7cFADBf1eF3965af9d6c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsCOMPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE855064409394F6C0409e3c50D9CC3f98CAF3a04">0xE855064409394F6C0409e3c50D9CC3f98CAF3a04</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsCRVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x00bE2cDcb46268FB5D4F6845413eEBA9B0cc9ae6">0x00bE2cDcb46268FB5D4F6845413eEBA9B0cc9ae6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsDOGEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x77A93818448911f2388Ad2220E20dBD09153e4fb">0x77A93818448911f2388Ad2220E20dBD09153e4fb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsDOTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x82eb5cc9E3CBCbCA6b2571edc54886650aB891FD">0x82eb5cc9E3CBCbCA6b2571edc54886650aB891FD</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsDYDXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA3cbc5453f990905f710B549c1261c67720C9C9D">0xA3cbc5453f990905f710B549c1261c67720C9C9D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsENJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBCdB3D77E2C1Fe18772f208bA61f177bdE55e7f7">0xBCdB3D77E2C1Fe18772f208bA61f177bdE55e7f7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsEOSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1C4545150FF6C2bF6278B0233cdEaBf148B6c85c">0x1C4545150FF6C2bF6278B0233cdEaBf148B6c85c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsETCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x150C3cF8b95AC37767605B9D821572e01C67951C">0x150C3cF8b95AC37767605B9D821572e01C67951C</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsETHBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9dB8A477a2F10FF813ed4d85cf001b34aB2a6584">0x9dB8A477a2F10FF813ed4d85cf001b34aB2a6584</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x50aAa4c2E19bA4602a0D0C6374B49e47c6790D47">0x50aAa4c2E19bA4602a0D0C6374B49e47c6790D47</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsEURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x71Dbd8A5dD3a86dd387b03D8Dec0A6625251fe5C">0x71Dbd8A5dD3a86dd387b03D8Dec0A6625251fe5C</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsFETPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1B152e8FC0F279100831E5656a40bc398a6359f7">0x1B152e8FC0F279100831E5656a40bc398a6359f7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsFILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7704453141C4C469c13035895dC74D6B58F80bBb">0x7704453141C4C469c13035895dC74D6B58F80bBb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsFLOKIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x66D1d2f36B29b2dC334aE3BB4c79b65D044Dd0e5">0x66D1d2f36B29b2dC334aE3BB4c79b65D044Dd0e5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsFLOWPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x29e7320d46674Bf090f703F212EAe7f986256609">0x29e7320d46674Bf090f703F212EAe7f986256609</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsFTMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x136836F1bDa4C94C1E7Ae9B1aaD9278cAF7F0090">0x136836F1bDa4C94C1E7Ae9B1aaD9278cAF7F0090</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsFXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x626A1C5aEec394793aC2a5Ef3141176b61774Aba">0x626A1C5aEec394793aC2a5Ef3141176b61774Aba</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsGBPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5bBC9967D45de90F4cb27b0Ee09BEFDbF155Ae10">0x5bBC9967D45de90F4cb27b0Ee09BEFDbF155Ae10</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsGMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x4Ba3c1B16d405DA7a9E0DB9Bb81A2968C202B1cE">0x4Ba3c1B16d405DA7a9E0DB9Bb81A2968C202B1cE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsGRTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x17e979F00f6Ea5bd58f871A17bECB56D20dD6722">0x17e979F00f6Ea5bd58f871A17bECB56D20dD6722</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsICPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2243Eeee683Ac28FbEE5e5467E91B9F2466aE0DE">0x2243Eeee683Ac28FbEE5e5467E91B9F2466aE0DE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsIMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1E621e0f83643EB4Bd5e3b44427cf765B50edDEb">0x1E621e0f83643EB4Bd5e3b44427cf765B50edDEb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsINJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x27772223122CEfB7430C3875466013049bd13c91">0x27772223122CEfB7430C3875466013049bd13c91</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsJTOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x951A34C8FC790e407CBB845AD4e5D444b6b4b859">0x951A34C8FC790e407CBB845AD4e5D444b6b4b859</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsKNCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xcf7502405Ae90815CF90DD4ECe5E2995931c3DA0">0xcf7502405Ae90815CF90DD4ECe5E2995931c3DA0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsLDOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBfa2b87D0735F922B4D60fD715bcb538cb802D40">0xBfa2b87D0735F922B4D60fD715bcb538cb802D40</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsLINKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x25962B9Cf4dC6c11796D8736FaC4feCFA0127cca">0x25962B9Cf4dC6c11796D8736FaC4feCFA0127cca</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsLTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE55331C2f9Ff0d05415C11Da17401ffCcc50658b">0xE55331C2f9Ff0d05415C11Da17401ffCcc50658b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsMATICPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1CA50f5e174cb79C25073c7561C0809AAceb2C54">0x1CA50f5e174cb79C25073c7561C0809AAceb2C54</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsMAVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9430d7D57Fef65cdE8D71fAe8dC8b1F4C01858e0">0x9430d7D57Fef65cdE8D71fAe8dC8b1F4C01858e0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsMEMEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x52D060C859b12C6AF17fFa1E9Cec0825b951dec0">0x52D060C859b12C6AF17fFa1E9Cec0825b951dec0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsMKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xaa22E203341Ac321C91136b147Efd5c8CDBC2158">0xaa22E203341Ac321C91136b147Efd5c8CDBC2158</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsNEARPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD8F64A0Fc982C0d83E0A8e3c4d565D0a19C9D884">0xD8F64A0Fc982C0d83E0A8e3c4d565D0a19C9D884</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsONEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa57e41824b0922b061DD62Ab221FA7e499063152">0xa57e41824b0922b061DD62Ab221FA7e499063152</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsOPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5A7028CCbB4A9D573a2Ab731b4278CBA0c01C5a3">0x5A7028CCbB4A9D573a2Ab731b4278CBA0c01C5a3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsORDIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd5c3E1BFC0a697e1ccDF1d761B68a3b4d8531c8D">0xd5c3E1BFC0a697e1ccDF1d761B68a3b4d8531c8D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsPEPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7816CbDe10A3Beb77285320Ed594D9288D92c13B">0x7816CbDe10A3Beb77285320Ed594D9288D92c13B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsPERPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9982fCf287516b21247eBDC830767589090E2710">0x9982fCf287516b21247eBDC830767589090E2710</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsPYTHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6aadeFe139b7F637d5D9dd4ab7a0d9d63bb46965">0x6aadeFe139b7F637d5D9dd4ab7a0d9d63bb46965</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsRNDRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA2C8aC77ec8D0F2c2A1cB16b80fAddDD02093366">0xA2C8aC77ec8D0F2c2A1cB16b80fAddDD02093366</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsRPLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd3aC33c01D258511828F9D80972a5CCC59aaE94e">0xd3aC33c01D258511828F9D80972a5CCC59aaE94e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsRUNEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0007193B64e313f0A91749d9361Bf28D9937DCe5">0x0007193B64e313f0A91749d9361Bf28D9937DCe5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsSEIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7735d84648548791164263742D1AfFe49e4D9B2b">0x7735d84648548791164263742D1AfFe49e4D9B2b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsSHIBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe64beb261C5CBAA761c997Fdb17a6906b10D8792">0xe64beb261C5CBAA761c997Fdb17a6906b10D8792</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsSOLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1e9d880d46F707A3D5833162C5C111Bb8f20d7a6">0x1e9d880d46F707A3D5833162C5C111Bb8f20d7a6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsSTETHETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x51600cFdc318E0be9730E7F1C8E9Fde0B694D10c">0x51600cFdc318E0be9730E7F1C8E9Fde0B694D10c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsSTETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf5790068603D9e119f8D859255F1b0d6da1293F5">0xf5790068603D9e119f8D859255F1b0d6da1293F5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsSUIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc44BCb7AD9d198EbB611BC85C7571e527b5f9f65">0xc44BCb7AD9d198EbB611BC85C7571e527b5f9f65</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsSUSHIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA0f365B94Ac1a62297b9D63AA969d6f90083D667">0xA0f365B94Ac1a62297b9D63AA969d6f90083D667</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsTIAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x66CD99A57fD8B4C994E25fAd5f8b03b3d84a37Ac">0x66CD99A57fD8B4C994E25fAd5f8b03b3d84a37Ac</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsTRBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd99c9AaFC1806aCD4eAd9d8CC75099AD6A51685a">0xd99c9AaFC1806aCD4eAd9d8CC75099AD6A51685a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsTRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB7ec0bd52Ac1252bC5DE2Dd2d8041c603845e9Ff">0xB7ec0bd52Ac1252bC5DE2Dd2d8041c603845e9Ff</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsUMAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE056B6B4240bFb46498D7a6fDC70EF5C722d3b97">0xE056B6B4240bFb46498D7a6fDC70EF5C722d3b97</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsUNIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xff1c97255071F6C3f980d56Ba81e49F00aBB29b5">0xff1c97255071F6C3f980d56Ba81e49F00aBB29b5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsUSDTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x50653FC9BD9aE72FA199e2F90B81970332db9E9F">0x50653FC9BD9aE72FA199e2F90B81970332db9E9F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsWLDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0c58199F497AF36Ee508eD05f2b49114cF6BaD8e">0x0c58199F497AF36Ee508eD05f2b49114cF6BaD8e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsXAGPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0c8B063970d3B87c283FCb6e58E37cc7bdF09ae3">0x0c8B063970d3B87c283FCb6e58E37cc7bdF09ae3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsXAUPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x56513dAAebC957D65C468E449De876FE2B431E9d">0x56513dAAebC957D65C468E449De876FE2B431E9d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsXLMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6A40CebBF186614d55f09e98Cf48eBCbE99a5535">0x6A40CebBF186614d55f09e98Cf48eBCbE99a5535</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsXMRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9FC43De873bb5F3CbE7102F2820fD01716152916">0x9FC43De873bb5F3CbE7102F2820fD01716152916</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsXRPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5BD34246e18890102dBBa547C9367050eCB44D0a">0x5BD34246e18890102dBBa547C9367050eCB44D0a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsXTZPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9D530ee9D11F0662EB0F2b838ED65E68F7A9e1E3">0x9D530ee9D11F0662EB0F2b838ED65E68F7A9e1E3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsYFIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe49e38957bb3d8aa12354B9017904aAe84417B4e">0xe49e38957bb3d8aa12354B9017904aAe84417B4e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsZECPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7E038f24235084d518955A572082093c84B16441">0x7E038f24235084d518955A572082093c84B16441</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsZILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf97FcC07169edf13FBC3F9FA393cd139b5A65268">0xf97FcC07169edf13FBC3F9FA393cd139b5A65268</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketViewsZRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2MarketViews.sol">PerpsV2MarketViews.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x02442c278B70e5869FAdad11e255b5b24cA04BC3">0x02442c278B70e5869FAdad11e255b5b24cA04BC3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketWLDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5EA2d5ea43b47d7AC033eEf1b0A21D30BD45C836">0x5EA2d5ea43b47d7AC033eEf1b0A21D30BD45C836</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketXAGPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa8127E705C54cD1fd9349cbc428dE4A21116B4c5">0xa8127E705C54cD1fd9349cbc428dE4A21116B4c5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketXAUPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8C41Ce88a21c33a56C6d0280B3C4C2Ff8991c62c">0x8C41Ce88a21c33a56C6d0280B3C4C2Ff8991c62c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketXLMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x69dC9687aB5FbB0cD99F28c5bc937C2C09C5254b">0x69dC9687aB5FbB0cD99F28c5bc937C2C09C5254b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketXMRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2A3771a01584468B02679ddDf8180b01ABDfDdf9">0x2A3771a01584468B02679ddDf8180b01ABDfDdf9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketXRPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1C69c7007dabE4a6537Be3ed8Cea3f3a45060BF9">0x1C69c7007dabE4a6537Be3ed8Cea3f3a45060BF9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketXTZPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0F1c0dC4C578108d0cfFf0522A496e6ddFd144FE">0x0F1c0dC4C578108d0cfFf0522A496e6ddFd144FE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketYFIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7FAE7D543f621eE2Bb87B8D74345e331c1367699">0x7FAE7D543f621eE2Bb87B8D74345e331c1367699</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketZECPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x390D2D52Bd7C0380950f8003eB2915855644631d">0x390D2D52Bd7C0380950f8003eB2915855644631d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketZILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9876a190d669f9578fc385Cde87a2a2753D84D27">0x9876a190d669f9578fc385Cde87a2a2753D84D27</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2MarketZRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/PerpsV2Market.sol">PerpsV2Market.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5fba96e608f916AaCbf8d96933E2F6c8afbbB5A6">0x5fba96e608f916AaCbf8d96933E2F6c8afbbB5A6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2Proxy1INCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5463B99CdB8e0392F1cf381079De910Ab2ED762D">0x5463B99CdB8e0392F1cf381079De910Ab2ED762D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyAAVEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa89402D83DeD4C71639Cf0Ca1f5FCc25EE4eB1A8">0xa89402D83DeD4C71639Cf0Ca1f5FCc25EE4eB1A8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyADAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2805E91bdf139E68EFfC79117f39b4C34e71B0Bb">0x2805E91bdf139E68EFfC79117f39b4C34e71B0Bb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyALGOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf3D4f959edb11594a5fEB13Fc11a74F096603779">0xf3D4f959edb11594a5fEB13Fc11a74F096603779</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyANKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x33073dCE3717383c157191E3dC3A881C5c51b12d">0x33073dCE3717383c157191E3dC3A881C5c51b12d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyAPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x00e793B4ad1eCf68e660BB798c16a2Ea438C0A29">0x00e793B4ad1eCf68e660BB798c16a2Ea438C0A29</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyAPTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC1D3237719867905F42B492030b5CBc8E24c8dA1">0xC1D3237719867905F42B492030b5CBc8E24c8dA1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyARBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1821b0d66d72E4a0a85B5B2a2941E76f237552Ba">0x1821b0d66d72E4a0a85B5B2a2941E76f237552Ba</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyATOMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xbFC138dFf9Ae45F3e4ae9Bf3aCB47CA8223196E4">0xbFC138dFf9Ae45F3e4ae9Bf3aCB47CA8223196E4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyAUDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x7cFC822c64847D1aF0F9C615da792168275b642A">0x7cFC822c64847D1aF0F9C615da792168275b642A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyAVAXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x10e79fe757eD1d18536B2E509AF61235BceD69e0">0x10e79fe757eD1d18536B2E509AF61235BceD69e0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyAXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2e11a3638F12A37263b1B4226b61412f6BBB277c">0x2e11a3638F12A37263b1B4226b61412f6BBB277c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyBALPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x91DfFf9A9E4fE4F3BBD2F83c60A7fE335bbc316a">0x91DfFf9A9E4fE4F3BBD2F83c60A7fE335bbc316a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyBCHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x01F226F3FB083165401c9e50FDE718b6a2b266A9">0x01F226F3FB083165401c9e50FDE718b6a2b266A9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyBLURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x867D147fDe1e29C37B6cFbA35A266C7A758489Ee">0x867D147fDe1e29C37B6cFbA35A266C7A758489Ee</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyBNBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x58ed75617f2701Ec1Be85709dAB27cEcab327C04">0x58ed75617f2701Ec1Be85709dAB27cEcab327C04</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyBONKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBbB5b6C8BaDd8b3B70B6816C65D94e4277614741">0xBbB5b6C8BaDd8b3B70B6816C65D94e4277614741</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xcA3988389C58F9C46245abbD6e3549744d516531">0xcA3988389C58F9C46245abbD6e3549744d516531</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyCELOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc50E64e2E980a67BbD85B68A3Ad96aCB1c037921">0xc50E64e2E980a67BbD85B68A3Ad96aCB1c037921</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyCOMPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0d407B6B9261558249c3B7e68f2E237bC2aA1F02">0x0d407B6B9261558249c3B7e68f2E237bC2aA1F02</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyCRVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1120e7DDB511493040F41Add9bBe3F9c53b967E0">0x1120e7DDB511493040F41Add9bBe3F9c53b967E0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyDOGEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0E9628026e53f4c805073d85554A87dBd2011268">0x0E9628026e53f4c805073d85554A87dBd2011268</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyDOTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9Ef3B803ed63A7E2f6cA1C46e313d8db642AA864">0x9Ef3B803ed63A7E2f6cA1C46e313d8db642AA864</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyDYDXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5D6e4263a203A1677Da38f175d95759adA27e6F9">0x5D6e4263a203A1677Da38f175d95759adA27e6F9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyENJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x4EA91e75335Fa05182a7c8BD9D54A1f1ff6Ed29E">0x4EA91e75335Fa05182a7c8BD9D54A1f1ff6Ed29E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyEOSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x08808c5B37e731bCcCd0Ae59f5681d0040022Af3">0x08808c5B37e731bCcCd0Ae59f5681d0040022Af3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyETCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBF1B83321d97734D11399Eabb38684dB33d8B3D6">0xBF1B83321d97734D11399Eabb38684dB33d8B3D6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyETHBTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBAFa9f0F053631c98cdD38793a750345F1dE8AFF">0xBAFa9f0F053631c98cdD38793a750345F1dE8AFF</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xCa1Da01A412150b00cAD52b426d65dAB38Ab3830">0xCa1Da01A412150b00cAD52b426d65dAB38Ab3830</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyEURPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF6dA94187FF744B3AcfFb64d5Aa307F253403e34">0xF6dA94187FF744B3AcfFb64d5Aa307F253403e34</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyFETPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x01683A14CC451e46dBDf02050B96735C5FBcf9d3">0x01683A14CC451e46dBDf02050B96735C5FBcf9d3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyFILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF60D392b73E4333ff7fb100235D235c0922cF9a4">0xF60D392b73E4333ff7fb100235D235c0922cF9a4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyFLOKIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xDDc8EcC1Fe191e5a156cb1e7cd00fE572bb272E5">0xDDc8EcC1Fe191e5a156cb1e7cd00fE572bb272E5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyFLOWPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xe14F12246A6965aB2E8ea52A1Be39B8f731bc4a4">0xe14F12246A6965aB2E8ea52A1Be39B8f731bc4a4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyFTMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x14fA3376E2ffa41708A0636009A35CAE8D8E2bc7">0x14fA3376E2ffa41708A0636009A35CAE8D8E2bc7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyFXSPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x18433f795e05E8FF387C0633aF4140e72cdd5A94">0x18433f795e05E8FF387C0633aF4140e72cdd5A94</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyGBPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x45E43fb03c83582E6fcE22078c607b85C3B3615B">0x45E43fb03c83582E6fcE22078c607b85C3B3615B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyGMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6ee09cF4B660975D8Fdb041AE257BAc34f4aA589">0x6ee09cF4B660975D8Fdb041AE257BAc34f4aA589</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyGRTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x846195Ecd35B602F82429670b7C251C142E8F148">0x846195Ecd35B602F82429670b7C251C142E8F148</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyICPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xeA4662804B884EB6ed4DAe4323Ea20e04c07626d">0xeA4662804B884EB6ed4DAe4323Ea20e04c07626d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyIMXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xcE6f7404668089A1d61788BA3d4Bec6480f66aF4">0xcE6f7404668089A1d61788BA3d4Bec6480f66aF4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyINJPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3a47Ec548435A4478B2042Cbdc56F94cB62c435F">0x3a47Ec548435A4478B2042Cbdc56F94cB62c435F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyJTOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb77e13e37B7C29fB6Ee08A872219a0aFba81E5D0">0xb77e13e37B7C29fB6Ee08A872219a0aFba81E5D0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyKNCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xFFa9181926d4C6003213cAb599963D0614b0cA61">0xFFa9181926d4C6003213cAb599963D0614b0cA61</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyLDOPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x041013BCB3637778B5056Bf5595318415EC21C0d">0x041013BCB3637778B5056Bf5595318415EC21C0d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyLINKPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5fc12B9E0284545b6d979b77436D3BaA3b0F612d">0x5fc12B9E0284545b6d979b77436D3BaA3b0F612d</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyLTCPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE97AE65AB0108DDc4dF34b6Aff7B17D911C39931">0xE97AE65AB0108DDc4dF34b6Aff7B17D911C39931</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyMATICPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x928B8C670D244ee09b8b57Cac7b6F042e6FC4306">0x928B8C670D244ee09b8b57Cac7b6F042e6FC4306</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyMAVPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xFf1AA6A6B8a8CDD82a7B275A65D9EF7fa5EcE2e6">0xFf1AA6A6B8a8CDD82a7B275A65D9EF7fa5EcE2e6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyMEMEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa98AA8febE4B61038Df2bc843C7F902faA7Faf8B">0xa98AA8febE4B61038Df2bc843C7F902faA7Faf8B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyMKRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x52a35CaED46a6c20B5c43a0D6BEDc4990800E492">0x52a35CaED46a6c20B5c43a0D6BEDc4990800E492</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyNEARPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x227F3d73Cf5618640fe3a0eF8404929aa99532c8">0x227F3d73Cf5618640fe3a0eF8404929aa99532c8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyONEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3A2F7083C1617e4371bA723Bc27dED8A1Bd6AD90">0x3A2F7083C1617e4371bA723Bc27dED8A1Bd6AD90</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyOPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x524c0B136F54941529b8c11214A05f958a89A6A6">0x524c0B136F54941529b8c11214A05f958a89A6A6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyORDIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x6DCfE802E93948e59c4A9034634bFD54ADc127a0">0x6DCfE802E93948e59c4A9034634bFD54ADc127a0</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyPEPEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8262BaDdD5644b02f317eA1AD4E5cBC52B9bfd0b">0x8262BaDdD5644b02f317eA1AD4E5cBC52B9bfd0b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyPERPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9763510E1E0057bE624Ded90e1916130cBe920df">0x9763510E1E0057bE624Ded90e1916130cBe920df</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyPYTHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0d9Ec064105A1B0A95F4C75c56E617CCa6b1931b">0x0d9Ec064105A1B0A95F4C75c56E617CCa6b1931b</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyRNDRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9c898362025AF668067947fA55500081B13fdC7e">0x9c898362025AF668067947fA55500081B13fdC7e</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyRPLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x4398715c8742732F9A4e21664249D120b5436725">0x4398715c8742732F9A4e21664249D120b5436725</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyRUNEPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xa35575182f5985d6caA1E4e435e7EaF986232ef8">0xa35575182f5985d6caA1E4e435e7EaF986232ef8</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxySEIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD0dedf5199616297063C9Ad820F65ecB9d36851E">0xD0dedf5199616297063C9Ad820F65ecB9d36851E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxySHIBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x06775cce8ec277b54aD2a85A74Dc4273330dd445">0x06775cce8ec277b54aD2a85A74Dc4273330dd445</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxySOLPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x537E59ddb03a95cD127870Ef95d87446f0E76A92">0x537E59ddb03a95cD127870Ef95d87446f0E76A92</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxySTETHETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC012b0a43DE16413419976f739092fE4a7c1f215">0xC012b0a43DE16413419976f739092fE4a7c1f215</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxySTETHPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xF022b47C40cbaAC54B4f9A036786a9036De0853a">0xF022b47C40cbaAC54B4f9A036786a9036De0853a</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxySUIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x345b046a097C937162116716e6a8449d0D1EFA88">0x345b046a097C937162116716e6a8449d0D1EFA88</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxySUSHIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x99CC961612B627C535a82819Ea291800D9E69783">0x99CC961612B627C535a82819Ea291800D9E69783</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyTIAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd3870Aa7A0950Fa181Ad7b8c244Db390C7c37F1B">0xd3870Aa7A0950Fa181Ad7b8c244Db390C7c37F1B</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyTRBPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xff72A63fAb428545Ee7a6a7bd30323cc1Cc0b30c">0xff72A63fAb428545Ee7a6a7bd30323cc1Cc0b30c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyTRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA5a6887a19c99D6Cf087B1c8e71539a519b7bFe6">0xA5a6887a19c99D6Cf087B1c8e71539a519b7bFe6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyUMAPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC49A8F98B4D7E033bF99008387D2C3fE0Ccc532c">0xC49A8F98B4D7E033bF99008387D2C3fE0Ccc532c</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyUNIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x16665311Ea294747F10380a91f25193D8A9612A4">0x16665311Ea294747F10380a91f25193D8A9612A4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyUSDTPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x5841A259335879C59c9f8D9FA369b1413535b206">0x5841A259335879C59c9f8D9FA369b1413535b206</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyWLDPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xaaEe25Fef392266cC85Ef110Aa098a1A3238E5A5">0xaaEe25Fef392266cC85Ef110Aa098a1A3238E5A5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyXAGPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x8bb726888D1E1EA5f3e32168321CA87C680a9A9F">0x8bb726888D1E1EA5f3e32168321CA87C680a9A9F</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyXAUPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xA035a912d9C43748c2515f4B9B3Ebb6CE4126F82">0xA035a912d9C43748c2515f4B9B3Ebb6CE4126F82</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyXLMPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x01d6792DD0456b5bE831c4BD1F107eF524f89495">0x01d6792DD0456b5bE831c4BD1F107eF524f89495</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyXMRPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x393650685eE7f9b7aeB01E1b6881540af0d71ffF">0x393650685eE7f9b7aeB01E1b6881540af0d71ffF</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyXRPPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x09be72F8DC6E5D327A116087A2b33e0DeC49CDC6">0x09be72F8DC6E5D327A116087A2b33e0DeC49CDC6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyXTZPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3707CF43F93fDDE90aC0A06e6c7C052a8e8F335A">0x3707CF43F93fDDE90aC0A06e6c7C052a8e8F335A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyYFIPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0A0e4917e67054CdD06d07d12D4a8f623D2d7269">0x0A0e4917e67054CdD06d07d12D4a8f623D2d7269</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyZECPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc3beea442B907465C3632Fa7F3C9ee9E2b997994">0xc3beea442B907465C3632Fa7F3C9ee9E2b997994</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyZILPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x96ffa60CA169e648b098aFADCCEec4b8eE455ec4">0x96ffa60CA169e648b098aFADCCEec4b8eE455ec4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>PerpsV2ProxyZRXPERP</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyPerpsV2.sol">ProxyPerpsV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x92BcE39eC30453b9b1f3FF14207653230e74cDC2">0x92BcE39eC30453b9b1f3FF14207653230e74cDC2</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxyFeePool</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/Proxy.sol">Proxy.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x38fC5D5A5402Cde8cB384c939d201522F0873229">0x38fC5D5A5402Cde8cB384c939d201522F0873229</a>
+                </td>
+              </tr>
+              <tr>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxySynthetix</span><sup>Use ProxyERC20</sup></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xB409b21634F356cb3372F077920ECDd4017AbFc6">0xB409b21634F356cb3372F077920ECDd4017AbFc6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysBTC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x0835169d4bde289e1d759cAa97aa3973d43E27c4">0x0835169d4bde289e1d759cAa97aa3973d43E27c4</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ProxysETH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2A080457783adDe06009f1959ca7309Bd40CC772">0x2A080457783adDe06009f1959ca7309Bd40CC772</a>
+                </td>
+              </tr>
+              <tr>
+                <td><span style="color: #AAA; text-decoration: line-through">ProxysUSD</span><sup>Use ProxyERC20sUSD</sup></td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ProxyERC20.sol">ProxyERC20.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD7D674d80e79CF3A3b67D6a510AC1B0493dF47cF">0xD7D674d80e79CF3A3b67D6a510AC1B0493dF47cF</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ReadProxyAddressResolver</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ReadProxy.sol">ReadProxy.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x529C553eF2d0370279DC8AbF19702B98b166D252">0x529C553eF2d0370279DC8AbF19702B98b166D252</a>
+                </td>
+              </tr>
+              <tr>
+                <td>RewardEscrowV2</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/ImportableRewardEscrowV2.sol">ImportableRewardEscrowV2.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xBd2117D4D53F9cedbdA10E216b2b857366b674ad">0xBd2117D4D53F9cedbdA10E216b2b857366b674ad</a>
+                </td>
+              </tr>
+              <tr>
+                <td>RewardEscrowV2Storage</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/RewardEscrowV2Storage.sol">RewardEscrowV2Storage.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xFab8F34e42f59F2Eb3bb68c2Eb8039D5ea35d1eE">0xFab8F34e42f59F2Eb3bb68c2Eb8039D5ea35d1eE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>RewardsDistribution</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/RewardsDistribution.sol">RewardsDistribution.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x62c12039029Da4008e21fB026ed32d4207d80878">0x62c12039029Da4008e21fB026ed32d4207d80878</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SafeDecimalMath</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SafeDecimalMath.sol">SafeDecimalMath.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x2aD7cCAac0Eeb396C3A5fc2b73A885435688C0D5">0x2aD7cCAac0Eeb396C3A5fc2b73A885435688C0D5</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SignedSafeDecimalMath</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SignedSafeDecimalMath.sol">SignedSafeDecimalMath.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xc7dCC0929881530d3386de51D9ffdD35B8009c6E">0xc7dCC0929881530d3386de51D9ffdD35B8009c6E</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthRedeemer</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SynthRedeemer.sol">SynthRedeemer.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x83F770cfA966bf83572920D1642B3522956C19a9">0x83F770cfA966bf83572920D1642B3522956C19a9</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthUtil</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SynthUtil.sol">SynthUtil.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb13A82B995f2Df8c4D9f19be25701b49351f4fFF">0xb13A82B995f2Df8c4D9f19be25701b49351f4fFF</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Synthetix</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/MintableSynthetix.sol">MintableSynthetix.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xC6F85E8Cc2F13521f909810d03Ca66397a813eDb">0xC6F85E8Cc2F13521f909810d03Ca66397a813eDb</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixBridgeToBase</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SynthetixBridgeToBase.sol">SynthetixBridgeToBase.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xD0f164c4fEcA0301c36804E986c084C91F0c49C3">0xD0f164c4fEcA0301c36804E986c084C91F0c49C3</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixDebtShare</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SynthetixDebtShare.sol">SynthetixDebtShare.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x019208ef8ec17473bFaa88FA7935145C4958F365">0x019208ef8ec17473bFaa88FA7935145C4958F365</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthetixEscrow</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SynthetixEscrow.sol">SynthetixEscrow.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xfcD8a3C86272CAb1E409117ee369dc3a79683418">0xfcD8a3C86272CAb1E409117ee369dc3a79683418</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsBTC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x65179157E57EDb41e91a7F70e5d0B10B5335B6d6">0x65179157E57EDb41e91a7F70e5d0B10B5335B6d6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsETH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xb2d7d4c6aA6af8C58350DD8dA5C1337f93e2817C">0xb2d7d4c6aA6af8C58350DD8dA5C1337f93e2817C</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SynthsUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/MultiCollateralSynth.sol">MultiCollateralSynth.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x300CbD4244b0804456Da959F9CfD902c8c379DdE">0x300CbD4244b0804456Da959F9CfD902c8c379DdE</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SystemSettings</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SystemSettings.sol">SystemSettings.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x9c8B1FE055BBE5854Ee559eBd95bf2DD51047FEC">0x9c8B1FE055BBE5854Ee559eBd95bf2DD51047FEC</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SystemSettingsLib</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SystemSettingsLib.sol">SystemSettingsLib.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x343b5efCBf331957d3F4236eb16C338D7256F62D">0x343b5efCBf331957d3F4236eb16C338D7256F62D</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SystemStatus</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/SystemStatus.sol">SystemStatus.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x247814db4369f8E952F60A6409C16A928672dcc6">0x247814db4369f8E952F60A6409C16A928672dcc6</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStateSynthetix</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/LegacyTokenState.sol">LegacyTokenState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xE851b0A420074f4Db3BfcAC03722A7CCAB818676">0xE851b0A420074f4Db3BfcAC03722A7CCAB818676</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesBTC</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xf69ccAcd3680C3F6aE7C20A2087009019bD99B6A">0xf69ccAcd3680C3F6aE7C20A2087009019bD99B6A</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesETH</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0xd140e48b2beE5E0Bd3E1C1EEe58296082f4d5B59">0xd140e48b2beE5E0Bd3E1C1EEe58296082f4d5B59</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TokenStatesUSD</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/TokenState.sol">TokenState.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x12F907Dff4AE0D949fE127646450C040C0DFF6F1">0x12F907Dff4AE0D949fE127646450C040C0DFF6F1</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TradingRewards</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/TradingRewards.sol">TradingRewards.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x1C98818512e59EA02c7cD47096a6Bfb38Afa9072">0x1C98818512e59EA02c7cD47096a6Bfb38Afa9072</a>
+                </td>
+              </tr>
+              <tr>
+                <td>WrapperFactory</td>
+                <td><a target="_blank" href="https://github.com/Synthetixio/synthetix/blob/v2.98.3/contracts/WrapperFactory.sol">WrapperFactory.sol</a></td>
+                <td><a target="_blank" href="https://sepolia-optimism.etherscan.io/address/0x3F1f1F88e6ca32C360ECde7fA1c58102C7b8acDb">0x3F1f1F88e6ca32C360ECde7fA1c58102C7b8acDb</a>
+                </td>
+              </tr></table>
