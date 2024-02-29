@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2MarketViews.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol)
+**Source:** [contracts/interfaces/IPerpsV2MarketViews.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol)
 
 ## Views
 
 ### `accessibleMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `accruedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `assetPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `canLiquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `currentFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `currentFundingVelocity`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `delayedOrders`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `fillPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `fundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `fundingRateLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `fundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L21)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `fundingSequenceLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `isFlagged`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `liquidationFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `liquidationPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `marketDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -314,7 +314,7 @@
 
 ### `marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -332,7 +332,7 @@
 
 ### `marketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -350,7 +350,7 @@
 
 ### `marketSizes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@
 
 ### `marketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -386,7 +386,7 @@
 
 ### `notionalValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -404,7 +404,7 @@
 
 ### `orderFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -422,7 +422,7 @@
 
 ### `positions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -440,7 +440,7 @@
 
 ### `postTradeDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L68)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L68)</sub>
 
 ??? example "Details"
 
@@ -458,7 +458,7 @@
 
 ### `profitLoss`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -476,7 +476,7 @@
 
 ### `remainingMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -494,7 +494,7 @@
 
 ### `unrecordedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IPerpsV2MarketViews.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IPerpsV2MarketViews.sol#L39)</sub>
 
 ??? example "Details"
 

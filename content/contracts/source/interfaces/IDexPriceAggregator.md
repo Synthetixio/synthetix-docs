@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDexPriceAggregator.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IDexPriceAggregator.sol)
+**Source:** [contracts/interfaces/IDexPriceAggregator.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IDexPriceAggregator.sol)
 
 ## Views
 
 ### `assetToAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IDexPriceAggregator.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IDexPriceAggregator.sol#L9)</sub>
 
 ??? example "Details"
 

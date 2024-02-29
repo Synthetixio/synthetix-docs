@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_ScheatOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_ScheatOptimismStep1.sol)
+**Source:** [contracts/migrations/Migration_ScheatOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol)
 
 ## Views
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/migrations/Migration_ScheatOptimismStep1.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_ScheatOptimismStep1.sol#L13)</sub>
 
 ??? example "Details"
 

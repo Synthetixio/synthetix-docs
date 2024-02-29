@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IExchangeCircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IExchangeCircuitBreaker.sol)
+**Source:** [contracts/interfaces/IExchangeCircuitBreaker.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IExchangeCircuitBreaker.sol)
 
 ## Views
 
 ### `exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IExchangeCircuitBreaker.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IExchangeCircuitBreaker.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `rateWithInvalid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IExchangeCircuitBreaker.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IExchangeCircuitBreaker.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `rateWithBreakCircuit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.98.3/contracts/interfaces/IExchangeCircuitBreaker.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/interfaces/IExchangeCircuitBreaker.sol#L13)</sub>
 
 ??? example "Details"
 
