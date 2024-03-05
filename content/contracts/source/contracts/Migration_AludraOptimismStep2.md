@@ -2,67 +2,67 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_AludraOptimismStep2.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol)
+**Source:** [contracts/migrations/Migration_AludraOptimismStep2.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L18)</sub>
 
 **Type:** `address`
 
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L31)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
 ### `perpsv2exchangerate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L28)</sub>
 
 **Type:** `contract PerpsV2ExchangeRate`
 
 ### `perpsv2marketsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L34)</sub>
 
 **Type:** `contract PerpsV2MarketSettings`
 
 ### `perpsv2marketstateankrperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L45)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstatebonkperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L48)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L48)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstatefetperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L25)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstategrtperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L39)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstatepythperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L42)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L37)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -70,7 +70,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -90,7 +90,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -110,7 +110,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L70)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L70)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L228)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L228)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_110`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L321)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L321)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L253)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L253)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_29`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L270)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L270)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_56`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L287)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L287)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_83`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L304)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L304)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L235)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L235)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L242)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L242)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_109`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L310)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L310)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_28`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L259)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L259)</sub>
 
 ??? example "Details"
 
@@ -314,7 +314,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_55`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L276)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L276)</sub>
 
 ??? example "Details"
 
@@ -332,7 +332,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_82`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/migrations/Migration_AludraOptimismStep2.sol#L293)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/migrations/Migration_AludraOptimismStep2.sol#L293)</sub>
 
 ??? example "Details"
 

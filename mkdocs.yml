@@ -189,6 +189,7 @@ nav:
                 - Migration_KochabOptimism: contracts/source/contracts/Migration_KochabOptimism.md
                 - Migration_LarawagOptimismStep1: contracts/source/contracts/Migration_LarawagOptimismStep1.md
                 - Migration_LarawagOptimismStep2: contracts/source/contracts/Migration_LarawagOptimismStep2.md
+                - Migration_MarkabOptimismStep1: contracts/source/contracts/Migration_MarkabOptimismStep1.md
                 - Migration_MarkebOptimismStep1: contracts/source/contracts/Migration_MarkebOptimismStep1.md
                 - Migration_MenkentOptimism: contracts/source/contracts/Migration_MenkentOptimism.md
                 - Migration_MerakOptimismStep1: contracts/source/contracts/Migration_MerakOptimismStep1.md

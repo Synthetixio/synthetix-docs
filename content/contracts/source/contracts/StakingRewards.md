@@ -2,61 +2,61 @@
 
 ## Description
 
-**Source:** [contracts/StakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol)
+**Source:** [contracts/StakingRewards.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol)
 
 ## Variables
 
 ### `lastUpdateTime`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L25)</sub>
 
 **Type:** `uint256`
 
 ### `periodFinish`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L22)</sub>
 
 **Type:** `uint256`
 
 ### `rewardPerTokenStored`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L26)</sub>
 
 **Type:** `uint256`
 
 ### `rewardRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L23)</sub>
 
 **Type:** `uint256`
 
 ### `rewards`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L29)</sub>
 
 **Type:** `mapping(address => uint256)`
 
 ### `rewardsDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L24)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L24)</sub>
 
 **Type:** `uint256`
 
 ### `rewardsToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L20)</sub>
 
 **Type:** `contract IERC20`
 
 ### `stakingToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L21)</sub>
 
 **Type:** `contract IERC20`
 
 ### `userRewardPerTokenPaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L28)</sub>
 
 **Type:** `mapping(address => uint256)`
 
@@ -64,7 +64,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L36)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `earned`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `getRewardForDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L75)</sub>
 
 ??? example "Details"
 
@@ -138,7 +138,7 @@
 
 ### `lastTimeRewardApplicable`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -156,7 +156,7 @@
 
 ### `rewardPerToken`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -174,7 +174,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -194,7 +194,7 @@
 
 ### `notifyRewardAmount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L113)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L113)</sub>
 
 ??? example "Details"
 
@@ -212,7 +212,7 @@
 
     **Requires**
 
-    * [require(..., "Provided reward too high")](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L127)
+    * [require(..., "Provided reward too high")](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L127)
 
     **Modifiers**
 
@@ -226,7 +226,7 @@
 
 ### `recoverERC20`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L135)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L135)</sub>
 
 ??? example "Details"
 
@@ -244,7 +244,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot withdraw the staking token")](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L136)
+    * [require(..., "Cannot withdraw the staking token")](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L136)
 
     **Modifiers**
 
@@ -256,7 +256,7 @@
 
 ### `setRewardsDuration`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L141)</sub>
 
 ??? example "Details"
 
@@ -274,7 +274,7 @@
 
     **Requires**
 
-    * [require(..., "Previous rewards period must be complete before changing the duration for the new period")](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L142)
+    * [require(..., "Previous rewards period must be complete before changing the duration for the new period")](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L142)
 
     **Modifiers**
 
@@ -288,7 +288,7 @@
 
 ### `exit`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L106)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L106)</sub>
 
 ??? example "Details"
 
@@ -306,7 +306,7 @@
 
 ### `getReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -330,7 +330,7 @@
 
 ### `stake`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -348,7 +348,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot stake 0")](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L82)
+    * [require(..., "Cannot stake 0")](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L82)
 
     **Modifiers**
 
@@ -364,7 +364,7 @@
 
 ### `withdraw`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -382,7 +382,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot withdraw 0")](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L90)
+    * [require(..., "Cannot withdraw 0")](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L90)
 
     **Modifiers**
 
@@ -398,7 +398,7 @@
 
 ### `updateReward`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L152)</sub>
 
 **Signature**: `updateReward(address account)`
 
@@ -406,36 +406,36 @@
 
 ### `Recovered`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L169)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L169)</sub>
 
 **Signature**: `Recovered(address token, uint256 amount)`
 
 ### `RewardAdded`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L164)</sub>
 
 **Signature**: `RewardAdded(uint256 reward)`
 
 ### `RewardPaid`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L167)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L167)</sub>
 
 **Signature**: `RewardPaid(address user, uint256 reward)`
 
 ### `RewardsDurationUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L168)</sub>
 
 **Signature**: `RewardsDurationUpdated(uint256 newDuration)`
 
 ### `Staked`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L165)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L165)</sub>
 
 **Signature**: `Staked(address user, uint256 amount)`
 
 ### `Withdrawn`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.0-alpha/contracts/StakingRewards.sol#L166)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/StakingRewards.sol#L166)</sub>
 
 **Signature**: `Withdrawn(address user, uint256 amount)`
