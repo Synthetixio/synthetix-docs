@@ -2,6 +2,27 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Markab (v2.99.1)
+
+**Published**: Mar 5, 2024
+
+**Codebase**: [v2.99.1](https://github.com/Synthetixio/synthetix/tree/v2.99.1)
+
+> ## Release notes
+
+- Perps V2 new market(s):
+  - CVX (SIP-2052)
+  - JUP (SIP-2053)
+  - PENDLE (SIP-2054)
+  - STRK (SIP-2056)
+
+[SIP-2052: List CVX on SNX Perps v2 ](https://sips.synthetix.io/sips/sip-2052/)
+[SIP-2053: List JUP on SNX Perps v2](https://sips.synthetix.io/sips/sip-2053/)
+[SIP-2054: List PENDLE on SNX Perps v2](https://sips.synthetix.io/sips/sip-2054/)
+[SIP-2056: List STRK on SNX Perps v2](https://sips.synthetix.io/sips/sip-2056/)
+
+---
+
 # Markeb (v2.98.2)
 
 **Published**: Jan 30, 2024
