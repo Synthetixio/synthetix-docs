@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Aljanah (v2.100.0)
+
+**Published**: Mar 13, 2024
+
+**Codebase**: [v2.100.0](https://github.com/Synthetixio/synthetix/tree/v2.100.0)
+
+> ## Release notes
+>
+> Grants a few special permissions to the `LegacyMarket` contract, the facilitator of the migration of collateral and debt to V3.
+
+[SIP-299: Minor upgrades to v2x to support V3 Migration](https://sips.synthetix.io/sips/sip-299/)
+
+> Audit: https://iosiro.com/audits/synthetix-alphecca-release-smart-contract-audit
+
+---
+
 # Markab (v2.99.1)
 
 **Published**: Mar 5, 2024
