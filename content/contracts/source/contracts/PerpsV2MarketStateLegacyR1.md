@@ -2,61 +2,61 @@
 
 ## Description
 
-**Source:** [contracts/PerpsV2MarketStateLegacyR1.sol](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol)
+**Source:** [contracts/PerpsV2MarketStateLegacyR1.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol)
 
 ## Variables
 
 ### `baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L31)</sub>
 
 **Type:** `bytes32`
 
 ### `delayedOrders`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L83)</sub>
 
 **Type:** `mapping(address => struct IPerpsV2MarketBaseTypesLegacyR1.DelayedOrder)`
 
 ### `fundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L58)</sub>
 
 **Type:** `uint32`
 
 ### `fundingRateLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L65)</sub>
 
 **Type:** `int128`
 
 ### `fundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L59)</sub>
 
 **Type:** `int128[]`
 
 ### `marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L28)</sub>
 
 **Type:** `bytes32`
 
 ### `marketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L34)</sub>
 
 **Type:** `uint128`
 
 ### `marketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L40)</sub>
 
 **Type:** `int128`
 
 ### `positions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L71)</sub>
 
 **Type:** `mapping(address => struct IPerpsV2MarketBaseTypesLegacyR1.Position)`
 
@@ -64,7 +64,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `entryDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L100)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `fundingSequenceLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L108)</sub>
 
 ??? example "Details"
 
@@ -120,7 +120,7 @@
 
 ### `getDelayedOrderAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -142,7 +142,7 @@
 
 ### `getDelayedOrderAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L121)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `getPositionAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -186,7 +186,7 @@
 
 ### `getPositionAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `nextPositionId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -228,7 +228,7 @@
 
 ### `deleteDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L250)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L250)</sub>
 
 ??? example "Details"
 
@@ -250,7 +250,7 @@
 
 ### `deletePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L243)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L243)</sub>
 
 ??? example "Details"
 
@@ -272,7 +272,7 @@
 
 ### `getDelayedOrderAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L134)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L134)</sub>
 
 ??? example "Details"
 
@@ -294,7 +294,7 @@
 
 ### `getDelayedOrderAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L121)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L121)</sub>
 
 ??? example "Details"
 
@@ -316,7 +316,7 @@
 
 ### `getPositionAddressesLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L130)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L130)</sub>
 
 ??? example "Details"
 
@@ -338,7 +338,7 @@
 
 ### `getPositionAddressesPage`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L112)</sub>
 
 ??? example "Details"
 
@@ -360,7 +360,7 @@
 
 ### `pushFundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L168)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L168)</sub>
 
 ??? example "Details"
 
@@ -382,7 +382,7 @@
 
 ### `setBaseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L143)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L143)</sub>
 
 ??? example "Details"
 
@@ -400,7 +400,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot change base asset")](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L144)
+    * [require(..., "Cannot change base asset")](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L144)
 
     **Modifiers**
 
@@ -408,7 +408,7 @@
 
 ### `setEntryDebtCorrection`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L152)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L152)</sub>
 
 ??? example "Details"
 
@@ -430,7 +430,7 @@
 
 ### `setFundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L164)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L164)</sub>
 
 ??? example "Details"
 
@@ -452,7 +452,7 @@
 
 ### `setFundingRateLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L173)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L173)</sub>
 
 ??? example "Details"
 
@@ -474,7 +474,7 @@
 
 ### `setMarketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L138)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L138)</sub>
 
 ??? example "Details"
 
@@ -492,7 +492,7 @@
 
     **Requires**
 
-    * [require(..., "Cannot change market key")](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L139)
+    * [require(..., "Cannot change market key")](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L139)
 
     **Modifiers**
 
@@ -500,7 +500,7 @@
 
 ### `setMarketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L148)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L148)</sub>
 
 ??? example "Details"
 
@@ -522,7 +522,7 @@
 
 ### `setMarketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L160)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L160)</sub>
 
 ??? example "Details"
 
@@ -544,7 +544,7 @@
 
 ### `setNextPositionId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L156)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L156)</sub>
 
 ??? example "Details"
 
@@ -566,7 +566,7 @@
 
 ### `updateDelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L212)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L212)</sub>
 
 ??? example "Details"
 
@@ -588,7 +588,7 @@
 
 ### `updatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.99.1/contracts/PerpsV2MarketStateLegacyR1.sol#L187)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/PerpsV2MarketStateLegacyR1.sol#L187)</sub>
 
 ??? example "Details"
 

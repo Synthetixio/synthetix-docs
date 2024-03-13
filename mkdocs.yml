@@ -137,6 +137,8 @@ nav:
                 - LiquidatorRewards: contracts/source/contracts/LiquidatorRewards.md
                 - Migration_Algol: contracts/source/contracts/Migration_Algol.md
                 - Migration_AlgolOptimism: contracts/source/contracts/Migration_AlgolOptimism.md
+                - Migration_Aljanah: contracts/source/contracts/Migration_Aljanah.md
+                - Migration_AljanahOptimism: contracts/source/contracts/Migration_AljanahOptimism.md
                 - Migration_Alkaid: contracts/source/contracts/Migration_Alkaid.md
                 - Migration_AlmachOptimism: contracts/source/contracts/Migration_AlmachOptimism.md
                 - Migration_Alnitak: contracts/source/contracts/Migration_Alnitak.md
