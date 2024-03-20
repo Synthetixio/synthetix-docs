@@ -1373,7 +1373,7 @@ Implements most of [SIP-71](https://sips.synthetix.io/sips/sip-71):
 
 **Codebase**: [v2.1.9](https://github.com/Synthetixio/synthetix/tree/v2.1.9)
 
-> We added support for synthetix as an npm module. With it, you can load the ABIs, bytecode, and target addresses for `synthetix` on mainnet and all available testnets (`sepolia`, and `sepolia-ovm`). Please see our [README.md](https://github.com/Synthetixio/synthetix#usage-and-requirements) documentation for more details.
+> We added support for synthetix as an npm module. With it, you can load the ABIs, bytecode, and target addresses for `synthetix` on mainnet and all available testnets (`kovan`, `rinkeby` and `ropsten`). Please see our [README.md](https://github.com/Synthetixio/synthetix#usage-and-requirements) documentation for more details.
 
 ---
 

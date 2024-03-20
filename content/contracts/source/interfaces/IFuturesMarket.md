@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IFuturesMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol)
+**Source:** [contracts/interfaces/IFuturesMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol)
 
 ## Views
 
 ### `accessibleMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L55)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L55)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `accruedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `assetPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L33)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `baseAsset`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L12)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L12)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `canLiquidate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L61)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L61)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `currentFundingRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `fundingLastRecomputed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L18)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L18)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `fundingSequence`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L20)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `fundingSequenceLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -170,7 +170,7 @@
 
 ### `liquidationFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L59)</sub>
 
 ??? example "Details"
 
@@ -188,7 +188,7 @@
 
 ### `liquidationPrice`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -206,7 +206,7 @@
 
 ### `marketDebt`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L37)</sub>
 
 ??? example "Details"
 
@@ -224,7 +224,7 @@
 
 ### `marketKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L10)</sub>
 
 ??? example "Details"
 
@@ -242,7 +242,7 @@
 
 ### `marketSize`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L14)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L14)</sub>
 
 ??? example "Details"
 
@@ -260,7 +260,7 @@
 
 ### `marketSizes`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -278,7 +278,7 @@
 
 ### `marketSkew`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L16)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L16)</sub>
 
 ??? example "Details"
 
@@ -296,7 +296,7 @@
 
 ### `notionalValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -314,7 +314,7 @@
 
 ### `orderFee`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -332,7 +332,7 @@
 
 ### `positions`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L22)</sub>
 
 ??? example "Details"
 
@@ -350,7 +350,7 @@
 
 ### `postTradeDetails`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L65)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L65)</sub>
 
 ??? example "Details"
 
@@ -368,7 +368,7 @@
 
 ### `profitLoss`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L49)</sub>
 
 ??? example "Details"
 
@@ -386,7 +386,7 @@
 
 ### `remainingMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L53)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L53)</sub>
 
 ??? example "Details"
 
@@ -404,7 +404,7 @@
 
 ### `unrecordedFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -424,7 +424,7 @@
 
 ### `cancelNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L93)</sub>
 
 ??? example "Details"
 
@@ -442,7 +442,7 @@
 
 ### `closePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L97)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L97)</sub>
 
 ??? example "Details"
 
@@ -460,7 +460,7 @@
 
 ### `closePositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L99)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L99)</sub>
 
 ??? example "Details"
 
@@ -478,7 +478,7 @@
 
 ### `executeNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L95)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L95)</sub>
 
 ??? example "Details"
 
@@ -496,7 +496,7 @@
 
 ### `liquidatePosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L101)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L101)</sub>
 
 ??? example "Details"
 
@@ -514,7 +514,7 @@
 
 ### `modifyPosition`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L85)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L85)</sub>
 
 ??? example "Details"
 
@@ -532,7 +532,7 @@
 
 ### `modifyPositionWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L87)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L87)</sub>
 
 ??? example "Details"
 
@@ -550,7 +550,7 @@
 
 ### `recomputeFunding`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L79)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L79)</sub>
 
 ??? example "Details"
 
@@ -568,7 +568,7 @@
 
 ### `submitNextPriceOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L89)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L89)</sub>
 
 ??? example "Details"
 
@@ -586,7 +586,7 @@
 
 ### `submitNextPriceOrderWithTracking`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -604,7 +604,7 @@
 
 ### `transferMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L81)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L81)</sub>
 
 ??? example "Details"
 
@@ -622,7 +622,7 @@
 
 ### `withdrawAllMargin`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/IFuturesMarket.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IFuturesMarket.sol#L83)</sub>
 
 ??? example "Details"
 

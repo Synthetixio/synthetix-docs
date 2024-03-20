@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/ISynthetixDebtShare.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol)
+**Source:** [contracts/interfaces/ISynthetixDebtShare.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol)
 
 ## Views
 
 ### `allowance`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L9)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L9)</sub>
 
 ??? example "Details"
 
@@ -26,7 +26,7 @@
 
 ### `approve`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -44,7 +44,7 @@
 
 ### `balanceOf`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -62,7 +62,7 @@
 
 ### `balanceOfOnPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -80,7 +80,7 @@
 
 ### `currentPeriodId`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L7)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L7)</sub>
 
 ??? example "Details"
 
@@ -98,7 +98,7 @@
 
 ### `sharePercent`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -116,7 +116,7 @@
 
 ### `sharePercentOnPeriod`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L19)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
 ### `totalSupply`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -152,7 +152,7 @@
 
 ### `transfer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L31)</sub>
 
 ??? example "Details"
 
@@ -172,7 +172,7 @@
 
 ### `addAuthorizedBroker`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L39)</sub>
 
 ??? example "Details"
 
@@ -190,7 +190,7 @@
 
 ### `addAuthorizedToSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -208,7 +208,7 @@
 
 ### `burnShare`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L27)</sub>
 
 ??? example "Details"
 
@@ -226,7 +226,7 @@
 
 ### `mintShare`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L25)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L25)</sub>
 
 ??? example "Details"
 
@@ -244,7 +244,7 @@
 
 ### `removeAuthorizedBroker`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L41)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L41)</sub>
 
 ??? example "Details"
 
@@ -262,7 +262,7 @@
 
 ### `removeAuthorizedToSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L45)</sub>
 
 ??? example "Details"
 
@@ -280,7 +280,7 @@
 
 ### `takeSnapshot`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L23)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L23)</sub>
 
 ??? example "Details"
 
@@ -298,7 +298,7 @@
 
 ### `transferFrom`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.0/contracts/interfaces/ISynthetixDebtShare.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/ISynthetixDebtShare.sol#L33)</sub>
 
 ??? example "Details"
 
