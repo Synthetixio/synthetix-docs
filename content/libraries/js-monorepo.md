@@ -66,11 +66,11 @@ const snxAtBlock12m = await snxjs.contracts.ExchangeRates.rateForCurrency(snxjs.
 
 ```javascript
 // any old provider will do
-const provider = ethers.providers.getDefaultProvider('kovan');
+const provider = ethers.providers.getDefaultProvider('sepolia');
 
 // create a signer with a provider attached
 const signer = new ethers.Wallet(
-  // just a dummy kovan wallet with a little keth from the faucet
+  // just a dummy sepolia wallet with a little keth from the faucet
   '0xa0d951c494421559c63089093b020cf2f7aac003c916967dc36e989bc695222e',
   provider,
 );

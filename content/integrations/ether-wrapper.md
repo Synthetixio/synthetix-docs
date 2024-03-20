@@ -136,17 +136,17 @@ For each burn, among other events, two will be emitted:
 
         // For others, see the contracts-interface README:
         // https://github.com/Synthetixio/js-monorepo/tree/master/packages/contracts-interface
-        const provider = ethers.providers.getDefaultProvider('kovan');
+        const provider = ethers.providers.getDefaultProvider('sepolia');
 
         // create a signer with a provider attached
         const signer = new ethers.Wallet(
-          // just a dummy kovan wallet with a little keth from the faucet
+          // just a dummy sepolia wallet with a little keth from the faucet
           '0xa0d951c494421559c63089093b020cf2f7aac003c916967dc36e989bc695222e',
           provider
         );
 
         // and then instantiate synthetix with the signer
-        const snxjs = synthetix({ network: 'kovan', signer });
+        const snxjs = synthetix({ network: 'sepolia', signer });
 
         (async () => {
           try {

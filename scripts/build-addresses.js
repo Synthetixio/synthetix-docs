@@ -25,16 +25,16 @@ const generateAddresses = () => {
 	headerContent +=
 		'\n\n!!! tip "Handy Contract Links"\n\n    All of the below contracts can be accessed by our [contract linker](https://github.com/Synthetixio/contract-linker) utility. Simply suffix the contract name to the end of' +
 		' https://contracts.synthetix.io to get a link that will always redirect to the latest version of the contract on Etherscan.\n\n    For example, try https://contracts.synthetix.io/Synthetix to get linked to the latest Synthetix underlying.' +
-		'\n\n    For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/goerli/Synthetix';
+		'\n\n    For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/sepolia/Synthetix';
 
-	const contractContent = ['mainnet', 'mainnet-ovm', 'goerli', 'goerli-ovm', 'sepolia-ovm']
+	const contractContent = ['mainnet', 'mainnet-ovm', 'sepolia', 'sepolia-ovm']
 		.map(networkLabel => {
 			const [network, useOvm] = networkLabel.split('-');
 
 			const targets = snx.getTarget({ network, useOvm });
 
 			const header = `\n## ${network.toUpperCase()}${useOvm ? ' Optimism (L2)' : ''} ${
-				['ropsten', 'rinkeby'].indexOf(network) > -1 ? '[unsupported]' : ''
+				['sepolia'].indexOf(network) > -1 ? '[unsupported]' : ''
 			}\n`;
 			return (
 				header +

@@ -54,7 +54,7 @@ On a successful transaction, the following events occur:
         const privateKey = '0x' + '1'.repeat(64); // don't actually put a private key in code obviously
 
         // parameters: default provider, default networkId, private key as a string
-        const networkId = 3; // ropsten, (use 1 for mainnet)
+        const networkId = 11155111; // sepolia, (use 1 for mainnet)
         const signer = new SynthetixJs.signers.PrivateKey(null, networkId, privateKey);
         const snxjs = new SynthetixJs({ signer, networkId });
 
@@ -87,7 +87,7 @@ On a successful transaction, the following events occur:
         // import synthetix from 'synthetix';
         // import ethers from 'ethers';
 
-        const network = 'ropsten';
+        const network = 'sepolia';
         const provider = ethers.getDefaultProvider(network === 'mainnet' ? 'homestead' : network);
 
         const { address } = synthetix.getTarget({ network, contract: 'ProxyERC20' });

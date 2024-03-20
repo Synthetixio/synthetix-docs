@@ -41,7 +41,7 @@ Instead of using the subgraphs, you can directly query the EVM via most free pro
     const synthetix = require('synthetix');
     const ethers = require('ethers');
 
-    const network = 'kovan';
+    const network = 'sepolia';
 
     const provider = ethers.getDefaultProvider(network);
 

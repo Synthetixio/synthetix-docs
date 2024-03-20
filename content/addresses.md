@@ -12,7 +12,7 @@ Here is the list of all contracts within the current Synthetix system.
 
     For example, try https://contracts.synthetix.io/Synthetix to get linked to the latest Synthetix underlying.
 
-    For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/goerli/Synthetix
+    For testnets, insert the testnet name before the contract, as in https://contracts.synthetix.io/sepolia/Synthetix
 
 ## MAINNET
 
