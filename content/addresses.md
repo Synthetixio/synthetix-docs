@@ -5188,7 +5188,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr></table>
 
-## SEPOLIA [unsupported]
+## SEPOLIA
 
 <table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
               <tr>
@@ -5606,7 +5606,7 @@ Here is the list of all contracts within the current Synthetix system.
                 </td>
               </tr></table>
 
-## SEPOLIA Optimism (L2) [unsupported]
+## SEPOLIA Optimism (L2)
 
 <table><tr><th>Name</th><th>Source</th><th>Address</th></tr>
               <tr>

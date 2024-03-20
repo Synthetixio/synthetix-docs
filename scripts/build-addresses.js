@@ -34,7 +34,7 @@ const generateAddresses = () => {
 			const targets = snx.getTarget({ network, useOvm });
 
 			const header = `\n## ${network.toUpperCase()}${useOvm ? ' Optimism (L2)' : ''} ${
-				['sepolia'].indexOf(network) > -1 ? '[unsupported]' : ''
+				['goerli'].indexOf(network) > -1 ? '[unsupported]' : ''
 			}\n`;
 			return (
 				header +
