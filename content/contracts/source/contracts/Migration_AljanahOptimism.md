@@ -2,79 +2,79 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_AljanahOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol)
+**Source:** [contracts/migrations/Migration_AljanahOptimism.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L20)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L20)</sub>
 
 **Type:** `address`
 
 ### `addressresolver_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L27)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L27)</sub>
 
 **Type:** `contract AddressResolver`
 
 ### `frozenrewardescrowv2_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L42)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L42)</sub>
 
 **Type:** `contract ImportableRewardEscrowV2`
 
 ### `new_RewardEscrowV2Frozen_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L56)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L56)</sub>
 
 **Type:** `address`
 
 ### `new_RewardEscrowV2_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L52)</sub>
 
 **Type:** `address`
 
 ### `new_Synthetix_contract`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L54)</sub>
 
 **Type:** `address`
 
 ### `proxysynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L29)</sub>
 
 **Type:** `contract ProxyERC20`
 
 ### `rewardescrowv2_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L39)</sub>
 
 **Type:** `contract ImportableRewardEscrowV2`
 
 ### `rewardescrowv2storage_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L36)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L36)</sub>
 
 **Type:** `contract RewardEscrowV2Storage`
 
 ### `rewardsdistribution_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L33)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L33)</sub>
 
 **Type:** `contract RewardsDistribution`
 
 ### `synthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L45)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L45)</sub>
 
 **Type:** `contract MintableSynthetix`
 
 ### `tokenstatesynthetix_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L31)</sub>
 
 **Type:** `contract TokenState`
 
@@ -82,7 +82,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L58)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L58)</sub>
 
 ??? example "Details"
 
@@ -102,7 +102,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L60)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L60)</sub>
 
 ??? example "Details"
 
@@ -122,7 +122,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L72)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L72)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L104)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L104)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `addressresolver_importAddresses_0`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L118)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L118)</sub>
 
 ??? example "Details"
 
@@ -182,7 +182,7 @@
 
 ### `addressresolver_rebuildCaches_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L133)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L133)</sub>
 
 ??? example "Details"
 
@@ -200,7 +200,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L111)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_AljanahOptimism.sol#L111)</sub>
 
 ??? example "Details"
 

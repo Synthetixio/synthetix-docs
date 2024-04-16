@@ -93,6 +93,7 @@ nav:
                 - DelegateApprovals: contracts/source/contracts/DelegateApprovals.md
                 - Depot: contracts/source/contracts/Depot.md
                 - DirectIntegrationManager: contracts/source/contracts/DirectIntegrationManager.md
+                - DynamicSynthRedeemer: contracts/source/contracts/DynamicSynthRedeemer.md
                 - EmptyCollateralManager: contracts/source/contracts/EmptyCollateralManager.md
                 - EmptyEtherCollateral: contracts/source/contracts/EmptyEtherCollateral.md
                 - EmptyEtherWrapper: contracts/source/contracts/EmptyEtherWrapper.md
@@ -328,6 +329,7 @@ nav:
                 - IDepot: contracts/source/interfaces/IDepot.md
                 - IDexPriceAggregator: contracts/source/interfaces/IDexPriceAggregator.md
                 - IDirectIntegrationManager: contracts/source/interfaces/IDirectIntegrationManager.md
+                - IDynamicSynthRedeemer: contracts/source/interfaces/IDynamicSynthRedeemer.md
                 - IERC20: contracts/source/interfaces/IERC20.md
                 - IEtherCollateral: contracts/source/interfaces/IEtherCollateral.md
                 - IEtherCollateralsUSD: contracts/source/interfaces/IEtherCollateralsUSD.md

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/frozen/FuturesMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/frozen/FuturesMarket.sol)
+**Source:** [contracts/frozen/FuturesMarket.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/frozen/FuturesMarket.sol)
 
 ## Constructor
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/frozen/FuturesMarket.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/frozen/FuturesMarket.sol#L59)</sub>
 
 ??? example "Details"
 

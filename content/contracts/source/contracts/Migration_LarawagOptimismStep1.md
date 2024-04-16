@@ -2,61 +2,61 @@
 
 ## Description
 
-**Source:** [contracts/migrations/Migration_LarawagOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol)
+**Source:** [contracts/migrations/Migration_LarawagOptimismStep1.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol)
 
 ## Variables
 
 ### `OWNER`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L19)</sub>
 
 **Type:** `address`
 
 ### `exchangerates_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L46)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L46)</sub>
 
 **Type:** `contract ExchangeRates`
 
 ### `futuresmarketmanager_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L32)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L32)</sub>
 
 **Type:** `contract FuturesMarketManager`
 
 ### `perpsv2exchangerate_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L29)</sub>
 
 **Type:** `contract PerpsV2ExchangeRate`
 
 ### `perpsv2marketsettings_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L35)</sub>
 
 **Type:** `contract PerpsV2MarketSettings`
 
 ### `perpsv2marketstateblurperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L43)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstatepepeperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L26)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L26)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `perpsv2marketstatesuiperp_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L40)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L40)</sub>
 
 **Type:** `contract PerpsV2MarketState`
 
 ### `systemstatus_i`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L38)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L38)</sub>
 
 **Type:** `contract SystemStatus`
 
@@ -64,7 +64,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L52)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L52)</sub>
 
 ??? example "Details"
 
@@ -84,7 +84,7 @@
 
 ### `contractsRequiringOwnership`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L54)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L54)</sub>
 
 ??? example "Details"
 
@@ -104,7 +104,7 @@
 
 ### `migrate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L66)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L66)</sub>
 
 ??? example "Details"
 
@@ -128,7 +128,7 @@
 
 ### `acceptAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L237)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L237)</sub>
 
 ??? example "Details"
 
@@ -146,7 +146,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_2`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L262)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L262)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_29`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L279)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L279)</sub>
 
 ??? example "Details"
 
@@ -182,7 +182,7 @@
 
 ### `futuresmarketmanager_addProxiedMarkets_56`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L296)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L296)</sub>
 
 ??? example "Details"
 
@@ -200,7 +200,7 @@
 
 ### `nominateAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L244)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L244)</sub>
 
 ??? example "Details"
 
@@ -218,7 +218,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_1`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L251)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L251)</sub>
 
 ??? example "Details"
 
@@ -236,7 +236,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_28`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L268)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L268)</sub>
 
 ??? example "Details"
 
@@ -254,7 +254,7 @@
 
 ### `perpsv2exchangerate_addAssociatedContracts_55`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L285)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/migrations/Migration_LarawagOptimismStep1.sol#L285)</sub>
 
 ??? example "Details"
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IPerpsV2MarketBaseTypes.sol](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol)
+**Source:** [contracts/interfaces/IPerpsV2MarketBaseTypes.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol)
 
 ## Structs
 
 ### `DelayedOrder`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol#L37)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |
@@ -24,7 +24,7 @@
 
 ### `Position`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.100.2-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol#L28)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/interfaces/IPerpsV2MarketBaseTypes.sol#L28)</sub>
 
 | Field              | Type      | Description |
 | ------------------ | --------- | ----------- |
