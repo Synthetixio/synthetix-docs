@@ -2,25 +2,25 @@
 
 ## Description
 
-**Source:** [contracts/DynamicSynthRedeemer.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol)
+**Source:** [contracts/DynamicSynthRedeemer.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L19)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L19)</sub>
 
 **Type:** `bytes32`
 
 ### `discountRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L21)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L21)</sub>
 
 **Type:** `uint256`
 
 ### `redemptionActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L22)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L22)</sub>
 
 **Type:** `bool`
 
@@ -28,7 +28,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L29)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L29)</sub>
 
 ??? example "Details"
 
@@ -48,7 +48,7 @@
 
 ### `getDiscountRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L57)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L57)</sub>
 
 ??? example "Details"
 
@@ -66,7 +66,7 @@
 
 ### `resolverAddressesRequired`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L35)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L35)</sub>
 
 ??? example "Details"
 
@@ -86,7 +86,7 @@
 
 ### `resumeRedemption`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L131)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L131)</sub>
 
 ??? example "Details"
 
@@ -104,7 +104,7 @@
 
     **Requires**
 
-    * [require(..., "Redemption not suspended")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L132)
+    * [require(..., "Redemption not suspended")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L132)
 
     **Modifiers**
 
@@ -116,7 +116,7 @@
 
 ### `setDiscountRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L119)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L119)</sub>
 
 ??? example "Details"
 
@@ -134,7 +134,7 @@
 
     **Requires**
 
-    * [require(..., "Invalid rate")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L120)
+    * [require(..., "Invalid rate")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L120)
 
     **Modifiers**
 
@@ -146,7 +146,7 @@
 
 ### `suspendRedemption`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L125)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L125)</sub>
 
 ??? example "Details"
 
@@ -164,7 +164,7 @@
 
     **Requires**
 
-    * [require(..., "Redemption suspended")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L126)
+    * [require(..., "Redemption suspended")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L126)
 
     **Modifiers**
 
@@ -178,7 +178,7 @@
 
 ### `_exchangeRates`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L47)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L47)</sub>
 
 ??? example "Details"
 
@@ -196,7 +196,7 @@
 
 ### `_issuer`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L43)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L43)</sub>
 
 ??? example "Details"
 
@@ -214,7 +214,7 @@
 
 ### `_proxyAddressForKey`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L63)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L63)</sub>
 
 ??? example "Details"
 
@@ -232,11 +232,11 @@
 
     **Requires**
 
-    * [require(..., "Invalid synth")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L65)
+    * [require(..., "Invalid synth")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L65)
 
 ### `_redeem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L91)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L91)</sub>
 
 ??? example "Details"
 
@@ -254,11 +254,11 @@
 
     **Requires**
 
-    * [require(..., "No balance of synth to redeem")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L96)
+    * [require(..., "No balance of synth to redeem")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L96)
 
-    * [require(..., "Cannot redeem sUSD")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L97)
+    * [require(..., "Cannot redeem sUSD")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L97)
 
-    * [require(..., "Synth not redeemable")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L102)
+    * [require(..., "Synth not redeemable")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L102)
 
     **Emits**
 
@@ -266,7 +266,7 @@
 
 ### `_redeemingActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L51)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L51)</sub>
 
 ??? example "Details"
 
@@ -284,13 +284,13 @@
 
     **Requires**
 
-    * [require(..., "Redemption deactivated")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L52)
+    * [require(..., "Redemption deactivated")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L52)
 
 ## External Functions
 
 ### `redeem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L78)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L78)</sub>
 
 ??? example "Details"
 
@@ -312,7 +312,7 @@
 
 ### `redeemAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L71)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L71)</sub>
 
 ??? example "Details"
 
@@ -334,7 +334,7 @@
 
 ### `redeemPartial`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L83)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L83)</sub>
 
 ??? example "Details"
 
@@ -352,7 +352,7 @@
 
     **Requires**
 
-    * [require(..., "Insufficient balance")](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L87)
+    * [require(..., "Insufficient balance")](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L87)
 
     **Modifiers**
 
@@ -362,30 +362,30 @@
 
 ### `requireRedemptionActive`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L112)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L112)</sub>
 
 ## Events
 
 ### `DiscountRateUpdated`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L141)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L141)</sub>
 
 **Signature**: `DiscountRateUpdated(uint256 discountRate)`
 
 ### `RedemptionResumed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L140)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L140)</sub>
 
 **Signature**: `RedemptionResumed()`
 
 ### `RedemptionSuspended`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L139)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L139)</sub>
 
 **Signature**: `RedemptionSuspended()`
 
 ### `SynthRedeemed`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/DynamicSynthRedeemer.sol#L142)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/DynamicSynthRedeemer.sol#L142)</sub>
 
 **Signature**: `SynthRedeemed(address synth, address account, uint256 amountOfSynth, uint256 amountInsUSD)`

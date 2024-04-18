@@ -12,7 +12,7 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
     This contract also contains functionality enabling automatic [preferred currency](#preferredcurrency) conversion on Synth transfers, but it is currently disabled.
 
-**Source:** [contracts/legacy/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol)
+**Source:** [contracts/legacy/SynthetixState.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol)
 
 ## Architecture
 
@@ -24,7 +24,7 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
 ### `IssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L17)</sub>
 
 | Field                  | Type      | Description |
 | ---------------------- | --------- | ----------- |
@@ -35,7 +35,7 @@ Upon system updates, this contract will continue to exist, while the Synthetix l
 
 ### `debtLedger`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L37)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L37)</sub>
 
 A list of factors indicating, for each [debt-modifying event](#appenddebtledgervalue), what effect it had on the percentage of debt of all other holders. Later debt ledger entries correspond to more recent issuance events.
 
@@ -43,7 +43,7 @@ A list of factors indicating, for each [debt-modifying event](#appenddebtledgerv
 
 ### `issuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L31)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L31)</sub>
 
 The most recent issuance data for each address.
 
@@ -51,7 +51,7 @@ The most recent issuance data for each address.
 
 ### `totalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L34)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L34)</sub>
 
 The number of people with outstanding synths.
 
@@ -61,7 +61,7 @@ The number of people with outstanding synths.
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L39)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L39)</sub>
 
 Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.md) instances.
 
@@ -83,7 +83,7 @@ Initialises the inherited [`State`](State.md) and [`LimitedSetup`](LimitedSetup.
 
 ### `debtLedgerLength`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L93)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L93)</sub>
 
 Returns the number of entries currently in [`debtLedger`](#debtledger).
 
@@ -105,7 +105,7 @@ Primarily used in [`FeePool`](FeePool.md) for fee period computations.
 
 ### `hasIssued`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L108)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L108)</sub>
 
 Returns true if a given account has any outstanding issuance debt resulting from Synth minting.
 
@@ -127,7 +127,7 @@ Used in [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) to det
 
 ### `lastDebtLedgerEntry`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L100)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L100)</sub>
 
 Returns the most recent [`debtLedger`](#debtledger) entry.
 
@@ -151,7 +151,7 @@ Primarily used in the [`Synthetix`](Synthetix.md) for debt computations.
 
 ### `appendDebtLedgerValue`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L84)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L84)</sub>
 
 Pushes a new value to the end of the [`debtLedger`](#debtledger).
 
@@ -177,7 +177,7 @@ This is used by [`Synthetix._addToDebtRegister`](Synthetix.md#addtodebtregister)
 
 ### `clearIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L59)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L59)</sub>
 
 Deletes the issuance data associated with a given account.
 
@@ -201,7 +201,7 @@ Deletes the issuance data associated with a given account.
 
 ### `decrementTotalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L75)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L75)</sub>
 
 Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._removeFromDebtRegister`](Synthetix.md#_removefromdebtregister) whenever an issuer burns enough Synths to pay down their entire outstanding debt.
 
@@ -225,7 +225,7 @@ Reduces [`totalIssuerCount`](#totalissuercount) by one. This is called within [`
 
 ### `incrementTotalIssuerCount`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L67)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L67)</sub>
 
 Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within [`Synthetix._addToDebtRegister`](Synthetix.md#_addtodebtregister) whenever an account with no outstanding issuance debt mints new Synths.
 
@@ -249,7 +249,7 @@ Increases [`totalIssuerCount`](#totalissuercount) by one. This is called within 
 
 ### `setCurrentIssuanceData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.1-alpha/contracts/legacy/SynthetixState.sol#L49)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/legacy/SynthetixState.sol#L49)</sub>
 
 Allows the [`Synthetix`](Synthetix.md) contract to update the debt ownership entry for this account and sets their debt entry index to the current length of the [`debtLedger`](#debtledger).
 The debt ledger itself is not modified.
