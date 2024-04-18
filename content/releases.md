@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Acrab (v2.101.2)
+
+**Published**: Apr 18, 2024
+
+**Codebase**: [v2.101.2](https://github.com/Synthetixio/synthetix/tree/v2.101.2)
+
+> ## Release notes
+>
+> Deprecates classic exchanges (and atomic exchanges) of all non-sUSD synths, in favor of a new DynamicSynthRedeemer contract that allows for synth redemption at the Chainlink price multiplied by a discount rate.
+
+[SIP-2059: Legacy Spot Synth Migration](https://sips.synthetix.io/sips/sip-2059/)
+
+> Audit: https://iosiro.com/audits/synthetix-acrab-release-smart-contract-audit
+
+---
+
 # Aljanah (v2.100.0)
 
 **Published**: Mar 13, 2024
