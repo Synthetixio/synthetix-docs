@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/OneNetAggregatorDebtRatio.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/OneNetAggregatorDebtRatio.sol)
+**Source:** [contracts/OneNetAggregatorDebtRatio.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/OneNetAggregatorDebtRatio.sol)
 
 ## Variables
 
 ### `CONTRACT_NAME`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/OneNetAggregatorDebtRatio.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/OneNetAggregatorDebtRatio.sol#L6)</sub>
 
 **Type:** `bytes32`
 
@@ -16,7 +16,7 @@
 
 ### `constructor`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/OneNetAggregatorDebtRatio.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/OneNetAggregatorDebtRatio.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -36,7 +36,7 @@
 
 ### `getRoundData`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.2/contracts/OneNetAggregatorDebtRatio.sol#L10)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/OneNetAggregatorDebtRatio.sol#L10)</sub>
 
 ??? example "Details"
 

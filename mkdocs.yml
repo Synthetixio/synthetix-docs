@@ -138,6 +138,8 @@ nav:
                 - LiquidatorRewards: contracts/source/contracts/LiquidatorRewards.md
                 - Migration_Acrab: contracts/source/contracts/Migration_Acrab.md
                 - Migration_AcrabOptimism: contracts/source/contracts/Migration_AcrabOptimism.md
+                - Migration_AcrabOptimismPatch1: contracts/source/contracts/Migration_AcrabOptimismPatch1.md
+                - Migration_AcrabPatch1: contracts/source/contracts/Migration_AcrabPatch1.md
                 - Migration_Algol: contracts/source/contracts/Migration_Algol.md
                 - Migration_AlgolOptimism: contracts/source/contracts/Migration_AlgolOptimism.md
                 - Migration_Aljanah: contracts/source/contracts/Migration_Aljanah.md
