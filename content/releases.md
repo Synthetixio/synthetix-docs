@@ -2,11 +2,11 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
-# Acrab (v2.101.2)
+# Acrab (v2.101.3)
 
-**Published**: Apr 18, 2024
+**Published**: Aug 26, 2024
 
-**Codebase**: [v2.101.2](https://github.com/Synthetixio/synthetix/tree/v2.101.2)
+**Codebase**: [v2.101.3](https://github.com/Synthetixio/synthetix/tree/v2.101.3)
 
 > ## Release notes
 >
