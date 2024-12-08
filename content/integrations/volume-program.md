@@ -1,6 +1,6 @@
 # Volume Program
 
-Projects that join the Synthetix Volume Program earn a 25% rebate on fees generated from synth swaps. To apply for the Volume Program, fill out our [application form](https://synthetixio.typeform.com/to/Eft91ZFC).
+Projects that join the Synthetix Volume Program earn a rebate on fees generated from synth swaps. 10,000 SNX per month are disributed pro rata amongst volume partners on L1. To apply for the Volume Program, fill out our [application form](https://synthetixio.typeform.com/to/Eft91ZFC).
 
 Once accepted to the Volume Program, you can use the code functions below to track your volume and earn fees. For more information, check out [SIP 63](https://sips.synthetix.io/sips/sip-63).
 
