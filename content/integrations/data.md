@@ -15,11 +15,13 @@ There are multiple ways to access Synthetix’s historical data:
 
 [The Graph](https://thegraph.com/) is a decentralized protocol for indexing and querying data. Subgraphs define which data The Graph will index and how it will be stored. This data is then provided via a GraphQL API. The Graph currently consists of a hosted service and a decentralized network. In the future, the hosted service will be gradually sunset after the decentralized network achieves feature parity.
 
+See the [Synthetix subgraph repository](https://github.com/Synthetixio/synthetix-subgraph) for more information.
+
 #### Hosted Service
 
-The hosted service can be used to query data from the Synthetix subgraphs. All of Synthetix’s subgraphs are maintained in [this repository](https://github.com/Synthetixio/synthetix-subgraph).
+The hosted service can be used to query data from the Synthetix subgraph. The Synthetix subgraph is available on the hosted service on **[mainnet](https://thegraph.com/hosted-service/subgraph/synthetixio-team/mainnet-main)**, **[optimism](https://thegraph.com/hosted-service/subgraph/synthetixio-team/optimism-main)**, **[kovan](https://thegraph.com/hosted-service/subgraph/synthetixio-team/kovan-main)**, and **[optimism-kovan](https://thegraph.com/hosted-service/subgraph/synthetixio-team/optimism-kovan-main)**.
 
-Each subgraph can be inspected in The Graph’s web application. For instance, you can find the API endpoint, statistics, and a "playground" for the Exchanges subgraph [here](https://thegraph.com/hosted-service/subgraph/synthetixio-team/synthetix-exchanges). Links for each of the subgraphs can be found in [the README of the subgraph repository](https://github.com/Synthetixio/synthetix-subgraph/blob/main/README.md).
+*Note that data queried from the optimism network may be incomplete due the regenesis on 11/11/21.*
 
 !!! warning "Using subgraphs with the hosted service may introduce breaking changes"
 
@@ -29,7 +31,9 @@ To abstract interacting with The Graph’s hosted service directly, Synthetix ma
 
 #### The Graph Network
 
-Synthetix’s data can also be queried on the decentralized network. Information about the "mega" subgraph (which aggregates the individual subgraphs on the hosted service) can be found [here in the Graph Explorer](https://thegraph.com/explorer/subgraph?id=0xde910777c787903f78c89e7a0bf7f4c435cbb1fe-0&view=Overview).
+Synthetix’s data can also be queried on the decentralized network. More information is available [in the Graph Explorer](https://thegraph.com/explorer/subgraph?id=0xde910777c787903f78c89e7a0bf7f4c435cbb1fe-0&view=Overview).
+
+The decentralized network supports pinning versions. Subgraphs on the decentralized network can only query data on mainnet currently.
 
 ### Event Logs
 
