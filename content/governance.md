@@ -88,7 +88,7 @@ These interviews are recorded and publicly available on [spotify](https://open.s
 
 2. Once the election is completed, the [SC-NFT](http://contracts.synthetix.io/SpartanCouncilNFT) must be revoked from ex-members and issued to new members of the Spartan Council.
 
-3. To enable [Dilution](https://sips.synthetix.io/sips/sip-104), the relevant information from the election must be logged into the CouncilDilution [contract](https://contracts.synthetix.io/CouncilDilution), to do this, there is a script avaliable on [synthetix-scripts](https://github.com/Synthetixio/synthetix-scripts)
+3. To enable [Dilution](https://sips.synthetix.io/sips/sip-104), the relevant information from the election must be logged into the CouncilDilution [contract](https://contracts.synthetix.io/CouncilDilution), to do this, there is a script available on [synthetix-scripts](https://github.com/Synthetixio/synthetix-scripts)
 
 4. Once the NFT is distributed, the holders will be entitled to vote on SIPs/SCCPs under the [snxgov.eth](https://snapshot.org/#/snxgov.eth) space, when the CouncilDilution is updated with the latest election hash onchain, voters are able to dilute members whom they have voted for per proposal.
 
