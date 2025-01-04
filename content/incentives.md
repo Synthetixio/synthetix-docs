@@ -174,7 +174,7 @@ Staking Contract: [`StakingRewardssBTCCurve`](https://contracts.synthetix.io/Sta
 
 Source: [`Staking Rewards` (via `Unipool`)](https://github.com/Synthetixio/synthetix/blob/db6265313b6742b1c3483978b1baa00814990d57/contracts/StakingRewards.sol)
 
-> Note: this deployment was based off a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it re-usable.
+> Note: this deployment was based off a PR ([#523](https://github.com/Synthetixio/synthetix/pull/523)) in @Synthetixio/synthetix to do a minor change to the `Unipool` contract to make it reusable.
 
 Aim: This trial is providing the `SNX` component of a `SNX/REN` liquidity pool (along with Ren Protocol) to help generate rewards for the `sBTC/renBTC/WBTC` liquidity providers on Curve.
 
