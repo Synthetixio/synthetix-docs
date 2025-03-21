@@ -46,7 +46,7 @@ Along with the debt ledger, which is a time series history of the overall value 
 | [`Synthetix`](source/contracts/Synthetix.md)           | The main token contract.                                                                                         |
 | [`SynthetixState`](source/contracts/SynthetixState.md) | An auxiliary state contract that sits alongside Synthetix, which tracks current issuer data and the debt ledger. |
 | [`Issuer`](source/contracts/Issuer.md)                 | An auxiliary helper contract that performs the issuing and burning functionality.                                |
-| [`Exchanger`](source/contracts/Exchanger.md)           | An auxiliary helper contract that performs the exchance and settle functionality.                                |
+| [`Exchanger`](source/contracts/Exchanger.md)           | An auxiliary helper contract that performs the exchange and settle functionality.                                |
 
 ### Synth
 
