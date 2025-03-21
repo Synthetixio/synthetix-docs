@@ -188,6 +188,8 @@ nav:
                 - Migration_EltaninOptimism: contracts/source/contracts/Migration_EltaninOptimism.md
                 - Migration_EnifOptimismStep1: contracts/source/contracts/Migration_EnifOptimismStep1.md
                 - Migration_Hamal: contracts/source/contracts/Migration_Hamal.md
+                - Migration_Han: contracts/source/contracts/Migration_Han.md
+                - Migration_HanOptimism: contracts/source/contracts/Migration_HanOptimism.md
                 - Migration_IzarOptimismStep1: contracts/source/contracts/Migration_IzarOptimismStep1.md
                 - Migration_IzarOptimismStep2: contracts/source/contracts/Migration_IzarOptimismStep2.md
                 - Migration_IzarOptimismStep3: contracts/source/contracts/Migration_IzarOptimismStep3.md

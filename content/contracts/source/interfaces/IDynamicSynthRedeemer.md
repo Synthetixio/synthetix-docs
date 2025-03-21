@@ -2,13 +2,13 @@
 
 ## Description
 
-**Source:** [contracts/interfaces/IDynamicSynthRedeemer.sol](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/interfaces/IDynamicSynthRedeemer.sol)
+**Source:** [contracts/interfaces/IDynamicSynthRedeemer.sol](https://github.com/Synthetixio/synthetix/tree/v2.102.0/contracts/interfaces/IDynamicSynthRedeemer.sol)
 
 ## Views
 
 ### `getDiscountRate`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/interfaces/IDynamicSynthRedeemer.sol#L11)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.102.0/contracts/interfaces/IDynamicSynthRedeemer.sol#L11)</sub>
 
 ??? example "Details"
 
@@ -28,7 +28,7 @@
 
 ### `redeem`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/interfaces/IDynamicSynthRedeemer.sol#L13)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.102.0/contracts/interfaces/IDynamicSynthRedeemer.sol#L13)</sub>
 
 ??? example "Details"
 
@@ -46,7 +46,7 @@
 
 ### `redeemAll`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/interfaces/IDynamicSynthRedeemer.sol#L15)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.102.0/contracts/interfaces/IDynamicSynthRedeemer.sol#L15)</sub>
 
 ??? example "Details"
 
@@ -64,7 +64,7 @@
 
 ### `redeemPartial`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/interfaces/IDynamicSynthRedeemer.sol#L17)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.102.0/contracts/interfaces/IDynamicSynthRedeemer.sol#L17)</sub>
 
 ??? example "Details"
 
@@ -82,7 +82,7 @@
 
 ### `resumeRedemption`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/interfaces/IDynamicSynthRedeemer.sol#L8)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.102.0/contracts/interfaces/IDynamicSynthRedeemer.sol#L8)</sub>
 
 ??? example "Details"
 
@@ -100,7 +100,7 @@
 
 ### `suspendRedemption`
 
-<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.101.3/contracts/interfaces/IDynamicSynthRedeemer.sol#L6)</sub>
+<sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.102.0/contracts/interfaces/IDynamicSynthRedeemer.sol#L6)</sub>
 
 ??? example "Details"
 
