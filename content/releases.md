@@ -2,6 +2,22 @@
 
     Imported from https://github.com/Synthetixio/synthetix/releases
 
+# Han (v2.102.0)
+
+**Published**: Mar 21, 2025
+
+**Codebase**: [v2.102.0](https://github.com/Synthetixio/synthetix/tree/v2.102.0)
+
+> ## Release notes
+>
+> Allows `LegacyMarket` to mint sUSD.
+
+[SIP-420: Protocol Owned SNAX](https://sips.synthetix.io/sips/sip-420/)
+
+> Audit: https://iosiro.com/audits/synthetix-acrab-release-smart-contract-audit
+
+---
+
 # Acrab (v2.101.3)
 
 **Published**: Aug 26, 2024
