@@ -97,7 +97,7 @@ Curve allows users (and smart contracts like [1inch](https://1inch.exchange/), [
                 <td>
                     <a target="_blank" href="https://blog.synthetix.io/synthetix-bug-bounties/">Bug Bounty</a>
                 <td>
-                    <a target="_blank" href="mailto:security@synthetix.io">security@synthetix.io</a>
+                    <a target="_blank" href="mailto:security@snxdao.io">security@snxdao.io</a>
                 </td>
               </tr>
              </tr></table>
@@ -145,7 +145,7 @@ Balancer is based on a particular N-dimensional surface which defines a cost fun
                 <td>
                     <a target="_blank" href="https://blog.synthetix.io/synthetix-bug-bounties/">Bug Bounty</a>
                 <td>
-                    <a target="_blank" href="mailto:security@synthetix.io">security@synthetix.io</a>
+                    <a target="_blank" href="mailto:security@snxdao.io">security@snxdao.io</a>
                 </td>
               </tr>
              </tr></table>
