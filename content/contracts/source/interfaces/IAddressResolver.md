@@ -28,10 +28,6 @@
 
 <sub>[Source](https://github.com/Synthetixio/synthetix/tree/v2.102.0/contracts/interfaces/IAddressResolver.sol#L7)</sub>
 
-!!! Warning "Not yet on mainnet"
-
-    This view, while in source, is not yet on mainnet. It is planned in the `v2.23` Acrux release. As a workaround you can use `IAddressResolver.getAddress("Synthetix").synths(key)`
-
 ??? example "Details"
 
     **Signature**
